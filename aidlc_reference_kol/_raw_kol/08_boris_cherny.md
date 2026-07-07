@@ -94,12 +94,12 @@ Cherny 将编程工具的历史分为三个阶段：
 
 Cherny 的观点不是孤立的——Big Tech 正在跟进：
 
-| 公司 | AI 代码采用率 |
-|------|-------------|
-| **Google** | 75% 新代码 AI 生成（2024 年底 25%） |
-| **Meta** | 强制 65% 工程师在 H1 2026 前 >75% 提交代码由 AI 生成 |
-| **Snap** | 公司级 65% AI 生成代码底线 |
-| **Amazon** | 通过 AWS Bedrock 向所有企业员工正式推出 Claude Code |
+| 公司 | AI 代码采用率 | 来源 |
+|------|-------------|------|
+| **Google** | 75% 新代码 AI 生成（2024 年底 25%） | [Sundar Pichai, Google Cloud Next 2026](https://timesofindia.indiatimes.com/technology/tech-news/google-ceo-sundar-pichai-says-ai-generates-75-codes-at-the-company-why-this-number-matters/articleshow/130451126.cms) |
+| **Meta** | 强制 65% 工程师在 H1 2026 前 >75% 提交代码由 AI 生成 | [Business Insider, 2026/03](https://www.businessinsider.com/meta-ai-push-employee-goals-tool-adoption-2-026-3) |
+| **Snap** | 公司级 65% AI 生成代码底线 | [Reuters/TechRepublic, 2026/04](https://www.techrepublic.com/article/news-snap-ai-layoffs-april-2026/) |
+| **Amazon** | 通过 AWS Bedrock 向所有企业员工正式推出 Claude Code | [Business Insider, 2026/05](https://ca.finance.yahoo.com/news/amazon-admits-flagship-ai-coding-143000057.html) |
 
 ---
 

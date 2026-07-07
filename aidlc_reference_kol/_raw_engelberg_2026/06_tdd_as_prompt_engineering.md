@@ -8,6 +8,7 @@ source_urls:
   - https://ubos.tech/news/thoughtworks-future-of-software-development-retreat-highlights-ais-transformative-role/
   - https://www.metasticworld.com/en/insights/thoughtworks-future-of-software-development-retreat-2026
   - https://martinfowler.com/fragments/2026-07-06.html
+  - https://gotocph.com/2026/masterclasses/579/when-ai-meets-technical-debt-evolving-software-for-humans-and-machines
 key_concepts:
   - tdd_as_prompt_engineering
   - tests_as_communication_language
@@ -45,7 +46,7 @@ Engelberg 确认了一个 Deer Valley 时还只是猜测的结论：
 
 Engelberg 上引用了 Adam Tornhill 的研究发现：
 
-> **有健壮测试套件的代码库，AI 生成的 PR 成功率高出 45%。**
+> **有健壮测试套件的代码库，AI 重构的可靠性高出 30%。**
 
 这意味着：在 AI 时代，测试覆盖率不再只是"质量指标"——它是 **Agent 生产力的直接杠杆**。
 
@@ -73,6 +74,6 @@ Deer Valley 上 Beck 和 Fowler 已经说了 TDD 是 "superpower" 和 "not optio
 
 > *"Tests become the primary language for communicating intent to LLMs."* — Engelberg 讨论
 
-> *"Robust test suites yield 45% more successful AI-generated PRs."* — Adam Tornhill 研究（Engelberg 引用）
+> *"LLMs refactored healthy codebases 30% more reliably than degraded ones."* — Adam Tornhill 研究（Engelberg 引用，来源：[AI-Ready Engineering / GOTO Copenhagen 2026](https://gotocph.com/2026/masterclasses/579/when-ai-meets-technical-debt-evolving-software-for-humans-and-machines)）
 
 > *"Write the failing test first. Then let the agent implement. The test IS the prompt."* — Engelberg 实践共识

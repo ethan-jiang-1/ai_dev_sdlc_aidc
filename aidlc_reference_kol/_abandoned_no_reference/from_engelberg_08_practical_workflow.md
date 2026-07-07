@@ -3,7 +3,7 @@ type: practical_pattern
 event: FOSE Europe (Engelberg)
 concept: Daily Agentic Workflow — a 7-step pattern shared by an attendee
 date: 2026-07
-verification_status: verified
+verification_status: weak
 source_urls:
   - https://ubos.tech/news/thoughtworks-future-of-software-development-retreat-highlights-ais-transformative-role/
   - https://www.metasticworld.com/en/insights/thoughtworks-future-of-software-development-retreat-2026
@@ -12,6 +12,12 @@ key_concepts:
   - agent_task_list
   - overnight_quality_checks
   - explanatory_documentation
+note: |
+  ⚠️ 来源警告：本文件的核心内容（7 步工作流）来自一个匿名 Engelberg 参会者的分享，经由 ubos.tech 和 metasticworld.com 两个第三方总结转述。
+  原始工作流贡献者未具名，无法直接验证。
+  文中引用的 Thariq Shihipar、Jesse Vincent、Kieran Klaassen、Mike Krieger 的名字和观点并非来自 Engelberg 的第一手材料，而是作者做的跨文件关联。
+  这些人的 source URL 存在于 _raw_kol/ 和 _raw_fable5/ 的文件中，而非本目录。
+  本文件应视为启发性的实践参考，而非可验证的出处。
 ---
 
 # 一个 Engelberg 参会者的 7 步日常工作流

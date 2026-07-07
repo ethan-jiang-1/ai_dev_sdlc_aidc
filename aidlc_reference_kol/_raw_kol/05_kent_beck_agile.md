@@ -6,7 +6,6 @@ content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
   - https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech
-  - https://www.webpronews.com/kent-becks-cosmic-practical-joke-why-ai-demands-engineers-master-people-skills/
   - https://www.allstacks.com/blog/how-to-write-specs-for-ai-agents-tdd-skills-and-what-comes-next
   - https://share.transistor.fm/s/b9745f10
   - https://bytecraft.fi/en/blogs/extreme-programming-ai-modern-practices/
@@ -161,4 +160,4 @@ XP 的核心洞见是：**软件开发的瓶颈不是打字速度，是理解、
 
 ---
 
-**Source:** [Pragmatic Engineer: Cycles of Disruption with Beck & Fowler](https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech) · [WebProNews: Cosmic Practical Joke](https://www.webpronews.com/kent-becks-cosmic-practical-joke-why-ai-demands-engineers-master-people-skills/) · [Allstacks: TDD for AI Agents](https://www.allstacks.com/blog/how-to-write-specs-for-ai-agents-tdd-skills-and-what-comes-next) · [Still Burning Podcast](https://share.transistor.fm/s/b9745f10) · [ComputerHoy](https://computerhoy.20minutos.es/software/kent-beck-leyenda-ingenieria-software-veces-somos-un-poco-imbeciles-los-programadores-necesitan-aprender-habilidades-interpersonales-para-sobrevivir-ia_7010292_0.html) · [ByteCraft: XP in Agentic Era](https://bytecraft.fi/en/blogs/extreme-programming-ai-modern-practices/) · [Cash Wu Blog (Chinese)](https://blog.cashwu.com/blog/2026/kent-beck-ai-age-developer-skills/)
+**Source:** [Pragmatic Engineer: Cycles of Disruption with Beck & Fowler](https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech) · [Allstacks: TDD for AI Agents](https://www.allstacks.com/blog/how-to-write-specs-for-ai-agents-tdd-skills-and-what-comes-next) · [Still Burning Podcast](https://share.transistor.fm/s/b9745f10) · [ComputerHoy](https://computerhoy.20minutos.es/software/kent-beck-leyenda-ingenieria-software-veces-somos-un-poco-imbeciles-los-programadores-necesitan-aprender-habilidades-interpersonales-para-sobrevivir-ia_7010292_0.html) · [ByteCraft: XP in Agentic Era](https://bytecraft.fi/en/blogs/extreme-programming-ai-modern-practices/) · [Cash Wu Blog (Chinese)](https://blog.cashwu.com/blog/2026/kent-beck-ai-age-developer-skills/)

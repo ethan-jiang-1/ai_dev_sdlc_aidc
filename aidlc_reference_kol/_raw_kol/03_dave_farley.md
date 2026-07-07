@@ -29,7 +29,7 @@ Farley 做了一个大胆的历史比较：
 但他同时批判两个极端：
 - 恐吓者说 AI 不能编程 → **错误**
 - 鼓吹者说 10x-100x 提升 → **错误**
-- 他参与的研究显示约 **55%** 的生产力提升——"不是没有，只是没有 10 倍"
+- 他参与的研究显示约 **55%** 的生产力提升（习惯性 AI 用户），中位数为 30.7%——"不是没有，只是没有 10 倍"（[Faros AI Engineering Impact Report, 2025/07](https://storage.pardot.com/1045823/1752512825oEfps6iq/AI_Engineering_Impact_Report_July_2025_Faros_AI.pdf)，~150 名专业开发者对照研究）
 
 ---
 

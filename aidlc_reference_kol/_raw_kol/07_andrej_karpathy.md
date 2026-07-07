@@ -5,6 +5,7 @@ organization: Independent (ex-OpenAI, ex-Tesla)
 content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
+  - https://www.forbes.com/sites/aliciapark/2026/05/19/openai-cofounder-and-former-tesla-ai-leader-andrej-karpathy-joins-anthropic/
   - https://www.forbes.com/sites/jodiecook/2026/06/12/is-vibe-coding-already-dead-even-karpathy-is-moving-on/
   - https://www.glideapps.com/blog/what-is-agentic-engineering
   - https://hub.baai.ac.cn/view/52377
@@ -17,7 +18,7 @@ key_concepts:
 ---
 # Andrej Karpathy — 从 "Vibe Coding" 到 "Agentic Engineering"
 
-> OpenAI 联合创始人、前 Tesla AI 负责人。Karpathy 是 AI 时代对开发者文化影响最大的单一个人——他创造的两个词定义了整个 discourse。
+> OpenAI 创始团队成员、前 Tesla AI 负责人。Karpathy 是 AI 时代对开发者文化影响最大的单一个人——他创造的两个词定义了整个 discourse。
 
 ---
 

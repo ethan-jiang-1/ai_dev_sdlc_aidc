@@ -8,10 +8,14 @@ derived_from:
   - 02_willison_agentic_engineering.md
   - 03_dohmke_rajan_roundtable.md
   - 04_tacho_dx_data_joint_statement.md
-  - 05_fowler_deer_valley_retreat.md
-verification_status: verified
-evidence_strength: strong
-note: 综合归纳，原始来源见各 session 文件
+verification_status: partial
+evidence_strength: mixed
+note: |
+  综合归纳，原始来源见各 session 文件。
+  ⚠️ 本文件将 Pragmatic Summit (San Francisco, Gergely Orosz 主办) 与 Deer Valley Retreat (Utah, Martin Fowler/ThoughtWorks 主办) 的材料进行了交叉对比。
+  这两个是不同的活动：Pragmatic Summit 是公开售票大会，Deer Valley 是闭门邀请 retreat。
+  文中的对比和关联是作者的分析，并非两个活动组织者的联合声明。
+  引用的 05_fowler_deer_valley_retreat.md 不存在——Deer Valley 材料在 ../_raw_agile_manifesto_2026/ 目录。
 ---
 
 # Pragmatic Summit 2026 — 跨 Session 主题分析
@@ -32,9 +36,11 @@ note: 综合归纳，原始来源见各 session 文件
 
 ---
 
-## 两场活动的共同信号
+## 两场活动的关联观察（作者分析，非官方联合声明）
 
-Pragmatic Summit（旧金山，公开大会）和 Deer Valley Retreat（犹他，闭门非会议）——同一周、同一批关键人物——发出了四个共同信号：
+⚠️ **注意**：以下为作者基于两个独立活动材料的**对比分析**，并非两个活动组织者的联合声明。Pragmatic Summit（旧金山，Gergely Orosz 主办，公开售票大会）和 Deer Valley Retreat（犹他，ThoughtWorks 主办，闭门邀请 retreat）——虽同期举行且有关键人物重叠——但格式、受众、规则不同。以下关联为作者观察：
+
+Pragmatic Summit 和 Deer Valley Retreat 的材料中出现了四个可对比的方向：
 
 1. **"严苛去哪儿了？"** — 代码生成变便宜了，判断必须更严格。这是两场活动共同的底层焦虑
 2. **"Supervisory Engineering"** — 一个新工种在浮现：指挥 Agent、评估输出、校准信任、编码标准

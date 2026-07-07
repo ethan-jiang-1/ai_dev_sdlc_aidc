@@ -12,7 +12,6 @@ primary_sources:
     role: Anthropic CPO
     urls:
       - https://every.to/podcast/transcript-how-anthropic-uses-claude-fable-5-with-mike-krieger
-      - https://digg.com/ai/g7bqoiyn#story-ai-responses-heading
   - name: Ethan Mollick
     role: Wharton Professor
     urls:
@@ -27,7 +26,7 @@ primary_sources:
     role: Anthropic Claude Code engineer
     urls:
       - https://gentic.news/article/fable-5-claude-s-biggest-leap
-      - https://digg.com/ai/crrpnk9g
+      - https://digg.com/tech/crrpnk9g
   - name: Simon Willison
     role: Independent developer, Datasette author
     urls:
@@ -93,7 +92,9 @@ cross_references:
 
 在进入具体信号之前，先定位 Fable 5 在这个资料库里的位置：
 
-> **"Fable 5 最突出的定位，不是通用默认模型，而是更适合被委托去跑长任务、复杂任务和整段工作流。它真正拉开差距的地方，不只是写代码，而是会自己推进、自己验证、自己补工具动作。"**
+> **Fable 5 最突出的定位，不是通用默认模型，而是更适合被委托去跑长任务、复杂任务和整段工作流。它真正拉开差距的地方，不只是写代码，而是会自己推进、自己验证、自己补工具动作。**
+>
+> *——作者综合 16 个样本的定位归纳，非直接引用*
 
 和 AWS 的 AI-DLC（方法论框架，告诉你"应该有这些阶段"）不同，Fable 5 是一个**具体的模型**——它本身的存在就在改写很多假设。这些信号不是理论推演，而是来自 16 个真实使用者的体感、行为观察和制度调整。
 
@@ -115,7 +116,7 @@ cross_references:
 
 ## 二、信号一：从"实时交互"到"离线委托"
 
-> 本节来源：Mike Krieger ([Every podcast transcript](https://every.to/podcast/transcript-how-anthropic-uses-claude-fable-5-with-mike-krieger), [Digg 发布日聚合](https://digg.com/ai/g7bqoiyn#story-ai-responses-heading)); Ryan Lopopolo ([OpenAI Harness Engineering](https://openai.com/index/harness-engineering/)); Austin Tedesco ([AI Everywhere, All at Once](https://every.to/context-window/ai-everywhere-all-at-once)); Ethan Mollick ([What it feels like to work with Mythos](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos))
+> 本节来源：Mike Krieger ([Every podcast transcript](https://every.to/podcast/transcript-how-anthropic-uses-claude-fable-5-with-mike-krieger)); Ryan Lopopolo ([OpenAI Harness Engineering](https://openai.com/index/harness-engineering/)); Austin Tedesco ([AI Everywhere, All at Once](https://every.to/context-window/ai-everywhere-all-at-once)); Ethan Mollick ([What it feels like to work with Mythos](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos))
 
 ### 2.1 跨夜工作成为常态
 
@@ -188,7 +189,7 @@ Jesse Vincent（Superpowers 作者，前 Perl 5 维护者，K-9 Mail 作者）�
 
 ## 五、信号四：模型有了"判断力、品味、多维思考"
 
-> 本节来源：Boris Cherny, [gentic.news Fable 5 beta tester 文章](https://gentic.news/article/fable-5-claude-s-biggest-leap); [Digg 发布日帖子聚合](https://digg.com/ai/crrpnk9g)
+> 本节来源：Boris Cherny, [gentic.news Fable 5 beta tester 文章](https://gentic.news/article/fable-5-claude-s-biggest-leap); [Digg 发布日帖子聚合](https://digg.com/tech/crrpnk9g)
 
 Boris Cherny（Anthropic Claude Code 工程师）：
 
