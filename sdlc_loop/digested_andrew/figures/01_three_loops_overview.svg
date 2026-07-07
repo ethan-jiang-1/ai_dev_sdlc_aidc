@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 750">
+  <defs>
+    <style>
+      text { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .title { font-size: 22px; font-weight: 700; fill: #1a1a2e; text-anchor: middle; }
+      .subtitle { font-size: 13px; fill: #666; text-anchor: middle; }
+      .ring-label { font-size: 16px; font-weight: 700; text-anchor: middle; }
+      .ring-desc { font-size: 12px; text-anchor: middle; }
+      .center-label { font-size: 18px; font-weight: 700; fill: #fff; text-anchor: middle; }
+      .who-label { font-size: 11px; fill: #888; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="35" class="title">Loop Engineering · 三层循环全景</text>
+  <text x="400" y="58" class="subtitle">Andrew Ng · 2026.06 — "不是写代码更快，而是设计一组能持续变好的循环"</text>
+
+  <!-- Outer ring: External Feedback Loop (green) -->
+  <circle cx="400" cy="400" r="300" fill="#e8f5e9" stroke="#4caf50" stroke-width="3" stroke-dasharray="12,5"/>
+  <text x="400" y="88" class="ring-label" fill="#2e7d32">Loop 3 · 外部反馈循环 External Feedback</text>
+  <text x="400" y="107" class="who-label">真实用户 · 几天到几周</text>
+
+  <!-- Middle ring: Developer Feedback Loop (orange) -->
+  <circle cx="400" cy="400" r="205" fill="#fff3e0" stroke="#ff9800" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="400" y="183" class="ring-label" fill="#e65100">Loop 2 · 开发者反馈循环 Developer Feedback</text>
+  <text x="400" y="202" class="who-label">人类开发者 · 几十分钟到几小时</text>
+
+  <!-- Inner ring: Agentic Coding Loop (blue) -->
+  <circle cx="400" cy="400" r="120" fill="#e3f2fd" stroke="#2196f3" stroke-width="3"/>
+  <text x="400" y="268" class="ring-label" fill="#1565c0">Loop 1 · Agentic 编码循环</text>
+  <text x="400" y="287" class="who-label">AI Agent · 几分钟</text>
+
+  <!-- Center -->
+  <circle cx="400" cy="400" r="50" fill="#1565c0"/>
+  <text x="400" y="395" class="center-label">产品</text>
+  <text x="400" y="415" class="center-label" style="font-size:11px;opacity:0.8;">Product</text>
+
+  <!-- Arrows connecting loops -->
+  <!-- Outer → Middle -->
+  <defs>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#4caf50"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#ff9800"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#2196f3"/>
+    </marker>
+  </defs>
+
+  <!-- Flow arrows between loop boundaries -->
+  <!-- External → Developer: "修正愿景" -->
+  <path d="M 400 100 Q 540 200 500 300" fill="none" stroke="#4caf50" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="530" y="210" font-size="11" fill="#2e7d32">用户反馈</text>
+  <text x="530" y="226" font-size="11" fill="#2e7d32">修正产品愿景</text>
+
+  <!-- Developer → Agentic: "更新Spec" -->
+  <path d="M 500 380 Q 580 380 580 350 Q 580 300 540 300" fill="none" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="560" y="360" font-size="11" fill="#e65100">更新Spec</text>
+
+  <!-- Developer ← External: developer sees product context -->
+  <path d="M 400 700 Q 200 700 200 500 Q 200 400 260 400" fill="none" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="120" y="560" font-size="11" fill="#e65100">开发者看产品</text>
+  <text x="120" y="576" font-size="11" fill="#e65100">→ 引导 Agent</text>
+
+  <!-- Agentic → Developer: "产出可审查版本" -->
+  <path d="M 400 520 Q 400 560 400 560" fill="none" stroke="#2196f3" stroke-width="2" marker-end="url(#arrowBlue)" opacity="0"/>
+  <text x="280" y="480" font-size="11" fill="#1565c0">每几分钟产出新版本 → 开发者审查</text>
+  <text x="280" y="496" font-size="11" fill="#1565c0">Agent 自测通过后才交给人看</text>
+
+  <!-- Legend at bottom -->
+  <rect x="200" y="710" width="400" height="30" rx="5" fill="#f5f5f5"/>
+  <circle cx="230" cy="725" r="6" fill="#2196f3"/>
+  <text x="245" y="729" font-size="12" fill="#333">AI Agent</text>
+  <circle cx="320" cy="725" r="6" fill="#ff9800"/>
+  <text x="335" y="729" font-size="12" fill="#333">人类开发者</text>
+  <circle cx="430" cy="725" r="6" fill="#4caf50"/>
+  <text x="445" y="729" font-size="12" fill="#333">真实用户</text>
+</svg>

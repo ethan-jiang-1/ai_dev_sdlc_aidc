@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580">
+  <defs>
+    <style>
+      text { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .title { font-size: 22px; font-weight: 700; fill: #1a1a2e; text-anchor: middle; }
+      .subtitle { font-size: 13px; fill: #666; text-anchor: middle; }
+      .label { font-size: 15px; font-weight: 700; fill: #fff; text-anchor: middle; }
+      .item { font-size: 13px; fill: #333; }
+    </style>
+  </defs>
+
+  <text x="400" y="35" class="title">核心洞察：不是"品味"，是"上下文优势"</text>
+  <text x="400" y="58" class="subtitle">Andrew Ng 对 Human-in-the-Loop 最深刻的论证</text>
+
+  <!-- Left: Human -->
+  <rect x="30" y="85" width="350" height="380" rx="12" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+  <rect x="30" y="85" width="350" height="45" rx="12" fill="#ff9800"/>
+  <rect x="30" y="115" width="350" height="15" fill="#ff9800"/>
+  <text x="205" y="113" class="label">🧠 人类</text>
+
+  <text x="60" y="160" class="item" font-size="15" font-weight="700" fill="#e65100">我知道 AI 不知道的事：</text>
+
+  <rect x="55" y="180" width="300" height="50" rx="6" fill="#fff" stroke="#ffcc80" stroke-width="1"/>
+  <text x="70" y="200" class="item">👤 用户是谁、在什么场景下用</text>
+  <text x="70" y="218" class="item" font-size="11" fill="#888">—— 谁会在凌晨3点打开这个功能？为什么？</text>
+
+  <rect x="55" y="245" width="300" height="50" rx="6" fill="#fff" stroke="#ffcc80" stroke-width="1"/>
+  <text x="70" y="265" class="item">🏢 业务限制和行业规则</text>
+  <text x="70" y="283" class="item" font-size="11" fill="#888">—— 合规要求、遗留系统约束、组织政治</text>
+
+  <rect x="55" y="310" width="300" height="50" rx="6" fill="#fff" stroke="#ffcc80" stroke-width="1"/>
+  <text x="70" y="330" class="item">🎨 审美偏好和品牌调性</text>
+  <text x="70" y="348" class="item" font-size="11" fill="#888">—— "这个颜色不对" "那个交互太生硬"</text>
+
+  <rect x="55" y="375" width="300" height="50" rx="6" fill="#fff" stroke="#ffcc80" stroke-width="1"/>
+  <text x="70" y="395" class="item">🔮 产品未来方向和战略取舍</text>
+  <text x="70" y="413" class="item" font-size="11" fill="#888">—— 现在不该做什么，比该做什么更重要</text>
+
+  <!-- Center divider -->
+  <line x1="400" y1="100" x2="400" y2="460" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="400" y="290" font-size="18" fill="#999" text-anchor="middle">vs</text>
+
+  <!-- Right: AI -->
+  <rect x="420" y="85" width="350" height="380" rx="12" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <rect x="420" y="85" width="350" height="45" rx="12" fill="#2196f3"/>
+  <rect x="420" y="115" width="350" height="15" fill="#2196f3"/>
+  <text x="595" y="113" class="label">🤖 AI Agent</text>
+
+  <text x="450" y="160" class="item" font-size="15" font-weight="700" fill="#1565c0">AI 只能从数据中知道：</text>
+
+  <rect x="445" y="180" width="300" height="50" rx="6" fill="#fff" stroke="#90caf9" stroke-width="1"/>
+  <text x="460" y="200" class="item">📊 训练数据中的模式</text>
+  <text x="460" y="218" class="item" font-size="11" fill="#888">—— 见过无数次的标准写法，没见过的就靠猜</text>
+
+  <rect x="445" y="245" width="300" height="50" rx="6" fill="#fff" stroke="#90caf9" stroke-width="1"/>
+  <text x="460" y="265" class="item">📝 你写在 Spec 里的约束</text>
+  <text x="460" y="283" class="item" font-size="11" fill="#888">—— 你写清楚了的它会遵守，没写的它自己编</text>
+
+  <rect x="445" y="310" width="300" height="50" rx="6" fill="#fff" stroke="#90caf9" stroke-width="1"/>
+  <text x="460" y="330" class="item">📈 使用数据和反馈日志</text>
+  <text x="460" y="348" class="item" font-size="11" fill="#888">—— 能统计、能汇总，但不能真正"理解"</text>
+
+  <rect x="445" y="375" width="300" height="50" rx="6" fill="#fff" stroke="#90caf9" stroke-width="1"/>
+  <text x="460" y="395" class="item">——</text>
+  <text x="460" y="413" class="item" font-size="11" fill="#999">没有的东西就是没有</text>
+
+  <!-- Bottom: conclusion -->
+  <rect x="80" y="495" width="640" height="65" rx="10" fill="#1a1a2e"/>
+  <text x="400" y="522" font-size="16" font-weight="700" fill="#ff9800" text-anchor="middle">只要人类知道 AI 不知道的信息，Human-in-the-Loop 就永远需要存在</text>
+  <text x="400" y="548" font-size="13" fill="#ccc" text-anchor="middle">这不是"品味"问题 — 这是信息不对称。缩小这个不对称，AI 就能越来越好。</text>
+</svg>

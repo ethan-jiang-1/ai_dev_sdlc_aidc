@@ -1,0 +1,77 @@
+# W2 — Cross-Topic Synthesis
+
+- status: `closed_for_current_round`
+- last_updated: `2026-04-18`
+- gate_entry: `wave1_primary_saturated achieved via stop assessment: 01/04/05/06 primary_saturated_for_gate; 02/03 continue with high-value gaps`
+- purpose: `closed-round cross-topic judgments for this DR round without flattening evidence strength`
+- evidence_base: `74 authoritative copies indexed: 12 shared + 62 topic-scoped`
+- closeout_note: `selected high-value gaps closed before formal round closeout: Topic 01 SysML v2 official positioning + tools ecosystem + DoD guidance + Collins signal + INCOSE automotive metadata/end-user participation/Productive4.0 validation; Topic 02 Cohn anti-pattern boundary + Story Smells preview/taxonomy/one-smell/common-problems coverage + Seb Rose Beck/BDD origin-boundary article; Topic 04 graph + multimodal workflow/outcome/benchmark signals + independent design-to-code adoption census + Figma/Findable named app-shell deployment case; Topic 05 FlowForge same-prototype Story/DMN/Gherkin chain + ISTQB acceptance-governance framework; Topic 06 format/adoption/diversity + OpenSpec direct comparison + semantic divergence + rule-effect study + AGENTbench multi-agent context-file evaluation + Umans AI practical cross-tool AGENTS.md following experiment + OctoBench scaffold-aware compliance benchmark`
+
+## Evidence Summary Pointers
+
+| topic | evidence summary | question list | gate state |
+| --- | --- | --- | --- |
+| 01 re-landscape | [`01-re-landscape-evidence-summary.md`](01-re-landscape-evidence-summary.md) | [`01-re-landscape-question-list.md`](01-re-landscape-question-list.md) | `primary_saturated_for_gate; continue` |
+| 02 user-story | [`02-user-story-evidence-summary.md`](02-user-story-evidence-summary.md) | [`02-user-story-question-list.md`](02-user-story-question-list.md) | `starter_covered; continue` |
+| 03 ears | [`03-ears-evidence-summary.md`](03-ears-evidence-summary.md) | [`03-ears-question-list.md`](03-ears-question-list.md) | `starter_covered; continue` |
+| 04 future-trends | [`04-future-trends-evidence-summary.md`](04-future-trends-evidence-summary.md) | [`04-future-trends-question-list.md`](04-future-trends-question-list.md) | `primary_saturated_for_gate; continue` |
+| 05 integration-bdd | [`05-integration-bdd-evidence-summary.md`](05-integration-bdd-evidence-summary.md) | [`05-integration-bdd-question-list.md`](05-integration-bdd-question-list.md) | `primary_saturated_for_gate; continue` |
+| 06 agent-format | [`06-agent-format-evidence-summary.md`](06-agent-format-evidence-summary.md) | [`06-agent-format-question-list.md`](06-agent-format-question-list.md) | `primary_saturated_for_gate; continue` |
+
+## Pre-Defined Cross-Checks
+
+| id | check | current status | evidence pointers |
+| --- | --- | --- | --- |
+| X1 | `Story` is intent/conversation layer, not full formal requirement | `closed_round_supported` | 02 + 01 |
+| X2 | `EARS` is system-contract layer, but not universal best format | `closed_round_supported_with_risk_notes` | 03 + 01 + GtWR risk note |
+| X3 | `BDD/Gherkin` is examples/confirmation layer, not story replacement | `closed_round_supported` | 05 + 02 |
+| X4 | `AGENTS/CLAUDE/rules` are team/repo context, not feature spec dumping ground | `closed_round_supported` | 06 + 04 |
+| X5 | `Spec Kit/Kiro` demonstrate feature-level spec workflow | `closed_round_supported` | 04 + 06 |
+| X6 | Governance trend increases the value of structured documentation | `closed_round_supported` | 04 + 01 |
+| X7 | Standards anchors remain partial where full text is paywalled | `closed_round_risk_note_required` | 00-shared GtWR + 29148 |
+| X8 | Selection matrix must separate evidence strength from teaching utility | `closed_round_supported` | claims-audit + all summaries |
+| X9 | AI-era requirement artifacts should be layered, not collapsed into one file | `closed_round_supported` | 02 + 03 + 05 + 06 |
+
+## Closed-Round Judgments
+
+| id | judgment | evidence | risk label |
+| --- | --- | --- | --- |
+| X1 | User Story should be treated as the intent / conversation layer. Cohn and Wake both anchor story quality in conversation + confirmation, while SEBoK/15288 and SysML v2 put formal/model requirements inside a broader systems lifecycle. SysML v2 is now supported not only as official positioning but also by an official tools-ecosystem page, which strengthens the claim that the model layer is operationally relevant rather than purely conceptual. | [`02-user-story-evidence-summary.md`](02-user-story-evidence-summary.md), [`01-re-landscape-evidence-summary.md`](01-re-landscape-evidence-summary.md), [`../_reference/01-re-landscape-omg-sysml-v2-official.md`](../_reference/01-re-landscape-omg-sysml-v2-official.md), [`../_reference/01-re-landscape-omg-sysml-v2-tools-ecosystem.md`](../_reference/01-re-landscape-omg-sysml-v2-tools-ecosystem.md) | `low_risk` |
+| X2 | EARS is a strong system-behavior contract layer, especially when paired with GtWR-style pattern and condition rules, but it is not universal. Completeness gaps and SaaS empirical gaps remain open; however, software-scope applicability is now better supported by QRA guidance, and the object-level boundary to decision logic is stronger because OMG DMN officially covers decision models / decision tables while EARS guidance explicitly warns against overloading complex multi-condition logic into one sentence. | [`03-ears-evidence-summary.md`](03-ears-evidence-summary.md), [`../_reference/00-shared-incose-gtwr-v4-summary.md`](../_reference/00-shared-incose-gtwr-v4-summary.md), [`../_reference/05-integration-bdd-omg-dmn-decision-boundary.md`](../_reference/05-integration-bdd-omg-dmn-decision-boundary.md), [`../_reference/03-ears-software-scope-guidance.md`](../_reference/03-ears-software-scope-guidance.md) | `medium_risk_full_text_and_saas_empirical_pending` |
+| X3 | BDD/Gherkin is best modeled as an examples / confirmation layer, not a replacement for story or formal requirements. Cucumber's Discovery / Formulation / Automation split supports this; Seb Rose explicitly warns against cargo-culting user-story text into feature files; ISTQB adds the acceptance-governance chain from requirements/user stories to acceptance criteria, Gherkin tests, BPMN/DMN models, and traceability; FlowForge gives a same-prototype BPMN/DMN -> User Story/Gherkin chain. | [`05-integration-bdd-evidence-summary.md`](05-integration-bdd-evidence-summary.md), [`02-user-story-evidence-summary.md`](02-user-story-evidence-summary.md), [`../_reference/02-user-story-rose-user-stories-bdd-origin-boundary.md`](../_reference/02-user-story-rose-user-stories-bdd-origin-boundary.md), [`../_reference/05-integration-bdd-flowforge-bpmn-dmn-gherkin.md`](../_reference/05-integration-bdd-flowforge-bpmn-dmn-gherkin.md), [`../_reference/05-integration-bdd-istqb-acceptance-testing-syllabus.md`](../_reference/05-integration-bdd-istqb-acceptance-testing-syllabus.md) | `low_risk_for_layering; medium_risk_for_ears_inclusive_same_project_gap` |
+| X4 | Agent context files (`AGENTS.md`, `CLAUDE.md`, `.cursor/rules`) should be short team/repo contracts or scoped rules, not feature-spec dumping grounds. OpenAI's `one big AGENTS.md` failure, Anthropic context-bloat guidance, Amp's migration toward `AGENTS.md`, OpenWork's public OSS split between `AGENTS.md` and separate PRD files, Stripe's enterprise-internal reuse of shared rule files, AGENTbench's multi-agent context-file evaluation, Umans AI's same-repo cross-tool instruction-following experiment, and OctoBench's scaffold-aware compliance benchmark all converge on short shared context plus layered workflow and executable checks. | [`06-agent-format-evidence-summary.md`](06-agent-format-evidence-summary.md), [`../_reference/06-agent-format-openai-harness-engineering.md`](../_reference/06-agent-format-openai-harness-engineering.md), [`../_reference/06-agent-format-amp-agents-md-adoption.md`](../_reference/06-agent-format-amp-agents-md-adoption.md), [`../_reference/06-agent-format-openwork-oss-usage.md`](../_reference/06-agent-format-openwork-oss-usage.md), [`../_reference/06-agent-format-stripe-minions-enterprise-usage.md`](../_reference/06-agent-format-stripe-minions-enterprise-usage.md), [`../_reference/06-agent-format-evaluating-agents-md-agentbench-2026.md`](../_reference/06-agent-format-evaluating-agents-md-agentbench-2026.md), [`../_reference/06-agent-format-octobench-scaffold-aware-coding-2026.md`](../_reference/06-agent-format-octobench-scaffold-aware-coding-2026.md), [`../_reference/06-agent-format-umans-agents-md-following-experiment.md`](../_reference/06-agent-format-umans-agents-md-following-experiment.md) | `low_risk_for_layering; medium_risk_for_semantic_uniformity_and_single-case_enterprise_generalization` |
+| X5 | Spec Kit, Kiro, and OpenSpec show feature-level specs are becoming tool workflows: `spec/plan/tasks`, `requirements/design/tasks`, and `proposal/specs/design/tasks` are all separated from team-level context, and OpenSpec adds a direct cross-tool workflow/config comparison anchor. | [`04-future-trends-evidence-summary.md`](04-future-trends-evidence-summary.md), [`06-agent-format-evidence-summary.md`](06-agent-format-evidence-summary.md), [`../_reference/06-agent-format-openspec-cross-tool-comparison.md`](../_reference/06-agent-format-openspec-cross-tool-comparison.md) | `low_to_medium_adoption_maturity_risk; semantic_consistency_still_pending` |
+| X6 | AI governance increases the value of structured, maintained, auditable documentation. NIST AI RMF and EU AI Act do not prescribe EARS or Story, but they strengthen the need for traceable specification artifacts. | [`04-future-trends-evidence-summary.md`](04-future-trends-evidence-summary.md), [`../_reference/04-future-trends-ai-governance-nist-eu-ai-act.md`](../_reference/04-future-trends-ai-governance-nist-eu-ai-act.md) | `low_risk` |
+| X7 | Standards anchors are usable but bounded: GtWR is now official-presentation grade, 29148 remains scope/catalog grade. Clause-level or verbatim rule claims must carry full-text-pending labels. | [`../_reference/00-shared-incose-gtwr-v4-summary.md`](../_reference/00-shared-incose-gtwr-v4-summary.md), [`../_reference/00-shared-iso-iec-ieee-29148-2018.md`](../_reference/00-shared-iso-iec-ieee-29148-2018.md) | `explicit_residual_risk` |
+| X8 | The final selection matrix must separate evidence strength from pedagogical usefulness. The room/blueprint metaphor is useful but not evidence; numeric vendor claims remain weak unless independently upgraded. | [`W2-claims-audit-v2.md`](W2-claims-audit-v2.md), [`../claims-audit.md`](../claims-audit.md) | `low_risk_if_labeled` |
+| X9 | AI-era requirement artifacts should be layered: Story for intent, EARS for behavior boundaries, Examples/Gherkin for confirmation, agent files for navigation/context, and feature specs for executable work packages. | [`02-user-story-evidence-summary.md`](02-user-story-evidence-summary.md), [`03-ears-evidence-summary.md`](03-ears-evidence-summary.md), [`05-integration-bdd-evidence-summary.md`](05-integration-bdd-evidence-summary.md), [`06-agent-format-evidence-summary.md`](06-agent-format-evidence-summary.md) | `low_risk_as_architecture; medium_risk_as_universal_recommendation` |
+
+## Final Labels By Claim Type
+
+| claim type | closed-round label | examples |
+| --- | --- | --- |
+| hard fact | `directly_supported_by_local_ac` | OMG SysML v2 official adoption and requirements modeling; Kiro / Spec Kit feature workflow existence; Amp switch to `AGENTS.md` |
+| analysis judgment | `supported_inference` | Story / EARS / BDD / agent files are complementary layers rather than competitors |
+| trend inference | `trend_signal_not_census` | Spec-driven development and AGENTS.md convergence are visible tool-chain trends but not mature adoption census |
+| residual risk | `defer_or_label` | GtWR full PDF, 29148 clause text, EARS SaaS empirical evidence, EARS-inclusive same-project Story/DMN/Gherkin governance, formal cross-tool conformance suite, broader multimodal maturity beyond hosted cases, non-defense industrial maturity beyond metadata-grade signal |
+
+## Conflict Register
+
+| conflict | current handling |
+| --- | --- |
+| `User Story embraces ambiguity` vs `GtWR/EARS reduces ambiguity` | Treat as layer difference, not winner-takes-all competition |
+| `Spec-driven workflows are promising` vs `hard-to-review elaborate specs are a risk` | Preserve both signals; do not overstate adoption maturity |
+| `AGENTS.md as fact-standard` vs `cross-tool semantic differences` | Amp and OpenSpec strengthen adoption/workflow convergence evidence; Cline/Continue/Aider docs show semantic divergence in rule loading and precedence; AGENTbench shows multi-agent context-file effects; Umans AI gives same-repo practical rule-following differences; OctoBench adds formal scaffold-aware compliance benchmarking; still none of these is exact `AGENTS.md` semantic conformance |
+| `GtWR/29148 official anchor` vs `full text paywall` | Use official presentation/catalog-level anchors with explicit residual-risk notes |
+| `SysML v2 official model layer` vs `tool/adoption maturity` | Treat OMG + DoD guidance + Collins industrial signal as official positioning / transition / defense-industry support; defer broader multi-industry maturity to a later evidence pass |
+
+## Deferred Gap Register
+
+| gap | status for this round | next action if continuing |
+| --- | --- | --- |
+| Cockburn / Beck story origins and boundary taxonomy | `deferred_nonblocking` | Story Smells direct preview, publisher-level taxonomy, one-smell discussion-level support, practice-facing multi-problem taxonomy, and Seb Rose Beck/BDD origin-boundary article are landed; next upgrade is Chapter 14 full discussion or Beck verbatim full-text material |
+| EARS SaaS empirical evidence | `deferred_nonblocking` | Software-scope guidance is landed; next upgrade is a non-safety software / SaaS case, not basic applicability proof |
+| Decision-table / DMN same-project governance case | `deferred_nonblocking` | FlowForge now supports same-prototype Story / DMN / Gherkin linkage and ISTQB supports acceptance-governance framework; next upgrade is EARS-inclusive or high-compliance same-project governance, not basic DMN/Gherkin connection |
+| Multimodal / graph requirements | `deferred_nonblocking` | Graph axis now has RE + enterprise + broader product-development cases, and multimodal axis has official workflow signals plus hosted outcome, independent study, enterprise benchmark, independent adoption census, and Figma/Findable named deployment case; next upgrade is independently verified production outcome |
+| Cross-tool semantic consistency | `deferred_nonblocking` | OpenSpec provides a direct workflow/config comparison anchor, Cline/Continue/Aider docs show semantic divergence, Zhang et al. 2026 gives rule-effect/failure evidence, Gloaguen et al. 2026 gives multi-agent context-file evaluation, Umans AI gives same-repo practical cross-tool instruction-following evidence, and OctoBench gives a formal scaffold-aware coding compliance benchmark; next upgrade remains an exact cross-tool `AGENTS.md` semantic conformance suite |
+| SysML v2 broad industrial adoption maturity | `deferred_nonblocking` | Tool ecosystem, DoD transition guidance, Collins industrial signal, INCOSE automotive metadata, INCOSE/OMG end-user-org participation, and Productive4.0 validation use-case are now landed; next upgrade is production/outcome evidence beyond validation/prototype signal |

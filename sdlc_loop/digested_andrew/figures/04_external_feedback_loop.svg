@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      text { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .title { font-size: 22px; font-weight: 700; fill: #1a1a2e; text-anchor: middle; }
+      .subtitle { font-size: 13px; fill: #666; text-anchor: middle; }
+      .box-title { font-size: 15px; font-weight: 700; fill: #fff; text-anchor: middle; }
+      .box-desc { font-size: 12px; fill: rgba(255,255,255,0.9); text-anchor: middle; }
+      .channel-label { font-size: 13px; font-weight: 700; fill: #2e7d32; text-anchor: middle; }
+    </style>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 Z" fill="#4caf50"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 Z" fill="#1976d2"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="35" class="title">Loop 3 · 外部反馈循环</text>
+  <text x="400" y="58" class="subtitle">把真实用户带进来 — 修正方向，不让 AI 在错误道路上越跑越快</text>
+
+  <!-- Three feedback channels -->
+  <rect x="40" y="90" width="200" height="110" rx="10" fill="#43a047"/>
+  <text x="140" y="125" class="box-title">👥 朋友试用</text>
+  <text x="140" y="150" class="box-desc">找几个人体验</text>
+  <text x="140" y="170" class="box-desc">快速非正式反馈</text>
+  <text x="140" y="190" class="box-desc">⏱ 几小时</text>
+
+  <rect x="300" y="90" width="200" height="110" rx="10" fill="#2e7d32"/>
+  <text x="400" y="125" class="box-title">🧪 Alpha 测试</text>
+  <text x="400" y="150" class="box-desc">发布给早期用户</text>
+  <text x="400" y="170" class="box-desc">结构化收集反馈</text>
+  <text x="400" y="190" class="box-desc">⏱ 几天</text>
+
+  <rect x="560" y="90" width="200" height="110" rx="10" fill="#1b5e20"/>
+  <text x="660" y="125" class="box-title">📊 A/B 测试</text>
+  <text x="660" y="150" class="box-desc">生产环境实验</text>
+  <text x="660" y="170" class="box-desc">数据驱动决策</text>
+  <text x="660" y="190" class="box-desc">⏱ 几天到几周</text>
+
+  <!-- Arrows converging -->
+  <line x1="140" y1="200" x2="350" y2="300" stroke="#4caf50" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <line x1="400" y1="200" x2="400" y2="300" stroke="#4caf50" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <line x1="660" y1="200" x2="450" y2="300" stroke="#4caf50" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Convergence point -->
+  <rect x="300" y="305" width="200" height="55" rx="10" fill="#ff9800"/>
+  <text x="400" y="328" class="box-title">📋 汇聚分析</text>
+  <text x="400" y="350" class="box-desc">AI 辅助汇总 + 人类判断方向</text>
+
+  <!-- Downward flow -->
+  <line x1="400" y1="360" x2="400" y2="420" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Impact chain -->
+  <rect x="100" y="425" width="160" height="50" rx="8" fill="#1565c0"/>
+  <text x="180" y="448" class="box-title">📍 修正产品愿景</text>
+  <text x="180" y="465" class="box-desc">Developer Vision</text>
+
+  <text x="280" y="455" font-size="24" fill="#333" text-anchor="middle">→</text>
+
+  <rect x="300" y="425" width="160" height="50" rx="8" fill="#1976d2"/>
+  <text x="380" y="448" class="box-title">📐 修正详细 Spec</text>
+  <text x="380" y="465" class="box-desc">Product Spec</text>
+
+  <text x="480" y="455" font-size="24" fill="#333" text-anchor="middle">→</text>
+
+  <rect x="500" y="425" width="160" height="50" rx="8" fill="#2196f3"/>
+  <text x="580" y="448" class="box-title">🤖 驱动 AI Agent</text>
+  <text x="580" y="465" class="box-desc">重新执行 Loop 1</text>
+
+  <!-- Warning box -->
+  <rect x="80" y="510" width="640" height="60" rx="8" fill="#fff3e0" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="400" y="535" font-size="14" font-weight="700" fill="#e65100" text-anchor="middle">⚠️ 关键平衡</text>
+  <text x="400" y="558" font-size="13" fill="#333" text-anchor="middle">只追 Loop 1 → 快速做出一堆没人要的功能 · 只等外部反馈 → 丧失 AI 加速的迭代优势</text>
+</svg>

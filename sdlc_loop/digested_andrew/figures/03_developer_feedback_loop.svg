@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      text { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .title { font-size: 22px; font-weight: 700; fill: #1a1a2e; text-anchor: middle; }
+      .subtitle { font-size: 13px; fill: #666; text-anchor: middle; }
+      .step-num { font-size: 20px; font-weight: 700; fill: #fff; text-anchor: middle; }
+      .step-title { font-size: 15px; font-weight: 700; fill: #e65100; text-anchor: middle; }
+      .step-desc { font-size: 12px; fill: #555; text-anchor: middle; }
+      .insight { font-size: 13px; fill: #333; }
+    </style>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 Z" fill="#ff9800"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="35" class="title">Loop 2 · 开发者反馈循环</text>
+  <text x="400" y="58" class="subtitle">人从 QA 升级为产品判断者 — 决定"做什么"而非"怎么做"</text>
+
+  <!-- Left side: Old way -->
+  <rect x="30" y="80" width="340" height="200" rx="10" fill="#fbe9e7" stroke="#e53935" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="200" y="108" font-size="16" font-weight="700" fill="#e53935" text-anchor="middle">❌ 去年的方式</text>
+
+  <rect x="60" y="125" width="130" height="40" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="125" y="150" font-size="13" fill="#333" text-anchor="middle">🔍 手动找 Bug</text>
+
+  <rect x="210" y="125" width="130" height="40" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="275" y="150" font-size="13" fill="#333" text-anchor="middle">📝 告诉 AI 修</text>
+
+  <rect x="60" y="180" width="130" height="40" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="125" y="205" font-size="13" fill="#333" text-anchor="middle">🔄 再测一遍</text>
+
+  <rect x="210" y="180" width="130" height="40" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="275" y="205" font-size="13" fill="#333" text-anchor="middle">⏳ 反复循环</text>
+
+  <text x="200" y="260" font-size="12" fill="#999" text-anchor="middle">人 = QA 质检员</text>
+
+  <!-- Arrow: Old → New -->
+  <line x1="370" y1="180" x2="430" y2="180" stroke="#333" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="400" y="170" font-size="22" font-weight="700" fill="#333" text-anchor="middle">→</text>
+
+  <!-- Right side: New way -->
+  <rect x="430" y="80" width="350" height="200" rx="10" fill="#e8f5e9" stroke="#43a047" stroke-width="1"/>
+  <text x="605" y="108" font-size="16" font-weight="700" fill="#2e7d32" text-anchor="middle">✅ 现在的方式</text>
+
+  <rect x="460" y="125" width="140" height="40" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="530" y="150" font-size="13" fill="#333" text-anchor="middle">👀 审查产品体验</text>
+
+  <rect x="615" y="125" width="140" height="40" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="685" y="150" font-size="13" fill="#333" text-anchor="middle">🎯 决定功能取舍</text>
+
+  <rect x="460" y="180" width="140" height="40" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="530" y="205" font-size="13" fill="#333" text-anchor="middle">🎨 调整 UI/UX</text>
+
+  <rect x="615" y="180" width="140" height="40" rx="6" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="685" y="205" font-size="13" fill="#333" text-anchor="middle">📐 更新 Spec</text>
+
+  <text x="605" y="260" font-size="12" fill="#999" text-anchor="middle">人 = 产品决策者</text>
+
+  <!-- The developer loop cycle -->
+  <text x="400" y="320" font-size="16" font-weight="700" fill="#e65100" text-anchor="middle">开发者反馈循环的工作流</text>
+
+  <!-- Cycle: 4 steps around a circle -->
+  <!-- Step 1 -->
+  <circle cx="250" cy="410" r="35" fill="#ff9800"/>
+  <text x="250" y="405" class="step-num">1</text>
+  <text x="250" y="425" font-size="11" fill="#fff" text-anchor="middle">查看产品</text>
+
+  <!-- Arrow -->
+  <line x1="285" y1="410" x2="325" y2="410" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 2 -->
+  <circle cx="400" cy="410" r="35" fill="#ff9800"/>
+  <text x="400" y="405" class="step-num">2</text>
+  <text x="400" y="425" font-size="11" fill="#fff" text-anchor="middle">给反馈/方向</text>
+
+  <!-- Arrow -->
+  <line x1="435" y1="410" x2="475" y2="410" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 3 -->
+  <circle cx="550" cy="410" r="35" fill="#ff9800"/>
+  <text x="550" y="405" class="step-num">3</text>
+  <text x="550" y="425" font-size="11" fill="#fff" text-anchor="middle">更新 Spec</text>
+
+  <!-- Arrow going back to step 1 -->
+  <path d="M 550 445 Q 550 500 400 500 Q 250 500 250 455" fill="none" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 4 (below) -->
+  <circle cx="400" cy="500" r="35" fill="#ff9800"/>
+  <text x="400" y="495" class="step-num">4</text>
+  <text x="400" y="515" font-size="11" fill="#fff" text-anchor="middle">AI 重新执行</text>
+
+  <text x="400" y="560" font-size="12" fill="#ff9800" font-weight="700" text-anchor="middle">⟳ 每几十分钟到几小时循环一轮</text>
+</svg>
