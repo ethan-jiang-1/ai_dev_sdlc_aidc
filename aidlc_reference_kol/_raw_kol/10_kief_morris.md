@@ -17,7 +17,7 @@ key_concepts:
 ---
 # Kief Morris — "不要修产物，修 Harness"
 
-> ThoughtWorks Distinguished Engineer（15 年），O'Reilly *Infrastructure as Code* 三版作者。在 Martin Fowler 网站发表 *Humans and Agents in Software Engineering Loops* (2026/03)——"in the loop → on the loop" 框架已被 Böckeler、Fowler、Lopopolo 广泛引用。PlatformCon 2026 主题演讲嘉宾。
+> ThoughtWorks Distinguished Engineer（15 年），O'Reilly *Infrastructure as Code* 三版作者。在 Martin Fowler 网站发表 *Humans and Agents in Software Engineering Loops* (2026/03)，提出 "in the loop → on the loop" 框架。PlatformCon 2026 主题演讲嘉宾。
 
 ---
 
@@ -36,7 +36,7 @@ Morris 的故事比大多数 KOL 更有"实战感"：
 
 ## IaC 到 AI Harness——独特的桥梁视角
 
-Morris 是极少数**同时拥有深厚基础设施自动化和 AI 编码 Agent 经验**的人。他的 *Infrastructure as Code* 第三版恰好于 2025 年 3 月出版——正是 Claude Code 发布、agentic coding 开始炸裂的时间点。
+Morris 是极少数**同时拥有深厚基础设施自动化和 AI 编码 Agent 经验**的人。他的 *Infrastructure as Code* 第三版恰好于 2025 年 3 月出版。
 
 这个时间巧合让 Morris 成为**最早注意到 AI Agent 讨论在重复 IaC 教训的人**：
 

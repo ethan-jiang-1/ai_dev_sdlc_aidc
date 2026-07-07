@@ -108,7 +108,7 @@ Cherny 的观点不是孤立的——Big Tech 正在跟进：
 尽管极其大胆的修辞，Cherny 有重要的自我限定：
 
 1. **他审查 Claude 产出的每一行。** *"我不认为我们已经到了可以完全撒手的程度。"*
-2. Anthropic 自己的报告显示：工程师 ~60% 时间使用 AI，但**完全委托的任务只有 0-20%**
+2. [Anthropic 2026 Agentic Coding Trends Report](https://claude.com/blog/eight-trends-defining-how-software-gets-built-in-2026) 显示：工程师 ~60% 时间使用 AI，但**完全委托的任务只有 0-20%**
 3. CEO Dario Amodei 称此为**"半人马阶段"**——人类+AI 共同操作，在 AI 超越之前的短暂窗口
 4. **"解决"是个人的。** Cherny 说编码对**他**和**他的 TypeScript/React 技术栈**解决了。嵌入式系统、HFT、工业控制代码不是他的范围
 5. **设计尚未触及。** 视觉和空间推理仍然是人类领域

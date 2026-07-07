@@ -16,7 +16,7 @@ key_concepts:
 ---
 # Gergely Orosz — "代码量爆炸，工程基本功反而更重要了"
 
-> *The Pragmatic Engineer* 作者，Pragmatic Summit 主办者。2026 年 1 月的万字长文 *"What Happens to Software Engineering When AI Writes Almost All the Code"* 被广泛认为是 AI 时代软件工程最全面的预测之一。采访了 Kent Beck、Martin Fowler、Simon Willison。900+ 工程师调查。
+> *The Pragmatic Engineer* 作者，Pragmatic Summit 主办者。2026 年 1 月发表万字长文 *"What Happens to Software Engineering When AI Writes Almost All the Code"*，采访了 Kent Beck、Martin Fowler、Simon Willison，基于 900+ 工程师调查。
 
 ---
 
@@ -131,7 +131,7 @@ Claude Code 在发布仅 8 个月后飙升到 #1：
 
 > *"There's also a sense of loss. I'm coming to terms with the likely reality that from now on, most code I push to production will be written by AI. Something precious is being taken away, and suddenly."*
 
-最后这句话可能是 2026 年最诚实的工程师情感表达。不是在讨论生产力、效率、工具——而是在讨论**失去**。
+不是在讨论生产力、效率、工具——而是在讨论**失去**。
 
 ---
 

@@ -45,7 +45,7 @@ Tacho 称之为 **"失望鸿沟（Disappointment Gap）"**——AI hype 的头�
 
 ## "AI 是放大器"——最核心的发现
 
-这是 Tacho 被 Beck、Fowler、Farley 反复引用的论断：
+Tacho 的核心发现：
 
 | 组织类型 | AI 的影响 |
 |---------|---------|

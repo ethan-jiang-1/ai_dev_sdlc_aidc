@@ -19,7 +19,7 @@ key_concepts:
 # ThoughtWorks — 从技术雷达看 AI-SDLC 演化
 
 > ThoughtWorks 是过去 20 年对 SDLC 实践影响最深远的咨询公司之一。它的 Technology Radar 被全球 CTO 视为技术选型的风向标。
-> 2025-2026 连续两期雷达以 AI 辅助开发为核心主题，标志着一个历史性转折。
+> 2025-2026 连续两期雷达以 AI 辅助开发为核心主题。
 
 ---
 

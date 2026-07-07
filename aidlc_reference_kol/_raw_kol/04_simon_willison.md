@@ -54,6 +54,8 @@ Willison 现在可以为一个功能 prototype **三种不同的 UI 方案**，�
 | 审查时间 | **+91%** |
 | Bug 率 | **+9%** |
 
+> 数据来源：[DORA 2025 Report](https://www.zdnet.com/article/ai-magnifies-your-teams-strengths-and-weaknesses-google-report-finds/)（Google Cloud，~5,000 名技术专业人士调查）
+
 > *"Code review pipelines can't absorb 10x throughput."*
 
 ### 新的质量信号

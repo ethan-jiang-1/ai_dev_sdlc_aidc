@@ -27,9 +27,9 @@ critique:
 
 ---
 
-## 为什么这是 Retreat 最核心的问题
+## 为什么这是 Retreat 的重要议题
 
-据多个来源确认，"Where Does the Rigor Go?" 是 Deer Valley Retreat 讨论时间最长、投入精力最多的议题。
+据参会者博客，"Where Does the Rigor Go?" 是 Deer Valley Retreat 讨论最投入的议题之一。
 
 Chad Fowler 的框架：
 
