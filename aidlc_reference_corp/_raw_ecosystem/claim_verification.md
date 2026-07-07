@@ -34,8 +34,8 @@ The blog post itself provides no independent evidence that the SDLC has been red
 - **CodeScene benchmarks**: Unguided agents default to shallow, safe refactorings (54,094 variable renames vs. only 7,550 structural refactors)
 
 #### Faster Onboarding
-- **METR randomized controlled trial**: Experienced OSS developers were 19% **slower** with AI assistance on familiar repos — "participants thought they would be faster but were not"
-- **Science journal study** (across 160K developers, 30M commits): Only 3.6% productivity gain overall. "No statistically significant benefit" for early-career developers — the group that would benefit most from onboarding acceleration
+- **[METR randomized controlled trial](https://alexlieberman.com/the-repositioning-gap-what-dario-amodeis-interview-means-for-your-business/)**: Experienced OSS developers were 19% **slower** with AI assistance on familiar repos — "participants thought they would be faster but were not"
+- **Science journal study** (across 160K developers, 30M commits, [S&P Global 调查](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/)): Only 3.6% productivity gain overall. "No statistically significant benefit" for early-career developers
 - **"AI-generated legacy code" concern**: Code minutes old but functionally legacy because no human understands it — onboarding may be superficially faster but comprehension is worse
 
 #### Incident Response
