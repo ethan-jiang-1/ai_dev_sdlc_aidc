@@ -13,7 +13,7 @@ The concept of AIDLC (AI Development Life Cycle) is being actively promoted by a
 - **Key Contribution:** Most formalized methodology; three-phase model (Inception → Construction → Operations); "Bolt" cadence replacing sprints; Mob Elaboration/Mob Construction rituals; open-sourced workflows on GitHub (awslabs/aidlc-workflows)
 - **Product:** Amazon Q Developer; Kiro internal AI assistant
 - **Chinese-language promotion:** AWS China blog published "Apache SeaTunnel AIDLC Methodology Practice" case study
-- **Claimed Results:** AWS 营销材料声称 10-15x 生产力提升、40-60% 缺陷降低、300-500% ROI——目前无独立第三方验证
+- **Claimed Results:** [AWS DevOps Blog](https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/) 声称基于 100+ 客户实验：10-15x 生产力提升、40-60% 缺陷降低、300-500% ROI——目前无独立第三方验证
 
 **AI-DLC 核心架构：**
 
@@ -40,7 +40,7 @@ The concept of AIDLC (AI Development Life Cycle) is being actively promoted by a
 - **Framework:** ADLC (Agentic Development Lifecycle)
 - **Key Contribution:** Focus on lifecycle management for AI Agents themselves; unveiled at Google Cloud Next 2026
 - **Products:** Gemini, Gemini Code Assist, Android Studio AI integration
-- **Strategic moves:** Acquired Windsurf for $2.4B; Logan Kilpatrick as head of AI Studio driving developer community engagement
+- **Strategic moves:** [$2.4B 非独占技术许可+人才引入](https://techcrunch.com/2025/07/11/windsurfs-ceo-goes-to-google-openais-acquisition-falls-apart/) Windsurf 核心团队（非收购）；Logan Kilpatrick 领导 AI Studio 推动开发者社区
 
 ### Microsoft / GitHub
 - **Framework:** Agentic DevOps + Spec-Driven Development
@@ -118,8 +118,8 @@ The concept of AIDLC (AI Development Life Cycle) is being actively promoted by a
   - "Running an AI-Native Engineering Org" (June 2026)
   - "The Evolution of Agentic Surfaces: Building with Claude Managed Agents" (June 2026)
 - **Innovations:** "Dreaming" — batch async agent self-improvement via transcript analysis; claimed internal majority of code now produced by Claude Code
-- **Adoption:** Claude Code grew from 4% to 63% developer adoption in 9 months
-- **CEO:** Dario Amodei — publicly estimated AI coding productivity gains at ~15-20%
+- **Adoption:** Claude Code 占 GitHub 公开提交约 4% ([SemiAnalysis, 2026/02](https://officechai.com/ai/4-of-github-commits-are-now-made-by-claude-code-semianalysis-report/))；企业席位采用率 Q4 2025→Q1 2026 增长 3x ([Anthropic Eight Trends](https://claude.com/blog/eight-trends-defining-how-software-gets-built-in-2026))
+- **CEO:** Dario Amodei — 在 [Dwarkesh Patel 播客 (2026/02)](https://alexlieberman.com/the-repositioning-gap-what-dario-amodeis-interview-means-for-your-business/) 中估计 AI 编码生产力提升约 15-20%
 
 ### OpenAI
 - **Products:** GPT-5.4-Codex, Codex CLI, ChatGPT
@@ -152,7 +152,7 @@ The concept of AIDLC (AI Development Life Cycle) is being actively promoted by a
 
 ### Cognition / Devin
 - **Product:** First commercial "AI Software Engineer" (March 2024)
-- **Acquisitions:** Acquired Windsurf for $250M; later Google acquired Windsurf for $2.4B
+- **Acquisitions:** [Cognition 收购 Windsurf 资产 ~$250M](https://www.lw.com/en/news/latham-watkins-advises-cognition-in-acquisition-of-windsurf)（2025/07）；Google 并非收购 Windsurf，而是 $2.4B 非独占许可+核心人才引入
 
 ### Replit
 - **CEO:** Amjad Masad (459K X followers)
@@ -177,7 +177,7 @@ The concept of AIDLC (AI Development Life Cycle) is being actively promoted by a
 - **Audience:** Enterprise developers and architects in China
 
 ### Apache SeaTunnel
-- **Case Study:** Full AIDLC implementation on AWS; 3-4x acceleration; 70% AI-generated code; published on AWS China blog
+- **Case Study:** Full AIDLC implementation on AWS; [3-4x acceleration; 70% AI-generated code](https://aws.amazon.com/cn/blogs/china/apache-seatunnel-aidlc-practice/)
 
 ---
 
