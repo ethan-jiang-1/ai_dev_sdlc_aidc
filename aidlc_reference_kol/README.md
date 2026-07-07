@@ -20,7 +20,7 @@ research_date: 2026-07-08
 ```
 aidlc_reference_kol/
 ├── README.md                              ← 你在这里
-├── _raw_kol/                              ← 14 位影响力人物深度拆解
+├── _raw_kol/                              ← 12 位影响力人物深度拆解
 ├── _raw_frontier/                         ← 跨公司变革共识合成（7 人 + 3 深度研究）
 ├── _raw_fable5/                           ← Fable 5 模型变革信号合成（16 样本）
 ├── _raw_promatic_summit_2026/             ← Pragmatic Summit 2026（Beck+Fowler 同台）
@@ -105,7 +105,7 @@ aidlc_reference_kol/
 
 **源头特征**：一手事件报道 + 播客 transcript + 官方 newsletter。14 个验证 URL。
 
-**当前状态**：6 文件（5 session + 跨 session 主题 + README），全部有 frontmatter + verified URLs。
+**当前状态**：6 文件（4 session + 跨 session 主题 + README），全部有 frontmatter + verified URLs。
 
 ---
 
@@ -125,7 +125,7 @@ aidlc_reference_kol/
 
 **源头特征**：Fowler Fragments + Giles Edwards-Alexander 笔记 + 第三方总结。7 个验证 URL。
 
-**当前状态**：10 文件（5 概念深挖 + 4 实践/治理 + README），全部有 frontmatter + verified URLs。
+**当前状态**：9 文件（5 概念深挖 + 3 实践/治理 + README），全部有 frontmatter + verified URLs。
 
 ---
 

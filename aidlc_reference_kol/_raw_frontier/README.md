@@ -6,7 +6,7 @@ description: 跨公司（Anthropic/OpenAI/Cursor/Google）变革共识合成，�
 derived_from: ai_sdlc_frontier/
 people_count: 7
 research_pieces: 3
-files_indexed: 5
+files_indexed: 4
 research_date: 2026-07-07
 ---
 
@@ -158,12 +158,17 @@ ai_sdlc_frontier/
 ## 和相邻目录的关系
 
 ```
-aidlc/
-├── _raw_aws/          ← AWS 的 AI-DLC 方法论（三阶段、14-Node AgentCore）
-├── _raw_fable5/       ← Fable 5 具体模型引发的变革信号（16 个样本合成）
-├── _raw_frontier/     ← 你在这里。跨公司变革共识（7 人物 + 3 研究合成）
-├── _raw_kol/          ← 历史 KOL（Fowler、Farley 等）
-└── _raw_ecosystem/    ← 非 AWS 全景
+aidlc_reference_kol/       ← 人物与事件
+├── _raw_fable5/           ← Fable 5 变革信号（16 个样本合成）
+├── _raw_frontier/         ← 你在这里。跨公司变革共识（7 人物 + 3 研究）
+├── _raw_kol/              ← 影响力人物深度分析
+├── _raw_promatic_summit_2026/
+├── _raw_agile_manifesto_2026/
+└── _raw_engelberg_2026/
+
+aidlc_reference_corp/      ← 企业与生态
+├── _raw_aws/              ← AWS AI-DLC 方法论
+└── _raw_ecosystem/        ← 非 AWS 全景
 ```
 
 **`_raw_frontier` 和 `_raw_fable5` 的差别：**
@@ -190,7 +195,6 @@ aidlc/
 | 大局：四家公司达成了什么共识 | `01` §一~§三 | `01` §五（核心教训） |
 | 每个人到底怎么想的 | `02` §一~§七（选你感兴趣的人） | `02` §九（分歧） |
 | 我的团队现在有哪些流程该杀了 | `03` §十（死亡清单总表） | 按类别查 `03` §一~§九 |
-| 底层技术是怎么支撑这些变化的 | `04` §一~§四 | `04` §六（人的行为建议）、§八（与 AIDLC 映射） |
 | 这些说法有没有矛盾 | `02` §九（四个分歧） | `01` §三（变革烈度） |
-| 和 AWS AIDLC 什么关系 | `01` §四 | `04` §八 |
+| 和 AWS AIDLC 什么关系 | `01` §四 | — |
 | 我还想读原始材料 | 看本文件 §来源全量映射 | 去 `ai_sdlc_frontier/` 读对应 `要点总结.md` |
