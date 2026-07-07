@@ -68,11 +68,9 @@ Cherny 揭示了 Anthropic 内部 AI 使用的规模：
 
 Cherny 将编程工具的历史分为三个阶段：
 
-| 时代 | 做什么 | 时间 |
-|------|--------|------|
-| 静态分析 / 自动补全 | 确定性，不涉及 AI | 1990s–2000s |
-| Copilot 式行补全 | AI 写一行；人类仍在编码 | ~2021–2024 |
-| **完全 Agentic** | 模型做**全部**编码；人类描述意图 | 2025–现在 |
+| 时代 | 做什么 |
+|------|--------|
+| **完全 Agentic** | 模型做**全部**编码；人类描述意图 |
 
 > *"You have a model, and you give it tools, and then you give it some sort of context and a task to do. Then, it uses the tools to accomplish the task. It's different than ChatGPT, because it's not one-shot... it will keep going until it's done."*
 

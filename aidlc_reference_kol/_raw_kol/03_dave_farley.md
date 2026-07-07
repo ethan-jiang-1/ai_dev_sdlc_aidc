@@ -123,4 +123,4 @@ Farley 的核心判断：
 
 ---
 
-**Source:** [Aviator Podcast: Engineering Discipline in the AI Era with Dave Farley](https://www.aviator.co/podcast/engineering-discipline-dave-farley) · [GOTO 2025: The Most Important Programming Invention In 20 Years](https://devblogs.co/posts/the-most-important-programming-invention-in-20-years-dave-farley-goto-2025) · [LeadDev: Safe production changes with agents](https://leaddev.com/technical-direction/safe-production-changes-with-agents)
+**Source:** [Aviator Podcast: Engineering Discipline in the AI Era with Dave Farley](https://www.aviator.co/podcast/engineering-discipline-dave-farley) · [LeadDev: Safe production changes with agents](https://leaddev.com/technical-direction/safe-production-changes-with-agents)

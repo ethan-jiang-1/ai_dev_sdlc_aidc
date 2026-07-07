@@ -143,4 +143,4 @@ ThoughtWorks 不仅分析趋势——他们直接入场。AI/works™ 是一个 
 
 ---
 
-**Source:** [ThoughtWorks Technology Radar Vol.34](https://www.thoughtworks.com/en-cn/about-us/news/2026/combat-ai-cognitive-debt-radar-v34) · [Vol.33](https://www.thoughtworks.com/en-in/about-us/news/2025/thoughtworks-tech-radar-33-rapid-ai) · [AI/works™](https://www.thoughtworks.com/en-cn/about-us/news/2026/ai-works-heralds-new-era-of-agile-and-next-generation-software-development) · [TipRanks coverage](https://www.tipranks.com/news/private-companies/thoughtworks-flags-ai-driven-cognitive-debt-in-new-technology-radar-urges-disciplined-engineering-at-scale)
+**Source:** [ThoughtWorks Technology Radar Vol.34](https://www.thoughtworks.com/en-cn/about-us/news/2026/combat-ai-cognitive-debt-radar-v34) · [AI/works™](https://www.thoughtworks.com/en-cn/about-us/news/2026/ai-works-heralds-new-era-of-agile-and-next-generation-software-development) · [TipRanks coverage](https://www.tipranks.com/news/private-companies/thoughtworks-flags-ai-driven-cognitive-debt-in-new-technology-radar-urges-disciplined-engineering-at-scale)
