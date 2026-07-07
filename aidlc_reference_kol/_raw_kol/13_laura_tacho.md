@@ -75,7 +75,7 @@ Tacho 联合创建了被广泛采用的开发者生产力框架（统一了 DORA
 
 Block（Cash App / Square）用 Core 4 + DXI 发现了**每年 50 万小时**的浪费。
 
-Bookings.com 用 AI 工具后：**16% 吞吐量提升**——但只在已有强 DORA 基线的团队中。
+Booking.com 用 AI 工具后：**65% 更高采用率**，额外节省 15 万小时——但只在已有强 DORA 基线的团队中。([来源](https://getdx.com/blog/building-better-software-faster/))
 
 ---
 

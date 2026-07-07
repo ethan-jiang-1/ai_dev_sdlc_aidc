@@ -25,8 +25,7 @@ key_concepts:
 
 Morris 的故事比大多数 KOL 更有"实战感"：
 
-- **田纳西长大，佛罗里达起步**——1990 年代初在佛罗里达运营 BBS（拨号论坛），这是他第一个在线系统
-- **读计算机硕士的理由**——"这是获得真正互联网连接最简单的方式。"在田纳西大学 CS 系读硕期间加入系统管理团队，管理数百台多 Unix 变体机器
+- **田纳西出身**——[kief.com](https://kief.com) 自述"Originally from Tennessee"，已在伦敦生活近 30 年
 - **互联网泡沫时期搬到伦敦**——此后与妻子、儿子和猫一直住在那里
 - **加入 ThoughtWorks 约 15 年**——从 Cloud Practice Lead 到 Distinguished Engineer，历任 Developer、SysAdmin、R&D Manager、Technical Architect、Director of Cloud Engineering
 - **个人站点**: [kief.com](https://kief.com) · IaC 站点: [infrastructure-as-code.com](https://infrastructure-as-code.com)
