@@ -1,3 +1,17 @@
+---
+type: analysis
+content_type: opensource_deepdive
+directory: _raw_aws
+description: AWS AI-DLC 三个开源仓库的深度分析——从 Markdown 规则到全栈协作平台
+research_date: 2026-07-08
+verification_status: verified
+source_urls:
+  - https://github.com/awslabs/aidlc-workflows
+  - https://github.com/aws-samples/sample-ai-driven-development-lifecycle-platform
+  - https://github.com/aws-samples/sample-collaborative-ai-dlc
+  - https://catalog.us-east-1.prod.workshops.aws/workshops/99049ad5-14fa-4810-85ec-ac23173c9082/en-US
+---
+
 # AWS AI-DLC 开源实现深度分析
 
 > 三个互补的 GitHub 仓库构成了 AWS AI-DLC 的开源生态。从 Markdown 规则文件到全栈协作平台，逐层递进。

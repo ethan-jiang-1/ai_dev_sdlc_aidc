@@ -1,3 +1,17 @@
+---
+type: analysis
+content_type: architecture_visualization
+directory: _raw_aws
+description: AWS AI-DLC 14-Node AgentCore 平台架构与流程可视化
+research_date: 2026-07-08
+verification_status: verified
+source_urls:
+  - https://github.com/aws-samples/sample-ai-driven-development-lifecycle-platform
+  - https://github.com/awslabs/aidlc-workflows
+  - https://github.com/aws-samples/sample-collaborative-ai-dlc
+  - https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/
+---
+
 # AWS AI-DLC 平台架构与流程可视化
 
 ## 14-Node AgentCore 平台架构全景

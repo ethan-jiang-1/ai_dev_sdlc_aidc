@@ -265,7 +265,6 @@ Orosz 在 Substack 上发表了 *"The Future of Software Engineering with AI: Si
 - [Heavybit Podcast: Simon Willison](https://heavybit.com)
 - [Lenny's Podcast: Simon Willison (Apr 2026)](https://www.lennyspodcast.com)
 - [Dave Farley: Engineering Discipline in the AI Era](https://www.aviator.co/podcast/engineering-discipline-dave-farley)
-- [GOTO 2025: Dave Farley keynote](https://devblogs.co/posts/the-most-important-programming-invention-in-20-years-dave-farley-goto-2025)
 
 ---
 

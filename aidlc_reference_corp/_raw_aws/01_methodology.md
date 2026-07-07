@@ -1,3 +1,15 @@
+---
+type: analysis
+content_type: methodology_overview
+directory: _raw_aws
+description: AWS AI-DLC 三阶段模型、自适应执行、Bolt 节奏的核心方法论
+research_date: 2026-07-08
+verification_status: verified
+source_urls:
+  - https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/
+  - https://github.com/awslabs/aidlc-workflows
+---
+
 # AWS AI-DLC 方法论核心
 
 > AWS 是目前所有云厂商中 AIDLC 方法论最完整的推动者。三阶段模型、自适应执行、Bolt 节奏是它的核心创新。

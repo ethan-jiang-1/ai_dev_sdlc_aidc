@@ -1,3 +1,21 @@
+---
+type: analysis
+content_type: ecosystem_adoption
+directory: _raw_aws
+description: AWS AI-DLC 生态采用——第三方分析、出版书籍、开源社区
+research_date: 2026-07-08
+verification_status: verified
+source_urls:
+  - https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/
+  - https://aws.amazon.com/blogs/devops/building-with-ai-dlc-using-amazon-q-developer/
+  - https://aws.amazon.com/blogs/devops/open-sourcing-adaptive-workflows-for-ai-driven-development-life-cycle-ai-dlc/
+  - https://ttpsc.com/en/blog/how-aws-ai-dlc-defines-an-ai-native-methodology/
+  - https://eleks.com/blog/aws-ai-dlc-explained/
+  - https://brights.io/blog/ai-driven-development-life-cycle
+  - https://ijaidsml.org/index.php/ijaidsml/article/view/469
+  - https://catalog.us-east-1.prod.workshops.aws/workshops/99049ad5-14fa-4810-85ec-ac23173c9082/en-US
+---
+
 # AWS AI-DLC 生态与采用
 
 > 从 100+ 客户实验的量化数据、到 Wipro/Dhan 的实战案例、到 204 页的出版书籍——AI-DLC 已从方法论走向产业落地。

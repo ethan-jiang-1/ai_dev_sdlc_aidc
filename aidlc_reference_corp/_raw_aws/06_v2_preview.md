@@ -1,3 +1,15 @@
+---
+type: analysis
+content_type: version_preview
+directory: _raw_aws
+description: AWS AI-DLC v2 Preview 深度拆解——5阶段32Stage、11 Agent、9范围、68审计事件
+research_date: 2026-07-08
+verification_status: verified
+source_urls:
+  - https://github.com/awslabs/aidlc-workflows/tree/v2
+  - https://github.com/awslabs/aidlc-workflows/tree/v2/assets
+---
+
 # AWS AI-DLC v2 Preview 深度拆解
 
 > v2 是一个**完全重写**——从 Markdown 规则文件进化为原生 harness 实现。5 阶段 32 Stage、11 个领域专家 Agent、9 个自适应范围、68 事件审计追踪。

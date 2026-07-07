@@ -1,3 +1,14 @@
+---
+type: analysis
+content_type: third_party_review
+directory: _raw_aws
+description: TT PSC（波兰技术服务公司）对 AWS AI-DLC 的第三方深度拆解
+research_date: 2026-07-08
+verification_status: verified
+source_urls:
+  - https://ttpsc.com/en/blog/how-aws-ai-dlc-defines-an-ai-native-methodology/
+---
+
 # TT PSC 第三方分析：AWS AI-DLC 深度拆解
 
 > TT PSC 是波兰一家技术服务公司，对 AWS AI-DLC 做了最详尽的第三方拆解分析。以下图表来自其 2026 年 6 月的博文。
