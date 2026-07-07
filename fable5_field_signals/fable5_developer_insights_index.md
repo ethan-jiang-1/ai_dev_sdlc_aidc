@@ -1,153 +1,98 @@
-# Fable 5 洞察总览
+# Fable 5 洞察地图
 
-> 这份文档不再做目录清单。
-> 它只回答一个问题：看完当前这些样本以后，最值得先抓住的结论是什么。
-> 如果你是第一次进这个目录，请先看 `README.md`。
+> 这不是目录清单，也不是维护计划。
+> 它是一张一页地图：谁在用 Fable 5，他们各自贡献了什么 insight，你该先看谁。
+> 如果你第一次进这个目录，先看这张图，再决定要不要点进具体目录。
 
 ---
 
-## 先说结论
+## 一眼先抓住
 
-### 1. Fable 5 不是“默认模型”，而是“可委托长任务模型”
+- `Fable 5` 最突出的定位，不是通用默认模型，而是更适合被委托去跑长任务、复杂任务和整段工作流。
+- 它真正拉开差距的地方，不只是写代码，而是会自己推进、自己验证、自己补工具动作。
+- 真正的阻力也很清楚：成本、延迟、NDA、数据保留、同意、fallback，这些都会决定它能不能落地。
+- 同一个组织里，不同角色会把 Fable 放在完全不同的位置，说明“怎么安放它”比“要不要用它”更重要。
+- 强模型时代，人越来越像 brief、review、sign-off 的人，而不是每一步都手动驾驶的人。
 
-当前样本里，最稳定的共识不是“什么都用 Fable”，而是：
+---
 
-- 大任务
-- 长任务
-- 复杂任务
-- 可委托任务
+## 人物与洞察总表
 
-更适合 Fable 5。
+这列里的“来源分量”不是绝对真伪评级，而是帮你先判断：这是厂商内部、一线产品团队、头部观察者，还是普通外部实测。
 
-代表样本：
+| 最值得抓住的 insight | 关键词 | 角色 / 位置 | 来源分量 | 来源 |
+| --- | --- | --- | --- | --- |
+| Fable 可以接住长任务式知识工作和增长实验，不只是补代码片段 | 长任务 / 委托 / 应用落地 | 应用团队 / 增长 | 一线应用团队 | `run_every_austin_tedesco/` |
+| 强模型适合放进 `AI sandwich` 的中间执行层，人负责上下文和验收 | AI sandwich / 分工 / 协作 | builder / workflow 设计 | 一线应用团队 | `run_every_kieran_klaassen/` |
+| 复杂坏工作流要靠清楚的目标、上下文和 definition of done 才救得回来 | workflow 修复 / 上下文 / 执行 | Applied AI 工程 | 一线应用团队 | `run_every_nityesh_agarwal/` |
+| 实际采用看的是 trade-off 和协作舒适度，不是只看 benchmark 榜单 | trade-off / 采用决策 / 协作感 | 平台 / builder | 一线应用团队 | `run_every_willie_williams/` |
+| 一碰到 NDA 和客户机密，强模型就不能无脑接手，边界管理变成主问题 | NDA / 保密 / 治理边界 | 咨询 / 客户交付 | 一线应用团队 | `run_every_mike_taylor/` |
+| Fable 的区别在主动调试、主动验证和持续推进，但透明性与干预边界也更敏感 | debugging / verification / 风险 | 独立开发者 / 外部观察 | 头部外部观察者 | `run_datasette_simon_willison/` |
+| Fable 可以直接拿去做安全审计和 UX 审计，说明它开始能承担更完整的专业任务块 | audit / security / UX | 外部实测者 | 中腰部实干者 | `run_generativeai_net_martin_musiol/` |
+| 多 prompt 实测能看出 Fable 在复杂任务里更主动，但也更需要明确约束与观察 | prompt 实测 / 主动性 / 控制 | 外部实测者 | 普通外部实测 | `run_digital_life_khazix/` |
+| 强的地方不是文采，而是会自己测、自己加日志、自己验证修复 | self-verification / tools / debugging | 模型侧工程 | 厂商内部一线 | `run_anthropic_boris_cherny/` |
+| Fable 开始能接 whole projects 的一大段，人更像委托、评审和拍板的人 | whole projects / 委托 / 角色变化 | 产品负责人 | 厂商内部一线 | `run_anthropic_mike_krieger/` |
+| 真正稀缺的变成 `unknowns`、上下文组织方式和如何让模型帮你发现盲区 | unknowns / context / 方法论 | 方法论 / field guide | 厂商内部方法论 | `run_anthropic_thariq_shihipar/` |
+| agent 工作流会反过来改变团队制度，形成 brief-review-signoff 的工作方式 | agent 制度 / review / sign-off | 工程制度设计 | 头部实践者 | `run_superpowers_jesse_vincent/` |
+| 人机关系正在从“操作者”转向“委托人”，工作的重心变成给目标、看结果、负责任 | patron 模式 / 人机角色 / 委托 | 教学 / 观察者 | 头部观察者 | `run_wharton_ethan_mollick/` |
+| 产品化落地时最难的不是接 API，而是 consent、retention、fallback 和用户信任 | 产品化 / consent / fallback | 产品接入 / BYOK | 一线产品团队 | `run_zed_richard_feldman/` |
+| Fable 更像需要被外科式接入的能力，不是整套系统一把梭替换 | surgical adoption / rollout / review | 插件 / 工程接入 | 公开工程证据 | `run_mclayer_plugin_codeforge/` |
+| 产品经理关心的不是模型炫技，而是它在哪些任务里能真正改变 PM 的工作方式 | PM workflow / 角色迁移 / 使用边界 | PM 视角 | 领域实务作者 | `run_product_compass_pawel_huryn/` |
+
+---
+
+## 按问题看人
+
+### 如果你想看“谁真的在拿它干活”
+
+- `run_every_austin_tedesco/`
+- `run_every_kieran_klaassen/`
+- `run_every_nityesh_agarwal/`
+- `run_generativeai_net_martin_musiol/`
+- `run_anthropic_mike_krieger/`
+
+### 如果你想看“它为什么像长任务引擎”
 
 - `run_every_austin_tedesco/`
 - `run_every_kieran_klaassen/`
 - `run_anthropic_mike_krieger/`
+- `run_wharton_ethan_mollick/`
 
-### 2. 它真正拉开的差距，不只是写代码，而是会自己推进和验证
-
-很多外部样本反复提到的，不是“更会写”，而是：
-
-- 会自己测
-- 会自己加日志
-- 会自己验证修复
-- 会自己组合工具链
-
-代表样本：
+### 如果你想看“它为什么会自己推进和验证”
 
 - `run_datasette_simon_willison/`
 - `run_anthropic_boris_cherny/`
 - `run_generativeai_net_martin_musiol/`
+- `run_digital_life_khazix/`
 
-### 3. 代价和边界不是附属问题，而是主问题
-
-现在已经很清楚了：
-
-- token 成本
-- 延迟
-- NDA
-- 数据保留
-- silent intervention
-- refusal / fallback
-
-这些不是边角料，而是决定 Fable 5 能不能上线、能不能日用的关键变量。
-
-代表样本：
+### 如果你想看“边界和治理为什么是主问题”
 
 - `run_zed_richard_feldman/`
 - `run_every_mike_taylor/`
 - `run_every_willie_williams/`
 - `run_datasette_simon_willison/`
+- `run_mclayer_plugin_codeforge/`
 
-### 4. 组织里的不同角色，真的会把 Fable 放在不同位置
-
-`Every` 这一组样本已经说明：
-
-- 增长负责人会把它当 long-loop 执行器
-- builder 会把它放进 `AI sandwich` 的中间层
-- 平台负责人会更关心协作舒适度和 trade-off
-- 咨询负责人会先看保密边界
-- 应用 AI 工程师会把它拿去修复杂 workflow
-
-代表样本：
-
-- `run_every_austin_tedesco/`
-- `run_every_kieran_klaassen/`
-- `run_every_willie_williams/`
-- `run_every_mike_taylor/`
-- `run_every_nityesh_agarwal/`
-
-### 5. 强模型时代，人越来越像 brief、review、签字的人
-
-这组样本反复指向同一件事：
-
-- 人不再主要负责逐步驾驶
-- 人更像提出目标、补上下文、验收结果、承担责任的人
-
-代表样本：
+### 如果你想看“人和组织的角色怎么变了”
 
 - `run_wharton_ethan_mollick/`
 - `run_anthropic_thariq_shihipar/`
 - `run_superpowers_jesse_vincent/`
 - `run_anthropic_mike_krieger/`
 
-### 6. 这套库现在已经有 4 种比较清楚的样本类型
+---
 
-当前最清楚的 4 类是：
+## 只读 5 个
 
-- 组织角色样本
-- 第三方实测样本
-- 方法论样本
-- 治理 / 产品化样本
-
-这意味着这个目录已经开始可以做横向比较，而不只是收人名。
+- `run_every_austin_tedesco/`：看 Fable 怎样接住委托式长任务
+- `run_datasette_simon_willison/`：看主动 debugging、验证和风险边界
+- `run_zed_richard_feldman/`：看产品化落地时的 consent、retention 和 fallback
+- `run_superpowers_jesse_vincent/`：看工程制度怎样被 agent workflow 重写
+- `run_anthropic_thariq_shihipar/`：看强模型时代的方法论核心为什么变成 `unknowns`
 
 ---
 
-## 当前最值得先读的样本
+## 这张图说明了什么
 
-### 如果你只能读 5 个
-
-- `run_every_austin_tedesco/`
-  - 看 Fable 5 怎样接住长任务和委托式知识工作
-- `run_datasette_simon_willison/`
-  - 看行为证据、风险边界和政策回滚
-- `run_zed_richard_feldman/`
-  - 看产品化落地时的 consent、retention 和 fallback
-- `run_superpowers_jesse_vincent/`
-  - 看工程制度怎样被 agent 化
-- `run_wharton_ethan_mollick/`
-  - 看人机关系怎么变
-
-### 如果你想看“应用公司怎么用”
-
-- `run_every_austin_tedesco/`
-- `run_every_kieran_klaassen/`
-- `run_every_nityesh_agarwal/`
-- `run_every_willie_williams/`
-- `run_every_mike_taylor/`
-
-### 如果你想看“外部人第一次被打疼的地方”
-
-- `run_datasette_simon_willison/`
-- `run_generativeai_net_martin_musiol/`
-- `run_digital_life_khazix/`
-
-### 如果你想看“工程治理和制度”
-
-- `run_superpowers_jesse_vincent/`
-- `run_mclayer_plugin_codeforge/`
-- `run_zed_richard_feldman/`
-
----
-
-## 当前还缺什么
-
-这套库已经有样本，但还缺几类更成体系的总结：
-
-- 一份横向比较：哪些人把 Fable 用在长任务，哪些人用在修复 / review / 审计
-- 一份边界比较：哪些团队因为成本、延迟、保密、同意而只部分使用
-- 一份角色比较：增长、咨询、平台、Applied AI、独立开发者分别怎么安放 Fable
-
-换句话说，人物样本已经开始够了，下一步会越来越适合沉成模式总结。
+- 这套库现在已经不只是“谁夸过 Fable 5”，而是能横向比较不同角色、不同任务、不同边界条件下的真实使用方式。
+- 读这套库最好的方法，不是按目录顺序点进去，而是先确定你要看哪类问题，再顺着这张图反查样本。

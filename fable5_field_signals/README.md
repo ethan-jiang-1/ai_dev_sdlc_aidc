@@ -12,8 +12,15 @@
 先按下面这条路读：
 
 1. 先看 `fable5_developer_insights_index.md`
-2. 再按你的兴趣选 3 到 5 个样本目录
-3. 每个目录先看 `profile.md`，再看 `quotes.md`，最后看 `raw_*.md`
+2. 先在那张图里找到你关心的问题和对应的人
+3. 再去点具体样本目录
+
+这张图现在负责回答 4 件事：
+
+- 谁真的在用 `Fable 5`
+- 他们各自贡献了什么最值钱的 insight
+- 哪些主题已经可以横向比较
+- 如果你只读 3 到 5 个样本，最该先读谁
 
 如果你只想先抓感觉，推荐从这 6 条线开始：
 
@@ -30,73 +37,14 @@
 - `run_anthropic_thariq_shihipar/`
   - 看强模型时代为什么重点变成了 `unknowns`、上下文和协作方法
 
----
+## 先用这张图找方向
 
-## 这个库里现在有什么
+如果你不想自己归纳，直接按问题找：
 
-### 1. 组织角色样本
-
-这类样本最适合看同一组织里，不同角色怎么用 Fable 5。
-
-- `run_every_austin_tedesco/`
-- `run_every_kieran_klaassen/`
-- `run_every_mike_taylor/`
-- `run_every_nityesh_agarwal/`
-- `run_every_willie_williams/`
-
-这组样本合起来能看到：
-
-- 谁把 Fable 当长任务引擎
-- 谁把它放进 `AI sandwich` 的中间执行层
-- 谁更看重 benchmark，谁更看重迭代舒适度
-- 谁因为 NDA 和保密边界主动收手
-
-### 2. 第三方实测样本
-
-这类样本最适合看模型行为证据，不靠厂商自述。
-
-- `run_datasette_simon_willison/`
-- `run_generativeai_net_martin_musiol/`
-- `run_digital_life_khazix/`
-
-这组样本合起来能看到：
-
-- Fable 是否真的更主动
-- 它是不是更愿意测试和验证
-- 外部人第一次被打疼、被惊到的点到底是什么
-
-### 3. 方法论样本
-
-这类样本最适合看“人该怎么和强模型协作”。
-
-- `run_anthropic_thariq_shihipar/`
-- `run_superpowers_jesse_vincent/`
-- `run_wharton_ethan_mollick/`
-- `run_anthropic_boris_cherny/`
-- `run_anthropic_mike_krieger/`
-
-这组样本合起来能看到：
-
-- `unknowns` 为什么成了新瓶颈
-- 为什么 spec、verification、review 比写代码本身更稀缺
-- 为什么人越来越像 brief、验收和签字的人
-
-### 4. 治理与产品化样本
-
-这类样本最适合看边界，而不是看爽感。
-
-- `run_zed_richard_feldman/`
-- `run_mclayer_plugin_codeforge/`
-- `run_every_mike_taylor/`
-- `run_every_willie_williams/`
-- `run_datasette_simon_willison/`
-
-这组样本合起来能看到：
-
-- 数据保留和同意怎么卡住产品上线
-- fallback 和 refusal 怎么设计
-- 客户机密工作为什么不能无脑交给 Fable
-- silent intervention 为什么会破坏信任
+- 想看长任务和委托式工作：去看 `run_every_austin_tedesco/`、`run_every_kieran_klaassen/`、`run_anthropic_mike_krieger/`
+- 想看主动 debugging 和 self-verification：去看 `run_datasette_simon_willison/`、`run_anthropic_boris_cherny/`、`run_generativeai_net_martin_musiol/`
+- 想看治理、风险和产品边界：去看 `run_zed_richard_feldman/`、`run_every_mike_taylor/`、`run_mclayer_plugin_codeforge/`
+- 想看人的角色怎么变：去看 `run_wharton_ethan_mollick/`、`run_anthropic_thariq_shihipar/`、`run_superpowers_jesse_vincent/`
 
 ---
 
@@ -164,7 +112,7 @@
 ## 辅助文档
 
 - `fable5_developer_insights_index.md`
-  - 当前最值得先抓住的结论，不是目录清单
+  - 当前最重要的一页地图：人、样本、insight、主题都在那里
 - `fable5_source_pool_map.md`
   - 来源池备忘，偏采集视角，不是读者第一入口
 
