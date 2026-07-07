@@ -1,0 +1,7 @@
+[project]
+name = "ai-dev-sdlc-aidc"
+version = "0.1.0"
+description = "Workspace for AI SDLC and AIDLC research, notes, and Python-based scripts."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
