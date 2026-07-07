@@ -24,6 +24,8 @@ key_concepts:
 
 ---
 
+> 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。
+
 ## 最重要的洞察："Verified" 的含义迁移
 
 Fowler 在 2026 年 4 月 29 日的 *Fragments* 中，支持 Chris Parsons 的 *Coding with AI* 第三版更新，贡献了 AI 时代被引用最多的判断之一：

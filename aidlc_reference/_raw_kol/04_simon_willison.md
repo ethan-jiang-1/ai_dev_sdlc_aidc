@@ -29,6 +29,8 @@ Willison 指出了一个精确的时间点：GPT-5.1 和 Claude Opus 4.5 发布�
 
 ---
 
+> 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。
+
 ## SDLC 瓶颈迁移 — Willison 最具影响力的洞察
 
 > *"If you can go from producing 200 lines of code a day to 2,000 lines of code a day, what else breaks? The entire software development lifecycle was designed around the idea that it takes a day to produce a few hundred lines of code. And now it doesn't."*

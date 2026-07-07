@@ -33,6 +33,8 @@ Morris 的故事比大多数 KOL 更有"实战感"：
 
 ---
 
+> 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。
+
 ## IaC 到 AI Harness——独特的桥梁视角
 
 Morris 是极少数**同时拥有深厚基础设施自动化和 AI 编码 Agent 经验**的人。他的 *Infrastructure as Code* 第三版恰好于 2025 年 3 月出版——正是 Claude Code 发布、agentic coding 开始炸裂的时间点。

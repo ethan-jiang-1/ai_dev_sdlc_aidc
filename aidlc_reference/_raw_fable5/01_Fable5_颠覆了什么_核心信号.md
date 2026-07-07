@@ -264,6 +264,8 @@ Mike Krieger：
 
 ## 八、信号七：模型能力 ≠ 最好用的协作者
 
+> 本节来源：Willie Williams ([AI Everywhere, All at Once](https://every.to/context-window/ai-everywhere-all-at-once); [Fable, Disabled](https://every.to/context-window/fable-disabled)); mclayer/plugin-codeforge ([issue #2134](https://github.com/mclayer/plugin-codeforge/issues/2134), [PR #2135](https://github.com/mclayer/plugin-codeforge/pull/2135))
+
 Willie Williams（Every，Senior Engineer benchmark 发布者）：
 
 > "Fable crushes other models on Every's Senior Engineer benchmark, but it's too slow and token-hungry to be a good collaborator."
@@ -275,6 +277,8 @@ Willie Williams（Every，Senior Engineer benchmark 发布者）：
 ---
 
 ## 九、信号八：AI Sandwich — 流程重构的模式语言
+
+> 本节来源：Kieran Klaassen ([How to Get the Most Out of Fable 5](https://every.to/context-window/how-to-get-the-most-out-of-fable-5); [AI Everywhere, All at Once](https://every.to/context-window/ai-everywhere-all-at-once))
 
 Kieran Klaassen（Every，builder/workflow 设计者）提出了 AI Sandwich 模式：
 
@@ -291,6 +295,8 @@ Fable 5 最适合的位置是**中间层**——不是全自动，也不是手�
 ---
 
 ## 十、信号九：治理和边界成为主问题（不是次要问题）
+
+> 本节来源：Mike Taylor ([AI Everywhere, All at Once](https://every.to/context-window/ai-everywhere-all-at-once)); Zed/Richard Feldman ([PR #58945](https://github.com/zed-industries/zed/pull/58945)); Simon Willison ([If Claude Fable stops helping you](https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/)); mclayer ([issue #2134](https://github.com/mclayer/plugin-codeforge/issues/2134))
 
 这可能是最被低估的信号。多个样本不约而同地把**治理**放在第一位：
 
@@ -310,6 +316,8 @@ Fable 5 最适合的位置是**中间层**——不是全自动，也不是手�
 ---
 
 ## 十一、信号十：约束不是束缚，是给 Agent 的轨道
+
+> 本节来源：Thariq Shihipar, AI Engineer World's Fair 演讲（[Field Guide to Fable](https://x.com/trq212/status/2073100352921215386), 本地归档于 `fable5_field_signals/run_anthropic_thariq_shihipar/raw_ai_engineer_worlds_fair_fable_talk.md`）; Jesse Vincent ([That time it tried to delete all my tests](https://blog.fsck.com/2026/04/30/that-time-it-tried-to-delete-all-my-tests/))
 
 Thariq Shihipar 在 AI Engineer World's Fair 演讲中透露：
 

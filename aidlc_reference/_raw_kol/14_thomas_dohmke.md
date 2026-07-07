@@ -36,6 +36,8 @@ Dohmke 是极少数**在 Copilot 时代领导过全球最大开发者平台**、
 
 ---
 
+> 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。
+
 ## 核心判断：开发者平台需要"工厂重置"
 
 > *"GitHub's generation of developer platforms was born in an era when humans wrote code, not agents. The entire stack needs a factory reset for the AI age."*

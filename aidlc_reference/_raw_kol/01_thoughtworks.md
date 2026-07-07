@@ -23,6 +23,8 @@ key_concepts:
 
 ---
 
+> 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。
+
 ## Volume 33 (Fall 2025) — "Agent 的崛起"
 
 ### 四大主题

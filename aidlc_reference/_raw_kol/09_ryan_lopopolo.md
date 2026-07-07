@@ -48,6 +48,8 @@ Lopopolo 将其描述为 **"超过线性扩展"**——每个模型版本的改�
 
 ---
 
+> 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。
+
 ## 核心哲学
 
 > *"Agents aren't hard; the Harness is hard."*
