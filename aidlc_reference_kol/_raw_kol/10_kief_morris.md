@@ -174,7 +174,7 @@ Morris 在 PlatformCon 2026 的这句话是他整个思想体系最浓缩的表�
 
 这是从 IaC 到 AI Harness 一以贯之的原则：**自动化不修复糟糕的工程实践——它放大它们。**
 
-DORA 2025 确认了这一点：AI 不修复团队，它放大已经存在的东西。
+[DORA 2025](https://www.zdnet.com/article/ai-magnifies-your-teams-strengths-and-weaknesses-google-report-finds/) 确认了这一点：AI 不修复团队，它放大已经存在的东西。
 
 ---
 

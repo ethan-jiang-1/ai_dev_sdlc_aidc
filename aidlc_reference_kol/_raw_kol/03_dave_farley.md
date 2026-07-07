@@ -61,7 +61,7 @@ Farley 不是情绪化地反对 AI——他从工程角度识别了三个结构�
 
 ## DORA 的警钟：70% 的开发者不置疑 AI 输出
 
-Farley（与 Abby Bangser 在 GOTO Copenhagen 2025）强调了 DORA 报告中最令人担忧的数据：
+Farley（与 Abby Bangser 在 GOTO Copenhagen 2025）强调了 [DORA 2025 报告](https://www.zdnet.com/article/ai-magnifies-your-teams-strengths-and-weaknesses-google-report-finds/) 中最令人担忧的数据：
 
 > *"70% of developers using AI tools don't distrust the output."*
 
