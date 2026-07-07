@@ -18,26 +18,26 @@
 
 ## 人物与洞察总表
 
-这列里的“来源分量”不是绝对真伪评级，而是帮你先判断：这是厂商内部、一线产品团队、头部观察者，还是普通外部实测。
+这张表现在把正向价值和负面限制并排写；“来源分量”不是绝对真伪评级，而是帮你先判断：这是厂商内部、一线产品团队、头部观察者，还是普通外部实测。
 
-| 最值得抓住的 insight | 关键词 | 角色 / 位置 | 来源分量 | 来源 |
-| --- | --- | --- | --- | --- |
-| Fable 可以接住长任务式知识工作和增长实验，不只是补代码片段 | 长任务 / 委托 / 应用落地 | 应用团队 / 增长 | 一线应用团队 | `run_every_austin_tedesco/` |
-| 强模型适合放进 `AI sandwich` 的中间执行层，人负责上下文和验收 | AI sandwich / 分工 / 协作 | builder / workflow 设计 | 一线应用团队 | `run_every_kieran_klaassen/` |
-| 复杂坏工作流要靠清楚的目标、上下文和 definition of done 才救得回来 | workflow 修复 / 上下文 / 执行 | Applied AI 工程 | 一线应用团队 | `run_every_nityesh_agarwal/` |
-| 实际采用看的是 trade-off 和协作舒适度，不是只看 benchmark 榜单 | trade-off / 采用决策 / 协作感 | 平台 / builder | 一线应用团队 | `run_every_willie_williams/` |
-| 一碰到 NDA 和客户机密，强模型就不能无脑接手，边界管理变成主问题 | NDA / 保密 / 治理边界 | 咨询 / 客户交付 | 一线应用团队 | `run_every_mike_taylor/` |
-| Fable 的区别在主动调试、主动验证和持续推进，但透明性与干预边界也更敏感 | debugging / verification / 风险 | 独立开发者 / 外部观察 | 头部外部观察者 | `run_datasette_simon_willison/` |
-| Fable 可以直接拿去做安全审计和 UX 审计，说明它开始能承担更完整的专业任务块 | audit / security / UX | 外部实测者 | 中腰部实干者 | `run_generativeai_net_martin_musiol/` |
-| 多 prompt 实测能看出 Fable 在复杂任务里更主动，但也更需要明确约束与观察 | prompt 实测 / 主动性 / 控制 | 外部实测者 | 普通外部实测 | `run_digital_life_khazix/` |
-| 强的地方不是文采，而是会自己测、自己加日志、自己验证修复 | self-verification / tools / debugging | 模型侧工程 | 厂商内部一线 | `run_anthropic_boris_cherny/` |
-| Fable 开始能接 whole projects 的一大段，人更像委托、评审和拍板的人 | whole projects / 委托 / 角色变化 | 产品负责人 | 厂商内部一线 | `run_anthropic_mike_krieger/` |
-| 真正稀缺的变成 `unknowns`、上下文组织方式和如何让模型帮你发现盲区 | unknowns / context / 方法论 | 方法论 / field guide | 厂商内部方法论 | `run_anthropic_thariq_shihipar/` |
-| agent 工作流会反过来改变团队制度，形成 brief-review-signoff 的工作方式 | agent 制度 / review / sign-off | 工程制度设计 | 头部实践者 | `run_superpowers_jesse_vincent/` |
-| 人机关系正在从“操作者”转向“委托人”，工作的重心变成给目标、看结果、负责任 | patron 模式 / 人机角色 / 委托 | 教学 / 观察者 | 头部观察者 | `run_wharton_ethan_mollick/` |
-| 产品化落地时最难的不是接 API，而是 consent、retention、fallback 和用户信任 | 产品化 / consent / fallback | 产品接入 / BYOK | 一线产品团队 | `run_zed_richard_feldman/` |
-| Fable 更像需要被外科式接入的能力，不是整套系统一把梭替换 | surgical adoption / rollout / review | 插件 / 工程接入 | 公开工程证据 | `run_mclayer_plugin_codeforge/` |
-| 产品经理关心的不是模型炫技，而是它在哪些任务里能真正改变 PM 的工作方式 | PM workflow / 角色迁移 / 使用边界 | PM 视角 | 领域实务作者 | `run_product_compass_pawel_huryn/` |
+| 最值得抓住的 insight | 负面 / 限制 / 反例 | 关键词 | 角色 / 位置 | 来源分量 | 来源 |
+| --- | --- | --- | --- | --- | --- |
+| Fable 可以接住长任务式知识工作和增长实验，不只是补代码片段 | 高 token 成本，低价值任务不值得上 | 长任务 / 委托 / 应用落地 | 应用团队 / 增长 | 一线应用团队 | `run_every_austin_tedesco/` |
+| 强模型适合放进 `AI sandwich` 的中间执行层，人负责上下文和验收 | 不能无上下文放手一梭，最后验收仍要人来做 | AI sandwich / 分工 / 协作 | builder / workflow 设计 | 一线应用团队 | `run_every_kieran_klaassen/` |
+| 复杂坏工作流要靠清楚的目标、上下文和 definition of done 才救得回来 | 四条件不满足时，上 Fable 反而不划算 | workflow 修复 / 上下文 / 执行 | Applied AI 工程 | 一线应用团队 | `run_every_nityesh_agarwal/` |
+| 实际采用看的是 trade-off 和协作舒适度，不是只看 benchmark 榜单 | benchmark 领先不等于最好，成本和迭代体验会反噬采用 | trade-off / 采用决策 / 协作感 | 平台 / builder | 一线应用团队 | `run_every_willie_williams/` |
+| 一碰到 NDA 和客户机密，强模型就不能无脑接手，边界管理变成主问题 | 客户机密场景直接不能用，责任边界先于能力 | NDA / 保密 / 治理边界 | 咨询 / 客户交付 | 一线应用团队 | `run_every_mike_taylor/` |
+| Fable 的区别在主动调试、主动验证和持续推进，但透明性与干预边界也更敏感 | 会烧 token，sandbox 外危险，还可能出现 silent intervention | debugging / verification / 风险 | 独立开发者 / 外部观察 | 头部外部观察者 | `run_datasette_simon_willison/` |
+| Fable 可以直接拿去做安全审计和 UX 审计，说明它开始能承担更完整的专业任务块 | 审计发现仍需人类复核，不能把候选问题直接当最终结论 | audit / security / UX | 外部实测者 | 中腰部实干者 | `run_generativeai_net_martin_musiol/` |
+| 多 prompt 实测能看出 Fable 在复杂任务里更主动，但也更需要明确约束与观察 | 个案感受强，但可复核性和证据密度弱于源码或流程样本 | prompt 实测 / 主动性 / 控制 | 外部实测者 | 普通外部实测 | `run_digital_life_khazix/` |
+| 强的地方不是文采，而是会自己测、自己加日志、自己验证修复 | 厂商内部视角很强，但外部独立复核材料相对少 | self-verification / tools / debugging | 模型侧工程 | 厂商内部一线 | `run_anthropic_boris_cherny/` |
+| Fable 开始能接 whole projects 的一大段，人更像委托、评审和拍板的人 | 角色边界会被打乱，组织治理和责任分配也得跟着重写 | whole projects / 委托 / 角色变化 | 产品负责人 | 厂商内部一线 | `run_anthropic_mike_krieger/` |
+| 真正稀缺的变成 `unknowns`、上下文组织方式和如何让模型帮你发现盲区 | 强模型也不是无边界，过多示例和旧习惯反而会限制它 | unknowns / context / 方法论 | 方法论 / field guide | 厂商内部方法论 | `run_anthropic_thariq_shihipar/` |
+| agent 工作流会反过来改变团队制度，形成 brief-review-signoff 的工作方式 | 很多“省钱优化”其实会把任务结构搞坏，agent 也会投机取巧 | agent 制度 / review / sign-off | 工程制度设计 | 头部实践者 | `run_superpowers_jesse_vincent/` |
+| 人机关系正在从“操作者”转向“委托人”，工作的重心变成给目标、看结果、负责任 | 更偏解释框架，不是直接工程流水线证据 | patron 模式 / 人机角色 / 委托 | 教学 / 观察者 | 头部观察者 | `run_wharton_ethan_mollick/` |
+| 产品化落地时最难的不是接 API，而是 consent、retention、fallback 和用户信任 | 没有同意就不能上，拒绝和回退路径必须先设计好 | 产品化 / consent / fallback | 产品接入 / BYOK | 一线产品团队 | `run_zed_richard_feldman/` |
+| Fable 更像需要被外科式接入的能力，不是整套系统一把梭替换 | 采用路径偏保守，模型 unavailable 时要准备 fallback 和重启策略 | surgical adoption / rollout / review | 插件 / 工程接入 | 公开工程证据 | `run_mclayer_plugin_codeforge/` |
+| 产品经理关心的不是模型炫技，而是它在哪些任务里能真正改变 PM 的工作方式 | 启发意义强，但实战证据密度弱于工程和产品源码样本 | PM workflow / 角色迁移 / 使用边界 | PM 视角 | 领域实务作者 | `run_product_compass_pawel_huryn/` |
 
 ---
 
