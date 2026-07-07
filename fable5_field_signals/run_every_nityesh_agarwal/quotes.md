@@ -12,6 +12,11 @@
 - 这句虽然不是 Nityesh 本人的直引，但它定义了他这类任务为什么适配 Fable 5。
 - 对资料库来说，这种“任务选择标准”很值得保存。
 
+> “organized and deep context, a well-defined goal, a clear definition of what good or done looks like...”
+
+- 这句最好单独留下来。
+- 因为它几乎可以直接当成 Nityesh 这类复杂修复任务的选择清单。
+
 ## 总结判断
 
 - Nityesh 的价值在于把 Fable 5 从“造新东西”拉回“修复杂烂摊子”。

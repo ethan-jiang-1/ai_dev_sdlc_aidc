@@ -22,6 +22,11 @@
 - Martin 提到一个极简 prompt 就能触发很像资深产品设计师的 flow-level 反馈。
 - 这说明 Fable 的价值不只在 coding，还在对整体体验的判断。
 
+> “Pick the repo you trust most. Two prompts: a security audit, then ‘lean, clean, intuitive UI.’ One hour.”
+
+- 这句把 Martin 从体验作者变成了可操作方法提供者。
+- 它特别适合被保留，因为今晚就能照着试。
+
 ## 总结判断
 
 - Martin 这种人物很适合被保留，因为他能给出“普通实战高手第一次被打疼时说出来的话”。

@@ -16,6 +16,11 @@
 - 这句是 Mike 这条线最该保留的话。
 - 它直接把模型能力问题转成了治理问题。
 
+> “Consulting work often includes confidential information, and Fable’s model environment may retain context beyond a specific task, violating existing NDAs.”
+
+- 这句把前一条为什么成立说得更完整。
+- 这不是抽象担心，而是非常具体的咨询交付风险。
+
 ## 总结判断
 
 - Mike 是目前资料库里非常有用的“带约束样本”。
