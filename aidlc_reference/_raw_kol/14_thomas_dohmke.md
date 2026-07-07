@@ -1,3 +1,21 @@
+---
+type: kol_deep_dive
+person: Thomas Dohmke
+organization: Entire (ex-GitHub CEO)
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://www.bloomberg.com/news/articles/2026-02-10/former-github-ceo-thomas-dohmke-raises-60-million-for-new-startup
+  - https://www.geekwire.com/2026/former-github-ceo-launches-new-developer-platform-with-huge-60m-seed-round/
+  - https://www.axios.com/2026/02/10/former-github-ceo-ai-coding-startup
+  - https://devops.com/former-github-ceo-bets-60m-that-developer-tools-need-a-factory-reset-for-the-ai-age/
+  - https://36kr.com/p/3678623948366473
+  - https://entire.io
+key_concepts:
+  - homer_simpson_car
+  - agent_assembly_line
+  - developer_tools_factory_reset
+---
 # Thomas Dohmke — "Git 只记录了'改了什么'，无法回答'为什么这么改'"
 
 > 前 GitHub CEO（领导了 Copilot 的推出）。2025 年 8 月离职，2026 年 2 月创办 Entire（$60M 种子轮，$300M 估值）。他的核心判断：**GitHub 那代开发者平台诞生于"人写代码"的时代，而非"Agent 写代码"的时代。**

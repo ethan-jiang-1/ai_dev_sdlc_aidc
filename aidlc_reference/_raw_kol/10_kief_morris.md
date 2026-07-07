@@ -1,3 +1,20 @@
+---
+type: kol_deep_dive
+person: Kief Morris
+organization: Independent (IaC pioneer)
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html
+  - https://lucaberton.com/blog/kief-morris-human-on-the-loop-platformcon-london-2026/
+  - https://techleadjournal.dev/episodes/227
+  - https://www.infoq.com/news/2026/03/mf-aiassisted-dev/
+  - https://kief.com
+key_concepts:
+  - in_the_loop_to_on_the_loop
+  - agentic_flywheel
+  - infrastructure_as_code
+---
 # Kief Morris — "不要修产物，修 Harness"
 
 > ThoughtWorks Distinguished Engineer（15 年），O'Reilly *Infrastructure as Code* 三版作者。在 Martin Fowler 网站发表 *Humans and Agents in Software Engineering Loops* (2026/03)——"in the loop → on the loop" 框架已被 Böckeler、Fowler、Lopopolo 广泛引用。PlatformCon 2026 主题演讲嘉宾。

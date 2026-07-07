@@ -1,3 +1,15 @@
+---
+type: index
+content_type: readme
+directory: _raw_frontier
+description: 跨公司（Anthropic/OpenAI/Cursor/Google）变革共识合成，从 7 位人物 + 3 份深度研究提取
+derived_from: ai_sdlc_frontier/
+people_count: 7
+research_pieces: 3
+files_indexed: 5
+research_date: 2026-07-07
+---
+
 # _raw_frontier — 跨公司变革共识：信息地图
 
 > 来源库：`ai_sdlc_frontier/`（7 个人物/组织的一手材料 + 3 份深度研究）

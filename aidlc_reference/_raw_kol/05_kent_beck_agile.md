@@ -1,3 +1,22 @@
+---
+type: kol_deep_dive
+person: Kent Beck
+organization: Independent (XP/Agile co-founder)
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech
+  - https://www.webpronews.com/kent-becks-cosmic-practical-joke-why-ai-demands-engineers-master-people-skills/
+  - https://www.allstacks.com/blog/how-to-write-specs-for-ai-agents-tdd-skills-and-what-comes-next
+  - https://share.transistor.fm/s/b9745f10
+  - https://bytecraft.fi/en/blogs/extreme-programming-ai-modern-practices/
+  - https://blog.cashwu.com/blog/2026/kent-beck-ai-age-developer-skills/
+key_concepts:
+  - xp_in_ai_era
+  - tdd_for_agents
+  - human_skills_more_important
+  - experiment_dont_presume
+---
 # Kent Beck — "没人知道答案，所以去试"
 
 > Extreme Programming (XP) 和 TDD 创始人，Agile Manifesto 第一签署人。2026 年的 Beck 极为活跃——自办播客 *Still Burning*，频繁亮相 Pragmatic Engineer、Pragmatic Summit。他对 AI 时代的核心判断："没人知道最佳实践是什么——但 TDD 是你的超级能力。"

@@ -1,3 +1,18 @@
+---
+type: kol_deep_dive
+content_type: event_synthesis
+event: Pragmatic Summit 2026
+verification_status: partially_verified
+note: 来源为会议现场报道和社交媒体，多为一手引用但无单一直播链接
+source_urls:
+  - https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech
+key_participants:
+  - Kent Beck
+  - Martin Fowler
+  - Simon Willison
+  - Thomas Dohmke (ex-GitHub CEO)
+  - Atlassian CTO
+---
 # Pragmatic Summit 2026 — AI 时代软件工程的"伍德斯托克"
 
 > Gergely Orosz (*The Pragmatic Engineer*) 主办的首届线下大会，2026 年 2 月，旧金山。Beck + Fowler 同台、Simon Willison、前 GitHub CEO + Atlassian CTO——这是 2026 年 AI 时代软件工程最重要的一次线下聚会。

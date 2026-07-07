@@ -1,3 +1,20 @@
+---
+type: kol_deep_dive
+person: Boris Cherny
+organization: Anthropic (Claude Code creator)
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://tech.yahoo.com/ai/claude/articles/interview-claude-code-creator-accident-171651759.html
+  - https://timesofindia.indiatimes.com/technology/tech-news/anthropics-boris-cherny-once-again-reminds-software-engineering-is-dead/amp_articleshow/130851423.cms
+  - https://www.xda-developers.com/set-up-claude-code-like-boris-cherny/
+  - https://hub.baai.ac.cn/view/52377
+  - https://cloud.tencent.com.cn/developer/article/2669104
+key_concepts:
+  - software_engineering_is_dead
+  - claude_code_design_philosophy
+  - terminal_over_ide
+---
 # Boris Cherny — Claude Code 之父："软件工程已死"
 
 > Anthropic Claude Code 负责人。自从 2025 年 11 月以后没手动写过一行代码。他的论点不是"AI 帮助编程"——而是"手动编程作为一种职业正在终结"。

@@ -1,3 +1,22 @@
+---
+type: kol_deep_dive
+person: Ryan Lopopolo
+organization: OpenAI (Harness Engineering)
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://www.zenml.io/llmops-database/zero-human-written-code-harness-engineering-for-autonomous-ai-agents-at-scale
+  - https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/
+  - https://tessl.io/podcast/109/
+  - https://eu.36kr.com/en/p/3765104802349574
+  - https://www.infoq.cn/article/xeXddcuzu78D7mC5wyBy
+  - https://cloud.tencent.com.cn/developer/article/2652786
+key_concepts:
+  - zero_human_written_code
+  - harness_engineering
+  - agent_self_review_loop
+  - progressive_disclosure
+---
 # Ryan Lopopolo — OpenAI Harness Engineering 先驱
 
 > OpenAI Frontier Product Exploration 团队 Member of Technical Staff。曾任职 Stripe、Snowflake、Citadel、Brex（领导 350 人 developer productivity）。他领导了零人手写代码实验，创造了 "Harness Engineering" 概念，已被 Martin Fowler 和 ThoughtWorks 推广。

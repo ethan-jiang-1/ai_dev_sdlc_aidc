@@ -1,3 +1,23 @@
+---
+type: kol_deep_dive
+person: Martin Fowler
+organization: ThoughtWorks
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://martinfowler.com/fragments/2026-04-29.html
+  - https://www.martinfowler.com/fragments/2026-04-21.html
+  - https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech
+  - https://www.thoughtworks.com/en-gb/insights/podcasts/technology-podcasts/what-harness-engineering
+  - https://www.sohu.com/a/975704211_122036485
+  - https://dev.to/bh/verified-changed-meaning-what-agentic-engineering-demands-from-development-teams-19an
+key_concepts:
+  - verified_meaning_migration
+  - harness_engineering
+  - automated_gates
+  - human_judgment
+---
+
 # Martin Fowler — "竞争的本质从'能写多快'变成了'能多快判断它是否正确'"
 
 > 敏捷软件开发、重构、企业应用架构模式的定义性人物。他 2026 年的 *Fragments* 和 ThoughtWorks 播客提供了 AI 时代最冷静、最工程化的视角。他不是 AI 怀疑论者——他认为 AI 是职业生涯最大的一次编程变革——但他的警告比任何 hype 都更有分量。

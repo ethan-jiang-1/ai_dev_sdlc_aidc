@@ -1,3 +1,14 @@
+---
+type: index
+content_type: readme
+directory: _raw_fable5
+description: Fable 5 模型变革信号合成，从 16 个真实使用样本提取
+derived_from: fable5_field_signals/
+sample_count: 16
+files_indexed: 4
+research_date: 2026-07-07
+---
+
 # _raw_fable5 — Fable 5 变革信号：信息地图
 
 > 来源库：`fable5_field_signals/`（16 个人物/组织样本）

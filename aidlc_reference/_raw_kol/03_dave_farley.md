@@ -1,3 +1,18 @@
+---
+type: kol_deep_dive
+person: Dave Farley
+organization: Continuous Delivery Ltd
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://www.aviator.co/podcast/engineering-discipline-dave-farley
+  - https://devblogs.co/posts/the-most-important-programming-invention-in-20-years-dave-farley-goto-2025
+  - https://leaddev.com/technical-direction/safe-production-changes-with-agents
+key_concepts:
+  - continuous_delivery
+  - engineering_discipline
+  - ai_exposes_lack_of_engineering
+---
 # Dave Farley — "AI 暴露那些从未学会工程师思维的人"
 
 > Dave Farley 是 *Continuous Delivery* 的合著者，全球最具影响力的 CI/CD 倡导者之一。

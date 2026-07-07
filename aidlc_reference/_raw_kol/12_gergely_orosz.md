@@ -1,3 +1,19 @@
+---
+type: kol_deep_dive
+person: Gergely Orosz
+organization: The Pragmatic Engineer
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai
+  - https://securityboulevard.com/2026/03/top-6-takeaways-on-the-future-of-coding-from-sonar-summit-2026-7/
+  - https://sourcelabs.nl/blog/pragmatic-engineer-survey-how-ai-tools-reshape-engineering-roles/
+  - https://daringfireball.net/linked/2026/07/02/orosz-meta-engineering-culture
+key_concepts:
+  - six_predictions_good_bad_ugly
+  - something_precious_being_taken_away
+  - engineering_culture_risk
+---
 # Gergely Orosz — "代码量爆炸，工程基本功反而更重要了"
 
 > *The Pragmatic Engineer* 作者，Pragmatic Summit 主办者。2026 年 1 月的万字长文 *"What Happens to Software Engineering When AI Writes Almost All the Code"* 被广泛认为是 AI 时代软件工程最全面的预测之一。采访了 Kent Beck、Martin Fowler、Simon Willison。900+ 工程师调查。

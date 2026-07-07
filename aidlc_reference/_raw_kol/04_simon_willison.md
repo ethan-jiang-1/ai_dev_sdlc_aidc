@@ -1,3 +1,18 @@
+---
+type: kol_deep_dive
+person: Simon Willison
+organization: Independent (Datasette author)
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/
+  - https://leaddev.com/technical-direction/safe-production-changes-with-agents
+key_concepts:
+  - sdlc_designed_for_hundreds_of_lines_per_day
+  - vibe_coding_vs_agentic_engineering
+  - sandbox_necessity
+  - quality_signals
+---
 # Simon Willison — "整个 SDLC 是围绕'一天几百行'设计的"
 
 > Django 联合创始人，25 年行业经验。Simon Willison 是 AI 编码时代被引用最多的独立 KOL 之一。他不是 AI 公司员工，不卖 AI 产品——所以他的观点被广泛认为中立可信。

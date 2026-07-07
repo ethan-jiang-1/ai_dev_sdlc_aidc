@@ -1,3 +1,21 @@
+---
+type: kol_deep_dive
+person: ThoughtWorks
+organization: ThoughtWorks
+content_type: technology_radar_analysis
+verification_status: verified
+source_urls:
+  - https://www.thoughtworks.com/en-cn/about-us/news/2026/combat-ai-cognitive-debt-radar-v34
+  - https://www.thoughtworks.com/en-in/about-us/news/2025/thoughtworks-tech-radar-33-rapid-ai
+  - https://www.thoughtworks.com/en-cn/about-us/news/2026/ai-works-heralds-new-era-of-agile-and-next-generation-software-development
+  - https://www.tipranks.com/news/private-companies/thoughtworks-flags-ai-driven-cognitive-debt-in-new-technology-radar-urges-disciplined-engineering-at-scale
+key_concepts:
+  - cognitive_debt
+  - harness_engineering
+  - spec_driven_development
+  - ai_governance
+---
+
 # ThoughtWorks — 从技术雷达看 AI-SDLC 演化
 
 > ThoughtWorks 是过去 20 年对 SDLC 实践影响最深远的咨询公司之一。它的 Technology Radar 被全球 CTO 视为技术选型的风向标。

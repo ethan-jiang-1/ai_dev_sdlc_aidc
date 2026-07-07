@@ -1,3 +1,21 @@
+---
+type: kol_deep_dive
+person: Laura Tacho
+organization: ex-DX CTO
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://getdx.com/blog/building-better-software-faster/
+  - https://shiftmag.dev/this-cto-says-93-of-developers-use-ai-but-productivity-is-still-10-8013/
+  - https://www.thoughtworks.com/en-cn/insights/podcasts/technology-podcasts/what-is-spec-driven-development
+  - https://lauratacho.com
+  - https://www.martinfowler.com/fragments/2026-02-25.html
+key_concepts:
+  - ai_is_amplifier_not_replacement
+  - disappointment_gap
+  - data_beats_hype
+  - 450_companies_120k_developers_data
+---
 # Laura Tacho — "AI 是放大器。好团队更好，差团队更差。"
 
 > 前 DX CTO（现 AWS Senior Principal Technologist）。主持 *Engineering Enablement* 播客。"Core 4" 开发者生产力指标框架联合创建者。她基于 450+ 公司、12 万开发者的数据，提供了 AI 时代最量化的视角——在所有 KOL 中，她的数据功夫最扎实。

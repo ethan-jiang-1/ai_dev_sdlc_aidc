@@ -1,3 +1,86 @@
+---
+type: synthesis
+content_type: change_signals
+research_date: 2026-07-07
+derived_from:
+  local_dir: fable5_field_signals/
+  sample_count: 16
+verification_status: urls_added
+evidence_strength: mixed
+primary_sources:
+  - name: Mike Krieger
+    role: Anthropic CPO
+    urls:
+      - https://every.to/podcast/transcript-how-anthropic-uses-claude-fable-5-with-mike-krieger
+      - https://digg.com/ai/g7bqoiyn#story-ai-responses-heading
+  - name: Ethan Mollick
+    role: Wharton Professor
+    urls:
+      - https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos
+  - name: Jesse Vincent
+    role: Superpowers author
+    urls:
+      - https://larridin.com/blog/how-jesse-vincent-turned-code-writing-over-to-superpowers
+      - https://blog.fsck.com/2026/04/30/that-time-it-tried-to-delete-all-my-tests/
+      - https://blog.fsck.com/2026/06/15/Superpowers-6/
+  - name: Boris Cherny
+    role: Anthropic Claude Code engineer
+    urls:
+      - https://gentic.news/article/fable-5-claude-s-biggest-leap
+      - https://digg.com/ai/crrpnk9g
+  - name: Simon Willison
+    role: Independent developer, Datasette author
+    urls:
+      - https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/
+      - https://simonwillison.net/2026/Jun/9/claude-fable-5/
+      - https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/
+  - name: Thariq Shihipar
+    role: Anthropic Claude Code engineer
+    urls:
+      - https://x.com/trq212/status/2073100352921215386
+      - https://thariqs.github.io/html-effectiveness/unknowns/
+  - name: Kieran Klaassen
+    role: Every, AI Sandwich originator
+    urls:
+      - https://every.to/context-window/how-to-get-the-most-out-of-fable-5
+      - https://every.to/context-window/ai-everywhere-all-at-once
+  - name: Austin Tedesco
+    role: Every, growth team
+    urls:
+      - https://every.to/context-window/ai-everywhere-all-at-once
+  - name: Willie Williams
+    role: Every
+    urls:
+      - https://every.to/context-window/ai-everywhere-all-at-once
+      - https://every.to/context-window/fable-disabled
+  - name: Martin Musiol
+    role: generativeai.net
+    urls:
+      - https://mail.generativeai.net/p/claude-fable-5-worked-my-12-hour-night-shift
+  - name: Mike Taylor
+    role: Every, Head of Tech Consulting
+    urls:
+      - https://every.to/context-window/ai-everywhere-all-at-once
+  - name: Richard Feldman
+    role: Zed
+    urls:
+      - https://github.com/zed-industries/zed/pull/58945
+  - name: mclayer/plugin-codeforge
+    role: Open-source plugin
+    urls:
+      - https://github.com/mclayer/plugin-codeforge/issues/2134
+      - https://github.com/mclayer/plugin-codeforge/pull/2135
+  - name: Nityesh Agarwal
+    role: Every, Senior Applied AI Engineer
+    urls:
+      - https://every.to/context-window/fable-disabled
+cross_references:
+  - aidlc_reference/_raw_frontier/
+  - aidlc_reference/_raw_aws/
+  - ai_sdlc_frontier/raw_OpenAI_Ryan Lopopolo/
+  - ai_sdlc_frontier/raw_Anthropic_Fiona Fung/
+---
+
 # Fable 5 颠覆了什么：核心信号
 
 > 来源：`fable5_field_signals/` 全部 16 个样本（Anthropic 内部 ×3, Every ×5, Simon Willison, Zed, Superpowers, Wharton, 及其他）
@@ -18,6 +101,8 @@
 
 ## 一、最核心的颠覆：瓶颈从"模型能力"转移到"人的澄清能力"
 
+> 本节来源：Thariq Shihipar, [A Field Guide to Fable: Finding Your Unknowns](https://x.com/trq212/status/2073100352921215386), 2026-06
+
 这是 Thariq Shihipar（Claude Code 工程师，Fable 5 方法论作者）给出的最关键判断：
 
 > **"Fable 5 是第一个让『澄清未知项的能力』成为工作质量瓶颈的模型。"**
@@ -29,6 +114,8 @@
 ---
 
 ## 二、信号一：从"实时交互"到"离线委托"
+
+> 本节来源：Mike Krieger ([Every podcast transcript](https://every.to/podcast/transcript-how-anthropic-uses-claude-fable-5-with-mike-krieger), [Digg 发布日聚合](https://digg.com/ai/g7bqoiyn#story-ai-responses-heading)); Ryan Lopopolo ([OpenAI Harness Engineering](https://openai.com/index/harness-engineering/)); Austin Tedesco ([AI Everywhere, All at Once](https://every.to/context-window/ai-everywhere-all-at-once)); Ethan Mollick ([What it feels like to work with Mythos](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos))
 
 ### 2.1 跨夜工作成为常态
 
@@ -53,6 +140,8 @@ Ryan Lopopolo（OpenAI）观察到 Codex 经常在一个任务上连续工作 6 
 
 ## 三、信号二：从"操作者"到"委托人"
 
+> 本节来源：Ethan Mollick, [What it feels like to work with Mythos](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos), 2026-06
+
 Ethan Mollick（Wharton 教授，AI 教育前沿观察者）：
 
 > "I am no longer sure I am the wizard. I am closer to a patron."
@@ -76,6 +165,8 @@ Ethan Mollick（Wharton 教授，AI 教育前沿观察者）：
 
 ## 四、信号三：Spec 取代代码成为核心工件
 
+> 本节来源：Jesse Vincent, [How Jesse Vincent Turned Code-Writing Over to Superpowers](https://larridin.com/blog/how-jesse-vincent-turned-code-writing-over-to-superpowers), 2026-05; [That time it tried to delete all my tests](https://blog.fsck.com/2026/04/30/that-time-it-tried-to-delete-all-my-tests/); [Superpowers 6](https://blog.fsck.com/2026/06/15/Superpowers-6/)
+
 Jesse Vincent（Superpowers 作者，前 Perl 5 维护者，K-9 Mail 作者）：
 
 > **"Specs are the thing that matters now. The code does not matter anymore."**
@@ -97,6 +188,8 @@ Jesse Vincent（Superpowers 作者，前 Perl 5 维护者，K-9 Mail 作者）�
 
 ## 五、信号四：模型有了"判断力、品味、多维思考"
 
+> 本节来源：Boris Cherny, [gentic.news Fable 5 beta tester 文章](https://gentic.news/article/fable-5-claude-s-biggest-leap); [Digg 发布日帖子聚合](https://digg.com/ai/crrpnk9g)
+
 Boris Cherny（Anthropic Claude Code 工程师）：
 
 > "It has judgment, taste, and dimensionality in a way that previous models didn't."
@@ -112,6 +205,8 @@ Boris Cherny（Anthropic Claude Code 工程师）：
 ---
 
 ## 六、信号五："无情地主动"改变了信任和安全边界
+
+> 本节来源：Simon Willison, [Claude Fable is relentlessly proactive](https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/), 2026-06-11; [Initial impressions](https://simonwillison.net/2026/Jun/9/claude-fable-5/); [If Claude Fable stops helping you](https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/); [Anthropic Walks Back Policy](https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/)
 
 Simon Willison（独立开发者，Datasette 作者）：
 
@@ -142,6 +237,8 @@ Simon 给了一个经典案例：一句 prompt + 一张截图 → Fable 5 自己
 ---
 
 ## 七、信号六：角色边界被打乱
+
+> 本节来源：Fiona Fung ([Running an AI-native engineering org](https://claude.com/blog/running-an-ai-native-engineering-org)); Mike Krieger ([Every podcast transcript](https://every.to/podcast/transcript-how-anthropic-uses-claude-fable-5-with-mike-krieger)); Jesse Vincent ([Larridin transcript](https://larridin.com/blog/how-jesse-vincent-turned-code-writing-over-to-superpowers)); Ethan Mollick ([One Useful Thing](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos))
 
 Fiona Fung + Mike Krieger + Jesse Vincent + Ethan Mollick 分别从不同角度证实：
 
