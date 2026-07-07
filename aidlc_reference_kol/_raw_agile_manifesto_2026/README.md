@@ -5,7 +5,7 @@ directory: _raw_agile_manifesto_2026
 description: Deer Valley Retreat — Agile Manifesto 诞生 25 年后，同一片山，不同的问题
 event_date: 2026-02
 research_date: 2026-07-07
-files_indexed: 5
+files_indexed: 8
 verification_status: verified
 ---
 
@@ -24,6 +24,9 @@ verification_status: verified
 | `02_rigor_relocation.md` | "严苛去哪儿了？" | Chad Fowler 的 5 个目的地 + Charity Majors 批判 |
 | `03_supervisory_engineering.md` | Supervisory Engineering / Middle Loop | 一个新工种的浮现——指挥 Agent、评估输出、校准信任 |
 | `04_annie_vella_reflection.md` | Annie Vella 参会回顾 | "没有人搞清楚了"；8 个浮现主题；The Ledger 概念 |
+| `05_cognitive_debt.md` | Cognitive Debt | Margaret-Anne Storey 命名的新"债"；从 Technical Debt 到 Cognitive/Comprehension/Intent Debt |
+| `06_three_tier_developer_split.md` | 开发者三层分化 | Junior 意外安全、Mid 真正危机、Senior 转向架构；1/3 抵制者转变 |
+| `07_supervisory_programmer.md` | Supervisory Programmer | "又累又上瘾"——管理多个 Agent 的日常；IDE 的复仇 |
 
 ---
 
@@ -54,6 +57,14 @@ verification_status: verified
 - [Charity Majors: Production Is Where the Rigor Goes](https://www.honeycomb.io/blog/production-is-where-the-rigor-goes)
 - [Okulbida: key takeaways](https://okulbida.com/posts/future-of-software-engineering-thoughtworks-2026/)
 - [The Middle Loop (Rails Reviews)](https://www.railsreviews.com/articles/the-middle-loop)
+- [Chad Fowler: Relocating Rigor (via bjorn.now)](https://bjorn.now/link/2026-01-28-relocating-rigor-by-chad-fowler/)
+- [mgks.dev: Three-Tier Developer Split](https://mgks.dev/blog/2026-02-14-the-three-tier-developer-split-how-llms-are-reshaping-software-teams/)
+- [mgks.dev: The Supervisory Programmer](https://mgks.dev/blog/2026-02-17-the-supervisory-programmer-managing-agents-context-switching-and-cognitive-debt/)
+- [Margaret-Anne Storey: Cognitive Debt](https://margaretstorey.com/blog/2026/02/09/cognitive-debt/)
+- [Simon Willison: linking to Cognitive Debt](https://simonwillison.net/2026/Feb/15/cognitive-debt/)
+- [Addy Osmani: Comprehension Debt](https://addyosmani.com/blog/comprehension-debt/)
+- [arXiv 2603.22106: Cognitive and Intent Debt](https://export.arxiv.org/abs/2603.22106)
+- [LAVX News: The Retreat That Questioned Everything](https://news.lavx.hu/article/ai-in-software-development-the-retreat-that-questioned-everything)
 
 ---
 
