@@ -6,7 +6,6 @@ content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
   - https://www.aviator.co/podcast/engineering-discipline-dave-farley
-  - https://devblogs.co/posts/the-most-important-programming-invention-in-20-years-dave-farley-goto-2025
   - https://leaddev.com/technical-direction/safe-production-changes-with-agents
 key_concepts:
   - continuous_delivery
@@ -29,7 +28,7 @@ Farley 做了一个大胆的历史比较：
 但他同时批判两个极端：
 - 恐吓者说 AI 不能编程 → **错误**
 - 鼓吹者说 10x-100x 提升 → **错误**
-- 他参与的研究显示约 **55%** 的生产力提升（习惯性 AI 用户），中位数为 30.7%——"不是没有，只是没有 10 倍"（[Faros AI Engineering Impact Report, 2025/07](https://storage.pardot.com/1045823/1752512825oEfps6iq/AI_Engineering_Impact_Report_July_2025_Faros_AI.pdf)，~150 名专业开发者对照研究）
+- "不是没有提升，只是没有 10 倍"
 
 ---
 
@@ -58,14 +57,6 @@ Farley 不是情绪化地反对 AI——他从工程角度识别了三个结构�
 你需要的不是更快的代码生成——你需要**验证机制来确认产出符合意图**。
 
 ---
-
-## DORA 的警钟：70% 的开发者不置疑 AI 输出
-
-Farley（与 Abby Bangser 在 GOTO Copenhagen 2025）强调了 [DORA 2025 报告](https://www.zdnet.com/article/ai-magnifies-your-teams-strengths-and-weaknesses-google-report-finds/) 中最令人担忧的数据：
-
-> *"70% of developers using AI tools don't distrust the output."*
-
-他将此类比为经典辩论"开发者能否测试自己的代码"——不能，除非有意识地切换到**"verifier 模式"**。而大多数开发者没有做这个切换。
 
 ---
 
@@ -101,9 +92,9 @@ Farley 最尖锐的判断：
 
 > *"AI won't replace software engineers, but it will expose the ones who never learned to think like engineers. Tools can speed you up, but if your thinking's wrong, AI just gets you to the wrong place faster."*
 
-2025 DORA 研究确认了这一点：
+Farley 的核心判断：
 - 基本功扎实的团队（小批次、紧反馈循环、CI）从 AI 获得提升
-- 大批次工作的团队看到"下游混乱"——更长的队列、更多问题泄漏到发布中
+- 大批次工作的团队看到下游混乱——更长的队列、更多问题泄漏到发布中
 - **如果你已经工作得好，AI 会是一个大赢家。如果你工作得不好，你只是更快地挖更深的坑。**
 
 ---

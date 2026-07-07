@@ -36,7 +36,7 @@ Morris 的故事比大多数 KOL 更有"实战感"：
 
 ## IaC 到 AI Harness——独特的桥梁视角
 
-Morris 是极少数**同时拥有深厚基础设施自动化和 AI 编码 Agent 经验**的人。他的 *Infrastructure as Code* 第三版恰好于 2025 年 3 月出版。
+Morris 是极少数**同时拥有深厚基础设施自动化和 AI 编码 Agent 经验**的人。他的 *Infrastructure as Code* 第三版是 IaC 领域的权威著作。
 
 这个时间巧合让 Morris 成为**最早注意到 AI Agent 讨论在重复 IaC 教训的人**：
 
@@ -174,7 +174,6 @@ Morris 在 PlatformCon 2026 的这句话是他整个思想体系最浓缩的表�
 
 这是从 IaC 到 AI Harness 一以贯之的原则：**自动化不修复糟糕的工程实践——它放大它们。**
 
-[DORA 2025](https://www.zdnet.com/article/ai-magnifies-your-teams-strengths-and-weaknesses-google-report-finds/) 确认了这一点：AI 不修复团队，它放大已经存在的东西。
 
 ---
 
@@ -194,4 +193,4 @@ Morris 在 PlatformCon 2026 的这句话是他整个思想体系最浓缩的表�
 
 ---
 
-**Source:** [martinfowler.com: Humans and Agents in Software Engineering Loops](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) (2026/03/04) · [Luca Berton: Kief Morris PlatformCon 2026](https://lucaberton.com/blog/kief-morris-human-on-the-loop-platformcon-london-2026/) · [Terrateam: AI in IaC](https://terrateam.io/blog/ai-infrastructure-kief-morris) (2025/07) · [Tech Lead Journal #227: IaC 3rd Ed](https://techleadjournal.dev/episodes/227) (2025/08) · [tokenless.tech: IaC Evolution](https://tokenless.tech/posts/2025/kief-morris-abby-bangser-infrastructure-as-code-evolution/) (2025/10) · [ThoughtWorks: IaC in 2025 podcast](https://share.snipd.com/episode/0c947153-9a77-494d-8e01-06edf6d1306a) (2025/03) · [InfoQ: Where Do Humans Fit](https://www.infoq.com/news/2026/03/mf-aiassisted-dev/) · [InfoQ China 中文译](https://www.infoq.cn/article/eu4vZqJqSuXv3hsEoIo9) · [kief.com](https://kief.com) · [infrastructure-as-code.com](https://infrastructure-as-code.com)
+**Source:** [martinfowler.com: Humans and Agents in Software Engineering Loops](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) (2026/03/04) · [Luca Berton: Kief Morris PlatformCon 2026](https://lucaberton.com/blog/kief-morris-human-on-the-loop-platformcon-london-2026/) · [InfoQ: Where Do Humans Fit](https://www.infoq.com/news/2026/03/mf-aiassisted-dev/) · [InfoQ China 中文译](https://www.infoq.cn/article/eu4vZqJqSuXv3hsEoIo9) · [kief.com](https://kief.com) · [infrastructure-as-code.com](https://infrastructure-as-code.com)

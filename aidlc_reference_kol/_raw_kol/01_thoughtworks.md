@@ -6,7 +6,6 @@ content_type: technology_radar_analysis
 verification_status: verified
 source_urls:
   - https://www.thoughtworks.com/en-cn/about-us/news/2026/combat-ai-cognitive-debt-radar-v34
-  - https://www.thoughtworks.com/en-in/about-us/news/2025/thoughtworks-tech-radar-33-rapid-ai
   - https://www.thoughtworks.com/en-cn/about-us/news/2026/ai-works-heralds-new-era-of-agile-and-next-generation-software-development
   - https://www.tipranks.com/news/private-companies/thoughtworks-flags-ai-driven-cognitive-debt-in-new-technology-radar-urges-disciplined-engineering-at-scale
 key_concepts:
@@ -24,22 +23,6 @@ key_concepts:
 ---
 
 > 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。
-
-## Volume 33 (Fall 2025) — "Agent 的崛起"
-
-### 四大主题
-
-**1. Rise of agents elevated by MCP**
-MCP (Model Context Protocol) 成为 Agent 生态系统的标准集成协议。每个主要供应商都在自己的工具中构建 agent-awareness，为 agent-assisted 工作流创建基础设施。
-
-**2. AI coding workflows**
-AI 战略性嵌入整个 SDLC 价值链——从理解遗留代码库到正向工程。团队专注于"上下文工程"（如 `AGENTS.md` 文件、spec-driven development）来有效管理编码 Agent。
-
-**3. Infrastructure orchestration for AI**
-GPU 感知编排成为平台团队的核心竞争力。工具如 Kueue、Kubeflow、Volcano 用于管理大规模 GPU 集群。
-
-**4. Emerging AI antipatterns**
-早期警示：AI 加速的影子 IT、对 AI 代码的盲目信任、"vibe coding"（无严谨性的 prompt 驱动开发）——这个术语迅速被行业放弃。
 
 ---
 

@@ -46,18 +46,6 @@ Willison 指出了一个精确的时间点：GPT-5.1 和 Claude Opus 4.5 发布�
 
 Willison 现在可以为一个功能 prototype **三种不同的 UI 方案**，因为"一个 UI 原型现在是免费的"。
 
-### 下游影响 — DORA 2025 数据确认
-
-| 指标 | 高 AI 采用率组织 |
-|------|----------------|
-| PR 体积 | **+154%** |
-| 审查时间 | **+91%** |
-| Bug 率 | **+9%** |
-
-> 数据来源：[DORA 2025 Report](https://www.zdnet.com/article/ai-magnifies-your-teams-strengths-and-weaknesses-google-report-finds/)（Google Cloud，~5,000 名技术专业人士调查）
-
-> *"Code review pipelines can't absorb 10x throughput."*
-
 ### 新的质量信号
 
 传统质量信号（commits 多、tests 全、README 好）已经**无意义**——AI 30 分钟就能全搞出来。
@@ -142,7 +130,6 @@ Analyze → Plan → Implement → Test → Review → Iterate
 
 开发者的工作从"写代码"转变为**设计闭环**——让 Agent 自主推理、测试和完善输出。
 
-DORA 2025 确认：反馈循环增加吞吐量，但不加管理的循环降低稳定性。
 
 ---
 
@@ -160,4 +147,4 @@ DORA 2025 确认：反馈循环增加吞吐量，但不加管理的循环降低�
 
 ---
 
-**Source:** [Simon Willison: Vibe coding and agentic engineering](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) · [Lenny's Podcast (Apr 2026)](https://www.lennyspodcast.com) · [Heavybit Podcast (May 2026)](https://heavybit.com) · [DORA 2025 Report analysis](https://leaddev.com/technical-direction/safe-production-changes-with-agents)
+**Source:** [Simon Willison: Vibe coding and agentic engineering](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) · [Lenny's Podcast (Apr 2026)](https://www.lennyspodcast.com) · [Heavybit Podcast (May 2026)](https://heavybit.com)
