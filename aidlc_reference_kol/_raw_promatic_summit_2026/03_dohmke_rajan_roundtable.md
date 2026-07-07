@@ -9,7 +9,6 @@ verification_status: verified
 source_urls:
   - https://podwise.ai/episodes/7546403
   - https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai
-  - http://mp.weixin.qq.com/s?__biz=Mzk5MDQyOTA5Ng==&mid=2247483763&idx=1&sn=b390aec4aec271a633f57e7dca337fd4
 key_participants:
   - Thomas Dohmke (ex-GitHub CEO, Entire founder, $60M seed)
   - Rajeev "Rajie" Rajan (Atlassian CTO)
@@ -25,7 +24,7 @@ key_concepts:
 # Dohmke + Rajan 圆桌 — "Homer Simpson 车"与 AI-Native 团队的真实面貌
 
 > 来源：Pragmatic Summit 2026 最具实操深度的 session。
-> 原文链接：[Podwise 播客](https://podwise.ai/episodes/7546403) (~33 min) · [Pragmatic Engineer: Future of Software Engineering](https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai) · [中文编译](http://mp.weixin.qq.com/s?__biz=Mzk5MDQyOTA5Ng==&mid=2247483763&idx=1&sn=b390aec4aec271a633f57e7dca337fd4)
+> 原文链接：[Podwise 播客](https://podwise.ai/episodes/7546403) (~33 min) · [Pragmatic Engineer: Future of Software Engineering](https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai)
 
 ---
 

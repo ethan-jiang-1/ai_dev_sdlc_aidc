@@ -44,12 +44,19 @@ aidlc_reference_kol/
 | **有来源** | 放入对应 `_raw_*` 子目录 | 必须在文件中标注来源 URL/出处，可回溯验证 |
 | **没有来源** | 只能放入 `_abandoned_no_reference/` | 不得混入任何 `_raw_*` 目录 |
 
+**一手源优先（硬要求）**：
+- **只接受原始英文一手源**——博客原文、官方发布、演讲视频/transcript、播客原版、X/Twitter 原帖
+- **禁止二手源**——中文编译/翻译（36kr、机器之心、InfoQ 中文站、CSDN、知乎、微信公众号、今日头条等）、聚合站转述、第三方摘要
+- 二手源不可靠：翻译可能曲解原意，转述丢失上下文，聚合站添加编辑偏见
+- 唯一的例外：如果你**读得懂**中文且需要用它来交叉验证另一条一手源中的内容——但**不能**作为唯一引用
+
 **零容忍**：
 - 不可"先写进去，来源以后补"
 - 不可"我觉得是这样，不用来源"
 - 不可"来源忘了，但内容很重要所以留着"
+- 不可"中文翻译更方便读者，留着吧"
 
-没有来源 = 进 `_abandoned_no_reference/`。没有例外。
+没有一手源 = 进 `_abandoned_no_reference/`。没有例外。
 
 ---
 
@@ -157,5 +164,6 @@ aidlc_reference_kol/
 
 ## 最后更新
 
+- 2026-07-08：**一手源大清洗**——全库删除所有中文二手源（36kr、微信、BAAI、CSDN、toutiao 等），补充 30+ 条原始英文一手 URL。Simon Willison (2→8 URLs)、Dave Farley (2→6 URLs)。来源铁律新增"一手源优先"硬要求。Erik Schluntz 源从 36kr 编译切换到 YouTube 原视频。
 - 2026-07-08：更名为 `aidlc_reference_kol`，`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`。新增 `_raw_promatic_summit_2026/`、`_raw_agile_manifesto_2026/`、`_raw_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
 - 2026-07-07：创建 `_raw_fable5/` 和 `_raw_frontier/`，全库 frontmatter + section citations + URL 溯源运动

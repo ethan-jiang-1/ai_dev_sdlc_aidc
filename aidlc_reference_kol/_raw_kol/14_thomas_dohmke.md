@@ -9,7 +9,7 @@ source_urls:
   - https://www.geekwire.com/2026/former-github-ceo-launches-new-developer-platform-with-huge-60m-seed-round/
   - https://www.axios.com/2026/02/10/former-github-ceo-ai-coding-startup
   - https://devops.com/former-github-ceo-bets-60m-that-developer-tools-need-a-factory-reset-for-the-ai-age/
-  - https://36kr.com/p/3678623948366473
+  - https://rcpmag.com/articles/2026/02/12/ex-github-ceo-thomas-dohmke-unveils-entire.aspx
   - https://entire.io
 key_concepts:
   - homer_simpson_car
@@ -145,4 +145,4 @@ Entire 是 15 人、6 个国家的全远程团队。Agent 解决了远程工作�
 
 ---
 
-**Source:** [Bloomberg: Former GitHub CEO Raises $60M](https://www.bloomberg.com/news/articles/2026-02-10/former-github-ceo-thomas-dohmke-raises-60-million-for-new-startup) · [GeekWire: $60M seed round](https://www.geekwire.com/2026/former-github-ceo-launches-new-developer-platform-with-huge-60m-seed-round/) · [Axios: Former GitHub CEO launches AI coding startup](https://www.axios.com/2026/02/10/former-github-ceo-ai-coding-startup) · [DevOps.com: Factory Reset for the AI Age](https://devops.com/former-github-ceo-bets-60m-that-developer-tools-need-a-factory-reset-for-the-ai-age/) · [36Kr (Chinese)](https://36kr.com/p/3678623948366473) · [InfoQ China: 前GitHub掌门人](https://www.infoq.cn/article/fcjA0034GUQVp20cjHZU) · [entire.io](https://entire.io)
+**Source:** [Bloomberg: Former GitHub CEO Raises $60M](https://www.bloomberg.com/news/articles/2026-02-10/former-github-ceo-thomas-dohmke-raises-60-million-for-new-startup) · [GeekWire: $60M seed round](https://www.geekwire.com/2026/former-github-ceo-launches-new-developer-platform-with-huge-60m-seed-round/) · [Axios: Former GitHub CEO launches AI coding startup](https://www.axios.com/2026/02/10/former-github-ceo-ai-coding-startup) · [DevOps.com: Factory Reset for the AI Age](https://devops.com/former-github-ceo-bets-60m-that-developer-tools-need-a-factory-reset-for-the-ai-age/) · [RCP Mag: Ex-GitHub CEO Unveils Entire](https://rcpmag.com/articles/2026/02/12/ex-github-ceo-thomas-dohmke-unveils-entire.aspx) · [entire.io](https://entire.io)

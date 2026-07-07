@@ -9,7 +9,6 @@ source_urls:
   - https://www.martinfowler.com/fragments/2026-04-21.html
   - https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech
   - https://www.thoughtworks.com/en-gb/insights/podcasts/technology-podcasts/what-harness-engineering
-  - https://www.sohu.com/a/975704211_122036485
   - https://dev.to/bh/verified-changed-meaning-what-agentic-engineering-demands-from-development-teams-19an
 key_concepts:
   - verified_meaning_migration
@@ -151,4 +150,4 @@ Fowler 的基本判断：敏捷核心原则与 AI 有强烈协同效应。
 
 ---
 
-**Source:** [Fragments: April 29, 2026](https://martinfowler.com/fragments/2026-04-29.html) · [Fragments: April 21, 2026](https://www.martinfowler.com/fragments/2026-04-21.html) · [Pragmatic Engineer: Cycles of Disruption](https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech) · [ThoughtWorks Podcast: What is Harness Engineering](https://www.thoughtworks.com/en-gb/insights/podcasts/technology-podcasts/what-harness-engineering) · [martinfowler.com: Harness Engineering series (Böckeler)](https://martinfowler.com/) · [Sohu Chinese coverage](https://www.sohu.com/a/975704211_122036485) · [dev.to: Verified changed meaning](https://dev.to/bh/verified-changed-meaning-what-agentic-engineering-demands-from-development-teams-19an)
+**Source:** [Fragments: April 29, 2026](https://martinfowler.com/fragments/2026-04-29.html) · [Fragments: April 21, 2026](https://www.martinfowler.com/fragments/2026-04-21.html) · [Pragmatic Engineer: Cycles of Disruption](https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech) · [ThoughtWorks Podcast: What is Harness Engineering](https://www.thoughtworks.com/en-gb/insights/podcasts/technology-podcasts/what-harness-engineering) · [martinfowler.com: Harness Engineering series (Böckeler)](https://martinfowler.com/) · [dev.to: Verified changed meaning](https://dev.to/bh/verified-changed-meaning-what-agentic-engineering-demands-from-development-teams-19an)

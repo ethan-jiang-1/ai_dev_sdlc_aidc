@@ -8,9 +8,9 @@ source_urls:
   - https://www.forbes.com/sites/aliciapark/2026/05/19/openai-cofounder-and-former-tesla-ai-leader-andrej-karpathy-joins-anthropic/
   - https://www.forbes.com/sites/jodiecook/2026/06/12/is-vibe-coding-already-dead-even-karpathy-is-moving-on/
   - https://www.glideapps.com/blog/what-is-agentic-engineering
-  - https://hub.baai.ac.cn/view/52377
   - https://sdtimes.com/ai/andrej-karpathy-has-renamed-vibe-coding-heres-what-engineering-leaders-need-to-do-about-it/
   - https://www.ibm.com/think/topics/agentic-engineering
+  - https://www.theneuron.ai/explainer-articles/-when-three-of-ais-top-builders-tell-you-coding-is-solved-pay-attention-to-what-they-mean/
 key_concepts:
   - vibe_coding
   - agentic_engineering
@@ -124,4 +124,4 @@ AI 可以执行思考过程、生成解决方案、编写代码——但人类�
 
 ---
 
-**Source:** [Forbes: Is Vibe Coding Already Dead?](https://www.forbes.com/sites/jodiecook/2026/06/12/is-vibe-coding-already-dead-even-karpathy-is-moving-on/) · [Glide: What is agentic engineering](https://www.glideapps.com/blog/what-is-agentic-engineering) · [BAAI: Karpathy × Cherny 对话](https://hub.baai.ac.cn/view/52377) · [SD Times: Karpathy renamed vibe coding](https://sdtimes.com/ai/andrej-karpathy-has-renamed-vibe-coding-heres-what-engineering-leaders-need-to-do-about-it/) · [IBM: What is Agentic Engineering](https://www.ibm.com/think/topics/agentic-engineering)
+**Source:** [Forbes: Is Vibe Coding Already Dead?](https://www.forbes.com/sites/jodiecook/2026/06/12/is-vibe-coding-already-dead-even-karpathy-is-moving-on/) · [Glide: What is agentic engineering](https://www.glideapps.com/blog/what-is-agentic-engineering) · [The Neuron: Karpathy × Cherny × Brockman](https://www.theneuron.ai/explainer-articles/-when-three-of-ais-top-builders-tell-you-coding-is-solved-pay-attention-to-what-they-mean/) · [SD Times: Karpathy renamed vibe coding](https://sdtimes.com/ai/andrej-karpathy-has-renamed-vibe-coding-heres-what-engineering-leaders-need-to-do-about-it/) · [IBM: What is Agentic Engineering](https://www.ibm.com/think/topics/agentic-engineering)

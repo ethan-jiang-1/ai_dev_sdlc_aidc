@@ -5,12 +5,12 @@ organization: OpenAI (Harness Engineering)
 content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
+  - https://openai.com/index/harness-engineering/
   - https://www.zenml.io/llmops-database/zero-human-written-code-harness-engineering-for-autonomous-ai-agents-at-scale
+  - https://www.zenml.io/llmops-database/extreme-harness-engineering-building-production-software-with-zero-human-written-code
   - https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/
   - https://tessl.io/podcast/109/
-  - https://eu.36kr.com/en/p/3765104802349574
-  - https://www.infoq.cn/article/xeXddcuzu78D7mC5wyBy
-  - https://cloud.tencent.com.cn/developer/article/2652786
+  - https://podcasts.apple.com/sg/podcast/ryan-lopopolo-openais-framework-for-shipping-code-at/id1756073806?i=1000771862526
 key_concepts:
   - zero_human_written_code
   - harness_engineering
@@ -219,4 +219,4 @@ Lopopolo 的反转：**先产出代码作为稻草人 → 完善它 → 从被�
 
 ---
 
-**Source:** [ZenML: Zero Human-Written Code](https://www.zenml.io/llmops-database/zero-human-written-code-harness-engineering-for-autonomous-ai-agents-at-scale) · [ZenML: Extreme Harness Engineering](https://www.zenml.io/llmops-database/extreme-harness-engineering-building-production-software-with-zero-human-written-code) · [InfoQ: OpenAI Harness Engineering](https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/) · [Tessl Podcast #109: full transcript](https://tessl.io/podcast/109/) · [AI Native Dev Podcast](https://podcasts.apple.com/sg/podcast/ryan-lopopolo-openais-framework-for-shipping-code-at/id1756073806?i=1000771862526) · [36Kr Chinese coverage](https://eu.36kr.com/en/p/3765104802349574) · [InfoQ China](https://www.infoq.cn/article/xeXddcuzu78D7mC5wyBy) · [Tencent Cloud: Harness Engineering](https://cloud.tencent.com.cn/developer/article/2652786) · [CSDN: 百万行代码零手工撰写](https://blog.csdn.net/weixin_53961451/article/details/158600036) · [Toutiao/InfoQ: 严禁手写代码](https://m.toutiao.com/article/7650764109256000040/)
+**Source:** [OpenAI: Harness Engineering — Leveraging Codex in an Agent-First World](https://openai.com/index/harness-engineering/) (2026/02/11) · [ZenML: Zero Human-Written Code](https://www.zenml.io/llmops-database/zero-human-written-code-harness-engineering-for-autonomous-ai-agents-at-scale) · [ZenML: Extreme Harness Engineering](https://www.zenml.io/llmops-database/extreme-harness-engineering-building-production-software-with-zero-human-written-code) · [InfoQ: OpenAI Harness Engineering](https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/) · [Tessl Podcast #109: full transcript](https://tessl.io/podcast/109/) · [AI Native Dev Podcast](https://podcasts.apple.com/sg/podcast/ryan-lopopolo-openais-framework-for-shipping-code-at/id1756073806?i=1000771862526)

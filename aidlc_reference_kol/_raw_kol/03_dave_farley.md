@@ -7,6 +7,10 @@ verification_status: verified
 source_urls:
   - https://www.aviator.co/podcast/engineering-discipline-dave-farley
   - https://leaddev.com/technical-direction/safe-production-changes-with-agents
+  - https://www.ivoox.com/en/understanding-the-value-of-ai-coding-gene-audios-mp3_rf_167283247_1.html
+  - https://open.spotify.com/episode/0O6tbSwI4WYFVQBvQG8Ql2
+  - https://www.ivoox.com/en/using-ai-agents-to-truly-increase-software-engineering-audios-mp3_rf_172996346_1.html
+  - https://za.radio.net/podcast/the-engineering-room-with-dave-farley
 key_concepts:
   - continuous_delivery
   - engineering_discipline
@@ -123,4 +127,4 @@ Farley 的核心判断：
 
 ---
 
-**Source:** [Aviator Podcast: Engineering Discipline in the AI Era with Dave Farley](https://www.aviator.co/podcast/engineering-discipline-dave-farley) · [LeadDev: Safe production changes with agents](https://leaddev.com/technical-direction/safe-production-changes-with-agents)
+**Source:** [Aviator Podcast: Engineering Discipline in the AI Era with Dave Farley](https://www.aviator.co/podcast/engineering-discipline-dave-farley) · [LeadDev: Safe production changes with agents](https://leaddev.com/technical-direction/safe-production-changes-with-agents) · [The Engineering Room Ep.42: Gene Kim — Understanding the Value of AI Coding](https://open.spotify.com/episode/0O6tbSwI4WYFVQBvQG8Ql2) (2026/01/25) · [The Engineering Room Ep.45: David Yanacek (AWS) — Using AI Agents to Truly Increase Productivity](https://www.ivoox.com/en/using-ai-agents-to-truly-increase-software-engineering-audios-mp3_rf_172996346_1.html) (2026/05/03) · [The Engineering Room podcast series](https://za.radio.net/podcast/the-engineering-room-with-dave-farley)

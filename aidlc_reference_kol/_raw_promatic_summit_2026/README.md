@@ -58,7 +58,6 @@ verification_status: verified
 - [DX: Building better software faster](https://getdx.com/blog/building-better-software-faster/)
 - [ShiftMag: 93% of Developers Use AI](https://shiftmag.dev/this-cto-says-93-of-developers-use-ai-but-productivity-is-still-10-8013/)
 - [GarysGuide: The Pragmatic Summit listing](https://www.garysguide.com/events/syke9qh/calendar)
-- [BestBlogs.dev: 中文编译](https://www.bestblogs.dev/article/c27268ec)
 - [GitHub: bookmark-summary](https://github.com/jerrylususu/bookmark-summary/blob/main/202603/2026-03-15-my-fireside-chat-about-agentic-engineering-at-the-pragmatic-summit.md)
 
 ---

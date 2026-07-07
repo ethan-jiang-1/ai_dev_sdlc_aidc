@@ -193,4 +193,4 @@ Morris 在 PlatformCon 2026 的这句话是他整个思想体系最浓缩的表�
 
 ---
 
-**Source:** [martinfowler.com: Humans and Agents in Software Engineering Loops](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) (2026/03/04) · [Luca Berton: Kief Morris PlatformCon 2026](https://lucaberton.com/blog/kief-morris-human-on-the-loop-platformcon-london-2026/) · [InfoQ: Where Do Humans Fit](https://www.infoq.com/news/2026/03/mf-aiassisted-dev/) · [InfoQ China 中文译](https://www.infoq.cn/article/eu4vZqJqSuXv3hsEoIo9) · [kief.com](https://kief.com) · [infrastructure-as-code.com](https://infrastructure-as-code.com)
+**Source:** [martinfowler.com: Humans and Agents in Software Engineering Loops](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) (2026/03/04) · [Luca Berton: Kief Morris PlatformCon 2026](https://lucaberton.com/blog/kief-morris-human-on-the-loop-platformcon-london-2026/) · [InfoQ: Where Do Humans Fit](https://www.infoq.com/news/2026/03/mf-aiassisted-dev/) · [Tech Lead Journal #227: Kief Morris](https://techleadjournal.dev/episodes/227) · [kief.com](https://kief.com) · [infrastructure-as-code.com](https://infrastructure-as-code.com)

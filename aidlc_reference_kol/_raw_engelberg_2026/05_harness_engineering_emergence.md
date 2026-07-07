@@ -7,6 +7,7 @@ verification_status: verified
 source_urls:
   - https://martinfowler.com/fragments/2026-07-06.html
   - https://overwatering.org/blog/2026/07/notes-from-fose-europe/
+  - https://aardling.eu/en/insights/software-design-in-the-agentic-age-placing-your-bets
 key_concepts:
   - harness_engineering_term_emergence
   - harness_engineering_teams

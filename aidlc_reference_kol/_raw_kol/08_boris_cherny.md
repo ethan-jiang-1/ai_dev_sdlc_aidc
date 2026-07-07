@@ -6,10 +6,11 @@ content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
   - https://tech.yahoo.com/ai/claude/articles/interview-claude-code-creator-accident-171651759.html
-  - https://timesofindia.indiatimes.com/technology/tech-news/anthropics-boris-cherny-once-again-reminds-software-engineering-is-dead/amp_articleshow/130851423.cms
+  - https://fortune.com/2026/06/08/anthropics-boris-cherny-creator-of-claude-code-says-there-are-days-he-manages-tens-of-thousands-of-ai-agents-at-once/
+  - https://fortune.com/2026/06/09/boris-cherny-claude-code-says-comparing-ai-costs-to-wrong-thing-anthropic/
+  - https://www.frontendmentor.io/articles/coding-is-solved-boris-cherny
   - https://www.xda-developers.com/set-up-claude-code-like-boris-cherny/
-  - https://hub.baai.ac.cn/view/52377
-  - https://cloud.tencent.com.cn/developer/article/2669104
+  - https://www.theneuron.ai/explainer-articles/-when-three-of-ais-top-builders-tell-you-coding-is-solved-pay-attention-to-what-they-mean/
 key_concepts:
   - software_engineering_is_dead
   - claude_code_design_philosophy
@@ -133,4 +134,4 @@ Boris Cherny 是 Anthropic 内部最突出的声音，主张 **Agentic Coding �
 
 ---
 
-**Source:** [Yahoo/Tech: Interview with Claude Code Creator](https://tech.yahoo.com/ai/claude/articles/interview-claude-code-creator-accident-171651759.html) · [Times of India](https://timesofindia.indiatimes.com/technology/tech-news/anthropics-boris-cherny-once-again-reminds-software-engineering-is-dead/amp_articleshow/130851423.cms) · [XDA Developers: Setup like Boris Cherny](https://www.xda-developers.com/set-up-claude-code-like-boris-cherny/) · [BAAI: Karpathy × Cherny](https://hub.baai.ac.cn/view/52377) · [Tencent Cloud](https://cloud.tencent.com.cn/developer/article/2669104)
+**Source:** [Yahoo/Tech: Interview with Claude Code Creator](https://tech.yahoo.com/ai/claude/articles/interview-claude-code-creator-accident-171651759.html) · [Fortune: Manages Tens of Thousands of AI Agents](https://fortune.com/2026/06/08/anthropics-boris-cherny-creator-of-claude-code-says-there-are-days-he-manages-tens-of-thousands-of-ai-agents-at-once/) · [Fortune: Comparing AI Costs to the Wrong Thing](https://fortune.com/2026/06/09/boris-cherny-claude-code-says-comparing-ai-costs-to-wrong-thing-anthropic/) · [Frontend Mentor: Is Coding Solved?](https://www.frontendmentor.io/articles/coding-is-solved-boris-cherny) · [The Neuron: Karpathy × Cherny × Brockman](https://www.theneuron.ai/explainer-articles/-when-three-of-ais-top-builders-tell-you-coding-is-solved-pay-attention-to-what-they-mean/) · [XDA Developers: Setup like Boris Cherny](https://www.xda-developers.com/set-up-claude-code-like-boris-cherny/)

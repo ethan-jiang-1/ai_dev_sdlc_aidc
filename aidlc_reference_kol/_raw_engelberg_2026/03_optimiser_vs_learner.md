@@ -6,6 +6,7 @@ date: 2026-07
 verification_status: verified
 source_urls:
   - https://overwatering.org/blog/2026/07/notes-from-fose-europe/
+  - https://aardling.eu/en/insights/software-design-in-the-agentic-age-placing-your-bets
 key_concepts:
   - optimiser_org
   - learner_org

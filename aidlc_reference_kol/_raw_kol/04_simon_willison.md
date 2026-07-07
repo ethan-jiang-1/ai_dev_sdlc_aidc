@@ -6,6 +6,12 @@ content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
   - https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/
+  - https://simonwillison.net/2026/Apr/2/lennys-podcast/
+  - https://simonwillison.net/2026/Apr/3/cognitive-cost/
+  - https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/
+  - https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/
+  - https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/
+  - https://www.lennysnewsletter.com/p/an-ai-state-of-the-union
   - https://leaddev.com/technical-direction/safe-production-changes-with-agents
 key_concepts:
   - sdlc_designed_for_hundreds_of_lines_per_day
@@ -147,4 +153,4 @@ Analyze → Plan → Implement → Test → Review → Iterate
 
 ---
 
-**Source:** [Simon Willison: Vibe coding and agentic engineering](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) · [Lenny's Podcast (Apr 2026)](https://www.lennyspodcast.com) · [Heavybit Podcast (May 2026)](https://heavybit.com)
+**Source:** [Simon Willison: Vibe coding and agentic engineering are getting closer than I'd like](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) (2026/05/06) · [Lenny's Podcast: AI State of the Union](https://www.lennysnewsletter.com/p/an-ai-state-of-the-union) (2026/04/02, full transcript) · [Simon's Lenny's Podcast highlights](https://simonwillison.net/2026/Apr/2/lennys-podcast/) · [The cognitive impact of coding agents](https://simonwillison.net/2026/Apr/3/cognitive-cost/) · [Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/) · [Agentic Engineering Patterns: What is agentic engineering?](https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/) · [Agentic Engineering Patterns: Code is cheap now](https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/) · [LeadDev: Safe production changes with agents](https://leaddev.com/technical-direction/safe-production-changes-with-agents)

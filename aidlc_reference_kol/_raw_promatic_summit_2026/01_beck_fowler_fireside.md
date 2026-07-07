@@ -9,7 +9,6 @@ verification_status: verified
 source_urls:
   - https://newsletter.pragmaticengineer.com/p/cycles-of-disruption-in-the-tech
   - https://www.martinfowler.com/fragments/2026-04-14.html
-  - http://mp.weixin.qq.com/s?__biz=MzYzOTE2NTczMA==&mid=2247484814&idx=1&sn=9b75059eba0893f465df8bd922dad9b6
 key_participants:
   - Kent Beck (Agile Manifesto co-author, XP creator)
   - Martin Fowler (Agile Manifesto co-author, ThoughtWorks Chief Scientist)
