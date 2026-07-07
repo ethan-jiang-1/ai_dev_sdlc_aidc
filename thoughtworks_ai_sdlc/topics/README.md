@@ -42,12 +42,12 @@
 
 ### 30 秒读取路径
 
-- 计划文件：`/Users/bowhead/ai_dev_sdlc/sdlc_tw/plan/ai_native_sdlc_deep_research_round1.md`
-- 执行状态：`/Users/bowhead/ai_dev_sdlc/sdlc_tw/plan/ai_native_sdlc_deep_research_round1.status.md`
-- 执行队列：`/Users/bowhead/ai_dev_sdlc/sdlc_tw/plan/ai_native_sdlc_deep_research_round1.queue.md`
-- 本地 reference：`/Users/bowhead/ai_dev_sdlc/sdlc_tw/topics/_reference`
-- reference 索引：`/Users/bowhead/ai_dev_sdlc/sdlc_tw/topics/_reference/_INDEX.md`
-- 本地 artifacts：`/Users/bowhead/ai_dev_sdlc/sdlc_tw/topics/_artifacts`
+- 计划文件：`../plan/ai_native_sdlc_deep_research_round1.md`
+- 执行状态：`../plan/ai_native_sdlc_deep_research_round1.status.md`
+- 执行队列：`../plan/ai_native_sdlc_deep_research_round1.queue.md`
+- 本地 reference：`./_reference/`
+- reference 索引：`./_reference/_INDEX.md`
+- 本地 artifacts：`./_artifacts/`
 
 ### 当前研究线
 

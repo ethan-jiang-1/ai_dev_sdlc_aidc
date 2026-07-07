@@ -4,8 +4,8 @@
 
 ## 目录约定
 
-```
-sdlc_ai_papers/
+```text
+ai_sdlc_papers/
 ├── README.md                          # 本文件
 ├── raw_{arxiv_id}_{short_title}/      # 每篇论文一个目录（原始 PDF + 转换产物）
 │   ├── {arxiv_id}.pdf                 #   下载的 PDF
