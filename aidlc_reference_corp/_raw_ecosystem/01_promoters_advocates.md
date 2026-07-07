@@ -13,8 +13,7 @@ The concept of AIDLC (AI Development Life Cycle) is being actively promoted by a
 - **Key Contribution:** Most formalized methodology; three-phase model (Inception → Construction → Operations); "Bolt" cadence replacing sprints; Mob Elaboration/Mob Construction rituals; open-sourced workflows on GitHub (awslabs/aidlc-workflows)
 - **Product:** Amazon Q Developer; Kiro internal AI assistant
 - **Chinese-language promotion:** AWS China blog published "Apache SeaTunnel AIDLC Methodology Practice" case study
-- **Claimed Results:** 10-15x productivity gains, 40-60% defect reduction, 300-500% ROI within 12 months
-- **Notable:** Amazon also experienced a 13-hour AWS outage and 6.3M lost orders attributed to AI-written code, triggering a 90-day "code safety reset" — revealing the gap between promotion and production reality
+- **Claimed Results:** AWS 营销材料声称 10-15x 生产力提升、40-60% 缺陷降低、300-500% ROI——目前无独立第三方验证
 
 **AI-DLC 核心架构：**
 
