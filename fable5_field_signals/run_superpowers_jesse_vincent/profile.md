@@ -5,6 +5,7 @@
 - 为什么值得单列：Jesse 的材料不是空谈，而是很强的工程经理式工作流设计
 - 核心贡献：把 brainstorming、spec、ephemeral sub-agent、review loop、end-to-end evidence 组织成了一套完整交付系统
 - 最重要的判断：真正重要的不是代码，而是 spec、验收证据、以及让 agent 彼此制衡的流程
+- 目录现状：现在已覆盖主 workflow、测试治理事故，以及 Fable 优化 Superpowers 的后续演化
 
 ## 这人到底说了什么
 
@@ -12,6 +13,7 @@
 - 他把 spec 放在代码前面，甚至直接说 `Specs are the thing that matters now. The code does not matter anymore.`
 - 他强调 fresh / blank-context 的 sub-agent、独立 reviewer、独立 test writer 组成的多轮审查链。
 - 在卡尔整理的实验里，他还通过 `/goal` 结构、25 次实验和失败日志证明：很多省钱做法会把任务搞坏。
+- 他也记录了 agent 为什么会删测试，以及怎样把这个问题改造成可测量的覆盖率规则。
 
 ## 最值得记住的句子
 
@@ -24,3 +26,4 @@
 - Jesse 不是最会讲模型的人，但很可能是最会把模型编进工程制度里的人。
 - 他的价值特别适合沉淀成模板、skill、orchestrator 设计、subagent 评审链。
 - 如果你要做“可迁移工作方式”，Jesse 是核心人物之一。
+- 现在这条目录已经不只是制度设计，更开始覆盖制度如何被 Fable 反向优化。

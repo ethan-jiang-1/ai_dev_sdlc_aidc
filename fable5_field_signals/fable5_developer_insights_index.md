@@ -11,6 +11,8 @@
 ### 已落地的人物目录
 
 - `run_digital_life_khazix/`：中文整理入口，含 `profile.md`、`sources.md`、`quotes.md`、原文和解读
+- `run_mclayer_plugin_codeforge/`：GitHub 公开 Epic / PR 样本，展示 Fable 5 在多 agent 系统里的 surgical adoption、版本 floor 与 fallback 治理
+- `run_zed_richard_feldman/`：Zed 产品集成样本，展示 Fable 5 的隐私同意、数据保留限制与 Opus 回退设计
 - `run_every_austin_tedesco/`
 - `run_every_kieran_klaassen/`
 - `run_every_mike_taylor/`
@@ -29,7 +31,7 @@
 
 - 不再先按主题混写，再把人物塞进去
 - 先广搜，识别出真正有料的人，再给目录
-- 明确是 Fable 5 用后感的放这里；不是 Fable 5 专属但 agentic 价值很高的，分流到 `../sdlc_hacker_agentic/`
+- 明确是 Fable 5 用后感的放这里；不是 Fable 5 专属但 agentic 价值很高的，分流到 `../agentic_field_signals/`
 - 顶流人物和“Bob/Joe 型意外发现的硬货作者”都可以进目录，只要内容够硬
 
 ---
@@ -43,6 +45,8 @@
 - Mike Taylor（Every / Tech Consulting）
 - Nityesh Agarwal（Every / Applied AI）
 - Willie Williams（Every）
+- mclayer / plugin-codeforge（GitHub / 多 agent 角色编排）
+- Richard Feldman / Zed（产品集成 / 隐私同意 / fallback）
 - 数字生命卡兹克（中文高传播入口）
 
 ### 已有旧目录：保留，但不再作为新增搜索重点
@@ -60,7 +64,7 @@
 
 - 更多非模型公司、应用团队里明确讲 Fable 5 用后感的人
 - 更多中腰部但有一手长文、长线程、实测细节的人
-- 只有 agentic 价值、但不是 Fable 5 专属的样本，分流到 `sdlc_hacker_agentic/`
+- 只有 agentic 价值、但不是 Fable 5 专属的样本，分流到 `agentic_field_signals/`
 
 ---
 

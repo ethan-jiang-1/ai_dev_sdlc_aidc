@@ -4,12 +4,12 @@
 
 - `raw_digital_life_khazix_fable5_8_prompts.md`
   - 类型：本地原始整理
-  - 路径：/Users/bowhead/ai_dev_sdlc/sdlc_hacker_fable5/run_digital_life_khazix/raw_digital_life_khazix_fable5_8_prompts.md
+  - 路径：`fable5_field_signals/run_digital_life_khazix/raw_digital_life_khazix_fable5_8_prompts.md`
   - 价值：收集了 8 个 Fable 5 高价值 prompt 模板，以及 Jesse / hiromi / Machina 等人的关键经验。
 
 - `analysis_digital_life_khazix_fable5_8_prompts.md`
   - 类型：本地二次解读
-  - 路径：/Users/bowhead/ai_dev_sdlc/sdlc_hacker_fable5/run_digital_life_khazix/analysis_digital_life_khazix_fable5_8_prompts.md
+  - 路径：`fable5_field_signals/run_digital_life_khazix/analysis_digital_life_khazix_fable5_8_prompts.md`
   - 价值：把数字生命卡兹克这篇 8 个 prompt 汇编结构化拆开，便于后续做 skill 或模板沉淀。
 
 ## 当前缺口

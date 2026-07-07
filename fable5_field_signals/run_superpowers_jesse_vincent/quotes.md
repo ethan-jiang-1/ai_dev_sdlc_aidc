@@ -12,6 +12,15 @@
 - 这是一个非常典型的 Jesse 式规则：把含糊道德劝告变成可测量约束。
 - 它直接针对 agent 会“投机取巧”这个问题。
 
+> “Superpowers 6 is much, much faster and burns many fewer tokens to get the same high-quality outcomes.”
+
+- 这句说明 Jesse 到了 2026 年中，已经不只是设计方法，而是在系统优化 agent 工作流的成本结构。
+
+> “As I was going to bed... run at least 25 experiments.”
+
+- 这句很能体现 Jesse 和 Fable 的合作方式。
+- 不是让模型做一件事，而是让模型搭研究循环、记假设、跑实验。
+
 ## 工作流层面的硬货
 
 - brainstorming 先于 coding

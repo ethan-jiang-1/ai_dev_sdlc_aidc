@@ -22,6 +22,16 @@
 - 这里的重点不是“像助手”，而是“像队友”。
 - 队友意味着它会补洞、继续推进、做局部判断，不是每一步都等指示。
 
+> “The first model I hand off whole projects to.”
+
+- 这句是 Mike 发布日判断里最关键的一句。
+- 它说明不是所有更强模型都会自动跨过“整包委托”的信任阈值，Fable 是他明确划出来的分界线。
+
+> “This weekend I built a self-maintaining, proactive media tracker for myself, over 2 days with Fable taking large chunks at a time.”
+
+- 这句补了一个很具体的使用样本。
+- 它不是 benchmark，也不是概念词，而是一个真实两天内交给 Fable 大段推进的个人工具构建案例。
+
 ## 结构性判断
 
 - Mike 最有价值的地方，是他把 Fable 讲成了一种组织工具，而不是一个更好的 IDE 插件。

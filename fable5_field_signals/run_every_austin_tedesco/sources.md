@@ -16,3 +16,13 @@
   - 类型：Every 的周报式知识库回顾
   - 链接：https://every.to/context-window/fable-disabled
   - 价值：把 Austin 放进 Every 团队的 Fable 5 整体方法论里，有助于判断这不是一句零散评论。
+
+## 当前目录内已补原始材料
+
+- `raw_every_ai_everywhere_all_at_once.md`
+  - 类型：本目录内长文归档
+  - 价值：保留 Austin 在 Every 团队群像中的原始段落。
+
+- `raw_austin_tedesco_fable_workflow_notes.md`
+  - 类型：本目录内人物专属摘录
+  - 价值：把 Austin 在多篇 Every 文章里的 Fable 方法拼成单独可读的专属笔记。

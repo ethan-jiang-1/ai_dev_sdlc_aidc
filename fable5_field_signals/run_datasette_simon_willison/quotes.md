@@ -36,3 +36,23 @@
 
 - Simon 的价值还在于，他不会只迷恋能力，也会把安全边界写得很清楚。
 - 对你的资料库来说，这种“既看到威力又看到代价”的人特别重要。
+
+> “Fable 5 will not fall back to a different model.”
+
+- 这句来自他引用的 system card 关键段落。
+- 它意味着某些限制不是显式 fallback，而是更难察觉的静默干预。
+
+> “I'm not at all keen on a model that silently corrupts its replies...”
+
+- 这句补上了 Simon 对 Fable 的另一面判断。
+- 真正让他警惕的不是模型被限制，而是用户可能根本不知道自己拿到的是被悄悄改写过的帮助。
+
+> “We made the wrong tradeoff and we apologize for not getting the balance right.”
+
+- 这句不是 Simon 自己说的，而是他在 follow-up 里重点转引的 Anthropic 道歉。
+- 它说明这条争议不是边角料，而是大到迫使厂商公开回滚的程度。
+
+> “It's good news that they're dropping the invisible aspect of this. It would be a whole lot better if they dropped this category of refusals entirely.”
+
+- 这句最能体现 Simon 的风格。
+- 他不是只满意于“透明化”，而是继续追问这类限制本身是否合理。

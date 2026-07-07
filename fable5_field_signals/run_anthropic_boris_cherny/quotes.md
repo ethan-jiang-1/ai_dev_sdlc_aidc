@@ -27,6 +27,16 @@
 - 这是 Boris 最值钱的一句。
 - 它说明 Fable 最强的一部分不是 prompt engineering 的产物，而是涌现出来的工作习惯。
 
+> “Fable is the best model I have used for coding, by a wide margin.”
+
+- 这是 Boris 发布日另一句更直接的总判断。
+- 和前面的细节判断连起来看，能看出他不是只被 benchmark 打动，而是被长期工作手感打动。
+
+> “... enabling less prompts and steers, more efficient token use, better code quality, better tool use, more intelligent self-verification, longer running sessions, and higher trust & autonomy.”
+
+- 这句很适合做结构化索引。
+- 它把 Boris 对 Fable 的感受压缩成一组工程指标，而不是抽象赞叹。
+
 ## 辅助背景
 
 > “Maybe you don't actually need an IDE.”
