@@ -7,6 +7,10 @@ event_date: 2026-02
 research_date: 2026-07-07
 files_indexed: 8
 verification_status: verified
+note: |
+  ⚠️ 来源规则说明：Deer Valley Retreat 采用 Chatham House Rule（不具名引用原则）。
+  本目录中标注为某人所言的内容，大部分来自会后该人自己公开发表的博客、fragments、访谈等，而非对闭门会议记录的泄露。
+  引用前请核实每条引用对应的 source_url 是否直接来自发言人本人的公开渠道。
 ---
 
 # Future of Software Development Retreat — Deer Valley 2026
