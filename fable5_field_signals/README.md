@@ -165,8 +165,6 @@
 
 - `fable5_developer_insights_index.md`
   - 当前最值得先抓住的结论，不是目录清单
-- `fable5_collection_plan.md`
-  - 维护说明，偏后续扩张，不是读者第一入口
 - `fable5_source_pool_map.md`
   - 来源池备忘，偏采集视角，不是读者第一入口
 
