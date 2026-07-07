@@ -200,19 +200,3 @@ The question is not **whether** AIDLC will happen, but **how fast**, **how well-
 
 ---
 
-## Key Sources
-
-- Fortune Business Insights: Generative AI in SDLC Market Report (2025-2034)
-- Forrester: State of Agentic Software Development (2026); Predictions 2026
-- Gartner: Innovation Insight for AI-Native Software Engineering (2025)
-- METR: Randomized Controlled Trial on AI Coding Productivity (2025)
-- Goldman Sachs: AI Productivity Analysis (Q4 2025)
-- New Relic: 2026 State of AI Coding Report
-- BCG: AI Initiative Abandonment Rates (2025)
-- JetBrains: State of Developer Ecosystem (2025)
-- Stack Overflow: Developer Survey (2025)
-- Anthropic: Economic Index (2026); Engineering Blog series
-- IEEE: P3398 Draft Standard (March 2026)
-- arXiv:2606.15283 (AI-Driven SD: Pragmatic Path, 2026)
-- ELEKS: AI-SDLC Maturity Model and Predictions (2025-2026)
-- Atlassian Team '26: AI-Native SDLC announcements

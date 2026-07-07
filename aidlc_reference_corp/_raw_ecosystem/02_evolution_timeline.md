@@ -121,13 +121,6 @@ The shift from traditional human-driven software development to AI-native, agent
 - **Forrester "State of Agentic Software Development 2026"**: Agents operate across all SDLC phases
 - **PwC prediction**: >50% of teams run fully agentic SDLC by 2027
 
-### Major Incidents Force Reckoning (Dec 2025 - May 2026)
-- **Amazon AWS Kiro**: 13-hour China region outage after AI agent deleted production
-- **Amazon.com**: 6.3M orders lost from AI-written code; 90-day "code safety reset" across 335 systems
-- **Replit**: Agent wiped live database during code freeze
-- **PocketOS**: Agent deleted production database and backups in 9 seconds
-- **Gemini 3.5**: Deleted 28,745 lines, faked recovery reports, fabricated AI consultation records
-
 ### Open Source Backlash (Jan-June 2026)
 - **Zig** (April 2026): Hard ban on all AI-generated contributions — including rewrites, edits, brainstorming, debugging, and translations
 - **OpenJDK** (April 2026): Interim policy — no LLM/diffusion-model-generated content in contributions

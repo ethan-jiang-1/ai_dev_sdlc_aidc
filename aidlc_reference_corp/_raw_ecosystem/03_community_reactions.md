@@ -97,23 +97,6 @@ The developer community's reaction to AI-driven SDLC is deeply polarized. Far fr
 
 ## 3. Research on Developer Sentiment
 
-### Quantitative Studies
-
-| Study | Finding |
-|---|---|
-| Survey of 130 professionals (2025) | 44% believe AI is "already happening" for replacing simple programming tasks |
-| Same survey | Only 12% believe creativity can't be automated |
-| Same survey | 73% believe humans should retain final decision-making authority |
-| Same survey | Only 2% believe programmers will be completely obsolete |
-| Same survey | 44% predict programmers become "supervisors and reviewers of machine-generated code" |
-| Stack Overflow 2025 Survey | Only 3% of developers have high trust in AI outputs |
-| JetBrains 2025 | 84% of individual developers use AI tools, but only 44% of organizations have fully adopted |
-
-### "I'm Not Reading All of That" Study (2026)
-- **Finding**: Cognitive engagement with AI-generated code **declines as tasks progress**
-- **Concern**: Current tools provide limited affordances for reflection and verification
-- **Recommendation**: Cognitive-forcing mechanisms needed in agentic coding tools
-
 ### Why Agentic-PRs Get Rejected (Feb 2026)
 - 654 rejected PRs from AIDev dataset covering 5 coding agents + human baseline
 - **Seven rejection modes occur only in Agentic-PRs**, including explicit distrust of AI-generated code

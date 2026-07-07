@@ -203,19 +203,6 @@ The concept of AIDLC (AI Development Life Cycle) is being actively promoted by a
 
 ---
 
-## 8. Enterprise Adopters (Case Study Sources)
-
-| Organization | What They're Doing |
-|---|---|
-| **CJ Olive Young (Korea)** | AI-native development on AWS AIDLC; CTO Kim Hwan presenting at AWS Summit Seoul |
-| **Spotify** | Anthropic customer case study; using Claude for engineering workflows |
-| **Rakuten** | 7-hour autonomous refactoring with 99.9% accuracy; 79% faster feature delivery |
-| **TELUS** | 30% faster shipping; 500,000+ hours saved |
-| **Notion, Asana, Atlassian, Sentry** | Claude Managed Agents deployment |
-| **Verily (Alphabet)** | VIDA — custom VS Code plugin invoking Copilot across entire codebase |
-| **Swamp Club** | "Dark Factory" — zero handwritten production code since January 2026 |
-| **Odevo** | Zero-handwritten-code transformation |
-
 ---
 
 ## Key Observations
