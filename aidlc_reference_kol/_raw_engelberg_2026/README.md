@@ -5,7 +5,7 @@ directory: _raw_engelberg_2026
 description: FOSE Europe — Engelberg 2026，Agentic Engineering 从实验到生产的转折点
 event_date: 2026-07
 research_date: 2026-07-07
-files_indexed: 6
+files_indexed: 10
 verification_status: verified
 ---
 
@@ -25,6 +25,10 @@ verification_status: verified
 | `03_optimiser_vs_learner.md` | 组织设计框架 | Optimiser（数据驱动入站工作）vs Learner（人的策划驱动） |
 | `04_galaxy_brain_debate.md` | 架构辩论 | Galaxy Brain 假设 vs AX=DX；Token 成本作为设计质量代理指标 |
 | `05_harness_engineering_emergence.md` | Harness Engineering 浮现 + 开放问题 | 一个术语在五个月内从不存在到核心议题；代码该持久还是再生？ |
+| `06_tdd_as_prompt_engineering.md` | TDD = Prompt Engineering | 测试是 Agent 最精确的 spec 语言；Adam Tornhill 45% 数据 |
+| `07_risk_tiering.md` | Risk Tiering | AI 生成变更的三级风险分类——低风险自动合，高风险人工审 |
+| `08_practical_workflow.md` | 7 步日常工作流 | Backlog→Agent 讨论→ADR→Task List→执行→解释文档→隔夜质量检查 |
+| `09_security_blind_spot.md` | 安全——最被忽视的议题 | Agent 时代的新攻击面；安全必须嵌入 Middle Loop |
 
 ---
 
@@ -44,6 +48,9 @@ Engelberg 不只是 Deer Valley 的续集。它是 **agentic engineering 从实�
 
 - [Martin Fowler: Fragments July 6, 2026](https://martinfowler.com/fragments/2026-07-06.html)
 - [Giles Edwards-Alexander: Notes from FOSE Europe](https://overwatering.org/blog/2026/07/notes-from-fose-europe/)
+- [UBOS.tech: Thoughtworks Retreat Highlights](https://ubos.tech/news/thoughtworks-future-of-software-development-retreat-highlights-ais-transformative-role/)
+- [Metastic World: Retreat 2026 Insights](https://www.metasticworld.com/en/insights/thoughtworks-future-of-software-development-retreat-2026)
+- [IT Brief: Thoughtworks retreat explores AI's Agile future](https://itbrief.co.nz/story/thoughtworks-retreat-explores-ai-s-agile-software-future)
 
 ---
 
