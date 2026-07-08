@@ -51,7 +51,7 @@ status: draft
 
 **代表厂商**：Microsoft（Agent 365）、Google（Workspace Intelligence）、腾讯（WorkBuddy）、飞书（龙虾架构）、钉钉（悟空）
 
-> 详见: `findings/products/office-workspace-agent-platform.md`, `findings/china/feishu-cli-architecture-deep-dive.md`
+> 详见: `findings/front-end/office-workspace-agent-platform.md`, `findings/front-end/feishu-cli-architecture-deep-dive.md`
 
 ### 中端：从"预定义流程引擎"到"Framed Autonomy"
 
@@ -65,7 +65,7 @@ status: draft
 
 **代表厂商/框架**：Camunda ProcessOS, ServiceNow AI Control Tower, xpander.ai, Neo, Reevo
 
-> 详见: `findings/products/camunda-processos-deep-dive.md`, `findings/methodology/agentic-bpm-academic-landscape.md`
+> 详见: `findings/orchestration/camunda-processos-deep-dive.md`, `findings/methodology/agentic-bpm-academic-landscape.md`
 
 ### 后端：记录系统仍在，但接入方式变了
 
@@ -90,7 +90,7 @@ status: draft
 
 **核心 tension**：模型公司（OpenAI/Anthropic）拥有智能，大厂（MS/SAP/ServiceNow）拥有数据和治理框架。Agent 控制平面是双方必争之地。
 
-> 详见: `findings/products/agent-control-plane-cowork-frontier.md`
+> 详见: `findings/orchestration/agent-control-plane-cowork-frontier.md`
 
 ---
 

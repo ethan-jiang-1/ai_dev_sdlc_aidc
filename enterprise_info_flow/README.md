@@ -105,25 +105,28 @@ enterprise_info_flow/
 │   ├── apm_manifesto.pdf                              ← APM manifesto 原文
 │   └── apm_manifesto.md                               ← APM manifesto markdown 版
 └── findings/
-    ├── methodology/
+    ├── README.md                                      ← 目录说明 + 放新文件规则
+    ├── front-end/                                     ← 前端：Agent 运行的基础设施
+    │   ├── office-workspace-agent-platform.md         ← MS/Google/腾讯 Office→Agent 平台
+    │   ├── feishu-dingtalk-vs-bpm.md                  ← CWM（协同办公）vs BPM 定位
+    │   ├── feishu-cli-architecture-deep-dive.md       ← 飞书"龙虾"架构 + CLI 化
+    │   └── dingtalk-wukong-architecture.md            ← 钉钉悟空 Agent OS
+    ├── orchestration/                                 ← 中端：工作流怎么编排
+    │   ├── camunda-processos-deep-dive.md             ← Camunda ProcessOS 深挖
+    │   ├── agent-control-plane-cowork-frontier.md     ← Agent 控制平面（Anthropic/OpenAI）
+    │   └── ai-native-startups-vs-legacy.md            ← 大厂 vs 模型公司 vs 创业（含 UiPath/AA 方法论）
+    ├── backend/                                       ← 后端：记录系统
+    │   └── classic-bpm-scenarios.md                   ← 经典 BPM 场景 + AI 变化
+    ├── methodology/                                   ← 方法论/理论（横切）
     │   ├── bpm-the-sdlc-equivalent.md                 ← BPM = SDLC 等价物（含 ServiceNow Blueprint）
-    │   ├── classic-bpm-scenarios.md                   ← 经典 BPM 场景 + AI 变化
     │   ├── agentic-bpm-academic-landscape.md          ← 学术圈：Agentic BPM manifesto
     │   └── four-layer-architecture.md                 ← 四层架构全景图 + SDLC 同构对照
-    ├── taxonomy/                                       ← 分类体系（Round 4 合成）
+    ├── taxonomy/                                      ← 分类体系（横切）
     │   └── classification-and-terminology.md          ← 品类名/厂商分类/成熟度/术语收敛
-    ├── products/
-    │   ├── 2026-enterprise-ai-agents-landscape.md     ← 全球 + 中国产品全景
-    │   ├── ai-native-startups-vs-legacy.md            ← 大厂 vs 模型公司 vs 创业（含 UiPath/AA 方法论）
-    │   ├── camunda-processos-deep-dive.md             ← Camunda ProcessOS 深挖
-    │   ├── agent-control-plane-cowork-frontier.md     ← Agent 控制平面深挖
-    │   └── office-workspace-agent-platform.md         ← Office→Agent 平台（MS/Google/腾讯）
-    ├── cases/
-    │   └── real-enterprise-deployments-2026.md        ← 真实案例（有名字有数据）
-    └── china/
-        ├── feishu-dingtalk-vs-bpm.md                  ← 飞书/钉钉定位分析
-        ├── feishu-cli-architecture-deep-dive.md       ← 飞书 CLI 化深挖
-        └── dingtalk-wukong-architecture.md            ← 钉钉悟空架构深挖
+    ├── landscape/                                     ← 全景扫描（横切）
+    │   └── 2026-enterprise-ai-agents-landscape.md     ← 2026 全球 + 中国产品全景
+    └── cases/                                         ← 实证
+        └── real-enterprise-deployments-2026.md        ← 真实案例（有名字有数据）
 ```
 
 ## ⚠️ 来源铁律

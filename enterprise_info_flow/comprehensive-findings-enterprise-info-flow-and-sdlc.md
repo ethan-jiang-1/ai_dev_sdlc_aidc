@@ -104,15 +104,15 @@ Cognizant 的 "Assisted → Augmented → Autonomous" 三级模型和 SDLC 领�
 
 **Q7: ServiceNow Blueprint for Agentic Business** ✅ 已在 Round 8 解决。四层架构（Sense → Decide → Act → Secure），详见 `findings/methodology/bpm-the-sdlc-equivalent.md`。
 
-**Q8: UiPath/AA 的 "RPA → Agentic" 转型白皮书** ✅ 已在 Round 8 解决。UiPath "The Definitive Guide to Agentic Automation" + AA+EY "From Robotic to Agentic" + Stanford 案例 SM411。方法论共识：确定性骨架 + Agentic 自主 + 编排层成为核心 + 治理是一等公民。详见 `findings/products/ai-native-startups-vs-legacy.md`。
+**Q8: UiPath/AA 的 "RPA → Agentic" 转型白皮书** ✅ 已在 Round 8 解决。UiPath "The Definitive Guide to Agentic Automation" + AA+EY "From Robotic to Agentic" + Stanford 案例 SM411。方法论共识：确定性骨架 + Agentic 自主 + 编排层成为核心 + 治理是一等公民。详见 `findings/orchestration/ai-native-startups-vs-legacy.md`。
 
 ### 明确放弃（1 个）
 
 **Q10: 飞书/钉钉/企微有方法论总结吗？** → 放弃。产品架构已有 3 个 dedicated 文件深挖。中文厂商重产品轻方法论，大概率没有正式方法论白皮书。不值得再花搜索预算。
 
-### 留给用户决策（1 个）
+### 留给用户决策（1 个）→ 已关闭
 
-**Q11: "信息加工流"作为统一框架值不值得单独写一篇？** → 见下方"开放问题"。
+**Q11: "信息加工流"作为统一框架值不值得单独写一篇？** → **关闭。** "信息加工流"这个术语是我们自己造的——业界标准术语是 **Business Process（业务流程）**，它的 ITO 框架（Input → Transformation → Output）精确描述了"信息一个阶段一个阶段被加工，一路都是 artifacts"。BPM 有 40 年学术传承、国际建模标准（BPMN 2.0）、完整的五阶段生命周期。我们的贡献不是发明新术语，是**发现了 BPM 和 SDLC 在 AI 时代的同构性，并用 "Framed Autonomy" 统一描述了两边的范式转移**。这个发现已经写进了 `four-layer-architecture.md`，不需要再单独写一篇"信息加工流"。
 
 ---
 
@@ -158,7 +158,7 @@ Cognizant 的 "Assisted → Augmented → Autonomous" 三级模型和 SDLC 领�
 
 Camunda ProcessOS 最接近"AI-native BPM"——4 个 AI agents（发现→重设计→构建→持续改进）。
 
-> 详见: [findings/products/ai-native-startups-vs-legacy.md](findings/products/ai-native-startups-vs-legacy.md)
+> 详见: [findings/orchestration/ai-native-startups-vs-legacy.md](findings/orchestration/ai-native-startups-vs-legacy.md)
 
 ### 飞书/钉钉/企微 = BPM 吗？
 
@@ -172,13 +172,13 @@ Camunda ProcessOS 最接近"AI-native BPM"——4 个 AI agents（发现→重�
 
 关键：2026 年飞书和钉钉**同日开源 CLI**——产品能力被拆解为 AI 可调用的原子指令。传统 BPM 的流程引擎不再是唯一执行入口。
 
-> 详见: [findings/china/feishu-dingtalk-vs-bpm.md](findings/china/feishu-dingtalk-vs-bpm.md)
+> 详见: [findings/front-end/feishu-dingtalk-vs-bpm.md](findings/front-end/feishu-dingtalk-vs-bpm.md)
 
 ### AI 带来的根本变化：非结构化信息可以直接加工
 
 传统 BPM 的前提是**信息已经被结构化**——发票被 OCR 了、采购申请被填进表单了。AI 打破了这个前提：Excel、PDF、邮件、聊天记录、合同扫描件——AI 直接"读懂"并加工。**加工层不再要求输入是干净的结构化数据。**
 
-> 详见: [findings/methodology/classic-bpm-scenarios.md](findings/methodology/classic-bpm-scenarios.md)
+> 详见: [findings/backend/classic-bpm-scenarios.md](findings/backend/classic-bpm-scenarios.md)
 
 ## 关键来源（第三轮：Round 4/7/8 新增）
 
