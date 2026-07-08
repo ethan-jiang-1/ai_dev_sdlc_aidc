@@ -89,9 +89,64 @@ Windsor Drake Q2 2026 数据：
 
 ---
 
+## 传统 RPA 厂商的转型：UiPath 和 Automation Anywhere（Q8 答案）
+
+> 2026 年，传统 RPA 厂商正在经历从"规则驱动的 bot"到"自主 agent"的转型。两家的方法论白皮书揭示了与 SDLC 工具链转型平行的路径。
+
+### UiPath：从 RPA 到 Agentic Automation
+
+UiPath 有正式的方法论白皮书：**"The Definitive Guide to Agentic Automation"**。
+
+**三阶段演化路径**：
+| 阶段 | 描述 |
+|------|------|
+| Traditional RPA | 静态 bot 执行固定规则任务（仅结构化数据） |
+| AI-Powered Automation | RPA + ML/NLP/OCR——处理半结构化任务 |
+| Agentic Automation | AI agent 自主规划、决策、适应、执行——基于 LLM/LAM 和多模型集成 |
+
+**2026 平台组件**：
+- **UiPath Maestro**：Agentic 编排层（BPMN 2.0 + DMN）——"指挥中心"
+- **Agent Builder**：低代码 AI agent 创建
+- **Autopilot**：自然语言→工作流生成
+- **Healing Agent**：运行时自修复（UI 选择器断裂时自动恢复，减少 60-70% 维护成本）
+- **AI Trust Layer**：治理、安全、可审计性
+
+**Boris Krumrey（UiPath Global VP）的 2026 技能模型**：agentic 设计基础（目标、约束、grounding/RAG、护栏）→ 编排优先思维（异常路径、HITL 审批、可审计性）→ 多 agent 和自适应案例模式 → BPMN 作为执行骨架，演进到 "Agentic Task" 概念。
+
+> Source: [The Definitive Guide to Agentic Automation](https://www.uipath.com/resources/automation-whitepapers/definitive-guide-to-agentic-automation), UiPath
+> Source: [Transforming your Business with Agentic AI](https://www.uipath.com/resources/automation-whitepapers/transforming-your-business-with-agentic-ai), UiPath
+
+### Automation Anywhere：从 RPA 到 Agentic Process Automation (APA)
+
+Automation Anywhere 与 **EY 联合发布了白皮书 "From Robotic to Agentic: Reimagining Process Automation"**，Stanford GSB 也将其作为 2026 年案例研究（Case No. SM411）。
+
+**三大支柱**（Imagine 2026）：
+| 支柱 | 功能 |
+|------|------|
+| Universal Orchestration（Mozart Orchestrator） | 协调人、AI agent、bot、API——跨云、本地、气隙系统 |
+| Contextual Intelligence（Process Reasoning Engine + Context Intelligence Graph） | 将企业政策、系统和执行历史结构化为可操作地图——声称准确性提升 30%+ |
+| Centralized Governance | 完整审计追踪、PII 遮蔽、AI Evaluations、Process Simulation（预生产测试） |
+
+**Stanford 案例研究数据**：AI 预订量 YoY 增长 45%，占业务 70%+。早期 APA 采用者：Petrobras 三周节省 $120M，Boston Children's Hospital 减少 80% 行政负担。CEO Mihir Shukla 的愿景：将 80% 端到端流程自动化，把人从"机械工作"解放回"工艺"。
+
+> Source: [From Robotic to Agentic: Reimagining Process Automation](https://www.automationanywhere.com/lp/robotic-to-agentic-roadmap), EY & Automation Anywhere
+> Source: [Automation Anywhere in 2026: Powering the Autonomous Enterprise](https://www.gsb.stanford.edu/faculty-research/case-studies/automation-anywhere-2026-powering-autonomous-enterprise), Stanford GSB Case SM411
+> Source: [Imagine 2026: The Next Phase of Agentic Automation](https://www.automationanywhere.com/company/blog/imagine-2026-dallas-ai-product-announcements), Automation Anywhere
+
+### RPA→Agentic 转型的方法论共识
+
+UiPath 和 AA 在方法论上高度一致——这跟 SDLC 领域的转型也是同构的：
+
+1. **确定性骨架 + Agentic 自主**：BPMN/流程定义仍是治理骨架，但执行从"bot 按步骤跑"变成"agent 在框内自主"
+2. **编排层成为核心**：Maestro 和 Mozart Orchestrator 都是"指挥中心"——协调人+agent+bot
+3. **治理从附加功能变成一等公民**：AI Trust Layer、Centralized Governance、预提交权限模式
+4. **从"省人力"到"重新设计流程"**：AA 的 CEO 明确说目标不是优化现有流程，是"解放人做工艺"
+
+
 ## 对"信息加工流"研究的启示
 
 1. **AI-native 创业公司验证了一个关键假设**：旧架构（基于结构化表单、预定义审批流、关系型数据模型）确实不再适合 AI 时代的灵活信息加工
 2. **Camunda ProcessOS 是最近的参照物**：4 个 AI agent 做的事，本质上就是"重新设计信息加工流"
 3. **模型公司没有直接做 BPM**——他们在做更底层的能力。但 Anthropic 的 MCP 协议和角色专用插件暗示了方向：BPM 的未来可能是"Agent-native"的，不是"process-native"的
-4. **飞书/钉钉在这个光谱里**：他们比传统 BPM 更灵活（处理非结构化信息），比 AI-native 创业者体量更大（有真实用户基础）。但他们的 BPM 基因弱——这可能恰恰是 AI 时代的优势
+4. **RPA→Agentic 的转型方法论已经由厂商正式化**——UiPath 的白皮书和 AA+EY 的联合白皮书提供了结构化的转型框架。这跟 SDLC 从"CI/CD 管道"到"Agent 原生编排"的转型完全同构
+5. **飞书/钉钉在这个光谱里**：他们比传统 BPM 更灵活（处理非结构化信息），比 AI-native 创业者体量更大（有真实用户基础）。但他们的 BPM 基因弱——这可能恰恰是 AI 时代的优势

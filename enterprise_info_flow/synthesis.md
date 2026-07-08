@@ -73,13 +73,46 @@ BPM 的传统假设正在被 AI 瓦解——**和 SDLC 面临的冲击完全同�
 
 ---
 
-## 开放问题
+## 开放问题状态（2026-07-08 收拢）
 
-- [ ] BPM 社区有没有人明确提出过"AI-native BPM"这个说法？还是都在各自摸索？
-- [ ] ServiceNow 的 "Blueprint for Agentic Business" 具体内容是什么？值得深挖
-- [ ] 传统 BPM 厂商（UiPath、Automation Anywhere）的"RPA → Agentic"转型，方法论上有没有白皮书？
-- [ ] 中国市场：飞书/钉钉/企微有没有在方法论层面做总结，还是只做产品？
-- [ ] "信息加工流"作为统一框架——值不值得单独写一篇？
+经过 7 轮探索 + Round 8 收尾搜索，11 个原始开放问题的状态如下。
+
+### 已解决（6 个）
+
+| # | 问题 | 答案 | 详见 |
+|---|------|------|------|
+| Q1 | "AI-native BPM" 有没有人明确提出？ | 学术界正式术语是 **Agentic Business Process Management (APM)**，Dagstuhl Seminar 18 位作者。不是"AI-native BPM"这个叫法 | `findings/methodology/agentic-bpm-academic-landscape.md` |
+| Q2 | 飞书/钉钉层英文等价术语？ | **Collaborative Work Management (CWM)**，Gartner/Forrester 定义 | `findings/taxonomy/classification-and-terminology.md` |
+| Q3 | 三股力量各自有名字吗？ | Arion Research 四分类（Vertical Integrators/Horizontal Platforms/Infrastructure/Independent）+ xpander.ai 三级成熟度（Retrofitted/Build-Only/Agentic-Native） | `findings/taxonomy/classification-and-terminology.md` |
+| Q4 | BPM 学术圈对 AI 有系统性回应吗？ | 有。APM manifesto (Dagstuhl)、A-BPMS、BPM Pulse Survey 2026 (42% 用 GenAI, 16% 自主 agent)、CHI 2026 信任度研究 | `findings/methodology/agentic-bpm-academic-landscape.md` |
+| Q5 | Agentic Orchestration = APO = Agentic BPM 是同一个东西？ | **是。** 不同出身（厂商/分析师/学术），同一结论：确定性骨架 + Agentic 自主 = Framed Autonomy | `findings/taxonomy/classification-and-terminology.md` |
+| Q6 | 能画出分类地图吗？ | 四层架构全景图已画出：前端（Office/CWM）→ 中端（Agentic Orchestration/APM/APO）→ 后端（CRM/ERP）→ 治理层（Agent 365/AI Control Tower，横切） | `findings/methodology/four-layer-architecture.md` |
+
+### Cognizant 三级模型 vs AI Sandwich 对比（Q9）
+
+Cognizant 的 "Assisted → Augmented → Autonomous" 三级模型和 SDLC 领域的 "AI Sandwich"（Klaassen）/"操作者→委托人"（Mollick/Willison）**描述的是同一件事，只是粒度不同**：
+
+| 维度 | Cognizant 三级模型 | AI Sandwich |
+|------|------|------|
+| Assisted / 第一层 | AI 辅助人做分析和推荐，人仍是主要行动者 | = Sandwich 还没形成——AI 只是工具 |
+| Augmented / 第二层 | AI agent 在人定义的流程内执行特定任务 | = **AI Sandwich**：人在两端（Brief + Review/Sign-off），AI 在中间执行 |
+| Autonomous / 第三层 | 多 Agent 独立分解目标、端到端执行，人只是监督者 | = **操作者→委托人**：人设定目标，AI 自主完成，人只做策展 |
+
+**致远的三级模型（Co-pilot → Co-work → Autonomous）跟 Cognizant 完全对应。** 2026 年的主流都在 Co-work/Augmented 层——这跟 SDLC 侧 11% 生产环境的数字一致。
+
+### 仍需探索（2 个）
+
+**Q7: ServiceNow Blueprint for Agentic Business** ✅ 已在 Round 8 解决。四层架构（Sense → Decide → Act → Secure），详见 `findings/methodology/bpm-the-sdlc-equivalent.md`。
+
+**Q8: UiPath/AA 的 "RPA → Agentic" 转型白皮书** ✅ 已在 Round 8 解决。UiPath "The Definitive Guide to Agentic Automation" + AA+EY "From Robotic to Agentic" + Stanford 案例 SM411。方法论共识：确定性骨架 + Agentic 自主 + 编排层成为核心 + 治理是一等公民。详见 `findings/products/ai-native-startups-vs-legacy.md`。
+
+### 明确放弃（1 个）
+
+**Q10: 飞书/钉钉/企微有方法论总结吗？** → 放弃。产品架构已有 3 个 dedicated 文件深挖。中文厂商重产品轻方法论，大概率没有正式方法论白皮书。不值得再花搜索预算。
+
+### 留给用户决策（1 个）
+
+**Q11: "信息加工流"作为统一框架值不值得单独写一篇？** → 见下方"开放问题"。
 
 ---
 
@@ -147,8 +180,13 @@ Camunda ProcessOS 最接近"AI-native BPM"——4 个 AI agents（发现→重�
 
 > 详见: [findings/methodology/classic-bpm-scenarios.md](findings/methodology/classic-bpm-scenarios.md)
 
-## 下一步
+## 关键来源（第三轮：Round 4/7/8 新增）
 
-1. 深挖 ServiceNow Blueprint for Agentic Business
-2. 找一个 BPM→Agentic 转型的厂商白皮书（UiPath/AA）
-3. 比较 Cognizant 三级模型 vs AI Sandwich——异同
+- [Keynote: The Blueprint for Agentic Business](https://www.servicenow.com/fr/workflow/news/keynote-blueprint-agentic-business.html), ServiceNow Knowledge 2026
+- [The Definitive Guide to Agentic Automation](https://www.uipath.com/resources/automation-whitepapers/definitive-guide-to-agentic-automation), UiPath
+- [From Robotic to Agentic: Reimagining Process Automation](https://www.automationanywhere.com/lp/robotic-to-agentic-roadmap), EY & Automation Anywhere
+- [Automation Anywhere in 2026: Powering the Autonomous Enterprise](https://www.gsb.stanford.edu/faculty-research/case-studies/automation-anywhere-2026-powering-autonomous-enterprise), Stanford GSB Case SM411
+- [Charles Lamanna moving Copilot beyond chat](https://www.fastcompany.com/91550785/charles-lamanna-is-moving-microsoft-copilot-beyond-chat), Fast Company, 2026
+- [腾讯 Agent Suite](https://cloud.tencent.com.cn/developer/article/2685993), 腾讯云
+- [The battle for corporate brains: Google unveils Workspace Intelligence](https://primetel.com.cy/the-battle-for-corporate-brains-google-unveils-workspace-intelligence-8598)
+- [APM Research Manifesto](https://arxiv.org/abs/2603.18916), Calvanese et al., Information Systems, 2026

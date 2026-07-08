@@ -72,9 +72,9 @@ status: living
 **这轮的 pivot**：从"有什么产品"转到了"方法论叫什么、有哪些玩家、他们之间的关系是什么"。但这些都是名词——还没挖到"东西到底怎么 work 的"。
 
 **仍未回答**：
-- 飞书/钉钉这一层，英文世界有没有等价术语？（协同办公 ≠ BPM，但在英文里叫什么？）
-- 三股力量做的不同东西，各自有名字吗？
-- BPM 学术圈对 AI 有没有系统性的回应？
+- 飞书/钉钉这一层，英文世界有没有等价术语？（协同办公 ≠ BPM，但在英文里叫什么？）→ **已在 Round 4 回答：CWM (Collaborative Work Management)，Gartner/Forrester 定义**
+- 三股力量做的不同东西，各自有名字吗？→ **已在 Round 4 回答：Arion Research 四分类 + xpander.ai 三级成熟度**
+- BPM 学术圈对 AI 有没有系统性的回应？→ **已在 Round 3 回答：APM manifesto (Dagstuhl Seminar, 18 位作者)**
 
 ---
 
@@ -98,9 +98,9 @@ status: living
 **这轮的 pivot**：从"知道有什么"转到了"知道怎么 work"。但——**还没有给这些不同的东西一个统一的分类体系（taxonomy）。**
 
 **仍未回答**：
-- Camunda 叫它"Agentic Orchestration"，Forrester 叫它"Adaptive Process Orchestration"，学术圈叫它"Agentic BPM"——这些是一个东西吗？
-- 飞书/钉钉在中文世界叫"协同办公"，英文世界有没有对应的成熟品类名？
-- 整个企业信息加工流领域，能不能画出一张清晰的分类地图？
+- Camunda 叫它"Agentic Orchestration"，Forrester 叫它"Adaptive Process Orchestration"，学术圈叫它"Agentic BPM"——这些是一个东西吗？→ **已在 Round 4 回答：是，术语收敛论——不同出身同一结论**
+- 飞书/钉钉在中文世界叫"协同办公"，英文世界有没有对应的成熟品类名？→ **已在 Round 4 回答：CWM (Collaborative Work Management)**
+- 整个企业信息加工流领域，能不能画出一张清晰的分类地图？→ **已在 Round 4+7 回答：四层架构全景图（前端/中端/后端/治理）**
 
 ---
 
@@ -156,60 +156,78 @@ Collaboration Layer（跨 agent 通信）
 
 ---
 
-## Round 6：补齐缺口 — 开源、中小企业、中国市场深度（~3 次搜索）
+## Round 7：前端补完 — "Office 套件在变成什么？"（~3 次搜索）
 
-**状态**：北极星目标基本达成，但 Round 5 留了缺口——开源项目、SMB、中国市场除了 CLI 化还有什么。
+**状态**：之前六轮覆盖了 BPM、编排、CLI 化、学术、分类——但缺了一个最显眼的东西：**传统 Office 套件自己在怎么变？**
 
 **搜索方向**：
-- `open source agentic workflow orchestration 2026 self-hosted`
-- `SMB mid-market AI workflow automation 2026`
-- `钉钉 悟空 Agent OS 架构 开源 原子化`
+- Microsoft Office AI strategy beyond Copilot
+- 腾讯 WorkBuddy 战略
+- Google Workspace vs MS Office AI
 
 **关键发现**：
 
-### 开源生态：碎片化但活跃
+**MS/Google/腾讯都在把 Office 从"人用的工具"变成"Agent 运行的基础设施"。**
 
-| 项目 | 定位 |
-|------|------|
-| **Agyn** | Kubernetes-native agent runtime——把 Claude Code/Codex 从笔记本搬到企业基础设施 |
-| **Kiwiq** | 生产级多 agent 编排平台——200+ 企业 agents 验证后开源 |
-| **OpenClaw** | 桌面 agent——将安全边界移到推理层而非操作层 |
-| **DeerFlow 2.0** | 本地 AI agent 编排器——VentureBeat 深度报道 |
-| **Huf** | 自托管多 agent 基础设施——支持 Slack/ERPNext/Discord/Gmail 集成 |
+| | Microsoft | Google | 腾讯 |
+|------|------|------|------|
+| Agent 身份 | 每个 Agent 需要 Office 实例（邮箱/日历/Teams） | Workspace 账号 = Agent 的上下文入口 | 微信/企微统一身份 |
+| Agent 执行 | Copilot Cowork（委托模式） | Skills & Studio（自主模式） | WorkBuddy Agent Suite |
+| 护城河 | Graph + 4.5 亿用户 + Agent 365 | 实时知识图谱 + 捆绑定价 | 微信 14 亿 + 企微 1400 万企业 |
+| 模型策略 | GPT + Claude + 自研 MAI | Gemini | 混元 + DeepSeek，11 款可选 |
+| 定价 | Copilot $21/用户溢价 | 捆绑进基础计划（~40% 涨价） | 39 元/月起 |
 
-**关键判断**：开源在构建基础设施层——agent runtime、编排、治理。但还没有出现"开源版的 Camunda ProcessOS"。
+**Nadella 的原话**：*"在 Agent 时代，企业配置的第一个资源是 Office——因为 Agent 需要跟人协作。"*
 
-### 中小企业：不同逻辑
+**WorkBuddy 数据**：月访问 885 万，DAU 竞品 3-4 倍，SkillHub 7 万+ 技能。
 
-**惊人数据**（Techaisle 2026）：中型市场领先者已经跑到 **144 个 AI agents 对 1 个员工**。小企业 59:1。
+**关键洞察**：Office/Workspace/WorkBuddy 是信息加工流的**前端**。之前研究的 BPM/编排是**中端**。CRM/ERP 是**后端**。治理层**横切**所有层。
 
-**但有一个"流程翻译鸿沟"**：
-- 76% 的 SMB 说 GenAI 加速了任务完成
-- 只有 **15%** 说改进了业务流程
+> Source: [Charles Lamanna moving Copilot beyond chat](https://www.fastcompany.com/91550785/charles-lamanna-is-moving-microsoft-copilot-beyond-chat), Fast Company
+> Source: [腾讯 Agent Suite](https://cloud.tencent.com.cn/developer/article/2685993), 腾讯云
+> Source: [Google Workspace Intelligence](https://primetel.com.cy/the-battle-for-corporate-brains-google-unveils-workspace-intelligence-8598)
 
-这不是技术问题——是 SMB 不想优化流程，想让流程**消失**。他们不要更快的审批流，要的是"不需要审批"。
+---
 
-**三条路**（NOC Technology, 2026）：
-1. DIY（n8n, OpenClaw）：$445K-$1.13M 五年 TCO——只有 AI 是核心产品才划算
-2. SaaS 工具栈（Zapier, Make, HubSpot）：$113K-$453K——标准简单工作流
-3. **Managed Intelligence Provider（MIP）**：$79K-$195K——最适合大多数 SMB
+## 最终全景图（7 轮探索后）
 
-### 钉钉悟空：CLI 化的最完整标本
+### 企业信息加工流的四层架构
 
-悟空是目前挖到的**最激进、最完整的 CLI 化案例**：
+```
+┌─────────────────────────────────────────────────────────────┐
+│  前端（Agent 的"家"）                                        │
+│  Office / Workspace / WorkBuddy / 飞书 / 钉钉                │
+│  身份、邮箱、日历、文档、协作频道——Agent 运行的基础设施         │
+├─────────────────────────────────────────────────────────────┤
+│  中端（工作流怎么编排）                                       │
+│  Agentic Orchestration / APO / Agentic BPM / ProcessOS       │
+│  确定性骨架 + Agentic 自主 = Framed Autonomy                  │
+├─────────────────────────────────────────────────────────────┤
+│  后端（记录系统）                                             │
+│  CRM / ERP / HCM / 传统 BPM                                  │
+│  业务数据、合规流程、审计追踪                                   │
+├─────────────────────────────────────────────────────────────┤
+│  治理层（横切）                                               │
+│  Agent 365 / AI Control Tower / Rubrik Agent Cloud           │
+│  身份、权限、审计、熔断、回滚                                   │
+└─────────────────────────────────────────────────────────────┘
+```
 
-- **Tauri + Rust**，仅 122MB
-- **完整 GUI→CLI 重构**：1000+ 原子化指令，覆盖钉钉全场景
-- **多 Agent 引擎路由**：Spark（自研）+ Claude Code + Gemini CLI，根据任务特性自动选引擎
-- **RealDoc 文件系统**：原子级文件操作、每步快照、秒级回退
-- **六层安全**：双层规则 → 统一认证 → 沙箱 → Skill 扫描 → 专属模型 → 网络代理
-- **双层熔断**：意图锁（CLI 模式）+ 审批流熔断（钉钉原生）
+### 与 SDLC 变革的完全同构
 
-**关键洞察**：悟空验证了"CLI 化替代流程引擎"的假设——而且做到了比飞书 CLI 更深的程度。不是把审批能力暴露给 Agent 调用，而是**把整个钉钉底层重写为 Agent-native**。
+| 维度 | SDLC 领域 | 企业信息流领域 |
+|------|------|------|
+| 旧范式 | 人先想清楚 → 拆解 → 逐行写代码 | 预定义流程 → 审批流 → 人执行 |
+| 新范式 | AI Sandwich / 操作者→委托人 | Framed Autonomy / Co-work 模式 |
+| 人的角色 | Brief / Review / Sign-off | 定义框 + 关键节点策展 + 熔断确认 |
+| AI 的角色 | 中间层执行和探索 | 框内自主执行原子能力 |
+| 核心 artifact | Spec 取代代码 | 流程框（frame）取代 BPMN 流程图 |
+| 治理模式 | 约束编码进 CI/linter | 权限预提交 + 审计 + Agent Rewind |
+| 前端平台 | Claude Code / Cursor / Copilot | Office / Workspace / WorkBuddy |
+| 中端编排 | Agent SDK / Routines / Triggers | Camunda ProcessOS / APO / Agentic BPM |
+| 成熟度 | 11% 生产环境（CamundaCon 数据） | 11% 生产环境（同一数据源） |
 
-> Source: [钉钉悟空技术解析](https://blog.csdn.net/weixin_44262492/article/details/159266464), CSDN, 2026
-> Source: [钉钉、飞书、企微的三条AI路线](https://www.sohu.com/a/1041323154_122578101), 搜狐, 2026
-> Source: [阿里悟空发布](https://m.163.com/dy/article/KO7I3JMG0514TTKN.html), 网易, 2026
+**七轮探索的最终结论**：SDLC 和 BPM 不是"可以互相借鉴"——它们是在同一个范式转移中、以不同的术语在描述**同一件事**。信息加工流从"人定义步骤→人/机器执行"变成"人定义边界→Agent 在边界内自主加工→人在关键节点策展"。
 
 **搜索方向**：
 - `"agentic orchestration" vs "agentic BPM" vs "adaptive process orchestration" terminology`
@@ -265,6 +283,31 @@ CWM（协同办公）和 BPM 不是竞争关系——在 AI 时代它们正在**
 | 2. 品类之间的边界和关系？ | ✅ 完成 | CWM + BPM 在 AI 时代**融合**而非替代。三级成熟度（Co-pilot → Co-work → Autonomous）。确定性骨架 + Agentic 自主是共识 |
 | 3. 底层范式转向了什么？ | ✅ 完成 | **Framed Autonomy**（有框的自主）——框由人定义，框内由 Agent 自主。不同术语在说同一件事 |
 | 4. 跟 SDLC 怎么对应？ | ✅ 完成 | SDLC 的"AI Sandwich"/"操作者→委托人" = BPM 的"Co-work 模式" = 学术的"Framed Autonomy"。**完全同构。** 人定义边界和验收标准，AI 在框内自主执行 |
+
+---
+
+## Round 8：收尾搜索 + 结构收拢（~3 次搜索 + 文件重组，2026-07-08）
+
+**状态**：7 轮探索后核心判断已形成，但有两个尾巴：synthesis.md 里还有未关闭的开放问题，目录结构没有反映最终的四层架构认知。
+
+**做了三件事**：
+
+1. **补上缺失的合成层**：新建 `findings/taxonomy/classification-and-terminology.md`（Round 4 的所有分类成果）和 `findings/methodology/four-layer-architecture.md`（四层架构 + SDLC 同构对照表）。之前这些东西只存在于 trajectory 里。
+
+2. **追了最后两个 tractable 问题**：
+   - **ServiceNow Blueprint for Agentic Business**：Knowledge 2026 上发布的四层框架（Sense → Decide → Act → Secure），是目前大厂中最接近"AI-native BPM 方法论"的东西。已写入 `bpm-the-sdlc-equivalent.md`
+   - **UiPath/AA 的 RPA→Agentic 转型白皮书**：UiPath "The Definitive Guide to Agentic Automation" + AA+EY "From Robotic to Agentic" + Stanford 案例 SM411。方法论共识：确定性骨架 + Agentic 自主 + 编排层成为核心 + 治理是一等公民。已写入 `ai-native-startups-vs-legacy.md`
+
+3. **收拢开放问题**：11 个去重后唯一问题 → 6 已答（回填到 synthesis）、2 追到答案、1 明确放弃（飞书/钉钉方法论）、1 留给用户决策（统一框架是否单独写）、1 顺手做了对比（Cognizant vs AI Sandwich）
+
+**关键发现**：
+- ServiceNow Blueprint 的四层（Sense→Decide→Act→Secure）跟我们的四层架构（前端→中端→后端→治理）有重叠但侧重不同——ServiceNow 更偏执行流，我们更偏架构位置
+- RPA→Agentic 的方法论已由厂商正式化——UiPath 有完整的白皮书和培训体系，AA 有 EY 联合白皮书和 Stanford 案例。这验证了"转型方法论正在形成"的判断
+- 飞书/钉钉在方法论层面的确没有正式产出——中文厂商重产品轻方法论的判断成立
+
+**本轮的文件变更**：
+- 新建：`findings/taxonomy/classification-and-terminology.md`, `findings/methodology/four-layer-architecture.md`
+- 更新：`synthesis.md`（开放问题收拢）, `bpm-the-sdlc-equivalent.md`（ServiceNow 深挖）, `ai-native-startups-vs-legacy.md`（UiPath/AA 方法论）, `README.md`（目录树）, `exploration-trajectory.md`（本文件——标注各轮问题关闭状态）
 
 ---
 

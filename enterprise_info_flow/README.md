@@ -81,13 +81,15 @@ updated: 2026-07-08
 
 ---
 
-### 当前状态：统一判断形成
+### 当前状态：8 轮探索完成，开放问题已收拢
 
-四轮搜索后，核心判断收敛到一句话：
+8 轮搜索后（含 Round 8 收尾搜索 + 结构收拢），核心判断收敛到一句话：
 
-> **AI 时代的信息加工流，底层范式从"预定义流程引擎"转向"Framed Autonomy"——Agent 在治理边界内自主执行原子能力，人在关键节点策展和签收。** 这个范式在 SDLC（操作者→委托人、AI Sandwich）、BPM（Agentic BPM、ProcessOS）、协作平台（CLI 化）、Agent 基础设施（控制平面）四个领域以不同的术语在同时发生。
+> **AI 时代的信息加工流，底层范式从"预定义流程引擎"转向"Framed Autonomy"——Agent 在治理边界内自主执行原子能力，人在关键节点策展和签收。** 这个范式在 SDLC（操作者→委托人、AI Sandwich）、BPM（Agentic BPM、ProcessOS）、协作平台（CLI 化）、Agent 基础设施（控制平面）、RPA（UiPath/AA 的 Agentic 转型）五个领域以不同的术语在同时发生。
 
 **最精确的术语**：来自学术圈的 **"Framed Autonomy"**——流程框（frame）由人定义（治理边界、KPI、约束），框内的执行由 Agent 自主完成。
+
+**开放问题状态**：11 个原始问题 → 6 已解决、2 已追到答案（ServiceNow Blueprint、UiPath/AA 白皮书）、1 顺手对比（Cognizant vs AI Sandwich）、1 明确放弃（飞书/钉钉方法论）、1 留给用户决策（统一框架是否单独写）。详见 `synthesis.md`。
 
 ---
 
@@ -95,23 +97,33 @@ updated: 2026-07-08
 
 ```
 enterprise_info_flow/
-├── README.md                                          ← 你在这里（含探索轨迹）
-├── synthesis.md                                       ← 综合判断 + 全部 URL
+├── README.md                                          ← 你在这里（含探索轨迹摘要）
+├── synthesis.md                                       ← 综合判断 + 全部 URL + 开放问题状态
+├── exploration-trajectory.md                          ← 8 轮探索全过程（含 Round 8 收尾）
+├── papers/
+│   ├── README.md                                      ← 论文索引
+│   ├── apm_manifesto.pdf                              ← APM manifesto 原文
+│   └── apm_manifesto.md                               ← APM manifesto markdown 版
 └── findings/
     ├── methodology/
-    │   ├── bpm-the-sdlc-equivalent.md                 ← BPM = SDLC 等价物
+    │   ├── bpm-the-sdlc-equivalent.md                 ← BPM = SDLC 等价物（含 ServiceNow Blueprint）
     │   ├── classic-bpm-scenarios.md                   ← 经典 BPM 场景 + AI 变化
-    │   └── agentic-bpm-academic-landscape.md          ← 学术圈：Agentic BPM manifesto
+    │   ├── agentic-bpm-academic-landscape.md          ← 学术圈：Agentic BPM manifesto
+    │   └── four-layer-architecture.md                 ← 四层架构全景图 + SDLC 同构对照
+    ├── taxonomy/                                       ← 分类体系（Round 4 合成）
+    │   └── classification-and-terminology.md          ← 品类名/厂商分类/成熟度/术语收敛
     ├── products/
     │   ├── 2026-enterprise-ai-agents-landscape.md     ← 全球 + 中国产品全景
-    │   ├── ai-native-startups-vs-legacy.md            ← 大厂 vs 模型公司 vs 创业
+    │   ├── ai-native-startups-vs-legacy.md            ← 大厂 vs 模型公司 vs 创业（含 UiPath/AA 方法论）
     │   ├── camunda-processos-deep-dive.md             ← Camunda ProcessOS 深挖
-    │   └── agent-control-plane-cowork-frontier.md     ← Agent 控制平面深挖
+    │   ├── agent-control-plane-cowork-frontier.md     ← Agent 控制平面深挖
+    │   └── office-workspace-agent-platform.md         ← Office→Agent 平台（MS/Google/腾讯）
     ├── cases/
     │   └── real-enterprise-deployments-2026.md        ← 真实案例（有名字有数据）
     └── china/
         ├── feishu-dingtalk-vs-bpm.md                  ← 飞书/钉钉定位分析
-        └── feishu-cli-architecture-deep-dive.md       ← CLI 化深挖
+        ├── feishu-cli-architecture-deep-dive.md       ← 飞书 CLI 化深挖
+        └── dingtalk-wukong-architecture.md            ← 钉钉悟空架构深挖
 ```
 
 ## ⚠️ 来源铁律

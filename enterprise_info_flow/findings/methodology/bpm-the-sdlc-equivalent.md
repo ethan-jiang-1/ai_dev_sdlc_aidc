@@ -90,11 +90,28 @@ LLM 驱动的 BPMN 2.0 协作图生成——同时建模控制流和资源视角
 
 ---
 
-## 厂商侧：ServiceNow 的 Blueprint for Agentic Business
+## 厂商侧：ServiceNow 的 Blueprint for Agentic Business（Q7 答案）
 
-ServiceNow 在 ATxSG 2026 上提出了结构化的 agentic 采用框架，包含 AI Control Tower 治理模型。这是目前最接近"AI-native BPM 方法论"的厂商尝试。
+ServiceNow 在 **Knowledge 2026 (K26)** 上由 Amit Zavery（President/CPO/COO）正式提出了 **Blueprint for Agentic Business**——这是目前大厂中最接近"AI-native BPM 方法论"的框架。背景：ServiceNow Enterprise AI Maturity Index 2026 发现只有 ~20% 的组织预期能在两年内编排多步 agentic AI 工作流。
 
-> Source: [ServiceNow at ATxSG 2026](https://www.thefastmode.com/expert-opinion/48645-servicenow-at-atxsg-2026-autonomous-ai-enterprise-workflows-and-the-future-of-productivity), The Fast Mode, 2026
+### 四层架构：Sense → Decide → Act → Secure
+
+| 层 | 做什么 | 关键组件 |
+|------|------|------|
+| **SENSE** | 连接和上下文化企业数据 | Workflow Data Fabric（250+ 零拷贝连接器，100 个新增）。Data Catalog——元数据管理和自主数据治理 |
+| **DECIDE** | 给 AI 提供业务上下文以做出可信决策 | **Context Engine**——将数十年组织知识统一到单一层。"嵌入式、始终在线的 AI 分析师"。解决 LLM 找模式但缺业务上下文的问题 |
+| **ACT** | 端到端自主执行（不只是建议） | **ServiceNow Build Agent**——弥合原型到生产的差距。自主工作流覆盖 IT 支持（90% 自主）、员工体验、安全与风险、CRM（报价到履约零人工交接） |
+| **SECURE** | 治理和安全的 agentic AI | **三图基础**：Armis Cyber Asset Graph（IT/OT/IoT 可见性）+ Veza Access Graph（120B+ 映射权限，人类/非人类/AI agent 最小权限）+ ServiceNow Knowledge Graph（业务上下文）。**AI Control Tower**——发现所有 AI 系统、治理 agent、问题发生前修复 |
+
+### 关键差异
+
+- **统一平台**："只有 ServiceNow 将数据、AI、工作流和安全统一在一个平台"——vs 点解决方案
+- **Agent 不只是建议，是执行**——"act"层是 ServiceNow 区别于其他厂商的关键
+- **被合作伙伴采纳**：HCLTech + Google Cloud + ServiceNow 已基于此蓝图在 Gemini Enterprise 上交付工厂车间助手、现场服务、ITOps agent 等
+
+> Source: [Keynote: The Blueprint for Agentic Business](https://www.servicenow.com/fr/workflow/news/keynote-blueprint-agentic-business.html), ServiceNow Knowledge 2026
+> Source: [ServiceNow Knowledge 26 Day 2 Keynote Announcements](https://cyntexa.com/blog/servicenow-k26-day-2-keynote-announcements/), Cyntexa, 2026
+> Source: [HCLTech and ServiceNow join forces to scale enterprise AI with Google Cloud](https://www.HCLTech.com/press-releases/hcltech-and-servicenow-join-forces-scale-enterprise-ai-google-cloud), HCLTech, Jun 2026
 
 ## 跨厂商对比
 
