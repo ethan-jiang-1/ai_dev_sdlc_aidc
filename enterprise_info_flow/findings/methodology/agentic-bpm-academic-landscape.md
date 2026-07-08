@@ -88,7 +88,7 @@ CHI 2026 论文：BPM 领域专家评估 LLM BPM 对话式建模 copilot (KICoPr
 
 ---
 
-## 对"信息加工流"研究的启示
+## 对 SDLC-BPM 同构性研究的启示
 
 1. **"Framed Autonomy"是我们缺的那个术语。** 一直在说"流程不再被预定义但也不是没规则"——APM 社区给了它一个精确的名字。
 2. **学术和工业在并行演进。** Camunda ProcessOS 的产品架构和 APM manifesto 的理论框架是同一件事的两个面。

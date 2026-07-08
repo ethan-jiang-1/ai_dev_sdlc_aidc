@@ -1,5 +1,5 @@
 ---
-title: Enterprise Information Flow — 企业信息加工流 × AI 时代
+title: BPM — SDLC 的企业侧等价物（横向参照研究）
 stage: research
 position: lateral_reference
 type: index
@@ -8,9 +8,9 @@ created: 2026-07-08
 updated: 2026-07-08
 ---
 
-# Enterprise Info Flow — 企业信息加工流研究
+# BPM：SDLC 在企业侧的等价物
 
-> 核心问题：软件行业用 SDLC 体系化管理信息加工流。办公室里的信息处理有没有等价的方法论？AI 在怎么改变它？
+> 核心问题：软件行业用 SDLC 体系化管理"需求→代码"。企业侧的"业务信息→决策/动作"有没有等价的方法论？AI 在怎么改变它？答案是 BPM（Business Process Management）。
 
 ## 定位
 
@@ -29,7 +29,7 @@ updated: 2026-07-08
 
 ### Round 1：广撒网 — "谁在企业信息流里做 AI？"（~12 次搜索）
 
-**初始状态**：只知道假设（信息加工流在企业和 SDLC 中同构），不知道外面有什么。
+**初始状态**：只知道假设（SDLC 的过程在企业侧应该有一个等价物），不知道外面有什么。
 
 **搜索方向**：
 - 企业 AI agent 产品全景
@@ -52,7 +52,7 @@ updated: 2026-07-08
 
 **搜索方向**：
 - BPM 方法论/学术根源
-- "information processing flow" 作为正式概念
+- SDLC 与 BPM 的同构关系
 - 经典 BPM 场景（Procure-to-Pay, Onboarding, Invoice Processing）
 - 飞书/钉钉 = BPM 吗？
 
@@ -85,7 +85,7 @@ updated: 2026-07-08
 
 8 轮搜索后（含 Round 8 收尾搜索 + 结构收拢），核心判断收敛到一句话：
 
-> **AI 时代的信息加工流，底层范式从"预定义流程引擎"转向"Framed Autonomy"——Agent 在治理边界内自主执行原子能力，人在关键节点策展和签收。** 这个范式在 SDLC（操作者→委托人、AI Sandwich）、BPM（Agentic BPM、ProcessOS）、协作平台（CLI 化）、Agent 基础设施（控制平面）、RPA（UiPath/AA 的 Agentic 转型）五个领域以不同的术语在同时发生。
+> **AI 时代的范式转移：底层从"预定义流程引擎"转向"Framed Autonomy"——Agent 在治理边界内自主执行原子能力，人在关键节点策展和签收。** 这个范式在 SDLC（操作者→委托人、AI Sandwich）、BPM（Agentic BPM、ProcessOS）、协作平台（CLI 化）、Agent 基础设施（控制平面）、RPA（UiPath/AA 的 Agentic 转型）五个领域以不同的术语在同时发生。
 
 **最精确的术语**：来自学术圈的 **"Framed Autonomy"**——流程框（frame）由人定义（治理边界、KPI、约束），框内的执行由 Agent 自主完成。
 

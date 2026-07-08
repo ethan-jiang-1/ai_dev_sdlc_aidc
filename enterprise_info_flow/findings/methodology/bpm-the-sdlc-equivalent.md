@@ -1,12 +1,12 @@
 ---
-title: BPM — 企业信息加工流的"SDLC 等价物"
+title: BPM — SDLC 的企业侧等价物
 date: 2026-07-08
 source: web_search
 type: methodology
 status: draft
 ---
 
-# BPM — 企业信息加工流的"SDLC 等价物"
+# BPM — SDLC 的企业侧等价物
 
 > 核心发现：软件行业有 SDLC。企业信息处理有 **BPM（Business Process Management，业务流程管理）**。它是一个有理论、有学术传承的独立学科——从 1980 年代 MIT 的 Office Analysis Methodology 到 2026 年 Springer 的 Contextual Process Digitalization，积累了 40 多年。
 
@@ -37,7 +37,7 @@ status: draft
 
 从企业战略到操作的六层模型。四种通用信息加工活动：数据收集 → 存储/检索 → 分析解释 → 信息打包（编辑、上下文化、审批）。
 
-> 这些早期研究本质上就是"信息加工流"的方法论——只是当时用的词是 Office Information Systems。
+> 这些早期研究本质上就是 BPM 的方法论雏形——只是当时用的词是 Office Information Systems。
 
 Source: Historical survey via [ScienceDirect: Information-processing perspective on process nature](https://www.sciencedirect.com/org/science/article/abs/pii/S1463715418001139); [ACM: Methodological issues for the design of an office information server](https://dl.acm.org/doi/10.1145/253168.253183)
 

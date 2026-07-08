@@ -11,7 +11,7 @@ status: living
 
 ## 北极星目标
 
-**为 AI 时代的企业信息加工流建立一个清晰的分类体系（taxonomy），并找到它与 SDLC 变革之间的同构关系。**
+**为 AI 时代企业侧的"SDLC 等价物"（BPM）建立一个清晰的分类体系（taxonomy），并找到它与 SDLC 变革之间的同构关系。**
 
 具体要回答：
 1. 传统 BPM 之外，出现了哪些**新品类**？各自叫什么名字？谁定义的？
@@ -25,10 +25,10 @@ status: living
 
 ## Round 0：初始假设（搜索前）
 
-**状态**：用户提出假设——软件开发是信息加工流，企业办公也是信息加工流。AI 出现后，原来人做的加工环节 AI 可以做了。想知道外面有没有人研究这个。
+**状态**：用户提出假设——软件开发是分阶段加工需求的过程（SDLC），企业办公也是分阶段加工业务信息的过程。AI 出现后，原来人做的加工环节 AI 可以做了。想知道外面有没有人研究这个。
 
 **初始问题**：
-- 软件有 SDLC 体系化管理信息加工流，办公室里的信息处理有没有等价物？
+- 软件有 SDLC 体系化管理需求→代码，企业侧的业务信息→决策有没有等价物？
 - 外面有人研究这个吗？在 AI 时代变成正经研究方向了吗？
 - 实战和行业上真正落地的东西是什么？
 
@@ -100,7 +100,7 @@ status: living
 **仍未回答**：
 - Camunda 叫它"Agentic Orchestration"，Forrester 叫它"Adaptive Process Orchestration"，学术圈叫它"Agentic BPM"——这些是一个东西吗？→ **已在 Round 4 回答：是，术语收敛论——不同出身同一结论**
 - 飞书/钉钉在中文世界叫"协同办公"，英文世界有没有对应的成熟品类名？→ **已在 Round 4 回答：CWM (Collaborative Work Management)**
-- 整个企业信息加工流领域，能不能画出一张清晰的分类地图？→ **已在 Round 4+7 回答：四层架构全景图（前端/中端/后端/治理）**
+- 整个 BPM/企业业务处理领域，能不能画出一张清晰的分类地图？→ **已在 Round 4+7 回答：四层架构全景图（前端/中端/后端/治理）**
 
 ---
 
@@ -181,7 +181,7 @@ Collaboration Layer（跨 agent 通信）
 
 **WorkBuddy 数据**：月访问 885 万，DAU 竞品 3-4 倍，SkillHub 7 万+ 技能。
 
-**关键洞察**：Office/Workspace/WorkBuddy 是信息加工流的**前端**。之前研究的 BPM/编排是**中端**。CRM/ERP 是**后端**。治理层**横切**所有层。
+**关键洞察**：Office/Workspace/WorkBuddy 是企业业务处理的**前端**。之前研究的 BPM/编排是**中端**。CRM/ERP 是**后端**。治理层**横切**所有层。
 
 > Source: [Charles Lamanna moving Copilot beyond chat](https://www.fastcompany.com/91550785/charles-lamanna-is-moving-microsoft-copilot-beyond-chat), Fast Company
 > Source: [腾讯 Agent Suite](https://cloud.tencent.com.cn/developer/article/2685993), 腾讯云
@@ -191,7 +191,7 @@ Collaboration Layer（跨 agent 通信）
 
 ## 最终全景图（7 轮探索后）
 
-### 企业信息加工流的四层架构
+### 企业业务处理的四层架构（SDLC 的等价映射）
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -227,7 +227,7 @@ Collaboration Layer（跨 agent 通信）
 | 中端编排 | Agent SDK / Routines / Triggers | Camunda ProcessOS / APO / Agentic BPM |
 | 成熟度 | 11% 生产环境（CamundaCon 数据） | 11% 生产环境（同一数据源） |
 
-**七轮探索的最终结论**：SDLC 和 BPM 不是"可以互相借鉴"——它们是在同一个范式转移中、以不同的术语在描述**同一件事**。信息加工流从"人定义步骤→人/机器执行"变成"人定义边界→Agent 在边界内自主加工→人在关键节点策展"。
+**七轮探索的最终结论**：SDLC 和 BPM 不是"可以互相借鉴"——它们是在同一个范式转移中、以不同的术语在描述**同一件事**。业务处理从"人定义步骤→人/机器执行"变成"人定义边界→Agent 在边界内自主加工→人在关键节点策展"。
 
 **搜索方向**：
 - `"agentic orchestration" vs "agentic BPM" vs "adaptive process orchestration" terminology`

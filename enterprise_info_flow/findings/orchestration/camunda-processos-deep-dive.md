@@ -8,7 +8,7 @@ status: draft
 
 # Camunda ProcessOS — AI-native BPM 的唯一标本
 
-> Camunda 是 BPM 领域的老牌厂商（不是创业炒作）。ProcessOS 是 2026 年 5 月发布的 AI 原生产品。它是目前最接近"AI-native BPM 的方法论+产品"的东西。挖透了它，等于看到一个 AI 时代信息加工流的完整设计。
+> Camunda 是 BPM 领域的老牌厂商（不是创业炒作）。ProcessOS 是 2026 年 5 月发布的 AI 原生产品。它是目前最接近"AI-native BPM 的方法论+产品"的东西。挖透了它，等于看到一个 AI 时代业务处理流程的完整设计。
 
 ---
 
@@ -97,7 +97,7 @@ Dr. Bernhard Schaffrik, Forrester 首席分析师：
 
 ---
 
-## 对"信息加工流"研究的启示
+## 对 SDLC-BPM 同构性研究的启示
 
 ProcessOS 验证了一个关键假设：**流程引擎没有消失——它变成了 AI Agent 执行的 governance frame。** Agent 在框内自主，但框本身（BPMN + 审计 + SLA + human-in-the-loop）是人定义和控制的。
 
