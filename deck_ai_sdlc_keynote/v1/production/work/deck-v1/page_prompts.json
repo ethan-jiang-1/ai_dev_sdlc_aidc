@@ -1,0 +1,114 @@
+{
+  "slides": [
+    {
+      "id": "s01_opening",
+      "out": "s01_opening.jpg",
+      "prompt": "Warm editorial keynote slide. A horizontal timeline from left to right: 2024, 2025, 2026. Three light points grow from candle-flame small to sun-large and bright. Timeline below shows code evolution: one line completion → one function → entire project structure. Deep warm gray-to-gold background suggesting night-to-dawn transition. KICKER label 'THREE YEARS' in small uppercase above a thin amber line. Headline below in large serif: the acceleration from autocomplete to whole-project delegation."
+    },
+    {
+      "id": "s02_why_software_first",
+      "out": "s02_why_software_first.jpg",
+      "prompt": "Split composition warm editorial slide. Left side: a code editor with green checkmarks cascading down like a waterfall — AI writes code, compiler instantly validates. The feedback loop shown as glowing amber rings. Right side: GitHub's ocean of code — countless code fragments falling like rain into a vast knowledge base. Both sides converge at center: a glowing accelerating point. Warm off-white paper background, amber accents, serif headline."
+    },
+    {
+      "id": "s03_one_tool_two_modes",
+      "out": "s03_one_tool_two_modes.jpg",
+      "prompt": "Warm editorial slide. Center: a glowing diamond core representing one Agent engine. Two light paths branch left and right. Left path leads to a dark terminal-style panel with code, PRs, test percentages flowing. Right path leads to a bright document panel with emails, spreadsheets, approval workflows. A programmer silhouette stands left, an office worker silhouette stands right — both facing the same diamond core. Warm off-white background, amber accents, no neon."
+    },
+    {
+      "id": "s04_the_map",
+      "out": "s04_the_map.jpg",
+      "prompt": "Section divider slide. Dark warm brown background. Three numbered steps arranged vertically with amber light connecting them. Step 1: code symbol, label 'Software Frontline'. Step 2: chain linking office and code icons, label 'Business Mirror'. Step 3: pyramid transforming into flat grid, label 'Big Picture'. Like a minimalist subway map — only direction, no decoration. Amber text on dark brown."
+    },
+    {
+      "id": "s05_sdlc_premise_gone",
+      "out": "s05_sdlc_premise_gone.jpg",
+      "prompt": "Warm editorial framework slide. A classical building representing SDLC built on a massive foundation stone engraved with text. Three floors: Waterfall (1970s, classical), V-Model (1980s, art deco), Agile (2001, modern) — all on the same foundation. Below the foundation, a glowing warm golden crack appears, light spilling through. The building tilts slightly but doesn't collapse. KICKER: 'THE PREMISE IS GONE'. Serif headline about how AI dug out the foundation itself."
+    },
+    {
+      "id": "s06_deer_valley_engelberg",
+      "out": "s06_deer_valley_engelberg.jpg",
+      "prompt": "Split comparison warm editorial slide. Left: February 2026, snowy Utah mountains, a group discussing around a campfire, notes scattered, cool blue-gray tones, labeled 'Maybe something... but we are not sure what.' Right: July 2026, green Swiss valley, same group but now facing glowing screens showing production dashboards, warm golden tones, labeled 'Not slides — production.' A giant arrow between them colored cold-to-warm gradient, labeled '5 MONTHS'."
+    },
+    {
+      "id": "s07_beck_fowler",
+      "out": "s07_beck_fowler.jpg",
+      "prompt": "Warm editorial evidence slide. Warm amber stage lighting. Two silhouettes facing each other in fireside chat — not PowerPoint, conversation. Behind them, a large screen displays three glowing keywords stacked: 'MAGNITUDE > ALL PREVIOUS SHIFTS', 'TDD NON-NEGOTIABLE', 'MID-PACK AT RISK'. Below, a blurred audience outline suggesting a public conference. Amber and warm brown tones, serif typography."
+    },
+    {
+      "id": "s08_fable5_bottleneck",
+      "out": "s08_fable5_bottleneck.jpg",
+      "prompt": "Split warm editorial slide. Upper half 'BEFORE': dark muted tones, a giant gear labeled 'Machine Bottleneck' blocking progress, a human silhouette waiting behind it. Lower half 'NOW': warm golden tones, the gear shrunk to a tiny background dot, the human silhouette enlarged in foreground but with question marks and flickering light inside their outline — representing judgment struggling to keep up. Floating quotes: 'I no longer steer; I commission.' The dividing line is code evolving into light stream."
+    },
+    {
+      "id": "s09_the_chain",
+      "out": "s09_the_chain.jpg",
+      "prompt": "Warm editorial concept slide. A horizontal information processing chain: Requirements → Analysis → Design → Coding → Testing → Deployment → Product. The middle three nodes (Design, Coding, Testing) have glowing amber AI cores replacing human silhouettes — spinning faster, emitting pulses. The leftmost nodes (Requirements, Analysis) and rightmost nodes (Deployment, Product) still have human silhouettes — but their postures changed: left pointing up (architect), right pointing down (harness engineer). Warm off-white paper background."
+    },
+    {
+      "id": "s10_too_fast_to_review",
+      "out": "s10_too_fast_to_review.jpg",
+      "prompt": "Split concept warm editorial slide. Left: a giant funnel with dense code lines, PRs, test results pouring in like a waterfall from above (AI output). The funnel exit is extremely narrow, dripping one drop at a time (human review). At least 10:1 size ratio between entrance and exit. Right: a floating serif pull quote. Warm off-white background. The AI waterfall is cool gray, the human review exit is warm amber — human judgment remains scarce and valuable."
+    },
+    {
+      "id": "s11_on_the_loop",
+      "out": "s11_on_the_loop.jpg",
+      "prompt": "Framework comparison warm editorial slide. Upper: 'IN THE LOOP' — a person sitting beside a row of AI agents, checking each output one by one like a quality inspector on an assembly line. Reddish muted tones. Label: 'Does not scale.' Lower: 'ON THE LOOP' — same person at a central control console, surrounded by glowing amber guardrails like laser fences. Multiple AI agents run autonomously inside. Hands on parameter dials, not on every output. Green-gold tones. Three new job titles appear as name badges at bottom: Supervisory Engineer, Harness Engineer, Middle Loop."
+    },
+    {
+      "id": "s12_mid_pack_at_risk",
+      "out": "s12_mid_pack_at_risk.jpg",
+      "prompt": "Three horizontal geological layers. Top layer (green): Junior developers — 'Surprisingly Safe'. A young silhouette beside a glowing AI mentor. Label: 'AI-native generation, 24/7 tutor.' Middle layer (red/amber): Mid-level developers — 'Real Crisis'. A silhouette squeezed between smarter seniors above and faster AI below. Label: 'Skills commoditized by AI, not enough architectural judgment yet.' Bottom layer (gold): Senior developers — shifting to architecture. A silhouette at a console orchestrating multiple AI agents. Serif headline. Warm paper background."
+    },
+    {
+      "id": "s13_block_vs_cloudflare",
+      "out": "s13_block_vs_cloudflare.jpg",
+      "prompt": "Split comparison warm editorial slide. Left (Block): a bar chart with 40% uniformly sliced off all bars by one knife labeled 'AI'. A magnifying glass reveals three red flags: 237% employee surge curve, -70% stock price, CFPB penalty. Label: '7 independent sources: AI is packaging, cost-cutting is the real reason.' Right (Cloudflare): a balance scale. Left tray: Measurers (compliance, finance, legal) being removed. Right tray: Builders (engineers) being added. Scale stays balanced. Label: 'Displacement, not reduction.' Bottom note: 'Klarna boomerang — 55% regret AI layoffs.'"
+    },
+    {
+      "id": "s14_bpm_sdlc_twin",
+      "out": "s14_bpm_sdlc_twin.jpg",
+      "prompt": "Framework comparison warm editorial slide. Two parallel information processing chains. Upper chain 'SDLC': Requirements → Analysis → Design → Code → Test → Product. Lower chain 'BPM': Business Info → Aggregate → Analyze → Approve → Execute → Decision. Vertical dotted lines connect corresponding nodes. Background shows two timelines converging at 2026 — both chains hit by AI simultaneously. Like a textbook illustration but cleaner. Warm paper background, amber connecting lines."
+    },
+    {
+      "id": "s15_framed_autonomy",
+      "out": "s15_framed_autonomy.jpg",
+      "prompt": "Framework warm editorial slide. Center: a glowing geometric frame — not a cage, a transparent force field. Inside the frame, multiple AI agents (warm golden light points) move freely, executing tasks. Frame edges have clear boundaries: solid line (Operational Frame: must follow this sequence) and dashed line (Normative Frame: must not do these things). A human silhouette stands outside, hand resting on the frame boundary — adjusting, not blocking. Label: 'Human defines the frame. Agent acts within it. Human curates at key points.' Bottom: two tags with an equals sign between them — Framed Autonomy = AI Sandwich."
+    },
+    {
+      "id": "s16_four_layers",
+      "out": "s16_four_layers.jpg",
+      "prompt": "Four-layer horizontal stack warm editorial slide. Layer 1 (top, blue-tinted): Frontend — Office/Workspace/Feishu/DingTalk icons. Label: 'Nadella: first resource in Agent era is Office.' Layer 2 (green-tinted): Middle — orchestration gear icon with AI glow. Label: 'Agentic Orchestration / ProcessOS.' Layer 3 (purple-tinted): Backend — CRM/ERP/HCM icons. Label: 'Systems of record remain, accessed by Agents now.' Layer 4 (gold): Governance — shield icon cutting across ALL layers. Label: 'Agent 365 / AI Control Tower.' Each layer has a glowing wave line passing through — being rewritten by AI. Serif headline."
+    },
+    {
+      "id": "s17_overseas_cases",
+      "out": "s17_overseas_cases.jpg",
+      "prompt": "Four-panel grid evidence warm editorial slide. Top-left: GE Appliances — factory icon, big number '800+ agents', small text 'Delayed orders down 25%'. Top-right: Wells Fargo — bank building icon, big number '35,000 bankers', small text '1,700 processes supervisor-worker pattern'. Bottom-left: Petrobras — oil platform icon, big number '3 weeks', small text 'Saved $120M'. Bottom-right: Boston Children's Hospital — medical cross icon, big number 'Admin burden down 80%'. Shared bottom label: 'Common pattern: Framed Autonomy — specific processes to Agents, humans curate.' Warm paper background."
+    },
+    {
+      "id": "s18_china_cases",
+      "out": "s18_china_cases.jpg",
+      "prompt": "Three-column layout warm editorial evidence slide. Left: Chery Auto — car silhouette, big number '4000+ agents / 60,000 employees', small text 'Annual savings 30M yuan, translation cost zero'. Center: Zhaoqi Supply Chain — shipping container icon, big number 'Contract approval 1 day → 20 min', small text 'Agent covers quoting/contracts/profiles'. Right: Simeng Enterprise Services — document icon, big number 'Efficiency 5x', small text 'Agent handles overseas emails/audits/contracts'. Warm paper background, amber accents. Bottom note: 'Common pattern: same as overseas — not AI replacing people, but processes delegated to Agents.'"
+    },
+    {
+      "id": "s19_roman_legion",
+      "out": "s19_roman_legion.jpg",
+      "prompt": "Concept split warm editorial slide. Center: a massive pyramid made not of stone but of human silhouettes stacked in layers. Each silhouette has the same posture — hands passing information up, hands receiving information down. They are all 'information nodes.' Bottom label: 'From the Roman Legion era until today. 2000 years.' Right side: a warm golden AI light core appears beside the pyramid. Ripples emanate from it — each ripple touching the pyramid makes one layer of silhouettes start turning transparent. Caption: 'AI drops communication cost to near zero → information relayers become unnecessary.' Warm paper background."
+    },
+    {
+      "id": "s20_measurers_not_builders",
+      "out": "s20_measurers_not_builders.jpg",
+      "prompt": "Three-column role classification warm editorial slide. Left 'Builders' (green): a silhouette beside a product. Label: 'People who create — AI is their tool.' Center 'Sellers' (blue): a silhouette facing a customer. Label: 'People who acquire customers — relationships irreplaceable.' Right 'Measurers' (amber): a silhouette holding a ruler. An arrow transforms them — same person, but the ruler becomes a glowing AI assistant doing the measuring, while the person reviews AI reports and handles exceptions. Bottom transformation arrows: 'Inspector → AI anomaly handler. Scheduler → AI scheduling reviewer. Cost accountant → AI cost decision maker.' Serif headline."
+    },
+    {
+      "id": "s21_convergence",
+      "out": "s21_convergence.jpg",
+      "prompt": "Concept warm editorial slide. Two glowing rivers flow from left and right. Left river 'SDLC (Software)' carries code symbols, PRs, CI pipelines, Deer Valley-Engelberg timeline fragments. Right river 'BPM (Business)' carries BPMN symbols, work orders, approval flows, Dagstuhl paper fragments. They merge at center into a single wider, brighter flow — a glowing Agent interface blending terminal and document styles. Label: 'Same Brief → Agent Execute → Human Review workflow.' Bottom caption: 'Not mutual inspiration. Convergence on the same infrastructure.' Left river blue-tinted, right river green-tinted, merged river warm gold."
+    },
+    {
+      "id": "s22_what_will_you_do",
+      "out": "s22_what_will_you_do.jpg",
+      "prompt": "Closer slide. Nearly black warm dark brown background. Center: one line of minimal white text, as if typed letter by letter: 'I have no conclusion today.' Pause. Second line below: 'Only one question.' Then third line, larger, slightly glowing warm amber, breathing like a heartbeat: 'The world has changed. What will you do?' No icons, no charts, no logos. Just text in darkness. Clean serif font. Like the final frame of a film — not credits roll, but the moment just before the screen goes black."
+    }
+  ]
+}

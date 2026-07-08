@@ -1,0 +1,7 @@
+Warm Editorial style. 16:9 keynote slide.
+Language: Chinese with English key terms.
+No page numbers, no footers, no company logo, no watermark.
+Color: warm off-white background, dark brown ink, amber accents.
+Typography: serif headlines, sans-serif body. KICKER in all-caps small label above a thin amber horizontal line.
+Every slide must have a clear visual focal point — not just text on background.
+Avoid: neon, blue tones, tech UI, robot imagery, circuit boards, brain icons.

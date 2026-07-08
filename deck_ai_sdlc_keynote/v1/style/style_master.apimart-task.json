@@ -11,7 +11,7 @@
   "n": 1,
   "payload": {
     "model": "gpt-image-2",
-    "prompt": "A premium editorial style master board for a luxury magazine keynote presentation. The canvas is warm off-white paper color with subtle paper grain texture. Left area: a headline block with a thin amber horizontal line divider. Bottom left: a pull quote box with a thin amber vertical bar on its left edge. Top right: six circular color swatches in warm off-white, beige, dark brown, gray-brown, rich amber, and pale golden yellow. Center right: a warm golden glowing orb with soft radial light halo like candlelight. Bottom right: a minimal two-column data table with amber header underline. Center left: a simple horizontal timeline with small amber dots. Overall mood: sophisticated editorial magazine layout, warm humanistic tones, amber accents, paper texture. No neon, no blue, no tech aesthetic. No text, no logo, no watermark.",
+    "prompt": "Design a visual style guide for a keynote slide deck. This is a reference image, not a slide itself. The deck uses etching and sketch illustration as its primary visual language — like 19th-century scientific notebooks or Da Vinci sketchbooks.\n\nShow clearly:\n\nColor palette: 5 swatches with hex codes, labeled — cream paper #F5F0EB, warm panel #EDE5DA, sepia ink #2D1B11, faded ink #6B5B4F, amber wash #D97706.\n\nTypography: headline sample (large serif, sepia ink), subtitle sample (medium, faded ink), body text sample (small, readable), pull-quote sample (large italic with amber quotation marks). Clear size hierarchy.\n\nLayout grid: wireframe showing kicker zone (small caps + thin amber line), title zone, main content zone, bottom callout bar.\n\nTHREE SKETCH USAGE MODES — the most important part:\n\nMODE 1 CENTERPIECE SKETCH: A large detailed etching filling 60% of a slide area. Example: a classical building (representing SDLC) built on a cracked foundation stone, drawn in fine sepia ink lines with cross-hatched shadows. The sketch IS the slide.\n\nMODE 2 MARGINAL SKETCH: A small quick sketch (8-10% of slide) positioned beside a text block like a margin note in an old book. Example: beside a pull-quote about AI agents, a tiny hand-drawn figure with autonomous motion lines.\n\nMODE 3 DIAGRAMMATIC SKETCH: Abstract concepts as hand-drawn diagrams. Example: an information chain drawn as linked figures passing bundles along a line, with sketched arrows and hand-lettered labels. Not polished vector — a thinking sketch.\n\nComponent examples (all in sketch style): One KPI card with oversized hand-drawn amber number and small label. One comparison layout with two columns, left muted, right with amber accent border, sketch illustrations in each. One timeline with hand-drawn horizontal line and small amber ink dots at year markers.\n\nMicro decoration examples (tiny sketch mnemonics for abstract AI concepts, each no larger than 8% of frame, positioned as margin notes): Beside 'AI Agent' — tiny autonomous figure with motion lines. Beside 'Information Chain' — tiny linked figures passing bundles. Beside 'Harness Engineering' — tiny guardrails with cross-hatched texture. Beside 'Framed Autonomy' — tiny geometric frame with figure moving freely inside. Beside 'Organizational Pyramid' — tiny stacked figures forming a triangle.\n\nOverall style: warm, human, intellectual. Like opening a 19th-century naturalist field notebook — cream paper, brown ink sketches, amber highlights. Sketch lines are visible, slightly irregular, with cross-hatching for depth. Not cold vector graphics — warm hand-drawn marks on paper. Serif typography. This is for a strategic keynote about AI disrupting information work, for executives — not a tech demo.\n\nNo real company logo, no watermark, no page number. No photograph. No 3D render. No neon. No blue tones. No clip art. No smooth vector icons.",
     "size": "16:9",
     "resolution": "2k",
     "n": 1
@@ -19,7 +19,7 @@
   "wrote_images": [
     {
       "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/style/style_master.png",
-      "bytes": 4019075,
+      "bytes": 4049066,
       "content_type": "image/png"
     }
   ],
@@ -30,336 +30,136 @@
         {
           "poll": 1,
           "status_code": 200,
-          "elapsed_seconds": 0.67,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":10,\"status\":\"pending\"}}",
+          "elapsed_seconds": 0.63,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":5,\"status\":\"pending\"}}",
           "task_status": "pending",
-          "progress": 10
+          "progress": 5
         },
         {
           "poll": 2,
           "status_code": 200,
-          "elapsed_seconds": 0.22,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 1.11,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 3,
           "status_code": 200,
-          "elapsed_seconds": 0.25,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 0.2,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 4,
           "status_code": 200,
-          "elapsed_seconds": 0.98,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 1.64,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 5,
           "status_code": 200,
-          "elapsed_seconds": 1.61,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 1.62,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 6,
           "status_code": 200,
-          "elapsed_seconds": 2.0,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 2.09,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 7,
           "status_code": 200,
-          "elapsed_seconds": 6.21,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 0.29,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 8,
           "status_code": 200,
-          "elapsed_seconds": 0.92,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 0.21,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 9,
           "status_code": 200,
-          "elapsed_seconds": 2.69,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 0.51,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 10,
           "status_code": 200,
-          "elapsed_seconds": 0.57,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 0.66,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 11,
           "status_code": 200,
-          "elapsed_seconds": 0.39,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 1.71,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 12,
           "status_code": 200,
-          "elapsed_seconds": 1.64,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 5.25,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 13,
           "status_code": 200,
-          "elapsed_seconds": 7.65,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 0.72,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 14,
           "status_code": 200,
-          "elapsed_seconds": 4.31,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 0.62,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 15,
           "status_code": 200,
-          "elapsed_seconds": 0.42,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": 1.54,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 16,
           "status_code": 200,
-          "elapsed_seconds": 0.34,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+          "elapsed_seconds": -2.85,
+          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
           "task_status": "processing",
           "progress": 50
         },
         {
           "poll": 17,
           "status_code": 200,
-          "elapsed_seconds": 0.24,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 18,
-          "status_code": 200,
-          "elapsed_seconds": 0.58,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 19,
-          "status_code": 200,
-          "elapsed_seconds": 1.26,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 20,
-          "status_code": 200,
-          "elapsed_seconds": 0.41,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 21,
-          "status_code": 200,
-          "elapsed_seconds": 1.79,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 22,
-          "status_code": 200,
-          "elapsed_seconds": 1.28,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 23,
-          "status_code": 200,
-          "elapsed_seconds": 1.05,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 24,
-          "status_code": 200,
-          "elapsed_seconds": 0.22,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 25,
-          "status_code": 200,
-          "elapsed_seconds": 0.83,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 26,
-          "status_code": 200,
-          "elapsed_seconds": 0.3,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 27,
-          "status_code": 200,
-          "elapsed_seconds": 1.09,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 28,
-          "status_code": 200,
-          "elapsed_seconds": 0.38,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 29,
-          "status_code": 200,
-          "elapsed_seconds": 1.29,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 30,
-          "status_code": 200,
-          "elapsed_seconds": 4.64,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 31,
-          "status_code": 200,
-          "elapsed_seconds": 4.68,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 32,
-          "status_code": 200,
-          "elapsed_seconds": 0.55,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 33,
-          "status_code": 200,
-          "elapsed_seconds": 1.03,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 34,
-          "status_code": 200,
-          "elapsed_seconds": 3.25,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 35,
-          "status_code": 200,
-          "elapsed_seconds": 0.68,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 36,
-          "status_code": 200,
-          "elapsed_seconds": 0.24,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 37,
-          "status_code": 200,
-          "elapsed_seconds": 0.63,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 38,
-          "status_code": 200,
-          "elapsed_seconds": 1.85,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 39,
-          "status_code": 200,
-          "elapsed_seconds": 1.85,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 40,
-          "status_code": 200,
-          "elapsed_seconds": 0.29,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 41,
-          "status_code": 200,
-          "elapsed_seconds": 0.22,
-          "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-          "task_status": "processing",
-          "progress": 50
-        },
-        {
-          "poll": 42,
-          "status_code": 200,
-          "elapsed_seconds": 1.29,
-          "body_preview": "{\"code\":200,\"data\":{\"actual_time\":268,\"completed\":1783502487,\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":100,\"result\":{\"images\":[{\"expires_at\":1783588887,\"url\":[\"https://getapib.org/image/9998216497512190-c09b9a8d-9ab3-41d2-8be4-5b03e1521aaa-image_task_01KX0G8A09YY811QGY3NC16QWP.png\"]}]},\"status\":\"completed\"}}",
+          "elapsed_seconds": 1.57,
+          "body_preview": "{\"code\":200,\"data\":{\"actual_time\":99,\"completed\":1783503542,\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":100,\"result\":{\"images\":[{\"expires_at\":1783589942,\"url\":[\"https://getapib.org/image/9998216496457198-0570f4a3-5cf1-4544-8dee-9c613d5abfb4-image_task_01KX0HDNAK92VZT5HSGA0PEDT8.png\"]}]},\"status\":\"completed\"}}",
           "task_status": "completed",
           "progress": 100
         }
@@ -367,34 +167,34 @@
       "wrote_images": [
         {
           "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/style/style_master.png",
-          "bytes": 4019075,
+          "bytes": 4049066,
           "content_type": "image/png"
         }
       ],
       "submit": {
         "status": 200,
-        "elapsed_seconds": 0.84,
+        "elapsed_seconds": 1.1,
         "content_type": "application/json; charset=utf-8",
-        "body_preview": "{\"code\":200,\"data\":[{\"status\":\"submitted\",\"task_id\":\"task_01KX0G8A09YY811QGY3NC16QWP\"}]}"
+        "body_preview": "{\"code\":200,\"data\":[{\"status\":\"submitted\",\"task_id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\"}]}"
       },
-      "task_id": "task_01KX0G8A09YY811QGY3NC16QWP",
+      "task_id": "task_01KX0HDNAK92VZT5HSGA0PEDT8",
       "final_task_response": {
         "code": 200,
         "data": {
-          "actual_time": 268,
-          "completed": 1783502487,
+          "actual_time": 99,
+          "completed": 1783503542,
           "cost": 0.012,
-          "created": 1783502219,
+          "created": 1783503443,
           "credits_cost": 0.12,
           "estimated_time": 100,
-          "id": "task_01KX0G8A09YY811QGY3NC16QWP",
+          "id": "task_01KX0HDNAK92VZT5HSGA0PEDT8",
           "progress": 100,
           "result": {
             "images": [
               {
-                "expires_at": 1783588887,
+                "expires_at": 1783589942,
                 "url": [
-                  "https://getapib.org/image/9998216497512190-c09b9a8d-9ab3-41d2-8be4-5b03e1521aaa-image_task_01KX0G8A09YY811QGY3NC16QWP.png"
+                  "https://getapib.org/image/9998216496457198-0570f4a3-5cf1-4544-8dee-9c613d5abfb4-image_task_01KX0HDNAK92VZT5HSGA0PEDT8.png"
                 ]
               }
             ]
@@ -408,364 +208,164 @@
     {
       "poll": 1,
       "status_code": 200,
-      "elapsed_seconds": 0.67,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":10,\"status\":\"pending\"}}",
+      "elapsed_seconds": 0.63,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":5,\"status\":\"pending\"}}",
       "task_status": "pending",
-      "progress": 10
+      "progress": 5
     },
     {
       "poll": 2,
       "status_code": 200,
-      "elapsed_seconds": 0.22,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 1.11,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 3,
       "status_code": 200,
-      "elapsed_seconds": 0.25,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 0.2,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 4,
       "status_code": 200,
-      "elapsed_seconds": 0.98,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 1.64,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 5,
       "status_code": 200,
-      "elapsed_seconds": 1.61,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 1.62,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 6,
       "status_code": 200,
-      "elapsed_seconds": 2.0,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 2.09,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 7,
       "status_code": 200,
-      "elapsed_seconds": 6.21,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 0.29,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 8,
       "status_code": 200,
-      "elapsed_seconds": 0.92,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 0.21,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 9,
       "status_code": 200,
-      "elapsed_seconds": 2.69,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 0.51,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 10,
       "status_code": 200,
-      "elapsed_seconds": 0.57,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 0.66,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 11,
       "status_code": 200,
-      "elapsed_seconds": 0.39,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 1.71,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 12,
       "status_code": 200,
-      "elapsed_seconds": 1.64,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 5.25,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 13,
       "status_code": 200,
-      "elapsed_seconds": 7.65,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 0.72,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 14,
       "status_code": 200,
-      "elapsed_seconds": 4.31,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 0.62,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 15,
       "status_code": 200,
-      "elapsed_seconds": 0.42,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": 1.54,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 16,
       "status_code": 200,
-      "elapsed_seconds": 0.34,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
+      "elapsed_seconds": -2.85,
+      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":50,\"status\":\"processing\"}}",
       "task_status": "processing",
       "progress": 50
     },
     {
       "poll": 17,
       "status_code": 200,
-      "elapsed_seconds": 0.24,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 18,
-      "status_code": 200,
-      "elapsed_seconds": 0.58,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 19,
-      "status_code": 200,
-      "elapsed_seconds": 1.26,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 20,
-      "status_code": 200,
-      "elapsed_seconds": 0.41,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 21,
-      "status_code": 200,
-      "elapsed_seconds": 1.79,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 22,
-      "status_code": 200,
-      "elapsed_seconds": 1.28,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 23,
-      "status_code": 200,
-      "elapsed_seconds": 1.05,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 24,
-      "status_code": 200,
-      "elapsed_seconds": 0.22,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 25,
-      "status_code": 200,
-      "elapsed_seconds": 0.83,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 26,
-      "status_code": 200,
-      "elapsed_seconds": 0.3,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 27,
-      "status_code": 200,
-      "elapsed_seconds": 1.09,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 28,
-      "status_code": 200,
-      "elapsed_seconds": 0.38,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 29,
-      "status_code": 200,
-      "elapsed_seconds": 1.29,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 30,
-      "status_code": 200,
-      "elapsed_seconds": 4.64,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 31,
-      "status_code": 200,
-      "elapsed_seconds": 4.68,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 32,
-      "status_code": 200,
-      "elapsed_seconds": 0.55,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 33,
-      "status_code": 200,
-      "elapsed_seconds": 1.03,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 34,
-      "status_code": 200,
-      "elapsed_seconds": 3.25,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 35,
-      "status_code": 200,
-      "elapsed_seconds": 0.68,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 36,
-      "status_code": 200,
-      "elapsed_seconds": 0.24,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 37,
-      "status_code": 200,
-      "elapsed_seconds": 0.63,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 38,
-      "status_code": 200,
-      "elapsed_seconds": 1.85,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 39,
-      "status_code": 200,
-      "elapsed_seconds": 1.85,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 40,
-      "status_code": 200,
-      "elapsed_seconds": 0.29,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 41,
-      "status_code": 200,
-      "elapsed_seconds": 0.22,
-      "body_preview": "{\"code\":200,\"data\":{\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":50,\"status\":\"processing\"}}",
-      "task_status": "processing",
-      "progress": 50
-    },
-    {
-      "poll": 42,
-      "status_code": 200,
-      "elapsed_seconds": 1.29,
-      "body_preview": "{\"code\":200,\"data\":{\"actual_time\":268,\"completed\":1783502487,\"cost\":0.012,\"created\":1783502219,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0G8A09YY811QGY3NC16QWP\",\"progress\":100,\"result\":{\"images\":[{\"expires_at\":1783588887,\"url\":[\"https://getapib.org/image/9998216497512190-c09b9a8d-9ab3-41d2-8be4-5b03e1521aaa-image_task_01KX0G8A09YY811QGY3NC16QWP.png\"]}]},\"status\":\"completed\"}}",
+      "elapsed_seconds": 1.57,
+      "body_preview": "{\"code\":200,\"data\":{\"actual_time\":99,\"completed\":1783503542,\"cost\":0.012,\"created\":1783503443,\"credits_cost\":0.12,\"estimated_time\":100,\"id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\",\"progress\":100,\"result\":{\"images\":[{\"expires_at\":1783589942,\"url\":[\"https://getapib.org/image/9998216496457198-0570f4a3-5cf1-4544-8dee-9c613d5abfb4-image_task_01KX0HDNAK92VZT5HSGA0PEDT8.png\"]}]},\"status\":\"completed\"}}",
       "task_status": "completed",
       "progress": 100
     }
   ],
   "submit": {
     "status": 200,
-    "elapsed_seconds": 0.84,
+    "elapsed_seconds": 1.1,
     "content_type": "application/json; charset=utf-8",
-    "body_preview": "{\"code\":200,\"data\":[{\"status\":\"submitted\",\"task_id\":\"task_01KX0G8A09YY811QGY3NC16QWP\"}]}"
+    "body_preview": "{\"code\":200,\"data\":[{\"status\":\"submitted\",\"task_id\":\"task_01KX0HDNAK92VZT5HSGA0PEDT8\"}]}"
   },
-  "task_id": "task_01KX0G8A09YY811QGY3NC16QWP",
+  "task_id": "task_01KX0HDNAK92VZT5HSGA0PEDT8",
   "final_task_response": {
     "code": 200,
     "data": {
-      "actual_time": 268,
-      "completed": 1783502487,
+      "actual_time": 99,
+      "completed": 1783503542,
       "cost": 0.012,
-      "created": 1783502219,
+      "created": 1783503443,
       "credits_cost": 0.12,
       "estimated_time": 100,
-      "id": "task_01KX0G8A09YY811QGY3NC16QWP",
+      "id": "task_01KX0HDNAK92VZT5HSGA0PEDT8",
       "progress": 100,
       "result": {
         "images": [
           {
-            "expires_at": 1783588887,
+            "expires_at": 1783589942,
             "url": [
-              "https://getapib.org/image/9998216497512190-c09b9a8d-9ab3-41d2-8be4-5b03e1521aaa-image_task_01KX0G8A09YY811QGY3NC16QWP.png"
+              "https://getapib.org/image/9998216496457198-0570f4a3-5cf1-4544-8dee-9c613d5abfb4-image_task_01KX0HDNAK92VZT5HSGA0PEDT8.png"
             ]
           }
         ]
