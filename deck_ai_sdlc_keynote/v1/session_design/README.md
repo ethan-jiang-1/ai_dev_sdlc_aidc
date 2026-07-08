@@ -5,9 +5,9 @@ position: slide_specs
 type: guide
 summary: 将文稿转化为四层 slide 规格——这是生产管线的直接输入。
 depends_on:
-  - v1/manuscript/manuscript-v1.md
+  - v1/manuscript/manuscript.md
 feeds_into:
-  - v1/style/visual-style-v1.md
+  - v1/style/visual-style.md
 agent_action: guide
 ---
 
@@ -17,11 +17,11 @@ agent_action: guide
 
 ## 输入
 
-`v1/manuscript/manuscript-v1.md`（Phase 2 产出）
+`v1/manuscript/manuscript.md`（Phase 2 产出）
 
 ## 产出
 
-`deck-brief-v1.md`——完整的四层 slide 规格文件。
+`deck-brief.md`——完整的四层 slide 规格文件。
 
 ## 四层规格模板
 

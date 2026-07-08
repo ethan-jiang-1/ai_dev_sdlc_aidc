@@ -31,7 +31,7 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 │  Phase 1 · v1/outline/                      │
 │  做什么：找核心隐喻、写可证伪公式、          │
 │         画叙事弧线、定 slide 清单             │
-│  产出：outline-v1.md（每张 slide 一句话 claim）│
+│  产出：outline.md（每张 slide 一句话 claim）│
 │  闸门：隐喻确认、公式可证伪、故事线成立      │
 └────────────────────┬────────────────────────┘
                      │
@@ -40,7 +40,7 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 │  Phase 2 · v1/manuscript/                   │
 │  做什么：逐张 slide 展开完整论述，           │
 │         附证据引用 + 过渡逻辑 + speaker note  │
-│  产出：manuscript-v1.md                     │
+│  产出：manuscript.md                     │
 │  闸门：论述准确、证据充分、逻辑连贯          │
 └────────────────────┬────────────────────────┘
                      │
@@ -50,7 +50,7 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 │  做什么：把文稿转化为四层 slide 规格         │
 │         （Meta / Concept / Image Prompt /     │
 │          Speaker Note）                      │
-│  产出：deck-brief-v1.md（生产管线的直接输入） │
+│  产出：deck-brief.md（生产管线的直接输入） │
 │  闸门：四层规格完整、VISUAL TYPE 分布合理    │
 └────────────────────┬────────────────────────┘
                      │
@@ -58,7 +58,7 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 ┌─────────────────────────────────────────────┐
 │  Phase 4 · v1/style/                        │
 │  做什么：设计视觉系统，生成 Style Master     │
-│  产出：visual-style-v1.md + style_master.jpg │
+│  产出：visual-style.md + style_master.jpg │
 │  闸门：视觉风格锁定、与内容调性匹配          │
 └────────────────────┬────────────────────────┘
                      │
@@ -127,7 +127,7 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 - 画出叙事弧线（观众从哪出发 → 经过什么认知颠覆 → 到达哪里）
 - 定 slide 清单（每张一句话 claim）
 
-**产出文件**：`v1/outline/outline-v1.md`
+**产出文件**：`v1/outline/outline.md`
 
 **产出结构**：
 ```
@@ -147,7 +147,7 @@ research/source-synthesis.md ──→ 提供素材基础
                               隐喻、公式、弧线、slide 清单
                                         │
                                         ▼
-                              outline-v1.md（锁定故事骨架）
+                              outline.md（锁定故事骨架）
 ```
 
 **⛔ 闸门**：隐喻不是"差不多"是"就是它"、公式可证伪、故事线成立 → 进入 Phase 2
@@ -164,7 +164,7 @@ research/source-synthesis.md ──→ 提供素材基础
 - 写 slide 之间的过渡句
 - 写 speaker note 草稿（口语化）
 
-**产出文件**：`v1/manuscript/manuscript-v1.md`
+**产出文件**：`v1/manuscript/manuscript.md`
 
 **每张 slide 展开为**：
 ```
@@ -190,14 +190,14 @@ research/source-synthesis.md ──→ 提供素材基础
 
 **信息流**：
 ```
-outline-v1.md ──→ 提供 slide 清单和每张的 claim
+outline.md ──→ 提供 slide 清单和每张的 claim
                           │
                           ▼
                 每张 slide 展开为完整论述
                 证据从 research/source-synthesis.md 回溯到原始源文件
                           │
                           ▼
-                manuscript-v1.md（锁定完整叙事）
+                manuscript.md（锁定完整叙事）
 ```
 
 **⛔ 闸门**：论述准确、证据充分、从前到后通读不跳跃 → 进入 Phase 3
@@ -213,7 +213,7 @@ outline-v1.md ──→ 提供 slide 清单和每张的 claim
 - 这是"给机器读的"——生产管线的直接输入
 - 重点是 IMAGE PROMPT（200-500 字的精确视觉描述）
 
-**产出文件**：`v1/session_design/deck-brief-v1.md`
+**产出文件**：`v1/session_design/deck-brief.md`
 
 **四层规格**：
 
@@ -226,14 +226,14 @@ outline-v1.md ──→ 提供 slide 清单和每张的 claim
 
 **信息流**：
 ```
-manuscript-v1.md ──→ 提供完整论述
+manuscript.md ──→ 提供完整论述
                             │
                             ▼
                   每张 slide 拆成四层
                   关键转化：文字论述 → 视觉画面描述（L3 Image Prompt）
                             │
                             ▼
-                  deck-brief-v1.md（生产管线的 single source of truth）
+                  deck-brief.md（生产管线的 single source of truth）
 ```
 
 **⛔ 闸门**：四层完整、VISUAL TYPE 分布合理（~80% normal + ~20% image_direct）→ 进入 Phase 4
@@ -250,7 +250,7 @@ manuscript-v1.md ──→ 提供完整论述
 - 锁定后所有 slide 的画面都以这张图为视觉基准
 
 **产出文件**：
-- `v1/style/visual-style-v1.md`（视觉规范）
+- `v1/style/visual-style.md`（视觉规范）
 - `v1/style/style_master.jpg`（锚点图）
 
 **⛔ 闸门**：视觉风格与内容调性匹配 → 进入 Phase 5
@@ -267,7 +267,7 @@ manuscript-v1.md ──→ 提供完整论述
 
 **信息流**：
 ```
-deck-brief-v1.md + style_master.jpg
+deck-brief.md + style_master.jpg
               │
               ▼
      Stage 1: 解析 markdown → JSON specs
@@ -315,9 +315,9 @@ deck-brief-v1.md + style_master.jpg
 | 如果... | 你在 | 下一步 |
 |---------|------|--------|
 | `source-synthesis.md` 不存在或未完成 | Phase 0 | agent 读完源材料，提取信号，你审核 |
-| `outline-v1.md` 不存在 | Phase 1 | agent 基于合成材料生成隐喻候选、slide map |
-| `manuscript-v1.md` 不存在 | Phase 2 | agent 逐 Block 展开论述，你审核 |
-| `deck-brief-v1.md` 不存在 | Phase 3 | agent 把文稿转化为四层规格 |
+| `outline.md` 不存在 | Phase 1 | agent 基于合成材料生成隐喻候选、slide map |
+| `manuscript.md` 不存在 | Phase 2 | agent 逐 Block 展开论述，你审核 |
+| `deck-brief.md` 不存在 | Phase 3 | agent 把文稿转化为四层规格 |
 | `style_master.jpg` 不存在 | Phase 4 | agent 设计视觉方案，你选方向 |
 | 以上全齐了 | Phase 5 | 跑生产管线 |
 

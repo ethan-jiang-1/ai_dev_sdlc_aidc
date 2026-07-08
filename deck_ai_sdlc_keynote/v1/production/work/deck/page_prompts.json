@@ -1,0 +1,19 @@
+{
+  "slides": [
+    {
+      "id": "s01_opening",
+      "out": "s01_opening.jpg",
+      "prompt": "Design a finished 16:9 keynote slide image in sketch/etching style. Use the style master reference exactly — cream paper #F5F0EB background, sepia ink #2D1B11 sketch lines, amber #D97706 accents, serif typography. MODE A — CENTERPIECE SKETCH. A horizontal timeline drawn in fine sepia ink across the cream paper, left to right: 2024 → 2025 → 2026. Three light sources sketched along the timeline — 2024 is a tiny candle-flame in faded ink, 2025 is a larger lamp glow, 2026 is a radiating sun-like orb in warm amber wash with etched radial lines. Below the timeline, three code fragments evolve from one-line completion to a full project structure, drawn in smaller sepia ink. The timeline line itself transitions from thin faded ink to bold sepia. KICKER 'THREE YEARS' in small all-caps above a thin amber horizontal line. Title in large serif sepia ink below. No logos, watermarks, page numbers. No photography. No vector graphics. No blue."
+    },
+    {
+      "id": "s02_why_software_first",
+      "out": "s02_why_software_first.jpg",
+      "prompt": "Design a finished 16:9 keynote slide image in sketch/etching style. Use the style master reference exactly — cream paper #F5F0EB, sepia ink #2D1B11, amber #D97706 accents. MODE C — DIAGRAMMATIC SKETCH. Two panels connected by a central convergence point. Left panel: a code editor drawn as a sketch — code lines in sepia ink, green checkmarks cascading like a waterfall. The feedback loop shown as a hand-drawn amber ring cycling 'write → compile → fix → compile' at high speed. Label in hand-lettered faded ink: 'Instant feedback loop.' Right panel: GitHub's data ocean — countless tiny code fragments falling like rain into a vast knowledge base, sketched with fine cross-hatched texture. Label: 'Billions of lines of code.' Center: the two flows converge at a warm amber AI glow core with radial etched lines. Small hand-lettered label: 'Capital → Better Models → Spillover.' KICKER 'WHY SOFTWARE FIRST' with amber line. Title in serif sepia ink. No logos, watermarks. No photography. No blue. No vector icons."
+    },
+    {
+      "id": "s03_one_tool_two_modes",
+      "out": "s03_one_tool_two_modes.jpg",
+      "prompt": "Design a finished 16:9 keynote slide image in sketch/etching style. Use the style master reference exactly — cream paper #F5F0EB, sepia ink #2D1B11, amber #D97706 accents. MODE C — DIAGRAMMATIC SKETCH. Center: a sketched diamond-shaped core in warm amber wash with radiating etched lines — the Agent engine. Two thick sketch lines branch left and right from it. Left path: leads to a dark terminal-style panel drawn with sepia ink cross-hatching. Code, PR percentages, test results flow inside as small sketched symbols. A small programmer silhouette (hand-drawn, simple) stands beside it. Right path: leads to a bright document panel drawn with lighter, more open lines. Emails, spreadsheets, approval workflows as small sketched icons. An office worker silhouette stands beside it. Both silhouettes face the same central amber core. Small hand-lettered label below: 'Morning: write code. Afternoon: write reports. Same Agent.' KICKER 'ONE TOOL, TWO MODES' with amber line. Title in serif sepia ink. No logos, watermarks. No photography. No blue."
+    }
+  ]
+}

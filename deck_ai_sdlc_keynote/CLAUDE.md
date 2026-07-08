@@ -59,23 +59,23 @@ Phase 5: 生产管线 → 生成图片 → 合成 PPTX
 
 ### Phase 1: 叙事大纲
 - **输入**: Phase 0 合成材料
-- **产出**: `v1/outline/outline-v1.md`
+- **产出**: `v1/outline/outline.md`
 - **内容**: 核心隐喻、核心公式、叙事弧线、Block 划分、每张 slide 的一句话 claim
 - **参考**: `_ppt_framework_v1/02_content_design/`
 
 ### Phase 2: 完整文稿
 - **输入**: Phase 1 大纲
-- **产出**: `v1/manuscript/manuscript-v1.md`
+- **产出**: `v1/manuscript/manuscript.md`
 - **内容**: 每张 slide 的完整论述、数据引用、过渡逻辑、speaker note 草稿
 
 ### Phase 3: Slide 规格
 - **输入**: Phase 2 文稿
-- **产出**: `v1/session_design/deck-brief-v1.md`
+- **产出**: `v1/session_design/deck-brief.md`
 - **内容**: 四层规格（VISUAL TYPE + KICKER + CLAIM / Concept 层 / Image Prompt 层 / Speaker Note 层）
 
 ### Phase 4: 视觉风格
 - **输入**: Phase 3 deck brief（理解内容调性）
-- **产出**: `v1/style/visual-style-v1.md` + `v1/style/style_master.jpg`
+- **产出**: `v1/style/visual-style.md` + `v1/style/style_master.jpg`
 - **参考**: `_ppt_framework_v1/01_visual_style_master/`
 
 ### Phase 5: 生产管线

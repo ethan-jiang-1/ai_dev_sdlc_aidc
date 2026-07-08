@@ -6,7 +6,7 @@ summary: 导航入口。不承担内容——只告诉你哪张 slide 在哪个�
 depends_on:
   - research/
 feeds_into:
-  - v1/session_design/deck-brief-v1.md
+  - v1/session_design/deck-brief.md
 ---
 
 # Manuscript — 按图索骥

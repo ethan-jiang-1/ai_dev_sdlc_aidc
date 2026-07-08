@@ -5,7 +5,7 @@ position: visual_style
 type: guide
 summary: 设计视觉系统，生成 Style Master 锚点图，锁定后所有 slide 以此为视觉基准。
 depends_on:
-  - v1/session_design/deck-brief-v1.md
+  - v1/session_design/deck-brief.md
 feeds_into:
   - v1/production/
 agent_action: guide
@@ -17,11 +17,11 @@ agent_action: guide
 
 ## 输入
 
-`v1/session_design/deck-brief-v1.md`（Phase 3 产出——理解内容调性）
+`v1/session_design/deck-brief.md`（Phase 3 产出——理解内容调性）
 
 ## 产出
 
-### `visual-style-v1.md`
+### `visual-style.md`
 视觉规范文档，包含：
 - Color Palette（主色、强调色、背景色、文字色）
 - Typography（标题字体、正文字体、KICKER 字体）

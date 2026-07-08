@@ -6,7 +6,7 @@ type: guide
 summary: 两个领域（软件 SDLC + 企业 BPM）的关键信号抽取，按 topics + storylines 组织。两条线独立抽取，但共享同一个范式转移。
 depends_on: []
 feeds_into:
-  - v1/outline/outline-v1.md
+  - v1/outline/outline.md
 agent_action: guide
 ---
 

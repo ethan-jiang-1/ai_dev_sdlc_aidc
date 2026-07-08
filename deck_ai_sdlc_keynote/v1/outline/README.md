@@ -7,7 +7,7 @@ summary: 设计核心隐喻、公式、叙事弧线、Block 结构，产出每�
 depends_on:
   - research/source-synthesis.md
 feeds_into:
-  - v1/manuscript/manuscript-v1.md
+  - v1/manuscript/manuscript.md
 agent_action: guide
 ---
 
@@ -21,7 +21,7 @@ agent_action: guide
 
 ## 产出
 
-`outline-v1.md`，包含以下章节：
+`outline.md`，包含以下章节：
 
 ### 1. Core Metaphor（核心隐喻）
 - 2-3 个候选，每个一句话描述 + 为什么适合
