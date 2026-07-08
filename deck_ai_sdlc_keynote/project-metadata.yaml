@@ -1,0 +1,47 @@
+# Project Metadata — AI 时代 SDLC 变革 Keynote
+# Phase 0 填写，Phase 1 锁定
+
+project:
+  name: "AI 时代 SDLC 变革"
+  slug: "deck_ai_sdlc_keynote"
+  type: strategy_keynote
+  created: 2026-07-08
+
+language:
+  slides: "英文为主，中文辅助"
+  speech: "中文（可切换英文）"
+  source_materials: "英文一手源 + 中文合成"
+
+audience:
+  primary: "待定（Phase 1 确认）"
+  ai_literacy: "待定"
+
+scope:
+  tier: "standard"  # standard = 15-20 slides
+  duration_minutes: 40
+
+source:
+  primary: "../aidlc_reference_kol/"
+  supplementary:
+    - "../aidlc_reference_corp/"
+    - "../../_ppt_framework_v1/"
+
+phases:
+  phase_0_research:
+    status: pending
+    directory: "research/"
+  phase_1_outline:
+    status: pending
+    directory: "v1/outline/"
+  phase_2_manuscript:
+    status: pending
+    directory: "v1/manuscript/"
+  phase_3_slide_specs:
+    status: pending
+    directory: "v1/session_design/"
+  phase_4_visual_style:
+    status: pending
+    directory: "v1/style/"
+  phase_5_production:
+    status: pending
+    directory: "v1/production/"
