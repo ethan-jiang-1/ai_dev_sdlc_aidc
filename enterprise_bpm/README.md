@@ -1,147 +1,82 @@
 ---
-title: BPM — SDLC 的企业侧等价物（横向参照研究）
-stage: research
-position: lateral_reference
+title: Enterprise BPM — 企业信息加工流的 AI 时代变革
+stage: root
 type: index
-status: active
-created: 2026-07-08
-updated: 2026-07-08
+summary: 知识地图入口。核心发现：BPM = 企业侧 SDLC 等价物，Agentic BPM 范式核心是 Framed Autonomy，与 SDLC 的 AI Sandwich 完全同构。
 ---
 
-# BPM：SDLC 在企业侧的等价物
+# Enterprise BPM — 知识地图
 
-> 核心问题：软件行业用 SDLC 体系化管理"需求→代码"。企业侧的"业务信息→决策/动作"有没有等价的方法论？AI 在怎么改变它？答案是 BPM（Business Process Management）。
+> 给 AI/Agent 的导航入口。按图索骥：看目录结构 → 找对应文件夹 → 读文件 frontmatter → 深入内容。
 
-## 定位
+## 这个目录在研究什么
 
-这是 SDLC 研究的**横向参照系**。两条线的底层是同一个东西：
+**软件有 SDLC 体系化管理信息加工流。企业的办公/业务信息处理（文档、邮件、工单、审批、招投标…）有等价的方法论吗？** 答案：有，叫 BPM（Business Process Management）。AI 时代，BPM 正在变成 Agentic BPM——核心是 **Framed Autonomy**（有框的自主）。这与 SDLC 的 "AI Sandwich"（人在两端、AI 在中间）完全同构。
+
+## 目录结构
 
 ```
-软件开发：  用户需求 → [SDLC 各阶段] → 软件产品
-企业办公：  业务信息 → [BPM + Agent 控制平面] → 决策/动作/文档
+enterprise_bpm/
+│
+├── README.md                                          ← 你在这里（知识地图入口）
+│
+├── comprehensive-findings-enterprise-info-flow-and-sdlc.md  ← 综合判断：企业信息流 × SDLC 的完全同构
+├── exploration-trajectory.md                          ← 7 轮探索全过程（每轮搜了什么、发现了什么、为什么转向）
+│
+├── papers/                                            ← 关键学术论文（3 篇）
+│   ├── README.md                                      ← 三篇论文索引 + 引用策略
+│   ├── apm-manifesto/                                 ← ⭐⭐⭐ 主引用：Agentic BPM 研究 Manifesto
+│   ├── abpms-architecture/                            ← ⭐⭐ 辅助：A-BPMS 五层架构
+│   └── apm-formal-foundations/                        ← ⭐⭐ 辅助：APM 形式化数学基础
+│
+└── findings/                                          ← 研究发现（按主题维度组织）
+    ├── README.md                                      ← findings 子索引
+    │
+    ├── bpm-and-sdlc-equivalence/                      ← BPM = SDLC 等价物
+    │   ├── bpm-is-the-sdlc-equivalent.md              ← 核心论证：BPM 就是企业信息加工的 SDLC
+    │   ├── four-layer-architecture.md                 ← 四层架构全景图（前端/中端/后端/治理）
+    │   └── agentic-bpm-academic-landscape.md          ← 学术圈：APM manifesto、BPM Pulse Survey、信任鸿沟
+    │
+    ├── terminology-and-taxonomy/                      ← 品类命名与分类
+    │   └── what-is-this-called.md                     ← Agentic Orchestration/APM/APO/BPM 3.0：术语收敛
+    │
+    ├── agentic-orchestration/                         ← Agentic 编排层（中端）
+    │   ├── camunda-processos-deep-dive.md             ← Camunda ProcessOS：AI-native BPM 标本
+    │   ├── agent-control-plane-cowork-frontier.md     ← Anthropic Cowork + OpenAI Frontier：Agent 控制平面
+    │   ├── ai-native-startups-vs-legacy-vendors.md    ← 大厂 vs 模型公司 vs AI-native 创业公司
+    │   └── framed-autonomy-in-practice.md             ← Framed Autonomy 从理论到工程实现
+    │
+    ├── office-and-collaboration-tools/                ← 办公与协作工具（前端）
+    │   ├── office-becomes-agent-platform.md           ← MS/Google/腾讯：Office 套件→Agent 运行基础设施
+    │   ├── feishu-dingtalk-not-bpm-but-cwm.md         ← 飞书/钉钉/企微：不是 BPM，是协同办公 (CWM)
+    │   ├── feishu-cli-for-ai-agents.md                ← 飞书 CLI 开源：让 AI Agent 调用办公能力
+    │   └── dingtalk-wukong-agent-os.md                ← 钉钉悟空：GUI→CLI 完整重构的 Agent OS
+    │
+    ├── classic-bpm/                                   ← 经典 BPM 场景（后端）
+    │   └── classic-bpm-scenarios-and-ai-change.md     ← P2P/Onboarding/Invoice Processing + AI 冲击
+    │
+    ├── enterprise-case-studies/                       ← 企业落地案例
+    │   └── real-enterprise-ai-deployments-2026.md     ← Cognizant/GE/奇瑞/COS 等：有名字有数据
+    │
+    ├── product-landscape/                             ← 产品全景
+    │   └── 2026-enterprise-ai-agent-products.md       ← 全球 + 中国 AI Agent 产品地图
+    │
+    └── agent-governance/                              ← Agent 治理
+        └── agent-governance-patterns.md               ← 权限预提交、审计追踪、熔断、Agent Rewind
 ```
 
----
+## 快速导航：想看什么 → 打开哪个文件
 
-## 探索轨迹（Exploration Trajectory）
-
-> 这条轨迹记录了从"不知道往哪挖"到"知道金矿在哪"的全过程。下次做类似研究，可以直接跳到 Round 3。
-
-### Round 1：广撒网 — "谁在企业信息流里做 AI？"（~12 次搜索）
-
-**初始状态**：只知道假设（SDLC 的过程在企业侧应该有一个等价物），不知道外面有什么。
-
-**搜索方向**：
-- 企业 AI agent 产品全景
-- 真实案例（有名字、有数据）
-- 头部厂商对比（MS/Salesforce/ServiceNow）
-- 中文世界落地情况
-
-**发现**：
-- 2026 年是企业 AI agent 爆发年——SAP Autonomous Enterprise、MS Agent 365、ServiceNow AI Control Tower 等
-- 大量真实案例（Cognizant 35万员工、GE 800+ agents、奇瑞 4000+ 智能体）
-- 中文世界：飞书/钉钉/金山 WPS 都在做
-
-**这轮的问题**：信息量巨大但都是"产品在做什么"——没有回答"这背后的方法论是什么？"
-
----
-
-### Round 2：追方法论 — "有没有 SDLC 等价物？"（~8 次搜索）
-
-**状态**：知道了产品层在发生什么，但缺乏理论框架。用户追问："软件有 SDLC，办公室有什么？"
-
-**搜索方向**：
-- BPM 方法论/学术根源
-- SDLC 与 BPM 的同构关系
-- 经典 BPM 场景（Procure-to-Pay, Onboarding, Invoice Processing）
-- 飞书/钉钉 = BPM 吗？
-
-**关键发现**：
-1. **BPM = SDLC 等价物。** 从 1980 年代 MIT Office Analysis Methodology 到 2026 年 Contextual Process Digitalization——40 年学术传承
-2. **飞书/钉钉不是 BPM。** 他们是协作平台 + 轻量流程引擎 + AI Agent 底座——比 BPM 更宽
-3. **AI-native 创业公司在从零重建**——Camunda ProcessOS、Neo、Reevo
-4. **模型公司不直接做 BPM**——OpenAI/Anthropic 在做更底层的 Agent 控制平面
-
-**这轮的关键 pivot**：从"产品在做什么"转到了"三股力量在博弈（大厂/模型公司/AI-native 创业），而且底层范式在变（预定义流程 → Agent 按需调用原子能力）。但这些都是表面认知——还没挖到"这东西到底怎么 work 的"。
-
----
-
-### Round 3：深挖四条矿脉 — "东西到底怎么 work 的？"（~4 次搜索）
-
-**状态**：知道了有哪些玩家、哪个方向有价值。需要聚焦、深挖、找高质量来源。
-
-**四条矿脉（自主选择，非用户指定）**：
-
-| 矿脉 | 为什么选它 | 挖到了什么 |
-|------|-----------|-----------|
-| **Camunda ProcessOS** | 唯一的老牌 BPM 厂商做的 AI-native 产品 | 4 个 AI agents 按流程生命周期分工；BPMN = 治理可视化层；Fitness Functions 测量流程好坏；Organizational Memory 存私有 git |
-| **Agent 控制平面** | 模型公司对"流程怎么管"的答案 | Cowork 缺企业控制——需要外部控制平面；Rubrik Agent Cloud 在补缺口；Routines 三种触发；权限预提交模式 |
-| **飞书/钉钉 CLI 化** | 流程引擎被 CLI 替代的实证 | OpenClaw 25 万星（草根爆发）；CLI 比 MCP 对 Agent 友好 10-32 倍；2500+ API 变成 AI 可调用的原子指令 |
-| **BPM 学术圈的回应** | 有没有人从理论上定义 AI-native BPM？ | "Agentic BPM" manifesto (Dagstuhl Seminar, 18 位作者)；Framed Autonomy 概念精确命名了我们一直在说的东西；42% 用 AI 但只有 16% 让 Agent 自主 |
-
----
-
-### 当前状态：8 轮探索完成，开放问题已收拢
-
-8 轮搜索后（含 Round 8 收尾搜索 + 结构收拢），核心判断收敛到一句话：
-
-> **AI 时代的范式转移：底层从"预定义流程引擎"转向"Framed Autonomy"——Agent 在治理边界内自主执行原子能力，人在关键节点策展和签收。** 这个范式在 SDLC（操作者→委托人、AI Sandwich）、BPM（Agentic BPM、ProcessOS）、协作平台（CLI 化）、Agent 基础设施（控制平面）、RPA（UiPath/AA 的 Agentic 转型）五个领域以不同的术语在同时发生。
-
-**最精确的术语**：来自学术圈的 **"Framed Autonomy"**——流程框（frame）由人定义（治理边界、KPI、约束），框内的执行由 Agent 自主完成。
-
-**开放问题状态**：11 个原始问题 → 6 已解决、2 已追到答案（ServiceNow Blueprint、UiPath/AA 白皮书）、1 顺手对比（Cognizant vs AI Sandwich）、1 明确放弃（飞书/钉钉方法论）、1 留给用户决策（统一框架是否单独写）。详见 `synthesis.md`。
-
----
-
-## 目录
-
-```
-enterprise_info_flow/
-├── README.md                                          ← 你在这里（含探索轨迹摘要）
-├── synthesis.md                                       ← 综合判断 + 全部 URL + 开放问题状态
-├── exploration-trajectory.md                          ← 8 轮探索全过程（含 Round 8 收尾）
-├── papers/
-│   ├── README.md                                      ← 论文索引
-│   ├── apm_manifesto.pdf                              ← APM manifesto 原文
-│   └── apm_manifesto.md                               ← APM manifesto markdown 版
-└── findings/
-    ├── README.md                                      ← 目录说明 + 放新文件规则
-    ├── front-end/                                     ← 前端：Agent 运行的基础设施
-    │   ├── office-workspace-agent-platform.md         ← MS/Google/腾讯 Office→Agent 平台
-    │   ├── feishu-dingtalk-vs-bpm.md                  ← CWM（协同办公）vs BPM 定位
-    │   ├── feishu-cli-architecture-deep-dive.md       ← 飞书"龙虾"架构 + CLI 化
-    │   └── dingtalk-wukong-architecture.md            ← 钉钉悟空 Agent OS
-    ├── orchestration/                                 ← 中端：工作流怎么编排
-    │   ├── camunda-processos-deep-dive.md             ← Camunda ProcessOS 深挖
-    │   ├── agent-control-plane-cowork-frontier.md     ← Agent 控制平面（Anthropic/OpenAI）
-    │   └── ai-native-startups-vs-legacy.md            ← 大厂 vs 模型公司 vs 创业（含 UiPath/AA 方法论）
-    ├── backend/                                       ← 后端：记录系统
-    │   └── classic-bpm-scenarios.md                   ← 经典 BPM 场景 + AI 变化
-    ├── methodology/                                   ← 方法论/理论（横切）
-    │   ├── bpm-the-sdlc-equivalent.md                 ← BPM = SDLC 等价物（含 ServiceNow Blueprint）
-    │   ├── agentic-bpm-academic-landscape.md          ← 学术圈：Agentic BPM manifesto
-    │   └── four-layer-architecture.md                 ← 四层架构全景图 + SDLC 同构对照
-    ├── taxonomy/                                      ← 分类体系（横切）
-    │   └── classification-and-terminology.md          ← 品类名/厂商分类/成熟度/术语收敛
-    ├── landscape/                                     ← 全景扫描（横切）
-    │   └── 2026-enterprise-ai-agents-landscape.md     ← 2026 全球 + 中国产品全景
-    └── cases/                                         ← 实证
-        └── real-enterprise-deployments-2026.md        ← 真实案例（有名字有数据）
-```
-
-## ⚠️ 来源铁律
-
-- 每一条信息必须有可访问的 URL
-- 来源必须可靠（官方技术文档 > 第三方深度分析 > 学术论文 > 行业报告。厂商 PR 稿不可用）
-- 不可靠的信息直接剔除，不留沙子
-
-## 与 SDLC 研究的关系
-
-| 概念 | SDLC 领域 | BPM/企业信息流领域 |
-|------|------|------|
-| 旧范式 | 人先想清楚 → 拆解 → 执行 | 预定义流程 → 审批流 → 人工执行 |
-| AI 时代范式 | 操作者→委托人、AI Sandwich | Framed Autonomy、Agentic BPM |
-| 人的角色 | Brief/Review/Sign-off | 定义 frame + 关键节点策展 |
-| AI 的角色 | 中间层执行和探索 | Frame 内自主执行原子能力 |
-| 核心 tension | 人想不清楚了 | 流程不再被完整预定义 |
-| 治理模式 | 约束编码进 CI/linter | 权限预提交 + 审计追踪 + Agent Rewind |
+| 你想知道... | 打开 |
+|------------|------|
+| BPM 是什么？跟 SDLC 什么关系？ | `findings/bpm-and-sdlc-equivalence/bpm-is-the-sdlc-equivalent.md` |
+| 新范式叫什么？核心概念是什么？ | `papers/apm-manifesto/apm_manifesto.md`（Framed Autonomy） |
+| 四层架构全景图（跟 SDLC 怎么对应） | `findings/bpm-and-sdlc-equivalence/four-layer-architecture.md` |
+| 那些不同的术语（APM/APO/Agentic BPM）是一个东西吗？ | `findings/terminology-and-taxonomy/what-is-this-called.md` |
+| Camunda ProcessOS 架构详解 | `findings/agentic-orchestration/camunda-processos-deep-dive.md` |
+| Office 套件怎么变成 Agent 平台？ | `findings/office-and-collaboration-tools/office-becomes-agent-platform.md` |
+| 飞书/钉钉到底是什么？跟 BPM 什么关系？ | `findings/office-and-collaboration-tools/feishu-dingtalk-not-bpm-but-cwm.md` |
+| 有哪些真实企业案例？ | `findings/enterprise-case-studies/real-enterprise-ai-deployments-2026.md` |
+| 学术论文引用哪篇？ | `papers/apm-manifesto/`（主引用源） |
+| 这 7 轮研究怎么走过来的？ | `exploration-trajectory.md` |
+| 综合判断是什么？ | `comprehensive-findings-enterprise-info-flow-and-sdlc.md` |

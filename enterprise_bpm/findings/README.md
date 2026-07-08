@@ -23,11 +23,16 @@ findings/
 │   │                                              （确定性骨架 + Agentic 自主）
 │   ├── camunda-processos-deep-dive.md           ← Camunda ProcessOS 深挖
 │   ├── agent-control-plane-cowork-frontier.md   ← Agent 控制平面（Anthropic/OpenAI）
-│   └── ai-native-startups-vs-legacy.md          ← 大厂 vs 模型公司 vs 创业（含 UiPath/AA 方法论）
+│   ├── ai-native-startups-vs-legacy.md          ← 大厂 vs 模型公司 vs 创业
+│   └── framed-autonomy-implementation.md        ← Framed Autonomy 工程实现（Round 9）
 │
 ├── backend/                                     ← 后端：记录系统
 │   │                                              （CRM/ERP/HCM/传统 BPM）
 │   └── classic-bpm-scenarios.md                 ← 经典 BPM 场景 + AI 变化
+│
+├── governance/                                  ← 治理层（横切所有层）
+│   │                                              （身份、权限、审计、熔断）
+│   └── agent-governance-patterns.md             ← Agent 治理模式（Round 9）
 │
 ├── methodology/                                 ← 方法论/理论（横切所有层）
 │   ├── bpm-the-sdlc-equivalent.md               ← BPM = SDLC 等价物（含 ServiceNow Blueprint）
@@ -49,7 +54,8 @@ findings/
 | 新内容属于… | 放哪里 |
 |-----------|--------|
 | Agent 的"家"——Office/Workspace/协同办公/CLI 化 | `front-end/` |
-| 工作流编排——流程引擎/Agent 控制平面/编排层竞争 | `orchestration/` |
+| 工作流编排——流程引擎/Agent 控制平面/Framed Autonomy | `orchestration/` |
+| Agent 治理——身份/权限/审计/熔断 | `governance/` |
 | 记录系统——传统 BPM/ERP/CRM 的 AI 化 | `backend/` |
 | 方法论/理论——跨层分析、学术回应、架构总图 | `methodology/` |
 | 命名/分类/成熟度模型 | `taxonomy/` |

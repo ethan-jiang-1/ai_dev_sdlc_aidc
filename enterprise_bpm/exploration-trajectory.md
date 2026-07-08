@@ -308,10 +308,72 @@ CWM（协同办公）和 BPM 不是竞争关系——在 AI 时代它们正在**
 **本轮的文件变更**：
 - 新建：`findings/taxonomy/classification-and-terminology.md`, `findings/methodology/four-layer-architecture.md`
 - 更新：`synthesis.md`（开放问题收拢）, `bpm-the-sdlc-equivalent.md`（ServiceNow 深挖）, `ai-native-startups-vs-legacy.md`（UiPath/AA 方法论）, `README.md`（目录树）, `exploration-trajectory.md`（本文件——标注各轮问题关闭状态）
+- 目录重命名：`enterprise_info_flow/` → `enterprise_bpm/`（"信息加工流"不是认可术语，BPM 才是）
 
 ---
 
-## 探索方法论总结（给自己的笔记）
+## Round 9：治理深挖 + Framed Autonomy 实现（~2 次搜索，2026-07-08）
+
+**状态**：四层架构中治理层最薄，Framed Autonomy 只有学术概念没有工程细节。这两个是同一个硬币的两面——治理 = 组织层面的 frame，Framed Autonomy = 执行层面的 frame。
+
+**搜索方向**：
+- `enterprise AI agent governance identity permissions audit trail circuit breaker 2026`
+- `"Framed Autonomy" implementation engineering practice operational frame normative frame 2026`
+
+**关键发现**：
+
+### 治理层
+
+1. **传统 IAM 对 Agent 失效。** 67% 非人类账号是中心 IAM 看不到的（Orchid Security）。Agent 通过委托链继承权限——每一环都可能放大风险。
+
+2. **两大参考架构出现**：
+   - **Five-Plane**（Tallam, June 2026）：推理平面 + 四个执行平面（网络/身份/端点/数据）+ 复合主体权限衰减
+   - **AGL-1**（Walia, July 2026）：七个治理域，包括熔断和信任可观测性
+
+3. **Agent 身份三条路径**：Agent-as-User（MS Entra Agent ID）、Identity Propagation（Workato VUA，Agent 传播用户身份）、Intent-Based Access（TrustLogix IBAC，评估"为什么"而不只是"谁"）
+
+4. **熔断/杀开关成标配**：TrustLogix、Orchid、Google Cloud、Workato 都提供了运行时中断。六种中断原语——从二元允许/拒绝走向分级响应。
+
+5. **审计标准在形成**：七个必需元素（指令、数据来源、工具调用、Agent 身份含委托链、输出、审批决策、防篡改日志）。引用 SOC 2、GDPR、NIST AI RMF、EU AI Act。
+
+6. **Control Plane ≠ Execution Plane**。关键架构区分：治理层管"可以做什么"，执行层管"怎么高效做"——两者需要统一。
+
+> 详见: `findings/governance/agent-governance-patterns.md`
+
+### Framed Autonomy 实现
+
+1. **Operational Frame vs Normative Frame 有了精确定义**（Fournier & Limonad, CUGA FLO, June 2026）：
+   - Operational Frame = 命令式，工作流引擎强制执行
+   - Normative Frame = 声明式，LLM Agent 在其范围内推理
+   - Process FRAME = 所有 LLM 调用的聚合策略集
+
+2. **TDF 模型**：TaskAgent（单任务）、DecisionAgent（分支决策）、FlowAgent（端到端编排）。Agent 在控制点被引擎调用——不是自由编排。
+
+3. **Frame Agent + Operational Agent 模式**（Skolik & Müller, 2026）：Frame Agent 从 BPMN 生成流程约束 → Operational Agent 在约束内执行。德国电网 meter-to-cash 真实案例，预定义规则下 **99% 成功执行率**。
+
+4. **Process FRAME 内部结构**：Hard constraints + Soft constraints + Role assignments + Segregation of duties + Lifecycle rules + Meta-frame。
+
+> 详见: `findings/orchestration/framed-autonomy-implementation.md`
+
+### 对 SDLC 的关键映射
+
+| 发现 | SDLC 等价 | 哪边更成熟 |
+|------|----------|-----------|
+| CI/CD 管道 = Operational Frame | lint→test→build→deploy 是确定性流程骨架 | SDLC **更成熟** |
+| Normative Frame 分散在 SDLC | `.editorconfig`, `eslintrc`, `CODEOWNERS` 各管各的 | 企业侧**聚合得更好** |
+| 审计追踪 | git history 是不可篡改的理想审计基底 | SDLC **更成熟** |
+| Intent-Based Access Control | — | SDLC **缺失等价物** |
+| Agent 委托链衰减 | — | SDLC **缺失等价物** |
+| Meta-frame | — | 两边**都是空白** |
+
+**核心洞察**：SDLC 治理在"硬"的维度（审计追踪、审批门、熔断回滚）领先，企业侧在"软"的维度（Agent 身份、意图评估、声明式策略聚合）领先。两边最值得互相借用的东西正好互补。
+
+**本轮的文件变更**：
+- 新建：`findings/governance/agent-governance-patterns.md`, `findings/orchestration/framed-autonomy-implementation.md`
+- 目录重命名：`enterprise_info_flow/` → `enterprise_bpm/`
+- 更新：`README.md`（目录树 + 名称）, `findings/README.md`（新增 governance/）
+
+---
 
 **什么搜索策略有效**：
 - 并行搜索 4 个不同方向 → 交叉验证 → 识别模式
