@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-07-08T13:55:31.817181+00:00",
+  "prompt_json": "/tmp/s21.json",
+  "system_prompt": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/deck_system.txt",
+  "out_dir": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images",
+  "model": "gpt-image-2",
+  "size": "16:9",
+  "resolution": "1k",
+  "base_urls": [],
+  "dry_run": false,
+  "style_references": [
+    "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/style/style_master.png"
+  ],
+  "slides": [
+    {
+      "id": "s21",
+      "requested_out": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s21_convergence.jpg",
+      "trace": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s21_convergence.apimart-task.json",
+      "trace_exists": true,
+      "prompt_chars": 562,
+      "canonical_out": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s21_convergence.jpg",
+      "style_refs": [
+        "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/style/style_master.png"
+      ],
+      "status": "generated",
+      "image": {
+        "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s21_convergence.jpg",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.7768
+      },
+      "normalized_from": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s21_convergence.png"
+    }
+  ]
+}

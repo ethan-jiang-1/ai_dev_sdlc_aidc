@@ -1,0 +1,163 @@
+{
+  "pptx": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/ppt_image2/deck.pptx",
+  "image_dir": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images",
+  "prompt_json": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_prompts.json",
+  "slide_count": 22,
+  "slides": [
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s01_opening.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s02_why_software_first.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s03_one_tool_two_modes.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s04_the_map.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s05_sdlc_premise_gone.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s06_deer_valley_engelberg.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s07_beck_fowler.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s08_fable5_bottleneck.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s09_the_chain.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s10_too_fast_to_review.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s11_on_the_loop.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s12_mid_pack_at_risk.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s13_block_vs_cloudflare.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s14_bpm_sdlc_twin.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s15_framed_autonomy.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s16_four_layers.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s17_overseas_cases.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s18_china_cases.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s19_roman_legion.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s20_measurers_not_builders.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s21_convergence.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    },
+    {
+      "path": "/Users/bowhead/ai_dev_sdlc_aidc/deck_ai_sdlc_keynote/v1/production/work/deck/page_images/s22_what_will_you_do.jpg",
+      "width": 1672,
+      "height": 941,
+      "aspect_ratio": 1.7768,
+      "is_16_9": true
+    }
+  ],
+  "container_contract": "Each PPTX slide contains one full-slide image; slide text is image-rendered and not editable."
+}
