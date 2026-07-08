@@ -3,7 +3,7 @@ title: Phase 0 — 素材抽取与合成
 stage: phase_0
 position: pre_phase
 type: guide
-summary: 从 KOL 源材料中提取关键信号，按主题组织，为叙事大纲提供素材基础。
+summary: 两个领域（软件 SDLC + 企业 BPM）的关键信号抽取，按 topics + storylines 组织。两条线独立抽取，但共享同一个范式转移。
 depends_on: []
 feeds_into:
   - v1/outline/outline-v1.md
@@ -12,105 +12,127 @@ agent_action: guide
 
 # Phase 0: 素材抽取与合成
 
-> 本阶段目标：不是把所有材料读一遍——而是**按叙事线索**提取关键信号，让 Phase 1 有据可依。
+> 本阶段目标：从两个领域的关键源材料中提取信号，按主题（topics）和叙事线（storylines）组织，让 Phase 1 叙事设计有据可依。
 
-## 为什么需要这个阶段
+---
 
-标准 PPT 框架假设你已经有清晰的内容方向。但你的素材是 14 位 KOL + 3 场事件 + 跨公司共识——信息量巨大且互有关联。需要先做一轮结构化抽取，才能进入叙事设计。
+## 两个领域，两条信息线
+
+```
+research/
+│
+├── software/                  ← SDLC（软件开发）
+│   │  来源：fable5_field_signals/ + aidlc_reference_kol/
+│   │
+│   ├── topics/                ← 5 个主题（概念/判断/框架）
+│   │   ├── 01-traditional-sdlc-premise.md
+│   │   ├── 02-ai-evolution-three-stages.md
+│   │   ├── 03-speed-communication-bottleneck.md
+│   │   ├── 04-agent-new-program-type.md
+│   │   └── 05-ai-human-amplifier-scope.md
+│   │
+│   ├── storylines/            ← 3 条叙事线（事件/人物/时间线）
+│   │   ├── 01-deer-valley-to-engelberg.md
+│   │   ├── 02-pragmatic-summit.md
+│   │   └── 03-fable5.md
+│   │
+│   └── initial-ideas.md       ← 初始想法草稿
+│
+├── business/                  ← BPM（企业信息加工流）
+│   │  来源：enterprise_bpm/
+│   │
+│   ├── topics/                ← 4 个主题
+│   │   ├── 01-bpm-sdlc-equivalence.md
+│   │   ├── 02-framed-autonomy.md
+│   │   ├── 03-four-layer-architecture.md
+│   │   └── 04-competitive-landscape.md
+│   │
+│   └── storylines/            ← 2 条叙事线
+│       ├── 01-camunda-processos-transformation.md
+│       └── 02-office-becomes-agent-infrastructure.md
+│
+└── README.md                  ← 你在这里
+```
+
+**一眼看明白**：`software/` = SDLC，`business/` = BPM。同类文件同一结构（topics + storylines）。
+
+---
 
 ## 来源
 
-> ⚠️ **本 Phase 的所有素材来自一个地方：`../aidlc_reference_kol/`**
-> 这是整个项目的信息地图——14 位 KOL + 3 场 2026 年关键事件 + 跨公司变革共识 + Fable 5 信号。
-> 每一条抽取出来的信号，都必须能回溯到这个目录中的具体文件。
+| 目录 | 源材料 | 内容 |
+|------|--------|------|
+| `software/` | `../fable5_field_signals/` | 16 位一线开发者使用 Fable 5 的真实信号（Willison, Mollick, Krieger, Klaassen, Vincent 等） |
+| `software/` | `../aidlc_reference_kol/` | 14 位 KOL 深度拆解 + Deer Valley/Engelberg/Pragmatic Summit + 跨公司变革共识 + Fable 5 信号合成 |
+| `business/` | `../../enterprise_bpm/` | 7 轮探索 + 14 个 findings 文件：BPM = SDLC 等价物、Framed Autonomy、四层架构、竞争格局 |
 
-### 源目录信息地图
+### software/ 源目录速查
 
-```
-../aidlc_reference_kol/
-│
-├── _raw_kol/                          ← 14 位 KOL 深度拆解
-│   ├── README.md                      ← 含共识/分歧矩阵（必读）
-│   ├── 01_thoughtworks.md             ← ThoughtWorks: 认知债、Harness Engineering
-│   ├── 02_martin_fowler.md            ← Martin Fowler: "Verified" 定义变化
-│   ├── 03_dave_farley.md              ← Dave Farley: CD 让 AI 时代存活
-│   ├── 04_simon_willison.md           ← Simon Willison: SDLC 围绕"一天几百行"设计
-│   ├── 05_kent_beck_agile.md          ← Kent Beck: XP 在 AI 时代复苏
-│   ├── 06_synthesis.md                ← 跨人物主题分析（共识区/分歧区）
-│   ├── 07_andrej_karpathy.md          ← Andrej Karpathy: Vibe Coding→Agentic Engineering
-│   ├── 08_boris_cherny.md             ← Boris Cherny: Claude Code 之父
-│   ├── 09_ryan_lopopolo.md            ← Ryan Lopopolo: 100 万行零人写零人审
-│   ├── 10_kief_morris.md              ← Kief Morris: in the loop → on the loop
-│   ├── 12_gergely_orosz.md            ← Gergely Orosz: The Pragmatic Engineer
-│   ├── 13_laura_tacho.md              ← Laura Tacho: 450+ 公司 12 万开发者数据
-│   └── 14_thomas_dohmke.md            ← Thomas Dohmke: 前 GitHub CEO
-│
-├── _raw_frontier/                     ← 跨公司变革共识（7人 + 3份深度研究）
-│   ├── README.md                      ← 含人物速查表 + 来源全量映射
-│   ├── 01_变革共识_跨公司方法论趋同.md  ← 七个跨公司共识 + 变革烈度
-│   ├── 02_人物深度_每个人的变革视角.md  ← 七人各自触发事件 + 分歧矩阵
-│   └── 03_流程死亡清单_什么不再适用.md  ← 22 条被宣布已死的做法 + 替代方案
-│
-├── _raw_fable5/                       ← Fable 5 变革信号合成（16 个使用样本）
-│   ├── README.md                      ← 含来源全量映射 + 证据强度评估
-│   ├── 01_Fable5_颠覆了什么_核心信号.md ← 10 个核心信号 + 12 条流程变革清单
-│   ├── 02_流程变革_具体模式与检查清单.md ← AI Sandwich、Brief-Review-Signoff
-│   └── 03_粗糙信号_早期观察与未成形想法.md ← 8 个弱信号 + 7 个开放问题
-│
-├── _raw_agile_manifesto_2026/         ← Deer Valley Retreat（Feb 2026）
-│   ├── README.md                      ← Agile Manifesto 25 年后同一片山
-│   ├── 02_rigor_relocation.md         ← "严苛去哪儿了？"
-│   ├── 03_supervisory_engineering.md  ← Supervisory Engineering / Middle Loop
-│   ├── 05_cognitive_debt.md           ← Margaret-Anne Storey 命名的新"债"
-│   ├── 06_three_tier_developer_split.md ← Junior 安全/Mid 危机/Senior 转向架构
-│   └── 07_supervisory_programmer.md   ← 管理多个 Agent 的日常
-│
-├── _raw_promatic_summit_2026/         ← Pragmatic Summit（Feb 2026）
-│   ├── README.md                      ← Beck+Fowler 同台、Willison、Dohmke+Rajan
-│   ├── 01_beck_fowler_fireside.md     ← Beck + Fowler 炉边对话
-│   ├── 02_willison_agentic_engineering.md ← Simon Willison
-│   ├── 03_dohmke_rajan_roundtable.md  ← 前 GitHub CEO + Atlassian CTO
-│   ├── 04_tacho_dx_data_joint_statement.md ← Laura Tacho DX 数据
-│   └── 06_cross_session_themes.md     ← 跨 session 主题
-│
-└── _raw_engelberg_2026/              ← Engelberg Retreat（Jul 2026）
-    ├── README.md                      ← "从实验到生产的转折点"
-    ├── 02_evidence_is_in.md           ← "not slides — production"
-    ├── 03_optimiser_vs_learner.md     ← 组织设计框架
-    ├── 04_galaxy_brain_debate.md      ← 架构辩论
-    ├── 05_harness_engineering_emergence.md ← Harness Engineering 从零到核心议题
-    ├── 06_tdd_as_prompt_engineering.md ← TDD = Prompt Engineering
-    └── 07_risk_tiering.md             ← AI 生成变更的三级风险分类
-```
+| 想看什么 | 路径 |
+|---------|------|
+| 具体的人怎么说 | `../aidlc_reference_kol/_raw_kol/` |
+| 四家公司达成了什么共识 | `../aidlc_reference_kol/_raw_frontier/` |
+| Fable 5 具体改变了什么 | `../aidlc_reference_kol/_raw_fable5/` |
+| Agile 社区怎么回应 AI | `../aidlc_reference_kol/_raw_agile_manifesto_2026/` |
+| 工业界的大会声音 | `../aidlc_reference_kol/_raw_promatic_summit_2026/` |
+| 从实验到生产的转折 | `../aidlc_reference_kol/_raw_engelberg_2026/` |
+| 一线开发者真实使用 Fable 5 的信号 | `../fable5_field_signals/` |
+| 厂商方法论框架 | `../aidlc_reference_corp/_raw_aws/` |
 
-### 辅助来源
+### business/ 源目录速查
 
-```
-../aidlc_reference_corp/
-├── _raw_aws/                          ← AWS 官方 AI-DLC 方法论
-└── _raw_ecosystem/                    ← 非 AWS 生态全景
-```
+| 想看什么 | 路径 |
+|---------|------|
+| BPM 与 SDLC 的等价论证 | `../../enterprise_bpm/findings/bpm-and-sdlc-equivalence/` |
+| Framed Autonomy 从理论到实现 | `../../enterprise_bpm/findings/agentic-orchestration/` |
+| Office 变成 Agent 平台 | `../../enterprise_bpm/findings/office-and-collaboration-tools/` |
+| 竞争格局与分类 | `../../enterprise_bpm/findings/terminology-and-taxonomy/` |
+| 探索全过程轨迹 | `../../enterprise_bpm/exploration-trajectory.md` |
 
-### 各目录之间的关系
+---
 
-| 如果你关心... | 先看 | 特点 |
+## 两条线为什么越来越像：共享工具驱动收敛
+
+software 和 business 两条线各自独立研究，但发现它们越来越指向同一件事。一个关键机制是：**两边现在用的是同一套 AI 工具。**
+
+### 同一批工具，两种模式
+
+Claude Code、Codex Desktop 这些强悍的 Agent 工具天然具备两种工作模式：
+
+- **Coding 模式**：读代码库、写代码、跑测试、提交 PR —— 面向软件工程
+- **Desktop/Office 模式**：读文档、写邮件、操作表格、走审批流 —— 面向企业办公
+
+同一个工具，同一个人，上午写代码，下午处理工单。界面是一样的——都是跟 Agent 对话、委托任务、验收结果。
+
+### 这意味着什么
+
+| | 以前的区别 | 现在的趋同 |
 |------|------|------|
-| 具体的人怎么说 | `_raw_kol/` | 单人观点，有共识/分歧矩阵 |
-| 四家公司达成了什么共识 | `_raw_frontier/` | 跨公司合成，有变革烈度评估 |
-| Fable 5 具体改变了什么 | `_raw_fable5/` | 16 个使用样本，有证据强度 |
-| Agile 社区怎么回应 AI | `_raw_agile_manifesto_2026/` | 概念密度最高，多个新术语发源地 |
-| 工业界的大会声音 | `_raw_promatic_summit_2026/` | 公开大会，有数据（Tacho 12 万开发者） |
-| 从实验到生产的转折 | `_raw_engelberg_2026/` | 最新（Jul 2026），语气从犹豫→自信 |
-| 厂商方法论框架 | `_raw_aws/` | 自顶向下设计，“正确流程应该长这样” |
+| 工具 | 开发者用 IDE，办公用 Office | 都用同一个 Agent 界面 |
+| 工作方式 | 写代码 vs 填表 | 都是 Brief → Agent 执行 → Review |
+| 核心 artifact | 代码 vs 文档 | 都是 Spec/Frame → Agent 产出 → 人验收 |
+| 人的角色 | 程序员 vs 文员 | 都是委托人/策展人 |
+| 方法论 | SDLC vs BPM | 都是 Framed Autonomy |
+
+### 关键信号
+
+- **OpenAI Harness Engineering**：3 个人 + Codex，5 个月，100 万行代码，零人手写零人审。人只写 spec 和设计 harness。
+- **Claude Code**：Krieger "wish Claude good night, wake up to find it's done" —— 白天定义任务，夜里 Agent 推进，早上人验收。
+- **Vibe Kanban**：同一块看板上同时跑 Claude Code 和 Codex Desktop——coding 任务和 office 任务在同一个编排层里流转。
+- **飞书/钉钉 CLI 化**：2500+ API 变 AI 可调用的原子指令——office 工具变成了 Agent 的 CLI，跟 Claude Code 的 terminal 没有本质区别。
+
+**结论**：软件研发和业务处理正在被同一套 Agent 工具吸进同一个工作模式。SDLC 和 BPM 不只是"可以互相借鉴"——它们正在同一个基础设施上**融合**。
+
+---
 
 ## 产出
 
-`source-synthesis.md`——按以下维度组织的信号图谱：
+Phase 0 完成后的 `source-synthesis.md`——按以下维度组织的信号图谱：
 
 1. **共识区** — 哪些判断所有人/大多数人都同意？
 2. **分歧区** — 哪些问题上存在根本分歧？
-3. **已死/正在死的流程** — 哪些 SDLC 实践被宣布不再适用？
-4. **新涌现的概念** — 哪些新术语/新框架在形成？（Harness Engineering、Cognitive Debt、Supervisory Engineering、Middle Loop...）
+3. **已死/正在死的流程** — 哪些 SDLC/BPM 实践被宣布不再适用？
+4. **新涌现的概念** — 哪些新术语/新框架在形成？（Harness Engineering、Framed Autonomy、Supervisory Engineering、Middle Loop...）
 5. **关键引用** — 最有冲击力的原话（可进入 slides 作为 pull quote）
 6. **数据点** — 可引用的量化证据
 
@@ -124,6 +146,7 @@ agent_action: guide
 ## ⛔ 闸门
 
 Phase 0 完成标准：
-- [ ] 六大维度（共识/分歧/已死流程/新概念/关键引用/数据点）均有内容
+- [ ] software/ 和 business/ 两个领域的 topics + storylines 均已完成
 - [ ] 每条信号标注了来源文件路径
 - [ ] 用户确认：核心信号的抽取准确、无重大遗漏
+- [ ] 跨领域同构关系已验证（Framed Autonomy = AI Sandwich，四层架构映射完整）
