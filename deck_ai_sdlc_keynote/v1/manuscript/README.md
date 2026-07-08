@@ -1,64 +1,57 @@
 ---
-title: Phase 2 — 完整文稿
+title: Manuscript — 按图索骥
 stage: phase_2
-position: manuscript
-type: guide
-summary: 将每张 slide 的一句话 claim 展开为完整论述，含证据引用、过渡逻辑、speaker note 草稿。
+type: index
+summary: 导航入口。不承担内容——只告诉你哪张 slide 在哪个文件里、素材去哪找。
 depends_on:
-  - v1/outline/outline-v1.md
+  - research/
 feeds_into:
   - v1/session_design/deck-brief-v1.md
-agent_action: guide
 ---
 
-# Phase 2: 完整文稿
+# Manuscript — 按图索骥
 
-> 本阶段目标：把骨架填上血肉。每张 slide 不只是"要说什么"，而是"完整地说出来"。
+> 这不是内容文件。这是地图。找 slide → 看表 → 打开对应文件。
 
-## 输入
+## 文件 → Slide 映射
 
-`v1/outline/outline-v1.md`（Phase 1 产出）
+| 文件 | Slides | 内容 |
+|------|--------|------|
+| `part0-opening.md` | S0.1–S0.4 | 开场：AI 三年轨迹、为什么先颠覆软件、共享工具现象 |
+| `part1-software-frontline.md` | S1.1–S1.9 | 软件前线：SDLC 被掀翻、三条 storyline、角色重写、Block/Cloudflare 案例 |
+| `part2-business-mirror.md` | S2.1–S2.5 | 企业镜像：BPM = SDLC 孪生、Framed Autonomy、四层架构、案例 |
+| `part3-big-picture.md` | S3.1–S3.4 | 大局：罗马军团散了、融合、没有结论只有问题 |
 
-## 产出
+## 每张 Slide 格式
 
-`manuscript-v1.md`，为每张 slide 展开：
+```
+### S{x}.{y}: [Title]
 
-### 每张 slide 的完整内容
-
-```markdown
-## Slide N: [CLAIM]
-
-### 核心论述（150-300 字）
-完整的论证段落——不只是 bullet points，而是可以读出来的连贯文字。
-
-### 证据/引用
-- 来源人物/事件 + 具体引文 + 源文件路径
-- 标注证据强度（⭐⭐⭐ 多人独立验证 / ⭐⭐ 单人公开发言 / ⭐ 断言级）
-
-### 视觉概念（初步）
-- 这张 slide 的视觉隐喻/场景（不是 final IMAGE PROMPT，是方向描述）
-- 例："一个仪表盘显示堵车（交通拥堵），但 GPS 在建议 Exit 47（决策）。Split scene。"
-
-### 过渡句
-- 从上一张 slide 到这一张的桥梁
-- 从这一张到下一张的桥梁
-
-### Speaker Note 草稿
-- 演讲时怎么说（口语化的完整段落）
-- 中文为主，关键术语保留英文
+**KICKER**: 引语/悬念
+**CLAIM**: 一句话核心论点
+**BODY**: 完整论述
+**TRANSITION**: 过渡到下一页
 ```
 
-## 工作方式
+## 素材来源速查
 
-- Agent 逐张 slide 展开论述
-- 每完成一个 Block（3-7 张），停下来让用户审核
-- 用户确认该 Block 的论述方向后，继续下一个 Block
+| 需要什么 | 去哪找 |
+|---------|--------|
+| SDLC 主题（概念/判断） | `../research/software/topics/` |
+| SDLC 叙事线（事件/人物） | `../research/software/storylines/` |
+| BPM 主题 | `../research/business/topics/` |
+| BPM 叙事线 | `../research/business/storylines/` |
+| 软件案例（Block, Cloudflare） | `../../../_business_ai_case/` |
+| BPM 源材料 | `../../../_business_bpm/` |
+| KOL 源材料 | `../../../aidlc_reference_kol/` |
+| 一线开发者信号 | `../../../fable5_field_signals/` |
 
-## ⛔ 闸门
+## PENDING
 
-Phase 2 完成标准：
-- [ ] 每张 slide 有完整论述段落（不是 bullet list）
-- [ ] 所有关键主张有证据引用 + 来源路径
-- [ ] 证据强度已标注
-- [ ] 过渡逻辑连贯（可以从前到后通读一遍而不跳跃）
-- [ ] 用户确认：论述准确、证据充分、逻辑连贯
+| Slide | 缺什么 |
+|-------|--------|
+| S2.5 | 金融/银行行业案例（奇瑞已填，制造业够用了） |
+
+## 版本
+
+v1, 2026-07-08.
