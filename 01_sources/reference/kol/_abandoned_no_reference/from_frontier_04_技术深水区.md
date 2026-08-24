@@ -1,0 +1,283 @@
+---
+type: synthesis
+content_type: technical_deep_dive
+research_date: 2026-07-07
+derived_from:
+  local_dir: ai_sdlc_frontier/followup_research/
+  files:
+    - 01_context_compaction_六家对比.md
+    - 02_claude_code_四层上下文压缩深度拆解.md
+    - 03_dynamic_context_discovery_静态到动态的范式转移.md
+verification_status: partially_verified
+evidence_strength: strong
+note: |
+  三份 followup 研究基于源码逆向分析和六家产品对比，但本身是本地研究合成，无独立公开 URL。
+  关键技术细节可追溯到公开源码（Claude Code 源码分析、Codex CLI 开源仓库）。
+primary_source_urls:
+  codex_agent_loop: https://openai.com/index/unwinding-codex-agent-loop/
+  cursor_dynamic_context: https://cursor.com/en-US/blog/dynamic-context-discovery
+  cursor_harness: https://cursor.com/en-US/blog/continually-improving-our-agent-harness
+  claude_code_source_analysis:
+    note: 基于 GitHub wuwangzhang1216/claude-code-source-all-in-one 等源码分析仓库，非官方公开
+  galster_eth_2026:
+    url: https://arxiv.org/abs/2602.11988
+    note: "Gloaguen, Mündler, Müller, Raychev, Vechev (ETH Zurich SRI Lab), 2026. LLM 生成的 AGENTS.md 降低任务成功率 ~3%，增加推理成本 >20%。"
+cross_references:
+  - aidlc_reference/_raw_aws/
+  - aidlc_reference/_raw_frontier/01_变革共识_跨公司方法论趋同.md
+---
+
+# 技术深水区：压缩与上下文工程的变革含义
+
+> 来源：`ai_sdlc_frontier/followup_research/` 三份深度研究
+> - `01_context_compaction_六家对比.md`
+> - `02_claude_code_四层上下文压缩深度拆解.md`
+> - `03_dynamic_context_discovery_静态到动态的范式转移.md`
+> 研究日期：2026-07-07
+> 核心问题：这些底层技术决策，对软件开发流程意味着什么？
+
+---
+
+## 零、为什么技术深水区值得单独看
+
+人物材料讲的是"我们发现了什么"。
+技术材料讲的是"底层是怎么做到的"。
+
+两者之间的 gap 就是"变革的实施路径"——知道了要变，但怎么落地？技术深水区提供了答案。
+
+---
+
+## 一、上下文压缩的四层防线：不是说"压缩"那么简单
+
+> 本节来源：`ai_sdlc_frontier/followup_research/02_claude_code_四层上下文压缩深度拆解.md`（基于 Claude Code 2026 年源码逆向分析）：不是说"压缩"那么简单
+
+Claude Code 的压缩不是"满了就摘要"。是一个**四层递进、代价严格递增、缓存深度感知**的防御体系：
+
+```
+Layer 1: Snip (零成本) → 删空结果/被拒轮次
+    ↓ 不够
+Layer 2: Microcompact (零 API) → 裁剪工具输出，保护缓存
+    ↓ 不够
+Layer 3: Context Collapse (低 LLM 成本) → 虚拟视图，不修改原始消息
+    ↓ 不够
+Layer 4: AutoCompact (高成本) → LLM 全量摘要
+```
+
+### 变革含义 1："等满了再压"是错误策略
+
+Codex 的 compact 在**每次工具调用后检查**要不要压，不是"满了再压"。Claude Code 的 Microcompact 在每轮 API 调用前都运行。
+
+**流程含义**：上下文管理不是"急救"，是**持续维护**。这和 Ryan Lopopolo 的"持续 GC 而不是周五清账"是同一个哲学。
+
+### 变革含义 2：压缩不是纯技术问题——它在定义"什么重要"
+
+所有压缩方案都会丢失五类信息（跨六家验证）：
+1. **精确数值** — "retry limit = 3" → "配置了重试限制"
+2. **跨任务依赖** — 摘要器独立处理每段，丢失段间关联
+3. **硬约束** — "永远不要用库 X" 只出现过一次 → 可能被丢弃
+4. **决策理由** — 保留了"做了什么"，丢失了"为什么这样做"
+5. **隐式风格** — 用户展示的格式化习惯但从未明确声明
+
+**流程含义**：这五类信息恰恰是传统软件开发中"人自然就知道"的东西。现在人必须**主动**把它们写进持久化文件（CLAUDE.md、repo 文档），不能依赖对话记忆。这印证了 Thariq Shihipar 的"地图≠疆域"——压缩就是"地图"被再次简化的过程，每一次简化都在扩大 gap。
+
+---
+
+## 二、缓存策略：决定 Agent 实际性能的隐形之手
+
+> 本节来源：Michael Bolin ([Unwinding Codex's Agent Loop](https://openai.com/index/unwinding-codex-agent-loop/)); `followup_research/01_context_compaction_六家对比.md`
+
+Michael Bolin 揭示了一个被大多数人忽略的事实：
+
+> "缓存命中率决定 Agent 的实际性能。每改一个工具列表、每切换一次模型，都是实实在在的成本。"
+
+Codex 的提示词构建遵循严格顺序：
+```
+静态前缀（指令、工具定义）→ 动态后缀（用户消息、工具输出）
+```
+
+**用户的输入反而放在最后。** 这不是 bug——是为了让静态前缀最大化缓存命中。
+
+### 变革含义 3：工作流设计必须考虑缓存边界
+
+以下操作会破坏缓存：
+- 对话中修改工具列表 ❌
+- 切换模型 ❌
+- 修改沙箱配置/审批模式 ❌
+- 修改工作目录 ❌
+- MCP 工具枚举顺序不一致 ❌（Codex 已修 bug）
+
+**流程含义**：
+- 中途**切换模型**不只是一个功能选择——它会清空缓存，把前面的成本全部浪费
+- **工具列表的稳定性**直接影响性能——不是越多工具越好
+- 配置变更不应该修改早期消息，而是在末尾追加新消息（Codex 的做法）
+
+### 变革含义 4：Claude Code 的 cache_edits 协议
+
+Microcompact 的 Cached Path 是整个系统里最具工程含量的部分：
+
+```typescript
+// 不修改本地消息 → 前缀 hash 不变 → 缓存命中率不变
+// 服务端在推理前执行删除 → 实际消耗 token 减少
+cache_edits: [
+  { type: 'delete', cache_reference: 'cr_abc123' },
+  { type: 'delete', cache_reference: 'cr_def456' },
+]
+```
+
+**流程含义**：工具链的设计哲学在向"不碰消息"倾斜——删东西但不破坏缓存。这意味着**流程设计的约束**：如果要在 session 中做清理，优先考虑不改变消息结构的方案。
+
+---
+
+## 三、Context Collapse：最具创新性的设计
+
+> 本节来源：`followup_research/02_claude_code_四层上下文压缩深度拆解.md`（marble_origami 机制深度拆解）
+
+内部代号 `marble_origami`。核心创新：**不修改原始消息，创建虚拟视图**。
+
+```
+原始消息: [M1, M2, M3, M4, M5, M6, M7, M8, M9, M10]
+Collapse Store: { range: [3,7], summary: S1 }
+projectView() 输出: [M1, M2, S1, M8, M9, M10]
+原始消息数组不变！collapse 可逆！
+```
+
+### 变革含义 5：可逆性是一个被低估的设计原则
+
+Collapse 的**可逆性**意味着：
+- 如果摘要质量不够，可以回退到原始消息重新摘要
+- 跨 session 重启时回放 commit log 重建投影
+
+**流程含义**："不可逆的优化"在 agent 时代变得更危险。压缩、摘要、清理——只要不可逆，出了问题就无法恢复。**可逆性**应该成为工具链设计的一等原则。
+
+同时，Context Collapse 刻意**牺牲了缓存效率换上下文保真度**。每次 collapse 范围变化，后续所有缓存条目失效。这是一个有意识的取舍——说明在某些场景下，保真度确实比缓存效率更重要。
+
+---
+
+## 四、动态上下文发现：把问题从"怎么压"改成"怎么不膨胀"
+
+> 本节来源：Jediah Katz ([Dynamic Context Discovery](https://cursor.com/en-US/blog/dynamic-context-discovery), 2026-01); `followup_research/03_dynamic_context_discovery_静态到动态的范式转移.md`把问题从"怎么压"改成"怎么不膨胀"
+
+Jediah Katz 的核心贡献是**改变了问题定义**：
+
+```
+旧问题：上下文满了怎么办？→ 压缩
+新问题：怎么让不需要的东西根本不进上下文？→ 动态发现
+```
+
+| | 压缩模型（被动） | 动态上下文（主动） |
+|---|---|---|
+| 触发 | Token 快满时 | 从源头 |
+| 方式 | 压缩已有的 | 不注入不需要的 |
+| 损失 | 每次压缩有损 | 不丢信息（不需要的从未进入） |
+
+### 变革含义 6：文件系统是 Agent 时代的基础设施
+
+Cursor 把一切都文件化了——长工具输出、聊天历史、MCP 工具描述、终端会话。不是因为他们喜欢文件，而是因为**文件是 LLM 最擅长交互的抽象**：
+
+| 文件系统 | 自定义 API/协议 |
+|---|---|
+| 所有 LLM 理解文件操作 | 需要专门训练 |
+| `tail`, `grep`, `rg`, `head`, `jq` 都能用 | 需要自定义工具 |
+| 天然支持部分读取、惰性加载 | 需要额外设计 |
+
+**流程含义**：在设计 agent 可读的系统时，优先考虑文件系统接口而不是自定义 API。让 agent 用 grep 而不是专用搜索工具。
+
+### 变革含义 7：静态层只保留"指针"和"不可推断的约束"
+
+2026 年三层上下文架构已经浮现：
+
+```
+Tier 1: 静态文件（偏好、规范、不可从代码推断的规则）
+  └─ AGENTS.md / CLAUDE.md — 小而精（<100行），只写不能推断的
+
+Tier 2: 动态检索（agent 按需拉取）
+  └─ Skills（名称在静态，指令在动态）
+  └─ MCP 工具（名称在静态，schema 在动态）
+  └─ 工具输出（全量写文件，agent 按需读）
+
+Tier 3: 智能代码理解（结构化知识）
+  └─ 调用图、语义索引、业务规则
+```
+
+**流程含义**：
+- 审计静态上下文——删掉能从代码推断的
+- Skills 用名称 + 描述，不全量注入
+- MCP 工具多的项目优先惰性加载（token 节省最大来源）
+- 长对话历史写入文件，不全在上下文里
+
+---
+
+## 五、六家压缩策略对比：2026 年六条新共识
+
+> 本节来源：`followup_research/01_context_compaction_六家对比.md`（Codex CLI, Claude Code, Cursor, OpenCode, Gemini CLI, Amp 六家对比）
+
+| # | 共识 | 流程含义 |
+|---|---|---|
+| 1 | **分层渐进** | 定义多水位线，越接近上限手段越激进，避免悬崖式塌方 |
+| 2 | **成本递增** | 零成本（截断）→ 低成本（塌缩）→ 高成本（LLM 摘要） |
+| 3 | **增量摘要 > 全量摘要** | 保留"活摘要"，每次只合并增量，避免"摘要的摘要" |
+| 4 | **用真实 token 别估算** | `text.length/3` 在中英混合场景误差 30-50%，必须用 `usage.totalTokens` |
+| 5 | **用户消息有特权** | Codex 原样保留，OpenCode 压缩后回放——至少保证用户纯文本不裁 |
+| 6 | **保护近端 + 单调边界** | 最近 ~8K token 不压缩。滑窗式替换实测 177 step 烧了 $77.3（83% cache_write） |
+
+---
+
+## 六、技术深水区给出的人的行为建议
+
+> 本节为综合提炼，融合了 Erik Schluntz ([36kr](https://www.36kr.com/p/3774648797659657)), Ryan Lopopolo ([OpenAI](https://openai.com/index/harness-engineering/)), 及六家对比研究中的实操建议
+
+这些不是"AI 该怎么做"，而是**人该怎么做**来配合这些底层机制：
+
+### 6.1 主动 compact，别等被动
+
+- 上下文 **50-60%** 时主动 `/compact`，比等到 80%+ 被动触发质量高得多
+- 在"自然断点"压缩（Erik Schluntz 的"午饭断点"）
+- 大任务拆成多个 session，每个带着清晰 handoff 上下文——不要一个 session 经历多次 compact（信息逐次衰减）
+
+### 6.2 关键约束写进文件，不只在对话里提一次
+
+AutoCompact 可能丢失只提过一次的硬约束（"不要用库 X"）。写入 CLAUDE.md 或 repo 文档中作为**持久锚点**。这和 Ryan Lopopolo 的"不在仓库里的知识对 agent 等于不存在"是同一个原则——只是从技术层面印证了它。
+
+### 6.3 监控压缩频率作为健康信号
+
+频繁 compact 说明要么：
+- 任务太大 → 拆成多个 session
+- 上下文膨胀太快 → 清理 CLAUDE.md 和 Skills 的冗余内容
+- 在不需要大上下文的任务上用了太大的上下文
+
+### 6.4 换 session 有时比 compact 更好
+
+长对话积累的不只是 token，还有模型的"思维惯性"。Amp（Sourcegraph）的 `/handoff` 思路：与其在一个 session 里反复压缩，不如在自然边界换新 session。
+
+---
+
+## 七、技术深水区与人物材料的交叉验证
+
+> 本节为作者交叉分析
+
+| 人物的直觉 | 技术深水区的印证 |
+|---|---|
+| Thariq: "多给上下文，少给约束" | 静态上下文全量注入的边际收益在递减（Cursor A/B 验证） |
+| Fiona: "旧流程不再服务你" | 截断输出、全量加载 MCP 工具——都是旧流程，都有更好的替代方案 |
+| Erik: "压缩在自然断点做" | Microcompact time-based path 的 60 分钟阈值设计——和缓存 TTL 对齐 |
+| Ryan: "不在仓库里的知识不存在" | 压缩会丢失"只提过一次的硬约束"——必须写进文件 |
+| Jediah: "少即是多" | 动态上下文 A/B：token -46.9%，因为不需要的信息从未进入 |
+
+---
+
+## 八、从技术深水区到 AIDLC 的映射
+
+> 本节为作者综合映射分析，AWS AIDLC 参考 `aidlc_reference/_raw_aws/`
+
+AWS 的 AIDLC（`../../corp/_raw_aws/`）定义了流程阶段和产物。技术深水区揭示了这些阶段**在工程上是如何实际运作的**：
+
+| AIDLC 概念 | 技术深水区对应的工程机制 |
+|---|---|
+| 自适应执行 | 四层压缩防御体系——根据 token 余量自动升级手段 |
+| 上下文管理 | 动态上下文发现（源头防膨胀）+ 分层压缩（满了再压） |
+| 质量门控 | 不是人审——是 linter + CI + doc-gardening agent 自动化 |
+| 状态管理 | Context Collapse 的虚拟视图 + commit log 回放 |
+| Agent Loop | Codex 的四拍循环（构建提示词 → 推理 → 工具调用 → 追加输出） |
+| 产物流 | 文件化一切——工具输出、聊天历史、MCP 描述全部写成文件 |
+
+技术深水区说明：AIDLC 的"阶段"不是人手动推进的——它们被编码成了自动触发、自动执行的工程机制。流程从"人遵守的规范"变成了"代码执行的逻辑"。
