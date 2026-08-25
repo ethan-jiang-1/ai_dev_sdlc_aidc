@@ -1,6 +1,8 @@
-# Talk: One Person Company 的 AI Coding 深度 —— 从 Prompt 到 Harness 一路向上
+# OPC 航海指南：OPC 与 Harness，AI 协作之道
 
 本目录是这场 talk 的推敲工作区。**目的只有一个：把故事线推敲出来。**
+
+**官方题目**：OPC 航海指南：OPC 与 Harness，AI 协作之道（**OPC = One Person Company，一人公司**）。
 
 **主题速记**：更大的主题是 **一人公司（one person company）**：一个人要真正熟练地掌握 AI Coding 的各种工具，
 掌握到什么深度？依赖现成还是自己做？**五层演变（Prompt→Context→Harness→Loop→Graph）+ DSH**
@@ -16,6 +18,7 @@ talk-ai-coding-evolution/
 ├── AGENTS.md                                # 【agent 手册】harness 的操作步骤 + 规则
 ├── rawdata_ai-coding-evolution-final/       # 【symlink】原始数据 ① 五层演变最终报告
 ├── rawdata_dsh-faq-on-digested/             # 【symlink】原始数据 ② DSH Harness 机制问答
+├── rawdata_dsh-digested/                    # 【symlink】原始数据 ③ DSH 源码消化（底层机制）
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
 │   ├── 00-storyline-map.md                  #   故事线总图：一句话弧线 + 幕结构
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（待推敲）
@@ -27,7 +30,7 @@ talk-ai-coding-evolution/
 └── 04_drafts/                               # 讲稿 / 逐页草稿 / 版本迭代
 ```
 
-## 两份原始数据是什么
+## 三份原始数据是什么
 
 ### ① `rawdata_ai-coding-evolution-final/` —— 宏观故事线素材
 指向 `ai_tool_deepresearch/dpt_rb_ai-coding-evolution/final`，是一份**五层演变的最终研究报告**：
@@ -46,7 +49,14 @@ engineering（2025–2026）。核心主张：**五层是叠加而非替代**；
 → 它给 talk 提供 **Harness 层的"show, don't tell"实证案例**：一个真实 harness 到底怎么让
 coding agent 不糊涂、不乱发挥。讲 harness era 时，DSH 是最好的活例子。
 
-**两者分工：① 讲"为什么和往哪走"（宏观弧线），② 讲"具体长什么样"（微观机制）。**
+### ③ `rawdata_dsh-digested/` —— 源码消化（底层机制）
+指向 `deepseek-harness/_digested`，是 DSH 源码的**消化分析**（system / composition / session-and-loop /
+capability-seams / tools-prompt-llm / surfaces 等专题）。讲清 DSH"挂模型 / 挂工具 / 换后端 / 挂插件"的
+真实机制——**DSH 不用 MCP**，挂的是 `ctx.llm` adapter、`ctx.tools`、capability seam、plugin。
+
+→ 它给 talk 提供第四幕"灵活性"的**底层证据**。
+
+**三者分工：① 讲"为什么和往哪走"（宏观弧线），② 讲"具体长什么样"（机制问答），③ 讲"底层机制怎么实现"（源码消化）。**
 
 ## 工作方式
 

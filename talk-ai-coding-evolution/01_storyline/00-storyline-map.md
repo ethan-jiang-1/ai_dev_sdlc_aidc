@@ -1,6 +1,7 @@
-# 故事线总图（v1.1 推敲稿）
+# 故事线总图（v1.2 推敲稿）
 
-> 状态：**v1.1**。落点 = harness + DSH；立场软化为「固定 vs 灵活」，不绝对。
+> **官方题目**：OPC 航海指南：OPC 与 Harness，AI 协作之道（OPC = One Person Company，一人公司）。
+> 状态：**v1.2**。落点 = harness + DSH；立场软化为「固定 vs 灵活」，不绝对。
 > 五层作为"故事"的解读见 [`05-five-layer-reading.md`](./05-five-layer-reading.md)；harness 里头干啥见 [`06-harness-internals.md`](./06-harness-internals.md)。
 
 ## 一句话主线
@@ -13,12 +14,12 @@
 
 | 幕 | 内容 | 作用 | 时间 |
 |---|---|---|---|
-| 开场 | 钩子 + 一人公司的问题 | 让人对号入座 | 0–5 |
-| 第一幕 | 五层演变（人机互动一直在变） | 铺路 + 引发共鸣 | 5–20 |
-| 第二幕 | 根本还是 harness（Böckeler + 为什么） | 转折 + 抓要害 | 20–30 |
-| 第三幕 | 固定 vs 灵活（不绝对） | 一人公司的抉择 | 30–40 |
-| 第四幕 | DSH = 灵活 harness 的答案 | 落点 | 40–45 |
-| 收尾 | 带走一句 | 收束 | 45–50 |
+| 开场 | 钩子 + 一人公司的问题 | 让人对号入座 | 0–3.5 |
+| 第一幕 | 五层演变（人机互动一直在变） | 铺路 + 引发共鸣 | 3.5–15.5 |
+| 第二幕 | 根本还是 harness（Böckeler + 为什么） | 转折 + 抓要害 | 15.5–25.5 |
+| 第三幕 | 固定 vs 灵活（不绝对） | 一人公司的抉择 | 25.5–34 |
+| 第四幕 | DSH = 灵活 harness 的答案 | 落点 | 34–39 |
+| 收尾 | 带走一句（含 Q&A / 弹性） | 收束 | 39–45 |
 
 ## 每一幕的要点
 
@@ -26,6 +27,8 @@
 - 问题：一个人开公司，AI Coding 到底要掌握到多深？用现成还是自己做？
 - 钩子：两年里你的角色一直在变——写 prompt → 挑 context → 搭环境 → 写循环 → 排图。
   你不是在追新工具，你是在被模型一步步往上推。
+- **点题焊点**（06 章角色表）：责任的叠加上移不是岗位替代——一个成熟团队要五种角色（prompt 设计师→context 平台→harness SRE→loop 设计师→graph 架构师），
+  一人公司就是"被同一个人承担"的极端情况。
 
 ### 第一幕：五层演变（铺路）
 - **发动机**：模型越强，单次交互的边际工程收益越低，人机互动行为跟着变，人的动作粒度变粗。
@@ -36,6 +39,8 @@
 
 ### 第二幕：根本还是 harness（抓要害）
 - **转折**：五层讲完，根本还是 harness——它是五层的"可靠性承载体"。
+- **口径**：报告把 Context 与 Harness **并列**为"成熟主体"；"harness 最重要"是我们的判断，
+  用三条素材撑（结构线 loop/graph 实例化 harness、哲学线 验证梯渗透 + GraphARC 门禁、风险线 2026 CVE），别讲成"报告背书"。
 - **定义**：Böckeler —— **Agent = Model + Harness**；harness = 模型之外的一切。
 - **harness 里头干啥**（抓要害的讲法）→ [`06-harness-internals.md`](./06-harness-internals.md)：
   一句话「模型给能力，harness 给可靠性」；两套控制（Guides 前馈 + Sensors 反馈，各分 computational / inferential）；
@@ -44,6 +49,7 @@
   1. **可靠性是系统的属性，不是模型的属性**——是"模型 + harness"整体的属性。你买很贵的模型买的是"能力"，
      但"可靠性"是 harness 给出来的。
   2. **确定性优先**——测试 / lint / 类型能复现、能审计，AI 判断不能。能交给机器门禁的，绝不靠模型自觉。
+- **06 章机制金句**：「假设下层正确是 bug 的来源；对下层显式验证，是工程成熟的标志。」——解释"为什么最底下的 harness 最关键"。
 - **loop / graph 的地基**：每次 loop 迭代实例化一个 harness；graph 每个 agent 节点跑在自己的 harness 里。
   没有强悍的 harness，loop 只会更贵地犯错（blast radius 更大），graph 只会更乱地通信。
 - **反面证据**：2026 CVE——执行时授权缺失。护栏若建立在"模型会发出合法工具调用"上，
@@ -53,7 +59,8 @@
 - 一人公司的问题落成一格：**harness 这一格，用固定的还是灵活的？**（不是"自己做 vs 依赖现成"的二选一）
 - **固定 harness（Codex / Claude Code）的好**：开箱即用，沙箱、安全、provenance 都替你设计好；常见任务够用。
 - **固定 harness 的卡**：它的 guides / sensors 是**写死的、为大众设计的**。当你想**改 harness 本身**时——
-  - 灵活挂 MCP（接自己的数据源 / 工具）
+  - 灵活挂模型 / 工具（`ctx.llm` adapter + `ctx.tools`，都不必改 loop）
+  - 灵活换后端（capability seam：换 fs / subprocess 后端，Consumer 不用改）
   - 灵活挂 skill（把自己沉淀的过程性记忆按需挂进去）
   - 灵活挂 knowledge map（把项目的地图 / 归属 / 正确路径作为一等对象）
   ——这些在固定 harness 里要么做不到、要么绕。
@@ -62,8 +69,8 @@
 
 ### 第四幕：DSH（落点）
 - DSH = 一个**灵活**的 harness：不给你写死的 harness，给你**能改 harness 本身的框架**。
-- 它灵活在两个方向：**装自己的**（挂 MCP / skill / knowledge map、自定义可执行门禁）
-  + **借现成的**（成熟的 MCP server、skill、模型直接复用）。
+- 它灵活在两个方向：**装自己的**（挂模型 / 挂工具 / 换后端 / 挂 skill / 挂 knowledge map、自定义可执行门禁）
+  + **借现成的**（成熟的 vendor adapter、skill、模型直接复用）。
 - 核心哲学：**Agents follow enforced gates far more reliably than prose conventions.**
 - 回扣：一个人用一个灵活的 harness，就把 loop、graph 两格也顺带罩住。
 
@@ -76,6 +83,11 @@
 - 带走的一句 slogan 未定。
 - 各幕时间预算是否按上表切（详见 03_outline）。
 - **无 demo**（内容已满，45–50 min 放不下）。
+
+## 口径红线 + 内容吸纳
+
+- 引用前必查的口径（260 万 / 6 周 / 50 样本 / 三范式二手 / n=1 / Ng 出处未证实 / "挂 MCP"未出现）→ [`../02_evidence/00-absorption-plan.md`](../02_evidence/00-absorption-plan.md) 第三节。
+- 每页进货单（哪页吸哪个锚点 / 金句 / 反转）→ 同上第二节。
 
 ## 素材索引（维护中）
 

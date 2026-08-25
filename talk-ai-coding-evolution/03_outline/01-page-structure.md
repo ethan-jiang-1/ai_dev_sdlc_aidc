@@ -1,6 +1,6 @@
-# Talk 页面结构（v1.1，45–50 min）
+# Talk 页面结构（27 页全素材索引，已被 23 页现场版取代）
 
-> 对应故事线 v1.1（`../01_storyline/00-storyline-map.md`）。每页标预算分钟；总计约 48 min，含 2 min 弹性。**无 demo。**
+> ⚠️ 现场版见 [`00-page-structure-23.md`](./00-page-structure-23.md)（P1–P23，45 min）。本文件保留为 27 页全素材索引（每页标预算分钟，合计约 48 min）。**无 demo。**
 
 ## 开场（4 min）
 
@@ -38,7 +38,7 @@
 ## 第四幕 · DSH（5 min）
 
 22. **DSH** —— 一个灵活的 harness，能改 harness 本身（1）
-23. **双向灵活** —— 装自己的（MCP / skill / knowledge map / 门禁）+ 借现成的（成熟组件复用）（2.5）
+23. **双向灵活** —— 装自己的（挂模型 / 挂工具 / 换后端 / skill / knowledge map / 门禁）+ 借现成的（vendor adapter / 组件复用）（2.5）
 24. **哲学** —— Agents follow enforced gates far more reliably than prose conventions（1.5）
 
 ## 收尾（3 min）
