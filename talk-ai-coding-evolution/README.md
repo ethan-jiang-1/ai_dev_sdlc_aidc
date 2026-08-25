@@ -13,6 +13,7 @@
 ```text
 talk-ai-coding-evolution/
 ├── README.md                                # 本文件：地图 + 素材说明 + 工作方式
+├── AGENTS.md                                # 【agent 手册】harness 的操作步骤 + 规则
 ├── rawdata_ai-coding-evolution-final/       # 【symlink】原始数据 ① 五层演变最终报告
 ├── rawdata_dsh-faq-on-digested/             # 【symlink】原始数据 ② DSH Harness 机制问答
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
@@ -47,8 +48,7 @@ coding agent 不糊涂、不乱发挥。讲 harness era 时，DSH 是最好的�
 
 **两者分工：① 讲"为什么和往哪走"（宏观弧线），② 讲"具体长什么样"（微观机制）。**
 
-## 工作方式建议
+## 工作方式
 
-- **推敲主线在 `01_storyline/`**：先定论点与弧线，再回头补证据卡片，不要先写 slide。
-- **素材只摘不搬**：从 rawdata 摘进 `02_evidence/` 时标来源路径，避免 talk 里堆砌报告原文。
-- 两个 symlink 是只读原始数据，**不要在 rawdata 里写东西**；改动都落在本工作区。
+agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
+人只需记住一句：**推敲主线在 `01_storyline/`，先故事线后 slide，两个 symlink 只读。**
