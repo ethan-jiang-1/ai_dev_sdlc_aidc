@@ -3,6 +3,7 @@
 > **用途**：推敲某一页时，脉络一眼清楚——这页的内容从哪来、改一处会牵动哪些页。
 > 对应现场版 `../03_outline/00-page-structure-23.md`（P1–P23）。
 > 口径红线见 [`00-absorption-plan.md`](./00-absorption-plan.md) 第三节。
+> **编号说明**：加工层里形如 `05-opening S2` 的 S 编号 = 内容文件内部小节（素材锚点，与旧 27 页编号一致）；现场页以 P 编号为准。
 
 ## 正向脉络：页 → 加工层 → 上游
 
@@ -45,7 +46,7 @@
 | FAQ 01_repository-organization | P19 |
 | FAQ 03_model-vendors | P20 |
 | FAQ 04_root-entry-doc-design | P20 |
-| FAQ 07_borrowing-harness-idea | P21（哲学）+ P17/P18（门禁思路） |
+| FAQ 07_borrowing-harness-idea | P21（哲学）+ P18（本质立场佐证） |
 | `_digested/tools-prompt-llm` | P20 |
 | `_digested/capability-seams` | P20 |
 | `_digested/surfaces` | P17/P20 口径（MCP 结论） |

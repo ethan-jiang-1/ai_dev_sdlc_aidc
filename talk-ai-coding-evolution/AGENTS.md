@@ -7,13 +7,13 @@
 ## 每次进来（按顺序走）
 
 1. **读状态** — `README.md`（目录地图）→ `01_storyline/00-storyline-map.md`（故事线总图）→
-   `01_storyline/04-open-questions.md`（已决 / 待办）。
+   `03_outline/00-page-structure-23.md`（现场版页面）→ `01_storyline/04-open-questions.md`（已决 / 待办）。
    完成标准：能说出当前阶段、正在推敲的问题、下一步动哪个文件。
 
 2. **定阶段** — 由用户这轮的话 + open-questions 判定：
    - 推敲故事线 → `01_storyline/`
    - 补论据 / 锚点 → `02_evidence/`
-   - 铺大纲 / slide → `03_outline/`（故事线定稿后才做）
+   - 铺大纲 / slide → `03_outline/`（主线稳定即可；现场版 `00-page-structure-23.md`）
    - 写讲稿 → `04_drafts/`（文件名带版本：`talk-vN.md`）
 
 3. **动手** — 只动本阶段该动的文件。
@@ -26,9 +26,11 @@
 - **单一事实来源**：每个事实只写一处——主线在 `01_storyline/`，素材卡片在 `02_evidence/`。
 - **故事线优先**：先定故事线，再写 slide / 讲稿。
 - **素材只摘不搬**：从 `rawdata_*/` 摘进 `02_evidence/` 时标注来源路径。
-- **rawdata 只读**：两个 symlink 是原始数据，只在里面读，不在里面写。
+- **rawdata 只读**：三个 symlink 是原始数据，只在里面读，不在里面写。
 
 ## 当前状态指针
 
-- 故事线总图（v0 草案，待按主题重推敲）：`01_storyline/00-storyline-map.md`
+- 故事线总图（v1.2）：`01_storyline/00-storyline-map.md`
+- 现场版页面结构（23 页 / 45 min）：`03_outline/00-page-structure-23.md`
+- 素材与口径：`02_evidence/00-absorption-plan.md`；脉络：`02_evidence/01-info-flow-map.md`
 - 已决与待办：`01_storyline/04-open-questions.md`

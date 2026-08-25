@@ -1,7 +1,7 @@
 # 五层叠加故事线 · 解读
 
 > 源：`rawdata_ai-coding-evolution-final/final_v4.md`。本页是对"五层叠加"作为**故事线**的解读，
-> 不是素材摘录，而是提取它"为什么能讲成一个好故事"的结构。故事线定稿时，从这里改起。
+> 不是素材摘录，而是提取它"为什么能讲成一个好故事"的结构。故事线以 [`00-storyline-map.md`](./00-storyline-map.md) 为准，素材落点见 `../02_evidence/00-absorption-plan.md`。
 
 ## 为什么它是"故事"，而不是时间线
 

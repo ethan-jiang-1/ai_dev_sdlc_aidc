@@ -1,6 +1,6 @@
 # 第二幕 · 根本还是 harness —— 逐页内容（现场 P9–P14）
 
-> 对应 `00-page-structure-23.md` P9–P14（10 min）。内部小节编号是素材锚点。素材来源见 `../02_evidence/00-absorption-plan.md` 第二节。
+> 对应 `00-page-structure-23.md` P9–P14（10 min）。内部小节编号与分钟为素材锚点，**现场时间以 00-page-structure-23.md 为准**。素材来源见 `../02_evidence/00-absorption-plan.md` 第二节。
 > 每页：目的 / 讲点 / 金句 / 通俗例子 / 转场。
 
 ---

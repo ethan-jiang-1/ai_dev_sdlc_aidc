@@ -8,7 +8,7 @@
 掌握到什么深度？依赖现成还是自己做？**五层演变（Prompt→Context→Harness→Loop→Graph）+ DSH**
 都是为回答这个问题服务的素材；DSH 作为 flexible harness，一个能罩住 harness/loop/graph 三层，
 正好是收尾的落点。听众：懂 AI coding 的程序员 / 产品经理 / 投资人（深度深浅不一），
-时长 45–50 分钟，基调：通俗易懂、抓要害、引发共鸣。
+时长 45 分钟（硬上限 50），基调：通俗易懂、抓要害、引发共鸣。
 
 ## 工作区地图
 
@@ -20,14 +20,24 @@ talk-ai-coding-evolution/
 ├── rawdata_dsh-faq-on-digested/             # 【symlink】原始数据 ② DSH Harness 机制问答
 ├── rawdata_dsh-digested/                    # 【symlink】原始数据 ③ DSH 源码消化（底层机制）
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
-│   ├── 00-storyline-map.md                  #   故事线总图：一句话弧线 + 幕结构
-│   ├── 01-thesis-and-positions.md           #   核心论点与立场（待推敲）
-│   ├── 02-turning-points.md                 #   转折点 / 锚点清单（待推敲）
-│   ├── 03-audience-and-pitch.md             #   听众、带走什么、一句话 pitch（待推敲）
-│   └── 04-open-questions.md                 #   悬而未决的问题（推敲中随手记）
-├── 02_evidence/                             # 素材卡片：数字、金句、事件（从 rawdata 摘，标来源）
-├── 03_outline/                              # talk 大纲：章节结构、slide 骨架
-└── 04_drafts/                               # 讲稿 / 逐页草稿 / 版本迭代
+│   ├── 00-storyline-map.md                  #   故事线总图（v1.2）：一句话主线 + 幕结构 + 各幕要点
+│   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
+│   ├── 02-turning-points.md                 #   转折点 / 锚点清单
+│   ├── 03-audience-and-pitch.md             #   听众、时长、pitch
+│   ├── 04-open-questions.md                 #   已决 / 待办（随手记）
+│   ├── 05-five-layer-reading.md             #   对源报告五层叠加的解读
+│   └── 06-harness-internals.md              #   harness 里头干啥（圈住 / 拦住 / 看清）
+├── 02_evidence/                             # 素材与脉络
+│   ├── 00-absorption-plan.md                #   内容吸纳清单（按页进货单 + 口径红线）
+│   └── 01-info-flow-map.md                  #   信息脉络图（上游 → 加工 → 页面 + 反向索引）
+├── 03_outline/                              # 页面结构与逐页内容
+│   ├── 00-page-structure-23.md              #   ★ 现场版（23 页，45 min，每页必讲要点）
+│   ├── 01-page-structure.md                 #   27 页全素材索引（已被 00 取代）
+│   ├── 02-act2-harness-content.md           #   第二幕素材池（P9–P14）
+│   ├── 03-act3-flexibility-content.md       #   第三幕素材池（P15–P18）
+│   ├── 04-act4-dsh-content.md               #   第四幕 + 收尾素材池（P19–P23）
+│   └── 05-opening-and-act1-content.md       #   开场 + 第一幕素材池（P1–P8）
+└── 04_drafts/                               # 讲稿 / 逐页草稿 / 版本迭代（未开工）
 ```
 
 ## 三份原始数据是什么
@@ -61,4 +71,4 @@ capability-seams / tools-prompt-llm / surfaces 等专题）。讲清 DSH"挂模�
 ## 工作方式
 
 agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
-人只需记住一句：**推敲主线在 `01_storyline/`，先故事线后 slide，两个 symlink 只读。**
+人只需记住一句：**推敲主线在 `01_storyline/`，现场按 `03_outline/00-page-structure-23.md`，先故事线后 slide，三个 symlink 只读。**
