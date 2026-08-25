@@ -1,7 +1,6 @@
 # Talk 页面结构（现场版 · 23 页 · 45 min）
 
-> **现场版**：P1–P23，目标 45 min、硬上限 50。每页只列**必讲要点**（1–2 个），完整素材在各幕内容文件里。
-> 27 页版（`01-page-structure.md`）降为全素材索引。**无 demo。**
+> **现场版**：P1–P23，目标 45 min、硬上限 50。每页只列**必讲要点**（1–2 个），完整素材在各幕内容文件里。**无 demo。**
 
 ## 开场（3.5 min）
 
@@ -70,5 +69,5 @@
 
 ## 素材来源
 
-- 各幕内容文件：`02-act2-harness-content.md`（P9–P14）、`03-act3-flexibility-content.md`（P15–P18）、`04-act4-dsh-content.md`（P19–P23）、`05-opening-and-act1-content.md`（P1–P8）
+- 各幕内容文件：`01-opening-and-act1-content.md`（P1–P8）、`02-act2-harness-content.md`（P9–P14）、`03-act3-flexibility-content.md`（P15–P18）、`04-act4-dsh-content.md`（P19–P23）
 - 素材/口径红线：`../02_evidence/00-absorption-plan.md`

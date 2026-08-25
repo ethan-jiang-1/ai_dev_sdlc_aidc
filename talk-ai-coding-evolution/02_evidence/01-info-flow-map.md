@@ -3,20 +3,20 @@
 > **用途**：推敲某一页时，脉络一眼清楚——这页的内容从哪来、改一处会牵动哪些页。
 > 对应现场版 `../03_outline/00-page-structure-23.md`（P1–P23）。
 > 口径红线见 [`00-absorption-plan.md`](./00-absorption-plan.md) 第三节。
-> **编号说明**：加工层里形如 `05-opening S2` 的 S 编号 = 内容文件内部小节（素材锚点，与旧 27 页编号一致）；现场页以 P 编号为准。
+> **编号说明**：加工层里形如 `01-opening S2` 的 S 编号 = 内容文件内部小节（素材锚点，与旧 27 页编号一致）；现场页以 P 编号为准。
 
 ## 正向脉络：页 → 加工层 → 上游
 
 | 页 | 关键内容 | 加工层（内容文件 + 吸纳清单） | 上游来源 |
 |---|---|---|---|
-| P1 封面 | 官方题目 + 开场问题 | 05-opening S1 | 用户定题（无上游） |
-| P2 钩子 | 五角色阶梯；Cherny 金句 | 05-opening S2；吸纳 §一.1/.4 | 06 角色表；04 Cherny |
-| P3 路线图 | 四站 | 05-opening S3 | 故事线 v1.2（自拟） |
-| P4 发动机 | METR 7 个月翻倍；prompt 措辞不重要 | 05-opening S4；§二 S4 | 01（METR）；02（Anthropic） |
-| P5 Prompt+Context | 行为控制面；伪装成提示复杂度；context rot；MCP/RAG | 05-opening S5+S6；§二 S5/S6 | 01；02（context rot、MCP/RAG） |
-| P6 Harness 埋雷 | Agent=Model+Harness；单次运行容器 | 05-opening S7；§二 S7 | 03 §一/§七 |
-| P7 Loop+Graph | 黄金法则；blast radius；不是新东西；260 万 | 05-opening S8+S9；§二 S8/S9 | 04；05 |
-| P8 叠加观+成熟度 | 扳手/螺丝刀；成熟度标尺 | 05-opening S10；§二 S10 | 06 |
+| P1 封面 | 官方题目 + 开场问题 | 01-opening S1 | 用户定题（无上游） |
+| P2 钩子 | 五角色阶梯；Cherny 金句 | 01-opening S2；吸纳 §一.1/.4 | 06 角色表；04 Cherny |
+| P3 路线图 | 四站 | 01-opening S3 | 故事线 v1.2（自拟） |
+| P4 发动机 | METR 7 个月翻倍；prompt 措辞不重要 | 01-opening S4；§二 S4 | 01（METR）；02（Anthropic） |
+| P5 Prompt+Context | 行为控制面；伪装成提示复杂度；context rot；MCP/RAG | 01-opening S5+S6；§二 S5/S6 | 01；02（context rot、MCP/RAG） |
+| P6 Harness 埋雷 | Agent=Model+Harness；单次运行容器 | 01-opening S7；§二 S7 | 03 §一/§七 |
+| P7 Loop+Graph | 黄金法则；blast radius；不是新东西；260 万 | 01-opening S8+S9；§二 S8/S9 | 04；05 |
+| P8 叠加观+成熟度 | 扳手/螺丝刀；成熟度标尺 | 01-opening S10；§二 S10 | 06 |
 | P9 转折 | 承重墙判断 + 口径（我们的判断，三线撑） | 02-act2 S11；§二 S11 | 06（Context/Harness 并列） |
 | P10 定义 | Agent=Model+Harness；SWE-bench 脚手架金句 | 02-act2 S12；§二 S12 | 03 §一；01 §二 |
 | P11 两套控制+comp/infer | Guides/Sensors；npm test vs AI；教小孩做菜 | 02-act2 S13+S14；§二 S13/S14 | 03 §一 |
