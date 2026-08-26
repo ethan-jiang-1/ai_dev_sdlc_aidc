@@ -16,9 +16,11 @@
 talk-ai-coding-evolution/
 ├── README.md                                # 本文件：地图 + 素材说明 + 工作方式
 ├── AGENTS.md                                # 【agent 手册】harness 的操作步骤 + 规则
-├── rawdata_ai-coding-evolution-final/       # 【symlink】原始数据 ① 五层演变最终报告
-├── rawdata_dsh-faq-on-digested/             # 【symlink】原始数据 ② DSH Harness 机制问答
-├── rawdata_dsh-digested/                    # 【symlink】原始数据 ③ DSH 源码消化（底层机制）
+├── _reference/                              # 三份原始数据 symlink（只读），说明见其 README
+│   ├── README.md                            #   symlink 一览 + 引用约定 + 规则
+│   ├── rawdata_ai-coding-evolution-final/   #   【symlink】原始数据 ① 五层演变最终报告
+│   ├── rawdata_dsh-faq-on-digested/         #   【symlink】原始数据 ② DSH Harness 机制问答
+│   └── rawdata_dsh-digested/                #   【symlink】原始数据 ③ DSH 源码消化（底层机制）
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
 │   ├── 00-storyline-map.md                  #   故事线总图（v1.2）：一句话主线 + 幕结构 + 各幕要点
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
@@ -41,7 +43,9 @@ talk-ai-coding-evolution/
 
 ## 三份原始数据是什么
 
-### ① `rawdata_ai-coding-evolution-final/` —— 宏观故事线素材
+> 三份 symlink 都收在 [`_reference/`](./_reference/README.md) 下，只读。
+
+### ① `_reference/rawdata_ai-coding-evolution-final/` —— 宏观故事线素材
 指向 `ai_tool_deepresearch/dpt_rb_ai-coding-evolution/final`，是一份**五层演变的最终研究报告**：
 Prompt engineering → Context engineering → Harness engineering → Loop engineering → Graph
 engineering（2025–2026）。核心主张：**五层是叠加而非替代**；驱动机制是"模型越强，单次交互
@@ -50,7 +54,7 @@ engineering（2025–2026）。核心主张：**五层是叠加而非替代**；
 
 → 它给 talk 提供**整条故事线和论点骨架**。
 
-### ② `rawdata_dsh-faq-on-digested/` —— 微观机制素材
+### ② `_reference/rawdata_dsh-faq-on-digested/` —— 微观机制素材
 指向 `deepseek-harness/_faq_on_digested`，是对 DeepSeek Harness 消化材料 + 源码的**二次研究问答**：
 目录组织、Spec-Driven Development、模型 vendor 接入、根入口文档的设计与导航、SPEC 变更路径、
 "别的项目怎么借鉴 Harness 思路"（知识外置 / 正确路径 / 可执行反馈三条腿）等 7 个探究过的问题。
@@ -58,7 +62,7 @@ engineering（2025–2026）。核心主张：**五层是叠加而非替代**；
 → 它给 talk 提供 **Harness 层的"show, don't tell"实证案例**：一个真实 harness 到底怎么让
 coding agent 不糊涂、不乱发挥。讲 harness era 时，DSH 是最好的活例子。
 
-### ③ `rawdata_dsh-digested/` —— 源码消化（底层机制）
+### ③ `_reference/rawdata_dsh-digested/` —— 源码消化（底层机制）
 指向 `deepseek-harness/_digested`，是 DSH 源码的**消化分析**（system / composition / session-and-loop /
 capability-seams / tools-prompt-llm / surfaces 等专题）。讲清 DSH"挂模型 / 挂工具 / 换后端 / 挂插件"的
 真实机制——**DSH 不用 MCP**，挂的是 `ctx.llm` adapter、`ctx.tools`、capability seam、plugin。
@@ -70,4 +74,4 @@ capability-seams / tools-prompt-llm / surfaces 等专题）。讲清 DSH"挂模�
 ## 工作方式
 
 agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
-人只需记住一句：**推敲主线在 `01_storyline/`，现场按 `03_outline/00-page-structure-23.md`，先故事线后 slide，三个 symlink 只读。**
+人只需记住一句：**推敲主线在 `01_storyline/`，现场按 `03_outline/00-page-structure-23.md`，先故事线后 slide，`_reference/` 下三个 symlink 只读。**

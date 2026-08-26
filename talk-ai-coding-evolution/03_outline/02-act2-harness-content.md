@@ -115,8 +115,8 @@
 
 ## 本幕素材来源速查
 
-- P10 脚手架金句：`final_v4/01-2025-prompt-era.md`
-- P11 Böckeler 两套控制 / comp-infer：`final_v4/03-2026-harness-era.md` 第一节
+- P10 脚手架金句：`../_reference/rawdata_ai-coding-evolution-final/final_v4/01-2025-prompt-era.md`
+- P11 Böckeler 两套控制 / comp-infer：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md` 第一节
 - P12 圈住 / 拦住 / 看清：`../01_storyline/06-harness-internals.md`
-- P13 结构线 / 哲学线 / 机制金句：`final_v4/04/05/06` 章（见吸纳清单第二节）
-- P14 CVE：`final_v4/03-2026-harness-era.md` 第二节
+- P13 结构线 / 哲学线 / 机制金句：`../_reference/rawdata_ai-coding-evolution-final/final_v4/` 第 04/05/06 章（见吸纳清单第二节）
+- P14 CVE：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md` 第二节

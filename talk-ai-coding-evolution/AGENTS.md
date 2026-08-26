@@ -25,8 +25,8 @@
 
 - **单一事实来源**：每个事实只写一处——主线在 `01_storyline/`，素材卡片在 `02_evidence/`。
 - **故事线优先**：先定故事线，再写 slide / 讲稿。
-- **素材只摘不搬**：从 `rawdata_*/` 摘进 `02_evidence/` 时标注来源路径。
-- **rawdata 只读**：三个 symlink 是原始数据，只在里面读，不在里面写。
+- **素材只摘不搬**：从 `_reference/rawdata_*/` 摘进 `02_evidence/` 时标注来源路径。
+- **rawdata 只读**：`_reference/` 下三个 symlink 是原始数据，只在里面读，不在里面写。
 
 ## 当前状态指针
 

@@ -91,7 +91,7 @@
 
 ## 素材索引（维护中）
 
-- 五层结构与锚点：`rawdata_ai-coding-evolution-final/final_v4.md` + `final_v4/`
-- Böckeler 定义（Guides/Sensors + computational/inferential）：`rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md`
+- 五层结构与锚点：`../_reference/rawdata_ai-coding-evolution-final/final_v4.md` + `../_reference/rawdata_ai-coding-evolution-final/final_v4/`
+- Böckeler 定义（Guides/Sensors + computational/inferential）：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md`
 - 2026 CVE（authorize at execution）：同上，第六节
-- DSH 三问 / 三腿 / 可执行门禁：`rawdata_dsh-faq-on-digested/07_borrowing-harness-idea/answer.md`
+- DSH 三问 / 三腿 / 可执行门禁：`../_reference/rawdata_dsh-faq-on-digested/07_borrowing-harness-idea/answer.md`

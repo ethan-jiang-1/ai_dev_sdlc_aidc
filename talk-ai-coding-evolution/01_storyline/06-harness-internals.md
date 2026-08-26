@@ -1,7 +1,7 @@
 # Harness 里头干啥 · 抓要害的讲法
 
 > 这是第二幕的核心讲法。目的：让听众用一句话记住 harness 到底在干什么。
-> 源：Böckeler 定义（`../rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md`）。
+> 源：Böckeler 定义（`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md`）。
 
 ## 一句话
 

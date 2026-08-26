@@ -89,9 +89,9 @@
 ## 本幕素材来源速查
 
 - P19 无特权内核：FAQ `01_repository-organization` / `docs/architecture.md`
-- P20 挂模型 / 挂工具 / 都不必改 loop：`rawdata_dsh-digested/tools-prompt-llm/00-map.md`
-- P20 换后端：`rawdata_dsh-digested/capability-seams/00-map.md`
+- P20 挂模型 / 挂工具 / 都不必改 loop：`../_reference/rawdata_dsh-digested/tools-prompt-llm/00-map.md`
+- P20 换后端：`../_reference/rawdata_dsh-digested/capability-seams/00-map.md`
 - P20 vendor 15 行 YAML：FAQ `03_model-vendors`
 - P20 "Each fact has one home"：FAQ `04_root-entry-doc-design`
-- P21 门禁哲学：FAQ `07_borrowing-harness-idea` + `final_v4/05-2026-graph-era.md`（GraphARC）
-- P22 角色表：`final_v4/06-five-layer-forward.md`
+- P21 门禁哲学：FAQ `07_borrowing-harness-idea` + `../_reference/rawdata_ai-coding-evolution-final/final_v4/05-2026-graph-era.md`（GraphARC）
+- P22 角色表：`../_reference/rawdata_ai-coding-evolution-final/final_v4/06-five-layer-forward.md`

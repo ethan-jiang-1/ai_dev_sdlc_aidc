@@ -149,9 +149,9 @@
 
 ## 本幕素材来源速查
 
-- P2 / P7 金句（Cherny / Steinberger / Osmani）：`final_v4/04-2026-loop-era.md`
-- P4 METR / Anthropic：`final_v4/01-2025-prompt-era.md`、`02-mid-2025-context-era.md`
-- P5 SWE-bench 脚手架 / context rot / MCP / RAG：`final_v4/01-2025-prompt-era.md`、`02-mid-2025-context-era.md`
-- P6 Agent = Model + Harness：`final_v4/03-2026-harness-era.md`
-- P7 Graph 双源定义 / 反转：`final_v4/05-2026-graph-era.md`
-- P8 叠加观 / 成熟度：`final_v4/06-five-layer-forward.md`
+- P2 / P7 金句（Cherny / Steinberger / Osmani）：`../_reference/rawdata_ai-coding-evolution-final/final_v4/04-2026-loop-era.md`
+- P4 METR / Anthropic：`../_reference/rawdata_ai-coding-evolution-final/final_v4/01-2025-prompt-era.md`、`../_reference/rawdata_ai-coding-evolution-final/final_v4/02-mid-2025-context-era.md`
+- P5 SWE-bench 脚手架 / context rot / MCP / RAG：`../_reference/rawdata_ai-coding-evolution-final/final_v4/01-2025-prompt-era.md`、`../_reference/rawdata_ai-coding-evolution-final/final_v4/02-mid-2025-context-era.md`
+- P6 Agent = Model + Harness：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md`
+- P7 Graph 双源定义 / 反转：`../_reference/rawdata_ai-coding-evolution-final/final_v4/05-2026-graph-era.md`
+- P8 叠加观 / 成熟度：`../_reference/rawdata_ai-coding-evolution-final/final_v4/06-five-layer-forward.md`

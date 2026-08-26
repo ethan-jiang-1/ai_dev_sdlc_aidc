@@ -76,8 +76,8 @@
 
 ## 本幕素材来源速查
 
-- P16 民主化 / 组件随产品交付：`final_v4/03-2026-harness-era.md` 第二节 + `04-2026-loop-era.md`（Osmani）
-- P16 "Start with the simplest viable system"：`final_v4/03-2026-harness-era.md` 第三节（Anthropic Building Effective Agents）
-- P17 context rot：`final_v4/02-mid-2025-context-era.md`
-- P17 2026 CVE 执行时授权：`final_v4/03-2026-harness-era.md` 第二节
+- P16 民主化 / 组件随产品交付：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md` 第二节 + `../_reference/rawdata_ai-coding-evolution-final/final_v4/04-2026-loop-era.md`（Osmani）
+- P16 "Start with the simplest viable system"：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md` 第三节（Anthropic Building Effective Agents）
+- P17 context rot：`../_reference/rawdata_ai-coding-evolution-final/final_v4/02-mid-2025-context-era.md`
+- P17 2026 CVE 执行时授权：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md` 第二节
 - P18 两线证据（现成的好 + 要能改）：吸纳清单 §二 P16/P17

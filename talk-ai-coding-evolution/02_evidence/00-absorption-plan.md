@@ -1,6 +1,6 @@
 # 内容吸纳清单（v1.1）· 什么吸进 talk、什么舍弃
 
-> 依据：三份 rawdata 研读（era 章节 + DSH FAQ + `_digested`）。映射到 [`../03_outline/00-page-structure-23.md`](../03_outline/00-page-structure-23.md)（23 页现场版）。
+> 依据：三份 rawdata 研读（era 章节 + DSH FAQ + `_digested`，见 `../_reference/README.md`）。映射到 [`../03_outline/00-page-structure-23.md`](../03_outline/00-page-structure-23.md)（23 页现场版）。
 > 每一条标来源。这是"内容填充"前的进货单——先定进什么货，再逐页填。页编号以现场版 P 为准。
 
 ## 一、本轮新增的「故事线资产」（强到影响讲法）
@@ -19,7 +19,7 @@
    - "Agents follow enforced gates far more reliably than prose conventions."（07）
    - "Each fact has one home: the tier whose job it is; elsewhere, link there."（根入口文档）
    - "There is no privileged core to patch: you extend dsh by mounting a plugin beside the others."（architecture）
-   - "加模型提供方：在 ctx.llm 上注册 adapter……加面向模型的能力：在 ctx.tools 上注册……都不必改 loop。"（_digested tools-prompt-llm）
+   - "加模型提供方：在 ctx.llm 上注册 adapter……加面向模型的能力：在 ctx.tools 上注册……都不必改 loop。"（`../_reference/rawdata_dsh-digested/tools-prompt-llm`）
 
 ## 二、按幕 / 页映射（进货单）
 
@@ -60,7 +60,7 @@
 | 页 | 吸什么 | 来源 |
 |---|---|---|
 | P19 DSH | "There is no privileged core to patch: extend by mounting a plugin beside the others." | FAQ 01 / architecture |
-| P20 双向灵活 | 装自己的 = 挂模型（ctx.llm adapter）+ 挂工具（ctx.tools）+ 换后端（capability seam）+ 挂插件（mount a plugin beside the others）；借现成的 = vendor / adapter（协议兼容纯配置）。金句：「都不必改 loop」 | _digested tools-prompt-llm/capability-seams + FAQ 03 |
+| P20 双向灵活 | 装自己的 = 挂模型（ctx.llm adapter）+ 挂工具（ctx.tools）+ 换后端（capability seam）+ 挂插件（mount a plugin beside the others）；借现成的 = vendor / adapter（协议兼容纯配置）。金句：「都不必改 loop」 | `../_reference/rawdata_dsh-digested/tools-prompt-llm`/`capability-seams` + FAQ 03 |
 | P21 哲学 | "Agents follow enforced gates far more reliably than prose conventions." + GraphARC 门禁作行业先例 | FAQ 07 / 05 章 |
 
 ### 收尾（P22–23）
@@ -79,10 +79,10 @@
 | 4 | 三范式量化表（60/75/90%） | 二手渠道（Tencent Cloud），慎用 |
 | 5 | Anthropic 三 Agent 实验 | n=1 示例，非定律 |
 | 6 | Andrew Ng graph playbook | 出处未经证实，避开 |
-| 7 | "挂 MCP" | DSH 不用 MCP；`_digested` 里 MCP 仅 2 处顺带（ACP 明确"故意不保证 MCP"）。DSH 挂的是 ctx.llm adapter / ctx.tools / capability seam / plugin。MCP 只在 Context era（P5）作生态事件提 |
+| 7 | "挂 MCP" | DSH 不用 MCP；`../_reference/rawdata_dsh-digested/` 里 MCP 仅 2 处顺带（ACP 明确"故意不保证 MCP"）。DSH 挂的是 ctx.llm adapter / ctx.tools / capability seam / plugin。MCP 只在 Context era（P5）作生态事件提 |
 
 ## 四、待验证（下一步）
 
-- [x] DSH 是否支持 MCP：**不支持为原生机制**（`_digested/surfaces/02-acp与jsonrpc.md`：ACP 明确"故意不保证 MCP"，`session/new` 的 mcpServers 非空即拒绝）。P20 说"挂模型 / 挂工具 / 换后端 / 挂插件"；MCP 只在 Context era（P5）提。
+- [x] DSH 是否支持 MCP：**不支持为原生机制**（`../_reference/rawdata_dsh-digested/surfaces/02-acp与jsonrpc.md`：ACP 明确"故意不保证 MCP"，`session/new` 的 mcpServers 非空即拒绝）。P20 说"挂模型 / 挂工具 / 换后端 / 挂插件"；MCP 只在 Context era（P5）提。
 - [ ] Steinberger loop 帖原始浏览量（多渠道口径不一，以 X 为准）。
 - [ ] 若引用 LoopsBench 数字，用 arXiv 2608.00267（112 任务 / 8 语言 / 9 领域 / 37,296 测试）。
