@@ -43,4 +43,5 @@
 - [x] 四幕内容已填充 + 23 页现场版（00-page-structure-23.md）。
 - [x] 工作区一致性审计与修复（01/02/03/04 四层对齐）。
 - [x] **PPT 生产素材 v1 已写**：`04_drafts/ppt-text-v1.md`（23 页 × 上屏文字 + 视觉建议 + 讲者备注，供 AI Agent 生成 PPT）；上屏文字源在 `03_outline` 内容文件；口语讲稿 `talk-v1.md` 备用。
-- [ ] 下一步：用户过目 ppt-text-v1 / 内容文件的上屏文字与讲点 → 逐页打磨措辞。
+- [x] **PPT 素材加厚（v2）**：每页拆成「核心上屏 + 候选上屏素材 + 背景（不上屏）」三块——给 PPT Agent 一个"弹药池"按版面宁多勿少地挑，解决单页内容单薄问题。`ppt-text-v1.md` 与 `ppt-text-v1-sep.md` 已同步加厚，措辞源仍在 `03_outline` 内容文件。sep 版背景改为 blockquote 标注（不再用 HTML 注释，避免被忽略）；术语统一 Loop → Loop Engineering、Graph → Graph Engineering。
+- [ ] 下一步：用户过目加厚后的 ppt-text-v1 / 内容文件的上屏文字与讲点 → 逐页打磨措辞。
