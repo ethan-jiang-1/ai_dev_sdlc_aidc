@@ -91,7 +91,7 @@
 
 **讲点 / 素材**
 - 目的：三条线证明"harness 是五层的承重墙"，呼应第一幕埋的雷。
-- 讲点：结构线（Osmani / Macedo + graph 节点跑在自己的 harness 里）；哲学线（GraphARC 确定性门禁 = 上层在长 harness）；机制金句（假设下层正确是 bug 的来源）。
+- 讲点：结构线（Osmani / Macedo + graph 节点跑在自己的 harness 里）；哲学线（反馈同源——loop 的反馈驱动迭代 = harness Sensors 的循环；GraphARC 确定性门禁 = 上层在长 harness）；机制金句（假设下层正确是 bug 的来源）。三层本质同一件事：用反馈 + 确定性约束模型，换可靠结果。
 - 转场：上面全是正面论证；反面更直接——2026 年真实出过事。
 
 ---

@@ -14,7 +14,7 @@
 | P4 发动机 | METR 7 个月翻倍；prompt 措辞不重要 | 01-opening P4；§二 P4 | 01（METR）；02（Anthropic） |
 | P5 Prompt+Context | 行为控制面；伪装成提示复杂度；context rot；MCP/RAG | 01-opening P5；§二 P5 | 01；02（context rot、MCP/RAG） |
 | P6 Harness 埋雷 | Agent=Model+Harness；单次运行容器 | 01-opening P6；§二 P6 | 03 §一/§七 |
-| P7 Loop+Graph | 黄金法则；blast radius；不是新东西；260 万 | 01-opening P7；§二 P7 | 04；05 |
+| P7 Loop+Graph | 黄金法则；blast radius；有道理但只解决特定；260 万 | 01-opening P7；§二 P7 | 04；05 |
 | P8 叠加观+成熟度 | 扳手/螺丝刀；成熟度标尺 | 01-opening P8；§二 P8 | 06 |
 | P9 转折 | 承重墙判断 + 口径（我们的判断，三线撑） | 02-act2 P9；§二 P9 | 06（Context/Harness 并列） |
 | P10 定义 | Agent=Model+Harness；SWE-bench 脚手架金句 | 02-act2 P10；§二 P10 | 03 §一；01 §二 |

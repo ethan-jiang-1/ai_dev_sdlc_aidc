@@ -117,14 +117,14 @@
   - 黄金法则：只有上次结果改变下次行动，才算 loop
   - "A loop can be wrong in ways that are subtle, expensive, and hard to detect."
   - Graph = 编排：用 workflow / DAG 把多 agent 的乱发挥收进显式流程（谁先做、何时分支、何时停）
-  - 两盆冷水：不是新东西（LangGraph 2024 早就有 workflow/DAG，只是"编排 agent"当时没凸显）/ 术语先于发布（260 万浏览，无框架发布）
+  - 有道理，但只解决特定的事，还在发展——是方向，不是定论
   - **叙事期：火六周就被接棒**
 
 **讲点 / 素材**
 - 目的：两个新兴层一起讲——从"迭代"到"编排"，都落在"需要强悍 harness"。
-- 讲点：loop 引擎（模型越强越能"知错改错"，反馈得当就越迭代越好——与 harness 的 Sensors 同源，单次反馈连成循环）；定义爆发（Osmani / Macedo）；黄金法则；blast radius 反转；graph 的本质是编排（orchestration：用 workflow/DAG 约束乱发挥、换可靠结果）；"不是新东西"+"术语先于发布"（口径：260 万非 2.6 亿）；叙事期判断。
+- 讲点：loop 引擎（模型越强越能"知错改错"，反馈得当就越迭代越好——与 harness 的 Sensors 同源，单次反馈连成循环）；定义爆发（Osmani / Macedo）；黄金法则；blast radius 反转；graph 的本质是编排（orchestration：用 workflow/DAG 约束乱发挥、换可靠结果）；定位"有道理（是 harness 的延伸），但只解决特定的事（Loop 管迭代、Graph 管编排）"+"机制不新、诉求新"+"命名先于沉淀"（口径：260 万非 2.6 亿）；叙事期判断。
 - 金句："replacing yourself as the person who prompts the agent."
-- 反转：blast radius / 不是新东西 / 术语先于发布。
+- 反转：blast radius / 机制不新诉求新 / 命名先于沉淀。
 - 转场：五层都过完了，回头看整体——五层不是时间线，是一栋楼。
 
 ---

@@ -17,7 +17,7 @@
 | P4 | 发动机 | 2 | 一个原因五层结果：模型越强→杠杆点上移；METR 7 个月翻倍 + "prompt 措辞越来越不重要"；叠加不是替代 |
 | P5 | Prompt + Context | 3 | 说话者→策展者；prompt 是行为控制面；context rot"塞得越多记得越差"；MCP/RAG 是生态事件 |
 | P6 | Harness（埋雷） | 2.5 | Agent = Model + Harness；**埋雷：单次运行容器**（loop/graph 都实例化它） |
-| P7 | Loop + Graph | 2.5 | 控制流作者 + 编排者；黄金法则；反转（blast radius / 不是新东西 / 术语先于发布）；叙事期 |
+| P7 | Loop + Graph | 2.5 | 控制流作者 + 编排者；黄金法则；反转（blast radius / 有道理但只解决特定 / 还在发展）；叙事期 |
 | P8 | 叠加观 + 成熟度 | 2 | 扳手/螺丝刀；成熟度标尺；今天重仓 1–3 层；引向"承重墙" |
 
 ## 第二幕 · 根本还是 harness（10 min）

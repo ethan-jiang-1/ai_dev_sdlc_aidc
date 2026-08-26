@@ -40,7 +40,7 @@
 ### 第二幕：根本还是 harness（抓要害）
 - **转折**：五层讲完，根本还是 harness——它是五层的"可靠性承载体"。
 - **口径**：报告把 Context 与 Harness **并列**为"成熟主体"；"harness 最重要"是我们的判断，
-  用三条素材撑（结构线 loop/graph 实例化 harness、哲学线 验证梯渗透 + GraphARC 门禁、风险线 2026 CVE），别讲成"报告背书"。
+  用三条素材撑（结构线 loop/graph 实例化 harness、哲学线 反馈同源（Sensors→loop）+ 验证梯渗透 + GraphARC 门禁、风险线 2026 CVE），别讲成"报告背书"。
 - **定义**：Böckeler —— **Agent = Model + Harness**；harness = 模型之外的一切。
 - **harness 里头干啥**（抓要害的讲法）→ [`06-harness-internals.md`](./06-harness-internals.md)：
   一句话「模型给能力，harness 给可靠性」；两套控制（Guides 前馈 + Sensors 反馈，各分 computational / inferential）；
@@ -51,7 +51,9 @@
   2. **确定性优先**——测试 / lint / 类型能复现、能审计，AI 判断不能。能交给机器门禁的，绝不靠模型自觉。
 - **06 章机制金句**：「假设下层正确是 bug 的来源；对下层显式验证，是工程成熟的标志。」——解释"为什么最底下的 harness 最关键"。
 - **loop / graph 的地基**：每次 loop 迭代实例化一个 harness；graph 每个 agent 节点跑在自己的 harness 里。
-  没有强悍的 harness，loop 只会更贵地犯错（blast radius 更大），graph 只会更乱地通信。
+  更深一层，三层本质是同一件事——**用反馈 + 确定性约束模型，换可靠结果**：harness 给单次反馈（Sensors），
+  loop 把它连成循环（反馈驱动迭代），graph 把它编排起来（workflow / DAG + 门禁）。
+  所以没有强悍的 harness：loop 的反馈不可靠（只会更贵地犯错），graph 的编排约束不住（只会更乱地发挥）。
 - **反面证据**：2026 CVE——执行时授权缺失。护栏若建立在"模型会发出合法工具调用"上，
   工具调用可被伪造时整条链失效。修复：**authorize at execution, not at generation**。
 

@@ -83,7 +83,7 @@
 
 第五层：graph engineering。工程对象是多 agent 的**编排**（orchestration）——用一个 workflow、一个 DAG，把模型的乱发挥收进显式流程：谁先做、什么时候分支、什么时候停。核心诉求就一个：用编排换可靠、可审计的结果。产业派说：把 agent 建成状态图；学术派说：从个体智能到系统智能。
 
-但这一层要泼两盆冷水。第一，它不是新东西——LangGraph 2024 年就提供了 workflow/DAG 的组件技术，只是那时候"编排 agent loop"这个需求还没凸显；新的只是"命名和学科意识"。第二，它火得快——Steinberger 一条推文 260 万浏览【注意：是 260 万，不是 2.6 亿】，但旁边什么框架、什么模型都没发布。火六周就被下一个概念接棒，恰恰说明：它还在叙事期，没沉淀。
+但这一层，与其泼冷水，不如把定位说准。第一，它有道理——Loop 和 Graph 其实是 harness 的延伸：反馈连成循环、确定性长成编排，主线是在不断加强，不是跑题。第二，它只解决特定的事——Loop 管"迭代改得更好"，Graph 管"多 agent 编排"，都不是万能药。第三，它还在发展——机制不新（LangGraph 2024 年就有 workflow/DAG，新在编排诉求）、命名先于沉淀（Steinberger 一条推文 260 万浏览【注意：是 260 万，不是 2.6 亿】，但旁边什么都没发布）。火六周就被接棒，恰恰说明：它是正在形成的方向，还不是定论。
 
 ---
 
@@ -160,6 +160,8 @@ Inferential，概率性：AI review、模型当裁判。它给的是意见，意
 Osmani 说："Loop engineering sits one floor above the harness."——loop 就在 harness 上面一层。Macedo 说："The harness supplies the engine; loop engineering writes the pilot."——harness 提供引擎，loop 写飞行员。
 
 更有意思的是，上层自己都在长 harness。Graph 最前沿的 GraphARC：模型提议一张工作图，一个确定性的检查器，要么放行、要么带着理由拒绝，只有被放行的图才会执行。plan，check，execute——这是 harness 式的确定性门禁，在 graph 层复现了。
+
+你看，这三层其实是同一件事：harness 给单次反馈，loop 把它连成循环，graph 把它编排起来——本质都是"用反馈和确定性约束模型，换可靠结果"。所以归根结底，还是 harness。
 
 还有一句机制级的话，来自那份五层报告："**假设下层正确，是 bug 的来源；对下层显式验证，是工程成熟的标志。**"楼盖得越高，地基越不能虚。
 

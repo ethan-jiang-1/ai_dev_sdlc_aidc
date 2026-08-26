@@ -120,20 +120,20 @@
 ## P7 · Loop + Graph
 
 - 标题：从"迭代"到"编排"
-- 副题：第四五层 Loop 与 Graph：刚冒头，别急着信
+- 副题：第四五层 Loop 与 Graph：刚冒头，是方向，不是定论
 - 正文：
   - Loop = 反馈驱动迭代：模型越强越能"知错改错"——反馈得当，就不断输出更好结果
   - 黄金法则：只有上次结果改变下次行动，才算 loop
   - "A loop can be wrong in ways that are subtle, expensive, and hard to detect."
   - Graph = 编排：用 workflow / DAG 把多 agent 的乱发挥收进显式流程（谁先做、何时分支、何时停）
-  - 两盆冷水：不是新东西（LangGraph 2024 早就有 workflow/DAG，只是"编排 agent"当时没凸显）/ 术语先于发布（260 万浏览，无框架发布）
+  - 有道理，但只解决特定的事，还在发展——是方向，不是定论
 - 金句：**叙事期：火六周就被接棒**
 
 <!-- 注释
 - 定位：后两层合并页（控制流作者 + 编排者）。
-- 意图：讲清 Loop 和 Graph——Loop 的引擎是"模型越强越能知错改错、反馈得当就越迭代越好"（与 harness 的 Sensors 同源：harness 是单次反馈，loop 是把它连成循环）；Graph 的核心是编排（orchestration）：用 workflow/DAG 控制模型的乱发挥、换可靠结果；并"泼两盆冷水"：这两层是叙事期，别当真。
+- 意图：讲清 Loop 和 Graph——Loop 的引擎是"模型越强越能知错改错、反馈得当就越迭代越好"（与 harness 的 Sensors 同源：harness 是单次反馈，loop 是把它连成循环）；Graph 的核心是编排（orchestration）：用 workflow/DAG 控制模型的乱发挥、换可靠结果。定位这两层：有道理（是 harness 的延伸，主线在加强），但只解决特定的事（Loop 管迭代、Graph 管编排），机制不新、诉求新（LangGraph 2024 就有 workflow/DAG）、命名先于沉淀（260 万、无框架发布）——还在发展，是方向，不是定论。
 - 上下文：这两层都"站在 harness 上"（为 P9 承重墙铺垫）。
-- 布局提示：上半 loop（循环箭头图）+ 黄金法则；下半 graph（节点网络图）+ 两盆冷水；底部结论条"叙事期：火六周就被接棒"。
+- 布局提示：上半 loop（循环箭头图）+ 黄金法则；下半 graph（节点网络图）+ 两点校准；底部结论条"叙事期：火六周就被接棒"。
 - 别写错：口径——260 万浏览（不是 2.6 亿）；Woliveiras 那句英文引文别译。
 -->
 
@@ -252,7 +252,7 @@
 <!-- 注释
 - 定位：论证页（三线中的结构线 + 哲学线）。
 - 意图：用三句引用证明"harness 是承重墙"——上层自己也承认。
-- 上下文：三线 = 结构线（loop/graph 实例化 harness）、哲学线（GraphARC 门禁）、风险线（P14 展开）。
+- 上下文：三线 = 结构线（loop/graph 实例化 harness）、哲学线（反馈同源：loop 的反馈驱动迭代 = harness Sensors 的循环；GraphARC 门禁 = 上层在长 harness）、风险线（P14 展开）。口播收束句：三层本质同一件事——单次反馈 → 连成循环 → 编排，都是"用反馈 + 确定性约束模型，换可靠结果"，归根结底还是 harness。
 - 布局提示：三列引用 + 底部机制金句大字。
 - 别写错：三句引用署名别错（Osmani / Macedo / GraphARC）；机制金句是全场金句之一。
 -->

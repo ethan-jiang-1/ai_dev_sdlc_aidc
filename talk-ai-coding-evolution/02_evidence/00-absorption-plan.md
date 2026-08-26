@@ -35,7 +35,7 @@
 | P4 发动机 | METR「50% 可靠性任务长度每 ~7 个月翻倍」+ Anthropic「prompt 措辞越来越不重要」 | 01/02 章 |
 | P5 Prompt+Context（合并） | 「行为控制面」；「把系统问题塞进更长 prompt，只是把缺失的控制面伪装成提示复杂度」；SWE-bench 最小脚手架「The agent has a prompt, a Bash Tool, and an Edit Tool」；context rot（Lost in the Middle 两头好中间差）；「更多 context ≠ 更好回忆」；MCP/RAG 生态事件 | 01/02 章 |
 | P6 Harness（埋雷） | 「单次运行容器」 | 03 章 |
-| P7 Loop+Graph（合并） | loop 引擎「模型越强越能知错改错，反馈得当就越迭代越好」；「replacing yourself as the person who prompts」；黄金法则「只有上次结果改变下次行动才算 loop」；反转「loop 可能错得更贵」（Woliveiras）；graph 本质 = 编排（orchestration：workflow/DAG 约束乱发挥、换可靠结果）；双源定义「state graphs」/「From Individual to System Intelligence」；反转「不是新东西」+「术语先于发布」 | 04/05 章 |
+| P7 Loop+Graph（合并） | loop 引擎「模型越强越能知错改错，反馈得当就越迭代越好」；「replacing yourself as the person who prompts」；黄金法则「只有上次结果改变下次行动才算 loop」；反转「loop 可能错得更贵」（Woliveiras）；graph 本质 = 编排（orchestration：workflow/DAG 约束乱发挥、换可靠结果）；双源定义「state graphs」/「From Individual to System Intelligence」；定位「有道理，但只解决特定，还在发展」 | 04/05 章 |
 | P8 叠加 | 「扳手/螺丝刀」比喻；「概念火六周就被接棒 = 叙事期」 | 06 章 |
 
 ### 第二幕 harness（P9–14）
@@ -45,7 +45,7 @@
 | P10 定义 | "Agent = Model + Harness"；harness = 模型之外的一切 | 03 章 |
 | P11 两套控制+comp/infer（合并） | Guides（前馈）+ Sensors（反馈）；computational 可审计 vs inferential 不可审计；确定性优先 | 03 章 |
 | P12 抓要害 | 圈住 / 拦住 / 看清（见 06-harness-internals.md） | 03 章 |
-| P13 承重墙 | 结构线（Osmani「one floor above」/ Macedo「engine & pilot」）+ 哲学线（验证梯渗透 + GraphARC 门禁）+ 机制金句「假设下层正确是 bug 的来源」 | 04/05/06 章 |
+| P13 承重墙 | 结构线（Osmani「one floor above」/ Macedo「engine & pilot」）+ 哲学线（反馈同源 Sensors→loop + 验证梯渗透 + GraphARC 门禁）+ 机制金句「假设下层正确是 bug 的来源」；三层同一件事（反馈 + 确定性 → 可靠） | 04/05/06 章 |
 | P14 反面 | 2026 CVE「authorize at execution, not at generation」 | 03 章 |
 
 ### 第三幕 固定 vs 灵活（P15–18）
