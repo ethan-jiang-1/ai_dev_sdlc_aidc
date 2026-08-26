@@ -44,5 +44,6 @@
 - [x] 工作区一致性审计与修复（01/02/03/04 四层对齐）。
 - [x] **PPT 生产素材 v1 已写**：`04_drafts/ppt-text-v1.md`（23 页 × 上屏文字 + 视觉建议 + 讲者备注，供 AI Agent 生成 PPT）；上屏文字源在 `03_outline` 内容文件；口语讲稿 `talk-v1.md` 备用。
 - [x] **PPT 素材加厚（v2）**：每页拆成「核心上屏 + 候选上屏素材 + 背景（不上屏）」三块——给 PPT Agent 一个"弹药池"按版面宁多勿少地挑，解决单页内容单薄问题。`ppt-text-v1.md` 与 `ppt-text-v1-sep.md` 已同步加厚，措辞源仍在 `03_outline` 内容文件。sep 版背景改为 blockquote 标注（不再用 HTML 注释，避免被忽略）；术语统一 Loop → Loop Engineering、Graph → Graph Engineering。
-- [x] **PPT V2 已输出**：`05_output/v2/OPC航海指南-harness-v2.pptx`。使用留白版模板：开始/结束页保留城市视觉，P2-P22 保留居中缩小 LOGO 并在白色内容区用候选上屏素材与结构图加厚；已通过逐页渲染、画布溢出和模板保真检查。
-- [ ] 下一步：用户过目 V2 的版式、信息密度与逐页措辞 → 继续定向打磨。
+- [x] **PPT V2 已输出**：`05_output/v2/OPC航海指南-harness-v2.pptx`。该版本经用户审阅后确认存在内容关系、叙事与版式问题，不作为后续直接修补的基线。
+- [x] **内容关系校准（v1.3）**：五层是 attention stacking，不是严格运行时层级；Harness 是可靠运行边界，Loop 是跨运行反馈控制，Graph 是多节点编排，Graph 可在部分节点使用 Loop。已回写 story map 与五层解读。
+- [ ] 下一步：完成 v1.3 逐页内容稿审阅后，才按“深海军蓝 + 中性灰；安全页唯一红色；金句深蓝白字”制作 PPT V3。
