@@ -111,18 +111,18 @@
 ## P7 Loop + Graph（2.5 min）—— 控制流作者 → 编排者【合并：Loop + Graph】
 
 **上屏文字**
-- 标题：第四五层：从"重复"到"组织"
+- 标题：第四五层：从"迭代"到"编排"
 - 正文：
-  - Loop：何时、为何、以什么条件重复
+  - Loop = 反馈驱动迭代：模型越强越能"知错改错"——反馈得当，就不断输出更好结果
   - 黄金法则：只有上次结果改变下次行动，才算 loop
   - "A loop can be wrong in ways that are subtle, expensive, and hard to detect."
-  - Graph：从个体智能到系统智能
-  - 两盆冷水：不是新东西（LangGraph 2024）/ 术语先于发布（260 万浏览，无框架发布）
+  - Graph = 编排：用 workflow / DAG 把多 agent 的乱发挥收进显式流程（谁先做、何时分支、何时停）
+  - 两盆冷水：不是新东西（LangGraph 2024 早就有 workflow/DAG，只是"编排 agent"当时没凸显）/ 术语先于发布（260 万浏览，无框架发布）
   - **叙事期：火六周就被接棒**
 
 **讲点 / 素材**
-- 目的：两个新兴层一起讲——从"重复"到"组织"，都落在"需要强悍 harness"。
-- 讲点：loop 定义爆发（Osmani / Macedo）；黄金法则；blast radius 反转；graph 双源定义；"不是新东西"+"术语先于发布"（口径：260 万非 2.6 亿）；叙事期判断。
+- 目的：两个新兴层一起讲——从"迭代"到"编排"，都落在"需要强悍 harness"。
+- 讲点：loop 引擎（模型越强越能"知错改错"，反馈得当就越迭代越好——与 harness 的 Sensors 同源，单次反馈连成循环）；定义爆发（Osmani / Macedo）；黄金法则；blast radius 反转；graph 的本质是编排（orchestration：用 workflow/DAG 约束乱发挥、换可靠结果）；"不是新东西"+"术语先于发布"（口径：260 万非 2.6 亿）；叙事期判断。
 - 金句："replacing yourself as the person who prompts the agent."
 - 反转：blast radius / 不是新东西 / 术语先于发布。
 - 转场：五层都过完了，回头看整体——五层不是时间线，是一栋楼。

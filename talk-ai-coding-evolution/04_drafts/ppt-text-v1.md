@@ -36,8 +36,8 @@
 | Prompt engineering | 把"我该对模型说什么"工程化——提示词是行为控制面，不是系统本身 | 说话者 |
 | Context engineering | 把"模型此刻该看到什么"工程化 | 策展者 |
 | Harness engineering | 把"模型在什么系统里跑"工程化——权限、沙箱、工具、验证、trace、CI | 环境工程师 |
-| Loop engineering | 把"何时、为何、以什么条件重复"工程化 | 控制流作者 |
-| Graph engineering | 把"多 agent 怎么组织"工程化 | 编排者 |
+| Loop engineering | 把"反馈"连成循环——模型越强越能"知错改错"，反馈得当就不断输出更好结果 | 控制流作者 |
+| Graph engineering | 把"多个 agent 怎么被编排"工程化——用 workflow / DAG 控制乱发挥，换可靠结果 | 编排者 |
 
 ## 0.4 关键人物与金句（署名务必正确）
 
@@ -187,15 +187,15 @@
 **布局**：顶部标题；上半段 Loop（一条循环箭头 + 两行）；下半段 Graph（两行 + 两盆冷水）；底部一条结论。
 
 **上屏文字**
-- 标题：从"重复"到"组织"（顶部居中，本页最大字号）
+- 标题：从"迭代"到"编排"（顶部居中，本页最大字号）
 - 副题：第四五层 Loop 与 Graph：刚冒头，别急着信（标题下，小字）
 - Loop 段：
-  - Loop：何时、为何、以什么条件重复
+  - Loop = 反馈驱动迭代：模型越强越能"知错改错"——反馈得当，就不断输出更好结果
   - 黄金法则：只有上次结果改变下次行动，才算 loop
   - "A loop can be wrong in ways that are subtle, expensive, and hard to detect."
 - Graph 段：
-  - Graph：从个体智能到系统智能
-  - 两盆冷水：不是新东西（LangGraph 2024）/ 术语先于发布（260 万浏览，无框架发布）
+  - Graph = 编排：用 workflow / DAG 把多 agent 的乱发挥收进显式流程（谁先做、何时分支、何时停）
+  - 两盆冷水：不是新东西（LangGraph 2024 早就有 workflow/DAG，只是"编排 agent"当时没凸显）/ 术语先于发布（260 万浏览，无框架发布）
 - 结论：**叙事期：火六周就被接棒**（底部，强调）
 
 **不上屏**

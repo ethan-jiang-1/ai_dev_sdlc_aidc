@@ -35,7 +35,7 @@
 | P4 发动机 | METR「50% 可靠性任务长度每 ~7 个月翻倍」+ Anthropic「prompt 措辞越来越不重要」 | 01/02 章 |
 | P5 Prompt+Context（合并） | 「行为控制面」；「把系统问题塞进更长 prompt，只是把缺失的控制面伪装成提示复杂度」；SWE-bench 最小脚手架「The agent has a prompt, a Bash Tool, and an Edit Tool」；context rot（Lost in the Middle 两头好中间差）；「更多 context ≠ 更好回忆」；MCP/RAG 生态事件 | 01/02 章 |
 | P6 Harness（埋雷） | 「单次运行容器」 | 03 章 |
-| P7 Loop+Graph（合并） | 「replacing yourself as the person who prompts」；黄金法则「只有上次结果改变下次行动才算 loop」；反转「loop 可能错得更贵」（Woliveiras）；双源定义「state graphs」/「From Individual to System Intelligence」；反转「不是新东西」+「术语先于发布」 | 04/05 章 |
+| P7 Loop+Graph（合并） | loop 引擎「模型越强越能知错改错，反馈得当就越迭代越好」；「replacing yourself as the person who prompts」；黄金法则「只有上次结果改变下次行动才算 loop」；反转「loop 可能错得更贵」（Woliveiras）；graph 本质 = 编排（orchestration：workflow/DAG 约束乱发挥、换可靠结果）；双源定义「state graphs」/「From Individual to System Intelligence」；反转「不是新东西」+「术语先于发布」 | 04/05 章 |
 | P8 叠加 | 「扳手/螺丝刀」比喻；「概念火六周就被接棒 = 叙事期」 | 06 章 |
 
 ### 第二幕 harness（P9–14）

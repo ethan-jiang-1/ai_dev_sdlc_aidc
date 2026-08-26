@@ -73,7 +73,7 @@
 
 ## P7 Loop + Graph（2.5 min）
 
-第四层：loop engineering。工程对象是跨运行的控制流——**何时、为何、以什么条件重复**。
+第四层：loop engineering。工程对象是跨运行的控制流——**何时、为何、以什么条件重复**。但它的引擎很朴素：模型越来越强、尤其能"知错改错"，只要反馈得当，把结果喂回去，它就会不断输出更好的结果。
 
 2026 年 6 月，一个月之内，四个方向同时给出了定义。最形象的是 Osmani 的："Loop engineering is replacing yourself as the person who prompts the agent."——loop 工程，就是把你从"给 agent 写 prompt 的人"这个位置，替换掉。
 
@@ -81,9 +81,9 @@
 
 但它有个大坑：loop 可能错得更贵。Woliveiras 说："A loop can be wrong in ways that are subtle, expensive, and hard to detect."——一次错误，会被循环放大成很多次错误。
 
-第五层：graph engineering。工程对象是多 agent 的系统智能。产业派说：把 agent 建成状态图；学术派说：从个体智能到系统智能。
+第五层：graph engineering。工程对象是多 agent 的**编排**（orchestration）——用一个 workflow、一个 DAG，把模型的乱发挥收进显式流程：谁先做、什么时候分支、什么时候停。核心诉求就一个：用编排换可靠、可审计的结果。产业派说：把 agent 建成状态图；学术派说：从个体智能到系统智能。
 
-但这一层要泼两盆冷水。第一，它不是新东西——LangGraph 2024 年就在做组件技术了，新的只是"命名"。第二，它火得快——Steinberger 一条推文 260 万浏览【注意：是 260 万，不是 2.6 亿】，但旁边什么框架、什么模型都没发布。火六周就被下一个概念接棒，恰恰说明：它还在叙事期，没沉淀。
+但这一层要泼两盆冷水。第一，它不是新东西——LangGraph 2024 年就提供了 workflow/DAG 的组件技术，只是那时候"编排 agent loop"这个需求还没凸显；新的只是"命名和学科意识"。第二，它火得快——Steinberger 一条推文 260 万浏览【注意：是 260 万，不是 2.6 亿】，但旁边什么框架、什么模型都没发布。火六周就被下一个概念接棒，恰恰说明：它还在叙事期，没沉淀。
 
 ---
 

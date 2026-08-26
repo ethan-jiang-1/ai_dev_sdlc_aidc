@@ -17,6 +17,8 @@
 ## 结构层（五层 + DSH）
 
 - [x] 五层全讲，重前三层，Loop/Graph 作铺垫 + 引出"需要强悍 harness"。
+- [x] **Graph 定调**：本质 = orchestration（编排）——用 workflow / DAG 约束模型乱发挥、换可靠结果（不是"多 agent 组织 / 系统智能"）。已全库统一。
+- [x] **Loop 定调**：引擎 = 模型越强越能"知错改错"、反馈得当就越迭代越好（与 harness 的 Sensors 同源：单次反馈连成循环）。已全库统一。
 - [x] DSH 落位：收尾专章（第四幕）。
 - [x] Böckeler 强调什么、为什么：可靠性是系统属性 + 确定性优先。
 - [x] harness 里头干啥：已写成 `06-harness-internals.md`（圈住 / 拦住 / 看清 + 两套控制 + 六构件），**用户已认可定稿**。
