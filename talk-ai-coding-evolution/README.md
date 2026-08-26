@@ -30,13 +30,13 @@ talk-ai-coding-evolution/
 ├── 02_evidence/                             # 素材与脉络
 │   ├── 00-absorption-plan.md                #   内容吸纳清单（按页进货单 + 口径红线）
 │   └── 01-info-flow-map.md                  #   信息脉络图（上游 → 加工 → 页面 + 反向索引）
-├── 03_outline/                              # 页面结构与逐页内容
+├── 03_outline/                              # 页面结构与逐页内容（上屏文字 + 讲点）
 │   ├── 00-page-structure-23.md              #   ★ 现场版（23 页，45 min，每页必讲要点）
-│   ├── 01-opening-and-act1-content.md       #   开场 + 第一幕素材池（P1–P8）
-│   ├── 02-act2-harness-content.md           #   第二幕素材池（P9–P14）
-│   ├── 03-act3-flexibility-content.md       #   第三幕素材池（P15–P18）
-│   └── 04-act4-dsh-content.md               #   第四幕 + 收尾素材池（P19–P23）
-└── 04_drafts/                               # PPT 文字与草稿（ppt-text-v1 已出）
+│   ├── 01-opening-and-act1-content.md       #   开场 + 第一幕逐页内容（P1–P8）
+│   ├── 02-act2-harness-content.md           #   第二幕逐页内容（P9–P14）
+│   ├── 03-act3-flexibility-content.md       #   第三幕逐页内容（P15–P18）
+│   └── 04-act4-dsh-content.md               #   第四幕 + 收尾逐页内容（P19–P23）
+└── 04_drafts/                               # 口语讲稿（备用）与术语规范
 ```
 
 ## 三份原始数据是什么

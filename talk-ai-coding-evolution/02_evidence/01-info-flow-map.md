@@ -1,37 +1,36 @@
 # 信息脉络图 · 上游 → 加工 → 页面（talk 的 provenance + trace）
 
 > **用途**：推敲某一页时，脉络一眼清楚——这页的内容从哪来、改一处会牵动哪些页。
-> 对应现场版 `../03_outline/00-page-structure-23.md`（P1–P23）。
+> 对应现场版 `../03_outline/00-page-structure-23.md`（P1–P23）；加工层引用的内容文件小节 = 同名 P 编号。
 > 口径红线见 [`00-absorption-plan.md`](./00-absorption-plan.md) 第三节。
-> **编号说明**：加工层里形如 `01-opening S2` 的 S 编号 = 内容文件内部小节（素材锚点，与旧 27 页编号一致）；现场页以 P 编号为准。
 
 ## 正向脉络：页 → 加工层 → 上游
 
 | 页 | 关键内容 | 加工层（内容文件 + 吸纳清单） | 上游来源 |
 |---|---|---|---|
-| P1 封面 | 官方题目 + 开场问题 | 01-opening S1 | 用户定题（无上游） |
-| P2 钩子 | 五角色阶梯；Cherny 金句 | 01-opening S2；吸纳 §一.1/.4 | 06 角色表；04 Cherny |
-| P3 路线图 | 四站 | 01-opening S3 | 故事线 v1.2（自拟） |
-| P4 发动机 | METR 7 个月翻倍；prompt 措辞不重要 | 01-opening S4；§二 S4 | 01（METR）；02（Anthropic） |
-| P5 Prompt+Context | 行为控制面；伪装成提示复杂度；context rot；MCP/RAG | 01-opening S5+S6；§二 S5/S6 | 01；02（context rot、MCP/RAG） |
-| P6 Harness 埋雷 | Agent=Model+Harness；单次运行容器 | 01-opening S7；§二 S7 | 03 §一/§七 |
-| P7 Loop+Graph | 黄金法则；blast radius；不是新东西；260 万 | 01-opening S8+S9；§二 S8/S9 | 04；05 |
-| P8 叠加观+成熟度 | 扳手/螺丝刀；成熟度标尺 | 01-opening S10；§二 S10 | 06 |
-| P9 转折 | 承重墙判断 + 口径（我们的判断，三线撑） | 02-act2 S11；§二 S11 | 06（Context/Harness 并列） |
-| P10 定义 | Agent=Model+Harness；SWE-bench 脚手架金句 | 02-act2 S12；§二 S12 | 03 §一；01 §二 |
-| P11 两套控制+comp/infer | Guides/Sensors；npm test vs AI；教小孩做菜 | 02-act2 S13+S14；§二 S13/S14 | 03 §一 |
-| P12 圈住拦住看清 | 模型给能力 harness 给可靠性；84% | 02-act2 S15；§二 S15 | 03 §五；01_storyline/06-harness-internals |
-| P13 承重墙 | one floor above；engine & pilot；GraphARC；假设下层正确 | 02-act2 S16；§二 S16 | 04；05（GraphARC）；06 |
-| P14 CVE | authorize at execution | 02-act2 S17；§二 S17 | 03 §二 |
-| P15 抉择 | 固定 vs 灵活轴；精装公寓比喻 | 03-act3 S18 | 故事线 v1.2 立场（自拟） |
-| P16 固定的好 | 民主化；84%；simplest viable system | 03-act3 S19；§二 S19 | 03 §二/§五；04（Osmani） |
-| P17 固定的卡 | 挂模型/工具/换后端/skill/knowledge map 受限；等厂商；context rot | 03-act3 S20；§二 S20 | 03 §二；02（rot）；_digested（机制对照） |
-| P18 本质 | 别只能现成；装自己的 + 借现成的 | 03-act3 S21 | 立场（v1.2）；两线证据 §二 S19/20 |
-| P19 DSH | 无特权内核金句 | 04-act4 S22；§二 S22 | FAQ 01（architecture） |
-| P20 双向灵活 | 挂模型/工具/换后端/skill/knowledge map；都不必改 loop；15 行 YAML | 04-act4 S23；§二 S23 | _digested tools-prompt-llm / capability-seams；FAQ 03/04 |
-| P21 哲学 | enforced gates；GraphARC 同套 | 04-act4 S24；§二 S24 | FAQ 07；05（GraphARC） |
-| P22 回答+slogan | 角色表回扣；装自己的借现成的 | 04-act4 S25+S26；§一.1 | 06 角色表；slogan（用户定方向） |
-| P23 Q&A | 预埋三问 | 04-act4 S27 | 结构（自拟） |
+| P1 封面 | 官方题目 + 开场问题 | 01-opening P1 | 用户定题（无上游） |
+| P2 钩子 | 五角色阶梯；Cherny 金句 | 01-opening P2；吸纳 §一.1/.4 | 06 角色表；04 Cherny |
+| P3 路线图 | 四站 | 01-opening P3 | 故事线 v1.2（自拟） |
+| P4 发动机 | METR 7 个月翻倍；prompt 措辞不重要 | 01-opening P4；§二 P4 | 01（METR）；02（Anthropic） |
+| P5 Prompt+Context | 行为控制面；伪装成提示复杂度；context rot；MCP/RAG | 01-opening P5；§二 P5 | 01；02（context rot、MCP/RAG） |
+| P6 Harness 埋雷 | Agent=Model+Harness；单次运行容器 | 01-opening P6；§二 P6 | 03 §一/§七 |
+| P7 Loop+Graph | 黄金法则；blast radius；不是新东西；260 万 | 01-opening P7；§二 P7 | 04；05 |
+| P8 叠加观+成熟度 | 扳手/螺丝刀；成熟度标尺 | 01-opening P8；§二 P8 | 06 |
+| P9 转折 | 承重墙判断 + 口径（我们的判断，三线撑） | 02-act2 P9；§二 P9 | 06（Context/Harness 并列） |
+| P10 定义 | Agent=Model+Harness；SWE-bench 脚手架金句 | 02-act2 P10；§二 P10 | 03 §一；01 §二 |
+| P11 两套控制+comp/infer | Guides/Sensors；npm test vs AI；教小孩做菜 | 02-act2 P11；§二 P11 | 03 §一 |
+| P12 圈住拦住看清 | 模型给能力 harness 给可靠性；84% | 02-act2 P12；§二 P12 | 03 §五；01_storyline/06-harness-internals |
+| P13 承重墙 | one floor above；engine & pilot；GraphARC；假设下层正确 | 02-act2 P13；§二 P13 | 04；05（GraphARC）；06 |
+| P14 CVE | authorize at execution | 02-act2 P14；§二 P14 | 03 §二 |
+| P15 抉择 | 固定 vs 灵活轴；精装公寓比喻 | 03-act3 P15；§二 P15 | 故事线 v1.2 立场（自拟） |
+| P16 固定的好 | 民主化；84%；simplest viable system | 03-act3 P16；§二 P16 | 03 §二/§五；04（Osmani） |
+| P17 固定的卡 | 挂模型/工具/换后端/skill/knowledge map 受限；等厂商；context rot | 03-act3 P17；§二 P17 | 03 §二；02（rot）；_digested（机制对照） |
+| P18 本质 | 别只能现成；装自己的 + 借现成的 | 03-act3 P18；§二 P18 | 立场（v1.2）；两线证据 §二 P16/17 |
+| P19 DSH | 无特权内核金句 | 04-act4 P19；§二 P19 | FAQ 01（architecture） |
+| P20 双向灵活 | 挂模型/工具/换后端/skill/knowledge map；都不必改 loop；15 行 YAML | 04-act4 P20；§二 P20 | _digested tools-prompt-llm / capability-seams；FAQ 03/04 |
+| P21 哲学 | enforced gates；GraphARC 同套 | 04-act4 P21；§二 P21 | FAQ 07；05（GraphARC） |
+| P22 回答+slogan | 角色表回扣；装自己的借现成的 | 04-act4 P22；§一.1 | 06 角色表；slogan（用户定方向） |
+| P23 收尾 | 谢谢 + slogan | 04-act4 P23 | 结构（自拟） |
 
 ## 反向索引：上游 → 用到它的页
 
