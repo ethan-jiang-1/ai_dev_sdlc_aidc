@@ -46,4 +46,5 @@
 - [x] **PPT 素材加厚（v2）**：每页拆成「核心上屏 + 候选上屏素材 + 背景（不上屏）」三块——给 PPT Agent 一个"弹药池"按版面宁多勿少地挑，解决单页内容单薄问题。`ppt-text-v1.md` 与 `ppt-text-v1-sep.md` 已同步加厚，措辞源仍在 `03_outline` 内容文件。sep 版背景改为 blockquote 标注（不再用 HTML 注释，避免被忽略）；术语统一 Loop → Loop Engineering、Graph → Graph Engineering。
 - [x] **PPT V2 已输出**：`05_output/v2/OPC航海指南-harness-v2.pptx`。该版本经用户审阅后确认存在内容关系、叙事与版式问题，不作为后续直接修补的基线。
 - [x] **内容关系校准（v1.3）**：五层是 attention stacking，不是严格运行时层级；Harness 是可靠运行边界，Loop 是跨运行反馈控制，Graph 是多节点编排，Graph 可在部分节点使用 Loop。已回写 story map 与五层解读。
-- [ ] 下一步：完成 v1.3 逐页内容稿审阅后，才按“深海军蓝 + 中性灰；安全页唯一红色；金句深蓝白字”制作 PPT V3。
+- [x] **DSH 叙事重定（v1.4）**：P17–P21 改为「GitHub/插件爆发 → OPC 收益 → DSH 定位 → 只有插件不够 → Harness 最终控制权在手」。"在手"定义为 owner 保有接入、替换、放行、重建的最终决定权，而非全栈自建。
+- [x] **PPT V5 已输出并审阅**：以 V4 为版式基线，重写 P17-P21、微调 P22 收束语；已逐页渲染检查并通过模板保真校验。P17 的 GitHub 数据固定为 2026-08-27 快照，严禁读作质量或成熟度证明。

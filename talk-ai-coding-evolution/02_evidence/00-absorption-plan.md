@@ -1,4 +1,4 @@
-# 内容吸纳清单（v1.1）· 什么吸进 talk、什么舍弃
+# 内容吸纳清单（v1.2）· 什么吸进 talk、什么舍弃
 
 > 依据：三份 rawdata 研读（era 章节 + DSH FAQ + `_digested`，见 `../_reference/README.md`）。映射到 [`../03_outline/00-page-structure-23.md`](../03_outline/00-page-structure-23.md)（23 页现场版）。
 > 每一条标来源。这是"内容填充"前的进货单——先定进什么货，再逐页填。页编号以现场版 P 为准。
@@ -20,6 +20,9 @@
    - "Each fact has one home: the tier whose job it is; elsewhere, link there."（根入口文档）
    - "There is no privileged core to patch: you extend dsh by mounting a plugin beside the others."（architecture）
    - "加模型提供方：在 ctx.llm 上注册 adapter……加面向模型的能力：在 ctx.tools 上注册……都不必改 loop。"（`../_reference/rawdata_dsh-digested/tools-prompt-llm`）
+6. **DSH 爆发不是成熟度证明**：GitHub API 快照（2026-08-27）显示 `deepseek-ai/deepseek-harness` 自 2026-08-13 创建后约 14 天达到 199,846 stars / 22,820 forks；同一生态数据快照有 2,286 条条目。二者证明注意力与扩展面快速聚集；不证明插件质量、可信度或生产成熟度。
+7. **自用 owner 的三层收益**：省手（可换执行底座）、敢放手（成对审批、fail-closed、可重建）、可复用（preset / bundle / patch 跨项目迁移）。生态的意义是有人替你踩过路，不是要 OPC 去经营市场。
+8. **最终控制权的机制定义**：当插件进入模型可见面或真实执行路径，owner 必须能控制接入、替换、放行和重建；插件化本身不等于安全，`installable` 也不等于 `trustworthy`。
 
 ## 二、按幕 / 页映射（进货单）
 
@@ -53,15 +56,15 @@
 |---|---|---|
 | P15 抉择 | 固定 vs 灵活轴（不是"自己做 vs 现成"的二选一）；精装公寓比喻 | 立场（故事线 v1.2，自拟） |
 | P16 现成的好 | 「harness 组件随产品交付（民主化）」：Claude Code 沙箱、Copilot sandboxes、MCP 生态 | 03 章 |
-| P17 现成的卡 | 想改 harness 本身受限；反例 = 2026 CVE（执行时授权）+ loop blast radius | 03/04 章 |
-| P18 本质 | 不是"别用现成"，是"别只能现成"；装自己的 + 借现成的 | 自拟（06 章两线支撑） |
+| P17 DSH 爆发 | GitHub 公开后约 14 天近 20 万 star；生态快照 2,286 条；桥 / 渠 / 窗三类扩展；爆发不等于成熟 | GitHub REST API（2026-08-27 快照）；`rawdata_dsh-plugin-ecosystem-distribution/answer.md` |
+| P18 OPC 收益 | 省手 / 敢放手 / 可复用；生态是可借用的已踩路径 | `rawdata_dsh-plugin-business-ladder/answer.md` |
 
 ### 第四幕 DSH（P19–21）
 | 页 | 吸什么 | 来源 |
 |---|---|---|
-| P19 DSH | "There is no privileged core to patch: extend by mounting a plugin beside the others." | FAQ 01 / architecture |
-| P20 双向灵活 | 装自己的 = 挂模型（ctx.llm adapter）+ 挂工具（ctx.tools）+ 换后端（capability seam）+ 挂插件（mount a plugin beside the others）；借现成的 = vendor / adapter（协议兼容纯配置）。金句：「都不必改 loop」 | `../_reference/rawdata_dsh-digested/tools-prompt-llm`/`capability-seams` + FAQ 03 |
-| P21 哲学 | "Agents follow enforced gates far more reliably than prose conventions." + GraphARC 门禁作行业先例 | FAQ 07 / 05 章 |
+| P19 定位 | DSH 不是商店、不是更强 Loop；是可组合 Harness runtime，插件围绕共同合同与事实记录工作 | `rawdata_dsh-digested/system/00-map.md`；FAQ 01 |
+| P20 只有插件不够 | 固定产品的公开合同决定能改变什么；模型可见能力与真实执行需要合同、门禁、记录；可安装不等于可信 | FAQ 08 / `system` / `session-and-loop` |
+| P21 最终控制权 | 接入 / 替换 / 放行 / 重建；adapter、seam、gate、session log 是机制证明；"enforced gates" 金句 | FAQ 07 / FAQ 08 / `_digested` |
 
 ### 收尾（P22–23）
 | 页 | 吸什么 | 来源 |
@@ -80,6 +83,7 @@
 | 5 | Anthropic 三 Agent 实验 | n=1 示例，非定律 |
 | 6 | Andrew Ng graph playbook | 出处未经证实，避开 |
 | 7 | "挂 MCP" | DSH 不用 MCP；`../_reference/rawdata_dsh-digested/` 里 MCP 仅 2 处顺带（ACP 明确"故意不保证 MCP"）。DSH 挂的是 ctx.llm adapter / ctx.tools / capability seam / plugin。MCP 只在 Context era（P5）作生态事件提 |
+| 8 | DSH GitHub / 插件爆发 | GitHub star 是 2026-08-27 的 API 快照，措辞用“约 14 天、近 20 万 star”，不可暗示持续曲线；2,286 是单一生态数据快照，不能与 5,886 / 11,424 等目录站口径混用；两者均不作质量或安全证明 |
 
 ## 四、待验证（下一步）
 

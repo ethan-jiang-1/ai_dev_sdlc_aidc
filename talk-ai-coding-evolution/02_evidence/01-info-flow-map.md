@@ -24,11 +24,11 @@
 | P14 CVE | authorize at execution | 02-act2 P14；§二 P14 | 03 §二 |
 | P15 抉择 | 固定 vs 灵活轴；精装公寓比喻 | 03-act3 P15；§二 P15 | 故事线 v1.2 立场（自拟） |
 | P16 固定的好 | 民主化；84%；simplest viable system | 03-act3 P16；§二 P16 | 03 §二/§五；04（Osmani） |
-| P17 固定的卡 | 挂模型/工具/换后端/skill/knowledge map 受限；等厂商；context rot | 03-act3 P17；§二 P17 | 03 §二；02（rot）；`../_reference/rawdata_dsh-digested`（机制对照） |
-| P18 本质 | 别只能现成；装自己的 + 借现成的 | 03-act3 P18；§二 P18 | 立场（v1.2）；两线证据 §二 P16/17 |
-| P19 DSH | 无特权内核金句 | 04-act4 P19；§二 P19 | FAQ 01（architecture） |
-| P20 双向灵活 | 挂模型/工具/换后端/skill/knowledge map；都不必改 loop；15 行 YAML | 04-act4 P20；§二 P20 | `../_reference/rawdata_dsh-digested` tools-prompt-llm / capability-seams；FAQ 03/04 |
-| P21 哲学 | enforced gates；GraphARC 同套 | 04-act4 P21；§二 P21 | FAQ 07；05（GraphARC） |
+| P17 DSH 爆发 | GitHub 近 20 万 star（14 天快照）；2,286 条生态快照；爆发不等于成熟 | 03-act3 P17；§二 P17 | GitHub REST API（2026-08-27）；`rawdata_dsh-plugin-ecosystem-distribution` |
+| P18 OPC 收益 | 省手 / 敢放手 / 可复用；生态是可借用的已踩路径 | 03-act3 P18；§二 P18 | `rawdata_dsh-plugin-business-ladder/answer.md` |
+| P19 DSH 定位 | 可组合 Harness runtime，而非商店或更强 Loop | 04-act4 P19；§二 P19 | `_digested/system`；FAQ 01 |
+| P20 只有插件不够 | 产品公开合同；能力进入真实执行时的合同、门禁、记录 | 04-act4 P20；§二 P20 | FAQ 08；`_digested/session-and-loop` |
+| P21 最终控制权 | 接入 / 替换 / 放行 / 重建；enforced gates | 04-act4 P21；§二 P21 | FAQ 07 / 08；`_digested` |
 | P22 回答+slogan | 角色表回扣；装自己的借现成的 | 04-act4 P22；§一.1 | 06 角色表；slogan（用户定方向） |
 | P23 收尾 | 谢谢 + slogan | 04-act4 P23 | 结构（自拟） |
 
@@ -42,12 +42,14 @@
 | `../_reference/rawdata_ai-coding-evolution-final/final_v4/04-2026-loop-era.md` | P2, P7, P13, P16 |
 | `../_reference/rawdata_ai-coding-evolution-final/final_v4/05-2026-graph-era.md` | P7, P13, P21 |
 | `../_reference/rawdata_ai-coding-evolution-final/final_v4/06-five-layer-forward.md` | P2, P8, P9, P13, P22 |
+| `../_reference/rawdata_dsh-plugin-ecosystem-distribution` | P17 |
+| `../_reference/rawdata_dsh-plugin-business-ladder` | P18 |
+| `../_reference/rawdata_dsh-plugin-seam-maturity` | P20, P21 |
 | `../_reference/rawdata_dsh-faq-on-digested/01_repository-organization` | P19 |
-| `../_reference/rawdata_dsh-faq-on-digested/03_model-vendors` | P20 |
-| `../_reference/rawdata_dsh-faq-on-digested/04_root-entry-doc-design` | P20 |
-| `../_reference/rawdata_dsh-faq-on-digested/07_borrowing-harness-idea` | P21（哲学）+ P18（本质立场佐证） |
-| `../_reference/rawdata_dsh-digested/tools-prompt-llm` | P20 |
-| `../_reference/rawdata_dsh-digested/capability-seams` | P20 |
+| `../_reference/rawdata_dsh-faq-on-digested/07_borrowing-harness-idea` | P18（收益）+ P21（门禁） |
+| `../_reference/rawdata_dsh-digested/system` | P19 |
+| `../_reference/rawdata_dsh-digested/tools-prompt-llm` | P21 |
+| `../_reference/rawdata_dsh-digested/capability-seams` | P21 |
 | `../_reference/rawdata_dsh-digested/surfaces` | P17/P20 口径（MCP 结论） |
 | 用户输入 | P1（题目）、P22（slogan 方向）、P18（立场软化） |
 
