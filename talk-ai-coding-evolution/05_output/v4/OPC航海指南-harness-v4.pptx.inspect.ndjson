@@ -1,4 +1,4 @@
-{"kind":"deck","id":"pr/xcjkri","name":"Deck"}
+{"kind":"deck","id":"pr/2anlvn","name":"Deck"}
 {"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"","type":"master","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"},{"name":"body","type":"body","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
 {"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"标题幻灯片","type":"title","placeholders":[{"name":"title","type":"title","textPreview":"单击此处添加标题"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"},{"name":"subtitle","type":"subtitle","textPreview":"单击此处添加副标题"}]}
 {"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"标题和内容","type":"obj","placeholders":[{"name":"title","type":"title","textPreview":"单击此处编辑母版标题样式"},{"name":"2","textPreview":"单击此处编辑母版文本样式 | 第二级 | 第三级 | 第四级 | 第五级"},{"name":"dateTime","type":"dateTime"},{"name":"footer","type":"footer"},{"name":"slideNumber","type":"slideNumber"}]}
@@ -38,11 +38,11 @@
 {"kind":"textbox","id":"sh/s72xofmh","slide":2,"name":"Rounded Rectangle 20","text":"如何编排？","textPreview":"如何编排？","textChars":5,"textLines":1,"bbox":[949,325,138,28]}
 {"kind":"shape","id":"sh/76twva5c","slide":2,"name":"Rounded Rectangle 21","bbox":[74,382,1132,82]}
 {"kind":"textbox","id":"sh/gbmxszmt","slide":2,"name":"Rounded Rectangle 24","text":"模型越强，人的动作越从亲手做，变成设计它怎样做","textPreview":"模型越强，人的动作越从亲手做，变成设计它怎样做","textChars":23,"textLines":1,"bbox":[74,500,1132,44]}
-{"kind":"textbox","id":"sh/mlgvq147","slide":2,"name":"anchor-quote-1","text":"说清任务","textPreview":"说清任务","textChars":4,"textLines":1,"bbox":[105,392,325,30]}
+{"kind":"textbox","id":"sh/mlgvq147","slide":2,"name":"anchor-quote-1","text":"说清任务  →  让动作可靠  →  把工作组织起来","textPreview":"说清任务  →  让动作可靠  →  把工作组织起来","textChars":26,"textLines":1,"bbox":[98,403,1065,38]}
 {"kind":"textbox","id":"sh/nmpcj6ls","slide":2,"name":"anchor-source-1","text":"Birgitta Böckeler","textPreview":"Birgitta Böckeler","textChars":17,"textLines":1,"bbox":[105,430,325,18]}
-{"kind":"textbox","id":"sh/onydsbmd","slide":2,"name":"anchor-quote-2","text":"让动作可靠","textPreview":"让动作可靠","textChars":5,"textLines":1,"bbox":[445,392,325,30]}
+{"kind":"textbox","id":"sh/onydsbmd","slide":2,"name":"anchor-quote-2","text":"My job is to write loops","textPreview":"My job is to write loops","textChars":24,"textLines":1,"bbox":[445,392,325,30]}
 {"kind":"textbox","id":"sh/9o7ulg3y","slide":2,"name":"anchor-source-2","text":"Boris Cherny","textPreview":"Boris Cherny","textChars":12,"textLines":1,"bbox":[445,430,325,18]}
-{"kind":"textbox","id":"sh/a9gvulkj","slide":2,"name":"anchor-quote-3","text":"把工作组织起来","textPreview":"把工作组织起来","textChars":7,"textLines":1,"bbox":[785,392,325,30]}
+{"kind":"textbox","id":"sh/a9gvulkj","slide":2,"name":"anchor-quote-3","text":"Build agents as state graphs","textPreview":"Build agents as state graphs","textChars":28,"textLines":1,"bbox":[785,392,325,30]}
 {"kind":"textbox","id":"sh/ba9cn6l4","slide":2,"name":"anchor-source-3","text":"Peter Steinberger","textPreview":"Peter Steinberger","textChars":17,"textLines":1,"bbox":[785,430,325,18]}
 {"kind":"image","id":"im/jqp0ne54","slide":2,"name":"图片 6","bbox":[710,34,202.58,35.84]}
 {"kind":"image","id":"im/ipgze94z","slide":2,"name":"图片 13","bbox":[590,27,83.07,55.39]}
@@ -75,7 +75,7 @@
 {"kind":"textbox","id":"sh/3ihk3et8","slide":4,"name":"Rounded Rectangle 7","text":"50%\n可靠性任务长度\n约每 7 个月翻倍","textPreview":"50% | 可靠性任务长度 | 约每 7 个月翻倍","textChars":21,"textLines":3,"bbox":[82,240,255,170]}
 {"kind":"textbox","id":"sh/ih8ju9sn","slide":4,"name":"Rounded Rectangle 8","text":"METR · 独立评估","textPreview":"METR · 独立评估","textChars":11,"textLines":1,"bbox":[92,420,235,22]}
 {"kind":"textbox","id":"sh/kbm987y5","slide":4,"name":"Rounded Rectangle 9","text":"模型能力\n更强","textPreview":"模型能力 | 更强","textChars":7,"textLines":2,"bbox":[410,280,185,75]}
-{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"Rounded Rectangle 11","text":"反复雕一句 prompt\n边际收益更低","textPreview":"反复雕一句 prompt | 边际收益更低","textChars":19,"textLines":2,"bbox":[645,280,185,75]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"Rounded Rectangle 11","text":"单次措辞优化\n收益递减","textPreview":"单次措辞优化 | 收益递减","textChars":11,"textLines":2,"bbox":[645,280,185,75]}
 {"kind":"textbox","id":"sh/w72947yt","slide":4,"name":"Rounded Rectangle 13","text":"工程杠杆\n向上移","textPreview":"工程杠杆 | 向上移","textChars":8,"textLines":2,"bbox":[880,280,185,75]}
 {"kind":"textbox","id":"sh/x8vaxsfe","slide":4,"name":"Rounded Rectangle 14","text":"写清一次任务  →  设计一次行动  →  设计一套系统怎样工作","textPreview":"写清一次任务  →  设计一次行动  →  设计一套系统怎样工作","textChars":32,"textLines":1,"bbox":[410,390,700,45]}
 {"kind":"shape","id":"sh/a5kr2xg3","slide":4,"name":"Rounded Rectangle 15","bbox":[74,475,1132,82]}
@@ -229,19 +229,19 @@
 {"kind":"image","id":"im/21cnihkf","slide":11,"name":"图片 11","bbox":[350,14,123.01,71.77]}
 {"kind":"image","id":"im/pon6tw36","slide":11,"name":"图片 12","bbox":[490,14,88.01,124.55]}
 {"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"[Sources]\nAll claims and quotations are supplied in talk-ai-coding-evolution/04_drafts/ppt-text-v1.md.\n\nCore harness mechanism: retain full Guides/Sensors and deterministic/probabilistic distinction."}
-{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"Harness 不是组件清单，而是一条让错误停下来的交付链","textShapes":6}
-{"kind":"textbox","id":"sh/q903ad4n","slide":12,"name":"Rounded Rectangle 4","text":"Harness 不是组件清单，而是一条让错误停下来的交付链","textPreview":"Harness 不是组件清单，而是一条让错误停下来的交付链","textChars":29,"textLines":1,"bbox":[72,108,1136,48]}
-{"kind":"textbox","id":"sh/dcbm583y","slide":12,"name":"Rounded Rectangle 5","text":"圈住、拦住、看清：先限制伤害，再阻断错误，最后留下可追溯证据","textPreview":"圈住、拦住、看清：先限制伤害，再阻断错误，最后留下可追溯证据","textChars":30,"textLines":1,"bbox":[74,160,1100,28]}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"Harness 不只让错误停下，也让模型进入专业领域","textShapes":6}
+{"kind":"textbox","id":"sh/q903ad4n","slide":12,"name":"Rounded Rectangle 4","text":"Harness 不只让错误停下，也让模型进入专业领域","textPreview":"Harness 不只让错误停下，也让模型进入专业领域","textChars":26,"textLines":1,"bbox":[72,108,1136,48]}
+{"kind":"textbox","id":"sh/dcbm583y","slide":12,"name":"Rounded Rectangle 5","text":"圈住伤害，拦住错误，看清过程，再借 Knowledge Map 明白专业领域","textPreview":"圈住伤害，拦住错误，看清过程，再借 Knowledge Map 明白专业领域","textChars":38,"textLines":1,"bbox":[74,160,1100,28]}
 {"kind":"shape","id":"sh/sb2lcnmd","slide":12,"name":"Rounded Rectangle 6","bbox":[74,198,68,3]}
-{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"name":"Rounded Rectangle 7","text":"圈住\n\n沙箱 + 权限\n限制文件、网络和命令范围","textPreview":"圈住 |  | 沙箱 + 权限 | 限制文件、网络和命令范围","textChars":24,"textLines":4,"bbox":[85,245,330,220]}
-{"kind":"textbox","id":"sh/a543mx4r","slide":12,"name":"Rounded Rectangle 8","text":"拦住\n\n验证门禁\n错误一出现就停止","textPreview":"拦住 |  | 验证门禁 | 错误一出现就停止","textChars":17,"textLines":4,"bbox":[465,245,330,220]}
-{"kind":"textbox","id":"sh/wvupgz6t","slide":12,"name":"Rounded Rectangle 9","text":"看清\n\n可观测性 + 来源记录\n执行记录留下每一步","textPreview":"看清 |  | 可观测性 + 来源记录 | 执行记录留下每一步","textChars":25,"textLines":4,"bbox":[845,245,330,220]}
-{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"name":"Rounded Rectangle 10","text":"模型给能力；Harness 让能力不至于失控","textPreview":"模型给能力；Harness 让能力不至于失控","textChars":22,"textLines":1,"bbox":[74,540,1132,44]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"name":"Rounded Rectangle 7","text":"圈住\n\n沙箱 + 权限\n限制能碰的范围","textPreview":"圈住 |  | 沙箱 + 权限 | 限制能碰的范围","textChars":19,"textLines":4,"bbox":[74,240,265,235]}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"name":"Rounded Rectangle 8","text":"拦住\n\n验证门禁\n错误一出现就停止","textPreview":"拦住 |  | 验证门禁 | 错误一出现就停止","textChars":17,"textLines":4,"bbox":[363,240,265,235]}
+{"kind":"textbox","id":"sh/wvupgz6t","slide":12,"name":"Rounded Rectangle 9","text":"看清\n\nTrace + 来源记录\n还原每一步","textPreview":"看清 |  | Trace + 来源记录 | 还原每一步","textChars":22,"textLines":4,"bbox":[652,240,265,235]}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"name":"Rounded Rectangle 10","text":"明白\n\nKnowledge Map\n探索专业内容\n找到归属与正确路径","textPreview":"明白 |  | Knowledge Map | 探索专业内容 | 找到归属与正确路径","textChars":34,"textLines":5,"bbox":[941,240,265,235]}
 {"kind":"image","id":"im/dsv6903i","slide":12,"name":"图片 6","bbox":[710,34,202.58,35.84]}
 {"kind":"image","id":"im/srmp0vmd","slide":12,"name":"图片 13","bbox":[590,27,83.07,55.39]}
 {"kind":"image","id":"im/fudovqlo","slide":12,"name":"图片 11","bbox":[350,14,123.01,71.77]}
 {"kind":"image","id":"im/et472543","slide":12,"name":"图片 12","bbox":[490,14,88.01,124.55]}
-{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"[Sources]\nAll claims and quotations are supplied in talk-ai-coding-evolution/04_drafts/ppt-text-v1.md.\n\nMemory frame: three verbs in this precise order."}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"[Sources]\nStoryline basis: talk-ai-coding-evolution/01_storyline/00-storyline-map.md.\nKnowledge Map basis: talk-ai-coding-evolution/_reference/rawdata_dsh-faq-on-digested/07_borrowing-harness-idea/answer.md.\n\nThe fourth verb extends reliability into professional understanding: make the domain map, ownership, and correct paths explicit instead of burying them in one large prompt."}
 {"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"没有可靠 Harness，Loop 与 Graph 只会放大失败","textShapes":8}
 {"kind":"textbox","id":"sh/p4r6p8by","slide":13,"name":"Rounded Rectangle 4","text":"没有可靠 Harness，Loop 与 Graph 只会放大失败","textPreview":"没有可靠 Harness，Loop 与 Graph 只会放大失败","textChars":32,"textLines":1,"bbox":[72,108,1136,48]}
 {"kind":"textbox","id":"sh/21gnuts7","slide":13,"name":"Rounded Rectangle 5","text":"上层系统能扩大产能，却不能替下层补上授权、验证和记录","textPreview":"上层系统能扩大产能，却不能替下层补上授权、验证和记录","textChars":26,"textLines":1,"bbox":[74,160,1100,28]}
@@ -258,45 +258,45 @@
 {"kind":"image","id":"im/9czix0b6","slide":13,"name":"图片 11","bbox":[350,14,123.01,71.77]}
 {"kind":"image","id":"im/y5ozilcj","slide":13,"name":"图片 12","bbox":[490,14,88.01,124.55]}
 {"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"[Sources]\nAll claims and quotations are supplied in talk-ai-coding-evolution/04_drafts/ppt-text-v1.md.\n\nExplain dependency without reverting to a geometric hierarchy."}
-{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"安全事故证明：模型生成了一次调用，不等于系统已经授权","textShapes":13}
-{"kind":"textbox","id":"sh/t4zixoj6","slide":14,"name":"slide-title","text":"安全事故证明：模型生成了一次调用，不等于系统已经授权","textPreview":"安全事故证明：模型生成了一次调用，不等于系统已经授权","textChars":26,"textLines":1,"bbox":[72,108,1136,48]}
-{"kind":"textbox","id":"sh/s3q1oj2l","slide":14,"name":"slide-subtitle","text":"Harness 的独立执行门禁，必须在真正动作发生前再次判断","textPreview":"Harness 的独立执行门禁，必须在真正动作发生前再次判断","textChars":30,"textLines":1,"bbox":[74,160,1100,28]}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"真实事故：伪造工具调用，无需模型也能触发真实动作","textShapes":13}
+{"kind":"textbox","id":"sh/t4zixoj6","slide":14,"name":"slide-title","text":"真实事故：伪造工具调用，无需模型也能触发真实动作","textPreview":"真实事故：伪造工具调用，无需模型也能触发真实动作","textChars":24,"textLines":1,"bbox":[72,108,1136,48]}
+{"kind":"textbox","id":"sh/s3q1oj2l","slide":14,"name":"slide-subtitle","text":"Amazon Bedrock AgentCore InvokeHarness · CVE-2026-18830","textPreview":"Amazon Bedrock AgentCore InvokeHarness · CVE-2026-18830","textChars":55,"textLines":1,"bbox":[74,160,1100,28]}
 {"kind":"shape","id":"sh/r2h0vy10","slide":14,"name":"section-rule","bbox":[74,198,68,3]}
-{"kind":"textbox","id":"sh/61ojmtkv","slide":14,"name":"risk-step-1","text":"伪造出一条\n“像真的”工具调用","textPreview":"伪造出一条 | “像真的”工具调用","textChars":15,"textLines":2,"bbox":[80,270,300,118]}
+{"kind":"textbox","id":"sh/61ojmtkv","slide":14,"name":"risk-step-1","text":"请求末尾塞入\n伪造的 tool-use 块","textPreview":"请求末尾塞入 | 伪造的 tool-use 块","textChars":21,"textLines":2,"bbox":[80,270,300,118]}
 {"kind":"textbox","id":"sh/50fitoja","slide":14,"name":"risk-number-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[92,246,46,40]}
-{"kind":"textbox","id":"sh/kz61kj2p","slide":14,"name":"risk-step-2","text":"执行端没有\n独立检查","textPreview":"执行端没有 | 独立检查","textChars":10,"textLines":2,"bbox":[450,270,300,118]}
+{"kind":"textbox","id":"sh/kz61kj2p","slide":14,"name":"risk-step-2","text":"事件循环信任形状\n跳过模型回合","textPreview":"事件循环信任形状 | 跳过模型回合","textChars":15,"textLines":2,"bbox":[450,270,300,118]}
 {"kind":"textbox","id":"sh/jex0re14","slide":14,"name":"risk-number-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[462,246,46,40]}
-{"kind":"textbox","id":"sh/idoji9kj","slide":14,"name":"risk-step-3","text":"工具照样运行\n真实动作发生","textPreview":"工具照样运行 | 真实动作发生","textChars":13,"textLines":2,"bbox":[820,270,300,118]}
+{"kind":"textbox","id":"sh/idoji9kj","slide":14,"name":"risk-step-3","text":"指定工具被直接执行\n真实动作发生","textPreview":"指定工具被直接执行 | 真实动作发生","textChars":16,"textLines":2,"bbox":[820,270,300,118]}
 {"kind":"textbox","id":"sh/xcfip4jy","slide":14,"name":"risk-number-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[832,246,46,40]}
 {"kind":"shape","id":"sh/6507yd03","slide":14,"name":"Straight Arrow Connector 146","bbox":[380,329,70,0]}
 {"kind":"shape","id":"sh/7698riho","slide":14,"name":"Straight Arrow Connector 147","bbox":[750,329,70,0]}
-{"kind":"textbox","id":"sh/n6to3qdk","slide":14,"name":"execution-gate-label","text":"正确做法","textPreview":"正确做法","textChars":4,"textLines":1,"bbox":[80,418,145,46]}
-{"kind":"textbox","id":"sh/o72pcve5","slide":14,"name":"execution-gate","text":"真正执行前再次检查：身份 · 权限 · 参数 · 目标","textPreview":"真正执行前再次检查：身份 · 权限 · 参数 · 目标","textChars":27,"textLines":1,"bbox":[225,418,945,46]}
+{"kind":"textbox","id":"sh/n6to3qdk","slide":14,"name":"execution-gate-label","text":"修复","textPreview":"修复","textChars":2,"textLines":1,"bbox":[80,418,145,46]}
+{"kind":"textbox","id":"sh/o72pcve5","slide":14,"name":"execution-gate","text":"执行端拒绝伪造的 tool-use 块；工具运行前独立授权","textPreview":"执行端拒绝伪造的 tool-use 块；工具运行前独立授权","textChars":29,"textLines":1,"bbox":[225,418,945,46]}
 {"kind":"shape","id":"sh/98b65gvq","slide":14,"name":"quote-background","bbox":[74,500,1132,82]}
 {"kind":"textbox","id":"sh/e10761w3","slide":14,"name":"quote","text":"“authorize at execution, not at generation”","textPreview":"“authorize at execution, not at generation”","textChars":43,"textLines":1,"bbox":[98,510,1065,34]}
 {"kind":"textbox","id":"sh/z29oz6do","slide":14,"name":"quote-source","text":"在执行点授权，而不是在生成时假定已经授权","textPreview":"在执行点授权，而不是在生成时假定已经授权","textChars":20,"textLines":1,"bbox":[98,548,1065,18]}
-{"kind":"textbox","id":"sh/03ip8be9","slide":14,"name":"security-close","text":"不要把“模型看起来听话”当作“系统已经授权”","textPreview":"不要把“模型看起来听话”当作“系统已经授权”","textChars":22,"textLines":1,"bbox":[74,600,1132,36]}
+{"kind":"textbox","id":"sh/03ip8be9","slide":14,"name":"security-close","text":"事故根因：执行时授权缺失，不是 prompt injection","textPreview":"事故根因：执行时授权缺失，不是 prompt injection","textChars":32,"textLines":1,"bbox":[74,600,1132,36]}
 {"kind":"image","id":"im/5oz29czm","slide":14,"name":"图片 6","bbox":[710,34,202.58,35.84]}
 {"kind":"image","id":"im/4nqlg7y1","slide":14,"name":"图片 13","bbox":[590,27,83.07,55.39]}
 {"kind":"image","id":"im/utojqtwz","slide":14,"name":"图片 11","bbox":[350,14,123.01,71.77]}
 {"kind":"image","id":"im/vux0jyxk","slide":14,"name":"图片 12","bbox":[490,14,88.01,124.55]}
-{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"[Sources]\nAll claims and quotations are supplied in talk-ai-coding-evolution/04_drafts/ppt-text-v1.md.\n\nTell the execution-authorization causal chain, not a CVE list."}
-{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"回到 OPC：不是要不要自建，而是你是否需要改变这条边界","textShapes":8}
-{"kind":"textbox","id":"sh/65gnqlk7","slide":15,"name":"Rounded Rectangle 4","text":"回到 OPC：不是要不要自建，而是你是否需要改变这条边界","textPreview":"回到 OPC：不是要不要自建，而是你是否需要改变这条边界","textChars":28,"textLines":1,"bbox":[72,108,1136,48]}
-{"kind":"textbox","id":"sh/t87ml0ji","slide":15,"name":"Rounded Rectangle 5","text":"先问业务是否越过产品公开的接入口，再决定继续借，还是获得改变能力","textPreview":"先问业务是否越过产品公开的接入口，再决定继续借，还是获得改变能力","textChars":32,"textLines":1,"bbox":[74,160,1100,28]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"[Sources]\nThe Hacker News, 'AWS, Google, and Vercel Agent Flaws Let Attackers Trigger Tools Without Running the Model,' 2026-08-06.\nhttps://thehackernews.com/2026/08/aws-google-and-vercel-patch-agent-flaws.html\nLocal evidence summary: talk-ai-coding-evolution/_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md.\n\nConcrete example: an authenticated caller could place a tool-use content block at the end of an Amazon Bedrock AgentCore InvokeHarness request. The event loop could dispatch that tool without a model turn. The managed service fix rejects caller-supplied tool-use blocks before dispatch."}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"回到 OPC：你是否已经被工具切换和知识分散拖慢？","textShapes":8}
+{"kind":"textbox","id":"sh/65gnqlk7","slide":15,"name":"Rounded Rectangle 4","text":"回到 OPC：你是否已经被工具切换和知识分散拖慢？","textPreview":"回到 OPC：你是否已经被工具切换和知识分散拖慢？","textChars":25,"textLines":1,"bbox":[72,108,1136,48]}
+{"kind":"textbox","id":"sh/t87ml0ji","slide":15,"name":"Rounded Rectangle 5","text":"工具越多、切换越频繁，知识与实践越散，协作成本就越像经营问题","textPreview":"工具越多、切换越频繁，知识与实践越散，协作成本就越像经营问题","textChars":30,"textLines":1,"bbox":[74,160,1100,28]}
 {"kind":"shape","id":"sh/s7y5sv2x","slide":15,"name":"Rounded Rectangle 6","bbox":[74,198,68,3]}
-{"kind":"textbox","id":"sh/na5476l8","slide":15,"name":"Rounded Rectangle 7","text":"我是否需要改变模型、工具、执行世界、门禁或项目知识组织？","textPreview":"我是否需要改变模型、工具、执行世界、门禁或项目知识组织？","textChars":28,"textLines":1,"bbox":[155,242,970,42]}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"name":"Rounded Rectangle 7","text":"工具多   ·   老切换   ·   知识散   ·   实践散","textPreview":"工具多   ·   老切换   ·   知识散   ·   实践散","textChars":33,"textLines":1,"bbox":[155,238,970,64]}
 {"kind":"shape","id":"sh/m9c3e1kn","slide":15,"name":"Straight Connector 8","bbox":[190,360,900,1]}
-{"kind":"textbox","id":"sh/wrm9kvep","slide":15,"name":"Rounded Rectangle 9","text":"不需要","textPreview":"不需要","textChars":3,"textLines":1,"bbox":[210,392,300,30]}
-{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"name":"Rounded Rectangle 10","text":"需要","textPreview":"需要","textChars":2,"textLines":1,"bbox":[770,392,300,30]}
-{"kind":"textbox","id":"sh/upkrilwj","slide":15,"name":"Rounded Rectangle 11","text":"借现成 Harness\n把注意力留给业务","textPreview":"借现成 Harness | 把注意力留给业务","textChars":20,"textLines":2,"bbox":[190,440,300,68]}
-{"kind":"textbox","id":"sh/vqdsrqx4","slide":15,"name":"Rounded Rectangle 12","text":"拥有改变边界的能力\n再谈灵活 Harness","textPreview":"拥有改变边界的能力 | 再谈灵活 Harness","textChars":22,"textLines":2,"bbox":[790,440,300,68]}
-{"kind":"textbox","id":"sh/4vm9ovel","slide":15,"name":"Rounded Rectangle 13","text":"这不是工具偏好，而是业务差异化是否进入真实执行路径","textPreview":"这不是工具偏好，而是业务差异化是否进入真实执行路径","textChars":25,"textLines":1,"bbox":[74,565,1132,44]}
+{"kind":"textbox","id":"sh/wrm9kvep","slide":15,"name":"Rounded Rectangle 9","text":"还没有","textPreview":"还没有","textChars":3,"textLines":1,"bbox":[210,392,300,30]}
+{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"name":"Rounded Rectangle 10","text":"已经有","textPreview":"已经有","textChars":3,"textLines":1,"bbox":[770,392,300,30]}
+{"kind":"textbox","id":"sh/upkrilwj","slide":15,"name":"Rounded Rectangle 11","text":"继续借现成 Harness\n把注意力留给业务","textPreview":"继续借现成 Harness | 把注意力留给业务","textChars":22,"textLines":2,"bbox":[190,440,300,68]}
+{"kind":"textbox","id":"sh/vqdsrqx4","slide":15,"name":"Rounded Rectangle 12","text":"需要统一入口与边界\n再谈灵活 Harness","textPreview":"需要统一入口与边界 | 再谈灵活 Harness","textChars":22,"textLines":2,"bbox":[790,440,300,68]}
+{"kind":"textbox","id":"sh/4vm9ovel","slide":15,"name":"Rounded Rectangle 13","text":"真正的判断：这些摩擦是否已经进入每天的真实交付路径","textPreview":"真正的判断：这些摩擦是否已经进入每天的真实交付路径","textChars":25,"textLines":1,"bbox":[74,565,1132,44]}
 {"kind":"image","id":"im/ids3ids7","slide":15,"name":"图片 6","bbox":[710,34,202.58,35.84]}
 {"kind":"image","id":"im/503mdsry","slide":15,"name":"图片 13","bbox":[590,27,83.07,55.39]}
 {"kind":"image","id":"im/4fulknqd","slide":15,"name":"图片 11","bbox":[350,14,123.01,71.77]}
 {"kind":"image","id":"im/zihkze9o","slide":15,"name":"图片 12","bbox":[490,14,88.01,124.55]}
-{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"[Sources]\nAll claims and quotations are supplied in talk-ai-coding-evolution/04_drafts/ppt-text-v1.md.\n\nMake the decision criterion concrete."}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"[Sources]\nNarrative and OPC decision criterion are supplied by the user feedback and talk-ai-coding-evolution/01_storyline/00-storyline-map.md.\n\nAsk for recognition before presenting the decision: tool sprawl, repeated switching, and scattered knowledge/practice are the pain that can make a shared Harness boundary economically relevant."}
 {"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"Codex、Claude Code 已经很强：大多数 OPC 应直接借用","textShapes":7}
 {"kind":"textbox","id":"sh/zutgvm94","slide":16,"name":"Rounded Rectangle 4","text":"Codex、Claude Code 已经很强：大多数 OPC 应直接借用","textPreview":"Codex、Claude Code 已经很强：大多数 OPC 应直接借用","textChars":36,"textLines":1,"bbox":[72,108,1136,48]}
 {"kind":"textbox","id":"sh/kv2h4rqp","slide":16,"name":"Rounded Rectangle 5","text":"成熟 Harness 已把模型变成能工作的产品，而不只是一个会生成代码的模型","textPreview":"成熟 Harness 已把模型变成能工作的产品，而不只是一个会生成代码的模型","textChars":38,"textLines":1,"bbox":[74,160,1100,28]}
@@ -424,7 +424,7 @@
 {"kind":"textbox","id":"sh/ax4jy9c3","slide":22,"name":"slide-title","text":"OPC 要掌握到哪一步？先借现成，直到业务要求你改变边界","textPreview":"OPC 要掌握到哪一步？先借现成，直到业务要求你改变边界","textChars":28,"textLines":1,"bbox":[72,108,1136,48]}
 {"kind":"textbox","id":"sh/byxkreto","slide":22,"name":"slide-subtitle","text":"五个 Engineering 让动作不断上移；Harness 决定动作能否可靠落地","textPreview":"五个 Engineering 让动作不断上移；Harness 决定动作能否可靠落地","textChars":41,"textLines":1,"bbox":[74,160,1100,28]}
 {"kind":"shape","id":"sh/ds36xcv6","slide":22,"name":"section-rule","bbox":[74,198,68,3]}
-{"kind":"textbox","id":"sh/sru54rel","slide":22,"name":"dsh-definition","text":"DSH（DeepSeek Harness）= 把模型、工具、执行后端和门禁做成可替换组合的 Harness","textPreview":"DSH（DeepSeek Harness）= 把模型、工具、执行后端和门禁做成可替换组合的 Harness","textChars":53,"textLines":1,"bbox":[100,225,1080,62]}
+{"kind":"textbox","id":"sh/sru54rel","slide":22,"name":"dsh-definition","text":"DSH = 可替换组合的 Harness","textPreview":"DSH = 可替换组合的 Harness","textChars":20,"textLines":1,"bbox":[100,225,1080,62]}
 {"kind":"shape","id":"sh/rqlovmdg","slide":22,"name":"takeaway-1","bbox":[75,330,360,135]}
 {"kind":"textbox","id":"sh/qpcn2hwv","slide":22,"name":"takeaway-number-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[91,345,44,44]}
 {"kind":"textbox","id":"sh/1gn61wvi","slide":22,"name":"takeaway-heading-1","text":"先借现成","textPreview":"先借现成","textChars":4,"textLines":1,"bbox":[147,340,270,42]}
@@ -438,7 +438,7 @@
 {"kind":"textbox","id":"sh/6dwfqh8v","slide":22,"name":"takeaway-heading-3","text":"必要时改变","textPreview":"必要时改变","textChars":5,"textLines":1,"bbox":[917,340,270,42]}
 {"kind":"textbox","id":"sh/7e5wzm90","slide":22,"name":"takeaway-body-3","text":"差异化进入执行链时，替换对应能力","textPreview":"差异化进入执行链时，替换对应能力","textChars":16,"textLines":1,"bbox":[917,386,270,60]}
 {"kind":"shape","id":"sh/gjyxwbqx","slide":22,"name":"quote-background","bbox":[74,510,1132,82]}
-{"kind":"textbox","id":"sh/hk7e5g7i","slide":22,"name":"quote","text":"“装自己的，借现成的”","textPreview":"“装自己的，借现成的”","textChars":11,"textLines":1,"bbox":[98,520,1065,34]}
+{"kind":"textbox","id":"sh/hk7e5g7i","slide":22,"name":"quote","text":"“装自己的，借现成的”","textPreview":"“装自己的，借现成的”","textChars":11,"textLines":1,"bbox":[98,526,1065,44]}
 {"kind":"textbox","id":"sh/uhgfu18r","slide":22,"name":"quote-source","text":"一人公司的 Harness 原则","textPreview":"一人公司的 Harness 原则","textChars":16,"textLines":1,"bbox":[98,558,1065,18]}
 {"kind":"image","id":"im/cvah0jet","slide":22,"name":"图片 6","bbox":[710,34,202.58,35.84]}
 {"kind":"image","id":"im/zy10byd4","slide":22,"name":"图片 13","bbox":[590,27,83.07,55.39]}
