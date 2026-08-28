@@ -1,4 +1,4 @@
-# 核心论点与立场（v1.5 摘要）
+# 核心论点与立场（v1.6 摘要）
 
 > 详细论证与证据分布见 [`00-storyline-map.md`](./00-storyline-map.md)（各幕要点）与 `../02_evidence/00-absorption-plan.md`（故事线资产 §一）。
 

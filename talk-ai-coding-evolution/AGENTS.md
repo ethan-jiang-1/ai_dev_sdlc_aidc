@@ -34,9 +34,9 @@
 
 ## 当前状态指针
 
-- 故事线总图（v1.5）：`01_storyline/00-storyline-map.md`
+- 故事线总图（v1.6）：`01_storyline/00-storyline-map.md`
 - 现场版页面结构（23 页 / 45 min）：`03_outline/00-page-structure-23.md`
 - 素材与口径：`02_evidence/00-absorption-plan.md`；脉络：`02_evidence/01-info-flow-map.md`
-- 当前生产事实稿：`04_drafts/ppt-text-v6.md` / `ppt-text-v6-sep.md`
-- 当前交付：`05_output/v6/OPC航海指南-harness-v6.pptx`
+- 当前生产事实稿：`04_drafts/ppt-text-v7.md` / `ppt-text-v7-sep.md`
+- 当前交付：`05_output/v7/OPC航海指南-harness-v7.pptx`
 - 已决与待办：`01_storyline/04-open-questions.md`

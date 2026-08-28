@@ -1,4 +1,4 @@
-# 第二幕：为什么答案停在 Harness（v1.5）
+# 第二幕：为什么答案停在 Harness（v1.6）
 
 > 这一幕不是宣称 Harness “最高”，而是证明：每一次真实动作都必须先有可靠运行边界。六页各自承担一次推理，不能重复喊口号。
 
@@ -8,15 +8,15 @@
 
 **讲点**：P8 已说明 Loop 与 Graph 都建立在可执行节点之上。这里给出本 talk 的判断：Harness 是最值得 OPC 掌握的临界层，因为每个行动都绕不过它。报告将 Context 与 Harness并列成熟主体，“Harness 最关键”是本 talk 的推断，不是假借报告结论。
 
-## P10 模型买来的是能力，交付可靠性来自 Model + Harness（1.5 min）
+## P10 模型决定能力上限，Harness 决定交付底线（1.5 min）
 
-**上屏**：`Agent = Model + Harness`；模型之外的一切：工具、权限、沙箱、验证、trace、provenance、CI。
+**上屏**：能力上限 = Model；交付底线 = Harness；工具、权限、沙箱、验证、trace、provenance、CI。
 
-**讲点**：用“一个 prompt + Bash Tool + Edit Tool”的最小脚手架，把大概念落到工程事实：agent 从来都不是裸模型。可靠性是 model-plus-harness 系统的属性。
+**讲点**：同一个模型，换一圈运行边界，能否交付就是两个系统。Harness 不替模型思考，它把权限、验证和记录变成系统行为；可靠性要从模型之外找。
 
 ## P11 Harness 同时在行动前引导、行动后反馈（3 min）
 
-**上屏**：
+**上屏（两层关系）**：
 - Guides：行动前的前馈约束。
 - Sensors：行动后的反馈信号。
 - Computational：测试、lint、类型、schema；Inferential：AI review、人工判断。
@@ -29,9 +29,9 @@
 - 圈住：沙箱、权限、执行边界。
 - 拦住：工具协议与验证门禁。
 - 看清：trace、provenance、CI。
-- 专业知识：Knowledge Map，帮助模型找到事实归属与正确路径。
+- 第二层专业知识：Knowledge Map，把事实归属、正确路径与项目地图放进可靠边界。
 
-**讲点**：前三项是一条可靠性交付链：先限制伤害范围，再在错误靠近源头时拦下，最后能还原每次决策与产物来源。Knowledge Map 不是第四项可靠性控制，而是在可靠边界之上承载领域地图与正确路径。
+**讲点**：前三项是一条可靠性交付链：先限制伤害范围，再在错误靠近源头时拦下，最后能还原每次决策与产物来源。Knowledge Map 不是第四项并列控制，而是下一层承载的专业知识。
 
 ## P13 Loop 与 Graph 开始之前，先过确定性门禁（1 min）
 
@@ -50,7 +50,7 @@
 3. 工具动作仍会发生。
 4. 修复：`authorize at execution, not at generation`。
 
-**讲点**：这不是 prompt injection 故事，也不是 CVE 编号表。它说明授权必须在真正执行工具的位置再次判断；generation 侧的提示、审批、模型判断都不能替代执行端授权。对 OPC 的意义：安全与可靠性都不是“模型听话”的副产品。
+**讲点**：这不是 prompt injection 故事，也不是 CVE 编号表。它说明授权必须在真正执行工具的位置再次判断；generation 侧的提示、审批、模型判断都不能替代执行端授权。结尾焊接下一幕：边界必须有人负责，但这不等于每个 OPC 都要自己造 Harness。
 
 ## 来源与口径
 

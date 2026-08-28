@@ -18,13 +18,14 @@ Every published deck uses this filename pattern:
 | v4 | `v4/OPC航海指南-harness-v4.pptx` | 手工调整后的生产基线；后续版本继承其母版、视觉框架和未改页面。 |
 | v5 | `v5/OPC航海指南-harness-v5.pptx` | 完全继承 V4；重写 P17-P21 为 DSH 爆发、OPC 收益、定位、控制义务与最终控制权，并微调 P22 收束。 |
 | v6 | `v6/OPC航海指南-harness-v6.pptx` | 继承 V5；经文字与视觉双重复核，重写 P12/P13 与 P17-P23，突出 DSH 的 GitHub 注意力爆发、OPC 收益、可组合 runtime 定位与四项最终决定权，并以“部件可借，边界自己定”收束。 |
+| v7 | `v7/OPC航海指南-harness-v7.pptx` | 继承 V6；完整通读 P1-P23 后强化前后因果，重写问题地图、Harness 能力/交付分工、OPC 边界判断与 P20-P22 的责任→final say→封面回答链条。 |
 
 Each version owns its own subdirectory. The `05_output` root contains only this README and version folders. Build metadata such as `.inspect.ndjson`, rendered PNGs, and QA reports stay in the private build workspace rather than alongside delivery files.
 
 ## Source Inputs
 
-- Visual baseline: `talk-ai-coding-evolution/05_output/v5/OPC航海指南-harness-v5.pptx`
-- Content: `talk-ai-coding-evolution/04_drafts/ppt-text-v6.md` and `ppt-text-v6-sep.md`
+- Visual baseline: `talk-ai-coding-evolution/05_output/v6/OPC航海指南-harness-v6.pptx`
+- Content: `talk-ai-coding-evolution/04_drafts/ppt-text-v7.md` and `ppt-text-v7-sep.md`
 
 ## Update Workflow
 

@@ -25,7 +25,7 @@ talk-ai-coding-evolution/
 │   ├── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
 │   └── rawdata_dsh-plugin-seam-maturity/    #   【symlink】插件接缝与成熟度
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
-│   ├── 00-storyline-map.md                  #   故事线总图（v1.5）：一句话主线 + 幕结构 + 各幕要点
+│   ├── 00-storyline-map.md                  #   故事线总图（v1.6）：一句话主线 + 幕结构 + 各幕要点
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
 │   ├── 02-turning-points.md                 #   转折点 / 锚点清单
 │   ├── 03-audience-and-pitch.md             #   听众、时长、pitch
