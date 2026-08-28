@@ -2,7 +2,7 @@
 
 本目录统一收纳 talk 的上游**原始数据** symlink。它们指向工作区外的只读素材，
 **只在里面读，不在里面写**。本 talk 的推敲产物（故事线 / 证据 / 大纲 / 讲稿）都在
-`talk-ai-coding-evolution/` 下各自编号目录里，`_reference/` 只是它们的**上游来源**。
+`talk-ai-coding-evolution-opc/` 下各自编号目录里，`_reference/` 只是它们的**上游来源**。
 
 ## symlink 一览
 
@@ -20,7 +20,7 @@
 
 ## 引用约定
 
-- 从 `talk-ai-coding-evolution/` 任意子目录引用素材，统一走本目录相对路径：
+- 从 `talk-ai-coding-evolution-opc/` 任意子目录引用素材，统一走本目录相对路径：
   `../_reference/rawdata_*/…`（例如 `03_outline/` 下写 `../_reference/rawdata_dsh-digested/tools-prompt-llm/00-map.md`）。
 - 素材索引里常见的简写：`final_v4/…` = `rawdata_ai-coding-evolution-final/final_v4/…`；
   `FAQ 0N` = `rawdata_dsh-faq-on-digested/0N_*`；`_digested/…` = `rawdata_dsh-digested/…`。

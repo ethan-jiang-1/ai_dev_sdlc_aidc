@@ -13,7 +13,7 @@
 ## 工作区地图
 
 ```text
-talk-ai-coding-evolution/
+talk-ai-coding-evolution-opc/
 ├── README.md                                # 本文件：地图 + 素材说明 + 工作方式
 ├── AGENTS.md                                # 【agent 手册】harness 的操作步骤 + 规则
 ├── _reference/                              # 上游素材 symlink（只读），说明见其 README

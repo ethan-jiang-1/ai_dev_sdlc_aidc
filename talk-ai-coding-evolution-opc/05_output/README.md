@@ -25,8 +25,8 @@ Each version owns its own subdirectory. The `05_output` root contains only this 
 
 ## Source Inputs
 
-- Visual baseline: `talk-ai-coding-evolution/05_output/v7/OPC航海指南-harness-v7.pptx`
-- Content: `talk-ai-coding-evolution/04_drafts/ppt-text-v8.md` and `ppt-text-v8-sep.md`
+- Visual baseline: `talk-ai-coding-evolution-opc/05_output/v7/OPC航海指南-harness-v7.pptx`
+- Content: `talk-ai-coding-evolution-opc/04_drafts/ppt-text-v8.md` and `ppt-text-v8-sep.md`
 
 ## Update Workflow
 
