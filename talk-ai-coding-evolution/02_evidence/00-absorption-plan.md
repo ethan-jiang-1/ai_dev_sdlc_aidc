@@ -1,6 +1,6 @@
 # 内容吸纳清单（v1.5）· 什么吸进 talk、什么舍弃
 
-> 依据：三份 rawdata 研读（era 章节 + DSH FAQ + `_digested`，见 `../_reference/README.md`）。映射到 [`../03_outline/00-page-structure-23.md`](../03_outline/00-page-structure-23.md)（23 页现场版）。
+> 依据：三份主源（era 章节 + DSH FAQ + `_digested`）与三份 P17-P21 专题源，见 `../_reference/README.md`。映射到 [`../03_outline/00-page-structure-23.md`](../03_outline/00-page-structure-23.md)（23 页现场版）。
 > 每一条标来源。这是"内容填充"前的进货单——先定进什么货，再逐页填。页编号以现场版 P 为准。
 
 ## 一、本轮新增的「故事线资产」（强到影响讲法）
