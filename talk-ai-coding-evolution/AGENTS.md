@@ -31,6 +31,11 @@
 - **故事线优先**：先定故事线，再写 slide / 讲稿。
 - **素材只摘不搬**：从 `_reference/rawdata_*/` 摘进 `02_evidence/` 时标注来源路径。
 - **rawdata 只读**：`_reference/` 下的上游 symlink 只在里面读，不在里面写。
+- **临时目录约定**：所有一次性产物（构建中间体、逐页 inspect、审稿草稿、模板试验）
+  一律放在仓库根目录、以 `.tmp-` 前缀 + 主题命名（如 `.tmp-talk-v8/`、`.tmp-clawtime-template-tighten/`）；
+  工具自动生成的随机名目录（`.ppt-build-*`、`.tmp-xxx.XXXX`）算同类。这些目录已被 `.gitignore`
+  覆盖、永不入库。**版本收口时清理**：某一版 PPTX 落进 `05_output/` 并完成 review 后，
+  对应的 `.tmp-talk-vN*` 及散落的 `.ppt-build-*` / 随机后缀目录即删，不跨版本堆积。
 
 ## 当前状态指针
 

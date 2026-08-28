@@ -44,6 +44,10 @@ talk-ai-coding-evolution/
 └── 04_drafts/                               # 口语讲稿（备用）与术语规范
 ```
 
+> **临时目录**：仓库根目录下成堆的 `.tmp-*/`、`.ppt-build-*` 等是各版本的构建 / 审稿 / 模板试验
+> 中间产物，已被 `.gitignore` 覆盖、不入库。约定：版本收口（PPTX 落 `05_output/` 并完成 review）
+> 后即删对应 `.tmp-talk-vN*` 与随机名目录；细则见 [`AGENTS.md`](./AGENTS.md) 规则。
+
 ## 上游素材是什么
 
 > 上游 symlink 都收在 [`_reference/`](./_reference/README.md) 下，只读。
