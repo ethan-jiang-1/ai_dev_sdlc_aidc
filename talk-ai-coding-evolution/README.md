@@ -25,7 +25,7 @@ talk-ai-coding-evolution/
 │   ├── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
 │   └── rawdata_dsh-plugin-seam-maturity/    #   【symlink】插件接缝与成熟度
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
-│   ├── 00-storyline-map.md                  #   故事线总图（v1.6）：一句话主线 + 幕结构 + 各幕要点
+│   ├── 00-storyline-map.md                  #   故事线总图（v1.7 / V8）：一句话主线 + 幕结构 + 各幕要点
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
 │   ├── 02-turning-points.md                 #   转折点 / 锚点清单
 │   ├── 03-audience-and-pitch.md             #   听众、时长、pitch
@@ -79,4 +79,4 @@ capability-seams / tools-prompt-llm / surfaces 等专题）。讲清 DSH"挂模�
 ## 工作方式
 
 agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
-加工顺序固定为 **故事线 → 证据口径 → 页面职责 → 生产事实稿 → PPTX → 文字/视觉 QA**；review 后若成稿发生变化，再反向同步到上游。`_reference/` 下所有 symlink 只读。
+加工顺序固定为 **故事线 → 证据口径 → 页面职责 → 生产事实稿 → PPTX → 文字/视觉 QA**；review 后若成稿发生变化，再按 **生产事实稿 → 页面职责 → 证据脉络 → 故事线** 反向同步。当前准本为 V8，`_reference/` 下所有 symlink 只读。
