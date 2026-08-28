@@ -14,8 +14,8 @@
 
 1. **介绍每个 engineering 背后到底是怎么回事儿**——Prompt / Context / Harness / Loop / Graph
    每一层：讲清它工程化的是什么、解决了什么、局限在哪。**尽量通俗易懂，抓到要害。**
-2. **最后补上 DSH 这个新的 Harness**：因为 DSH 的灵活性，它基本上能**罩住 harness engineering、
-   loop engineering 和 graph engineering** 三层。
+2. **最后用 DSH 说明可组合 Harness**：它不是插件商店或更强 Loop，而是让模型、工具、执行后端、
+   规则与 Loop 围绕共同合同、门禁和事实记录工作的 runtime。
 3. **更大的主题：一人公司（one person company）**。这种巨小的公司里，一个人要真正熟练地
    掌握 AI Coding 的各种工具——**掌握的程度到底多深多浅？依赖现成的，还是自己做？**
    → 五层演变 + DSH 都是为回答这个问题服务的素材。
@@ -23,7 +23,7 @@
 ## 一句话 pitch
 
 - 主题：**OPC 航海指南：OPC 与 Harness，AI 协作之道**（官方题目）
-- 听众听完要带走的一个东西：**装自己的，借现成的**（slogan 候选，待最终确认）
+- 听众听完要带走的一个东西：**部件可借，边界自己定**。
 
 ## 讲述基调
 

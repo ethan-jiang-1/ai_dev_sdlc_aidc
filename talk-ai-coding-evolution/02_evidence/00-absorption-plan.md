@@ -1,4 +1,4 @@
-# 内容吸纳清单（v1.2）· 什么吸进 talk、什么舍弃
+# 内容吸纳清单（v1.5）· 什么吸进 talk、什么舍弃
 
 > 依据：三份 rawdata 研读（era 章节 + DSH FAQ + `_digested`，见 `../_reference/README.md`）。映射到 [`../03_outline/00-page-structure-23.md`](../03_outline/00-page-structure-23.md)（23 页现场版）。
 > 每一条标来源。这是"内容填充"前的进货单——先定进什么货，再逐页填。页编号以现场版 P 为准。
@@ -15,14 +15,14 @@
 4. **人机互动线的硬佐证**：Cherny「I don't prompt Claude anymore. My job is to write loops.」/
    Steinberger「designing loops that prompt your agents」/ Walden Yan 一年内从「别建多 agent」改口「有些 setup 真能用」。
    → 开场钩子更实。
-5. **DSH 灵活性金句（FAQ）**：
-   - "Agents follow enforced gates far more reliably than prose conventions."（07）
+5. **DSH 灵活性机制（FAQ / 源码消化）**：
+   - 文档指引必须由执行门禁、审批与失败闭合机制落到运行路径；不要把这一归纳包装成 DSH 官方引文。
    - "Each fact has one home: the tier whose job it is; elsewhere, link there."（根入口文档）
    - "There is no privileged core to patch: you extend dsh by mounting a plugin beside the others."（architecture）
    - "加模型提供方：在 ctx.llm 上注册 adapter……加面向模型的能力：在 ctx.tools 上注册……都不必改 loop。"（`../_reference/rawdata_dsh-digested/tools-prompt-llm`）
 6. **DSH 爆发不是成熟度证明**：GitHub API 快照（2026-08-27）显示 `deepseek-ai/deepseek-harness` 自 2026-08-13 创建后约 14 天达到 199,846 stars / 22,820 forks；同一生态数据快照有 2,286 条条目。二者证明注意力与扩展面快速聚集；不证明插件质量、可信度或生产成熟度。
-7. **自用 owner 的三层收益**：省手（可换执行底座）、敢放手（成对审批、fail-closed、可重建）、可复用（preset / bundle / patch 跨项目迁移）。生态的意义是有人替你踩过路，不是要 OPC 去经营市场。
-8. **最终控制权的机制定义**：当插件进入模型可见面或真实执行路径，owner 必须能控制接入、替换、放行和重建；插件化本身不等于安全，`installable` 也不等于 `trustworthy`。
+7. **自用 owner 的三层收益**：省手（换执行底座时少重写）、敢放手（审批 fail-closed、事实可重建）、可复用（验证过的组合跨项目迁移）。生态的意义是借入别人已经探索、自己可以验证的能力，不是把探索误当验证。
+8. **最终控制权的机制定义**：当插件进入模型可见面或真实执行路径，owner 必须能控制接入、替换、放行和重建事实；插件化本身不等于安全，`installable` 也不等于 `trustworthy`。
 
 ## 二、按幕 / 页映射（进货单）
 
@@ -47,30 +47,30 @@
 | P9 转折 | 口径：报告把 Context 与 Harness **并列**；"harness 最重要"是我们的判断，用三线撑（结构/哲学/风险） | 03/06 章 |
 | P10 定义 | "Agent = Model + Harness"；harness = 模型之外的一切 | 03 章 |
 | P11 两套控制+comp/infer（合并） | Guides（前馈）+ Sensors（反馈）；computational 可审计 vs inferential 不可审计；确定性优先 | 03 章 |
-| P12 抓要害 | 圈住 / 拦住 / 看清（见 06-harness-internals.md） | 03 章 |
-| P13 承重墙 | 结构线（Osmani「one floor above」/ Macedo「engine & pilot」）+ 哲学线（反馈同源 Sensors→loop + 验证梯渗透 + GraphARC 门禁）+ 机制金句「假设下层正确是 bug 的来源」；三层同一件事（反馈 + 确定性 → 可靠） | 04/05/06 章 |
+| P12 抓要害 | 圈住 / 拦住 / 看清是三项可靠性控制；Knowledge Map 在可靠边界上承载专业知识与正确路径，不与前三项混成同类 | 03 章；FAQ 07 |
+| P13 确定性门禁 | Loop / Graph 开始前，节点先经过 Harness 的独立授权、检查与记录；GraphARC：模型提议，确定性 checker 决定放行 / 拒绝 | 04/05/06 章 |
 | P14 反面 | 2026 CVE「authorize at execution, not at generation」 | 03 章 |
 
 ### 第三幕 固定 vs 灵活（P15–18）
 | 页 | 吸什么 | 来源 |
 |---|---|---|
-| P15 抉择 | 固定 vs 灵活轴（不是"自己做 vs 现成"的二选一）；精装公寓比喻 | 立场（故事线 v1.2，自拟） |
+| P15 抉择 | 固定 vs 灵活轴（不是"自己做 vs 现成"的二选一）；精装公寓比喻 | 立场（故事线 v1.5，自拟） |
 | P16 现成的好 | 「harness 组件随产品交付（民主化）」：Claude Code 沙箱、Copilot sandboxes、MCP 生态 | 03 章 |
-| P17 DSH 爆发 | GitHub 公开后约 14 天近 20 万 star；生态快照 2,286 条；桥 / 渠 / 窗三类扩展；爆发不等于成熟 | GitHub REST API（2026-08-27 快照）；`rawdata_dsh-plugin-ecosystem-distribution/answer.md` |
-| P18 OPC 收益 | 省手 / 敢放手 / 可复用；生态是可借用的已踩路径 | `rawdata_dsh-plugin-business-ladder/answer.md` |
+| P17 DSH 爆发 | 主信号“近 20 万”：199,846 stars；支持信号 22,820 forks、2,286 条生态快照；爆发不等于成熟 | GitHub REST API（2026-08-27 快照）；`rawdata_dsh-plugin-ecosystem-distribution/answer.md` |
+| P18 OPC 收益 | 少盯 / 敢放 / 能复用；别人替你探索过，不等于替你验证过 | `rawdata_dsh-plugin-business-ladder/answer.md` |
 
 ### 第四幕 DSH（P19–21）
 | 页 | 吸什么 | 来源 |
 |---|---|---|
-| P19 定位 | DSH 不是商店、不是更强 Loop；是可组合 Harness runtime，插件围绕共同合同与事实记录工作 | `rawdata_dsh-digested/system/00-map.md`；FAQ 01 |
-| P20 只有插件不够 | 固定产品的公开合同决定能改变什么；模型可见能力与真实执行需要合同、门禁、记录；可安装不等于可信 | FAQ 08 / `system` / `session-and-loop` |
-| P21 最终控制权 | 接入 / 替换 / 放行 / 重建；adapter、seam、gate、session log 是机制证明；"enforced gates" 金句 | FAQ 07 / FAQ 08 / `_digested` |
+| P19 定位 | DSH 不是商店或更强 Loop；是可组合 Harness runtime，模型 / 工具 / 执行后端 / 规则 / Loop 围绕共同合同与事实记录工作 | `rawdata_dsh-digested/system/00-map.md`；FAQ 01 |
+| P20 只有插件不够 | 四项控制问题及机制映射：接入 registry / 替换 adapter + seam / 放行 enforced gate / 重建事实 session log | FAQ 08；`rawdata_dsh-plugin-seam-maturity`；`_digested` |
+| P21 最终控制权 | 四项最终决定权不能外包；“在手”是 owner 有 final say，不是所有部件自建 | FAQ 07 / FAQ 08 / `_digested`；本 talk 的解释性结论 |
 
 ### 收尾（P22–23）
 | 页 | 吸什么 | 来源 |
 |---|---|---|
-| P22 回答+slogan（合并） | 角色表回扣：一人公司 = 被同一人承担五角色，harness 这格要能改；slogan「装自己的，借现成的」 | 06 章 |
-| P23 收尾 | 谢谢 + slogan 落款 + 联系方式占位 | 结构（自拟） |
+| P22 回答+slogan（合并） | 先借现成 → 看懂边界 → 差异化进入执行链时再握权；slogan「部件可借，边界自己定」 | 06 章；本 talk 的解释性结论 |
+| P23 收尾 | 谢谢 +「部件可借，边界自己定」+ Ethan Jiang | 结构（自拟） |
 
 ## 三、口径红线（引用前必查）
 

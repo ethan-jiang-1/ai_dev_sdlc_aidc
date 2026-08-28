@@ -17,13 +17,14 @@ Every published deck uses this filename pattern:
 | v3 | `v3/OPC航海指南-harness-v3.pptx` | V2 的后续内容与版式迭代版本。 |
 | v4 | `v4/OPC航海指南-harness-v4.pptx` | 手工调整后的生产基线；后续版本继承其母版、视觉框架和未改页面。 |
 | v5 | `v5/OPC航海指南-harness-v5.pptx` | 完全继承 V4；重写 P17-P21 为 DSH 爆发、OPC 收益、定位、控制义务与最终控制权，并微调 P22 收束。 |
+| v6 | `v6/OPC航海指南-harness-v6.pptx` | 继承 V5；经文字与视觉双重复核，重写 P12/P13 与 P17-P23，突出 DSH 的 GitHub 注意力爆发、OPC 收益、可组合 runtime 定位与四项最终决定权，并以“部件可借，边界自己定”收束。 |
 
 Each version owns its own subdirectory. The `05_output` root contains only this README and version folders. Build metadata such as `.inspect.ndjson`, rendered PNGs, and QA reports stay in the private build workspace rather than alongside delivery files.
 
 ## Source Inputs
 
-- Template: `talk-ai-coding-evolution/_asset/CLAWTIME贵客松模板-留白版.pptx`
-- Content: `talk-ai-coding-evolution/04_drafts/ppt-text-v5-sep.md`
+- Visual baseline: `talk-ai-coding-evolution/05_output/v5/OPC航海指南-harness-v5.pptx`
+- Content: `talk-ai-coding-evolution/04_drafts/ppt-text-v6.md` and `ppt-text-v6-sep.md`
 
 ## Update Workflow
 
@@ -31,4 +32,6 @@ Each version owns its own subdirectory. The `05_output` root contains only this 
 2. Create a matching `v<N>/` directory and increment the version number before export.
 3. Add a row to the version table with the practical change summary.
 4. Keep build metadata outside `05_output`.
-5. Render every slide and run overflow and template-fidelity checks before publishing.
+5. Render and inspect every slide twice: narrative/copy first, visual hierarchy and layout second.
+6. Run overflow, empty-placeholder, source-note, and template-fidelity checks before publishing.
+7. If review changes the deck, reverse-sync the accepted copy into `04_drafts`, `03_outline`, `02_evidence`, and `01_storyline`.

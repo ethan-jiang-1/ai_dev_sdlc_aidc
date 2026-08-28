@@ -1,7 +1,7 @@
-# 故事线总图（v1.4 · DSH 生态与控制权稿）
+# 故事线总图（v1.5 · V6 审核定稿）
 
 > **官方题目**：OPC 航海指南：OPC 与 Harness，AI 协作之道（OPC = One Person Company，一人公司）。
-> 状态：**v1.4**。已校准五层的关系：它们是注意力与工程对象的叠加，不是运行时大小或严格包容关系。落点 = harness + DSH；立场是「从现成开始，但保有 Harness 最终控制权」。
+> 状态：**v1.5**。已完成 V6 的文字与视觉复核。五层是注意力与工程对象的叠加，不是运行时大小或严格包容关系；落点 = harness + DSH；立场是「先借现成，边界自己定」。
 > 五层作为"故事"的解读见 [`05-five-layer-reading.md`](./05-five-layer-reading.md)；harness 里头干啥见 [`06-harness-internals.md`](./06-harness-internals.md)。
 
 ## 一句话主线
@@ -48,7 +48,7 @@
 - **定义**：Böckeler —— **Agent = Model + Harness**；harness = 模型之外的一切。
 - **harness 里头干啥**（抓要害的讲法）→ [`06-harness-internals.md`](./06-harness-internals.md)：
   一句话「模型给能力，harness 给可靠性」；两套控制（Guides 前馈 + Sensors 反馈，各分 computational / inferential）；
-  三个动词 **圈住 / 拦住 / 看清**；六个构件（沙箱、权限、工具协议、验证门禁、可观测性、provenance+CI）。
+  三个可靠性动词 **圈住 / 拦住 / 看清**。Knowledge Map 不是第四个控制，而是在可靠边界上承载专业知识与正确路径。
 - **为什么强调这些（必讲透）**：
   1. **可靠性是系统的属性，不是模型的属性**——是"模型 + harness"整体的属性。你买很贵的模型买的是"能力"，
      但"可靠性"是 harness 给出来的。
@@ -57,6 +57,7 @@
 - **为什么是 harness**：它不是“最高层”，而是每一次动作都绕不开的可靠性边界。Harness 把单次执行做成
   可授权、可验证、可追溯；Loop 把这类反馈跨运行连起来；Graph 把多个节点的依赖、路由与门禁显式化。
   所以没有可靠的 harness，loop 只会更快地放大错误，graph 只会把不可靠的节点组织得更复杂。
+- **P13 的桥**：Loop 与 Graph 开始之前，节点先过确定性门禁。模型可以提议工作图，但确定性检查器决定放行或拒绝；这直接引出 P14 的执行时授权事故。
 - **反面证据**：2026 CVE——执行时授权缺失。护栏若建立在"模型会发出合法工具调用"上，
   工具调用可被伪造时整条链失效。修复：**authorize at execution, not at generation**。
 
@@ -76,16 +77,15 @@
 ### 第四幕：DSH（定位与控制权）
 - **定位问题**：它不是插件商店、不是一个更强的 Loop、也不是要替代 Codex / Claude Code 的成品 Agent；DSH 是一套**可组合的 Harness runtime**，让插件围绕同一套合同、执行路径和事实记录一起工作。
 - **为什么只装插件不够**：一项能力进入模型可见面或真实执行路径，就会改变权限、门禁与可追溯性。可安装不等于可信；插件化也不天然等于安全。
-- **因此 Harness 必须在手**：owner 必须能决定接入 / 替换、授权 / 拦截、记录 / 重建。DSH 用 adapter、capability seam、enforced gate 与 append-only session log 使这一点可操作。
+- **因此 Harness 必须在手**：owner 必须能决定接入 / 替换 / 放行 / 重建事实。DSH 用 registry、adapter + capability seam、enforced gate 与 append-only session log 使这一点可操作。
 - 回扣：灵活 harness 不会替你设计 loop 或 graph；它让这些组织能力能在清楚的合同、门禁与运行记录上组合起来。
 
 ### 收尾
 - 回答：一人公司要掌握到 **harness 这一层**——不用从零造，但其最终控制权必须在手。
-- 带走一句（候选见 04-open-questions）：**装自己的，借现成的。**（推荐，待定）
+- 带走一句：**部件可借，边界自己定。**
 
 ## 待定（跟进在 04-open-questions.md）
 
-- 带走的一句 slogan 未定。
 - 各幕时间预算是否按上表切（详见 03_outline）。
 - **无 demo**（内容已满，45 min 放不下）。
 
