@@ -2,14 +2,13 @@
 
 AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harness 里被驱动的 agent**：
 每次进来按下面的步骤走，改完把状态落回源文件。主题 / 听众 / 时长 / 目的 → `01_storyline/03-audience-and-pitch.md`。
-两轴素材（宽轴 = 六阶段 SDLC，深轴 = 五层 + Harness）都是素材，**故事线是唯一的核心产物**。
+六阶段是软件价值流主轴，五层是能力与控制深度镜头，DSH 是共享控制面的参考实现；三者都服务于一条故事线。
 
-> **总门槛：先内容，后表现。** 当前工作是内容 REVIEW；故事线未通过「内容锁定」前，
-> 不选模板、不定视觉风格、不做动画、不生产 PPTX。**50 页总页数是已锁定的叙事容器**；
-> REVIEW 只在这个边界内调整页面职责、内容取舍与转场，不再摇摆总页数。
+> **总门槛：先内容，后表现。** v0.7 内容锁已通过，当前进入生产事实稿与表现设计。
+> **50 页总页数是已锁定的生产容器**；表现设计服务既定页面职责，不再摇摆总页数与故事主轴。
 
 > 与 `../talk-ai-coding-evolution-opc/` 的差别：那里问「一个人掌握多深」，这里问「软件研发与交付组织要如何重建整条 SDLC」。
-> 不要照搬 `-opc` 的叙事——五层只是深轴，宽轴是 Anthropic 的六阶段 SDLC playbook。
+> 不要照搬 `-opc` 的叙事——五层不等于五个岗位或团队，只用来检查 SDLC 各阶段的外置、运行边界与反馈深度。
 
 ## 每次进来（按顺序走）
 
@@ -23,7 +22,7 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
    - 补论据 / 锚点 / play 拆解 → `02_evidence/`
    - 铺大纲 / slide → `03_outline/`（主线稳定即可；现场版 `00-page-structure.md`）
    - 写讲稿 / 生产事实稿 → `04_drafts/`
-   - 选模板 / 产 PPTX → `_asset/` + `05_output/`
+   - 表现设计 / 产 PPTX → `_asset/` + `05_output/`
 
 3. **动手** — 按 `01_storyline → 02_evidence → 03_outline → 04_drafts → 05_output` 单向加工；上游结论没有稳定前，不提前在下游定稿。
 
@@ -31,12 +30,12 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 
 5. **反向同步** — 人工或视觉 review 若改变了成稿，以已确认 PPTX 为生产事实，把变化按 `04_drafts → 03_outline → 02_evidence → 01_storyline` 反向同步。
 
-6. **落状态** — 更新 `04-open-questions.md`、`00-storyline-map.md`、`04_drafts/README.md` 与 `05_output/README.md`。
-   完成标准：总图、口径、页面职责、生产事实稿、PPTX 与待办一致。
+6. **落状态** — 更新受本轮影响的状态文件；至少检查 `04-open-questions.md` 和各阶段 README。
+   完成标准：总图、证据口径、页面职责、生产事实稿、PPTX 与待办不存在相互冲突的当前态描述。
 
 ## 两阶段门禁
 
-### A. 内容 REVIEW（当前阶段）
+### A. 内容 REVIEW（已通过）
 
 先回答「为什么讲、对谁讲、听完要发生什么改变」，再考虑「一页怎么长」。REVIEW 固定按以下顺序：
 
@@ -50,7 +49,7 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 核心主张在 `02_evidence/` 中均有来源或被标为待验证；从开场到收束可以用 5–8 分钟口述且无逻辑跳转。
 未达标时继续改上游；50 页提供稳定边界，不代表页面职责已通过内容锁定。
 
-### B. 表现设计与 PPTX 生产（内容锁定后）
+### B. 表现设计与 PPTX 生产（当前阶段）
 
 1. 先定每页的叙事职责和主要结论，再决定版式、图像、图表、节奏与动画。
 2. 一页一个叙事任务；标题直接说结论，证据要与当页结论同屏咬合。
@@ -70,18 +69,19 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
   落点始终在 **软件价值流 / 工件链 / gate / owner / feedback / 平台治理 / 合规审计 / 规模化**。
   不滑回「个人技能进阶」的 `-opc` 叙事，也不外推到销售、市场、客服、财务、人力或一般企业组织设计。
 - **独立红线**：不依赖、不承接 `04_output/deck_ai_sdlc_keynote`（听众不同）；不把「代码不再是瓶颈」讲成普适事实，标注是 Anthropic 论点。
-- **模板不预设**：用户明确「PPT 风格不限制，按内容找到最配合的」——`-opc` 的 CLAWTIME 模板**不是**本 talk 的默认；
-  到 PPT 生产阶段再按内容选模板，选型理由记入 `_asset/README.md`。
+- **责任红线**：共享的是沙箱、权限、工具准入、门禁、观测与审计基线；产品、架构、服务和政策 owner 继续掌握 intent、context、取舍与例外。不要把五层写成五个团队，也不要把「平台共同基线」写成「所有内容统一」。
+- **视觉方向**：采用 `_asset/README.md` 的“系统蓝图式技术编辑风”，从零建立母版与布局系统；不用 `-opc` 的 CLAWTIME，不套咨询报告、黑底霓虹或通用 AI 模板。
 - **临时目录约定**：所有一次性产物（构建中间体、逐页 inspect、审稿草稿、模板试验）
   一律放在仓库根目录、以 `.tmp-org-sdlc-talk-` 前缀 + 主题命名；工具自动生成的随机名目录（`.ppt-build-*`、`.tmp-xxx.XXXX`）算同类，
   `.gitignore` 覆盖、永不入库。**版本收口时清理**：某一版 PPTX 落进 `05_output/` 并完成 review 后，对应 `.tmp-org-sdlc-talk-vN*` 及散落目录即删。
 
 ## 当前状态指针
 
-- 故事线总图（v0.7 内容 REVIEW）：`01_storyline/00-storyline-map.md`
+- 故事线总图（v0.7 内容锁）：`01_storyline/00-storyline-map.md`
 - 叙事思路笔记（上下文记忆）：`01_storyline/07-narrative-thinking.md`
 - 现场版页面结构（50 页 · 75–90 min 骨架）：`03_outline/00-page-structure.md`
-- 素材与口径（六阶段 + 15 play 进货单）：`02_evidence/00-absorption-plan.md`；脉络：`02_evidence/01-info-flow-map.md`（待补）
-- 当前生产事实稿：暂无（未到 `04_drafts/` 阶段）
+- 素材与口径：`02_evidence/00-absorption-plan.md`；P1–P50 脉络：`02_evidence/01-info-flow-map.md`；核心主张账本：`02_evidence/02-claim-ledger.md`
+- 当前生产事实稿：待写（下一步进入 `04_drafts/`）
 - 当前交付：暂无（未到 `05_output/` 阶段）
 - 已决与待办：`01_storyline/04-open-questions.md`
+- 当前阶段：v0.8 表现设计；先完成 50 页生产事实稿，再建立布局系统并产 PPTX。

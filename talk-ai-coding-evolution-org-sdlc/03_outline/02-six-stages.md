@@ -1,4 +1,4 @@
-# 第二幕逐页内容（P13–P38 · 六阶段转型 · v0.6 内容 REVIEW）
+# 第二幕逐页内容（P13–P38 · 六阶段转型 · v0.7）
 
 > 主轴 = SDLC 六阶段。每阶段都回答同一组四问：**工件 / gate / owner / feedback**；五层只作深度镜头。
 > play 是证据与实现选项，不是叙事目录。细则见 `../02_evidence/00-absorption-plan.md`。
@@ -9,11 +9,11 @@
 - **讲点**：playbook 的「阶段」与「采用顺序」是两回事——从无依赖的 play 起步，逐步关 loop。每个阶段终点是一个工件，触发下一阶段。
 - **视觉**：loop 图 + 依赖箭头。
 
-## Plan（P14–P16 · 引子 = Prompt）
+## Plan（P14–P16 · Prompt 深度镜头）
 
 ### P14 Prompt 镜头：Plan 先把意图外置成可交接工件
 - **页面结论**：Plan 的第一个组织问题不是「谁来写 PRD」，而是「原始意图如何不在层层转写中丢失」。
-- **上屏**：「Plan 的本质，是把意图说清楚。」
+- **上屏**：「先让原始意图可交接。」
 - **讲点**：Prompt 镜头让我们检查意图的表达质量，但 Plan 不等于 Prompt Engineering。组织变化是 originator 用自己的话提出问题，AI 帮助补齐边界，product owner 承担取舍。
 - **视觉**：意图→工件 的转化。
 
@@ -29,11 +29,11 @@
 - **讲点**：组织建「intent 的家」（版本受控目录），平台/工程团队立起来并决定谁能写。leading = 对话→committed intent.md（多周→小时）；lagging = 存活率。
 - **视觉**：审批门 + 双指标。
 
-## Design（P17–P19 · 引子 = Context）
+## Design（P17–P19 · Context 深度镜头）
 
 ### P17 Context 镜头：Design 在 Build 之前把政策与矛盾外置
 - **页面结论**：Design 的关键不是向模型塞更多上下文，而是让政策、标准、冲突和未解问题在 Build 前可见、可版本化。
-- **上屏**：「Design 的本质，是策展模型所见。」
+- **上屏**：「在 Build 之前，让政策、标准与矛盾可见。」
 - **讲点**：Context 镜头让我们看到「模型当时根据什么做决定」。组织变化是把 brand/security/compliance/UX 等政策变成版本化约束，并对矛盾项明确路由。
 - **视觉**：context 策展示意。
 
@@ -49,12 +49,12 @@
 - **讲点**：spec 连同产生它的 prompt 和当时生效的 skill 版本一起入库。产品 owner 签字，矛盾的/高风险项路由给政策 owner，工程团队看到 spec 前这些已解决。
 - **视觉**：政策施加点前移示意。
 
-## Build（P20–P25 · 引子 = Harness 主战场）
+## Build（P20–P25 · Harness 深度镜头）
 
 ### P20 Harness 镜头：Build 把执行圈住、拦住、看清
 - **页面结论**：Build 不只是生成代码；它要给执行设边界、给错误设近场门禁、给产物留下 provenance。
 - **上屏**：圈住=沙箱/权限；拦住=hooks/门禁；看清=观测/provenance。
-- **讲点**：五层里「harness 是可靠性边界」，在组织里就是 Build 这一格。三个动词翻译成组织动作：统一沙箱、统一门禁、统一观测。这是平台团队最该集中建设的地方。
+- **讲点**：五层里「harness 是可靠性边界」，Build 是它最集中的落点，但 Test / Deploy 也复用同一基线。三个动词翻译成平台能力：共享沙箱与权限、共享门禁、共享观测；领域团队保留本地配置与判断。
 - **视觉**：harness 三层归位。
 
 ### P21 Build：plan mode 出 plan.md
@@ -78,16 +78,16 @@
 ### P24 Build：并行会话 + 子 agent
 - **页面结论**：一人多会话（worktree 隔离）+ 子 agent，工程师转向编排。
 - **上屏**：worktree 隔离 + `subagents/` 定义。
-- **讲点**：这是 **Graph 的雏形**（点出，第六幕展开）——编排能力的起点。控制来自 repo 配置（hooks+permissions），日志归属到启动它的工程师。
+- **讲点**：这是 **Graph 的雏形**（点到为止，Maintain 与第三幕再回收）——编排能力的起点。控制来自 repo 配置（hooks + permissions），日志归属到启动它的工程师。
 - **视觉**：并行 worktree + 子 agent 图。
 
 ### P25 Build 四问收口
 - **页面结论**：Build 的工件是 `plan.md + diff + tests`，gate 是沙箱/权限/hooks，owner 是 engineer + platform，feedback 是 rework 与 diff-plan 匹配度。
 - **上屏**：四件套归位。
-- **讲点**：Build 是五层里 harness 的主战场，也是组织最容易「各自为政」的地方——所以平台团队在这里集中建设。
-- **视觉**：四件套 + 平台集中。
+- **讲点**：Build 是 harness 的主战场，也是团队最容易重复造轮子的地方——所以平台提供共同基线，工程师与领域 owner 对具体改动负责。
+- **视觉**：四件套 + 平台共同基线。
 
-## Test（P26–P29 · 引子 = Harness 的 Sensors + Loop 起点）
+## Test（P26–P29 · Sensors / Loop 深度镜头）
 
 ### P26 Sensors / Loop 镜头：Test 同时验产品改动和 harness 配置
 - **页面结论**：一类证据回答「改动是否正确」，另一类证据回答「驱动 agent 的配置是否仍可靠」。
@@ -113,7 +113,7 @@
 - **讲点**：QA 角色从「逐单验」变成「维护 eval 套件 + 审配置变更」。确定性优先——能交给门禁的不靠模型自觉。
 - **视觉**：QA 角色转变。
 
-## Deploy（P30–P34 · 引子 = Harness 的拦住/看清 + authorize at execution）
+## Deploy（P30–P34 · Harness 深度镜头）
 
 ### P30 Harness 镜头：Deploy 在生产 gate 分离提议权与执行权
 - **页面结论**：agent 可以准备发布、解释风险、提议动作，但生产执行必须在当下语境中独立授权。
@@ -145,7 +145,7 @@
 - **讲点**：生产 gate 不是流程自觉，是 hook 强制。这对应深轴的「authorize at execution」。
 - **视觉**：门禁强制示意。
 
-## Maintain（P35–P38 · 引子 = Loop 收口 + Graph 编排）
+## Maintain（P35–P38 · Loop / Graph 深度镜头）
 
 ### P35 Loop / Graph 镜头：Maintain 让事实沿同一受控路径回流
 - **页面结论**：维护不是给 agent 一条直达生产的自治通道，而是让确定性触发在越界时生成诊断，再回到同一工件链和 gates。
@@ -156,7 +156,7 @@
 ### P36 Maintain：关 loop
 - **页面结论**：触发器无人在环调用 agent，诊断写回 intent.md 重新入环。
 - **上屏**：确定性检测（mean/std + Western Electric）+ `bands.yaml`（1σ log / 2σ 只读诊断 / 3σ 提议 PR/runbook）。
-- **讲点**：检测确定性、无模型；越界才调 agent。写回 intent.md → 走整条链。服务 owner 或 on-call triage，人不再启动、只审批。
+- **讲点**：检测确定性、无模型；越界才调 agent。触发可以无需人工启动，但动作仍受分级 gate 约束；诊断写回 `intent.md` 再走整条链。服务 owner 或 on-call 负责 triage 与授权。
 - **视觉**：control-band → intent.md → 环。
 
 ### P37 Maintain：scans
@@ -169,4 +169,4 @@
 - **页面结论**：Maintain 的工件是 incident/diagnosis/intent，gate 是 triage + PR/runbook authorization，owner 是 service owner，feedback 是 recovery time 和同类复发率。
 - **上屏**：「10pm 的 Slack 事件不再等人。」
 - **讲点**：事件触发 → agent 诊断（验证 metric 回 baseline）→ 写 post-mortem 到 lessons。人在 channel 里可引导/授权。小修走 PR、大修写 intent.md。channel 是可追溯证据的一部分，不单凭 channel 就声称完成审计。
-- **视觉**：channel 即审计轨迹。
+- **视觉**：channel 证据并入工件链。

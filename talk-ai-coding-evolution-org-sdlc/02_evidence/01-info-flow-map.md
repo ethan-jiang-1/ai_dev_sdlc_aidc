@@ -1,48 +1,69 @@
-# 信息脉络图（上游 → 加工 → 页面 + 反向索引 · v0.5）
+# 信息脉络图（v0.7 · 软件 SDLC · 固定 50 页）
 
-> 组织视角贯穿：每个页面落点都回答「组织该建什么 / 谁负责 / 怎么治理 / 怎么度量」，不滑回个人技能。
+> 每个页面落点都必须回到软件价值流：交付什么工件、哪个 gate 执行规则、哪个 owner 承担判断、什么 feedback 回流。
+> 核心主张的来源类型与口径见 [`02-claim-ledger.md`](./02-claim-ledger.md)。
 
-## 一、正向信息流（source → 加工 → 页面）
+## 一、正向信息流（source → 判断 → 页面）
 
 ```text
-上游素材（_reference/ 只读）               加工产物                      页面落点（03_outline/00-page-structure.md）
-─────────────────────────────            ──────────────                 ─────────────────────────────
-rawdata_anthropic-ai-native-sdlc-playbook ─→ 02_evidence/00-absorption  ─→ 宽轴主体：
-  六阶段 + 15 play                          （进货单）                    P6-P7（论点）P11-P13（定义+shifts+工件链）
-                                                                        P14-P36（六阶段逐页）
-rawdata_ai-coding-evolution-final       ─→ 01_storyline/05（深轴解读）  ─→ 深轴：
-  五层演变 + Böckeler                      + 01_storyline/06（harness）  P8（五层回顾）P19-P24（harness 主战场）
-                                                                        P38-P40（治理收束）
-rawdata_dsh-faq-on-digested / digested   ─→ 02_evidence/00 §二 DSH 映射  ─→ 平台落地：
-  / plugin-*                              + 01_storyline/06             P41-P42（DSH 作为 runtime 证据）
+Anthropic AI-Native SDLC playbook
+  │
+  ├─ 瓶颈转移 / six-stage shifts / committed artifacts / governance / measures
+  │    └─→ C1–C4、C6 → P2–P3、P6–P40、P48–P50
+  │
+五层演变 + Böckeler Harness 资料
+  │
+  ├─ Prompt / Context / Harness / Loop / Graph 深度镜头
+  └─ Guides / Sensors；确定性 / 概率性控制
+       └─→ C4–C5 → P4–P5、P12、P14/P17/P20/P26/P30/P35、P40
+
+DSH digested / FAQ / seam 资料
+  │
+  ├─ 知识外置 / 正确路径 / 可执行反馈
+  ├─ 插件图 / 事件流 / loop / capability seam
+  └─ enforced gate / invariant / append-only log / asked-decided / fail-closed
+       └─→ C3–C5 → P41–P47
+
+本 talk 的综合判断
+  │
+  ├─ 可执行 SDLC = 工件可交接 + gate 可执行 + owner 可问责 + feedback 可回流
+  ├─ 工件链是审计骨架；身份/版本/证据/审批/不可绕过的 gate 使它可追溯、可问责
+  ├─ 共享控制面，分布领域知识
+  └─ 先工件 → 再 gate → 最后关 loop
+       └─→ P9–P12、六阶段收口页、P39、P48、P50
 ```
 
-## 二、反向索引（页面 → 上游来源）
+## 二、固定 50 页反向索引（页面 → 主来源）
 
-| 页 | 页面 | 主来源 | 辅来源 |
+| 页 | 叙事任务 | 主来源 / 主张 | 口径要点 |
 |---|---|---|---|
-| P1–P5 | 开场（钩子 + 对象 + 路线图） | playbook「Code is no longer the bottleneck」 | 五层（深轴铺垫） |
-| P6–P7 | 代码不再是瓶颈 + 三个后果 | playbook「Code is no longer the bottleneck」 | — |
-| P8 | 深轴：五层演变回顾 | `ai-coding-evolution-final/final_v4` | — |
-| P9–P10 | 传统 SDLC 与控制失效 | playbook「traditional SDLC」段 | — |
-| P11–P13 | AI-native SDLC 定义 + shifts + 工件链 | playbook「What is an AI-native SDLC」+「shifts」表 | — |
-| P14 | 六阶段总览 + loop 图 | playbook「Plays」+ fig-03-loop | — |
-| P15–P16 | Plan：intent.md | playbook「Capture as intent.md」 | 五层 Prompt/Context |
-| P17–P18 | Design：spec.md | playbook「Requirements and design」 | 五层 Context + 治理前移 |
-| P19–P24 | Build：plan.md / AGENTS.md / skills / hooks / 并行 | playbook「Build」全 5 play | 五层 Harness（圈住/拦住/看清） |
-| P25–P27 | Test：反馈闭环 + evals | playbook「Give Claude a feedback loop」「Continuous evals」 | 五层 Sensors + 确定性 |
-| P28–P32 | Deploy：PR review / gates / managed settings / CI-CD | playbook「Deploy」全 3 play + worked example | 五层 拦住/看清 + authorize at execution |
-| P33–P36 | Maintain：关 loop / scans / on-call | playbook「Maintain」全 3 play | 五层 Loop/Graph |
-| P37 | 工件链 = 审计链 | playbook「committed artifact」段 | — |
-| P38–P39 | 人守 gate + 确定性优先 | playbook「Governance」贯穿 + `06-harness-internals` | 五层 Harness |
-| P40 | harness = 统一平台 + 治理边界 | playbook managed settings + `06-harness-internals` | — |
-| P41–P42 | DSH 作为 runtime 证据 + 四项治理决定 | `rawdata_dsh-*`（FAQ 07 + _digested） | — |
-| P43 | 组织怎么落地（顺序） | playbook「order to adopt」段 | — |
-| P44 | 度量总表 | playbook 各 play「How to measure」 | — |
-| P45–P46 | 带走一句 + 谢谢 | — | — |
+| P1 | 题目与软件 SDLC 范围 | `01_storyline/03-audience-and-pitch.md` | 不泛化为一般 AI 组织 |
+| P2–P3 | 诊断张力 + Anthropic 观点 | playbook 「Code is no longer the bottleneck」；C1 | 不虚构翻倍数据；要求听众自证 |
+| P4–P5 | 五层深度镜头 + 共享 harness 控制面 | `rawdata_ai-coding-evolution-final/final_v4*`；C5 | 五层不是第二条主线 |
+| P6–P8 | 瓶颈转移后，旧控制为什么失配 | playbook 开篇三个后果 + security example；C1 | 只说来源主张与软件价值流意义 |
+| P9 | 新控制模型 | playbook human judgment / gates + C2/C4 | 机器守确定性 gate，人守判断 gate |
+| P10 | 工件链是审计骨架，留下条件问题 | playbook committed artifact 段；C3 | 不把 git history 自动等于合规 |
+| P11 | six-stage shifts | playbook shifts table | 保留传统 / AI-native 的光谱，不绑定产品 |
+| P12 | 全场四问导航 | C2 + `01_storyline/00-storyline-map.md` | 工件 / gate / owner / feedback 是本 talk 综合框架 |
+| P13 | 阶段顺序 ≠ 采用顺序 | playbook Plays + dependency graph；C6 | 不从自动化整个 loop 开始 |
+| P14–P16 | Plan：意图交接 | playbook 「Capture as intent.md」 | 工件=`intent.md`；gate=accept/reject；owner=product owner；feedback=耗时/存活率 |
+| P17–P19 | Design：政策和矛盾前置 | playbook 「Requirements and design」 | 工件=`spec.md`+concerns；gate=风险处理；owner=product/policy owner；feedback=rework |
+| P20–P25 | Build：受控执行 | playbook Build 5 plays + harness 圈住/拦住/看清 | 工件=`plan+diff+tests`；gate=沙箱/权限/hooks；owner=engineer+platform；feedback=rework/plan match |
+| P26–P29 | Test：产品证据 + harness 回归 | playbook feedback loop + continuous evals | 工件=test/eval evidence；gate=threshold；owner=QA+config owner；feedback=pass/escape/failure trend |
+| P30–P34 | Deploy：提议权 / 执行权分离 | playbook PR review / approval gates / managed settings / CI-CD；C4 | 工件=PR/release evidence；gate=branch+production；owner=code/release owner；feedback=wait/failure |
+| P35–P38 | Maintain：事实回流同一受控路径 | playbook closing loop / scans / on-call | 工件=incident/diagnosis/intent；gate=triage+PR/runbook；owner=service owner；feedback=recovery/recurrence |
+| P39 | 回答 P10：工件链何时具备审计能力 | C3 + playbook 多段 governance evidence | 五个条件是本 talk 综合，不冒充外部合规标准 |
+| P40 | 确定性 / 概率性控制的责任分工 | Böckeler Guides/Sensors + playbook governance；C4 | AI review 可留痕，但不冒充确定性证明 |
+| P41–P45 | DSH 三条腿：知识 / 路径 / 反馈 | DSH FAQ 07 + harness-idea | DSH 是参考实现；每个机制必须回指前面软件 SDLC 问题 |
+| P46 | 可替换能力合同 | DSH capability-seams | 统一合同，不统一每个后端 |
+| P47 | 可重建事实 | DSH session-and-loop / approval pipeline | 模型可见输入、tool result 与 approval 的日志语义要分清 |
+| P48 | 四项治理决定 + 采用顺序 | C5/C6 + DSH 机制索引 | 先工件 → 再 gate → 最后关 loop；生态数量不承担结论 |
+| P49 | 回答开场 | C1/C2 | slogan 保留，同时重申诊断条件 |
+| P50 | 软件价值流试点 | C6 + communication job | 选最慢的交接，补齐一个 artifact/gate/owner/feedback |
 
-## 三、口径与引用约定
+## 三、引用与责任约定
 
-- 每个页面引用素材走相对路径 `../_reference/rawdata_*/…`（见 `_reference/README.md`）。
-- 简写：`final_v4/…` = `rawdata_ai-coding-evolution-final/final_v4/…`；`_digested/…` = `rawdata_dsh-digested/…`。
-- 「代码不再是瓶颈」是 Anthropic 论点，引用标注来源；playbook 是 Claude 视角，机制讲透、产品名不唯一。
+- 页面所用外部非平凡主张，必须可回到 `_reference/` 下具体文件或 `02-claim-ledger.md` 的对应 claim。
+- 「工件 / gate / owner / feedback」、「审计五条件」与「共享控制面，分布领域知识」是本 talk 综合框架；现场不归属给 Anthropic 或 DSH 原文。
+- 产品名、工件名与具体路径是实现示例；主线讲机制与组织责任，不讲成唯一方案。
+- 本索引只适用于软件 SDLC，不得用它支撑销售、市场、客服、财务、人力或一般企业组织结论。

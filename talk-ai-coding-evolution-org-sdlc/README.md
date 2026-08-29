@@ -1,10 +1,9 @@
 # AI-Native 软件研发组织：从产品意图到生产运维的 SDLC 转型之道
 
-本目录是这场 talk 的推敲工作区。**目的只有一个：把故事线推敲出来。**
+本目录是这场 talk 的内容与生产工作区。故事线与 50 页页面职责已经锁定，当前进入**生产事实稿与表现设计**。
 
-> **总工作规约：先内容，后表现。** 当前仍在内容 REVIEW。**50 页总页数已定**，作为稳定的叙事边界；
-> REVIEW 只在 50 页内调整页面职责、内容取舍与转场。
-> 只有在沟通任务、核心命题、累进故事线、关键论据、开场与收束全部锁定后，才进入模板、视觉、动画和 PPTX 生产。
+> **总工作规约：先内容，后表现。** v0.7 内容锁已通过，**50 页总页数已定**，作为稳定的生产边界；
+> 表现设计服务既定页面职责。若表现阶段暴露命题、证据或转场问题，先回写内容源文件，再继续生产。
 
 > 姊妹目录 [`../talk-ai-coding-evolution-opc/`](../talk-ai-coding-evolution-opc/README.md) 针对 **OPC（一人公司）**；
 > 本目录只针对 **软件 SDLC 上的跨职能研发与交付组织**。两者共享「五层演变 + DSH」这套**深轴**素材，但**问题、对象、篇幅完全不同**。
@@ -33,41 +32,45 @@ talk-ai-coding-evolution-org-sdlc/
 │   ├── rawdata_dsh-plugin-business-ladder/  #   【symlink】插件收益阶梯
 │   ├── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
 │   └── rawdata_dsh-plugin-seam-maturity/    #   【symlink】插件接缝与成熟度
-├── _asset/                                  # 视觉资产（模板待定：风格不限制，按内容选）
-│   └── README.md                            #   模板选型原则
+├── _asset/                                  # 表现设计与视觉资产
+│   └── README.md                            #   v0.8 系统蓝图式技术编辑风
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
 │   ├── 00-storyline-map.md                  #   故事线总图（v0.7）：沟通任务 + SDLC 主轴 + 三幕
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
-│   ├── 02-turning-points.md                 #   转折点 / 锚点清单（待补 playbook 锚点）
+│   ├── 02-turning-points.md                 #   五层、六阶段与治理锚点清单
 │   ├── 03-audience-and-pitch.md             #   听众、时长、pitch
 │   ├── 04-open-questions.md                 #   已决 / 待办（随手记）
-│   ├── 05-five-layer-reading.md             #   五层「引子」的理论底（组织读法）
+│   ├── 05-five-layer-reading.md             #   五层「引子」的理论底（软件 SDLC 能力读法）
 │   ├── 06-harness-internals.md              #   harness「引子」的核心（圈住 / 拦住 / 看清）
 │   └── 07-narrative-thinking.md             #   ★ 叙事思路笔记：看了什么 / 被什么启发 / 思路演化 / 决策理由
 ├── 02_evidence/                             # 素材与脉络
 │   ├── 00-absorption-plan.md                #   ★ 六阶段 + 15 play 进货单（铺页面的骨架）
-│   └── 01-info-flow-map.md                  #   信息脉络图（待补）
+│   ├── 01-info-flow-map.md                  #   上游 → 主张 → P1–P50 正反向索引
+│   └── 02-claim-ledger.md                   #   核心主张证据账本与可说/不可说口径
 ├── 03_outline/                              # 页面结构与逐页内容
-│   └── 00-page-structure.md                 #   ★ 现场版页面结构（50 页 · 75–90 min 骨架）
+│   ├── 00-page-structure.md                 #   ★ 现场版页面结构（50 页 · 75–90 min 骨架）
+│   ├── 01-opening-and-why.md                 #   P1–P12：开场 + 为什么整条链要转
+│   ├── 02-six-stages.md                     #   P13–P38：六阶段统一四问
+│   └── 03-dsh-and-closing.md                #   P39–P50：共享控制面 + 收尾行动
 ├── 04_drafts/                               # 口语讲稿 / 生产事实稿（待写）
 └── 05_output/                               # PPTX 交付（待产出）
 ```
 
-> **临时目录约定**：与 `-opc` 相同——一次性产物放仓库根目录、以 `.tmp-org-talk-*` 前缀命名，不入库；版本收口后清理。细则见 [`AGENTS.md`](./AGENTS.md)。
+> **临时目录约定**：一次性产物放仓库根目录、以 `.tmp-org-sdlc-talk-*` 前缀命名，不入库；版本收口后清理。细则见 [`AGENTS.md`](./AGENTS.md)。
 
 ## 两套素材怎么合成
 
 - **宽轴 = 六阶段 SDLC**（`rawdata_anthropic-ai-native-sdlc-playbook.md`）：组织转型的**范围**。
-- **深轴 = 五层演变 + Harness**（`rawdata_ai-coding-evolution-final` + DSH 系列）：每一个动作的**可靠性边界**。
-- **咬合点**：playbook 每个 play 都能落回五层的某一层；harness 从「编码这一格的边界」扩为「整条链的平台层 + 治理层」。
+- **深轴 = 五层演变 + Harness**（`rawdata_ai-coding-evolution-final` + DSH 系列）：观察每一步的**外置与控制深度**。
+- **咬合点**：playbook 每个 play 都能用五层镜头检查；harness 从「编码这一格的边界」扩为整条软件价值流的共享控制基线。
   逐 play 映射见 [`02_evidence/00-absorption-plan.md`](02_evidence/00-absorption-plan.md)。
 
-一句话：**`-opc` 说「harness 是每一次动作的可靠性边界」；本 talk 说「把这个边界铺满整条 SDLC」。**
+一句话：**`-opc` 说「harness 是每一次动作的可靠性边界」；本 talk 说「让共同控制基线覆盖整条 SDLC，同时让领域判断留在明确的 owner 手里」。**
 
 ## 工作方式
 
 agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
-加工顺序固定为 **故事线 → 证据口径 → 内容锁定 → 页面职责 → 生产事实稿 → 视觉设计 → PPTX → 文字/视觉 QA**；
+加工顺序固定为 **故事线 → 证据口径 → 50 页页面职责 → 内容锁定 → 生产事实稿 → 视觉设计 → PPTX → 文字/视觉 QA**；
 review 若改变了内容，反向同步回上游源文件。
 
 ### 内容锁定门
@@ -84,7 +87,7 @@ review 若改变了内容，反向同步回上游源文件。
 内容锁定后，每页仍先定「叙事职责 + 主要结论」，再做视觉。进入 PPT 阶段时统一使用
 `presentations:Presentations` skill，按内容选视觉路线，并完成全量渲染、逐页文字 REVIEW、逐页视觉 REVIEW 和来源追溯。
 
-当前为 **v0.7 内容 REVIEW**：目录与对象已收紧为软件 SDLC，50 页已锁定；`_reference/` 下所有 symlink 只读。
+当前为 **v0.8 表现设计**：v0.7 内容锁已通过；视觉方向采用“系统蓝图式技术编辑风”。下一步先写 50 页生产事实稿，再建立布局系统和 PPTX。
 
 ## 与 `-opc` 的关系（一句话）
 

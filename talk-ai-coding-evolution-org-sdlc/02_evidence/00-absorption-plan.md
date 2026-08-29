@@ -1,15 +1,16 @@
-# 内容吸纳清单：六阶段 + 15 play 进货单（v0.5）
+# 内容吸纳清单：六阶段 + 15 play 进货单（v0.7 · 软件 SDLC）
 
 > 源：`../_reference/rawdata_anthropic-ai-native-sdlc-playbook.md`（Anthropic "The AI-Native SDLC playbook"，Louis Claxton，2026-08-21）。
-> 本表是铺页面的骨架：**每一阶段 → 每个 play → 传统→AI-native 转变 → 工件/机制 → 治理 → 度量 → 五层/harness 落点**。
-> 五层映射用 `-opc` 的口径：Prompt/Context = 任务层，Harness = 平台层（圈住/拦住/看清），Loop/Graph = 治理层。
+> 本表是**证据库**，不是页面目录：**每一阶段 → 每个 play → 传统→AI-native 转变 → 工件/机制 → 治理 → 度量 → 五层深度镜头**。
+> 叙事层不逐 play 平铺，而是沿六阶段统一回答**工件 / gate / owner / feedback**。范围只限软件 SDLC。
 
 ## 零、贯穿全文的主线（不进任何单页，处处引用）
 
-- **代码不再是瓶颈**：build 被压扁，慢的是 plan / review / test / deploy（人的速度）。
+- **瓶颈转移诊断**：当 build 被压缩而端到端 lead time 未同步下降，慢点会移向 plan / review / test / deploy。这是 Anthropic 观点，需听众用自身数据验证。
 - **AI-native SDLC = loop**：线性 → 循环；AI 嵌在每个点；自动交接 / 触发。
-- **工件链 = 审计链**：`intent.md → spec.md → plan.md → diff+tests → PR+review → incident`；每一阶段落一个工件，下一阶段读它；commit 链记录「谁要的 / agent 产出了什么 / 谁批的」。
-- **人守 gate，不逐行**：human judgment at gates；确定性优先；authorize at execution, not at generation。
+- **工件链是审计的骨架**：`intent.md → spec.md → plan.md → diff+tests → PR+review → incident`；每阶段落工件，下一阶段读它。只有加上身份、版本、证据、审批与不可绕过的 gate，才承担审计。
+- **机器守确定性 gate，人守判断 gate**：human judgment 仍为意图、风险、例外与生产授权负责；确定性可表达的规则不降级为概率判断；authorize at execution, not at generation。
+- **四问贯穿**：每阶段均要明确工件、gate、owner 和 feedback。
 
 ## 一、六阶段 shifts 总表（第一幕/第二幕总览用）
 
@@ -75,17 +76,19 @@
 
 - 「代码不再是瓶颈」是 **Anthropic 的论点**，引用标注来源，不讲成普适事实。
 - playbook 是 **Claude / Anthropic 视角**的操作手册；讲「机制」讲透，别把产品名（Claude Code / Claude Security / Claude Tag）讲成唯一答案。
-- `-opc` 红线仍适用：前三层成熟、Loop/Graph 新兴；DSH 不是 MCP（`ctx.llm`/`ctx.tools`/capability seam/plugin）；star/生态数据是 2026-08-27 快照；CVE 只讲因果链。
+- `-opc` 红线仍适用：前三层成熟、Loop/Graph 新兴；DSH 不是 MCP（`ctx.llm`/`ctx.tools`/capability seam/plugin）；star/生态数据是 2026-08-27 快照；具体 CVE 必须有证据卡片，无卡片时只讲「执行时独立授权」机制。
 - 工件名（`intent.md`/`spec.md`/`plan.md`/`REVIEW.md`/`AGENTS.md`）是 playbook 的约定，讲时说明「这只是命名约定，换成你们组织的工件系统同理」。
 - **命名随大流、工具不可知**：playbook 原文的 `CLAUDE.md`（及 `.claude/skills`、`.claude/agents`、`.claude/settings.json` 等路径）是 Claude Code 专属命名；本 talk 统一用主流/工具不可知的名字——`CLAUDE.md` → **`AGENTS.md`**，`.claude/skills` → **skills（版本受控目录）**，`.claude/agents` → **subagents**，其余同理。机制讲透，不绑定任何单一产品。
+- **软件 SDLC 边界**：证据只支撑软件价值流上的产品、架构、平台、开发、QA、安全、发布与 SRE / 运维结论，不外推到其他企业职能。
+- **工件链口径**：不把工件链直接说成审计链；正式条件与来源边界见 `02-claim-ledger.md` C3。
 
-## 四、DSH 帮助流程：三条腿 + 机制 → org 映射（第三幕素材）
+## 四、DSH 作共享 harness 控制面的参考实现（第三幕素材）
 
 > 源：`rawdata_dsh-faq-on-digested/07_borrowing-harness-idea/`、`rawdata_dsh-digested/harness-idea/`、`session-and-loop/`、`capability-seams/`、`rawdata_dsh-plugin-business-ladder/`、`rawdata_dsh-plugin-seam-maturity/`。
 
 **一句话**：DSH 不训练「更聪明的 agent」，而是把「怎么正确参与」外置成运行时语法——让「读对、改对」成为阻力最小路径，「读错、改错」在离错误源头最近处被机器拒绝。三条腿：
 
-| 腿 | DSH 机制 | 金句 | org 落点 |
+| 腿 | DSH 机制 | 金句 | 软件 SDLC 落点 |
 |---|---|---|---|
 | **知识外置** | 一个事实一个 owner；当前状态与决策理由分开；负知识（为什么不做 X）也外置 | 「不糊涂靠外置，不靠聪明」 | 工件链（intent/spec/AGENTS.md + ADR + rejected notes） |
 | **正确路径** | 扩展点路由四问（事实/拦截/能力/loop）；参与阶梯 patch→扩展点→seam→loop；归属路由 | 「不乱发挥靠正确路径」 | 治理的准入/替换（谁能改什么、改哪里先问归属） |
@@ -97,16 +100,16 @@
 
 **审计/重建事实** = append-only session log + 审批成对 `asked/decided` + fail-closed（无人可答就失败关闭）+ 会话格式版本纪律。
 
-**诚实标尺** = 可替换率 **39.3%**（28 条 seam 中 11 条 P≥2）；饱和区（执行世界 / 会话底座 / LLM 注册面 / 四入口复用 spine）vs 缺口区（渠道通知 / 长期记忆 / 审批人类形状与多方编排 / workflow 持久化 / authorization）。→ 这本身就是「成熟度诚实」的样本：敢把数字摊开。
+**成熟度证据（不进核心叙事）** = 可替换率 **39.3%**（28 条 seam 中 11 条 P≥2）；该数字只衡量「有没有第二个真实 Provider」，不等于已商品化或替换必然有价值。它留在证据库作背景，不承担 P48 的组织结论。
 
 ## 五、汲取边界（过滤后的取舍）
 
-> 面对 `_reference/` 全部输入，本 talk（50 页，SDLC 主轴 + 引子）的取舍。判定标准：**能不能直接支撑「组织转型 SDLC」的论点**；太偏 DSH 自身实现/工程方法论的，跳过。
+> 面对 `_reference/` 全部输入，本 talk（50 页，软件 SDLC 主轴 + 四问贯穿）的取舍。判定标准：**能不能直接支撑软件价值流的工件 / gate / owner / feedback 或共享控制面**；太偏 DSH 自身实现/工程方法论的，跳过。
 
 ### 已充分汲取（不再挖）
 
 - playbook 六阶段 + 15 play → 主轴 + 进货单（§一/§二）
-- 五层报告（Prompt/Context/Harness/Loop/Graph + Böckeler + 成熟度标尺）→ 引子（`01_storyline/05`、`06`）
+- 五层报告（Prompt/Context/Harness/Loop/Graph + Böckeler + 成熟度标尺）→ 深度镜头（`01_storyline/05`、`06`）
 - DSH harness-idea 三条腿 → 第三幕核心（§四）
 - DSH session-and-loop（append-only + 模型可见 ⟺ 已记录）→ P47 审计
 - DSH capability-seams（seam 三角色）→ P46 定制
@@ -116,19 +119,19 @@
 
 1. **DSH system/00-map 的「一切皆插件 = 插件树，新行为挂扩展点不改 loop」** → 强化 P42/P46 的「定制/扩展」：组织加能力是挂扩展点，不是改核心。
 2. **DSH tools-prompt-llm 的「工具执行管道 allow/deny/ask + timeout」** → 强化 P45 的「可执行反馈 = 门禁」：门禁就是这条管道，机械可判、就地拦截。
-3. **ecosystem-distribution 的「桥/渠/窗 + 低复制成本 → 星标质量解耦」** → P41/P48 一句背景：生态大 ≠ 可信（热度不是质量认证）。
+3. **ecosystem-distribution 的「桥/渠/窗 + 低复制成本 → 星标质量解耦」** → 留在备用证据，不进 P41/P48 核心故事。
 
 ### 跳过（不汲取）
 
 - cordis-runtime 五原语（ctx/plugin/effect/event/waterfall/fiber）——太底层，对决策者听众是噪音。
 - surfaces 多入口细节（CLI/Web/ACP/JSON-RPC 各自组合）——太偏实现；「四入口复用同一 runtime spine」最多一句带过。
-- FAQ 01–06（仓库组织 / SDD / model-vendors / 根入口文档 / SPEC 路径）——DSH 自身工程方法论，离「组织转型 SDLC」太远。
+- FAQ 01–06（仓库组织 / SDD / model-vendors / 根入口文档 / SPEC 路径）——DSH 自身工程方法论，离软件 SDLC 组织转型主线太远。
 - composition 的 boot 时序 / dump-config 保真细节——机制级，不进叙事。
 - 具体代码样例（intent.md / plan.md / AGENTS.md / REVIEW.md / bands.yaml 完整字段）——只取关键字段上屏，不全文。
-- 具体数字（2286、39.3% 之外的分位数、stars 明细、基尼系数）——只留「2286 条两周堆出」「39.3% 可替换」两个信号。
+- 生态数量、stars 明细、基尼系数与 39.3% 可替换率——可作备用证据，不进核心 50 页叙事。
 
-## 六、待补
+## 六、进入生产事实稿时再处理
 
-- 信息脉络图（上游 → 加工 → 页面 + 反向索引）→ `01-info-flow-map.md`。
-- 组织特有反面案例 / 供应链事故（补 managed settings worked example 之外的证据）。
-- 「值得补」3 条落地到 P42/P45/P46/P41/P48 的具体措辞（待写生产事实稿时并入）。
+- `01-info-flow-map.md` 已按 v0.7 固定 50 页校准；页面改动必须同步维护正反向索引。
+- P2 的自证指标已记入 `02-claim-ledger.md` C1；写生产事实稿时压缩为现场可讲的 3–4 个指标。
+- P30 当前只讲 execution-time authorization 机制。若以后使用具体授权 / 供应链安全事件，先建独立证据卡片。

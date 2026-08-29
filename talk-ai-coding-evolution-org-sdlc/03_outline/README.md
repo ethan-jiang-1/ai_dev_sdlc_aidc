@@ -2,10 +2,9 @@
 
 本目录负责把故事线（`01_storyline/`）落到逐页页面职责、上屏文字与讲点。
 
-- `00-page-structure.md` —— 现场版页面结构（**50 页 · 75–90 min · v0.5**，SDLC 主轴 + 五层/DSH 引子）。
+- `00-page-structure.md` —— 现场版页面结构（**50 页已定 · 75–90 min · v0.7**，软件 SDLC 主轴 + 四问贯穿）。
 - `01-opening-and-why.md` —— 开场 + 第一幕逐页内容（P1–P12）。
-- `02-six-stages.md` —— 第二幕逐页内容（P13–P38，六阶段，每阶段一个引子）。
-- `03-dsh-and-closing.md` —— 第三幕 + 收尾逐页内容（P39–P50，DSH 三条腿 + 治理收束）。
+- `02-six-stages.md` —— 第二幕逐页内容（P13–P38，六阶段统一回答工件 / gate / owner / feedback）。
+- `03-dsh-and-closing.md` —— 第三幕 + 收尾逐页内容（P39–P50，共享控制面 + DSH 参考实现 + 试点行动）。
 
-> 状态：**v0.5 页面职责已铺完（50 页）**。下一步：用户 review 页面职责 → 校准页数/时间 →
-> 写 `04_drafts/` 生产事实稿 → 选模板（`_asset/`）→ 产 PPTX（`05_output/`）。
+> 状态：**v0.7 内容锁已通过，50 页总量不变**。当前进入 `04_drafts/` 生产事实稿与 `_asset/` 表现设计，随后生产 PPTX。
