@@ -1,4 +1,7 @@
-# Harness 里头干啥 · 组织版（抓要害的讲法）
+# Harness 里头干啥 · 组织版（抓要害的讲法 · v0.2 深轴）
+
+> **v0.2 定位更新**：本页是「深轴」的核心——harness 的圈住/拦住/看清。在整场 talk 里，它被扩展为「整条 SDLC 的平台层 + 治理层」
+> （managed settings / hooks / sandbox / evals / observability），对应 playbook 的 Build/Test/Deploy/Maintain 各 play。机制本身不变。
 
 > 这是第二幕的核心讲法。目的：让组织决策者用一句话记住 harness 到底在干什么，以及**为什么它必须被集中建设**。
 > 源：Böckeler 定义（`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md`）。

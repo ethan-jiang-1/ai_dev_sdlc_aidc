@@ -1,122 +1,85 @@
-# 故事线总图（v0.1 · 初稿）
+# 故事线总图（v0.5 · AI-Native 研发组织 · SDLC 主轴 + 五层/DSH 引子）
 
-> **官方题目（待定）**：组织航海指南：组织与 Harness，规模化 AI Coding 之道。
-> 状态：**v0.1 初稿**。本 talk 与 `-opc` 共享同一批上游素材（五层演变 + DSH），但**问题与落点不同**：
-> `-opc` 问「一个人要把 AI Coding 掌握到多深」，`-org` 问「一个组织要把 AI Coding 建成怎样的能力」。
-> 五层作为"组织分工图"的解读见 [`05-five-layer-reading.md`](./05-five-layer-reading.md)；harness 里头干啥（组织版）见 [`06-harness-internals.md`](./06-harness-internals.md)。
+> **对象**：研发整体组织——从产品一路到底到实施、再到运维。**题目已定**：AI-Native 研发组织：从产品到实施的 SDLC 转型之道。**slogan**：代码不再是瓶颈，流程才是。
+> **篇幅档位 A**：单场加长 Keynote（75–90 min，~46 页）。**独立成篇**（不承接 `deck_ai_sdlc_keynote`）。
+> **v0.5 定调（不再反复）**：**SDLC 六阶段是主轴**；**五层（Prompt→Context→Harness→Loop→Graph）+ DSH 不强扭成独立章节**，
+> 而是各自在自然接点作「引子」插进 SDLC。harness 在开场先立住，Build/Test/Deploy 再展开；DSH 作为「给不同视角/环节定制」的可组合 runtime。
 
 ## 一句话主线
 
-**模型能力一直在涨，人机互动行为就一直在变。**在组织里，这不是一个人被推着往上爬五层，而是五种工程角色
-（prompt 设计师 → context 平台 → harness SRE → loop 设计师 → graph 架构师）要在组织里被**分工、集中、治理**。
-组织要掌握的临界点同样是 **harness**：但它的形态不是「个人能力」，而是 **共享平台 + 治理边界**——
-一线专注任务，平台统一可靠性，治理层握运行边界的最终决定权。
+代码不再是瓶颈——组织转型的不是「编码」，是整条 SDLC。沿着六阶段（Plan→Design→Build→Test→Deploy→Maintain）走一遍，
+每个阶段都有一个「引子」点破它的本质：Plan 是 Prompt（把意图说清楚），Design 是 Context（策展模型所见与组织知识），
+Build/Test/Deploy 是 Harness（执行与可靠性边界），Test/Maintain 是 Loop（反馈连成闭环），跨阶段编排是 Graph（多节点 + 门禁）。
+**DSH 是这套 harness 的可组合 runtime**——让组织按各环节定制、而非从零造。
 
-**最终控制权在组织 = 治理层对四件事的最后决定权**：接入什么、替换什么、何时放行、如何重建发生过的事实；
-模型、工具、后端与插件仍可借用，但这些决定的签字权不再压在某个个体身上，而是落到治理。
+## 主轴 + 引子（一张表看全）
 
-整场沿一条责任线推进：Prompt / Context 处理**信息责任**，Harness 承担**行动责任**，Loop / Graph 放大**组织责任**。
-`-opc` 的悲剧是「五种角色压到一个人身上」；`-org` 的常态是「五种角色可以分工」——于是真正的问题变成：
-**这些能力该建在哪、谁拥有、如何不各自为政。** DSH 不是独立插入的话题，而是「组织怎样用可组合的 harness runtime
-搭出共享平台、同时把运行边界的签字权收归治理」的实例化回答。
+| SDLC 主轴 | 引子（五层） | 落在本 talk 的机制/工件 |
+|---|---|---|
+| **Plan** | **Prompt**：组织怎么把意图一次说清楚 | `intent.md`（originator 自己的话 + 产品 owner 审批） |
+| **Design** | **Context**：组织策展模型看到什么、知道什么 | `spec.md` + skills（政策在写 spec 时就施加） |
+| **Build** | **Harness**（主战场）：圈住/拦住/看清 | plan mode / `AGENTS.md` / skills / hooks / 并行会话 |
+| **Test** | **Harness 的 Sensors + Loop 起点**：会话自己验证 | feedback loop / continuous evals |
+| **Deploy** | **Harness 的拦住/看清**：authorize at execution | PR review / hooks as gates / managed settings / CI-CD |
+| **Maintain** | **Loop 收口 + Graph 编排**：linear→loop 关环 | 关 loop / scans / on-call（Claude Tag） |
+| （收束） | **DSH**：给各环节定制的可组合 runtime | registry / adapter / capability seam / enforced gate / session log |
 
-## 故事弧线（五幕）
+> 五层可概括为三层责任（信息/行动/组织），但那只是收尾的一句话总结；正文里**每层都作为对应阶段的引子单独点破**，不并、不吞、不硬凑。
 
-| 幕 | 内容 | 作用 | 时间 |
+## 故事弧线（开场 + 三幕）
+
+| 幕 | 内容 | 作用 | 时间(约) |
 |---|---|---|---|
-| 开场 | 钩子 + 组织的问题 | 让组织对号入座 | 0–3.5 |
-| 第一幕 | 五层演变（人机互动一直在变） | 铺路 + 引发共鸣 | 3.5–15.5 |
-| 第二幕 | 根本还是 harness（Böckeler + 为什么） | 转折 + 抓要害 | 15.5–25.5 |
-| 第三幕 | 组织的答案：共享平台 vs 各自为政 | 让组织看见真实需求 | 25.5–34 |
-| 第四幕 | DSH 的定位 + 组织的治理边界 | 落点 | 34–39 |
-| 收尾 | 带走一句 + 收尾页 | 收束 | 39–45 |
+| 开场 | 钩子 + 五层预告 + harness 引子先立住 | 让组织对号入座 | 0–6 |
+| 第一幕 | 为什么整条 SDLC 要转型 | 论点 | 6–16 |
+| 第二幕 | 六阶段转型（每阶段一个引子） | 主体（主轴） | 16–68 |
+| 第三幕 | DSH + 治理收束 | harness runtime + 落地 | 68–82 |
+| 收尾 | 带走一句 | 收束 | 82–90 |
 
 ## 每一幕的要点
 
-### 开场（钩子）
-- 问题：一个组织要规模化用 AI Coding，到底该**统一建平台，还是放每个团队自己装**？组织要建成的能力边界在哪里？
-- 钩子：两年里组织里每个人的角色一直在变——写 prompt → 挑 context → 搭环境 → 写循环 → 排图。
-  组织不是在追新工具，是在被模型一步步逼着**重新划分工程责任**。
-- **P3 的责任线（org 版）**：五个 Engineering 背后是三层越来越重的责任——信息责任、行动责任、组织责任。
-  `-opc` 是一个人扛三层；组织的问题是这三层责任**该由谁承担、该不该集中**。
-- **点题焊点**（06 章角色表）：一个成熟组织需要五种角色（prompt 设计师→context 平台→harness SRE→loop 设计师→graph 架构师），
-  一人公司是"被同一个人承担"的极端，组织是"可以分工"的常态——分工本身就是组织的机会，也是组织最容易乱的地方。
+### 开场（钩子 + 五层预告 + harness 引子先立住）
+- 问题：组织已经让工程师用上 AI coding，代码产出翻了几倍，交付却没快——为什么？
+- 钩子：**Code is no longer the bottleneck**（Anthropic，标注来源）。
+- **P4 五层预告**：人机互动一直在变（Prompt→Context→Harness→Loop→Graph），这五层会沿着 SDLC 逐一亮相——不展开，只预告。
+- **P5 harness 引子（先立住）**：模型给能力，harness 给可靠性——五层里组织最该握住的是 harness，后面 Build/Test/Deploy 展开。
 
-### 第一幕：五层演变（铺路）
-- **发动机**：模型越强，单次交互的边际工程收益越低，人机互动行为跟着变，人的动作粒度变粗。
-- 五层各一句话（人从"亲手做"到"设计别人怎么做"）：
-  Prompt（说话者）→ Context（策展者）→ Harness（环境工程师）→ Loop（控制流作者）→ Graph（编排者）。
-- **叠加观 + 成熟度标尺**：不是换代，是叠加；前三层成熟、后两层叙事期。
-- **组织读法（本 talk 的独有翻译）**：这五层在组织里**分别对应不同的责任归属**——
-  Prompt / Context 是**任务层**（一线团队）、Harness 是**平台层**（平台/SRE 团队）、Loop / Graph 是**治理层**（架构 + 治理）。
-  同一个"杠杆点上移"，在组织里读成"责任该从哪个团队上移到哪个团队"。
+### 第一幕：为什么整条 SDLC 要转型
+- 代码不再是瓶颈 → 三个后果（瓶颈左移右移 / 旧控制失效 / 治理成本上升）。
+- 传统 SDLC 的控制假设：每一步都是人做的；逐行 review、阶段闸门跟不上 agent 产出。
+- 转型的本质：从「人执行 + 人工闸」→「harness 执行 + 人守 gate」。
+- 贯穿主线早埋：**工件链 = 审计链**（intent→spec→plan→diff→PR→incident）。
+- 六阶段 shifts 总表（传统 vs AI-native）。
 
-### 第二幕：根本还是 harness（抓要害）
-- **三页分工**：P6 只定义 Harness 是什么；P9 证明 Loop / Graph 会放大结果却补不上缺失的执行边界；
-  P10 再说明 Harness 如何改变交付底线。同一模型换 Harness，就是两套交付系统。
-- **转折**：五层讲完，问题重新回到 harness——它是每一次真实动作必须经过的执行边界。
-- **口径**：报告把 Context 与 Harness **并列**为"成熟主体"；"harness 最重要"是我们的判断，用三条素材撑
-  （结构线 loop/graph 实例化 harness、哲学线 反馈同源（Sensors→loop）+ 验证梯渗透 + GraphARC 门禁、风险线 2026 CVE），别讲成"报告背书"。
-- **定义**：Böckeler —— **Agent = Model + Harness**；harness = 模型之外的一切。
-- **harness 里头干啥**（组织版讲法）→ [`06-harness-internals.md`](./06-harness-internals.md)：
-  一句话「模型给能力，harness 给可靠性」；两套控制（Guides 前馈 + Sensors 反馈）；三个可靠性动词
-  **圈住 / 拦住 / 看清**——在组织里，这三个动词直接翻译成**统一沙箱、统一门禁、统一观测/审计**。
-- **为什么强调这些（必讲透）**：
-  1. **可靠性是系统的属性，不是模型的属性**——是"模型 + harness"整体的属性。组织买贵模型买的是"能力"，"可靠性"是 harness 给出来的。
-  2. **确定性优先**——测试 / lint / 类型能复现、能审计，AI 判断不能。组织要审计、要合规，必须把门禁建立在确定性之上。
-- **为什么是 harness（org 版）**：它不是"最高层"，而是每一次动作都绕不开的可靠性边界。**对一个组织来说，
-  harness 是唯一该被"集中建设"的那一层**——因为可靠性、权限、门禁、观测、provenance 只有在统一平台上
-  才能被规模化、被审计、被治理；而 Prompt / Context 该放给一线（任务自主），Loop / Graph 该由治理层定义编排与审计规则。
-- **P13 的桥**：模型 / Loop / Graph 提议下一步，权限与确定性门禁独立检查，执行端放行或拒绝并记录。
-  提议权可以交给模型；执行权必须留在 Harness。→ 在组织里，"执行权留在 Harness" = "执行权留在统一平台/治理"。
-- **反面证据**：2026 CVE——执行时授权缺失。护栏若建立在"模型会发出合法工具调用"上，工具调用可被伪造时整条链失效。
-  修复：**authorize at execution, not at generation**。
+### 第二幕：六阶段转型（每个阶段一个引子）
+- **Plan（引子=Prompt）**：意图一次捕获 `intent.md`；originator 自己的话 + AI 头脑风暴，产品 owner 审批。治理=merge，度量=存活率 + 多周→小时。
+- **Design（引子=Context）**：需求+设计合一 `spec.md`；skills 施加 brand/security/compliance/UX 政策；`AGENTS.md`/skills 把制度知识外置。治理=spec+prompt+skill 版本全进库，风险项路由 policy owner。
+- **Build（引子=Harness 主战场）**：圈住（沙箱/权限）、拦住（hooks/门禁）、看清（观测/provenance）。plan mode 出 `plan.md`、`AGENTS.md`、skills、hooks、并行会话/子 agent（点出 Graph 雏形）。
+- **Test（引子=Harness 的 Sensors + Loop 起点）**：feedback loop（会话自己验证）+ continuous evals（对 harness 配置的回归测试）。确定性优先。
+- **Deploy（引子=Harness 的拦住/看清 + authorize at execution）**：PR review（职责分离）、hooks as gates、managed settings、CI/CD。提议权给模型，执行权留治理。
+- **Maintain（引子=Loop 收口 + Graph 编排）**：关 loop（control-band breach → `intent.md` 重新入环）、scans、on-call。检测确定性、越界才调 agent。
 
-### 第三幕：组织的答案：共享平台 vs 各自为政（抉择，不绝对）
-- **组织特有的失败模式（钩子）**：每个人 / 每个团队各装一套 harness、各连一套工具、各签一套权限 → 重复建设、
-  无法审计、供应链风险外溢。`-opc` 没有这个问题（一个人不存在"各自为政"）；组织一定有。
-- **判断规则（承接 `-opc` 的"边界进入业务"）**：组织何时该从"各自为政"转向"共享平台"？
-  当运行边界进入**组织级风险与合规面**——统一授权、统一审计、统一供应链准入成为交付的前提——就该把 harness 收归平台。
-  "工具多"不是理由；"组织开始承担运行边界的责任"才是理由。
-- **固定 harness（Codex / Claude Code）的好**：开箱即用，沙箱、安全、provenance 都替你设计好；常见任务够用。
-- **固定 harness 的边界**：它的扩展边界由产品定义。当组织要改变自己的模型、工具、执行世界、可执行门禁或知识组织，
-  而现成产品没有开放相应合同，才会真的卡住——这时组织需要的是**可组合的 harness runtime**，而不是让每个团队去绕行。
-- **DSH 的爆发是一个信号，不是质量认证**：GitHub 公开后约 14 天接近 20 万 star；同一生态快照收录 2,286 条插件。
-  注意力迅速聚到"可扩展边界"；不说明插件成熟、可信或值得无差别安装。
-- **从热度回到组织价值**：P17 的热度只是发现入口；别人替你探索过，不等于替你验证过。对组织，
-  真正可借的不是插件数量，而是**平台团队验证过的、可治理的能力组合**。
-
-### 第四幕：DSH（定位与治理边界）
-- **定位问题**：它不是插件商店、不是一个更强的 Loop、也不是要替代 Codex / Claude Code 的成品 Agent；DSH 是一套
-  **可组合的 Harness runtime**。P18 的三项收益来自共同合同与共同事实，不来自插件数量。
-- **为什么只装插件不够（org 版）**：一项能力进入模型可见面或真实执行路径，就会改变权限、门禁与可追溯性。
-  对一个组织，这不是"owner 个人判断"，而是**治理判断**：谁允许接入（准入）、谁能替换（供应链）、谁在执行前签字（放行）、
-  谁能还原事实（审计）。DSH 的 registry、adapter + capability seam、enforced gate 与 append-only session log
-  正好是这四项治理决定可操作的机制证据。
-- **因此 Harness 的最终控制权必须归治理**：不是组织里每个人都自建，而是关键时刻**治理层有 final say**：
-  能力能否进入、实现能否替换、门禁是否放行、事实能否重建。这让"共享平台"不等于"把自由裁量交给某个人"，
-  而是"把可审计的决定权落成机制"。
+### 第三幕：DSH + 治理收束（加厚）
+- 工件链 = 审计链（谁要的 / agent 产出了什么 / 谁批的）；人守 gate，不逐行；确定性优先。
+- **DSH 如何帮助流程 = 三条腿**：知识外置（一个事实一个 owner、负知识外置）、正确路径（参与阶梯、改哪里先问归属）、可执行反馈（门禁本身被测试、invariant）。
+- **DSH = 可组合 harness runtime**：插件图（现在由什么组成）+ 事件流（刚才做过什么，append-only）+ loop（两者间取能力、写事实）；capability seam 三角色让「换后端 Consumer 不改」。
+- 审计 = append-only + 审批成对 asked/decided + fail-closed；诚实标尺 = 可替换率 39.3%（饱和区 vs 缺口区）。
+- 四项治理决定（准入/替换/放行/重建事实）各对应一个机制；组织落地顺序：先工件链 → 再 gate → 再关 loop。
 
 ### 收尾
-- 回答：组织要把 AI Coding 建成**分层能力**——一线专注任务（Prompt / Context），平台统一可靠性（Harness），
-  治理握运行边界的最终决定权（Loop / Graph 的编排与审计）。组织要掌握的临界点是 **harness 这一层**，
-  但形态是「共享平台 + 治理边界」，不是「让每个人都学会五层」。
-- 带走一句：**部件可借，边界归治理。**（完整三层：任务归团队，平台归组织，边界归治理。）
+- 带走一句：**代码不再是瓶颈，流程才是。**
+- 回到开场：快的只是编码，慢的是整条链的流程与治理；组织要做的不是让工程师写得更快，而是沿 SDLC 把五层一一落地。
 
-## 待定（跟进在 04-open-questions.md）
+## 口径红线
 
-- 官方题目、各幕时间预算、页数（初稿 23 页）、模板选型（风格不限制，按内容选）均待用户确认。
-- **无 demo**（继承 `-opc` 的判断，内容已满，45 min 放不下）。
+- 前三层成熟，Loop / Graph 新兴（沿用 `-opc`，本 talk 里 Loop/Graph 是「组织责任的承担者」，不讲成既定生产范式）。
+- 「代码不再是瓶颈」是 Anthropic 论点，引用标注来源；playbook 是 Claude 视角，机制讲透、产品名不唯一。
+- DSH 原生机制不是 MCP；说 `ctx.llm`、`ctx.tools`、capability seam、plugin。
+- DSH 命名随大流：`CLAUDE.md` 概念 → `AGENTS.md`；`.claude/skills` → skills 目录；`.claude/agents` → subagents。机制讲透，不绑定 Claude Code。
 
-## 口径红线 + 内容吸纳
+## 素材索引
 
-- 引用前必查的口径（260 万 / 6 周 / 50 样本 / 三范式二手 / n=1 / Ng 出处未证实 / "挂 MCP"未出现）→
-  沿用 `-opc` 的 `02_evidence/00-absorption-plan.md` 第三节；本目录 `02_evidence/` 待补独立版本。
-- 每页进货单（哪页吸哪个锚点 / 金句 / 反转）→ 待补。
-
-## 素材索引（与 -opc 共享，维护中）
-
-- 五层结构与锚点：`../_reference/rawdata_ai-coding-evolution-final/final_v4.md` + `final_v4/`
-- Böckeler 定义（Guides/Sensors + computational/inferential）：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md`
-- 2026 CVE（authorize at execution）：同上，第六节
-- DSH 三问 / 三腿 / 可执行门禁：`../_reference/rawdata_dsh-faq-on-digested/07_borrowing-harness-idea/answer.md`
+- 六阶段 + 15 play：`../_reference/rawdata_anthropic-ai-native-sdlc-playbook.md`
+- 五层结构：`../_reference/rawdata_ai-coding-evolution-final/final_v4.md` + `final_v4/`
+- Böckeler（Guides/Sensors）：`../_reference/rawdata_ai-coding-evolution-final/final_v4/03-2026-harness-era.md`
+- DSH 机制：`../_reference/rawdata_dsh-faq-on-digested/07_borrowing-harness-idea/answer.md`、`../_reference/rawdata_dsh-digested/`
