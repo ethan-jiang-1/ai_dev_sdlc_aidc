@@ -1,0 +1,117 @@
+# ImageGen 样片 brief（v0.8）
+
+> 目的：只为少数需要“世界观/物理感”的页面生成定制位图，不把 50 页做成 AI 插画册。
+> 用户允许在必要时使用 MICU 的 `gpt-image-2` 路径；实际生成前先用本文件锁定构图和禁区。
+
+## 使用边界
+
+- 首选生成页：P1；P49 作为与 P1 配对但不重复的收尾画面。
+- 可选 A/B：P8、P20。只有位图明显优于可编辑结构时才进入成稿。
+- 明确不用 ImageGen：P42 及所有含复杂拓扑、日志、gate 标签、数值和精确映射的页。
+- 生成图中不放标题、标签、代码、文件名、数字或品牌标识；文字由 PowerPoint 覆盖。
+- 统一视觉媒介：**精密的实体系统纸模 / 建筑模型式 editorial still life**。哑光纸、石墨金属、极少量青绿/珊瑚红/金黄，不用蓝紫渐变、霓虹、机器人、脑神经、浮空 UI。
+- 构图为 16:9。样片可先用 2K；选定后再生成最终高分辨率版本。每张图保留明确的标题安全区。
+- 任务 JSON、prompt 与生成资产可以留在项目资产目录；密钥、authorization header 与本地 MICU 配置不得写入仓库。
+
+## P1：线性价值流开始弯成受控闭环
+
+**用途**：全幅封面背景。标题预计覆盖左上 42% 区域，主视觉位于右侧与下方。
+
+```text
+Use case: stylized-concept
+Asset type: 16:9 keynote cover background
+Primary request: an editorial studio photograph of a meticulously crafted physical model representing a software delivery value stream; a linear track accelerates through a compact build cell, but the downstream review and release gates remain narrow, and the far end of the track begins to curve back into a controlled loop
+Scene/backdrop: seamless pale cool-gray paper studio surface, no horizon line, quiet architectural-model presentation
+Subject: a precise paper-and-metal systems model; matte off-white planes and graphite rails; small gold artifact tiles moving along the path; restrained coral vertical gates; a thin teal return path beginning to form a loop
+Style/medium: premium technical editorial still life, architectural maquette photography, tactile and credible, not a diagram and not science fiction
+Composition/framing: wide 16:9; generous clean negative space in the upper-left 42% for editable title text; system model occupies the right and lower portions; readable silhouette at presentation distance
+Lighting/mood: soft directional studio daylight, crisp material edges, restrained shadows, calm and authoritative
+Color palette: paper white and graphite dominant; teal only for active feedback; coral only for gates; gold only for artifacts
+Materials/textures: matte paper, anodized graphite metal, subtle fiber texture, no glossy glass
+Constraints: no text, no labels, no letters, no numbers, no people, no robot, no brain, no code screens, no hologram, no dashboard, no company logo, no watermark
+Avoid: cyberpunk, neon, blue-purple AI gradients, floating UI, generic network nodes, excessive visual clutter, decorative bokeh
+```
+
+**判定**：如果画面只像“抽象未来交通”，而看不出交付轨道、窄 gate 与开始形成的 loop，就淘汰。
+
+## P49：同一系统已经闭合并稳定运行
+
+**用途**：与 P1 首尾呼应的全幅收束页。必须重新生成，不复用 P1 位图。
+
+生成时把入选的 P1 作为 **Image 1: style and material reference**，只继承材质、摄影、构图语言，不复制形状。
+
+```text
+Use case: stylized-concept
+Asset type: 16:9 keynote closing background
+Input images: Image 1: style and material reference from the selected P1 cover image
+Primary request: show the same kind of physical software-delivery systems model after the transformation is complete; the path is now a clear closed loop with visible controlled gates, traceable gold artifacts, and a restrained teal feedback path returning to the beginning
+Scene/backdrop: same pale cool-gray paper studio surface and architectural-maquette presentation as Image 1
+Subject: a stable closed-loop paper-and-metal system; no congestion; gates remain visible and authoritative; artifacts can be followed around the loop
+Style/medium: match Image 1's premium technical editorial still life, materials, lighting, and visual restraint
+Composition/framing: wide 16:9; reserve the central-left area for one large editable Chinese statement; model recedes into the lower-right and frame edges
+Lighting/mood: calm resolution, soft directional studio daylight, high material clarity
+Color palette: match Image 1 exactly; paper/graphite dominant, restrained teal/coral/gold semantics
+Constraints: preserve the visual language of Image 1; no text, no labels, no letters, no numbers, no people, no robot, no brain, no code screens, no hologram, no dashboard, no logo, no watermark
+Avoid: celebratory confetti, glowing ring, science-fiction portal, blue-purple gradients, generic infinity symbol
+```
+
+**判定**：P1 是“开始弯曲”，P49 是“闭环可运行”；两张图看起来必须属于同一个世界，但不能只是同图换裁切。
+
+## P8 可选：宽产出撞上窄控制容量
+
+**用途**：只做与可编辑 PowerPoint 版本的 A/B 样片，不自动进入成稿。
+
+```text
+Use case: stylized-concept
+Asset type: 16:9 keynote concept visual for a capacity mismatch
+Primary request: a physical editorial systems model where a very wide stream of small gold software-artifact tiles arrives at two narrow coral control gates; one downstream route visibly accumulates into an orderly queue, while a second unsafe bypass route lets sparse unchecked tiles escape
+Scene/backdrop: pale cool-gray paper studio surface, same technical editorial maquette language as the deck cover
+Subject: wide upstream production lane, narrow review/security/release control gates, two clearly different consequences after the bottleneck
+Style/medium: premium architectural-model still life, tactile matte paper and graphite metal, visually simple enough to understand in three seconds
+Composition/framing: 16:9; dominant flow from left to right; clean top area for editable headline; no tiny detail
+Lighting/mood: neutral studio light, credible and sober
+Color palette: graphite structure; gold artifacts; coral gates; teal only on the safe reviewed path
+Constraints: no text, no labels, no people, no literal factory, no robot arms, no dashboard, no logo, no watermark
+Avoid: disaster imagery, chaotic explosion, traffic jam stock-photo metaphor, neon, generic funnels
+```
+
+**判定**：若“排队”与“欠审”不能在不读标签时被区分，就使用 PowerPoint 可编辑版本。
+
+## P20 可选：圈住、拦住、看清的执行单元
+
+**用途**：测试实体纸模媒介能否为 harness 建立记忆点。最终逻辑仍需用可编辑覆盖层表达。
+
+```text
+Use case: stylized-concept
+Asset type: 16:9 keynote concept visual for a controlled software execution harness
+Primary request: a cutaway physical systems model of one software build execution cell; the cell is enclosed by a clear graphite boundary, the active path crosses a narrow coral gate before tool execution, and a visible teal evidence trail records what happened underneath the cell
+Scene/backdrop: pale cool-gray paper studio surface, technical editorial maquette, no surrounding office or data center
+Subject: one controlled execution cell with three visually distinct functions: boundary, enforced gate, traceable evidence path
+Style/medium: precise architectural cutaway model photographed in studio, tactile matte materials, restrained and credible
+Composition/framing: wide 16:9, central-right cutaway model with negative space at upper-left for editable title and three short labels
+Lighting/mood: crisp softbox light, high edge clarity, quiet authority
+Color palette: off-white and graphite dominant; coral gate; teal evidence path; small gold artifact entering and leaving
+Constraints: no text, no labels, no people, no cage metaphor, no prison imagery, no robot, no code screen, no floating UI, no logo, no watermark
+Avoid: cyber-security shield icon, glowing force field, futuristic lab, blue-purple neon
+```
+
+**判定**：若不能稳定区分 boundary / gate / evidence，改用 P20 的 PowerPoint 剖面母图；准确性优先于质感。
+
+## P42 为什么不用 ImageGen
+
+P42 的任务是精确区分：
+
+- live plugin graph = **现在由什么组成**；
+- session event log = **刚才做过什么**；
+- loop = **如何取用能力并写回事实**。
+
+这是拓扑和时序关系，不是概念气氛。最终页使用 PowerPoint 可编辑节点与事件带；连接线先画、节点后画，关键标签不烘焙进位图。
+
+## 生成后的视觉 REVIEW
+
+1. 看缩略图：是否有明确主轮廓，而不是细节噪声。
+2. 覆盖标题：安全区是否真实可用，中文标题是否无需压缩。
+3. 检查语义：青绿/珊瑚红/金黄是否仍遵循 runtime/gate/artifact 的固定职责。
+4. 检查题材：是否误读成制造业、物流、云产品架构或通用 AI 海报。
+5. 检查资产：无生成文字、无品牌、无 watermark、无低清边缘和异常材质。
+6. P1/P49 成对检查：材质一致、状态不同、首尾能形成叙事闭环。

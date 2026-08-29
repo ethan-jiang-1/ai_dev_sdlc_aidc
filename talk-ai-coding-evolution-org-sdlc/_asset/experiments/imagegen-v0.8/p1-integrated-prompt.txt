@@ -1,0 +1,11 @@
+Use case: text-localization
+Asset type: finished 16:9 Chinese keynote cover
+Input image: Image 1 is the edit target and must remain visually intact
+Primary request: turn Image 1 into a finished editorial keynote cover by adding a restrained Chinese typographic composition in the existing empty left area; integrate the typography with the visual rhythm of the physical software-delivery model
+Text (verbatim):
+"AI-Native 软件研发组织"
+"让产品意图顺畅抵达生产现场"
+Typography: clean contemporary Chinese sans serif; graphite black; the first line is large and bold; the second line is smaller and regular; left aligned; generous line spacing; no decorative type effects
+Composition/framing: keep the physical model on the right and lower portions exactly where it is; place both text lines only in the upper-left negative space; maintain generous margins and a clear keynote hierarchy
+Constraints: preserve the original model, rails, gates, artifacts, loop, materials, colors, lighting, shadows, camera angle, and white background; reproduce both Chinese lines exactly; no additional words, letters, numbers, labels, logo, watermark, border, card, badge, or subtitle
+Avoid: English poster styling, centered title, text over the model, condensed type, calligraphy, gradients, shadows behind text, decorative punctuation, extra explanatory copy

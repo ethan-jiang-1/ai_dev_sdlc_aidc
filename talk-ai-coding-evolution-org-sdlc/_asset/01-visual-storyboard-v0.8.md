@@ -1,0 +1,179 @@
+# 50 页视觉分镜（v0.8）
+
+> 本文件把已经锁定的 P1-P50 内容职责翻译成视觉生产约束。它不改故事线、不增减页数，也不提前写 PPTX。
+> 当前视觉路线是 **系统蓝图式技术编辑风（Systems Blueprint Editorial）**：让软件价值流、工件、gate、owner、feedback 与共享控制面成为画面本身。
+
+## 一句话视觉任务
+
+让 CTO、产品、架构、平台、QA、安全、发布与 SRE 在 50 页里亲眼看到：一条围绕人工交接设计的线性 SDLC，如何被重建成一条**有工件、有门、有责任、有回流**的受控闭环。
+
+视觉不是给抽象观点配装饰图，而是逐步暴露同一个系统：
+
+1. P1-P8 先看到线性价值流的压缩、拥塞和控制容量失配。
+2. P9-P13 引入工件、gate、owner、feedback 四种新语法，并把直线闭合成 loop。
+3. P14-P38 沿同一条轨道逐段改造六个阶段；每段留下一个可交接工件和一道可执行 gate。
+4. P39-P48 把镜头下移到共享控制面，解释身份、版本、证据、审批、seam 与日志如何让系统可追溯。
+5. P49-P50 把复杂系统再次压成一句判断和一个可启动的试点。
+
+## 视觉叙事：画面本身也要完成一次转型
+
+| 区段 | 系统状态 | 画面状态 | 观众感受 |
+|---|---|---|---|
+| P1-P5 | 价值流尚未闭环 | 白底、高对比、低密度；轨道只露局部 | 问题比“编码更快”大 |
+| P6-P12 | 旧控制失配 | 拥塞、断点、窄门；四问语法逐渐出现 | 看见真正的约束在哪里 |
+| P13-P38 | 六阶段被逐段重建 | 浅底主场；同一轨道持续高亮当前阶段 | 能逐段比较、能记笔记 |
+| P39-P48 | 控制面被揭开 | 结构更精密；上层价值流与下层运行事实同时可见 | 从组织原则走到工程机制 |
+| P49-P50 | 形成决策 | 再次低密度；复杂结构收成 loop 与四个空位 | 知道会后从哪里开始 |
+
+## 固定视觉语法
+
+### 1. 画布与网格
+
+- 16:9，13.333 x 7.5 in。
+- 左右安全边距 0.65 in；12 列网格；标题区与内容区保持固定基线。
+- 50 页统一使用纸白 `#F7F8F5`，不使用整页黑底或深色章节页。
+- 转折页通过局部石墨结构块、更大标题、更少元素和更强留白建立节奏，不切换画布底色。
+- 页面左上角只保留短阶段标记；底部用细轨道提示当前位置，不做网站式导航。
+
+### 2. 色彩职责
+
+| Token | 色值 | 只承担的职责 |
+|---|---:|---|
+| Paper | `#F7F8F5` | 主画布 |
+| Graphite | `#1B211F` | 标题、结构、确定事实 |
+| Muted | `#65706C` | 次级说明、未激活阶段 |
+| Rule | `#C9D0CC` | 网格、分隔、背景轨道 |
+| Runtime teal | `#0F7C6B` | active path、feedback、正在运行的事实 |
+| Gate coral | `#D95442` | 阻断、风险、不可绕过的 gate |
+| Artifact gold | `#D5A52E` | committed artifact、版本、证据 |
+
+颜色不是唯一编码：active path 同时加粗，gate 同时用垂直断点，artifact 同时使用带折角的文档轮廓，feedback 同时使用回流线与度量刻度。
+
+### 3. 字体与层级
+
+- 中文：`Hiragino Sans GB`；英文：`Helvetica Neue`；代码与文件名：`Menlo`。三者已在当前制作环境可解析。
+- 封面标题 56-64 pt；普通页标题 36-42 pt；关键结论 34-52 pt。
+- 正文 18-22 pt；结构标签 16-18 pt；不以缩小字号解决内容过载。
+- 结论标题保持可朗读，单行标题不换行；长结论改成主句 + 短副句。
+- 字距为 0；不使用全大写长句、斜体中文或装饰性手写字体。
+
+### 4. 五个核心符号
+
+| 对象 | 固定画法 | 语义 |
+|---|---|---|
+| SDLC 轨道 | 石墨细线；当前路径转青绿粗线 | 同一条价值流，不是六个孤岛 |
+| Artifact | 金黄折角文档 + 版本号 + owner 线 | 可交接、可版本化、可追责 |
+| Deterministic gate | 朱红单实线关卡 + 明确 pass/fail 出口 | 机器可复现判定 |
+| Judgment gate | 石墨/朱红双线关卡 + 签名位 | 人承担语境判断和授权 |
+| Feedback | 青绿回流线 + 指标刻度 | 结果回到 intent，而不是停在报表 |
+
+owner 不用人物头像表达，而用清楚的责任签名：`OWNER / Product`、`OWNER / Release`。人形插画会把跨职能责任误读成“某个英雄角色”。
+
+## 八个布局族
+
+| ID | 布局族 | 用途 | 主要页面 |
+|---|---|---|---|
+| L1 | Hero / Bookend | 封面、主张、首尾呼应 | P1、P5、P41、P49 |
+| L2 | Diagnostic Contrast | 问题、前后对比、容量失配 | P2-P3、P6-P9、P11、P40 |
+| L3 | Track / Loop | 价值流、工件链、闭环与环境路径 | P7、P10、P13、P27、P33、P35-P37 |
+| L4 | Artifact Close-up | `intent.md`、`spec.md`、`plan.md`、证据与日志 | P15、P18、P21-P22、P31、P43、P47 |
+| L5 | Stage Lens | 六阶段镜头页；当前阶段 + 控制深度 | P14、P17、P20、P26、P30、P35 |
+| L6 | Four-Question Checkpoint | 六阶段四问收口，固定阅读顺序但不机械复制 | P16、P19、P25、P29、P34、P38 |
+| L7 | Control Plane | gate、配置、graph、seam、runtime 事实 | P23-P24、P28、P32、P39、P42、P44-P46 |
+| L8 | Decision / Action | 导航、治理决定、试点行动 | P12、P48、P50 |
+
+每页只能有一个主构图。即使同页包含多个要素，也应围绕一条轨道、一个工件或一个门展开，不能退化成四卡片仪表盘。
+
+## 逐页视觉分镜
+
+资产类型：`IMG` = 定制位图；`PPT` = PowerPoint 可编辑结构；`ART` = 可编辑工件仿真；`TYPE` = 文字主张与极简结构。
+
+### P1-P12：先让失配可见
+
+| 页 | 布局 | 资产 | 主画面 | 视觉推进 |
+|---|---|---|---|---|
+| P1 | L1 | IMG + PPT | 一座纸模式软件价值流：线性轨道在 Build 处高速压缩，路径在远端开始弯成受控闭环；标题留在负空间 | 先给“整条系统”而不是 AI 人物 |
+| P2 | L2 | PPT | 同一横轴上，Build 区间显著缩短，但端到端 lead time 外框几乎不动；下方露出 queue/review/approval 等待段 | 把问题从口号变成可测差值 |
+| P3 | L2 | PPT | 六阶段轨道中 Build 塌缩为窄段，Plan/Test/Deploy 保持原长；Anthropic 原句作为证据锚点 | 明确这是外部诊断，不是普适数据 |
+| P4 | L5 | PPT | 五个镜头像五种检查深度叠在同一条 SDLC 上：表达、策展、边界、回流、编排 | 五层是 lens，不是第二条时间线 |
+| P5 | L1 | PPT | 模型位于受控执行框内；外层依次露出权限边界、gate、观测轨迹；领域 owner 在框外签名 | 首次完整出现共享控制面 |
+| P6 | L2 | PPT | 一条变快的 Build 路径向左右推挤，分别形成左侧需求堆积、右侧审查拥塞、下方治理例外 | 三个后果是一张因果图，不是三卡片 |
+| P7 | L3 | PPT + ART | 线性六阶段 + PRD/工单/签字等厚重交接物；每次交接都出现人工等待刻度 | 让旧 SDLC 的假设具象化 |
+| P8 | L2 | PPT；IMG 仅作候选 | 宽阔 agent 产出流进入狭窄 review/security/release 门；一侧堆成 queue，另一侧从旁路漏出未审产物 | 一眼看懂“排队或欠审” |
+| P9 | L2 | PPT | 左侧人启动/人交接/人机械检查，右侧 agent 执行/工件交接/机器 gate/人判断；中间用同一工件完成变形 | 四问语法正式进入画面 |
+| P10 | L3 | ART + PPT | 六个金色工件首尾接力，身份/证据/审批等控制条件暂时以灰色虚位保留 | 故意留下“文件串还不等于审计” |
+| P11 | L2 | PPT | 六条横向 shift：每行只保留“旧动作 → 新控制”，避免密集双列表 | 总览之后必须仍可在台下读清 |
+| P12 | L8 | PPT | 六阶段纵轴 × 四问横轴形成记录框；右侧五层只是一条轻量 lens 标尺 | 建立后续 26 页的阅读合同 |
+
+### P13-P38：沿同一条轨道逐段重建
+
+| 页 | 布局 | 资产 | 主画面 | 视觉推进 |
+|---|---|---|---|---|
+| P13 | L3 | PPT | 六阶段由直线闭合为 loop；六个工件成为阶段间的接力点 | 第二幕从这里开始使用完整 loop |
+| P14 | L5 | PPT | 白底镜头页：原始意图信号进入 Plan，被压成第一个金色工件 | Prompt 只解释表达深度 |
+| P15 | L4 | ART | `intent.md` 占画面 60%；problem/outcome/affected/constraints/open questions 五段可见，传统 backlog 退到背景 | 真实工件成为主视觉 |
+| P16 | L6 | ART + PPT | intent.md 穿过 accept/reject gate，右侧 owner 签名，下方两条指标刻度 | 第一次四问收口，建立固定阅读顺序 |
+| P17 | L5 | PPT | 白底镜头页：brand/security/compliance/UX 约束在 Build 前汇入 spec 路径，冲突处亮红 | Context = 可见、可版本化、可路由 |
+| P18 | L4 | ART + PPT | `intent.md + versioned skills -> spec.md`，政策约束以环形施加点而非“上下文云”出现 | 显示政策前移 |
+| P19 | L6 | ART + PPT | spec + concern list 先过风险/矛盾 gate；product owner 与 policy owner 分别签在不同出口 | 四问收口出现 owner 分工 |
+| P20 | L5 | PPT；IMG 仅作候选 | 白底剖面页：执行位于共同边界中，左侧沙箱/权限“圈住”，路径上 hooks“拦住”，底部 provenance“看清” | Harness 的三个动词形成可复用母图 |
+| P21 | L4 | ART | `plan.md` 四段近景；只读 plan-mode gate 位于代码区之前，风险项路由 tech lead/architect | 计划先于代码被看见 |
+| P22 | L4 | ART | `AGENTS.md` 权威规则在左，`skills/` 按触发条件展开在右；一条错例回流到规则变更 | 外置知识不是 wiki 截图 |
+| P23 | L7 | PPT | 一条工具执行路径穿过三个窄 gate：保护路径、formatter/lint、credentials；被拒绝的负例清楚落下 | “守则”变成会拒绝的机制 |
+| P24 | L7 | PPT | 中央工程师编排三条隔离 worktree 轨道，每条有独立日志归属；subagent 挂在其中一条局部图上 | Graph 只露雏形，不夸大成熟度 |
+| P25 | L6 | ART + PPT | plan + diff + tests 组成一组工件，外圈是平台基线，内圈是改动 owner；rework 回流到 plan | 共同控制与领域责任同时成立 |
+| P26 | L5 | PPT | 白底镜头页：上方 Guides 前馈，下方 Sensors 回馈，中间是被测改动与被测配置两条证据线 | Test 同时验产品与 harness |
+| P27 | L3 | ART + PPT | 写代码→失败测试→修改→通过证据的短闭环，所有证据写入 session/PR | done 的定义进入 loop |
+| P28 | L7 | ART + PPT | 真实任务样本组成 eval suite，配置变更触发 CI，pass threshold 形成 merge gate | 配置也有回归测试 |
+| P29 | L6 | ART + PPT | test/eval evidence 过阈值 gate；QA 与 config owner 各有责任位；趋势线回到配置 | 四问收口出现双层 feedback |
+| P30 | L5 | PPT | 白底镜头页：agent 的 proposal 停在生产边界前；execution 侧必须获得独立授权令牌 | “生成时合法”不等于“执行时获准” |
+| P31 | L4 | ART + PPT | PR 作为中心工件，review passes 逐层覆盖；写码 agent 的自批路径被红线切断，人类风险判断留签名 | 职责分离可见 |
+| P32 | L7 | PPT | allow/ask/block 三出口门禁与 managed settings 纵向清单咬合；每次决定写时间戳 | 配置不是功能菜单，是治理决定 |
+| P33 | L3 | PPT | dev→staging→production 环境阶梯；自主权逐层收窄，rollback 路径用粗回线显示 | 提议权和执行权随环境分层 |
+| P34 | L6 | ART + PPT | PR/release evidence 进入独立 production gate，放行/拒绝均写日志；code/release owner 分位签名 | Deploy 四问完整收口 |
+| P35 | L5 | PPT | 白底镜头页：运行事实从生产回到 intent；多节点只沿受控边连接，人的判断位于 loop 上方 | Loop/Graph 被放回治理边界 |
+| P36 | L3 | ART + PPT | control band 越界触发分级动作，诊断写回 intent.md，再进入完整 SDLC loop | 自动触发不等于自动放权 |
+| P37 | L3 | ART + PPT | 周期扫描钟点触发 findings，findings 走 PR gate；重大问题另起 intent.md | 扫描复用同一条受控路径 |
+| P38 | L6 | ART + PPT | 一条 incident 事件轨迹贯穿 diagnosis→intent→PR/runbook gate→recovery；service owner 签名，MTTR/复发率回流 | 用 on-call 场景证明四问可运行 |
+
+### P39-P50：揭开控制面，再收成行动
+
+| 页 | 布局 | 资产 | 主画面 | 视觉推进 |
+|---|---|---|---|---|
+| P39 | L7 | ART + PPT | P10 的工件链再次出现；身份、版本、证据、审批、不可绕过 gate 五层控制从灰色虚位落成实线 | 回答 P10 留问 |
+| P40 | L2 | PPT | computational 与 inferential 两条控制阶梯；越靠近不可违反的不变量，越需要确定性底座 | 不把 AI review 冒充证明 |
+| P41 | L1 | PPT | 三条承重梁托住同一控制面：知识外置、正确路径、可执行反馈；前 38 页的工件/gate/owner/feedback 轻量回指 | DSH 作为实现镜头进入，而非产品发布 |
+| P42 | L7 | PPT | 上半部 live plugin graph 表示“现在由什么组成”；下半部 append-only event stream 表示“刚才做过什么”；loop 纵向连接两者 | 当前配置与执行事实同屏 |
+| P43 | L4 | ART | 权威事实文件、ADR、rejected notes 三类工件分层；每个事实只有一条 owner 线 | 单一事实源和负知识具象化 |
+| P44 | L7 | PPT | patch→extension→seam→loop 参与阶梯，每一级都有门、合同和检查半径；变更请求沿最小阻力路径路由 | 正确路径比口头规范更省力 |
+| P45 | L7 | PPT | 工具执行管道先过 pre-execute gate；下方用负例测试反复撞门，证明 deny/ask 真生效 | “门禁被测试”成为画面中心 |
+| P46 | L7 | PPT | Definition/Provider/Consumer 三角关系固定；Provider 后端被替换，Consumer 连接保持不动 | 统一合同，不统一后端 |
+| P47 | L4 | ART + PPT | append-only 日志时间轴；model-visible input、tool result、asked/decided 成对出现；缺 answerer 时路径闭合失败 | 事实可从日志重建 |
+| P48 | L8 | PPT | 准入/替换/放行/重建事实四项决定对齐四种机制；底部只有一条采用路径：工件→gate→loop | 从机制收成治理决定 |
+| P49 | L1 | IMG 或 PPT | 与 P1 成对但不复用同图：线性管道已经闭合为受控 loop，复杂细节退成暗线，slogan 占主导 | 回答开场，不做 Thank you |
+| P50 | L8 | PPT | 一条真实价值流的空轨道；Artifact/Gate/Owner/Feedback 四个可填写位置；问题落在“哪次交接最慢” | 把演讲变成可启动的试点 |
+
+## 四张关键样片先验证什么
+
+在写完整生产事实稿和 PPTX 之前，只验证四种最难的页面，不提前铺 50 页：
+
+| 样片 | 验证对象 | 首选实现 | 通过标准 |
+|---|---|---|---|
+| P1 | 世界观与材质 | `gpt-image-2` 位图 + 可编辑标题覆盖 | 不像通用 AI 海报；第一眼是软件价值流系统；标题安全区足够 |
+| P8 | 容量失配 | PowerPoint 可编辑结构；位图只作 A/B 候选 | 3 秒内看懂“宽产出、窄控制、排队或欠审” |
+| P20 | 核心视觉语法 | PowerPoint 可编辑 harness 剖面 | 圈住/拦住/看清无需长解释；后续 Test/Deploy 能复用 |
+| P42 | 控制面精密度 | PowerPoint 可编辑 plugin graph + event stream + loop | 能区分当前配置与执行历史；不像产品架构功能菜单 |
+
+P8、P20、P42 不交给图像模型生成复杂标签和拓扑。它们的准确关系比“画面感”更重要，必须能在 PowerPoint 中修改、复用和审查。
+
+## 视觉门禁：通过后才进入 50 页 PPTX
+
+1. **远看门**：缩略图下仍能分辨 Hero、Artifact、Loop、Checkpoint、Control Plane 五种页面轮廓。
+2. **三秒门**：P8、P20、P42 的主关系无需读正文即可说对。
+3. **语义门**：金色只表示工件/证据，朱红只表示 gate/风险，青绿只表示运行/回流；不得临时改义。
+4. **连续门**：P10 的工件链能在 P13、P39、P47、P50 被认出是同一条链。
+5. **可编辑门**：流程、gate、owner、feedback、graph、log 都是 PowerPoint/Graphviz 可编辑或可重建结构；位图不承载关键标签。
+6. **来源门**：外部截图、外部视觉和非平凡主张都能进入 speaker notes 的 `[Sources]`；仿真工件明确标作 illustrative。
+7. **密度门**：样片使用 36 pt 以上标题、16 pt 以上正文仍无需拥挤或超出安全区。
+
+样片通过后，再根据这套视觉容器压缩 `04_drafts/ppt-text-v0.8.md`。生产事实稿必须适配既定布局族，不以缩小字号或堆卡片补救。

@@ -4,7 +4,7 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 每次进来按下面的步骤走，改完把状态落回源文件。主题 / 听众 / 时长 / 目的 → `01_storyline/03-audience-and-pitch.md`。
 六阶段是软件价值流主轴，五层是能力与控制深度镜头，DSH 是共享控制面的参考实现；三者都服务于一条故事线。
 
-> **总门槛：先内容，后表现。** v0.7 内容锁已通过，当前进入生产事实稿与表现设计。
+> **总门槛：先内容，后表现。** v0.7 内容锁已通过，当前只做视觉预演；样片通过后先过中文编辑门，再写生产事实稿。
 > **50 页总页数是已锁定的生产容器**；表现设计服务既定页面职责，不再摇摆总页数与故事主轴。
 
 > 与 `../talk-ai-coding-evolution-opc/` 的差别：那里问「一个人掌握多深」，这里问「软件研发与交付组织要如何重建整条 SDLC」。
@@ -14,7 +14,8 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 
 1. **读状态** — `README.md`（目录地图）→ `01_storyline/00-storyline-map.md`（故事线总图）→
    `01_storyline/07-narrative-thinking.md`（叙事思路：看了什么 / 为什么这样想）→
-   `03_outline/00-page-structure.md`（现场版页面）→ `01_storyline/04-open-questions.md`（已决 / 待办）。
+   `03_outline/00-page-structure.md`（现场版页面）→ `_asset/01-visual-storyboard-v0.8.md`（表现阶段才读）→
+   `01_storyline/04-open-questions.md`（已决 / 待办）。
    完成标准：能说出当前阶段、正在推敲的问题、下一步动哪个文件。
 
 2. **定阶段** — 由用户这轮的话 + open-questions 判定：
@@ -53,11 +54,28 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 
 1. 先定每页的叙事职责和主要结论，再决定版式、图像、图表、节奏与动画。
 2. 一页一个叙事任务；标题直接说结论，证据要与当页结论同屏咬合。
-3. 进入 PPT 规划或生产时必须启用 `presentations:Presentations` skill；当时再按内容选视觉路线，不提前锁定模板。
-4. 每个外部非平凡主张和外部视觉资产都记录来源；PPTX 在 speaker notes 中保留 `[Sources]` 块。
-5. 最终 PPTX 每页完整渲染并逐页检查；文字 REVIEW 与视觉 REVIEW 均通过后才交付。
+3. **先过中文编辑门**：页面结论、上屏文字、图中标签和讲稿都要按中文原生句法重写并通过朗读检查；英文只作必要术语或代码标识，不拿英文句法套中文词。
+4. **再过视觉样片门**：按 `_asset/01-visual-storyboard-v0.8.md` 只做 P1/P8/P20/P42，分别验证世界观、容量失配、harness 母图和控制面精密度；未通过时只改视觉系统，不铺 50 页。
+5. 进入 PPT 规划或生产时必须启用 `presentations:Presentations` skill；采用本目录已定的自定义视觉方向，不套模板、不混用 Codex Grid。
+6. 生成式位图只承担概念场景，不承载复杂标签、拓扑、数字和关键论证；工件、门禁、责任人、反馈、graph 与 log 保持为可编辑结构。必要时按 `_asset/02-imagegen-prompts-v0.8.md` 使用 `gpt-image-2`。
+7. 中文编辑门和视觉样片门都通过后，按既定布局容器压缩 50 页 audience-facing 生产事实稿，再进入完整 PPTX。
+8. 每个外部非平凡主张和外部视觉资产都记录来源；PPTX 在 speaker notes 中保留 `[Sources]` 块。
+9. 最终 PPTX 每页完整渲染并逐页检查；文字 REVIEW 与视觉 REVIEW 均通过后才交付。
 
 表现阶段如果暴露了命题、证据或转场问题，立即退回内容 REVIEW，先修正上游源文件，再重做页面。
+
+## 中文编辑门
+
+这是一场中文演讲。中文负责叙述和推理，英文只负责标识确实需要保留的术语、产品名、文件名和代码。
+
+1. **从意思出发重写**：先确定这句话要说清的判断，再用中文重新组织主语、动作和结果；不按英文原句逐词搬运。
+2. **标题能直接讲出口**：标题优先使用完整判断或自然提问，避免名词连续堆叠、斜杠串词、箭头代替因果和机械的「从 X 到 Y」。
+3. **术语中文先行**：阶段统一写「规划、设计、构建、测试、发布、运维」，首次需要时在括号中标 Plan / Design / Build / Test / Deploy / Maintain；正文统一使用「工件、门禁、责任人、反馈闭环」。
+4. **保留必要英文**：`intent.md`、`spec.md`、`plan.md`、API、CI/CD、DSH、harness、hook、skill、runtime 等没有稳定等价词或承担精确机制含义的词可以保留；它们必须嵌入自然中文句子，不能充当中文谓语。
+5. **一句只推进一个判断**：先给结论，再补条件、证据或例外；缩短多层定语和被动句，能用动词就不用抽象名词串。
+6. **完成前朗读**：逐页朗读标题、上屏文字和关键转场。凡是需要倒回去才能读懂、像报告翻译稿、或离开英文词就说不清的句子，继续改写。
+
+**通过标准**：P1-P50 的页面结论、上屏文字和图中标签逐页审过；同一术语全篇口径一致；任取一页都能由中文演讲者自然说出口，且不需要先在脑中还原英文原句。
 
 ## 规则
 
@@ -71,6 +89,8 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 - **独立红线**：不依赖、不承接 `04_output/deck_ai_sdlc_keynote`（听众不同）；不把「代码不再是瓶颈」讲成普适事实，标注是 Anthropic 论点。
 - **责任红线**：共享的是沙箱、权限、工具准入、门禁、观测与审计基线；产品、架构、服务和政策 owner 继续掌握 intent、context、取舍与例外。不要把五层写成五个团队，也不要把「平台共同基线」写成「所有内容统一」。
 - **视觉方向**：采用 `_asset/README.md` 的“系统蓝图式技术编辑风”，从零建立母版与布局系统；不用 `-opc` 的 CLAWTIME，不套咨询报告、黑底霓虹或通用 AI 模板。
+- **画布红线**：50 页统一纸白/极浅冷灰底，不使用整页黑底章节或深浅交替；节奏由局部石墨结构块、标题尺度、线宽和留白建立。
+- **视觉语义**：青绿只表示 active path / feedback，朱红只表示 gate / 风险，金黄只表示 committed artifact / 版本 / 证据；颜色必须同时配合线型、关卡或文档轮廓，不单独编码。
 - **临时目录约定**：所有一次性产物（构建中间体、逐页 inspect、审稿草稿、模板试验）
   一律放在仓库根目录、以 `.tmp-org-sdlc-talk-` 前缀 + 主题命名；工具自动生成的随机名目录（`.ppt-build-*`、`.tmp-xxx.XXXX`）算同类，
   `.gitignore` 覆盖、永不入库。**版本收口时清理**：某一版 PPTX 落进 `05_output/` 并完成 review 后，对应 `.tmp-org-sdlc-talk-vN*` 及散落目录即删。
@@ -81,7 +101,8 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 - 叙事思路笔记（上下文记忆）：`01_storyline/07-narrative-thinking.md`
 - 现场版页面结构（50 页 · 75–90 min 骨架）：`03_outline/00-page-structure.md`
 - 素材与口径：`02_evidence/00-absorption-plan.md`；P1–P50 脉络：`02_evidence/01-info-flow-map.md`；核心主张账本：`02_evidence/02-claim-ledger.md`
-- 当前生产事实稿：待写（下一步进入 `04_drafts/`）
+- 当前生产事实稿：待写（四张视觉样片通过后进入 `04_drafts/`）
 - 当前交付：暂无（未到 `05_output/` 阶段）
 - 已决与待办：`01_storyline/04-open-questions.md`
-- 当前阶段：v0.8 表现设计；先完成 50 页生产事实稿，再建立布局系统并产 PPTX。
+- 当前视觉分镜：`_asset/01-visual-storyboard-v0.8.md`；ImageGen brief：`_asset/02-imagegen-prompts-v0.8.md`
+- 当前阶段：v0.8 视觉预演；先验证 P1/P8/P20/P42 四张关键样片，再压生产事实稿并产 PPTX。

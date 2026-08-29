@@ -1,0 +1,12 @@
+Use case: stylized-concept
+Asset type: 16:9 keynote cover background
+Primary request: an editorial studio photograph of a meticulously crafted physical model representing a software delivery value stream; a linear track accelerates through a compact build cell, but the downstream review and release gates remain narrow, and the far end of the track begins to curve back into a controlled loop
+Scene/backdrop: seamless pale cool-gray paper studio surface, no horizon line, quiet architectural-model presentation
+Subject: a precise paper-and-metal systems model; matte off-white planes and graphite rails; small gold artifact tiles moving along the path; restrained coral vertical gates; a thin teal return path beginning to form a loop
+Style/medium: premium technical editorial still life, architectural maquette photography, tactile and credible, not a diagram and not science fiction
+Composition/framing: wide 16:9; generous clean negative space in the upper-left 42% for editable title text; system model occupies the right and lower portions; readable silhouette at presentation distance
+Lighting/mood: soft directional studio daylight, crisp material edges, restrained shadows, calm and authoritative
+Color palette: paper white and graphite dominant; teal only for active feedback; coral only for gates; gold only for artifacts
+Materials/textures: matte paper, anodized graphite metal, subtle fiber texture, no glossy glass
+Constraints: no text, no labels, no letters, no numbers, no people, no robot, no brain, no code screens, no hologram, no dashboard, no company logo, no watermark
+Avoid: cyberpunk, neon, blue-purple AI gradients, floating UI, generic network nodes, excessive visual clutter, decorative bokeh
