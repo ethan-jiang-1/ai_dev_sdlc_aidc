@@ -46,6 +46,8 @@
 - `provider-tests/`：同一低成本提示产生的连通性样图。
 - `p1-candidates/`：封面概念场景候选。
 - `p49-candidates/`：收尾概念场景候选。
+- `provider-comparison.webp`：Duck / MICU / Packy 三个可出图入口的并排 REVIEW 板。
+- `p1-production-comparison.webp`：无字 Image 2 视觉、图文一体能力实验、最终 PowerPoint 混合样片的并排 REVIEW 板。
 - 只保留有比较价值的图片；失败响应、调试输出和依赖环境放在仓库根目录的 `.tmp-org-sdlc-talk-*` 临时目录，不进入资产库。
 
 ## 当前结论

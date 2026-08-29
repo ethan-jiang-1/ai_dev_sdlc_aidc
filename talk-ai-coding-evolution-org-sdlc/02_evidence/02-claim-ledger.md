@@ -3,13 +3,13 @@
 > 目的：让后续 50 页写稿、speaker notes 与现场口径能区分**来源原文**、**本 talk 综合判断**与**听众需用自身数据验证的假设**。
 > 范围只限软件 SDLC。
 
-## C1 · 当 Build 加速，瓶颈会移向代码两侧
+## C1 · 当构建加速，瓶颈会移向代码两侧
 
 - **类型**：外部观点 + 听众自证的诊断假设。
-- **来源**：`../_reference/rawdata_anthropic-ai-native-sdlc-playbook.md`，「Code is no longer the bottleneck」。原文主张 Build 压缩后，plan / review-test / deploy 仍以人的速度运行，旧控制失配，例外治理成本上升。
-- **可说**：「Anthropic 的诊断是：当 Build 不再是约束，瓶颈会移向代码两侧。」
+- **来源**：`../_reference/rawdata_anthropic-ai-native-sdlc-playbook.md`，「Code is no longer the bottleneck」。原文主张构建被压缩后，规划、审查与测试、发布仍以人的速度运行，旧控制失配，例外治理成本上升。
+- **可说**：「Anthropic 的诊断是：当构建不再是主要约束，瓶颈会移向代码两侧。」
 - **不可说**：「所有组织都已经代码产出翻倍，交付却没变。」
-- **听众自证**：对比 coding time 占端到端 lead time 的比例；再拆 queue time、time to first review、approval wait time、deployment lead time、rework cycles 与 change failure rate。
+- **听众自证**：对比编码时间（coding time）占端到端交付周期（lead time）的比例；再拆分排队时间、首次审查时间、审批等待时间、部署交付周期、返工轮次与变更失败率。
 - **页面**：P2–P3、P6、P49。
 
 ## C2 · AI-native SDLC 的改造对象是交付系统

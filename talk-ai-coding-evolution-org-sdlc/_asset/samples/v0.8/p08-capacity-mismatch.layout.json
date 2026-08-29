@@ -2,13 +2,13 @@
   "schema": "openai.presentation.layout/v4",
   "unit": "px",
   "slide": {
-    "aid": "sl/tqhgkx",
-    "id": "tqhgkx",
+    "aid": "sl/4ta0aq",
+    "id": "4ta0aq",
     "slide": 2,
-    "layoutId": "43faa7f2-b4c1-413d-9a0a-89950ae6a283",
+    "layoutId": "7235785c-87a0-410d-a24a-00e09de9b819",
     "layoutName": "Title Slide",
     "layoutType": "title",
-    "masterLayoutId": "c3046411-0fb1-44d1-b8e8-eae962a74745",
+    "masterLayoutId": "41b5c288-f3b7-4f52-bc45-3e051b469714",
     "masterLayoutName": "Master",
     "backgroundColor": "#F7F8F5",
     "frame": {
@@ -39,22 +39,21 @@
       "folHlink": "#96607D"
     },
     "typefaces": [
-      "Helvetica Neue",
       "Hiragino Sans GB"
     ]
   },
   "inheritedLayers": [
     {
       "scope": "layout",
-      "id": "43faa7f2-b4c1-413d-9a0a-89950ae6a283",
+      "id": "7235785c-87a0-410d-a24a-00e09de9b819",
       "name": "Title Slide",
       "type": "title",
-      "parentLayoutId": "c3046411-0fb1-44d1-b8e8-eae962a74745",
+      "parentLayoutId": "41b5c288-f3b7-4f52-bc45-3e051b469714",
       "elements": []
     },
     {
       "scope": "master",
-      "id": "c3046411-0fb1-44d1-b8e8-eae962a74745",
+      "id": "41b5c288-f3b7-4f52-bc45-3e051b469714",
       "name": "Master",
       "type": "master",
       "elements": []
@@ -65,7 +64,7 @@
       "order": 1,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ls3uxo7u",
+      "aid": "sh/zil87yp0",
       "id": "1",
       "name": "p8-kicker-rule",
       "bbox": [
@@ -82,7 +81,7 @@
       "order": 2,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/y5cvm9o3",
+      "aid": "sh/0ju9gjql",
       "id": "2",
       "name": "p8-kicker",
       "bbox": [
@@ -92,13 +91,13 @@
         28
       ],
       "geometry": "rect",
-      "text": "DIAGNOSIS / CAPACITY",
-      "textPreview": "DIAGNOSIS / CAPACITY",
+      "text": "诊断 / 控制容量",
+      "textPreview": "诊断 / 控制容量",
       "resolvedFontSize": 14,
       "resolvedTextStyle": {
         "anchor": 2,
         "fontSize": 14,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#65706C",
         "bold": true,
         "alignment": "left",
@@ -117,18 +116,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "DIAGNOSIS / CAPACITY"
+            "text": "诊断 / 控制容量"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "DIAGNOSIS / CAPACITY",
+          "text": "诊断 / 控制容量",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 14,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#65706C",
             "bold": true,
             "alignment": "left",
@@ -137,9 +136,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "DIAGNOSIS / CAPACITY",
+              "text": "诊断 / 控制容量",
               "fontSize": 14,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#65706C",
               "bold": true,
               "alignment": "left",
@@ -155,7 +154,7 @@
       "order": 3,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/z6lcvepo",
+      "aid": "sh/1k3a9o76",
       "id": "3",
       "name": "page-title",
       "bbox": [
@@ -165,8 +164,8 @@
         62
       ],
       "geometry": "rect",
-      "text": "产出与控制容量失配：要么排队，要么欠审",
-      "textPreview": "产出与控制容量失配：要么排队，要么欠审",
+      "text": "产出速度超过控制能力，结果不是排队，就是审查不足",
+      "textPreview": "产出速度超过控制能力，结果不是排队，就是审查不足",
       "resolvedFontSize": 38,
       "resolvedTextStyle": {
         "anchor": 1,
@@ -190,14 +189,14 @@
         "lines": [
           {
             "index": 1,
-            "text": "产出与控制容量失配：要么排队，要么欠审"
+            "text": "产出速度超过控制能力，结果不是排队，就是审查不足"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "产出与控制容量失配：要么排队，要么欠审",
+          "text": "产出速度超过控制能力，结果不是排队，就是审查不足",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 38,
@@ -210,7 +209,7 @@
           "runs": [
             {
               "index": 1,
-              "text": "产出与控制容量失配：要么排队，要么欠审",
+              "text": "产出速度超过控制能力，结果不是排队，就是审查不足",
               "fontSize": 38,
               "typeface": "Hiragino Sans GB",
               "color": "#1B211F",
@@ -228,7 +227,7 @@
       "order": 4,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/8vedsj65",
+      "aid": "sh/qtsra98j",
       "id": "4",
       "name": "page-subtitle",
       "bbox": [
@@ -238,8 +237,8 @@
         38
       ],
       "geometry": "rect",
-      "text": "agent 放大产出，不会自动放大 review / security / release 的人工容量。",
-      "textPreview": "agent 放大产出，不会自动放大 review / security / release 的人工容量。",
+      "text": "agent 放大产出，不会自动放大审查、安全与发布团队的处理能力。",
+      "textPreview": "agent 放大产出，不会自动放大审查、安全与发布团队的处理能力。",
       "resolvedFontSize": 18,
       "resolvedTextStyle": {
         "anchor": 1,
@@ -262,14 +261,14 @@
         "lines": [
           {
             "index": 1,
-            "text": "agent 放大产出，不会自动放大 review / security / release 的人工容量。"
+            "text": "agent 放大产出，不会自动放大审查、安全与发布团队的处理能力。"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "agent 放大产出，不会自动放大 review / security / release 的人工容量。",
+          "text": "agent 放大产出，不会自动放大审查、安全与发布团队的处理能力。",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 18,
@@ -281,7 +280,7 @@
           "runs": [
             {
               "index": 1,
-              "text": "agent 放大产出，不会自动放大 review / security / release 的人工容量。",
+              "text": "agent 放大产出，不会自动放大审查、安全与发布团队的处理能力。",
               "fontSize": 18,
               "typeface": "Hiragino Sans GB",
               "color": "#65706C",
@@ -298,7 +297,7 @@
       "order": 5,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9wne1o7q",
+      "aid": "sh/ru183ep4",
       "id": "5",
       "name": "p8-upstream",
       "bbox": [
@@ -316,7 +315,7 @@
       "order": 6,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/mtwvq9of",
+      "aid": "sh/cfa9cjqp",
       "id": "6",
       "name": "p8-a-0-0",
       "bbox": [
@@ -334,7 +333,7 @@
       "order": 7,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/7u5czep0",
+      "aid": "sh/dgjq5o7u",
       "id": "7",
       "name": "p8-a-0-0-fold",
       "bbox": [
@@ -352,7 +351,7 @@
       "order": 8,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/wzedw36h",
+      "aid": "sh/2psr6987",
       "id": "8",
       "name": "p8-a-0-1",
       "bbox": [
@@ -370,7 +369,7 @@
       "order": 9,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/h0ne5872",
+      "aid": "sh/3q18zeps",
       "id": "9",
       "name": "p8-a-0-1-fold",
       "bbox": [
@@ -388,7 +387,7 @@
       "order": 10,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/lgnqp4vu",
+      "aid": "sh/v2x4ja54",
       "id": "10",
       "name": "p8-a-0-2",
       "bbox": [
@@ -406,7 +405,7 @@
       "order": 11,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/kfe9gzu9",
+      "aid": "sh/u1onq54j",
       "id": "11",
       "name": "p8-a-0-2-fold",
       "bbox": [
@@ -424,7 +423,7 @@
       "order": 12,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/je58nedo",
+      "aid": "sh/h4zmlknu",
       "id": "12",
       "name": "p8-a-0-3",
       "bbox": [
@@ -442,7 +441,7 @@
       "order": 13,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ydwre9c3",
+      "aid": "sh/g365sfm9",
       "id": "13",
       "name": "p8-a-0-3-fold",
       "bbox": [
@@ -460,7 +459,7 @@
       "order": 14,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/t4nqtovq",
+      "aid": "sh/36h4na50",
       "id": "14",
       "name": "p8-a-0-4",
       "bbox": [
@@ -478,7 +477,7 @@
       "order": 15,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/83e9kju5",
+      "aid": "sh/i58nu54f",
       "id": "15",
       "name": "p8-a-0-4-fold",
       "bbox": [
@@ -496,7 +495,7 @@
       "order": 16,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/7258redk",
+      "aid": "sh/5szmpkn6",
       "id": "16",
       "name": "p8-a-0-5",
       "bbox": [
@@ -514,7 +513,7 @@
       "order": 17,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/61wri9cz",
+      "aid": "sh/4rq5wfml",
       "id": "17",
       "name": "p8-a-0-5-fold",
       "bbox": [
@@ -532,7 +531,7 @@
       "order": 18,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/983qhkvm",
+      "aid": "sh/jad4bq5w",
       "id": "18",
       "name": "p8-a-0-6",
       "bbox": [
@@ -550,7 +549,7 @@
       "order": 19,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/o7up8fu1",
+      "aid": "sh/y943il4b",
       "id": "19",
       "name": "p8-a-0-6-fold",
       "bbox": [
@@ -568,7 +567,7 @@
       "order": 20,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/0ry9oz2x",
+      "aid": "sh/2pc7qtoz",
       "id": "20",
       "name": "p8-a-1-0",
       "bbox": [
@@ -586,7 +585,7 @@
       "order": 21,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/1s7qx43i",
+      "aid": "sh/nql8zyp4",
       "id": "21",
       "name": "p8-a-1-0-fold",
       "bbox": [
@@ -604,7 +603,7 @@
       "order": 22,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/epwrmpkr",
+      "aid": "sh/orups36p",
       "id": "22",
       "name": "p8-a-1-1",
       "bbox": [
@@ -622,7 +621,7 @@
       "order": 23,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/fq58vulc",
+      "aid": "sh/ps3q1o7a",
       "id": "23",
       "name": "p8-a-1-1-fold",
       "bbox": [
@@ -640,7 +639,7 @@
       "order": 24,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ovy9sz2t",
+      "aid": "sh/els7m9on",
       "id": "24",
       "name": "p8-a-1-2",
       "bbox": [
@@ -658,7 +657,7 @@
       "order": 25,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/pw7q143e",
+      "aid": "sh/fm18vep8",
       "id": "25",
       "name": "p8-a-1-2-fold",
       "bbox": [
@@ -676,7 +675,7 @@
       "order": 26,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/2tgrqpkn",
+      "aid": "sh/0napoj6t",
       "id": "26",
       "name": "p8-a-1-3",
       "bbox": [
@@ -694,7 +693,7 @@
       "order": 27,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/nup8zul8",
+      "aid": "sh/1o3qxo7e",
       "id": "27",
       "name": "p8-a-1-3-fold",
       "bbox": [
@@ -712,7 +711,7 @@
       "order": 28,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/cji9wj25",
+      "aid": "sh/qxs7i9or",
       "id": "28",
       "name": "p8-a-1-4",
       "bbox": [
@@ -730,7 +729,7 @@
       "order": 29,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/xkra5o3a",
+      "aid": "sh/ry1orepc",
       "id": "29",
       "name": "p8-a-1-4-fold",
       "bbox": [
@@ -748,7 +747,7 @@
       "order": 30,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/7etcvi5s",
+      "aid": "sh/tc7axcru",
       "id": "30",
       "name": "p8-a-1-5",
       "bbox": [
@@ -766,7 +765,7 @@
       "order": 31,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/mdkb2d47",
+      "aid": "sh/8byto7q9",
       "id": "31",
       "name": "p8-a-1-5-fold",
       "bbox": [
@@ -784,7 +783,7 @@
       "order": 32,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9gbux8ni",
+      "aid": "sh/7apsv29o",
       "id": "32",
       "name": "p8-a-1-6",
       "bbox": [
@@ -802,7 +801,7 @@
       "order": 33,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/8f2t4nmd",
+      "aid": "sh/6pgbmx83",
       "id": "33",
       "name": "p8-a-1-6-fold",
       "bbox": [
@@ -820,7 +819,7 @@
       "order": 34,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/zqtcry5g",
+      "aid": "sh/lo7atsri",
       "id": "34",
       "name": "p8-a-2-0",
       "bbox": [
@@ -838,7 +837,7 @@
       "order": 35,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/yp0byt4v",
+      "aid": "sh/knytknqx",
       "id": "35",
       "name": "p8-a-2-0-fold",
       "bbox": [
@@ -856,7 +855,7 @@
       "order": 36,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/lcbut8nm",
+      "aid": "sh/jm5sr29c",
       "id": "36",
       "name": "p8-a-2-1",
       "bbox": [
@@ -874,7 +873,7 @@
       "order": 37,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/kb2t03m1",
+      "aid": "sh/ylwrix87",
       "id": "37",
       "name": "p8-a-2-1-fold",
       "bbox": [
@@ -892,7 +891,7 @@
       "order": 38,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/j6dc3250",
+      "aid": "sh/xknapsrm",
       "id": "38",
       "name": "p8-a-2-2",
       "bbox": [
@@ -910,7 +909,7 @@
       "order": 39,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/il4vax4f",
+      "aid": "sh/wje9gnq1",
       "id": "39",
       "name": "p8-a-2-2-fold",
       "bbox": [
@@ -928,7 +927,7 @@
       "order": 40,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/qtkfyh0j",
+      "aid": "sh/cn61wrqx",
       "id": "40",
       "name": "p8-a-2-3",
       "bbox": [
@@ -946,7 +945,7 @@
       "order": 41,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/rutgrm14",
+      "aid": "sh/xofipw7i",
       "id": "41",
       "name": "p8-a-2-3-fold",
       "bbox": [
@@ -964,7 +963,7 @@
       "order": 42,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/sv2x0rip",
+      "aid": "sh/alojuh87",
       "id": "42",
       "name": "p8-a-2-4",
       "bbox": [
@@ -982,7 +981,7 @@
       "order": 43,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/dwvytwja",
+      "aid": "sh/bmx0nm9c",
       "id": "43",
       "name": "p8-a-2-4-fold",
       "bbox": [
@@ -1000,7 +999,7 @@
       "order": 44,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ipkfuh0n",
+      "aid": "sh/krq10bq9",
       "id": "44",
       "name": "p8-a-2-5",
       "bbox": [
@@ -1018,7 +1017,7 @@
       "order": 45,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/3qtwnm18",
+      "aid": "sh/lsz2tw7u",
       "id": "45",
       "name": "p8-a-2-5-fold",
       "bbox": [
@@ -1036,7 +1035,7 @@
       "order": 46,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/4r2xwrid",
+      "aid": "sh/ypojy183",
       "id": "46",
       "name": "p8-a-2-6",
       "bbox": [
@@ -1054,7 +1053,7 @@
       "order": 47,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/5sbypwjy",
+      "aid": "sh/zqhkr6po",
       "id": "47",
       "name": "p8-a-2-6-fold",
       "bbox": [
@@ -1072,7 +1071,7 @@
       "order": 48,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/2l4f610r",
+      "aid": "sh/gvm1o7qp",
       "id": "48",
       "name": "p8-a-3-0",
       "bbox": [
@@ -1090,7 +1089,7 @@
       "order": 49,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/nmdgz61c",
+      "aid": "sh/1wvihcra",
       "id": "49",
       "name": "p8-a-3-0-fold",
       "bbox": [
@@ -1108,7 +1107,7 @@
       "order": 50,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/xszal47q",
+      "aid": "sh/jal4na9s",
       "id": "50",
       "name": "p8-a-3-1",
       "bbox": [
@@ -1126,7 +1125,7 @@
       "order": 51,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/wrq9cz65",
+      "aid": "sh/i9c3u5s7",
       "id": "51",
       "name": "p8-a-3-1-fold",
       "bbox": [
@@ -1144,7 +1143,7 @@
       "order": 52,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/vqhsjupk",
+      "aid": "sh/5c3mpkry",
       "id": "52",
       "name": "p8-a-3-2",
       "bbox": [
@@ -1162,7 +1161,7 @@
       "order": 53,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ap8rapoz",
+      "aid": "sh/4bulwfad",
       "id": "53",
       "name": "p8-a-3-2-fold",
       "bbox": [
@@ -1180,7 +1179,7 @@
       "order": 54,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9ozqh47e",
+      "aid": "sh/vm14ja9w",
       "id": "54",
       "name": "p8-a-3-3",
       "bbox": [
@@ -1198,7 +1197,7 @@
       "order": 55,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/83q98z69",
+      "aid": "sh/uls3q5sb",
       "id": "55",
       "name": "p8-a-3-3-fold",
       "bbox": [
@@ -1216,7 +1215,7 @@
       "order": 56,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/n2h8fupo",
+      "aid": "sh/h8jml0r2",
       "id": "56",
       "name": "p8-a-3-4",
       "bbox": [
@@ -1234,7 +1233,7 @@
       "order": 57,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/m18r6po3",
+      "aid": "sh/wnalsvah",
       "id": "57",
       "name": "p8-a-3-4-fold",
       "bbox": [
@@ -1252,7 +1251,7 @@
       "order": 58,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/tk3ato7y",
+      "aid": "sh/7i14fqtk",
       "id": "58",
       "name": "p8-a-3-5",
       "bbox": [
@@ -1270,7 +1269,7 @@
       "order": 59,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/sza9kj6d",
+      "aid": "sh/mh83mlsf",
       "id": "59",
       "name": "p8-a-3-5-fold",
       "bbox": [
@@ -1288,7 +1287,7 @@
       "order": 60,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/s3itgnep",
+      "aid": "sh/ad8nylc7",
       "id": "60",
       "name": "p8-a-3-6",
       "bbox": [
@@ -1306,7 +1305,7 @@
       "order": 61,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/d4bupsfu",
+      "aid": "sh/beh47qds",
       "id": "61",
       "name": "p8-a-3-6-fold",
       "bbox": [
@@ -1324,7 +1323,7 @@
       "order": 62,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/q10bexwj",
+      "aid": "sh/cfq50vux",
       "id": "62",
       "name": "p8-flow-to-gate",
       "bbox": [
@@ -1341,7 +1340,7 @@
       "order": 63,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/r29cn2x4",
+      "aid": "sh/xgzm90vi",
       "id": "63",
       "name": "p8-safe-path",
       "bbox": [
@@ -1358,7 +1357,7 @@
       "order": 64,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/4zitcned",
+      "aid": "sh/yh8n25c3",
       "id": "64",
       "name": "p8-bypass-path",
       "bbox": [
@@ -1375,7 +1374,7 @@
       "order": 65,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/50rulsfy",
+      "aid": "sh/zi14bqdo",
       "id": "65",
       "name": "p8-gate-line",
       "bbox": [
@@ -1392,7 +1391,7 @@
       "order": 66,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ix0badw7",
+      "aid": "sh/kja54vu9",
       "id": "66",
       "name": "p8-gate-cap-top",
       "bbox": [
@@ -1409,7 +1408,7 @@
       "order": 67,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/3y9cjixs",
+      "aid": "sh/lkj6d0vu",
       "id": "67",
       "name": "p8-gate-cap-bottom",
       "bbox": [
@@ -1426,7 +1425,7 @@
       "order": 68,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/gvyt83eh",
+      "aid": "sh/mlsn65cf",
       "id": "68",
       "name": "p8-gate-label",
       "bbox": [
@@ -1436,13 +1435,13 @@
         22
       ],
       "geometry": "rect",
-      "text": "CONTROL CAPACITY",
-      "textPreview": "CONTROL CAPACITY",
+      "text": "控制容量",
+      "textPreview": "控制容量",
       "resolvedFontSize": 12,
       "resolvedTextStyle": {
         "anchor": 1,
         "fontSize": 12,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#D95442",
         "bold": true,
         "alignment": "center",
@@ -1461,18 +1460,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "CONTROL CAPACITY"
+            "text": "控制容量"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "CONTROL CAPACITY",
+          "text": "控制容量",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 12,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#D95442",
             "bold": true,
             "alignment": "center",
@@ -1481,9 +1480,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "CONTROL CAPACITY",
+              "text": "控制容量",
               "fontSize": 12,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#D95442",
               "bold": true,
               "alignment": "center",
@@ -1499,7 +1498,7 @@
       "order": 69,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/hw7ah8f2",
+      "aid": "sh/761ofadk",
       "id": "69",
       "name": "p8-agent-label",
       "bbox": [
@@ -1509,13 +1508,13 @@
         26
       ],
       "geometry": "rect",
-      "text": "AGENT OUTPUT",
-      "textPreview": "AGENT OUTPUT",
+      "text": "AGENT 产出",
+      "textPreview": "AGENT 产出",
       "resolvedFontSize": 14,
       "resolvedTextStyle": {
         "anchor": 1,
         "fontSize": 14,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#D5A52E",
         "bold": true,
         "alignment": "left",
@@ -1534,18 +1533,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "AGENT OUTPUT"
+            "text": "AGENT 产出"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "AGENT OUTPUT",
+          "text": "AGENT 产出",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 14,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#D5A52E",
             "bold": true,
             "alignment": "left",
@@ -1554,9 +1553,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "AGENT OUTPUT",
+              "text": "AGENT 产出",
               "fontSize": 14,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#D5A52E",
               "bold": true,
               "alignment": "left",
@@ -1572,7 +1571,7 @@
       "order": 70,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/j6pcryho",
+      "aid": "sh/h03q54f2",
       "id": "70",
       "name": "p8-wide",
       "bbox": [
@@ -1645,7 +1644,7 @@
       "order": 71,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/y5wvytg3",
+      "aid": "sh/wfupwzeh",
       "id": "71",
       "name": "p8-wide-sub",
       "bbox": [
@@ -1715,7 +1714,7 @@
       "order": 72,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/l87ut8zu",
+      "aid": "sh/vel83uxw",
       "id": "72",
       "name": "p8-q-0",
       "bbox": [
@@ -1733,7 +1732,7 @@
       "order": 73,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/k7yd03y9",
+      "aid": "sh/udc7upwb",
       "id": "73",
       "name": "p8-q-0-fold",
       "bbox": [
@@ -1751,7 +1750,7 @@
       "order": 74,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/7upcvih0",
+      "aid": "sh/54nq9ofy",
       "id": "74",
       "name": "p8-q-1",
       "bbox": [
@@ -1769,7 +1768,7 @@
       "order": 75,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/6tgv2dgf",
+      "aid": "sh/43ep0jed",
       "id": "75",
       "name": "p8-q-1-fold",
       "bbox": [
@@ -1787,7 +1786,7 @@
       "order": 76,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/tw7uxszq",
+      "aid": "sh/j2587exs",
       "id": "76",
       "name": "p8-q-2",
       "bbox": [
@@ -1805,7 +1804,7 @@
       "order": 77,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/8vyd4ny5",
+      "aid": "sh/i1w7y9wn",
       "id": "77",
       "name": "p8-q-2-fold",
       "bbox": [
@@ -1823,7 +1822,7 @@
       "order": 78,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/vy9czihw",
+      "aid": "sh/t8nqdofa",
       "id": "78",
       "name": "p8-q-3",
       "bbox": [
@@ -1841,7 +1840,7 @@
       "order": 79,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ux0v6xgb",
+      "aid": "sh/s7e94jep",
       "id": "79",
       "name": "p8-q-3-fold",
       "bbox": [
@@ -1859,7 +1858,7 @@
       "order": 80,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/2lgfuhwf",
+      "aid": "sh/0vu10re1",
       "id": "80",
       "name": "p8-q-4",
       "bbox": [
@@ -1877,7 +1876,7 @@
       "order": 81,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/36pgnmd0",
+      "aid": "sh/lw3itwvm",
       "id": "81",
       "name": "p8-q-4-fold",
       "bbox": [
@@ -1895,7 +1894,7 @@
       "order": 82,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/47yhwrel",
+      "aid": "sh/y9sjy1wv",
       "id": "82",
       "name": "p8-q-5",
       "bbox": [
@@ -1913,7 +1912,7 @@
       "order": 83,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/p87ypwv6",
+      "aid": "sh/za10r6dg",
       "id": "83",
       "name": "p8-q-5-fold",
       "bbox": [
@@ -1931,7 +1930,7 @@
       "order": 84,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/q9gzy1wr",
+      "aid": "sh/c7ahwrep",
       "id": "84",
       "name": "p8-q-6",
       "bbox": [
@@ -1949,7 +1948,7 @@
       "order": 85,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/rapgrmdc",
+      "aid": "sh/d8jipwva",
       "id": "85",
       "name": "p8-q-6-fold",
       "bbox": [
@@ -1967,7 +1966,7 @@
       "order": 86,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/cbyh0rex",
+      "aid": "sh/q5szuhwz",
       "id": "86",
       "name": "p8-queue",
       "bbox": [
@@ -2040,18 +2039,18 @@
       "order": 87,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/dcrytwv2",
+      "aid": "sh/b610nmdk",
       "id": "87",
       "name": "p8-queue-desc",
       "bbox": [
         782,
         374,
-        260,
+        280,
         58
       ],
       "geometry": "rect",
-      "text": "review queue 增长\nlead time 上升",
-      "textPreview": "review queue 增长 | lead time 上升",
+      "text": "审查队列不断增长\n端到端交付周期拉长",
+      "textPreview": "审查队列不断增长 | 端到端交付周期拉长",
       "resolvedFontSize": 17,
       "resolvedTextStyle": {
         "anchor": 1,
@@ -2075,18 +2074,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "review queue 增长"
+            "text": "审查队列不断增长"
           },
           {
             "index": 2,
-            "text": "lead time 上升"
+            "text": "端到端交付周期拉长"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "review queue 增长",
+          "text": "审查队列不断增长",
           "lineSpacingPercent": 110000,
           "resolvedTextStyle": {
             "fontSize": 17,
@@ -2098,7 +2097,7 @@
           "runs": [
             {
               "index": 1,
-              "text": "review queue 增长",
+              "text": "审查队列不断增长",
               "fontSize": 17,
               "typeface": "Hiragino Sans GB",
               "color": "#65706C",
@@ -2110,7 +2109,7 @@
         },
         {
           "index": 2,
-          "text": "lead time 上升",
+          "text": "端到端交付周期拉长",
           "lineSpacingPercent": 110000,
           "resolvedTextStyle": {
             "fontSize": 17,
@@ -2122,7 +2121,7 @@
           "runs": [
             {
               "index": 1,
-              "text": "lead time 上升",
+              "text": "端到端交付周期拉长",
               "fontSize": 17,
               "typeface": "Hiragino Sans GB",
               "color": "#65706C",
@@ -2139,7 +2138,7 @@
       "order": 88,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ed0z21wn",
+      "aid": "sh/o3ahs7et",
       "id": "88",
       "name": "p8-leak-0",
       "bbox": [
@@ -2157,7 +2156,7 @@
       "order": 89,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ze9gv6d8",
+      "aid": "sh/p4jilcve",
       "id": "89",
       "name": "p8-leak-0-fold",
       "bbox": [
@@ -2175,7 +2174,7 @@
       "order": 90,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/98bil0fa",
+      "aid": "sh/7yh0v2h0",
       "id": "90",
       "name": "p8-leak-1",
       "bbox": [
@@ -2193,7 +2192,7 @@
       "order": 91,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/8721svy5",
+      "aid": "sh/6d8j2xgf",
       "id": "91",
       "name": "p8-leak-1-fold",
       "bbox": [
@@ -2211,7 +2210,7 @@
       "order": 92,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/n6t0jqxk",
+      "aid": "sh/t0z2xcz6",
       "id": "92",
       "name": "p8-leak-2",
       "bbox": [
@@ -2229,7 +2228,7 @@
       "order": 93,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/m5kjqlgz",
+      "aid": "sh/szq147yl",
       "id": "93",
       "name": "p8-leak-2-fold",
       "bbox": [
@@ -2247,7 +2246,7 @@
       "order": 94,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/xwv2pkfm",
+      "aid": "sh/f2hkzmhc",
       "id": "94",
       "name": "p8-leak-3",
       "bbox": [
@@ -2265,7 +2264,7 @@
       "order": 95,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/wbm1wfy1",
+      "aid": "sh/u18j6hgr",
       "id": "95",
       "name": "p8-leak-3-fold",
       "bbox": [
@@ -2283,7 +2282,7 @@
       "order": 96,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/vatknaxg",
+      "aid": "sh/h4j21wzi",
       "id": "96",
       "name": "p8-under",
       "bbox": [
@@ -2356,7 +2355,7 @@
       "order": 97,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/a9kju5gv",
+      "aid": "sh/g3a18ryx",
       "id": "97",
       "name": "p8-under-desc",
       "bbox": [
@@ -2455,7 +2454,7 @@
       "order": 98,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/50v2tkfi",
+      "aid": "sh/361k3mh8",
       "id": "98",
       "name": "p8-callout",
       "bbox": [
@@ -2473,7 +2472,7 @@
       "order": 99,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/kzm10fed",
+      "aid": "sh/25sja1gn",
       "id": "99",
       "name": "p8-callout-text",
       "bbox": [
@@ -2483,8 +2482,8 @@
         28
       ],
       "geometry": "rect",
-      "text": "问题不在 agent 能不能产出，而在控制面能不能按同一速度作出可靠决定。",
-      "textPreview": "问题不在 agent 能不能产出，而在控制面能不能按同一速度作出可靠决定。",
+      "text": "真正的瓶颈不在 agent 能不能产出，而在控制面能否及时作出可靠决定。",
+      "textPreview": "真正的瓶颈不在 agent 能不能产出，而在控制面能否及时作出可靠决定。",
       "resolvedFontSize": 18,
       "resolvedTextStyle": {
         "anchor": 1,
@@ -2508,14 +2507,14 @@
         "lines": [
           {
             "index": 1,
-            "text": "问题不在 agent 能不能产出，而在控制面能不能按同一速度作出可靠决定。"
+            "text": "真正的瓶颈不在 agent 能不能产出，而在控制面能否及时作出可靠决定。"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "问题不在 agent 能不能产出，而在控制面能不能按同一速度作出可靠决定。",
+          "text": "真正的瓶颈不在 agent 能不能产出，而在控制面能否及时作出可靠决定。",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 18,
@@ -2528,7 +2527,7 @@
           "runs": [
             {
               "index": 1,
-              "text": "问题不在 agent 能不能产出，而在控制面能不能按同一速度作出可靠决定。",
+              "text": "真正的瓶颈不在 agent 能不能产出，而在控制面能否及时作出可靠决定。",
               "fontSize": 18,
               "typeface": "Hiragino Sans GB",
               "color": "#F7F8F5",
@@ -2546,7 +2545,7 @@
       "order": 100,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/5ojih832",
+      "aid": "sh/z29k3e9g",
       "id": "100",
       "name": "stage-rail-base",
       "bbox": [
@@ -2563,9 +2562,9 @@
       "order": 101,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/4na1o3mh",
+      "aid": "sh/y103a9sv",
       "id": "101",
-      "name": "stage-dot-PLAN",
+      "name": "stage-dot-规划",
       "bbox": [
         78,
         668,
@@ -2580,9 +2579,9 @@
       "order": 102,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/j210fylw",
+      "aid": "sh/l4r25orm",
       "id": "102",
-      "name": "stage-label-PLAN",
+      "name": "stage-label-规划",
       "bbox": [
         74,
         645,
@@ -2590,13 +2589,13 @@
         18
       ],
       "geometry": "rect",
-      "text": "PLAN",
-      "textPreview": "PLAN",
+      "text": "规划",
+      "textPreview": "规划",
       "resolvedFontSize": 11,
       "resolvedTextStyle": {
         "anchor": 1,
         "fontSize": 11,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#65706C",
         "alignment": "left",
         "verticalAlignment": "top",
@@ -2614,18 +2613,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "PLAN"
+            "text": "规划"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "PLAN",
+          "text": "规划",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 11,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#65706C",
             "alignment": "left",
             "lineSpacing": 0.96
@@ -2633,9 +2632,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "PLAN",
+              "text": "规划",
               "fontSize": 11,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#65706C",
               "alignment": "left",
               "lineSpacing": 0.96
@@ -2650,9 +2649,9 @@
       "order": 103,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/i1sjmd4b",
+      "aid": "sh/k3ilcja1",
       "id": "103",
-      "name": "stage-dot-DESIGN",
+      "name": "stage-dot-设计",
       "bbox": [
         266.67,
         668,
@@ -2667,9 +2666,9 @@
       "order": 104,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ts3ils3y",
+      "aid": "sh/by9kzet4",
       "id": "104",
-      "name": "stage-label-DESIGN",
+      "name": "stage-label-设计",
       "bbox": [
         262.67,
         645,
@@ -2677,13 +2676,13 @@
         18
       ],
       "geometry": "rect",
-      "text": "DESIGN",
-      "textPreview": "DESIGN",
+      "text": "设计",
+      "textPreview": "设计",
       "resolvedFontSize": 11,
       "resolvedTextStyle": {
         "anchor": 1,
         "fontSize": 11,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#65706C",
         "alignment": "left",
         "verticalAlignment": "top",
@@ -2701,18 +2700,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "DESIGN"
+            "text": "设计"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "DESIGN",
+          "text": "设计",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 11,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#65706C",
             "alignment": "left",
             "lineSpacing": 0.96
@@ -2720,9 +2719,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "DESIGN",
+              "text": "设计",
               "fontSize": 11,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#65706C",
               "alignment": "left",
               "lineSpacing": 0.96
@@ -2737,9 +2736,9 @@
       "order": 105,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/sru1snmt",
+      "aid": "sh/ax0369sz",
       "id": "105",
-      "name": "stage-dot-BUILD",
+      "name": "stage-dot-构建",
       "bbox": [
         455.33,
         668,
@@ -2754,9 +2753,9 @@
       "order": 106,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/rq10jil8",
+      "aid": "sh/x0r214ra",
       "id": "106",
-      "name": "stage-label-BUILD",
+      "name": "stage-label-构建",
       "bbox": [
         451.33,
         645,
@@ -2764,13 +2763,13 @@
         18
       ],
       "geometry": "rect",
-      "text": "BUILD",
-      "textPreview": "BUILD",
+      "text": "构建",
+      "textPreview": "构建",
       "resolvedFontSize": 11,
       "resolvedTextStyle": {
         "anchor": 1,
         "fontSize": 11,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#0F7C6B",
         "bold": true,
         "alignment": "left",
@@ -2789,18 +2788,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "BUILD"
+            "text": "构建"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "BUILD",
+          "text": "构建",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 11,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#0F7C6B",
             "bold": true,
             "alignment": "left",
@@ -2809,9 +2808,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "BUILD",
+              "text": "构建",
               "fontSize": 11,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#0F7C6B",
               "bold": true,
               "alignment": "left",
@@ -2827,9 +2826,9 @@
       "order": 107,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/6psjqd4n",
+      "aid": "sh/czil8zap",
       "id": "107",
-      "name": "stage-dot-TEST",
+      "name": "stage-dot-测试",
       "bbox": [
         644,
         668,
@@ -2844,9 +2843,9 @@
       "order": 108,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/1w32ps3a",
+      "aid": "sh/napkvut8",
       "id": "108",
-      "name": "stage-label-TEST",
+      "name": "stage-label-测试",
       "bbox": [
         640,
         645,
@@ -2854,13 +2853,13 @@
         18
       ],
       "geometry": "rect",
-      "text": "TEST",
-      "textPreview": "TEST",
+      "text": "测试",
+      "textPreview": "测试",
       "resolvedFontSize": 11,
       "resolvedTextStyle": {
         "anchor": 1,
         "fontSize": 11,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#65706C",
         "alignment": "left",
         "verticalAlignment": "top",
@@ -2878,18 +2877,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "TEST"
+            "text": "测试"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "TEST",
+          "text": "测试",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 11,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#65706C",
             "alignment": "left",
             "lineSpacing": 0.96
@@ -2897,9 +2896,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "TEST",
+              "text": "测试",
               "fontSize": 11,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#65706C",
               "alignment": "left",
               "lineSpacing": 0.96
@@ -2914,9 +2913,9 @@
       "order": 109,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/gvu1wnmp",
+      "aid": "sh/29g32psn",
       "id": "109",
-      "name": "stage-dot-DEPLOY",
+      "name": "stage-dot-发布",
       "bbox": [
         832.67,
         668,
@@ -2931,9 +2930,9 @@
       "order": 110,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/y1ofqpk7",
+      "aid": "sh/s3u9grm9",
       "id": "110",
-      "name": "stage-label-DEPLOY",
+      "name": "stage-label-发布",
       "bbox": [
         828.67,
         645,
@@ -2941,13 +2940,13 @@
         18
       ],
       "geometry": "rect",
-      "text": "DEPLOY",
-      "textPreview": "DEPLOY",
+      "text": "发布",
+      "textPreview": "发布",
       "resolvedFontSize": 11,
       "resolvedTextStyle": {
         "anchor": 1,
         "fontSize": 11,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#65706C",
         "alignment": "left",
         "verticalAlignment": "top",
@@ -2965,18 +2964,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "DEPLOY"
+            "text": "发布"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "DEPLOY",
+          "text": "发布",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 11,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#65706C",
             "alignment": "left",
             "lineSpacing": 0.96
@@ -2984,9 +2983,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "DEPLOY",
+              "text": "发布",
               "fontSize": 11,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#65706C",
               "alignment": "left",
               "lineSpacing": 0.96
@@ -3001,9 +3000,9 @@
       "order": 111,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/z2xgju1s",
+      "aid": "sh/t43qpw3u",
       "id": "111",
-      "name": "stage-dot-MAINTAIN",
+      "name": "stage-dot-运维",
       "bbox": [
         1021.33,
         668,
@@ -3018,9 +3017,9 @@
       "order": 112,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/k36xsz2d",
+      "aid": "sh/61cre143",
       "id": "112",
-      "name": "stage-label-MAINTAIN",
+      "name": "stage-label-运维",
       "bbox": [
         1017.33,
         645,
@@ -3028,13 +3027,13 @@
         18
       ],
       "geometry": "rect",
-      "text": "MAINTAIN",
-      "textPreview": "MAINTAIN",
+      "text": "运维",
+      "textPreview": "运维",
       "resolvedFontSize": 11,
       "resolvedTextStyle": {
         "anchor": 1,
         "fontSize": 11,
-        "typeface": "Helvetica Neue",
+        "typeface": "Hiragino Sans GB",
         "color": "#65706C",
         "alignment": "left",
         "verticalAlignment": "top",
@@ -3052,18 +3051,18 @@
         "lines": [
           {
             "index": 1,
-            "text": "MAINTAIN"
+            "text": "运维"
           }
         ]
       },
       "paragraphs": [
         {
           "index": 1,
-          "text": "MAINTAIN",
+          "text": "运维",
           "lineSpacingPercent": 96000,
           "resolvedTextStyle": {
             "fontSize": 11,
-            "typeface": "Helvetica Neue",
+            "typeface": "Hiragino Sans GB",
             "color": "#65706C",
             "alignment": "left",
             "lineSpacing": 0.96
@@ -3071,9 +3070,9 @@
           "runs": [
             {
               "index": 1,
-              "text": "MAINTAIN",
+              "text": "运维",
               "fontSize": 11,
-              "typeface": "Helvetica Neue",
+              "typeface": "Hiragino Sans GB",
               "color": "#65706C",
               "alignment": "left",
               "lineSpacing": 0.96

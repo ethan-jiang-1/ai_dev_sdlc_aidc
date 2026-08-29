@@ -33,7 +33,7 @@
 - [x] **视觉方向**：统一白底的系统蓝图式技术编辑风；高对比只用局部石墨结构、标题尺度与留白，不使用整页黑底；统一 SDLC / 工件链 / 控制面视觉语法。详见 `_asset/README.md`。
 - [x] **制作路线**：自定义母版与布局系统，不使用 `-opc` CLAWTIME，不套现成模板，不混用 Codex Grid。
 - [x] **50 页视觉分镜**：八个布局族、逐页资产类型、色彩/符号语义与视觉门禁已落 `_asset/01-visual-storyboard-v0.8.md`。
-- [x] **Image 2 混合生产边界**：逐页判断「不用 / 视觉底图 / 图文一体的视觉主体」；关键文字由 PowerPoint 原生渲染，生成图内文字只承担经核对的次要视觉语义，精确关系保持可编辑。详见 `AGENTS.md` 与 `_asset/02-imagegen-prompts-v0.8.md`。
+- [x] **Image 2 混合生产边界**：逐页在原生主体、生成主体和混合主体中选择；Image 2 可以承担丰富的生成式图文主体和经核对的局部解释，页面文案由 PowerPoint 统一渲染，精确关系保持可编辑。详见 `CONTEXT.md`、`AGENTS.md` 与 `_asset/02-imagegen-prompts-v0.8.md`。
 - [x] **服务入口已验证**：Packy 为当前 GPT Image 2 主入口，MICU 为备用；连通性、提示词、选择理由与候选资产见 `_asset/experiments/imagegen-v0.8/`，密钥不落盘。
 - [x] **P1 混合路线已验证**：无字 Image 2 视觉作为全幅主体，PowerPoint 叠加可编辑 kicker、标题、副标题与 callout；中文一体生成图只作能力证明，不进入生产。
 - [x] 已完成 P1 / P8 / P20 / P42 四张关键样片与可编辑 PPTX，反向渲染一致且无溢出；见 `_asset/samples/v0.8/`。

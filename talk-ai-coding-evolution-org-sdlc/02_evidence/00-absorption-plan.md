@@ -6,7 +6,7 @@
 
 ## 零、贯穿全文的主线（不进任何单页，处处引用）
 
-- **瓶颈转移诊断**：当 build 被压缩而端到端 lead time 未同步下降，慢点会移向 plan / review / test / deploy。这是 Anthropic 观点，需听众用自身数据验证。
+- **瓶颈转移诊断**：当构建被压缩，而端到端交付周期（lead time）没有同步下降，慢点会移向规划、审查、测试与发布。这是 Anthropic 的观点，需要听众用自己的数据验证。
 - **AI-native SDLC = loop**：线性 → 循环；AI 嵌在每个点；自动交接 / 触发。
 - **工件链是审计的骨架**：`intent.md → spec.md → plan.md → diff+tests → PR+review → incident`；每阶段落工件，下一阶段读它。只有加上身份、版本、证据、审批与不可绕过的 gate，才承担审计。
 - **机器守确定性 gate，人守判断 gate**：human judgment 仍为意图、风险、例外与生产授权负责；确定性可表达的规则不降级为概率判断；authorize at execution, not at generation。

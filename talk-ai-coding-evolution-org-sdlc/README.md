@@ -23,6 +23,7 @@
 talk-ai-coding-evolution-org-sdlc/
 ├── README.md                                # 本文件：地图 + 素材说明 + 工作方式
 ├── AGENTS.md                                # 【agent 手册】harness 的操作步骤 + 规则
+├── CONTEXT.md                               # 【术语权威】本 talk 的局部 glossary + 禁用混称
 ├── _reference/                              # 上游素材 symlink（只读）
 │   ├── README.md                            #   symlink 一览 + 引用约定 + 规则
 │   ├── rawdata_anthropic-ai-native-sdlc-playbook.md # 【symlink】★ 宽轴：六阶段 SDLC 转型 playbook
@@ -74,12 +75,20 @@ talk-ai-coding-evolution-org-sdlc/
 ## 工作方式
 
 agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
+本 talk 的局部术语以 [`CONTEXT.md`](./CONTEXT.md) 为唯一权威来源；讨论、分镜、prompt、样片 REVIEW 和 PPTX 生产都使用其中的词义。用户用词含混或与 glossary 冲突时，先对齐实际所指，再继续制作；新共识立即写回 `CONTEXT.md`。
 加工顺序固定为 **故事线 → 证据口径 → 50 页页面职责 → 内容锁定 → 中文编辑 → 视觉样片 → 生产事实稿 → 母版与 50 页 PPTX → 文字/视觉 QA**；
 review 若改变了内容，反向同步回上游源文件。
 
+### 权威文件怎样分工
+
+- [`CONTEXT.md`](./CONTEXT.md) 只回答“这些词在本 talk 里是什么意思、哪些叫法容易混淆”。
+- [`AGENTS.md`](./AGENTS.md) 只回答“agent 每次按什么顺序工作、必须过哪些门”。
+- [`01_storyline/`](01_storyline/) 保存主张、故事线与决策理由；[`02_evidence/`](02_evidence/) 保存来源和可说口径；[`03_outline/`](03_outline/) 保存 50 页页面职责。
+- [`_asset/`](_asset/) 保存视觉系统、Image 2 规则、实验和样片；[`01_storyline/04-open-questions.md`](01_storyline/04-open-questions.md) 保存当前状态与下一步。
+
 ### 新对话怎样接续
 
-不需要依赖旧聊天记录。依次阅读 [`AGENTS.md`](./AGENTS.md)、[`01_storyline/00-storyline-map.md`](01_storyline/00-storyline-map.md)、[`01_storyline/07-narrative-thinking.md`](01_storyline/07-narrative-thinking.md)、[`03_outline/00-page-structure.md`](03_outline/00-page-structure.md)、[`01_storyline/04-open-questions.md`](01_storyline/04-open-questions.md)。进入表现阶段时再读 [`_asset/README.md`](_asset/README.md) 与 [`_asset/01-visual-storyboard-v0.8.md`](_asset/01-visual-storyboard-v0.8.md)。这些文件共同回答：为什么讲、对谁讲、50 页怎样推进、视觉为什么这样定、当前已经完成什么、下一步做什么。
+不需要依赖旧聊天记录。依次阅读 [`AGENTS.md`](./AGENTS.md)、[`CONTEXT.md`](./CONTEXT.md)、[`01_storyline/00-storyline-map.md`](01_storyline/00-storyline-map.md)、[`01_storyline/07-narrative-thinking.md`](01_storyline/07-narrative-thinking.md)、[`03_outline/00-page-structure.md`](03_outline/00-page-structure.md)、[`01_storyline/04-open-questions.md`](01_storyline/04-open-questions.md)。进入表现阶段时再读 [`_asset/README.md`](_asset/README.md) 与 [`_asset/01-visual-storyboard-v0.8.md`](_asset/01-visual-storyboard-v0.8.md)。这些文件共同回答：这里的词是什么意思、为什么讲、对谁讲、50 页怎样推进、视觉为什么这样定、当前已经完成什么、下一步做什么。
 
 ### 中文表达规则
 

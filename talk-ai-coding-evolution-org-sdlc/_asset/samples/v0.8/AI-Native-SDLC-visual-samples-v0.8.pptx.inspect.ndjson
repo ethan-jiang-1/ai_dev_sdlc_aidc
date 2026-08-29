@@ -1,239 +1,239 @@
-{"kind":"deck","id":"pr/vre10o","name":"Deck"}
-{"kind":"layout","layoutId":"c3046411-0fb1-44d1-b8e8-eae962a74745","name":"Master","type":"master"}
-{"kind":"layout","layoutId":"43faa7f2-b4c1-413d-9a0a-89950ae6a283","name":"Title Slide","type":"title"}
-{"kind":"slide","id":"sl/gkwcnz","slide":1,"title":"AI 原生软件交付","textShapes":4}
-{"kind":"shape","id":"sh/5kjmlwvm","slide":1,"name":"p1-kicker-rule","bbox":[72,75,38,0]}
-{"kind":"textbox","id":"sh/kjalsre1","slide":1,"name":"p1-kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[124,62,220,28]}
-{"kind":"textbox","id":"sh/veh4fmxk","slide":1,"name":"p1-title","text":"AI-Native 软件研发组织","textPreview":"AI-Native 软件研发组织","textChars":16,"textLines":1,"bbox":[72,132,585,74]}
-{"kind":"textbox","id":"sh/ad83mhwz","slide":1,"name":"p1-subtitle","text":"让产品意图顺畅抵达生产现场","textPreview":"让产品意图顺畅抵达生产现场","textChars":13,"textLines":1,"bbox":[72,224,520,48]}
-{"kind":"textbox","id":"sh/xgjmhcfa","slide":1,"name":"p1-callout","text":"重建整条软件交付链","textPreview":"重建整条软件交付链","textChars":9,"textLines":1,"bbox":[72,286,360,38]}
-{"kind":"image","id":"im/76tc7250","slide":1,"name":"","alt":"纸白背景上的软件交付价值流模型，从线性轨道进入带门禁的反馈闭环","bbox":[0,0,1280,720]}
-{"kind":"notes","id":"nt/gkwcnz","slide":1,"text":"[Sources]\n- GPT Image 2 generated visual asset: /Users/bowhead/ai_dev_sdlc_aidc/talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.8/p1-candidates/packy-p1-v1.png\n- Prompt record: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.8/p1-prompt.txt\n- Illustrative system representation, not production data."}
-{"kind":"slide","id":"sl/tqhgkx","slide":2,"title":"DIAGNOSIS / CAPACITY","textShapes":18}
-{"kind":"shape","id":"sh/ls3uxo7u","slide":2,"name":"p8-kicker-rule","bbox":[72,45,38,0]}
-{"kind":"textbox","id":"sh/y5cvm9o3","slide":2,"name":"p8-kicker","text":"DIAGNOSIS / CAPACITY","textPreview":"DIAGNOSIS / CAPACITY","textChars":20,"textLines":1,"bbox":[124,32,230,28]}
-{"kind":"textbox","id":"sh/z6lcvepo","slide":2,"name":"page-title","text":"产出与控制容量失配：要么排队，要么欠审","textPreview":"产出与控制容量失配：要么排队，要么欠审","textChars":19,"textLines":1,"bbox":[72,62,1136,62]}
-{"kind":"textbox","id":"sh/8vedsj65","slide":2,"name":"page-subtitle","text":"agent 放大产出，不会自动放大 review / security / release 的人工容量。","textPreview":"agent 放大产出，不会自动放大 review / security / release 的人工容量。","textChars":52,"textLines":1,"bbox":[72,130,1050,38]}
-{"kind":"shape","id":"sh/9wne1o7q","slide":2,"name":"p8-upstream","bbox":[78,276,492,194]}
-{"kind":"shape","id":"sh/mtwvq9of","slide":2,"name":"p8-a-0-0","bbox":[108,304,28,32]}
-{"kind":"shape","id":"sh/7u5czep0","slide":2,"name":"p8-a-0-0-fold","bbox":[118,304,18,18]}
-{"kind":"shape","id":"sh/wzedw36h","slide":2,"name":"p8-a-0-1","bbox":[168,304,28,32]}
-{"kind":"shape","id":"sh/h0ne5872","slide":2,"name":"p8-a-0-1-fold","bbox":[178,304,18,18]}
-{"kind":"shape","id":"sh/lgnqp4vu","slide":2,"name":"p8-a-0-2","bbox":[228,304,28,32]}
-{"kind":"shape","id":"sh/kfe9gzu9","slide":2,"name":"p8-a-0-2-fold","bbox":[238,304,18,18]}
-{"kind":"shape","id":"sh/je58nedo","slide":2,"name":"p8-a-0-3","bbox":[288,304,28,32]}
-{"kind":"shape","id":"sh/ydwre9c3","slide":2,"name":"p8-a-0-3-fold","bbox":[298,304,18,18]}
-{"kind":"shape","id":"sh/t4nqtovq","slide":2,"name":"p8-a-0-4","bbox":[348,304,28,32]}
-{"kind":"shape","id":"sh/83e9kju5","slide":2,"name":"p8-a-0-4-fold","bbox":[358,304,18,18]}
-{"kind":"shape","id":"sh/7258redk","slide":2,"name":"p8-a-0-5","bbox":[408,304,28,32]}
-{"kind":"shape","id":"sh/61wri9cz","slide":2,"name":"p8-a-0-5-fold","bbox":[418,304,18,18]}
-{"kind":"shape","id":"sh/983qhkvm","slide":2,"name":"p8-a-0-6","bbox":[468,304,28,32]}
-{"kind":"shape","id":"sh/o7up8fu1","slide":2,"name":"p8-a-0-6-fold","bbox":[478,304,18,18]}
-{"kind":"shape","id":"sh/0ry9oz2x","slide":2,"name":"p8-a-1-0","bbox":[118,344,28,32]}
-{"kind":"shape","id":"sh/1s7qx43i","slide":2,"name":"p8-a-1-0-fold","bbox":[128,344,18,18]}
-{"kind":"shape","id":"sh/epwrmpkr","slide":2,"name":"p8-a-1-1","bbox":[178,344,28,32]}
-{"kind":"shape","id":"sh/fq58vulc","slide":2,"name":"p8-a-1-1-fold","bbox":[188,344,18,18]}
-{"kind":"shape","id":"sh/ovy9sz2t","slide":2,"name":"p8-a-1-2","bbox":[238,344,28,32]}
-{"kind":"shape","id":"sh/pw7q143e","slide":2,"name":"p8-a-1-2-fold","bbox":[248,344,18,18]}
-{"kind":"shape","id":"sh/2tgrqpkn","slide":2,"name":"p8-a-1-3","bbox":[298,344,28,32]}
-{"kind":"shape","id":"sh/nup8zul8","slide":2,"name":"p8-a-1-3-fold","bbox":[308,344,18,18]}
-{"kind":"shape","id":"sh/cji9wj25","slide":2,"name":"p8-a-1-4","bbox":[358,344,28,32]}
-{"kind":"shape","id":"sh/xkra5o3a","slide":2,"name":"p8-a-1-4-fold","bbox":[368,344,18,18]}
-{"kind":"shape","id":"sh/7etcvi5s","slide":2,"name":"p8-a-1-5","bbox":[418,344,28,32]}
-{"kind":"shape","id":"sh/mdkb2d47","slide":2,"name":"p8-a-1-5-fold","bbox":[428,344,18,18]}
-{"kind":"shape","id":"sh/9gbux8ni","slide":2,"name":"p8-a-1-6","bbox":[478,344,28,32]}
-{"kind":"shape","id":"sh/8f2t4nmd","slide":2,"name":"p8-a-1-6-fold","bbox":[488,344,18,18]}
-{"kind":"shape","id":"sh/zqtcry5g","slide":2,"name":"p8-a-2-0","bbox":[108,384,28,32]}
-{"kind":"shape","id":"sh/yp0byt4v","slide":2,"name":"p8-a-2-0-fold","bbox":[118,384,18,18]}
-{"kind":"shape","id":"sh/lcbut8nm","slide":2,"name":"p8-a-2-1","bbox":[168,384,28,32]}
-{"kind":"shape","id":"sh/kb2t03m1","slide":2,"name":"p8-a-2-1-fold","bbox":[178,384,18,18]}
-{"kind":"shape","id":"sh/j6dc3250","slide":2,"name":"p8-a-2-2","bbox":[228,384,28,32]}
-{"kind":"shape","id":"sh/il4vax4f","slide":2,"name":"p8-a-2-2-fold","bbox":[238,384,18,18]}
-{"kind":"shape","id":"sh/qtkfyh0j","slide":2,"name":"p8-a-2-3","bbox":[288,384,28,32]}
-{"kind":"shape","id":"sh/rutgrm14","slide":2,"name":"p8-a-2-3-fold","bbox":[298,384,18,18]}
-{"kind":"shape","id":"sh/sv2x0rip","slide":2,"name":"p8-a-2-4","bbox":[348,384,28,32]}
-{"kind":"shape","id":"sh/dwvytwja","slide":2,"name":"p8-a-2-4-fold","bbox":[358,384,18,18]}
-{"kind":"shape","id":"sh/ipkfuh0n","slide":2,"name":"p8-a-2-5","bbox":[408,384,28,32]}
-{"kind":"shape","id":"sh/3qtwnm18","slide":2,"name":"p8-a-2-5-fold","bbox":[418,384,18,18]}
-{"kind":"shape","id":"sh/4r2xwrid","slide":2,"name":"p8-a-2-6","bbox":[468,384,28,32]}
-{"kind":"shape","id":"sh/5sbypwjy","slide":2,"name":"p8-a-2-6-fold","bbox":[478,384,18,18]}
-{"kind":"shape","id":"sh/2l4f610r","slide":2,"name":"p8-a-3-0","bbox":[118,424,28,32]}
-{"kind":"shape","id":"sh/nmdgz61c","slide":2,"name":"p8-a-3-0-fold","bbox":[128,424,18,18]}
-{"kind":"shape","id":"sh/xszal47q","slide":2,"name":"p8-a-3-1","bbox":[178,424,28,32]}
-{"kind":"shape","id":"sh/wrq9cz65","slide":2,"name":"p8-a-3-1-fold","bbox":[188,424,18,18]}
-{"kind":"shape","id":"sh/vqhsjupk","slide":2,"name":"p8-a-3-2","bbox":[238,424,28,32]}
-{"kind":"shape","id":"sh/ap8rapoz","slide":2,"name":"p8-a-3-2-fold","bbox":[248,424,18,18]}
-{"kind":"shape","id":"sh/9ozqh47e","slide":2,"name":"p8-a-3-3","bbox":[298,424,28,32]}
-{"kind":"shape","id":"sh/83q98z69","slide":2,"name":"p8-a-3-3-fold","bbox":[308,424,18,18]}
-{"kind":"shape","id":"sh/n2h8fupo","slide":2,"name":"p8-a-3-4","bbox":[358,424,28,32]}
-{"kind":"shape","id":"sh/m18r6po3","slide":2,"name":"p8-a-3-4-fold","bbox":[368,424,18,18]}
-{"kind":"shape","id":"sh/tk3ato7y","slide":2,"name":"p8-a-3-5","bbox":[418,424,28,32]}
-{"kind":"shape","id":"sh/sza9kj6d","slide":2,"name":"p8-a-3-5-fold","bbox":[428,424,18,18]}
-{"kind":"shape","id":"sh/s3itgnep","slide":2,"name":"p8-a-3-6","bbox":[478,424,28,32]}
-{"kind":"shape","id":"sh/d4bupsfu","slide":2,"name":"p8-a-3-6-fold","bbox":[488,424,18,18]}
-{"kind":"shape","id":"sh/q10bexwj","slide":2,"name":"p8-flow-to-gate","bbox":[570,373,132,0]}
-{"kind":"shape","id":"sh/r29cn2x4","slide":2,"name":"p8-safe-path","bbox":[722,344,413,0]}
-{"kind":"shape","id":"sh/4zitcned","slide":2,"name":"p8-bypass-path","bbox":[722,414,413,86]}
-{"kind":"shape","id":"sh/50rulsfy","slide":2,"name":"p8-gate-line","bbox":[715,278,0,194]}
-{"kind":"shape","id":"sh/ix0badw7","slide":2,"name":"p8-gate-cap-top","bbox":[708,276,14,5]}
-{"kind":"shape","id":"sh/3y9cjixs","slide":2,"name":"p8-gate-cap-bottom","bbox":[708,469,14,5]}
-{"kind":"textbox","id":"sh/gvyt83eh","slide":2,"name":"p8-gate-label","text":"CONTROL CAPACITY","textPreview":"CONTROL CAPACITY","textChars":16,"textLines":1,"bbox":[643,246,144,22]}
-{"kind":"textbox","id":"sh/hw7ah8f2","slide":2,"name":"p8-agent-label","text":"AGENT OUTPUT","textPreview":"AGENT OUTPUT","textChars":12,"textLines":1,"bbox":[110,238,180,26]}
-{"kind":"textbox","id":"sh/j6pcryho","slide":2,"name":"p8-wide","text":"宽产出","textPreview":"宽产出","textChars":3,"textLines":1,"bbox":[108,490,180,34]}
-{"kind":"textbox","id":"sh/y5wvytg3","slide":2,"name":"p8-wide-sub","text":"并行会话持续提交改动","textPreview":"并行会话持续提交改动","textChars":10,"textLines":1,"bbox":[108,530,300,28]}
-{"kind":"shape","id":"sh/l87ut8zu","slide":2,"name":"p8-q-0","bbox":[780,326,28,36]}
-{"kind":"shape","id":"sh/k7yd03y9","slide":2,"name":"p8-q-0-fold","bbox":[790,326,18,18]}
-{"kind":"shape","id":"sh/7upcvih0","slide":2,"name":"p8-q-1","bbox":[822,326,28,36]}
-{"kind":"shape","id":"sh/6tgv2dgf","slide":2,"name":"p8-q-1-fold","bbox":[832,326,18,18]}
-{"kind":"shape","id":"sh/tw7uxszq","slide":2,"name":"p8-q-2","bbox":[864,326,28,36]}
-{"kind":"shape","id":"sh/8vyd4ny5","slide":2,"name":"p8-q-2-fold","bbox":[874,326,18,18]}
-{"kind":"shape","id":"sh/vy9czihw","slide":2,"name":"p8-q-3","bbox":[906,326,28,36]}
-{"kind":"shape","id":"sh/ux0v6xgb","slide":2,"name":"p8-q-3-fold","bbox":[916,326,18,18]}
-{"kind":"shape","id":"sh/2lgfuhwf","slide":2,"name":"p8-q-4","bbox":[948,326,28,36]}
-{"kind":"shape","id":"sh/36pgnmd0","slide":2,"name":"p8-q-4-fold","bbox":[958,326,18,18]}
-{"kind":"shape","id":"sh/47yhwrel","slide":2,"name":"p8-q-5","bbox":[990,326,28,36]}
-{"kind":"shape","id":"sh/p87ypwv6","slide":2,"name":"p8-q-5-fold","bbox":[1000,326,18,18]}
-{"kind":"shape","id":"sh/q9gzy1wr","slide":2,"name":"p8-q-6","bbox":[1032,326,28,36]}
-{"kind":"shape","id":"sh/rapgrmdc","slide":2,"name":"p8-q-6-fold","bbox":[1042,326,18,18]}
-{"kind":"textbox","id":"sh/cbyh0rex","slide":2,"name":"p8-queue","text":"排队","textPreview":"排队","textChars":2,"textLines":1,"bbox":[782,258,130,38]}
-{"kind":"textbox","id":"sh/dcrytwv2","slide":2,"name":"p8-queue-desc","text":"review queue 增长\nlead time 上升","textPreview":"review queue 增长 | lead time 上升","textChars":28,"textLines":2,"bbox":[782,374,260,58]}
-{"kind":"shape","id":"sh/ed0z21wn","slide":2,"name":"p8-leak-0","bbox":[805,454,30,36]}
-{"kind":"shape","id":"sh/ze9gv6d8","slide":2,"name":"p8-leak-0-fold","bbox":[817,454,18,18]}
-{"kind":"shape","id":"sh/98bil0fa","slide":2,"name":"p8-leak-1","bbox":[900,472,30,36]}
-{"kind":"shape","id":"sh/8721svy5","slide":2,"name":"p8-leak-1-fold","bbox":[912,472,18,18]}
-{"kind":"shape","id":"sh/n6t0jqxk","slide":2,"name":"p8-leak-2","bbox":[1000,490,30,36]}
-{"kind":"shape","id":"sh/m5kjqlgz","slide":2,"name":"p8-leak-2-fold","bbox":[1012,490,18,18]}
-{"kind":"shape","id":"sh/xwv2pkfm","slide":2,"name":"p8-leak-3","bbox":[1100,508,30,36]}
-{"kind":"shape","id":"sh/wbm1wfy1","slide":2,"name":"p8-leak-3-fold","bbox":[1112,508,18,18]}
-{"kind":"textbox","id":"sh/vatknaxg","slide":2,"name":"p8-under","text":"欠审","textPreview":"欠审","textChars":2,"textLines":1,"bbox":[782,470,130,38]}
-{"kind":"textbox","id":"sh/a9kju5gv","slide":2,"name":"p8-under-desc","text":"绕过控制容量\n风险进入生产","textPreview":"绕过控制容量 | 风险进入生产","textChars":13,"textLines":2,"bbox":[782,518,260,58]}
-{"kind":"shape","id":"sh/50v2tkfi","slide":2,"name":"p8-callout","bbox":[72,588,1136,56]}
-{"kind":"textbox","id":"sh/kzm10fed","slide":2,"name":"p8-callout-text","text":"问题不在 agent 能不能产出，而在控制面能不能按同一速度作出可靠决定。","textPreview":"问题不在 agent 能不能产出，而在控制面能不能按同一速度作出可靠决定。","textChars":37,"textLines":1,"bbox":[96,603,1088,28]}
-{"kind":"shape","id":"sh/5ojih832","slide":2,"name":"stage-rail-base","bbox":[74,674,1132,0]}
-{"kind":"shape","id":"sh/4na1o3mh","slide":2,"name":"stage-dot-PLAN","bbox":[78,668,12,12]}
-{"kind":"textbox","id":"sh/j210fylw","slide":2,"name":"stage-label-PLAN","text":"PLAN","textPreview":"PLAN","textChars":4,"textLines":1,"bbox":[74,645,92,18]}
-{"kind":"shape","id":"sh/i1sjmd4b","slide":2,"name":"stage-dot-DESIGN","bbox":[266.67,668,12,12]}
-{"kind":"textbox","id":"sh/ts3ils3y","slide":2,"name":"stage-label-DESIGN","text":"DESIGN","textPreview":"DESIGN","textChars":6,"textLines":1,"bbox":[262.67,645,92,18]}
-{"kind":"shape","id":"sh/sru1snmt","slide":2,"name":"stage-dot-BUILD","bbox":[455.33,668,12,12]}
-{"kind":"textbox","id":"sh/rq10jil8","slide":2,"name":"stage-label-BUILD","text":"BUILD","textPreview":"BUILD","textChars":5,"textLines":1,"bbox":[451.33,645,92,18]}
-{"kind":"shape","id":"sh/6psjqd4n","slide":2,"name":"stage-dot-TEST","bbox":[644,668,12,12]}
-{"kind":"textbox","id":"sh/1w32ps3a","slide":2,"name":"stage-label-TEST","text":"TEST","textPreview":"TEST","textChars":4,"textLines":1,"bbox":[640,645,92,18]}
-{"kind":"shape","id":"sh/gvu1wnmp","slide":2,"name":"stage-dot-DEPLOY","bbox":[832.67,668,12,12]}
-{"kind":"textbox","id":"sh/y1ofqpk7","slide":2,"name":"stage-label-DEPLOY","text":"DEPLOY","textPreview":"DEPLOY","textChars":6,"textLines":1,"bbox":[828.67,645,92,18]}
-{"kind":"shape","id":"sh/z2xgju1s","slide":2,"name":"stage-dot-MAINTAIN","bbox":[1021.33,668,12,12]}
-{"kind":"textbox","id":"sh/k36xsz2d","slide":2,"name":"stage-label-MAINTAIN","text":"MAINTAIN","textPreview":"MAINTAIN","textChars":8,"textLines":1,"bbox":[1017.33,645,92,18]}
-{"kind":"notes","id":"nt/tqhgkx","slide":2,"text":"[Sources]\n- P8: Visual sample authored for this talk; no external visual assets.\n- Illustrative system representation, not production data."}
-{"kind":"slide","id":"sl/q7180s","slide":3,"title":"BUILD / HARNESS LENS","textShapes":22}
-{"kind":"shape","id":"sh/mdwf69s7","slide":3,"name":"p20-kicker-rule","bbox":[72,45,38,0]}
-{"kind":"textbox","id":"sh/9gny14by","slide":3,"name":"p20-kicker","text":"BUILD / HARNESS LENS","textPreview":"BUILD / HARNESS LENS","textChars":20,"textLines":1,"bbox":[124,32,240,28]}
-{"kind":"textbox","id":"sh/8fex8zad","slide":3,"name":"page-title","text":"Harness 把执行圈住、拦住、看清","textPreview":"Harness 把执行圈住、拦住、看清","textChars":19,"textLines":1,"bbox":[72,62,1136,62]}
-{"kind":"textbox","id":"sh/za5wvutg","slide":3,"name":"page-subtitle","text":"共享控制基线不是“更长的提示词”，而是执行边界、确定性门禁与事实轨迹。","textPreview":"共享控制基线不是“更长的提示词”，而是执行边界、确定性门禁与事实轨迹。","textChars":35,"textLines":1,"bbox":[72,130,1050,38]}
-{"kind":"shape","id":"sh/y9cf2psv","slide":3,"name":"p20-boundary","bbox":[392,242,720,330]}
-{"kind":"shape","id":"sh/lcnex4bm","slide":3,"name":"p20-sandbox-zone","bbox":[420,274,658,248]}
-{"kind":"shape","id":"sh/kbex4za1","slide":3,"name":"p20-input-path","bbox":[126,390,346,0]}
-{"kind":"shape","id":"sh/j6pg7et0","slide":3,"name":"p20-after-gate","bbox":[704,390,354,0]}
-{"kind":"shape","id":"sh/i5gfetsf","slide":3,"name":"p20-evidence-path","bbox":[454,492,578,0]}
-{"kind":"shape","id":"sh/87qtc7ih","slide":3,"name":"p20-evidence-up","bbox":[1032,438,0,54]}
-{"kind":"shape","id":"sh/98zu5cj2","slide":3,"name":"p20-evidence-return","bbox":[454,438,0,54]}
-{"kind":"shape","id":"sh/m58bax0b","slide":3,"name":"p20-hook-gate-line","bbox":[636,298,0,186]}
-{"kind":"shape","id":"sh/76hc321w","slide":3,"name":"p20-hook-gate-cap-top","bbox":[629,296,14,5]}
-{"kind":"shape","id":"sh/k3qt87il","slide":3,"name":"p20-hook-gate-cap-bottom","bbox":[629,481,14,5]}
-{"kind":"textbox","id":"sh/l4zu1cj6","slide":3,"name":"p20-hook-gate-label","text":"HOOK / GATE","textPreview":"HOOK / GATE","textChars":11,"textLines":1,"bbox":[564,266,144,22]}
-{"kind":"shape","id":"sh/y18b6x0f","slide":3,"name":"p20-tool-zone","bbox":[732,326,284,128]}
-{"kind":"textbox","id":"sh/z2hcz210","slide":3,"name":"p20-tool-label","text":"TOOL EXECUTION","textPreview":"TOOL EXECUTION","textChars":14,"textLines":1,"bbox":[764,350,220,26]}
-{"kind":"textbox","id":"sh/cf6t4ni9","slide":3,"name":"p20-tool-list","text":"read · write · test · command","textPreview":"read · write · test · command","textChars":29,"textLines":1,"bbox":[756,390,236,28]}
-{"kind":"shape","id":"sh/xgfuxsju","slide":3,"name":"p20-in-artifact","bbox":[130,368,68,46]}
-{"kind":"shape","id":"sh/dw7a1obi","slide":3,"name":"p20-in-artifact-fold","bbox":[180,368,18,18]}
-{"kind":"textbox","id":"sh/cvy98jud","slide":3,"name":"p20-in-artifact-text","text":"diff","textPreview":"diff","textChars":4,"textLines":1,"bbox":[140,377,44,28]}
-{"kind":"shape","id":"sh/rupszets","slide":3,"name":"p20-out-artifact","bbox":[1042,368,78,46]}
-{"kind":"shape","id":"sh/q9gr69c7","slide":3,"name":"p20-out-artifact-fold","bbox":[1102,368,18,18]}
-{"kind":"textbox","id":"sh/p87ax4bm","slide":3,"name":"p20-out-artifact-text","text":"proof","textPreview":"proof","textChars":5,"textLines":1,"bbox":[1052,377,54,28]}
-{"kind":"textbox","id":"sh/47y94zu1","slide":3,"name":"p20-enclose","text":"圈住","textPreview":"圈住","textChars":2,"textLines":1,"bbox":[406,570,120,36]}
-{"kind":"textbox","id":"sh/36p8vutg","slide":3,"name":"p20-enclose-sub","text":"sandbox · permissions","textPreview":"sandbox · permissions","textChars":21,"textLines":1,"bbox":[382,608,170,20]}
-{"kind":"textbox","id":"sh/25wr29cv","slide":3,"name":"p20-block","text":"拦住","textPreview":"拦住","textChars":2,"textLines":1,"bbox":[584,570,120,36]}
-{"kind":"textbox","id":"sh/94ra98bq","slide":3,"name":"p20-block-sub","text":"hooks · deterministic gates","textPreview":"hooks · deterministic gates","textChars":27,"textLines":1,"bbox":[550,608,190,20]}
-{"kind":"textbox","id":"sh/o3i9g3ul","slide":3,"name":"p20-see","text":"看清","textPreview":"看清","textChars":2,"textLines":1,"bbox":[762,570,120,36]}
-{"kind":"textbox","id":"sh/mxsfe1or","slide":3,"name":"p20-see-sub","text":"provenance · observability","textPreview":"provenance · observability","textChars":26,"textLines":1,"bbox":[724,608,196,20]}
-{"kind":"textbox","id":"sh/7y1gn65c","slide":3,"name":"p20-platform","text":"PLATFORM BASELINE","textPreview":"PLATFORM BASELINE","textChars":17,"textLines":1,"bbox":[940,574,190,30]}
-{"kind":"textbox","id":"sh/8zaxgb6h","slide":3,"name":"p20-platform-sub","text":"shared control, local judgement","textPreview":"shared control, local judgement","textChars":31,"textLines":1,"bbox":[920,608,230,20]}
-{"kind":"shape","id":"sh/90jypgn2","slide":3,"name":"stage-rail-base","bbox":[74,674,1132,0]}
-{"kind":"shape","id":"sh/ytsfa1of","slide":3,"name":"stage-dot-PLAN","bbox":[78,668,12,12]}
-{"kind":"textbox","id":"sh/zu1gj650","slide":3,"name":"stage-label-PLAN","text":"PLAN","textPreview":"PLAN","textChars":4,"textLines":1,"bbox":[74,645,92,18]}
-{"kind":"shape","id":"sh/kvaxcr6l","slide":3,"name":"stage-dot-DESIGN","bbox":[266.67,668,12,12]}
-{"kind":"textbox","id":"sh/lwjylwn6","slide":3,"name":"stage-label-DESIGN","text":"DESIGN","textPreview":"DESIGN","textChars":6,"textLines":1,"bbox":[262.67,645,92,18]}
-{"kind":"shape","id":"sh/ipcfmloz","slide":3,"name":"stage-dot-BUILD","bbox":[455.33,668,12,12]}
-{"kind":"textbox","id":"sh/jqlgvq54","slide":3,"name":"stage-label-BUILD","text":"BUILD","textPreview":"BUILD","textChars":5,"textLines":1,"bbox":[451.33,645,92,18]}
-{"kind":"shape","id":"sh/3i1cbi9k","slide":3,"name":"stage-dot-TEST","bbox":[644,668,12,12]}
-{"kind":"textbox","id":"sh/2hsbixsz","slide":3,"name":"stage-label-TEST","text":"TEST","textPreview":"TEST","textChars":4,"textLines":1,"bbox":[640,645,92,18]}
-{"kind":"shape","id":"sh/pkjudsrq","slide":3,"name":"stage-dot-DEPLOY","bbox":[832.67,668,12,12]}
-{"kind":"textbox","id":"sh/ojatkna5","slide":3,"name":"stage-label-DEPLOY","text":"DEPLOY","textPreview":"DEPLOY","textChars":6,"textLines":1,"bbox":[828.67,645,92,18]}
-{"kind":"shape","id":"sh/fuhc7i9o","slide":3,"name":"stage-dot-MAINTAIN","bbox":[1021.33,668,12,12]}
-{"kind":"textbox","id":"sh/et8beds3","slide":3,"name":"stage-label-MAINTAIN","text":"MAINTAIN","textPreview":"MAINTAIN","textChars":8,"textLines":1,"bbox":[1017.33,645,92,18]}
-{"kind":"notes","id":"nt/q7180s","slide":3,"text":"[Sources]\n- P20: Visual sample authored for this talk; no external visual assets.\n- Illustrative system representation, not production data."}
-{"kind":"slide","id":"sl/omyu4d","slide":4,"title":"CONTROL PLANE / RUNTIME","textShapes":31}
-{"kind":"shape","id":"sh/srmxkvul","slide":4,"name":"p42-kicker-rule","bbox":[72,45,38,0]}
-{"kind":"textbox","id":"sh/rqdwrqd0","slide":4,"name":"p42-kicker","text":"CONTROL PLANE / RUNTIME","textPreview":"CONTROL PLANE / RUNTIME","textChars":23,"textLines":1,"bbox":[124,32,260,28]}
-{"kind":"textbox","id":"sh/qp4filcf","slide":4,"name":"page-title","text":"共享控制面必须同时回答两件事","textPreview":"共享控制面必须同时回答两件事","textChars":14,"textLines":1,"bbox":[72,62,1136,62]}
-{"kind":"textbox","id":"sh/5ovep0vu","slide":4,"name":"page-subtitle","text":"现在由什么组成？刚才又真实发生了什么？","textPreview":"现在由什么组成？刚才又真实发生了什么？","textChars":19,"textLines":1,"bbox":[72,130,1050,38]}
-{"kind":"shape","id":"sh/4nmxgvu9","slide":4,"name":"p42-live-frame","bbox":[72,214,470,360]}
-{"kind":"shape","id":"sh/3mtwnqd4","slide":4,"name":"p42-log-frame","bbox":[738,214,470,360]}
-{"kind":"shape","id":"sh/ilkfelcj","slide":4,"name":"p42-loop-spine","bbox":[590,258,70,268]}
-{"kind":"textbox","id":"sh/hkbelgvy","slide":4,"name":"p42-live-title","text":"现在由什么组成","textPreview":"现在由什么组成","textChars":7,"textLines":1,"bbox":[98,236,250,36]}
-{"kind":"textbox","id":"sh/gj2xcbed","slide":4,"name":"p42-live-sub","text":"LIVE PLUGIN GRAPH","textPreview":"LIVE PLUGIN GRAPH","textChars":17,"textLines":1,"bbox":[98,277,220,22]}
-{"kind":"textbox","id":"sh/6lorulkf","slide":4,"name":"p42-log-title","text":"刚才做过什么","textPreview":"刚才做过什么","textChars":6,"textLines":1,"bbox":[764,236,250,36]}
-{"kind":"textbox","id":"sh/rmhs3qlk","slide":4,"name":"p42-log-sub","text":"APPEND-ONLY EVENT STREAM","textPreview":"APPEND-ONLY EVENT STREAM","textChars":24,"textLines":1,"bbox":[764,277,290,22]}
-{"kind":"shape","id":"sh/snq9wv25","slide":4,"name":"p42-graph-edge-0","bbox":[146,360,132,78]}
-{"kind":"shape","id":"sh/t8za5g3q","slide":4,"name":"p42-graph-edge-1","bbox":[278,360,0,125]}
-{"kind":"shape","id":"sh/ihorq143","slide":4,"name":"p42-graph-edge-2","bbox":[278,360,132,78]}
-{"kind":"shape","id":"sh/jixsz6lo","slide":4,"name":"p42-graph-edge-3","bbox":[278,350,132,10]}
-{"kind":"shape","id":"sh/4j69sbm9","slide":4,"name":"p42-graph-edge-4","bbox":[146,350,132,10]}
-{"kind":"shape","id":"sh/5kfa1g3u","slide":4,"name":"p42-graph-edge-5","bbox":[146,350,264,88]}
-{"kind":"shape","id":"sh/ad4rm147","slide":4,"name":"p42-node-LOOP","bbox":[228,337,100,46]}
-{"kind":"textbox","id":"sh/vedsv6lc","slide":4,"name":"p42-node-text-LOOP","text":"LOOP","textPreview":"LOOP","textChars":4,"textLines":1,"bbox":[236,350,84,22]}
-{"kind":"shape","id":"sh/zm9g7yx8","slide":4,"name":"p42-node-TOOLS","bbox":[96,415,100,46]}
-{"kind":"textbox","id":"sh/el0fetgn","slide":4,"name":"p42-node-text-TOOLS","text":"TOOLS","textPreview":"TOOLS","textChars":5,"textLines":1,"bbox":[104,428,84,22]}
-{"kind":"shape","id":"sh/18ry98fy","slide":4,"name":"p42-node-MODEL","bbox":[228,462,100,46]}
-{"kind":"textbox","id":"sh/07ixg3yt","slide":4,"name":"p42-node-text-MODEL","text":"MODEL","textPreview":"MODEL","textChars":5,"textLines":1,"bbox":[236,475,84,22]}
-{"kind":"shape","id":"sh/natgbix4","slide":4,"name":"p42-node-SESSION","bbox":[360,415,100,46]}
-{"kind":"textbox","id":"sh/m90fidwj","slide":4,"name":"p42-node-text-SESSION","text":"SESSION","textPreview":"SESSION","textChars":7,"textLines":1,"bbox":[368,428,84,22]}
-{"kind":"shape","id":"sh/9cbyd8fa","slide":4,"name":"p42-node-GATES","bbox":[360,327,100,46]}
-{"kind":"textbox","id":"sh/ob2xknep","slide":4,"name":"p42-node-text-GATES","text":"GATES","textPreview":"GATES","textChars":5,"textLines":1,"bbox":[368,340,84,22]}
-{"kind":"shape","id":"sh/3epgzex0","slide":4,"name":"p42-node-SKILLS","bbox":[96,327,100,46]}
-{"kind":"textbox","id":"sh/2dgf69gf","slide":4,"name":"p42-node-text-SKILLS","text":"SKILLS","textPreview":"SKILLS","textChars":6,"textLines":1,"bbox":[104,340,84,22]}
-{"kind":"textbox","id":"sh/sjedgfed","slide":4,"name":"p42-spine-label","text":"LOOP","textPreview":"LOOP","textChars":4,"textLines":1,"bbox":[600,286,50,28]}
-{"kind":"shape","id":"sh/tknu9kvy","slide":4,"name":"p42-spine-down","bbox":[625,328,0,138]}
-{"kind":"shape","id":"sh/6hcve5w7","slide":4,"name":"p42-spine-in","bbox":[614,340,22,22]}
-{"kind":"shape","id":"sh/7ilc7ads","slide":4,"name":"p42-spine-out","bbox":[614,448,22,22]}
-{"kind":"textbox","id":"sh/kvudcfe1","slide":4,"name":"p42-spine-take","text":"取能力","textPreview":"取能力","textChars":3,"textLines":1,"bbox":[592,374,66,28]}
-{"kind":"textbox","id":"sh/5w3u5kvm","slide":4,"name":"p42-spine-write","text":"写事实","textPreview":"写事实","textChars":3,"textLines":1,"bbox":[592,411,66,28]}
-{"kind":"shape","id":"sh/itcva5wb","slide":4,"name":"p42-live-to-loop","bbox":[542,393,48,0]}
-{"kind":"shape","id":"sh/julc3adg","slide":4,"name":"p42-loop-to-log","bbox":[660,393,78,0]}
-{"kind":"shape","id":"sh/4rydozul","slide":4,"name":"p42-log-axis","bbox":[790,345,0,181]}
-{"kind":"shape","id":"sh/ps7eh4vq","slide":4,"name":"p42-event-dot-0","bbox":[780,340,20,20]}
-{"kind":"textbox","id":"sh/1wza9wbi","slide":4,"name":"p42-event-label-0","text":"INPUT","textPreview":"INPUT","textChars":5,"textLines":1,"bbox":[820,335,140,22]}
-{"kind":"textbox","id":"sh/0vq9grux","slide":4,"name":"p42-event-desc-0","text":"intent + context","textPreview":"intent + context","textChars":16,"textLines":1,"bbox":[820,358,330,24]}
-{"kind":"shape","id":"sh/zuhs7mtc","slide":4,"name":"p42-event-dot-1","bbox":[780,388,20,20]}
-{"kind":"textbox","id":"sh/et8rehcr","slide":4,"name":"p42-event-label-1","text":"ASKED","textPreview":"ASKED","textChars":5,"textLines":1,"bbox":[820,383,140,22]}
-{"kind":"textbox","id":"sh/90jadgbe","slide":4,"name":"p42-event-desc-1","text":"production permission","textPreview":"production permission","textChars":21,"textLines":1,"bbox":[820,406,330,24]}
-{"kind":"shape","id":"sh/ozq9kbut","slide":4,"name":"p42-event-dot-2","bbox":[780,436,20,20]}
-{"kind":"textbox","id":"sh/nyhsb6t8","slide":4,"name":"p42-event-label-2","text":"DECIDED","textPreview":"DECIDED","textChars":7,"textLines":1,"bbox":[820,431,140,22]}
-{"kind":"textbox","id":"sh/mx8ri1c3","slide":4,"name":"p42-event-desc-2","text":"approved by release owner","textPreview":"approved by release owner","textChars":25,"textLines":1,"bbox":[820,454,330,24]}
-{"kind":"shape","id":"sh/xojahgbq","slide":4,"name":"p42-event-dot-3","bbox":[780,484,20,20]}
-{"kind":"textbox","id":"sh/wnatobu5","slide":4,"name":"p42-event-label-3","text":"TOOL RESULT","textPreview":"TOOL RESULT","textChars":11,"textLines":1,"bbox":[820,479,140,22]}
-{"kind":"textbox","id":"sh/u9472dsn","slide":4,"name":"p42-event-desc-3","text":"deployment + evidence","textPreview":"deployment + evidence","textChars":21,"textLines":1,"bbox":[820,502,330,24]}
-{"kind":"shape","id":"sh/fadobi9s","slide":4,"name":"p42-bottom","bbox":[72,596,1136,48]}
-{"kind":"textbox","id":"sh/gbmp4nad","slide":4,"name":"p42-bottom-text","text":"配置图告诉你“能做什么”；事件流证明“实际做了什么”。两者缺一，控制面都不完整。","textPreview":"配置图告诉你“能做什么”；事件流证明“实际做了什么”。两者缺一，控制面都不完整。","textChars":40,"textLines":1,"bbox":[96,608,1088,25]}
-{"kind":"shape","id":"sh/hcv6dsry","slide":4,"name":"stage-rail-base","bbox":[74,674,1132,0]}
-{"kind":"shape","id":"sh/2d476xsj","slide":4,"name":"stage-dot-PLAN","bbox":[78,668,12,12]}
-{"kind":"textbox","id":"sh/3yd8fi94","slide":4,"name":"stage-label-PLAN","text":"PLAN","textPreview":"PLAN","textChars":4,"textLines":1,"bbox":[74,645,92,18]}
-{"kind":"shape","id":"sh/4zmp8nap","slide":4,"name":"stage-dot-DESIGN","bbox":[266.67,668,12,12]}
-{"kind":"textbox","id":"sh/p0fqhsra","slide":4,"name":"stage-label-DESIGN","text":"DESIGN","textPreview":"DESIGN","textChars":6,"textLines":1,"bbox":[262.67,645,92,18]}
-{"kind":"shape","id":"sh/q1o7axsv","slide":4,"name":"stage-dot-BUILD","bbox":[455.33,668,12,12]}
-{"kind":"textbox","id":"sh/r2x8j290","slide":4,"name":"stage-label-BUILD","text":"BUILD","textPreview":"BUILD","textChars":5,"textLines":1,"bbox":[451.33,645,92,18]}
-{"kind":"shape","id":"sh/n6xo72p8","slide":4,"name":"stage-dot-TEST","bbox":[644,668,12,12]}
-{"kind":"textbox","id":"sh/m5onyxon","slide":4,"name":"stage-label-TEST","text":"TEST","textPreview":"TEST","textChars":4,"textLines":1,"bbox":[640,645,92,18]}
-{"kind":"shape","id":"sh/98z69c7e","slide":4,"name":"stage-dot-DEPLOY","bbox":[832.67,668,12,12]}
-{"kind":"textbox","id":"sh/o76p076t","slide":4,"name":"stage-label-DEPLOY","text":"DEPLOY","textPreview":"DEPLOY","textChars":6,"textLines":1,"bbox":[828.67,645,92,18]}
-{"kind":"shape","id":"sh/z2xo32pc","slide":4,"name":"stage-dot-MAINTAIN","bbox":[1021.33,668,12,12]}
-{"kind":"textbox","id":"sh/e1onuxor","slide":4,"name":"stage-label-MAINTAIN","text":"MAINTAIN","textPreview":"MAINTAIN","textChars":8,"textLines":1,"bbox":[1017.33,645,92,18]}
-{"kind":"notes","id":"nt/omyu4d","slide":4,"text":"[Sources]\n- P42: Visual sample authored for this talk; no external visual assets.\n- Illustrative system representation, not production data."}
+{"kind":"deck","id":"pr/k4lipw","name":"Deck"}
+{"kind":"layout","layoutId":"41b5c288-f3b7-4f52-bc45-3e051b469714","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"7235785c-87a0-410d-a24a-00e09de9b819","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/rffzlz","slide":1,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/rqt0nml8","slide":1,"name":"p1-kicker-rule","bbox":[72,75,38,0]}
+{"kind":"textbox","id":"sh/65kjeh43","slide":1,"name":"p1-kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[124,62,220,28]}
+{"kind":"textbox","id":"sh/54bilc3i","slide":1,"name":"p1-title","text":"AI-Native 软件研发组织","textPreview":"AI-Native 软件研发组织","textChars":16,"textLines":1,"bbox":[72,132,585,74]}
+{"kind":"textbox","id":"sh/432hcrmx","slide":1,"name":"p1-subtitle","text":"让产品意图顺畅抵达生产现场","textPreview":"让产品意图顺畅抵达生产现场","textChars":13,"textLines":1,"bbox":[72,224,520,48]}
+{"kind":"textbox","id":"sh/j290jmlc","slide":1,"name":"p1-callout","text":"重建整条软件交付链","textPreview":"重建整条软件交付链","textChars":9,"textLines":1,"bbox":[72,286,360,38]}
+{"kind":"image","id":"im/ts3utgzm","slide":1,"name":"","alt":"纸白背景上的软件交付价值流模型，从线性轨道进入带门禁的反馈闭环","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/rffzlz","slide":1,"text":"[Sources]\n- GPT Image 2 generated visual asset: /Users/bowhead/ai_dev_sdlc_aidc/talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.8/p1-candidates/packy-p1-v1.png\n- Prompt record: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.8/p1-prompt.txt\n- Illustrative system representation, not production data."}
+{"kind":"slide","id":"sl/4ta0aq","slide":2,"title":"诊断 / 控制容量","textShapes":18}
+{"kind":"shape","id":"sh/zil87yp0","slide":2,"name":"p8-kicker-rule","bbox":[72,45,38,0]}
+{"kind":"textbox","id":"sh/0ju9gjql","slide":2,"name":"p8-kicker","text":"诊断 / 控制容量","textPreview":"诊断 / 控制容量","textChars":9,"textLines":1,"bbox":[124,32,230,28]}
+{"kind":"textbox","id":"sh/1k3a9o76","slide":2,"name":"page-title","text":"产出速度超过控制能力，结果不是排队，就是审查不足","textPreview":"产出速度超过控制能力，结果不是排队，就是审查不足","textChars":24,"textLines":1,"bbox":[72,62,1136,62]}
+{"kind":"textbox","id":"sh/qtsra98j","slide":2,"name":"page-subtitle","text":"agent 放大产出，不会自动放大审查、安全与发布团队的处理能力。","textPreview":"agent 放大产出，不会自动放大审查、安全与发布团队的处理能力。","textChars":33,"textLines":1,"bbox":[72,130,1050,38]}
+{"kind":"shape","id":"sh/ru183ep4","slide":2,"name":"p8-upstream","bbox":[78,276,492,194]}
+{"kind":"shape","id":"sh/cfa9cjqp","slide":2,"name":"p8-a-0-0","bbox":[108,304,28,32]}
+{"kind":"shape","id":"sh/dgjq5o7u","slide":2,"name":"p8-a-0-0-fold","bbox":[118,304,18,18]}
+{"kind":"shape","id":"sh/2psr6987","slide":2,"name":"p8-a-0-1","bbox":[168,304,28,32]}
+{"kind":"shape","id":"sh/3q18zeps","slide":2,"name":"p8-a-0-1-fold","bbox":[178,304,18,18]}
+{"kind":"shape","id":"sh/v2x4ja54","slide":2,"name":"p8-a-0-2","bbox":[228,304,28,32]}
+{"kind":"shape","id":"sh/u1onq54j","slide":2,"name":"p8-a-0-2-fold","bbox":[238,304,18,18]}
+{"kind":"shape","id":"sh/h4zmlknu","slide":2,"name":"p8-a-0-3","bbox":[288,304,28,32]}
+{"kind":"shape","id":"sh/g365sfm9","slide":2,"name":"p8-a-0-3-fold","bbox":[298,304,18,18]}
+{"kind":"shape","id":"sh/36h4na50","slide":2,"name":"p8-a-0-4","bbox":[348,304,28,32]}
+{"kind":"shape","id":"sh/i58nu54f","slide":2,"name":"p8-a-0-4-fold","bbox":[358,304,18,18]}
+{"kind":"shape","id":"sh/5szmpkn6","slide":2,"name":"p8-a-0-5","bbox":[408,304,28,32]}
+{"kind":"shape","id":"sh/4rq5wfml","slide":2,"name":"p8-a-0-5-fold","bbox":[418,304,18,18]}
+{"kind":"shape","id":"sh/jad4bq5w","slide":2,"name":"p8-a-0-6","bbox":[468,304,28,32]}
+{"kind":"shape","id":"sh/y943il4b","slide":2,"name":"p8-a-0-6-fold","bbox":[478,304,18,18]}
+{"kind":"shape","id":"sh/2pc7qtoz","slide":2,"name":"p8-a-1-0","bbox":[118,344,28,32]}
+{"kind":"shape","id":"sh/nql8zyp4","slide":2,"name":"p8-a-1-0-fold","bbox":[128,344,18,18]}
+{"kind":"shape","id":"sh/orups36p","slide":2,"name":"p8-a-1-1","bbox":[178,344,28,32]}
+{"kind":"shape","id":"sh/ps3q1o7a","slide":2,"name":"p8-a-1-1-fold","bbox":[188,344,18,18]}
+{"kind":"shape","id":"sh/els7m9on","slide":2,"name":"p8-a-1-2","bbox":[238,344,28,32]}
+{"kind":"shape","id":"sh/fm18vep8","slide":2,"name":"p8-a-1-2-fold","bbox":[248,344,18,18]}
+{"kind":"shape","id":"sh/0napoj6t","slide":2,"name":"p8-a-1-3","bbox":[298,344,28,32]}
+{"kind":"shape","id":"sh/1o3qxo7e","slide":2,"name":"p8-a-1-3-fold","bbox":[308,344,18,18]}
+{"kind":"shape","id":"sh/qxs7i9or","slide":2,"name":"p8-a-1-4","bbox":[358,344,28,32]}
+{"kind":"shape","id":"sh/ry1orepc","slide":2,"name":"p8-a-1-4-fold","bbox":[368,344,18,18]}
+{"kind":"shape","id":"sh/tc7axcru","slide":2,"name":"p8-a-1-5","bbox":[418,344,28,32]}
+{"kind":"shape","id":"sh/8byto7q9","slide":2,"name":"p8-a-1-5-fold","bbox":[428,344,18,18]}
+{"kind":"shape","id":"sh/7apsv29o","slide":2,"name":"p8-a-1-6","bbox":[478,344,28,32]}
+{"kind":"shape","id":"sh/6pgbmx83","slide":2,"name":"p8-a-1-6-fold","bbox":[488,344,18,18]}
+{"kind":"shape","id":"sh/lo7atsri","slide":2,"name":"p8-a-2-0","bbox":[108,384,28,32]}
+{"kind":"shape","id":"sh/knytknqx","slide":2,"name":"p8-a-2-0-fold","bbox":[118,384,18,18]}
+{"kind":"shape","id":"sh/jm5sr29c","slide":2,"name":"p8-a-2-1","bbox":[168,384,28,32]}
+{"kind":"shape","id":"sh/ylwrix87","slide":2,"name":"p8-a-2-1-fold","bbox":[178,384,18,18]}
+{"kind":"shape","id":"sh/xknapsrm","slide":2,"name":"p8-a-2-2","bbox":[228,384,28,32]}
+{"kind":"shape","id":"sh/wje9gnq1","slide":2,"name":"p8-a-2-2-fold","bbox":[238,384,18,18]}
+{"kind":"shape","id":"sh/cn61wrqx","slide":2,"name":"p8-a-2-3","bbox":[288,384,28,32]}
+{"kind":"shape","id":"sh/xofipw7i","slide":2,"name":"p8-a-2-3-fold","bbox":[298,384,18,18]}
+{"kind":"shape","id":"sh/alojuh87","slide":2,"name":"p8-a-2-4","bbox":[348,384,28,32]}
+{"kind":"shape","id":"sh/bmx0nm9c","slide":2,"name":"p8-a-2-4-fold","bbox":[358,384,18,18]}
+{"kind":"shape","id":"sh/krq10bq9","slide":2,"name":"p8-a-2-5","bbox":[408,384,28,32]}
+{"kind":"shape","id":"sh/lsz2tw7u","slide":2,"name":"p8-a-2-5-fold","bbox":[418,384,18,18]}
+{"kind":"shape","id":"sh/ypojy183","slide":2,"name":"p8-a-2-6","bbox":[468,384,28,32]}
+{"kind":"shape","id":"sh/zqhkr6po","slide":2,"name":"p8-a-2-6-fold","bbox":[478,384,18,18]}
+{"kind":"shape","id":"sh/gvm1o7qp","slide":2,"name":"p8-a-3-0","bbox":[118,424,28,32]}
+{"kind":"shape","id":"sh/1wvihcra","slide":2,"name":"p8-a-3-0-fold","bbox":[128,424,18,18]}
+{"kind":"shape","id":"sh/jal4na9s","slide":2,"name":"p8-a-3-1","bbox":[178,424,28,32]}
+{"kind":"shape","id":"sh/i9c3u5s7","slide":2,"name":"p8-a-3-1-fold","bbox":[188,424,18,18]}
+{"kind":"shape","id":"sh/5c3mpkry","slide":2,"name":"p8-a-3-2","bbox":[238,424,28,32]}
+{"kind":"shape","id":"sh/4bulwfad","slide":2,"name":"p8-a-3-2-fold","bbox":[248,424,18,18]}
+{"kind":"shape","id":"sh/vm14ja9w","slide":2,"name":"p8-a-3-3","bbox":[298,424,28,32]}
+{"kind":"shape","id":"sh/uls3q5sb","slide":2,"name":"p8-a-3-3-fold","bbox":[308,424,18,18]}
+{"kind":"shape","id":"sh/h8jml0r2","slide":2,"name":"p8-a-3-4","bbox":[358,424,28,32]}
+{"kind":"shape","id":"sh/wnalsvah","slide":2,"name":"p8-a-3-4-fold","bbox":[368,424,18,18]}
+{"kind":"shape","id":"sh/7i14fqtk","slide":2,"name":"p8-a-3-5","bbox":[418,424,28,32]}
+{"kind":"shape","id":"sh/mh83mlsf","slide":2,"name":"p8-a-3-5-fold","bbox":[428,424,18,18]}
+{"kind":"shape","id":"sh/ad8nylc7","slide":2,"name":"p8-a-3-6","bbox":[478,424,28,32]}
+{"kind":"shape","id":"sh/beh47qds","slide":2,"name":"p8-a-3-6-fold","bbox":[488,424,18,18]}
+{"kind":"shape","id":"sh/cfq50vux","slide":2,"name":"p8-flow-to-gate","bbox":[570,373,132,0]}
+{"kind":"shape","id":"sh/xgzm90vi","slide":2,"name":"p8-safe-path","bbox":[722,344,413,0]}
+{"kind":"shape","id":"sh/yh8n25c3","slide":2,"name":"p8-bypass-path","bbox":[722,414,413,86]}
+{"kind":"shape","id":"sh/zi14bqdo","slide":2,"name":"p8-gate-line","bbox":[715,278,0,194]}
+{"kind":"shape","id":"sh/kja54vu9","slide":2,"name":"p8-gate-cap-top","bbox":[708,276,14,5]}
+{"kind":"shape","id":"sh/lkj6d0vu","slide":2,"name":"p8-gate-cap-bottom","bbox":[708,469,14,5]}
+{"kind":"textbox","id":"sh/mlsn65cf","slide":2,"name":"p8-gate-label","text":"控制容量","textPreview":"控制容量","textChars":4,"textLines":1,"bbox":[643,246,144,22]}
+{"kind":"textbox","id":"sh/761ofadk","slide":2,"name":"p8-agent-label","text":"AGENT 产出","textPreview":"AGENT 产出","textChars":8,"textLines":1,"bbox":[110,238,180,26]}
+{"kind":"textbox","id":"sh/h03q54f2","slide":2,"name":"p8-wide","text":"宽产出","textPreview":"宽产出","textChars":3,"textLines":1,"bbox":[108,490,180,34]}
+{"kind":"textbox","id":"sh/wfupwzeh","slide":2,"name":"p8-wide-sub","text":"并行会话持续提交改动","textPreview":"并行会话持续提交改动","textChars":10,"textLines":1,"bbox":[108,530,300,28]}
+{"kind":"shape","id":"sh/vel83uxw","slide":2,"name":"p8-q-0","bbox":[780,326,28,36]}
+{"kind":"shape","id":"sh/udc7upwb","slide":2,"name":"p8-q-0-fold","bbox":[790,326,18,18]}
+{"kind":"shape","id":"sh/54nq9ofy","slide":2,"name":"p8-q-1","bbox":[822,326,28,36]}
+{"kind":"shape","id":"sh/43ep0jed","slide":2,"name":"p8-q-1-fold","bbox":[832,326,18,18]}
+{"kind":"shape","id":"sh/j2587exs","slide":2,"name":"p8-q-2","bbox":[864,326,28,36]}
+{"kind":"shape","id":"sh/i1w7y9wn","slide":2,"name":"p8-q-2-fold","bbox":[874,326,18,18]}
+{"kind":"shape","id":"sh/t8nqdofa","slide":2,"name":"p8-q-3","bbox":[906,326,28,36]}
+{"kind":"shape","id":"sh/s7e94jep","slide":2,"name":"p8-q-3-fold","bbox":[916,326,18,18]}
+{"kind":"shape","id":"sh/0vu10re1","slide":2,"name":"p8-q-4","bbox":[948,326,28,36]}
+{"kind":"shape","id":"sh/lw3itwvm","slide":2,"name":"p8-q-4-fold","bbox":[958,326,18,18]}
+{"kind":"shape","id":"sh/y9sjy1wv","slide":2,"name":"p8-q-5","bbox":[990,326,28,36]}
+{"kind":"shape","id":"sh/za10r6dg","slide":2,"name":"p8-q-5-fold","bbox":[1000,326,18,18]}
+{"kind":"shape","id":"sh/c7ahwrep","slide":2,"name":"p8-q-6","bbox":[1032,326,28,36]}
+{"kind":"shape","id":"sh/d8jipwva","slide":2,"name":"p8-q-6-fold","bbox":[1042,326,18,18]}
+{"kind":"textbox","id":"sh/q5szuhwz","slide":2,"name":"p8-queue","text":"排队","textPreview":"排队","textChars":2,"textLines":1,"bbox":[782,258,130,38]}
+{"kind":"textbox","id":"sh/b610nmdk","slide":2,"name":"p8-queue-desc","text":"审查队列不断增长\n端到端交付周期拉长","textPreview":"审查队列不断增长 | 端到端交付周期拉长","textChars":18,"textLines":2,"bbox":[782,374,280,58]}
+{"kind":"shape","id":"sh/o3ahs7et","slide":2,"name":"p8-leak-0","bbox":[805,454,30,36]}
+{"kind":"shape","id":"sh/p4jilcve","slide":2,"name":"p8-leak-0-fold","bbox":[817,454,18,18]}
+{"kind":"shape","id":"sh/7yh0v2h0","slide":2,"name":"p8-leak-1","bbox":[900,472,30,36]}
+{"kind":"shape","id":"sh/6d8j2xgf","slide":2,"name":"p8-leak-1-fold","bbox":[912,472,18,18]}
+{"kind":"shape","id":"sh/t0z2xcz6","slide":2,"name":"p8-leak-2","bbox":[1000,490,30,36]}
+{"kind":"shape","id":"sh/szq147yl","slide":2,"name":"p8-leak-2-fold","bbox":[1012,490,18,18]}
+{"kind":"shape","id":"sh/f2hkzmhc","slide":2,"name":"p8-leak-3","bbox":[1100,508,30,36]}
+{"kind":"shape","id":"sh/u18j6hgr","slide":2,"name":"p8-leak-3-fold","bbox":[1112,508,18,18]}
+{"kind":"textbox","id":"sh/h4j21wzi","slide":2,"name":"p8-under","text":"欠审","textPreview":"欠审","textChars":2,"textLines":1,"bbox":[782,470,130,38]}
+{"kind":"textbox","id":"sh/g3a18ryx","slide":2,"name":"p8-under-desc","text":"绕过控制容量\n风险进入生产","textPreview":"绕过控制容量 | 风险进入生产","textChars":13,"textLines":2,"bbox":[782,518,260,58]}
+{"kind":"shape","id":"sh/361k3mh8","slide":2,"name":"p8-callout","bbox":[72,588,1136,56]}
+{"kind":"textbox","id":"sh/25sja1gn","slide":2,"name":"p8-callout-text","text":"真正的瓶颈不在 agent 能不能产出，而在控制面能否及时作出可靠决定。","textPreview":"真正的瓶颈不在 agent 能不能产出，而在控制面能否及时作出可靠决定。","textChars":36,"textLines":1,"bbox":[96,603,1088,28]}
+{"kind":"shape","id":"sh/z29k3e9g","slide":2,"name":"stage-rail-base","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/y103a9sv","slide":2,"name":"stage-dot-规划","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/l4r25orm","slide":2,"name":"stage-label-规划","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[74,645,92,18]}
+{"kind":"shape","id":"sh/k3ilcja1","slide":2,"name":"stage-dot-设计","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/by9kzet4","slide":2,"name":"stage-label-设计","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[262.67,645,92,18]}
+{"kind":"shape","id":"sh/ax0369sz","slide":2,"name":"stage-dot-构建","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/x0r214ra","slide":2,"name":"stage-label-构建","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[451.33,645,92,18]}
+{"kind":"shape","id":"sh/czil8zap","slide":2,"name":"stage-dot-测试","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/napkvut8","slide":2,"name":"stage-label-测试","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[640,645,92,18]}
+{"kind":"shape","id":"sh/29g32psn","slide":2,"name":"stage-dot-发布","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/s3u9grm9","slide":2,"name":"stage-label-发布","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[828.67,645,92,18]}
+{"kind":"shape","id":"sh/t43qpw3u","slide":2,"name":"stage-dot-运维","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/61cre143","slide":2,"name":"stage-label-运维","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1017.33,645,92,18]}
+{"kind":"notes","id":"nt/4ta0aq","slide":2,"text":"[Sources]\n- P8: Visual sample authored for this talk; no external visual assets.\n- Illustrative system representation, not production data."}
+{"kind":"slide","id":"sl/od9f9m","slide":3,"title":"构建 / HARNESS 镜头","textShapes":22}
+{"kind":"shape","id":"sh/8nmpsj2h","slide":3,"name":"p20-kicker-rule","bbox":[72,45,38,0]}
+{"kind":"textbox","id":"sh/nmd8zelc","slide":3,"name":"p20-kicker","text":"构建 / HARNESS 镜头","textPreview":"构建 / HARNESS 镜头","textChars":15,"textLines":1,"bbox":[124,32,240,28]}
+{"kind":"textbox","id":"sh/ml47q9kr","slide":3,"name":"page-title","text":"构建阶段要把执行圈住、拦住、看清","textPreview":"构建阶段要把执行圈住、拦住、看清","textChars":16,"textLines":1,"bbox":[72,62,1136,62]}
+{"kind":"textbox","id":"sh/lkbqx436","slide":3,"name":"page-subtitle","text":"共享控制基线不是“更长的提示词”，而是执行边界、确定性门禁与事实轨迹。","textPreview":"共享控制基线不是“更长的提示词”，而是执行边界、确定性门禁与事实轨迹。","textChars":35,"textLines":1,"bbox":[72,130,1050,38]}
+{"kind":"shape","id":"sh/0j2poz2l","slide":3,"name":"p20-boundary","bbox":[392,242,720,330]}
+{"kind":"shape","id":"sh/zitovul0","slide":3,"name":"p20-sandbox-zone","bbox":[420,274,658,248]}
+{"kind":"shape","id":"sh/yhk7m9kf","slide":3,"name":"p20-input-path","bbox":[126,390,346,0]}
+{"kind":"shape","id":"sh/dgb6t43u","slide":3,"name":"p20-after-gate","bbox":[704,390,354,0]}
+{"kind":"shape","id":"sh/cf2pkz2p","slide":3,"name":"p20-evidence-path","bbox":[454,492,578,0]}
+{"kind":"shape","id":"sh/a5ori14v","slide":3,"name":"p20-evidence-up","bbox":[1032,438,0,54]}
+{"kind":"shape","id":"sh/v6xsb65g","slide":3,"name":"p20-evidence-return","bbox":[454,438,0,54]}
+{"kind":"shape","id":"sh/wr6tkbm1","slide":3,"name":"p20-hook-gate-line","bbox":[636,298,0,186]}
+{"kind":"shape","id":"sh/hszadwnm","slide":3,"name":"p20-hook-gate-cap-top","bbox":[629,296,14,5]}
+{"kind":"shape","id":"sh/m1oreh4z","slide":3,"name":"p20-hook-gate-cap-bottom","bbox":[629,481,14,5]}
+{"kind":"textbox","id":"sh/n2xs7m5k","slide":3,"name":"p20-hook-gate-label","text":"HOOK 门禁","textPreview":"HOOK 门禁","textChars":7,"textLines":1,"bbox":[564,266,144,22]}
+{"kind":"shape","id":"sh/8369grm5","slide":3,"name":"p20-tool-zone","bbox":[732,326,284,128]}
+{"kind":"textbox","id":"sh/94fa9wna","slide":3,"name":"p20-tool-label","text":"工具执行","textPreview":"工具执行","textChars":4,"textLines":1,"bbox":[764,350,220,26]}
+{"kind":"textbox","id":"sh/yx4rahon","slide":3,"name":"p20-tool-list","text":"read · write · test · command","textPreview":"read · write · test · command","textChars":29,"textLines":1,"bbox":[756,390,236,28]}
+{"kind":"shape","id":"sh/zyds3m58","slide":3,"name":"p20-in-artifact","bbox":[130,368,68,46]}
+{"kind":"shape","id":"sh/32tobil0","slide":3,"name":"p20-in-artifact-fold","bbox":[180,368,18,18]}
+{"kind":"textbox","id":"sh/2107idkf","slide":3,"name":"p20-in-artifact-text","text":"diff","textPreview":"diff","textChars":4,"textLines":1,"bbox":[140,377,44,28]}
+{"kind":"shape","id":"sh/p4bqd836","slide":3,"name":"p20-out-artifact","bbox":[1042,368,78,46]}
+{"kind":"shape","id":"sh/o32pkn2l","slide":3,"name":"p20-out-artifact-fold","bbox":[1102,368,18,18]}
+{"kind":"textbox","id":"sh/b6t8filc","slide":3,"name":"p20-out-artifact-text","text":"proof","textPreview":"proof","textChars":5,"textLines":1,"bbox":[1052,377,54,28]}
+{"kind":"textbox","id":"sh/q5k7mdkr","slide":3,"name":"p20-enclose","text":"圈住","textPreview":"圈住","textChars":2,"textLines":1,"bbox":[406,570,120,36]}
+{"kind":"textbox","id":"sh/d8bqhs32","slide":3,"name":"p20-enclose-sub","text":"沙箱 · 权限","textPreview":"沙箱 · 权限","textChars":7,"textLines":1,"bbox":[382,608,170,20]}
+{"kind":"textbox","id":"sh/c72pon2x","slide":3,"name":"p20-block","text":"拦住","textPreview":"拦住","textChars":2,"textLines":1,"bbox":[584,570,120,36]}
+{"kind":"textbox","id":"sh/ra9o3yls","slide":3,"name":"p20-block-sub","text":"hooks · 确定性门禁","textPreview":"hooks · 确定性门禁","textChars":13,"textLines":1,"bbox":[550,608,190,20]}
+{"kind":"textbox","id":"sh/69g7at47","slide":3,"name":"p20-see","text":"看清","textPreview":"看清","textChars":2,"textLines":1,"bbox":[762,570,120,36]}
+{"kind":"textbox","id":"sh/wfelkz25","slide":3,"name":"p20-see-sub","text":"来源记录 · 可观测性","textPreview":"来源记录 · 可观测性","textChars":11,"textLines":1,"bbox":[724,608,196,20]}
+{"kind":"textbox","id":"sh/hgnmd4jq","slide":3,"name":"p20-platform","text":"平台共同基线","textPreview":"平台共同基线","textChars":6,"textLines":1,"bbox":[940,574,190,30]}
+{"kind":"textbox","id":"sh/udw3ipkz","slide":3,"name":"p20-platform-sub","text":"共同控制 · 领域判断","textPreview":"共同控制 · 领域判断","textChars":11,"textLines":1,"bbox":[920,608,230,20]}
+{"kind":"shape","id":"sh/ve54bu1k","slide":3,"name":"stage-rail-base","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/8relgf29","slide":3,"name":"stage-dot-规划","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/9cnm9kju","slide":3,"name":"stage-label-规划","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[74,645,92,18]}
+{"kind":"shape","id":"sh/mpc3e5k3","slide":3,"name":"stage-dot-设计","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/7ql47a1o","slide":3,"name":"stage-label-设计","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[262.67,645,92,18]}
+{"kind":"shape","id":"sh/s7y5sjid","slide":3,"name":"stage-dot-构建","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/t87mlojy","slide":3,"name":"stage-label-构建","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[451.33,645,92,18]}
+{"kind":"shape","id":"sh/pgzaxcvy","slide":3,"name":"stage-dot-测试","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/4fq9o7et","slide":3,"name":"stage-label-测试","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[640,645,92,18]}
+{"kind":"shape","id":"sh/3ehsv2d8","slide":3,"name":"stage-dot-发布","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/2dormxwn","slide":3,"name":"stage-label-发布","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[828.67,645,92,18]}
+{"kind":"shape","id":"sh/dkza1wva","slide":3,"name":"stage-dot-运维","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/cjqtsrep","slide":3,"name":"stage-label-运维","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1017.33,645,92,18]}
+{"kind":"notes","id":"nt/od9f9m","slide":3,"text":"[Sources]\n- P20: Visual sample authored for this talk; no external visual assets.\n- Illustrative system representation, not production data."}
+{"kind":"slide","id":"sl/cl4s1j","slide":4,"title":"共享控制面 / RUNTIME","textShapes":31}
+{"kind":"shape","id":"sh/5gvmtgze","slide":4,"name":"p42-kicker-rule","bbox":[72,45,38,0]}
+{"kind":"textbox","id":"sh/id4nilgn","slide":4,"name":"p42-kicker","text":"共享控制面 / RUNTIME","textPreview":"共享控制面 / RUNTIME","textChars":15,"textLines":1,"bbox":[124,32,260,28]}
+{"kind":"textbox","id":"sh/jed4rqh8","slide":4,"name":"page-title","text":"共享控制面必须同时回答两个问题","textPreview":"共享控制面必须同时回答两个问题","textChars":15,"textLines":1,"bbox":[72,62,1136,62]}
+{"kind":"textbox","id":"sh/sj65ovyp","slide":4,"name":"page-subtitle","text":"现在由什么组成？刚才实际做了什么？","textPreview":"现在由什么组成？刚才实际做了什么？","textChars":17,"textLines":1,"bbox":[72,130,1050,38]}
+{"kind":"shape","id":"sh/t4f6x0za","slide":4,"name":"p42-live-frame","bbox":[72,214,470,360]}
+{"kind":"shape","id":"sh/6honmlgj","slide":4,"name":"p42-log-frame","bbox":[738,214,470,360]}
+{"kind":"shape","id":"sh/rix4vqh4","slide":4,"name":"p42-loop-spine","bbox":[590,258,70,268]}
+{"kind":"textbox","id":"sh/8n25cryl","slide":4,"name":"p42-live-title","text":"现在由什么组成","textPreview":"现在由什么组成","textChars":7,"textLines":1,"bbox":[98,236,250,36]}
+{"kind":"textbox","id":"sh/98bmlwz6","slide":4,"name":"p42-live-sub","text":"实时插件图","textPreview":"实时插件图","textChars":5,"textLines":1,"bbox":[98,277,220,22]}
+{"kind":"textbox","id":"sh/5cf2t8j2","slide":4,"name":"p42-log-title","text":"刚才做过什么","textPreview":"刚才做过什么","textChars":6,"textLines":1,"bbox":[764,236,250,36]}
+{"kind":"textbox","id":"sh/4b6lk3ih","slide":4,"name":"p42-log-sub","text":"只追加事件流","textPreview":"只追加事件流","textChars":6,"textLines":1,"bbox":[764,277,290,22]}
+{"kind":"shape","id":"sh/jqdkry1w","slide":4,"name":"p42-graph-edge-0","bbox":[146,360,132,78]}
+{"kind":"shape","id":"sh/ip43itkb","slide":4,"name":"p42-graph-edge-1","bbox":[278,360,0,125]}
+{"kind":"shape","id":"sh/tgf2x8jy","slide":4,"name":"p42-graph-edge-2","bbox":[278,360,132,78]}
+{"kind":"shape","id":"sh/sf6lo3id","slide":4,"name":"p42-graph-edge-3","bbox":[278,350,132,10]}
+{"kind":"shape","id":"sh/rexkvy1s","slide":4,"name":"p42-graph-edge-4","bbox":[146,350,132,10]}
+{"kind":"shape","id":"sh/6do3mt07","slide":4,"name":"p42-graph-edge-5","bbox":[146,350,264,88]}
+{"kind":"shape","id":"sh/1kz21sju","slide":4,"name":"p42-node-LOOP","bbox":[228,337,100,46]}
+{"kind":"textbox","id":"sh/gjqlsnip","slide":4,"name":"p42-node-text-LOOP","text":"LOOP","textPreview":"LOOP","textChars":4,"textLines":1,"bbox":[236,350,84,22]}
+{"kind":"shape","id":"sh/0zidkbux","slide":4,"name":"p42-node-TOOLS","bbox":[96,415,100,46]}
+{"kind":"textbox","id":"sh/l0redgvi","slide":4,"name":"p42-node-text-TOOLS","text":"TOOLS","textPreview":"TOOLS","textChars":5,"textLines":1,"bbox":[104,428,84,22]}
+{"kind":"shape","id":"sh/yxgvilcr","slide":4,"name":"p42-node-MODEL","bbox":[228,462,100,46]}
+{"kind":"textbox","id":"sh/zypwbqdc","slide":4,"name":"p42-node-text-MODEL","text":"MODEL","textPreview":"MODEL","textChars":5,"textLines":1,"bbox":[236,475,84,22]}
+{"kind":"shape","id":"sh/83idovut","slide":4,"name":"p42-node-SESSION","bbox":[360,415,100,46]}
+{"kind":"textbox","id":"sh/94reh0ve","slide":4,"name":"p42-node-text-SESSION","text":"SESSION","textPreview":"SESSION","textChars":7,"textLines":1,"bbox":[368,428,84,22]}
+{"kind":"shape","id":"sh/m10vmlc3","slide":4,"name":"p42-node-GATES","bbox":[360,327,100,46]}
+{"kind":"textbox","id":"sh/n29wfqdo","slide":4,"name":"p42-node-text-GATES","text":"GATES","textPreview":"GATES","textChars":5,"textLines":1,"bbox":[368,340,84,22]}
+{"kind":"shape","id":"sh/o7edcrup","slide":4,"name":"p42-node-SKILLS","bbox":[96,327,100,46]}
+{"kind":"textbox","id":"sh/p87e5wva","slide":4,"name":"p42-node-text-SKILLS","text":"SKILLS","textPreview":"SKILLS","textChars":6,"textLines":1,"bbox":[104,340,84,22]}
+{"kind":"textbox","id":"sh/rmdgbexs","slide":4,"name":"p42-spine-label","text":"LOOP","textPreview":"LOOP","textChars":4,"textLines":1,"bbox":[600,286,50,28]}
+{"kind":"shape","id":"sh/6l4zi9w7","slide":4,"name":"p42-spine-down","bbox":[625,328,0,138]}
+{"kind":"shape","id":"sh/tovyd4fy","slide":4,"name":"p42-spine-in","bbox":[614,340,22,22]}
+{"kind":"shape","id":"sh/snmhkzed","slide":4,"name":"p42-spine-out","bbox":[614,448,22,22]}
+{"kind":"textbox","id":"sh/jytg7uxw","slide":4,"name":"p42-spine-take","text":"取能力","textPreview":"取能力","textChars":3,"textLines":1,"bbox":[592,374,66,28]}
+{"kind":"textbox","id":"sh/ixkzepwb","slide":4,"name":"p42-spine-write","text":"写事实","textPreview":"写事实","textChars":3,"textLines":1,"bbox":[592,411,66,28]}
+{"kind":"shape","id":"sh/5kvy94fm","slide":4,"name":"p42-live-to-loop","bbox":[542,393,48,0]}
+{"kind":"shape","id":"sh/4jmhgze1","slide":4,"name":"p42-loop-to-log","bbox":[660,393,78,0]}
+{"kind":"shape","id":"sh/vutg3axk","slide":4,"name":"p42-log-axis","bbox":[790,345,0,181]}
+{"kind":"shape","id":"sh/atkzapwz","slide":4,"name":"p42-event-dot-0","bbox":[780,340,20,20]}
+{"kind":"textbox","id":"sh/a143edsj","slide":4,"name":"p42-event-label-0","text":"输入","textPreview":"输入","textChars":2,"textLines":1,"bbox":[820,335,140,22]}
+{"kind":"textbox","id":"sh/b2dk7it4","slide":4,"name":"p42-event-desc-0","text":"意图 + 上下文","textPreview":"意图 + 上下文","textChars":8,"textLines":1,"bbox":[820,358,330,24]}
+{"kind":"shape","id":"sh/c3mlgnap","slide":4,"name":"p42-event-dot-1","bbox":[780,388,20,20]}
+{"kind":"textbox","id":"sh/x4v29sba","slide":4,"name":"p42-event-label-1","text":"询问","textPreview":"询问","textChars":2,"textLines":1,"bbox":[820,383,140,22]}
+{"kind":"textbox","id":"sh/2x43adsn","slide":4,"name":"p42-event-desc-1","text":"申请生产权限","textPreview":"申请生产权限","textChars":6,"textLines":1,"bbox":[820,406,330,24]}
+{"kind":"shape","id":"sh/nydk3it8","slide":4,"name":"p42-event-dot-2","bbox":[780,436,20,20]}
+{"kind":"textbox","id":"sh/ozmlc3at","slide":4,"name":"p42-event-label-2","text":"决定","textPreview":"决定","textChars":2,"textLines":1,"bbox":[820,431,140,22]}
+{"kind":"textbox","id":"sh/p0v258be","slide":4,"name":"p42-event-desc-2","text":"发布责任人批准","textPreview":"发布责任人批准","textChars":7,"textLines":1,"bbox":[820,454,330,24]}
+{"kind":"shape","id":"sh/e9kj6tsr","slide":4,"name":"p42-event-dot-3","bbox":[780,484,20,20]}
+{"kind":"textbox","id":"sh/fatkfytw","slide":4,"name":"p42-event-label-3","text":"工具结果","textPreview":"工具结果","textChars":4,"textLines":1,"bbox":[820,479,140,22]}
+{"kind":"textbox","id":"sh/hoj6lwve","slide":4,"name":"p42-event-desc-3","text":"部署结果 + 证据","textPreview":"部署结果 + 证据","textChars":9,"textLines":1,"bbox":[820,502,330,24]}
+{"kind":"shape","id":"sh/wnq5cru9","slide":4,"name":"p42-bottom","bbox":[72,596,1136,48]}
+{"kind":"textbox","id":"sh/vmhoj6do","slide":4,"name":"p42-bottom-text","text":"配置图告诉你“能做什么”；事件流证明“实际做了什么”。两者缺一，控制面都不完整。","textPreview":"配置图告诉你“能做什么”；事件流证明“实际做了什么”。两者缺一，控制面都不完整。","textChars":40,"textLines":1,"bbox":[96,608,1088,25]}
+{"kind":"shape","id":"sh/ul8na1c3","slide":4,"name":"stage-rail-base","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/90z6hwvi","slide":4,"name":"stage-dot-规划","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/8zq58rux","slide":4,"name":"stage-label-规划","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[74,645,92,18]}
+{"kind":"shape","id":"sh/7yh4fmdc","slide":4,"name":"stage-dot-设计","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/mx8n6hcr","slide":4,"name":"stage-label-设计","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[262.67,645,92,18]}
+{"kind":"shape","id":"sh/lwzmdcvm","slide":4,"name":"stage-dot-构建","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/kv6547u1","slide":4,"name":"stage-label-构建","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[451.33,645,92,18]}
+{"kind":"shape","id":"sh/cruxgb6t","slide":4,"name":"stage-dot-测试","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/xc3e9g7e","slide":4,"name":"stage-label-测试","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[640,645,92,18]}
+{"kind":"shape","id":"sh/apcfe1o3","slide":4,"name":"stage-dot-发布","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/bqlw76po","slide":4,"name":"stage-label-发布","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[828.67,645,92,18]}
+{"kind":"shape","id":"sh/onuxcbqx","slide":4,"name":"stage-dot-运维","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/po3e5w7i","slide":4,"name":"stage-label-运维","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1017.33,645,92,18]}
+{"kind":"notes","id":"nt/cl4s1j","slide":4,"text":"[Sources]\n- P42: Visual sample authored for this talk; no external visual assets.\n- Illustrative system representation, not production data."}
