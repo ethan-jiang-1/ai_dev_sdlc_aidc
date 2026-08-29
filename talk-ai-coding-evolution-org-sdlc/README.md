@@ -1,6 +1,6 @@
 # AI-Native 软件研发组织：从产品意图到生产运维的 SDLC 转型之道
 
-本目录是这场 talk 的内容与生产工作区。故事线与 50 页页面职责已经锁定，当前只做**视觉预演**；样片通过后再写生产事实稿。
+本目录是这场 talk 的内容与生产工作区，也是跨对话的项目记忆。故事线与 50 页页面职责已经锁定，P1-P50 已完成第一轮中文审校；当前只做**视觉预演**，样片通过后再写生产事实稿。
 
 > **总工作规约：先内容，后表现。** v0.7 内容锁已通过，**50 页总页数已定**，作为稳定的生产边界；
 > 表现设计服务既定页面职责。完整生产前先过中文编辑门：所有上屏文字、图中标签与讲稿按中文原生句法重写，不把英文句法逐词翻成中文。若表现阶段暴露命题、证据或转场问题，先回写内容源文件，再继续生产。
@@ -35,7 +35,9 @@ talk-ai-coding-evolution-org-sdlc/
 ├── _asset/                                  # 表现设计与视觉资产
 │   ├── README.md                            #   v0.8 系统蓝图式技术编辑风
 │   ├── 01-visual-storyboard-v0.8.md         #   50 页视觉分镜 + 八个布局族 + 视觉门禁
-│   └── 02-imagegen-prompts-v0.8.md          #   gpt-image-2 样片 brief 与使用边界
+│   ├── 02-imagegen-prompts-v0.8.md          #   GPT Image 2 逐页判断、样片 brief 与使用边界
+│   ├── experiments/imagegen-v0.8/           #   服务商实验、提示词与候选资产
+│   └── samples/v0.8/                        #   四张可 REVIEW 样片与 PPTX
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
 │   ├── 00-storyline-map.md                  #   故事线总图（v0.7）：沟通任务 + SDLC 主轴 + 三幕
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
@@ -67,13 +69,17 @@ talk-ai-coding-evolution-org-sdlc/
 - **咬合点**：playbook 每个 play 都能用五层镜头检查；harness 从「编码这一格的边界」扩为整条软件价值流的共享控制基线。
   逐 play 映射见 [`02_evidence/00-absorption-plan.md`](02_evidence/00-absorption-plan.md)。
 
-一句话：**`-opc` 说「harness 是每一次动作的可靠性边界」；本 talk 说「让共同控制基线覆盖整条 SDLC，同时让领域判断留在明确的 owner 手里」。**
+一句话：**`-opc` 说「harness 是每一次动作的可靠性边界」；本 talk 说「让共同控制基线覆盖整条 SDLC，同时让领域判断留在明确的责任人手里」。**
 
 ## 工作方式
 
 agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
-加工顺序固定为 **故事线 → 证据口径 → 50 页页面职责 → 内容锁定 → 中文编辑 → 生产事实稿 → 视觉设计 → PPTX → 文字/视觉 QA**；
+加工顺序固定为 **故事线 → 证据口径 → 50 页页面职责 → 内容锁定 → 中文编辑 → 视觉样片 → 生产事实稿 → 母版与 50 页 PPTX → 文字/视觉 QA**；
 review 若改变了内容，反向同步回上游源文件。
+
+### 新对话怎样接续
+
+不需要依赖旧聊天记录。依次阅读 [`AGENTS.md`](./AGENTS.md)、[`01_storyline/00-storyline-map.md`](01_storyline/00-storyline-map.md)、[`01_storyline/07-narrative-thinking.md`](01_storyline/07-narrative-thinking.md)、[`03_outline/00-page-structure.md`](03_outline/00-page-structure.md)、[`01_storyline/04-open-questions.md`](01_storyline/04-open-questions.md)。进入表现阶段时再读 [`_asset/README.md`](_asset/README.md) 与 [`_asset/01-visual-storyboard-v0.8.md`](_asset/01-visual-storyboard-v0.8.md)。这些文件共同回答：为什么讲、对谁讲、50 页怎样推进、视觉为什么这样定、当前已经完成什么、下一步做什么。
 
 ### 中文表达规则
 
@@ -93,10 +99,9 @@ review 若改变了内容，反向同步回上游源文件。
 内容锁定后，每页仍先定「叙事职责 + 主要结论」，再做视觉。进入 PPT 阶段时统一使用
 `presentations:Presentations` skill，按内容选视觉路线，并完成全量渲染、逐页文字 REVIEW、逐页视觉 REVIEW 和来源追溯。
 
-当前为 **v0.8 视觉预演 + 中文编辑**：v0.7 内容锁已通过；视觉方向采用“统一白底的系统蓝图式技术编辑风”。
-下一步先完成 P1-P50 中文审校并验证 P1 / P8 / P20 / P42 四张关键样片；中文编辑门和视觉门禁都通过后，再按八个布局族压 50 页生产事实稿并建立 PPTX。
+当前为 **v0.8 视觉预演**：v0.7 内容锁和第一轮中文审校已经完成；视觉方向采用“统一白底的系统蓝图式技术编辑风”。P1 已采用 GPT Image 2 视觉主体与 PowerPoint 可编辑文字叠加的混合方式；P8、P20、P42 保持精确关系可编辑。下一步由用户 REVIEW 四张关键样片；视觉门禁通过后，再按八个布局族压 50 页生产事实稿并建立 PPTX。
 
 ## 与 `-opc` 的关系（一句话）
 
 `-opc` 回答「一个人要掌握多深」→ 答案是 **harness**，原则「部件可借，边界自己定」；
-本 talk 回答「软件交付组织要怎样重建 SDLC」→ 答案是让**工件可交接、gate 可执行、owner 可问责、feedback 可回流**。
+本 talk 回答「软件交付组织要怎样重建 SDLC」→ 答案是让**工件可交接、门禁能执行、责任有人担、结果能回流**。
