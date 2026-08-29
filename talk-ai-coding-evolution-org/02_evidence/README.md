@@ -2,7 +2,7 @@
 
 本目录负责把上游 `_reference/rawdata_*/` 的证据**按「整条 SDLC 转型 + 治理」视角**摘录、卡片化并标注来源。
 
-- `00-absorption-plan.md` —— **六阶段 + 15 play 进货单**（铺页面的骨架）【已产出 v0.2】
+- `00-absorption-plan.md` —— **六阶段 + 15 play 进货单 + DSH 三条腿**（铺页面的骨架）【已产出 v0.5】
 - `01-info-flow-map.md` —— 信息脉络图（上游 → 加工 → 页面 + 反向索引）【待补】
 
 > 规则：素材只摘不搬，摘录标注来源路径；口径红线见 `00-absorption-plan.md` §三。

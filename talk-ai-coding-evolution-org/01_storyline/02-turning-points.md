@@ -1,4 +1,4 @@
-# 转折点 / 锚点清单（v0.2）
+# 转折点 / 锚点清单（v0.5）
 
 > 本 talk 两轴各有一组锚点。**深轴**（五层 + harness）锚点与 `-opc` 共享；**宽轴**（六阶段 SDLC）锚点来自
 > Anthropic playbook。完整按页进货单见 `../02_evidence/00-absorption-plan.md`。

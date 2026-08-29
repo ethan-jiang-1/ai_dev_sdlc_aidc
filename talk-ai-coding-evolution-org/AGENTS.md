@@ -10,6 +10,7 @@ AI-Native 研发组织的规模化 AI Coding 深度 talk。**你是这套 harnes
 ## 每次进来（按顺序走）
 
 1. **读状态** — `README.md`（目录地图）→ `01_storyline/00-storyline-map.md`（故事线总图）→
+   `01_storyline/07-narrative-thinking.md`（叙事思路：看了什么 / 为什么这样想）→
    `03_outline/00-page-structure.md`（现场版页面）→ `01_storyline/04-open-questions.md`（已决 / 待办）。
    完成标准：能说出当前阶段、正在推敲的问题、下一步动哪个文件。
 
@@ -46,8 +47,9 @@ AI-Native 研发组织的规模化 AI Coding 深度 talk。**你是这套 harnes
 
 ## 当前状态指针
 
-- 故事线总图（v0.2 初稿）：`01_storyline/00-storyline-map.md`
-- 现场版页面结构（~46 页 · 75–90 min 骨架）：`03_outline/00-page-structure.md`
+- 故事线总图（v0.5 初稿）：`01_storyline/00-storyline-map.md`
+- 叙事思路笔记（上下文记忆）：`01_storyline/07-narrative-thinking.md`
+- 现场版页面结构（50 页 · 75–90 min 骨架）：`03_outline/00-page-structure.md`
 - 素材与口径（六阶段 + 15 play 进货单）：`02_evidence/00-absorption-plan.md`；脉络：`02_evidence/01-info-flow-map.md`（待补）
 - 当前生产事实稿：暂无（未到 `04_drafts/` 阶段）
 - 当前交付：暂无（未到 `05_output/` 阶段）

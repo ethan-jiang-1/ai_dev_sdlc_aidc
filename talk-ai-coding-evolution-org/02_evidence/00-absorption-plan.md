@@ -1,4 +1,4 @@
-# 内容吸纳清单：六阶段 + 15 play 进货单（v0.2）
+# 内容吸纳清单：六阶段 + 15 play 进货单（v0.5）
 
 > 源：`../_reference/rawdata_anthropic-ai-native-sdlc-playbook.md`（Anthropic "The AI-Native SDLC playbook"，Louis Claxton，2026-08-21）。
 > 本表是铺页面的骨架：**每一阶段 → 每个 play → 传统→AI-native 转变 → 工件/机制 → 治理 → 度量 → 五层/harness 落点**。

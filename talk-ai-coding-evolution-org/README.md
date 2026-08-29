@@ -33,18 +33,19 @@ talk-ai-coding-evolution-org/
 ├── _asset/                                  # 视觉资产（模板待定：风格不限制，按内容选）
 │   └── README.md                            #   模板选型原则
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
-│   ├── 00-storyline-map.md                  #   故事线总图（v0.2）：一句话主线 + 两轴 + 四幕
+│   ├── 00-storyline-map.md                  #   故事线总图（v0.5）：一句话主线 + SDLC 主轴 + 引子 + 三幕
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
 │   ├── 02-turning-points.md                 #   转折点 / 锚点清单（待补 playbook 锚点）
 │   ├── 03-audience-and-pitch.md             #   听众、时长、pitch
 │   ├── 04-open-questions.md                 #   已决 / 待办（随手记）
-│   ├── 05-five-layer-reading.md             #   深轴：五层叠加的组织读法
-│   └── 06-harness-internals.md              #   深轴：harness 里头干啥（圈住 / 拦住 / 看清）
+│   ├── 05-five-layer-reading.md             #   五层「引子」的理论底（组织读法）
+│   ├── 06-harness-internals.md              #   harness「引子」的核心（圈住 / 拦住 / 看清）
+│   └── 07-narrative-thinking.md             #   ★ 叙事思路笔记：看了什么 / 被什么启发 / 思路演化 / 决策理由
 ├── 02_evidence/                             # 素材与脉络
 │   ├── 00-absorption-plan.md                #   ★ 六阶段 + 15 play 进货单（铺页面的骨架）
 │   └── 01-info-flow-map.md                  #   信息脉络图（待补）
 ├── 03_outline/                              # 页面结构与逐页内容
-│   └── 00-page-structure.md                 #   ★ 现场版页面结构（~46 页 · 75–90 min 骨架）
+│   └── 00-page-structure.md                 #   ★ 现场版页面结构（50 页 · 75–90 min 骨架）
 ├── 04_drafts/                               # 口语讲稿 / 生产事实稿（待写）
 └── 05_output/                               # PPTX 交付（待产出）
 ```
@@ -64,7 +65,7 @@ talk-ai-coding-evolution-org/
 
 agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
 加工顺序固定为 **故事线 → 证据口径 → 页面职责 → 生产事实稿 → PPTX → 文字/视觉 QA**；review 后反向同步。
-当前为 **v0.2 初稿**，`_reference/` 下所有 symlink 只读。
+当前为 **v0.5 初稿**，`_reference/` 下所有 symlink 只读。
 
 ## 与 `-opc` 的关系（一句话）
 

@@ -1,16 +1,17 @@
 # 故事线总图（v0.5 · AI-Native 研发组织 · SDLC 主轴 + 五层/DSH 引子）
 
 > **对象**：研发整体组织——从产品一路到底到实施、再到运维。**题目已定**：AI-Native 研发组织：从产品到实施的 SDLC 转型之道。**slogan**：代码不再是瓶颈，流程才是。
-> **篇幅档位 A**：单场加长 Keynote（75–90 min，~46 页）。**独立成篇**（不承接 `deck_ai_sdlc_keynote`）。
+> **篇幅档位 A**：单场加长 Keynote（75–90 min，~50 页）。**独立成篇**（不承接 `deck_ai_sdlc_keynote`）。
 > **v0.5 定调（不再反复）**：**SDLC 六阶段是主轴**；**五层（Prompt→Context→Harness→Loop→Graph）+ DSH 不强扭成独立章节**，
 > 而是各自在自然接点作「引子」插进 SDLC。harness 在开场先立住，Build/Test/Deploy 再展开；DSH 作为「给不同视角/环节定制」的可组合 runtime。
 
 ## 一句话主线
 
-代码不再是瓶颈——组织转型的不是「编码」，是整条 SDLC。沿着六阶段（Plan→Design→Build→Test→Deploy→Maintain）走一遍，
-每个阶段都有一个「引子」点破它的本质：Plan 是 Prompt（把意图说清楚），Design 是 Context（策展模型所见与组织知识），
-Build/Test/Deploy 是 Harness（执行与可靠性边界），Test/Maintain 是 Loop（反馈连成闭环），跨阶段编排是 Graph（多节点 + 门禁）。
-**DSH 是这套 harness 的可组合 runtime**——让组织按各环节定制、而非从零造。
+代码不再是瓶颈。组织真正缺的，不是更强的模型，而是**把「怎么正确参与」外置成系统**——工件链（要什么 / 为什么 / 怎么做）、
+gate（对错怎么判）、归属（改哪里 / 谁负责）。沿着六阶段走一遍：Plan 是 Prompt（把意图外置成 `intent.md`），
+Design 是 Context（把政策策展成 `spec.md`），Build/Test/Deploy 是 Harness（把可靠性外置成 hooks/evals/gates），
+Test/Maintain 是 Loop（把反馈连成闭环），跨阶段编排是 Graph（多节点 + 门禁）。**DSH 是把这条原则做成的可组合 runtime**——
+知识外置、正确路径、可执行反馈，三条腿一个不落。
 
 ## 主轴 + 引子（一张表看全）
 
@@ -24,7 +25,7 @@ Build/Test/Deploy 是 Harness（执行与可靠性边界），Test/Maintain 是 
 | **Maintain** | **Loop 收口 + Graph 编排**：linear→loop 关环 | 关 loop / scans / on-call（Claude Tag） |
 | （收束） | **DSH**：给各环节定制的可组合 runtime | registry / adapter / capability seam / enforced gate / session log |
 
-> 五层可概括为三层责任（信息/行动/组织），但那只是收尾的一句话总结；正文里**每层都作为对应阶段的引子单独点破**，不并、不吞、不硬凑。
+> 五层各作各阶段的引子单独点破，不并、不吞、不硬凑；它们共同的落点是「**把怎么正确参与外置成系统**」——工件链（外置要什么）、gate（外置对错）、归属（外置谁负责）。
 
 ## 故事弧线（开场 + 三幕）
 
@@ -32,9 +33,9 @@ Build/Test/Deploy 是 Harness（执行与可靠性边界），Test/Maintain 是 
 |---|---|---|---|
 | 开场 | 钩子 + 五层预告 + harness 引子先立住 | 让组织对号入座 | 0–6 |
 | 第一幕 | 为什么整条 SDLC 要转型 | 论点 | 6–16 |
-| 第二幕 | 六阶段转型（每阶段一个引子） | 主体（主轴） | 16–68 |
-| 第三幕 | DSH + 治理收束 | harness runtime + 落地 | 68–82 |
-| 收尾 | 带走一句 | 收束 | 82–90 |
+| 第二幕 | 六阶段转型（每阶段一个引子） | 主体（主轴） | 16–64 |
+| 第三幕 | DSH + 治理收束 | harness runtime + 落地 | 64–84 |
+| 收尾 | 带走一句 | 收束 | 84–90 |
 
 ## 每一幕的要点
 
