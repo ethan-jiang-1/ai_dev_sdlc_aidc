@@ -2,7 +2,7 @@
 
 本目录统一收纳 talk 的上游**原始数据** symlink，与 `../talk-ai-coding-evolution-opc/_reference/` 指向**同一批源**
 （只读，只在里面读、不在里面写）。本 talk 的推敲产物（故事线 / 证据 / 大纲 / 讲稿）都在
-`talk-ai-coding-evolution-org/` 下各自编号目录里，`_reference/` 只是它们的**上游来源**。
+`talk-ai-coding-evolution-org-sdlc/` 下各自编号目录里，`_reference/` 只是它们的**上游来源**。
 
 ## symlink 一览
 
@@ -21,7 +21,7 @@
 
 ## 引用约定
 
-- 从 `talk-ai-coding-evolution-org/` 任意子目录引用素材，统一走本目录相对路径：
+- 从 `talk-ai-coding-evolution-org-sdlc/` 任意子目录引用素材，统一走本目录相对路径：
   `../_reference/rawdata_*/…`。
 - 简写：`final_v4/…` = `rawdata_ai-coding-evolution-final/final_v4/…`；`FAQ 0N` = `rawdata_dsh-faq-on-digested/0N_*`；
   `_digested/…` = `rawdata_dsh-digested/…`。
@@ -30,4 +30,4 @@
 
 - **只读**：这里是原始数据，只在里面读、不在里面写；有口径调整写进 `02_evidence/`。
 - symlink 指向工作区外，绝对路径失效时（迁移机器 / 目录改名）请在本目录重建或更新 symlink。
-- **org 视角**：引用同一批源，但摘录落点要服务于"组织分工 + 治理"，不照搬 `-opc` 的个人视角卡片。
+- **SDLC 视角**：引用同一批源，但摘录必须服务于软件价值流、跨职能分工与治理，不照搬 `-opc` 的个人视角，也不泛化为一般企业组织论。

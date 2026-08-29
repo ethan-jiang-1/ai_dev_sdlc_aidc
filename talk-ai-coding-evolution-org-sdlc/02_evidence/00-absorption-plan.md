@@ -99,7 +99,36 @@
 
 **诚实标尺** = 可替换率 **39.3%**（28 条 seam 中 11 条 P≥2）；饱和区（执行世界 / 会话底座 / LLM 注册面 / 四入口复用 spine）vs 缺口区（渠道通知 / 长期记忆 / 审批人类形状与多方编排 / workflow 持久化 / authorization）。→ 这本身就是「成熟度诚实」的样本：敢把数字摊开。
 
-## 五、待补
+## 五、汲取边界（过滤后的取舍）
+
+> 面对 `_reference/` 全部输入，本 talk（50 页，SDLC 主轴 + 引子）的取舍。判定标准：**能不能直接支撑「组织转型 SDLC」的论点**；太偏 DSH 自身实现/工程方法论的，跳过。
+
+### 已充分汲取（不再挖）
+
+- playbook 六阶段 + 15 play → 主轴 + 进货单（§一/§二）
+- 五层报告（Prompt/Context/Harness/Loop/Graph + Böckeler + 成熟度标尺）→ 引子（`01_storyline/05`、`06`）
+- DSH harness-idea 三条腿 → 第三幕核心（§四）
+- DSH session-and-loop（append-only + 模型可见 ⟺ 已记录）→ P47 审计
+- DSH capability-seams（seam 三角色）→ P46 定制
+- FAQ 07/08/09（三条腿 + 39.3% + 敢放手/省手/可复用）→ §四
+
+### 值得补（此前未充分挖，可汲取）
+
+1. **DSH system/00-map 的「一切皆插件 = 插件树，新行为挂扩展点不改 loop」** → 强化 P42/P46 的「定制/扩展」：组织加能力是挂扩展点，不是改核心。
+2. **DSH tools-prompt-llm 的「工具执行管道 allow/deny/ask + timeout」** → 强化 P45 的「可执行反馈 = 门禁」：门禁就是这条管道，机械可判、就地拦截。
+3. **ecosystem-distribution 的「桥/渠/窗 + 低复制成本 → 星标质量解耦」** → P41/P48 一句背景：生态大 ≠ 可信（热度不是质量认证）。
+
+### 跳过（不汲取）
+
+- cordis-runtime 五原语（ctx/plugin/effect/event/waterfall/fiber）——太底层，对决策者听众是噪音。
+- surfaces 多入口细节（CLI/Web/ACP/JSON-RPC 各自组合）——太偏实现；「四入口复用同一 runtime spine」最多一句带过。
+- FAQ 01–06（仓库组织 / SDD / model-vendors / 根入口文档 / SPEC 路径）——DSH 自身工程方法论，离「组织转型 SDLC」太远。
+- composition 的 boot 时序 / dump-config 保真细节——机制级，不进叙事。
+- 具体代码样例（intent.md / plan.md / AGENTS.md / REVIEW.md / bands.yaml 完整字段）——只取关键字段上屏，不全文。
+- 具体数字（2286、39.3% 之外的分位数、stars 明细、基尼系数）——只留「2286 条两周堆出」「39.3% 可替换」两个信号。
+
+## 六、待补
 
 - 信息脉络图（上游 → 加工 → 页面 + 反向索引）→ `01-info-flow-map.md`。
 - 组织特有反面案例 / 供应链事故（补 managed settings worked example 之外的证据）。
+- 「值得补」3 条落地到 P42/P45/P46/P41/P48 的具体措辞（待写生产事实稿时并入）。
