@@ -1,6 +1,6 @@
 # Image 2 生产 brief（v0.10）
 
-本文件是当前 Image 2 生产入口。v0.8/v0.9 只保留探索与被否决方向，不再指导生成。
+> 历史样片 brief：本文件记录 v0.10 的 Visual Master Language 定调和无字主体实验，不再作为当前生产入口。当前规则与资产入口见 `../CONTEXT.md`、`../CURRENT.md` 和 `experiments/imagegen-v0.13/`、`experiments/imagegen-v0.14/`。
 
 ## Visual Master Language
 

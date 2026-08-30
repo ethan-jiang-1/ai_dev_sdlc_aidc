@@ -3,9 +3,9 @@
 AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harness 里被驱动的 agent**：
 每次进来按下面的步骤走，改完把状态落回源文件。主题 / 听众 / 时长 / 目的 → `01_storyline/03-audience-and-pitch.md`。
 六阶段是软件价值流主轴，五层是能力与控制深度镜头，DSH 是共享控制面的参考实现；三者都服务于一条故事线。
-本目录的术语以 `CONTEXT.md` 为唯一权威来源；先按其中的词义理解用户和文档，再讨论内容或表现。
+本目录的术语以 `CONTEXT.md` 为唯一权威来源；当前进度以 `CURRENT.md` 为唯一权威入口。先按这两个文件理解词义和状态，再讨论内容或表现。
 
-> **总门槛：先内容，后表现。** v0.7 内容锁已通过，P1-P50 已完成第一轮中文审校；v0.11 视觉样片已通过，但 v0.12 完整稿整体视觉 REVIEW 未通过。v0.14 已按“图源分界”升级 7 个视觉主体并完成全量渲染与溢出检查；它仍是用户 REVIEW 候选稿，不得提前宣称正式通过。
+> **总门槛：先内容，后表现。** 内容锁和视觉样片门已通过；完整稿仍处于用户 REVIEW，不得提前宣称正式通过。具体版本、QA 与下一步只看 `CURRENT.md`。
 > **50 页总页数是已锁定的生产容器**；表现设计服务既定页面职责，不再摇摆总页数与故事主轴。
 
 > 与 `../talk-ai-coding-evolution-opc/` 的差别：那里问「一个人掌握多深」，这里问「软件研发与交付组织要如何重建整条 SDLC」。
@@ -13,7 +13,7 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 
 ## 每次进来（按顺序走）
 
-1. **读状态** — `README.md`（目录地图）→ `CONTEXT.md`（局部术语与禁用混称）→ `01_storyline/00-storyline-map.md`（故事线总图）→
+1. **读状态** — `README.md`（目录地图）→ `CURRENT.md`（唯一当前态）→ `CONTEXT.md`（局部术语与禁用混称）→ `01_storyline/00-storyline-map.md`（故事线总图）→
    `01_storyline/07-narrative-thinking.md`（叙事思路：看了什么 / 为什么这样想）→
    `03_outline/00-page-structure.md`（现场版页面）→ `_asset/01-visual-storyboard-v0.8.md` + `docs/adr/0001-hybrid-visual-production.md`（表现阶段才读）→
    `01_storyline/04-open-questions.md`（已决 / 待办）。
@@ -64,7 +64,7 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 1. 先定每页的叙事职责和主要结论，再决定版式、图像、图表、节奏与动画。
 2. 一页一个叙事任务；标题直接说结论，证据要与当页结论同屏咬合。
 3. **先过中文编辑门**：页面结论、上屏文字、图中标签和讲稿都要按中文原生句法重写并通过朗读检查；英文只作必要术语或代码标识，不拿英文句法套中文词。
-4. **再过视觉样片门**：按 `_asset/01-visual-storyboard-v0.8.md` 只做 P1/P8/P20/P42。v0.9 用 P1/P42 验证原生主体，用 P8/P20 验证混合主体与画布衔接；REVIEW 同时提供四张单页、2×2 总览、可编辑 PPTX 与 v0.8/v0.9 对照。未通过时只改视觉系统，不铺 50 页。
+4. **视觉样片门已通过**：P1/P8/P20/P42 的历史验证过程保留在 `_asset/samples/v0.8–v0.11/`，用于解释视觉语言为何这样形成。当前不重新执行样片阶段；只有用户要求改变全局视觉语言时，才回到样片门重新验证。
 5. 进入 PPT 规划或生产时必须启用 `presentations:Presentations` skill；采用本目录已定的自定义视觉方向，不套模板、不混用 Codex Grid。
 6. **逐页选择主体实现**：按 `CONTEXT.md` 在原生主体、生成主体和混合主体中选择。Image 2 的采用只看表达收益；当原生图元会退化成框、箭头、卡片与标签堆积时，主动比较生成式图文主体，不按封面或普通页身份分配图片。
    先应用“图源分界”：纯文字、数字、表格、日志和少量精确关系页由 PowerPoint 直接呈现；一旦页面借助场景、对象、空间、材质或视觉隐喻来解释，就优先把完整主体交给 Image 2，不用 PowerPoint 基础图元假扮图像。
@@ -126,8 +126,8 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 - 叙事思路笔记（上下文记忆）：`01_storyline/07-narrative-thinking.md`
 - 现场版页面结构（50 页 · 75–90 min 骨架）：`03_outline/00-page-structure.md`
 - 素材与口径：`02_evidence/00-absorption-plan.md`；P1–P50 脉络：`02_evidence/01-info-flow-map.md`；核心主张账本：`02_evidence/02-claim-ledger.md`
-- 当前生产事实稿：`04_drafts/ppt-text-v0.12.md`；页面主体账本：`_asset/03-page-subject-ledger-v0.12.md`。
-- 当前交付：v0.11 样片在 `_asset/samples/v0.11/`；v0.12 仅作视觉失败基线；v0.13 保留上一轮候选稿；当前 REVIEW 对象是 `05_output/v0.14/AI-Native软件研发组织-SDLC转型-v0.14.pptx`，全量总览为同目录 `montage-v0.14.png`。
+- 当前状态与页面实现账本：`CURRENT.md`；当前页面文案：`04_drafts/ppt-text-v0.14.md`。`04_drafts/ppt-text-v0.12.md`、`_asset/03-page-subject-ledger-v0.12.md` 和 `_asset/05-page-visual-thesis-ledger-v0.13.md` 是形成当前稿的历史依据，不再单独充当当前入口。
+- 当前交付、历史版本角色和唯一 REVIEW 对象：`CURRENT.md`。
 - 已决与待办：`01_storyline/04-open-questions.md`
-- 当前视觉分镜：`_asset/01-visual-storyboard-v0.8.md`；当前 Image 2 brief：`_asset/02-imagegen-prompts-v0.11.md`（早期版本只作历史记录）
-- 当前阶段：v0.14 用户 REVIEW。P5/P25/P32/P41/P44/P45/P49 已由 GPT Image 2 承担完整视觉主体；P49 已定向修正“责任人”的演示距离可读性。P19/P24/P34/P37/P48 继续保留原生主体，因为其主要任务是精确关系、签字、日志和顺序。继续工作时以 v0.14 最新渲染页为准，内容主轴、50 页职责、纸白画布和 Visual Master Language 不变。
+- 当前视觉规则：`CONTEXT.md` + `_asset/README.md`；当前生成资产与提示词：`_asset/experiments/imagegen-v0.13/`、`_asset/experiments/imagegen-v0.14/`。`01-visual-storyboard-v0.8.md` 与 `02-imagegen-prompts-v0.8–v0.11.md` 只记录视觉语言的演化过程。
+- 当前阶段、页面实现清单、已验证问题和下一步：`CURRENT.md`。内容主轴、50 页职责、纸白画布和 Visual Master Language 未经用户明确变更不得漂移。

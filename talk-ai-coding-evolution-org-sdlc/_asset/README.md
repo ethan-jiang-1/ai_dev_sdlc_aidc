@@ -1,31 +1,31 @@
-# `_asset/` —— 表现设计方向（v0.9）
+# `_asset/` —— 表现设计方向与历史资产
 
 > **当前推荐已定：系统蓝图式技术编辑风（Systems Blueprint Editorial）。**
 > 这是一场面向软件 SDLC 决策者的转型深度 talk，不是 AI 科普、产品发布、开发者工具演示或一般企业汇报。
 > 视觉任务是让价值流、工件、门禁、责任人、反馈闭环和共享控制面变得可读、可比较、可追踪。
 
-## 当前设计文件
+## 当前入口与历史依据
 
-- [`01-visual-storyboard-v0.8.md`](./01-visual-storyboard-v0.8.md)：50 页逐页视觉职责、八个布局族、视觉 token 与进入 PPTX 前的门禁。
-- [`02-imagegen-prompts-v0.11.md`](./02-imagegen-prompts-v0.11.md)：当前「工程素描 + 编辑标注」Visual Master Language、内生图文、字体同源与 P8/P20 提示词入口。
+- [`../CURRENT.md`](../CURRENT.md)：当前版本、实际页面实现、QA 和下一步的唯一入口。
+- [`../CONTEXT.md`](../CONTEXT.md)：当前 Visual Master Language、图源分界、文字归属与精确关系的术语权威。
+- [`experiments/imagegen-v0.13/`](./experiments/imagegen-v0.13/README.md) 与 [`experiments/imagegen-v0.14/`](./experiments/imagegen-v0.14/README.md)：当前成片所用生成资产、提示词和筛选记录。
+- [`01-visual-storyboard-v0.8.md`](./01-visual-storyboard-v0.8.md)：50 页早期视觉职责、八个布局族与视觉 token，保留为历史设计依据。
+- [`02-imagegen-prompts-v0.11.md`](./02-imagegen-prompts-v0.11.md)：v0.11 内生图文和字体同源样片 brief，保留为历史依据。
 - [`02-imagegen-prompts-v0.10.md`](./02-imagegen-prompts-v0.10.md)：无字工程素描与 PPT 覆盖标注方式的上一轮记录。
 - [`02-imagegen-prompts-v0.9.md`](./02-imagegen-prompts-v0.9.md)：3D 实体模型方向的历史记录，不作为当前生产入口。
 - [`02-imagegen-prompts-v0.8.md`](./02-imagegen-prompts-v0.8.md)：历史探索记录，不作为当前生产入口。
 - [`experiments/imagegen-v0.8/`](./experiments/imagegen-v0.8/README.md)：GPT Image 2 服务入口对比、生成过程、筛选理由和图文混合资产候选；不记录密钥。
 
-> v0.10 暴露了 PPT 标签与生成主体使用两套坐标系的问题；v0.11 已改为 Image 2 内生图文，并使用实际 PPT 渲染页校准字体，当前等待用户 REVIEW。
-> v0.11 样片通过后，先建立 P1-P50 页面主体账本，再按视觉容器压缩 50 页生产事实稿并进入 PPTX；不在视觉方向未验证时铺满 50 页。
-
-v0.8 暴露封面过度用图与画布色差；v0.9 的 3D 实体模型语言已否决；v0.10 暴露 PPT 标签错指与 overlap。当前 v0.11 样片、PPTX、2×2 总览与 v0.10/v0.11 对照在 [`samples/v0.11/`](./samples/v0.11/README.md)，等待用户 REVIEW。
+v0.8 暴露封面过度用图与画布色差；v0.9 的 3D 实体模型语言已否决；v0.10 暴露 PPT 标签错指与 overlap；v0.11 通过内生图文和字体同源样片门。v0.12 的完整稿视觉 REVIEW 未通过，v0.13 完成结构性返工，v0.14 再按图源分界升级 7 页。当前 REVIEW 对象见 `../CURRENT.md`。
 
 ## 混合生产模型
 
 - 每页先判断最需要讲清的是场景、关系、过程、对比还是证据，再在原生主体、生成主体和混合主体中选择。
-- GPT Image 2 负责它擅长的整体表达：把图像、空间、材质、视觉隐喻和主体内嵌文字合成为丰富的图文主体。原生图元难以自然表达复杂定性关系时，优先比较 Image 2 方案。Packy 是当前主入口，MICU 是备用；实验见 [`experiments/imagegen-v0.8/`](./experiments/imagegen-v0.8/README.md)。
+- GPT Image 2 负责它擅长的整体表达：把图像、空间、材质、视觉隐喻和主体内嵌文字合成为丰富的图文主体。原生图元难以自然表达复杂定性关系时，优先比较 Image 2 方案。Packy 是当前主入口，MICU 是备用；服务入口验证见 [`experiments/imagegen-v0.8/`](./experiments/imagegen-v0.8/README.md)，当前成片资产见 v0.13/v0.14 实验目录。
 - PowerPoint 负责全篇统一的页面文案：主标题、副标题、眉题、强调句、页码和固定术语。生成资产必须为这些文字留下明确安全区。
 - 主体内嵌文字可以承担局部解释，但必须逐字校对；工件顺序、门禁位置、责任归属、因果方向、数字、引用、日志和复杂拓扑保持可编辑。
 - 当原生图元会变成框、箭头、卡片和标签堆积时，主动比较生成式图文主体；Image 2 不是“PowerPoint 实在做不了”之后的补救工具。
-- Image 2 不设页数配额。样片通过后逐页建立页面主体账本，只按表达收益和精确关系要求选择实现。
+- Image 2 不设页数配额。逐页只按表达收益和精确关系要求选择实现；当前 20 页生成主体、30 页原生主体的清单见 `../CURRENT.md`。
 - 生成资产默认透明或边缘匹配地无缝嵌入固定纸白画布；满版底图只作例外，任何图片矩形、残留底色或页间色差都不通过。
 - 所有生成主体共享同一套「工程素描 + 编辑标注」Visual Master Language：石墨与技术墨线构成主体，珊瑚红、青绿和金黄只作克制批注；允许使用结构剖面、连续叙事和工件拼贴三种方言，不允许切换成 3D 物件语言。
 
@@ -102,5 +102,5 @@ v0.8 暴露封面过度用图与画布色差；v0.9 的 3D 实体模型语言已
 ## 制作路线
 
 - 采用**自定义视觉方向，从零建立母版与布局系统**；不套现成模板，不混用 Codex Grid。
-- v0.11 四张关键样片已完成，当前等待用户 REVIEW。通过视觉门禁后，先建立 50 页页面主体账本，再完成生产事实稿并用八个布局族生产 50 页。
-- 生产完成后逐页渲染，分别做文字 REVIEW 与视觉 REVIEW；修复所有溢出、重叠、错误换行、连接线和来源问题后交付。
+- v0.11 四张关键样片已通过，完整稿已迭代到 v0.14。当前只围绕 v0.14 做逐页用户 REVIEW；收到具体反馈后进入下一小版本。
+- 每个新版本都逐页渲染，分别做文字 REVIEW 与视觉 REVIEW，并重新检查溢出、重叠、错误换行、连接线和来源问题。

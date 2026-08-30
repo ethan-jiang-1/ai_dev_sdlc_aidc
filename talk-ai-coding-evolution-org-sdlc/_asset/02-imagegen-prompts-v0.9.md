@@ -1,6 +1,6 @@
 # Image 2 生产 brief（v0.9）
 
-本文件是当前 Image 2 使用规则。v0.8 的探索过程保留在 [`02-imagegen-prompts-v0.8.md`](./02-imagegen-prompts-v0.8.md)，不再作为生产入口。
+> 历史样片 brief：本文件记录已经否决的 v0.9 3D 实体模型方向，不再作为当前生产入口。当前规则与资产入口见 `../CONTEXT.md`、`../CURRENT.md` 和 `experiments/imagegen-v0.13/`、`experiments/imagegen-v0.14/`。
 
 ## 当前主体决定
 

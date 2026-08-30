@@ -23,6 +23,7 @@
 talk-ai-coding-evolution-org-sdlc/
 ├── README.md                                # 本文件：地图 + 素材说明 + 工作方式
 ├── AGENTS.md                                # 【agent 手册】harness 的操作步骤 + 规则
+├── CURRENT.md                               # 【当前态权威】当前版本、页面实现、QA 与下一步
 ├── CONTEXT.md                               # 【术语权威】本 talk 的局部 glossary + 禁用混称
 ├── docs/adr/                                # 难以回退的局部制作决策及理由
 ├── _reference/                              # 上游素材 symlink（只读）
@@ -35,9 +36,9 @@ talk-ai-coding-evolution-org-sdlc/
 │   ├── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
 │   └── rawdata_dsh-plugin-seam-maturity/    #   【symlink】插件接缝与成熟度
 ├── _asset/                                  # 表现设计与视觉资产
-│   ├── README.md                            #   v0.8 系统蓝图式技术编辑风
-│   ├── 01-visual-storyboard-v0.8.md         #   50 页视觉分镜 + 八个布局族 + 视觉门禁
-│   ├── 02-imagegen-prompts-v0.11.md         #   当前 GPT Image 2 内生图文、字体同源与提示词入口
+│   ├── README.md                            #   当前视觉规则入口 + 历史资产索引
+│   ├── 01-visual-storyboard-v0.8.md         #   历史视觉分镜 + 八个布局族
+│   ├── 02-imagegen-prompts-v0.11.md         #   历史：内生图文、字体同源样片 brief
 │   ├── 02-imagegen-prompts-v0.10.md         #   工程素描方向的上一轮记录
 │   ├── 02-imagegen-prompts-v0.9.md          #   3D 实体模型方向的历史记录
 │   ├── 02-imagegen-prompts-v0.8.md          #   历史探索记录
@@ -50,7 +51,7 @@ talk-ai-coding-evolution-org-sdlc/
 │   ├── samples/v0.8/                        #   第一轮视觉实验（未通过）
 │   ├── samples/v0.9/                        #   已否决的 3D 实体模型样片
 │   ├── samples/v0.10/                       #   PPT 覆盖标签方式的历史样片
-│   └── samples/v0.11/                       #   当前内生图文、字体同源样片与 PPTX
+│   └── samples/v0.11/                       #   已通过的内生图文、字体同源样片与 PPTX
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
 │   ├── 00-storyline-map.md                  #   故事线总图（v0.7）：沟通任务 + SDLC 主轴 + 三幕
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
@@ -69,8 +70,8 @@ talk-ai-coding-evolution-org-sdlc/
 │   ├── 01-opening-and-why.md                 #   P1–P12：开场 + 为什么整条链要转
 │   ├── 02-six-stages.md                     #   P13–P38：六阶段统一四问
 │   └── 03-dsh-and-closing.md                #   P39–P50：共享控制面 + 收尾行动
-├── 04_drafts/                               # 口语讲稿 / 生产事实稿（待写）
-└── 05_output/                               # PPTX 交付（待产出）
+├── 04_drafts/                               # 口语讲稿 / 生产事实稿；当前为 ppt-text-v0.14.md
+└── 05_output/                               # PPTX 交付；当前 REVIEW 对象为 v0.14/
 ```
 
 > **临时目录约定**：一次性产物放仓库根目录、以 `.tmp-org-sdlc-talk-*` 前缀命名，不入库；版本收口后清理。细则见 [`AGENTS.md`](./AGENTS.md)。
@@ -86,7 +87,7 @@ talk-ai-coding-evolution-org-sdlc/
 
 ## 工作方式
 
-agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。
+agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走、把状态落回源文件。当前做到哪儿、唯一 REVIEW 对象、页面实现和下一步统一看 [`CURRENT.md`](./CURRENT.md)，不要从历史版本文件推断当前状态。
 本 talk 的局部术语以 [`CONTEXT.md`](./CONTEXT.md) 为唯一权威来源；讨论、分镜、prompt、样片 REVIEW 和 PPTX 生产都使用其中的词义。用户用词含混或与 glossary 冲突时，先对齐实际所指，再继续制作；新共识立即写回 `CONTEXT.md`。
 加工顺序固定为 **故事线 → 证据口径 → 50 页页面职责 → 内容锁定 → 中文编辑 → 视觉样片 → 生产事实稿 → 母版与 50 页 PPTX → 文字/视觉 QA**；
 review 若改变了内容，反向同步回上游源文件。
@@ -101,7 +102,7 @@ review 若改变了内容，反向同步回上游源文件。
 
 ### 新对话怎样接续
 
-不需要依赖旧聊天记录。依次阅读 [`AGENTS.md`](./AGENTS.md)、[`CONTEXT.md`](./CONTEXT.md)、[`01_storyline/00-storyline-map.md`](01_storyline/00-storyline-map.md)、[`01_storyline/07-narrative-thinking.md`](01_storyline/07-narrative-thinking.md)、[`03_outline/00-page-structure.md`](03_outline/00-page-structure.md)、[`01_storyline/04-open-questions.md`](01_storyline/04-open-questions.md)。进入表现阶段时再读 [`_asset/README.md`](_asset/README.md) 与 [`_asset/01-visual-storyboard-v0.8.md`](_asset/01-visual-storyboard-v0.8.md)。这些文件共同回答：这里的词是什么意思、为什么讲、对谁讲、50 页怎样推进、视觉为什么这样定、当前已经完成什么、下一步做什么。
+不需要依赖旧聊天记录。依次阅读 [`AGENTS.md`](./AGENTS.md)、[`CURRENT.md`](./CURRENT.md)、[`CONTEXT.md`](./CONTEXT.md)、[`01_storyline/00-storyline-map.md`](01_storyline/00-storyline-map.md)、[`01_storyline/07-narrative-thinking.md`](01_storyline/07-narrative-thinking.md)、[`03_outline/00-page-structure.md`](03_outline/00-page-structure.md)。进入表现阶段时再读 [`_asset/README.md`](_asset/README.md)。这些文件共同回答：现在做到哪儿、这里的词是什么意思、为什么讲、对谁讲、50 页怎样推进、视觉为什么这样定、下一步做什么。`01_storyline/04-open-questions.md` 保存历史已决事项与待办，但不替代 `CURRENT.md` 的当前态入口。
 
 ### 中文表达规则
 

@@ -1,6 +1,8 @@
 # Image 2 生产 brief（v0.11）
 
-本文件是当前 Image 2 生产入口。Visual Master Language 延续 v0.10 的「工程素描 + 编辑标注」，v0.11 新增两条优先规则：内生图文优先、字体同源。
+> 历史样片 brief：本文件记录 v0.11 怎样验证内生图文与字体同源。当前通用术语与规则见 `../CONTEXT.md`，当前生产状态和资产入口见 `../CURRENT.md` 与 `experiments/imagegen-v0.13/`、`experiments/imagegen-v0.14/`。
+
+Visual Master Language 延续 v0.10 的「工程素描 + 编辑标注」，v0.11 新增两条优先规则：内生图文优先、字体同源。
 
 ## 图文一体边界
 
