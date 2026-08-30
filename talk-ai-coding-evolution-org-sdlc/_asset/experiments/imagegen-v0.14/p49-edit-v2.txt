@@ -1,0 +1,6 @@
+Use case: infographic-diagram
+Asset type: closing-slide visual body
+Primary request: Edit the supplied image only to improve the readability of the existing Chinese label "责任人" and its responsibility-station outline. Render "责任人" in a dark, high-contrast clean Hiragino Sans GB-like sans serif, matching the visual weight and readability of "工件", "门禁", and "反馈". Strengthen the responsibility-station graphite outline enough to read at presentation distance.
+Text (verbatim): "更多代码", "可靠运行", "工件", "门禁", "责任人", "反馈"
+Constraints: Preserve the entire composition, geometry, object positions, arrows, feedback loop, upper 27% chroma blue #0057FF region, paper-white background, teal/coral/gold color semantics, and all six labels exactly. Change only the contrast and legibility of "责任人" and its station outline. No extra characters, labels, objects, or rearrangement.
+Avoid: handwritten type, decorative type, 3D, shadows, new text, changed wording, changed layout, changed colors outside the responsibility station.

@@ -1,0 +1,9 @@
+Use case: infographic-diagram
+Asset type: PowerPoint visual body
+Primary request: Draw one continuous editorial engineering-sketch scene that makes responsibility separation unmistakable. A shared platform boundary forms the floor, side rails and overhead safety frame of one execution corridor. The boundary visibly provides sandbox containment, a coral gate, observation and audit, but contains no labels or control-panel icons. Inside the corridor, one gold software change artifact moves along a teal path. A clearly separate engineer ownership line stays attached to that artifact from start to finish. The platform operators maintain the surrounding boundary; they never touch or sign the change artifact.
+Style/medium: flat graphite pencil and technical ink, restrained editorial annotations, clean Hiragino Sans GB-like sans serif.
+Composition/framing: wide continuous scene, strong central artifact and ownership line, no repeated modules, no dashboard.
+Color palette: teal active path, coral mandatory gate, gold change artifact; graphite structure.
+Text (verbatim and exhaustive): "共同基线", "具体改动", "平台维护", "工程师负责". These four strings are the only readable characters.
+Constraints: upper 24% uninterrupted chroma blue #0057FF; make shared boundary and specific ownership visually separate; no other labels, letters, numbers or pseudo-text.
+Avoid: control panel, dashboard, cards, icon inventory, nested ellipses, Venn diagram, 3D, toy, paper model, isometric view, shadows, handwriting, extra text, watermark.

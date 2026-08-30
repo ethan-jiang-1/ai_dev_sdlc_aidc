@@ -1,0 +1,392 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/j2s3ki",
+    "id": "j2s3ki",
+    "slide": 1,
+    "layoutId": "2551c466-3a1f-47f3-9106-9ab0b33564b0",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2a5dab2a-f2c1-463b-846d-a3025a63b89e",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7F8F5",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Helvetica Neue",
+      "Hiragino Sans GB"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "2551c466-3a1f-47f3-9106-9ab0b33564b0",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2a5dab2a-f2c1-463b-846d-a3025a63b89e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2a5dab2a-f2c1-463b-846d-a3025a63b89e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/9crq50bm",
+      "id": "1",
+      "bbox": [
+        0,
+        142,
+        1240,
+        520
+      ],
+      "alt": "BUILD 加速将压力推向需求堆积、审查拥塞和治理例外的工程素描",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "17cc93b5-bac1-4275-b224-87b5f74cb622",
+        "contentType": "image/png",
+        "byteLength": 3193911
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nylgnyto",
+      "id": "2",
+      "name": "kicker-rule",
+      "bbox": [
+        72,
+        43,
+        36,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#0F7C6B",
+      "lineWidth": 3
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2xcfedc3",
+      "id": "3",
+      "name": "kicker",
+      "bbox": [
+        122,
+        30,
+        330,
+        26
+      ],
+      "geometry": "rect",
+      "text": "诊断 / 压力迁移",
+      "textPreview": "诊断 / 压力迁移",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 13,
+        "typeface": "Hiragino Sans GB",
+        "color": "#65706C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "诊断 / 压力迁移"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "诊断 / 压力迁移",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Hiragino Sans GB",
+            "color": "#65706C",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "诊断 / 压力迁移",
+              "fontSize": 13,
+              "typeface": "Hiragino Sans GB",
+              "color": "#65706C",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x4nytsbq",
+      "id": "4",
+      "name": "page",
+      "bbox": [
+        1160,
+        30,
+        48,
+        24
+      ],
+      "geometry": "rect",
+      "text": "06",
+      "textPreview": "06",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 12,
+        "typeface": "Helvetica Neue",
+        "color": "#65706C",
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "wrap": "none",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "06",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "Helvetica Neue",
+            "color": "#65706C",
+            "alignment": "right",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "06",
+              "fontSize": 12,
+              "typeface": "Helvetica Neue",
+              "color": "#65706C",
+              "alignment": "right",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3uhknu5",
+      "id": "5",
+      "name": "title",
+      "bbox": [
+        72,
+        62,
+        1136,
+        58
+      ],
+      "geometry": "rect",
+      "text": "编码不再是主要约束，压力会向三个方向转移",
+      "textPreview": "编码不再是主要约束，压力会向三个方向转移",
+      "resolvedFontSize": 37,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 37,
+        "typeface": "Hiragino Sans GB",
+        "color": "#1B211F",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "编码不再是主要约束，压力会向三个方向转移"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "编码不再是主要约束，压力会向三个方向转移",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 37,
+            "typeface": "Hiragino Sans GB",
+            "color": "#1B211F",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "编码不再是主要约束，压力会向三个方向转移",
+              "fontSize": 37,
+              "typeface": "Hiragino Sans GB",
+              "color": "#1B211F",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/b2lgritk",
+      "id": "6",
+      "name": "subtitle",
+      "bbox": [
+        72,
+        128,
+        1100,
+        36
+      ],
+      "geometry": "rect",
+      "text": "等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加。",
+      "textPreview": "等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "Hiragino Sans GB",
+        "color": "#65706C",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加。",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Hiragino Sans GB",
+            "color": "#65706C",
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加。",
+              "fontSize": 18,
+              "typeface": "Hiragino Sans GB",
+              "color": "#65706C",
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

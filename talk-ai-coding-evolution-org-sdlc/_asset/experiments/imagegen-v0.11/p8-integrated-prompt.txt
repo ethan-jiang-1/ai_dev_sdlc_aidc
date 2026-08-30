@@ -1,0 +1,10 @@
+Use case: text-localization
+Asset type: integrated visual body for a 16:9 Chinese technical editorial presentation
+Input image: the supplied P8 engineering sketch is the edit target and composition reference.
+Primary request: Preserve the existing flat graphite capacity-mismatch sketch and integrate three exact Chinese engineering annotations into the drawing so the labels, leader marks and visual branches align naturally without overlap.
+Text (verbatim): "控制容量"; "排队"; "审查不足".
+Placement and meaning: Place "控制容量" beside the narrow coral vertical threshold in the center. Place "排队" inside the quiet area immediately above or within the upper-right stacked-artifact branch. Place "审查不足" beside the lower-right broken coral risk path. Each label must belong to its visual structure, with restrained hand-drawn editorial leader marks only when needed.
+Typography: neat Chinese engineering annotation lettering, upright and highly legible, not cursive, not decorative; graphite for "排队", coral for "控制容量" and "审查不足".
+Invariants: keep the exact subject composition, flat 2D sketch language, upper 24% title safety area, chroma blue #0057FF background, graphite/teal/coral/gold color meanings, and all artifact branches. Change only the integrated annotations and the minimum surrounding spacing needed to prevent overlap.
+Constraints: all three Chinese strings must be rendered verbatim with no extra characters; no PowerPoint-style boxes, cards or badges; no English text; no watermark.
+Avoid: label overlap, leader lines crossing labels, text sitting on top of dense artifact details, 3D form, perspective, miniature scenery, physical gate, UI styling.

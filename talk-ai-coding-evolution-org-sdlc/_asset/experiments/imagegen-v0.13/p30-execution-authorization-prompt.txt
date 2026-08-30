@@ -1,0 +1,10 @@
+Use case: infographic-diagram
+Asset type: integrated visual body for a 16:9 Chinese technical editorial presentation
+Primary request: Create a technical systems-cutaway sketch showing an agent on the left preparing and presenting a release proposal, but the path physically stops at an independent production boundary. On the right, production execution remains disconnected until a human release owner evaluates current context and issues a single-use authorization token at the exact moment of execution; only then does a temporary bridge close. Also show a rejected or expired token falling into an audit trail.
+Text (verbatim): "提出动作"; "执行时授权"; "生产执行".
+Placement and meaning: "提出动作" belongs to the left proposal package. "执行时授权" belongs to the human-controlled token point at the boundary. "生产执行" belongs to the protected right-side environment. Labels, leaders and whitespace must be internally composed and non-overlapping.
+Style/medium: flat graphite and technical-ink systems cutaway, precise but visibly sketched; coral for the production boundary and rejected token, teal for the temporary authorized bridge, gold for the proposal and authorization evidence.
+Typography: clean Chinese sans serif matching Hiragino Sans GB, not handwriting; consistent semibold primary labels, zero letter spacing.
+Composition: strong left-to-right stopped path with a visible gap; upper 24% empty chroma blue #0057FF for PowerPoint title; body blends into the canvas without a frame.
+Constraints: exact three Chinese labels only; no extra text, no watermark; blank background must be chroma blue #0057FF.
+Avoid: a generic padlock icon, three cards, traffic-light UI, 3D gate, toy model, physical paper craft, dramatic lighting, perspective, handwritten labels.

@@ -1,0 +1,10 @@
+Use case: text-localization
+Asset type: integrated visual body for a 16:9 Chinese technical editorial presentation
+Input image: the supplied P20 systems-cutaway engineering sketch is the edit target and composition reference.
+Primary request: Preserve the existing flat graphite systems cutaway and integrate three exact Chinese engineering annotations into the drawing so each label is spatially owned by the structure it explains and no PowerPoint overlay is needed.
+Text (verbatim): "圈住"; "沙箱与权限"; "拦住"; "hooks 与门禁"; "看清"; "观测与来源记录".
+Placement and meaning: Place "圈住" with the smaller line "沙箱与权限" near the upper-left boundary contour, using a short graphite editorial leader that terminates on the outer boundary. Place "拦住" with the smaller line "hooks 与门禁" directly above the coral deterministic gate, using coral annotation marks that clearly terminate on the gate. Place "看清" with the smaller line "观测与来源记录" above the right-side teal append-only fact trail, using a short teal leader that terminates on the measured event trace.
+Typography: neat Chinese engineering annotation lettering, upright and highly legible, not cursive, not decorative; graphite for the boundary annotation, coral for the gate annotation, teal for the fact-trail annotation.
+Invariants: keep the exact flat systems composition, boundary contour, tool path, coral gate, event trace, gold input/output artifacts, upper title safety area, chroma blue #0057FF background, and engineering-sketch medium. Change only the integrated annotations and the minimum surrounding spacing needed to prevent overlap.
+Constraints: all six Chinese strings must be rendered verbatim with no missing or extra characters; no PowerPoint-style boxes, cards or badges; no additional English except the exact lowercase word "hooks"; no watermark.
+Avoid: label overlap, lines crossing text, labels pointing to the wrong structure, machine/product appearance, 3D form, perspective, UI styling.

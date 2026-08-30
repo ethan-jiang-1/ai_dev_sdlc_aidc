@@ -2,5 +2,5 @@
 
 本目录放口语讲稿（`talk-vN.md`）与 PPT 生产事实稿（`ppt-text-vN.md` / `ppt-text-vN-sep.md`）。
 
-> 状态：**视觉样片通过后开始**。v0.7 内容锁已通过；先验证 P1/P8/P20/P42 四种视觉容器，再把 50 页逐页内容压成适配布局族的 audience-facing 生产事实稿。
+> 状态：**v0.11 视觉样片已通过，v0.12 生产事实稿已建立**。当前文件：`ppt-text-v0.12.md`，作为完整 50 页 PPTX 的 audience-facing 文案来源。
 > 文件命名带版本号，与 `-opc` 同规。

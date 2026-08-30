@@ -1,6 +1,6 @@
 # AI-Native 软件研发组织：从产品意图到生产运维的 SDLC 转型之道
 
-本目录是这场 talk 的内容与生产工作区，也是跨对话的项目记忆。故事线与 50 页页面职责已经锁定，P1-P50 已完成第一轮中文审校；当前进入 **v0.9 视觉预演准备**，样片通过后再写生产事实稿。
+本目录是这场 talk 的内容与生产工作区，也是跨对话的项目记忆。故事线与 50 页页面职责已经锁定，P1-P50 已完成第一轮中文审校；**v0.11 四张视觉样片已经通过 REVIEW，v0.12 完整稿的整体视觉 REVIEW 未通过，v0.13 完成结构性返工，v0.14 又按“图源分界”升级了 7 个视觉主体**。当前进入用户 REVIEW：v0.14 已全量渲染、无溢出，但只有用户明确确认后才算视觉门禁通过。
 
 > **总工作规约：先内容，后表现。** v0.7 内容锁已通过，**50 页总页数已定**，作为稳定的生产边界；
 > 表现设计服务既定页面职责。完整生产前先过中文编辑门：所有上屏文字、图中标签与讲稿按中文原生句法重写，不把英文句法逐词翻成中文。若表现阶段暴露命题、证据或转场问题，先回写内容源文件，再继续生产。
@@ -37,9 +37,20 @@ talk-ai-coding-evolution-org-sdlc/
 ├── _asset/                                  # 表现设计与视觉资产
 │   ├── README.md                            #   v0.8 系统蓝图式技术编辑风
 │   ├── 01-visual-storyboard-v0.8.md         #   50 页视觉分镜 + 八个布局族 + 视觉门禁
-│   ├── 02-imagegen-prompts-v0.8.md          #   GPT Image 2 逐页判断、样片 brief 与使用边界
+│   ├── 02-imagegen-prompts-v0.11.md         #   当前 GPT Image 2 内生图文、字体同源与提示词入口
+│   ├── 02-imagegen-prompts-v0.10.md         #   工程素描方向的上一轮记录
+│   ├── 02-imagegen-prompts-v0.9.md          #   3D 实体模型方向的历史记录
+│   ├── 02-imagegen-prompts-v0.8.md          #   历史探索记录
 │   ├── experiments/imagegen-v0.8/           #   服务商实验、提示词与候选资产
-│   └── samples/v0.8/                        #   四张可 REVIEW 样片与 PPTX
+│   ├── experiments/imagegen-v0.9/           #   3D 实体模型方向的历史实验
+│   ├── experiments/imagegen-v0.10/          #   无字工程素描主体实验
+│   ├── experiments/imagegen-v0.11/          #   内生图文、PPT 字体参考与最终透明资产
+│   ├── experiments/imagegen-v0.13/          #   第一轮完整稿的生成主体
+│   ├── experiments/imagegen-v0.14/          #   图源分界升级与 P49 定向可读性修正
+│   ├── samples/v0.8/                        #   第一轮视觉实验（未通过）
+│   ├── samples/v0.9/                        #   已否决的 3D 实体模型样片
+│   ├── samples/v0.10/                       #   PPT 覆盖标签方式的历史样片
+│   └── samples/v0.11/                       #   当前内生图文、字体同源样片与 PPTX
 ├── 01_storyline/                            # ★ 故事线推敲主战场（本 talk 的核心产物）
 │   ├── 00-storyline-map.md                  #   故事线总图（v0.7）：沟通任务 + SDLC 主轴 + 三幕
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（摘要）
@@ -110,7 +121,7 @@ review 若改变了内容，反向同步回上游源文件。
 内容锁定后，每页仍先定「叙事职责 + 主要结论」，再做视觉。进入 PPT 阶段时统一使用
 `presentations:Presentations` skill，按内容选视觉路线，并完成全量渲染、逐页文字 REVIEW、逐页视觉 REVIEW 和来源追溯。
 
-当前为 **v0.9 视觉预演准备**：v0.7 内容锁和第一轮中文审校已经完成；视觉方向采用“统一纸白画布的系统蓝图式技术编辑风”。v0.8 已完成 REVIEW，但暴露出 P1 过度使用生成图、P8 页面主体表达不足、生成资产与画布存在色差。v0.9 已定 P1/P42 使用原生主体，P8/P20 使用混合主体；视觉门禁通过后，再按八个布局族压 50 页生产事实稿并建立 PPTX。
+**v0.11 四张视觉样片已经通过用户 REVIEW**：P1/P42 使用原生主体；P8/P20 的主体内标签、引线和图形由 Image 2 一体构图，中文与英文以实际 PowerPoint 渲染页为字体参考。v0.12 暴露出一条关键失败：不能把“精确关系要可编辑”理解成“绝大多数页面只用基础图元”。失败复盘见 [`_asset/04-v0.12-visual-failure-review.md`](_asset/04-v0.12-visual-failure-review.md)；v0.12 仅作失败基线。当前完整候选稿为 [`05_output/v0.14/AI-Native软件研发组织-SDLC转型-v0.14.pptx`](05_output/v0.14/AI-Native软件研发组织-SDLC转型-v0.14.pptx)，全量总览为同目录 `montage-v0.14.png`。本轮按“图源分界”升级 P5/P25/P32/P41/P44/P45/P49；实验、提示词和筛选记录见 [`_asset/experiments/imagegen-v0.14/README.md`](_asset/experiments/imagegen-v0.14/README.md)。
 
 ## 与 `-opc` 的关系（一句话）
 

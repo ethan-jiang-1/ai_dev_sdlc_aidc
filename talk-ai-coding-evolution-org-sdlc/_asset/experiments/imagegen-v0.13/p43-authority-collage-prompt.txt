@@ -1,0 +1,10 @@
+Use case: infographic-diagram
+Asset type: integrated visual body for a 16:9 Chinese technical editorial presentation
+Primary request: Create an editorial engineering-sketch collage showing scattered wiki pages, chat fragments, oral notes and outdated documents being traced by graphite editorial lines into one authoritative version-controlled file. Beside it, an ADR sidebook preserves the decision rationale and a rejected-options sidebook preserves why other paths were not chosen. Every fact has one owner line; duplicated or stale fragments are crossed out rather than displayed as equal sources.
+Text (verbatim): "权威事实"; "ADR"; "未选方案".
+Placement and meaning: "权威事实" belongs to the central authoritative file. "ADR" belongs to the rationale sidebook. "未选方案" belongs to the rejected-options sidebook. Integrate labels, editorial leaders and whitespace without overlap.
+Style/medium: graphite pencil, technical ink and editorial annotation marks; gold for authoritative artifacts and evidence, teal for the active consolidation path, coral only for stale or rejected fragments.
+Typography: clean modern Chinese sans serif matching Hiragino Sans GB and Helvetica Neue for ADR; no handwriting; semibold primary labels.
+Composition: wide document collage with a clear consolidation flow, not three equal cards; upper 24% empty chroma blue #0057FF title area; no visible frame.
+Constraints: exact three labels only; no extra words; no watermark; blank background must be chroma blue #0057FF.
+Avoid: scrapbook decoration, sticky-note wall, three-card layout, UI dashboard, 3D paper mockup, physical shadows, vintage illustration, calligraphy, labels crossing objects.

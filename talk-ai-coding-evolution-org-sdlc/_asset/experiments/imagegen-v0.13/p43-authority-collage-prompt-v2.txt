@@ -1,0 +1,10 @@
+Use case: infographic-diagram
+Asset type: integrated visual body for a 16:9 Chinese technical editorial presentation
+Primary request: Draw an editorial engineering-sketch collage. On the left, unlabeled wiki sheets, chat bubbles, an audio waveform and outdated documents appear as graphite fragments; their interiors contain only illegible placeholder strokes. Teal editorial tracing lines consolidate them into one large gold version-controlled authoritative file in the center. A smaller gold rationale sidebook and a smaller coral rejected-options sidebook sit to the right, connected to the central file. Stale duplicates are crossed out with coral editorial marks. Use owner-line, version-stamp and search-hit symbols without readable metadata.
+Text (verbatim and exhaustive): "权威事实"; "ADR"; "未选方案".
+Text restriction: these three strings are the only readable characters in the entire image. No source names, owner names, dates, versions, status text, legends, captions or footer sentences. Document interiors must be illegible graphite lines only.
+Placement: "权威事实" on the central authoritative file; "ADR" on the rationale sidebook; "未选方案" on the rejected-options sidebook. Integrate labels and leaders with clean whitespace.
+Style/medium: flat graphite pencil, technical ink and editorial annotation; gold authoritative artifacts, teal consolidation path, coral stale or rejected fragments. Clean Hiragino Sans GB-like Chinese sans serif and Helvetica Neue-like ADR; no handwriting.
+Composition: asymmetric consolidation flow, fragments left, authority center, two sidebooks right; never three equal cards; upper 24% uninterrupted chroma blue #0057FF.
+Constraints: only three exact strings; no watermark; blank background #0057FF.
+Avoid: readable metadata, dates, version numbers, source labels, scrapbook, sticky-note wall, card layout, dashboard, 3D paper mockup, physical shadows, calligraphy, extra text.

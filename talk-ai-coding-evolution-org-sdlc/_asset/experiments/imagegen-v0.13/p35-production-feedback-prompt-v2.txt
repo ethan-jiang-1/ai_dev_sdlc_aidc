@@ -1,0 +1,10 @@
+Use case: infographic-diagram
+Asset type: integrated visual body for a 16:9 Chinese technical editorial presentation
+Primary request: Draw one continuous flat engineering-sketch feedback path. At far right, an abstract production system emits three unlabeled evidence forms: a metric trace, a log sheet with illegible placeholder lines, and an incident marker. They flow left along a teal controlled path into a graphite diagnosis workbench. The workbench produces one gold intent.md document that re-enters an abstract six-stop delivery loop at far left. Above the loop, a human service owner controls a coral decision gate with approve, redirect and stop marks shown only as symbols. Two or three abstract non-humanoid computation nodes may feed the diagnosis bench, but no node has a direct path to production.
+Text (verbatim and exhaustive): "生产事实"; "诊断"; "intent.md"; "人的判断".
+Text restriction: These four strings are the only readable characters anywhere in the image. Do not render stage names, agent names, action words, numbers, dates, UI labels or metadata. All document interiors must use illegible graphite placeholder strokes, never readable text.
+Placement: "生产事实" beside the right-side evidence bundle; "诊断" on the central workbench; "intent.md" on the gold document; "人的判断" above the coral gate. Compose labels and leaders internally without overlap.
+Style/medium: flat graphite pencil and technical ink with construction and erasure marks; teal active feedback path, coral decision gate, gold committed artifact. Clean Hiragino Sans GB-like typography; no handwriting.
+Composition: wide continuous path, production right to diagnosis center to intent and loop left; upper 24% is uninterrupted chroma blue #0057FF title safety area.
+Constraints: only four exact strings; abstract nodes only, no robot faces or mascots; no direct autonomous path into production; no watermark; blank background #0057FF.
+Avoid: circular-arrow infographic, cards, UI dashboard, agent icons, robots, 3D control room, isometric city, extra text, line-label overlap.

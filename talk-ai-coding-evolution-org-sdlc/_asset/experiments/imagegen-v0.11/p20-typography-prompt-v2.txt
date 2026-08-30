@@ -1,0 +1,9 @@
+Use case: text-localization
+Asset type: typography correction for an integrated Chinese engineering sketch
+Input images: Image 1 is the edit target. Image 2 is a PowerPoint-rendered typography reference; use only its clean Chinese sans-serif letterforms, weight, hierarchy and spacing, not its composition or overlay geometry.
+Primary request: Change only the typography of the six existing integrated labels in Image 1. Replace the handwritten or hand-drawn lettering with clean modern Chinese sans-serif typography visually matching the PowerPoint reference and Hiragino Sans GB. Preserve every label's current position, hierarchy, leader line, meaning and surrounding whitespace.
+Text (verbatim): "圈住"; "沙箱与权限"; "拦住"; "hooks 与门禁"; "看清"; "观测与来源记录".
+Typography: Hiragino Sans GB-like Chinese sans serif and Helvetica Neue-like Latin sans serif; primary labels semibold; secondary explanations regular at approximately 60% of the primary size; upright; even stroke weight; zero letter spacing; all labels use one coherent type family. Preserve graphite/coral/teal color roles.
+Invariants: do not move or redraw the boundary, tools, path, gate, event trace, gold artifacts, leader lines, chroma blue #0057FF background or title safety area. Do not add or remove text. Change only label glyph styles and the minimum antialiasing around them.
+Constraints: render all six strings verbatim; the only English word is lowercase "hooks"; no watermark.
+Avoid: handwriting, brush lettering, calligraphy, comic lettering, chalk, marker, outlined display type, decorative type, inconsistent fonts, negative letter spacing.

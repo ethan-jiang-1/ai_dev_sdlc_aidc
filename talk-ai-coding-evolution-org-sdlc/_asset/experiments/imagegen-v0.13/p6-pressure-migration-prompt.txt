@@ -1,0 +1,10 @@
+Use case: infographic-diagram
+Asset type: integrated visual body for a 16:9 Chinese technical editorial presentation
+Primary request: Create a continuous engineering-sketch scene showing a high-speed BUILD piston in the center of a software delivery line. The accelerated center pushes pressure left into a dense planning queue, pushes pressure right into an overloaded review and release queue, and forces governance exception slips through a lower relief outlet. The image must make pressure migration feel physical and immediate without becoming a literal factory illustration.
+Text (verbatim): "等待转移"; "控制失配"; "例外增加".
+Placement and meaning: "等待转移" belongs to the compressed queues at both sides. "控制失配" belongs to the overloaded narrow review mechanism. "例外增加" belongs to the lower relief path where exception slips escape. Compose each label, leader and nearby whitespace internally with no overlap.
+Style/medium: flat graphite pencil and technical-ink engineering sketch with construction lines, erasure traces and restrained cross-hatching; coral only for risk and blocked pressure, teal only for active flow, gold only for committed artifacts and evidence.
+Typography: clean modern Chinese sans serif visually matching Hiragino Sans GB, upright, semibold for primary labels, zero letter spacing; sketch character comes from lines, not lettering.
+Composition: wide 16:9 body occupying the lower 72% of the canvas; preserve the upper 24% as empty chroma blue #0057FF title safety area; no frame and no visible image rectangle.
+Constraints: exact three Chinese labels only; no other text; no watermark; chroma blue #0057FF wherever background would otherwise be blank.
+Avoid: cards, UI panels, three-column infographic, 3D objects, toy or clay appearance, isometric model, physical miniature factory, studio lighting, shadows, handwriting, labels crossing lines.

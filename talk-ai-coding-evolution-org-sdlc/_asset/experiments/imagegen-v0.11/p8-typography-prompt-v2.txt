@@ -1,0 +1,9 @@
+Use case: text-localization
+Asset type: typography correction for an integrated Chinese engineering sketch
+Input images: Image 1 is the edit target. Image 2 is a PowerPoint-rendered typography reference; use only its clean Chinese sans-serif letterforms, weight and spacing, not its composition or overlay geometry.
+Primary request: Change only the typography of the three existing integrated labels in Image 1. Replace the handwritten lettering with clean modern Chinese sans-serif typography visually matching the PowerPoint reference and Hiragino Sans GB. Preserve every label's current position, leader line, meaning and surrounding whitespace.
+Text (verbatim): "控制容量"; "排队"; "审查不足".
+Typography: Hiragino Sans GB-like Chinese sans serif; medium or semibold weight; upright; even stroke weight; zero letter spacing; no handwriting character; all three labels use one coherent type family. Keep "排队" graphite and keep "控制容量" / "审查不足" coral.
+Invariants: do not move or redraw the artifacts, branches, arrows, threshold, leader lines, chroma blue #0057FF background or title safety area. Do not add or remove text. Change only the three label glyph styles and the minimum antialiasing around them.
+Constraints: render all three strings verbatim; no extra punctuation; no English; no watermark.
+Avoid: handwriting, brush lettering, calligraphy, comic lettering, chalk, marker, outlined display type, decorative type, inconsistent fonts, negative letter spacing.

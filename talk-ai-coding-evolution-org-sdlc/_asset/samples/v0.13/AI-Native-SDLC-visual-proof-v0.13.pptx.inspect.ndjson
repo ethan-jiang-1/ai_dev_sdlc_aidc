@@ -1,0 +1,168 @@
+{"kind":"deck","id":"pr/o8y4pw","name":"Deck"}
+{"kind":"layout","layoutId":"2a5dab2a-f2c1-463b-846d-a3025a63b89e","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"2551c466-3a1f-47f3-9106-9ab0b33564b0","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/j2s3ki","slide":1,"title":"诊断 / 压力迁移","textShapes":4}
+{"kind":"shape","id":"sh/nylgnyto","slide":1,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/2xcfedc3","slide":1,"name":"kicker","text":"诊断 / 压力迁移","textPreview":"诊断 / 压力迁移","textChars":9,"textLines":1,"bbox":[122,30,330,26]}
+{"kind":"textbox","id":"sh/x4nytsbq","slide":1,"name":"page","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/c3uhknu5","slide":1,"name":"title","text":"编码不再是主要约束，压力会向三个方向转移","textPreview":"编码不再是主要约束，压力会向三个方向转移","textChars":20,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/b2lgritk","slide":1,"name":"subtitle","text":"等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加。","textPreview":"等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加。","textChars":30,"textLines":1,"bbox":[72,128,1100,36]}
+{"kind":"image","id":"im/9crq50bm","slide":1,"name":"","alt":"BUILD 加速将压力推向需求堆积、审查拥塞和治理例外的工程素描","bbox":[0,142,1240,520]}
+{"kind":"notes","id":"nt/j2s3ki","slide":1,"text":"[Sources]\n- P6: GPT Image 2 generated integrated visual body: p6-pressure-migration-alpha.png.\n- Visual proof for v0.13; content basis: 03_outline/ and 02_evidence/02-claim-ledger.md."}
+{"kind":"slide","id":"sl/v7nccp","slide":2,"title":"规划 / 四问收口","textShapes":28}
+{"kind":"shape","id":"sh/3ulgrmlg","slide":2,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/4vuhk721","slide":2,"name":"kicker","text":"规划 / 四问收口","textPreview":"规划 / 四问收口","textChars":9,"textLines":1,"bbox":[122,30,330,26]}
+{"kind":"textbox","id":"sh/pw3ytc3m","slide":2,"name":"page","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/u5szexkz","slide":2,"name":"title","text":"意图既要能被批准，也要能被度量","textPreview":"意图既要能被批准，也要能被度量","textChars":15,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/fq1gn2lk","slide":2,"name":"subtitle","text":"退回不是失败：它必须带着理由回到开放问题；放行才进入设计。 ","textPreview":"退回不是失败：它必须带着理由回到开放问题；放行才进入设计。","textChars":30,"textLines":1,"bbox":[72,128,1100,36]}
+{"kind":"shape","id":"sh/grahg725","slide":2,"name":"intent-path","bbox":[365,370,210,0]}
+{"kind":"shape","id":"sh/hsjypc3q","slide":2,"name":"accept-path","bbox":[665,285,255,45]}
+{"kind":"shape","id":"sh/618zaxk3","slide":2,"name":"reject-path-a","bbox":[665,410,145,90]}
+{"kind":"shape","id":"sh/72hgj2lo","slide":2,"name":"reject-path-b","bbox":[330,500,480,45]}
+{"kind":"shape","id":"sh/7i5sjytk","slide":2,"name":"feedback-path","bbox":[1050,455,0,80]}
+{"kind":"shape","id":"sh/6hwratcz","slide":2,"name":"feedback-return","bbox":[430,535,620,40]}
+{"kind":"shape","id":"sh/tkna5oba","slide":2,"name":"intent-doc","bbox":[90,218,300,330]}
+{"kind":"textbox","id":"sh/8je9c3u5","slide":2,"name":"intent-name","text":"intent.md","textPreview":"intent.md","textChars":9,"textLines":1,"bbox":[120,240,170,36]}
+{"kind":"textbox","id":"sh/vm5s7ytg","slide":2,"name":"intent-version","text":"v0.4 · owner: Product","textPreview":"v0.4 · owner: Product","textChars":21,"textLines":1,"bbox":[120,280,220,24]}
+{"kind":"textbox","id":"sh/ulwretcv","slide":2,"name":"intent-line-0","text":"问题：用户无法完成批量审批","textPreview":"问题：用户无法完成批量审批","textChars":13,"textLines":1,"bbox":[120,322,235,38]}
+{"kind":"shape","id":"sh/hona98bm","slide":2,"name":"intent-rule-0","bbox":[120,365,235,0]}
+{"kind":"textbox","id":"sh/gnetg3u1","slide":2,"name":"intent-line-1","text":"结果：一次操作完成全部审核","textPreview":"结果：一次操作完成全部审核","textChars":13,"textLines":1,"bbox":[120,377,235,38]}
+{"kind":"shape","id":"sh/bqlsbetc","slide":2,"name":"intent-rule-1","bbox":[120,420,235,0]}
+{"kind":"textbox","id":"sh/apsr29cr","slide":2,"name":"intent-line-2","text":"约束：权限与审计记录必须保留","textPreview":"约束：权限与审计记录必须保留","textChars":14,"textLines":1,"bbox":[120,432,235,38]}
+{"kind":"shape","id":"sh/e50vahwf","slide":2,"name":"intent-rule-2","bbox":[120,475,235,0]}
+{"kind":"textbox","id":"sh/f69cjmd0","slide":2,"name":"open-label","text":"开放问题 02","textPreview":"开放问题 02","textChars":7,"textLines":1,"bbox":[120,482,130,24]}
+{"kind":"textbox","id":"sh/07idc7e5","slide":2,"name":"open-copy","text":"例外审批由谁承担？","textPreview":"例外审批由谁承担？","textChars":9,"textLines":1,"bbox":[120,510,215,24]}
+{"kind":"shape","id":"sh/18bulcvq","slide":2,"name":"accept-gate-line","bbox":[620,260,0,220]}
+{"kind":"shape","id":"sh/qh0v6xw3","slide":2,"name":"accept-gate-top","bbox":[613,258,14,5]}
+{"kind":"shape","id":"sh/ri9cf2do","slide":2,"name":"accept-gate-bottom","bbox":[613,477,14,5]}
+{"kind":"textbox","id":"sh/sjid87e9","slide":2,"name":"accept-gate-label","text":"产品验收门","textPreview":"产品验收门","textChars":5,"textLines":1,"bbox":[542,229,156,22]}
+{"kind":"shape","id":"sh/dkruhcvu","slide":2,"name":"owner-sign-sig","bbox":[545,225,150,0]}
+{"kind":"textbox","id":"sh/idgv2xw7","slide":2,"name":"owner-sign-mark","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[599,190,40,35]}
+{"kind":"textbox","id":"sh/3epcb2ds","slide":2,"name":"owner-sign-label","text":"产品责任人","textPreview":"产品责任人","textChars":5,"textLines":1,"bbox":[545,233,150,24]}
+{"kind":"textbox","id":"sh/l8fyh0fa","slide":2,"name":"accept-label","text":"接受","textPreview":"接受","textChars":2,"textLines":1,"bbox":[700,274,100,30]}
+{"kind":"textbox","id":"sh/k76x8vyp","slide":2,"name":"reject-label","text":"退回","textPreview":"退回","textChars":2,"textLines":1,"bbox":[700,438,100,30]}
+{"kind":"textbox","id":"sh/z6dgfqx4","slide":2,"name":"reject-reason","text":"理由：例外责任尚未明确","textPreview":"理由：例外责任尚未明确","textChars":11,"textLines":1,"bbox":[785,478,260,30]}
+{"kind":"shape","id":"sh/y54f6lgj","slide":2,"name":"design-input","bbox":[900,230,240,112]}
+{"kind":"shape","id":"sh/x4vydgfy","slide":2,"name":"design-input-fold","bbox":[1122,230,18,18]}
+{"kind":"textbox","id":"sh/c3mx4byd","slide":2,"name":"design-input-text","text":"进入设计的 intent","textPreview":"进入设计的 intent","textChars":12,"textLines":1,"bbox":[912,238,212,96]}
+{"kind":"textbox","id":"sh/b2dgb6x8","slide":2,"name":"metric-title","text":"门禁后的事实","textPreview":"门禁后的事实","textChars":6,"textLines":1,"bbox":[920,385,200,28]}
+{"kind":"textbox","id":"sh/a14f2lgn","slide":2,"name":"metric-1","text":"一次通过率  68%","textPreview":"一次通过率  68%","textChars":10,"textLines":1,"bbox":[915,425,210,26]}
+{"kind":"textbox","id":"sh/p0vy9gf2","slide":2,"name":"metric-2","text":"退回后补充  32%","textPreview":"退回后补充  32%","textChars":10,"textLines":1,"bbox":[915,458,210,26]}
+{"kind":"textbox","id":"sh/oz2x0byh","slide":2,"name":"return-note","text":"理由回到开放问题，下一版 intent 仍保留原始意图","textPreview":"理由回到开放问题，下一版 intent 仍保留原始意图","textChars":27,"textLines":1,"bbox":[260,585,640,28]}
+{"kind":"shape","id":"sh/o3epgfyd","slide":2,"name":"rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/p4n69kfy","slide":2,"name":"dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/2hcne5gn","slide":2,"name":"stage-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[74,646,82,18]}
+{"kind":"shape","id":"sh/32lo7axs","slide":2,"name":"dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/c7epkfep","slide":2,"name":"stage-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[262.67,646,82,18]}
+{"kind":"shape","id":"sh/d8n6dkfa","slide":2,"name":"dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/q5w7ipwj","slide":2,"name":"stage-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[451.33,646,82,18]}
+{"kind":"shape","id":"sh/b65obux4","slide":2,"name":"dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/sbu58vy5","slide":2,"name":"stage-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[640,646,82,18]}
+{"kind":"shape","id":"sh/tc3610fq","slide":2,"name":"dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/v69s7yh8","slide":2,"name":"stage-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[828.67,646,82,18]}
+{"kind":"shape","id":"sh/u50retg3","slide":2,"name":"dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/hsra98ze","slide":2,"name":"stage-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1017.33,646,82,18]}
+{"kind":"notes","id":"nt/v7nccp","slide":2,"text":"[Sources]\n- P16: Native editable action scene: intent acceptance/rejection, owner signature and feedback metrics.\n- Visual proof for v0.13; content basis: 03_outline/ and 02_evidence/02-claim-ledger.md."}
+{"kind":"slide","id":"sl/3nn59y","slide":3,"title":"测试 / SENSORS + LOOP","textShapes":24}
+{"kind":"shape","id":"sh/4zu54j2h","slide":3,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/3yl4ve1w","slide":3,"name":"kicker","text":"测试 / SENSORS + LOOP","textPreview":"测试 / SENSORS + LOOP","textChars":19,"textLines":1,"bbox":[122,30,330,26]}
+{"kind":"textbox","id":"sh/2xc32tkb","slide":3,"name":"page","text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/hw3mtoj6","slide":3,"name":"title","text":"测试要同时验证产品改动，也要验证 harness 配置","textPreview":"测试要同时验证产品改动，也要验证 harness 配置","textChars":27,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/gvul0j2l","slide":3,"name":"subtitle","text":"两类证据在同一道合并门前汇合；缺一份，都不能算完成。 ","textPreview":"两类证据在同一道合并门前汇合；缺一份，都不能算完成。","textChars":27,"textLines":1,"bbox":[72,128,1100,36]}
+{"kind":"shape","id":"sh/ful4re10","slide":3,"name":"product-path-1","bbox":[190,295,185,0]}
+{"kind":"shape","id":"sh/uts3y9kf","slide":3,"name":"product-path-2","bbox":[545,295,175,0]}
+{"kind":"shape","id":"sh/1snm58ja","slide":3,"name":"config-path-1","bbox":[190,480,185,0]}
+{"kind":"shape","id":"sh/0re5c3ip","slide":3,"name":"config-path-2","bbox":[545,480,175,0]}
+{"kind":"shape","id":"sh/yhsz6x0n","slide":3,"name":"product-to-gate","bbox":[870,295,130,75]}
+{"kind":"shape","id":"sh/ji10z2h8","slide":3,"name":"config-to-gate","bbox":[870,405,130,75]}
+{"kind":"shape","id":"sh/kjah87it","slide":3,"name":"sensor-return-top","bbox":[300,215,420,25]}
+{"kind":"shape","id":"sh/lkji1cze","slide":3,"name":"sensor-return-bottom","bbox":[300,535,420,30]}
+{"kind":"textbox","id":"sh/atsz2x0r","slide":3,"name":"guides","text":"GUIDES","textPreview":"GUIDES","textChars":6,"textLines":1,"bbox":[80,215,150,28]}
+{"kind":"textbox","id":"sh/be10vi1c","slide":3,"name":"guide-top","text":"完成定义\n风险路径","textPreview":"完成定义 | 风险路径","textChars":9,"textLines":2,"bbox":[80,250,125,70]}
+{"kind":"textbox","id":"sh/wfah4nix","slide":3,"name":"guide-bottom","text":"配置不变量\n事故样本","textPreview":"配置不变量 | 事故样本","textChars":10,"textLines":2,"bbox":[80,435,125,70]}
+{"kind":"shape","id":"sh/xgjixsz2","slide":3,"name":"change","bbox":[240,250,150,90]}
+{"kind":"textbox","id":"sh/upcjeh0v","slide":3,"name":"change-t","text":"产品改动","textPreview":"产品改动","textChars":4,"textLines":1,"bbox":[260,278,110,34]}
+{"kind":"shape","id":"sh/val07mhg","slide":3,"name":"test","bbox":[400,250,150,90]}
+{"kind":"textbox","id":"sh/ruxwzehs","slide":3,"name":"test-t","text":"产品测试","textPreview":"产品测试","textChars":4,"textLines":1,"bbox":[420,278,110,34]}
+{"kind":"shape","id":"sh/qt4f69g7","slide":3,"name":"product-evidence","bbox":[720,248,155,96]}
+{"kind":"shape","id":"sh/dwfe1ozy","slide":3,"name":"product-evidence-fold","bbox":[857,248,18,18]}
+{"kind":"textbox","id":"sh/sv6x8jyd","slide":3,"name":"product-evidence-text","text":"产品证据","textPreview":"产品证据","textChars":4,"textLines":1,"bbox":[732,256,127,80]}
+{"kind":"shape","id":"sh/zyxw3yx4","slide":3,"name":"config","bbox":[240,435,150,90]}
+{"kind":"textbox","id":"sh/exofatgj","slide":3,"name":"config-t","text":"harness 配置","textPreview":"harness 配置","textChars":10,"textLines":1,"bbox":[252,463,126,34]}
+{"kind":"shape","id":"sh/1kfy5ofu","slide":3,"name":"eval","bbox":[400,435,150,90]}
+{"kind":"textbox","id":"sh/0z6xcjyp","slide":3,"name":"eval-t","text":"EVAL","textPreview":"EVAL","textChars":4,"textLines":1,"bbox":[420,463,110,34]}
+{"kind":"shape","id":"sh/nmhg7yx0","slide":3,"name":"config-evidence","bbox":[720,433,155,96]}
+{"kind":"shape","id":"sh/ml8fetgf","slide":3,"name":"config-evidence-fold","bbox":[857,433,18,18]}
+{"kind":"textbox","id":"sh/krqdo3et","slide":3,"name":"config-evidence-text","text":"配置证据","textPreview":"配置证据","textChars":4,"textLines":1,"bbox":[732,441,127,80]}
+{"kind":"shape","id":"sh/lszex8ve","slide":3,"name":"merge-gate-line","bbox":[1025,270,0,250]}
+{"kind":"shape","id":"sh/yp8vmtwn","slide":3,"name":"merge-gate-top","bbox":[1018,268,14,5]}
+{"kind":"shape","id":"sh/jqhwvyd8","slide":3,"name":"merge-gate-bottom","bbox":[1018,517,14,5]}
+{"kind":"textbox","id":"sh/wnqdk3eh","slide":3,"name":"merge-gate-label","text":"MERGE THRESHOLD","textPreview":"MERGE THRESHOLD","textChars":15,"textLines":1,"bbox":[947,239,156,22]}
+{"kind":"textbox","id":"sh/xozetov2","slide":3,"name":"pass","text":"两份证据齐全","textPreview":"两份证据齐全","textChars":6,"textLines":1,"bbox":[1060,340,155,30]}
+{"kind":"textbox","id":"sh/a18vitwr","slide":3,"name":"block","text":"任一缺失：阻止合并","textPreview":"任一缺失：阻止合并","textChars":9,"textLines":1,"bbox":[1050,410,175,45]}
+{"kind":"textbox","id":"sh/bmhwrydw","slide":3,"name":"sensor-top","text":"SENSORS · 测试事实回流","textPreview":"SENSORS · 测试事实回流","textChars":16,"textLines":1,"bbox":[390,190,330,28]}
+{"kind":"textbox","id":"sh/oz6dgjel","slide":3,"name":"sensor-bottom","text":"SENSORS · eval 结果回流","textPreview":"SENSORS · eval 结果回流","textChars":19,"textLines":1,"bbox":[390,555,330,28]}
+{"kind":"shape","id":"sh/90fepov6","slide":3,"name":"rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/d4vaxkby","slide":3,"name":"dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/s3mtofud","slide":3,"name":"stage-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[74,646,82,18]}
+{"kind":"shape","id":"sh/r2dsvats","slide":3,"name":"dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/q1kbm5c7","slide":3,"name":"stage-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[262.67,646,82,18]}
+{"kind":"shape","id":"sh/1svu14bu","slide":3,"name":"dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/07mtszu9","slide":3,"name":"stage-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[451.33,646,82,18]}
+{"kind":"shape","id":"sh/f6dczuto","slide":3,"name":"dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/e54bqpcj","slide":3,"name":"stage-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[640,646,82,18]}
+{"kind":"shape","id":"sh/hwbap0bq","slide":3,"name":"dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/gb2tgvu5","slide":3,"name":"stage-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[828.67,646,82,18]}
+{"kind":"shape","id":"sh/m5gzaxor","slide":3,"name":"dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/76p0325c","slide":3,"name":"stage-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1017.33,646,82,18]}
+{"kind":"notes","id":"nt/3nn59y","slide":3,"text":"[Sources]\n- P26: Native editable dual-evidence loop: product tests and harness evals converge at one merge gate.\n- Visual proof for v0.13; content basis: 03_outline/ and 02_evidence/02-claim-ledger.md."}
+{"kind":"slide","id":"sl/thq6a9","slide":4,"title":"发布 / 执行时授权","textShapes":10}
+{"kind":"shape","id":"sh/eh4z6h0v","slide":4,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/fid0fmhg","slide":4,"name":"kicker","text":"发布 / 执行时授权","textPreview":"发布 / 执行时授权","textChars":10,"textLines":1,"bbox":[122,30,330,26]}
+{"kind":"textbox","id":"sh/on6hcrix","slide":4,"name":"page","text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/pofilwzi","slide":4,"name":"title","text":"agent 可以提出动作，生产执行必须另行授权","textPreview":"agent 可以提出动作，生产执行必须另行授权","textChars":23,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/2l4zah07","slide":4,"name":"subtitle","text":"生产侧保持断开；只有责任人在执行当下签发授权，桥才短暂闭合。","textPreview":"生产侧保持断开；只有责任人在执行当下签发授权，桥才短暂闭合。","textChars":30,"textLines":1,"bbox":[72,128,1100,36]}
+{"kind":"shape","id":"sh/3mx0jmhc","slide":4,"name":"rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/4r2h07it","slide":4,"name":"dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/5sbi9sze","slide":4,"name":"stage-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[74,646,82,18]}
+{"kind":"shape","id":"sh/9k3alorq","slide":4,"name":"dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/ojutsjql","slide":4,"name":"stage-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[262.67,646,82,18]}
+{"kind":"shape","id":"sh/nilsje90","slide":4,"name":"dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/mhcbq98f","slide":4,"name":"stage-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[451.33,646,82,18]}
+{"kind":"shape","id":"sh/x8napor2","slide":4,"name":"dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/wnutwjqh","slide":4,"name":"stage-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[640,646,82,18]}
+{"kind":"shape","id":"sh/bmlsny9w","slide":4,"name":"dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/alcbut8b","slide":4,"name":"stage-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[828.67,646,82,18]}
+{"kind":"shape","id":"sh/lcnat8ry","slide":4,"name":"dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/kbet03qd","slide":4,"name":"stage-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1017.33,646,82,18]}
+{"kind":"image","id":"im/832h4be9","slide":4,"name":"","alt":"发布方案在生产边界前停住，执行时授权令牌临时闭合通路的系统剖面","bbox":[0,142,1240,520]}
+{"kind":"notes","id":"nt/thq6a9","slide":4,"text":"[Sources]\n- P30: GPT Image 2 generated integrated visual body: p30-execution-authorization-alpha.png.\n- Visual proof for v0.13; content basis: 03_outline/ and 02_evidence/02-claim-ledger.md."}
+{"kind":"slide","id":"sl/ejygjo","slide":5,"title":"运维 / LOOP + GRAPH","textShapes":10}
+{"kind":"shape","id":"sh/lsfexc7e","slide":5,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/0r6x476t","slide":5,"name":"kicker","text":"运维 / LOOP + GRAPH","textPreview":"运维 / LOOP + GRAPH","textChars":17,"textLines":1,"bbox":[122,30,330,26]}
+{"kind":"textbox","id":"sh/nuxwzm5k","slide":5,"name":"page","text":"35","textPreview":"35","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/mtof6hoz","slide":5,"name":"title","text":"生产事实要沿同一条受控路径回流","textPreview":"生产事实要沿同一条受控路径回流","textChars":15,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/9wze1cnq","slide":5,"name":"subtitle","text":"事实先进入诊断，再形成新的 intent；人的判断始终位于闭环之上。","textPreview":"事实先进入诊断，再形成新的 intent；人的判断始终位于闭环之上。","textChars":34,"textLines":1,"bbox":[72,128,1100,36]}
+{"kind":"shape","id":"sh/8v6x8r65","slide":5,"name":"rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/vyhw3m5g","slide":5,"name":"dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/ax8fahov","slide":5,"name":"stage-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[74,646,82,18]}
+{"kind":"shape","id":"sh/o3ud03yl","slide":5,"name":"dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/p43utof6","slide":5,"name":"stage-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[262.67,646,82,18]}
+{"kind":"shape","id":"sh/21cvytgf","slide":5,"name":"dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/n2lcryx0","slide":5,"name":"stage-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[451.33,646,82,18]}
+{"kind":"shape","id":"sh/crud43yx","slide":5,"name":"dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/xsnux8f2","slide":5,"name":"stage-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[640,646,82,18]}
+{"kind":"shape","id":"sh/a5cv2tgr","slide":5,"name":"dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/b6lcvyxc","slide":5,"name":"stage-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[828.67,646,82,18]}
+{"kind":"shape","id":"sh/kved8nyt","slide":5,"name":"dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/lwne18fe","slide":5,"name":"stage-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1017.33,646,82,18]}
+{"kind":"image","id":"im/7q1kvy94","slide":5,"name":"","alt":"生产事实经过诊断形成 intent 并回到交付闭环，人的判断位于闭环上方","bbox":[0,142,1240,520]}
+{"kind":"notes","id":"nt/ejygjo","slide":5,"text":"[Sources]\n- P35: GPT Image 2 generated integrated visual body: p35-production-feedback-alpha.png.\n- Visual proof for v0.13; content basis: 03_outline/ and 02_evidence/02-claim-ledger.md."}
+{"kind":"slide","id":"sl/0dkeqk","slide":6,"title":"共享控制面 / 知识外置","textShapes":4}
+{"kind":"shape","id":"sh/xsje5kba","slide":6,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/wradwfap","slide":6,"name":"kicker","text":"共享控制面 / 知识外置","textPreview":"共享控制面 / 知识外置","textChars":12,"textLines":1,"bbox":[122,30,330,26]}
+{"kind":"textbox","id":"sh/jelw7ut0","slide":6,"name":"page","text":"43","textPreview":"43","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/idsvypsv","slide":6,"name":"title","text":"一个事实只认一个权威来源","textPreview":"一个事实只认一个权威来源","textChars":12,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/5g3e94b6","slide":6,"name":"subtitle","text":"事实归入权威文件，理由进入 ADR，未选方案也留下可检索记录。","textPreview":"事实归入权威文件，理由进入 ADR，未选方案也留下可检索记录。","textChars":31,"textLines":1,"bbox":[72,128,1100,36]}
+{"kind":"image","id":"im/3ydsze5w","slide":6,"name":"","alt":"零散知识被收拢到权威事实文件、ADR 和未选方案记录的工程素描拼贴","bbox":[0,142,1240,520]}
+{"kind":"notes","id":"nt/0dkeqk","slide":6,"text":"[Sources]\n- P43: GPT Image 2 generated integrated visual body: p43-authority-collage-alpha.png.\n- Visual proof for v0.13; content basis: 03_outline/ and 02_evidence/02-claim-ledger.md."}

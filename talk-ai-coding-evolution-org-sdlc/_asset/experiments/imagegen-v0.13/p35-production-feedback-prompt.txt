@@ -1,0 +1,10 @@
+Use case: infographic-diagram
+Asset type: integrated visual body for a 16:9 Chinese technical editorial presentation
+Primary request: Create a continuous engineering-sketch narrative showing production on the right emitting metrics, logs and an incident trace. These facts travel along a controlled teal path into a diagnosis bench, then are folded into a new intent.md artifact that re-enters the same six-stage delivery loop on the left. A human service owner sits above the loop at a decision gate, able to approve, redirect or stop the next action. Multiple agent nodes may assist diagnosis but no node has a direct path back into production.
+Text (verbatim): "生产事实"; "诊断"; "intent.md"; "人的判断".
+Placement and meaning: each label must be spatially attached to its object; "人的判断" must sit above the loop at the decision gate, not inside an agent node. Integrate all labels and leaders into the drawing with clean whitespace.
+Style/medium: graphite pencil and technical ink, continuous narrative sketch with restrained construction marks; teal active feedback path, coral decision gate and risk stop, gold committed intent artifact.
+Typography: Hiragino Sans GB-like clean Chinese sans serif, with exact lowercase monospace-like "intent.md"; no handwriting.
+Composition: wide loop with production right, diagnosis center, intent artifact left, human decision above; upper 24% empty chroma blue #0057FF title safety area.
+Constraints: render all four strings verbatim; no other text; no direct autonomous agent-to-production arrow; no watermark; blank background is chroma blue #0057FF.
+Avoid: circular arrow infographic, four cards, 3D control room, toy robots, isometric city, studio lighting, handwritten annotations, line-label overlap.
