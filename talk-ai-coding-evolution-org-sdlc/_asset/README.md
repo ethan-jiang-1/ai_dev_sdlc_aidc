@@ -8,6 +8,7 @@
 
 - [`../CURRENT.md`](../CURRENT.md)：当前版本、实际页面实现、QA 和下一步的唯一入口。
 - [`../CONTEXT.md`](../CONTEXT.md)：当前 Visual Master Language、图源分界、文字归属与精确关系的术语权威。
+- [`06-v0.14-review-ledger.md`](./06-v0.14-review-ledger.md)：当前 50 页逐页文字、叙事与视觉 REVIEW 结果，以及下一候选版的最小修改范围。
 - [`experiments/imagegen-v0.13/`](./experiments/imagegen-v0.13/README.md) 与 [`experiments/imagegen-v0.14/`](./experiments/imagegen-v0.14/README.md)：当前成片所用生成资产、提示词和筛选记录。
 - [`01-visual-storyboard-v0.8.md`](./01-visual-storyboard-v0.8.md)：50 页早期视觉职责、八个布局族与视觉 token，保留为历史设计依据。
 - [`02-imagegen-prompts-v0.11.md`](./02-imagegen-prompts-v0.11.md)：v0.11 内生图文和字体同源样片 brief，保留为历史依据。
