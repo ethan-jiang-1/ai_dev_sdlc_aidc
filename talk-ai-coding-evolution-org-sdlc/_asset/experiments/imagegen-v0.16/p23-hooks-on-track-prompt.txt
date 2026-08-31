@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P23 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new conveyor scene in the style of Image 1. Three hook gate frames are physically built onto one execution track, so every action must pass through them. Keep two gate frames graphite and show only the currently triggered gate in coral. At that gate, one invalid action is deflected sideways and produces a compact coral rejection record with a reason and timestamp. A corrected action follows a short teal return path and rejoins the main track after the gate. The mechanism must visibly intercept on the track, never cross it as loose vertical lines.
+Composition/framing: one shallow left-to-right conveyor; upper 25% uninterrupted chroma blue #0057FF. Sparse, mechanical and readable.
+Style/medium: match Image 1's flat graphite engineering sketch and technical ink.
+Color palette: teal only for main and corrected paths; coral only for the active gate and rejection record; gold only for the committed action artifact.
+Text (verbatim and exhaustive): "执行前", "提交前", "执行后", "拒绝记录". These four strings are the only readable characters.
+Avoid: three red lines crossing the track, six pink cards, floating labels, dashboard, 3D, extra text, watermark.

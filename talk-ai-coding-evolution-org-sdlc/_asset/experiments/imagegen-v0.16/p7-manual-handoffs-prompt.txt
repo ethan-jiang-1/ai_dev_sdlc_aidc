@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P7 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new scene in the style of Image 1. Draw one flat horizontal handoff strip with six modest doorways. Only two or three anonymous partial people appear across the entire strip: hands passing a stack of work at the first handoff, one side-profile worker at the middle, and one back-view approver near the end. Show most waiting through graphite silhouettes, ticket stacks and paused artifacts rather than repeated realistic workers. One gold bundle moves from station to station. Use a single coral waiting marker at the slowest handoff and one small coral ticket spill, no other red.
+Composition/framing: no depth corridor, no floor, no reflections; one shallow elevation drawing with a single left-to-right direction. Upper 25% uninterrupted chroma blue #0057FF. Keep the scene sparse and horizontally continuous.
+Style/medium: match Image 1's engineering sketch, graphite line and technical ink; anonymous, faceless people only.
+Color palette: graphite structure; teal limited to a thin process continuation; coral limited to the waiting marker and ticket spill; gold only for the moving work bundle.
+Text (verbatim and exhaustive): "规划", "设计", "构建", "测试", "发布", "运维". These six strings are the only readable characters, set in clean Hiragino Sans GB-like sans serif.
+Avoid: one-point perspective, hallway, watercolor floor wash, crowds, repeated identical workers, realistic portraits, red ropes, red machines, 3D, isometric view, extra text, watermark.

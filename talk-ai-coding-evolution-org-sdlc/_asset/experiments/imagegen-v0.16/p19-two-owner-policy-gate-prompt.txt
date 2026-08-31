@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P19 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new scene in the style of Image 1. A gold spec.md artifact approaches one physical policy gate built across the path. Before the gate are two distinct human judgment positions: a product owner handles trade-offs and a policy owner handles exceptions. Show both only as restrained partial figures from the back or side. When both positions agree, a gold signed seal releases the artifact onto a teal path toward build. One coral refusal strip returns by a dashed graphite route to spec.md.
+Composition/framing: one shallow continuous decision scene, left-to-right primary direction; upper 25% uninterrupted chroma blue #0057FF. The two judgment positions must be clearly separate but belong to the same gate.
+Style/medium: match Image 1's flat graphite pencil and technical ink.
+Color palette: teal only for released path; coral only for the gate and refusal strip; gold only for spec.md and signatures.
+Text (verbatim and exhaustive): "spec.md", "产品责任人", "政策责任人", "可进入构建". These four strings are the only readable characters.
+Avoid: two floating owner boxes, disconnected red bars, double background panels, front-facing people, dashboard, 3D, extra text, watermark.

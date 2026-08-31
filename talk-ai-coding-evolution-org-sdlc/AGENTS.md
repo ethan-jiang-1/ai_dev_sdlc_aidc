@@ -126,8 +126,8 @@ AI-Native 软件 SDLC 的规模化 AI Coding 深度 talk。**你是这套 harnes
 - 叙事思路笔记（上下文记忆）：`01_storyline/07-narrative-thinking.md`
 - 现场版页面结构（50 页 · 75–90 min 骨架）：`03_outline/00-page-structure.md`
 - 素材与口径：`02_evidence/00-absorption-plan.md`；P1–P50 脉络：`02_evidence/01-info-flow-map.md`；核心主张账本：`02_evidence/02-claim-ledger.md`
-- 当前状态与页面实现账本：`CURRENT.md`；当前页面文案：`04_drafts/ppt-text-v0.14.md`。`04_drafts/ppt-text-v0.12.md`、`_asset/03-page-subject-ledger-v0.12.md` 和 `_asset/05-page-visual-thesis-ledger-v0.13.md` 是形成当前稿的历史依据，不再单独充当当前入口。
+- 当前状态与页面实现账本：`CURRENT.md`；当前页面文案：`04_drafts/ppt-text-v0.16.md`；当前变更与 REVIEW 账本：`_asset/09-v0.16-change-review-ledger.md`。`04_drafts/ppt-text-v0.12.md`、`_asset/03-page-subject-ledger-v0.12.md`、`_asset/05-page-visual-thesis-ledger-v0.13.md`、`_asset/06-v0.14-review-ledger.md`、`_asset/07-v0.15-change-review-ledger.md` 和 `_asset/08-v0.16-review-feedback-ledger.md` 是形成当前稿的历史依据，不再单独充当当前入口。
 - 当前交付、历史版本角色和唯一 REVIEW 对象：`CURRENT.md`。
 - 已决与待办：`01_storyline/04-open-questions.md`
-- 当前视觉规则：`CONTEXT.md` + `_asset/README.md`；当前生成资产与提示词：`_asset/experiments/imagegen-v0.13/`、`_asset/experiments/imagegen-v0.14/`。`01-visual-storyboard-v0.8.md` 与 `02-imagegen-prompts-v0.8–v0.11.md` 只记录视觉语言的演化过程。
+- 当前视觉规则：`CONTEXT.md` + `_asset/README.md`；当前生成资产与提示词：`_asset/experiments/imagegen-v0.13/`、`_asset/experiments/imagegen-v0.14/`、`_asset/experiments/imagegen-v0.16/`。`01-visual-storyboard-v0.8.md` 与 `02-imagegen-prompts-v0.8–v0.11.md` 只记录视觉语言的演化过程。
 - 当前阶段、页面实现清单、已验证问题和下一步：`CURRENT.md`。内容主轴、50 页职责、纸白画布和 Visual Master Language 未经用户明确变更不得漂移。

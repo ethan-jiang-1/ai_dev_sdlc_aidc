@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: corrected P18 visual body
+Primary request: Remove only the small readable label "v1" inside the gold version seal beside spec.md. Preserve the gold seal as an unlabeled version mark.
+Constraints: keep the entire composition, intent.md sheet, skills v3 reference, three constraint overlays, revised drawing, spec.md sheet, all six approved labels, line work, colors, crop and typography unchanged. Preserve "intent.md", "skills v3", "安全", "品牌", "合规" and "spec.md" exactly. Do not add any new text.
+Avoid: changing any object, arrow, registration mark, overlay, page geometry, line weight, title safety band or framing.

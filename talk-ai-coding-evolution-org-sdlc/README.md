@@ -1,6 +1,6 @@
 # AI-Native 软件研发组织：从产品意图到生产运维的 SDLC 转型之道
 
-本目录是这场 talk 的内容与生产工作区，也是跨对话的项目记忆。故事线与 50 页页面职责已经锁定，P1-P50 已完成第一轮中文审校；**v0.11 四张视觉样片已经通过 REVIEW，v0.12 完整稿的整体视觉 REVIEW 未通过，v0.13 完成结构性返工，v0.14 又按“图源分界”升级了 7 个视觉主体**。当前进入用户 REVIEW：v0.14 已全量渲染、无溢出，但只有用户明确确认后才算视觉门禁通过。
+本目录是这场 talk 的内容与生产工作区，也是跨对话的项目记忆。故事线与 50 页页面职责已经锁定，P1-P50 已完成中文审校；**v0.11 四张视觉样片已经通过 REVIEW，v0.12 完整稿的整体视觉 REVIEW 未通过，v0.13 完成结构性返工，v0.14 按“图源分界”升级了 7 个视觉主体，v0.15 关闭上一轮 6 个修改项，v0.16 又完成 13 张生成主体修订和 8 张原生精修**。当前进入用户 REVIEW：v0.16 已完成全量渲染、模板保真、占位符和溢出检查，但只有用户明确确认后才算最终视觉门禁通过。
 
 > **总工作规约：先内容，后表现。** v0.7 内容锁已通过，**50 页总页数已定**，作为稳定的生产边界；
 > 表现设计服务既定页面职责。完整生产前先过中文编辑门：所有上屏文字、图中标签与讲稿按中文原生句法重写，不把英文句法逐词翻成中文。若表现阶段暴露命题、证据或转场问题，先回写内容源文件，再继续生产。
@@ -42,12 +42,17 @@ talk-ai-coding-evolution-org-sdlc/
 │   ├── 02-imagegen-prompts-v0.10.md         #   工程素描方向的上一轮记录
 │   ├── 02-imagegen-prompts-v0.9.md          #   3D 实体模型方向的历史记录
 │   ├── 02-imagegen-prompts-v0.8.md          #   历史探索记录
+│   ├── 06-v0.14-review-ledger.md             #   v0.14 逐页 REVIEW 与 v0.15 修改基线
+│   ├── 07-v0.15-change-review-ledger.md      #   v0.15 的 6 页变更、来源清理与 QA 记录
+│   ├── 08-v0.16-review-feedback-ledger.md    #   v0.15 用户反馈与 v0.16 生产清单
+│   ├── 09-v0.16-change-review-ledger.md      #   当前 21 页变更、32/18 实现与 QA 记录
 │   ├── experiments/imagegen-v0.8/           #   服务商实验、提示词与候选资产
 │   ├── experiments/imagegen-v0.9/           #   3D 实体模型方向的历史实验
 │   ├── experiments/imagegen-v0.10/          #   无字工程素描主体实验
 │   ├── experiments/imagegen-v0.11/          #   内生图文、PPT 字体参考与最终透明资产
 │   ├── experiments/imagegen-v0.13/          #   第一轮完整稿的生成主体
 │   ├── experiments/imagegen-v0.14/          #   图源分界升级与 P49 定向可读性修正
+│   ├── experiments/imagegen-v0.16/          #   风格基准图、13 张修订主体与最终成片资产
 │   ├── samples/v0.8/                        #   第一轮视觉实验（未通过）
 │   ├── samples/v0.9/                        #   已否决的 3D 实体模型样片
 │   ├── samples/v0.10/                       #   PPT 覆盖标签方式的历史样片
@@ -70,8 +75,8 @@ talk-ai-coding-evolution-org-sdlc/
 │   ├── 01-opening-and-why.md                 #   P1–P12：开场 + 为什么整条链要转
 │   ├── 02-six-stages.md                     #   P13–P38：六阶段统一四问
 │   └── 03-dsh-and-closing.md                #   P39–P50：共享控制面 + 收尾行动
-├── 04_drafts/                               # 口语讲稿 / 生产事实稿；当前为 ppt-text-v0.14.md
-└── 05_output/                               # PPTX 交付；当前 REVIEW 对象为 v0.14/
+├── 04_drafts/                               # 口语讲稿 / 生产事实稿；当前为 ppt-text-v0.16.md
+└── 05_output/                               # PPTX 交付；当前 REVIEW 对象为 v0.16/
 ```
 
 > **临时目录约定**：一次性产物放仓库根目录、以 `.tmp-org-sdlc-talk-*` 前缀命名，不入库；版本收口后清理。细则见 [`AGENTS.md`](./AGENTS.md)。
@@ -98,7 +103,7 @@ review 若改变了内容，反向同步回上游源文件。
 - [`AGENTS.md`](./AGENTS.md) 只回答“agent 每次按什么顺序工作、必须过哪些门”。
 - [`docs/adr/`](docs/adr/) 记录难以回退且存在真实取舍的决定，解释为什么这样定；不承担术语定义或当前状态。
 - [`01_storyline/`](01_storyline/) 保存主张、故事线与决策理由；[`02_evidence/`](02_evidence/) 保存来源和可说口径；[`03_outline/`](03_outline/) 保存 50 页页面职责。
-- [`_asset/`](_asset/) 保存视觉系统、Image 2 规则、实验和样片；[`01_storyline/04-open-questions.md`](01_storyline/04-open-questions.md) 保存当前状态与下一步。
+- [`_asset/`](_asset/) 保存视觉系统、Image 2 规则、实验、样片和 REVIEW 台账；[`01_storyline/04-open-questions.md`](01_storyline/04-open-questions.md) 保存历史已决事项与待办。
 
 ### 新对话怎样接续
 
@@ -122,7 +127,7 @@ review 若改变了内容，反向同步回上游源文件。
 内容锁定后，每页仍先定「叙事职责 + 主要结论」，再做视觉。进入 PPT 阶段时统一使用
 `presentations:Presentations` skill，按内容选视觉路线，并完成全量渲染、逐页文字 REVIEW、逐页视觉 REVIEW 和来源追溯。
 
-**v0.11 四张视觉样片已经通过用户 REVIEW**：P1/P42 使用原生主体；P8/P20 的主体内标签、引线和图形由 Image 2 一体构图，中文与英文以实际 PowerPoint 渲染页为字体参考。v0.12 暴露出一条关键失败：不能把“精确关系要可编辑”理解成“绝大多数页面只用基础图元”。失败复盘见 [`_asset/04-v0.12-visual-failure-review.md`](_asset/04-v0.12-visual-failure-review.md)；v0.12 仅作失败基线。当前完整候选稿为 [`05_output/v0.14/AI-Native软件研发组织-SDLC转型-v0.14.pptx`](05_output/v0.14/AI-Native软件研发组织-SDLC转型-v0.14.pptx)，全量总览为同目录 `montage-v0.14.png`。本轮按“图源分界”升级 P5/P25/P32/P41/P44/P45/P49；实验、提示词和筛选记录见 [`_asset/experiments/imagegen-v0.14/README.md`](_asset/experiments/imagegen-v0.14/README.md)。
+**v0.11 四张视觉样片已经通过用户 REVIEW**：P1/P42 使用原生主体；P8/P20 的主体内标签、引线和图形由 Image 2 一体构图，中文与英文以实际 PowerPoint 渲染页为字体参考。v0.12 暴露出一条关键失败：不能把“精确关系要可编辑”理解成“绝大多数页面只用基础图元”。失败复盘见 [`_asset/04-v0.12-visual-failure-review.md`](_asset/04-v0.12-visual-failure-review.md)；v0.12 仅作失败基线。当前完整候选稿为 [`05_output/v0.16/AI-Native软件研发组织-SDLC转型-v0.16.pptx`](05_output/v0.16/AI-Native软件研发组织-SDLC转型-v0.16.pptx)。v0.16 将 13 页替换或重生成为 Image 2 主体，并精修 8 张原生页；变更、主体实现和 QA 见 [`_asset/09-v0.16-change-review-ledger.md`](_asset/09-v0.16-change-review-ledger.md)。
 
 ## 与 `-opc` 的关系（一句话）
 

@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P12 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new scene in the style of Image 1. Make one large working record card the central object, divided into exactly four functional fields. A thin six-stop delivery chain runs behind it, and at each stop a small copy of the same record card is clipped onto the chain, showing that the questions repeat through all stages. A slender five-layer depth ruler leans diagonally at the side as a secondary annotation, never competing with the card.
+Composition/framing: one centered editorial composition, shallow and calm; upper 25% uninterrupted chroma blue #0057FF. The four-field card must dominate and remain readable at presentation distance.
+Style/medium: match Image 1's graphite pencil, precise technical ink and light construction marks.
+Color palette: graphite structure; teal only for the six-stop chain; coral only for one gate mark; gold only for the clipped record cards.
+Text (verbatim and exhaustive): "工件", "门禁", "责任人", "反馈", "五层". These five strings are the only readable characters, in clean Hiragino Sans GB-like sans serif.
+Avoid: empty spreadsheet, repeated long sentences, vertical broken text, dashboard, four UI cards, SDLC labels, 3D, extra text, watermark.

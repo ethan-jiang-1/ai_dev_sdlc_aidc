@@ -1,0 +1,1221 @@
+{"kind":"deck","id":"pr/owj5y2","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"AI 原生软件交付","textShapes":3}
+{"kind":"shape","id":"sh/mx4v6hoz","slide":1,"name":"cover-rule","bbox":[72,76,48,0]}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"name":"cover-k","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[136,62,280,28]}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"name":"cover-title","text":"AI-Native 软件研发组织","textPreview":"AI-Native 软件研发组织","textChars":16,"textLines":1,"bbox":[72,125,720,78]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"name":"cover-sub","text":"从产品意图到生产运维，重建一条可执行的软件价值流","textPreview":"从产品意图到生产运维，重建一条可执行的软件价值流","textChars":24,"textLines":1,"bbox":[72,222,700,45]}
+{"kind":"image","id":"im/mlofqdgr","slide":1,"name":"","alt":"一条从产品意图穿过交付与控制门并回流的可执行软件价值流","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p1-value-stream-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"AI 原生软件交付","textShapes":18}
+{"kind":"shape","id":"sh/wbidwb29","slide":2,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"name":"page","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"title","text":"编码环节已经变快，为什么交付周期没有同步缩短？","textPreview":"编码环节已经变快，为什么交付周期没有同步缩短？","textChars":23,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"name":"subtitle","text":"先看等待时间去了哪里，而不是只看代码产量","textPreview":"先看等待时间去了哪里，而不是只看代码产量","textChars":20,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"name":"before","text":"原来的端到端时间","textPreview":"原来的端到端时间","textChars":8,"textLines":1,"bbox":[85,245,210,30]}
+{"kind":"shape","id":"sh/w3i1sfa9","slide":2,"name":"before-track","bbox":[300,275,860,0]}
+{"kind":"shape","id":"sh/r65knqtk","slide":2,"name":"before-0","bbox":[300,245,165,60]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"name":"before-t-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[300,260,165,30]}
+{"kind":"shape","id":"sh/ove9o7yd","slide":2,"name":"before-1","bbox":[465,245,165,60]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"name":"before-t-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[465,260,165,30]}
+{"kind":"shape","id":"sh/mtwrmxg7","slide":2,"name":"before-2","bbox":[630,245,150,60]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"name":"before-t-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[630,260,150,30]}
+{"kind":"shape","id":"sh/wjy9sry9","slide":2,"name":"before-3","bbox":[780,245,185,60]}
+{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"name":"before-t-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[780,260,185,30]}
+{"kind":"shape","id":"sh/ahwrqhgj","slide":2,"name":"before-4","bbox":[965,245,195,60]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"name":"before-t-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[965,260,195,30]}
+{"kind":"textbox","id":"sh/cnupgny5","slide":2,"name":"after","text":"编码变快之后","textPreview":"编码变快之后","textChars":6,"textLines":1,"bbox":[85,415,210,30]}
+{"kind":"shape","id":"sh/do3q9szq","slide":2,"name":"after-track","bbox":[300,445,860,0]}
+{"kind":"shape","id":"sh/t8byxkn2","slide":2,"name":"after-0","bbox":[300,415,165,60]}
+{"kind":"textbox","id":"sh/s72xofmh","slide":2,"name":"after-t-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[300,430,165,30]}
+{"kind":"shape","id":"sh/76twva5c","slide":2,"name":"after-1","bbox":[465,415,165,60]}
+{"kind":"textbox","id":"sh/65kfmpor","slide":2,"name":"after-t-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[465,430,165,30]}
+{"kind":"shape","id":"sh/hcvy14ne","slide":2,"name":"after-2","bbox":[630,415,45,60]}
+{"kind":"textbox","id":"sh/gbmxszmt","slide":2,"name":"after-t-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[630,430,45,30]}
+{"kind":"shape","id":"sh/fadgzu58","slide":2,"name":"after-3","bbox":[675,415,245,60]}
+{"kind":"textbox","id":"sh/u94fqp4n","slide":2,"name":"after-t-3","text":"等待验证","textPreview":"等待验证","textChars":4,"textLines":1,"bbox":[675,430,245,30]}
+{"kind":"shape","id":"sh/p0vy54na","slide":2,"name":"after-4","bbox":[920,415,240,60]}
+{"kind":"textbox","id":"sh/4zmxwzmp","slide":2,"name":"after-t-4","text":"等待发布","textPreview":"等待发布","textChars":4,"textLines":1,"bbox":[920,430,240,30]}
+{"kind":"shape","id":"sh/mlgvq147","slide":2,"name":"saved-a","bbox":[630,350,45,0]}
+{"kind":"textbox","id":"sh/nmpcj6ls","slide":2,"name":"saved","text":"省下的编码时间","textPreview":"省下的编码时间","textChars":7,"textLines":1,"bbox":[545,320,210,28]}
+{"kind":"shape","id":"sh/onydsbmd","slide":2,"name":"invade-a","bbox":[675,505,485,0]}
+{"kind":"shape","id":"sh/9o7ulg3y","slide":2,"name":"invade-l","bbox":[675,492,0,26]}
+{"kind":"shape","id":"sh/a9gvulkj","slide":2,"name":"invade-r","bbox":[1160,492,0,26]}
+{"kind":"textbox","id":"sh/ba9cn6l4","slide":2,"name":"wait","text":"时间没有消失，只是变成了等待","textPreview":"时间没有消失，只是变成了等待","textChars":14,"textLines":1,"bbox":[735,530,370,36]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"AI 原生软件交付","textShapes":14}
+{"kind":"shape","id":"sh/ax4zax0n","slide":3,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"name":"page","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"name":"title","text":"编码耗时缩短之后，前后环节会决定端到端交付","textPreview":"编码耗时缩短之后，前后环节会决定端到端交付","textChars":21,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"name":"subtitle","text":"Anthropic 的判断：Code is no longer the bottleneck","textPreview":"Anthropic 的判断：Code is no longer the bottleneck","textChars":46,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/obq90bml","slide":3,"name":"lever-beam","bbox":[105,395,1059,0]}
+{"kind":"shape","id":"sh/pcjqtg36","slide":3,"name":"lever-zone-0","bbox":[105,330,190,65]}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"name":"lever-t-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[105,345,190,32]}
+{"kind":"shape","id":"sh/n6ls3alk","slide":3,"name":"tick-0","bbox":[295,320,0,90]}
+{"kind":"shape","id":"sh/n2l4fq98","slide":3,"name":"lever-zone-1","bbox":[295,330,190,65]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"name":"lever-t-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[295,345,190,32]}
+{"kind":"shape","id":"sh/943mhgre","slide":3,"name":"tick-1","bbox":[485,320,0,90]}
+{"kind":"shape","id":"sh/83ulovat","slide":3,"name":"lever-zone-2","bbox":[485,330,54,65]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"name":"lever-t-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[485,345,54,32]}
+{"kind":"shape","id":"sh/a5c3ql8z","slide":3,"name":"tick-2","bbox":[539,320,0,90]}
+{"kind":"shape","id":"sh/x8nml0ra","slide":3,"name":"lever-zone-3","bbox":[539,330,235,65]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"lever-t-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[539,345,235,32]}
+{"kind":"shape","id":"sh/ja54na9g","slide":3,"name":"tick-3","bbox":[774,320,0,90]}
+{"kind":"shape","id":"sh/i9w3u58v","slide":3,"name":"lever-zone-4","bbox":[774,330,235,65]}
+{"kind":"textbox","id":"sh/e10f2twf","slide":3,"name":"lever-t-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[774,345,235,32]}
+{"kind":"shape","id":"sh/f29gbyx0","slide":3,"name":"tick-4","bbox":[1009,320,0,90]}
+{"kind":"shape","id":"sh/03ix43e5","slide":3,"name":"lever-zone-5","bbox":[1009,330,155,65]}
+{"kind":"textbox","id":"sh/14ryd8fq","slide":3,"name":"lever-t-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1009,345,155,32]}
+{"kind":"shape","id":"sh/6d0fytg3","slide":3,"name":"fulcrum","bbox":[500,407,78,80]}
+{"kind":"shape","id":"sh/re9g7yxo","slide":3,"name":"build-compress-a","bbox":[487,275,23,40]}
+{"kind":"shape","id":"sh/sfix03y9","slide":3,"name":"build-compress-b","bbox":[513,275,23,40]}
+{"kind":"textbox","id":"sh/tgry9ofu","slide":3,"name":"build-compress","text":"构建被压成极窄一段","textPreview":"构建被压成极窄一段","textChars":9,"textLines":1,"bbox":[405,225,220,36]}
+{"kind":"shape","id":"sh/a9kfadwn","slide":3,"name":"left-span","bbox":[105,515,380,0]}
+{"kind":"shape","id":"sh/batgjixs","slide":3,"name":"left-cap-a","bbox":[105,500,0,30]}
+{"kind":"shape","id":"sh/l4fi9cza","slide":3,"name":"left-cap-b","bbox":[485,500,0,30]}
+{"kind":"textbox","id":"sh/k3m1g7yp","slide":3,"name":"left-label","text":"前置判断仍然很长","textPreview":"前置判断仍然很长","textChars":8,"textLines":1,"bbox":[150,535,290,30]}
+{"kind":"shape","id":"sh/z2d07mh4","slide":3,"name":"right-span","bbox":[539,515,625,0]}
+{"kind":"shape","id":"sh/y14jehgj","slide":3,"name":"right-cap-a","bbox":[539,500,0,30]}
+{"kind":"shape","id":"sh/x0vi5czy","slide":3,"name":"right-cap-b","bbox":[1164,500,0,30]}
+{"kind":"textbox","id":"sh/czmhc7id","slide":3,"name":"right-label","text":"验证、批准和生产反馈接管约束","textPreview":"验证、批准和生产反馈接管约束","textChars":14,"textLines":1,"bbox":[645,535,420,30]}
+{"kind":"textbox","id":"sh/byd032h8","slide":3,"name":"meaning","text":"压短一小段，不会自动压短整根交付杠杆","textPreview":"压短一小段，不会自动压短整根交付杠杆","textChars":18,"textLines":1,"bbox":[350,590,580,36]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"[Sources]\n- Anthropic, “The AI-Native SDLC playbook,” Louis Claxton, 2026-08-21, https://claude.com/blog/the-ai-native-sdlc-playbook; diagnostic claim, not a universal fact.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/vy5gbe14","slide":4,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"name":"page","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"title","text":"五层是包出来的，不是换出来的","textPreview":"五层是包出来的，不是换出来的","textChars":14,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"name":"subtitle","text":"模型能力每长一步，工程重心就往外移一步；今天由 harness 承重","textPreview":"模型能力每长一步，工程重心就往外移一步；今天由 harness 承重","textChars":34,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/fqps72l4","slide":4,"name":"","alt":"Prompt、Context、Harness、Loop 与 Graph 逐层包裹并扩展的能力结构","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p4-five-layers-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/032tgr6d","slide":5,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"name":"page","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"name":"title","text":"模型决定能做什么，harness 决定能否可靠地做成","textPreview":"模型决定能做什么，harness 决定能否可靠地做成","textChars":26,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/yhkbe1o7","slide":5,"name":"subtitle","text":"平台统一控制基线，领域责任人掌握取舍与例外","textPreview":"平台统一控制基线，领域责任人掌握取舍与例外","textChars":21,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/apobah8v","slide":5,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.14/generated/p5-harness-boundary-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/7m98ru9g","slide":6,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"name":"page","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"title","text":"编码不再是主要约束，压力会向三个方向转移","textPreview":"编码不再是主要约束，压力会向三个方向转移","textChars":20,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"name":"subtitle","text":"等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加","textPreview":"等待移到链条两侧，控制通道开始失配，治理例外从旁路不断增加","textChars":29,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/lwn2dc3m","slide":6,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p6-pressure-migration-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/l0vuh0rm","slide":7,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"page","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"name":"title","text":"传统控制方式默认：主要工作由人执行","textPreview":"传统控制方式默认：主要工作由人执行","textChars":17,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/zedcfa9g","slide":7,"name":"subtitle","text":"人执行、人交接、人签字，流程才能继续","textPreview":"人执行、人交接、人签字，流程才能继续","textChars":18,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/rul4vapk","slide":7,"name":"","alt":"六个浅景门位上的匿名人工交接、等待票据与移动工件","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p7-manual-handoffs-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/sjix0zy1","slide":8,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"name":"page","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"name":"title","text":"产出速度一旦超过控制能力，结果只有排队或审查不足","textPreview":"产出速度一旦超过控制能力，结果只有排队或审查不足","textChars":24,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/6h0fypgb","slide":8,"name":"subtitle","text":"agent 放大产出，控制容量不会自动增长","textPreview":"agent 放大产出，控制容量不会自动增长","textChars":21,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/ixcj6lgb","slide":8,"name":"","bbox":[71.67,150,906.67,510]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.11/p8-capacity-integrated-alpha-v2.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/ofq5svm5","slide":9,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"name":"page","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"name":"title","text":"机器执行可重复判断，人负责意图、风险、例外和授权","textPreview":"机器执行可重复判断，人负责意图、风险、例外和授权","textChars":24,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/mdonql4z","slide":9,"name":"subtitle","text":"人从流水线工位退到控制台，判断仍然留下批准或拒绝痕迹","textPreview":"人从流水线工位退到控制台，判断仍然留下批准或拒绝痕迹","textChars":26,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/ytkjutwz","slide":9,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p9-control-console-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"AI 原生软件交付","textShapes":16}
+{"kind":"shape","id":"sh/ip0f2p0j","slide":10,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"name":"page","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"name":"title","text":"工件链只是审计骨架，还不是完整的审计能力","textPreview":"工件链只是审计骨架，还不是完整的审计能力","textChars":20,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"name":"subtitle","text":"身份、版本、证据、审批和强制门禁仍是五个空插槽","textPreview":"身份、版本、证据、审批和强制门禁仍是五个空插槽","textChars":23,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/l036l83y","slide":10,"name":"chain-0","bbox":[223,330,40,0]}
+{"kind":"shape","id":"sh/kzu5c32t","slide":10,"name":"chain-art-0","bbox":[78,288,145,84]}
+{"kind":"shape","id":"sh/725onyl4","slide":10,"name":"chain-art-0-fold","bbox":[205,288,18,18]}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"name":"chain-art-0-t","text":"intent","textPreview":"intent","textChars":6,"textLines":1,"bbox":[88,296,120,68]}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"name":"chain-1","bbox":[413,330,40,0]}
+{"kind":"shape","id":"sh/d87uxg3m","slide":10,"name":"chain-art-1","bbox":[268,288,145,84]}
+{"kind":"shape","id":"sh/q5gb21kb","slide":10,"name":"chain-art-1-fold","bbox":[395,288,18,18]}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"name":"chain-art-1-t","text":"spec","textPreview":"spec","textChars":4,"textLines":1,"bbox":[278,296,120,68]}
+{"kind":"shape","id":"sh/0bit8b2d","slide":10,"name":"chain-2","bbox":[603,330,40,0]}
+{"kind":"shape","id":"sh/1cru1g3y","slide":10,"name":"chain-art-2","bbox":[458,288,145,84]}
+{"kind":"shape","id":"sh/e9gb61k7","slide":10,"name":"chain-art-2-fold","bbox":[585,288,18,18]}
+{"kind":"textbox","id":"sh/fapcz6ls","slide":10,"name":"chain-art-2-t","text":"plan","textPreview":"plan","textChars":4,"textLines":1,"bbox":[468,296,120,68]}
+{"kind":"shape","id":"sh/ozitcv29","slide":10,"name":"chain-3","bbox":[793,330,40,0]}
+{"kind":"shape","id":"sh/p0ru503u","slide":10,"name":"chain-art-3","bbox":[648,288,145,84]}
+{"kind":"shape","id":"sh/xwnupgvy","slide":10,"name":"chain-art-3-fold","bbox":[775,288,18,18]}
+{"kind":"textbox","id":"sh/wvetgbud","slide":10,"name":"chain-art-3-t","text":"diff+tests","textPreview":"diff+tests","textChars":10,"textLines":1,"bbox":[658,296,120,68]}
+{"kind":"shape","id":"sh/bu5cnqd8","slide":10,"name":"chain-4","bbox":[983,330,40,0]}
+{"kind":"shape","id":"sh/atwbelcn","slide":10,"name":"chain-art-4","bbox":[838,288,145,84]}
+{"kind":"shape","id":"sh/lk7ut0va","slide":10,"name":"chain-art-4-fold","bbox":[965,288,18,18]}
+{"kind":"textbox","id":"sh/kjytkvup","slide":10,"name":"chain-art-4-t","text":"PR+review","textPreview":"PR+review","textChars":9,"textLines":1,"bbox":[848,296,120,68]}
+{"kind":"shape","id":"sh/jypcrqd4","slide":10,"name":"chain-art-5","bbox":[1028,288,145,84]}
+{"kind":"shape","id":"sh/yxgbilcj","slide":10,"name":"chain-art-5-fold","bbox":[1155,288,18,18]}
+{"kind":"textbox","id":"sh/1o3ahwvq","slide":10,"name":"chain-art-5-t","text":"incident","textPreview":"incident","textChars":8,"textLines":1,"bbox":[1038,296,120,68]}
+{"kind":"shape","id":"sh/q9srixs3","slide":10,"name":"disconnect-0","bbox":[150,420,0,70]}
+{"kind":"textbox","id":"sh/ru18r2to","slide":10,"name":"empty-t-0","text":"身份","textPreview":"身份","textChars":2,"textLines":1,"bbox":[145,510,160,30]}
+{"kind":"shape","id":"sh/dwjqtcbu","slide":10,"name":"disconnect-1","bbox":[150,490,1005,0]}
+{"kind":"textbox","id":"sh/exsrmhsf","slide":10,"name":"empty-t-1","text":"版本","textPreview":"版本","textChars":2,"textLines":1,"bbox":[350,510,160,30]}
+{"kind":"shape","id":"sh/0zu9ora5","slide":10,"name":"disconnect-2","bbox":[1155,420,0,70]}
+{"kind":"textbox","id":"sh/103qxcbq","slide":10,"name":"empty-t-2","text":"证据","textPreview":"证据","textChars":2,"textLines":1,"bbox":[555,510,160,30]}
+{"kind":"textbox","id":"sh/bmpgrah8","slide":10,"name":"empty-t-3","text":"审批","textPreview":"审批","textChars":2,"textLines":1,"bbox":[760,510,160,30]}
+{"kind":"textbox","id":"sh/wnyx0fit","slide":10,"name":"empty-t-4","text":"强制门禁","textPreview":"强制门禁","textChars":4,"textLines":1,"bbox":[965,510,160,30]}
+{"kind":"textbox","id":"sh/jq9gvuh4","slide":10,"name":"gap","text":"五项控制必须一起覆盖整条工件链","textPreview":"五项控制必须一起覆盖整条工件链","textChars":15,"textLines":1,"bbox":[400,565,480,35]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/5sjah872","slide":11,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/xcryxg7y","slide":11,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"name":"page","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"name":"title","text":"六个阶段都要从“人盯流程”转向“系统执行控制”","textPreview":"六个阶段都要从“人盯流程”转向“系统执行控制”","textChars":23,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/250zy18b","slide":11,"name":"subtitle","text":"工件可交接、门禁能执行、责任有人担、结果能回流","textPreview":"工件可交接、门禁能执行、责任有人担、结果能回流","textChars":23,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/velo76t8","slide":11,"name":"","alt":"人盯流程转向系统执行控制，人保留例外判断","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p11-system-control-shift-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"AI 原生软件交付","textShapes":4}
+{"kind":"shape","id":"sh/9k3apob2","slide":12,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/1gbm9s3a","slide":12,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"name":"page","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"name":"title","text":"后面每个阶段，都回答同样四个问题","textPreview":"后面每个阶段，都回答同样四个问题","textChars":16,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/q903ad4n","slide":12,"name":"subtitle","text":"一张记录纸贯穿六阶段，五层只是旁边的深度标尺","textPreview":"一张记录纸贯穿六阶段，五层只是旁边的深度标尺","textChars":22,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/tk32dsbm","slide":12,"name":"","alt":"贯穿六阶段的工件、门禁、责任人与反馈记录卡","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p12-four-question-card-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"AI 原生软件交付","textShapes":22}
+{"kind":"shape","id":"sh/lc3ylkz6","slide":13,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/q50nydsj","slide":13,"name":"kicker","text":"AI 原生软件交付","textPreview":"AI 原生软件交付","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"name":"page","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"name":"title","text":"工件把六个阶段接成一条能够回流的闭环","textPreview":"工件把六个阶段接成一条能够回流的闭环","textChars":18,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/p4r6p8by","slide":13,"name":"subtitle","text":"每次交接都展开上一份工件，再折成下一份","textPreview":"每次交接都展开上一份工件，再折成下一份","textChars":19,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/21gnuts7","slide":13,"name":"relay-spine","bbox":[120,390,1040,0]}
+{"kind":"shape","id":"sh/32ponyts","slide":13,"name":"relay-0","bbox":[85,285,145,78]}
+{"kind":"shape","id":"sh/gzy5s3a1","slide":13,"name":"relay-0-fold","bbox":[212,285,18,18]}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"name":"relay-0-t","text":"intent.md","textPreview":"intent.md","textChars":9,"textLines":1,"bbox":[95,293,120,62]}
+{"kind":"shape","id":"sh/hcfy9k3u","slide":13,"name":"relay-drop-0","bbox":[157,363,0,27]}
+{"kind":"textbox","id":"sh/gb6x0zm9","slide":13,"name":"relay-verb-0","text":"展开意图","textPreview":"展开意图","textChars":4,"textLines":1,"bbox":[75,245,165,26]}
+{"kind":"shape","id":"sh/vaxg7ulo","slide":13,"name":"hinge-0","bbox":[242,373,34,34]}
+{"kind":"shape","id":"sh/u9ofyp43","slide":13,"name":"fold-in-0","bbox":[230,390,12,0]}
+{"kind":"shape","id":"sh/t8fy5k3i","slide":13,"name":"fold-out-0","bbox":[276,390,4,0]}
+{"kind":"textbox","id":"sh/876xwfmx","slide":13,"name":"fold-t-0","text":"折","textPreview":"折","textChars":1,"textLines":1,"bbox":[242,378,34,22]}
+{"kind":"shape","id":"sh/7mdg3als","slide":13,"name":"relay-1","bbox":[280,425,145,78]}
+{"kind":"shape","id":"sh/6l4fu547","slide":13,"name":"relay-1-fold","bbox":[407,425,18,18]}
+{"kind":"textbox","id":"sh/lkvy103m","slide":13,"name":"relay-1-t","text":"spec.md","textPreview":"spec.md","textChars":7,"textLines":1,"bbox":[290,433,120,62]}
+{"kind":"shape","id":"sh/kjmxsfm1","slide":13,"name":"relay-drop-1","bbox":[352,390,0,35]}
+{"kind":"textbox","id":"sh/cnqh8fux","slide":13,"name":"relay-verb-1","text":"施加约束","textPreview":"施加约束","textChars":4,"textLines":1,"bbox":[270,510,165,26]}
+{"kind":"shape","id":"sh/xozyhkbi","slide":13,"name":"hinge-1","bbox":[437,373,34,34]}
+{"kind":"shape","id":"sh/q18f65cr","slide":13,"name":"fold-in-1","bbox":[425,390,12,0]}
+{"kind":"shape","id":"sh/bmhgfatc","slide":13,"name":"fold-out-1","bbox":[471,390,4,0]}
+{"kind":"textbox","id":"sh/oz6x4vul","slide":13,"name":"fold-t-1","text":"折","textPreview":"折","textChars":1,"textLines":1,"bbox":[437,378,34,22]}
+{"kind":"shape","id":"sh/p0zyd0b6","slide":13,"name":"relay-2","bbox":[475,285,145,78]}
+{"kind":"shape","id":"sh/2xof2lcv","slide":13,"name":"relay-2-fold","bbox":[602,285,18,18]}
+{"kind":"textbox","id":"sh/3yxgbqdg","slide":13,"name":"relay-2-t","text":"plan.md","textPreview":"plan.md","textChars":7,"textLines":1,"bbox":[485,293,120,62]}
+{"kind":"shape","id":"sh/8vahgzu5","slide":13,"name":"relay-drop-2","bbox":[547,363,0,27]}
+{"kind":"textbox","id":"sh/9wjyp4bq","slide":13,"name":"relay-verb-2","text":"拆成计划","textPreview":"拆成计划","textChars":4,"textLines":1,"bbox":[465,245,165,26]}
+{"kind":"shape","id":"sh/jqlkfyds","slide":13,"name":"hinge-2","bbox":[632,373,34,34]}
+{"kind":"shape","id":"sh/ipcjmtw7","slide":13,"name":"fold-in-2","bbox":[620,390,12,0]}
+{"kind":"shape","id":"sh/5cn2h8vy","slide":13,"name":"fold-out-2","bbox":[666,390,4,0]}
+{"kind":"textbox","id":"sh/4re1o3ed","slide":13,"name":"fold-t-2","text":"折","textPreview":"折","textChars":1,"textLines":1,"bbox":[632,378,34,22]}
+{"kind":"shape","id":"sh/re5kjydo","slide":13,"name":"relay-3","bbox":[670,425,145,78]}
+{"kind":"shape","id":"sh/6dwjqtw3","slide":13,"name":"relay-3-fold","bbox":[797,425,18,18]}
+{"kind":"textbox","id":"sh/tgn2l8vu","slide":13,"name":"relay-3-t","text":"diff+tests","textPreview":"diff+tests","textChars":10,"textLines":1,"bbox":[680,433,120,62]}
+{"kind":"shape","id":"sh/sfe1s3e9","slide":13,"name":"relay-drop-3","bbox":[742,390,0,35]}
+{"kind":"textbox","id":"sh/7i107edk","slide":13,"name":"relay-verb-3","text":"执行并验证","textPreview":"执行并验证","textChars":5,"textLines":1,"bbox":[660,510,165,26]}
+{"kind":"shape","id":"sh/mhsje9wz","slide":13,"name":"hinge-3","bbox":[827,373,34,34]}
+{"kind":"shape","id":"sh/y1wju94v","slide":13,"name":"fold-in-3","bbox":[815,390,12,0]}
+{"kind":"shape","id":"sh/z25kne5g","slide":13,"name":"fold-out-3","bbox":[861,390,4,0]}
+{"kind":"textbox","id":"sh/03e1wjm1","slide":13,"name":"fold-t-3","text":"折","textPreview":"折","textChars":1,"textLines":1,"bbox":[827,378,34,22]}
+{"kind":"shape","id":"sh/l4n2po3m","slide":13,"name":"relay-4","bbox":[865,285,145,78]}
+{"kind":"shape","id":"sh/m5gjyt4r","slide":13,"name":"relay-4-fold","bbox":[992,285,18,18]}
+{"kind":"textbox","id":"sh/n6pkrelc","slide":13,"name":"relay-4-t","text":"PR+review","textPreview":"PR+review","textChars":9,"textLines":1,"bbox":[875,293,120,62]}
+{"kind":"shape","id":"sh/8ry10jmx","slide":13,"name":"relay-drop-4","bbox":[937,363,0,27]}
+{"kind":"textbox","id":"sh/9s72to3i","slide":13,"name":"relay-verb-4","text":"独立批准","textPreview":"独立批准","textChars":4,"textLines":1,"bbox":[855,245,165,26]}
+{"kind":"shape","id":"sh/atgj2t43","slide":13,"name":"hinge-4","bbox":[1022,373,34,34]}
+{"kind":"shape","id":"sh/vupkvylo","slide":13,"name":"fold-in-4","bbox":[1010,390,12,0]}
+{"kind":"shape","id":"sh/50behwr2","slide":13,"name":"fold-out-4","bbox":[1056,390,4,0]}
+{"kind":"textbox","id":"sh/4z2d8rah","slide":13,"name":"fold-t-4","text":"折","textPreview":"折","textChars":1,"textLines":1,"bbox":[1022,378,34,22]}
+{"kind":"shape","id":"sh/jytcfmtw","slide":13,"name":"relay-5","bbox":[1060,425,145,78]}
+{"kind":"shape","id":"sh/ixkv6hsb","slide":13,"name":"relay-5-fold","bbox":[1187,425,18,18]}
+{"kind":"textbox","id":"sh/t4velwry","slide":13,"name":"relay-5-t","text":"incident","textPreview":"incident","textChars":8,"textLines":1,"bbox":[1070,433,120,62]}
+{"kind":"shape","id":"sh/s3mdcrad","slide":13,"name":"relay-drop-5","bbox":[1132,390,0,35]}
+{"kind":"textbox","id":"sh/r2dwjm98","slide":13,"name":"relay-verb-5","text":"吸收事实","textPreview":"吸收事实","textChars":4,"textLines":1,"bbox":[1050,510,165,26]}
+{"kind":"shape","id":"sh/614va1sn","slide":13,"name":"feedback-a","bbox":[1132,548,0,62]}
+{"kind":"shape","id":"sh/1svepgra","slide":13,"name":"feedback-b","bbox":[150,610,982,0]}
+{"kind":"shape","id":"sh/g7mdgbap","slide":13,"name":"feedback-c","bbox":[150,520,0,90]}
+{"kind":"textbox","id":"sh/0buxcfil","slide":13,"name":"feedback-label","text":"生产事实不是终点：它展开成下一轮 intent","textPreview":"生产事实不是终点：它展开成下一轮 intent","textChars":23,"textLines":1,"bbox":[390,620,500,30]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"规划 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/hsvy50re","slide":14,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/xc7eds76","slide":14,"name":"kicker","text":"规划 / SDLC","textPreview":"规划 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"name":"page","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"name":"title","text":"规划先解决：原始意图怎样不丢失","textPreview":"规划先解决：原始意图怎样不丢失","textChars":15,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/idgvmx8r","slide":14,"name":"subtitle","text":"整理是让别人接得住，不是替提出者改写意思","textPreview":"整理是让别人接得住，不是替提出者改写意思","textChars":20,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/kfidonqx","slide":14,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/zi5c3y98","slide":14,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/c3e1gjyd","slide":14,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/x4ni9ofy","slide":14,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/a1wze9g7","slide":14,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/b2507exs","slide":14,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/kre1k3y9","slide":14,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/ls7idofu","slide":14,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/y5wjitgj","slide":14,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/z650byxo","slide":14,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/0buh8zy5","slide":14,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/1w3i14fq","slide":14,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/7ipgzel8","slide":14,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p14-intent-jig-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"规划 / SDLC","textShapes":24}
+{"kind":"shape","id":"sh/18vup4bm","slide":15,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/547mhg3m","slide":15,"name":"kicker","text":"规划 / SDLC","textPreview":"规划 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/k3y5ov21","slide":15,"name":"page","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/76p4jqls","slide":15,"name":"title","text":"用 intent.md 留住需求提出者的原意","textPreview":"用 intent.md 留住需求提出者的原意","textChars":22,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/65gnqlk7","slide":15,"name":"subtitle","text":"来源、版本、责任人和开放问题必须同屏可见","textPreview":"来源、版本、责任人和开放问题必须同屏可见","textChars":20,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/t87ml0ji","slide":15,"name":"doc","bbox":[270,190,720,420]}
+{"kind":"textbox","id":"sh/s7y5sv2x","slide":15,"name":"doc-name","text":"intent.md","textPreview":"intent.md","textChars":9,"textLines":1,"bbox":[310,215,240,40]}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"name":"doc-meta","text":"v0.4  ·  owner: Product  ·  source: customer interview","textPreview":"v0.4  ·  owner: Product  ·  source: customer interview","textChars":54,"textLines":1,"bbox":[310,255,560,25]}
+{"kind":"textbox","id":"sh/m9c3e1kn","slide":15,"name":"sec-0","text":"问题","textPreview":"问题","textChars":2,"textLines":1,"bbox":[310,305,115,28]}
+{"kind":"textbox","id":"sh/wrm9kvep","slide":15,"name":"val-0","text":"批量审批无法完成","textPreview":"批量审批无法完成","textChars":8,"textLines":1,"bbox":[440,305,460,28]}
+{"kind":"shape","id":"sh/hsvat0fa","slide":15,"name":"doc-rule-0","bbox":[310,341,620,0]}
+{"kind":"textbox","id":"sh/upkrilwj","slide":15,"name":"sec-1","text":"期望结果","textPreview":"期望结果","textChars":4,"textLines":1,"bbox":[310,360,115,28]}
+{"kind":"textbox","id":"sh/vqdsrqx4","slide":15,"name":"val-1","text":"一次操作完成全部审核","textPreview":"一次操作完成全部审核","textChars":10,"textLines":1,"bbox":[440,360,460,28]}
+{"kind":"shape","id":"sh/4vm9ovel","slide":15,"name":"doc-rule-1","bbox":[310,396,620,0]}
+{"kind":"textbox","id":"sh/5wvax0f6","slide":15,"name":"sec-2","text":"影响范围","textPreview":"影响范围","textChars":4,"textLines":1,"bbox":[310,415,115,28]}
+{"kind":"textbox","id":"sh/it4rm5wv","slide":15,"name":"val-2","text":"企业管理员工作台","textPreview":"企业管理员工作台","textChars":8,"textLines":1,"bbox":[440,415,460,28]}
+{"kind":"shape","id":"sh/judsvqxg","slide":15,"name":"doc-rule-2","bbox":[310,451,620,0]}
+{"kind":"textbox","id":"sh/0z29cbyh","slide":15,"name":"sec-3","text":"约束","textPreview":"约束","textChars":2,"textLines":1,"bbox":[310,470,115,28]}
+{"kind":"textbox","id":"sh/l0bqlgf2","slide":15,"name":"val-3","text":"权限与审计记录必须保留","textPreview":"权限与审计记录必须保留","textChars":11,"textLines":1,"bbox":[440,470,460,28]}
+{"kind":"shape","id":"sh/1kjyt83e","slide":15,"name":"doc-rule-3","bbox":[310,506,620,0]}
+{"kind":"textbox","id":"sh/gjax03m9","slide":15,"name":"sec-4","text":"开放问题","textPreview":"开放问题","textChars":4,"textLines":1,"bbox":[310,525,115,28]}
+{"kind":"textbox","id":"sh/fi1grylo","slide":15,"name":"val-4","text":"例外审批由谁承担？","textPreview":"例外审批由谁承担？","textChars":9,"textLines":1,"bbox":[440,525,460,28]}
+{"kind":"shape","id":"sh/ehsfyt43","slide":15,"name":"doc-rule-4","bbox":[310,561,620,0]}
+{"kind":"shape","id":"sh/p8jyx83q","slide":15,"name":"source-tag","bbox":[105,280,135,38]}
+{"kind":"textbox","id":"sh/o7ah4nm5","slide":15,"name":"source-tag-t","text":"来源摘录","textPreview":"来源摘录","textChars":4,"textLines":1,"bbox":[113,286,119,26]}
+{"kind":"shape","id":"sh/361gvilk","slide":15,"name":"source-line","bbox":[240,300,30,0]}
+{"kind":"shape","id":"sh/25sf2d4z","slide":15,"name":"open-tag","bbox":[920,520,150,38]}
+{"kind":"textbox","id":"sh/dc3y1s3m","slide":15,"name":"open-tag-t","text":"未闭合","textPreview":"未闭合","textChars":3,"textLines":1,"bbox":[928,526,134,26]}
+{"kind":"shape","id":"sh/cbuh8nmh","slide":15,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/uh4v2pkj","slide":15,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/vixcvu14","slide":15,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/wj6d4z2p","slide":15,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/hkfexkja","slide":15,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/ilov6pkv","slide":15,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/jmxwzu1g","slide":15,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/4n6d8z21","slide":15,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/5ofe14j6","slide":15,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/6p8va9kr","slide":15,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/rqhw3e1c","slide":15,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/f6dcnetg","slide":15,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/e54ve9cv","slide":15,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"规划 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/i9sve18n","slide":16,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/8z2h8bq1","slide":16,"name":"kicker","text":"规划 / SDLC","textPreview":"规划 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/9kby1g7m","slide":16,"name":"page","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/ytkf2h8j","slide":16,"name":"title","text":"意图既要能被批准，也要能被度量","textPreview":"意图既要能被批准，也要能被度量","textChars":15,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/zutgvm94","slide":16,"name":"subtitle","text":"退回必须带着理由回到开放问题；放行才进入设计","textPreview":"退回必须带着理由回到开放问题；放行才进入设计","textChars":22,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/69k32xsn","slide":16,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/58bm9sr2","slide":16,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/47il0nah","slide":16,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/j6947i9w","slide":16,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/i503ydsr","slide":16,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/p4vmlwrm","slide":16,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/o3m5crq1","slide":16,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/wnadcrqh","slide":16,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/xoju5wr2","slide":16,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/alsbahsb","slide":16,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/vm1c3m9w","slide":16,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/kbudgrqt","slide":16,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/5c3u9wry","slide":16,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/07ul0nml","slide":16,"name":"","alt":"intent.md 的批准、退回理由与度量闭环","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p16-intent-signoff-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/14bup87q","slide":17,"title":"设计 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/90nq9gfi","slide":17,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/1c7e50ni","slide":17,"name":"kicker","text":"设计 / SDLC","textPreview":"设计 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/gbedwfmx","slide":17,"name":"page","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/rm5czq50","slide":17,"name":"title","text":"动手构建之前，先让约束和冲突可见","textPreview":"动手构建之前，先让约束和冲突可见","textChars":16,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/6lwvql4v","slide":17,"name":"subtitle","text":"品牌、安全、合规和体验在同一份 spec 上叠图","textPreview":"品牌、安全、合规和体验在同一份 spec 上叠图","textChars":24,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/snedsvml","slide":17,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/jilcvq54","slide":17,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/ihcvml4j","slide":17,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/4by9or6l","slide":17,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/pc7qhwn6","slide":17,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/29grm1of","slide":17,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/3ap8fm50","slide":17,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/gnepkr69","slide":17,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/honqdwnu","slide":17,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/ulw7ihoj","slide":17,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/fm58bm54","slide":17,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/0ji9wb6t","slide":17,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/14rqpgne","slide":17,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/fy1czy50","slide":17,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/14bup87q","slide":17,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p17-constraint-overlays-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/y5wne50z","slide":18,"title":"设计 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/6psvyxgb","slide":18,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/wrelszu9","slide":18,"name":"kicker","text":"设计 / SDLC","textPreview":"设计 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/hsn2l4bu","slide":18,"name":"page","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/itw3upcf","slide":18,"name":"title","text":"形成 spec.md 时，就把政策约束施加进去","textPreview":"形成 spec.md 时，就把政策约束施加进去","textChars":23,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/je5knut0","slide":18,"name":"subtitle","text":"intent 与版本化 skills 同时进入制图台","textPreview":"intent 与版本化 skills 同时进入制图台","textChars":26,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/x8fqhobu","slide":18,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/w7698ju9","slide":18,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/0netwrex","slide":18,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/lonupwv2","slide":18,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/ylwbuhwr","slide":18,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/zm5cnmdc","slide":18,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/cjutsrel","slide":18,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/dk3ulcv6","slide":18,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/qxcbqhwf","slide":18,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/bylcjmd0","slide":18,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/4vuto7ep","slide":18,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/pw3uhcvu","slide":18,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/7q1cr2hw","slide":18,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/6xcn6h8b","slide":18,"name":"","alt":"安全、品牌与合规约束共同改写并版本化 spec.md","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/y5wne50z","slide":18,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p18-constraint-drafting-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/nid43ytk","slide":19,"title":"设计 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/7yt4bq5k","slide":19,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/9gb6xgbi","slide":19,"name":"kicker","text":"设计 / SDLC","textPreview":"设计 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/8v2pobax","slide":19,"name":"page","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/vitozqt8","slide":19,"name":"title","text":"规格要带着风险和责任归属进入构建","textPreview":"规格要带着风险和责任归属进入构建","textChars":16,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/ahk7qls3","slide":19,"name":"subtitle","text":"产品责任人处理取舍，政策责任人处理例外","textPreview":"产品责任人处理取舍，政策责任人处理例外","textChars":19,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/zilg7yh4","slide":19,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/0jux03yp","slide":19,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/lk3y98za","slide":19,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/ul8fm9gf","slide":19,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/fm1wveh0","slide":19,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/v694365c","slide":19,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/a503a1o7","slide":19,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/x8rm5gni","slide":19,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/w7i5cbmx","slide":19,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/ju947q5o","slide":19,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/it0nel43","slide":19,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/5wrm9gnu","slide":19,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/kvi5gbm9","slide":19,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/t8z294na","slide":19,"name":"","alt":"产品责任人与政策责任人共同守住规格进入构建的政策门","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/nid43ytk","slide":19,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p19-two-owner-policy-gate-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/zyxsni5k","slide":20,"title":"构建 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/8b654f61","slide":20,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/qpwjmh8n","slide":20,"name":"kicker","text":"构建 / SDLC","textPreview":"构建 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/rq50vmp8","slide":20,"name":"page","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/4nu1krqh","slide":20,"name":"title","text":"构建阶段不只要生成代码，还要把执行圈住、拦住、看清","textPreview":"构建阶段不只要生成代码，还要把执行圈住、拦住、看清","textChars":25,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/po3itc72","slide":20,"name":"subtitle","text":"圈住执行边界，拦住违规动作，看清事实轨迹","textPreview":"圈住执行边界，拦住违规动作，看清事实轨迹","textChars":20,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/3ml0rmpw","slide":20,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/gjuhg7ql","slide":20,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/hk3ipcr6","slide":20,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/dkfmp4zy","slide":20,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/cj65wzyd","slide":20,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/rid4nuhs","slide":20,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/qh4nupg7","slide":20,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/pwvmlkzm","slide":20,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/4vm5sfy1","slide":20,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/3ud4juhg","slide":20,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/2t4nqpgb","slide":20,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/hsvmhkzq","slide":20,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/grm5ofy5","slide":20,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/ehg3qdwn","slide":20,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/zyxsni5k","slide":20,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.11/p20-harness-integrated-alpha-v2.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/m1wvqtk3","slide":21,"title":"构建 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/0buxc3y1","slide":21,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/1gbmxs7a","slide":21,"name":"kicker","text":"构建 / SDLC","textPreview":"构建 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/0f2lon6p","slide":21,"name":"page","text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/ra9kryp8","slide":21,"name":"title","text":"先审 plan.md，再允许修改代码","textPreview":"先审 plan.md，再允许修改代码","textChars":18,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/qp03yt8n","slide":21,"name":"subtitle","text":"四段计划通过审查后，代码区的锁才打开","textPreview":"四段计划通过审查后，代码区的锁才打开","textChars":18,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/ipcjmhw7","slide":21,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/jqlkfmds","slide":21,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/4ru1o7ed","slide":21,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/5c32hcvy","slide":21,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/ulcjixwb","slide":21,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/vml0b2dw","slide":21,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/wnu1k7e1","slide":21,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/ho3idcvm","slide":21,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/ehwje1cf","slide":21,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/fi5kn6d0","slide":21,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/zalgjyhg","slide":21,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/y9cfatgv","slide":21,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/lc3yl8z6","slide":21,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/8vi94by1","slide":21,"name":"","alt":"plan.md 通过审查并形成解锁代码库的授权钥匙","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/m1wvqtk3","slide":21,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p21-plan-review-unlock-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/5onypobq","slide":22,"title":"构建 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/krihkz2d","slide":22,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/6987itcr","slide":22,"name":"kicker","text":"构建 / SDLC","textPreview":"构建 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/7a18rydc","slide":22,"name":"page","text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/k7qpgjul","slide":22,"name":"title","text":"团队规则要写进 agent 每次都能读到的文件","textPreview":"团队规则要写进 agent 每次都能读到的文件","textChars":23,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/58zqpov6","slide":22,"name":"subtitle","text":"权威规则常驻，条件政策按任务触发，失败样本继续改规则","textPreview":"权威规则常驻，条件政策按任务触发，失败样本继续改规则","textChars":26,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/jmh8nyd0","slide":22,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/43u9snu5","slide":22,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/p43q1sva","slide":22,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/p4z6tcri","slide":22,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/436507qx","slide":22,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/3ixor29c","slide":22,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/2honyx8r","slide":22,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/hgf6pcr6","slide":22,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/gf65w7ql","slide":22,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/fexon290","slide":22,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/udonux8v","slide":22,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/1cj61w7q","slide":22,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/0bap8rq5","slide":22,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/6dczy90f","slide":22,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/5onypobq","slide":22,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p22-triggered-knowledge-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/c7uhcr6t","slide":23,"title":"构建 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/mpsr6983","slide":23,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/90vqdczq","slide":23,"name":"kicker","text":"构建 / SDLC","textPreview":"构建 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/8zm9k7y5","slide":23,"name":"page","text":"23","textPreview":"23","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/v2d8fmhw","slide":23,"name":"title","text":"必须遵守的规则，要由 hooks 自动执行","textPreview":"必须遵守的规则，要由 hooks 自动执行","textChars":21,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/a14rmhgb","slide":23,"name":"subtitle","text":"违规动作会被挡落，并留下拒绝原因与时间","textPreview":"违规动作会被挡落，并留下拒绝原因与时间","textChars":19,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/4n2ds7et","slide":23,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/5obulcfy","slide":23,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/ilkbqxwn","slide":23,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/3mtcj2x8","slide":23,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/gjito7eh","slide":23,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/hkbuhcf2","slide":23,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/ux0bmxwb","slide":23,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/vy9cf2xw","slide":23,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/8vitknel","slide":23,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/twrudsfq","slide":23,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/9cjaho7u","slide":23,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/8ra98jq9","slide":23,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/nq1sfepo","slide":23,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/q947q5kr","slide":23,"name":"","alt":"执行前、提交前与执行后 hooks 长在同一条执行轨道上","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/c7uhcr6t","slide":23,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p23-hooks-on-track-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/7qto7e10","slide":24,"title":"构建 / SDLC","textShapes":28}
+{"kind":"shape","id":"sh/5kfa9cj2","slide":24,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/1sfqxsv6","slide":24,"name":"kicker","text":"构建 / SDLC","textPreview":"构建 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/0r6p4nul","slide":24,"name":"page","text":"24","textPreview":"24","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/nux8zidc","slide":24,"name":"title","text":"并行会话越多，隔离和责任归属越重要","textPreview":"并行会话越多，隔离和责任归属越重要","textChars":17,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/2to76dcr","slide":24,"name":"subtitle","text":"三条工作线互不踩踏，也都能追到启动者","textPreview":"三条工作线互不踩踏，也都能追到启动者","textChars":18,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/9wzq1svi","slide":24,"name":"console-box","bbox":[75,315,210,145]}
+{"kind":"textbox","id":"sh/ov6p8nux","slide":24,"name":"console","text":"工程师控制台","textPreview":"工程师控制台","textChars":6,"textLines":1,"bbox":[90,350,180,38]}
+{"kind":"textbox","id":"sh/3ydonyd8","slide":24,"name":"console-sub","text":"一次启动，三条隔离工作线","textPreview":"一次启动，三条隔离工作线","textChars":12,"textLines":1,"bbox":[95,400,170,30]}
+{"kind":"shape","id":"sh/ix47utcn","slide":24,"name":"branch-0","bbox":[285,285,120,102]}
+{"kind":"shape","id":"sh/8veh8ril","slide":24,"name":"lane-0","bbox":[405,225,760,115]}
+{"kind":"shape","id":"sh/9wni1wjq","slide":24,"name":"tree-0","bbox":[440,235,165,85]}
+{"kind":"shape","id":"sh/mtwz6h0f","slide":24,"name":"tree-0-fold","bbox":[587,235,18,18]}
+{"kind":"textbox","id":"sh/nu50zm10","slide":24,"name":"tree-0-t","text":"worktree-1","textPreview":"worktree-1","textChars":10,"textLines":1,"bbox":[450,243,140,69]}
+{"kind":"shape","id":"sh/wzyhcrih","slide":24,"name":"log-0","bbox":[675,235,150,85]}
+{"kind":"shape","id":"sh/x07i5wj2","slide":24,"name":"log-0-fold","bbox":[807,235,18,18]}
+{"kind":"textbox","id":"sh/axgza10b","slide":24,"name":"log-0-t","text":"session.log","textPreview":"session.log","textChars":11,"textLines":1,"bbox":[685,243,125,69]}
+{"kind":"shape","id":"sh/vyp03m1w","slide":24,"name":"launch-0","bbox":[935,277,150,0]}
+{"kind":"textbox","id":"sh/c3uh07id","slide":24,"name":"launch-0-check","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[990,243,36,32]}
+{"kind":"textbox","id":"sh/d43itcjy","slide":24,"name":"launch-0-t","text":"启动者 1","textPreview":"启动者 1","textChars":5,"textLines":1,"bbox":[935,285,150,22]}
+{"kind":"textbox","id":"sh/t8v6h47a","slide":24,"name":"prov-0","text":"owner:1 · session:01 · worktree:1","textPreview":"owner:1 · session:01 · worktree:1","textChars":33,"textLines":1,"bbox":[845,303,285,24]}
+{"kind":"shape","id":"sh/s72p8z6p","slide":24,"name":"branch-1","bbox":[285,387,120,43]}
+{"kind":"shape","id":"sh/rmtofup4","slide":24,"name":"lane-1","bbox":[405,370,760,115]}
+{"kind":"shape","id":"sh/6lk76poz","slide":24,"name":"tree-1","bbox":[440,380,165,85]}
+{"kind":"shape","id":"sh/1cv6l47m","slide":24,"name":"tree-1-fold","bbox":[587,380,18,18]}
+{"kind":"textbox","id":"sh/gbmpcz61","slide":24,"name":"tree-1-t","text":"worktree-2","textPreview":"worktree-2","textChars":10,"textLines":1,"bbox":[450,388,140,69]}
+{"kind":"shape","id":"sh/fadojepg","slide":24,"name":"log-1","bbox":[675,380,150,85]}
+{"kind":"shape","id":"sh/e947a9ov","slide":24,"name":"log-1-fold","bbox":[807,380,18,18]}
+{"kind":"textbox","id":"sh/pgf6po7i","slide":24,"name":"log-1-t","text":"session.log","textPreview":"session.log","textChars":11,"textLines":1,"bbox":[685,388,125,69]}
+{"kind":"shape","id":"sh/of6pgj6x","slide":24,"name":"launch-1","bbox":[935,422,150,0]}
+{"kind":"textbox","id":"sh/mlg3al4f","slide":24,"name":"launch-1-check","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[990,388,36,32]}
+{"kind":"textbox","id":"sh/nmp4jq50","slide":24,"name":"launch-1-t","text":"启动者 2","textPreview":"启动者 2","textChars":5,"textLines":1,"bbox":[935,430,150,22]}
+{"kind":"textbox","id":"sh/8nylcvml","slide":24,"name":"prov-1","text":"owner:2 · session:02 · worktree:2","textPreview":"owner:2 · session:02 · worktree:2","textChars":33,"textLines":1,"bbox":[845,448,285,24]}
+{"kind":"shape","id":"sh/9o7mlgn6","slide":24,"name":"selected","bbox":[450,342,145,38]}
+{"kind":"textbox","id":"sh/ap03el4r","slide":24,"name":"selected-t","text":"当前选中","textPreview":"当前选中","textChars":4,"textLines":1,"bbox":[458,348,129,26]}
+{"kind":"shape","id":"sh/vq94nq5w","slide":24,"name":"branch-2","bbox":[285,387,120,188]}
+{"kind":"shape","id":"sh/wrilgvmh","slide":24,"name":"lane-2","bbox":[405,515,760,115]}
+{"kind":"shape","id":"sh/xsrmp0n2","slide":24,"name":"tree-2","bbox":[440,525,165,85]}
+{"kind":"shape","id":"sh/it03i54n","slide":24,"name":"tree-2-fold","bbox":[587,525,18,18]}
+{"kind":"textbox","id":"sh/je94ra58","slide":24,"name":"tree-2-t","text":"worktree-3","textPreview":"worktree-3","textChars":10,"textLines":1,"bbox":[450,533,140,69]}
+{"kind":"shape","id":"sh/ra54bqxc","slide":24,"name":"log-2","bbox":[675,525,150,85]}
+{"kind":"shape","id":"sh/q9w325wr","slide":24,"name":"log-2-fold","bbox":[807,525,18,18]}
+{"kind":"textbox","id":"sh/dc7md0fi","slide":24,"name":"log-2-t","text":"session.log","textPreview":"session.log","textChars":11,"textLines":1,"bbox":[685,533,125,69]}
+{"kind":"shape","id":"sh/sbyl4vex","slide":24,"name":"launch-2","bbox":[935,567,150,0]}
+{"kind":"textbox","id":"sh/fyp4fax8","slide":24,"name":"launch-2-check","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[990,533,36,32]}
+{"kind":"textbox","id":"sh/edg365w3","slide":24,"name":"launch-2-t","text":"启动者 3","textPreview":"启动者 3","textChars":5,"textLines":1,"bbox":[935,575,150,22]}
+{"kind":"textbox","id":"sh/107mhkfe","slide":24,"name":"prov-2","text":"owner:3 · session:03 · worktree:3","textPreview":"owner:3 · session:03 · worktree:3","textChars":33,"textLines":1,"bbox":[845,593,285,24]}
+{"kind":"shape","id":"sh/0zyl8fet","slide":24,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/v2lk36x4","slide":24,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/uhc3ulwj","slide":24,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/0bq9onq5","slide":24,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/lczahsrq","slide":24,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/y98rmd8z","slide":24,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/zahsfi9k","slide":24,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/c7q9k3q9","slide":24,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/d8zad8ru","slide":24,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/q5orid83","slide":24,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/b6xsbi9o","slide":24,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/w3a9w7qd","slide":24,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/x4japcry","slide":24,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"notes","id":"nt/7qto7e10","slide":24,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/69wfm9o7","slide":25,"title":"构建 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/1czihwva","slide":25,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/xg7axgf2","slide":25,"name":"kicker","text":"构建 / SDLC","textPreview":"构建 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/cfyt4beh","slide":25,"name":"page","text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/napsr6x0","slide":25,"name":"title","text":"平台维护共同基线，工程师对具体改动负责","textPreview":"平台维护共同基线，工程师对具体改动负责","textChars":19,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/29wby1wf","slide":25,"name":"subtitle","text":"共同护栏包围执行环境，但不吞掉改动责任","textPreview":"共同护栏包围执行环境，但不吞掉改动责任","textChars":19,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/obyt0bel","slide":25,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/fm5snmx4","slide":25,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/elwbu1wj","slide":25,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/wza9cbqp","slide":25,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/h0jalgra","slide":25,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/uxsra18j","slide":25,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/vy1sj694","slide":25,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/8ba98bqt","slide":25,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/9cjahgry","slide":25,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/m98r618n","slide":25,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/7a1sf698","slide":25,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/s7utkvqx","slide":25,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/t83at0ri","slide":25,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/fut4r658","slide":25,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/69wfm9o7","slide":25,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.14/generated/p25-shared-baseline-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/l0bepsfm","slide":26,"title":"测试 / SDLC","textShapes":20}
+{"kind":"shape","id":"sh/y14nqxo3","slide":26,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/uhk36lk7","slide":26,"name":"kicker","text":"测试 / SDLC","textPreview":"测试 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/vitkzqlc","slide":26,"name":"page","text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/8fil4b21","slide":26,"name":"title","text":"测试既要验证产品改动，也要验证 harness 配置","textPreview":"测试既要验证产品改动，也要验证 harness 配置","textChars":26,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/tgr2xg3m","slide":26,"name":"subtitle","text":"两类证据在同一道合并门前汇合；缺一份，都不能算完成","textPreview":"两类证据在同一道合并门前汇合；缺一份，都不能算完成","textChars":25,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/md0321kv","slide":26,"name":"p1","bbox":[190,295,185,0]}
+{"kind":"shape","id":"sh/7e9kv6lg","slide":26,"name":"p2","bbox":[545,295,175,0]}
+{"kind":"shape","id":"sh/kbil0r2p","slide":26,"name":"c1","bbox":[190,480,185,0]}
+{"kind":"shape","id":"sh/lcr2tw3a","slide":26,"name":"c2","bbox":[545,480,175,0]}
+{"kind":"shape","id":"sh/lsja143i","slide":26,"name":"pg","bbox":[870,295,130,75]}
+{"kind":"shape","id":"sh/krat8z2x","slide":26,"name":"cg","bbox":[870,405,130,75]}
+{"kind":"textbox","id":"sh/x4jax436","slide":26,"name":"guides","text":"验证输入","textPreview":"验证输入","textChars":4,"textLines":1,"bbox":[80,215,130,28]}
+{"kind":"shape","id":"sh/c3a94z21","slide":26,"name":"change","bbox":[240,250,150,90]}
+{"kind":"textbox","id":"sh/b21svulg","slide":26,"name":"change-t","text":"产品改动","textPreview":"产品改动","textChars":4,"textLines":1,"bbox":[260,278,110,34]}
+{"kind":"shape","id":"sh/a18r2pkv","slide":26,"name":"test","bbox":[400,250,150,90]}
+{"kind":"textbox","id":"sh/p0zatk3a","slide":26,"name":"test-t","text":"产品测试","textPreview":"产品测试","textChars":4,"textLines":1,"bbox":[420,278,110,34]}
+{"kind":"shape","id":"sh/ozq90f2p","slide":26,"name":"prod-evidence","bbox":[720,248,155,96]}
+{"kind":"shape","id":"sh/0ve1wjex","slide":26,"name":"prod-evidence-fold","bbox":[857,248,18,18]}
+{"kind":"textbox","id":"sh/1wn25ofi","slide":26,"name":"prod-evidence-t","text":"产品证据","textPreview":"产品证据","textChars":4,"textLines":1,"bbox":[730,256,130,80]}
+{"kind":"shape","id":"sh/etwju9wr","slide":26,"name":"config","bbox":[240,435,150,90]}
+{"kind":"textbox","id":"sh/fu5k3exc","slide":26,"name":"config-t","text":"harness 配置","textPreview":"harness 配置","textChars":10,"textLines":1,"bbox":[252,463,126,34]}
+{"kind":"shape","id":"sh/sru1szel","slide":26,"name":"eval","bbox":[400,435,150,90]}
+{"kind":"textbox","id":"sh/ds3i14f6","slide":26,"name":"eval-t","text":"EVAL","textPreview":"EVAL","textChars":4,"textLines":1,"bbox":[420,463,110,34]}
+{"kind":"shape","id":"sh/qpcjq9wv","slide":26,"name":"cfg-evidence","bbox":[720,433,155,96]}
+{"kind":"shape","id":"sh/rql0zex0","slide":26,"name":"cfg-evidence-fold","bbox":[857,433,18,18]}
+{"kind":"textbox","id":"sh/cny143e5","slide":26,"name":"cfg-evidence-t","text":"配置证据","textPreview":"配置证据","textChars":4,"textLines":1,"bbox":[730,441,130,80]}
+{"kind":"shape","id":"sh/xo72d8fq","slide":26,"name":"merge","bbox":[1025,270,0,250]}
+{"kind":"shape","id":"sh/7i9432hs","slide":26,"name":"merge-a","bbox":[1018,268,14,5]}
+{"kind":"shape","id":"sh/mh0nuxg7","slide":26,"name":"merge-b","bbox":[1018,517,14,5]}
+{"kind":"textbox","id":"sh/9kbm5czy","slide":26,"name":"merge-t","text":"合并门槛","textPreview":"合并门槛","textChars":4,"textLines":1,"bbox":[947,240,156,22]}
+{"kind":"textbox","id":"sh/8ji5w7yd","slide":26,"name":"pass","text":"两份证据齐全","textPreview":"两份证据齐全","textChars":6,"textLines":1,"bbox":[1060,340,155,30]}
+{"kind":"textbox","id":"sh/vmt47mho","slide":26,"name":"block","text":"任一缺失：阻止合并","textPreview":"任一缺失：阻止合并","textChars":9,"textLines":1,"bbox":[1050,410,175,45]}
+{"kind":"shape","id":"sh/ulknyhg3","slide":26,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/h8bm9czu","slide":26,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/wn2507y9","slide":26,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/bqp4vihk","slide":26,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/apg3mdgz","slide":26,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/2tknidov","slide":26,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/3ut4bipg","slide":26,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/ov25kn61","slide":26,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/pwbmds7m","slide":26,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/qxknmxor","slide":26,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/byd4f2pc","slide":26,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/czm5o76x","slide":26,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/d0vmhs7i","slide":26,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"notes","id":"nt/l0bepsfm","slide":26,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/4vyxknqp","slide":27,"title":"测试 / SDLC","textShapes":17}
+{"kind":"shape","id":"sh/0bmlsfu1","slide":27,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/kn694nmx","slide":27,"name":"kicker","text":"测试 / SDLC","textPreview":"测试 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/lofadsni","slide":27,"name":"page","text":"27","textPreview":"27","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/mpor6x43","slide":27,"name":"title","text":"agent 不能只说“完成了”，必须留下验证证据","textPreview":"agent 不能只说“完成了”，必须留下验证证据","textChars":24,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/7qxsfi5o","slide":27,"name":"subtitle","text":"失败、修改、通过是一段可复核的短循环","textPreview":"失败、修改、通过是一段可复核的短循环","textChars":18,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/8r698nm9","slide":27,"name":"session","bbox":[100,245,1080,330]}
+{"kind":"shape","id":"sh/9sfahsnu","slide":27,"name":"diff-a","bbox":[145,335,180,100]}
+{"kind":"shape","id":"sh/utobax4f","slide":27,"name":"diff-a-fold","bbox":[307,335,18,18]}
+{"kind":"textbox","id":"sh/vuxsj250","slide":27,"name":"diff-a-t","text":"diff v1","textPreview":"diff v1","textChars":7,"textLines":1,"bbox":[155,343,155,84]}
+{"kind":"shape","id":"sh/ju5gv294","slide":27,"name":"try-a","bbox":[325,385,155,0]}
+{"kind":"shape","id":"sh/ytwfmx8j","slide":27,"name":"failure","bbox":[480,315,180,140]}
+{"kind":"textbox","id":"sh/lw7yxcra","slide":27,"name":"failure-t","text":"测试失败","textPreview":"测试失败","textChars":4,"textLines":1,"bbox":[500,350,140,42]}
+{"kind":"textbox","id":"sh/kvyxo7qp","slide":27,"name":"failure-code","text":"exit 1","textPreview":"exit 1","textChars":6,"textLines":1,"bbox":[520,397,100,25]}
+{"kind":"shape","id":"sh/bq5gr298","slide":27,"name":"return","bbox":[570,455,0,65]}
+{"kind":"shape","id":"sh/apwfix8n","slide":27,"name":"return2","bbox":[325,435,245,85]}
+{"kind":"textbox","id":"sh/xsnytcry","slide":27,"name":"fix-note","text":"失败证据回到同一会话","textPreview":"失败证据回到同一会话","textChars":10,"textLines":1,"bbox":[250,525,300,26]}
+{"kind":"shape","id":"sh/wrexk7qt","slide":27,"name":"diff-b","bbox":[720,335,180,100]}
+{"kind":"shape","id":"sh/vmpg3m9c","slide":27,"name":"diff-b-fold","bbox":[882,335,18,18]}
+{"kind":"textbox","id":"sh/ulgzuh8r","slide":27,"name":"diff-b-t","text":"diff v2","textPreview":"diff v2","textChars":7,"textLines":1,"bbox":[730,343,155,84]}
+{"kind":"shape","id":"sh/qhkj2lsz","slide":27,"name":"try-b","bbox":[660,385,60,0]}
+{"kind":"shape","id":"sh/rit0vqtk","slide":27,"name":"pass-path","bbox":[900,385,90,0]}
+{"kind":"shape","id":"sh/sj214va5","slide":27,"name":"evidence","bbox":[990,325,155,120]}
+{"kind":"shape","id":"sh/dkb2x0bq","slide":27,"name":"evidence-fold","bbox":[1127,325,18,18]}
+{"kind":"textbox","id":"sh/elkj65sb","slide":27,"name":"evidence-t","text":"evidence ✓","textPreview":"evidence ✓","textChars":10,"textLines":1,"bbox":[1000,333,130,104]}
+{"kind":"textbox","id":"sh/fmdkzatw","slide":27,"name":"attempts","text":"attempt 01  →  attempt 02","textPreview":"attempt 01  →  attempt 02","textChars":25,"textLines":1,"bbox":[420,270,420,28]}
+{"kind":"shape","id":"sh/0nm18fa1","slide":27,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/1ov210bm","slide":27,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/up0ju1sr","slide":27,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/vq90n6tc","slide":27,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/x4fmt4vu","slide":27,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/w36l0ju9","slide":27,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/bix4red4","slide":27,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/aho3y9cj","slide":27,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/l8zmxov6","slide":27,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/k7q54jul","slide":27,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/j6h4ved0","slide":27,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/y58329cf","slide":27,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/1cvmlkvm","slide":27,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"notes","id":"nt/4vyxknqp","slide":27,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/3mdove10","slide":28,"title":"测试 / SDLC","textShapes":26}
+{"kind":"shape","id":"sh/ru903ilc","slide":28,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/q9cz6xkv","slide":28,"name":"kicker","text":"测试 / SDLC","textPreview":"测试 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/ralgf21g","slide":28,"name":"page","text":"28","textPreview":"28","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/0zehcr2x","slide":28,"name":"title","text":"规则、skills 和 hooks 也要做回归测试","textPreview":"规则、skills 和 hooks 也要做回归测试","textChars":25,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/10nylwji","slide":28,"name":"subtitle","text":"真实任务样本进入实验台，配置一变就重新运行","textPreview":"真实任务样本进入实验台，配置一变就重新运行","textChars":21,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/exwzahkr","slide":28,"name":"lab","bbox":[300,215,870,405]}
+{"kind":"textbox","id":"sh/zy5gjm1c","slide":28,"name":"lab-title","text":"HARNESS EVAL LAB","textPreview":"HARNESS EVAL LAB","textChars":16,"textLines":1,"bbox":[535,235,400,34]}
+{"kind":"shape","id":"sh/o3ehgr29","slide":28,"name":"sample-0","bbox":[90,275,170,68]}
+{"kind":"shape","id":"sh/947ipwje","slide":28,"name":"sample-0-fold","bbox":[242,275,18,18]}
+{"kind":"textbox","id":"sh/lg3690fq","slide":28,"name":"sample-0-t","text":"真实任务 01","textPreview":"真实任务 01","textChars":7,"textLines":1,"bbox":[100,283,145,52]}
+{"kind":"shape","id":"sh/kfu5gfe5","slide":28,"name":"feed-0","bbox":[260,309,120,0]}
+{"kind":"shape","id":"sh/je1o7ax0","slide":28,"name":"sample-1","bbox":[90,385,170,68]}
+{"kind":"shape","id":"sh/ytsne5wf","slide":28,"name":"sample-1-fold","bbox":[242,385,18,18]}
+{"kind":"textbox","id":"sh/tk36dkf2","slide":28,"name":"sample-1-t","text":"事故回归 02","textPreview":"事故回归 02","textChars":7,"textLines":1,"bbox":[100,393,145,52]}
+{"kind":"shape","id":"sh/8ju5kfeh","slide":28,"name":"feed-1","bbox":[260,419,120,0]}
+{"kind":"shape","id":"sh/7ilobaxw","slide":28,"name":"sample-2","bbox":[90,495,170,68]}
+{"kind":"shape","id":"sh/6hcni5wb","slide":28,"name":"sample-2-fold","bbox":[242,495,18,18]}
+{"kind":"textbox","id":"sh/9ojm1gfi","slide":28,"name":"sample-2-t","text":"越权负例 03","textPreview":"越权负例 03","textChars":7,"textLines":1,"bbox":[100,503,145,52]}
+{"kind":"shape","id":"sh/ona58ved","slide":28,"name":"feed-2","bbox":[260,529,120,0]}
+{"kind":"shape","id":"sh/0jex4fq5","slide":28,"name":"rack","bbox":[380,275,300,285]}
+{"kind":"shape","id":"sh/1knedkrq","slide":28,"name":"lane-0","bbox":[405,330,245,0]}
+{"kind":"textbox","id":"sh/ehwf2p8z","slide":28,"name":"lane-t-0","text":"TASK 01","textPreview":"TASK 01","textChars":7,"textLines":1,"bbox":[410,292,90,25]}
+{"kind":"shape","id":"sh/zi5wba9k","slide":28,"name":"result-0","bbox":[580,302,52,52]}
+{"kind":"textbox","id":"sh/o7yx8zqh","slide":28,"name":"result-t-0","text":"过","textPreview":"过","textChars":1,"textLines":1,"bbox":[580,314,52,28]}
+{"kind":"shape","id":"sh/987eh4rm","slide":28,"name":"lane-1","bbox":[405,415,245,0]}
+{"kind":"textbox","id":"sh/m5wf6p8b","slide":28,"name":"lane-t-1","text":"TASK 02","textPreview":"TASK 02","textChars":7,"textLines":1,"bbox":[410,377,90,25]}
+{"kind":"shape","id":"sh/n6pwfu9w","slide":28,"name":"result-1","bbox":[580,387,52,52]}
+{"kind":"textbox","id":"sh/wbyxczqd","slide":28,"name":"result-t-1","text":"过","textPreview":"过","textChars":1,"textLines":1,"bbox":[580,399,52,28]}
+{"kind":"shape","id":"sh/xc7yl4ry","slide":28,"name":"lane-2","bbox":[405,500,245,0]}
+{"kind":"textbox","id":"sh/76t0byt0","slide":28,"name":"lane-t-2","text":"TASK 03","textPreview":"TASK 03","textChars":7,"textLines":1,"bbox":[410,462,90,25]}
+{"kind":"shape","id":"sh/65kz2tsf","slide":28,"name":"result-2","bbox":[580,472,52,52]}
+{"kind":"textbox","id":"sh/t8bid8b6","slide":28,"name":"result-t-2","text":"拦","textPreview":"拦","textChars":1,"textLines":1,"bbox":[580,484,52,28]}
+{"kind":"shape","id":"sh/872h43al","slide":28,"name":"config-old","bbox":[735,280,160,80]}
+{"kind":"shape","id":"sh/j2907yt4","slide":28,"name":"config-old-fold","bbox":[877,280,18,18]}
+{"kind":"textbox","id":"sh/y10zytsj","slide":28,"name":"config-old-t","text":"config@v12","textPreview":"config@v12","textChars":10,"textLines":1,"bbox":[745,288,135,64]}
+{"kind":"shape","id":"sh/l4ri98ba","slide":28,"name":"config-new","bbox":[735,440,160,80]}
+{"kind":"shape","id":"sh/k3ih03ap","slide":28,"name":"config-new-fold","bbox":[877,440,18,18]}
+{"kind":"textbox","id":"sh/3yd0jit8","slide":28,"name":"config-new-t","text":"config@v13","textPreview":"config@v13","textChars":10,"textLines":1,"bbox":[745,448,135,64]}
+{"kind":"shape","id":"sh/ix4zaxsn","slide":28,"name":"config-change","bbox":[815,360,0,70]}
+{"kind":"textbox","id":"sh/qlk3eho7","slide":28,"name":"change","text":"规则 / skill / hook 改动","textPreview":"规则 / skill / hook 改动","textChars":20,"textLines":1,"bbox":[685,380,260,30]}
+{"kind":"shape","id":"sh/rmt47mpc","slide":28,"name":"rerun-a","bbox":[900,480,130,0]}
+{"kind":"shape","id":"sh/c72lgr6x","slide":28,"name":"rerun-b","bbox":[1030,315,0,165]}
+{"kind":"shape","id":"sh/d8bm9w7i","slide":28,"name":"rerun-c","bbox":[900,315,130,0]}
+{"kind":"textbox","id":"sh/2h03ahov","slide":28,"name":"rerun-t","text":"全样本重跑","textPreview":"全样本重跑","textChars":5,"textLines":1,"bbox":[930,375,170,34]}
+{"kind":"shape","id":"sh/3i9k32pg","slide":28,"name":"threshold","bbox":[1125,280,0,250]}
+{"kind":"shape","id":"sh/4jilc761","slide":28,"name":"threshold-a","bbox":[1118,278,14,5]}
+{"kind":"shape","id":"sh/pkb25c7m","slide":28,"name":"threshold-b","bbox":[1118,527,14,5]}
+{"kind":"textbox","id":"sh/md43m1oz","slide":28,"name":"threshold-t","text":"团队合并阈值","textPreview":"团队合并阈值","textChars":6,"textLines":1,"bbox":[1047,250,156,22]}
+{"kind":"textbox","id":"sh/ned4f6pk","slide":28,"name":"merge-ok","text":"过门后才可合并","textPreview":"过门后才可合并","textChars":7,"textLines":1,"bbox":[1000,555,190,30]}
+{"kind":"shape","id":"sh/x8f650r2","slide":28,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/w765cvqh","slide":28,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/v6xo3q9w","slide":28,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/a5onal8b","slide":28,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/94f610rq","slide":28,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/83658vq5","slide":28,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/n2dozq9k","slide":28,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/m14n6l8f","slide":28,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/t0z6dkra","slide":28,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/szqpkfqp","slide":28,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/cfihwn2x","slide":28,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/dgri5s3i","slide":28,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/qt0zudkr","slide":28,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"notes","id":"nt/3mdove10","slide":28,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/i5o3q10v","slide":29,"title":"测试 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/of2xsb6d","slide":29,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/tk36hwby","slide":29,"name":"kicker","text":"测试 / SDLC","textPreview":"测试 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/8jup8rad","slide":29,"name":"page","text":"29","textPreview":"29","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/vmlojmto","slide":29,"name":"title","text":"QA 要从逐单执行，转向维护验证系统","textPreview":"QA 要从逐单执行，转向维护验证系统","textChars":18,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/ulc7a1s3","slide":29,"name":"subtitle","text":"产品证据与配置证据共同决定能否合并","textPreview":"产品证据与配置证据共同决定能否合并","textChars":17,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/i54fy1wb","slide":29,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/j6dg76xg","slide":29,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/k7mx0be1","slide":29,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/58vy9wfm","slide":29,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/694f21w7","slide":29,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/7adgb6xs","slide":29,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/svmx4bed","slide":29,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/twvydgfy","slide":29,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/uxof6lw3","slide":29,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/fyxgfqxo","slide":29,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/nutgzqps","slide":29,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/2tkfqlon","slide":29,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/pgby1g7y","slide":29,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/gfed0n6l","slide":29,"name":"","alt":"产品验证与 harness 验证的两路证据共同压下同一道合并门","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/i5o3q10v","slide":29,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p29-dual-evidence-merge-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/wnqh07ex","slide":30,"title":"发布 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/907mhc7m","slide":30,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/po72d8nm","slide":30,"name":"kicker","text":"发布 / SDLC","textPreview":"发布 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/o3yl4361","slide":30,"name":"page","text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/bqpkfy5s","slide":30,"name":"title","text":"agent 可以提出动作，生产执行必须另行授权","textPreview":"agent 可以提出动作，生产执行必须另行授权","textChars":23,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/apg36do7","slide":30,"name":"subtitle","text":"生产侧保持断开；执行当下授权，桥才短暂闭合","textPreview":"生产侧保持断开；执行当下授权，桥才短暂闭合","textChars":21,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/cril836d","slide":30,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/ru5k3ep8","slide":30,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/6twju9o3","slide":30,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/onqx8zix","slide":30,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/p8ze14zi","slide":30,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/2l8f6p0r","slide":30,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/3mhwzu1c","slide":30,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/cbaxczit","slide":30,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/dcje54ze","slide":30,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/q9sfap03","slide":30,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/ba1w3uh8","slide":30,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/sf6d0fip","slide":30,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/tgfetkja","slide":30,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/j6pc3q1g","slide":30,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/wnqh07ex","slide":30,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p30-execution-authorization-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/lcn6tkb6","slide":31,"title":"发布 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/9cvqlgni","slide":31,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/dgja98fe","slide":31,"name":"kicker","text":"发布 / SDLC","textPreview":"发布 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/cfa903yt","slide":31,"name":"page","text":"31","textPreview":"31","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/zilsbyx4","slide":31,"name":"title","text":"写代码与批准发布，必须由不同角色承担","textPreview":"写代码与批准发布，必须由不同角色承担","textChars":18,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/ehsr2dgz","slide":31,"name":"subtitle","text":"自批支路被剪断，机器检查和人的判断叠在同一份 PR 上","textPreview":"自批支路被剪断，机器检查和人的判断叠在同一份 PR 上","textChars":27,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/krelk329","slide":31,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/ilory1wf","slide":31,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/3mx8r6x0","slide":31,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/4n690bel","slide":31,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/5ofqtgf6","slide":31,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/qpor21wr","slide":31,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/rqx8v6xc","slide":31,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/sr694beh","slide":31,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/dszqxgf2","slide":31,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/et8r6lwn","slide":31,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/fuh8zqx8","slide":31,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/nad8jq5c","slide":31,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/m947qlor","slide":31,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/7itsvupw","slide":31,"name":"","alt":"自批捷径被剪断，发布责任人在独立位置签署决定","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/lcn6tkb6","slide":31,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p31-separated-approval-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/6l0j294r","slide":32,"title":"发布 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/y1gnadsv","slide":32,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/kr61sfy1","slide":32,"name":"kicker","text":"发布 / SDLC","textPreview":"发布 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/lszilkfm","slide":32,"name":"page","text":"32","textPreview":"32","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/6t8jupg7","slide":32,"name":"title","text":"生产边界必须封在执行管道里","textPreview":"生产边界必须封在执行管道里","textChars":13,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/7uh0nuxs","slide":32,"name":"subtitle","text":"allow、ask、block 是三个真正不同的执行出口","textPreview":"allow、ask、block 是三个真正不同的执行出口","textChars":28,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/twzipkfy","slide":32,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/mx4zilg3","slide":32,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/nyd0bqxo","slide":32,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/ry94z29w","slide":32,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/qx0nqx8b","slide":32,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/d0bm1c7m","slide":32,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/szi5s7qh","slide":32,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/3a94vi9k","slide":32,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/i903mx8z","slide":32,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/5crmxsrq","slide":32,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/4bilonq5","slide":32,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/v6p4ri9o","slide":32,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/u5g3yd83","slide":32,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/sv6pwj2x","slide":32,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/6l0j294r","slide":32,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.14/generated/p32-execution-outlets-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/nax4b2dk","slide":33,"title":"发布 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/ja9072xk","slide":33,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/lk3m50nq","slide":33,"name":"kicker","text":"发布 / SDLC","textPreview":"发布 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/0jalwfm5","slide":33,"name":"page","text":"33","textPreview":"33","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/nml47a5w","slide":33,"name":"title","text":"agent 的权限止步于生产门禁","textPreview":"agent 的权限止步于生产门禁","textChars":16,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/mlc3y54b","slide":33,"name":"subtitle","text":"越接近生产，自主权越窄；回滚路径反而要更直接","textPreview":"越接近生产，自主权越窄；回滚路径反而要更直接","textChars":22,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/nihcbe1k","slide":33,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/mh8v29kz","slide":33,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/pofu1k36","slide":33,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/4n6tsf2l","slide":33,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/uhkjm1w7","slide":33,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/vit0f6ds","slide":33,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/gj21ored","slide":33,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/h4bihwvy","slide":33,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/i5kjq1w3","slide":33,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/36d0j6do","slide":33,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/47m1sbe9","slide":33,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/58v2lgvu","slide":33,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/y90jehwz","slide":33,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/cf69kfix","slide":33,"name":"","alt":"agent 权限止步于生产门，发布责任人掌握授权钥匙与直接回滚路径","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/nax4b2dk","slide":33,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.16/generated/p33-production-gate-blend.png; generated from the approved v0.16 prompt and visual master reference.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/ofu103u5","slide":34,"title":"发布 / SDLC","textShapes":22}
+{"kind":"shape","id":"sh/fid0fip4","slide":34,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/pwzm1kbm","slide":34,"name":"kicker","text":"发布 / SDLC","textPreview":"发布 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/ovq58fu1","slide":34,"name":"page","text":"34","textPreview":"34","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/byh43utc","slide":34,"name":"title","text":"生产门禁必须独立于代码生成","textPreview":"生产门禁必须独立于代码生成","textChars":13,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/qx8napc7","slide":34,"name":"subtitle","text":"代码责任人与发布责任人分位签字，允许和拒绝都入日志","textPreview":"代码责任人与发布责任人分位签字，允许和拒绝都入日志","textChars":25,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/d0zm54bi","slide":34,"name":"code-zone","bbox":[85,225,480,390]}
+{"kind":"shape","id":"sh/czq5czux","slide":34,"name":"release-zone","bbox":[715,225,480,390]}
+{"kind":"textbox","id":"sh/z2147eto","slide":34,"name":"code-zone-t","text":"代码侧","textPreview":"代码侧","textChars":3,"textLines":1,"bbox":[110,245,120,30]}
+{"kind":"textbox","id":"sh/y18ne9c3","slide":34,"name":"release-zone-t","text":"发布侧","textPreview":"发布侧","textChars":3,"textLines":1,"bbox":[740,245,120,30]}
+{"kind":"shape","id":"sh/0vidkfu5","slide":34,"name":"release-pack","bbox":[145,315,300,135]}
+{"kind":"shape","id":"sh/1wredkbq","slide":34,"name":"release-pack-fold","bbox":[427,315,18,18]}
+{"kind":"textbox","id":"sh/e90vipcz","slide":34,"name":"release-pack-t","text":"PR + release evidence","textPreview":"PR + release evidence","textChars":21,"textLines":1,"bbox":[155,323,275,119]}
+{"kind":"shape","id":"sh/za9wbutk","slide":34,"name":"code-owner","bbox":[220,500,150,0]}
+{"kind":"textbox","id":"sh/oz2dozu1","slide":34,"name":"code-owner-check","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[275,466,36,32]}
+{"kind":"textbox","id":"sh/90beh4bm","slide":34,"name":"code-owner-t","text":"代码责任人","textPreview":"代码责任人","textChars":5,"textLines":1,"bbox":[220,508,150,22]}
+{"kind":"shape","id":"sh/mxkvmpcb","slide":34,"name":"handoff","bbox":[445,382,165,0]}
+{"kind":"shape","id":"sh/nytwfutg","slide":34,"name":"prod-gate","bbox":[640,255,0,300]}
+{"kind":"shape","id":"sh/w32xszud","slide":34,"name":"prod-gate-a","bbox":[633,253,14,5]}
+{"kind":"shape","id":"sh/x4vel4by","slide":34,"name":"prod-gate-b","bbox":[633,552,14,5]}
+{"kind":"textbox","id":"sh/l87mpkzq","slide":34,"name":"prod-gate-t","text":"独立生产门","textPreview":"独立生产门","textChars":5,"textLines":1,"bbox":[562,225,156,22]}
+{"kind":"textbox","id":"sh/k7y5gfi5","slide":34,"name":"no-self","text":"生成侧没有开门权限","textPreview":"生成侧没有开门权限","textChars":9,"textLines":1,"bbox":[505,575,270,28]}
+{"kind":"shape","id":"sh/j6p4nahk","slide":34,"name":"release","bbox":[790,315,150,0]}
+{"kind":"textbox","id":"sh/y5wne50z","slide":34,"name":"release-check","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[845,281,36,32]}
+{"kind":"textbox","id":"sh/tc7mtkzm","slide":34,"name":"release-t","text":"发布责任人","textPreview":"发布责任人","textChars":5,"textLines":1,"bbox":[790,323,150,22]}
+{"kind":"shape","id":"sh/8by5kfi1","slide":34,"name":"decision","bbox":[865,355,0,75]}
+{"kind":"shape","id":"sh/7ap4rahw","slide":34,"name":"allow-log","bbox":[865,345,175,85]}
+{"kind":"shape","id":"sh/69gni50b","slide":34,"name":"deny-log","bbox":[865,430,175,85]}
+{"kind":"shape","id":"sh/9gnmh0zi","slide":34,"name":"allow-record","bbox":[1020,300,155,85]}
+{"kind":"shape","id":"sh/ofe58vix","slide":34,"name":"allow-record-fold","bbox":[1157,300,18,18]}
+{"kind":"textbox","id":"sh/elsji1gv","slide":34,"name":"allow-record-t","text":"ALLOW log","textPreview":"ALLOW log","textChars":9,"textLines":1,"bbox":[1030,308,130,69]}
+{"kind":"shape","id":"sh/fmlkbmxg","slide":34,"name":"deny-record","bbox":[1020,470,155,85]}
+{"kind":"shape","id":"sh/0nu1kry1","slide":34,"name":"deny-record-fold","bbox":[1157,470,18,18]}
+{"kind":"textbox","id":"sh/1o32dwf6","slide":34,"name":"deny-record-t","text":"DENY log","textPreview":"DENY log","textChars":8,"textLines":1,"bbox":[1030,478,130,69]}
+{"kind":"textbox","id":"sh/mpcjm1gr","slide":34,"name":"trace","text":"两种决定都留下责任人与时间","textPreview":"两种决定都留下责任人与时间","textChars":13,"textLines":1,"bbox":[765,585,390,28]}
+{"kind":"shape","id":"sh/nalkf6xc","slide":34,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/obulobyx","slide":34,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/9c32hgfi","slide":34,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/it8jahgn","slide":34,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/3ehk32x8","slide":34,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/ja907y9w","slide":34,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/i90zet8b","slide":34,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/5cbi98r2","slide":34,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/kb2hg3qh","slide":34,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/7et0bi98","slide":34,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/6dkzid8n","slide":34,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/tgbid87y","slide":34,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/sf2hknqd","slide":34,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"notes","id":"nt/ofu103u5","slide":34,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/1obmtofm","slide":35,"title":"运维 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/kzq5wnil","slide":35,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/idonexon","slide":35,"name":"kicker","text":"运维 / SDLC","textPreview":"运维 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/3ex47ip8","slide":35,"name":"page","text":"35","textPreview":"35","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/gb6lcn6x","slide":35,"name":"title","text":"生产事实要沿同一条受控路径回流","textPreview":"生产事实要沿同一条受控路径回流","textChars":15,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/hcfm5s72","slide":35,"name":"subtitle","text":"事实先进入诊断，再形成新的 intent；人的判断始终在闭环之上","textPreview":"事实先进入诊断，再形成新的 intent；人的判断始终在闭环之上","textChars":32,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/vad43ipc","slide":35,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/87ml836l","slide":35,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/t8vm1876","slide":35,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/5of6xcbi","slide":35,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/4n65o7ax","slide":35,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/3mxov2tc","slide":35,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/ilonmxsr","slide":35,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/hkv6tsb6","slide":35,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/gjm5knal","slide":35,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/vidorit0","slide":35,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/uh4nidsv","slide":35,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/tgv6psba","slide":35,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/8fm5gnap","slide":35,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/6x03a9gn","slide":35,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/1obmtofm","slide":35,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p35-production-feedback-raw.png; selected existing project candidate, cropped and chroma-extracted for seamless placement.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/m9s3ehgf","slide":36,"title":"运维 / SDLC","textShapes":19}
+{"kind":"shape","id":"sh/fmtsfqhk","slide":36,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/5s3atkbq","slide":36,"name":"kicker","text":"运维 / SDLC","textPreview":"运维 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/4rut0fa5","slide":36,"name":"page","text":"36","textPreview":"36","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/rulsvutw","slide":36,"name":"title","text":"只有指标越界，才触发 agent 进入诊断","textPreview":"只有指标越界，才触发 agent 进入诊断","textChars":21,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/qtcb2psb","slide":36,"name":"subtitle","text":"示例分级策略：T1 记录，T2 只读诊断，T3 才能提议 PR 或 runbook","textPreview":"示例分级策略：T1 记录，T2 只读诊断，T3 才能提议 PR 或 runbook","textChars":41,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/dwnax4bm","slide":36,"name":"xaxis","bbox":[130,520,990,0]}
+{"kind":"shape","id":"sh/svet4zah","slide":36,"name":"sigma-0","bbox":[130,285,990,0]}
+{"kind":"textbox","id":"sh/fy5szuts","slide":36,"name":"sig-t-0","text":"T3","textPreview":"T3","textChars":2,"textLines":1,"bbox":[80,271,40,28]}
+{"kind":"shape","id":"sh/exwb69s7","slide":36,"name":"sigma-1","bbox":[130,380,990,0]}
+{"kind":"textbox","id":"sh/kfi54n2l","slide":36,"name":"sig-t-1","text":"T2","textPreview":"T2","textChars":2,"textLines":1,"bbox":[80,366,40,28]}
+{"kind":"shape","id":"sh/lgr6xs36","slide":36,"name":"sigma-2","bbox":[130,475,990,0]}
+{"kind":"textbox","id":"sh/ydgn2xkf","slide":36,"name":"sig-t-2","text":"T1","textPreview":"T1","textChars":2,"textLines":1,"bbox":[80,461,40,28]}
+{"kind":"shape","id":"sh/zepovil0","slide":36,"name":"metric-0","bbox":[150,470,110,30]}
+{"kind":"shape","id":"sh/83i5872h","slide":36,"name":"metric-1","bbox":[260,430,110,40]}
+{"kind":"shape","id":"sh/94r61c32","slide":36,"name":"metric-2","bbox":[370,430,130,15]}
+{"kind":"shape","id":"sh/m10n6xkr","slide":36,"name":"metric-3","bbox":[500,350,110,95]}
+{"kind":"shape","id":"sh/729oz2lw","slide":36,"name":"metric-4","bbox":[610,350,120,15]}
+{"kind":"shape","id":"sh/w72pc72t","slide":36,"name":"metric-5","bbox":[730,255,120,110]}
+{"kind":"shape","id":"sh/h8b65cje","slide":36,"name":"metric-6","bbox":[850,255,120,65]}
+{"kind":"shape","id":"sh/5o76pcbi","slide":36,"name":"trigger-0","bbox":[285,465,5,70]}
+{"kind":"shape","id":"sh/4ny5w7ux","slide":36,"name":"action-0","bbox":[205,545,160,70]}
+{"kind":"shape","id":"sh/3mpon2tc","slide":36,"name":"action-0-fold","bbox":[347,545,18,18]}
+{"kind":"textbox","id":"sh/i1wnuxcr","slide":36,"name":"action-0-t","text":"记录","textPreview":"记录","textChars":2,"textLines":1,"bbox":[215,553,135,54]}
+{"kind":"textbox","id":"sh/ds76tcbe","slide":36,"name":"time-0","text":"10:04","textPreview":"10:04","textChars":5,"textLines":1,"bbox":[255,430,70,22]}
+{"kind":"shape","id":"sh/sry50rut","slide":36,"name":"trigger-1","bbox":[610,350,10,185]}
+{"kind":"shape","id":"sh/rqpormt8","slide":36,"name":"action-1","bbox":[540,545,160,70]}
+{"kind":"shape","id":"sh/qpgnyhc3","slide":36,"name":"action-1-fold","bbox":[682,545,18,18]}
+{"kind":"textbox","id":"sh/twnmhsva","slide":36,"name":"action-1-t","text":"只读诊断","textPreview":"只读诊断","textChars":4,"textLines":1,"bbox":[550,553,135,54]}
+{"kind":"textbox","id":"sh/8ve5onup","slide":36,"name":"time-1","text":"10:18","textPreview":"10:18","textChars":5,"textLines":1,"bbox":[575,315,70,22]}
+{"kind":"shape","id":"sh/y1s3ytsn","slide":36,"name":"trigger-2","bbox":[850,255,75,280]}
+{"kind":"shape","id":"sh/j2lkry9s","slide":36,"name":"action-2","bbox":[845,545,160,70]}
+{"kind":"shape","id":"sh/k3ul03ad","slide":36,"name":"action-2-fold","bbox":[987,545,18,18]}
+{"kind":"textbox","id":"sh/l432t8ry","slide":36,"name":"action-2-t","text":"提议 PR / runbook","textPreview":"提议 PR / runbook","textChars":15,"textLines":1,"bbox":[855,553,135,54]}
+{"kind":"textbox","id":"sh/65c32tsj","slide":36,"name":"time-2","text":"10:31","textPreview":"10:31","textChars":5,"textLines":1,"bbox":[815,220,70,22]}
+{"kind":"shape","id":"sh/76lkvy94","slide":36,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/87ul43ap","slide":36,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/ts32x8ra","slide":36,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/m98jq9sf","slide":36,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/nahkjet0","slide":36,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/3e9s76hc","slide":36,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/itgry1gr","slide":36,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/5gra9gzi","slide":36,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/4fi90byx","slide":36,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/ri9sb6ho","slide":36,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/qh0r2lg3","slide":36,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/dkradgze","slide":36,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/sji94byt","slide":36,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"notes","id":"nt/m9s3ehgf","slide":36,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/.\n- Policy note: T1/T2/T3 thresholds are illustrative; each team defines and versions its own control bands, evidence requirements, and escalation policy."}
+{"kind":"slide","id":"sl/jyhsreh4","slide":37,"title":"运维 / SDLC","textShapes":21}
+{"kind":"shape","id":"sh/bi1sbqdw","slide":37,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/61c7md0r","slide":37,"name":"kicker","text":"运维 / SDLC","textPreview":"运维 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/7m58vyhw","slide":37,"name":"page","text":"37","textPreview":"37","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/kzupk3il","slide":37,"name":"title","text":"定时扫描发现的问题，也要走同一套门禁","textPreview":"定时扫描发现的问题，也要走同一套门禁","textChars":18,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/503qt8z6","slide":37,"name":"subtitle","text":"普通 finding 走 PR，重大 finding 先变成新的 intent","textPreview":"普通 finding 走 PR，重大 finding 先变成新的 intent","textChars":39,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/ixc7it0f","slide":37,"name":"clock","bbox":[85,285,175,175]}
+{"kind":"textbox","id":"sh/jyl8ryh0","slide":37,"name":"clock-t","text":"每周扫描","textPreview":"每周扫描","textChars":4,"textLines":1,"bbox":[110,345,125,45]}
+{"kind":"shape","id":"sh/4vy9wnyp","slide":37,"name":"clock-hand-a","bbox":[172,310,0,60]}
+{"kind":"shape","id":"sh/pw7q5sza","slide":37,"name":"clock-hand-b","bbox":[172,370,43,25]}
+{"kind":"shape","id":"sh/9cfa9gry","slide":37,"name":"trigger","bbox":[260,372,140,0]}
+{"kind":"shape","id":"sh/8b69gbqd","slide":37,"name":"findings","bbox":[400,310,185,125]}
+{"kind":"shape","id":"sh/naxs7q9s","slide":37,"name":"findings-fold","bbox":[567,310,18,18]}
+{"kind":"textbox","id":"sh/m94rel87","slide":37,"name":"findings-t","text":"findings","textPreview":"findings","textChars":8,"textLines":1,"bbox":[410,318,160,109]}
+{"kind":"shape","id":"sh/l8va5grm","slide":37,"name":"triage","bbox":[650,245,0,330]}
+{"kind":"shape","id":"sh/07m9cbq1","slide":37,"name":"triage-a","bbox":[643,243,14,5]}
+{"kind":"shape","id":"sh/z6ds369w","slide":37,"name":"triage-b","bbox":[643,572,14,5]}
+{"kind":"textbox","id":"sh/y54ra18b","slide":37,"name":"triage-t","text":"分级门","textPreview":"分级门","textChars":3,"textLines":1,"bbox":[572,215,156,22]}
+{"kind":"shape","id":"sh/54zah0r6","slide":37,"name":"out-line-0","bbox":[680,283,240,37]}
+{"kind":"textbox","id":"sh/43qtofql","slide":37,"name":"out-label-0","text":"普通 finding","textPreview":"普通 finding","textChars":10,"textLines":1,"bbox":[720,227,170,26]}
+{"kind":"shape","id":"sh/47ydkjyh","slide":37,"name":"out-art-0","bbox":[935,245,190,82]}
+{"kind":"shape","id":"sh/p87udof2","slide":37,"name":"out-art-0-fold","bbox":[1107,245,18,18]}
+{"kind":"textbox","id":"sh/2lgvi9gr","slide":37,"name":"out-art-0-t","text":"PR","textPreview":"PR","textChars":2,"textLines":1,"bbox":[945,253,165,66]}
+{"kind":"shape","id":"sh/36pcbexc","slide":37,"name":"out-line-1","bbox":[680,425,240,18]}
+{"kind":"textbox","id":"sh/gjetgzyl","slide":37,"name":"out-label-1","text":"重大 finding","textPreview":"重大 finding","textChars":10,"textLines":1,"bbox":[720,387,170,26]}
+{"kind":"shape","id":"sh/hknu94f6","slide":37,"name":"out-art-1","bbox":[935,405,190,82]}
+{"kind":"shape","id":"sh/uhwbe9gf","slide":37,"name":"out-art-1-fold","bbox":[1107,405,18,18]}
+{"kind":"textbox","id":"sh/fi5c7ux0","slide":37,"name":"out-art-1-t","text":"intent.md","textPreview":"intent.md","textChars":9,"textLines":1,"bbox":[945,413,165,66]}
+{"kind":"shape","id":"sh/sfetczyp","slide":37,"name":"out-line-2","bbox":[680,530,240,53]}
+{"kind":"textbox","id":"sh/tgnu54fu","slide":37,"name":"out-label-2","text":"暂不处理","textPreview":"暂不处理","textChars":4,"textLines":1,"bbox":[720,527,170,26]}
+{"kind":"shape","id":"sh/valcvu1w","slide":37,"name":"out-art-2","bbox":[935,545,190,70]}
+{"kind":"shape","id":"sh/a9cvmp0b","slide":37,"name":"out-art-2-fold","bbox":[1107,545,18,18]}
+{"kind":"textbox","id":"sh/xc3exkj2","slide":37,"name":"out-art-2-t","text":"不处理理由","textPreview":"不处理理由","textChars":5,"textLines":1,"bbox":[945,553,165,54]}
+{"kind":"shape","id":"sh/wbudozih","slide":37,"name":"eval","bbox":[970,335,125,55]}
+{"kind":"textbox","id":"sh/je5wzu1s","slide":37,"name":"eval-t","text":"回归 EVAL","textPreview":"回归 EVAL","textChars":7,"textLines":1,"bbox":[980,348,105,28]}
+{"kind":"shape","id":"sh/idcvqp07","slide":37,"name":"eval-from-pr","bbox":[1032,327,0,8]}
+{"kind":"textbox","id":"sh/7i5w3e14","slide":37,"name":"cycle","text":"进入 PR 的改动，下轮扫描前先过回归","textPreview":"进入 PR 的改动，下轮扫描前先过回归","textChars":19,"textLines":1,"bbox":[390,600,480,28]}
+{"kind":"shape","id":"sh/6hwvu90j","slide":37,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/qxo7mhcr","slide":37,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/ryxofmtc","slide":37,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/cz6po7ux","slide":37,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/d0f6hcbi","slide":37,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/e1o7qhc3","slide":37,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/zmxojmto","slide":37,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/0nqpsru9","slide":37,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/1oz6lwbe","slide":37,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/u54nexcj","slide":37,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/f6do72d4","slide":37,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/xkjad0vm","slide":37,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/wja9kveh","slide":37,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"notes","id":"nt/jyhsreh4","slide":37,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/ofahkri5","slide":38,"title":"运维 / SDLC","textShapes":10}
+{"kind":"shape","id":"sh/a5o3qloj","slide":38,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/kvy1kbep","slide":38,"name":"kicker","text":"运维 / SDLC","textPreview":"运维 / SDLC","textChars":9,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/lw7idgva","slide":38,"name":"page","text":"38","textPreview":"38","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/mxgjmlwv","slide":38,"name":"title","text":"自动诊断可以先开始，处置授权仍由服务责任人掌握","textPreview":"自动诊断可以先开始，处置授权仍由服务责任人掌握","textChars":23,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/7yp0f6dg","slide":38,"name":"subtitle","text":"夜间事件从告警走到恢复，授权点始终清楚可见","textPreview":"夜间事件从告警走到恢复，授权点始终清楚可见","textChars":21,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/90rihgv6","slide":38,"name":"stage-rail","bbox":[74,674,1132,0]}
+{"kind":"shape","id":"sh/u10jqlwr","slide":38,"name":"stage-dot-0","bbox":[78,668,12,12]}
+{"kind":"textbox","id":"sh/v290jqdc","slide":38,"name":"stage-label-0","text":"规划","textPreview":"规划","textChars":2,"textLines":1,"bbox":[70,646,82,18]}
+{"kind":"shape","id":"sh/3it0j25o","slide":38,"name":"stage-dot-1","bbox":[266.67,668,12,12]}
+{"kind":"textbox","id":"sh/ih0zqxoj","slide":38,"name":"stage-label-1","text":"设计","textPreview":"设计","textChars":2,"textLines":1,"bbox":[258.67,646,82,18]}
+{"kind":"shape","id":"sh/5kbilcnu","slide":38,"name":"stage-dot-2","bbox":[455.33,668,12,12]}
+{"kind":"textbox","id":"sh/4j2hs7m9","slide":38,"name":"stage-label-2","text":"构建","textPreview":"构建","textChars":2,"textLines":1,"bbox":[447.33,646,82,18]}
+{"kind":"shape","id":"sh/ve90f25s","slide":38,"name":"stage-dot-3","bbox":[644,668,12,12]}
+{"kind":"textbox","id":"sh/ud0zmxo7","slide":38,"name":"stage-label-3","text":"测试","textPreview":"测试","textChars":2,"textLines":1,"bbox":[636,646,82,18]}
+{"kind":"shape","id":"sh/hgrihsny","slide":38,"name":"stage-dot-4","bbox":[832.67,668,12,12]}
+{"kind":"textbox","id":"sh/gfihon6d","slide":38,"name":"stage-label-4","text":"发布","textPreview":"发布","textChars":2,"textLines":1,"bbox":[824.67,646,82,18]}
+{"kind":"shape","id":"sh/fad0rm5w","slide":38,"name":"stage-dot-5","bbox":[1021.33,668,12,12]}
+{"kind":"textbox","id":"sh/e94jyh4b","slide":38,"name":"stage-label-5","text":"运维","textPreview":"运维","textChars":2,"textLines":1,"bbox":[1013.33,646,82,18]}
+{"kind":"image","id":"im/07ahkfeh","slide":38,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/ofahkri5","slide":38,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p38-incident-control-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/twb2lg7e","slide":39,"title":"共享控制面 / 参考实现","textShapes":4}
+{"kind":"shape","id":"sh/snyp4zu5","slide":39,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/50769kvu","slide":39,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/4ze50fu9","slide":39,"name":"page","text":"39","textPreview":"39","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/r2pobudk","slide":39,"name":"title","text":"工件链补齐五项控制，才能真正支持审计","textPreview":"工件链补齐五项控制，才能真正支持审计","textChars":18,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/q1gn2pcf","slide":39,"name":"subtitle","text":"同一条链上必须追到身份、版本、证据、审批和强制门禁","textPreview":"同一条链上必须追到身份、版本、证据、审批和强制门禁","textChars":25,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/alw3i1wr","slide":39,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/twb2lg7e","slide":39,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p39-audit-layers-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/5ojatgfe","slide":40,"title":"共享控制面 / 参考实现","textShapes":11}
+{"kind":"shape","id":"sh/65c3ypw3","slide":40,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/y9gzu50n","slide":40,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/zapg3qh8","slide":40,"name":"page","text":"40","textPreview":"40","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/cnexsvih","slide":40,"name":"title","text":"机器负责可重复判断，人负责结合语境作决定","textPreview":"机器负责可重复判断，人负责结合语境作决定","textChars":20,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/x8ny10z2","slide":40,"name":"subtitle","text":"确定性检查托底，推断性审查补语境，两类决定都要留痕","textPreview":"确定性检查托底，推断性审查补语境，两类决定都要留痕","textChars":25,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/alwfql0r","slide":40,"name":"base","bbox":[140,500,1000,100]}
+{"kind":"textbox","id":"sh/bm5gzqhw","slide":40,"name":"base-t","text":"不可违反的不变量基座","textPreview":"不可违反的不变量基座","textChars":10,"textLines":1,"bbox":[400,525,480,40]}
+{"kind":"shape","id":"sh/ojexobil","slide":40,"name":"det","bbox":[245,345,790,150]}
+{"kind":"textbox","id":"sh/pknyxgz6","slide":40,"name":"det-t","text":"确定性检查","textPreview":"确定性检查","textChars":5,"textLines":1,"bbox":[480,365,320,35]}
+{"kind":"textbox","id":"sh/1wnmx4vq","slide":40,"name":"det-list","text":"权限 · 格式 · 路径 · 凭据","textPreview":"权限 · 格式 · 路径 · 凭据","textChars":17,"textLines":1,"bbox":[410,415,460,32]}
+{"kind":"shape","id":"sh/gvel4ze5","slide":40,"name":"infer","bbox":[390,230,500,105]}
+{"kind":"textbox","id":"sh/fu54vudk","slide":40,"name":"infer-t","text":"推断性审查：结合语境","textPreview":"推断性审查：结合语境","textChars":10,"textLines":1,"bbox":[465,250,350,35]}
+{"kind":"textbox","id":"sh/etw32pwz","slide":40,"name":"not-proof","text":"可复核，但不冒充证明","textPreview":"可复核，但不冒充证明","textChars":10,"textLines":1,"bbox":[485,290,310,25]}
+{"kind":"shape","id":"sh/tsnmt4vu","slide":40,"name":"review-trace","bbox":[955,270,150,0]}
+{"kind":"textbox","id":"sh/s7el0ze9","slide":40,"name":"review-trace-check","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[1010,236,36,32]}
+{"kind":"textbox","id":"sh/r6l4rudo","slide":40,"name":"review-trace-t","text":"复核记录","textPreview":"复核记录","textChars":4,"textLines":1,"bbox":[955,278,150,22]}
+{"kind":"notes","id":"nt/5ojatgfe","slide":40,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/cnmpwjmp","slide":41,"title":"共享控制面 / 参考实现","textShapes":4}
+{"kind":"shape","id":"sh/g3i9czil","slide":41,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/t0rqhkju","slide":41,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/szi98fi9","slide":41,"name":"page","text":"41","textPreview":"41","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/f298ju10","slide":41,"name":"title","text":"DSH（DeepSeek Harness）把三项控制原则带入运行时","textPreview":"DSH（DeepSeek Harness）把三项控制原则带入运行时","textChars":33,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/u10rap0f","slide":41,"name":"subtitle","text":"参考实现：知识外置、正确路径、可执行反馈共同托住控制面","textPreview":"参考实现：知识外置、正确路径、可执行反馈共同托住控制面","textChars":27,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/ixwbq90f","slide":41,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/cnmpwjmp","slide":41,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.14/generated/p41-load-bearing-controls-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/7mdw7yh8","slide":42,"title":"共享控制面 / 参考实现","textShapes":14}
+{"kind":"shape","id":"sh/wfy9cfqd","slide":42,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/mlovmtcr","slide":42,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/nmxwfetc","slide":42,"name":"page","text":"42","textPreview":"42","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/0j6dkjul","slide":42,"name":"title","text":"共享控制面要同时说清：现在由什么组成，刚才做过什么","textPreview":"共享控制面要同时说清：现在由什么组成，刚才做过什么","textChars":25,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/lkfedov6","slide":42,"name":"subtitle","text":"能力图描述当前状态，事件流还原刚才发生的事实","textPreview":"能力图描述当前状态，事件流还原刚才发生的事实","textChars":22,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/yh4vi9cv","slide":42,"name":"graph","bbox":[90,210,600,380]}
+{"kind":"textbox","id":"sh/zixcbedg","slide":42,"name":"graph-h","text":"LIVE CAPABILITY GRAPH","textPreview":"LIVE CAPABILITY GRAPH","textChars":21,"textLines":1,"bbox":[135,235,510,30]}
+{"kind":"shape","id":"sh/cfmdgzup","slide":42,"name":"edge1","bbox":[330,330,90,30]}
+{"kind":"shape","id":"sh/dgvu94va","slide":42,"name":"edge2","bbox":[330,360,90,100]}
+{"kind":"shape","id":"sh/5w3qp0z2","slide":42,"name":"node-0","bbox":[190,330,170,38]}
+{"kind":"textbox","id":"sh/4vu9wvih","slide":42,"name":"node-0-t","text":"Definition","textPreview":"Definition","textChars":10,"textLines":1,"bbox":[198,336,154,26]}
+{"kind":"shape","id":"sh/jul8nahw","slide":42,"name":"node-1","bbox":[420,300,170,38]}
+{"kind":"textbox","id":"sh/itsru50b","slide":42,"name":"node-1-t","text":"Provider","textPreview":"Provider","textChars":8,"textLines":1,"bbox":[428,306,154,26]}
+{"kind":"shape","id":"sh/hsjq10zq","slide":42,"name":"node-2","bbox":[420,430,170,38]}
+{"kind":"textbox","id":"sh/wra9svi5","slide":42,"name":"node-2-t","text":"Consumer","textPreview":"Consumer","textChars":8,"textLines":1,"bbox":[428,436,154,26]}
+{"kind":"shape","id":"sh/vq18zqhk","slide":42,"name":"stream","bbox":[750,210,440,380]}
+{"kind":"textbox","id":"sh/upsrql0f","slide":42,"name":"stream-h","text":"EVENT STREAM","textPreview":"EVENT STREAM","textChars":12,"textLines":1,"bbox":[810,235,320,30]}
+{"kind":"textbox","id":"sh/94jqxgzu","slide":42,"name":"event-0","text":"input received","textPreview":"input received","textChars":14,"textLines":1,"bbox":[805,300,300,28]}
+{"kind":"shape","id":"sh/83a9obi9","slide":42,"name":"event-rule-0","bbox":[790,338,350,0]}
+{"kind":"textbox","id":"sh/07u94vq5","slide":42,"name":"event-1","text":"asked: prod access","textPreview":"asked: prod access","textChars":18,"textLines":1,"bbox":[805,360,300,28]}
+{"kind":"shape","id":"sh/l8nad0rq","slide":42,"name":"event-rule-1","bbox":[790,398,350,0]}
+{"kind":"textbox","id":"sh/y5cr2l8z","slide":42,"name":"event-2","text":"decided: deny","textPreview":"decided: deny","textChars":13,"textLines":1,"bbox":[805,420,300,28]}
+{"kind":"shape","id":"sh/z6l8bq9k","slide":42,"name":"event-rule-2","bbox":[790,458,350,0]}
+{"kind":"textbox","id":"sh/cju90bqt","slide":42,"name":"event-3","text":"tool result recorded","textPreview":"tool result recorded","textChars":20,"textLines":1,"bbox":[805,480,300,28]}
+{"kind":"shape","id":"sh/d43q9gre","slide":42,"name":"event-rule-3","bbox":[790,518,350,0]}
+{"kind":"shape","id":"sh/qhcry183","slide":42,"name":"loop-cross","bbox":[690,400,60,0]}
+{"kind":"textbox","id":"sh/bil87698","slide":42,"name":"loop-label","text":"LOOP","textPreview":"LOOP","textChars":4,"textLines":1,"bbox":[685,420,70,25]}
+{"kind":"notes","id":"nt/7mdw7yh8","slide":42,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/qhkbqxoz","slide":43,"title":"共享控制面 / 参考实现","textShapes":4}
+{"kind":"shape","id":"sh/wzax8bql","slide":43,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/5ojy5gr2","slide":43,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/43axcvqx","slide":43,"name":"page","text":"43","textPreview":"43","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/vyhgz690","slide":43,"name":"title","text":"一个事实只认一个权威来源","textPreview":"一个事实只认一个权威来源","textChars":12,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/ux8f618f","slide":43,"name":"subtitle","text":"事实归入权威文件，理由进入 ADR，未选方案也留下记录","textPreview":"事实归入权威文件，理由进入 ADR，未选方案也留下记录","textChars":27,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/ytsfuxs7","slide":43,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/qhkbqxoz","slide":43,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.13/generated/p43-authority-collage-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/pcvutcvy","slide":44,"title":"共享控制面 / 参考实现","textShapes":4}
+{"kind":"shape","id":"sh/grqdgb25","slide":44,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/tozulw3e","slide":44,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/s3qdcr2t","slide":44,"name":"page","text":"44","textPreview":"44","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/fqhcn6lk","slide":44,"name":"title","text":"正确路径应该最省力，不正确的路径应该走不通","textPreview":"正确路径应该最省力，不正确的路径应该走不通","textChars":21,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/ep8ve1kz","slide":44,"name":"subtitle","text":"patch、extension、seam、loop 各有入口、合同与检查半径","textPreview":"patch、extension、seam、loop 各有入口、合同与检查半径","textChars":38,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/21gfa5wn","slide":44,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/pcvutcvy","slide":44,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.14/generated/p44-correct-path-terrain-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/kvipwnmh","slide":45,"title":"共享控制面 / 参考实现","textShapes":4}
+{"kind":"shape","id":"sh/8fa1oje9","slide":45,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/lsz2dofy","slide":45,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/0rq1kjed","slide":45,"name":"page","text":"45","textPreview":"45","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/ne1kfydo","slide":45,"name":"title","text":"门禁只有经过负例验证，才值得信任","textPreview":"门禁只有经过负例验证，才值得信任","textChars":16,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/mtsjmtw3","slide":45,"name":"subtitle","text":"无效动作持续撞击 pre-execute，结果进入测试记录","textPreview":"无效动作持续撞击 pre-execute，结果进入测试记录","textChars":29,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"image","id":"im/a9k7a107","slide":45,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/kvipwnmh","slide":45,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.14/generated/p45-negative-impact-evidence-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/zixsf2ps","slide":46,"title":"共享控制面 / 参考实现","textShapes":9}
+{"kind":"shape","id":"sh/psn2tcr6","slide":46,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/a9s3uhcv","slide":46,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/va14nmtg","slide":46,"name":"page","text":"46","textPreview":"46","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/kful0rud","slide":46,"name":"title","text":"共享控制面统一能力合同，不统一所有后端","textPreview":"共享控制面统一能力合同，不统一所有后端","textChars":19,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/5g3mtwbi","slide":46,"name":"subtitle","text":"Provider 可以抽换，Consumer 的连接保持不动","textPreview":"Provider 可以抽换，Consumer 的连接保持不动","textChars":30,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/ids3yhc7","slide":46,"name":"definition","bbox":[480,235,320,130]}
+{"kind":"textbox","id":"sh/je14rmts","slide":46,"name":"def-t","text":"DEFINITION\n稳定能力合同","textPreview":"DEFINITION | 稳定能力合同","textChars":17,"textLines":2,"bbox":[520,255,240,85]}
+{"kind":"shape","id":"sh/s3ul4bu9","slide":46,"name":"provider-a","bbox":[115,255,240,95]}
+{"kind":"textbox","id":"sh/t43mxwbu","slide":46,"name":"pa","text":"PROVIDER A","textPreview":"PROVIDER A","textChars":10,"textLines":1,"bbox":[145,285,180,35]}
+{"kind":"shape","id":"sh/l0721wre","slide":46,"name":"provider-b","bbox":[115,430,240,95]}
+{"kind":"textbox","id":"sh/0zylsrat","slide":46,"name":"pb","text":"PROVIDER B","textPreview":"PROVIDER B","textChars":10,"textLines":1,"bbox":[145,460,180,35]}
+{"kind":"shape","id":"sh/zypkzm9o","slide":46,"name":"swap-a","bbox":[355,300,125,0]}
+{"kind":"shape","id":"sh/yxg3qhs3","slide":46,"name":"swap-b","bbox":[355,340,125,135]}
+{"kind":"shape","id":"sh/9orm5wrq","slide":46,"name":"consumer","bbox":[930,290,240,115]}
+{"kind":"textbox","id":"sh/8nilwra5","slide":46,"name":"consumer-t","text":"CONSUMER","textPreview":"CONSUMER","textChars":8,"textLines":1,"bbox":[960,325,180,35]}
+{"kind":"shape","id":"sh/nm943m9k","slide":46,"name":"stable","bbox":[800,330,130,15]}
+{"kind":"textbox","id":"sh/m103uhsz","slide":46,"name":"unchanged","text":"替换前后，连接不动","textPreview":"替换前后，连接不动","textChars":9,"textLines":1,"bbox":[805,455,340,35]}
+{"kind":"notes","id":"nt/zixsf2ps","slide":46,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/atcnytkf","slide":47,"title":"共享控制面 / 参考实现","textShapes":15}
+{"kind":"shape","id":"sh/q10zu94n","slide":47,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/503e9ora","slide":47,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/4zadgjap","slide":47,"name":"page","text":"47","textPreview":"47","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/rmlwby90","slide":47,"name":"title","text":"输入、工具结果和审批，都必须能从日志还原","textPreview":"输入、工具结果和审批，都必须能从日志还原","textChars":20,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/6lcvitsf","slide":47,"name":"subtitle","text":"asked 与 decided 成对落印，无人作答时默认关闭","textPreview":"asked 与 decided 成对落印，无人作答时默认关闭","textChars":30,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/do3edor6","slide":47,"name":"scroll","bbox":[115,205,1050,400]}
+{"kind":"shape","id":"sh/snudk3al","slide":47,"name":"spine","bbox":[180,250,0,310]}
+{"kind":"shape","id":"sh/7qhczu9w","slide":47,"name":"event-dot-0","bbox":[171,242,18,18]}
+{"kind":"textbox","id":"sh/mp8v6psb","slide":47,"name":"time-0","text":"10:31:04","textPreview":"10:31:04","textChars":8,"textLines":1,"bbox":[210,237,120,28]}
+{"kind":"textbox","id":"sh/szy5wbeh","slide":47,"name":"log-0","text":"model-visible input","textPreview":"model-visible input","textChars":19,"textLines":1,"bbox":[350,237,650,28]}
+{"kind":"shape","id":"sh/d07mpgv2","slide":47,"name":"log-rule-0","bbox":[210,273,880,0]}
+{"kind":"shape","id":"sh/qxgnu1wb","slide":47,"name":"event-dot-1","bbox":[171,307,18,18]}
+{"kind":"textbox","id":"sh/ryp4n6dw","slide":47,"name":"time-1","text":"10:31:10","textPreview":"10:31:10","textChars":8,"textLines":1,"bbox":[210,302,120,28]}
+{"kind":"textbox","id":"sh/03y50ved","slide":47,"name":"log-1","text":"tool result","textPreview":"tool result","textChars":11,"textLines":1,"bbox":[350,302,650,28]}
+{"kind":"shape","id":"sh/14rmtgvy","slide":47,"name":"log-rule-1","bbox":[210,338,880,0]}
+{"kind":"shape","id":"sh/e1gnylwn","slide":47,"name":"event-dot-2","bbox":[171,372,18,18]}
+{"kind":"textbox","id":"sh/f2p4rqd8","slide":47,"name":"time-2","text":"10:31:12","textPreview":"10:31:12","textChars":8,"textLines":1,"bbox":[210,367,120,28]}
+{"kind":"textbox","id":"sh/g7elore9","slide":47,"name":"log-2","text":"asked · production access","textPreview":"asked · production access","textChars":25,"textLines":1,"bbox":[350,367,650,28]}
+{"kind":"shape","id":"sh/h8nmhwvu","slide":47,"name":"log-rule-2","bbox":[210,403,880,0]}
+{"kind":"shape","id":"sh/xof2lsni","slide":47,"name":"event-dot-3","bbox":[171,437,18,18]}
+{"kind":"textbox","id":"sh/wn6lsn6x","slide":47,"name":"time-3","text":"10:31:39","textPreview":"10:31:39","textChars":8,"textLines":1,"bbox":[210,432,120,28]}
+{"kind":"textbox","id":"sh/b2xkjips","slide":47,"name":"log-3","text":"decided · deny · release-owner","textPreview":"decided · deny · release-owner","textChars":30,"textLines":1,"bbox":[350,432,650,28]}
+{"kind":"shape","id":"sh/a1ojqdo7","slide":47,"name":"log-rule-3","bbox":[210,468,880,0]}
+{"kind":"shape","id":"sh/5sf2psnu","slide":47,"name":"event-dot-4","bbox":[171,502,18,18]}
+{"kind":"textbox","id":"sh/kr6lwn69","slide":47,"name":"time-4","text":"10:31:40","textPreview":"10:31:40","textChars":8,"textLines":1,"bbox":[210,497,120,28]}
+{"kind":"textbox","id":"sh/jqxkni5o","slide":47,"name":"log-4","text":"session closed","textPreview":"session closed","textChars":14,"textLines":1,"bbox":[350,497,650,28]}
+{"kind":"shape","id":"sh/ipo3udo3","slide":47,"name":"log-rule-4","bbox":[210,533,880,0]}
+{"kind":"shape","id":"sh/twz2tcnq","slide":47,"name":"pair","bbox":[1008,350,38,125]}
+{"kind":"textbox","id":"sh/svql0765","slide":47,"name":"pair-label","text":"asked / decided 必须成对","textPreview":"asked / decided 必须成对","textChars":20,"textLines":1,"bbox":[850,475,300,30]}
+{"kind":"notes","id":"nt/atcnytkf","slide":47,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/pwb6x4jy","slide":48,"title":"共享控制面 / 参考实现","textShapes":20}
+{"kind":"shape","id":"sh/oji10vm9","slide":48,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/94va1sf2","slide":48,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/83m9snyx","slide":48,"name":"page","text":"48","textPreview":"48","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/zyt8vix0","slide":48,"name":"title","text":"先让工件可读，再让门禁可信，最后运行闭环","textPreview":"先让工件可读，再让门禁可信，最后运行闭环","textChars":20,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/yxkrmdgf","slide":48,"name":"subtitle","text":"准入、替换、放行、事实重建收敛成一条采用路径","textPreview":"准入、替换、放行、事实重建收敛成一条采用路径","textChars":22,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/l0vaxsf6","slide":48,"name":"step-0","bbox":[310,380,55,30]}
+{"kind":"shape","id":"sh/kzm9onyl","slide":48,"name":"step-body-0","bbox":[120,335,190,150]}
+{"kind":"textbox","id":"sh/juxs7mxk","slide":48,"name":"num-0","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[135,347,45,28]}
+{"kind":"textbox","id":"sh/itoryhgz","slide":48,"name":"h-0","text":"准入","textPreview":"准入","textChars":2,"textLines":1,"bbox":[120,382,190,35]}
+{"kind":"textbox","id":"sh/cvyxkbi5","slide":48,"name":"m-0","text":"registry","textPreview":"registry","textChars":8,"textLines":1,"bbox":[120,430,190,28]}
+{"kind":"shape","id":"sh/dw7etgzq","slide":48,"name":"step-1","bbox":[555,350,55,30]}
+{"kind":"shape","id":"sh/qtgfy10z","slide":48,"name":"step-body-1","bbox":[365,305,190,150]}
+{"kind":"textbox","id":"sh/bupwr6hk","slide":48,"name":"num-1","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[380,317,45,28]}
+{"kind":"textbox","id":"sh/oryxwbi9","slide":48,"name":"h-1","text":"替换","textPreview":"替换","textChars":2,"textLines":1,"bbox":[365,352,190,35]}
+{"kind":"textbox","id":"sh/ps7epgze","slide":48,"name":"m-1","text":"seam","textPreview":"seam","textChars":4,"textLines":1,"bbox":[365,400,190,28]}
+{"kind":"shape","id":"sh/2pwfu103","slide":48,"name":"step-2","bbox":[800,320,55,30]}
+{"kind":"shape","id":"sh/3qpwn6ho","slide":48,"name":"step-body-2","bbox":[610,275,190,150]}
+{"kind":"textbox","id":"sh/gnedsrix","slide":48,"name":"num-2","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[625,287,45,28]}
+{"kind":"textbox","id":"sh/1onelwzi","slide":48,"name":"h-2","text":"放行","textPreview":"放行","textChars":2,"textLines":1,"bbox":[610,322,190,35]}
+{"kind":"textbox","id":"sh/h8fm9onu","slide":48,"name":"m-2","text":"gate","textPreview":"gate","textChars":4,"textLines":1,"bbox":[610,370,190,28]}
+{"kind":"shape","id":"sh/w7ml0j6p","slide":48,"name":"step-body-3","bbox":[855,245,190,150]}
+{"kind":"textbox","id":"sh/v6d47e54","slide":48,"name":"num-3","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[870,257,45,28]}
+{"kind":"textbox","id":"sh/u543ytoj","slide":48,"name":"h-3","text":"事实重建","textPreview":"事实重建","textChars":4,"textLines":1,"bbox":[855,292,190,35]}
+{"kind":"textbox","id":"sh/94v25ony","slide":48,"name":"m-3","text":"log","textPreview":"log","textChars":3,"textLines":1,"bbox":[855,340,190,28]}
+{"kind":"shape","id":"sh/83mlwj6d","slide":48,"name":"readable","bbox":[145,555,190,75]}
+{"kind":"shape","id":"sh/7idk3e5s","slide":48,"name":"readable-fold","bbox":[317,555,18,18]}
+{"kind":"textbox","id":"sh/mh43u9o7","slide":48,"name":"readable-t","text":"工件可读","textPreview":"工件可读","textChars":4,"textLines":1,"bbox":[155,563,165,59]}
+{"kind":"shape","id":"sh/t0zmh8n2","slide":48,"name":"read-path","bbox":[335,592,205,0]}
+{"kind":"shape","id":"sh/sz6l836x","slide":48,"name":"trusted","bbox":[565,545,0,95]}
+{"kind":"shape","id":"sh/ql0j254z","slide":48,"name":"trusted-a","bbox":[558,543,14,5]}
+{"kind":"shape","id":"sh/bm90valk","slide":48,"name":"trusted-b","bbox":[558,637,14,5]}
+{"kind":"textbox","id":"sh/cni14fm5","slide":48,"name":"trusted-t","text":"门禁可信","textPreview":"门禁可信","textChars":4,"textLines":1,"bbox":[487,515,156,22]}
+{"kind":"shape","id":"sh/xorixk3q","slide":48,"name":"loop-path","bbox":[590,592,335,0]}
+{"kind":"textbox","id":"sh/2hgzy543","slide":48,"name":"loop-label","text":"闭环运行","textPreview":"闭环运行","textChars":4,"textLines":1,"bbox":[940,575,170,35]}
+{"kind":"textbox","id":"sh/3i90ralo","slide":48,"name":"sequence","text":"顺序不能跳：看不清事实，就谈不上可信放行","textPreview":"顺序不能跳：看不清事实，就谈不上可信放行","textChars":20,"textLines":1,"bbox":[385,635,520,30]}
+{"kind":"notes","id":"nt/pwb6x4jy","slide":48,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/oz2xg3q1","slide":49,"title":"代码不再是瓶颈，流程才是","textShapes":2}
+{"kind":"textbox","id":"sh/ql8jqdc3","slide":49,"name":"close-title","text":"代码不再是瓶颈，流程才是","textPreview":"代码不再是瓶颈，流程才是","textChars":12,"textLines":1,"bbox":[115,72,1050,70]}
+{"kind":"textbox","id":"sh/0ra1w7al","slide":49,"name":"close-sub","text":"转型不是追求更多代码，而是让整条 SDLC 能可靠运行","textPreview":"转型不是追求更多代码，而是让整条 SDLC 能可靠运行","textChars":27,"textLines":1,"bbox":[300,140,680,34]}
+{"kind":"image","id":"im/mhw7mpsr","slide":49,"name":"","bbox":[185.56,150,888.89,500]}
+{"kind":"notes","id":"nt/oz2xg3q1","slide":49,"text":"[Sources]\n- GPT Image 2 integrated visual body: talk-ai-coding-evolution-org-sdlc/_asset/experiments/imagegen-v0.14/generated/p49-reliable-system-closing-v2-blend.png.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}
+{"kind":"slide","id":"sl/a9gvuxsb","slide":50,"title":"共享控制面 / 参考实现","textShapes":14}
+{"kind":"shape","id":"sh/hoju5kb2","slide":50,"name":"kicker-rule","bbox":[72,43,36,0]}
+{"kind":"textbox","id":"sh/ofq943e5","slide":50,"name":"kicker","text":"共享控制面 / 参考实现","textPreview":"共享控制面 / 参考实现","textChars":12,"textLines":1,"bbox":[122,30,360,26]}
+{"kind":"textbox","id":"sh/pgzax8vq","slide":50,"name":"page","text":"50","textPreview":"50","textChars":2,"textLines":1,"bbox":[1160,30,48,24]}
+{"kind":"textbox","id":"sh/eporytw3","slide":50,"name":"title","text":"从最慢的一次交接开始","textPreview":"从最慢的一次交接开始","textChars":10,"textLines":1,"bbox":[72,62,1136,58]}
+{"kind":"textbox","id":"sh/fqhsrydo","slide":50,"name":"subtitle","text":"为一条真实价值流补齐一个工件、一道门禁、一位责任人和一个反馈指标","textPreview":"为一条真实价值流补齐一个工件、一道门禁、一位责任人和一个反馈指标","textChars":32,"textLines":1,"bbox":[72,128,1110,36]}
+{"kind":"shape","id":"sh/gbq90jet","slide":50,"name":"value-track","bbox":[110,400,1060,0]}
+{"kind":"shape","id":"sh/1czatove","slide":50,"name":"station-0","bbox":[145,390,20,20]}
+{"kind":"textbox","id":"sh/6loru9wr","slide":50,"name":"station-t-0","text":"提出需求","textPreview":"提出需求","textChars":4,"textLines":1,"bbox":[90,430,130,28]}
+{"kind":"shape","id":"sh/rmx8nedc","slide":50,"name":"station-1","bbox":[460,390,20,20]}
+{"kind":"textbox","id":"sh/r2tobip8","slide":50,"name":"station-t-1","text":"完成构建","textPreview":"完成构建","textChars":4,"textLines":1,"bbox":[405,430,130,28]}
+{"kind":"shape","id":"sh/q1072xon","slide":50,"name":"station-2","bbox":[795,390,20,20]}
+{"kind":"textbox","id":"sh/d4b6ds7e","slide":50,"name":"station-t-2","text":"等待发布","textPreview":"等待发布","textChars":4,"textLines":1,"bbox":[740,430,130,28]}
+{"kind":"shape","id":"sh/s32p4n6t","slide":50,"name":"station-3","bbox":[1080,390,20,20]}
+{"kind":"textbox","id":"sh/fqtof2pk","slide":50,"name":"station-t-3","text":"生产反馈","textPreview":"生产反馈","textChars":4,"textLines":1,"bbox":[1025,430,130,28]}
+{"kind":"shape","id":"sh/e5k76xoz","slide":50,"name":"slow-zone","bbox":[715,310,180,180]}
+{"kind":"textbox","id":"sh/1sb6hc7a","slide":50,"name":"slowest","text":"最慢交接","textPreview":"最慢交接","textChars":4,"textLines":1,"bbox":[720,330,170,32]}
+{"kind":"shape","id":"sh/vapo3yp0","slide":50,"name":"slot-0","bbox":[285,255,140,70]}
+{"kind":"textbox","id":"sh/u9gnudov","slide":50,"name":"slot-h-0","text":"工件","textPreview":"工件","textChars":2,"textLines":1,"bbox":[285,263,140,26]}
+{"kind":"shape","id":"sh/ypor2183","slide":50,"name":"slot-write-0","bbox":[310,305,90,0]}
+{"kind":"shape","id":"sh/kr694bq9","slide":50,"name":"slot-1","bbox":[560,500,140,70]}
+{"kind":"textbox","id":"sh/lsfadgru","slide":50,"name":"slot-h-1","text":"门禁","textPreview":"门禁","textChars":2,"textLines":1,"bbox":[560,508,140,26]}
+{"kind":"shape","id":"sh/al4ry187","slide":50,"name":"slot-write-1","bbox":[585,550,90,0]}
+{"kind":"shape","id":"sh/wn690bqd","slide":50,"name":"slot-2","bbox":[850,520,140,70]}
+{"kind":"textbox","id":"sh/xofa9gri","slide":50,"name":"slot-h-2","text":"责任人","textPreview":"责任人","textChars":3,"textLines":1,"bbox":[850,528,140,26]}
+{"kind":"shape","id":"sh/mx4ruh8v","slide":50,"name":"slot-write-2","bbox":[875,570,90,0]}
+{"kind":"shape","id":"sh/5c3u94by","slide":50,"name":"slot-3","bbox":[1030,245,140,70]}
+{"kind":"textbox","id":"sh/4badgzad","slide":50,"name":"slot-h-3","text":"反馈","textPreview":"反馈","textChars":2,"textLines":1,"bbox":[1030,253,140,26]}
+{"kind":"shape","id":"sh/3a1c7ut8","slide":50,"name":"slot-write-3","bbox":[1055,295,90,0]}
+{"kind":"textbox","id":"sh/ipsvepsn","slide":50,"name":"metric","text":"试点只比较三件事：等待、返工、失败","textPreview":"试点只比较三件事：等待、返工、失败","textChars":17,"textLines":1,"bbox":[380,590,520,34]}
+{"kind":"notes","id":"nt/a9gvuxsb","slide":50,"text":"[Sources]\n- Native editable visual authored for this talk; illustrative system representation, not production data.\n- Content basis: talk-ai-coding-evolution-org-sdlc/02_evidence/02-claim-ledger.md and 03_outline/."}

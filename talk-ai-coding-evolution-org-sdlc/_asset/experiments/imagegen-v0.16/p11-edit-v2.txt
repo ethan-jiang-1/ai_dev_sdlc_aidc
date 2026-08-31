@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: corrected P11 visual body
+Primary request: Remove only the three small readable labels "v1", "v2" and "v3" beneath the gold documents. Replace each label area with clean paper-white background and preserve the document drawings.
+Constraints: keep the entire composition, people, conveyor, control gallery, gate, feedback path, all objects, line work, colors, crop and typography unchanged. Preserve the two approved labels "人盯流程" and "系统执行控制" exactly. Do not add any new text.
+Avoid: changing faces, poses, document count, path geometry, gate, color semantics, line weight, title safety band or framing.

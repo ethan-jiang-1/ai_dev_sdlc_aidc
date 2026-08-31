@@ -1,0 +1,9 @@
+Use case: infographic-diagram
+Asset type: P1 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new scene in the style of Image 1. Draw one continuous software value-stream cross-section. A rough product-intent sketch enters from the left, becomes one gold versioned artifact, passes six distinct but unlabeled work stations on one shallow left-to-right path, crosses two physically embedded control gates, reaches a production system on the right, and returns a thin teal feedback line to the original intent. The whole image must read as one executable value stream, not a hexagon, ring, node diagram or collection of cards.
+Composition/framing: calm panoramic scene, single left-to-right primary direction, all drawing below the upper 27% uninterrupted chroma blue band #0057FF reserved for PowerPoint title and subtitle. Keep the center open enough that the value stream reads in three seconds.
+Style/medium: match Image 1's flat graphite pencil, precise technical ink, restrained construction lines and paper texture. Anonymous people only as one pair of hands and one back-view operator; no faces.
+Color palette: teal only for active path and feedback; coral only for the two physical gates; gold only for the artifact and committed evidence.
+Text: no readable text at all.
+Constraints: gates must sit on the path; one continuous scene; clean paper-white lower field; preserve the reference style but do not copy its objects or layout.
+Avoid: stage labels, six-node loop, circular diagram, UI, cards, 3D, toy, isometric view, perspective corridor, crowd, front-facing people, extra colors, extra text, watermark.

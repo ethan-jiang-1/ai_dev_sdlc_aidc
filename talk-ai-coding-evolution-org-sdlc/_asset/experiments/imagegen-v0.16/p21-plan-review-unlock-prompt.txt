@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P21 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new two-room scene in the style of Image 1. In the left room, a plan.md sheet is reviewed at a table and visibly divided into four sections. The reviewer appears only by hands and back view. A gold approval signature becomes a physical key. In the right room, that key reaches a coral repository gate built into the path and unlocks it, allowing a thin teal execution path to enter the codebase. The rooms must be connected by the key and path, not separated as independent cards.
+Composition/framing: one continuous shallow cutaway, left-to-right; upper 25% uninterrupted chroma blue #0057FF.
+Style/medium: match Image 1's graphite pencil, precise technical ink and restrained hatching.
+Color palette: teal only for execution after approval; coral only for the repository gate; gold only for plan.md, signature and key.
+Text (verbatim and exhaustive): "plan.md", "文件", "顺序", "风险", "证据", "代码库". These six strings are the only readable characters.
+Avoid: suspended PLAN REVIEW bar, realistic padlock, disconnected rooms, UI panels, front-facing person, 3D, extra text, watermark.

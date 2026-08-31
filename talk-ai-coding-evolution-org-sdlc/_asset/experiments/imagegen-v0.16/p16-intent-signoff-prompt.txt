@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P16 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new scene in the style of Image 1. Draw a working sign-off desk. A gold intent.md card arrives from the left and sits under a product-owner decision position shown only by hands and a back-view partial figure. One branch receives a gold approval seal and follows a teal path into design. The other receives one coral return strip with a visible reason line and physically loops back to the open-question row on the same intent card. Attach a compact two-column counter board to the side of the desk; it must visibly belong to the decision station rather than float in empty space.
+Composition/framing: shallow horizontal desk scene, one primary left-to-right direction with a single clear return branch; upper 25% uninterrupted chroma blue #0057FF.
+Style/medium: match Image 1's flat graphite and technical ink; anonymous hands/back only.
+Color palette: teal only for accepted movement; coral only for the return strip; gold only for intent, approval seal and committed evidence.
+Text (verbatim and exhaustive): "intent.md", "开放问题", "一次通过率", "退回补充率". These four strings are the only readable characters.
+Avoid: suspended gate bars, floating metrics, giant lock, cards grid, front-facing portrait, 3D, extra text, watermark.

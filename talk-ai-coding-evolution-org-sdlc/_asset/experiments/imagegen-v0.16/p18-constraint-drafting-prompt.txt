@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P18 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new overhead drafting-table scene in the style of Image 1. Pin an intent.md drawing and a skills v3 reference to one working board. Three translucent constraint overlays physically press down onto the drawing from different edges and leave visible revisions in the plan. On the right, the revised result becomes one gold spec.md sheet with a version seal. The point is that constraints change the specification while it is being formed.
+Composition/framing: one continuous top-down work surface with one left-to-right reading direction; upper 25% uninterrupted chroma blue #0057FF. No separate boxes disconnected from the drawing.
+Style/medium: match Image 1's graphite engineering draft, precise technical ink, light hatching, registration marks and erasures.
+Color palette: teal only for accepted revision marks; coral only for one conflict mark; gold only for spec.md and version seal.
+Text (verbatim and exhaustive): "intent.md", "skills v3", "安全", "品牌", "合规", "spec.md". These six strings are the only readable characters.
+Avoid: floating horizontal bars, detached cards, dashboard, 3D desk, photorealism, hands covering labels, extra text, watermark.

@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P33 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new deployment scene in the style of Image 1. Draw one physical execution passage narrowing from a broad DEV work area through a smaller STAGING zone to a narrow production boundary. The agent's active teal range visibly ends before one unavoidable coral production gate. A release owner shown from behind holds the only gold authorization key on the far side. Below, a broad direct coral rollback lane returns from the production boundary to a clearly safe state, much straighter than the forward path. Use one gold release artifact moving through the passage.
+Composition/framing: one continuous shallow cutaway, left-to-right; upper 25% uninterrupted chroma blue #0057FF. The production gate must be the strongest physical boundary.
+Style/medium: match Image 1's graphite pencil and technical ink; anonymous back-view person only.
+Color palette: teal only for agent activity before the gate; coral only for the production gate and rollback lane; gold only for release artifact and authorization key.
+Text (verbatim and exhaustive): "DEV", "STAGING", "PRODUCTION", "发布责任人", "回滚到安全状态". These five strings are the only readable characters.
+Avoid: three empty colored frames, no gate, rollback from nowhere, front-facing portrait, 3D tunnel, isometric view, extra text, watermark.

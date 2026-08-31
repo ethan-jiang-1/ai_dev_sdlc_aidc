@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P29 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new validation scene in the style of Image 1. Two evidence streams approach the same physical merge gate from left and right: a gold test evidence sheet from the product-validation bench and a gold eval evidence sheet from the harness-validation bench. Both sheets must physically arrive and press the same gate mechanism; if either is missing the gate cannot open. Above the gate, one QA maintenance position controls suites, thresholds and trend review, shown only through hands and a back-view partial figure. Once both evidence streams are present, a teal merged path continues forward.
+Composition/framing: one unified shallow scene centered on the gate, not three separate panels; upper 25% uninterrupted chroma blue #0057FF.
+Style/medium: match Image 1's graphite pencil and technical ink.
+Color palette: teal only for opened merge path; coral only for the closed merge gate and one missing-evidence indicator; gold only for the two evidence sheets.
+Text (verbatim and exhaustive): "test evidence", "eval evidence", "QA", "缺一不合并". These four strings are the only readable characters.
+Avoid: floating threshold bar, large colored background panels, disconnected evidence beams, dashboard, 3D, front-facing person, extra text, watermark.

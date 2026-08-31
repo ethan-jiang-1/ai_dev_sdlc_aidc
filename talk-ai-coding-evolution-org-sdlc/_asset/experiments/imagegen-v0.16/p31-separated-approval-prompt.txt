@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P31 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new approval scene in the style of Image 1. Center one PR dossier. Three aligned review sheets sit neatly on the same dossier: machine checks, AI contextual review and human risk judgment. A tempting self-approval shortcut branches from the dossier but is visibly cut through by real scissors; the severed end curls away and cannot reach production. At a separate desk on the right, a release owner seen from behind signs the release decision. Make the two physical positions and identities unmistakably separate.
+Composition/framing: one continuous shallow workroom with a left-to-right read; upper 25% uninterrupted chroma blue #0057FF. No overlapping colored slabs.
+Style/medium: match Image 1's graphite engineering sketch and precise ink; anonymous partial people only.
+Color palette: teal only for the valid approval path; coral only for the cut shortcut; gold only for the PR dossier, review evidence and release signature.
+Text (verbatim and exhaustive): "PR", "机器检查", "AI 语境审查", "人类风险判断", "自批捷径", "发布责任人". These six strings are the only readable characters.
+Avoid: octagonal road sign, floating signature, card pile, front-facing portrait, 3D, extra text, watermark.

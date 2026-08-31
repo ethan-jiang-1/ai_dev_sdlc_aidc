@@ -1,0 +1,9 @@
+Use case: infographic-diagram
+Asset type: P4 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new scene in the style of Image 1. Explain five cumulative capability layers as one lineage that grows because model capability increases. On the left, a small Prompt sheet is physically enclosed by a larger Context folio; both are enclosed by a load-bearing Harness work enclosure in the center. From that same enclosure, a Loop return track grows around repeated execution, and a faint emerging Graph structure extends the same enclosed unit into several contracted nodes on the right. Every later layer visibly contains or instantiates the earlier one; nothing is replaced. Make Harness the current load-bearing center with heavier graphite construction. Loop and Graph should look emerging and lighter, not equally mature pillars.
+Composition/framing: shallow cutaway across one horizontal scene, not a process flow. Upper 25% uninterrupted chroma blue #0057FF. Do not show any SDLC stages, delivery track, six stations or stage mapping.
+Style/medium: match Image 1's flat graphite pencil and technical ink, subtle hatching, construction marks and paper-white field.
+Color palette: graphite structure; teal only for Loop return motion; coral only for one small control gate inside Harness; gold only for a committed context artifact.
+Text (verbatim and exhaustive): "Prompt", "Context", "Harness", "Loop", "Graph". These five strings are the only readable characters.
+Constraints: later layers visibly subsume earlier layers; Harness must be structurally central; typography is clean Helvetica Neue-like sans serif.
+Avoid: five parallel columns, staircase of replacements, maturity ladder, SDLC mapping, cards, dashboard, Venn diagram, concentric decorative circles, 3D, toy, extra text, watermark.

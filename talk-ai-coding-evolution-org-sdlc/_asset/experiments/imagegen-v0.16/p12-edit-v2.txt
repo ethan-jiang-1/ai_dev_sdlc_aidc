@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: corrected P12 visual body
+Primary request: Remove only the five readable digits "1", "2", "3", "4", "5" from the leaning depth ruler. Keep five unlabeled tick divisions on the ruler.
+Constraints: keep the entire composition, central four-field card, six-stop chain, gate, clipped cards, ruler geometry, line work, colors, crop and typography unchanged. Preserve the approved labels "工件", "门禁", "责任人", "反馈", "五层" exactly. Do not add any new text.
+Avoid: changing the card layout, moving the ruler, changing the gate, path or title safety band.

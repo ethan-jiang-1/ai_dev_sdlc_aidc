@@ -1,0 +1,8 @@
+Use case: infographic-diagram
+Asset type: P11 generated visual body; Image 1 is a style reference only
+Primary request: Create a completely new scene in the style of Image 1. Pull back from a manual conveyor to show one panoramic transition. On the left, hands and side-profile workers stand on the delivery line and personally pass, inspect and sign every item. As the same line continues rightward through six modest stations, people move up into a restrained control gallery while the line itself gains versioned artifacts, physically embedded gates and a teal feedback rail. The right side must show the system executing control while humans retain exception decisions above it. The visual should be one decisive turn, not six row-by-row comparisons.
+Composition/framing: one continuous shallow scene with one left-to-right main direction; upper 25% uninterrupted chroma blue #0057FF. Make the left and right states visually connected through the same conveyor.
+Style/medium: match Image 1's flat graphite engineering sketch; anonymous hands, profiles or backs only.
+Color palette: teal only for the active controlled path and feedback; coral only for one mandatory gate and one rejected branch; gold only for committed artifacts and signatures.
+Text (verbatim and exhaustive): "人盯流程", "系统执行控制". These two strings are the only readable characters, in clean Hiragino Sans GB-like sans serif.
+Avoid: six table rows, cards, random red stage, front-facing people, crowd, perspective corridor, 3D, extra text, watermark.
