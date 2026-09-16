@@ -1,0 +1,87 @@
+# AI Coding 演变指南：从 Prompt 到 Harness
+
+本目录是这场 talk 的内容与生产工作区，也是跨对话的项目记忆。
+**目的只有一个：把故事线推敲出来，再让它变成一份能站住脚的 PPT。**
+
+> **题目为工作稿，待确认**；副标题候选「生成不是瓶颈，交付才是」。见 [`01_storyline/04-open-questions.md`](./01_storyline/04-open-questions.md) Q4。
+
+**主题速记**：听众是**做团队协作开发、交付物对可靠性 / 合规 / 审计要求高、质量门槛高**的软件团队
+（产品经理 + 程序员）。他们已经有 AI Coding 基础，不需要科普 prompt 和 context。
+本 talk 的问题不是"一个人要把 AI Coding 掌握到多深"，而是：
+**同一个模型，为什么交出来的东西不一样？** 答案落在模型外面那圈叫 **harness** 的东西上——
+它是交付质量的真实变量，而且已经出现把 harness 做成可替换件的路线。
+
+**规格**：75–90 min · 45 页（按 84 min 排）。视觉方向：纸白底 + 代码终端母题，全原生矢量。
+
+**两条硬约束**（详见 [`AGENTS.md`](./AGENTS.md) 的对象红线）：
+1. 全场 audience-facing 文字**不出现 OPC / 一人公司 / 姊妹项目引用**。
+2. **不点听众所属行业名、不用行业专属术语**——按特征描述，换观众不用改稿。
+
+## 工作区地图
+
+```text
+talk-ai-coding-evolution-harness/
+├── HANDOFF.md                               # ★【新对话从这里开始】交接文档：铁律 + 进入仪式 + 已锁定决定 + 下一步 + 陷阱
+├── README.md                                # 本文件：地图 + 素材说明 + 工作方式
+├── AGENTS.md                                # 【agent 手册】每次进来的步骤 + 门禁 + 规则
+├── CURRENT.md                               # 【当前态权威】现在做到哪一步、下一步动哪个文件
+├── CONTEXT.md                               # 【术语权威】本 talk 的局部 glossary + 禁用词
+├── _reference/                              # 上游素材 symlink（只读），说明见其 README
+│   ├── README.md                            #   九份素材的分工 + 引用约定
+│   ├── rawdata_ai-coding-evolution-final/   #   【symlink】宏观：五层演变最终报告
+│   ├── rawdata_harness-selection-final/     #   【symlink】★ 尾巴主料：Harness Agent 选型研究
+│   ├── rawdata_harness-selection-wave1/     #   【symlink】逐 topic 证据摘要
+│   ├── rawdata_harness-selection-wave2/     #   【symlink】跨话题综合
+│   ├── rawdata_pi-digested/                 #   【symlink】★ Pi 源码消化（harness 评价 / 边界短板 / 扩展 / 配置哲学）
+│   ├── rawdata_pi-faq-on-digested/          #   【symlink】★ Pi 二次研究问答（含 Pi vs DSH 逐面对照）
+│   ├── rawdata_dsh-faq-on-digested/         #   【symlink】DSH Harness 机制问答
+│   ├── rawdata_dsh-digested/                #   【symlink】DSH 源码消化（底层机制）
+│   ├── rawdata_dsh-plugin-seam-maturity/    #   【symlink】插件接缝与成熟度
+│   ├── rawdata_dsh-plugin-business-ladder/  #   【symlink】插件对 owner 的收益阶梯
+│   └── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
+├── 01_storyline/                            # ★ 故事线推敲主战场（当前阶段）
+│   ├── 00-storyline-map.md                  #   故事线总图（v0.1）：主线 + 脊柱 + 五幕 + 口径红线
+│   ├── 01-thesis-and-positions.md           #   核心论点与立场（主张 / 支撑 / 强度）
+│   ├── 02-turning-points.md                 #   转折点与锚点清单（可直接讲出口的句子）
+│   ├── 03-audience-and-pitch.md             #   听众、时长、目的、基调、三个禁止
+│   ├── 04-open-questions.md                 #   已决 / 待用户确认 / 待办 / 已排除
+│   └── 06-harness-internals.md              #   harness 里头干啥（抓要害的讲法 + 团队映射）
+├── 02_evidence/                             # 素材与口径
+│   └── 00-absorption-plan.md                #   ★ 进货单 + 解释性结论 + 十五条口径红线
+├── 03_outline/                              # 页面结构与承载
+│   ├── 00-page-structure-45.md              #   ★ 45 页页面职责（每页结论 + 时长）
+│   └── 01-visual-carrier-plan.md            #   ★ 页面承载规划（四层承载 + 45 页载体分配）
+├── 04_drafts/                               # 生产事实稿
+│   ├── ppt-text-v2.md                       #   ★ 当前页面文案（45 页，四层承载）
+│   └── ppt-text-v1.md                       #   历史稿（承载不足的对照件）
+└── 05_output/                               # PPTX 交付物（待铺）
+```
+
+## 上游素材分工
+
+十一份素材全部收在 [`_reference/`](./_reference/README.md) 下，只读。四条主线：
+
+- **宏观弧线** —— `rawdata_ai-coding-evolution-final/`：五层演变的最终研究报告。给整条故事线和论点骨架。
+- **尾巴主料** —— `rawdata_harness-selection-final/`（+ wave1 / wave2）：Harness Agent 选型研究，
+  11 候选评分卡 + **Pi 深挖** + **DSH 深挖** + `Product First vs Framework First` 路线对照。
+  这是第四幕不用现编的原因。
+- **Pi 的机制与代价** —— `rawdata_pi-digested/` + `rawdata_pi-faq-on-digested/`：
+  Pi 的源码消化层（**`harness/02-Boundaries/` 那四条短板带源码锚点**，比二手报道扎实得多）
+  与 Pi vs DSH 逐面对照。**第四幕 Pi 页的证据基座。**
+- **DSH 的机制细节** —— `rawdata_dsh-*`：DSH 的机制问答、源码消化、插件接缝与生态数据。
+
+## 工作方式
+
+agent 的操作手册在 [`AGENTS.md`](./AGENTS.md)：每次进来先读它，按它定的步骤走，把状态落回源文件。
+加工顺序固定为 **故事线 → 证据口径 → 页面职责 → 生产事实稿 → PPTX → 文字/视觉 QA**；
+review 后若成稿发生变化，再按 **生产事实稿 → 页面职责 → 证据脉络 → 故事线** 反向同步。
+
+**当前状态只认 [`CURRENT.md`](./CURRENT.md)**，词义只认 [`CONTEXT.md`](./CONTEXT.md)。
+`_reference/` 下所有 symlink 只读。
+
+## 临时目录约定
+
+所有一次性产物（构建中间体、逐页 inspect、审稿草稿、模板试验）一律放在**仓库根目录**、
+以 `.tmp-harness-talk-` 前缀 + 主题命名；工具自动生成的随机名目录（`.ppt-build-*`、`.tmp-xxx.XXXX`）算同类。
+这些目录已被 `.gitignore` 覆盖、永不入库。**版本收口时清理**：某一版 PPTX 落进 `05_output/` 并完成 review 后，
+对应的 `.tmp-harness-talk-vN*` 及散落目录即删，不跨版本堆积。
