@@ -18,6 +18,34 @@
 | `rawdata_dsh-plugin-seam-maturity/` | `deepseek-harness/_faq_on_digested/08_plugin-seam-maturity` | 插件接缝与成熟度：插件进入真实执行链后要补哪些合同与门禁。 |
 | `rawdata_dsh-plugin-business-ladder/` | `deepseek-harness/_faq_on_digested/09_plugin-business-ladder` | 插件对 owner 的收益阶梯。 |
 | `rawdata_dsh-plugin-ecosystem-distribution/` | `awesome-dsh-plugin/_faq_on_digested/01_ecosystem-distribution` | 插件生态分布快照（口径红线见 `02_evidence/00-absorption-plan.md`）。 |
+| `rawdata_ai-coding-evolution-reference/` | `ai_tool_deepresearch/dpt_rb_ai-coding-evolution/reference` | ★ **一手来源卡片层**（137 张）：每张带 `source_url / tier / source_type / trust_level / acceptance_status` 与可引原文。**五层演变报告就是这些卡的二手综合**——要回源、要引文、要核口径，来这里。 |
+| `rawdata_harness-selection-reference/` | `.../dpt_rb_harness-agent-selection-project-execution-pilot/reference` | ★ **一手来源卡片层**（168 张）：同上格式。**P25 的官方博客卡、P26 的 flash 原始卡、Pi/DSH 的源码与安全通告卡都在这里**。 |
+
+## 三层结构（2026-09-16 补链后）
+
+上游资料是**三层**，此前只链了外两层，中间那层（一手来源卡片）没接进来——
+这也正是 P6 / P7 两处「回源核对」长期挂着的真正原因：**要核的料压根没在库里**。
+
+| 层 | 在哪 | 性质 | 本 talk 怎么用 |
+|---|---|---|---|
+| **综合层** | `*-final/`（报告正文） | 二手：报告作者的归纳 | 拿故事线与结论骨架 |
+| **一手来源卡片层** | `*-reference/`（**305 张**） | 每张都有 `tier` 与可引原文 | **引文、口径、日期、证据强度一律以这一层为准** |
+| **消化层** | `rawdata_pi-*` / `rawdata_dsh-*` | 源码级消化，带锚点 | 第四幕 Pi / DSH 的硬料 |
+
+## ⚠️ 检索陷阱（踩过）
+
+`_reference/` 下**全是 symlink**。`Grep` / `find` / `ls` 默认**不跟随符号链接**，
+所以在这个目录里搜东西会得到 **0 命中** 或"空目录"的假象（本轮第一次 grep 就是这么被骗的）。
+**正确做法**：搜真实路径，或 `find -L` / `grep -R` 显式跟随。
+
+## 素材纯净度（2026-09-16 评估）
+
+- ✅ **链接本身干净**：13 条 symlink 全部可达、只读、无死链。
+- ⚠️ **`rawdata_harness-selection-*` 主题不纯**：那份研究是为「**项目执行 agent 选型**（PM / PMO 域）」做的，
+  9 个主题里 **06–09**（PM agent 生态 / ChatBI-NL2SQL / agent 接口协作 / 行业合规平台）
+  与本 talk 无关，约占该 bundle 的一半。**引用前先看卡片的 `related_topic_uid` 与文件名前缀**。
+- ✅ 与本 talk 相关的主题：`01_project-execution-agent-paradigm`、`02_real-world-implementations-cases`、
+  `03_harness-runtime-deployment-fit`、`04_pi-harness-deep-dive`、`05_dsh-plugin-harness-deep-dive`。
 
 ## Pi 素材的三个入口（第四幕专用）
 

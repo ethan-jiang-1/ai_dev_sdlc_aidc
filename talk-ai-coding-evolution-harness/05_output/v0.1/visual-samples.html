@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>视觉样片 v0.1 · AI Coding 演变指南</title>
+<style>
+:root{
+  --paper:#FAFAF7;
+  --ink:#1C1F23;
+  --ink-2:#4A5158;
+  --ink-3:#8A9096;
+  --ink-4:#C4C1B9;
+  --rule:#E3E1DA;
+  --teal:#0F6E56;
+  --red:#A32D2D;
+  --amber:#8A5A00;
+  --teal-50:#E4EFEA;
+  --red-50:#F4E7E5;
+  --amber-50:#F3EDE0;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+  --sans: system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+  --k: .68;
+}
+*{box-sizing:border-box}
+body{margin:0;padding:32px 0 64px;background:#EDECE6;font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+.wrap{width:calc(1280px * var(--k));margin:0 auto}
+.mast{font:500 12px/1.7 var(--mono);color:#6B7076;letter-spacing:.06em;margin:0 0 6px}
+.mast b{color:var(--ink)}
+.spec{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:18px 22px;margin:0 0 36px;font-size:13px;line-height:1.85;color:var(--ink-2)}
+.spec h2{font:500 13px/1.6 var(--mono);color:var(--ink);margin:0 0 10px;letter-spacing:.04em}
+.spec code{font-family:var(--mono);font-size:12px;color:var(--ink)}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:middle;border:1px solid rgba(0,0,0,.12)}
+.cap{font:500 12px/1.5 var(--mono);color:#6B7076;letter-spacing:.05em;margin:0 0 10px}
+.cap b{color:var(--ink)}
+.cap span{color:#9A9E9C}
+.box{width:calc(1280px * var(--k));height:calc(720px * var(--k));overflow:hidden;margin-bottom:44px}
+.slide{
+  width:1280px;height:720px;transform:scale(var(--k));transform-origin:top left;
+  background:var(--paper);padding:44px 64px 34px;display:flex;flex-direction:column;position:relative;
+}
+.hd{display:flex;justify-content:space-between;align-items:baseline;font:400 12px/1 var(--mono);letter-spacing:.1em;color:var(--ink-3);margin-bottom:26px}
+.hd .pno{letter-spacing:.06em}
+.l1{font-size:27px;font-weight:500;line-height:1.4;margin:0 0 18px;letter-spacing:.005em}
+.hr{height:1px;background:var(--rule);margin:0 0 26px}
+.l2{flex:1;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.l3{font-size:13.5px;line-height:1.95;color:var(--ink-2);margin-top:22px}
+.l3 .li{display:flex;gap:10px}
+.l3 .li .mk{font-family:var(--mono);font-size:11px;color:var(--ink-4);padding-top:5px;min-width:14px}
+.l3 b{color:var(--ink);font-weight:500}
+.ft{font:400 11px/1.5 var(--mono);color:var(--ink-3);letter-spacing:.04em;margin-top:16px;padding-top:12px;border-top:1px solid var(--rule)}
+.ft .badge{color:var(--amber)}
+.ft .badge-r{color:var(--red)}
+.ft .badge-t{color:var(--teal)}
+.mono{font-family:var(--mono)}
+
+/* 封面 */
+.cv-t{font-size:58px;font-weight:500;line-height:1.18;letter-spacing:-.01em;margin:0}
+.cv-s{font-size:23px;line-height:1.5;color:var(--teal);margin:18px 0 0;font-weight:400}
+.cv-rule{height:1px;background:var(--ink);opacity:.85;width:132px;margin:30px 0 0}
+.cv-route{display:flex;gap:10px;margin-top:auto;padding-top:34px}
+.cv-route .r{flex:1;border-top:2px solid var(--rule);padding-top:11px}
+.cv-route .r.on{border-top-color:var(--ink)}
+.cv-route .n{font:400 11px/1 var(--mono);color:var(--ink-3);letter-spacing:.08em}
+.cv-route .t{font-size:13px;color:var(--ink-2);margin-top:7px}
+.cv-route .r.on .t{color:var(--ink)}
+.cv-by{font:400 12px/1 var(--mono);color:var(--ink-3);letter-spacing:.08em;margin-top:26px}
+
+/* P16 两套控制 */
+.ctl{display:grid;grid-template-columns:1fr 250px 1fr;gap:0;align-items:stretch}
+.col{border:1px solid var(--rule);border-radius:8px;padding:18px 18px 16px;background:#fff}
+.col.term{background:#F4F3EE;border-color:var(--ink-4)}
+.col h3{font:500 13px/1.4 var(--mono);letter-spacing:.06em;margin:0 0 14px;color:var(--ink)}
+.col.t h3{color:var(--teal)}
+.col.s h3{color:var(--amber)}
+.col ul{margin:0;padding:0;list-style:none;font-size:13px;line-height:1.5}
+.col li{padding:9px 0;border-top:1px dashed var(--rule);color:var(--ink-2)}
+.col li:first-child{border-top:0;padding-top:0}
+.col .sub{font:400 11px/1.5 var(--mono);color:var(--ink-3);display:block;margin-top:4px}
+.gap{display:flex;align-items:center;justify-content:center;position:relative}
+.gap .arrow{width:100%;display:flex;align-items:center;gap:6px}
+.gap .line{flex:1;height:1px;background:var(--ink-4)}
+.gap .dot{width:5px;height:5px;border-radius:50%;background:var(--ink-4)}
+.gap .lb{position:absolute;bottom:-46px;left:50%;transform:translateX(-50%);font:400 11px/1.4 var(--mono);color:var(--ink-4);white-space:nowrap}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.band{border-radius:8px;padding:13px 16px;display:flex;align-items:baseline;gap:12px}
+.band.au{background:var(--teal-50);border:1px solid rgba(15,110,86,.22)}
+.band.nau{background:var(--red-50);border:1px solid rgba(163,45,45,.2)}
+.band .tag{font:500 11px/1.6 var(--mono);letter-spacing:.05em;white-space:nowrap}
+.band.au .tag{color:var(--teal)}
+.band.nau .tag{color:var(--red)}
+.band .txt{font-size:12.5px;line-height:1.55;color:var(--ink-2)}
+.two-hd{font:400 11px/1.5 var(--mono);color:var(--ink-4);letter-spacing:.06em;margin-top:20px}
+
+/* P25 数据页 */
+.banner{display:flex;align-items:center;gap:12px;background:var(--amber-50);border:1px solid rgba(138,90,0,.24);border-left:3px solid var(--amber);border-radius:6px;padding:13px 18px}
+.banner .w{font:500 13px/1.5 var(--mono);color:var(--amber);white-space:nowrap}
+.banner .x{font-size:13px;line-height:1.55;color:var(--ink-2)}
+.bars{display:flex;flex-direction:column;gap:16px;margin-top:6px}
+.bar{display:grid;grid-template-columns:150px 1fr 108px;align-items:center;gap:16px}
+.bar .lab{font-size:13px;color:var(--ink-2);text-align:right}
+.bar .track{height:34px;background:#F1F0EA;border-radius:4px;overflow:hidden;position:relative}
+.bar .fill{height:100%;border-radius:4px}
+.bar .fill.before{width:34.7%;background:#B9B6AE}
+.bar .fill.after{width:100%;background:var(--teal)}
+.bar .val{font:500 26px/1 var(--mono);letter-spacing:-.01em}
+.bar .val.before{color:#8A9096}
+.bar .val.after{color:var(--teal)}
+.tk{display:flex;align-items:center;gap:10px;margin-left:166px;margin-top:-6px;font:400 12px/1.5 var(--mono);color:var(--ink-3)}
+.tk .pill{background:#F1F0EA;border-radius:3px;padding:3px 8px;color:var(--ink-2)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.card{border:1px solid var(--rule);border-radius:8px;padding:15px 18px;background:#fff}
+.card .k{font:500 11px/1.5 var(--mono);letter-spacing:.06em;color:var(--ink-3);margin-bottom:8px}
+.card .v{font-size:14px;line-height:1.55;color:var(--ink)}
+.card.keep .k{color:var(--ink-3)}
+.card.move .k{color:var(--teal)}
+
+/* 停顿页 */
+.pause{align-items:center;justify-content:center;padding:0 120px}
+.pause .hd{position:absolute;top:44px;left:64px;right:64px;margin:0}
+.pause .big{font-size:46px;font-weight:500;line-height:1.5;letter-spacing:.01em;text-align:center;margin:0}
+.pause .big .dot{color:var(--ink-4);padding:0 10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="mast">视觉样片 <b>v0.1</b> · AI Coding 演变指南：从 Prompt 到 Harness &nbsp;|&nbsp; 2026-09-16 &nbsp;|&nbsp; 4 张</div>
+
+<div class="spec">
+  <h2>视觉规格速查（本文件的 4 张全部遵守，后续 45 页以此为基准）</h2>
+  <div>
+    <span class="sw" style="background:#FAFAF7"></span><code>#FAFAF7</code> 纸白画布 &nbsp;
+    <span class="sw" style="background:#1C1F23"></span><code>#1C1F23</code> 墨色·标题与结构线<br>
+    <span class="sw" style="background:#0F6E56"></span><code>#0F6E56</code> 青绿·active path／反馈 &nbsp;
+    <span class="sw" style="background:#A32D2D"></span><code>#A32D2D</code> 朱红·门禁／风险 &nbsp;
+    <span class="sw" style="background:#8A5A00"></span><code>#8A5A00</code> 琥珀·已提交工件／证据／提示<br>
+    <b>等宽字体</b>承担眉题、页码、代码、命令、日志行、指标；中文用 <code>system-ui</code>。
+    <b>四层结构</b>：眉题＋页码 → L1 结论标题 → 横线 → L2 主视觉（占内容区 ≥40%）→ L3 支撑 → L4 页脚（来源＋证据强度）。
+    <b>全原生矢量</b>，无 AI 生图、无渐变、无阴影。
+  </div>
+</div>
+
+<div class="cap">样片 <b>1 / 4</b> &nbsp; 封面 &nbsp;<span>P1 · 对应页面职责表 P1</span></div>
+<div class="box"><div class="slide">
+  <div class="hd"><span>AI&nbsp;CODING&nbsp;EVOLUTION&nbsp;/&nbsp;KEYNOTE</span><span class="pno">01 / 45</span></div>
+  <div style="display:flex;flex-direction:column;flex:1">
+    <h1 class="cv-t">AI Coding<br>演变指南</h1>
+    <p class="cv-s">生成不是瓶颈，交付才是</p>
+    <div class="cv-rule"></div>
+    <div class="cv-route">
+      <div class="r on"><div class="n">01</div><div class="t">五层演变</div></div>
+      <div class="r"><div class="n">02</div><div class="t">harness 里头</div></div>
+      <div class="r"><div class="n">03</div><div class="t">它是不是变量</div></div>
+      <div class="r"><div class="n">04</div><div class="t">能不能换</div></div>
+    </div>
+    <div class="cv-by">$ keynote --from prompt --to harness</div>
+  </div>
+  <div class="ft">Ethan Jiang &nbsp;|&nbsp; 45 页 · 约 85 分钟 &nbsp;|&nbsp; 01 / 45</div>
+</div></div>
+
+<div class="cap">样片 <b>2 / 4</b> &nbsp; 机制页 &nbsp;<span>P16 · 两套控制 —— 主视觉是三栏结构图＋下方两档，验证"机制页"的信息浓度</span></div>
+<div class="box"><div class="slide">
+  <div class="hd"><span>第二幕 · HARNESS 里头</span><span class="pno">16 / 45</span></div>
+  <h1 class="l1">可靠性发生在两次：行动前约束，行动后反馈</h1>
+  <div class="hr"></div>
+  <div class="l2">
+    <div class="ctl">
+      <div class="col t">
+        <h3>GUIDES　前馈</h3>
+        <ul>
+          <li>按这个样式写<span class="sub">code style / 模板</span></li>
+          <li>必须过这个检查<span class="sub">lint / 类型</span></li>
+          <li>只能用这些工具<span class="sub">tool allowlist</span></li>
+        </ul>
+      </div>
+      <div class="gap">
+        <div class="arrow"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+        <div class="lb">一次动作</div>
+      </div>
+      <div class="col s">
+        <h3>SENSORS　反馈</h3>
+        <ul>
+          <li>测试挂了<span class="sub">exit code ≠ 0</span></li>
+          <li>类型不过<span class="sub">type error</span></li>
+          <li>退出码非零<span class="sub">重新来一遍</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="two-hd">两档判定</div>
+    <div class="two">
+      <div class="band au"><span class="tag">可复现 · 可审计</span><span class="txt">测试　·　lint　·　类型　·　schema</span></div>
+      <div class="band nau"><span class="tag">不可审计</span><span class="txt">AI review　·　模型判断</span></div>
+    </div>
+  </div>
+  <div class="l3">
+    <div class="li"><span class="mk">—</span><span><b>Guides 前馈</b>：行动前就把边界设好</span></div>
+    <div class="li"><span class="mk">—</span><span><b>Sensors 反馈</b>：行动后把结果喂回去</span></div>
+    <div class="li"><span class="mk">—</span><span>原则上：能交给确定性判的，不靠模型自觉</span></div>
+  </div>
+  <div class="ft"><span class="badge-t">一手</span>（Böckeler，同上）· Guides / Sensors 框架 &nbsp;|&nbsp; 16 / 45</div>
+</div></div>
+
+<div class="cap">样片 <b>3 / 4</b> &nbsp; 数据页 &nbsp;<span>P25 · 证据一 —— 顶部证据强度横幅与数字同屏，验证"当场降档"有没有真的做进版面</span></div>
+<div class="box"><div class="slide">
+  <div class="hd"><span>第三幕 · 它是不是变量</span><span class="pno">25 / 45</span></div>
+  <h1 class="l1">模型没换，换的是 harness —— 结果差了将近三倍</h1>
+  <div class="hr"></div>
+  <div class="l2">
+    <div class="banner">
+      <span class="w">⚠️ 厂商自述</span>
+      <span class="x">以下数字来自官方博客，未经独立第三方审计 —— 请按"自述"来听</span>
+    </div>
+    <div class="bars">
+      <div class="bar">
+        <div class="lab">换之前</div>
+        <div class="track"><div class="fill before"></div></div>
+        <div class="val before">13.3%</div>
+      </div>
+      <div class="bar">
+        <div class="lab">换之后</div>
+        <div class="track"><div class="fill after"></div></div>
+        <div class="val after">38.3%</div>
+      </div>
+    </div>
+    <div class="tk"><span>同一套评测（ARC-AGI-3）</span><span class="pill">输出 token 降到约 1/6</span></div>
+    <div class="cards">
+      <div class="card keep"><div class="k">什么没变</div><div class="v">还是那个模型</div></div>
+      <div class="card move"><div class="k">什么变了</div><div class="v">模型外面那一圈</div></div>
+    </div>
+  </div>
+  <div class="l3">
+    <div class="li"><span class="mk">—</span><span>换之前 <b>13.3%</b> ｜ 换之后 <b>38.3%</b>（同一套评测）</span></div>
+    <div class="li"><span class="mk">—</span><span>口径：它证的是<b>能力层</b>——同一个模型能做成的事变了</span></div>
+  </div>
+  <div class="ft"><span class="badge">⚠️ 厂商自述</span> · 来源 官方博客 ｜ 口径：原文为「<b>输出</b> token 少 6 倍」&nbsp;|&nbsp; 25 / 45</div>
+</div></div>
+
+<div class="cap">样片 <b>4 / 4</b> &nbsp; 停顿页（全新机制）&nbsp;<span>I3 · 插在 P20 之后 —— 留白 ≥60%、只有一句大字、<b>不显示页码</b>，验证"呼吸"能不能成立</span></div>
+<div class="box"><div class="slide pause">
+  <div class="hd"><span>第二幕 · HARNESS 里头</span><span class="pno"></span></div>
+  <p class="big">圈住<span class="dot">·</span>拦住<span class="dot">·</span>看清</p>
+</div></div>
+
+<div class="spec" style="margin-top:8px">
+  <h2>请重点看这四件事</h2>
+  <div>
+    <b>① 纸白够不够"纸"</b>——#FAFAF7 在投影上会不会发灰。<br>
+    <b>② 等宽母题够不够用</b>——眉题、页码、指标、口径脚注都由它承担，像不像同一套东西。<br>
+    <b>③ 三个语义色是不是克制</b>——青绿只用在"换之后／可审计"，琥珀只用在"证据提示"，朱红只用在"不可审计"；有没有哪个颜色用多了。<br>
+    <b>④ 停顿页的留白够不够狠</b>——第 4 张是不是足够空，空到能让人停住。<br>
+    另外请顺带判断：<b>P16 那种信息浓度，讲 2.5 分钟是偏多还是偏少</b>。
+  </div>
+</div>
+
+</div>
+</body>
+</html>

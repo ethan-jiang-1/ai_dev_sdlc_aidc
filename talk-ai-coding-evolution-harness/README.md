@@ -11,7 +11,8 @@
 **同一个模型，为什么交出来的东西不一样？** 答案落在模型外面那圈叫 **harness** 的东西上——
 它是交付质量的真实变量，而且已经出现把 harness 做成可替换件的路线。
 
-**规格**：75–90 min · 45 页（按 84 min 排）。视觉方向：纸白底 + 代码终端母题，全原生矢量。
+**规格**：75–90 min · **正文 45 页 + 4 张停顿页（I1–I4，不编页码）= 49 张 slide**（按约 85.5 min 排）。
+视觉方向：纸白底 + 代码终端母题，全原生矢量。
 
 **两条硬约束**（详见 [`AGENTS.md`](./AGENTS.md) 的对象红线）：
 1. 全场 audience-facing 文字**不出现 OPC / 一人公司 / 姊妹项目引用**。
@@ -27,7 +28,7 @@ talk-ai-coding-evolution-harness/
 ├── CURRENT.md                               # 【当前态权威】现在做到哪一步、下一步动哪个文件
 ├── CONTEXT.md                               # 【术语权威】本 talk 的局部 glossary + 禁用词
 ├── _reference/                              # 上游素材 symlink（只读），说明见其 README
-│   ├── README.md                            #   九份素材的分工 + 引用约定
+│   ├── README.md                            #   十一份素材的分工 + 引用约定
 │   ├── rawdata_ai-coding-evolution-final/   #   【symlink】宏观：五层演变最终报告
 │   ├── rawdata_harness-selection-final/     #   【symlink】★ 尾巴主料：Harness Agent 选型研究
 │   ├── rawdata_harness-selection-wave1/     #   【symlink】逐 topic 证据摘要
@@ -38,7 +39,9 @@ talk-ai-coding-evolution-harness/
 │   ├── rawdata_dsh-digested/                #   【symlink】DSH 源码消化（底层机制）
 │   ├── rawdata_dsh-plugin-seam-maturity/    #   【symlink】插件接缝与成熟度
 │   ├── rawdata_dsh-plugin-business-ladder/  #   【symlink】插件对 owner 的收益阶梯
-│   └── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
+│   ├── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
+│   ├── rawdata_ai-coding-evolution-reference/ # ★【symlink】一手来源卡片 137 张（回源 / 引文 / 核口径来这层）
+│   └── rawdata_harness-selection-reference/ # ★【symlink】一手来源卡片 168 张（P25 官方博客卡、P26 flash 原始卡在这）
 ├── 01_storyline/                            # ★ 故事线推敲主战场（当前阶段）
 │   ├── 00-storyline-map.md                  #   故事线总图（v0.1）：主线 + 脊柱 + 五幕 + 口径红线
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（主张 / 支撑 / 强度）
@@ -54,12 +57,21 @@ talk-ai-coding-evolution-harness/
 ├── 04_drafts/                               # 生产事实稿
 │   ├── ppt-text-v2.md                       #   ★ 当前页面文案（45 页，四层承载）
 │   └── ppt-text-v1.md                       #   历史稿（承载不足的对照件）
-└── 05_output/                               # PPTX 交付物（待铺）
+└── 05_output/                               # PPTX 交付物
+    ├── v0.1/visual-samples.html             #   视觉样片 4 张（已认可，视觉基准）
+    └── v0.2/deck.html                       # ★ 全套 49 张（45 正文 + 4 停顿页）——浏览即看
 ```
 
 ## 上游素材分工
 
-十一份素材全部收在 [`_reference/`](./_reference/README.md) 下，只读。四条主线：
+**十三份**素材全部收在 [`_reference/`](./_reference/README.md) 下，只读。**分三层**（详见其 README）：
+
+- **综合层** —— `*-final/`：报告正文（二手），给故事线与结论骨架。
+- **一手来源卡片层** —— `*-reference/`（**305 张**）：每张带 `tier` / `source_type` / 可引原文。
+  **引文、口径、日期、证据强度一律以这一层为准**；P6 / P7 / P25 三处回源核对就是靠它完成的。
+- **消化层** —— `rawdata_pi-*` / `rawdata_dsh-*`：源码级消化，带锚点，第四幕的硬料。
+
+四条主线：
 
 - **宏观弧线** —— `rawdata_ai-coding-evolution-final/`：五层演变的最终研究报告。给整条故事线和论点骨架。
 - **尾巴主料** —— `rawdata_harness-selection-final/`（+ wave1 / wave2）：Harness Agent 选型研究，
