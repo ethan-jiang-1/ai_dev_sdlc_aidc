@@ -92,7 +92,9 @@ ai_dev_sdlc_aidc/
 ## 六、通用约定
 
 - **临时目录**：一次性产物（构建中间体、逐页 inspect、审稿草稿）一律放仓库根目录，`.tmp-` 前缀，已被 `.gitignore` 覆盖、永不入库。版本收口即清理，不跨版本堆积。
-- **记忆位置**：跨对话的项目记忆写在 `.workbuddy/memory/`（日志按日期、长期约定在 `MEMORY.md`）；每个 talk 的 `CURRENT.md` / `HANDOFF.md` 面向"零上下文新对话"。
+- **记忆位置**：跨对话的项目记忆写在 `.workbuddy/memory/`（日志按日期、长期约定在 `MEMORY.md`）；
+  每个 talk 的 `README.md`（地图）+ `CURRENT.md`（当前态）+ `AGENTS.md`（手册）面向"零上下文新对话"。
+  **不设 HANDOFF 类交接文件**——它是某一次对话的临时件，长期留存会与 `CURRENT.md` 形成双权威。
 - **单一事实来源**：每个事实只写一处，其他文件用指针引用，不复制。
 
 ## Python / uv

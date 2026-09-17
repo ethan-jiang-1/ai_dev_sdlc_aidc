@@ -39,11 +39,11 @@
 | 文件 | 职责 |
 |---|---|
 | `README.md` | 地图、素材说明、工作方式 |
-| `AGENTS.md` | ★ 该 talk 的 agent 手册：步骤、门禁、红线 |
+| `AGENTS.md` | ★ 该 talk 的 agent 手册：进入仪式 / 步骤 / 门禁 / 红线 / 已知陷阱 / 生产工具链 |
 | `CURRENT.md` | ★ 当前态唯一权威：做到哪一步、下一步动哪个文件 |
 | `CONTEXT.md` | 术语与禁用词唯一权威（`-opc` 无此文件） |
-| `HANDOFF.md` | 零上下文新对话的交接文档（`-harness` 有，新对话优先读它） |
-
+| ~~`HANDOFF.md`~~ | **不再使用**（2026-09-17 归档）。交接件是某一次对话的临时产物，
+  长期留存会与 `CURRENT.md` 形成双权威。新对话读 `README.md` + `CURRENT.md` + `AGENTS.md` 即可 |
 **管道单向加工**：`01_storyline → 02_evidence → 03_outline → 04_drafts → 05_output`。
 上游结论没稳定前，不在下游定稿。review 若改变了成稿，按 `04_drafts → 03_outline → 02_evidence → 01_storyline` **反向同步**。
 

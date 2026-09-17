@@ -11,8 +11,14 @@
 **同一个模型，为什么交出来的东西不一样？** 答案落在模型外面那圈叫 **harness** 的东西上——
 它是交付质量的真实变量，而且已经出现把 harness 做成可替换件的路线。
 
-**规格**：75–90 min · **正文 45 页 + 4 张停顿页（I1–I4，不编页码）= 49 张 slide**（按约 85.5 min 排）。
+**规格**：75–90 min · **正文 36 页 + 呼吸页 B1–B6（不编页码）= 42 张 slide**（按约 79 min 排）。
 视觉方向：纸白底 + 代码终端母题，全原生矢量。
+
+**★ 版本单一纪律（2026-09-17 定，违反即会造成改稿摇摆）**：
+每一类产物**目录里只留当前版本**。被取代的旧版本一律**移出本目录**，归档到仓库根
+`.tmp-harness-talk-archive-YYYYMMDD/`（`.gitignore` 已覆盖，不入库，仅供回查）。
+**不允许**在两个文件里维护同一份内容，也不允许"新版在下、旧版还在旁边"——
+旧版本号、旧页码留在目录里，就是下一轮改错稿的来源。
 
 **两条硬约束**（详见 [`AGENTS.md`](./AGENTS.md) 的对象红线）：
 1. 全场 audience-facing 文字**不出现 OPC / 一人公司 / 姊妹项目引用**。
@@ -22,13 +28,12 @@
 
 ```text
 talk-ai-coding-evolution-harness/
-├── HANDOFF.md                               # ★【新对话从这里开始】交接文档：铁律 + 进入仪式 + 已锁定决定 + 下一步 + 陷阱
-├── README.md                                # 本文件：地图 + 素材说明 + 工作方式
-├── AGENTS.md                                # 【agent 手册】每次进来的步骤 + 门禁 + 规则
+├── README.md                                # ★【新对话从这里开始】本文件：地图 + 素材说明 + 工作方式
+├── AGENTS.md                                # 【agent 手册】进入仪式 + 门禁 + 规则 + 已知陷阱 + 生产工具链
 ├── CURRENT.md                               # 【当前态权威】现在做到哪一步、下一步动哪个文件
 ├── CONTEXT.md                               # 【术语权威】本 talk 的局部 glossary + 禁用词
 ├── _reference/                              # 上游素材 symlink（只读），说明见其 README
-│   ├── README.md                            #   十一份素材的分工 + 引用约定
+│   ├── README.md                            #   十三份素材的分工 + 引用约定
 │   ├── rawdata_ai-coding-evolution-final/   #   【symlink】宏观：五层演变最终报告
 │   ├── rawdata_harness-selection-final/     #   【symlink】★ 尾巴主料：Harness Agent 选型研究
 │   ├── rawdata_harness-selection-wave1/     #   【symlink】逐 topic 证据摘要
@@ -42,24 +47,23 @@ talk-ai-coding-evolution-harness/
 │   ├── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
 │   ├── rawdata_ai-coding-evolution-reference/ # ★【symlink】一手来源卡片 137 张（回源 / 引文 / 核口径来这层）
 │   └── rawdata_harness-selection-reference/ # ★【symlink】一手来源卡片 168 张（P25 官方博客卡、P26 flash 原始卡在这）
-├── 01_storyline/                            # ★ 故事线推敲主战场（当前阶段）
-│   ├── 00-storyline-map.md                  #   故事线总图（v0.1）：主线 + 脊柱 + 五幕 + 口径红线
+├── 01_storyline/                            # ★ 故事线推敲主战场
+│   ├── 00-storyline-map.md                  #   故事线总图（v2.1）：主轴 + 六步脊柱 + 五层表 + 两类程序表 + 节奏
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（主张 / 支撑 / 强度）
-│   ├── 02-turning-points.md                 #   转折点与锚点清单（可直接讲出口的句子）
+│   ├── 02-turning-points.md                 #   推导句清单（〔前提〕〔推导〕〔结论〕〔边界〕）
 │   ├── 03-audience-and-pitch.md             #   听众、时长、目的、基调、三个禁止
-│   ├── 04-open-questions.md                 #   已决 / 待用户确认 / 待办 / 已排除
+│   ├── 04-open-questions.md                 #   历史决策流水（已决 / 待确认 / 待办 / 已排除）
 │   └── 06-harness-internals.md              #   harness 里头干啥（抓要害的讲法 + 团队映射）
 ├── 02_evidence/                             # 素材与口径
 │   └── 00-absorption-plan.md                #   ★ 进货单 + 解释性结论 + 十五条口径红线
 ├── 03_outline/                              # 页面结构与承载
-│   ├── 00-page-structure-45.md              #   ★ 45 页页面职责（每页结论 + 时长）
-│   └── 01-visual-carrier-plan.md            #   ★ 页面承载规划（四层承载 + 45 页载体分配）
+│   ├── 00-page-structure-v3.md              #   ★ 36 页页面职责（每页答哪一步 + 时长 + 呼吸页 B1–B6）
+│   └── 01-visual-carrier-plan.md            #   ★ 页面承载规格（四层承载 + 载体类型库 + 密度自检）
 ├── 04_drafts/                               # 生产事实稿
-│   ├── ppt-text-v2.md                       #   ★ 当前页面文案（45 页，四层承载）
-│   └── ppt-text-v1.md                       #   历史稿（承载不足的对照件）
+│   └── ppt-text-v3.md                       #   ★ 当前页面文案（36 页 + 呼吸页，四层承载）
 └── 05_output/                               # PPTX 交付物
     ├── v0.1/visual-samples.html             #   视觉样片 4 张（已认可，视觉基准）
-    └── v0.2/deck.html                       # ★ 全套 49 张（45 正文 + 4 停顿页）——浏览即看
+    └── v0.4/AI Coding 演变指南/             # ★ 当前 REVIEW 对象：42 张 PPTX + 42 个 .slide 源 + DESIGN.md
 ```
 
 ## 上游素材分工

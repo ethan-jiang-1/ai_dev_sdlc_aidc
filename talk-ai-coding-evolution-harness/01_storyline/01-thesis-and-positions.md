@@ -17,7 +17,7 @@
 | A2 | 五层是叠加不是替代；前三层成熟、Loop/Graph 新兴 | 五层演变最终报告（成熟度标尺） | 素材结论 |
 | A3 | 每个真实动作都要经过 harness，Loop/Graph 补不上缺失的运行边界 | 结构线（loop/graph 都实例化 harness）+ 哲学线（反馈同源、验证梯）+ 风险线（2026 授权事故） | **本 talk 的推断**，三条素材支撑 |
 | A4 | 模型给能力，harness 给可靠性 | Böckeler：`Agent = Model + Harness`；Guides/Sensors 框架 | 素材结论（框架）+ 本 talk 的表述 |
-| A5 | 提议权可以交给模型，执行权必须留在 harness | GraphARC 的 plan → check → execute；2026 执行时授权缺失的因果链 | 素材支撑，**本 talk 的口径** |
+| A5 | 提出权可以交给模型，执行权必须留在 harness | GraphARC 的 plan → check → execute；2026 执行时授权缺失的因果链 | 素材支撑，**本 talk 的口径** |
 | A6 | 同一个模型，换一圈 harness 就是两套交付系统 | Codex Harness 开源后的能力/成本变化（⚠️ 厂商自述）；第三方 8-harness 对照（⚠️ 趋势级、无方法论） | **本 talk 的核心判断**，证据偏弱、必须标注 |
 | A7 | 团队里那圈东西最容易散，是团队专属问题 | 团队协作事实：多人多套配置、交付质量取决于执行者个人习惯；**其后果有外部素材支撑**——五层 stack 综述（W4F-203 组织含义段）：只用最上层、忽略权限的团队会被 agent 违规惩罚 | **本 talk 的观察**；后果一侧已补上外部依据 |
 | A8 | harness 是变量，可以被替换 | Pi（extensions API、SDK、容器化、本地模型）与 DSH（无特权核心、插件化、可完全私有化）两条路线的机制证据 | 素材结论（机制层） |

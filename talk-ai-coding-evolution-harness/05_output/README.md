@@ -1,14 +1,15 @@
 # 05_output —— PPTX 交付物
 
-本目录放**版本化交付**：`vN/` 子目录 + 该版 PPTX + 结构检查文件 + 渲染图。
+本目录放**版本化交付**：`vN/` 子目录 + 该版 PPTX + slide 源文件 + 视觉规格。
 
 ## 版本约定
 
-- 内容锁之前不做完整版；先做**视觉样片**——固定 **4 张**：
-  封面 + 一张机制页 + 一张数据页 + 一张**停顿页**（停顿页是本次新机制，最容易做歪，必须先进样片）。
-- 样片与完整稿沿用连续编号 `v0.x`，只有完整 45 页通过文字与视觉 REVIEW、
-  被明确认定为首个正式发布版时，才允许用 `v1.0`。
-- **唯一 REVIEW 对象**写进 `../CURRENT.md`；历史版本只用于对照，不充当当前入口。
+- **只有当前版本与视觉基准留在目录里。** 被取代的版本一律移出，归档到仓库根
+  `.tmp-harness-talk-archive-YYYYMMDD/`（不入库，仅供回查）。
+  理由：旧版本的页码、页序留在旁边，是下一轮改错稿的主要来源。
+- 版本编号连续 `v0.x`；只有完整稿通过文字与视觉 REVIEW、被明确认定为首个正式发布版时，
+  才允许用 `v1.0`。
+- **唯一 REVIEW 对象**写进 `../CURRENT.md`。
 
 ## 每版的必做项
 
@@ -20,31 +21,59 @@
 
 ## 状态
 
-### v0.1 —— 视觉样片（2026-09-16）
+### v0.1 —— 视觉样片（2026-09-16）· 仍有效
 
 `v0.1/visual-samples.html`，4 张——
 
 | # | 样片 | 验证什么 |
 |---|---|---|
-| 1 | 封面（P1） | 标题层级、路线条、终端母题 |
-| 2 | 机制页（P16 两套控制） | 信息浓度够不够撑 2.5 分钟；三栏结构图 + 下方两档判定 |
-| 3 | 数据页（P25 证据一） | **证据强度横幅与数字同屏**——"当场降档"有没有真做进版面 |
-| 4 | **停顿页（I3）** | 留白 ≥60%、只有一句大字、不显示页码——"呼吸"能不能成立 |
+| 1 | 封面 | 标题层级、路线条、终端母题 |
+| 2 | 机制页（两套控制） | 信息浓度够不够撑 2.5 分钟；三栏结构图 + 下方两档判定 |
+| 3 | 数据页 | **证据强度横幅与数字同屏**——"当场降档"有没有真做进版面 |
+| 4 | **呼吸页** | 留白 ≥60%、只有一句大字、不显示页码——"呼吸"能不能成立 |
 
 **用户已认可（2026-09-16）。这 4 张是后续全套的视觉基准（D29）。**
 
-### v0.2 —— 全套 49 张（2026-09-16）
+### v0.4 —— 42 张 PPTX（2026-09-17，★ 当前唯一 REVIEW 对象）
 
-`v0.2/deck.html`，**45 张正文 + 4 张停顿页 = 49 张**，与 v0.1 同一套视觉语言。
+`v0.4/AI Coding 演变指南/AI Coding 演变指南.pptx`，**36 页正文 + 呼吸页 B1–B6 = 42 张**，
+对应 `04_drafts/ppt-text-v3.md` 与 `03_outline/00-page-structure-v3.md`。
 
-- 每张：眉题（左）+ 页码（右）→ L1 结论标题 → 横线 → L2 主视觉 → L3 支撑 → L4 页脚（来源＋证据强度）
-- 顶部有**幕分组索引**，可点页码跳转；每张上方有「P编号 · 页名 · 时长」标注
-- **`讲法`（不上屏）逐页可见**（在页面外的说明条里），供 review 时对照
-- 停顿页**不显示页码**，插在 P8 / P17 / P20 / P34 之后
+| 项 | 位置 |
+|---|---|
+| PPTX | `v0.4/AI Coding 演变指南/AI Coding 演变指南.pptx` |
+| slide 源（42 个） | `v0.4/AI Coding 演变指南/slides/NN.slide` |
+| 视觉规格 | `v0.4/AI Coding 演变指南/DESIGN.md` |
+| 生成器 | `.tmp-harness-talk-deck-v3/build_slides_v3.py`（不入库） |
+| 预览总览 | `.tmp-harness-talk-deck-v3/preview/all.html` |
+| 渲染图 | `.tmp-harness-talk-deck-v3/shots/sNN.png`（0 基，s00 = P1） |
 
-**生成方式**：`/Users/bowhead/ai_dev_sdlc_aidc/.tmp-harness-talk-deck/build_deck.py`（临时目录，按约定不入库）。
-改稿时**改生成器再重跑**，不要手改 HTML——这样 49 张的版式不会漂。版本收口时连同 `.tmp-` 目录一起清掉，
-但**收口前务必保留**，否则下次改稿要重写。
+**编译方式**（`slidep` CLI：`~/.workbuddy/binaries/node/versions/22.22.2-3/bin/slidep`）：
+
+```bash
+slidep create "<deck>.pptx"                                    # 建空本
+slidep upsert-dsl "<deck>.pptx" --dsl-file NN.slide --page-index -1   # 追加
+slidep upsert-dsl "<deck>.pptx" --dsl-file NN.slide --page-index N    # 替换第 N+1 页
+slidep screenshot "<deck>.pptx" --page-index N --out sNN.png   # 出图检查
+```
+
+**改稿流程**：改生成器 → 重跑生成 `.slide` → 只 `upsert-dsl` 受影响的那一页 → 出图检查。
+不要手改 PPTX。
+
+**两个已知坑**：
+- DSL 里 Text 节点**不吃 height**，行高要压在 Box 上（`minHeight`），否则版面会塌。
+- 批量 upsert 被中断时，用 `ls ppt/slides/*.xml | wc -l` 核页数，
+  **不要**用 `ls ppt/slides/`（会把 `_rels` 目录数进去）。
+
+**REVIEW 要点**：P25–P28 两类程序 / P29–P33 DSH 展开 / P18 现场走查（现为示意 trace）/ 呼吸页 B1–B6。
+
+### 已归档（不在本目录）
+
+| 版本 | 内容 | 归档位置 |
+|---|---|---|
+| v0.2 | `deck.html`，v2 结构 49 张 HTML 稿 | `.tmp-harness-talk-archive-20260917/v0.2/` |
+| v0.3 | v2 结构 49 页 PPTX + 49 个 .slide + STORY.md | `.tmp-harness-talk-archive-20260917/v0.3/` |
+| — | v0.4 里曾有一份从 v0.3 复制的 `STORY.md`（v2 叙事，与 v3 冲突） | `.tmp-harness-talk-archive-20260917/v0.4-STORY-v2叙事.md` |
 
 ### v1.0 —— 完整 PPTX：**未开始**
 

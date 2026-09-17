@@ -53,7 +53,7 @@
 
 | 要讲什么 | 去哪读 | 关键结论 |
 |---|---|---|
-| Pi 的结构**好在哪** | `rawdata_pi-digested/harness/01-Architecture/` | 三层同心接缝（operations / tool / extension）按"变化轴"裁剪接口大小；统一注入点；分发闭环；生命周期护栏（两阶段绑定、stale 保护、**fail-close**） |
+| Pi 的结构**好在哪** | `rawdata_pi-digested/harness/01-Architecture/` | 三层同心 seam（operations / tool / extension）按"变化轴"裁剪接口大小；统一注入点；分发闭环；生命周期护栏（两阶段绑定、stale 保护、**fail-close**） |
 | Pi 的**代价在哪** | `rawdata_pi-digested/harness/02-Boundaries/` | 四条短板：**① 无默认沙箱**（扩展 = 宿主进程同等权限，`pi install` 陌生包 ≈ 执行其任意代码）② 无 MCP/ACP（生态锁定，外部工具要付适配层税）③ 内层 AgentLane 半成品 ④ 无扩展 API 版本契约 |
 | Pi 与 DSH **逐面对照** | `rawdata_pi-faq-on-digested/06_pi_vs_dsh/` | `04_strengths_weaknesses.md` 有逐面强弱表，含**「对陌生插件安全：两个都烂」**——这是本 talk 第四幕"对称讲代价"的直接依据 |
 

@@ -1,7 +1,7 @@
 # 内容吸纳清单与口径红线（v0.1）
 
 > 依据 `../_reference/README.md` 列出的十一份上游素材。本文件定"进什么货"和"什么话不能说"。
-> 页编号以 `../03_outline/00-page-structure-45.md` 为准。
+> 页编号以 `../03_outline/00-page-structure-v3.md`（36 页）为准。
 
 ## 一、进货单（哪页吸哪个锚点）
 
@@ -56,9 +56,9 @@
 |---|---|---|
 | P31 | `Framework First` vs `Product First` 的结构判断；"早期要速度用 Codex，企业要可控/私有化用 DSH"（⚠️ 媒体共识口径） | 同上 §5.5 发现 6 |
 | P32 | Everything is a Plugin（Cordis）；**无特权核心**；"There is no privileged core to patch"。**并入两页**（D15）：四种运行模式 = 四套默认插件集（标准 / PTC / 极简 / 创造）；长程不是单一 loop——Goal / Ralph / workflow / Spawn-Fork 并存，层级式而非 swarm | 同上 §5.5 发现 1/2/5；`rawdata_dsh-digested/system/00-map.md` |
-| P33 | append-only 类型化 SessionEvent 日志（唯一真源）；模型所见即被记录；回放/恢复/分叉/审计是投影 | 同上 §5.5 发现 4 |
+| P33 | append-only 类型化 SessionEvent 日志（single source of truth）；模型所见即被记录；回放/恢复/分叉/审计是投影 | 同上 §5.5 发现 4 |
 | P34 | 官方插件市场未上线；第三方商店口径不可比；v0.1 接口快变；二次开发量高于 Product First | 同上 §5.5 发现 7/8 + §5.5 合规小节 |
-| P35 | **Pi 的结构好在哪**：三层同心接缝（operations / tool / extension）按"变化轴"裁剪接口大小；统一注入点；分发闭环；生命周期护栏（两阶段绑定、stale 保护、**fail-close**）。补充：~9 万 star（趋势值，见红线 3） | `rawdata_pi-digested/harness/01-Architecture/`（1.1–1.4）；对照 `rawdata_harness-selection-final/final_v3.md` §5.4 |
+| P35 | **Pi 的结构好在哪**：三层同心 seam（operations / tool / extension）按"变化轴"裁剪接口大小；统一注入点；分发闭环；生命周期护栏（两阶段绑定、stale 保护、**fail-close**）。补充：~9 万 star（趋势值，见红线 3） | `rawdata_pi-digested/harness/01-Architecture/`（1.1–1.4）；对照 `rawdata_harness-selection-final/final_v3.md` §5.4 |
 | P36 | **Pi 的代价在哪**：四条短板——① **无默认沙箱**（扩展 = 宿主进程同等权限，`pi install` 陌生包 ≈ 执行任意代码）② 无 MCP/ACP（生态锁定，外部工具付适配层税）③ 内层 AgentLane 半成品 ④ 无扩展 API 版本契约。讲法见红线 13/14 | `rawdata_pi-digested/harness/02-Boundaries/`（2.1–2.4） |
 | P37 | **两边都还没解决的那件事**：**"对陌生插件安全：两个都烂"**（Pi 无沙箱；DSH 插件化 ≠ 安全）→ 这两条都不是"更先进的选择"，是"**正在演进的路线**" | `rawdata_pi-faq-on-digested/06_pi_vs_dsh/04_strengths_weaknesses.md` 逐面强弱表；`.../03_mechanism_table.md` |
 | P38 | 本 talk 的落点：两条路线的共同点——harness 从"产品的一部分"变成"你可以改的东西" | 立场（A8） |
@@ -133,7 +133,7 @@
 |---|---|---|---|
 | **P6** | ⚠️ 量化口径待核对 | 原文是**定性判断**：`the exact formatting of prompts is likely becoming less important as models become more capable`。**它不是量化结论**——上屏与讲稿都不能说成"效率掉了百分之多少"。另：同一体系 2026 年讲 prompt 缓存的文章说明 prompt 基本功在 harness 时代仍然有效，正好支撑本页"没白学"的兜底句 | Anthropic 官方工程博客 **2025-09-29**《Effective context engineering for AI agents》· **一手** |
 | **P7** | ⚠️ 上屏前必须回源核对 | ① **context rot** 的独立量化：`model performance varies significantly as input length changes, even on simple tasks`——但 **Chroma 是向量库厂商，属厂商自建可复现评测，不是中立第三方**；② **最小脚手架**有一字不差的一手原文：`keep the scaffolding minimal.` **`The agent has a prompt, a Bash Tool, and an Edit Tool.`** | ① Chroma《Context Rot》2025-07 · 一手但**厂商自建**；② Anthropic SWE-bench Verified 公告 **2024-10-30**（49%）· **一手** |
-| **P25** | ⚠️ 一手表述需复核 | 确认：GPT-5.6 Sol 在 ARC-AGI-3 **13.3% → 38.3%**、**输出 token 少 6 倍**；三层集成 `codex exec` / 官方 SDK / `app-server`（threads-turns-events-approvals）；human-approval 协议内建。此前二手报道为 **Tier 4**，核验后升 **Tier 1**。⚠️ 仍是**厂商自述**、无第三方审计；Relay 示例应用**显式声明虚构数据、非 production** | developers.openai.com 官方博客 · **厂商自述** |
+| **P25** | ⚠️ 一手表述需复核 | 确认：GPT-5.6 Sol 在 ARC-AGI-3 **13.3% → 38.3%**、**输出 token 少 6 倍**；三层集成 `codex exec` / 官方 SDK / `app-server`（threads-turns-events-approvals）；human-approval 协议内置。此前二手报道为 **Tier 4**，核验后升 **Tier 1**。⚠️ 仍是**厂商自述**、无第三方审计；Relay 示例应用**显式声明虚构数据、非 production** | developers.openai.com 官方博客 · **厂商自述** |
 
 ### 5.3 顺带挖到、可加固其他页的素材（**尚未上屏，登记备选**）
 
