@@ -1,7 +1,9 @@
 # 内容吸纳清单与口径红线（v0.1）
 
-> 依据 `../_reference/README.md` 列出的十一份上游素材。本文件定"进什么货"和"什么话不能说"。
-> 页编号以 `../03_outline/00-page-structure-v3.md`（36 页）为准。
+> 依据 `../_reference/README.md` 列出的十四份上游素材（2026-09-17 新增 `rawdata_dsh-plugin-ecosystem`）。
+> 本文件定"进什么货"和"什么话不能说"；页编号以 `../03_outline/00-page-structure-v3.md`（37 页）为准。
+> **注意**：第一节进货单的页号是 v2（45 页）时期登记的，**只当"哪类内容吃哪份素材"的索引用**；
+> 逐页的权威来源映射在 `../04_drafts/ppt-text-v3.md` 每页的 **L4**（来源 + 证据强度），一处维护。
 
 ## 一、进货单（哪页吸哪个锚点）
 
@@ -57,7 +59,7 @@
 | P31 | `Framework First` vs `Product First` 的结构判断；"早期要速度用 Codex，企业要可控/私有化用 DSH"（⚠️ 媒体共识口径） | 同上 §5.5 发现 6 |
 | P32 | Everything is a Plugin（Cordis）；**无特权核心**；"There is no privileged core to patch"。**并入两页**（D15）：四种运行模式 = 四套默认插件集（标准 / PTC / 极简 / 创造）；长程不是单一 loop——Goal / Ralph / workflow / Spawn-Fork 并存，层级式而非 swarm | 同上 §5.5 发现 1/2/5；`rawdata_dsh-digested/system/00-map.md` |
 | P33 | append-only 类型化 SessionEvent 日志（single source of truth）；模型所见即被记录；回放/恢复/分叉/审计是投影 | 同上 §5.5 发现 4 |
-| P34 | 官方插件市场未上线；第三方商店口径不可比；v0.1 接口快变；二次开发量高于 Product First | 同上 §5.5 发现 7/8 + §5.5 合规小节 |
+| P34 | 官方插件市场未上线；第三方商店口径不可比；v0.1 接口快变；二次开发量高于 Product First；生态年轻（82% 0.x / 7.1% 再动率） | 同上 §5.5 发现 7/8 + §5.5 合规小节；`rawdata_dsh-plugin-ecosystem/00-map.md` |
 | P35 | **Pi 的结构好在哪**：三层同心 seam（operations / tool / extension）按"变化轴"裁剪接口大小；统一注入点；分发闭环；生命周期护栏（两阶段绑定、stale 保护、**fail-close**）。补充：~9 万 star（趋势值，见红线 3） | `rawdata_pi-digested/harness/01-Architecture/`（1.1–1.4）；对照 `rawdata_harness-selection-final/final_v3.md` §5.4 |
 | P36 | **Pi 的代价在哪**：四条短板——① **无默认沙箱**（扩展 = 宿主进程同等权限，`pi install` 陌生包 ≈ 执行任意代码）② 无 MCP/ACP（生态锁定，外部工具付适配层税）③ 内层 AgentLane 半成品 ④ 无扩展 API 版本契约。讲法见红线 13/14 | `rawdata_pi-digested/harness/02-Boundaries/`（2.1–2.4） |
 | P37 | **两边都还没解决的那件事**：**"对陌生插件安全：两个都烂"**（Pi 无沙箱；DSH 插件化 ≠ 安全）→ 这两条都不是"更先进的选择"，是"**正在演进的路线**" | `rawdata_pi-faq-on-digested/06_pi_vs_dsh/04_strengths_weaknesses.md` 逐面强弱表；`.../03_mechanism_table.md` |
@@ -102,6 +104,24 @@
 | 13 | **Pi 有没有 MCP** —— 两份素材冲突 | 选型研究 §5.4 发现 2 引 PR #3774（MCP extension）并标注"merged/发布状态未确认"；而 `rawdata_pi-digested`（基线 v0.84.4，2026-09-01 同步）**源码级核对结论是"没有 MCP/ACP 实现，grep 只有误匹配"**。→ **采信有源码锚点的一份**：讲 Pi 时说"**没有 MCP/ACP 实现，生态锁在自家 extension API，外部工具要付适配层税**"；不要把 PR #3774 当成已 GA 能力 |
 | 14 | Pi 的"无沙箱"怎么说 | 不能说成"Pi 不安全"。正确口径是 **"Pi 把信任放在'谁装了它'，而不是'它是什么代码'上"**；沙箱存在但只是 opt-in 示例（`grep` 到的 example 是"给你看怎么做"，不是"帮你做了"）。且必须区分：Pi 有"沙箱执行工具"的思路，**没有"沙箱运行扩展代码"的机制**——只防了前者 |
 | 15 | 涉及 harness 评价时 | `rawdata_pi-digested/harness/` 是**评价文档**，硬事实 / 解释 / 推测分开标。引用时必须保留这个分层，不要把评价写成源码事实 |
+
+### 插件生态快照的口径（2026-09-17 新增，服务 P29 / P30 / P32 / P33）
+
+来源：`_reference/rawdata_dsh-plugin-ecosystem/`（census.py 对 `data/plugins/*.yml` 现算）。
+数据快照：`main@7a5da6a5`，**2026-09-15**。证据强度：**⚠️ 趋势级**（单仓库实测，非第三方审计），
+且生态只有 33 天，中位数没有判别力——**只引头部结论，不做平均数比较**。
+
+| 数字 | 口径 | 用在哪 |
+|---|---|---|
+| 3722 条 / 2392 个独立作者 / 33 天 | 全量条目 | P30：插件位不是设计稿 |
+| 做增强 51% · 运行与治理 19.7% · 做壳 21.9% · 触达 7.4% | 15 功能域归纳（04-plugin-taxonomy，解读性结论非官方口径） | P30：那一圈的零件有人在批量供给 |
+| 模型与推理域 19 天 2.21×（供应商接入 40→103） | 19 天变化 | P30：连"换模型"都有人接了 |
+| 82% 还是 0.x；老条目 7.1% 被再动过 | 有 npm 的 1877 条 | P32：生态代价 |
+| 549 条（14.8%）描述提到 api key / 登录 / 授权 | 文本判定，**必然低估** | P33：凭据面 |
+
+**三条纪律**：① 生态数字是 DSH 的，**不与 Pi 的 star 数混比**；② 同一页里的数字必须同一快照
+（2026-09-15），不同日期的重算后要整体更新；③ "运行与治理 19.7%"是功能分类的归纳，
+**不讲成"19.7% 的插件在做安全"**。
 
 ## 四、下一步
 

@@ -18,6 +18,7 @@
 | `rawdata_dsh-plugin-seam-maturity/` | `deepseek-harness/_faq_on_digested/08_plugin-seam-maturity` | 插件接缝与成熟度：插件进入真实执行链后要补哪些合同与门禁。 |
 | `rawdata_dsh-plugin-business-ladder/` | `deepseek-harness/_faq_on_digested/09_plugin-business-ladder` | 插件对 owner 的收益阶梯。 |
 | `rawdata_dsh-plugin-ecosystem-distribution/` | `awesome-dsh-plugin/_faq_on_digested/01_ecosystem-distribution` | 插件生态分布快照（口径红线见 `02_evidence/00-absorption-plan.md`）。 |
+| `rawdata_dsh-plugin-ecosystem/` | `awesome-dsh-plugin/_digested/ecosystem` | ★ **DSH 插件生态全景（2026-09-15 快照，census 现算）**：3722 条 / 2392 个作者 / 33 天；五阵营（做增强 51% · 做壳 21.9% · 运行与治理 19.7% · 触达 7.4%）；模型与推理域 19 天 2.21×（供应商接入 40→103）；82% 还是 0.x、老条目 7.1% 被再动过；549 条（14.8%）描述提到 api key / 登录 / 授权。**P29 借力好处 / P30 生态证据 / P32 生态代价 / P33 凭据面全吃这里**。 |
 | `rawdata_ai-coding-evolution-reference/` | `ai_tool_deepresearch/dpt_rb_ai-coding-evolution/reference` | ★ **一手来源卡片层**（137 张）：每张带 `source_url / tier / source_type / trust_level / acceptance_status` 与可引原文。**五层演变报告就是这些卡的二手综合**——要回源、要引文、要核口径，来这里。 |
 | `rawdata_harness-selection-reference/` | `.../dpt_rb_harness-agent-selection-project-execution-pilot/reference` | ★ **一手来源卡片层**（168 张）：同上格式。**P25 的官方博客卡、P26 的 flash 原始卡、Pi/DSH 的源码与安全通告卡都在这里**。 |
 

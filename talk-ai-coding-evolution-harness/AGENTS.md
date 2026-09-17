@@ -39,7 +39,7 @@ AI Coding 演变与 harness 的深度 talk。**你是这套 harness 里被驱动
 6. **落状态** — 更新 `01_storyline/04-open-questions.md`、`00-storyline-map.md` 与 `CURRENT.md`。
    完成标准：总图、口径、页面职责、生产事实稿、PPTX 与待办一致，没有该更新而未更新的文件。
 
-7. **做一致性审计** — 每次新增或改变关键决定后，检查对象边界、36 页职责、中文术语、证据标注、
+7. **做一致性审计** — 每次新增或改变关键决定后，检查对象边界、37 页职责、中文术语、证据标注、
    阶段状态；同一事实只保留一个权威来源，其他文件用指针引用。
 
 8. **对齐术语** — 用户使用含混、临时或与 `CONTEXT.md` 冲突的词时，先指出可能对应的已定义概念，
@@ -60,7 +60,7 @@ AI Coding 演变与 harness 的深度 talk。**你是这套 harness 里被驱动
 
 **内容锁定标准**：上述五项在 `01_storyline/` 中均有明确、互不矛盾的答案；
 核心主张在 `02_evidence/` 中均有来源或被标为待验证；从开场到收束能用 5–8 分钟口述且无逻辑跳转。
-未达标时继续改上游；36 页提供稳定边界，不代表页面职责已通过内容锁定。
+未达标时继续改上游；37 页提供稳定边界，不代表页面职责已通过内容锁定。
 
 ### B. 表现设计与 PPTX 生产（未开始）
 
@@ -157,6 +157,7 @@ AI Coding 演变与 harness 的深度 talk。**你是这套 harness 里被驱动
 | **Pi 的结构与代价（源码锚点）** | `rawdata_pi-digested/harness/01-Architecture/` + `.../02-Boundaries/` |
 | **Pi vs DSH 逐面对照** | `rawdata_pi-faq-on-digested/06_pi_vs_dsh/04_strengths_weaknesses.md` |
 | DSH 机制（无特权核心 / 会话日志 / 四种模式） | `rawdata_harness-selection-final/final_v3.md` §5.5 + `rawdata_dsh-digested/` |
+| **DSH 插件生态（借力的好处 / 代价）** | `rawdata_dsh-plugin-ecosystem/00-map.md` + `04-plugin-taxonomy.md`（2026-09-15 快照，⚠️ 趋势级） |
 | 圈住 / 拦住 / 看清的分解 | `rawdata_dsh-faq-on-digested/07_borrowing-harness-idea/answer.md` |
 | 一手来源卡片层（305 张） | `rawdata_ai-coding-evolution-reference`（137）+ `rawdata_harness-selection-reference`（168） |
 
@@ -164,14 +165,14 @@ AI Coding 演变与 harness 的深度 talk。**你是这套 harness 里被驱动
 
 ## 当前状态指针
 
-- 故事线总图（v2.1）：`01_storyline/00-storyline-map.md`
+- 故事线总图（v2.2）：`01_storyline/00-storyline-map.md`
 - 核心论点与立场：`01_storyline/01-thesis-and-positions.md`
 - 推导句清单（〔前提〕〔推导〕〔结论〕〔边界〕）：`01_storyline/02-turning-points.md`
 - 听众与 pitch：`01_storyline/03-audience-and-pitch.md`
 - harness 里头干啥：`01_storyline/06-harness-internals.md`
 - 素材与口径：`02_evidence/00-absorption-plan.md`
-- 页面职责（36 页骨架）：`03_outline/00-page-structure-v3.md`
-- 页面文案（36 页 + 呼吸页）：`04_drafts/ppt-text-v3.md`
+- 页面职责（37 页骨架）：`03_outline/00-page-structure-v3.md`
+- 页面文案（37 页 + 停顿页）：`04_drafts/ppt-text-v3.md`
 - 当前 PPTX（42 张）：`05_output/v0.4/AI Coding 演变指南/`
 - 已决 / 待确认 / 待办：`01_storyline/04-open-questions.md`
 - 当前阶段与下一步：`CURRENT.md`

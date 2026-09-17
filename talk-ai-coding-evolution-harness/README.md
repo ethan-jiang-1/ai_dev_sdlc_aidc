@@ -11,7 +11,7 @@
 **同一个模型，为什么交出来的东西不一样？** 答案落在模型外面那圈叫 **harness** 的东西上——
 它是交付质量的真实变量，而且已经出现把 harness 做成可替换件的路线。
 
-**规格**：75–90 min · **正文 36 页 + 呼吸页 B1–B6（不编页码）= 42 张 slide**（按约 79 min 排）。
+**规格**：75–90 min · **正文 37 页 + 停顿页 B1–B5（不编页码）= 42 张 slide**（按约 80 min 排）。
 视觉方向：纸白底 + 代码终端母题，全原生矢量。
 
 **★ 版本单一纪律（2026-09-17 定，违反即会造成改稿摇摆）**：
@@ -33,7 +33,7 @@ talk-ai-coding-evolution-harness/
 ├── CURRENT.md                               # 【当前态权威】现在做到哪一步、下一步动哪个文件
 ├── CONTEXT.md                               # 【术语权威】本 talk 的局部 glossary + 禁用词
 ├── _reference/                              # 上游素材 symlink（只读），说明见其 README
-│   ├── README.md                            #   十三份素材的分工 + 引用约定
+│   ├── README.md                            #   十四份素材的分工 + 引用约定
 │   ├── rawdata_ai-coding-evolution-final/   #   【symlink】宏观：五层演变最终报告
 │   ├── rawdata_harness-selection-final/     #   【symlink】★ 尾巴主料：Harness Agent 选型研究
 │   ├── rawdata_harness-selection-wave1/     #   【symlink】逐 topic 证据摘要
@@ -45,10 +45,11 @@ talk-ai-coding-evolution-harness/
 │   ├── rawdata_dsh-plugin-seam-maturity/    #   【symlink】插件接缝与成熟度
 │   ├── rawdata_dsh-plugin-business-ladder/  #   【symlink】插件对 owner 的收益阶梯
 │   ├── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
+│   ├── rawdata_dsh-plugin-ecosystem/        # ★【symlink】插件生态全景（2026-09-15 快照，census 现算）
 │   ├── rawdata_ai-coding-evolution-reference/ # ★【symlink】一手来源卡片 137 张（回源 / 引文 / 核口径来这层）
 │   └── rawdata_harness-selection-reference/ # ★【symlink】一手来源卡片 168 张（P25 官方博客卡、P26 flash 原始卡在这）
 ├── 01_storyline/                            # ★ 故事线推敲主战场
-│   ├── 00-storyline-map.md                  #   故事线总图（v2.1）：主轴 + 六步脊柱 + 五层表 + 两类程序表 + 节奏
+│   ├── 00-storyline-map.md                  #   故事线总图（v2.2）：主轴 + 六步脊柱 + 五层表 + 两类程序表 + 节奏
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（主张 / 支撑 / 强度）
 │   ├── 02-turning-points.md                 #   推导句清单（〔前提〕〔推导〕〔结论〕〔边界〕）
 │   ├── 03-audience-and-pitch.md             #   听众、时长、目的、基调、三个禁止
@@ -57,10 +58,10 @@ talk-ai-coding-evolution-harness/
 ├── 02_evidence/                             # 素材与口径
 │   └── 00-absorption-plan.md                #   ★ 进货单 + 解释性结论 + 十五条口径红线
 ├── 03_outline/                              # 页面结构与承载
-│   ├── 00-page-structure-v3.md              #   ★ 36 页页面职责（每页答哪一步 + 时长 + 呼吸页 B1–B6）
+│   ├── 00-page-structure-v3.md              #   ★ 37 页页面职责（每页答哪一步 + 时长 + 停顿页 B1–B5）
 │   └── 01-visual-carrier-plan.md            #   ★ 页面承载规格（四层承载 + 载体类型库 + 密度自检）
 ├── 04_drafts/                               # 生产事实稿
-│   └── ppt-text-v3.md                       #   ★ 当前页面文案（36 页 + 呼吸页，四层承载）
+│   └── ppt-text-v3.md                       #   ★ 当前页面文案（37 页 + 停顿页，四层承载）
 └── 05_output/                               # PPTX 交付物
     ├── v0.1/visual-samples.html             #   视觉样片 4 张（已认可，视觉基准）
     └── v0.4/AI Coding 演变指南/             # ★ 当前 REVIEW 对象：42 张 PPTX + 42 个 .slide 源 + DESIGN.md
