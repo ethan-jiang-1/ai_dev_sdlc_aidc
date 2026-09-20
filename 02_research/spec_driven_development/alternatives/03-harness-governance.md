@@ -11,6 +11,10 @@
 
 ## 0.5 收敛判读（2026-09-20 三轮补查后计）
 
+![harness 收敛地图](figures/03-harness-convergence-map.svg)
+
+> 五层位 × 独立集群收敛地图（含复核勘误后的计数：11→7）与"清扫"隐喻命名收敛带。
+
 排除本文 §1–§4 已收四源（OpenAI/Hashimoto/arXiv 2609.00252/腾讯云）后，初查得 11 个集群；**经 [04a](03a-harness-convergence-evidence.md) 全文证据档案复核勘误（Trivedy 即 LangChain deepagents 作者，两集群合并；HumanLayer 引用链齐全改判聚合型），确认独立集群 7 个**——它们**独立说出同一件事**（agent 开发需要有人持续治理 harness/代码库卫生）：
 
 1. **Viv Trivedy（亦即 LangChain DeepAgents 作者）**（术语独立命源：Agent = Model + Harness，"skill issue" 重构；LangChain 团队实测只改 harness，TerminalBench 52.8%→66.5%）

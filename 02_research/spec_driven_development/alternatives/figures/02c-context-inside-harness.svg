@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="620" viewBox="0 0 1150 620" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs><marker id="ca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker></defs>
+  <text x="40" y="38" font-size="22" font-weight="700" fill="#222">context engineering ⊂ harness engineering：包含关系与分层落地</text>
+  <text x="40" y="62" font-size="13" fill="#777">判定依据：arXiv 2609.00252 §5.3 把 context 逐字编为 8 个 harness 机制之第 1（标题一手核验）+ Chase 播客（半回源）· 2026-09-21</text>
+
+  <!-- big harness container -->
+  <rect x="60" y="95" width="1030" height="330" rx="16" fill="#f4f7fb" stroke="#2d6fb4" stroke-width="2.5" stroke-dasharray="10 5"/>
+  <text x="90" y="128" font-size="17" font-weight="700" fill="#1d4f85">Harness（执行链路治理）——8 机制（arXiv §5.3–5.10）</text>
+
+  <!-- static layer (context) -->
+  <rect x="100" y="150" width="460" height="240" rx="12" fill="#eaf3fc" stroke="#2d6fb4" stroke-width="2"/>
+  <text x="330" y="182" font-size="15" font-weight="700" text-anchor="middle" fill="#1d4f85">Harness 1: Context engineering（静态层）</text>
+  <g font-size="13" fill="#333">
+    <rect x="125" y="200" width="410" height="38" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="140" y="224">AGENTS.md / CLAUDE.md —— ~100 行路由，不是百科</text>
+    <rect x="125" y="246" width="410" height="38" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="140" y="270">docs 地图 + skill 按需加载（渐进披露）</text>
+    <rect x="125" y="292" width="410" height="38" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="140" y="316">monorepo 嵌套作用域（三家三种语义）</text>
+    <rect x="125" y="338" width="410" height="38" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="140" y="362">spec / constitution / ADR —— 语义契约工件</text>
+  </g>
+  <text x="330" y="380" font-size="11" text-anchor="middle" fill="#777">保鲜机制：PR 修改规则 + gardener + CI 新鲜度检查</text>
+
+  <!-- dynamic layer -->
+  <rect x="600" y="150" width="460" height="240" rx="12" fill="#fff" stroke="#4a9a77" stroke-width="2"/>
+  <text x="830" y="182" font-size="15" font-weight="700" text-anchor="middle" fill="#2c6e4f">其余 7 机制（动态层·节选）</text>
+  <g font-size="13" fill="#333">
+    <rect x="625" y="200" width="410" height="38" rx="7" fill="#f4faf6" stroke="#9cc6ae"/><text x="640" y="224">验证器 / 测试 —— 合约层（consistency tax 三角的机器边）</text>
+    <rect x="625" y="246" width="410" height="38" rx="7" fill="#f4faf6" stroke="#9cc6ae"/><text x="640" y="270">linter + 结构测试强制架构规则</text>
+    <rect x="625" y="292" width="410" height="38" rx="7" fill="#f4faf6" stroke="#9cc6ae"/><text x="640" y="316">可观测性接入 agent 运行时（自读自验）</text>
+    <rect x="625" y="338" width="410" height="38" rx="7" fill="#f4faf6" stroke="#9cc6ae"/><text x="640" y="362">gardening agent / 反馈回路 —— 漂移主动清扫</text>
+  </g>
+  <text x="830" y="380" font-size="11" text-anchor="middle" fill="#777">分工共识（AAIF 2026-07-22 逐字）："guide 进文件，enforcement 留给 CI/branch protection"</text>
+
+  <!-- bottom evidence band -->
+  <rect x="60" y="450" width="1030" height="130" rx="12" fill="#fafafa" stroke="#ddd"/>
+  <text x="90" y="482" font-size="14" font-weight="700" fill="#333">判定证据链</text>
+  <g font-size="12.5" fill="#555">
+    <text x="90" y="508">① arXiv 2609.00252（2026-08-31，一手）：Harness 1 = Context engineering，另有 7 机制并列</text>
+    <text x="90" y="532">② Harrison Chase（LangChain CEO，2026-03-07，半回源）："Harness engineering is an extension of context engineering."</text>
+    <text x="90" y="556">③ 反证面："同义"与"harness ⊂ context"两立场未发现主张者（检索记录见 02c §5.4-a）；Anthropic 两套词表并行 = 术语未统一的直接证据</text>
+  </g>
+</svg>

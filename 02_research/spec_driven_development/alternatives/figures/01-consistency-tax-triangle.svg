@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="ta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b05252"/></marker>
+    <marker id="tg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2c6e4f"/></marker>
+  </defs>
+  <text x="40" y="38" font-size="22" font-weight="700" fill="#222">consistency tax 三角：spec ↔ tests ↔ code 的回写困境</text>
+  <text x="40" y="62" font-size="13" fill="#777">编译没有消灭一致性税，只是把它从「spec↔code 双边」转移为「三角」· 观测 2026-09-21</text>
+
+  <!-- triangle nodes -->
+  <rect x="410" y="110" width="220" height="64" rx="10" fill="#eaf3fc" stroke="#2d6fb4" stroke-width="2"/>
+  <text x="520" y="138" font-size="15" font-weight="700" text-anchor="middle" fill="#1d4f85">spec（意图层）</text>
+  <text x="520" y="158" font-size="11" text-anchor="middle" fill="#777">给人读的"为什么" · 无法自证</text>
+
+  <rect x="180" y="420" width="220" height="64" rx="10" fill="#fff" stroke="#4a9a77" stroke-width="2"/>
+  <text x="290" y="448" font-size="15" font-weight="700" text-anchor="middle" fill="#2c6e4f">tests（合约层）</text>
+  <text x="290" y="468" font-size="11" text-anchor="middle" fill="#777">给 CI 读的可执行断言</text>
+
+  <rect x="640" y="420" width="220" height="64" rx="10" fill="#fff" stroke="#4a9a77" stroke-width="2"/>
+  <text x="750" y="448" font-size="15" font-weight="700" text-anchor="middle" fill="#2c6e4f">code（实现层）</text>
+  <text x="750" y="468" font-size="11" text-anchor="middle" fill="#777">agent 生成的主体</text>
+
+  <!-- edges: three drift paths -->
+  <line x1="420" y1="180" x2="310" y2="412" stroke="#b05252" stroke-width="2" marker-end="url(#ta)"/>
+  <text x="300" y="290" font-size="12" fill="#8f3535" text-anchor="end">漂移① spec↔tests</text>
+  <text x="300" y="308" font-size="11" fill="#b05252" text-anchor="end">whenwords #6：tests.yaml 与</text>
+  <text x="300" y="324" font-size="11" fill="#b05252" text-anchor="end">SPEC.md 语义打架需人裁</text>
+
+  <line x1="620" y1="180" x2="730" y2="412" stroke="#b05252" stroke-width="2" marker-end="url(#ta)"/>
+  <text x="745" y="290" font-size="12" fill="#8f3535">漂移② spec↔code</text>
+  <text x="745" y="308" font-size="11" fill="#b05252">spec-kit #1191：spec 无法</text>
+  <text x="745" y="324" font-size="11" fill="#b05252">随迭代保持同步（115👍）</text>
+
+  <line x1="400" y1="452" x2="640" y2="452" stroke="#2c6e4f" stroke-width="2" marker-end="url(#tg)"/>
+  <line x1="640" y1="470" x2="400" y2="470" stroke="#2c6e4f" stroke-width="2" marker-end="url(#tg)"/>
+  <text x="520" y="443" font-size="12" fill="#2c6e4f" text-anchor="middle">CI 可校验 ✓（唯一机器可测的边）</text>
+
+  <!-- two failure faces callout -->
+  <rect x="60" y="110" width="290" height="120" rx="10" fill="#fdf6f6" stroke="#d98a8a"/>
+  <text x="205" y="136" font-size="13" font-weight="700" text-anchor="middle" fill="#8f3535">两个独立失效面（01a 对撞结论）</text>
+  <text x="205" y="158" font-size="12" text-anchor="middle" fill="#555">(a) 验证器不可作弊：LLM 写的测试</text>
+  <text x="205" y="176" font-size="12" text-anchor="middle" fill="#555">会同义反复 / mock 过度 / 断言实现</text>
+  <text x="205" y="194" font-size="12" text-anchor="middle" fill="#555">(b) 验证内容不可被掏空：P⊨ɸ 要求</text>
+  <text x="205" y="212" font-size="12" text-anchor="middle" fill="#555">独立写成；AI 双侧生成 = 验证失效</text>
+
+  <rect x="760" y="110" width="290" height="120" rx="10" fill="#f4faf6" stroke="#9cc6ae"/>
+  <text x="905" y="136" font-size="13" font-weight="700" text-anchor="middle" fill="#2c6e4f">仅有的两种机制化回写</text>
+  <text x="905" y="158" font-size="12" text-anchor="middle" fill="#555">① facts @draft→@spec→@implemented</text>
+  <text x="905" y="176" font-size="12" text-anchor="middle" fill="#555">　 生命周期标签 + exit-0 命令验证</text>
+  <text x="905" y="194" font-size="12" text-anchor="middle" fill="#555">② mk-spec-master 覆盖矩阵</text>
+  <text x="905" y="212" font-size="12" text-anchor="middle" fill="#555">（2026 年仅此两例，其余全靠人肉）</text>
+
+  <text x="550" y="560" font-size="13" fill="#444" text-anchor="middle">回写规则未机制化的可验证 spec，只是把漂移问题搬进了测试文件（dbreunig 三角模型）</text>
+  <text x="550" y="582" font-size="11" fill="#999" text-anchor="middle">反信号：上一代可执行 spec 工具（SpecFlow / Cucumber）正是死于双边时代的双写成本与漂移负债</text>
+</svg>

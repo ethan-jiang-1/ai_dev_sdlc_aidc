@@ -8,6 +8,10 @@
 
 ---
 
+![context ⊂ harness](figures/02c-context-inside-harness.svg)
+
+> 包含关系图：静态层（context 的四类工件）与动态层（其余 7 机制）+ 三条判定证据链。
+
 ## 0. 一句话判定（先给结论）
 
 **两者不是一回事，且主流证据支持"context engineering 是 harness engineering 的一个（静态/信息）层"——即关系①；但在 Anthropic 一侧的语料里两词至今互不出现，"同义合并"（②）没有任何一方主张。**

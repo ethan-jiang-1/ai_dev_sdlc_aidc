@@ -9,6 +9,10 @@
 
 ---
 
+![渐进披露三层加载](figures/02a-progressive-disclosure-layers.svg)
+
+> 三层 token 预算 + 五 repo 实测对照（理想 ~100 行 vs 实态 39–524 行）。
+
 ## B1. Anthropic 工程博客——三层披露的命名源
 
 ### B1.1 回源结果

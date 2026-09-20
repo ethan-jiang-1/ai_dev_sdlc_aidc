@@ -26,8 +26,12 @@
 | [03b-harness-academic-and-metrics.md](03b-harness-academic-and-metrics.md) | 04 | 学术三篇回源 + 度量缺口论证 |
 
 图形（SVG）：
-- ![形态光谱](spectrum.svg)——九个位置从"重 spec 工件"排到"零 spec 工件"
-- ![验证责任迁移](verification-shift.svg)——文档中心 vs 机器中心的结构性对照
+- ![形态光谱](figures/spectrum.svg)——九个位置从"重 spec 工件"排到"零 spec 工件"
+- ![验证责任迁移](figures/verification-shift.svg)——文档中心 vs 机器中心的结构性对照
+- ![consistency tax 三角](figures/01-consistency-tax-triangle.svg)——①篇：三角回写困境与两个失效面
+- ![渐进披露三层](figures/02a-progressive-disclosure-layers.svg)——②篇：token 预算与五 repo 实测
+- ![context ⊂ harness](figures/02c-context-inside-harness.svg)——②c 篇：包含关系与静态/动态分层
+- ![harness 收敛地图](figures/03-harness-convergence-map.svg)——③篇：五层位收敛地图
 
 ```yaml
 topic: SDD 的替代/后继形态（验证优先、plan mode、context engineering、harness 治理、测试优先）
@@ -135,7 +139,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ## 6. 形态光谱图：从"重 spec 工件"到"零 spec 工件"
 
-> 图形版见 [spectrum.svg](spectrum.svg)（结构对照）与 [verification-shift.svg](verification-shift.svg)（验证责任迁移的两种落法）；下方 ASCII 为纯文本备援，表格为权威口径。
+> 图形版见 [spectrum.svg](figures/spectrum.svg)（结构对照）与 [verification-shift.svg](figures/verification-shift.svg)（验证责任迁移的两种落法）；下方 ASCII 为纯文本备援，表格为权威口径。
 
 ```
 重 spec 工件 ◄──────────────────────────────────────────────► 零 spec 工件

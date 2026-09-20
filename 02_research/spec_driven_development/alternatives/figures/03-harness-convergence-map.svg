@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="640" viewBox="0 0 1150 640" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <text x="40" y="38" font-size="22" font-weight="700" fill="#222">harness 治理的独立收敛地图：五个层位、七个互不引用的独立来源</text>
+  <text x="40" y="62" font-size="13" fill="#777">"agent 开发需要有人持续治理 harness / 打扫代码库卫生" · 逐条原文摘录见 03a-harness-convergence-evidence.md · 2026-09-21</text>
+
+  <!-- five layer columns -->
+  <g font-size="12">
+    <rect x="45" y="95" width="200" height="330" rx="12" fill="#eaf3fc" stroke="#2d6fb4"/>
+    <text x="145" y="122" font-size="13.5" font-weight="700" text-anchor="middle" fill="#1d4f85">① practitioner 命名</text>
+    <rect x="60" y="140" width="170" height="60" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="145" y="163" text-anchor="middle" fill="#333">Viv Trivedy / LangChain</text><text x="145" y="181" text-anchor="middle" fill="#777" font-size="11">"Agent = Model + Harness"</text>
+    <rect x="60" y="212" width="170" height="60" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="145" y="235" text-anchor="middle" fill="#333">Mitchell Hashimoto</text><text x="145" y="253" text-anchor="middle" fill="#777" font-size="11">六步模型 Step 5</text>
+    <rect x="60" y="284" width="170" height="60" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="145" y="307" text-anchor="middle" fill="#333">OpenAI</text><text x="145" y="325" text-anchor="middle" fill="#777" font-size="11">1M 行 / 1500 PR（一手自述）</text>
+    <text x="145" y="390" text-anchor="middle" fill="#777" font-size="11">双独立命源（Trivedy ↔</text>
+    <text x="145" y="406" text-anchor="middle" fill="#777" font-size="11">Hashimoto）= 自下而上成形</text>
+
+    <rect x="262" y="95" width="200" height="330" rx="12" fill="#f4faf6" stroke="#4a9a77"/>
+    <text x="362" y="122" font-size="13.5" font-weight="700" text-anchor="middle" fill="#2c6e4f">② 个人方法论</text>
+    <rect x="277" y="140" width="170" height="60" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="362" y="163" text-anchor="middle" fill="#333">Armin Ronacher</text><text x="362" y="181" text-anchor="middle" fill="#777" font-size="11">"tower keeps rising"</text>
+    <rect x="277" y="212" width="170" height="60" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="362" y="235" text-anchor="middle" fill="#333">Addy Osmani</text><text x="362" y="253" text-anchor="middle" fill="#777" font-size="11">"every mistake → a rule"（聚合型）</text>
+    <rect x="277" y="284" width="170" height="60" rx="7" fill="#fff" stroke="#9cc6ae"/><text x="362" y="307" text-anchor="middle" fill="#333">HumanLayer</text><text x="362" y="325" text-anchor="middle" fill="#777" font-size="11">"configuration problem"（聚合型）</text>
+    <text x="362" y="390" text-anchor="middle" fill="#777" font-size="11">聚合型贡献独立判据</text>
+
+    <rect x="479" y="95" width="200" height="330" rx="12" fill="#fdf6ee" stroke="#c9a04e"/>
+    <text x="579" y="122" font-size="13.5" font-weight="700" text-anchor="middle" fill="#8a6a1f">③ 咨询框架</text>
+    <rect x="494" y="140" width="170" height="90" rx="7" fill="#fff" stroke="#c9a04e"/><text x="579" y="168" text-anchor="middle" fill="#333">Böckeler / Thoughtworks</text><text x="579" y="188" text-anchor="middle" fill="#777" font-size="11">guides + sensors + </text><text x="579" y="204" text-anchor="middle" fill="#777" font-size="11">"清洁工军团"（2026-04-02）</text>
+    <text x="579" y="270" text-anchor="middle" fill="#777" font-size="11">自行从控制论 / Ashby</text>
+    <text x="579" y="286" text-anchor="middle" fill="#777" font-size="11">定律推导，框架独立</text>
+
+    <rect x="696" y="95" width="200" height="330" rx="12" fill="#fdf1f1" stroke="#c96a6a"/>
+    <text x="796" y="122" font-size="13.5" font-weight="700" text-anchor="middle" fill="#8f3535">④ 大厂自建实践</text>
+    <rect x="711" y="140" width="170" height="52" rx="7" fill="#fff" stroke="#c96a6a"/><text x="796" y="162" text-anchor="middle" fill="#333">Stripe minions</text><text x="796" y="178" text-anchor="middle" fill="#777" font-size="11">shift-left + pre-push（02-09）</text>
+    <rect x="711" y="202" width="170" height="52" rx="7" fill="#fff" stroke="#c96a6a"/><text x="796" y="224" text-anchor="middle" fill="#333">Anthropic 工程博客</text><text x="796" y="240" text-anchor="middle" fill="#777" font-size="11">两系列（11-26 / 03-24）</text>
+    <rect x="711" y="264" width="170" height="52" rx="7" fill="#fff" stroke="#c96a6a"/><text x="796" y="286" text-anchor="middle" fill="#333">LangChain DeepAgents</text><text x="796" y="302" text-anchor="middle" fill="#777" font-size="11">52.8%→66.5%（⚠ 作者=Trivedy）</text>
+    <rect x="711" y="326" width="170" height="52" rx="7" fill="#fff" stroke="#c96a6a"/><text x="796" y="348" text-anchor="middle" fill="#333">Teleport</text><text x="796" y="364" text-anchor="middle" fill="#777" font-size="11">"pressure washing"</text>
+
+    <rect x="913" y="95" width="200" height="330" rx="12" fill="#f3eefb" stroke="#7d55a8"/>
+    <text x="1013" y="122" font-size="13.5" font-weight="700" text-anchor="middle" fill="#5d3a85">⑤ 学术量化</text>
+    <rect x="928" y="140" width="170" height="66" rx="7" fill="#fff" stroke="#7d55a8"/><text x="1013" y="163" text-anchor="middle" fill="#333">SWE-Bench Mobile</text><text x="1013" y="181" text-anchor="middle" fill="#777" font-size="11">KDD'26 · 6× · 12%（先行测量）</text>
+    <rect x="928" y="216" width="170" height="66" rx="7" fill="#fff" stroke="#7d55a8"/><text x="1013" y="239" text-anchor="middle" fill="#333">Meta-Harness</text><text x="1013" y="257" text-anchor="middle" fill="#777" font-size="11">Stanford/MIT/KRAFTON · +7.7pts</text>
+    <rect x="928" y="292" width="170" height="66" rx="7" fill="#fff" stroke="#7d55a8"/><text x="1013" y="315" text-anchor="middle" fill="#333">清华 NLAH</text><text x="1013" y="333" text-anchor="middle" fill="#777" font-size="11">⚠ 数字基于 v1，v2 已替换</text>
+    <text x="1013" y="390" text-anchor="middle" fill="#777" font-size="11">接力引用、独立得出</text>
+  </g>
+
+  <!-- metaphor band -->
+  <rect x="45" y="445" width="1068" height="80" rx="12" fill="#fdf6f6" stroke="#d98a8a"/>
+  <text x="579" y="474" font-size="14" font-weight="700" text-anchor="middle" fill="#8f3535">"清扫"隐喻被 ≥4 个互不引用来源各自发明 —— 命名收敛本身即独立收敛证据</text>
+  <text x="579" y="500" font-size="13" text-anchor="middle" fill="#555">gardening（OpenAI）· pressure washing（Teleport）· garbage collection（HumanLayer）· 清洁工军团（Böckeler）</text>
+
+  <text x="579" y="560" font-size="13" fill="#444" text-anchor="middle">收敛计数经 04a 证据档案复核勘误：初查 11 集群 → 独立 7 个（Trivedy=LangChain 同人合并、HumanLayer 改聚合型、学术为接力引用）</text>
+  <text x="579" y="582" font-size="11" fill="#999" text-anchor="middle">工具化判读：整体处手艺阶段前夜——Codacy 模式（搭进既有质量平台）是唯一跑通的商业化路径，gardening agent 可复制不可售卖</text>
+</svg>
