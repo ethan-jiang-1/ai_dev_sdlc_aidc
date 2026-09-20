@@ -19,12 +19,14 @@
 | **OpenSpec** | 70k | 2025-08 | v1.13.1（09-17） | 中立轻量 CLI，change-delta | 硬（轻量） | 上升 | 贡献头部集中 |
 | **BMAD-METHOD** | 53k | 2025-04 | v6.12.0（09-04） | 多 agent 角色化敏捷方法论 | 中（可裁剪） | 高位平台偏升 | 流程重、token 成本、双人 bus factor |
 | **Amazon Kiro** | —（闭源） | GA 2025-11 | 产品线持续扩张 | spec-driven IDE（EARS 三分文件） | 硬 + 厂商托管 | 上升 | 锁定 AWS 生态；数字为厂商自述 |
-| **Tessl** | —（闭源） | 2024 | Registry 运营中 | spec-as-source 平台 | 最硬（spec 为唯一源） | 资本上升 | MDD 同构风险、LLM 非确定性 |
+| **Tessl** | —（闭源） | 2024 | ⚠ 2026-03 起公开停摆¹ | spec-as-source 平台 | 最硬（spec 为唯一源） | 停摆转型（改称 Agent Enablement Platform）¹ | MDD 同构风险、LLM 非确定性、方向弃用 |
 | claude-task-master | 28k | 2025-03 | 0.43.1（03-31） | PRD→task 拆解 | 硬 | **被放弃**（转商业 Hamster） | 已停更 5 个月 |
 | spec-workflow-mcp | 4.3k | 2025 | npm 分发 | MCP spec workflow | 硬 | 平台期偏缓降 | 牌桌边缘 |
 
 ¹ 2026-09-20 GitHub API 实测，详见各 tools/ 文件。
 ² 「硬度」= spec 对 agent 行为的约束方式：硬=机器可校验的显式工件链；软=方法论纪律与 review 流程。
+
+¹ 勘误（2026-09-20）：写作时点的"资本上升"已过时，以 [debate/signals-2026h2.md](debate/signals-2026h2.md) 为准。
 
 ## 2. 关键分野：三条路线
 
