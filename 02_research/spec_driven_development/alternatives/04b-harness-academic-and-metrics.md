@@ -4,7 +4,7 @@
 > - 观测日期：2026-09-20
 > - 上游：`04-harness-governance.md` §7.7（三群学术收敛的初记）与 §7.13-3（Böckeler/Ronacher 两个度量开放问题）。本文为逐篇展开，**不重复** §7 已收的 practitioner 各条
 > - 证据分级：**一手** = arXiv HTML 全文 / abs 页 / GitHub README 直接回源（本文 A 部分三篇全部一手回源；B 部分工具两件一手回源）；**半手** = 经摘要页核验但全文未读；**二手/线索** = 仅搜索结果标题级，未回源（逐条标注）
-> - 检索记录：4 轮 web 检索（三篇论文定位 / harness 度量 + instruction file coverage / NLAH 代码释放 + 团队理解度量 / 补漏），详见 §B.5
+> - 检索记录：4 轮 web 检索（三篇论文定位 / harness 度量 + instruction file coverage / NLAH 代码释放 + 团队理解度量 / 补漏），详见 §B.5（⚠ 审计注：轮一/轮四检索式未逐字留痕，"零命中"断言按"未完整可复现"对待，引用时需带此限定）
 
 ---
 
@@ -32,7 +32,7 @@
 
 - **出处**：[arXiv:2603.25723](https://arxiv.org/abs/2603.25723)，cs.CL，2026-03-26 提交，HTML 全文一手回源。preprint。
 - **作者与机构**：Linyue Pan（通讯后列）、Shuo Guo、Jingchen Ni、Hai-Tao Zheng（通讯，清华深圳国际研究生院）；Lexiao Zou（哈工大深圳）。共 5 人。
-- **harness 的操作定义**（§2.1）："the orchestration layer that governs multiple model or agent calls for a task family"，显式三分：**control**（怎么分解调度）/ **contracts**（产出什么、过什么门、何时停）/ **state**（什么跨步持久）。治理对象是其中可外置的 **design-pattern layer**——把它从 controller 代码里提出来，写成**可执行的自然语言工件（NLAH）**，由共享运行时 IHR（in-loop LLM + 工具后端 + runtime charter）解释执行。这是三篇中唯一把治理对象做成**可迁移、可比、可消融的工件**的——直接回应"harness 难以作为科学对象研究"。
+- **harness 的操作定义**（⚠ NLAH 已于 2026-05-18 发 v2：后端与 RQ 结构已整套更换，本条及以下 NLAH 数字均基于 v1、待按 v2 复核；v1 §2.1 措辞）："the orchestration layer that governs multiple model or agent calls for a task family"，显式三分：**control**（怎么分解调度）/ **contracts**（产出什么、过什么门、何时停）/ **state**（什么跨步持久）。治理对象是其中可外置的 **design-pattern layer**——把它从 controller 代码里提出来，写成**可执行的自然语言工件（NLAH）**，由共享运行时 IHR（in-loop LLM + 工具后端 + runtime charter）解释执行。这是三篇中唯一把治理对象做成**可迁移、可比、可消融的工件**的——直接回应"harness 难以作为科学对象研究"。
 - **实验设置**：后端 Codex CLI 0.114.0 + GPT-5.4（xhigh），Docker 沙箱（每任务 32 vCPU/84GiB 上限）。**自述因预算限制只跑基准子集**：SWE-bench Verified 125 样本、OSWorld 36 样本，单次固定种子采样（作者承诺后续换 GPT-5.4-mini 跑全量）。三个 RQ：行为效应（RQ1）、模块消融（RQ2）、代码→文本迁移保真（RQ3）。对照是同一 IHR 内的逐模块加减。
 - **核心量化结果**：
 
@@ -64,7 +64,7 @@
 
 1. **操作定义不重合但同族**。Meta-Harness 的 harness = 单任务包裹程序（store/retrieve/present）；NLAH 的 harness = 任务族的编排层（control/contracts/state）；SWE-Bench Mobile 的 harness = 产品级 scaffold 整体。三者粒度从"单文件 Python"到"商用产品"差两个数量级，**不可直接互比数字**（Meta-Harness 的 6× 与 SWE-Bench Mobile 的 6× 是不同测量面上的巧合相等）。
 2. **但核心命题逐字同构**：三群都在"**固定模型、只变外部执行链路**"的受控设计下测得数倍级差距——这是同一因果主张的三次独立证实，且方法上互为补充（自动化搜索 / 表示层消融 / 产品级横断面）。互不引用方面：NLAH 引的是 practitioner 文献（OpenAI/LangChain/Anthropic）而非另两篇；SWE-Bench Mobile（2 月最早）不引用后两者；Meta-Harness 引 SWE-Bench Mobile 一线的 6× 作动机——即收敛是"独立得出 + 局部事后引用"，不是同一文本扩散。
-3. **真正的"同词不同义"在别处**：检索中撞见的 [Coverage-Guided Multi-Agent Harness Generation for Java Library Fuzzing](https://arxiv-org.ezproxy.obspm.fr/html/2603.08616v1) 一类工作里的 "harness" 指**模糊测试桩代码**——与 agent harness 完全无关。这说明 2026 年文献里 "harness" 一词确已歧义化，引用本节三篇时必须带限定语，但**不妨碍三群内部是真收敛**。
+3. **真正的"同词不同义"在别处**：检索中撞见的 [Coverage-Guided Multi-Agent Harness Generation for Java Library Fuzzing](https://arxiv-org.规范链接 arxiv.org/abs/2603.08616（原 ezproxy 链接）) 一类工作里的 "harness" 指**模糊测试桩代码**——与 agent harness 完全无关。这说明 2026 年文献里 "harness" 一词确已歧义化，引用本节三篇时必须带限定语，但**不妨碍三群内部是真收敛**。
 
 ---
 

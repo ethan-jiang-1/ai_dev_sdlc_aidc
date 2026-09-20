@@ -15,7 +15,7 @@
 
 1. **Viv Trivedy（亦即 LangChain DeepAgents 作者）**（术语独立命源：Agent = Model + Harness，"skill issue" 重构；LangChain 团队实测只改 harness，TerminalBench 52.8%→66.5%）
 2. **Birgitta Böckeler / Thoughtworks**（guides/sensors + 持续调优 + 漂移传感器框架，自行从控制论推导，文中仅把 OpenAI/Stripe 当案例引用）
-3. **Stripe minions 团队**（shift-left feedback、pre-push 启发式 linter，纯自建实践；⚠ 正文 JS 渲染未回源，独立性待正文确认）
+3. **Stripe minions 团队**（shift-left feedback、pre-push 启发式 linter，纯自建实践；发布 2026-02-09；⚠ 正文 JS 渲染未回源，独立性待正文确认）
 4. **Anthropic 工程博客两个独立系列**（长任务 harness 设计；"harness 每个组件都编码了一个模型做不到的假设"）
 5. **学术三篇接力式收敛**：SWE-Bench Mobile（KDD'26）先行独立测量同模型跨 scaffold 6× → Meta-Harness（Stanford/MIT/KRAFTON）引用其 6× 作动机、自行得出同结论 → 清华 NLAH 引用 Meta-Harness——**独立得出、接力引用**，非零引用平行（见 [04b](04b-harness-academic-and-metrics.md)）
 6. **Armin Ronacher**（harness loop 代价、塔与共享理解的衰减——独立从维护/卫生角度切入）
@@ -226,7 +226,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 - **URL**：[martinfowler.com/articles/harness-engineering.html](https://martinfowler.com/articles/harness-engineering.html)
 - **独立性**：**框架独立**（自行从控制论/Ashby 定律推导），OpenAI/Stripe 仅作案例引用；其"持续漂移传感器"一节与 OpenAI doc-gardening 是互不引用的平行发明。
 
-### 7.4 Stripe minions 团队 —— shift-left feedback 与预推送钩子（2026-03-17）
+### 7.4 Stripe minions 团队 —— shift-left feedback 与预推送钩子（发布 2026-02-09；03-17 系消化稿日期，原稿误标，已勘误）
 
 - **影响力**：Stripe 工程博客，亿行级 Ruby/Sorbet 代码库，周千级无人值守 MR。
 - **主张**："反馈左移"（shift-left feedback）：本地 <5 秒快速 lint、失败自动修复再进 CI；pre-push 钩子按启发式只跑相关 linter；"blueprints" 把反馈传感器整合进 agent 工作流；混合"智能循环 + 确定性操作（Git、测试、linting）"。
@@ -237,7 +237,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 ### 7.5 Anthropic 工程博客 —— 两个独立系列的 harness 方法论（2025-11 / 2026-03-24）
 
 - **系列 A**：["Effective harnesses for long-running agents"](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)（2025-11）。
-- **系列 B**：Prithvi Rajasekaran, ["Designing a harness for long-running application development"](https://www.anthropic.com/engineering/harness-design-long-running-apps)（2026-03-24）：planner/generator/evaluator 三 agent；关键负结果："agents asked to grade their own work tend to respond by confidently praising the work"——故验证必须外置。
+- **系列 B**：Prithvi Rajasekaran, ["Designing a harness for long-running application development"](https://www.anthropic.com/engineering/harness-design-long-running-apps)（2026-03-24）：planner/generator/evaluator 三 agent；关键负结果："When asked to evaluate work they've produced, agents tend to respond by confidently praising the work"——故验证必须外置。
 - **核心原话**："**every component in a harness encodes an assumption about what the model can't do on its own.**"（模型变强 → 该组件变成死代码应删除）——这是 **harness 侧的 hygiene：定期删除失效机制**，与代码侧 gardening 互为镜像。
 - **对应治理点**：evaluator 反馈回路；harness 组件级的"拔枯枝"。
 - **独立性**：**独立**（厂商一手，时间早于/平行于 OpenAI 文）；Osmani 将系列 B 评为"最好的公开长任务 harness 设计拆解"。
@@ -251,9 +251,9 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 ### 7.7 学术端三重收敛：SWE-Bench Mobile / Meta-Harness / Tsinghua NLAH（2026-02~03；独立得出、接力引用——原判"互不引用"已按 04a 勘误修正）
 
-- **Stanford/MIT/KRAFTON**（Lee, Nair, Zhang, Lee, Khattab, Finn 等），[arXiv:2603.28052](https://arxiv.org/abs/2603.28052)（2026-03-30）："**Changing the harness around a fixed LLM can produce a 6× performance gap on the same benchmark.**" Haiku 4.5 经 harness 优化后排名超过更大的模型。
+- **Stanford/MIT/KRAFTON**（Lee, Nair, Zhang, Lee, Khattab, Finn 等），[arXiv:2603.28052](https://arxiv.org/abs/2603.28052)（2026-03-30）："Changing the harness around a fixed LLM can produce a 6× performance gap on the same benchmark."（⚠ 归属勘误：该句实出自 SWE-Bench Mobile arXiv:2602.09540 摘要，Meta-Harness 摘要无此句、系经其引文 [47] 转述——引用时归 SWE-Bench Mobile）
 - **Tsinghua+Harbin IT**（Pan et al.），[arXiv:2603.25723](https://arxiv.org/abs/2603.25723)（2026-03-26）：harness 表示法改为自然语言后同任务 30.4%→47.2%、LLM 调用 1200→34；消融显示**外挂 verifier 模块反而有害**（-0.8 SWE-bench / -8.4 OSWorld），self-evolution 是唯一 consistently helpful 模块。
-- **SWE-Bench Mobile**（Tian et al.），[arXiv:2602.09540](https://arxiv.org/abs/2602.09540)（2026-02-10，KDD '26）：同模型（Opus 4.5）仅因 scaffold 不同得 12%（Cursor）vs 2%（OpenCode）。
+- **SWE-Bench Mobile**（Tian et al.），[arXiv:2602.09540](https://arxiv.org/abs/2602.09540)（2026-02-10，KDD '26）：最佳配置 12%，跨 agent 最大差距 6×（摘要口径；Cursor 12% vs OpenCode 2% 的具体配比待回源全文核对）。
 - **另加独立旁证**：Andrej Karpathy（No Priors 播客，2026-03）在未引用上述论文的情况下独立提出"meta-optimization of program.md"同一概念。
 - **对应治理点**：为"harness 是一级工程对象"提供了 practitioners 拿不出的受控证据；Tsinghua 消融还给出了 hygiene 的反例边界（不要预防性堆 verifier——机制也要打扫）。
 - **独立性**：**三群独立得出（fixed-model-only-harness 受控设计），与工业界五源无引用关系；限定：Meta-Harness 开篇单向事后引用了 SWE-Bench Mobile 的 6× 作动机（晚于其自身实验设计）**——仍为最强独立收敛，详见 [04b](04b-harness-academic-and-metrics.md)。
@@ -262,7 +262,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 - **["The Coming Loop"](https://lucumr.pocoo.org/2026/6/23/the-coming-loop/)**（2026-06-23）：区分 inner agent loop 与 outer harness loop；命名 "harness loops"（把工作维持过模型自身停止点之后的循环）及其**在永久代码库上的代价**——治理对象是"循环本身需要被管理"。
 - **["Better Models: Worse Tools"](https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/)**（2026-07-04）：Opus 4.8 / Sonnet 5 会在第三方 edit schema 里发明虚假字段；"Tool schemas are not neutral"——harness 组件对模型版本敏感，**每次模型升级都是一次 harness 复检触点**。
-- **["The Tower Keeps Rising"](https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/)**（2026-07-13）："agent 辅助编码移除了过去维持团队共享理解的摩擦……**The tower does not fall, and so we do not notice what was lost.**"——直指**漂移是无声的**：harness 能让代码库继续跑，而团队对它的心智模型在悄悄腐烂，且没有任何 harness 指标会报告这一点。这是对"必须有人负责打扫理解层卫生"的最强独立表述。
+- **["The Tower Keeps Rising"](https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/)**（2026-07-13）："agent 辅助编码移除了过去维持团队共享理解的摩擦……**The tower does not fall, it just keeps rising.**（原句勘误：前稿"and so we do not notice what was lost"系意译误作直引）"——直指**漂移是无声的**：harness 能让代码库继续跑，而团队对它的心智模型在悄悄腐烂，且没有任何 harness 指标会报告这一点。这是对"必须有人负责打扫理解层卫生"的最强独立表述。
 - **独立性**：**独立**。个人实践者视角，无 OpenAI/Thoughtworks 引用链；其"accretion heuristics"（harness 积垢无人拔除）被社区分析稿视为与 Bitter Lesson 诊断并立的独有贡献。
 
 ### 7.9 Addy Osmani（Anthropic Claude Code MTS，前 Google Chrome/Gemini 总监）—— "每个错误变成一条规则"（2026-04-19）
@@ -280,7 +280,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 ### 7.11 "清扫"隐喻的独立命名群（gardening / pressure washing / garbage collection / 清洁工军团）
 
-- **Teleport**（赞助位文案，观测 2026-09-18 出现在 simonwillison.net）："how 13 engineers learned from '**pressure washing** their codebase using LLMs for 90 days'"——大扫除命名，90 天实验体量。
+- **Teleport**（赞助位文案，观测 2026-09-18 goteleport.com 博客（Rob Picard，2026-08-19），经 simonwillison.net 2025-09-30 页转述确认）："how 13 engineers learned from '**pressure washing** their codebase using LLMs for 90 days'"——大扫除命名，90 天实验体量。
 - **OpenAI**："doc-gardening agent"（§1.3，已有）。
 - **Böckeler/Thoughtworks**："清洁工军团"、"持续漂移与健康传感器"、"garbage collection（转引 OpenAI）"。
 - **flying-coyote 分析稿**："accretion heuristics"（harness 积垢）+ "auto-garbage-collection"支柱（worldmonitor 自评 0/10 项，见 §4.3）。
@@ -311,7 +311,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 **7.1.1 CorvidLabs/spec-sync（本轮品类内完成度最高的开源品）**
 - 日期/作者：2026-03-18 创建，0xLeif（389 commits）+ corvid-agent（172 commits，**一个 bot 贡献者排第二**）+ 2 名外围，共 4 contributors。
 - 机制展开：不是 LLM 判定，是**规则引擎 + 语言解析器**：把 `specs/*/requirements.md` 精炼成"模块合约表"（`auth.spec.md` 里列出每个 public function），Rust 单二进制解析 33 种语言的导出符号，双向比对——**代码里有合约没写 = undocumented export，合约里有代码删了 = vanished symbol**，任一发生即 CI fail。输出：GitHub Marketplace Action 徽章（spec coverage JSON endpoint）+ CI 失败详情；同时提供 **MCP server**（agent 可在会话内直接查漂移）。README 的 60 秒示例：新增 `pub fn revoke_all_sessions` 未更新合约表即被抓住。
-- 量化数据（GitHub/crates API 实测，2026-09-20）：6★、1 fork、46 open issues、MIT、Rust；**release 迭代极快**：47 个版本、最新 v6.0.0（2026-09-09），此前一周连发 rc.13/rc.14；crates.io 全历史 866 次下载、近 30 天 253 次、活跃推送至 2026-09-19。
+- 量化数据（GitHub/crates API 实测，2026-09-20）：6★、1 fork、47 open_issues（含 PR；纯 issue 口径 46）、MIT、Rust；**release 迭代极快**：47 个版本、最新 v6.0.0（2026-09-09），此前一周连发 rc.13/rc.14；crates.io 全历史 866 次下载、近 30 天 253 次、活跃推送至 2026-09-19。
 - 用户侧证据：关联 repo `CorvidLabs/corvid-agent` 的 [issue #190 "Review existing specs against current code for drift"](https://github.com/CorvidLabs/corvid-agent/issues/190)——同一作者体系内部把它当真实工作流用；46 个 open issues 说明有真实 issue 流量（尽管可能多为自驱动 bot 产出，需打折）。
 - 协议/定价：MIT，免费，README 明言"no SpecSync API key required"。
 - 竞品对照：对 7.1.2 freshdocs（只做新鲜度门控、无符号级解析）和 7.1.4 docgarden（只做文档健康、不懂代码）——spec-sync 是唯一做到"spec↔代码符号级双向比对"的，代价是要求 spec 按它的表格格式写（**采用成本最高的一个**）。
@@ -329,7 +329,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 **7.1.3 docgarden + a2a-drift（品类外溢）**
 - 日期：docgarden 首版 2026-04-23（crates.io），a2a-drift 2026-09-18 创建（观测当日仍在推送）。
 - 机制：docgarden 自述"Repository knowledge tooling for agentic engineering repositories"（关键词 agents/documentation/linter/markdown），Rust CLI；a2a-drift 把 drift 检测对象从文档**外溢到协议合规**：扫 A2A agent card、端点、spec 版本、JSON-RPC 一致性。
-- 量化数据：docgarden 全历史 65 次下载、近 30 天 23 次、停在 0.1.0（crates.io API 实测）；a2a-drift 0★、单人（GitHub API 实测）。
+- 量化数据：docgarden 全历史 65 次下载、近 30 天 23 次、停在 0.1.0（crates.io API 实测）；a2a-drift 0★、单人、9 个 open issues（GitHub API 实测）。
 - 用户侧证据：两者皆无。
 - 协议：均为开源；无定价。
 - 对照：docgarden 与 ctxlint（7.3）同做"context 文件健康"但一个是 Rust 零下载、一个有 npm 分发——**分发渠道（npm/npx）比实现语言更决定触达**。

@@ -3,7 +3,8 @@
 > **元数据**
 > - accessed_at：2026-09-20（本轮逐条 web_fetch 回源）
 > - 上游：`04-harness-governance.md` §7（本文件为其 §7 每集群的全文证据档案，不复制其结论性判读）
-> - 回源途径标注：**一手** = 直接抓到原文页面/论文页；**半回源** = 原文页抓到但正文未渲染或未全读，细节经消化稿核验；**转述** = 原文抓不到，仅消化稿/转引
+> - 回源途径标注：
+- **嵌套引注记（2026-09-21 审计后统一补充）**：A5/A9 等 blockquote 中含 Hashimoto/OpenAI 原话的段落，其原始出处未独立回源、仅经转出页确认——此类一律按"嵌套转引"对待，引用时不得标为一手。**一手** = 直接抓到原文页面/论文页；**半回源** = 原文页抓到但正文未渲染或未全读，细节经消化稿核验；**转述** = 原文抓不到，仅消化稿/转引
 > - 摘录纪律：所有英文原句为本次回源页面逐字摘录；抓不到的如实标注，不代拟
 >
 > **⚠ 三个必须先读的勘误级发现（比摘录本身更重要）**
@@ -55,11 +56,11 @@
 
 > Good agent building is an exercise in iteration. You can't do iterations if you don't have a v0.1. A batteries included setup gets your agent in the hands of your internal team. Then you can edit in a loop.
 
-组件级 hygiene 判据的同源段落（Osmani 引的"can't name the behaviour"句在其 Anotomy 文的图注/演绎中，本页未逐字出现，见 A1.4）。
+组件级 hygiene 判据的同源段落（Osmani 引的"can't name the behaviour"句在其 Anatomy 文的图注/演绎中，本页未逐字出现，见 A1.4）。
 
 ### A1.4 机制细节
 
-- HaaS 文给出四定制杠杆：**System Prompt / Tools+MCP / Context / Subagents**，每杠杆带操作要点（如 tool 设计三问："Is there a tool for it? Is it clear when to use? Can I reduce surface area by combining tools?"）。
+- HaaS 文给出四定制杠杆：**System Prompt / Tools+MCP / Context / Subagents**，每杠杆带操作要点（如 tool 设计三问——原句较长，此处系压缩转述不作直引：是否已有对应工具 / agent 能否判断何时用 / 能否合并以缩小表面积）。
 - Anatomy 文给出组件派生表：durable state→filesystem+git；自主解题→bash+code exec；安全执行→sandbox；continual learning→AGENTS.md+web search/MCP；context rot→compaction/tool-call offloading/skills progressive disclosure；long-horizon→Ralph Loop+planning+self-verification。
 - "If you can't name the behaviour a component exists to deliver, it probably shouldn't be there" 这句在 **Osmani 转述**中出现（见 A9），Anatomy 原文的对应表述是"every harness component has a specific job"级别的派生法——引用时注意这句经 Osmani 中转。
 
@@ -107,7 +108,7 @@ TerminalBench 数据点（与 Trivedy 同源数据，非独立测得）：
 
 ### A2.4 机制细节（可复刻度最高的一手实践清单）
 
-- **Stop-hook 验证回路**（附完整 bash 脚本原文）：Claude 停止时跑 biome+turbo typecheck；成功静默退出，失败 exit 2 把错误文本注回循环。"On success the hook is completely silent — nothing ends up in the agent's context. On failure, only the errors are surfaced, and exit code 2 tells the harness to re-engage the agent."
+- **Stop-hook 验证回路**（附完整 bash 脚本原文）：Claude 停止时跑 biome+turbo typecheck；成功静默退出，失败 exit 2 把错误文本注回循环。"On success the hook is completely silent — nothing ends up in the agent's context. On failure, only the errors are surfaced, and exit code 2 tells the harness to re-engage the agent […] so it fixes them before finishing."
 - **success is silent, failures are verbose**：测试输出全量吞掉只回错误——"early on we had our agent run the full test suite after every change, and 4,000 lines of passing tests would flood the context window."
 - **MCP→CLI 降级**：Linear MCP 换成自写 CLI 并在 CLAUDE.md 里放 6 条示例命令，省下工具定义 token。
 - **覆盖率 Stop hook**："we have a Stop hook that prompts the agent to increase coverage if it drops."
@@ -288,7 +289,7 @@ doom loop 检测（"清扫 agent 卡死状态"的具名机制原文）：
 - 实验设置：Terminal Bench 2.0（89 tasks），Harbor 编排 + Daytona 沙箱，LangSmith 全 trace 存档；优化空间压缩到三旋钮：System Prompt / Tools / Middleware。
 - 五项改造：①`PreCompletionChecklistMiddleware`（退出前拦截强制对照 task spec 自验，自认"similar to a Ralph Wiggum Loop"）；②`LocalContextMiddleware` 启动期目录/工具映射；③doom-loop 检测（按文件编辑计数）；④reasoning sandwich（xhigh-high-xhigh；全 xhigh 反而 53.9% 因超时，全 high 63.6%）；⑤时间预算告警注入。
 - 泳道数据：xhigh-only 53.9% vs high 63.6% vs sandwich 66.5%。
-- 已公开 trace 数据集（smith.langchain.com/public/29393299-…）供第三方复核。
+- 已公开 trace 数据集（smith.langchain.com/public/29393299-8f31-48bb-a949-5a1f5968a744）供第三方复核。
 - 自述局限："A test run with Claude Opus 4.6 scored `59.6%` with an earlier harness version, competitive but worse than Codex because we didn't run the same Improvement Loop with Claude"——改进回路未对其他模型复跑。
 
 ### A6.4 独立性验证
@@ -340,7 +341,7 @@ doom loop 检测（"清扫 agent 卡死状态"的具名机制原文）：
 
 ### A7.4 三篇独立性再判定
 
-- SWE-Bench Mobile（2/10）最早，摘要无 harness-engineering 文献引用迹象（需正文参考文献表复核）。
+- SWE-Bench Mobile（2/10）最早，摘要层面无 harness-engineering 文献引用迹象（证据等级：仅 abs 摘要，参考文献表未核）。
 - Meta-Harness（3/30）引言 6× 句**引用了**某个 [47]（很可能是 SWE-Bench Mobile）。
 - NLAH v2（5/18 修订）**明确引用** Meta-Harness（"Meta-Harness is an agent-driven technique that automatically debugs and optimizes executable code harnesses (Lee et al., 2026)"）并引 LangChain 2026 两篇。
 - **结论修正**：不是"三群互不引用"；实情是 **SWE-Bench Mobile 先行测量 → Meta-Harness 引用其 6× → NLAH 引用 Meta-Harness 并以 MHTBA 为实验对象**。收敛仍然成立（三个独立团队把 harness 当一级研究对象并量化），但传播链是**接力式**而非零引用平行。"互不引用"表述须改。
@@ -349,7 +350,7 @@ doom loop 检测（"清扫 agent 卡死状态"的具名机制原文）：
 
 ## A8. Armin Ronacher —— 三篇连续
 
-三篇均**一手全文回源**（lucumr.pocoo.org）。
+三篇均一手回源：①/2026/6/23/the-coming-loop/ ②/2026/7/13/the-tower-keeps-rising/（两条本轮已核 200）；③A8.2 "Better Models"——URL 未记录，降级为待回源，不作一手引用。
 
 ### A8.1 The Coming Loop（2026-06-23）
 
