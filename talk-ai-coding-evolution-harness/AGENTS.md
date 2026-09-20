@@ -9,10 +9,13 @@ AI Coding 演变与 harness 的深度 talk。**你是这套 harness 里被驱动
 
 ## 每次进来（按顺序走）
 
-0. **新对话入口** — `README.md`（地图，含版本单一纪律）→ `CURRENT.md`（唯一当前态）。
+0. **新对话入口** — **最短路径**：延续性工作且无争议 → 直接读 `CURRENT.md`（唯一当前态·热区）即可动手；
+   首次进入或踩坑 → 再读本文件与 `README.md`。`CURRENT-history.md` 是冷区（历轮改动记录），
+   只在回查历史时读，默认不读，不是第二权威。
    纪律、陷阱与生产工具链在**本文件**；词义在 `CONTEXT.md`。
    > 2026-09-17：原 `HANDOFF.md` 已归档。它是给某一次对话的临时交接件，长期留在目录里
    > 会与 `CURRENT.md` 形成双权威。其仍有效的内容已并入本文件（见「已知陷阱」「生产工具链」）。
+   > 2026-09-21：`CURRENT.md` 拆热/冷区，历轮流水移入 `CURRENT-history.md`（约定见根 `AGENTS.md` §1/§3）。
 1. **读状态** — `README.md`（地图）→ `CURRENT.md`（唯一当前态）→ `CONTEXT.md`（术语与禁用词）→
    `01_storyline/00-storyline-map.md`（故事线总图）→ `03_outline/00-page-structure-v3.md`（页面职责）→
    `01_storyline/04-open-questions.md`（已决 / 待确认 / 待办）。

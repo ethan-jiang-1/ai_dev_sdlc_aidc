@@ -76,7 +76,8 @@ ai_dev_sdlc_aidc/
 各研究主题遵守统一的信息处理纪律：**一手源优先、来源可溯、聚焦当前时刻**。
 参考库的"来源/时间铁律"见 `01_sources/reference/kol/README.md` 与 `01_sources/reference/corp/README.md`。
 
-> 注意：`02_research/` 下只有 `rnd_native_2.0/` 带 README，其余主题的口径写在各自目录内的文档里，没有统一入口。
+> 2026-09-21：`02_research/` 与 `03_practice/` 已补齐各自的主题索引 README 与最小主题 README，
+> 各主题入口见 `02_research/README.md` 与 `03_practice/README.md`。
 
 ---
 
@@ -89,13 +90,16 @@ ai_dev_sdlc_aidc/
 3. 想知道现在做到哪 → `talk-ai-coding-evolution-harness/CURRENT.md`
 
 **agent：** 读根目录的 `AGENTS.md`，它会把你路由到正确的一层。
+**落点明确时不必读本文件**——直接进目标目录读 `CURRENT.md`（热区，最短行动入口）；
+本文件只在落点不明、或要动仓库结构 / 素材时读。历轮改动回查该 talk 的 `CURRENT-history.md`。
 
 ---
 
 ## 六、通用约定
 
 - **临时目录**：一次性产物（构建中间体、逐页 inspect、审稿草稿）一律放仓库根目录，`.tmp-` 前缀，已被 `.gitignore` 覆盖、永不入库。版本收口即清理，不跨版本堆积。
-- **记忆位置**：跨对话状态只落在各层权威文件——每个 talk 的 `README.md`（地图）+ `CURRENT.md`（当前态）+ `AGENTS.md`（手册）面向"零上下文新对话"；
+- **记忆位置**：跨对话状态只落在各层权威文件——每个 talk 的 `README.md`（地图）+ `CURRENT.md`（当前态·热区）
+  + `AGENTS.md`（手册）面向"零上下文新对话"；已收口的历轮改动移入该 talk 的 `CURRENT-history.md`（冷区，默认不读）；
   结构变更与重要决策由 git 提交信息留痕（仓库级 memory 目录 `.workbuddy/` 已于 2026-09-21 按用户决定移除）。
   **不设 HANDOFF 类交接文件**——它是某一次对话的临时件，长期留存会与 `CURRENT.md` 形成双权威。
 - **单一事实来源**：每个事实只写一处，其他文件用指针引用，不复制。

@@ -6,7 +6,8 @@
 
 ## 每次进来（按顺序走）
 
-1. **读状态** — `README.md`（目录地图）→ `01_storyline/00-storyline-map.md`（故事线总图）→
+1. **读状态** — `CURRENT.md`（当前态；2026-09-21 起设，定稿态以它为准）→ `README.md`（目录地图）→
+   `01_storyline/00-storyline-map.md`（故事线总图）→
    `03_outline/00-page-structure-23.md`（现场版页面）→ `01_storyline/04-open-questions.md`（已决 / 待办）。
    完成标准：能说出当前阶段、正在推敲的问题、下一步动哪个文件。
 
