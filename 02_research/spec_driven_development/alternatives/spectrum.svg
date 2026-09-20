@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <linearGradient id="zoneL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fde8e8"/><stop offset="1" stop-color="#fff7e6"/>
+    </linearGradient>
+    <linearGradient id="zoneR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8f4fd"/><stop offset="1" stop-color="#e6f7ee"/>
+    </linearGradient>
+  </defs>
+
+  <text x="40" y="36" font-size="22" font-weight="700" fill="#222">形态光谱：从「重 spec 工件」到「零 spec 工件」</text>
+  <text x="40" y="60" font-size="13" fill="#777">观测 2026-09-20 · 左端 = 经典 SDD；右端 = 后继形态（alternatives/ 各篇展开）</text>
+
+  <!-- zones -->
+  <rect x="50" y="90" width="330" height="250" rx="12" fill="url(#zoneL)" stroke="#e8b4b4" stroke-dasharray="6 4"/>
+  <rect x="395" y="90" width="835" height="250" rx="12" fill="url(#zoneR)" stroke="#a9c9e8" stroke-dasharray="6 4"/>
+  <text x="215" y="115" font-size="14" font-weight="700" fill="#b05252" text-anchor="middle">经典 SDD 区间</text>
+  <text x="812" y="115" font-size="14" font-weight="700" fill="#3a76ab" text-anchor="middle">后继形态（2026 批判催生的出路）</text>
+
+  <!-- axis -->
+  <line x1="60" y1="390" x2="1220" y2="390" stroke="#444" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="60" y="418" font-size="14" fill="#333">重 spec 工件 · 表达力高（承载"为什么"与跨服务契约）</text>
+  <text x="1220" y="418" font-size="14" fill="#333" text-anchor="end">零 spec 工件 · 抗漂移（无工件即无 spec 债）</text>
+
+  <!-- stops: (x, title, l1, l2, color) -->
+  <g font-size="12" text-anchor="middle">
+    <!-- Tessl -->
+    <rect x="70" y="150" width="120" height="86" rx="8" fill="#fff" stroke="#c96a6a" stroke-width="1.5"/>
+    <text x="130" y="172" font-weight="700" fill="#8f3535">Tessl 式</text>
+    <text x="130" y="192" fill="#555">spec 唯一源</text>
+    <text x="130" y="210" fill="#999" font-size="11">⚠ 2026-03 停摆</text>
+    <line x1="130" y1="236" x2="130" y2="382" stroke="#bbb" stroke-dasharray="3 3"/>
+    <!-- Spec Kit / Kiro -->
+    <rect x="210" y="150" width="140" height="86" rx="8" fill="#fff" stroke="#c96a6a" stroke-width="1.5"/>
+    <text x="280" y="172" font-weight="700" fill="#8f3535">Spec Kit / Kiro</text>
+    <text x="280" y="192" fill="#555">全流程工件链</text>
+    <text x="280" y="210" fill="#999" font-size="11">漂移风险高（#1191）</text>
+    <line x1="280" y1="236" x2="280" y2="382" stroke="#bbb" stroke-dasharray="3 3"/>
+    <!-- OpenSpec -->
+    <rect x="370" y="150" width="110" height="86" rx="8" fill="#fff" stroke="#c96a6a" stroke-width="1.5"/>
+    <text x="425" y="172" font-weight="700" fill="#8f3535">OpenSpec</text>
+    <text x="425" y="192" fill="#555">轻量 delta</text>
+    <text x="425" y="210" fill="#999" font-size="11">原生 CI 校验</text>
+    <line x1="425" y1="236" x2="425" y2="382" stroke="#bbb" stroke-dasharray="3 3"/>
+    <!-- VSDD -->
+    <rect x="505" y="150" width="130" height="86" rx="8" fill="#fff" stroke="#4a86c8" stroke-width="1.5"/>
+    <text x="570" y="172" font-weight="700" fill="#2d5f96">VSDD / compilable</text>
+    <text x="570" y="192" fill="#555">spec 必须机器可校验</text>
+    <text x="570" y="210" fill="#999" font-size="11">验证器逼同步</text>
+    <line x1="570" y1="236" x2="570" y2="382" stroke="#bbb" stroke-dasharray="3 3"/>
+    <!-- Harness -->
+    <rect x="660" y="150" width="130" height="86" rx="8" fill="#eaf3fc" stroke="#2d6fb4" stroke-width="2.5"/>
+    <text x="725" y="172" font-weight="700" fill="#1d4f85">Harness 治理 ★</text>
+    <text x="725" y="192" fill="#555">spec 降格为组件</text>
+    <text x="725" y="210" fill="#999" font-size="11">团队级收敛点</text>
+    <line x1="725" y1="236" x2="725" y2="382" stroke="#2d6fb4" stroke-width="1.5"/>
+    <!-- Context -->
+    <rect x="815" y="150" width="130" height="86" rx="8" fill="#fff" stroke="#4a9a77" stroke-width="1.5"/>
+    <text x="880" y="172" font-weight="700" fill="#2c6e4f">Context eng.</text>
+    <text x="880" y="192" fill="#555">仅 repo 级规则文件</text>
+    <text x="880" y="210" fill="#999" font-size="11">brownfield 默认</text>
+    <line x1="880" y1="236" x2="880" y2="382" stroke="#bbb" stroke-dasharray="3 3"/>
+    <!-- Plan mode -->
+    <rect x="970" y="150" width="110" height="86" rx="8" fill="#fff" stroke="#4a9a77" stroke-width="1.5"/>
+    <text x="1025" y="172" font-weight="700" fill="#2c6e4f">Plan mode</text>
+    <text x="1025" y="192" fill="#555">会话内即弃</text>
+    <text x="1025" y="210" fill="#999" font-size="11">日常默认</text>
+    <line x1="1025" y1="236" x2="1025" y2="382" stroke="#bbb" stroke-dasharray="3 3"/>
+    <!-- facts -->
+    <rect x="1100" y="150" width="90" height="86" rx="8" fill="#fff" stroke="#4a9a77" stroke-width="1.5"/>
+    <text x="1145" y="172" font-weight="700" fill="#2c6e4f">facts</text>
+    <text x="1145" y="192" fill="#555">仅事实清单</text>
+    <text x="1145" y="210" fill="#999" font-size="11">止损形态</text>
+    <line x1="1145" y1="236" x2="1145" y2="382" stroke="#bbb" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- annotation -->
+  <text x="640" y="445" font-size="12" fill="#888" text-anchor="middle">★ Harness 治理：唯一同时吸收「验证缺失 / 漂移留白 / context tax」三条重批判的形态（OpenAI 一手 + arXiv 2609.00252 双背书）</text>
+</svg>

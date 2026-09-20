@@ -1,5 +1,19 @@
 # SDD 的替代与后继形态——批判面指向的出路到底长什么样
 
+> **本目录结构（2026-09-20 升格为独立子目录）**：本 README 是总览（机制速览 + 光谱图 + 结论）；五个形态各自深挖成篇——深挖版与本文摘要**以各分篇为权威**，本文不复制分篇正文。
+
+| 分篇 | 形态 | 一句话 |
+|---|---|---|
+| [01-verifiable-specs.md](01-verifiable-specs.md) | 验证优先/可验证 spec | spec 必须降格为机器可校验的产物（VSDD/compilable specs/facts） |
+| [02-plan-mode.md](02-plan-mode.md) | Plan mode 派 | 规划内嵌于 harness，会话内对齐、用完即弃 |
+| [03-context-engineering.md](03-context-engineering.md) | Context engineering 派 | 只管 repo 级规则文件纪律，不建 feature 级工件 |
+| [04-harness-governance.md](04-harness-governance.md) | Harness 治理派 ★ | 治理对象从 spec 文档转向 agent 执行链路——团队级收敛点 |
+| [05-test-first.md](05-test-first.md) | 测试优先回归 | 测试就是 spec：给 CI 读的可执行断言替代文档合约 |
+
+图形（SVG）：
+- ![形态光谱](spectrum.svg)——九个位置从"重 spec 工件"排到"零 spec 工件"
+- ![验证责任迁移](verification-shift.svg)——文档中心 vs 机器中心的结构性对照
+
 ```yaml
 topic: SDD 的替代/后继形态（验证优先、plan mode、context engineering、harness 治理、测试优先）
 accessed_at: 2026-09-20
@@ -7,7 +21,7 @@ collector: delegated research agent
 scope: 2026 年（尤其 2026Q2–Q3）社区材料；承接 debate/critiques.md「批判观点聚类」第 5 条的出路指向
 related:
   - debate/critiques.md          # 批判面（本文的"问题从哪来"）
-  - comparison.md                # SDD 工具横比（光谱图左端的素材）
+  - ../comparison.md             # SDD 工具横比（光谱图左端的素材）
   - debate/authoritative-verdicts.md
 weights: 高=大厂/学术/高热帖；中=有实证的博客/团队案例；低=个人观点
 limitations:
@@ -24,7 +38,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 1. 验证优先 / 可验证 spec（VSDD、compilable specs、facts）
+## 1. 验证优先 / 可验证 spec（VSDD、compilable specs、facts）→ 深挖：[01-verifiable-specs.md](01-verifiable-specs.md)
 
 **机制**：承认"spec 先行"的价值，但否定"自然语言 spec 本身可作合约"。spec 必须降格为**机器可校验的产物**——或编译成测试/形式化约束（compilable specs），或收缩为一份事实清单（facts），或加上对抗性验证层（VSDD）。LLM 在这条路线里只做"翻译"：把可验证的规约翻译成实现，而不是从散文里自由发挥。
 
@@ -41,7 +55,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 2. Plan mode 派（规划内嵌于 agent harness，"就够了"论）
+## 2. Plan mode 派 → 深挖：[02-plan-mode.md](02-plan-mode.md)
 
 **机制**：不引入任何独立 spec 工件。规划作为 agent harness 的**内置阶段**存在：agent 先出计划、人批准、再执行（Claude Code plan mode、Codex 的 plan/approval 机制、Antigravity 的"plan approval before executing"）。规划是一次性的会话内产物，用完即弃，不进入仓库、不需要维护。
 
@@ -55,7 +69,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 3. Context engineering 派（repo 级上下文纪律，不写 feature 级 spec）
+## 3. Context engineering 派 → 深挖：[03-context-engineering.md](03-context-engineering.md)
 
 **机制**：约束对象从"这个 feature 要什么"（feature 级 spec）上移为"这个仓库的 agent 该怎么干活"（repo 级规则文件与上下文结构）：AGENTS.md / CLAUDE.md / 规则文件 + 结构化 docs 目录 + 渐进式披露（给地图而非全书）。纪律是**永久但轻量**的，feature 级意图不落盘。
 
@@ -72,7 +86,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 4. Harness 治理派（治理对象从 spec 文档转向 agent 执行链路）
+## 4. Harness 治理派 ★ → 深挖：[04-harness-governance.md](04-harness-governance.md)
 
 **机制**：把"让 agent 做对"的工程投入从**写文档**转移到**工程化执行环境**：自定义 linter + 结构测试强制架构规则、可观测性直接接入 agent 运行时（日志/指标/追踪供 agent 自读自验）、定期运行的 gardener agent 扫描漂移、"每次 agent 犯错就工程化地消灭该错误类别"（Hashimoto 第六阶段 "Engineer the Harness"）。spec（若有）只是 harness 中 scaffolding 的一个组件。
 
@@ -90,7 +104,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 5. 测试优先回归（spec 隐含在测试里）
+## 5. 测试优先回归 → 深挖：[05-test-first.md](05-test-first.md)
 
 **机制**：干脆不写行为 spec——**测试就是 spec**。契约由 TDD 的 red-green-refactor 纪律或性质测试（property-based tests）承载：先写会失败的测试（即先写下"系统应该怎样"的可执行断言），实现使其变绿。漂移问题自动消解：测试随代码同 PR 演化，测试挂了就是 spec 与实现失配的显式报警——这恰好补上 harness 派承认的"Spec 漂移是沉默的"缺口。
 
@@ -105,6 +119,8 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 ---
 
 ## 6. 形态光谱图：从"重 spec 工件"到"零 spec 工件"
+
+> 图形版见 [spectrum.svg](spectrum.svg)（结构对照）与 [verification-shift.svg](verification-shift.svg)（验证责任迁移的两种落法）；下方 ASCII 为纯文本备援，表格为权威口径。
 
 ```
 重 spec 工件 ◄──────────────────────────────────────────────► 零 spec 工件

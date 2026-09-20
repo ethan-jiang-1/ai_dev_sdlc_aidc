@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="560" viewBox="0 0 1240 560" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#666"/>
+    </marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b05252"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2c6e4f"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="38" font-size="22" font-weight="700" fill="#222">验证责任的迁移：从「文档的说服力」到「机器的通过/失败」</text>
+  <text x="40" y="62" font-size="13" fill="#777">2026 年批判收敛出的同一趋势在两种工程形态中的落法 · 观测 2026-09-20</text>
+
+  <!-- LEFT panel: document persuasion (fragile) -->
+  <rect x="40" y="90" width="540" height="420" rx="14" fill="#fdf6f6" stroke="#dcafaa"/>
+  <text x="310" y="122" font-size="16" font-weight="700" fill="#8f3535" text-anchor="middle">文档中心（经典 SDD 默认）</text>
+
+  <rect x="90" y="150" width="180" height="52" rx="8" fill="#fff" stroke="#c96a6a"/>
+  <text x="180" y="172" font-size="13" text-anchor="middle" fill="#333">写 spec 散文</text>
+  <text x="180" y="190" font-size="11" text-anchor="middle" fill="#999">"看似严谨的 markdown"</text>
+
+  <rect x="230" y="240" width="180" height="52" rx="8" fill="#fff" stroke="#c96a6a"/>
+  <text x="320" y="262" font-size="13" text-anchor="middle" fill="#333">agent 阅读、自由发挥</text>
+  <text x="320" y="280" font-size="11" text-anchor="middle" fill="#999">spec 是给 agent 读的散文</text>
+
+  <rect x="370" y="330" width="180" height="52" rx="8" fill="#fff" stroke="#c96a6a"/>
+  <text x="460" y="352" font-size="13" text-anchor="middle" fill="#333">人 review 兜底</text>
+  <text x="460" y="370" font-size="11" text-anchor="middle" fill="#999">评审带宽成第一瓶颈</text>
+
+  <line x1="200" y1="202" x2="305" y2="238" stroke="#666" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="340" y1="292" x2="445" y2="328" stroke="#666" stroke-width="1.5" marker-end="url(#arr2)"/>
+
+  <!-- failure callouts -->
+  <g font-size="12" fill="#b05252">
+    <rect x="80" y="300" width="170" height="64" rx="8" fill="#fdecec" stroke="#d98a8a"/>
+    <text x="165" y="322" text-anchor="middle" font-weight="700">漂移是沉默的</text>
+    <text x="165" y="340" text-anchor="middle" fill="#8f3535">spec 过期无人知道</text>
+    <text x="165" y="356" text-anchor="middle" fill="#8f3535">agent 忠实执行过期规范</text>
+
+    <rect x="390" y="412" width="180" height="64" rx="8" fill="#fdecec" stroke="#d98a8a"/>
+    <text x="480" y="434" text-anchor="middle" font-weight="700">无验证留白</text>
+    <text x="480" y="452" text-anchor="middle" fill="#8f3535">"verify" 可被标 done</text>
+    <text x="480" y="468" text-anchor="middle" fill="#8f3535">而零测试（marmelab 案例）</text>
+  </g>
+  <line x1="200" y1="300" x2="255" y2="296" stroke="#b05252" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrR)"/>
+  <line x1="450" y1="412" x2="452" y2="384" stroke="#b05252" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrR)"/>
+
+  <text x="310" y="500" font-size="12" fill="#8f3535" text-anchor="middle">控制力来源：文档的说服力（批判证实：不可依赖）</text>
+
+  <!-- RIGHT panel: machine verification (2026 direction) -->
+  <rect x="660" y="90" width="540" height="420" rx="14" fill="#f4faf6" stroke="#9cc6ae"/>
+  <text x="930" y="122" font-size="16" font-weight="700" fill="#2c6e4f" text-anchor="middle">机器中心（2026 收敛方向）</text>
+
+  <rect x="710" y="150" width="180" height="52" rx="8" fill="#fff" stroke="#4a9a77"/>
+  <text x="800" y="172" font-size="13" text-anchor="middle" fill="#333">可校验的意图载体</text>
+  <text x="800" y="190" font-size="10" text-anchor="middle" fill="#999">测试 / facts / 形式化约束 / 轻量 spec</text>
+
+  <rect x="920" y="150" width="180" height="52" rx="8" fill="#fff" stroke="#4a9a77"/>
+  <text x="1010" y="172" font-size="13" text-anchor="middle" fill="#333">harness：linter+结构测试</text>
+  <text x="1010" y="190" font-size="11" text-anchor="middle" fill="#999">可观测性接 agent 运行时</text>
+
+  <rect x="710" y="260" width="180" height="52" rx="8" fill="#fff" stroke="#4a9a77"/>
+  <text x="800" y="282" font-size="13" text-anchor="middle" fill="#333">验证器 / CI 门禁</text>
+  <text x="800" y="300" font-size="11" text-anchor="middle" fill="#999">openspec validate --strict 等</text>
+
+  <rect x="920" y="260" width="180" height="52" rx="8" fill="#fff" stroke="#4a9a77"/>
+  <text x="1010" y="282" font-size="13" text-anchor="middle" fill="#333">失败信号 → 机器可感</text>
+  <text x="1010" y="300" font-size="11" text-anchor="middle" fill="#999">测试红了 = spec 与实现失配</text>
+
+  <rect x="815" y="370" width="200" height="52" rx="8" fill="#eaf3fc" stroke="#2d6fb4"/>
+  <text x="915" y="392" font-size="13" text-anchor="middle" fill="#1d4f85">gardening / 反馈回路</text>
+  <text x="915" y="410" font-size="10" text-anchor="middle" fill="#999">agent 犯错 → 工程化消灭该错误类别</text>
+
+  <line x1="820" y1="202" x2="955" y2="258" stroke="#666" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="960" y1="202" x2="850" y2="258" stroke="#666" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <line x1="820" y1="312" x2="880" y2="368" stroke="#2c6e4f" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <line x1="990" y1="312" x2="950" y2="368" stroke="#2c6e4f" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <!-- feedback loop back to top -->
+  <path d="M 1020 396 C 1140 396, 1150 176, 1102 176" fill="none" stroke="#2d6fb4" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arr2)"/>
+  <text x="1150" y="290" font-size="11" fill="#2d6fb4" text-anchor="middle" writing-mode="tb">闭环：约束持续修复</text>
+
+  <text x="930" y="500" font-size="12" fill="#2c6e4f" text-anchor="middle">控制力来源：验证器的通过/失败（漂移变成显式报警）</text>
+
+  <!-- center arrow -->
+  <line x1="590" y1="300" x2="650" y2="300" stroke="#444" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="620" y="286" font-size="12" fill="#444" text-anchor="middle" font-weight="700">2026</text>
+</svg>
