@@ -126,3 +126,15 @@ scope:        ThoughtWorks Radar / martinfowler.com / InfoQ·QCon / arXiv / 分�
 1. **无人背书、无人否决**：TW 停在 Assess 且 Vol.34 未升级——概念仍处观望期，但工具层（Spec Kit、OpenSpec）2026-04 起被逐个立项评估，说明生态在进入主流视野。
 2. **共同保留意见集中在两处**：spec 制品难评审、工作流繁琐——这恰是"工程控制（评审门禁/CI 校验/spec 版本管理）"要补的位。
 3. **对团队规模化最有利的证据是 2026 年的**：InfoQ 企业篇、Garg 验证瓶颈论、arXiv harness 论文三者同向：SDD 的价值主张正从"个人写好 prompt"转向"团队治理 agent 的工程纪律"。
+
+---
+
+## § Vol.34 定级官方确认补遗（2026-09-20 二轮）
+
+前轮"Vol.34 SDD 主条目维持 Assess"是高置信推断，本轮直接抓到官方条目页，**结果修正了前轮结论**：
+
+- **官方条目页直读**（https://www.thoughtworks.com/radar/techniques/spec-driven-development ，2026-09-20 抓取，HTTP 200）：页面明文 **"Published: Nov 05, 2025 — NOT ON THE CURRENT EDITION. This blip is not on the current edition of the Radar."** blip timeline 仅一格 **Nov 2025 / Assess**。⇒ 前轮"Vol.34 未移动 ring、维持 Assess"的表述**不准确**：官方口径是 **Vol.34（2026-04-15）压根未收录 SDD 条目**；SDD 的最新官方定级仍停留在 **Vol.33（2025-11-05）Assess**。官方提示语同时说明"若近期版本在册则大概率仍相关"——所以 Assess 判词仍是最新可用官方口径，但"Vol.34 复审维持"没有官方依据。
+- **Vol.33 官方判词全文（本次完整抓取，可直接引用）**："Spec-driven development is an emerging approach to AI-assisted coding workflows… We've seen many developers adopt this style (and have one of our own that we're sharing internally at Thoughtworks). Three tools in particular have recently explored distinct interpretations… Amazon's Kiro… GitHub's spec-kit… Tessl Framework… We find this space fascinating, though the workflows remain elaborate and opinionated… some generate lengthy spec files that are hard to review… **We may be relearning a bitter lesson — that handcrafting detailed rules for AI ultimately doesn't scale.**"（注意：点名 Kiro/spec-kit/Tessl 三工具的是 Vol.33 条目正文，非 Vol.34 新增。）
+- **官方 PDF 已定位但正文仍未能读**：https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2026/04/tr_technology_radar_vol_34_en.pdf （Vol.34 = 2026-04 出版，径直确认了前轮的日期口径）；本环境 web_fetch 不支持 `application/pdf` 内容类型，正文条目转载未获取。未找到 Vol.34 发布公告/官方社媒对 SDD 的点名文本。
+- **Vol.34 新增条目的官方确认（部分）**：OpenSpec 官方条目页 https://www.thoughtworks.com/radar/tools/openspec 直读：**Published Apr 15, 2026，Apr 2026 / Assess** ——前轮"Vol.34 新增 OpenSpec（Assess）"获官方直接确认，★→★★★。GitHub Spec Kit 条目页未在猜测 slug（/tools/spec-kit、/tools/github-spec-kit）下命中，前轮该项维持★★。
+- **对汇总表的更正**：TW Vol.34 行应改为"SDD 未在册（官方 NOT ON CURRENT EDITION，★★★ 直读）；新增 OpenSpec（Assess，官方确认）"；"无人背书、无人停评"的解读不变——概念仍处观望期，且 TW 明示"没带宽逐版复审旧 blip"，Vol.34 未评≠通过也未否决。

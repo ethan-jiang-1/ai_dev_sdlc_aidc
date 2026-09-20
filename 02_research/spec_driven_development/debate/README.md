@@ -29,7 +29,7 @@
 
 ## 2. 加权后的六点综合判断
 
-1. **概念层：观测未动，工具层开始体检**。TW Radar Vol.34（2026-04）SDD 概念维持 Assess，但新增 Spec Kit、OpenSpec 两个工具条目（均 Assess）——行业态度是"逐个体检"而非整体背书或否决。
+1. **概念层：TW 官方已不再收录 SDD 主条目（二轮补遗修正）**。Vol.34（2026-04）官方条目页明文 "NOT ON THE CURRENT EDITION"，timeline 仅剩 Vol.33（2025-11）一格 Assess——即 SDD 作为独立概念**已跌出当前版 Radar**；最新官方定级仍是 Vol.33 Assess（判词全文已落盘，含 "handcrafting detailed rules for AI ultimately doesn't scale"）。工具层：OpenSpec 获官方直读确认于 Vol.34 新增独立条目（Assess）；Spec Kit 的独立条目页未定位到，Vol.33 正文点名（Kiro/spec-kit/Tessl）不等同于独立条目，引用需区分。这与"话语退潮"（下条）同向：行业对 SDD 作为品类已降温，对具体工具仍在逐个体检。
 2. **话语退潮、工件固化**（2026H2 最重要信号）：公众讨论冷却（"plan mode 就够了"、SDD=新瀑布类比流通），但 GitHub/Google/AWS 同时把 spec/plan 工件制度化进 agent 平台。SDD 作为独立品类的高光已过，作为 agent 工作流默认工件层正在被大厂固化。
 3. **批判重心已迁移**：2025 的"waterfall 复辟/虚假控制感"（高权重但已成背景）→ 2026 转向**spec 漂移与维护留白（spec 债）**——团队向最硬证据是 spec-kit #1191（115👍，spec 无法随迭代保持同步）+ dbreunig 旗手自我推翻复盘（2026-03）；可复现性最强的是**成本经济学**（spec-kit #1401 实测 context tax 18.6k tokens）。
 4. **正面证据的天花板很明确**：迄今**没有任何独立量化生产率数据**，量化收益全部来自厂商或个人自述。最强独立团队证据是 FIXER（Spec Kit × Scrum，2026-04~08）：返工锐减、吞吐上升，但诚实报告估点失灵与 onboarding 爬坡。社区已收敛的健康形态共识：**小步 spec + 可执行验证 + 人守冲突裁决**。
@@ -47,5 +47,5 @@
 ## 4. 局限
 
 - Reddit 抓取 403（r/ExperiencedDevs 等缺席）；知乎 Kiro 高赞文 403 仅存目；InfoQ 企业篇正文截断未核实——均在分文件标注。
-- TW Vol.34 主条目维持 Assess 系高置信推断（blipUpdatedDate），非官方声明。
+- ~~TW Vol.34 主条目维持 Assess 系高置信推断~~ **已修正（二轮补遗）**：官方直读 "NOT ON THE CURRENT EDITION"，Vol.34 未收录 SDD 主条目；详见 §2.1 与 authoritative-verdicts.md 补遗节。
 - Gartner/Forrester 公开渠道未检出。

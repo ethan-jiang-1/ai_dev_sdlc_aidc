@@ -247,3 +247,72 @@ Spec Kit 的 Living-spec 模型是合格的替代（尤其已在 spec-kit 生态
 **三个最可能的死法与对策**（对应 §4）：spec 腐烂 → 上 CI 校验（M5）；评审瓶颈 → 两层评审+一人一 topic+不逐行读码（M1）；流程形式化 → Lite spec 默认 + skip_specs 豁免（M6/M7）。
 
 **证据缺口**（诚实声明）：Kiro/BMAD 侧缺公开的多人 spec 目录实例；Thoughtworks Radar 2026 对 SDD 的正式评级正文未能完整抓取（M9）；5-20 人区间（尤其 >6 人）没有比 M1 更大规模的自述案例——20 人以上只是 M1 模式的外推，不是实证。
+
+---
+
+## § 大规模团队案例补遗（2026-09-20 二轮）
+
+> 针对前轮证据缺口（>6 人团队无实证）的定向补挖。每条格式：日期 | URL | 团队规模 | 做法细节 | 效果与坑 | 证据性质。
+
+### M11. InfoQ 企业规模化落地篇（前轮截断的补全尝试）
+
+- **日期**：2026-02-19（英文版，Hari Krishnan 作，Thomas Betts 审）
+- **URL**：https://www.infoq.com/articles/enterprise-spec-driven-development/ ；中文版 https://www.infoq.cn/article/OOwOxKFZQbShKx1timMP
+- **团队规模**：文章对象是企业级/多团队 rollout，但正文未抓全，无具体人数
+- **做法细节**（经二手详细转述重构，见下）：指出 SDD 工具在企业规模化时的 **7 大障碍**——①工具全是开发者中心（PM/架构师/合规/QA 无席位）；②假设 mono-repo（企业是几十上百 repo，跨 repo feature 需要多个协同 spec，无工具支持）；③业务上下文与实现细节混在一份 spec 文件里，不可审计；④与 Jira/Linear 平行规划形成双事实源；⑤git 版本控制 ≠ 治理（diff 不回答"是否被授权、被谁评审"）；⑥spec 风格因人而异、无组织级标准；⑦brownfield 无法从零假设起步。作者提出 **Discover → Design → Task 三阶段跨 repo 协同流**：Discover 找出 feature 触及哪些 repo；Design 时业务上下文留在产品板、实现细节留在各 repo；Task 把 spec 拆成可执行单元分派给各 repo 的 agent。另提出关键失效分类：**spec→实现失败**（agent 没照 spec 做，工具问题）vs **意图→spec 失败**（spec 本身错了，治理问题——后者更危险，因为产出"完美实现了错误的东西"且通过一切自动检查）。
+- **效果与坑**：核心论点=企业 SDD 是"穿着工具外衣的治理问题"；瓶颈从写代码移到意图表达/协调/监督。
+- **证据性质**：**记者/作者深度分析，非单一企业自述**。抓取备注：本轮换四条途径（infoq.com 英文、infoq.cn 中文版、web archive——IA 临时离线 503、r.jina.ai 代理——401 匿名被拒）**正文仍未完整取得**；下条 M12 是对该文的逐段详细转述，内容可互证，但"一手正文已核验"仍不成立，引用时应注明。
+
+### M12. Victorino Group（咨询方）规模化实践报告
+
+- **日期**：2026-04-04
+- **URL**：https://victorinollc.com/thinking/enterprise-sdd-governance-gap （葡语版 https://victorino.com.br/thinking/lacuna-governanca-sdd-empresarial）
+- **团队规模**：咨询方视角，面向几十人以上企业，无单一团队人数
+- **做法细节**：逐段消化 M11 并叠加行业证据：①ThoughtWorks Radar Vol.33（2025-11）将 SDD 放 **Assess** 而非 Trial/Adopt，警告"elaborate and opinionated"流程与"重学苦涩教训"风险；②引用 Böckeler（ThoughtWorks/Fowler 团队）评 SDD 工具："I'd rather review code than all these markdown files"；③Scott Logic 实测 Spec Kit：写一行应用代码前先产出 **2,577 行 markdown**，耗时是迭代式 prompting 的 **10 倍**——这是本轮找到的最具体的"大规模前置 spec 失败复盘"之一；④引用 Adrian Cockcroft（2026-02 agent swarm 管理）："瓶颈不是写代码，是管理它们"；⑤Deloitte 2026 企业 AI 报告：仅 1/5 公司有成熟 agent 治理模型。给出 brownfield 渐进落地五建议：先建 harness（评审流/审批链/合规门禁/审计轨迹）再写 spec；用 MCP 连 Jira/Linear 消双事实源；**按团队渐进、不组织级推广**，传播 pattern 而非工具；业务上下文与实现 spec 分离；在需要之前先建正式 spec 评审流程。
+- **效果与坑**：坑集中在组织协调层（跨团队一致性、跨 repo spec 矛盾的仲裁程序缺失）；警告 SDD 会把"spec 不清晰"放大成"每个含糊需求都是无人评审的生产风险"。
+- **证据性质**：**咨询公司发布的企业实践报告**（任务目标③命中），作者 Thiago Victorino；自述由 Opus LLM 辅助研究+人工审核。对 M11 的转述详细且可逐点回查，但含咨询业务导流动机，量化数据（2577 行/10 倍）应回溯 Scott Logic 原文再引用。
+
+### M13. NodeSource 全公司 OpenSpec 落地（一手自述，目前最强的 ≥7 人一手案例）
+
+- **日期**：2026-08-12
+- **URL**：https://nodesource.com/blog/owning-agentic-sdlc-ai-development-orchestration
+- **团队规模**：公司工程组织整体 rollout，**具体人数未公开**（NodeSource 为数百人量级公司，工程团队推测 >7 人，但文中无数字——如实标注，不能当"几十人实证"用）
+- **做法细节**：全工程师统一自有 orchestrator（基于 OpenCode）+ 四种前端（TUI/桌面/Web/VS Code）共用同一 agent 服务；SDD 用 **OpenSpec 四工件流**：每个变更先出 proposal/design/scoped specs/task list 再写代码；人机在 Plannotator（浏览器评审 UI）对工件做 inline 评论回传 agent；批准后按 task list 实现，完成后**自动同步为 ZenHub epic/issue**（消双事实源）；**PostHog 按 call site 打遥测**：每条 trace 带skill 名、OpenSpec change 名、task 名、模型 profile、发起人，做按 feature/team/developer 的成本切片。skill 体系含 20 个技能，其中一类就叫 OpenSpec。
+- **效果与坑**：效果自述"每个变更都有从 proposal 到 merge 的纸面轨迹，SDD 因此变得 practical"；坑全是供应商侧的：黑盒账单（单次跑飞上下文可滚出六位数月账单）、限流中断 CI/评审循环、模型档位频繁更换需重调。未给量化效率数字。
+- **证据性质**：**公司工程博客一手自述**（作者 Adrián Estrada），有明确机制细节；规模未证实是主要保留项。
+
+### M14. 网易智企《AI Coding 企业落地指南》：7 家企业、3 人到百人
+
+- **日期**：2026-08-27（QCon 北京演讲另有 infoq.cn 报道页 https://www.infoq.cn/article/lpZPLmhGsOYWKApQrqY2 ，正文同被截断）
+- **URL**：https://www.csdn.net/article/2026-08-27/164119174 （指南全文需到 CodeWave 官网下载，本轮未取得）
+- **团队规模**：7 家企业案例，**覆盖 3 人到百人研发组织**——首次出现"百人"量级样本，但逐案人数只有 3 人/8 人两档被披露
+- **做法细节**：统一叙事（过去怎么干→卡点→初期踩坑→拐点→量化结果）；核心范式=Prompt 驱动 → **Spec 驱动**转折：陆仟里科技（3 人零开发背景）先用自然语言 prompt，"代码越生成越不可控、返工超手写"，切到结构化 spec 后才跑通上线；空格数智把 127 页 PRD 自动解析，AI 找出 31 个人工评审遗漏的需求缺陷；平台侧配套全链路代码审查/质量追溯/标准 SOP 模板。
+- **效果与坑**：量化自述：需求返工率 -60%+、研发周期 -40%+（如 8 人 60 天标准项目 → 3 人 16 天）；坑=单点提速不等于项目提速（IDC 引证：编码提速 30-50% 但端到端周期缩短不足 15%）、长程复杂任务准确率直线下降、Demo 到生产"最后一公里"。
+- **证据性质**：**厂商发布的企业案例集转述**（CSDN 报道 + 官方通稿），案例是一手项目但经厂商平台方筛选与包装，数字未经独立核验；引用时应标注"厂商白皮书级证据"。指南原件未取得，逐案 spec 组织/CI 门禁细节**缺**。
+
+### M15. 未命中与仍缺（如实标注）
+
+- **大型 OSS 项目用 spec workflow 协作的公开实例**：本轮搜索（英文/中文）未找到可核验的一手案例——大型 OSS 仍是外推区，与前轮结论一致。
+- **多团队（几十人以上）带具体人数与 CI 门禁细节的一手复盘**：M13 机制最全但人数未知，M14 有百人量级但是厂商转述且无 CI 门禁细节——">6 人实证"缺口收窄但**未闭合**。
+- **M11 正文**：四途径均失败（见 M11 备注），后续可等 IA 恢复后再试 web.archive.org。
+- 值得留意的方向：M11 的"意图→spec 失败 vs spec→实现失败"分类与 M12 的"先建治理 harness 再写 spec"建议，可作为前轮 §5 推荐清单的组织级补充——但两者均为分析/咨询文字，非实证。
+
+---
+
+## § Kiro/BMAD 团队实例补遗（2026-09-20 二轮）
+
+前轮缺口：Kiro/BMAD 缺公开的多人 spec 目录实例。本轮三路补挖结果：
+
+**① Kiro 企业工程师复盘（有增量，仍是转写级证据）**
+
+- **Delta Air Lines × AWS re:Invent 2025 session DVT209**《Kiro: Your agentic IDE for spec-driven development》（2025-12，讲者：AWS Rory Richardson、Delta 的 Vidheer、Kiro SA Sam）。日方 AWS 员工 Kazuya Iwami 的 Zenn 全文转写：https://zenn.dev/kiiwami/articles/99fe3c494283407e 。工程师侧披露：Delta 用 **dev champions 模式**推广 Kiro，采用率增长 1,948%；业务 PO 数天内自建可运行原型；spec tasks 经 MCP 同步进 Jira（8 stories/19 subtasks 自动建）、agent hooks 监听 tasks.md 变更。AWS 自述 two-pizza team 因 PM 直接进 spec 迭代循环，"数周→数小时"，但**下游 QA/测试跟不上 commit 速度**——与 M1"瓶颈转移到评审/验证"互证。
+- 证据性质：★★弱——一手 session 的**机器自动转写**（作者自注"自動生成、誤字脱字あり"），非官方文案，引述需留余地。
+
+**② GitHub 真实项目 `.kiro/` 目录：仍未找到可验证的生产实例**
+
+2026-09-20 多轮检索（GitHub 搜索、间接命中）只找到：模板/脚手架 repo（如 [BinarySword/kiro-project-template](https://github.com/BinarySword/kiro-project-template)，40+ steering docs——是模板不是团队使用证据）、教程 repo（yoshidashingo/getting-started-with-claude-code 的 steering 教学文档）、单人口碑/咨询博客。中文存在一篇《万字长文：团队落地 AI 辅助编程和 AI Specs 实战》（腾讯云开发者社区，https://cloud.tencent.com.cn/developer/article/2616190 ，★ 未核验正文，来源可信度中）。**结论：可验证的真实团队 `.kiro/` spec/steering 布局公开实例，仍然缺位**——前轮"把团队流程押在 Kiro 上证据不足"的判断维持不变。
+
+**③ BMAD 生态多人文档/复盘（找到 1 份高质量一手复盘）**
+
+- **OCTO Talks!（法国咨询公司）2026-03-06，Marvy Lungyeki《BMAD & Agents IA : une méthode qui change la donne》**：https://blog.octo.com/octo-bmad-and-agents-ia--une-methode-qui-change-la-donne 。客户项目一手复盘（作者身份 PO/顾问）：核心 bricks 2 周交付 vs 传统 feature team 3 个月；tech-writer agent 承担文档连续性；明确短板——**缺标准化审计指标（"何时介入、如何审计、用什么标准"三问无解）、EPIC↔User Story 关联不清、业务规则不显式、token 消耗高、无功能测试自动化**；并给出"混合 squad"组织图提案（人类敏捷仪式 × BMAD workflow）。证据性质：★★（一手复盘、单 mission 单人视角，无目录级 spec 布局披露）。
+- 旁证：[BMAD-METHOD GitHub Discussion #1617 "A way to use BMAD with multiple human team members?"](https://github.com/bmad-code-org/BMAD-METHOD/discussions/1617)——**标题本身即证据**：BMAD 的多人类成员协作用法在官方社区仍是开放讨论题，未见官方多人布局答案。证据性质：★。

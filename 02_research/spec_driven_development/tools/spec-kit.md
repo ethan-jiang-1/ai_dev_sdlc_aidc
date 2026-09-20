@@ -72,7 +72,7 @@ Spec Kit 是 **GitHub 官方开源**的 Spec-Driven Development（SDD）工具�
 
 ## ⑤ 采纳与影响力
 
-- **ThoughtWorks Radar 有独立条目 "GitHub Spec Kit"**（languages-and-frameworks 象限，https://www.thoughtworks.com/radar/languages-and-frameworks/github-spec-kit ，观测 2026-09-20 确认条目存在；条目定性文字为 JS 渲染未能提取，ring 状态待补）。同期 OpenSpec 也被收录——TW 认可 SDD 工具这一品类本身。
+- **ThoughtWorks Radar 条目情况（⚠ 2026-09-20 二轮补遗修正）**：Vol.33（2025-11）正文点名 spec-kit（并列 Kiro/Tessl）；但独立条目页 https://www.thoughtworks.com/radar/languages-and-frameworks/github-spec-kit 的 ring 状态至今未能核验（本轮官方直读未定位到该条目，前轮"独立条目"记录可能只是 Vol.33 正文点名，见 [`../debate/authoritative-verdicts.md`](../debate/authoritative-verdicts.md) 补遗节）。同期 OpenSpec 的 Vol.34 独立条目（Apr 2026 / Assess）获官方直读确认。引用时"被 TW 点名"成立、"有独立条目"待核。
 - **大厂背书**：GitHub（Microsoft）官方开源并持续投入；集成列表本身就是一份"厂商背书链"——IBM Bob、Atlassian RovoDev、阿里 Lingma、腾讯 CodeBuddy、Google Gemini/Antigravity、字节 Trae 等或被 Spec Kit 集成、或主动适配。
 - **社区案例**：社区 extension/preset/bundle catalog 已成型（数十个第三方扩展）；第三方教学与评测文章大量出现（Scott Logic《Putting Spec Kit Through Its Paces》、腾讯云社区选型对比文等）。Cory House（React 训练师）公开记录用 Spec Kit 实现 feature 的体验（coryhouse.dev，2025-09）。
 - **参照系**：在 SDD 品类中体量第一梯队（vs OpenSpec ~70k、BMAD ~53k，均 API 观测 2026-09-20，详见 `../sdd-tooling-landscape-2026-09.md`）。

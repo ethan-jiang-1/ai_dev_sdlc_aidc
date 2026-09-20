@@ -38,9 +38,9 @@
 - 工具格局：公认头部 **Spec Kit（大厂官方）+ Kiro（商业企业验证）+ OpenSpec（中立轻量）**；Superpowers 社区热度第一（~289k stars）但属方法论/skills 形态；BMAD 为重流程流派。
 - 趋势判断**以 [debate/README.md](debate/README.md) 为最新权威**（2026H2：话语退潮 + 工件固化，结构性企稳）；本文的"两极辩论期"是 2026-09-20 快照口径，[sdd-tooling-landscape](sdd-tooling-landscape-2026-09.md) 同理。
 
-## 已知缺口（动态清单）
+## 已知缺口（动态清单，2026-09-20 二轮更新）
 
-1. ~~Superpowers 零覆盖~~（tools/ 已补）~~2026H2 信号~~（debate/ 已补）~~大规模团队案例~~（二轮补挖中，见 debate/team-practices.md 补遗）
+1. ~~Superpowers 零覆盖~~（tools/ 已补）~~2026H2 信号~~（debate/ 已补）~~大规模团队案例~~（已补：NodeSource/网易智企/Scott Logic，"几十人以上一手实证"仍缺）~~Kiro/BMAD 团队实例~~（已补：仅弱证据——Delta Air Lines 机器转写 + OCTO Talks PO 复盘；`.kiro/` 生产实例仍缺位）~~TW Vol.34 定级~~（已官方直读确证：SDD 主条目 NOT ON CURRENT EDITION）
 2. **思想谱系未梳理**：SDD 与 MDD/MDA、形式化方法、Design by Contract、BDD 的承继关系只有批判面零星提及，无正面梳理——补齐前，"SDD=新瀑布"类比只能当观点不能当史实引用。
 3. **替代/后继形态未成篇**：批判面指向的验证层替代（VSDD、compilable specs、plan mode 派、context engineering）散见各文件，无专门梳理。
 4. 全部数据为 2026-09-20 单日快照，趋势判断依赖少量第三方历史锚点（如 OpenSpec 55.9k @06-22），无自建时间序列。
