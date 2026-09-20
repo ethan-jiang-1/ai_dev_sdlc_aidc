@@ -33,10 +33,17 @@
 | [debate/team-practices.md](debate/team-practices.md) | 团队协作/工程控制/迭代机制（含活样本与推荐组合） | 2026-09-20 |
 | [debate/chinese-community-verdicts.md](debate/chinese-community-verdicts.md) | 中文社区评判（结构性偏差已标注） | 2026-09-20 |
 
-## 一句话结论（详见上表文件）
+## 一句话结论（层级不同，引用时注意时效）
 
-- 公认头部：**Spec Kit（大厂官方）+ Kiro（商业企业验证）+ OpenSpec（中立轻量）**；Superpowers 社区热度第一（~289k stars）但属方法论/skills 形态；BMAD 为重流程流派。
-- 整体趋势：**上升，进入两极辩论期**（TW Radar 收录 vs HN 批判潮；claude-task-master 停滞标志工具层洗牌）。
+- 工具格局：公认头部 **Spec Kit（大厂官方）+ Kiro（商业企业验证）+ OpenSpec（中立轻量）**；Superpowers 社区热度第一（~289k stars）但属方法论/skills 形态；BMAD 为重流程流派。
+- 趋势判断**以 [debate/README.md](debate/README.md) 为最新权威**（2026H2：话语退潮 + 工件固化，结构性企稳）；本文的"两极辩论期"是 2026-09-20 快照口径，[sdd-tooling-landscape](sdd-tooling-landscape-2026-09.md) 同理。
+
+## 已知缺口（动态清单）
+
+1. ~~Superpowers 零覆盖~~（tools/ 已补）~~2026H2 信号~~（debate/ 已补）~~大规模团队案例~~（二轮补挖中，见 debate/team-practices.md 补遗）
+2. **思想谱系未梳理**：SDD 与 MDD/MDA、形式化方法、Design by Contract、BDD 的承继关系只有批判面零星提及，无正面梳理——补齐前，"SDD=新瀑布"类比只能当观点不能当史实引用。
+3. **替代/后继形态未成篇**：批判面指向的验证层替代（VSDD、compilable specs、plan mode 派、context engineering）散见各文件，无专门梳理。
+4. 全部数据为 2026-09-20 单日快照，趋势判断依赖少量第三方历史锚点（如 OpenSpec 55.9k @06-22），无自建时间序列。
 
 ## 约定
 

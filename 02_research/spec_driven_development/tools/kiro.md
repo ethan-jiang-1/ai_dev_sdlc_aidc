@@ -21,7 +21,7 @@ Kiro 是 AWS 内部一个小团队打造的"agentic 开发环境（IDE/CLI/Web/M
 
 **三分文件**（每个功能一个 spec 目录）：
 
-1. **requirements.md** —— 需求列表，每条需求以 User Story（"As a…"）表述 + 验收标准。官方文档采用 **EARS 格式**（Easy Approach to Requirements Syntax，"WHEN/IF…THE SYSTEM SHALL…"）；独立观察者实测中也见到 GIVEN/WHEN/THEN 风格（来源：官方 specs 文档 + [Birgitta Böckeler, martinfowler.com, 2025-10-15](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)，观测 2025-09 使用）。
+1. **requirements.md** —— 需求列表，每条需求以 User Story（"As a…"）表述 + 验收标准。官方文档采用 **EARS 格式**（Easy Approach to Requirements Syntax，"WHEN/IF…THE SYSTEM SHALL…"）；独立观察者实测中也见到 GIVEN/WHEN/THEN 风格（来源：官方 specs 文档 + [Birgitta Böckeler, martinfowler.com, 2025-10-15](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)，观测 2025-09 使用）。EARS 本身的语法与工程方法属 RE 层职责：完整模式表与教程见本仓库 [`../../requirements_engineering/deep_research_topics/topic-03-ears-tutorial.md`](../../requirements_engineering/deep_research_topics/topic-03-ears-tutorial.md)（指针，不复制）。
 2. **design.md** —— 技术设计：组件架构、数据流、数据模型、错误处理、测试策略、迁移策略等章节。
 3. **tasks.md** —— 可逐条执行、可回溯到需求编号的任务清单，Kiro UI 为每项任务提供"逐个运行 / 查看变更"的交互。
 
