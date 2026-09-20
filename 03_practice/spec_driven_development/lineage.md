@@ -6,7 +6,7 @@
 
 ```yaml
 metadata:
-  file: 02_research/spec_driven_development/lineage.md
+  file: 03_practice/spec_driven_development/lineage.md
   accessed_at: 2026-09-20
   method: web_search + web_fetch 逐节点核实原始出处
   key_sources_verified:

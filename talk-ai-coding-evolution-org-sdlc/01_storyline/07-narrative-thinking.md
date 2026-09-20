@@ -12,7 +12,7 @@
 | `_reference/rawdata_dsh-digested/` | DSH 源码消化（harness-idea / session-and-loop / capability-seams / composition） | 插件图 + 事件流 + loop + seam 三角色 + 参与阶梯 |
 | `_reference/rawdata_dsh-faq-on-digested/` | 二次研究问答（07/08/09 为主） | **三条腿**（知识外置/正确路径/可执行反馈）+ 可替换率 39.3% + 敢放手/省手/可复用 |
 | `_reference/rawdata_dsh-plugin-*` | 插件收益阶梯 / 生态分布 / seam 成熟度 | 生态证据、价值阶梯、饱和 vs 缺口 |
-| `04_output/deck_ai_sdlc_keynote/` | 既有主 Keynote（信息加工链隐喻） | **只看了一眼**——确认它听众不同（软件+业务混合）、本 talk 独立成篇不承接 |
+| `05_output/deck_ai_sdlc_keynote/` | 既有主 Keynote（信息加工链隐喻） | **只看了一眼**——确认它听众不同（软件+业务混合）、本 talk 独立成篇不承接 |
 
 ## 二、被什么启发（关键触点）
 

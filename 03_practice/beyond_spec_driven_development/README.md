@@ -1,6 +1,8 @@
 # SDD 的替代与后继形态——批判面指向的出路到底长什么样
 
 > **本目录结构（2026-09-20 升格为独立子目录）**：本 README 是总览（机制速览 + 光谱图 + 结论）；五个形态各自深挖成篇——深挖版与本文摘要**以各分篇为权威**，本文不复制分篇正文。
+>
+> **2026-09-21 二次升格**：经用户定名，本目录自 `spec_driven_development/alternatives/` 升格为独立主题目录（"SDD 批判之后，控制 AI 写代码的形态光谱"），当日先落位 `02_research/`、同日归入实践层 `03_practice/beyond_spec_driven_development/`。与 SDD 工具层实践的分工指针见 [`../spec_driven_development/README.md`](../spec_driven_development/README.md)；原路径不保留实体，只在该处留指针。
 
 | 分篇 | 形态 | 一句话 |
 |---|---|---|
@@ -13,6 +15,8 @@
 **阅读路径建议**：① 先看两张总图（光谱 → 验证迁移）建立框架 → ② 按优先级读分篇（01 → 02 → 03），每篇先图后文 → ③ 需要溯源进对应证据档案（全部逐字摘录 + 引用链核验，2026-09-21 审计）→ ④ 04/05 仅作对照。
 
 **研究优先级（2026-09-21 用户定，编号对应重排后）**：**01 可验证 spec / 02 context engineering / 03 harness 治理为重点路线**（深挖 + 证据档案 + 审计齐备）；**04 plan mode / 05 测试优先为背景参照、不作为重点**——按用户经验：plan mode 是默认实践，够不上独立"后继形态"；测试优先是既有工程常识的延续，不是新范式。引用 04/05 时作对照用，不作主张依据。
+
+**最靠谱判断（2026-09-21，captain 判断，与光谱结论第 4 条同向但判据为其补充）**：03 harness 治理最靠谱——三点判据、当日补查的新实证（SSRN 119-repo 实证 null result 全文回源）与二至五名排序见文末 §7。
 
 ### 证据档案（逐字摘录 + 引用链核验，全部经 2026-09-21 审计）
 
@@ -38,12 +42,14 @@
 ```yaml
 topic: SDD 的替代/后继形态（验证优先、plan mode、context engineering、harness 治理、测试优先）
 accessed_at: 2026-09-21  # 一轮 2026-09-20；二轮/三轮深挖与三轮证据审计至 2026-09-21
+captain_verdict: 2026-09-21  # §7 判断层：harness 治理最靠谱（判据 + 当日 SSRN/IEEE 补查，新证据此前未收）
+promoted_at: 2026-09-21  # 自 spec_driven_development/alternatives/ 升格为独立主题目录（当日先落 02_research、同日归入实践层 03_practice/），用户定名 beyond_spec_driven_development
 collector: delegated research agent
-scope: 2026 年（尤其 2026Q2–Q3）社区材料；承接 debate/critiques.md「批判观点聚类」第 5 条的出路指向
+scope: 2026 年（尤其 2026Q2–Q3）社区材料；承接 ../spec_driven_development/debate/critiques.md「批判观点聚类」第 5 条的出路指向
 related:
-  - debate/critiques.md          # 批判面（本文的"问题从哪来"）
-  - ../comparison.md             # SDD 工具横比（光谱图左端的素材）
-  - debate/authoritative-verdicts.md
+  - ../spec_driven_development/debate/critiques.md          # 批判面（本文的"问题从哪来"）
+  - ../spec_driven_development/comparison.md             # SDD 工具横比（光谱图左端的素材）
+  - ../spec_driven_development/debate/authoritative-verdicts.md
 weights: 高=大厂/学术/高热帖；中=有实证的博客/团队案例；低=个人观点
 limitations:
   - isoform.ai《The Limits of Spec-Driven Development》正文抓取失败（critiques.md 已记录），facts 路线以 av/facts（GitHub, HN 7 分）为主要锚点。
@@ -168,3 +174,40 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 3. 越靠右越抗漂移（无工件即无 spec 债），但表达力越低——"为什么这样设计"与跨服务语义契约只有左半能承载，这决定了重工件形态不会归零，只会收缩到值得它的场景。
 4. Harness 治理是唯一同时吸收全部三条重批判（验证缺失、漂移留白、context tax）的形态，也是唯一有学术化（arXiv 2609.00252）与大厂一手（OpenAI）双重背书的中间路线，大概率是团队级的收敛点。
 5. 对个人与小团队，2026 年的事实默认已经右移到"plan mode + AGENTS.md + 测试先行"；为每个 feature 维护 spec 工件链正在变成需要特别论证的重决策，而非默认动作。
+
+---
+
+## 7. 判断：哪条 alternative 最靠谱（2026-09-21，captain 判断 + 当日补查）
+
+> **判断人与方法**：2026-09-21 由会话 captain 通读本目录全部分篇、8 份证据档案与 debate/ 综合后给出；另做两路当日网络补查（SSRN 论文 PDF 全文已回源并存档、IEEE 论文仅确认存在性）。本节是**判断层**，不复制分篇正文，证据细节一律回指分篇与档案；逐字引句仅限本次直接回源的新文献。
+
+**结论：03 harness 治理派最靠谱。**"最靠谱"的准确含义有三层，比"团队级收敛点"更强：
+
+**判据一：五条里唯一拿到受控因果证据。** 同一模型、只改执行链路 → 性能差数倍，三群独立得出、接力引用：SWE-Bench Mobile（KDD '26 同行评审，同模型跨 scaffold 最大 **6×**）、Stanford/MIT/KRAFTON Meta-Harness（独立复现，优化后 Haiku 4.5 登顶 TerminalBench-2）、清华 NLAH（消融显示外挂 verifier 模块反而有害，verifier −0.8 SWE-bench / −8.4 OSWorld——**基于 v1，v2 已换后端待复核**）。harness 是一级工程对象已从观点变成可测量事实。其余四条的证据形态全是叙事、采用率或群体辩论，无受控对照。→ 证据：[03a](03a-harness-convergence-evidence.md)、[03b](03b-harness-academic-and-metrics.md)。
+
+**判据二：光谱不是五选一，是四个部分解 + 一个框架解，harness 是那个框架。** 逐条看四条"替代"路线的成熟形态：[02c](02c-context-vs-harness.md) 已判定 **context ⊂ harness**（学术操作化 + CEO 表态 + 受控实验 + 多 practitioner 四层位独立同向，关系判定为最强）；01 的门禁落点（hooks/CI/command-fact/CodeLeash"门禁移出模型"）就是 harness 的 sensor 层；[05](05-test-first.md) Consort 的"agent 不可编辑的控制"（确定性编排器 + 不可变测试 + 真实分支绿灯）是 harness 手法对 TDD 的应用；[04](04-plan-mode.md) 的 `update_plan` opt-in（Codex PR #41744）与自动进入实验表明内置规划正在被 harness 化为可拆卸组件（04/05 按"对照"口径引用其机制事实，不引其主张）。四条路线没有一条以独立范式存活，全部长成了 harness 的部件——**赢家不是击败对手的那条，是吸收对手的那条**。
+
+**判据三：即使具体处方有错，诊断也对（工程上最值钱的性质）。** 这条路线自己承认的未知都是结构性的：OpenAI 自认全 agent 生成系统的多年架构一致性如何演化"不知道"（原文自述，且原文 403 依赖双消化稿交叉）；清华消融证明机制堆叠有害（harness 自身也要打扫）；Böckeler 之问（harness 覆盖率怎么度量，[03b](03b-harness-academic-and-metrics.md) §B）与 Ronacher 之塔（团队理解层腐烂无任何指标）仍是开放黑洞。它把"自己错了"变成输入的方式（每次犯错 → 工程化消灭该错误类别的棘轮 + 传感器），恰好就是它自己的解法——一条能自我纠错的路线才谈得上"靠谱"。
+
+### 7.1 当日补查的新证据（2026-09-21，此前未收）
+
+| 证据 | 内容 | 对判断的意义 | 强度 |
+|---|---|---|---|
+| [Does Spec-Driven Development Reduce Defects?](https://zenodo.org/records/19432099)（Brenn Hill，SSRN working paper，2026-04；[PDF](https://zenodo.org/records/19432099/files/ssrn-sdd-null-result.pdf) 全文已回源，本地存档 `.tmp-sdd-alternatives-check/`） | 119 个 OSS 仓库、88,052 个 PR（剔除 12,195 个 bot PR）、25,209 份 spec 工件，按 SDD 工具自己主张的质量维度打分、SZZ 回溯缺陷、同作者自对照 + 12 项稳健性检验（倾向得分匹配、复杂度分层、AI/人类分组）。**五条厂商质量主张全部不成立**：合并比较 spec'd PR 缺陷率反而更高（OR=1.20，作者归因 confounding by indication：越难的任务越写 spec）；同作者口径 +1.4pp（p=0.003）；spec 质量分数不能预测更少缺陷（p=0.164）或更少返工（p=0.860）；spec 不能约束 AI 代码范围（p=0.997）。唯一保护信号出现在**无 AI 采用**的仓库（返工更少，p=0.014）；AI 标记 PR 子样本内 spec 无效应（p=0.424/0.399）。关键句（逐字）："The specification tells the AI what to build. It does not tell the AI what it forgot to specify. **Direction is not quality.**"；"Specifications are, in effect, a lossy compression of code."。另一细节：对 100,247 个 PR 做 `.specify/`/`.speckit/`/`.kiro/`/spec-kit 文本检索**零匹配**——样本里没有一个仓库在用 SDD 工具链 | ①从批判面外部给 03 补枪：质量不来自文档工件，来自验证回路——正是 harness 派核心命题；②同时是 01（裸 spec 不可验证）与 05（表达力上限）的外部佐证，并支撑光谱整体右移的判断（真实 OSS 世界对 spec 工件链的采用为零）；③部分填上 debate/README §2.4"迄今没有任何独立量化生产率数据"的缺口（缺陷面、OSS 范围） | 中：独立研究者、大样本、同作者自对照可信；但 working paper、未预注册（作者自列）、基础 SZZ 误归因率 46–71%（作者自引 da Costa et al. 2017，且 spec'd PR 改动更大可能造成差分噪声）、测的是有机 spec 而非 SDD 工具产物、OSS 便利样本、多数 PR 早于 agentic 时代（5,989 个 AI 标记 PR 为最近似代理） |
+| [Harness Engineering for AI Coding Agents: Emerging Practices and Principles](https://ieeexplore.ieee.org/document/11634633)（IEEE Xplore） | 存在性确认（2026-09-21 检索命中；页面 JS 渲染未取得正文） | harness engineering 已进入 IEEE 出版层，03 的学术化不止 arXiv 一条线 | 低（仅存在性，未回源正文；引用前必须先回源） |
+
+### 7.2 二至五名的一句话排序
+
+| 形态 | 排序理由 |
+|---|---|
+| 01 可验证 spec | **赔率最高的长期赌注，不是今天的答案。** 学术引擎五条最猛（RISC-V 全流程流片零人写 RTL、MakerDAO 等 23 个真实合约证明、Verus-SpecGym 前沿模型 77.8%），但工业级成功案例全部"人类垄断陈述层"、完整闭环无一例（[01b](01b-verifiable-academic.md) §4.3），意图没有 oracle（Lahiri：spec 正确性唯一 oracle 是用户本人）+ 不可判定性 + proxy 与生成器共同演化三重结构性障碍（[01b](01b-verifiable-academic.md) §6.3），产品层空白（六路调研：spec→测试编译器 0–118★、HN 零讨论、零商业化，且多数把 spec 当一次性燃料丢弃）。作为 2027+ 窄域赌注（合约/内核/解析器）看好，作为通用路线不成立 |
+| 02 context engineering | **必要、最便宜、采用最广，但它是层不是范式。** [02c](02c-context-vs-harness.md) 判定 context ⊂ harness；自身量化证据是"有用但不保证、写错倒赔"（CTXbench：LLM 自生成 context file 成功率 -2~3% 且成本 +20%+，手写仅边际 +4% 伴随成本 +19%；Umans：无一组配置完全匹配规则），且承载不了跨服务语义契约与"为什么"（[02](02-context-engineering.md) §1.3/§4） |
+| 05 测试优先 | **最有战斗力的组件，单独当范式有硬上限。** 测试是唯一骗不过的验证器（verify 与 define 合一），但表达力上限有 24 次重复实验：单轮基线 24/24 次只建 6/8 条规则、丢的总是同样两条钱规则，换最强模型照丢（[05](05-test-first.md) §4.1）——"测试无法在没人想到要写的那条规则上失败" |
+| 04 plan mode | **不是范式，是默认实践，且正被 harness 化。** 自动进入 plan mode 实验 + `update_plan` opt-in 表明内置规划正变成 harness 里可拆卸的 planning surface（[04](04-plan-mode.md) §4）——与本 README 开头"背景参照"的定性一致 |
+
+### 7.3 本判断的局限（诚实声明）
+
+- SSRN 论文为 working paper、未预注册，测的是 OSS 有机 spec 而非 SDD 工具产物——它支持"spec 工件 ≠ 质量"的批判面，**不能直接证明"任何 harness 配方有效"**；受控学术证据证明的是"harness 影响巨大"，不是"OpenAI 式配方就是对的配方"。
+- 03 的旗舰案例（OpenAI 1500 PR / 1M 行）仍是自述、原文 403 依赖双消化稿交叉，1500 PR 的质量无独立验证；5–20 人团队级的公开 harness 治理案例仍缺位（[03](03-harness-governance.md) §6-5），worldmonitor 自评 ~25% 是唯一半程样本。
+- §7.2 对 01 的排序引用了 04/05 目录内材料的对照级证据（Smart 实验、update_plan 动向），按本 README 开头的研究优先级口径，这些只作对照不作主张依据。
+- 本节为会话 captain 的独立判断，与光谱结论第 4 条同向但判据为其补充（受控因果证据 + 吸收结构 + 新实证），非替代；后续新证据若推翻 §7.1 任一条，应回到此节修订而非另起炉灶。

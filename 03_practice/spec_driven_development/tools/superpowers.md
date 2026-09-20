@@ -10,7 +10,7 @@
 > | 一手源 | GitHub API（repos + search 双端点交叉）、官方 README（main 分支）、作者发布博文（blog.fsck.com, 2025-10-09） |
 > | 版本 | 最新 release v6.4.1（2026-09-19 发布） |
 > | License | MIT |
-> | 本文归属 | `02_research/spec_driven_development/tools/` |
+> | 本文归属 | `03_practice/spec_driven_development/tools/` |
 
 ---
 

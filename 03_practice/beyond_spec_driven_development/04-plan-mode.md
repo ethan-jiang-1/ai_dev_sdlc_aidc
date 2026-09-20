@@ -4,10 +4,10 @@
 topic: SDD 替代形态之二：plan mode 派（规划内嵌于 agent harness）
 accessed_at: 2026-09-20
 collector: delegated research agent
-base: ../alternatives.md 第 2 节（本文在其基础上深挖，不复制原文）
+base: ./README.md 第 4 节（原单文件底稿 alternatives.md 第 2 节，2026-09-21 重排；本文在其基础上深挖，不复制原文）
 related:
-  - ../alternatives.md            # 五形态总览与光谱图
-  - ../debate/critiques.md        # 批判面来源
+  - ./README.md                   # 五形态总览与光谱图
+  - ../spec_driven_development/debate/critiques.md        # 批判面来源
 weights: 高=官方 docs / 创始人访谈 / GitHub PR；中=Nearform/技术博客；低=HN 回帖与个人实践
 key_corrections:
   - "Nearform 反方文的实际发布日期是 2026-03-18（作者 Luca Lanziani），底稿标注的 2026-09 不准；其姊妹比较篇更早。"
@@ -23,7 +23,7 @@ limitations:
 
 ## 0. 定位：本文深挖什么
 
-底稿（alternatives.md 第 2 节）给出的骨架是：plan mode = 不留任何 spec 工件、规划是 harness 内置的一次性阶段、"够了"论 vs Nearform 反方。本文补五层：各家机制差异的官方核实、"就够了"正反逐条对照、社区进阶玩法、"不再需要 plan mode"说法的溯源、以及适用边界的收口。
+底稿（本 README 第 4 节；原单文件底稿 alternatives.md 第 2 节）给出的骨架是：plan mode = 不留任何 spec 工件、规划是 harness 内置的一次性阶段、"够了"论 vs Nearform 反方。本文补五层：各家机制差异的官方核实、"就够了"正反逐条对照、社区进阶玩法、"不再需要 plan mode"说法的溯源、以及适用边界的收口。
 
 ---
 

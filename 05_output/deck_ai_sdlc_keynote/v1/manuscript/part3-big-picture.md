@@ -6,7 +6,7 @@ version: v1
 status: draft
 sources:
   - research/ (cross-cutting)
-  - 03_enterprise/ai_case/
+  - 04_enterprise/ai_case/
 ---
 
 # PART 3: THE BIG PICTURE — Productivity × Communication × Organization

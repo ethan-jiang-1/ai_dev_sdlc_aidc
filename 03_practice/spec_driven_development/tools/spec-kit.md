@@ -127,6 +127,6 @@ Spec Kit 是 **GitHub 官方开源**的 Spec-Driven Development（SDD）工具�
 | 9 | https://github.com/github/spec-kit/issues/75 , /issues/1092 , /issues/1401 | 一手（官方 issue，批评部分） |
 | 10 | https://marmelab.com/blog/2025/11/12/spec-driven-development-waterfall-strikes-back.html | 二手（评论） |
 | 11 | https://blog.scottlogic.com/2025/11/26/putting-spec-kit-through-its-paces-radical-idea-or-reinvented-waterfall.html | 二手（评论） |
-| 12 | 本仓库交叉验证：`02_research/spec_driven_development/sdd-tooling-landscape-2026-09.md`（观测同日） | 内部 |
+| 12 | 本仓库交叉验证：`03_practice/spec_driven_development/sdd-tooling-landscape-2026-09.md`（观测同日） | 内部 |
 
 > 未决项：TW Radar 该条目的 ring 状态（Assess/Trial 等）因页面 JS 渲染未提取到，后续可用 TW Radar JSON/移动端源补一次回源。

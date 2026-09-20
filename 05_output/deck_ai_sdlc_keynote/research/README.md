@@ -64,7 +64,7 @@ research/
 |------|--------|------|
 | `software/` | `../../../01_sources/field_samples/fable5/` | 16 位一线开发者使用 Fable 5 的真实信号（Willison, Mollick, Krieger, Klaassen, Vincent 等） |
 | `software/` | `../../../01_sources/reference/kol/` | 14 位 KOL 深度拆解 + Deer Valley/Engelberg/Pragmatic Summit + 跨公司变革共识 + Fable 5 信号合成 |
-| `business/` | `../../../03_enterprise/business_bpm/` | 7 轮探索 + 14 个 findings 文件：BPM = SDLC 等价物、Framed Autonomy、四层架构、竞争格局 |
+| `business/` | `../../../04_enterprise/business_bpm/` | 7 轮探索 + 14 个 findings 文件：BPM = SDLC 等价物、Framed Autonomy、四层架构、竞争格局 |
 
 ### software/ 源目录速查
 
@@ -83,11 +83,11 @@ research/
 
 | 想看什么 | 路径 |
 |---------|------|
-| BPM 与 SDLC 的等价论证 | `../../../03_enterprise/business_bpm/findings/bpm-and-sdlc-equivalence/` |
-| Framed Autonomy 从理论到实现 | `../../../03_enterprise/business_bpm/findings/agentic-orchestration/` |
-| Office 变成 Agent 平台 | `../../../03_enterprise/business_bpm/findings/office-and-collaboration-tools/` |
-| 竞争格局与分类 | `../../../03_enterprise/business_bpm/findings/terminology-and-taxonomy/` |
-| 探索全过程轨迹 | `../../../03_enterprise/business_bpm/exploration-trajectory.md` |
+| BPM 与 SDLC 的等价论证 | `../../../04_enterprise/business_bpm/findings/bpm-and-sdlc-equivalence/` |
+| Framed Autonomy 从理论到实现 | `../../../04_enterprise/business_bpm/findings/agentic-orchestration/` |
+| Office 变成 Agent 平台 | `../../../04_enterprise/business_bpm/findings/office-and-collaboration-tools/` |
+| 竞争格局与分类 | `../../../04_enterprise/business_bpm/findings/terminology-and-taxonomy/` |
+| 探索全过程轨迹 | `../../../04_enterprise/business_bpm/exploration-trajectory.md` |
 
 ---
 

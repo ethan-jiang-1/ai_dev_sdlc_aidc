@@ -7,7 +7,7 @@ status: draft
 sources:
   - research/business/topics/
   - research/business/storylines/
-  - 03_enterprise/business_bpm/
+  - 04_enterprise/business_bpm/
 pending:
   - S2.5 中国传统行业 AI 落地案例
 ---

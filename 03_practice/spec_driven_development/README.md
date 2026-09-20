@@ -1,6 +1,6 @@
 # Spec-Driven Development (SDD) 研究目录
 
-> 独立研究层，2026-09-20 从 `requirements_engineering/deep_research_topics/topic-07` 升格而来。
+> 独立主题目录（2026-09-21 起属实践层 `03_practice/`），2026-09-20 从 `requirements_engineering/deep_research_topics/topic-07` 升格而来。
 > 话题体量（工具生态 × 方法论辩论 × 厂商采纳三条线）已超出单 topic 承载力。
 
 ## 与 `requirements_engineering/` 的分工（不重叠）
@@ -20,7 +20,7 @@
 | [comparison.md](comparison.md) | **横向比较**：总览矩阵、三条路线分野（硬工件链/行为纪律/角色化流程）、选型速查、趋势总结 | 2026-09-20 |
 | [comparison-field-reports.md](comparison-field-reports.md) | **实战比较**：只收一线团队复盘的"spec 写作质量 × 工程控制"两维对比，每格挂真实案例 | 2026-09-20 |
 | [lineage.md](lineage.md) | 思想谱系：MDD→DbC→形式化方法→BDD→SDD，史实/分析分层 | 2026-09-20 |
-| [alternatives/](alternatives/README.md) | 替代/后继形态（独立子目录）：总览+五形态深挖+2 张 SVG 图 | 2026-09-20 |
+| [../beyond_spec_driven_development/](../beyond_spec_driven_development/README.md) | **已升格为独立研究目录**（2026-09-21 用户定名 `beyond_spec_driven_development`，原 `alternatives/` 不再保留实体）：SDD 批判之后的形态光谱——总览含 §7 最靠谱判断（harness 治理）+五形态深挖+证据档案 | 2026-09-20/21 |
 | [tools/spec-kit.md](tools/spec-kit.md) | GitHub Spec Kit 深挖 | 2026-09-20 |
 | [tools/openspec.md](tools/openspec.md) | OpenSpec 深挖（change-delta 双目录机制） | 2026-09-19/20 |
 | [tools/superpowers.md](tools/superpowers.md) | Superpowers 深挖（含"它不是传统 SDD"辨析） | 2026-09-20 |
@@ -45,7 +45,7 @@
 
 1. ~~Superpowers 零覆盖~~（tools/ 已补）~~2026H2 信号~~（debate/ 已补）~~大规模团队案例~~（已补：NodeSource/网易智企/Scott Logic，"几十人以上一手实证"仍缺）~~Kiro/BMAD 团队实例~~（已补：仅弱证据——Delta Air Lines 机器转写 + OCTO Talks PO 复盘；`.kiro/` 生产实例仍缺位）~~TW Vol.34 定级~~（已官方直读确证：SDD 主条目 NOT ON CURRENT EDITION）
 2. ~~思想谱系未梳理~~（已补：[lineage.md](lineage.md)——"SDD=MDD 的承诺+BDD 的模板，LLM 改变成本结构后的第三次重试"；"SDD=新瀑布"现在有史实坐标可对照）
-3. ~~替代/后继形态未成篇~~（已补并升格为子目录 [alternatives/](alternatives/README.md)——五形态深挖 + SVG 光谱图；团队级收敛点=harness 治理路线）
+3. ~~替代/后继形态未成篇~~（已补，2026-09-21 进一步升格为独立研究目录 [../beyond_spec_driven_development/](../beyond_spec_driven_development/README.md)——五形态深挖 + SVG 光谱图；团队级收敛点=harness 治理路线）
 3.5 实战团队场景比较已补：[comparison-field-reports.md](comparison-field-reports.md)——只收一线复盘的"spec 写作质量 × 工程控制"横向比较，每格挂真实案例、无证据的格子如实标注。
 4. 全部数据为 2026-09-20 单日快照，趋势判断依赖少量第三方历史锚点（如 OpenSpec 55.9k @06-22），无自建时间序列。
 

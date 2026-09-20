@@ -4,7 +4,7 @@
 >
 > 与其他 5 个主题不同，本主题是 **exploration + exploitation 混合**：需要第一手观察 + 实证证据，不能靠文献综述一次性解决。
 >
-> **指针（2026-09-20）**：SDD 工具生态与趋势的最新全景已升格为独立研究层 [`02_research/spec_driven_development/`](../../spec_driven_development/README.md)（2026-09 观测）；本 topic 的时间窗仍为 2024Q3–2026Q1，二者分工见该目录 README。
+> **指针（2026-09-20；2026-09-21 随实践层拆分更新路径）**：SDD 工具生态与趋势的最新全景已升格为独立主题目录 [`03_practice/spec_driven_development/`](../../spec_driven_development/README.md)（2026-09 观测）；本 topic 的时间窗仍为 2024Q3–2026Q1，二者分工见该目录 README。
 
 ## 0. 研究线元数据
 

@@ -41,8 +41,8 @@ feeds_into:
 | SDLC 叙事线（事件/人物） | `../../research/software/storylines/` |
 | BPM 主题 | `../../research/business/topics/` |
 | BPM 叙事线 | `../../research/business/storylines/` |
-| 软件案例（Block, Cloudflare） | `../../../../03_enterprise/ai_case/` |
-| BPM 源材料 | `../../../../03_enterprise/business_bpm/` |
+| 软件案例（Block, Cloudflare） | `../../../../04_enterprise/ai_case/` |
+| BPM 源材料 | `../../../../04_enterprise/business_bpm/` |
 | KOL 源材料 | `../../../../01_sources/reference/kol/` |
 | 一线开发者信号 | `../../../../01_sources/field_samples/fable5/` |
 

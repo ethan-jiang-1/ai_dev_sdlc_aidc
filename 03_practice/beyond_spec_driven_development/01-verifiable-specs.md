@@ -3,7 +3,7 @@
 ```yaml
 topic: SDD 替代形态之一：验证优先/可验证 spec（VSDD、compilable specs、facts）
 accessed_at: 2026-09-20
-parent: ../alternatives.md#1
+parent: ./README.md#1
 scope: 2026 年材料优先（VSDD 提案 2026-02-28；av/facts 2026-05-04；specdown / whenwords 2025Q4–2026）；§ 工具化与产品化信号为 2026-09-21 六路深挖补充
 sources:
   一手:

@@ -5,7 +5,7 @@
 > - 对象：[bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)（Breakthrough Method for Agile AI-Driven Development）
 > - 一手源：GitHub REST API（repo / releases / contributors / tags）、仓库 LICENSE 与 README（main 分支）、官方文档站 docs.bmad-method.org
 > - 交叉验证：star/fork 数与 release 列表均直接取自 GitHub API；license 同时核对 README 徽章、LICENSE 文件正文与 GitHub API 的 license 字段（三方，见 §4 末尾）
-> - 定位：本文属研究层沉淀（`02_research/spec_driven_development/tools/`）
+> - 定位：本文属实践层沉淀（`03_practice/spec_driven_development/tools/`）
 
 ---
 

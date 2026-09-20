@@ -7,8 +7,8 @@ status: draft
 sources:
   - research/software/topics/
   - research/software/storylines/
-  - 03_enterprise/ai_case/03-block-radical-ai-restructuring.md
-  - 03_enterprise/ai_case/04-cloudflare-measured-personnel-swap.md
+  - 04_enterprise/ai_case/03-block-radical-ai-restructuring.md
+  - 04_enterprise/ai_case/04-cloudflare-measured-personnel-swap.md
 ---
 
 # PART 1: THE SOFTWARE FRONTLINE — 高科技软件业经历了什么
