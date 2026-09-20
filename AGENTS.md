@@ -25,7 +25,7 @@
 | 提到证据、来源卡片、口径、回源 | 先确认属于哪场 talk | 走该 talk 的 `02_evidence/`，不要动根级 `01_sources/` |
 | 泛泛谈研究主题、要补素材、要写一篇新研究 | **研究层** `01_sources/` / `02_research/` | 见第 4 节 |
 | 提到需求工程 / SDD / SDD 后继形态等 SDLC 实践体系，要改实践方法论文档 | **实践层** `03_practice/` | 见第 4 节；先读该目录 README 的分工与单一事实源约定 |
-| 说"这个仓库 / 这个项目"、要改 README、要整理结构 | **根级** | 改 `README.md` / 本文件，并同步 `.workbuddy/memory/` |
+| 说"这个仓库 / 这个项目"、要改 README、要整理结构 | **根级** | 改 `README.md` / 本文件 |
 
 **判不出来就问，不要猜。** 尤其是"这场 talk"没指名时——三场 talk 的对象、篇幅、红线完全不同，猜错代价很高。
 
@@ -78,13 +78,12 @@
 
 ## 6. 收尾：状态落盘
 
-改完任何一层，都要做两件事：
+改完任何一层，都要做一件事：
 
 1. **更新该层的状态文件**——talk 是 `CURRENT.md` + `01_storyline/04-open-questions.md`；根级是 `README.md` / 本文件。
    完成标准：下次进来的人（或零上下文的 agent）读这些文件就能接上，不需要聊天记录。
-2. **写工作记忆**——追加 `.workbuddy/memory/YYYY-MM-DD.md`（按日期，追加不覆盖）；
-   属于长期约定的（目录职责、命名规则、用户明确要求的工作方式）写进 `.workbuddy/memory/MEMORY.md`。
-   不记录临时路径、搜索片段和工具报错。
+
+> **跨会话记忆不落盘在本仓库**（`.workbuddy/` 已于 2026-09-21 按用户决定移除）：结构变更与重要决策由 git 提交信息留痕；talk 的长期纪律写进该 talk 自己的 `AGENTS.md` / `CONTEXT.md`。不设仓库级 memory 文件。
 
 ---
 
@@ -96,7 +95,6 @@
 | 现在哪场在跑、做到哪 | `talk-ai-coding-evolution-harness/CURRENT.md` |
 | 某个词在这仓库里什么意思 | 对应 talk 的 `CONTEXT.md` |
 | 某场 talk 的规矩 | 对应 talk 的 `AGENTS.md` |
-| 长期约定与踩坑记录 | `.workbuddy/memory/MEMORY.md` |
 
 ## Python / uv
 
