@@ -3,6 +3,8 @@
 > 本文件面向 **独立 Deep Research** 使用。它是本轮（[dr-round-1](../plan/dr-round-1.plan.md)）**唯一具有决策输出**的研究线：必须在 2024Q3–2026Q1 时间窗内，产出针对 Cursor / Claude Code / Codex / Kiro / GitHub Spec Kit / OpenSpec / Amp / Aider / Continue / Cline 等 coding agent / harness 的需求 / 规约格式选型建议。
 >
 > 与其他 5 个主题不同，本主题是 **exploration + exploitation 混合**：需要第一手观察 + 实证证据，不能靠文献综述一次性解决。
+>
+> **指针（2026-09-20）**：SDD 工具生态与趋势的最新全景已升格为独立研究层 [`02_research/spec_driven_development/`](../../spec_driven_development/README.md)（2026-09 观测）；本 topic 的时间窗仍为 2024Q3–2026Q1，二者分工见该目录 README。
 
 ## 0. 研究线元数据
 
