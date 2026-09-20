@@ -18,9 +18,9 @@ ai_dev_sdlc_aidc/
 ├── 04_enterprise/     研究层 · 映射     SDLC 在企业侧的等价物（BPM）与案例
 ├── 05_output/         产出层            主线 Keynote（deck_ai_sdlc_keynote）
 │
-├── talk-ai-coding-evolution-opc/       交付层 · 已归档（23 页 / 45 min）
+├── talk-ai-coding-evolution-opc/       交付层 · 已定稿 v8（23 页 / 45 min，只作内部参考）
 ├── talk-ai-coding-evolution-org-sdlc/  交付层 · 待 review（50 页 / 75–90 min）
-└── talk-ai-coding-evolution-harness/   交付层 · ★ 当前活跃（45 页 + 4 停顿页 / 75–90 min）
+└── talk-ai-coding-evolution-harness/   交付层 · ★ 当前活跃（42 张 = 37 页正文 + 5 停顿页 / 75–90 min）
 ```
 
 **研究层与实践层**（`01`–`05`）在 2026-07～08 建立，是长期素材与认知底座，目前处于**沉淀状态**，不再逐日推进。

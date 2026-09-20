@@ -64,12 +64,11 @@
    **不要再手改 `.slide` / PPTX**（`05_output/v0.4/` 保留作内容与页序的事实对照）。
    → handoff 稿里 §4 已列出**五处待定的已知问题**（B2 位置与文字冲突、P1/P37 页码、DESIGN 作废字号表、
    P19 示意 trace、口语讲稿未铺满），打磨时先定这几处。
-1. **review v0.4（42 张）**：渲染图在 `.tmp-harness-talk-deck-v3/shots4/` 与 `shots5/`，
-   或直接开 PPTX。重点四处：**P26–P29**（两类程序）、**P30–P34**（DSH 展开 + 自建）、
+1. **review v0.4（42 张）**：直接开 PPTX，或按 handoff 稿逐页过。
+   （旧 review 渲染图目录 `.tmp-harness-talk-deck-v3/shots4|shots5/` 与生成器临时目录
+   均已清理，相关过渡改法作废；handoff 路线生效后不再走生成器重跑。）
+   重点四处：**P26–P29**（两类程序）、**P30–P34**（DSH 展开 + 自建）、
    **P19**（现场看一次，全场唯一演示）、**停顿页 B1–B5**（节奏）。
-   （下面这条生成器改法是**第 0 条 handoff 路线落地前的过渡手段**，仅用于 review 期的页内小修；
-   handoff 路线启用后即废弃。）
-   改法：改 `.tmp-harness-talk-deck-v3/_tail.py` → 重跑 `build_slides_v3.py` → `slidep upsert-dsl` 替换对应页。
 2. **口语讲稿**：按 v3.3 的 37 页重写铺满（每页字数 ≈ 时长 × 220 × 0.8，正文 78 min ≈ 13,700 字）。
    三件套格式见 `04_drafts/README.md`。
 
@@ -95,7 +94,8 @@
 - `02_evidence/00-absorption-plan.md` 第一节页号是 **v2（45 页）** 时期登记，文件头已声明"只当索引用"。
 - 插件生态数字有重算脚本（`rawdata_dsh-plugin-ecosystem/census.py`），upstream 同步后数字会变，
   引用前看 `02_evidence/00-absorption-plan.md` 的快照口径。
-- 生成器在 `.tmp-harness-talk-deck-v3/`（临时目录，收口前保留，收口时清理）。
+- ~~生成器在 `.tmp-harness-talk-deck-v3/`~~：**已清理（2026-09-21 核实不存在）**。
+  生成器改法作废；需要重产 PPTX 时走 handoff 路线（外部工具重做版式），或重建生成器。
 - `01_storyline/04-open-questions.md` 是**历史流水**，里面大量 v2 / v3.2 页码已失效；
   判断某条还作不作数以本文件为准。
 - **改稿只认五个管道目录**（`01_storyline` / `02_evidence` / `03_outline` / `04_drafts` / `05_output`）。
