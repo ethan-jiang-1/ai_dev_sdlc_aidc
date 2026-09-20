@@ -5,6 +5,7 @@
 > - **source**: tessl.io / docs.tessl.io（一手，部分需登录/ beta）、融资报道（Business Insider via Yahoo Finance、Dataconomy 等，二手）、martinfowler.com（独立第三方）、ThoughtWorks Radar
 > - **accessed_at**: 2026-09
 > - **trust_level**: 产品概念自述为厂商一手（利益相关）；融资金额/估值为**二手媒体报道**，估值明确标注为"reported"；无独立可验证的采用率数据
+> - **⚠ 勘误指针（2026-09-20）**：本文写作时点的"资本面上升"判断已过时——据 [`../debate/signals-2026h2.md`](../debate/signals-2026h2.md)，Tessl 自 2026-03 起公开停摆、弃用 spec 定位改称 "Agent Enablement Platform"。现状以该文件为准，本文保留作机制与融资背景参考。
 
 ## ① 一句话定位
 

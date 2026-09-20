@@ -25,6 +25,13 @@
 | [tools/kiro.md](tools/kiro.md) | Amazon Kiro 深挖（厂商数字已标证据强度） | 2026-09 |
 | [tools/tessl.md](tools/tessl.md) | Tessl 深挖（spec-as-source，融资为二手报道口径） | 2026-09 |
 | [tools/others-and-declining.md](tools/others-and-declining.md) | claude-task-master（被放弃）+ 边缘项目存目 | 2026-09-20 |
+| [debate/README.md](debate/README.md) | **评判综合**：矛盾裁决、加权六点判断、团队落地结论 | 2026-09-20 |
+| [debate/signals-2026h2.md](debate/signals-2026h2.md) | 2026.6–9 最新信号全景（矛盾信号以此裁决） | 2026-09-20 |
+| [debate/authoritative-verdicts.md](debate/authoritative-verdicts.md) | TW Radar Vol.34 / InfoQ / arXiv 权威评判 | 2026-09-20 |
+| [debate/critiques.md](debate/critiques.md) | 批判汇编（影响力加权聚类 5 类） | 2026-09-20 |
+| [debate/endorsements-and-experiences.md](debate/endorsements-and-experiences.md) | 正面/经验池（厂商降权，FIXER 为最强独立证据） | 2026-09-20 |
+| [debate/team-practices.md](debate/team-practices.md) | 团队协作/工程控制/迭代机制（含活样本与推荐组合） | 2026-09-20 |
+| [debate/chinese-community-verdicts.md](debate/chinese-community-verdicts.md) | 中文社区评判（结构性偏差已标注） | 2026-09-20 |
 
 ## 一句话结论（详见上表文件）
 
