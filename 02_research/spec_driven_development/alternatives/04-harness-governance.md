@@ -11,20 +11,19 @@
 
 ## 0.5 收敛判读（2026-09-20 三轮补查后计）
 
-排除本文 §1–§4 已收四源（OpenAI/Hashimoto/arXiv 2609.00252/腾讯云）后，新找到 **11 个独立集群**，其中**互不引用、独立说出同一件事**（agent 开发需要有人持续治理 harness/代码库卫生）的至少 **8 个**：
+排除本文 §1–§4 已收四源（OpenAI/Hashimoto/arXiv 2609.00252/腾讯云）后，初查得 11 个集群；**经 [04a](04a-harness-convergence-evidence.md) 全文证据档案复核勘误（Trivedy 即 LangChain deepagents 作者，两集群合并；HumanLayer 引用链齐全改判聚合型），确认独立集群 7 个**——它们**独立说出同一件事**（agent 开发需要有人持续治理 harness/代码库卫生）：
 
-1. **Viv Trivedy + HumanLayer**（术语独立命源：Agent = Model + Harness，"skill issue" 重构）
+1. **Viv Trivedy（亦即 LangChain DeepAgents 作者）**（术语独立命源：Agent = Model + Harness，"skill issue" 重构；LangChain 团队实测只改 harness，TerminalBench 52.8%→66.5%）
 2. **Birgitta Böckeler / Thoughtworks**（guides/sensors + 持续调优 + 漂移传感器框架，自行从控制论推导，文中仅把 OpenAI/Stripe 当案例引用）
-3. **Stripe minions 团队**（shift-left feedback、pre-push 启发式 linter，纯自建实践）
+3. **Stripe minions 团队**（shift-left feedback、pre-push 启发式 linter，纯自建实践；⚠ 正文 JS 渲染未回源，独立性待正文确认）
 4. **Anthropic 工程博客两个独立系列**（长任务 harness 设计；"harness 每个组件都编码了一个模型做不到的假设"）
-5. **LangChain DeepAgents 团队**（只改 harness，TerminalBench 52.8%→66.5%）
-6. **Stanford/MIT/KRAFTON Meta-Harness 论文 + Tsinghua NLAH 论文**（学术端独立量化：同模型只改 harness 得数倍差距；Karpathy 独立提出同一 meta-optimization 概念；SWE-Bench Mobile（KDD'26）独立测得同模型跨 scaffold 6×——三群独立得出，仅 Meta-Harness 单向事后引用 SWE-Bench Mobile 作动机，见 [04b](04b-harness-academic-and-metrics.md) 勘误）
-7. **Armin Ronacher**（harness loop 代价、塔与共享理解的衰减——独立从维护/卫生角度切入）
-8. **Teleport**（"pressure washing the codebase with LLMs for 90 days"——卫生/清扫命名的又一独立实例）
+5. **学术三篇接力式收敛**：SWE-Bench Mobile（KDD'26）先行独立测量同模型跨 scaffold 6× → Meta-Harness（Stanford/MIT/KRAFTON）引用其 6× 作动机、自行得出同结论 → 清华 NLAH 引用 Meta-Harness——**独立得出、接力引用**，非零引用平行（见 [04b](04b-harness-academic-and-metrics.md)）
+6. **Armin Ronacher**（harness loop 代价、塔与共享理解的衰减——独立从维护/卫生角度切入）
+7. **Teleport**（"pressure washing the codebase with LLMs"——一个季度/13 工程师；卫生/清扫命名的又一独立实例）
 
-弱独立或聚合型（引用他人但贡献独立判据）：Addy Osmani（聚合 Trivedy/Anthropic，但"every mistake becomes a rule"棘轮纪律为独立表述，且其身份是 Claude Code 团队 MTS）、Simon Willison（agentic loop 设计正典，维护/清扫角度着墨少）、Vercel（减工具实验，harness 简化侧）、Geoffrey Huntley（Ralph 循环——治理对象是"让 agent 一直跑"，非清扫，弱相关）、Olimpiu Pop / InfoQ（媒体确认"from vibe coding to harness engineering"已成为行业叙事）。
+弱独立或聚合型（引用他人但贡献独立判据）：HumanLayer（"it's not a model problem. It's a configuration problem."——引用链指向 Hashimoto/Trivedy/OpenAI，改判聚合型）、Addy Osmani（聚合 Trivedy/Anthropic，但"every mistake becomes a rule"棘轮纪律为独立表述，且其身份是 Claude Code 团队 MTS）、Simon Willison（agentic loop 设计正典，维护/清扫角度着墨少）、Vercel（减工具实验，harness 简化侧）、Geoffrey Huntley（Ralph 循环——治理对象是"让 agent 一直跑"，非清扫，弱相关）、Olimpiu Pop / InfoQ（媒体确认"from vibe coding to harness engineering"已成为行业叙事）。
 
-**结论**：与 §1 单一 OpenAI 案例相比，"需要有人/机制持续打扫 harness"在 2026H1 已出现** practitioner 命名（Trivedy）、个人方法论（Hashimoto/Osmani）、咨询公司框架（Thoughtworks）、大厂自建实践（Stripe/Anthropic/LangChain/Vercel）、学术量化（3 篇互不引用论文）五个层位的独立收敛**——且各层术语（gardening / cleanup / pressure washing / 清洁工军团 / accretion heuristics / garbage collection）各自独立发明了"清扫"隐喻。这是本文五形态中最强的多人独立收敛信号。
+**结论**：与 §1 单一 OpenAI 案例相比，"需要有人/机制持续打扫 harness"在 2026H1 已出现** practitioner 命名（Trivedy/LangChain）、个人方法论（Hashimoto/Osmani）、咨询公司框架（Thoughtworks）、大厂自建实践（Stripe/Anthropic/Vercel）、学术量化（3 篇独立得出、接力引用的论文）五个层位的独立收敛——**复核勘误后独立集群数从 8 下调为 7，但五层位结构不变**（逐条原文摘录与引用链核验见 [04a](04a-harness-convergence-evidence.md)）**——且各层术语（gardening / cleanup / pressure washing / 清洁工军团 / accretion heuristics / garbage collection）各自独立发明了"清扫"隐喻。这是本文五形态中最强的多人独立收敛信号。
 
 ---
 
@@ -250,7 +249,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 - **URL**：[langchain.com/blog/improving-deep-agents-with-harness-engineering](https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering)（经 flying-coyote 分析稿交叉核验）
 - **独立性**：**独立**（arXiv 2609.00252 §3.2 亦引用其 harness 说法，但实验为自发）。
 
-### 7.7 学术端三重独立收敛：Meta-Harness / Tsinghua NLH / SWE-Bench Mobile（2026-02~03，互不引用）
+### 7.7 学术端三重收敛：SWE-Bench Mobile / Meta-Harness / Tsinghua NLAH（2026-02~03；独立得出、接力引用——原判"互不引用"已按 04a 勘误修正）
 
 - **Stanford/MIT/KRAFTON**（Lee, Nair, Zhang, Lee, Khattab, Finn 等），[arXiv:2603.28052](https://arxiv.org/abs/2603.28052)（2026-03-30）："**Changing the harness around a fixed LLM can produce a 6× performance gap on the same benchmark.**" Haiku 4.5 经 harness 优化后排名超过更大的模型。
 - **Tsinghua+Harbin IT**（Pan et al.），[arXiv:2603.25723](https://arxiv.org/abs/2603.25723)（2026-03-26）：harness 表示法改为自然语言后同任务 30.4%→47.2%、LLM 调用 1200→34；消融显示**外挂 verifier 模块反而有害**（-0.8 SWE-bench / -8.4 OSWorld），self-evolution 是唯一 consistently helpful 模块。
