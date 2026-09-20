@@ -67,6 +67,8 @@
 1. **review v0.4（42 张）**：渲染图在 `.tmp-harness-talk-deck-v3/shots4/` 与 `shots5/`，
    或直接开 PPTX。重点四处：**P26–P29**（两类程序）、**P30–P34**（DSH 展开 + 自建）、
    **P19**（现场看一次，全场唯一演示）、**停顿页 B1–B5**（节奏）。
+   （下面这条生成器改法是**第 0 条 handoff 路线落地前的过渡手段**，仅用于 review 期的页内小修；
+   handoff 路线启用后即废弃。）
    改法：改 `.tmp-harness-talk-deck-v3/_tail.py` → 重跑 `build_slides_v3.py` → `slidep upsert-dsl` 替换对应页。
 2. **口语讲稿**：按 v3.3 的 37 页重写铺满（每页字数 ≈ 时长 × 220 × 0.8，正文 78 min ≈ 13,700 字）。
    三件套格式见 `04_drafts/README.md`。

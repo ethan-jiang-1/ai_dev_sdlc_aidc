@@ -36,6 +36,8 @@
 | 提到证据、来源卡片、口径、回源 | 先确认属于哪场 talk | 走该 talk 的 `02_evidence/`，不要动根级 `01_sources/` |
 | 泛泛谈研究主题、要补素材、要写一篇新研究 | **研究层** `01_sources/` / `02_research/` | 见第 4 节 |
 | 提到需求工程 / SDD / SDD 后继形态等 SDLC 实践体系，要改实践方法论文档 | **实践层** `03_practice/` | 见第 4 节；先读该目录 README 的分工与单一事实源约定 |
+| 提到 BPM、企业信息加工流、企业 AI 重构案例 | **研究层·映射** `04_enterprise/` | 沉淀状态：改前先确认是否为某场 talk 服务，是则走该 talk 的 `02_evidence/` |
+| 提到主线 Keynote / deck_ai_sdlc_keynote | **产出层** `05_output/` | 历史主线稿（2026-08 后未推进）；talk 交付不依赖它 |
 | 说"这个仓库 / 这个项目"、要改 README、要整理结构 | **根级** | 改 `README.md` / 本文件 |
 
 **判不出来就问，不要猜。** 尤其是"这场 talk"没指名时——三场 talk 的对象、篇幅、红线完全不同，猜错代价很高。
@@ -96,7 +98,7 @@
 
 改完任何一层，都要做一件事：
 
-1. **更新该层的状态文件**——talk 是 `CURRENT.md`（本轮结束即收口：新结论进热区，被取代的记录移入 `CURRENT-history.md`）+ `01_storyline/04-open-questions.md`；根级是 `README.md` / 本文件。
+1. **更新该层的状态文件**——talk 是 `CURRENT.md`（本轮结束即收口：新结论进热区，被取代的记录移入 `CURRENT-history.md`）+ 该 talk 内的 `01_storyline/04-open-questions.md`；根级是 `README.md` / 本文件。
    完成标准：下次进来的人（或零上下文的 agent）只读 L0+L2 热区文件就能接上，不需要聊天记录。
 
 > **跨会话记忆不落盘在本仓库**（`.workbuddy/` 已于 2026-09-21 按用户决定移除）：结构变更与重要决策由 git 提交信息留痕；talk 的长期纪律写进该 talk 自己的 `AGENTS.md` / `CONTEXT.md`。不设仓库级 memory 文件。

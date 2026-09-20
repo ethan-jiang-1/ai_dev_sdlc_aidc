@@ -36,7 +36,7 @@ ai_dev_sdlc_aidc/
 
 这是新人（和新对话的 agent）最容易看不懂的一点：**原始素材不在这个仓库里**。
 
-仓库外有四个素材根，各 talk 通过 `_reference/rawdata_*/` 的 symlink 只读引用：
+仓库外有**四个素材根**（各 talk 内的 `_reference/rawdata_*` symlink 多于四个——同一素材根会被多场 talk 多个位置挂载，以根计为四），各 talk 通过 `_reference/rawdata_*/` 的 symlink 只读引用：
 
 | 仓库外素材根 | 提供什么 |
 |---|---|
@@ -54,7 +54,7 @@ ai_dev_sdlc_aidc/
 
 | 目录 | 规格 | 状态 | 说明 |
 |---|---|---|---|
-| `talk-ai-coding-evolution-harness/` | 45 页正文 + 4 停顿页 / 75–90 min | ★ **活跃** | 页面职责与生产稿已成型，正在推进 PPTX |
+| `talk-ai-coding-evolution-harness/` | 37 页正文 + 5 停顿页 = 42 张 / 75–90 min | ★ **活跃** | v3.3 全链已走完，PPTX v0.4 待 review；生产路线已改为「内容事实源 → handoff 稿」 |
 | `talk-ai-coding-evolution-org-sdlc/` | 50 页 / 75–90 min | 暂停在 review | v0.16 已渲染，等用户确认视觉门禁 |
 | `talk-ai-coding-evolution-opc/` | 23 页 / 45 min | 已定稿（v8） | **只作内部参考**，其命名与内容不得出现在其他 talk 的对客文字里 |
 | `05_output/deck_ai_sdlc_keynote/` | 40 min / 标准档 | 历史主线稿 | Phase 0 研究与 v1 大纲/讲稿已产出，2026-08 后未继续推进（`project-metadata.yaml` 中 phases 仍标 pending） |
