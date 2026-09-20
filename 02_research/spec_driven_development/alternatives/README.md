@@ -5,10 +5,25 @@
 | 分篇 | 形态 | 一句话 |
 |---|---|---|
 | [01-verifiable-specs.md](01-verifiable-specs.md) | 验证优先/可验证 spec | spec 必须降格为机器可校验的产物（VSDD/compilable specs/facts） |
-| [02-plan-mode.md](02-plan-mode.md) | Plan mode 派 | 规划内嵌于 harness，会话内对齐、用完即弃 |
-| [03-context-engineering.md](03-context-engineering.md) | Context engineering 派 | 只管 repo 级规则文件纪律，不建 feature 级工件 |
-| [04-harness-governance.md](04-harness-governance.md) | Harness 治理派 ★ | 治理对象从 spec 文档转向 agent 执行链路——团队级收敛点 |
+| [04-plan-mode.md](04-plan-mode.md) | Plan mode 派 | 规划内嵌于 harness，会话内对齐、用完即弃 |
+| [02-context-engineering.md](02-context-engineering.md) | Context engineering 派 | 只管 repo 级规则文件纪律，不建 feature 级工件 |
+| [03-harness-governance.md](03-harness-governance.md) | Harness 治理派 ★ | 治理对象从 spec 文档转向 agent 执行链路——团队级收敛点 |
 | [05-test-first.md](05-test-first.md) | 测试优先回归 | 测试就是 spec：给 CI 读的可执行断言替代文档合约 |
+
+**研究优先级（2026-09-21 用户定）**：**01 / 03 / 04 为重点路线**（深挖 + 证据档案 + 审计齐备）；**02 / 05 为背景参照、不作为重点**——按用户经验：plan mode 是默认实践，够不上独立"后继形态"；测试优先是既有工程常识的延续，不是新范式。引用 02/05 时作对照用，不作主张依据。
+
+### 证据档案（逐字摘录 + 引用链核验，全部经 2026-09-21 审计）
+
+| 档案 | 服务的分篇 | 内容 |
+|---|---|---|
+| [01a-verifiable-convergence-evidence.md](01a-verifiable-convergence-evidence.md) | 01 | 13 集群正反原文摘录 + 独立性判定（含对撞） |
+| [01b-verifiable-academic.md](01b-verifiable-academic.md) | 01 | 20+ 篇学术一手回源 + 7 例工业案例 |
+| [01c-verifiable-community.md](01c-verifiable-community.md) | 01 | HN 立场分歧 + 中文社区宽度 |
+| [02a-progressive-disclosure-evidence.md](02a-progressive-disclosure-evidence.md) | 03 | 渐进披露 B1–B9：官方预算表 + 五 repo 实测 |
+| [02b-agents-md-governance-evidence.md](02b-agents-md-governance-evidence.md) | 03 | 治理 A/B/C/D：大厂范式 + repo git 史 + 度量勘误 |
+| [02c-context-vs-harness.md](02c-context-vs-harness.md) | 03 | context ⊂ harness 关系判定 |
+| [03a-harness-convergence-evidence.md](03a-harness-convergence-evidence.md) | 04 | 10 集群 78 处原文摘录 + 引用链核验 |
+| [03b-harness-academic-and-metrics.md](03b-harness-academic-and-metrics.md) | 04 | 学术三篇回源 + 度量缺口论证 |
 
 图形（SVG）：
 - ![形态光谱](spectrum.svg)——九个位置从"重 spec 工件"排到"零 spec 工件"
@@ -55,13 +70,13 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 2. Plan mode 派 → 深挖：[02-plan-mode.md](02-plan-mode.md)
+## 2. Plan mode 派 → 深挖：[04-plan-mode.md](04-plan-mode.md)
 
 **机制**：不引入任何独立 spec 工件。规划作为 agent harness 的**内置阶段**存在：agent 先出计划、人批准、再执行（Claude Code plan mode、Codex 的 plan/approval 机制、Antigravity 的"plan approval before executing"）。规划是一次性的会话内产物，用完即弃，不进入仓库、不需要维护。
 
 **代表实践/工具**：Claude Code plan mode 与 Codex 内置规划；HN 2026-08 帖中多位开发者自述"plan mode 就够了"——如 [HN 48235526](https://hn.nuxt.dev/item/48235526)（"For myself I always found the plan mode to work well"）；更结构化的用法如 "Separation of planning and execution"（[althacker 讨论](https://althacker.news/item?id=47106686&p=2)）：规划会话与执行会话分离，计划以对话形式存在。
 
-**与 SDD 的本质区别**：SDD 把"意图"做成**跨会话的持久资产**；plan mode 派认为持久 spec 工件正是 spec 债的根源，规划的价值在**当下会话内对齐**，对齐完就该消失。另一个区别：plan mode 的产出由 harness 的生命周期管理（不可编辑、不漂移），SDD 的 spec 则必须有人维护——而批判已证明没人维护。反向声音也存在：Nearform《Why plan mode is not enough》（**2026-03-18**，作者 Luca Lanziani；原注 2026-09 有误，详见 [02-plan-mode.md](02-plan-mode.md)）主张 plan mode 规划实现不规划产品、缺多角色参与，处方是 BMAD 多 persona 而非恢复 spec 工件链——两派是同一问题的两个解。另一关键动向（2026-02 Boris Cherny YC 访谈，原注 2026-09 有误）：Claude Code 作者判断 plan mode"生命周期有限、会被模型自动触发吸收"；硬证据是 Codex 2026-08-31 将 `update_plan` 改 opt-in（PR #41744）——内置规划器正被 harness 化为可拆卸组件。
+**与 SDD 的本质区别**：SDD 把"意图"做成**跨会话的持久资产**；plan mode 派认为持久 spec 工件正是 spec 债的根源，规划的价值在**当下会话内对齐**，对齐完就该消失。另一个区别：plan mode 的产出由 harness 的生命周期管理（不可编辑、不漂移），SDD 的 spec 则必须有人维护——而批判已证明没人维护。反向声音也存在：Nearform《Why plan mode is not enough》（**2026-03-18**，作者 Luca Lanziani；原注 2026-09 有误，详见 [04-plan-mode.md](04-plan-mode.md)）主张 plan mode 规划实现不规划产品、缺多角色参与，处方是 BMAD 多 persona 而非恢复 spec 工件链——两派是同一问题的两个解。另一关键动向（2026-02 Boris Cherny YC 访谈，原注 2026-09 有误）：Claude Code 作者判断 plan mode"生命周期有限、会被模型自动触发吸收"；硬证据是 Codex 2026-08-31 将 `update_plan` 改 opt-in（PR #41744）——内置规划器正被 harness 化为可拆卸组件。
 
 **已有证据与热度**：plan mode 是 2026 年**事实上的默认实践**（所有主流 coding agent 内置），使用基数最大；但"plan mode 就够了"以零散 HN 回帖与个人实践为主，无系统实证。反对文（Nearform）热度中等。整体权重：中（实践普及度高、论证散）。
 
@@ -69,7 +84,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 3. Context engineering 派 → 深挖：[03-context-engineering.md](03-context-engineering.md)
+## 3. Context engineering 派 → 深挖：[02-context-engineering.md](02-context-engineering.md)
 
 **机制**：约束对象从"这个 feature 要什么"（feature 级 spec）上移为"这个仓库的 agent 该怎么干活"（repo 级规则文件与上下文结构）：AGENTS.md / CLAUDE.md / 规则文件 + 结构化 docs 目录 + 渐进式披露（给地图而非全书）。纪律是**永久但轻量**的，feature 级意图不落盘。
 
@@ -86,9 +101,9 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 4. Harness 治理派 ★ → 深挖：[04-harness-governance.md](04-harness-governance.md)
+## 4. Harness 治理派 ★ → 深挖：[03-harness-governance.md](03-harness-governance.md)
 
-**机制**：把"让 agent 做对"的工程投入从**写文档**转移到**工程化执行环境**：自定义 linter + 结构测试强制架构规则、可观测性直接接入 agent 运行时（日志/指标/追踪供 agent 自读自验）、定期运行的 gardener agent 扫描漂移、"每次 agent 犯错就工程化地消灭该错误类别"（Hashimoto 六步模型的 **Step 5 "Engineer the Harness"**——Step 6 是 "Always Have an Agent Running"；原注"第六阶段"已按 [04-harness-governance.md](04-harness-governance.md) 勘误）。spec（若有）只是 harness 中 scaffolding 的一个组件。
+**机制**：把"让 agent 做对"的工程投入从**写文档**转移到**工程化执行环境**：自定义 linter + 结构测试强制架构规则、可观测性直接接入 agent 运行时（日志/指标/追踪供 agent 自读自验）、定期运行的 gardener agent 扫描漂移、"每次 agent 犯错就工程化地消灭该错误类别"（Hashimoto 六步模型的 **Step 5 "Engineer the Harness"**——Step 6 是 "Always Have an Agent Running"；原注"第六阶段"已按 [03-harness-governance.md](03-harness-governance.md) 勘误）。spec（若有）只是 harness 中 scaffolding 的一个组件。
 
 **代表实践/工具**：
 - **OpenAI《Harness Engineering》**（2026-02）：5 个月、空仓库起步、约 100 万行代码、1500 个全 agent 生成 PR；人类转向定义规格、约束与反馈系统；product-specs/ + design-docs/ + exec-plans/ 三件结构化目录 + linter/结构测试 + doc-gardening agent（[openai.com/index/harness-engineering](https://openai.com/index/harness-engineering/)）。

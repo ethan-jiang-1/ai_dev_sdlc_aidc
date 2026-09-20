@@ -2,7 +2,7 @@
 
 > **元数据**
 > - 观测日期：2026-09-21（用户直问：两者是不是一回事？context 是不是 harness 的一层？）
-> - 上游：`03-context-engineering.md`（context 派已收内容，本文不重复其 AGENTS.md/治理细节）与 `04-harness-governance.md`（harness 派已收内容，本文只补"关系"轴）
+> - 上游：`02-context-engineering.md`（context 派已收内容，本文不重复其 AGENTS.md/治理细节）与 `03-harness-governance.md`（harness 派已收内容，本文只补"关系"轴）
 > - 回源分级：**一手** = 本次直接抓到原文（Anthropic、arXiv 2609.00252 abs+HTML 目录、DigitalToday-Chase 报道、阿里云三层文、Roadie）；**半回源** = 经第三方消化稿/转引核验（OpenAI 原文 403 依赖消化稿、Trivedy X 帖、Karpathy/Lütke X 帖、Cole Medin 知识库消化稿）——逐条标注
 > - 红线执行：每条断言 URL+日期；直引逐字；半回源一律降级标注
 
@@ -33,7 +33,7 @@
 
 ### 1.2 OpenAI《Harness Engineering》（2026-02-11）——harness 一侧的旗舰
 
-- **回源状态**：原文 [openai.com/index/harness-engineering](https://openai.com/index/harness-engineering/) 直接抓取 **403**（本次及 2026-09-20 两轮均被拒）。以下细节沿用 `04-harness-governance.md` §1 已交叉核验的两个第三方消化稿，**半回源降级**。
+- **回源状态**：原文 [openai.com/index/harness-engineering](https://openai.com/index/harness-engineering/) 直接抓取 **403**（本次及 2026-09-20 两轮均被拒）。以下细节沿用 `03-harness-governance.md` §1 已交叉核验的两个第三方消化稿，**半回源降级**。
 - **核心定义句**（消化稿口径）："Humans steer. Agents execute."——人类不是代码来源而是**环境设计者**；harness 的操作面包括 ~100 行 AGENTS.md 路由、docs 三目录知识库、per-worktree 可观测性栈、taste linter、doc-gardening/cleanup agent、merge 门禁姿态。
 - **关系判读关键事实**：在这份最系统的 harness 文里，**AGENTS.md 与 docs 地图（即 context 派的全部标的）只是 harness 的第 1、2 条模式**（评估卡 10 条模式清单的 1/2 条），可观测性/review loop/cleanup agent 等"动态层"占其余 8 条——**OpenAI 的用法天然把 context 管理当作 harness 的一个子集**。
 
@@ -80,7 +80,7 @@
 | Karpathy | context engineering | "the delicate art and science of filling the context window" | 2025-06-25 | x.com/karpathy/status/1937902205765607626 | 半 |
 | Anthropic | context engineering | "the set of strategies for curating and maintaining the optimal set of tokens (information) during LLM inference" | 2025-09-29 | anthropic.com/engineering/effective-context-engineering-for-ai-agents | 一手 |
 | OpenAI (Lopopolo) | harness engineering | "Humans steer. Agents execute."（harness=AGENTS.md 路由+docs 知识库+可观测性+review loop+cleanup agent 的整体） | 2026-02-11 | openai.com/index/harness-engineering（403，消化稿交叉） | 半 |
-| Trivedy | harness | "Agent = Model + Harness. If you're not the model, you're the harness." | ~2026-01 | x.com/Vtrivedy10/status/2031408954517971368 | 半 |
+| Trivedy | harness | "Agent = Model + Harness. If you're not the model, you're the harness." | ~2026-01（原帖日期未精确核验，以 Osmani 2026-04-19 转引文为观测锚点） | x.com/Vtrivedy10/status/2031408954517971368 | 半 |
 | arXiv 2609.00252 | harness | "the set of technical and methodological mechanisms through which teams govern agent behavior"；§5.3 "Harness 1: Context engineering" | 2026-08-31 | arxiv.org/abs/2609.00252 | 一手（§5.3 正文半） |
 | Chase/LangChain | 两者关系 | "Harness engineering is an extension of context engineering." | 2026-03-07 | digitaltoday.co.kr/en/view/28196 | 半（报道一手） |
 | Cole Medin | 两者关系 | "harness engineering... is the 2026 evolution of context engineering" | 2026-05-27 | youtube.com/watch?v=ulNsa0sD8N0 | 半 |
@@ -93,9 +93,9 @@
 | 立场 | 主张者与原文依据 | 强度判定 |
 |---|---|---|
 | **① context ⊂ harness**（context 是 harness 的内容/静态层） | arXiv 2609.00252 §5.3（context engineering = 8 个 harness 机制之第 1，逐字标题）；Chase "Harness engineering is an extension of context engineering"（2026-03-07）；Cole Medin "the 2026 evolution of context engineering"（2026-05-27）；OpenAI harness 文把 AGENTS.md/docs 地图列为 harness 模式 1/2（消化稿）；LangChain 实验把"上下文工程"列为五项 harness 改造之一（2026-02-17）；Trivedy 减法"非模型即 harness"逻辑蕴含 context ⊂ harness | **最强**。学术（1）+ CEO 一手表态（1）+ 实践受控实验（1）+ 多个 practitioner（≥3）四个层位独立同向 |
-| **② context ≈ harness 同义** | **无人主张**。最接近的是 Cole Medin 自己抬出的"elephant in the room: isn't this just context engineering?"（0:04:32），但他随即用"控制权 + skill issue 心法 + 多会话编排"两条区分**否掉了合并** | 无主张者。唯一可见的合并质疑出现后即被原作者驳回 |
+| **② context ≈ harness 同义** | **未发现主张者**（检索记录见 §5.4-a）。最接近的是 Cole Medin 自己抬出的"elephant in the room: isn't this just context engineering?"（0:04:32），但他随即用"控制权 + skill issue 心法 + 多会话编排"两条区分**否掉了合并** | 无主张者。唯一可见的合并质疑出现后即被原作者驳回 |
 | **③ 两者正交**（context 管输入内容、harness 管执行环境） | 阿里云三层文："Context 关注模型看到什么；Harness 关注模型运行其中的系统"，且明确"缺哪个都不行"（2026-04-09）；Böckeler guides/sensors 二分（martinfowler.com 2026-04-02，04 文档 §7.3）在机制上同构——guides（前馈，AGENTS.md/skills）≈ context 侧，sensors（反馈，linter/review）≈ harness 动态侧，但 Böckeler 把两者都装进她的 harness 框架里 | **作为概念分析成立、作为词义归属不成立**：即便按 ③ 的分法，"管执行环境"的 harness 在 2026 年的用法里仍然**包含**对"管输入内容"机制的编排——两轴有交叠而非互斥 |
-| **④ harness ⊂ context**（harness 是 context 的执行装置） | **无人显式主张**。最接近的反向逻辑是 Chase 的下一句："the recent trend is to hand more control over context engineering to the model itself"——若 context 决策权外置给模型/环境，harness 似乎可视为"决定 context 的机制"，即 harness 决定 context 而非相反。但这是 ① 的另一种表述（决策机制 ⊃ 内容），不构成 ④ | 最弱，无主张者 |
+| **④ harness ⊂ context**（harness 是 context 的执行装置） | **未发现显式主张者（检索记录见 §5.4-a）**。最接近的反向逻辑是 Chase 的下一句："the recent trend is to hand more control over context engineering to the model itself"——若 context 决策权外置给模型/环境，harness 似乎可视为"决定 context 的机制"，即 harness 决定 context 而非相反。但这是 ① 的另一种表述（决策机制 ⊃ 内容），不构成 ④ | 最弱，无主张者 |
 
 **判定：关系①（context ⊂ harness）证据最强**——它同时拥有学术操作化（arXiv 把 context engineering 编号为 Harness 1）、厂商 CEO 关系表态（Chase）、受控实验的工程解构（LangChain）与多个独立 practitioner 的演化叙事（Cole Medin 等）。补充一个限定：① 成立的前提是采用 **2026 年的 harness 词义**（OpenAI/Trivedy/arXiv 一脉）；若限定在 Anthropic 2025-09 的词义（context = token 集合的策展策略），context engineering 与"执行环境"确实分属两轴（③ 的合理内核）——**两词的争议本质是 harness 词义从 2025 的"agent loop 包装程序"扩张到 2026 的"团队级治理机制全集"造成的**。
 
@@ -115,7 +115,7 @@
 ## 4. 分歧点：谁反对合并 / 谁在拆台
 
 1. **合并的反质疑及其驳回**（Cole Medin，2026-05-27）：公开面对"isn't this just context engineering?"，驳回理由是 harness 多出**控制权语义**（每个错误工程化为 harness 改进）与**多会话编排**两个 context engineering 不覆盖的东西。
-2. **Anthropic 一侧的沉默即分歧**：Anthropic 官方 context engineering 文（2025-09-29）通篇不用 harness；其 harness 方法论两篇（2025-11 长任务 harness、2026-03-24 harness 设计，04 文档 §7.5）反向以 harness 为组织词——**同一厂商在两套词表下各写各的，是"两词未完成统一"的最直接证据**。核心原话："every component in a harness encodes an assumption about what the model can't do on its own."（[anthropic.com/engineering/effective-harnesses-for-long-running-agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)，2025-11）
+2. **Anthropic 一侧的沉默即分歧**：Anthropic 官方 context engineering 文（2025-09-29）通篇不用 harness；其 harness 方法论两篇（2025-11 长任务 harness、2026-03-24 harness 设计，04 文档 §7.5）反向以 harness 为组织词——**同一厂商在两套词表下各写各的，是"两词未完成统一"的最直接证据**。核心原话："every component in a harness encodes an assumption about what the model can't do on its own."（[anthropic.com/engineering/effective-harnesses-for-long-running-agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)，2025-11；回源等级：半回源——经 04 文档 §7.5 与 04a A5 逐字核验）
 3. **"context engineering 是营销膨胀词"的批评线**（反对的是 context 一词的滥用，不直接针对 harness）：Roadie《The Word 'Context' Has Stopped Meaning Anything》（[roadie.io/blog/context-engineering-definition-problem/](https://roadie.io/blog/context-engineering-definition-problem/)，2026-06-30，本次一手回源）：
    > "By 2026 the label had been stretched to cover almost anything sitting between data and a model - a retrieval pipeline, a session-memory store, a rebadged data catalogue."
    > "most of what is being called context engineering in enterprise pitches in 2026 is either RAG with better marketing or a service catalogue with a new name."
@@ -126,7 +126,7 @@
 
 ## 5. 局限与开放问题
 
-1. **逐字直引的半回源债**：OpenAI 原文（403）、Trivedy/Karpathy/Lütke 的 X 原帖、VentureBeat 播客原声均未直接回源，本文引语全部依赖独立第三方转引且已标注；正式对外使用前需完成一级回源。
+1. **逐字直引的半回源债**：OpenAI 原文（403）、Trivedy/Karpathy/Lütke 的 X 原帖、VentureBeat 播客原声均未直接回源，本文引语全部依赖独立第三方转引且已标注；正式对外使用前需完成一级回源（经 Roadie 2026-06-30 文转引，见上）。
 2. **arXiv 2609.00252 §5.3 正文未逐字读**（抓取截断）："Harness 1: Context engineering" 标题一手核验，但论文如何论证"为何 context engineering 是 harness 的机制而非平行学科"，须回源全文补引。
 3. **时间轴向混杂**：context engineering（2025-06 命名）早于 harness engineering（2026-01 命名）约半年；两词是"演化关系"还是"包含关系"，Chase/Cole Medin 说的是前者，arXiv 操作化的是后者——两种说法目前并存且不互斥，未见有人显式调和。
 4. **检索覆盖声明**：3Blue1Brown 语料本次未检索到与两词区分相关的任何内容（推测其未涉足此题）；除 Cole Medin 的"elephant in the room"外，未找到第三处正面辩论"两者是否一回事"的文本——**这场辨析在 2026-09-21 仍是社区默认、少有人明说的状态**，本文判定属首次显式结构化（对本仓库而言）。

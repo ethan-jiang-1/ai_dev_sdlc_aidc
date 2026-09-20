@@ -3,12 +3,12 @@
 ```yaml
 topic: SDD 替代形态之三——context engineering 派（repo 级上下文纪律）深挖
 accessed_at: 2026-09-20
-round2_accessed_at: 2026-09-21   # 二轮深挖两节：§7（渐进披露，档案 03a-progressive-disclosure-evidence.md）、§8（团队治理，档案 03a-agents-md-governance-evidence.md）
+round2_accessed_at: 2026-09-21   # 二轮深挖两节：§7（渐进披露，档案 02a-progressive-disclosure-evidence.md）、§8（团队治理，档案 02b-agents-md-governance-evidence.md）
 collector: delegated research agent
 parent_doc: ../alternatives.md            # 底稿第 3 节；本文在其基础上深挖，不复制正文
 scope: 2026 年（尤其 2026-02 之后的论文与社区材料）
 evidence_archive:
-  - ./03a-progressive-disclosure-evidence.md       # §7 渐进披露深挖的逐字原文档案（2026-09-21 二轮）
+  - ./02a-progressive-disclosure-evidence.md       # §7 渐进披露深挖的逐字原文档案（2026-09-21 二轮）
 related:
   - ../../requirements_engineering/deep_research_topics/_reference/00-shared-codex-agents-md-spec.md   # AGENTS.md 规范 + Codex CLI 官方集成 + AAIF 治理（主锚点）
   - ../../requirements_engineering/deep_research_topics/_reference/00-shared-cursor-rules-official.md  # Cursor 四类 rules + AGENTS.md 嵌套合并
@@ -41,7 +41,7 @@ limitations:
 
 - **治理已制度化**：AGENTS.md 由 OpenAI Codex、Amp（Sourcegraph）、Google Jules、Cursor、Factory 于 2025-08 联合发起，2025-12 起由 **Linux Foundation 下属 Agentic AI Foundation（AAIF）** 托管，背书方包括 OpenAI / Anthropic / Google / AWS（一手源：[agents.md 官方站](https://agents.md/)，本仓库引用见 `00-shared-codex-agents-md-spec.md`）。
 - **采用规模**：官方站 2026 年口径 60,000+ 公开 repo；企业用例点名 Uber / Databricks / Sourcegraph。注意这是**站点自述口径**，做正式声明前应 GitHub code search 实测（`_reference` 文件已建议：`path:AGENTS.md NOT is:fork NOT is:archived`）。
-- **工具支持面**：Cursor、GitHub Copilot coding agent（2025-08-28 changelog 正式支持，含 nested）、Windsurf、Amp、Devin、Jules、Gemini CLI、Aider、Codex CLI、UiPath、Cline、Kiro（作为 steering directives）。Claude Code 长期以 CLAUDE.md 为主，AGENTS.md 原生支持状态在 2026 年口径不一——这是"事实标准"叙事在 Anthropic 生态的最大空档，也解释了为什么大量 repo 同时维护两份高度重叠的文件（双权威漂移风险，见 §5）。
+- **工具支持面**：Cursor、GitHub Copilot coding agent（2025-08-28 changelog 正式支持，含 nested）、Windsurf、Amp、Devin、Jules、Gemini CLI、Aider、Codex CLI、UiPath、Cline、Kiro（作为 steering directives）。Claude Code 长期以 CLAUDE.md 为主，AGENTS.md 原生支持状态在 2026 年口径不一——这是"事实标准"叙事在 Anthropic 生态的最大空档，也解释了为什么大量 repo 同时维护两份高度重叠的文件（双权威漂移风险，见 §5）。（changelog 链接未回源待补）
 
 ### 1.2 规范演进：无 schema、无版本化——这是设计选择而非滞后
 
@@ -57,8 +57,8 @@ limitations:
 
 "都读 AGENTS.md"≠"读法一致"，`06-agent-format-rule-loading-semantics-comparison.md` 已记录加载语义差异（Cline 只在根目录存在 AGENTS.md 时才递归找 nested；Aider 需显式 `read:` 配置；Cursor nearest-wins 合并父级；Codex 每目录至多一个、32 KiB 截断）。2026 年新增的是**遵循度本身的定量证据**：
 
-- **Umans AI 实验**（2025，practitioner）：同一 repo、同一规则文件喂给 Codex CLI / Claude Code / Gemini CLI / Cursor——provider-native 工具遵循更多规则、更常自查；**没有任何配置完全匹配 AGENTS.md 的测试风格**；fixture 集中化是最弱的一条规则，只有一次高 effort 运行部分遵守。
-- **AGENTbench**（Gloaguen et al., 2026 学术预print，见 `_reference/06-agent-format-evaluating-agents-md-agentbench-2026.md`）：138 个实例、12 个 repo、3 个 agent × 4 个模型。结论对 context 派相当不客气：**LLM 生成的 context file 降低成功率 2–3% 且成本 +20%+；开发者手写的也只边际提升成功率（约 +4%）且成本最高 +19%**；agent 普遍会遵循指令，但代价是探索/测试变多。
+- **Umans AI 实验**（2025-11-29，practitioner）：同一 repo、同一规则文件喂给 Codex CLI / Claude Code / Gemini CLI / Cursor——provider-native 工具遵循更多规则、更常自查；**没有任何配置完全匹配 AGENTS.md 的测试风格**；fixture 集中化是最弱的一条规则，只有一次高 effort 运行部分遵守。
+- **CTXbench**（Gloaguen et al., arXiv 2602.11988；初稿误称 AGENTbench，系 Upsun 二手误称——见 §8.3 勘误与 `_reference/06-agent-format-evaluating-agents-md-agentbench-2026.md` 指针）：138 个实例、12 个 repo、4 个 agent-model 组合。结论对 context 派相当不客气：**LLM 生成的 context file 降低成功率 2–3% 且成本 +20%+；开发者手写的也只边际提升成功率（约 +4%）且成本最高 +19%**；agent 普遍会遵循指令，但代价是探索/测试变多。
 - **Lulla et al.（ICSE JAWs 2026，arXiv 2601.20404）**：124 个真实 GitHub PR 配对实验——有 AGENTS.md 时**中位运行时间 -28.64%、输出 token -16.58%**（注：该研究只测效率、未测正确性）。
 
 这三组证据共同给出 2026 年的新口径：**AGENTS.md 是"有用但不保证"的杠杆**——写对了省钱省时，写错了（自生成、冗余）倒赔。它暴露期望，不构成 conformance；跨工具语义一致性至今没有 formal suite（OctoBench/AGENTbench 都只做到"接近"）。
@@ -79,7 +79,7 @@ limitations:
 
 ### 2.2 实例一：ghostty-org/ghostty（Hashimoto 项目，观测 2026-09-20）
 
-[AGENTS.md 全文](https://github.com/ghostty-org/ghostty/blob/main/AGENTS.md)只有约 30 行，结构为四节：
+[AGENTS.md 全文](https://github.com/ghostty-org/ghostty/blob/main/AGENTS.md)只有 39 行（2026-09-21 raw 实测），结构为四节：
 
 ```markdown
 # Agent Development Guide
@@ -107,7 +107,7 @@ limitations:
   -> Avoids misleading mismatch warnings and makes it clear the repo's `.venv` is the interpreter actually running the harnesses.
 ```
 
-六条 learning 全部是"不可从代码推断的环境陷阱"。这就是 Hashimoto 原则在 OpenAI 的制度化形态：**规则文件带一个追加式失败日志节**。社区 2026 年甚至出现把 CLAUDE.md 直接定义为 failure log 的方法论文章（dev.to《Your CLAUDE.md Is an Instruction File. It Should Be a Failure Log.》，中权重）。
+六条 learning 全部是"不可从代码推断的环境陷阱"。这就是 Hashimoto 原则在 OpenAI 的制度化形态：**规则文件带一个追加式失败日志节**。社区 2026 年甚至出现把 CLAUDE.md 直接定义为 failure log 的方法论文章（dev.to《Your CLAUDE.md（dev.to，URL/日期未回源） Is an Instruction File. It Should Be a Failure Log.》，中权重）。
 
 ### 2.4 实例三：different-ai/openwork（社区 OSS，引用本仓库 `06-agent-format-openwork-oss-usage.md`）
 
@@ -144,7 +144,7 @@ limitations:
 
 **（a）分层共存已成官方立场**。Spec Kit 官方 Discussion #2476（"Constitution vs AGENTS.md, copilot-instructions.md, CLAUDE.md"）议题本身就是证据：社区在系统地区分"repo 级长期约束（AGENTS.md/constitution）"与"feature 级 spec 工件"，共识是两者管不同时间尺度的事，不是替代关系（本仓库 `06-agent-format-github-spec-kit-official.md` 的结论一致：Spec Kit 不是 AGENTS.md 的替代品）。Kiro 是产品化样本：`.kiro/steering/`（含 AGENTS.md）承载持久团队级上下文，Specs（requirements/design/tasks + EARS）承载 feature 级意图——两轨并存于同一工具。
 
-**（b）"为什么"的落点：ADR / design-docs / plan 工件**。OpenAI harness 的三目录结构（product-specs/ + design-docs/ + exec-plans/）是最清晰的答案：context 派不写 feature spec ≠ 不留决策记录——**决策史降格为"值得写的变更才写"的重决策工件**，而 AGENTS.md/docs 地图负责让 agent 找到它。社区工具如 Doctrina（"specs as single source of truth + immutable ADRs + portable across 12 agents via AGENTS.md"）把这一调和做成了产品卖点。底稿光谱第 3 条"重工件形态不会归零、只会收缩到值得它的场景"在这里得到机制层面的解释：重工件存在的理由恰恰是 context 派留白的那个"为什么"。
+**（b）"为什么"的落点：ADR / design-docs / plan 工件**。OpenAI harness 的三目录结构（product-specs/ + design-docs/ + exec-plans/）是最清晰的答案：context 派不写 feature spec ≠ 不留决策记录——**决策史降格为"值得写的变更才写"的重决策工件**，而 AGENTS.md/docs 地图负责让 agent 找到它。社区工具如 Doctrina（"specs as single source of truth + immutable ADRs + portable across 12 agents（Doctrina，来源未回源，社区口碑转述） via AGENTS.md"）把这一调和做成了产品卖点。底稿光谱第 3 条"重工件形态不会归零、只会收缩到值得它的场景"在这里得到机制层面的解释：重工件存在的理由恰恰是 context 派留白的那个"为什么"。
 
 **（c）跨服务语义契约的落点：contract artifacts + 指路**。错误码表、事件 schema、服务间约定以契约文件（OpenAPI、schema、显式 contract 文档）存在于 repo，AGENTS.md 只写"跨服务改动前必须读/更新哪个契约文件"的路由规则。OpenWork 的"AGENTS.md 写约定、PRD 文件放内容"是同一模式在 feature 级的投影。腾讯云 Harness 文中"补上缺失语义才做对"的案例，事后看正是这一混合形态的必要性的注脚。
 
@@ -174,7 +174,7 @@ Codacy 2026-08 的长文（[Repository Instructions Are Becoming Engineering Art
 ## 6. 对底稿的修订建议（供 alternatives.md 第 3 节吸收）
 
 1. "AGENTS.md 标准已成事实标准"→ 精确化为**格式制度化、语义不统一、有效载荷社区收敛**三层（§1.4）。
-2. 补 2026 年实证反转信息：AGENTbench/ETH Zurich 显示 context file 有净成本风险，AGENTS.md 不是免费的，"写什么"比"有没有"重要（§1.3）。
+2. 补 2026 年实证反转信息：CTXbench/ETH Zurich 显示 context file 有净成本风险，AGENTS.md 不是免费的，"写什么"比"有没有"重要（§1.3）。
 3. "渐进式披露"补具体形态：docs 地图 + skill 化 + 嵌套作用域三层（§3），并标注三层架构尚无对照实证。
 4. 留白的补法已经社区化：constitution/steering + ADR/contract 工件 + 指路规则，可作为"调和点"的具体证据（§4）。
 5. 治理是 2026 年该派最新制度化前沿，Codacy/AgentLinter 34k repo 扫描可作"规则文件也会烂"的定量证据（§5）。
@@ -183,7 +183,7 @@ Codacy 2026-08 的长文（[Repository Instructions Are Becoming Engineering Art
 
 ## 7. 渐进披露深挖（2026-09-21 二轮）
 
-> 本节为一轮 §3 的机制级展开；逐字原文、回源状态与五 repo 实测数据全部在 [`03a-progressive-disclosure-evidence.md`](./03a-progressive-disclosure-evidence.md)（B1–B9），此处只放判读，不复制摘录。
+> 本节为一轮 §3 的机制级展开；逐字原文、回源状态与五 repo 实测数据全部在 [`02a-progressive-disclosure-evidence.md`](./02a-progressive-disclosure-evidence.md)（B1–B9），此处只放判读，不复制摘录。
 
 ### 7.1 机制的权威定义已 quantified：三层不是比喻，是有预算表的加载协议
 
@@ -191,7 +191,7 @@ Anthropic 对 progressive disclosure 的官方口径有两处一手源：工程�
 
 ### 7.2 真实 repo 的披露结构：两种形态并存，且都远超"~100 行"教条
 
-二轮新解剖 4 个 repo（+复核 ghostty，实测数据见 03a B8）：**next.js**（524 行/29.3KB ≈7k tokens 常驻 + `.agents/skills/` 13 个 SKILL.md 池 + "改子目录前读整条 README 链"的路由规则）、**openai/codex**（320 行/22.4KB 单层深规则，无 skill 层）、**apache/airflow**（246 行 + 生成块 + 明文的"runtime 不支持 skill 发现就读 SKILL.md"降级协议）、**anthropics/skills**（pdf skill 314 行/8.1KB ≈2k tokens，恰好落在官方 Level 2 预算内，REFERENCE.md/FORMS.md/scripts 构成标准第三层）。判读：① OpenAI 的"~100 行 table of contents"是**建议而非实态**——两个 OpenAI 系/Apache 级 repo 根文件都在 5–7k tokens，next.js 的 29.3KB 甚至已逼近 Codex 32KiB 截断线；② 渐进披露的"第 2 层"在 2026 年已分化为两种载体：**skill 池**（按任务类触发）与**README/深文档链**（按编辑路径触发），优秀 repo 两者并用。
+二轮新解剖 4 个 repo（+复核 ghostty，实测数据见 03a B8）：**next.js**（524 行/29.3KB ≈7k tokens 常驻 + `.agents/skills/` 12–13 个 SKILL.md 池（canary 计数随日期波动，2026-09-21 实测 12 个 $ 条目） + "改子目录前读整条 README 链"的路由规则）、**openai/codex**（320 行/22.4KB 单层深规则，无 skill 层）、**apache/airflow**（246 行 + 生成块 + 明文的"runtime 不支持 skill 发现就读 SKILL.md"降级协议）、**anthropics/skills**（pdf skill 314 行/8.1KB ≈2k tokens，恰好落在官方 Level 2 预算内，REFERENCE.md/FORMS.md/scripts 构成标准第三层）。判读：① OpenAI 的"~100 行 table of contents"是**建议而非实态**——两个 OpenAI 系/Apache 级 repo 根文件都在 5–7k tokens，next.js 的 29.3KB 甚至已逼近 Codex 32KiB 截断线；② 渐进披露的"第 2 层"在 2026 年已分化为两种载体：**skill 池**（按任务类触发）与**README/深文档链**（按编辑路径触发），优秀 repo 两者并用。
 
 ### 7.3 嵌套作用域：规范一句话，实现三套语义
 
@@ -210,13 +210,13 @@ Anthropic 对 progressive disclosure 的官方口径有两处一手源：工程�
 
 1. §3(b)"skill 化层"升级为**有官方预算表的三层加载协议**（~100 tok / <5k tok / 零直到读取），且 Cursor `.mdc` 四态规则与 Claude Code `.claude/rules/` paths 是同一原理的非 skill 实现——渐进披露已从 Claude 生态特例扩散为跨工具通用机制。
 2. "AGENTS.md ~100 行"教条降级为**理想值**：实态旗舰 repo 是 5–7k tokens 常驻层 + skill 池，判断标准应是"每一行是否充当路由/红线"而非行数本身。
-3. 一轮 §0 limitations"Claude Code 是否原生支持 AGENTS.md 待验证"可关闭：官方文档已给完整支持矩阵（v2.1.277+，默认 CLAUDE.md 优先、可设 `claude-md-and-agents-md` 双读），03a B4.5。
+3. 一轮 §0 limitations"Claude Code 是否原生支持 AGENTS.md 待验证"可关闭：官方文档已给完整支持矩阵（B4 AGENTS.md 小节为半回源，个别段落未逐字复核）（v2.1.277+，默认 CLAUDE.md 优先、可设 `claude-md-and-agents-md` 双读），03a B4.5。
 
 ---
 
 ## 8. 团队治理实践深挖（2026-09-21 二轮）
 
-> 本节为一轮 §5 的组织级展开：谁写、怎么 review、怎么度量、怎么防腐。逐字原文、回源状态与全部 URL 在 [`03a-agents-md-governance-evidence.md`](./03a-agents-md-governance-evidence.md)（A=大厂、B=OSS 活样本、C=度量与工具、D=harness 新声音），此处只放判读。
+> 本节为一轮 §5 的组织级展开：谁写、怎么 review、怎么度量、怎么防腐。逐字原文、回源状态与全部 URL 在 [`02b-agents-md-governance-evidence.md`](./02b-agents-md-governance-evidence.md)（A=大厂、B=OSS 活样本、C=度量与工具、D=harness 新声音），此处只放判读。
 
 ### 8.1 大厂一手：治理形态已有四种可命名范式（观测 2026-09-21）
 
@@ -249,7 +249,7 @@ Shopify 是第五种角色：**格式统一的强制方**——Tobi Lütke 2026-
 
 ### 8.4 工具：lint 层已出现，eval 层仍空档
 
-Codacy AgentLinter 之外，2026 年新增三个可回源的开源工具（03a C2）：**agnix**（456 条规则、LSP/GitHub Action/MCP server，"The missing linter and lsp for AI coding assistants"）、**fchastanet/ai-linter**（token 上限/引用存在性/根目录必备检查，pre-commit 集成）、**claudemd-pro**（26 条 lint 规则 + 0–100 **effectiveness score** + drift 检测——首个把"效果"量成分数的工具，但评分法未外部验证）。claude-md-lint 等 npm 包半回源。**独立"compliance eval"通用工具尚未成型**——合规评测目前以论文 benchmark + 厂商自评（Vercel agent evals）形态存在，与 8.2 的"没有 repo 在 CI 里 lint 规则文件内容"互为表里。
+Codacy AgentLinter 之外，2026 年新增三个可回源的开源工具（03a C2）：**agnix**（456 条规则、LSP/GitHub Action/MCP server，"The missing linter and lsp for AI coding assistants"）、**fchastanet/ai-linter**（token 上限/引用存在性/根目录必备检查，pre-commit 集成）、**claudemd-pro**（26 条 lint 规则 + 0–100 **effectiveness score** + drift 检测——本轮检索范围内首个把"效果"量成分数的工具，评分法未获外部验证）。claude-md-lint 等 npm 包半回源。**独立"compliance eval"通用工具尚未成型**——合规评测目前以论文 benchmark + 厂商自评（Vercel agent evals）形态存在，与 8.2 的"没有 repo 在 CI 里 lint 规则文件内容"互为表里。
 
 ### 8.5 harness 接口：规则文件治理已被明确装进 harness 治理层（新独立声音，03a D）
 
@@ -265,6 +265,6 @@ Codacy AgentLinter 之外，2026 年新增三个可回源的开源工具（03a C
 
 ### 8.6 对一轮结论的三点修订
 
-1. §1.1 空档关闭：Claude Code 2026-09 起原生支持 AGENTS.md（与 §7.5 第 3 条互证），"双文件漂移风险"的成因从工具缺位转为迁移惯性。
+1. §1.1 空档关闭：Claude Code 2026-09 起原生支持（Register 半回源 + 官方文档部分半回源互证） AGENTS.md（与 §7.5 第 3 条互证），"双文件漂移风险"的成因从工具缺位转为迁移惯性。
 2. §1.3/§6.2 口径精确化：benchmark 实名 CTXbench；Umans 材料标注 2025-11-29。
 3. §5 治理清单补组织级证据：防腐的四种已验证范式（Cloudflare 自动闭环 / Vercel 证据回路 / Anthropic 用量遥测 / goose 元治理），"规则文件也会烂"从 Codacy 扫描升级为有正反例的工程实践谱系；规范层无 schema 与治理层需元数据的张力（§5 末）仍存在，但已出现工件化绕行方案（harness-kit 的 lock 文件、claudemd-pro 的评分）。

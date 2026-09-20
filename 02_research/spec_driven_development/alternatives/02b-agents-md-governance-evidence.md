@@ -2,12 +2,12 @@
 
 > **元数据**
 > - accessed_at：2026-09-21（二轮逐条回源；三路并行：大厂一手 / OSS repo 活样本 / 度量·工具·harness 声音）
-> - 上游：`03-context-engineering.md` §「团队治理实践深挖（2026-09-21 二轮）」（本文件为其全文证据档案，不复制结论性判读）
+> - 上游：`02-context-engineering.md` §「团队治理实践深挖（2026-09-21 二轮）」（本文件为其全文证据档案，不复制结论性判读）
 > - 回源途径标注（与 04a 同一口径）：
 >   - **一手** = 直接抓到原文页面 / GitHub API / shallow clone 直读源文件；
 >   - **半回源** = 原文页存在且关键信息（标题/日期/摘要）直接确认，但正文未完整渲染，细节经消化稿核验；
 >   - **转述** = 原文抓不到，仅经媒体译文/第三方摘要中转。
-> - 摘录纪律：所有英文原句为回源页面逐字摘录；抓不到的如实标注"转述"，不代拟。部分摘录由并行回源子代理完成并逐字核对，本档案按其报告记录回源状态。
+> - 摘录纪律：所有英文原句为回源页面逐字摘录；抓不到的如实标注"转述"，不代拟。部分摘录由并行回源子代理完成（⚠ 审计注：A1.1/A3/A5 等条目的一手判定系转承子代理结论，非本档案作者直核——引用时按"半手"对待）并逐字核对，本档案按其报告记录回源状态。
 > - 观测方法备注：OSS repo 部分使用 GitHub REST API（未认证，约 10 次调用）+ 当日 shallow clone 直读；PR 逐条 review 记录未全量拉取（推断处均已标注）。
 
 ---
@@ -43,7 +43,7 @@
 效果自述：
 > "Verification skills have had the most measurable impact on Claude's output quality internally. It can be worth having an engineer spend a week just making your verification skills excellent."
 
-### A1.2 《Running an AI-native engineering org》（Fiona Fung，Code w/ Claude SF 2026）
+### A1.2 《Running an AI-native engineering org》（Fiona Fung，Code w/ Claude（页面 fetch 截断，引语取自本场次页元数据，核对途径单一） SF 2026）
 
 | 项 | 值 |
 |---|---|
@@ -174,7 +174,7 @@
 
 > "From launching this effort to 93% R&D adoption took less than a year."
 
-（活跃用户 3,683 = 公司 60%、R&D 93%；数据区间 Feb 5–April 15, 2026；AI Code Reviewer 集成于 GitLab CI 审所有 MR。）
+（活跃用户 3,683 = 公司 60%、R&D 93%；数据区间 Feb 5–April 15, 2026；AI Code Reviewer 集成于 GitLab CI 审所有 MR。）（括注数字按当日抓取记录，未独立复核）
 
 ---
 
@@ -235,9 +235,9 @@
 ### B3. block/goose（现 aaif-goose org）—— 治理强项：流程元治理
 
 - **提交史**【一手】 https://api.github.com/repos/block/goose/commits?path=AGENTS.md （需 -L 跟随 301）：27 条，2025-09-05（e54ba78 "Add AGENTS.md for AI coding assistant support (#4539)"）→ 2026-09-17，14 位作者（Angie Jones 5、Jack Amadeo 4、Douwe Osinga 3…），分布最社区化。
-- **PR 流程**【一手】全部带 PR 号；代表性元规则 PR https://github.com/block/goose/pull/10819 "docs: adopt issue-first contribution workflow"（merged 2026-07-30 by alexhancock，**16 条 review comments**——三 repo 中评审强度最高），body 逐字 "add the Ready-status gate to agent instructions"。AGENTS.md 现文即其产物："The issue is the source of truth… Every external pull request must link the Ready issue it implements."
+- **PR 流程**【一手】全部带 PR 号；代表性元规则 PR https://github.com/aaif-goose/goose/pull/10819 "docs: adopt issue-first contribution workflow"（merged 2026-07-30 by alexhancock，**16 条 review comments**——三 repo 中评审强度最高），body 逐字 "add the Ready-status gate to agent instructions"。AGENTS.md 现文即其产物："The issue is the source of truth… Every external pull request must link the Ready issue it implements."
 - **CI 检查**【一手】无 lint；但 `.github/workflows/goose-pr-reviewer.yml` L141 与 `goose-issue-solver.yml` L75 均含 checklist 项逐字 "Read AGENTS.md if it exists"——自家 agent 做 PR 评审/解决时被强制读规则文件（agent 化消费，非 lint）。
-- **防腐机制**【一手】(a) CLAUDE.md 仅一行 "@AGENTS.md" 引用（单一事实源）；(b) 显式过期机制段 "Agent Loop Migration"："We are replacing the legacy agent loop in `crates/goose/src/agents/agent.rs` with the state machine in … Until the migration is complete, changes to agent-loop behavior must be implemented and tested in both paths."；(c) 决策外链："See [Discussion #10830](https://github.com/aaif-goose/goose/discussions/10830) for the decision and migration direction."；(d) 主动减法 commit a9060fd2 "docs: stop enumerating crates in AGENTS.md Structure (#11614)" 防清单腐化。
+- **防腐机制**【一手】(a) CLAUDE.md 仅一行 "@AGENTS.md" 引用（单一事实源）；(b) 显式过期机制段 "Agent Loop Migration"："We are replacing the legacy agent loop in `crates/goose/src/agents/agent.rs` with the state machine in … Until the migration is complete, changes to agent-loop behavior must be implemented and tested in both paths."；(c) 决策外链："See [Discussion #10830](https://github.com/aaif-goose/goose/discussions/10830) for the decision and migration direction.（⚠ 审计勘误：实测 #10830 为 MCP registry 退役公告，与 agent-loop 迁移无关——待核）；(d) 主动减法 commit a9060fd2 "docs: stop enumerating crates in AGENTS.md Structure (#11614)" 防清单腐化。
 
 ### B4. 横向对比（2026-09-21 观测）
 

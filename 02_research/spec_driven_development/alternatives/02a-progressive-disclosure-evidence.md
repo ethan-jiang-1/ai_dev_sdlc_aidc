@@ -1,8 +1,8 @@
 # 03a：渐进式披露深挖——原文摘录档案
 
 > **元数据**
-> - accessed_at：2026-09-21（本轮逐条 web_fetch 回源；结构仿 `04a-harness-convergence-evidence.md`）
-> - 上游：`03-context-engineering.md` §「渐进披露深挖（2026-09-21 二轮）」（本文件为其全文证据档案，只放摘录与回源状态，不放结论性判读）
+> - accessed_at：2026-09-21（本轮逐条 web_fetch 回源；结构仿 `03a-harness-convergence-evidence.md`）
+> - 上游：`02-context-engineering.md` §「渐进披露深挖（2026-09-21 二轮）」（本文件为其全文证据档案，只放摘录与回源状态，不放结论性判读）
 > - 回源途径标注：**一手** = 直接抓到原文页面/文件；**半回源** = 原文页抓到但正文未全读；**转述** = 原文抓不到，仅消化稿/转引。半回源只降级、不下否定性结论。
 > - 摘录纪律：所有英文原句为本次回源页面逐字摘录（含原文笔误，如 codex 文档 "If you find one, Claude reads it instead of `AGENTS.md`" 一类口语化表述均保留原样）；抓不到的如实标注，不代拟。
 > - 规模量化说明：token 数为按英文 ≈4 字符/token 的**估算值**，字节/行数为 raw 文件实测（2026-09-21 curl 实测）。
@@ -29,7 +29,7 @@
 
 加载触发条件（level 1→2 的触发者是模型自己的判断，基于 description）：
 
-> Progressive disclosure is the core design principle that makes Agent Skills flexible and scalable. Like a well-organized manual that starts with a table of contents, then specific chapters, and finally a detailed appendix, skills let Claude load information only as needed
+> Progressive disclosure is the core design principle that makes Agent Skills flexible and scalable. Like a well-organized manual that starts with a table of contents, then specific chapters, and finally a detailed appendix, skills let Claude load information only as needed […]
 
 > Pay special attention to the `name` and `description` of your skill. Claude will use these when deciding whether to trigger the skill in response to its current task.
 
@@ -73,7 +73,7 @@ Level 2 的触发动作是"模型自己 cat 文件"：
 
 Level 3 的零成本论断与脚本特殊性：
 
-> Claude accesses these files only when needed. **On-demand file access:** Claude reads only the files each task needs. A Skill can include dozens of reference files, but if your task only needs the sales schema, that's the one file Claude loads. The rest stay on the filesystem and cost zero tokens.
+> Claude accesses these files only when referenced. [sic 勘误：前稿误作 "when needed"] **On-demand file access:** […] Claude reads only the files each task needs. A Skill can include dozens of reference files, but if your task only needs the sales schema, that's the one file Claude loads. The rest stay on the filesystem and cost zero tokens.
 
 > When Claude runs `validate_form.py`, the script's code never loads into the context window. Only its output (such as "Validation passed" or a specific error message) consumes tokens
 
@@ -280,7 +280,7 @@ skill 池路由节（AGENTS.md 只放一行描述 + `$skill` 指针）：
 > Use skills for conditional, deep workflows. Keep baseline iteration/build/test policy in this file.
 > - `$pr-status-triage` - CI failure and PR review triage with `scripts/pr-status.js`
 > - `$flags` - feature-flag wiring across config/schema/define-env/runtime env
-> （共 13 个 `$` 条目；另有 "Development Anti-Patterns" 节把 4 个 runtime 内部规则指向 `.agents/skills/*/SKILL.md`）
+> （canary 2026-09-21 实测 12 个 `$` 条目，前记 13 系把 Test Gotchas 节的 $router-act 误计入本节；另有 "Development Anti-Patterns" 节把 4 个 runtime 内部规则指向 `.agents/skills/*/SKILL.md`）
 
 skill 文件实测（`.agents/skills/pr-status-triage/SKILL.md`，74 行；`.agents/skills/flags/SKILL.md`，45 行），frontmatter 逐字：
 
