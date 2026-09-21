@@ -26,7 +26,7 @@
 | [tools/superpowers.md](tools/superpowers.md) | Superpowers 深挖（含"它不是传统 SDD"辨析） | 2026-09-20 |
 | [tools/bmad-method.md](tools/bmad-method.md) | BMAD-METHOD 深挖（角色化敏捷方法论） | 2026-09-20 |
 | [tools/kiro.md](tools/kiro.md) | Amazon Kiro 深挖（厂商数字已标证据强度） | 2026-09 |
-| [tools/tessl.md](tools/tessl.md) | Tessl 深挖（spec-as-source，融资为二手报道口径） | 2026-09 |
+| [tools/tessl.md](tools/tessl.md) | Tessl 深挖（spec-as-source，融资为二手报道口径；2026-03 起停摆，见 comparison.md⁴ 勘误） | 2026-09 |
 | [tools/others-and-declining.md](tools/others-and-declining.md) | claude-task-master（被放弃）+ 边缘项目存目 | 2026-09-20 |
 | [debate/README.md](debate/README.md) | **评判综合**：矛盾裁决、加权六点判断、团队落地结论 | 2026-09-20 |
 | [debate/signals-2026h2.md](debate/signals-2026h2.md) | 2026.6–9 最新信号全景（矛盾信号以此裁决） | 2026-09-20 |
@@ -43,15 +43,16 @@
 
 ## 已知缺口（动态清单，2026-09-20 二轮更新）
 
-1. ~~Superpowers 零覆盖~~（tools/ 已补）~~2026H2 信号~~（debate/ 已补）~~大规模团队案例~~（已补：NodeSource/网易智企/Scott Logic，"几十人以上一手实证"仍缺）~~Kiro/BMAD 团队实例~~（已补：仅弱证据——Delta Air Lines 机器转写 + OCTO Talks PO 复盘；`.kiro/` 生产实例仍缺位）~~TW Vol.34 定级~~（已官方直读确证：SDD 主条目 NOT ON CURRENT EDITION）
+1. ~~Superpowers 零覆盖~~（tools/ 已补）~~2026H2 信号~~（debate/ 已补）~~大规模团队案例~~（已补：NodeSource/网易智企 一手案例；Scott Logic 属失败实测/反面案例而非大规模采用案例，"几十人以上一手实证"仍缺）~~Kiro/BMAD 团队实例~~（已补：仅弱证据——Delta Air Lines 机器转写 + OCTO Talks PO 复盘；`.kiro/` 生产实例仍缺位）~~TW Vol.34 定级~~（已官方直读确证：SDD 主条目 NOT ON CURRENT EDITION）
 2. ~~思想谱系未梳理~~（已补：[lineage.md](lineage.md)——"SDD=MDD 的承诺+BDD 的模板，LLM 改变成本结构后的第三次重试"；"SDD=新瀑布"现在有史实坐标可对照）
 3. ~~替代/后继形态未成篇~~（已补，2026-09-21 进一步升格为独立研究目录 [../beyond_spec_driven_development/](../beyond_spec_driven_development/README.md)——五形态深挖 + SVG 光谱图；团队级收敛点=harness 治理路线）
-3.5 实战团队场景比较已补：[comparison-field-reports.md](comparison-field-reports.md)——只收一线复盘的"spec 写作质量 × 工程控制"横向比较，每格挂真实案例、无证据的格子如实标注。
-4. 全部数据为 2026-09-20 单日快照，趋势判断依赖少量第三方历史锚点（如 OpenSpec 55.9k @06-22），无自建时间序列。
+4. 实战团队场景比较已补：[comparison-field-reports.md](comparison-field-reports.md)——只收一线复盘的"spec 写作质量 × 工程控制"横向比较，每格挂真实案例、无证据的格子如实标注。
+5. 全部数据为 2026-09-20 单日快照，趋势判断依赖少量第三方历史锚点（如 OpenSpec 55.9k @06-22），无自建时间序列。
 
 ## 约定
 
 - 数据一律 GitHub API 直读 + 交叉验证，标注观测日期；stars 等快照数字随时间失效，引用时带日期。
 - 厂商自述数字（Kiro 用户数、Tessl 估值）单独标注证据强度，不当事实引用。
 - 每个 tool 一个文件（`tools/<name>.md`，统一模板：定位/起源/工件链/指标/采纳/趋势/批评/适用场景/来源）；横向结论只写 `comparison.md`，单文件不重复。
-- ~~后续扩展建议子目录：`tools/`（单项目深挖）、`debate/`（方法论批判与反批判）、`adoption/`（企业案例）。~~ `tools/` 已于 2026-09-20 落地；`debate/`、`adoption/` 仍待建。
+- ~~后续扩展建议子目录：`tools/`（单项目深挖）、`debate/`（方法论批判与反批判）、`adoption/`（企业案例）。~~ 现状：`tools/`、`debate/` 已落地（2026-09-20/21）；`adoption/` 仍待建。
+- 横向比较分工：comparison.md=工具横向权威；comparison-field-reports.md=实战横向；sdd-tooling-landscape=生态全景与原始指标（横比结论以 comparison.md 为准）。

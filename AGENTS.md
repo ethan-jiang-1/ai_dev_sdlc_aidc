@@ -77,7 +77,7 @@
 `01_sources/` / `02_research/` / `03_practice/` / `04_enterprise/` 目前是**沉淀状态**，不是日常推进对象。
 
 - 补素材、改研究结论前，先确认它是否为某场 talk 服务。**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**，避免事实分散到两处。
-- `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含三个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。
+- `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含四个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`、`harness_governance/`（2026-09-21 自 beyond 抽出：AI 形态下新的 SDLC——harness/context 治理）。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。
 - 研究层与实践层遵守统一纪律：一手源优先、来源可溯、标注观测日期。
 
 ---

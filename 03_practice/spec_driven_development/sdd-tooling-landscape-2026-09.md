@@ -1,8 +1,9 @@
-# Topic 07 — Spec-Driven Development (SDD) 工具生态现状、趋势与影响力（2026-09 快照）
+# Spec-Driven Development (SDD) 工具生态现状、趋势与影响力（2026-09 快照）
 
 > 观测日期：**2026-09-20**（任务要求"2026-09-17 附近"；GitHub API 数字为该日实测，另注明交叉验证）。
 > 方法：一手源优先（GitHub REST API v3 `api.github.com`、官方 README/release/blog），二手报道仅作补充并标注。
-> 本文件遵循本目录 `topic-NN-slug.md` 命名约定，编号顺延（此前最大 topic-06）。
+> 定位：2026-09-21 起属实践层 `03_practice/spec_driven_development/` 本目录（不再使用旧 "Topic 07 / topic-NN" 编号身份）；本文提供生态全景与原始指标，**横向比较结论以同目录 [comparison.md](comparison.md) 为权威**。
+> **快照锚点声明**：stars/forks 等快照以本文 §3 表为回溯锚（观测 2026-09-20），tools/ 各篇及他处数字若差 ±1~10 属同日实时漂移，以本表为准。
 
 ---
 
@@ -15,7 +16,7 @@
 - **创建时间**：2025-08-21（同上 API `created_at`）。
 - **活跃度**：**高，仍活跃**。最近 push 2026-09-18；release 周节奏：v1.0.6（2026-09-10）→ v1.0.7（2026-09-15）→ v1.0.8（2026-09-17），来源：`https://api.github.com/repos/github/spec-kit/releases?per_page=3`（观测 2026-09-20）。
 - **定位与机制一句话**：GitHub 官方的 SDD 工具包（`specify` CLI），把 constitution → spec → plan → tasks 的模板化工作流注入 Claude Code / Copilot / Cursor / Gemini CLI 等任意 agent，"`/speckit.constitution` `/speckit.spec` …" 斜杠命令驱动（来源：README 与 release notes，同上）。
-- **采纳迹象**：**100+ contributors**（contributors API `per_page=100` 满页，观测 2026-09-20；头部为 GitHub 员工 localden/mnriem，社区贡献者长尾）。有扩展生态（community catalog 中第三方 extension 数十个）。ThoughtWorks Radar 设有独立条目 "GitHub Spec Kit"（languages-and-frameworks 象限，来源：https://www.thoughtworks.com/radar/languages-and-frameworks/github-spec-kit ，观测 2026-09-20；条目定性文字页面 JS 渲染未能提取，仅确认条目存在）。Martin Fowler 站点专文分析（见 §3）。
+- **采纳迹象**：**100+ contributors**（contributors API `per_page=100` 满页，观测 2026-09-20；头部为 GitHub 员工 localden/mnriem，社区贡献者长尾）。有扩展生态（community catalog 中第三方 extension 数十个）。ThoughtWorks Radar 设有独立条目 "GitHub Spec Kit"（languages-and-frameworks 象限，来源：https://www.thoughtworks.com/radar/languages-and-frameworks/github-spec-kit ，观测 2026-09-20；条目定性文字页面 JS 渲染未能提取，仅确认条目存在）。⚠ 勘误（2026-09-21）：该独立条目页未在本目录补遗核查中命中、未获核验，维持正文点名口径，见 [debate/authoritative-verdicts.md](debate/authoritative-verdicts.md) 补遗。Martin Fowler 站点专文分析（见 §3）。
 - **趋势判断**：**上升**。创建仅 13 个月即 138k stars；周级 release；extension 生态成型；大厂（GitHub 自家）持续投入。证据强度：强。
 
 ### 1.2 OpenSpec（Fission-AI/OpenSpec）
@@ -66,7 +67,7 @@
 **Tessl**（tessl.io）
 - 定位：Snyk 创始人 Guy Podjarny 创办的 "spec-centric / AI-native" 开发平台，主张 "spec as source of truth"，有 Registry（如 `spec-as-source` 包，https://tessl.io/registry/spec-driven-development/spec-as-source/3.0.0/ ，观测 2026-09-20）。
 - 资金信号（二手报道，标注）：$125M 融资（[TechFundingNews](https://techfundingnews.com/tessl-raises-125m-ai-native-software-development/)）；后续 $100M、估值约 $750M（[Yahoo Finance/SCMP 转载](https://sg.finance.yahoo.com/news/exclusive-tessl-worth-reported-750-080100819.html)，观测 2026-09-20）。官方博客确认 Series A：https://tessl.io/blog/announcing-our-series-a-for-ai-native-software-development/ （标题页确认，正文 JS 截断）。
-- 判断：资本层面上升；开源社区声量小于 Spec Kit/Superpowers。
+- 判断：~~资本层面上升~~（2026-03 起公开停摆转型，见 [comparison.md](comparison.md) §1⁴ 勘误与 [tools/tessl.md](tools/tessl.md)；写作时点口径作存档）；开源社区声量小于 Spec Kit/Superpowers。
 
 **claude-task-master**（eyaltoledano/claude-task-master）
 - **28,085 stars / 2,619 forks**，创建 2025-03-04（API，观测 2026-09-20）。
@@ -86,7 +87,7 @@
 ### A. 社区/行业"公认较好"的 SDD 方案是哪几个？
 
 依据（按可追溯性排列）：
-1. **ThoughtWorks Radar 独立条目**：GitHub Spec Kit 与 OpenSpec 各有独立条目，且 "spec-driven development" 本身作为 technique 有条目（三条目页面均存在，观测 2026-09-20；TW Radar 只收"值得关注/已在用"的技术）。这是目前最强的行业背书。
+1. **ThoughtWorks Radar 独立条目**：OpenSpec 的 Vol.34 独立条目已获官方直读确认（Tools 象限，Assess）；"spec-driven development" 作为 technique 有条目（Vol.33 Assess）。GitHub Spec Kit 的独立条目**未获核验**（条目页未在补遗核查中命中，仅 Vol.33 正文点名；见 [debate/authoritative-verdicts.md](debate/authoritative-verdicts.md) §补遗）。行业背书成立但强度需按此口径区分。
 2. **Martin Fowler 站点专文** "Understanding Spec-Driven-Development: Kiro, Spec-Kit, and Tessl"（martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html，HN 2025-10-16 128 分）——把 **Kiro、Spec Kit、Tessl** 并列为三大代表。
 3. **社区体量**：Superpowers、Spec Kit、OpenSpec、BMAD 四个 5 万+ star 项目全部活跃维护（2026-09 均有 release）。
 
@@ -94,10 +95,12 @@
 
 ### B. SDD 方向整体热度：上升还是退潮？
 
+> ⚠ 勘误指针（2026-09-21）：本小节"仍在上升/两极辩论期"为 2026-09-20 快照口径，已被 [debate/README.md](debate/README.md) 的 2026H2 裁决（话语退潮、工件固化、SDD 跌出 Radar 当前版）取代，趋势判断以那边为权威。以下保留作快照存档。
+
 **判断：仍在上升，但已从"新鲜事物"进入"两极辩论期"。**
 
 上升信号（2025H2–2026）：
-- ThoughtWorks Radar 为 spec-driven development、Spec Kit、OpenSpec 设独立条目（观测 2026-09-20）；
+- ThoughtWorks Radar 为 spec-driven development、OpenSpec 设独立条目（Spec Kit 条目页后经补遗核查未命中，仅 Vol.33 正文点名，见 [debate/authoritative-verdicts.md](debate/authoritative-verdicts.md) 补遗；观测 2026-09-20）；
 - HN Algolia 检索 "spec-driven development" 共 **138 条 story**（观测 2026-09-20），且高热帖横跨 2025-09 → 2026-05 持续出现；
 - Kiro 一周年报告用户逐季翻倍、企业名单扩张（2026-07，厂商自述）；
 - Tessl 两轮融资累计 $225M+（二手，标注如上）；
@@ -122,7 +125,7 @@
 | bmad-code-org/BMAD-METHOD | 53,266 / 6.0k forks | 2025-04-13 | push 09-20；v6.12.0 09-04；高 | 多 agent 角色化敏捷方法论（PM/架构/Dev/QA），重流程可裁剪 | 平台期偏上升 | 中强（license 非标准，需注意） |
 | eyaltoledano/claude-task-master | 28,085 / 2.6k forks | 2025-03-04 | **push 停在 2026-04-28，停滞** | PRD→task 拆解管理（早期事实标准） | **下降（项目转向商业产品）** | 强（API 直读） |
 | Amazon Kiro（商业，无 star） | n/a（5 天 10 万试用，自述） | preview 2025-07，GA 2025-11 | 产品线持续扩张（CLI/Web/Mobile/GovCloud） | spec 一等公民的 agentic IDE | 上升 | 事实层强；数字为厂商自述=中 |
-| Tessl（商业） | n/a | 2024 创立 | Registry 活跃 | spec-as-source 平台 | 资本上升 | 中（融资为二手报道） |
+| Tessl（商业） | n/a | 2024 创立 | Registry 活跃 | spec-as-source 平台 | ~~资本上升~~（2026-03 起停摆，见 comparison.md⁴ 勘误） | 中（融资为二手报道） |
 
 ---
 

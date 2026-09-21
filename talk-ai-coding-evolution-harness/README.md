@@ -30,7 +30,8 @@
 talk-ai-coding-evolution-harness/
 ├── README.md                                # ★【新对话从这里开始】本文件：地图 + 素材说明 + 工作方式
 ├── AGENTS.md                                # 【agent 手册】进入仪式 + 门禁 + 规则 + 已知陷阱 + 生产工具链
-├── CURRENT.md                               # 【当前态权威】现在做到哪一步、下一步动哪个文件
+├── CURRENT.md                               # 【当前态权威·热区】现在做到哪一步、下一步动哪个文件
+├── CURRENT-history.md                       # 【冷区】历轮改动记录，append-only，不是第二权威
 ├── CONTEXT.md                               # 【术语权威】本 talk 的局部 glossary + 禁用词
 ├── _reference/                              # 上游素材 symlink（只读），说明见其 README
 │   ├── README.md                            #   十四份素材的分工 + 引用约定
@@ -47,7 +48,7 @@ talk-ai-coding-evolution-harness/
 │   ├── rawdata_dsh-plugin-ecosystem-distribution/ # 【symlink】插件生态分布快照
 │   ├── rawdata_dsh-plugin-ecosystem/        # ★【symlink】插件生态全景（2026-09-15 快照，census 现算）
 │   ├── rawdata_ai-coding-evolution-reference/ # ★【symlink】一手来源卡片 137 张（回源 / 引文 / 核口径来这层）
-│   └── rawdata_harness-selection-reference/ # ★【symlink】一手来源卡片 168 张（P25 官方博客卡、P26 flash 原始卡在这）
+│   └── rawdata_harness-selection-reference/ # ★【symlink】一手来源卡片 168 张（回源 / 核口径来这层；页号以 03_outline 页表为准）
 ├── 01_storyline/                            # ★ 故事线推敲主战场
 │   ├── 00-storyline-map.md                  #   故事线总图（v2.2）：主轴 + 六步脊柱 + 五层表 + 两类程序表 + 节奏
 │   ├── 01-thesis-and-positions.md           #   核心论点与立场（主张 / 支撑 / 强度）
@@ -62,18 +63,20 @@ talk-ai-coding-evolution-harness/
 │   └── 01-visual-carrier-plan.md            #   ★ 页面承载规格（四层承载 + 载体类型库 + 密度自检）
 ├── 04_drafts/                               # 生产事实稿
 │   └── ppt-text-v3.md                       #   ★ 当前页面文案（37 页 + 停顿页，四层承载）
-└── 05_output/                               # PPTX 交付物
+└── 05_output/                               # 交付物
+    ├── handoff/                             # ★ 当前生产路线：自包含全页内容交付稿（外部工具重做版式）
+    │   └── AI-Coding-演变指南-全页内容-v3.3.md #   42 张全页内容，按 ^---$ 切分即得每页
     ├── v0.1/visual-samples.html             #   视觉样片 4 张（已认可，视觉基准）
-    └── v0.4/AI Coding 演变指南/             # ★ 当前 REVIEW 对象：42 张 PPTX + 42 个 .slide 源 + DESIGN.md
+    └── v0.4/AI Coding 演变指南/             #   内容与页序的事实对照（42 张，不再迭代版式）
 ```
 
 ## 上游素材分工
 
-**十三份**素材全部收在 [`_reference/`](./_reference/README.md) 下，只读。**分三层**（详见其 README）：
+**十四份**素材全部收在 [`_reference/`](./_reference/README.md) 下，只读。**分三层**（详见其 README）：
 
 - **综合层** —— `*-final/`：报告正文（二手），给故事线与结论骨架。
 - **一手来源卡片层** —— `*-reference/`（**305 张**）：每张带 `tier` / `source_type` / 可引原文。
-  **引文、口径、日期、证据强度一律以这一层为准**；P6 / P7 / P25 三处回源核对就是靠它完成的。
+  **引文、口径、日期、证据强度一律以这一层为准**；历轮回源核对就是靠它完成的（涉及页号时以 `03_outline/00-page-structure-v3.md` 当前页表为准）。
 - **消化层** —— `rawdata_pi-*` / `rawdata_dsh-*`：源码级消化，带锚点，第四幕的硬料。
 
 四条主线：

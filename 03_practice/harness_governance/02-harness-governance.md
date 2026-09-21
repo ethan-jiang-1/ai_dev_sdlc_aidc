@@ -2,10 +2,10 @@
 
 > **元数据**
 > - 观测日期：2026-09-20（2026 材料优先；OpenAI 原文 2026-02-11，Hashimoto 2026-02-05，arXiv 2026-08-31）
-> - 底稿：本目录 README 第 3 节（原单文件底稿 `02_research/spec_driven_development/alternatives.md` 第 4 节；2026-09-21 随目录升格为 beyond_spec_driven_development 并重排节号，同日随实践层拆分迁至 `03_practice/beyond_spec_driven_development/`）（本文为深挖展开，不复制底稿结论）
+> - 底稿：`../beyond_spec_driven_development/README.md` §3（原单文件底稿 `02_research/spec_driven_development/alternatives.md` 第 4 节；2026-09-21 随目录升格为 beyond_spec_driven_development 并重排节号，同日随实践层拆分迁至 `03_practice/beyond_spec_driven_development/`）（本文为深挖展开，不复制底稿结论）
 > - 定位：五形态中**证据最硬、最可能是团队级收敛点**的一条，故挖最深
 > - 证据强度说明：OpenAI 一手原文（openai.com）在本次观测中直接抓取被拒（403），细节经两个高保真第三方消化源交叉核验后引用，已逐条标注；一手源（Hashimoto、arXiv HTML 全文）均直接回源
-> - 上游文档指针：五形态总览与光谱图见本目录 `README.md`；验证优先派见 `01-*`（同目录系列）
+> - 上游文档指针：五形态总览见 `../beyond_spec_driven_development/README.md` §0–§5、光谱图见其 §6；验证优先派见 `../beyond_spec_driven_development/01-verifiable-specs.md`（跨目录）
 
 ---
 
@@ -310,61 +310,61 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 > 本节回答：**"给 agent 打扫卫生"在 2026 年有没有从个人实践变成工具/产品赛道？** 观测日 2026-09-20，三轮检索（drift 检测 / gardening 实例 / 规则文件治理 + CI 形态 + 反信号）。所有 GitHub/npm/crates.io 数据为当日 API 实测（stars/forks/contributors/release/下载量），每条含机制展开、量化数据、用户侧证据、协议/定价、竞品对照。
 
-### 7.1 drift / 文档腐烂检测
+### 8.1 drift / 文档腐烂检测
 
-**7.1.1 CorvidLabs/spec-sync（本轮品类内完成度最高的开源品）**
+**8.1.1 CorvidLabs/spec-sync（本轮品类内完成度最高的开源品）**
 - 日期/作者：2026-03-18 创建，0xLeif（389 commits）+ corvid-agent（172 commits，**一个 bot 贡献者排第二**）+ 2 名外围，共 4 contributors。
 - 机制展开：不是 LLM 判定，是**规则引擎 + 语言解析器**：把 `specs/*/requirements.md` 精炼成"模块合约表"（`auth.spec.md` 里列出每个 public function），Rust 单二进制解析 33 种语言的导出符号，双向比对——**代码里有合约没写 = undocumented export，合约里有代码删了 = vanished symbol**，任一发生即 CI fail。输出：GitHub Marketplace Action 徽章（spec coverage JSON endpoint）+ CI 失败详情；同时提供 **MCP server**（agent 可在会话内直接查漂移）。README 的 60 秒示例：新增 `pub fn revoke_all_sessions` 未更新合约表即被抓住。
 - 量化数据（GitHub/crates API 实测，2026-09-20）：6★、1 fork、47 open_issues（含 PR；纯 issue 口径 46）、MIT、Rust；**release 迭代极快**：47 个版本、最新 v6.0.0（2026-09-09），此前一周连发 rc.13/rc.14；crates.io 全历史 866 次下载、近 30 天 253 次、活跃推送至 2026-09-19。
 - 用户侧证据：关联 repo `CorvidLabs/corvid-agent` 的 [issue #190 "Review existing specs against current code for drift"](https://github.com/CorvidLabs/corvid-agent/issues/190)——同一作者体系内部把它当真实工作流用；46 个 open issues 说明有真实 issue 流量（尽管可能多为自驱动 bot 产出，需打折）。
 - 协议/定价：MIT，免费，README 明言"no SpecSync API key required"。
-- 竞品对照：对 7.1.2 freshdocs（只做新鲜度门控、无符号级解析）和 7.1.4 docgarden（只做文档健康、不懂代码）——spec-sync 是唯一做到"spec↔代码符号级双向比对"的，代价是要求 spec 按它的表格格式写（**采用成本最高的一个**）。
+- 竞品对照：对 8.1.2 freshdocs（只做新鲜度门控、无符号级解析）和 8.1.3 docgarden（只做文档健康、不懂代码）——spec-sync 是唯一做到"spec↔代码符号级双向比对"的，代价是要求 spec 按它的表格格式写（**采用成本最高的一个**）。
 - URL：[github.com/CorvidLabs/spec-sync](https://github.com/CorvidLabs/spec-sync)
 
-**7.1.2 Supersynergy/freshdocs + patkusch/kontext（"文档新鲜度门控"长尾）**
+**8.1.2 Supersynergy/freshdocs + patkusch/kontext（"文档新鲜度门控"长尾）**
 - 日期：freshdocs 2026-07-02 创建；kontext 2026-08-20 创建；两者观测当日均仍推送（09-13 / 09-18）。
 - 机制展开：freshdocs 口号"Stop AI coding agents from using stale docs"——为 agent 消费的文档建立新鲜度元数据并做门控；kontext 更进一步："给 markdown 生命周期"，**用 git 历史做陈旧性证明**（文档最后实质修改距今多久、对应代码是否已变），输出是"为 agent 打包的新鲜 context 集"。两者都是规则/git 证据驱动，非 LLM 判定。
 - 量化数据：两者均 0★、单人 contributor（GitHub API 实测）。
 - 用户侧证据：无——没有 issue、没有第三方引用，README-only 项目。
 - 协议：freshdocs/kontext 均开源（GitHub 实测仓库公开、MIT 系）；无定价。
-- 竞品对照：与 7.1.1 相比无符号级能力；与 OpenAI 自建的 freshness linter（`git diff --exit-code docs/generated` + 元数据表）相比，功能等价于其"可复刻下位替代"的产品化封装——**这两个项目恰好证明该功能 30 分钟可自建**。
+- 竞品对照：与 8.1.1（spec-sync）相比无符号级能力；与 OpenAI 自建的 freshness linter（`git diff --exit-code docs/generated` + 元数据表）相比，功能等价于其"可复刻下位替代"的产品化封装——**这两个项目恰好证明该功能 30 分钟可自建**。
 - URL：[freshdocs](https://github.com/Supersynergy/freshdocs) / [kontext](https://github.com/patkusch/kontext)
 
-**7.1.3 docgarden + a2a-drift（品类外溢）**
+**8.1.3 docgarden + a2a-drift（品类外溢）**
 - 日期：docgarden 首版 2026-04-23（crates.io），a2a-drift 2026-09-18 创建（观测当日仍在推送）。
 - 机制：docgarden 自述"Repository knowledge tooling for agentic engineering repositories"（关键词 agents/documentation/linter/markdown），Rust CLI；a2a-drift 把 drift 检测对象从文档**外溢到协议合规**：扫 A2A agent card、端点、spec 版本、JSON-RPC 一致性。
 - 量化数据：docgarden 全历史 65 次下载、近 30 天 23 次、停在 0.1.0（crates.io API 实测）；a2a-drift 0★、单人、9 个 open issues（GitHub API 实测）。
 - 用户侧证据：两者皆无。
 - 协议：均为开源；无定价。
-- 对照：docgarden 与 ctxlint（7.3）同做"context 文件健康"但一个是 Rust 零下载、一个有 npm 分发——**分发渠道（npm/npx）比实现语言更决定触达**。
+- 对照：docgarden 与 ctxlint（8.3.3）同做"context 文件健康"但一个是 Rust 零下载、一个有 npm 分发——**分发渠道（npm/npx）比实现语言更决定触达**。
 - URL：[crates.io/crates/docgarden](https://crates.io/crates/docgarden) / [a2a-drift](https://github.com/yunaremaia/a2a-drift)
 
-**7.1.4 商业侧：Mintlify / Swimm / Sourcegraph 文档 agent（2026-04-18 综述）**
-- agentmarketcap.ai 综述《Documentation Agents Hit Production》称三家已把文档 agent 推进生产：从"生成文档"转向"随代码演进保持不腐"。**这是 drift 需求目前唯一有商业收入支撑的形态**——但它作为平台功能存在，不设独立品类定价；本文未回源三家的采用数（综述为二手行业观察，证据强度弱于一手）。对照：独立 drift 工具（7.1.1–7.1.3）全部无商业模式；结论是 drift 检测**被吸收而非独立成品类**。
+**8.1.4 商业侧：Mintlify / Swimm / Sourcegraph 文档 agent（2026-04-18 综述）**
+- agentmarketcap.ai 综述《Documentation Agents Hit Production》称三家已把文档 agent 推进生产：从"生成文档"转向"随代码演进保持不腐"。**这是 drift 需求目前唯一有商业收入支撑的形态**——但它作为平台功能存在，不设独立品类定价；本文未回源三家的采用数（综述为二手行业观察，证据强度弱于一手）。对照：独立 drift 工具（8.1.1–8.1.3）全部无商业模式；结论是 drift 检测**被吸收而非独立成品类**。
 - URL：[agentmarketcap.ai](https://agentmarketcap.ai/blog/2026/04/18/ai-agents-technical-documentation-mintlify-swimm-sourcegraph)
 
-### 7.2 gardening / janitor agent 公开实例（OpenAI 之外）
+### 8.2 gardening / janitor agent 公开实例（OpenAI 之外）
 
-**7.2.1 martymcenroe/AssemblyZero #94 "Lu-Tze: The Janitor"**
+**8.2.1 martymcenroe/AssemblyZero #94 "Lu-Tze: The Janitor"**
 - 日期：issue 落于活跃期；repo 2026-01-11 创建、推送至 2026-09-19。
 - 机制：AssemblyZero 是 Claude Code / Gemini 的参数化多 agent 编排框架（Python），#94 提案把"repo 卫生"设为**编制内的固定 agent 岗位**（名字取 Diskworld 的 janitor Lu-Tze），周期性清扫而非按需触发——与 OpenAI doc-gardening 同构，但作为可配置编排角色而非一次性脚本。
 - 量化数据：112★、2 forks、**612 open issues**（agent 驱动开发的自产 issue 海量堆积，本身就是 harness 治理需求的活体证据）、license 字段 NOASSERTION（自定义协议）。
 - 用户侧证据：612 个 issue 的 tracker 活动即真实使用面；无第三方博客。
-- 对照：与 sliamh11/Deus（7.2.2）相比，Deus 用最朴素的一手指令文件（`.claude/agents/doc-gardener.md` + weekly cron commit，2026-03-21 落地，52★、2026-09-13 推送）——**两者代表 gardening 的两极：框架化岗位 vs 单文件配方**，共同点是没有一个做成产品。
+- 对照：与 sliamh11/Deus（见 8.2.1 内对照行）相比，Deus 用最朴素的一手指令文件（`.claude/agents/doc-gardener.md` + weekly cron commit，2026-03-21 落地，52★、2026-09-13 推送）——**两者代表 gardening 的两极：框架化岗位 vs 单文件配方**，共同点是没有一个做成产品。
 - URL：[AssemblyZero#94](https://github.com/martymcenroe/AssemblyZero/issues/94) / [Deus doc-gardener](https://github.com/sliamh11/Deus/blob/dd8fd769/.claude/agents/doc-gardener.md)
 - 另记分发层：jssblck/agents 的 doc-gardening 被 [skills.sh](https://www.skills.sh/jssblck/agents/doc-gardening) 收录为可安装 skill、KyleKreuter/agent-docs（0★，2026-09-10）做"自感知陈旧度"的 brief skill——gardening 正以 **skill 模板**而非 SaaS 的形态传播。
 
-### 7.3 AGENTS.md / 规则文件治理工具
+### 8.3 AGENTS.md / 规则文件治理工具
 
-**7.3.1 Codacy AgentLinter（唯一商业厂商，上轮已知标题，本轮深挖）**
+**8.3.1 Codacy AgentLinter（唯一商业厂商，上轮已知标题，本轮深挖）**
 - 日期：2026-06-23 扫描报告；开源配套 repo codacy/codacy-agentlinter 2026-03-02 创建、2026-07-29 推送、Apache-2.0、3 名 Codacy 员工 contributor、1★（实测）。
 - 机制展开：静态规则引擎（非 LLM 判定）扫 CLAUDE.md/.cursorrules/AGENTS.md/copilot-instructions，三类规则：①可读性（未定义术语、模糊指令、超长句）；②escape hatch 缺失（无失败停机条件/升级路径）；③安全（危险命令授权、PII、外泄指令、硬编码 secret）。集成形态：IDE 反馈 → git hook → PR check → CI 强制，与主产品 Codacy 的 quality/security 管道合并；配套系列文（AI Risk Hub、Guardrails、Codacy Skills）表明它被定位为主平台的一个扫描器类别，非独立产品。
 - 量化数据：34,266 repo / 1,353 组织；354 组织（26.2%）有 findings、1,604 repo 中招、>13,000 条可读性问题（未定义术语 >7,700）、~5,000 缺 escape hatch + 2,000+ 重复矛盾指令、安全类 978 条（449 危险命令 + 437 PII + 71 外泄 + 21 硬编码 secret）。定价：走 Codacy 主产品定价页（开源免费、按贡献者数的商业 SaaS），AgentLinter 本身不单独计价。
 - 用户侧证据：样本本身即 1,353 个组织的真实启用数据（厂商一手，但带获客动机——报告尾部直接导流注册）。
-- 竞品对照：见 7.3.2/7.3.3；Codacy 的差异化是**组织级样本与安全规则**，开源竞品均无安全类扫描或只有雏形。
+- 竞品对照：见 8.3.2/8.3.3；Codacy 的差异化是**组织级样本与安全规则**，开源竞品均无安全类扫描或只有雏形。
 - URL：[扫描报告](https://blog.codacy.com/we-scanned-34266-repos.-1-in-4-orgs-showed-gaps-in-ai-agent-config-files) / [codacy-agentlinter](https://github.com/codacy/codacy-agentlinter)
 
-**7.3.2 seojoonkim/agentlinter（开源同品类最高星）**
+**8.3.2 seojoonkim/agentlinter（开源同品类最高星）**
 - 日期：2026-02-05 创建、推送至 2026-08-14。
 - 机制：CLI 对整个 agent workspace（Claude Code/OpenClaw/Cursor/Windsurf/Copilot 等框架的 config）做**八维打分**：位置风险警告、token 效率、矛盾检测、secret 泄露等，诊断 + 自动修；明确自我定位"ESLint for AI Agents"，README 直接引 Anthropic CLAUDE.md 指南作规则依据（规则引擎，非 LLM）。
 - 量化数据：80★、9 forks、2 contributors（seojoonkim 52 commits 占绝对主导）、无 license 字段（README 自称 MIT，与 repo 元数据不一致——本身就是治理工具没管好自己元数据的讽刺注脚）、最新 release v1.1.0（2026-03-01）；**npm `agentlinter` 近 30 天 3,732 次下载（实测，本品类最高）**。
@@ -372,16 +372,16 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 - 竞品对照：下载量 3,732 vs agents-lint 1,845 vs ctxlint 128（近 30 天实测）；比 Codacy 多了"打分/自动修"的产品味，少了安全扫描深度与组织级视图。
 - URL：[github.com/seojoonkim/agentlinter](https://github.com/seojoonkim/agentlinter)
 
-**7.3.3 giacomo/agents-lint 与 tqakdev/ctxlint（机制互补的两个"停更样本"）**
+**8.3.3 giacomo/agents-lint 与 tqakdev/ctxlint（机制互补的两个"停更样本"）**
 - agents-lint（2026-02-27 创建，最后 release v0.5.0 于 2026-03-26，此后停更；13★、单人、npm 近 30 天 1,845 下载、无 license 字段）：机制是**真实性校验**——路径存在性（"Path does not exist: ./src/services/auth"）、框架过时模式（"References NgModules — Angular 14+ uses standalone components"）、跨 context 文件一致性（AGENTS.md 有而 CLAUDE.md 没写的路径）、甚至扫描 `~/.claude/projects/.../MEMORY.md` 记忆文件的死链；输出 0–100 健康分 + 修复建议。它回答的是"**AGENTS.md 是不是在撒谎**"（repo 描述原话），与 agentlinter 的"写得够不够好"正交。
 - ctxlint（2026-07-07 创建、07-09 后停更，仅存活 2 天；1★、单人、MIT、npm 128 下载/月）：功能设计最全——**per-tool 负载画像**（每个工具每次请求实际注入哪些文件、多少 token）、重复/漂移/矛盾规则、死链、以及"用最近 commits 判定哪些规则是死规则"；三合一（linter+profiler+coverage）但无人接盘。
 - 用户侧证据：agents-lint 有真实下载曲线（月均 ~1,800）但无 issue/博客；两者停更后无社区接手——**单人项目死亡即品类损耗**的直接证据。
 - 对照结论：agentlinter（维护中、分最全）↔ agents-lint（真实性好但停更）↔ ctxlint（机制最深但停更）：品类里"机制深度"与"持续维护"从未在同一个人手里同时成立。
 - URL：[agents-lint](https://github.com/giacomo/agents-lint) / [ctxlint](https://github.com/tqakdev/ctxlint)
 
-### 7.4 CI 集成形态
+### 8.4 CI 集成形态
 
-**7.4.1 SpecShield CLI（spec/合约校验进 CI 的商业化尝试）**
+**8.4.1 SpecShield CLI（spec/合约校验进 CI 的商业化尝试）**
 - 机制展开：OpenAPI diff 并在 breaking change 时 fail CI；双向合约测试（BDCT）+ `can-i-deploy` 部署门禁（Pact 的无 DSL 替代）；`bdct capture from-har` 把真实流量录成消费者合约；`bdct verify-provider` 验证**运行中的 provider 是否符合其 OpenAPI spec**（spec-vs-production conformance——即运行时漂移检测）；提供 **GitHub App PR Checks** 与 GitHub Actions 工作流，local 模式不上传 spec，另有 login/远程比对（云服务迹象）。
 - 量化数据：npm `specshield` 近 30 天 647 次下载、迭代到 v3.2.6（实测）。
 - 用户侧证据：无独立 repo 星数与 issue 可查（npm 包 + 变更日志分发），社区面薄弱。
@@ -390,7 +390,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 - URL：[npmjs.com/package/specshield](https://www.npmjs.com/package/specshield) / [Specflow](https://github.com/Hulupeep/Specflow)
 - 监管侧论据：Gartner 2026-05-26 预测"2027 年 40% 企业将降级/下线自主 agent"（治理缺口事故后才暴露），经 Codacy 报告转引——为"spec/规则校验必须是 CI 硬门禁而非文档约定"提供需求侧叙事（预测，非实测）。
 
-### 7.5 反信号（证据链版）
+### 8.5 反信号（证据链版）
 
 1. **长尾零采用 + 无接盘**：freshdocs/kontext/specbase/a2a-drift/Stale-AI 均 0★、单人、无 issue；ctxlint 存活 2 天（2026-07-07→07-09 最后推送，无 release，无任何人开 issue）——停更时间线清晰、社区反应为零（连"求维护"的 issue 都没有），即**死亡时无人在场**。
 2. **agents-lint 的"有用户无维护"曲线**：npm 月下载 ~1,845 持续至今，但 repo 最后推送 2026-03-26（v0.5.0 后 6 个月无 commit）；1 个 open issue 无人处理——下载曲线与维护曲线分离，是单人开源撑不住品类的典型形态。

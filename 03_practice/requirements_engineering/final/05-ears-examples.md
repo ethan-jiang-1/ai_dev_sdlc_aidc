@@ -1,5 +1,7 @@
 # EARS 示例手册
 
+> 证据基线：2026-04-17/18 深度研究一轮（DR round 1），来源与断言分级见 [../deep_research_topics/](../deep_research_topics/README.md)（_INDEX 与 claims-audit）；过程件见 [../plan/](../plan/)。本文为交付层消化稿，断言强度以研究层为准。
+
 **建议阅读阶段：** 中级 → 高级
 
 **这份手册的用途：** 通过模式、反例、重构和退出判据，形成”怎样写出稳的 EARS，什么时候又该停下来”的手感。
@@ -53,7 +55,7 @@ EARS 把系统行为场景归纳为五种基本模式，每种模式对应一类
 | `Unwanted`（异常处理型） | `If [unwanted condition], then the [system] shall [response].` | 异常、失效、非法输入、降级路径 | `If...then` |
 | `Optional`（可选功能型） | `Where [feature is enabled], the [system] shall [response].` | 可选功能、配置选项、feature toggle | `Where` |
 
-复合模式是两种基本模式的组合，最常见的是 State + Event：`While [state], when [event], the [system] shall [response].`
+复合模式是两种基本模式的组合，最常见的是 State + Event：`While [state], when [event], the [system] shall [response].`。即 EARS 共有 **5 种基本句型 + 复合模式，合计 6 种句型**。完整定义见 [../deep_research_topics/topic-03-ears-tutorial.md](../deep_research_topics/topic-03-ears-tutorial.md)。
 
 ### 如何选择正确的 EARS 模式
 
@@ -139,6 +141,8 @@ When the user submits a search query, the Search Service shall return the first 
 ```text
 While the user is in an authenticated session, the Mobile Banking App shall render the real-time balance on the home screen within 1 second of screen load.
 ```
+
+（例源：见 01-main-guide.md。）
 
 这种模式特别适合描述持续状态期间必须保持成立的行为。
 

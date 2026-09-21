@@ -69,7 +69,7 @@ ai_dev_sdlc_aidc/
 |---|---|---|
 | `01_sources/` | **证据层** | 一手信号与资料来源，按形态组织：真实使用样本（`field_samples/`）、学术论文（`papers/`）、人物与厂商参考库（`reference/kol` + `reference/corp`） |
 | `02_research/` | **分析层** | 9 个主题，多数是自包含的 `raw → digested → result` 管道：工程实践、反馈回路、管理与编排、多智能体团队、研发体系迁移、ThoughtWorks 方法论、前沿议题、Anthropic 实践、研发原生 2.0（需求工程与 SDD 两主题已于 2026-09-21 拆出至 `03_practice/`） |
-| `03_practice/` | **实践层** | SDLC 工程实践与方法论的沉淀（2026-09-21 自研究层拆出，用户判定其内容已是 practice 而非 research）：`requirements_engineering/`（需求表达格式）、`spec_driven_development/`（SDD 工具生态与辩论）、`beyond_spec_driven_development/`（SDD 批判之后的形态光谱，含最靠谱判断） |
+| `03_practice/` | **实践层** | SDLC 工程实践与方法论的沉淀（2026-09-21 自研究层拆出，用户判定其内容已是 practice 而非 research）：`requirements_engineering/`（需求表达格式）、`spec_driven_development/`（SDD 工具生态与辩论）、`beyond_spec_driven_development/`（SDD 批判之后的形态光谱）、`harness_governance/`（★ AI 形态下新的 SDLC：harness/context 治理，2026-09-21 自 beyond 抽出） |
 | `04_enterprise/` | **企业视角** | SDLC 在企业侧的映射：BPM 作为企业信息加工流的等价物，以及企业 AI 重构案例 |
 | `05_output/` | **产出层** | 主线 Keynote 交付物（含完整制作流程 `WORKFLOW.md` 与阶段管线） |
 

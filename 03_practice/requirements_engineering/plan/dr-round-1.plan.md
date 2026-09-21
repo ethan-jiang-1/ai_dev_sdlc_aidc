@@ -1,4 +1,5 @@
 # 需求工程 Topics Deep Research 一轮
+> 状态：本轮已收口（completed / closed_for_current_round）。过程件仅作回溯，修改 final/ 勿据本文，以 final/ 现状为准。
 
 > 对应状态文件：`requirements_engineering/plan/dr-round-1.status.md`
 > 对应执行队列：`requirements_engineering/plan/dr-round-1.queue.md`

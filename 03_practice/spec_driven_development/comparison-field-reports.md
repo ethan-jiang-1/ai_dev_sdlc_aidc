@@ -4,7 +4,7 @@
 title: SDD 方法横向比较——只收一线团队实战复盘
 accessed_at: 2026-09-20
 observation_date: 2026-09-20
-author: delegated research subagent (parent: session-f37ceeb1)
+author: delegated research subagent（parent 字段为内部会话占位说明，无检索含义）
 time_weighting: 2026-09 信息最重 > 2026Q3 > 2026 上半年 > 2025（仅背景）
 inclusion_rule: 只收有一线实战经验的团队/个人复盘（能给出具体流程、文件结构、量化数字或诚实坑清单）；不收厂商营销、不收纯观点评论。厂商案例仅在"有可复核开源仓库"时作弱证据标注。
 base_sources: 本仓库 debate/ 目录已核实案例（endorsements-and-experiences.md、team-practices.md、critiques.md、chinese-community-verdicts.md、signals-2026h2.md）+ 本轮专项补挖的 2026-08/09 新复盘
@@ -33,6 +33,7 @@ SDD 领域的公开语料被三层材料占据：厂商叙事（Kiro/GitHub/AWS 
 | **D 群体观点** | 社区讨论反映共识温度，非实证 | VSDD 211 分讨论、Ask HN 系列、HN "Ask: Why are Spec-kit specs like that"（2026-06-15） |
 
 **使用纪律**：对比表每个单元格标注案例与档位；只有单一案例支撑的结论在 §6 明示。
+**档位补充**：A-：介于 A 与 B 之间，用于 spec-kit #1401 这类部分达标样本。
 
 ---
 

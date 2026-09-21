@@ -27,7 +27,8 @@ scope:        ThoughtWorks Radar / martinfowler.com / InfoQ·QCon / arXiv / 分�
 
 **Vol.34（2026-04-15）是否移动 ring：**
 - 条目页时间线**没有新增 Apr 2026 条目**，`blipUpdatedDate` 仍为 Nov 05 2025 → SDD 在 Vol.34 中**未被重新点评、未移动 ring（维持 Assess 惯例延续）**。这是从条目页数据结构得出的推断（TW 惯例：ring 变动会产生新时间线条目），非官方声明，**标注为推断、存疑等级 ★★**。
-- 但 Vol.34 **新增了两个独立 SDD 工具条目**（下），且整期主题转向"harness engineering / 对抗认知债务、回归工程基本功"（TW 新闻稿），对 SDD 空间是间接触地：**方向利好但不升级**。
+- ⚠ 勘误（2026-09-21）：上条推断已被官方条目页直读**推翻**——SDD 在 Vol.34 压根未在册（NOT ON CURRENT EDITION），并非「未移动 ring」，见文末补遗。
+- 但 Vol.34 新增独立 SDD 工具条目（OpenSpec 获官方直读确认；Spec Kit 条目页未命中、仅 Vol.33 正文点名，见文末补遗），且整期主题转向"harness engineering / 对抗认知债务、回归工程基本功"（TW 新闻稿），对 SDD 空间是间接触地：**方向利好但不升级**。
   - TW Vol.34 新闻稿：https://www.thoughtworks.com/en-ec/about-us/news/2026/combat-ai-cognitive-debt-radar-v34 （★★，正文 JS 渲染仅取到标题与主题）
   - 第三方解读（腾讯云开发者社区《Thoughtworks 技术雷达 Vol.34 深度分析报告》）：https://cloud.tencent.com/developer/article/2655851 （★，未逐句核验）
 
@@ -37,6 +38,8 @@ scope:        ThoughtWorks Radar / martinfowler.com / InfoQ·QCon / arXiv / 分�
 - **来源**：https://www.thoughtworks.com/pt-br/radar/languages-and-frameworks/github-spec-kit （英文区同路径）
 - **证据强度**：★★★（blipDetail JSON：`blipRing: Assess, blipPublishedDate: Apr 15, 2026`）
 
+> ⚠ 勘误（2026-09-21）：该条目页未在本目录补遗核查中命中（猜测 slug 下未定位到），本项维持★★口径——即"Spec Kit 独立条目"未获核验、仅 Vol.33 正文点名 spec-kit；见文末补遗节。OpenSpec 独立条目（§1.3）则获官方直读确认。
+
 ### 1.3 OpenSpec（tools 独立条目，Vol.34 新增）
 
 - **日期**：2026-04-15；**定级：Assess（新增）**
@@ -44,7 +47,7 @@ scope:        ThoughtWorks Radar / martinfowler.com / InfoQ·QCon / arXiv / 分�
 - **来源**：https://www.thoughtworks.com/radar/tools/openspec
 - **证据强度**：★★★（blipDetail JSON 同上方式抓取）
 
-**小结**：Vol.33→Vol.34，TW 对 SDD 的态度 = 技术本身停在 Assess 未动，但 2026-04 起把两个具体 SDD 工具单独立项评估——即"概念观望、工具开始逐个体检"。 TW 对该领域"工作流繁琐、spec 难评审、可能不可规模化"的保留意见（Vol.33 原文）至今未被收回。
+**小结**：Vol.33→Vol.34，TW 对 SDD 的态度 = 技术本身停在 Assess 未动，但 2026-04 起对具体 SDD 工具逐个立项评估（OpenSpec 确认新增；Spec Kit 待核）——即"概念观望、工具开始逐个体检"。 TW 对该领域"工作流繁琐、spec 难评审、可能不可规模化"的保留意见（Vol.33 原文）至今未被收回。
 
 ---
 
@@ -113,7 +116,7 @@ scope:        ThoughtWorks Radar / martinfowler.com / InfoQ·QCon / arXiv / 分�
 | 机构 | 日期 | 定性 | 强度 | 与团队协作/工程控制的关联 |
 |---|---|---|---|---|
 | ThoughtWorks Radar | 2025-11-05 | SDD 条目 **Assess**；"迷人但工作流繁琐、spec 难评审、手写规则可能不可规模化" | ★★★ | ⚠️ 部分：点名 spec 难评审（评审门禁视角），但整体偏个人工作流体验 |
-| ThoughtWorks Radar Vol.34 | 2026-04-15 | SDD 未移动 ring（推断，维持 Assess）；**新增 GitHub Spec Kit（Assess）、OpenSpec（Assess）**；整期主题"回归工程基本功、对抗认知债务" | ★★★（新增条目）/★★（未移动为推断） | ✅ 间接：Vol.34 主题即 harness/工程治理 |
+| ThoughtWorks Radar Vol.34 | 2026-04-15 | SDD 未移动 ring（推断，维持 Assess）；OpenSpec 新增条目（Assess，官方直读确认）；GitHub Spec Kit 条目页后经补遗核查未命中、维持正文点名（★★，见文末补遗）；整期主题"回归工程基本功、对抗认知债务" | ★★（OpenSpec 新增条目）/★★（未移动为推断，Spec Kit 条目维持★★，见文末补遗） | ✅ 间接：Vol.34 主题即 harness/工程治理 |
 | martinfowler.com（Böckeler） | 2025-10/11 | 审慎批评：三种 SDD 形态梳理 + 规模化存疑；被 TW Radar 引为参照源 | ★★ | ⚠️ 偏个人开发体验，评审成本有提及 |
 | InfoQ | 2026-02-19 | 方向对，但企业落地靠文化变革+工作流集成+可规模化协作模式 | ★★ | ✅ 直接谈团队规模化落地 |
 | InfoQ（Nitin Garg） | 2026-09-10 | 瓶颈已从生成移到**验证**；SDD payoff 取决于验证/治理环节 | ★★ | ✅ 验证瓶颈、偏离缓解（工程控制视角） |
@@ -123,7 +126,7 @@ scope:        ThoughtWorks Radar / martinfowler.com / InfoQ·QCon / arXiv / 分�
 | Gartner / Forrester | — | **未检出**公开表态 | — | — |
 
 ### 对选型的含义（供上游参考）
-1. **无人背书、无人否决**：TW 停在 Assess 且 Vol.34 未升级——概念仍处观望期，但工具层（Spec Kit、OpenSpec）2026-04 起被逐个立项评估，说明生态在进入主流视野。
+1. **无人背书、无人否决**：TW 停在 Assess 且 Vol.34 未升级——概念仍处观望期，但工具层（OpenSpec 确认新增；Spec Kit 待核）2026-04 起被逐个立项评估，说明生态在进入主流视野。
 2. **共同保留意见集中在两处**：spec 制品难评审、工作流繁琐——这恰是"工程控制（评审门禁/CI 校验/spec 版本管理）"要补的位。
 3. **对团队规模化最有利的证据是 2026 年的**：InfoQ 企业篇、Garg 验证瓶颈论、arXiv harness 论文三者同向：SDD 的价值主张正从"个人写好 prompt"转向"团队治理 agent 的工程纪律"。
 

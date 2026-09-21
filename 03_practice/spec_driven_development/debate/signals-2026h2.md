@@ -4,7 +4,7 @@
 topic: spec-driven development 2026H2 最新信号
 window: 2026-06-01 ~ 2026-09-20（时间权重最高，早期背景一律未收）
 accessed_at: 2026-09-20
-collector: SDD debate 子任务（ captain: session-f37ceeb1 ）
+collector: SDD debate 子任务（captain 为内部会话占位说明，无检索含义）
 sources_type: GitHub Releases API / HN Algolia API / 官方博客一手源
 caveat: 全部为观测日快照，未做历史曲线回溯；权重为采集者主观评级（高/中/低）
 ```

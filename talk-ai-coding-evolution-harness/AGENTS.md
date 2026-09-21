@@ -135,20 +135,30 @@ AI Coding 演变与 harness 的深度 talk。**你是这套 harness 里被驱动
 | 11 | `_reference/` 检索 | 全是 symlink，`Grep` / `find` 默认不跟随，**必须加 `-L`** |
 | 12 | 截图核对页序 | 只认 `slides/NN.slide` 的文件序号；**核页数用 `ls ppt/slides/*.xml`**，不要用 `ls ppt/slides/`（会数进 `_rels`） |
 | 13 | 并行 Edit 同一文件 | 会互相覆盖（都返回成功，内容被后写的盖掉）。多处修改**串行执行**，或用一个脚本一次 replace |
-| 14 | 批量 `upsert-dsl` 被中断 | 会漏页。漏的页用 `--page-index N` **替换模式**补写，后续页逐页顺延 |
+| 14 | ~~批量 `upsert-dsl` 被中断~~ | **已随生成器路线作废（2026-09-17）**；若重建生成器再启用 |
 
 **引用任何外部数字前，先查 `02_evidence/00-absorption-plan.md` 第三节（15 条口径红线）。**
 
-## 生产工具链（改 PPTX 走这条）
+## 生产工具链
 
-- **CLI：`slidep`** —— `/Users/bowhead/.workbuddy/binaries/node/versions/22.22.2-3/bin/slidep`。
+> **⚠️ 2026-09-17 起旧路线整体作废**：不再走「生成器 → `.slide` → `slidep` → PPTX」。
+> 生成器目录 `.tmp-harness-talk-deck-v3/` 已清理，`slidep` 及以下全部生成器经验**仅当历史参考 / 需重建生成器时再读**。
+> **当前生产路线以 `CURRENT.md` 第 0 条为唯一权威**：本仓库只当内容事实源——改内容改上游五个管道目录，
+> 重新合成 handoff 稿（`05_output/handoff/`），版式由外部 PPT 工具重做；不手改 `.slide` / PPTX。
+
+<details>
+<summary>【作废】旧生成器（slidep）工具链备忘</summary>
+
+- CLI：`slidep` —— `/Users/bowhead/.workbuddy/binaries/node/versions/22.22.2-3/bin/slidep`（依赖已废弃的 `.workbuddy` 路径，随时可能失效）。
   子命令：`create` / `upsert-dsl --page-index N`（`-1` 追加）/ `validate` / `lint` / `screenshot --page-index N --out`。
-  **`lint` 就是内置布局诊断**，不要自己写脚本量 rect。
-- **改稿走生成器重跑**，不要手改 `.slide` 或 PPTX。生成器在 `.tmp-harness-talk-deck-v3/`（不入库，定稿前别清）。
-- **三个必踩的坑**：① JSX 样式值**必须带引号**（`background: "#FAFAF7"`），数字保持无引号；
+  `lint` 就是内置布局诊断，不要自己写脚本量 rect。
+- 三个必踩的坑：① JSX 样式值**必须带引号**（`background: "#FAFAF7"`），数字保持无引号；
   ② 文本里的裸花括号要转义（`loop {` → `&#123;`）；③ 复合值（`"28px 64px 24px"`）也要引号。
-- **DSL 里 Text 节点不吃 height**，行高压在 Box 上（`minHeight`），否则版面会塌。
-- **大字折行体检式**：`半角单位 = sum(2 if 全角 else 1)`；56px 下 **1 单位 = 28px**。
+- DSL 里 Text 节点不吃 height，行高压在 Box 上（`minHeight`），否则版面会塌。
+- 大字折行体检式：`半角单位 = sum(2 if 全角 else 1)`；56px 下 **1 单位 = 28px**。
+
+</details>
+
 - 本机沙盒**禁止 sudo**；需提权用 `osascript -e 'do shell script "..." with administrator privileges'`。
 
 ## 素材速查（只读 symlink，只摘不搬）
@@ -176,6 +186,7 @@ AI Coding 演变与 harness 的深度 talk。**你是这套 harness 里被驱动
 - 素材与口径：`02_evidence/00-absorption-plan.md`
 - 页面职责（37 页骨架）：`03_outline/00-page-structure-v3.md`
 - 页面文案（37 页 + 停顿页）：`04_drafts/ppt-text-v3.md`
-- 当前 PPTX（42 张）：`05_output/v0.4/AI Coding 演变指南/`
+- 对外交付稿（handoff，当前生产路线）：`05_output/handoff/AI-Coding-演变指南-全页内容-v3.3.md`
+- 当前 PPTX（42 张，内容与页序对照）：`05_output/v0.4/AI Coding 演变指南/`
 - 已决 / 待确认 / 待办：`01_storyline/04-open-questions.md`
 - 当前阶段与下一步：`CURRENT.md`

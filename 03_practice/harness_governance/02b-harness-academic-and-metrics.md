@@ -8,7 +8,7 @@
 
 ---
 
-## A. 学术收敛深挖：2026 年三群互不引用的 harness 治理工作
+## A. 学术收敛深挖：2026 年三群独立得出（含局部事后引用）的 harness 治理工作
 
 ### A.1 Stanford-led：Meta-Harness（arXiv:2603.28052）
 

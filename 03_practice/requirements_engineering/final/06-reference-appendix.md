@@ -1,5 +1,7 @@
 # 参考附录
 
+> 证据基线：2026-04-17/18 深度研究一轮（DR round 1），来源与断言分级见 [../deep_research_topics/](../deep_research_topics/README.md)（_INDEX 与 claims-audit）；过程件见 [../plan/](../plan/)。本文为交付层消化稿，断言强度以研究层为准。
+
 这份附录的职责只有三个：补术语、补可信外部入口、补标准与工具映射。它不是正文的替身，也不是理解前面几份文档的前提。
 
 如果你只想理解整套方法，先看主文档和示例手册即可。只有当你需要回查术语、标准锚点、工作流类型或证据边界时，再回来查这份附录。
@@ -26,7 +28,7 @@
 | 术语 | 本文中的含义 |
 | --- | --- |
 | `User Story` | 承载角色、结果和业务价值的意图层工件，不是完整规格 |
-| `INVEST` | User Story 的经典质量特征集：Independent、Negotiable、Valuable、Estimable、Small、Testable |
+| `INVEST` | User Story 的经典质量特征集：Independent、Negotiable、Valuable、Estimable、Small、Testable。详见 [04-user-story-examples.md](04-user-story-examples.md)（正本） |
 
 ### 契约层工件
 

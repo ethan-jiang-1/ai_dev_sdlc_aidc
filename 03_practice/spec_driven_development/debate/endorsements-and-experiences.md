@@ -3,7 +3,7 @@
 ```yaml
 topic: Spec-Driven Development (SDD) — 正面证据与经验报告
 accessed_at: 2026-09-20
-author: research subagent (session-f37ceeb1 委派)
+author: research subagent（委派会话为内部占位说明，无检索含义）
 scope: 厂商官方叙事 / 独立开发者与团队经验报告 / 社区正面辩护 / Jesse Vincent (obra) Superpowers
 bias_note: 本文件只收正面或中性偏正面的材料，作为辩论的正方证据池；反方证据在同级 critique 文件中，评估节会交叉引用
 weighting_rule: 依补正指令——厂商自述（AWS/GitHub/Tessl 官方博客）一律降权，仅作参考；主证据为独立团队复盘、知名从业者公开经验、高热社区讨论

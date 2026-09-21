@@ -101,6 +101,8 @@
 
 ---
 
+> 口径注释：表内计数按断言条目计（多来源支撑同一断言计 1 条），非来源数。
+
 ## 汇总：原文证据强度分布
 
 | 级别 | 条目数（本审查 10 条中）|
@@ -127,5 +129,5 @@
 - 主入口：[README.md](README.md)
 - 现状数据直接引用本文件：[topic-04-future-trends-and-evidence.md](topic-04-future-trends-and-evidence.md)
 - 选型矩阵使用者：[topic-05-integration-bdd-selection.md](topic-05-integration-bdd-selection.md)
-- 新增研究线（待为其补充条目）：[topic-06-agent-format.md](topic-06-agent-format.md)——Wave 2 会产出 `_artifacts/W2-claims-audit-v2.md` 将本文件中各断言的证据强度按新证据重评，并新增围绕"agent 格式事实标准"的断言。
+- 新增研究线：[topic-06-agent-format.md](topic-06-agent-format.md)——Wave 2 已产出 [_artifacts/W2-claims-audit-v2.md](_artifacts/W2-claims-audit-v2.md)，将本文件中各断言的证据强度按新证据重评，并新增围绕"agent 格式事实标准"的断言。
 - 本轮执行入口：[`../plan/dr-round-1.plan.md`](../plan/dr-round-1.plan.md)

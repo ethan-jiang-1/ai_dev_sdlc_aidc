@@ -1,4 +1,5 @@
 # Requirements Engineering Final Report System Execution Queue
+> 状态：本轮已收口（completed / closed_for_current_round）。过程件仅作回溯，修改 final/ 勿据本文，以 final/ 现状为准。
 
 > 对应计划：`requirements_engineering/plan/final-report-system.plan.md`
 > 对应状态：`requirements_engineering/plan/final-report-system.status.md`

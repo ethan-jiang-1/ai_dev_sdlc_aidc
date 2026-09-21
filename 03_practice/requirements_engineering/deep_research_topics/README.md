@@ -10,7 +10,7 @@
 - 权威副本层：[`_reference/`](_reference/) · 导航入口 [`_reference/_INDEX.md`](_reference/_INDEX.md)
 - 综合产物层：[`_artifacts/`](_artifacts/)
 
-> **🚩 如果你是接手这轮 DR 的 Agent / 新会话**：先读 [`../plan/dr-round-1.status.md` 顶部的 Resume Protocol](../plan/dr-round-1.status.md#-resume-protocol接手此轮-dr-的-agent-第一眼读这里)（5 步，不可跳序），再按 [`../plan/dr-round-1.queue.md`](../plan/dr-round-1.queue.md) `Active Queue.current_task` 开工。当前 gate = `wave0_complete`，下一刀 = 开启 Wave 1 Topic 03 EARS 分支。
+> **🚩 如果你是接手这轮 DR 的 Agent / 新会话**：先读 [`../plan/dr-round-1.status.md`](../plan/dr-round-1.status.md)（Resume Protocol，5 步，不可跳序），再按 [`../plan/dr-round-1.queue.md`](../plan/dr-round-1.queue.md) `Active Queue.current_task` 开工。本轮已收口（closed_for_current_round / formal round closeout completed）；deferred-gap reopen 需用户显式指令。状态详见 [`../plan/dr-round-1.status.md`](../plan/dr-round-1.status.md) 与 [`../plan/final-report-system.status.md`](../plan/final-report-system.status.md)。
 
 ## 结构决策（B 方案 + Topic 06 扩展已落地）
 
@@ -40,7 +40,7 @@
 | [topic-01-re-landscape-and-paradigm-map.md](topic-01-re-landscape-and-paradigm-map.md) | RE 背景与范式地图，12 行范式速查表 | 升级 |
 | [topic-02-user-story-tutorial.md](topic-02-user-story-tutorial.md) | User Story 教程向（历史、模板、变体、INVEST、2 组坏→好）| 升级 |
 | [topic-03-ears-tutorial.md](topic-03-ears-tutorial.md) | EARS 教程向（完整模式表、2 条 worked example、2 组坏→好、边界、INCOSE）| 升级 |
-| [topic-04-future-trends-and-evidence.md](topic-04-future-trends-and-evidence.md) | 现状 + **5 条前瞻维度**（spec-as-code / 多模态 / Agent 反修 / embedding / 监管）—— 原 §4.6 IDE 原语剥离为 Topic 06 | 升级 |
+| [topic-04-future-trends-and-evidence.md](topic-04-future-trends-and-evidence.md) | 现状 + **6 条前瞻维度**（spec-as-code / 多模态 / Agent 反修 / embedding / 监管 / IDE 原生需求原语——其中 4.6 已延伸为 Topic 06） | 升级 |
 | [topic-05-integration-bdd-selection.md](topic-05-integration-bdd-selection.md) | 三轨分层、§9 矩阵、端到端示例、Playbook | 升级 |
 | [topic-06-agent-format.md](topic-06-agent-format.md) | **最强 coding agent / harness 的需求格式实证与选型**（Cursor / Claude Code / Codex / Kiro / Spec Kit / OpenSpec / Amp / Aider / Continue / Cline；2024Q3–2026Q1 时间窗；exploration + exploitation） | **新增** |
 | [claims-audit.md](claims-audit.md) | **原文 10 条断言的证据强度标注** | 新增 |
@@ -48,6 +48,9 @@
 | [references-by-topic.md](references-by-topic.md) | 各 Topic 文献编号索引 | — |
 | [_reference/](_reference/) | 本轮新增的权威副本层 | **新增（一轮）** |
 | [_artifacts/](_artifacts/) | 本轮新增的综合产物层 | **新增（一轮）** |
+| [_artifacts/W2-cross-topic-synthesis.md](_artifacts/W2-cross-topic-synthesis.md) | Wave 2 跨主题综合 | 新增（二轮） |
+| [_artifacts/W2-claims-audit-v2.md](_artifacts/W2-claims-audit-v2.md) | Wave 2 断言证据强度重评 v2 | 新增（二轮） |
+| [_artifacts/W2-selection-matrix-v2.md](_artifacts/W2-selection-matrix-v2.md) | Wave 2 选型矩阵 v2 | 新增（二轮） |
 
 ## 阅读顺序建议
 
@@ -57,6 +60,7 @@
 4. [topic-05](topic-05-integration-bdd-selection.md) 合流与选型。
 5. [topic-04](topic-04-future-trends-and-evidence.md) 趋势与前瞻揣测收尾。
 6. [topic-06](topic-06-agent-format.md) 给出面向 coding agent / harness 的选型建议（本轮唯一硬决策输出）。
+7. 收尾回看 [`_artifacts/`](_artifacts/) 综合产物层：跨主题综合、claims-audit v2 与选型矩阵 v2。
 
 ## 使用方法（给 DR Agent / 外部工具）
 

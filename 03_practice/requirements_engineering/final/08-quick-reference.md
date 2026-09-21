@@ -1,5 +1,7 @@
 # 快速参考卡片集
 
+> 证据基线：2026-04-17/18 深度研究一轮（DR round 1），来源与断言分级见 [../deep_research_topics/](../deep_research_topics/README.md)（_INDEX 与 claims-audit）；过程件见 [../plan/](../plan/)。本文为交付层消化稿，断言强度以研究层为准。
+
 这份文档提供可打印的参考卡片，适合贴在工位或保存为书签。
 
 ---
@@ -51,7 +53,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│              EARS 五种模式速查卡                      │
+│           EARS 模式速查卡（5 基本 + 复合）           │
 ├─────────────────────────────────────────────────────┤
 │ 1. Ubiquitous（通用型）- 无条件约束                   │
 │    句型：The [system] shall [response].              │
@@ -83,6 +85,13 @@
 │    示例：Where biometric login is enabled, the App   │
 │          shall present fingerprint authentication.   │
 │                                                       │
+│ 6. Complex（复合型）- 状态+事件组合                   │
+│    句型：While [state], when [event], the [system]   │
+│          shall [response].                            │
+│    场景：登录态下点击按钮等组合条件                   │
+│    示例：While the session is active, when the user  │
+│          taps transfer, the App shall show 2FA.      │
+│                                                       │
 ├─────────────────────────────────────────────────────┤
 │ 💡 选择技巧                                           │
 │                                                       │
@@ -92,6 +101,10 @@
 │  Where = 可选功能（开关、配置、平台）                 │
 │                                                       │
 │ ⚠️  停止信号：前置条件超过3个 → 改用Decision Table    │
+│    （经验法则，非来源结论）                           │
+│                                                       │
+│ 完整定义见 ../deep_research_topics/                   │
+│           topic-03-ears-tutorial.md                   │
 │                                                       │
 └─────────────────────────────────────────────────────┘
 ```
@@ -109,11 +122,12 @@
 │  信号3：系统边界和接口责任必须讲清                    │
 │  信号4：高风险行为需要review和追踪                    │
 │                                                       │
-│  示例：手机银行余额显示                               │
+│  示例：手机银行余额显示（例源：见 01）                │
 │  Story → "主页直接显示余额，方便查看"                 │
-│  EARS  → "While authenticated, shall render balance  │
-│           within 1s. If timeout, shall show          │
-│           placeholder and log event."                │
+│  EARS  → "While the app is in an authenticated       │
+│           session, it shall render balance within    │
+│           1s. If timeout, it shall show placeholder  │
+│           and log event."（示意压缩，正本见 01）      │
 │                                                       │
 ├─────────────────────────────────────────────────────┤
 │ 从 EARS → Decision Table（决策层）                    │

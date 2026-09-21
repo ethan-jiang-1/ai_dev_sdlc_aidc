@@ -1,5 +1,7 @@
 # 术语手册
 
+> 证据基线：2026-04-17/18 深度研究一轮（DR round 1），来源与断言分级见 [../deep_research_topics/](../deep_research_topics/README.md)（_INDEX 与 claims-audit）；过程件见 [../plan/](../plan/)。本文为交付层消化稿，断言强度以研究层为准。
+
 这份手册的目的只有一个：把整套报告里出现的专业术语、缩写和概念，用清楚的中文说明白。
 
 如果你在阅读其他文档时遇到不熟悉的词，来这里查。如果你想先系统了解所有术语再开始读，也可以从这里入手。
@@ -24,18 +26,7 @@ User Story 的工作是表达意图，不是承载完整规格。它有意留下
 
 ### INVEST
 
-User Story 的质量评判框架，由 Bill Wake 提出，被 Martin Fowler、Mike Cohn 等人广泛引用。六个字母分别代表：
-
-| 字母 | 英文 | 中文 | 含义 |
-|------|------|------|------|
-| I | Independent | 独立 | 不同 Story 之间不要强耦合，最好能单独排优先级 |
-| N | Negotiable | 可协商 | 留下对话空间，不要把实现写死在 Story 里 |
-| V | Valuable | 有价值 | 让真实受益方能从中得到价值，不是内部技术目标 |
-| E | Estimable | 可估算 | 让团队能大致判断规模、风险和优先级 |
-| S | Small | 足够小 | 控制在一个迭代内可讨论并推进 |
-| T | Testable | 可确认 | 让团队能想象后续如何验证它是否成立 |
-
-实际使用时，优先守住 V、S、T 三项，其他是进一步优化目标。
+User Story 的质量评判框架，由 Bill Wake 提出，被 Martin Fowler、Mike Cohn 等人广泛引用：I=Independent（独立）、N=Negotiable（可协商）、V=Valuable（有价值）、E=Estimable（可估算）、S=Small（足够小）、T=Testable（可确认），实际使用时优先守住 V、S、T 三项。六项完整解释详见 [04-user-story-examples.md](04-user-story-examples.md)（正本）。
 
 ### Acceptance Criteria（AC，验收标准）
 

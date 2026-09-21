@@ -1,10 +1,12 @@
 # Plan mode 派深挖——内置规划的机制光谱、"就够了"之争与进阶玩法
 
+> 定位（2026-09-21）：按本目录研究优先级，本篇为背景参照/对照篇，不作主张依据；§5 处方式建议为作者立场，非本目录主张。
+
 ```yaml
 topic: SDD 替代形态之二：plan mode 派（规划内嵌于 agent harness）
 accessed_at: 2026-09-20
 collector: delegated research agent
-base: ./README.md 第 4 节（原单文件底稿 alternatives.md 第 2 节，2026-09-21 重排；本文在其基础上深挖，不复制原文）
+base: ./README.md §4（原单文件底稿 alternatives.md 第 2 节，2026-09-21 重排；底稿=升格前的单文件 alternatives.md，已拆分为本目录 README；本文在其基础上深挖，不复制原文）
 related:
   - ./README.md                   # 五形态总览与光谱图
   - ../spec_driven_development/debate/critiques.md        # 批判面来源
@@ -13,8 +15,9 @@ key_corrections:
   - "Nearform 反方文的实际发布日期是 2026-03-18（作者 Luca Lanziani），底稿标注的 2026-09 不准；其姊妹比较篇更早。"
   - "「Claude Code 团队谈不再需要 plan mode」的原始出处是 Boris Cherny 的 YC 圆桌访谈（约 2026-02，YouTube PQU9o_5rHC4），而非 2026-09；InfoQ 中文整理 2026-02-19 发布。底稿的时间定位需修正。"
   - "Codex 侧 2026-08-31 有硬动向：update_plan 工具改为 opt-in（openai/codex PR #41744）——内置规划器本身正在被『可拆卸化』。"
+  - "2026-09-21 域名勘误：HN 48235526 / 47106686 原锚点域名（hn.nuxt.dev / althacker.news）为笔误，已经 HN Algolia API 回源核实并修正为 news.ycombinator.com/item?id=…。"
 limitations:
-  - HN 帖（48235526、althacker 47106686）沿用底稿锚点，本轮未能逐条回源展开。
+  - HN 帖（48235526、47106686）2026-09-21 已回源确认条目存在与主题（域名勘误见 key_corrections），帖内逐条评论仍未全量展开。
   - Cursor plan mode 以官方博客（2025-10-07）+ 二手分析为准，2026 年内未见其生命周期的重大改版公告。
   - Claude Code plan mode 的会话内细节以官方 permission-modes 页与 GitHub issue 侧写为准。
 ```
@@ -23,7 +26,7 @@ limitations:
 
 ## 0. 定位：本文深挖什么
 
-底稿（本 README 第 4 节；原单文件底稿 alternatives.md 第 2 节）给出的骨架是：plan mode = 不留任何 spec 工件、规划是 harness 内置的一次性阶段、"够了"论 vs Nearform 反方。本文补五层：各家机制差异的官方核实、"就够了"正反逐条对照、社区进阶玩法、"不再需要 plan mode"说法的溯源、以及适用边界的收口。
+总览（本目录 README §4）给出的骨架是：plan mode = 不留任何 spec 工件、规划是 harness 内置的一次性阶段、"够了"论 vs Nearform 反方。本文补五层：各家机制差异的官方核实、"就够了"正反逐条对照、社区进阶玩法、"不再需要 plan mode"说法的溯源、以及适用边界的收口。
 
 ---
 
@@ -49,13 +52,13 @@ limitations:
 2. **状态端（Codex）**：`update_plan` 把计划做成**对抗 compaction 的会话内持久状态**——不是为了人，是为了模型自己在长任务里不忘步骤。这暴露了 plan mode 的隐藏职能：它同时是"人的对齐工具"和"模型的工作记忆"。
 3. **工件端（Antigravity / Cursor）**：plan 变成可评论、可编辑、可留存的 artifact/文件。Antigravity 甚至默认强制"执行前 review plan artifact"——这已经踩进 SDD 的领地，只是不要求跨需求维护。
 
-**机制结论**：2026 年的 plan mode 已经不是铁板一块。底稿说的"用完即弃、不进仓库"只准确描述了 Claude Code 的默认形态；Antigravity 和 Cursor 官方支持的"plan 落盘"路线，实际上是 plan mode 向 SDD 的自发滑动（见第 3 节）。
+**机制结论**：2026 年的 plan mode 已经不是铁板一块。总览（本目录 README §4）说的"用完即弃、不进仓库"只准确描述了 Claude Code 的默认形态；Antigravity 和 Cursor 官方支持的"plan 落盘"路线，实际上是 plan mode 向 SDD 的自发滑动（见第 3 节）。
 
 ---
 
 ## 2. "就够了"论 vs 反方：逐条对照
 
-正方锚点：HN 2026-08 帖多位开发者自述 plan mode 够用（[HN 48235526](https://hn.nuxt.dev/item/48235526)）、Boris Cherny 自述 80% session 从 plan mode 起手。反方锚点：Nearform，Luca Lanziani《Why plan mode is not enough》（**2026-03-18**，非 2026-09，[原文](https://nearform.com/digital-community/why-plan-mode-is-not-enough-better-outcomes-with-spec-driven-development)）。
+正方锚点：HN 帖多位开发者自述 plan mode 够用（[HN 48235526](https://news.ycombinator.com/item?id=48235526)，已回源核实）、Boris Cherny 自述 80% session 从 plan mode 起手。反方锚点：Nearform，Luca Lanziani《Why plan mode is not enough》（**2026-03-18**，非 2026-09，[原文](https://nearform.com/digital-community/why-plan-mode-is-not-enough-better-outcomes-with-spec-driven-development)）。
 
 | # | 议题 | 正方（就够了） | 反方（Nearform） | 本轮核实后的判读 |
 |---|---|---|---|---|
@@ -75,7 +78,7 @@ limitations:
 
 ### 3.1 planning 会话与 execution 会话分离（上下文卫生学）
 
-规划与执行拆成两个会话/两份上下文：规划会话负责探索、读码、提问、出计划；执行会话拿计划作为输入、上下文干净地开工。动机有二：探索过程的噪声不污染执行上下文；执行 agent 拿到的是**被压缩、被批准过的意图**而非整段协商历史。底稿引的 althacker "Separation of planning and execution" 讨论是代表；Boris Cherny 的多 tab 用法（多个 tab 同时规划、批准后执行）是其单人轻量版；Superpowers 的 subagent-driven development 是其结构化版——计划写成文件，**由全新的 subagent 逐任务执行**并两段式 review（[Superpowers 文档](https://mintlify.wiki/mridullpandey/superpowers/skills/subagent-driven-development)）。这与 Boris 访谈里的 "uncorrelated context windows" 是同一原理：干净上下文是能力，不只是卫生。
+规划与执行拆成两个会话/两份上下文：规划会话负责探索、读码、提问、出计划；执行会话拿计划作为输入、上下文干净地开工。动机有二：探索过程的噪声不污染执行上下文；执行 agent 拿到的是**被压缩、被批准过的意图**而非整段协商历史。总览（本目录 README §4）引的 "Separation of planning and execution"（HN 47106686）讨论是代表；Boris Cherny 的多 tab 用法（多个 tab 同时规划、批准后执行）是其单人轻量版；Superpowers 的 subagent-driven development 是其结构化版——计划写成文件，**由全新的 subagent 逐任务执行**并两段式 review（[Superpowers 文档](https://mintlify.wiki/mridullpandey/superpowers/skills/subagent-driven-development)）。这与 Boris 访谈里的 "uncorrelated context windows" 是同一原理：干净上下文是能力，不只是卫生。
 
 ### 3.2 plan 文件落盘但不维护（.tmp plan / 即弃文件）
 
@@ -83,7 +86,7 @@ limitations:
 
 ### 3.3 plan→spec 的半步形态（官方支持的滑动）
 
-三家官方功能已经内置了这条半步：Cursor 明确支持"把计划保存为 repo 里的 Markdown 供以后引用"；Antigravity 的 Implementation Plan 是可评论、可回看的持久 artifact；Codex 的计划状态跨 resume 存活。共同点：**计划获得了存储形态，但没人承诺维护它**——它是过期即弃的历史快照，不是需与代码同步的 spec。这正是底稿光谱上 plan mode 与 Spec Kit 之间的过渡带：有工件之形、无工件之责。值得注意的是这半步是**厂商顺着用户行为加的**（Boris 的 latent demand 叙事同样适用于此），而非 SDD 方法论的回潮。
+三家官方功能已经内置了这条半步：Cursor 明确支持"把计划保存为 repo 里的 Markdown 供以后引用"；Antigravity 的 Implementation Plan 是可评论、可回看的持久 artifact；Codex 的计划状态跨 resume 存活。共同点：**计划获得了存储形态，但没人承诺维护它**——它是过期即弃的历史快照，不是需与代码同步的 spec。这正是总览（本目录 README §6）光谱上 plan mode 与 Spec Kit 之间的过渡带：有工件之形、无工件之责。值得注意的是这半步是**厂商顺着用户行为加的**（Boris 的 latent demand 叙事同样适用于此），而非 SDD 方法论的回潮。
 
 **进阶结论**：2026 年社区的实际玩法收敛为"**按需沉淀、拒绝维护**"——分离会话管上下文质量，落盘文件管传递，半步工件管回看；三者都不接过 SDD 最大的成本项（跨会话一致性维护）。
 

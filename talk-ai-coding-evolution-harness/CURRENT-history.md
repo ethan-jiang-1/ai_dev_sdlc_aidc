@@ -6,6 +6,23 @@
 
 ---
 
+## 入口件一致性修复（2026-09-21 第二轮 fresh-agent review，待用户 review 后提交）
+
+上轮只修了 `CURRENT.md` 与根 `README.md`，本轮把 talk 自己的入口件补齐（未提交，等用户 review）：
+
+1. **`AGENTS.md` 生产工具链节**：整节标注"⚠️ 2026-09-17 起旧路线作废"，指向 `CURRENT.md` 第 0 条
+   （handoff 路线）为唯一权威；slidep 备忘收进 `<details>` 折叠（含 `.workbuddy` 路径已废弃的提示）。
+   陷阱 #14（upsert-dsl）同标作废。当前状态指针区补 handoff 交付稿条目。
+2. **`README.md`**：① 「十三份」→「十四份」（与目录树注释及 `_reference/` 实际 symlink 数一致）；
+   ② 工作区地图补 `CURRENT-history.md` 与 `05_output/handoff/`，v0.4 标注降为"内容与页序对照"；
+   ③ 两处 v2 页码引用（P25 / P26 flash 卡）改为"页号以 `03_outline/00-page-structure-v3.md` 为准"。
+3. **`CURRENT.md`**：删除验收清单残留项「42/42 `slidep validate` 通过」（路线已作废）；
+   缺口清单中 P25/P26 v2 页码一条改记"已清理"（根 README 经查无残留）。
+4. **`04_drafts/README.md`**：口语讲稿待办的启动条件从"页面文字定稿后开工"改为"review 通过后开工"
+   （v3.3 页面文字已出、待 review）。
+
+---
+
 ## 指针清理（2026-09-21，fresh-agent 一致性核查）
 
 零上下文 agent 实地核查发现两处失效指针，已修正：

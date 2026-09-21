@@ -81,7 +81,6 @@
 - [ ] 停顿页 B1–B5 每张都**同时收上一段、启下一段**，且三型齐备；收束页不重复插页
 - [ ] 口语讲稿铺满 37 页（当前最大缺口）
 - [ ] 禁用词扫描通过：无行业名 / OPC / 一人公司 / "五门工程" / "呼吸页" / 硬译词
-- [ ] 42/42 `slidep validate` 通过
 
 ## 挂在身上的已知缺口
 
@@ -90,7 +89,8 @@
 - **`02-turning-points.md` 的 P4 桥页没有推导句条目**（页号列已顺延，条目待补）。
 - **`DESIGN.md` 第 3.1 / 3.2 节与产物不一致**（改它要先定字号口径；**以 `00-page-structure-v3.md` 的
   「字号仅两档：论点数字 104 / 论点句 56」为准**）。
-- 根 `README.md` 素材表里「P25 官方博客卡、P26 flash 原始卡」是 **v2 页码**，未重映射。
+- ~~根 `README.md` / 本目录 `README.md` 素材表里「P25 官方博客卡、P26 flash 原始卡」v2 页码~~：
+  **已清理（2026-09-21）**——根 README 无残留；talk README 两处已改为"页号以 `03_outline/00-page-structure-v3.md` 为准"。
 - `02_evidence/00-absorption-plan.md` 第一节页号是 **v2（45 页）** 时期登记，文件头已声明"只当索引用"。
 - 插件生态数字有重算脚本（`rawdata_dsh-plugin-ecosystem/census.py`），upstream 同步后数字会变，
   引用前看 `02_evidence/00-absorption-plan.md` 的快照口径。

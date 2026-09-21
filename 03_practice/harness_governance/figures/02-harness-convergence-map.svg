@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1150" height="640" viewBox="0 0 1150 640" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
-  <text x="40" y="38" font-size="22" font-weight="700" fill="#222">harness 治理的独立收敛地图：五个层位、七个互不引用的独立来源</text>
-  <text x="40" y="62" font-size="13" fill="#777">"agent 开发需要有人持续治理 harness / 打扫代码库卫生" · 逐条原文摘录见 03a-harness-convergence-evidence.md · 2026-09-21</text>
+  <text x="40" y="38" font-size="22" font-weight="700" fill="#222">harness 治理的独立收敛地图：五个层位、七个独立集群（含同一组织与聚合型来源，详见 02a 勘误）</text>
+  <text x="40" y="62" font-size="13" fill="#777">"agent 开发需要有人持续治理 harness / 打扫代码库卫生" · 逐条原文摘录见 02a-harness-convergence-evidence.md · 2026-09-21</text>
 
   <!-- five layer columns -->
   <g font-size="12">
@@ -42,9 +42,9 @@
 
   <!-- metaphor band -->
   <rect x="45" y="445" width="1068" height="80" rx="12" fill="#fdf6f6" stroke="#d98a8a"/>
-  <text x="579" y="474" font-size="14" font-weight="700" text-anchor="middle" fill="#8f3535">"清扫"隐喻被 ≥4 个互不引用来源各自发明 —— 命名收敛本身即独立收敛证据</text>
+  <text x="579" y="474" font-size="14" font-weight="700" text-anchor="middle" fill="#8f3535">"清扫"隐喻被多个来源独立得出（含聚合型来源转述，详见 02a 勘误） —— 命名收敛本身即收敛证据</text>
   <text x="579" y="500" font-size="13" text-anchor="middle" fill="#555">gardening（OpenAI）· pressure washing（Teleport）· garbage collection（HumanLayer）· 清洁工军团（Böckeler）</text>
 
-  <text x="579" y="560" font-size="13" fill="#444" text-anchor="middle">收敛计数经 04a 证据档案复核勘误：初查 11 集群 → 独立 7 个（Trivedy=LangChain 同人合并、HumanLayer 改聚合型、学术为接力引用）</text>
+  <text x="579" y="560" font-size="13" fill="#444" text-anchor="middle">收敛计数经 02a 证据档案复核勘误：初查 11 集群 → 独立 7 个（Trivedy=LangChain 同人合并、HumanLayer 改聚合型、学术为接力引用）</text>
   <text x="579" y="582" font-size="11" fill="#999" text-anchor="middle">工具化判读：整体处手艺阶段前夜——Codacy 模式（搭进既有质量平台）是唯一跑通的商业化路径，gardening agent 可复制不可售卖</text>
 </svg>

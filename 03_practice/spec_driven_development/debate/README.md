@@ -15,7 +15,7 @@
 | 文件 | 内容 | 特点 |
 |---|---|---|
 | [signals-2026h2.md](signals-2026h2.md) | 2026.6–9 最新信号全景（25+ 条） | **时间权重最高，矛盾信号以此裁决** |
-| [authoritative-verdicts.md](authoritative-verdicts.md) | TW Radar Vol.34 / InfoQ / arXiv | 定级来自条目页 JSON，非猜测 |
+| [authoritative-verdicts.md](authoritative-verdicts.md) | TW Radar Vol.34 / InfoQ / arXiv | 定级来自官方条目页直读（SDD 主条目与 OpenSpec 为页面/JSON 直读；Spec Kit 独立条目未命中、维持点名口径） |
 | [critiques.md](critiques.md) | 批判汇编（按权重聚类 5 类） | 2026 批判重心在 spec 漂移与成本 |
 | [endorsements-and-experiences.md](endorsements-and-experiences.md) | 正面/经验池（厂商降权） | 最强独立证据 = FIXER × Scrum |
 | [team-practices.md](team-practices.md) | 团队协作/工程控制/迭代机制 | 最贴合落地视角，含活样本 |

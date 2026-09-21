@@ -1,0 +1,39 @@
+# 维度 05 · 安全护栏（门禁层）
+
+> 角色：**门禁**——不参与加权；任一 ❌ 整体降为 D 级（见 [`../00-framework-v1.md`](../00-framework-v1.md) §4.2）。形态适用：A+B，B 下加严（运行时护栏是产品本体的一部分）。
+
+## 核心问题
+
+软指令与硬约束是否各司其职，危险面是否结构性可控？
+
+## 为什么独立成维且是门禁
+
+安全不可被平均稀释：其他七维全绿、密钥可被提交的仓库不可称"agent-friendly"。这是它独立于加权层的原因（聚合结构修正，v1）。
+
+## 边界声明
+
+- 归此维：上下文 vs 强制的分界（hooks/permissions）、指令文件自身供应链攻击面、敏感操作就近显式禁令、禁令带安全替代路径、破坏性操作可辨识、agent 环境限制成文、凭证分离、human-in-the-loop、远程操作 guardrails、安全模型文档化。
+- 归他维：破坏性脚本"可辨识"的接口面在 03 打分，本维只收其安全后果；禁令的"就近放置"机制与 01 的分层共享原理，但本维条目只评安全类禁令。
+
+## 判据族（草案）
+
+1. **软硬分离**：必须生效的规则不只在 md 里；permissions.deny/hooks/sandbox 结构性存在。
+2. **禁令质量**：Never 列表存在；禁令带替代路径；就近放置在对应子目录文件。
+3. **攻击面**：import/symlink/嵌套的外部引用有审批或拒绝；可执行配置有信任边界。
+4. **凭证与权限**：凭证经声明式注入不落仓库；agent 网络/文件限制成文为代码可见事实。
+5. **高危门禁**：发布/迁移/删除类需确认；远程操作只推 fork、禁 force push、AI 披露。
+6. **安全模型**：漏洞/已知限制/加固项三分法文档化。
+
+## 依据
+
+- raw 01 篇维度五、raw 07 篇 #51–60。
+- [Claude Code memory docs](https://code.claude.com/docs/en/memory)（"上下文而非 enforced configuration"官方红线）、[builder.io AX 原则 4](https://www.builder.io/blog/agent-experience)（safety needs to be deterministic）。
+
+## 泛化注意
+
+- deer-flow 锚点（SkillScan、required-secrets）→ 行为化改写。
+- "门禁层"聚合语义下，本维条目权重不适用——checklist-v1 中本维条目只标 ✅/⚠️/❌，不参与 4.3 短板制计算。
+
+## 开放问题
+
+- ⚠️ 在门禁层如何处置：不触发降级，但必须进整改清单？还是按条目分级（部分 ⚠️ 也降级）？待 checklist-v1 逐条定。

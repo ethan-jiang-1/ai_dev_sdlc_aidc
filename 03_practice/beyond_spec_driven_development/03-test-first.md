@@ -1,4 +1,6 @@
-# SDD 替代形态之五：测试优先回归（spec 隐含在测试里）——深挖
+# 形态之三：测试优先回归（spec 隐含在测试里；五形态时期旧号 05，保留历史脉络）——深挖
+
+> 定位（2026-09-21）：按本目录研究优先级，本篇为背景参照/对照篇，不作主张依据；§5 处方式建议为作者立场，非本目录主张。
 
 ```yaml
 topic: 测试优先回归——TDD/性质测试作为 agent 时代的隐含 spec
@@ -15,14 +17,13 @@ related:
   - ../spec_driven_development/tools/superpowers.md      # Superpowers TDD skills 链细节（指针，不复制正文）
   - ../spec_driven_development/debate/critiques.md       # 批判面：表达力上限的"问题从哪来"
   - ./README.md#6                # 五形态光谱图中的最右位置
----
 ```
 
 ---
 
 ## 1. TDD 复兴：2026 年的证据——"用 TDD 约束 agent"的公开复盘
 
-底稿只说了"经典 TDD 在 AI 语境的复兴"，这里补 2026 年实际发生的证据链。复兴的真正驱动力不是复古，而是一个工程判断的转变：**当作者是不确定性的 LLM 时，测试从"质量工具"升格为"控制系统的最后一道不可省略的组件"**。
+总览（本目录 README §5）只说了"经典 TDD 在 AI 语境的复兴"，这里补 2026 年实际发生的证据链。（注：本文所称"底稿"=升格前的单文件 alternatives.md，已拆分为本目录 README，下同。）复兴的真正驱动力不是复古，而是一个工程判断的转变：**当作者是不确定性的 LLM 时，测试从"质量工具"升格为"控制系统的最后一道不可省略的组件"**。
 
 ### 1.1 团队公开复盘一：术哥《OpenSpec + Superpowers TDD v2》（腾讯云，2026-05-06，2.1K 阅读）
 
@@ -38,7 +39,7 @@ related:
 
 - **specmint-tdd**（ngvoicu，2026）：把"严格 red-green-refactor 强制 + TEST/IMPL 交替任务对 + TDD Log 审计轨迹"打包成 Claude Code 插件 + universal skill——TDD 纪律本身正在被产品化为可安装工件（[github.com/ngvoicu/specmint-tdd](https://github.com/ngvoicu/specmint-tdd)）。
 - **TDD Governance for Multi-Agent Code Generation**（arXiv 2604.26615）：学术侧把"用 prompt 工程治理多 agent 代码生成的 TDD 纪律"作为研究问题，与 Consort（见第 3 节）同期出现，说明"agent 时代 TDD 如何强制"已是正式学术议题。
-- **Superpowers 的 TDD skills 链**：底稿与 `../spec_driven_development/tools/superpowers.md` 已覆盖——371 行的 test-driven-development skill（Iron Law、"删除在测试之前写出的代码"）、subagent-driven-development 的 fresh-context 隔离、两阶段 review。注意术哥复盘给出的关键定性：**Superpowers 的 TDD skill "全是 prompt，不是可执行的断言"**——它是软约束的代表作，这正是 Consort 要批判的对象（第 3 节）。
+- **Superpowers 的 TDD skills 链**：总览（本目录 README §5）与 `../spec_driven_development/tools/superpowers.md` 已覆盖——371 行的 test-driven-development skill（Iron Law、"删除在测试之前写出的代码"）、subagent-driven-development 的 fresh-context 隔离、两阶段 review。注意术哥复盘给出的关键定性：**Superpowers 的 TDD skill "全是 prompt，不是可执行的断言"**——它是软约束的代表作，这正是 Consort 要批判的对象（第 3 节）。
 - **社区叠加实践**：OpenSpec + Superpowers TDD v2 这类"轻量 spec 工件 + TDD 行为纪律"的混搭在中文社区已形成可复制的 schema（第 5 节的杂交形态证据）。
 
 ### 1.3 复兴的实质（本节小结）
@@ -90,7 +91,7 @@ Kevin Hartman（Databricks），2026-09-09 提交，9 页，开源实现 [github
 | **Enforcement by front-loaded structure** | 前置把 spec/plan 做强，然后信任实现 | **GitHub Spec Kit** | "discipline 在 agent 接手的瞬间蒸发"：TDD 可选无门禁、constitution 是散文、无代码级防偏离机制 |
 | **Enforcement through controls the agent cannot edit** | 确定性编排器 + 人批门禁 + 不可变测试 + 对真实分支数据库的绿 | **Consort** | （论文承认的）表达力仍在 spec 侧；重型 |
 
-这个分类本身是本文对底稿光谱图的重要修正输入：**superpowers 与 Consort 同为"测试优先"，但一个在 persuasion 端、一个在不可编辑控制端——"测试优先"内部还藏着一条软硬光谱。**
+这个分类本身是本文对总览（本目录 README §6）光谱图的重要修正输入：**superpowers 与 Consort 同为"测试优先"，但一个在 persuasion 端、一个在不可编辑控制端——"测试优先"内部还藏着一条软硬光谱。**
 
 ### 3.2 强制 TDD 的具体机制
 
@@ -102,7 +103,7 @@ Kevin Hartman（Databricks），2026-09-09 提交，9 页，开源实现 [github
 
 ### 3.3 实验结果：诚实的"暂无"
 
-论文的对比评估（V 节）是**逐维度的机制对比**（对 Spec Kit / superpowers / BMAD / GSD 五框架打 enforcement 维度分），而输出质量主张被作者明确框架为**预注册、可检验的假设**（VI 节），受控实验是 future work。即：**Consort 提供的是机制论证，不是效果实证**。这一点与底稿"独立量化少"的判断一致，且论文自己引的相关证据（mock 率、虚报率、可维护性指标下滑）都是相关性研究。
+论文的对比评估（V 节）是**逐维度的机制对比**（对 Spec Kit / superpowers / BMAD / GSD 五框架打 enforcement 维度分），而输出质量主张被作者明确框架为**预注册、可检验的假设**（VI 节），受控实验是 future work。即：**Consort 提供的是机制论证，不是效果实证**。这一点与总览（本目录 README §5）"独立量化少"的判断一致，且论文自己引的相关证据（mock 率、虚报率、可维护性指标下滑）都是相关性研究。
 
 ### 3.4 与 Superpowers 软约束的对照（论文原文口径）
 
@@ -121,7 +122,7 @@ Kevin Hartman（Databricks），2026-09-09 提交，9 页，开源实现 [github
 
 ## 4. 表达力上限的具体化：测试写不出的东西，2026 年真实吃亏案例
 
-底稿一句话带过"测试只能表达可断言的行为"。2026 年材料把三类写不出的东西各自给出了实证。
+总览（本目录 README §5）一句话带过"测试只能表达可断言的行为"。2026 年材料把三类写不出的东西各自给出了实证。
 
 ### 4.1 设计理由/意图缺失 → "测试全绿但少了三分之一的功能"（最典型的吃亏复盘）
 
@@ -134,7 +135,7 @@ Kevin Hartman（Databricks），2026-09-09 提交，9 页，开源实现 [github
 - 代码质量盲评两版打平（单轮版甚至略优）；结构化流程的额外成本约 **$17/feature 或工程师 10 分钟**。
 - 缺失的三分之一恰好来自流程里测试写不出的两步：discovery 追问简报没回答的问题、每条规则后的"还能怎样坏"挑战——**意图澄清与完备性追问不存在于任何断言里**。
 
-### 4.2 跨服务契约语义缺失 → whenwords 的自反例（已在底稿提及，此处具体化）
+### 4.2 跨服务契约语义缺失 → whenwords 的自反例（已在总览（本目录 README §5）提及，此处具体化）
 
 dbreunig/whenwords（纯 spec + 750 个 YAML 一致性测试的杂交先例）在 2026 年留下了精确的自反例：[issue #6 "tests.yaml conflicts with SPEC.md on rounding/units"](https://github.com/dbreunig/whenwords/issues/6)——测试与 spec 在**舍入/单位语义**上互相矛盾。这正是"纯断言无法承载语义裁决"的实例：两条都绿的断言可以在语义上打架，而裁决需要测试之外的那份意图文档。作者已自我推翻"spec 单向等价于测试"的等式（见 `./README.md` 第 5 节）。
 
@@ -155,6 +156,8 @@ dbreunig/whenwords（纯 spec + 750 个 YAML 一致性测试的杂交先例）�
 ---
 
 ## 5. 组合建议：测试优先 × 轻量 spec 的混合形态——团队怎么搭
+
+> 标注（2026-09-21）：本节为作者立场（处方式建议），非本目录主张；本篇为对照篇，不作主张依据。
 
 ### 5.1 先例与必要性
 
@@ -184,7 +187,7 @@ dbreunig/whenwords（纯 spec + 750 个 YAML 一致性测试的杂交先例）�
 
 ---
 
-## 附：对底稿/父文档的增量修正建议
+## 附：对总览（本目录 README）的增量修正建议
 
 1. 本 README 第 5 节"代表实践/工具"可补一句：测试优先内部存在**软硬光谱**（Superpowers=persuasion 端，Consort=不可编辑控制端），arXiv 2609.09671 给出了三分类框架。
 2. 光谱结论第 3 条（"越靠右表达力越低"）现有一手证据支撑：Smart 24 次重复实验（意图完备性）、whenwords issue #6（跨工件语义）、silent-failures（效果 vs 返回值）。

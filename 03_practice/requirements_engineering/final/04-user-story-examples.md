@@ -1,5 +1,7 @@
 # User Story 示例手册
 
+> 证据基线：2026-04-17/18 深度研究一轮（DR round 1），来源与断言分级见 [../deep_research_topics/](../deep_research_topics/README.md)（_INDEX 与 claims-audit）；过程件见 [../plan/](../plan/)。本文为交付层消化稿，断言强度以研究层为准。
+
 **建议阅读阶段：** 初级 → 中级
 
 **这份手册的用途：** 通过正例、反例、重构和自检，快速形成”什么样的 Story 算写对了”的手感。
@@ -29,7 +31,7 @@
 
 ## User Story 的质量标准：INVEST
 
-对 User Story 来说，业界公认的质量框架是 Bill Wake 提出的 `INVEST`，后被 Fowler 与 Mike Cohn 持续引用。
+对 User Story 来说，业界公认的质量框架是 Bill Wake 提出的 `INVEST`，后被 Fowler 与 Mike Cohn 持续引用。（tier B 佐证：[../deep_research_topics/_reference/02-user-story-wake-invest-original.md](../deep_research_topics/_reference/02-user-story-wake-invest-original.md)）
 
 | 字母 | 正式叫法 | 在实务里最值得怎么理解 |
 | --- | --- | --- |
@@ -99,6 +101,8 @@ graph TB
 ## 先看几个正例
 
 ### 正例 A：手机银行主屏余额
+
+（例源：见 01。）
 
 ```text
 As a mobile banking customer,

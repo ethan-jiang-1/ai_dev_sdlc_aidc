@@ -44,7 +44,7 @@ openspec/
 |---|---|---|
 | Stars | **69,640** | 交叉验证：第三方 2026-06-22 核查为 55.9k → 约 3 个月 +24%，增速仍陡 |
 | Forks | 4,771 | |
-| Contributors | 100（per_page=100 拉满，实际可能略多） | 但提交高度集中：TabishB 519 + clay-good 144，bots 占其余大头 |
+| Contributors | 100（per_page=100 拉满，实际可能略多）⚠ 口径注（2026-09-21）：本表 100 为 per_page=100 分页上限拉满值（=至少 100 人），非实际计数；landscape §1.2 的 ~50 为另一观测口径（同 API 端点，per_page=100 返回约 50+ 条）。两种观测口径、未定论，回溯以 [sdd-tooling-landscape-2026-09.md §3](../sdd-tooling-landscape-2026-09.md) 为锚。 | 但提交高度集中：TabishB 519 + clay-good 144，bots 占其余大头 |
 | Open issues（含 PR） | 241 | |
 | Watchers/subscribers | 286 | |
 | 创建时间 | 2025-08-05 | 距观测约 13.5 个月 |

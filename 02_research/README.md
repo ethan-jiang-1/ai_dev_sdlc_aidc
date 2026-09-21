@@ -19,6 +19,7 @@
 | `ai_native_rnd/` | 从瀑布 / 敏捷到 AI-Native 研发的跃迁 | `result/AI_Native_Agile_Evolution.md` |
 | `ai_sdlc_frontier/` | 前沿议题：各家一线人物访谈 + 上下文压缩六家对比等 followup | `followup_research/` |
 | `anthropic_ai_sdlc/` | Anthropic 官方 AI-Native SDLC playbook（英译原文 + 中文编译） | `org/ai-native-sdlc-playbook.md` |
+| `repo_agent_friendliness/` | 仓库 Agent-Friendly 泛化评估体系（五维框架 + 判据 + 打分；结构借鉴自 deer-flow 消化层，活跃推敲中） | `result/00-framework-v0.md` |
 | `thoughtworks_ai_sdlc/` | ThoughtWorks 方法论视角的 AI-Native SDLC 最终报告 | `final/AI_NATIVE_SDLC_FINAL_ENGINEER_REPORT.md` |
 | `rnd_native_2.0/` | 研发原生 2.0：Agent 如何辅助研发过程 | `README.md`（需求工程与 SDD 两主题已于 2026-09-21 拆出至 `03_practice/`） |
 

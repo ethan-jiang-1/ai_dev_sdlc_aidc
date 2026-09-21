@@ -1,4 +1,5 @@
 # Requirements Engineering Final Report System Plan
+> 状态：本轮已收口（completed / closed_for_current_round）。过程件仅作回溯，修改 final/ 勿据本文，以 final/ 现状为准。
 
 > plan_status: `design_sor_active`
 > last_updated: `2026-04-19`
