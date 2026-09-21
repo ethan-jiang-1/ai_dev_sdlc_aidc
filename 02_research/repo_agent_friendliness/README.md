@@ -1,28 +1,26 @@
-# repo_agent_friendliness — 仓库 Agent-Friendly 泛化评估体系
+# repo_agent_friendliness — 仓库 Agent-Friendly 评估系统
 
-**定位**：一套**仓库无关**的"代码仓库对 coding agent 友好度"评估体系——五维框架 + 可操作判据 + 打分模型。研究层活跃推敲主题（2026-09-21 起）。
+**定位**：一套**仓库无关**的"代码仓库对 coding agent 友好度"评估系统——九维正交框架 + 可操作判据 + 门禁/加权分离的打分模型。已从研究主题升级为**可被 agent 执行的评估系统**（2026-09-21 重组）：拽任意一个 repo 进来要求评估，按 [`AGENTS.md`](AGENTS.md) 的仪式走完即出报告。
 
-## 分法（raw → result 管道）
+## 分法（系统四层：spec → instruments → runs → archive）
 
-- `raw/` — 借鉴起点：整库引入自 deer-flow 消化层 `/Users/bowhead/deer-flow/_digest/harness/`
-  （引入日期 2026-09-21，内容观测日期 2026-06；deer-flow 侧仍在更新，同步需重新拷贝，本目录不回写）。
-  **只是素材参考，不是本主题的权威，更不是路线依据**；其中的仓库案例锚点一律不进 result
-  （result 侧锚点已于 2026-09-21 全部剔除，v0 历史底稿除外）。
-- `result/` — 泛化体系本体，当前权威：[`result/00-framework-v1.md`](result/00-framework-v1.md)
-  （v1.3：三层对象模型、判据 schema、证据等级 tier、门禁+加权分离的聚合结构、效标回归校准协议、**九维正交维度框架**）。
-  各维展开定义一维一文件：[`result/10-dimensions/`](result/10-dimensions/README.md)（01–09，含边界声明与判据族草案）。
-  维度充分性审查：[`result/30-dimension-sufficiency-v1.md`](result/30-dimension-sufficiency-v1.md)。
-  **A/B 两线分立**（2026-09-21 用户定）：[`result/40-line-a-traditional-repo.md`](result/40-line-a-traditional-repo.md)
-  （传统代码仓库）、[`result/41-line-b-agentic-repo.md`](result/41-line-b-agentic-repo.md)（智能体代码仓库）。
-  [`result/00-framework-v0.md`](result/00-framework-v0.md) 为历史底稿（已被 v1 取代）。
-  后续交付：checklist-A / checklist-B（判据从九维判据族直接落条，**不从 raw 60 条派生**）、
-  harness-profiles、试测报告、权重校准，逐版叠加不覆盖历史判断。
+| 层 | 目录 | 是什么 | 变化频率 |
+|---|---|---|---|
+| 定义层（≈L-core） | [`10-spec/`](10-spec/) | 体系法律：[`framework.md`](10-spec/framework.md)（v1.3 权威）、[`dimensions/`](10-spec/dimensions/README.md)（01–09 一维一文件）、[`archetypes.md`](10-spec/archetypes.md)（A/B 分型）、[`line-a/line-b`](10-spec/line-a-traditional-repo.md)（两线评估面）、[`adr/`](10-spec/adr/)（结构裁决记录） | 慢，版本化 |
+| 器械层 | [`20-instruments/`](20-instruments/README.md) | checklist-A/B、harness-profiles、tier-0 扫描脚本（**多待建**） | 中，随 spec 版本走 |
+| 运行层（≈L-instance） | [`30-runs/`](30-runs/README.md) | 每次审计一目录（manifest + report），**append-only** | 只增不改 |
+| 冷区 | `90-archive/` | [`framework-v0.md`](90-archive/framework-v0.md)（历史底稿）、[`raw/`](90-archive/raw/README.md)（deer-flow 冻结素材，来源考古） | 不更新 |
+
+目录结构映射体系自己的三层对象模型（framework §1）：10-spec=L-core，20-instruments=L-profile+operational 化判据，30-runs=L-instance。
+
+**当前进展与下一步** → [`CURRENT.md`](CURRENT.md)（热区）。
+**评估操作规程**（怎么跑一次审计、manifest/报告模板、打分纪律）→ [`AGENTS.md`](AGENTS.md)。
 
 ## 上下游指针（单一事实来源，不复制正文）
 
 - harness/context 治理的**实践方法论**（DSLC、漂移治理）→
   [`../../03_practice/harness_governance/`](../../03_practice/harness_governance/README.md)；
-  其 `03b` 的"度量缺口"待由本体系补度量方案（见 result 骨架 §5 路线 3）。
+  其 `03b` 的"度量缺口"待由本体系 30-runs 的校准数据补度量方案（framework §4.4）。
 - 活跃对客交付在 `talk-ai-coding-evolution-harness/`；本主题暂不与其 `02_evidence/` 关联（2026-09-21 用户定）。
 
 ## 纪律
@@ -35,3 +33,9 @@
 2. **宁拆不混**：新话题若横跨两个维度，先按核心问题拆开分属，或立新维；**禁止**为了省条目把两个话题合并成一个"混合判据族"——混合会在打磨中变糊。
 3. **边界成文**：每条扩维/并族操作必须同时写明与相邻维度的分界（"X 归此维、Y 彼维，分界是……"），边界声明与判据同置于 checklist，不留在讨论记录里。
 4. **同词异义拆开**：社区同一术语的多个含义（如 context rot 的"注意力稀释"与"指令资产腐化"）必须拆成不同判据族，不共用一个词下混评。
+
+**系统纪律（2026-09-21 重组起）**：
+
+5. **runs 只增不改**：报告落盘后不回写；spec/器械变更靠 manifest 断代，不改历史报告。
+6. **manifest 必填**：无 manifest 的报告无效（spec/instrument/harness/模型版本必须钉住，否则 tier-1 可复现性承诺不成立）。
+7. **结构性裁决进 ADR**：改 spec 前先查 `10-spec/adr/`；新裁决一文件一记录，framework 只留结论。

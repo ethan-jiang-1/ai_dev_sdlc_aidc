@@ -1,6 +1,6 @@
 # 形态 B 评估线 · 智能体代码仓库（B-line）
 
-> 状态：v1（2026-09-21）。体系定义权威链：[`00-framework-v1.md`](00-framework-v1.md) → 本文件（B 线评估面定义）。A 线姊妹文件：[`40-line-a-traditional-repo.md`](40-line-a-traditional-repo.md)。分型权威：[`20-archetypes.md`](20-archetypes.md)。
+> 状态：v1（2026-09-21）。体系定义权威链：[`framework.md`](framework.md) → 本文件（B 线评估面定义）。A 线姊妹文件：[`line-a-traditional-repo.md`](line-a-traditional-repo.md)。分型权威：[`archetypes.md`](archetypes.md)。
 
 ## 1. 线的定位与评估对象
 
@@ -50,7 +50,7 @@ B 线与 A 线最大的操作差异：**tier-0/1 覆盖率天然低**。运行�
 
 1. checklist-B：运行时路径判据落条（②⑥⑦⑧⑨ 的 B 子族优先），逐条标共识/探索。
 2. tier-2 评审协议（B 版）：演练剧本模板（含模型/版本固定、场景抽样、统计报告格式）。
-3. 选 1–2 个开源 agent 项目试测（L-instance），验证六层映射 ↔ 九维判据的对应度，落 `40-pilots/`。
+3. 选 1–2 个开源 agent 项目试测（L-instance），验证六层映射 ↔ 九维判据的对应度，落 `../30-runs/`。
 
 ## 变更记录
 

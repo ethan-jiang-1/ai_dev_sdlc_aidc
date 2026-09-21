@@ -1,6 +1,6 @@
 # 维度 09 · 版本控制与协作面
 
-> 角色：加权维。**v1.3 新增维**（充分性审查 [`../30-dimension-sufficiency-v1.md`](../30-dimension-sufficiency-v1.md) G1 结论）。形态适用：A+B；**B 下升为一等**（多 agent 并行使冲突面成为日常问题）。
+> 角色：加权维。**v1.3 新增维**（充分性审查 [`../adr/2026-09-21-dimension-sufficiency-review.md`](../adr/2026-09-21-dimension-sufficiency-review.md) G1 结论）。形态适用：A+B；**B 下升为一等**（多 agent 并行使冲突面成为日常问题）。
 
 ## 核心问题
 
@@ -15,7 +15,7 @@ Agent（或多个 agent 并行）产出的改动，能否顺畅进入版本主�
 - 归此维：commit 粒度与信息规范、分支/合并模型成文、并行 agent 的结构性隔离（worktree 指引、可并行域声明、文件所有权/锁面）、高冲突文件（lockfile/生成物/changelog）的处理规则、改动可原子回退、review 流程对 agent 产出的适配（模板、披露、评审责任划分）。
 - 归他维：推送类**安全红线**（只推 fork、禁 force push、远程操作审批）→ ⑤；合并冲突**卡住后的逃生剧本** → ⑥；PR 内**附证据的义务** → ②；lockfile 的**漂移机器检查** → ⑧。分界口诀：⑨管"改动怎么顺畅地走完协作旅程"，⑤管"走的过程中哪些事绝不能做"，⑥管"走不动了怎么脱身"。
 
-## 判据族（草案，checklist-v1 落条）
+## 判据族（草案，checklist-A/B 落条）
 
 1. **提交卫生**：原子提交惯例成文；message 规范可机判（如 conventional commits）；生成物/临时文件不混入提交（gitignore 卫生）。
 2. **分支与合并模型**：分支策略、主干保护规则对 agent 可知（成文或配置可读）；agent 知道该基于哪个基线开枝。

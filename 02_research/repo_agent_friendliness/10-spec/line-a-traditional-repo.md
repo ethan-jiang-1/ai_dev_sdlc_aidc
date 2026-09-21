@@ -1,16 +1,16 @@
 # 形态 A 评估线 · 传统代码仓库（A-line）
 
-> 状态：v1（2026-09-21）。体系定义权威链：[`00-framework-v1.md`](00-framework-v1.md) → 本文件（A 线评估面定义）。B 线姊妹文件：[`41-line-b-agentic-repo.md`](41-line-b-agentic-repo.md)。
+> 状态：v1（2026-09-21）。体系定义权威链：[`framework.md`](framework.md) → 本文件（A 线评估面定义）。B 线姊妹文件：[`line-b-agentic-repo.md`](line-b-agentic-repo.md)。
 
 ## 1. 线的定位与评估对象
 
-被测实例：产出的应用是**确定性程序**（形态 A，分型见 [`20-archetypes.md`](20-archetypes.md)）的仓库——二元断言即可判定正确性的那类。评估**只有一条消费路径**：开发时路径（coding agent 在开发中读仓库指引与工件）。
+被测实例：产出的应用是**确定性程序**（形态 A，分型见 [`archetypes.md`](archetypes.md)）的仓库——二元断言即可判定正确性的那类。评估**只有一条消费路径**：开发时路径（coding agent 在开发中读仓库指引与工件）。
 
 生态位：A 线的惯例已基本收敛（AGENTS.md、验证闭环、冷启动卫生），行业空白在**执行不齐**而非**不知道该做什么**——A 线的价值是可低成本复跑的审计，不是探索新判据。成熟度定位：**成熟线**。
 
 ## 2. 维度适用面与重心
 
-九维全部适用（⑨ 见 [`10-dimensions/09-vcs-collaboration.md`](10-dimensions/09-vcs-collaboration.md)），⑤为门禁层，其余八维参与加权。A 线内部重心分层：
+九维全部适用（⑨ 见 [`dimensions/09-vcs-collaboration.md`](dimensions/09-vcs-collaboration.md)），⑤为门禁层，其余八维参与加权。A 线内部重心分层：
 
 | 层 | 维度 | A 线地位 |
 |---|---|---|
@@ -27,7 +27,7 @@ A 线正确性机制是断言，绝大多数判据可压到 tier-0（静态扫�
 
 ## 4. 与 B 线的分离纪律
 
-- A/B 的分型依据是**正确性模型**（framework §3.6、archetypes §1），不是"代码由谁写"。AI 写的传统程序仓库 = A。
+- A/B 的分型依据是**正确性模型**（framework §3.5、archetypes §1），不是"代码由谁写"。AI 写的传统程序仓库 = A。
 - 两线不共用总分：A 线评分不与 B 线评分横向比较（评估面不同、判据成熟度不同）。
 - 同一判据在两线下可同 id 异族（如⑧的 A 子族/B 子族），边界在各自维文件成文。
 
@@ -35,7 +35,7 @@ A 线正确性机制是断言，绝大多数判据可压到 tier-0（静态扫�
 
 1. checklist-A：九维判据落条（tier-0/1 优先，⑧挂条件判据），行为描述、无仓库锚点。
 2. 抽样协议：tier-2 各条配抽样（抽几处、从哪抽、几处不合格算 ⚠️/❌）。
-3. 本仓库自举试测作为第一个 A 线 L-instance，落 `40-pilots/`，喂效标回归（framework §4.4）。
+3. 本仓库自举试测作为第一个 A 线 L-instance，落 `../30-runs/`，喂效标回归（framework §4.4）。
 
 ## 变更记录
 
