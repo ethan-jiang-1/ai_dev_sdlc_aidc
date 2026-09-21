@@ -1,7 +1,7 @@
 # ADR 2026-09-21 · 无状态评估器与 run bundle 归属
 
-> 状态：已裁决（v1.5 起生效）。用户定调：**评估系统是 read-only 的**——评估任何 repo，run bundle 存在那个 repo，需要的 数据都在那边，而不是在本系统这边。
-> 关联：[`../framework.md`](../framework.md) §1/§4.4/§7、[`../../20-instruments/bundle-format.md`](../../20-instruments/bundle-format.md)、[`../../30-runs/README.md`](../../30-runs/README.md)、目录 [`../../AGENTS.md`](../../AGENTS.md)。
+> 状态：已裁决（v1.5–v1.6 生效）。用户定调：**评估系统是 read-only 的**——评估任何 repo，run bundle 存在那个 repo，需要的数据都在那边，而不是在本系统这边。
+> 关联：[`../framework.md`](../framework.md) §1/§4.4/§7、[`../../20-instruments/bundle-format.md`](../../20-instruments/bundle-format.md)、目录 [`../../AGENTS.md`](../../AGENTS.md)。
 
 ## 背景
 
@@ -15,16 +15,16 @@ v1.4 及之前的调用契约是"目标仓库只读，一切写入落本目录 `
 
 1. **评估器运行期零状态、零写入**：一次评估运行中，本系统目录不被写入；系统只在**体系演进**（改 spec/instruments）时才被写。
 2. **run bundle 归属被测仓库**：默认落 `<目标仓库>/agent-friendly-runs/<YYYY-MM-DD>-<harness集>[-pilot]/`（manifest + report + 效标数据，格式规范见 `20-instruments/bundle-format.md`）。对目标仓库唯一的允许写入就是这个 bundle；无写权限（第三方仓库）则把 bundle 交付用户放置。
-3. **`30-runs/` 收窄为"本仓库自己的 bundle 归档 + pilot 索引"**：本仓库自举审计的 bundle 随本仓库走，自然落这里（与裁决 2 一致——"那边"恰好是这边）；外部 repo 的 pilot bundle 留在各自仓库，此处只登记 `pilot-index.md`（路径指针 + 一行摘要）供 §4.4 校准取数，不复制内容。
-4. **bundle 格式规范升为器械层组件**：manifest/report 模板、证据引用约定、放置规则，从 30-runs README 移入 `20-instruments/bundle-format.md`——它是审计员产出物的模具，属仪器不属于档案柜。
+3. **`30-runs/` 删除**：自举审计也是"bundle 随仓库走"，被测仓库就是本仓库，bundle 落**仓库根** `agent-friendly-runs/`——与外部目标同一条规则，无特例；系统目录收敛为三层（spec / instruments / archive），L-instance 数据**永远不在本系统**。
+4. **不设任何运行时索引/登记表**：bundle 的 manifest 即分布式登记表；跨仓库校准取数时把各目标仓库的 manifest 临时聚合，工作清单放仓库根 `.tmp-` 刮擦区，用完即弃——**运行时累积状态不得入系统**（用户红线，曾试行的 pilot-index 表被否决撤销）。
 
 ## 后果
 
-- `AGENTS.md` 调用契约与仪式第 3/7 步改写（写入位置、铁律重述）。
-- framework §1（L-instance 归属）、§4.4（试点取数方式）、§7（自举条目措辞）同步；版本 v1.5。
-- line-b §6.3 的外部试点改为"bundle 落目标仓库 + 索引登记"；line-a §5.3 自举不变。
-- 跨仓库横向比较不再有天然的集中数据集——校准靠 pilot-index 聚合，接受这一成本（换取纯净性与数据重力正确）。
+- 跨仓库横向比较不再有天然的集中数据集——校准时按需临时聚合，接受这一成本（换取纯净性与数据重力正确）。
+- 目标仓库的 git 历史成为审计分数的免费时间线；`agent-friendly-runs/` 在被测仓库内 append-only。
+- 系统目录在两次评估之间保证 byte 级不变；对它的任何 diff 都意味着体系演进，必须走版本与 ADR。
 
 ## 变更记录
 
+- v2（2026-09-21）：后果修订——删除 `30-runs/`，自举落仓库根；撤销试点索引（运行时状态不入系统）（framework v1.6）。
 - v1（2026-09-21）：初版，四条裁决。

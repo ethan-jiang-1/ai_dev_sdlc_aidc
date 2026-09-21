@@ -1,6 +1,6 @@
-# 仓库 Agent-Friendly 评估体系 v1.5（定义层）
+# 仓库 Agent-Friendly 评估体系 v1.6（定义层）
 
-> 状态：v1.5（2026-09-21）。取代 [`../90-archive/framework-v0.md`](../90-archive/framework-v0.md) 成为体系定义的当前权威（v0 保留作历史底稿）。
+> 状态：v1.6（2026-09-21）。取代 [`../90-archive/framework-v0.md`](../90-archive/framework-v0.md) 成为体系定义的当前权威（v0 保留作历史底稿）。
 > 结构推敲自 raw 七篇（观测日期 2026-06，见 [`../90-archive/raw/README.md`](../90-archive/raw/README.md)）；本文件只定义体系本身，不绑定任何具体仓库。
 
 ## 0. v0 → v1.3 演进了什么
@@ -22,7 +22,7 @@ v0 保留五维框架与四条设计约束，但在评估报告推敲（2026-09-
 |---|---|---|---|
 | **L-core 核心判据** | 仓库无关、harness 无关的原则级判据（由 context rot、注意力预算、自主执行体等第一性原理支撑） | 慢（原理级稳定） | 本体系 checklist-A/B（`../20-instruments/`，待建）主体 |
 | **L-profile harness 档案** | 各 harness 消化仓库指引的机制事实：指令载体、注入时机、预算上限、静默失败模式 | 快（厂商实现，需复验） | 本体系 `../20-instruments/harness-profiles.md`（raw 03 篇为其素材源） |
-| **L-instance 被测实例** | 具体仓库 + 审计时实际使用的 harness 集合 | 每次审计 | run bundle，**归属被测仓库**（[`<目标>/agent-friendly-runs/`](adr/2026-09-21-stateless-auditor-run-bundle.md)，ADR 无状态评估器；本仓库自举落 `../30-runs/`） |
+| **L-instance 被测实例** | 具体仓库 + 审计时实际使用的 harness 集合 | 每次审计 | run bundle，**归属被测仓库**（`<目标>/agent-friendly-runs/`，[ADR 无状态评估器](adr/2026-09-21-stateless-auditor-run-bundle.md)）；自举审计同规则，落本仓库根 `agent-friendly-runs/`——L-instance 数据不在本系统 |
 
 **评估 = L-core 判据 × L-instance 仓库现状，再按 L-profile 修正。** 被测实例同时带**形态档案**（A 确定性应用 / B 智能体，见 [`archetypes.md`](archetypes.md)）：形态决定评估面组合与条件判据，不改九维定义。推论：
 
@@ -154,7 +154,7 @@ sampling:  抽样协议（tier-2 判据必填：抽几处、从哪里抽、几�
 
 - v1 **不给权重数值**。v0/raw 的"维度①②×1.5"是无论证的经验值，不继承。
 - 校准方法：**效标回归**，不止看区分度。流程：
-  1. 选 2–3 个风格迥异的开源仓库试测（bundle 落各自目标仓库，经 `../30-runs/pilot-index.md` 登记指针供取数）；
+  1. 选 2–3 个风格迥异的开源仓库试测（bundle 落各自目标仓库；其 manifest 即分布式登记，校准时临时聚合，工作清单走仓库根 `.tmp-` 刮擦区，不入系统）；
   2. 对每仓库采集外部效标：真实 agent 会话的任务完成率、返工轮数、token 消耗、绕过/放弃点（方法论承 raw 04 §8 Anthropic eval-driven 方法）；
   3. 检验维度分与效标的相关性，据此定权重；无相关性的判据修订或移除。
 - 效标采集前不定权重；报告可以先行——**A–D 评级照给**（§4.2 刻度不依赖权重），加权数值分与总分列暂缺。
@@ -184,9 +184,11 @@ raw 07 的四步中"打分与整改排序"是报告环节不是采证环节，v1
 
 - `03_practice/harness_governance/03b` 的"度量缺口"：由本体系 §4 度量层补方案（双方互加指针，届时执行）。
 - 活跃对客交付 `talk-ai-coding-evolution-harness/`：暂不关联（2026-09-21 用户定，见目录 README）。
-- 本仓库自举实测：待 checklist-A 定稿后作为第一个 A 线 L-instance（落 `../30-runs/`，目录名带 -pilot）。
+- 本仓库自举实测：待 checklist-A 定稿后作为第一个 A 线 L-instance（落本仓库根 `agent-friendly-runs/`，目录名带 -pilot，与外部目标同一规则）。
 
 ## 8. 变更记录
+
+- v1.6（2026-09-21）：**删除 `30-runs/`**（[ADR v2 修订](adr/2026-09-21-stateless-auditor-run-bundle.md)）：自举 bundle 落仓库根 `agent-friendly-runs/`，与外部目标同一规则、无特例；不设任何运行时索引（manifest 即登记，校准时临时聚合）；系统目录收敛为 spec / instruments / archive 三层，L-instance 数据永远不在本系统。
 
 - v1.5（2026-09-21）：**无状态评估器**（[ADR](adr/2026-09-21-stateless-auditor-run-bundle.md)）：run bundle 归属被测仓库（`<目标>/agent-friendly-runs/`），评估器运行期零写入；`../30-runs/` 收窄为本仓库自举归档 + pilot 索引；bundle 格式规范升为器械层组件（`../20-instruments/bundle-format.md`）。
 

@@ -6,12 +6,12 @@
 
 | 层 | 目录 | 是什么 | 变化频率 |
 |---|---|---|---|
-| 定义层（≈L-core） | [`10-spec/`](10-spec/) | 体系法律：[`framework.md`](10-spec/framework.md)（v1.5 权威，含度量语义定标与无状态裁决）、[`dimensions/`](10-spec/dimensions/README.md)（01–09 一维一文件）、[`archetypes.md`](10-spec/archetypes.md)（A/B 分型）、[`line-a/line-b`](10-spec/line-a-traditional-repo.md)（两线评估面）、[`adr/`](10-spec/adr/)（结构裁决记录） | 慢，版本化 |
+| 定义层（≈L-core） | [`10-spec/`](10-spec/) | 体系法律：[`framework.md`](10-spec/framework.md)（v1.6 权威，含度量语义定标与无状态裁决）、[`dimensions/`](10-spec/dimensions/README.md)（01–09 一维一文件）、[`archetypes.md`](10-spec/archetypes.md)（A/B 分型）、[`line-a/line-b`](10-spec/line-a-traditional-repo.md)（两线评估面）、[`adr/`](10-spec/adr/)（结构裁决记录） | 慢，版本化 |
 | 器械层 | [`20-instruments/`](20-instruments/README.md) | [`bundle-format.md`](20-instruments/bundle-format.md)（run bundle 规范，现役）、checklist-A/B、harness-profiles、tier-0 扫描脚本（**多待建**） | 中，随 spec 版本走 |
-| 运行层（≈L-instance） | [`30-runs/`](30-runs/README.md) | **仅本仓库自举 bundle** + 外部 pilot 索引——外部审计的 bundle 归属被测仓库（`<目标>/agent-friendly-runs/`，评估器无状态），**append-only** | 只增不改 |
+| 被测数据（≈L-instance） | **不在本系统** | run bundle 归属被测仓库（`<目标>/agent-friendly-runs/`，评估器无状态）；自举审计同规则，落仓库根同名目录 | 只增不改，随被测仓库走 |
 | 冷区 | `90-archive/` | [`framework-v0.md`](90-archive/framework-v0.md)（历史底稿）、[`raw/`](90-archive/raw/README.md)（deer-flow 冻结素材，来源考古） | 不更新 |
 
-目录结构映射体系自己的三层对象模型（framework §1）：10-spec=L-core，20-instruments=L-profile+operational 化判据，30-runs=L-instance。
+目录结构映射体系自己的三层对象模型（framework §1）：10-spec=L-core，20-instruments=L-profile+operational 化判据；**L-instance 不落本系统**——run bundle 归属被测仓库，本目录无运行层。
 
 **当前进展与下一步** → [`CURRENT.md`](CURRENT.md)（热区）。
 **评估操作规程**（怎么跑一次审计、manifest/报告模板、打分纪律）→ [`AGENTS.md`](AGENTS.md)。
@@ -20,7 +20,7 @@
 
 - harness/context 治理的**实践方法论**（DSLC、漂移治理）→
   [`../../03_practice/harness_governance/`](../../03_practice/harness_governance/README.md)；
-  其 `03b` 的"度量缺口"待由本体系 30-runs 的校准数据补度量方案（framework §4.4）。
+  其 `03b` 的"度量缺口"待由本体系 pilot 校准数据（聚合各自目标仓库 bundle 的 manifest，不入本系统）补度量方案（framework §4.4）。
 - 活跃对客交付在 `talk-ai-coding-evolution-harness/`；本主题暂不与其 `02_evidence/` 关联（2026-09-21 用户定）。
 
 ## 纪律
@@ -39,4 +39,4 @@
 5. **runs 只增不改**：报告落盘后不回写；spec/器械变更靠 manifest 断代，不改历史报告。
 6. **manifest 必填**：无 manifest 的报告无效（spec/instrument/harness/模型版本必须钉住，否则 tier-1 可复现性承诺不成立）。
 7. **结构性裁决进 ADR**：改 spec 前先查 `10-spec/adr/`；新裁决一文件一记录，framework 只留结论。
-8. **bundle 随仓库（v1.5）**：run 归属被测仓库（`<目标>/agent-friendly-runs/`），评估器运行期对本系统零写入；`30-runs/` 只收本仓库自举 bundle 与 pilot 指针。
+8. **bundle 随仓库、系统零状态（v1.5–v1.6）**：run 归属被测仓库（`<目标>/agent-friendly-runs/`），评估器运行期对本系统零写入；自举审计同规则，bundle 落本仓库根同名目录；不设任何运行时索引（bundle 的 manifest 即登记）。

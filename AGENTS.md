@@ -75,9 +75,10 @@
 ## 4. 研究层与实践层怎么动
 
 `01_sources/` / `02_research/` / `03_practice/` / `04_enterprise/` 目前是**沉淀状态**，不是日常推进对象。
-**例外**：`02_research/repo_agent_friendliness/` 是**活跃的评估系统**（2026-09-21 升级）：独立四层分法
-（`10-spec / 20-instruments / 30-runs / 90-archive`）且有自己的 `AGENTS.md` 操作手册——路由进去后按它
-自己的纪律走，不适用本节"沉淀状态"与本文件 §3 的研究层默认分法。
+**例外**：`02_research/repo_agent_friendliness/` 是**活跃的评估系统**（2026-09-21 升级）：独立三层分法
+（`10-spec / 20-instruments / 90-archive`，被测数据不落本系统——run bundle 归属被测仓库）
+且有自己的 `AGENTS.md` 操作手册——路由进去后按它自己的纪律走，不适用本节"沉淀状态"与
+本文件 §3 的研究层默认分法。其自举审计会在仓库根产生 `agent-friendly-runs/`（bundle 归档，勿清理）。
 
 - 补素材、改研究结论前，先确认它是否为某场 talk 服务。**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**，避免事实分散到两处。
 - `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含四个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`、`harness_governance/`（2026-09-21 自 beyond 抽出：AI 形态下新的 SDLC——harness/context 治理）。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。
