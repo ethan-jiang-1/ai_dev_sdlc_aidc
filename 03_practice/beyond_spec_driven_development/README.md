@@ -4,20 +4,27 @@
 > **定性（2026-09-21）**：本文件的 §1–§5 各形态论述是**速览**（每形态数段的浓缩，便于不进分篇就能建立框架）；引用具体论述与证据时一律回对应分篇，分篇与本文冲突时以分篇为准。
 >
 > **2026-09-21 二次升格**：经用户定名，本目录自 `spec_driven_development/alternatives/` 升格为独立主题目录（"SDD 批判之后，控制 AI 写代码的形态光谱"），当日先落位 `02_research/`、同日归入实践层 `03_practice/beyond_spec_driven_development/`。与 SDD 工具层实践的分工指针见 [`../spec_driven_development/README.md`](../spec_driven_development/README.md)；原路径不保留实体，只在该处留指针。
+>
+> **2026-09-21 三次调整（抽出）**：经用户定，重点路线 **02 context engineering 与 03 harness 治理**
+> 自本目录**抽出升格**为独立主题 [`../harness_governance/`](../harness_governance/README.md)
+> （定位：AI 形态下新的 SDLC——治理 agent 执行链路，含其全部证据档案与图形）。
+> 本目录保留光谱定位与剩余形态（01 可验证规格 / 02 plan mode / 03 测试优先）；**context 与 harness 治理两分篇（抽出前编号 02 / 03，现 harness_governance 编号 01 / 02）的内容权威从本日起在 harness_governance**，
+> 本文件 §2 / §3 速览与 §7 判断仅作历史光谱定位，冲突时以那边分篇为准。
 
 | 分篇 | 形态 | 一句话 |
 |---|---|---|
 | [01-verifiable-specs.md](01-verifiable-specs.md) | 验证优先/可验证 spec | spec 必须降格为机器可校验的产物（VSDD/compilable specs/facts） |
-| [04-plan-mode.md](04-plan-mode.md) | Plan mode 派 | 规划内嵌于 harness，会话内对齐、用完即弃 |
-| [02-context-engineering.md](02-context-engineering.md) | Context engineering 派 | 只管 repo 级规则文件纪律，不建 feature 级工件 |
-| [03-harness-governance.md](03-harness-governance.md) | Harness 治理派 ★ | 治理对象从 spec 文档转向 agent 执行链路——团队级收敛点 |
-| [05-test-first.md](05-test-first.md) | 测试优先回归 | 测试就是 spec：给 CI 读的可执行断言替代文档合约 |
+| [02-plan-mode.md](02-plan-mode.md) | Plan mode 派 | 规划内嵌于 harness，会话内对齐、用完即弃 |
+| [01-context-engineering.md（新编号）](../harness_governance/01-context-engineering.md) | Context engineering 派 | 只管 repo 级规则文件纪律，不建 feature 级工件（**已抽出** → harness_governance） |
+| [02-harness-governance.md（新编号）](../harness_governance/02-harness-governance.md) | Harness 治理派 ★ | 治理对象从 spec 文档转向 agent 执行链路——团队级收敛点（**已抽出** → harness_governance） |
+| [03-test-first.md](03-test-first.md) | 测试优先回归 | 测试就是 spec：给 CI 读的可执行断言替代文档合约 |
 
-**阅读路径建议**：① 先看两张总图（光谱 → 验证迁移）建立框架 → ② 按优先级读分篇（01 → 02 → 03），每篇先图后文 → ③ 需要溯源进对应证据档案（全部逐字摘录 + 引用链核验，2026-09-21 审计）→ ④ 04/05 仅作对照。
+**阅读路径建议**：① 先看两张总图（光谱 → 验证迁移）建立框架 → ② 按优先级读分篇（01 可验证规格为主），每篇先图后文 → ③ 需要溯源进对应证据档案（全部逐字摘录 + 引用链核验，2026-09-21 审计）→ ④ 02 plan mode / 03 测试优先仅作对照。
+（2026-09-21 起：02 / 03 的深挖与证据档案在 [`../harness_governance/`](../harness_governance/README.md)。）
 
-**研究优先级（2026-09-21 用户定，编号对应重排后）**：**01 可验证 spec / 02 context engineering / 03 harness 治理为重点路线**（深挖 + 证据档案 + 审计齐备）；**04 plan mode / 05 测试优先为背景参照、不作为重点**——按用户经验：plan mode 是默认实践，够不上独立"后继形态"；测试优先是既有工程常识的延续，不是新范式。引用 04/05 时作对照用，不作主张依据。
+**研究优先级（2026-09-21 用户定，编号对应重排后）**：01 可验证 spec / 02 context engineering / 03 harness 治理曾为重点路线；**02 / 03 已于同日抽出为独立主题 [`../harness_governance/`](../harness_governance/README.md)**，本目录重点收敛为 **01 可验证 spec**；本目录 02 plan mode / 03 测试优先为背景参照、不作为重点——按用户经验：plan mode 是默认实践，够不上独立"后继形态"；测试优先是既有工程常识的延续，不是新范式。引用 plan mode / 测试优先时作对照用，不作主张依据。
 
-**最靠谱判断（2026-09-21，captain 判断，与光谱结论第 4 条同向但判据为其补充）**：03 harness 治理最靠谱——三点判据、当日补查的新实证（SSRN 119-repo 实证 null result 全文回源）与二至五名排序见文末 §7。
+**最靠谱判断（2026-09-21，captain 判断，与光谱结论第 4 条同向但判据为其补充）**：03 harness 治理最靠谱——三点判据、当日补查的新实证（SSRN 119-repo 实证 null result 全文回源）与二至五名排序见文末 §7。（该判断正是这两篇抽出升格的直接依据；抽出前编号 03，现 harness_governance 编号 02。）
 
 ### 证据档案（逐字摘录 + 引用链核验，全部经 2026-09-21 审计）
 
@@ -26,28 +33,24 @@
 | [01a-verifiable-convergence-evidence.md](01a-verifiable-convergence-evidence.md) | 01 | 13 集群正反原文摘录 + 独立性判定（含对撞） |
 | [01b-verifiable-academic.md](01b-verifiable-academic.md) | 01 | 20+ 篇学术一手回源 + 7 例工业案例 |
 | [01c-verifiable-community.md](01c-verifiable-community.md) | 01 | HN 立场分歧 + 中文社区宽度 |
-| [02a-progressive-disclosure-evidence.md](02a-progressive-disclosure-evidence.md) | 02 | 渐进披露 B1–B9：官方预算表 + 五 repo 实测 |
-| [02b-agents-md-governance-evidence.md](02b-agents-md-governance-evidence.md) | 02 | 治理 A/B/C/D：大厂范式 + repo git 史 + 度量勘误 |
-| [02c-context-vs-harness.md](02c-context-vs-harness.md) | 02 | context ⊂ harness 关系判定 |
-| [03a-harness-convergence-evidence.md](03a-harness-convergence-evidence.md) | 03 | 10 集群 78 处原文摘录 + 引用链核验 |
-| [03b-harness-academic-and-metrics.md](03b-harness-academic-and-metrics.md) | 03 | 学术三篇回源 + 度量缺口论证 |
+| （01a / 01b / 01c / 02a / 02b，随抽出重编号） | 01 / 02（新编号） | **已随分篇抽出** → [`../harness_governance/`](../harness_governance/README.md) |
 
 图形（SVG）：
 - ![形态光谱](figures/spectrum.svg)——九个位置从"重 spec 工件"排到"零 spec 工件"
 - ![验证责任迁移](figures/verification-shift.svg)——文档中心 vs 机器中心的结构性对照
 - ![consistency tax 三角](figures/01-consistency-tax-triangle.svg)——①篇：三角回写困境与两个失效面
-- ![渐进披露三层](figures/02a-progressive-disclosure-layers.svg)——②篇：token 预算与五 repo 实测
-- ![context ⊂ harness](figures/02c-context-inside-harness.svg)——②c 篇：包含关系与静态/动态分层
-- ![harness 收敛地图](figures/03-harness-convergence-map.svg)——③篇：五层位收敛地图
+- （渐进披露三层 / context ⊂ harness / harness 收敛地图三张已随 context / harness 治理两分篇抽出（抽出前编号 02/03） → `../harness_governance/figures/`）
 
 ```yaml
 topic: SDD 的替代/后继形态（验证优先、plan mode、context engineering、harness 治理、测试优先）
 accessed_at: 2026-09-21  # 一轮 2026-09-20；二轮/三轮深挖与三轮证据审计至 2026-09-21
 captain_verdict: 2026-09-21  # §7 判断层：harness 治理最靠谱（判据 + 当日 SSRN/IEEE 补查，新证据此前未收）
 promoted_at: 2026-09-21  # 自 spec_driven_development/alternatives/ 升格为独立主题目录（当日先落 02_research、同日归入实践层 03_practice/），用户定名 beyond_spec_driven_development
+extracted_at: 2026-09-21  # context/harness 治理两分篇（抽出前编号 02/03）及其证据、图形抽出为 ../harness_governance/（AI 形态下新的 SDLC），用户定
 collector: delegated research agent
 scope: 2026 年（尤其 2026Q2–Q3）社区材料；承接 ../spec_driven_development/debate/critiques.md「批判观点聚类」第 5 条的出路指向
 related:
+  - ../harness_governance/README.md                          # 两分篇抽出后的新家（抽出前编号 02/03，现 01/02）（内容权威）
   - ../spec_driven_development/debate/critiques.md          # 批判面（本文的"问题从哪来"）
   - ../spec_driven_development/comparison.md             # SDD 工具横比（光谱图左端的素材）
   - ../spec_driven_development/debate/authoritative-verdicts.md
@@ -83,7 +86,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 2. Context engineering 派 → 深挖：[02-context-engineering.md](02-context-engineering.md)
+## 2. Context engineering 派 → 深挖：[02-context-engineering.md](../harness_governance/01-context-engineering.md)
 
 **机制**：约束对象从"这个 feature 要什么"（feature 级 spec）上移为"这个仓库的 agent 该怎么干活"（repo 级规则文件与上下文结构）：AGENTS.md / CLAUDE.md / 规则文件 + 结构化 docs 目录 + 渐进式披露（给地图而非全书）。纪律是**永久但轻量**的，feature 级意图不落盘。
 
@@ -99,9 +102,9 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 **对团队的适用性**：**brownfield 与日常迭代**的主流解——现成代码库本身就是最大的上下文，规则文件修好 agent 行为、结构化 docs 供按需导航即可，不值得为每个小需求开 spec 工件链（marmelab 的"sledgehammer to crack a nut"批判正指向此）。短板：多人/多服务间的语义契约（错误码含义、跨服务约定）放不进规则文件，这正是腾讯云文里"补上缺失语义才做对"的案例场景——纯 context 派在此留白。
 ---
 
-## 3. Harness 治理派 ★ → 深挖：[03-harness-governance.md](03-harness-governance.md)
+## 3. Harness 治理派 ★ → 深挖：[02-harness-governance.md（新编号）](../harness_governance/02-harness-governance.md)
 
-**机制**：把"让 agent 做对"的工程投入从**写文档**转移到**工程化执行环境**：自定义 linter + 结构测试强制架构规则、可观测性直接接入 agent 运行时（日志/指标/追踪供 agent 自读自验）、定期运行的 gardener agent 扫描漂移、"每次 agent 犯错就工程化地消灭该错误类别"（Hashimoto 六步模型的 **Step 5 "Engineer the Harness"**——Step 6 是 "Always Have an Agent Running"；原注"第六阶段"已按 [03-harness-governance.md](03-harness-governance.md) 勘误）。spec（若有）只是 harness 中 scaffolding 的一个组件。
+**机制**：把"让 agent 做对"的工程投入从**写文档**转移到**工程化执行环境**：自定义 linter + 结构测试强制架构规则、可观测性直接接入 agent 运行时（日志/指标/追踪供 agent 自读自验）、定期运行的 gardener agent 扫描漂移、"每次 agent 犯错就工程化地消灭该错误类别"（Hashimoto 六步模型的 **Step 5 "Engineer the Harness"**——Step 6 是 "Always Have an Agent Running"；原注"第六阶段"已按 [02-harness-governance.md（新编号）](../harness_governance/02-harness-governance.md) 勘误）。spec（若有）只是 harness 中 scaffolding 的一个组件。
 
 **代表实践/工具**：
 - **OpenAI《Harness Engineering》**（2026-02）：5 个月、空仓库起步、约 100 万行代码、1500 个全 agent 生成 PR；人类转向定义规格、约束与反馈系统；product-specs/ + design-docs/ + exec-plans/ 三件结构化目录 + linter/结构测试 + doc-gardening agent（[openai.com/index/harness-engineering](https://openai.com/index/harness-engineering/)）。
@@ -118,13 +121,13 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 4. Plan mode 派（背景参照）→ 深挖：[04-plan-mode.md](04-plan-mode.md)
+## 4. Plan mode 派（背景参照）→ 深挖：[02-plan-mode.md](02-plan-mode.md)
 
 **机制**：不引入任何独立 spec 工件。规划作为 agent harness 的**内置阶段**存在：agent 先出计划、人批准、再执行（Claude Code plan mode、Codex 的 plan/approval 机制、Antigravity 的"plan approval before executing"）。规划是一次性的会话内产物，用完即弃，不进入仓库、不需要维护。
 
 **代表实践/工具**：Claude Code plan mode 与 Codex 内置规划；HN 2026-08 帖中多位开发者自述"plan mode 就够了"——如 [HN 48235526](https://hn.nuxt.dev/item/48235526)（"For myself I always found the plan mode to work well"）；更结构化的用法如 "Separation of planning and execution"（[althacker 讨论](https://althacker.news/item?id=47106686&p=2)）：规划会话与执行会话分离，计划以对话形式存在。
 
-**与 SDD 的本质区别**：SDD 把"意图"做成**跨会话的持久资产**；plan mode 派认为持久 spec 工件正是 spec 债的根源，规划的价值在**当下会话内对齐**，对齐完就该消失。另一个区别：plan mode 的产出由 harness 的生命周期管理（不可编辑、不漂移），SDD 的 spec 则必须有人维护——而批判已证明没人维护。反向声音也存在：Nearform《Why plan mode is not enough》（**2026-03-18**，作者 Luca Lanziani；原注 2026-09 有误，详见 [04-plan-mode.md](04-plan-mode.md)）主张 plan mode 规划实现不规划产品、缺多角色参与，处方是 BMAD 多 persona 而非恢复 spec 工件链——两派是同一问题的两个解。另一关键动向（2026-02 Boris Cherny YC 访谈，原注 2026-09 有误）：Claude Code 作者判断 plan mode"生命周期有限、会被模型自动触发吸收"；硬证据是 Codex 2026-08-31 将 `update_plan` 改 opt-in（PR #41744）——内置规划器正被 harness 化为可拆卸组件。
+**与 SDD 的本质区别**：SDD 把"意图"做成**跨会话的持久资产**；plan mode 派认为持久 spec 工件正是 spec 债的根源，规划的价值在**当下会话内对齐**，对齐完就该消失。另一个区别：plan mode 的产出由 harness 的生命周期管理（不可编辑、不漂移），SDD 的 spec 则必须有人维护——而批判已证明没人维护。反向声音也存在：Nearform《Why plan mode is not enough》（**2026-03-18**，作者 Luca Lanziani；原注 2026-09 有误，详见 [02-plan-mode.md](02-plan-mode.md)）主张 plan mode 规划实现不规划产品、缺多角色参与，处方是 BMAD 多 persona 而非恢复 spec 工件链——两派是同一问题的两个解。另一关键动向（2026-02 Boris Cherny YC 访谈，原注 2026-09 有误）：Claude Code 作者判断 plan mode"生命周期有限、会被模型自动触发吸收"；硬证据是 Codex 2026-08-31 将 `update_plan` 改 opt-in（PR #41744）——内置规划器正被 harness 化为可拆卸组件。
 
 **已有证据与热度**：plan mode 是 2026 年**事实上的默认实践**（所有主流 coding agent 内置），使用基数最大；但"plan mode 就够了"以零散 HN 回帖与个人实践为主，无系统实证。反对文（Nearform）热度中等。整体权重：中（实践普及度高、论证散）。
 
@@ -132,7 +135,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 ---
 
-## 5. 测试优先回归 → 深挖：[05-test-first.md](05-test-first.md)
+## 5. 测试优先回归 → 深挖：[03-test-first.md](03-test-first.md)
 
 **机制**：干脆不写行为 spec——**测试就是 spec**。契约由 TDD 的 red-green-refactor 纪律或性质测试（property-based tests）承载：先写会失败的测试（即先写下"系统应该怎样"的可执行断言），实现使其变绿。漂移问题自动消解：测试随代码同 PR 演化，测试挂了就是 spec 与实现失配的显式报警——这恰好补上 harness 派承认的"Spec 漂移是沉默的"缺口。
 
@@ -184,11 +187,11 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 
 **结论：03 harness 治理派最靠谱。**"最靠谱"的准确含义有三层，比"团队级收敛点"更强：
 
-**判据一：五条里唯一拿到受控因果证据。** 同一模型、只改执行链路 → 性能差数倍，三群独立得出、接力引用：SWE-Bench Mobile（KDD '26 同行评审，同模型跨 scaffold 最大 **6×**）、Stanford/MIT/KRAFTON Meta-Harness（独立复现，优化后 Haiku 4.5 登顶 TerminalBench-2）、清华 NLAH（消融显示外挂 verifier 模块反而有害，verifier −0.8 SWE-bench / −8.4 OSWorld——**基于 v1，v2 已换后端待复核**）。harness 是一级工程对象已从观点变成可测量事实。其余四条的证据形态全是叙事、采用率或群体辩论，无受控对照。→ 证据：[03a](03a-harness-convergence-evidence.md)、[03b](03b-harness-academic-and-metrics.md)。
+**判据一：五条里唯一拿到受控因果证据。** 同一模型、只改执行链路 → 性能差数倍，三群独立得出、接力引用：SWE-Bench Mobile（KDD '26 同行评审，同模型跨 scaffold 最大 **6×**）、Stanford/MIT/KRAFTON Meta-Harness（独立复现，优化后 Haiku 4.5 登顶 TerminalBench-2）、清华 NLAH（消融显示外挂 verifier 模块反而有害，verifier −0.8 SWE-bench / −8.4 OSWorld——**基于 v1，v2 已换后端待复核**）。harness 是一级工程对象已从观点变成可测量事实。其余四条的证据形态全是叙事、采用率或群体辩论，无受控对照。→ 证据：[02a](../harness_governance/02a-harness-convergence-evidence.md)、[02b](../harness_governance/02b-harness-academic-and-metrics.md)。
 
-**判据二：光谱不是五选一，是四个部分解 + 一个框架解，harness 是那个框架。** 逐条看四条"替代"路线的成熟形态：[02c](02c-context-vs-harness.md) 已判定 **context ⊂ harness**（学术操作化 + CEO 表态 + 受控实验 + 多 practitioner 四层位独立同向，关系判定为最强）；01 的门禁落点（hooks/CI/command-fact/CodeLeash"门禁移出模型"）就是 harness 的 sensor 层；[05](05-test-first.md) Consort 的"agent 不可编辑的控制"（确定性编排器 + 不可变测试 + 真实分支绿灯）是 harness 手法对 TDD 的应用；[04](04-plan-mode.md) 的 `update_plan` opt-in（Codex PR #41744）与自动进入实验表明内置规划正在被 harness 化为可拆卸组件（04/05 按"对照"口径引用其机制事实，不引其主张）。四条路线没有一条以独立范式存活，全部长成了 harness 的部件——**赢家不是击败对手的那条，是吸收对手的那条**。
+**判据二：光谱不是五选一，是四个部分解 + 一个框架解，harness 是那个框架。** 逐条看四条"替代"路线的成熟形态：[01c](../harness_governance/01c-context-vs-harness.md) 已判定 **context ⊂ harness**（学术操作化 + CEO 表态 + 受控实验 + 多 practitioner 四层位独立同向，关系判定为最强）；01 的门禁落点（hooks/CI/command-fact/CodeLeash"门禁移出模型"）就是 harness 的 sensor 层；[03](03-test-first.md) Consort 的"agent 不可编辑的控制"（确定性编排器 + 不可变测试 + 真实分支绿灯）是 harness 手法对 TDD 的应用；[02](02-plan-mode.md) 的 `update_plan` opt-in（Codex PR #41744）与自动进入实验表明内置规划正在被 harness 化为可拆卸组件（本目录 02/03 按"对照"口径引用其机制事实，不引其主张）。四条路线没有一条以独立范式存活，全部长成了 harness 的部件——**赢家不是击败对手的那条，是吸收对手的那条**。
 
-**判据三：即使具体处方有错，诊断也对（工程上最值钱的性质）。** 这条路线自己承认的未知都是结构性的：OpenAI 自认全 agent 生成系统的多年架构一致性如何演化"不知道"（原文自述，且原文 403 依赖双消化稿交叉）；清华消融证明机制堆叠有害（harness 自身也要打扫）；Böckeler 之问（harness 覆盖率怎么度量，[03b](03b-harness-academic-and-metrics.md) §B）与 Ronacher 之塔（团队理解层腐烂无任何指标）仍是开放黑洞。它把"自己错了"变成输入的方式（每次犯错 → 工程化消灭该错误类别的棘轮 + 传感器），恰好就是它自己的解法——一条能自我纠错的路线才谈得上"靠谱"。
+**判据三：即使具体处方有错，诊断也对（工程上最值钱的性质）。** 这条路线自己承认的未知都是结构性的：OpenAI 自认全 agent 生成系统的多年架构一致性如何演化"不知道"（原文自述，且原文 403 依赖双消化稿交叉）；清华消融证明机制堆叠有害（harness 自身也要打扫）；Böckeler 之问（harness 覆盖率怎么度量，[02b](../harness_governance/02b-harness-academic-and-metrics.md) §B）与 Ronacher 之塔（团队理解层腐烂无任何指标）仍是开放黑洞。它把"自己错了"变成输入的方式（每次犯错 → 工程化消灭该错误类别的棘轮 + 传感器），恰好就是它自己的解法——一条能自我纠错的路线才谈得上"靠谱"。
 
 ### 7.1 当日补查的新证据（2026-09-21，此前未收）
 
@@ -202,13 +205,13 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 | 形态 | 排序理由 |
 |---|---|
 | 01 可验证 spec | **赔率最高的长期赌注，不是今天的答案。** 学术引擎五条最猛（RISC-V 全流程流片零人写 RTL、MakerDAO 等 23 个真实合约证明、Verus-SpecGym 前沿模型 77.8%），但工业级成功案例全部"人类垄断陈述层"、完整闭环无一例（[01b](01b-verifiable-academic.md) §4.3），意图没有 oracle（Lahiri：spec 正确性唯一 oracle 是用户本人）+ 不可判定性 + proxy 与生成器共同演化三重结构性障碍（[01b](01b-verifiable-academic.md) §6.3），产品层空白（六路调研：spec→测试编译器 0–118★、HN 零讨论、零商业化，且多数把 spec 当一次性燃料丢弃）。作为 2027+ 窄域赌注（合约/内核/解析器）看好，作为通用路线不成立 |
-| 02 context engineering | **必要、最便宜、采用最广，但它是层不是范式。** [02c](02c-context-vs-harness.md) 判定 context ⊂ harness；自身量化证据是"有用但不保证、写错倒赔"（CTXbench：LLM 自生成 context file 成功率 -2~3% 且成本 +20%+，手写仅边际 +4% 伴随成本 +19%；Umans：无一组配置完全匹配规则），且承载不了跨服务语义契约与"为什么"（[02](02-context-engineering.md) §1.3/§4） |
-| 05 测试优先 | **最有战斗力的组件，单独当范式有硬上限。** 测试是唯一骗不过的验证器（verify 与 define 合一），但表达力上限有 24 次重复实验：单轮基线 24/24 次只建 6/8 条规则、丢的总是同样两条钱规则，换最强模型照丢（[05](05-test-first.md) §4.1）——"测试无法在没人想到要写的那条规则上失败" |
-| 04 plan mode | **不是范式，是默认实践，且正被 harness 化。** 自动进入 plan mode 实验 + `update_plan` opt-in 表明内置规划正变成 harness 里可拆卸的 planning surface（[04](04-plan-mode.md) §4）——与本 README 开头"背景参照"的定性一致 |
+| 02 context engineering | **必要、最便宜、采用最广，但它是层不是范式。** [01c](../harness_governance/01c-context-vs-harness.md) 判定 context ⊂ harness；自身量化证据是"有用但不保证、写错倒赔"（CTXbench：LLM 自生成 context file 成功率 -2~3% 且成本 +20%+，手写仅边际 +4% 伴随成本 +19%；Umans：无一组配置完全匹配规则），且承载不了跨服务语义契约与"为什么"（[02](../harness_governance/01-context-engineering.md) §1.3/§4） |
+| 05 测试优先 | **最有战斗力的组件，单独当范式有硬上限。** 测试是唯一骗不过的验证器（verify 与 define 合一），但表达力上限有 24 次重复实验：单轮基线 24/24 次只建 6/8 条规则、丢的总是同样两条钱规则，换最强模型照丢（[03](03-test-first.md) §4.1）——"测试无法在没人想到要写的那条规则上失败" |
+| 04 plan mode | **不是范式，是默认实践，且正被 harness 化。** 自动进入 plan mode 实验 + `update_plan` opt-in 表明内置规划正变成 harness 里可拆卸的 planning surface（[02](02-plan-mode.md) §4）——与本 README 开头"背景参照"的定性一致 |
 
 ### 7.3 本判断的局限（诚实声明）
 
 - SSRN 论文为 working paper、未预注册，测的是 OSS 有机 spec 而非 SDD 工具产物——它支持"spec 工件 ≠ 质量"的批判面，**不能直接证明"任何 harness 配方有效"**；受控学术证据证明的是"harness 影响巨大"，不是"OpenAI 式配方就是对的配方"。
-- 03 的旗舰案例（OpenAI 1500 PR / 1M 行）仍是自述、原文 403 依赖双消化稿交叉，1500 PR 的质量无独立验证；5–20 人团队级的公开 harness 治理案例仍缺位（[03](03-harness-governance.md) §6-5），worldmonitor 自评 ~25% 是唯一半程样本。
-- §7.2 对 01 的排序引用了 04/05 目录内材料的对照级证据（Smart 实验、update_plan 动向），按本 README 开头的研究优先级口径，这些只作对照不作主张依据。
+- 03 的旗舰案例（OpenAI 1500 PR / 1M 行）仍是自述、原文 403 依赖双消化稿交叉，1500 PR 的质量无独立验证；5–20 人团队级的公开 harness 治理案例仍缺位（[03](../harness_governance/02-harness-governance.md) §6-5），worldmonitor 自评 ~25% 是唯一半程样本。
+- §7.2 对 01 的排序引用了 plan mode / 测试优先（本目录 02/03）的对照级材料的对照级证据（Smart 实验、update_plan 动向），按本 README 开头的研究优先级口径，这些只作对照不作主张依据。
 - 本节为会话 captain 的独立判断，与光谱结论第 4 条同向但判据为其补充（受控因果证据 + 吸收结构 + 新实证），非替代；后续新证据若推翻 §7.1 任一条，应回到此节修订而非另起炉灶。

@@ -9,7 +9,7 @@
 > **⚠ 回源即发现的三个勘误级事实（比摘录本身更重要）**
 > 1. **正方最响的声音已经从"测试即 spec"上移到"证明即 spec"**：Kleppmann（2025-12）→ de Moura（2026-02-28）这条线明确主张"testing provides confidence, proof provides a guarantee"——如果 01 主篇只把形式化属性列为"最窄载体"，需要补一条：形式化阵营在 2026 上半年已经主动宣布自己是可验证 spec 的**终局形态**，而不只是旁支。
 > 2. **反方最强声音出自形式化阵营内部**（Hillel Wayne 2026-03-10、Brown PLT 2026-06-09），不是 SDD 批评者——他们反对的不是"spec 该被验证"，而是"LLM 能替你写验证物"这个前提。01 主篇 §4 的失败面第 5 条（验证物自身漂移与作弊）由此获得了一手形式化专家的独立印证。
-> 3. **引用链核查结果：KOL 集群基本互不引用，但形式化小圈子互相引用密集**。Kleppmann 更新节直接引 de Moura；Wayne 同时引 Kleppmann 和 de Moura 并作为反方靶子；Davis 引 Wayne。因此 §A1–A6 之间**不构成独立收敛**，独立收敛判定见各集群 §x.5 与文末总表——这是本档案与 04a 不同的地方：**收敛主轴不在形式化阵营内部，而在"工程派 KOL（Willison/Ronacher/Huntley）× 形式化派（Kleppmann/de Moura/Wayne）× 公司实践（AWS/Microsoft/Google）"三个互不往来的人群之间**。
+> 3. **引用链核查结果：KOL 集群基本互不引用，但形式化小圈子互相引用密集**。Kleppmann 更新节直接引 de Moura；Wayne 同时引 Kleppmann 和 de Moura 并作为反方靶子；Davis 引 Wayne。因此 §A1–A6 之间**不构成独立收敛**，独立收敛判定见各集群 §x.5 与文末总表——这是本档案与 harness_governance 的 02a 不同的地方：**收敛主轴不在形式化阵营内部，而在"工程派 KOL（Willison/Ronacher/Huntley）× 形式化派（Kleppmann/de Moura/Wayne）× 公司实践（AWS/Microsoft/Google）"三个互不往来的人群之间**。
 
 ---
 

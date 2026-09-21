@@ -11,23 +11,23 @@
 
 ## 0.5 收敛判读（2026-09-20 三轮补查后计）
 
-![harness 收敛地图](figures/03-harness-convergence-map.svg)
+![harness 收敛地图](figures/02-harness-convergence-map.svg)
 
 > 五层位 × 独立集群收敛地图（含复核勘误后的计数：11→7）与"清扫"隐喻命名收敛带。
 
-排除本文 §1–§4 已收四源（OpenAI/Hashimoto/arXiv 2609.00252/腾讯云）后，初查得 11 个集群；**经 [04a](03a-harness-convergence-evidence.md) 全文证据档案复核勘误（Trivedy 即 LangChain deepagents 作者，两集群合并；HumanLayer 引用链齐全改判聚合型），确认独立集群 7 个**——它们**独立说出同一件事**（agent 开发需要有人持续治理 harness/代码库卫生）：
+排除本文 §1–§4 已收四源（OpenAI/Hashimoto/arXiv 2609.00252/腾讯云）后，初查得 11 个集群；**经 [02a](02a-harness-convergence-evidence.md) 全文证据档案复核勘误（Trivedy 即 LangChain deepagents 作者，两集群合并；HumanLayer 引用链齐全改判聚合型），确认独立集群 7 个**——它们**独立说出同一件事**（agent 开发需要有人持续治理 harness/代码库卫生）：
 
 1. **Viv Trivedy（亦即 LangChain DeepAgents 作者）**（术语独立命源：Agent = Model + Harness，"skill issue" 重构；LangChain 团队实测只改 harness，TerminalBench 52.8%→66.5%）
 2. **Birgitta Böckeler / Thoughtworks**（guides/sensors + 持续调优 + 漂移传感器框架，自行从控制论推导，文中仅把 OpenAI/Stripe 当案例引用）
 3. **Stripe minions 团队**（shift-left feedback、pre-push 启发式 linter，纯自建实践；发布 2026-02-09；⚠ 正文 JS 渲染未回源，独立性待正文确认）
 4. **Anthropic 工程博客两个独立系列**（长任务 harness 设计；"harness 每个组件都编码了一个模型做不到的假设"）
-5. **学术三篇接力式收敛**：SWE-Bench Mobile（KDD'26）先行独立测量同模型跨 scaffold 6× → Meta-Harness（Stanford/MIT/KRAFTON）引用其 6× 作动机、自行得出同结论 → 清华 NLAH 引用 Meta-Harness——**独立得出、接力引用**，非零引用平行（见 [04b](03b-harness-academic-and-metrics.md)）
+5. **学术三篇接力式收敛**：SWE-Bench Mobile（KDD'26）先行独立测量同模型跨 scaffold 6× → Meta-Harness（Stanford/MIT/KRAFTON）引用其 6× 作动机、自行得出同结论 → 清华 NLAH 引用 Meta-Harness——**独立得出、接力引用**，非零引用平行（见 [02b](02b-harness-academic-and-metrics.md)）
 6. **Armin Ronacher**（harness loop 代价、塔与共享理解的衰减——独立从维护/卫生角度切入）
 7. **Teleport**（"pressure washing the codebase with LLMs"——一个季度/13 工程师；卫生/清扫命名的又一独立实例）
 
 弱独立或聚合型（引用他人但贡献独立判据）：HumanLayer（"it's not a model problem. It's a configuration problem."——引用链指向 Hashimoto/Trivedy/OpenAI，改判聚合型）、Addy Osmani（聚合 Trivedy/Anthropic，但"every mistake becomes a rule"棘轮纪律为独立表述，且其身份是 Claude Code 团队 MTS）、Simon Willison（agentic loop 设计正典，维护/清扫角度着墨少）、Vercel（减工具实验，harness 简化侧）、Geoffrey Huntley（Ralph 循环——治理对象是"让 agent 一直跑"，非清扫，弱相关）、Olimpiu Pop / InfoQ（媒体确认"from vibe coding to harness engineering"已成为行业叙事）。
 
-**结论**：与 §1 单一 OpenAI 案例相比，"需要有人/机制持续打扫 harness"在 2026H1 已出现** practitioner 命名（Trivedy/LangChain）、个人方法论（Hashimoto/Osmani）、咨询公司框架（Thoughtworks）、大厂自建实践（Stripe/Anthropic/Vercel）、学术量化（3 篇独立得出、接力引用的论文）五个层位的独立收敛——**复核勘误后独立集群数从 8 下调为 7，但五层位结构不变**（逐条原文摘录与引用链核验见 [04a](03a-harness-convergence-evidence.md)）**——且各层术语（gardening / cleanup / pressure washing / 清洁工军团 / accretion heuristics / garbage collection）各自独立发明了"清扫"隐喻。这是本文五形态中最强的多人独立收敛信号。
+**结论**：与 §1 单一 OpenAI 案例相比，"需要有人/机制持续打扫 harness"在 2026H1 已出现** practitioner 命名（Trivedy/LangChain）、个人方法论（Hashimoto/Osmani）、咨询公司框架（Thoughtworks）、大厂自建实践（Stripe/Anthropic/Vercel）、学术量化（3 篇独立得出、接力引用的论文）五个层位的独立收敛——**复核勘误后独立集群数从 8 下调为 7，但五层位结构不变**（逐条原文摘录与引用链核验见 [02a](02a-harness-convergence-evidence.md)）**——且各层术语（gardening / cleanup / pressure washing / 清洁工军团 / accretion heuristics / garbage collection）各自独立发明了"清扫"隐喻。这是本文五形态中最强的多人独立收敛信号。
 
 ---
 
@@ -260,7 +260,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 - **SWE-Bench Mobile**（Tian et al.），[arXiv:2602.09540](https://arxiv.org/abs/2602.09540)（2026-02-10，KDD '26）：最佳配置 12%，跨 agent 最大差距 6×（摘要口径；Cursor 12% vs OpenCode 2% 的具体配比待回源全文核对）。
 - **另加独立旁证**：Andrej Karpathy（No Priors 播客，2026-03）在未引用上述论文的情况下独立提出"meta-optimization of program.md"同一概念。
 - **对应治理点**：为"harness 是一级工程对象"提供了 practitioners 拿不出的受控证据；Tsinghua 消融还给出了 hygiene 的反例边界（不要预防性堆 verifier——机制也要打扫）。
-- **独立性**：**三群独立得出（fixed-model-only-harness 受控设计），与工业界五源无引用关系；限定：Meta-Harness 开篇单向事后引用了 SWE-Bench Mobile 的 6× 作动机（晚于其自身实验设计）**——仍为最强独立收敛，详见 [04b](03b-harness-academic-and-metrics.md)。
+- **独立性**：**三群独立得出（fixed-model-only-harness 受控设计），与工业界五源无引用关系；限定：Meta-Harness 开篇单向事后引用了 SWE-Bench Mobile 的 6× 作动机（晚于其自身实验设计）**——仍为最强独立收敛，详见 [02b](02b-harness-academic-and-metrics.md)。
 
 ### 7.8 Armin Ronacher —— harness loop 的代价与"塔与卫生"（2026-06/07，三篇连续）
 
@@ -301,7 +301,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 1. §6-2 的"最大未决风险"有了新表述者：Ronacher 的"塔"（§7.8）说明**团队理解层的腐烂连指标都没有**，比 OpenAI 自认的架构一致性风险更不可见。
 2. §6-4（cleanup agent 净收益无量化）部分被学术端反向补足：Tsinghua 消融证明**机制堆叠有害**，但 doc-gardening 类 PR 的净收益仍无量化。
-3. 新增遗留问题：**harness 自身的覆盖率/质量如何度量**（Böckeler 之问，§7.3）——**分层表述（已按 [04b](03b-harness-academic-and-metrics.md) 三轮深挖收窄）**：指令文件文本质量度量已有工具级雏形（agent-config-harness / schliff 两源独立 + arXiv:2604.07236 方法论）；但**传感器元覆盖率**（哪些失效模式没有任何 sensor 在看）与**团队理解层腐烂度量**（Ronacher 之塔）在 2026-09-20 仍为零方案——后者才是真正无主的开放问题。
+3. 新增遗留问题：**harness 自身的覆盖率/质量如何度量**（Böckeler 之问，§7.3）——**分层表述（已按 [02b](02b-harness-academic-and-metrics.md) 三轮深挖收窄）**：指令文件文本质量度量已有工具级雏形（agent-config-harness / schliff 两源独立 + arXiv:2604.07236 方法论）；但**传感器元覆盖率**（哪些失效模式没有任何 sensor 在看）与**团队理解层腐烂度量**（Ronacher 之塔）在 2026-09-20 仍为零方案——后者才是真正无主的开放问题。
 4. 术语链修正：§2 称 Hashimoto"独立命名 harness engineering"，补遗显示 Trivedy 为另一独立命源且传播更广——**双命源**成立，"自下而上多源命名"本身就是本派收敛强度的直接证据。
 
 ---

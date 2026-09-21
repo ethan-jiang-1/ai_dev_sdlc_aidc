@@ -3,12 +3,12 @@
 ```yaml
 topic: SDD 替代形态之三——context engineering 派（repo 级上下文纪律）深挖
 accessed_at: 2026-09-20
-round2_accessed_at: 2026-09-21   # 二轮深挖两节：§7（渐进披露，档案 02a-progressive-disclosure-evidence.md）、§8（团队治理，档案 02b-agents-md-governance-evidence.md）
+round2_accessed_at: 2026-09-21   # 二轮深挖两节：§7（渐进披露，档案 01a-progressive-disclosure-evidence.md）、§8（团队治理，档案 01b-agents-md-governance-evidence.md）
 collector: delegated research agent
 parent_doc: ./README.md            # 原单文件底稿 alternatives.md 第 3 节（旧编号；context 派现为本 README §2）；本文在其基础上深挖，不复制正文
 scope: 2026 年（尤其 2026-02 之后的论文与社区材料）
 evidence_archive:
-  - ./02a-progressive-disclosure-evidence.md       # §7 渐进披露深挖的逐字原文档案（2026-09-21 二轮）
+  - ./01a-progressive-disclosure-evidence.md       # §7 渐进披露深挖的逐字原文档案（2026-09-21 二轮）
 related:
   - ../requirements_engineering/deep_research_topics/_reference/00-shared-codex-agents-md-spec.md   # AGENTS.md 规范 + Codex CLI 官方集成 + AAIF 治理（主锚点）
   - ../requirements_engineering/deep_research_topics/_reference/00-shared-cursor-rules-official.md  # Cursor 四类 rules + AGENTS.md 嵌套合并
@@ -183,7 +183,7 @@ Codacy 2026-08 的长文（[Repository Instructions Are Becoming Engineering Art
 
 ## 7. 渐进披露深挖（2026-09-21 二轮）
 
-> 本节为一轮 §3 的机制级展开；逐字原文、回源状态与五 repo 实测数据全部在 [`02a-progressive-disclosure-evidence.md`](./02a-progressive-disclosure-evidence.md)（B1–B9），此处只放判读，不复制摘录。
+> 本节为一轮 §3 的机制级展开；逐字原文、回源状态与五 repo 实测数据全部在 [`01a-progressive-disclosure-evidence.md`](./01a-progressive-disclosure-evidence.md)（B1–B9），此处只放判读，不复制摘录。
 
 ### 7.1 机制的权威定义已 quantified：三层不是比喻，是有预算表的加载协议
 
@@ -216,7 +216,7 @@ Anthropic 对 progressive disclosure 的官方口径有两处一手源：工程�
 
 ## 8. 团队治理实践深挖（2026-09-21 二轮）
 
-> 本节为一轮 §5 的组织级展开：谁写、怎么 review、怎么度量、怎么防腐。逐字原文、回源状态与全部 URL 在 [`02b-agents-md-governance-evidence.md`](./02b-agents-md-governance-evidence.md)（A=大厂、B=OSS 活样本、C=度量与工具、D=harness 新声音），此处只放判读。
+> 本节为一轮 §5 的组织级展开：谁写、怎么 review、怎么度量、怎么防腐。逐字原文、回源状态与全部 URL 在 [`01b-agents-md-governance-evidence.md`](./01b-agents-md-governance-evidence.md)（A=大厂、B=OSS 活样本、C=度量与工具、D=harness 新声音），此处只放判读。
 
 ### 8.1 大厂一手：治理形态已有四种可命名范式（观测 2026-09-21）
 

@@ -1,15 +1,15 @@
 # 03a：渐进式披露深挖——原文摘录档案
 
 > **元数据**
-> - accessed_at：2026-09-21（本轮逐条 web_fetch 回源；结构仿 `03a-harness-convergence-evidence.md`）
-> - 上游：`02-context-engineering.md` §「渐进披露深挖（2026-09-21 二轮）」（本文件为其全文证据档案，只放摘录与回源状态，不放结论性判读）
+> - accessed_at：2026-09-21（本轮逐条 web_fetch 回源；结构仿 `02a-harness-convergence-evidence.md`）
+> - 上游：`01-context-engineering.md` §「渐进披露深挖（2026-09-21 二轮）」（本文件为其全文证据档案，只放摘录与回源状态，不放结论性判读）
 > - 回源途径标注：**一手** = 直接抓到原文页面/文件；**半回源** = 原文页抓到但正文未全读；**转述** = 原文抓不到，仅消化稿/转引。半回源只降级、不下否定性结论。
 > - 摘录纪律：所有英文原句为本次回源页面逐字摘录（含原文笔误，如 codex 文档 "If you find one, Claude reads it instead of `AGENTS.md`" 一类口语化表述均保留原样）；抓不到的如实标注，不代拟。
 > - 规模量化说明：token 数为按英文 ≈4 字符/token 的**估算值**，字节/行数为 raw 文件实测（2026-09-21 curl 实测）。
 
 ---
 
-![渐进披露三层加载](figures/02a-progressive-disclosure-layers.svg)
+![渐进披露三层加载](figures/01a-progressive-disclosure-layers.svg)
 
 > 三层 token 预算 + 五 repo 实测对照（理想 ~100 行 vs 实态 39–524 行）。
 
