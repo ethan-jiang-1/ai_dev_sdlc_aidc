@@ -6,12 +6,17 @@
 
 - `raw/` — 借鉴起点：整库引入自 deer-flow 消化层 `/Users/bowhead/deer-flow/_digest/harness/`
   （引入日期 2026-09-21，内容观测日期 2026-06；deer-flow 侧仍在更新，同步需重新拷贝，本目录不回写）。
-  **只是结构与合理内容的来源，不是本主题的权威**；其中的仓库案例锚点一律不进 result。
+  **只是素材参考，不是本主题的权威，更不是路线依据**；其中的仓库案例锚点一律不进 result
+  （result 侧锚点已于 2026-09-21 全部剔除，v0 历史底稿除外）。
 - `result/` — 泛化体系本体，当前权威：[`result/00-framework-v1.md`](result/00-framework-v1.md)
-  （v1.1：三层对象模型——核心判据/harness profile/被测实例、判据 schema、证据等级 tier、门禁+加权分离的聚合结构、效标回归校准协议、**八维正交维度框架**）。
-  各维展开定义一维一文件：[`result/10-dimensions/`](result/10-dimensions/README.md)（01–08，含边界声明与判据族草案）。
+  （v1.3：三层对象模型、判据 schema、证据等级 tier、门禁+加权分离的聚合结构、效标回归校准协议、**九维正交维度框架**）。
+  各维展开定义一维一文件：[`result/10-dimensions/`](result/10-dimensions/README.md)（01–09，含边界声明与判据族草案）。
+  维度充分性审查：[`result/30-dimension-sufficiency-v1.md`](result/30-dimension-sufficiency-v1.md)。
+  **A/B 两线分立**（2026-09-21 用户定）：[`result/40-line-a-traditional-repo.md`](result/40-line-a-traditional-repo.md)
+  （传统代码仓库）、[`result/41-line-b-agentic-repo.md`](result/41-line-b-agentic-repo.md)（智能体代码仓库）。
   [`result/00-framework-v0.md`](result/00-framework-v0.md) 为历史底稿（已被 v1 取代）。
-  后续交付：checklist-v1（判据按维落条）、harness-profiles、试测报告、权重校准，逐版叠加不覆盖历史判断。
+  后续交付：checklist-A / checklist-B（判据从九维判据族直接落条，**不从 raw 60 条派生**）、
+  harness-profiles、试测报告、权重校准，逐版叠加不覆盖历史判断。
 
 ## 上下游指针（单一事实来源，不复制正文）
 

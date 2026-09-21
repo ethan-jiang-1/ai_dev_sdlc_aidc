@@ -1,6 +1,6 @@
 # 10-dimensions — 维度定义层（一维一文件）
 
-八个维度，每个一个 MD，序号连续 01–08。当前权威定义总表见 [`../00-framework-v1.md`](../00-framework-v1.md) §3.4；本目录是各维的展开定义，checklist-v1 的判据按维归入。
+九个维度（v1.3 起），每个一个 MD，序号连续 01–09。当前权威定义总表见 [`../00-framework-v1.md`](../00-framework-v1.md) §3.4；本目录是各维的展开定义，checklist-v1 的判据按维归入。
 
 | # | 文件 | 维度 | 角色 |
 |---|------|------|------|
@@ -12,6 +12,7 @@
 | 06 | [06-failure-recoverability.md](06-failure-recoverability.md) | 失败可恢复性 | 加权 |
 | 07 | [07-instruction-asset-metabolism.md](07-instruction-asset-metabolism.md) | 指令资产新陈代谢 | 加权 |
 | 08 | [08-drift-governance.md](08-drift-governance.md) | 漂移治理（SDD） | 加权 |
+| 09 | [09-vcs-collaboration.md](09-vcs-collaboration.md) | 版本控制与协作面 | 加权（B 下一等） |
 
 每个维度文件的固定结构：核心问题 / 为什么独立成维 / 边界声明 / 判据族 / 依据 / 泛化注意 / 开放问题。
 

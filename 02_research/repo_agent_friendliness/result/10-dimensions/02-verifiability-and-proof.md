@@ -44,8 +44,8 @@ Agent 能否自主确认"我改对了"，并产出可供 review 的证据？
 
 ## 泛化注意
 
-- raw #19/#23/#28 带 deer-flow 锚点（`-m "not live"`、test-shard、`test_compose_default_bind_host.py`）→ 改写为行为描述，deer-flow 降级为 raw 参考。
-- 证据产出义务与评测基建是**新增判据族**，raw 无对应条目，checklist-v1 补。
+- 案例锚点一律不进体系（仓库无关纪律）；相关条目以行为描述落 checklist。
+- 证据产出义务与评测基建是本维新增判据族，checklist-v1 补。
 
 ## 开放问题
 

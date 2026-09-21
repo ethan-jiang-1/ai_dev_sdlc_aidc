@@ -22,7 +22,7 @@ v0 保留五维框架与四条设计约束，但在评估报告推敲（2026-09-
 | **L-profile harness 档案** | 各 harness 消化仓库指引的机制事实：指令载体、注入时机、预算上限、静默失败模式 | 快（厂商实现，需复验） | 本体系 `11-harness-profiles.md`（raw 03 篇为其素材源） |
 | **L-instance 被测实例** | 具体仓库 + 审计时实际使用的 harness 集合 | 每次审计 | 各审计报告（试测落 `40-pilots/`） |
 
-**评估 = L-core 判据 × L-instance 仓库现状，再按 L-profile 修正。** 被测实例同时带**形态档案**（A 确定性应用 / B 智能体，见 [`20-archetypes.md`](20-archetypes.md)）：形态决定评估面组合与条件判据，不改八维定义。推论：
+**评估 = L-core 判据 × L-instance 仓库现状，再按 L-profile 修正。** 被测实例同时带**形态档案**（A 确定性应用 / B 智能体，见 [`20-archetypes.md`](20-archetypes.md)）：形态决定评估面组合与条件判据，不改九维定义。推论：
 
 - 同一仓库对 harness 集合 {Claude Code} 与 {Cursor} 可得出不同总分——这是体系的特性，不是缺陷。
 - 一条判据若只在特定 harness 下才成立（如"`.cursor/rules/` 必须用 `.mdc`"），**不进 L-core**，归入对应 profile 的修正项。
@@ -46,7 +46,7 @@ v0 保留五维框架与四条设计约束，但在评估报告推敲（2026-09-
 
 ```
 id:        <维度编号>-<序号>（如 C2-03；profile 项为 P<profile>-<序号>）
-dimension: 五维之一（见 §3.4）
+dimension: 九维之一（见 §3.4）
 question:  这条判据检查什么（一句话）
 probe:     怎么查（只读命令 / 注入验证 / 演练步骤）
 pass:      合格标准（可判定的行为描述，不是某仓库的做法）
@@ -75,9 +75,9 @@ sampling:  抽样协议（tier-2 判据必填：抽几处、从哪里抽、几�
 - **原理级判据**：由第一性原理（注意力预算、无状态读者、自主执行体）或多方收敛的规范支撑（如"指令少而具体""确定性验证命令存在"），预期长期稳定。
 - **实现级判据**：依赖某厂商当前实现参数（如 200 行建议、32KiB 截断、`.mdc` 扩展名要求）。必须标注观测日期；厂商变更时该判据降级为 ⚠️ 并触发复验，而不是默认继续成立。
 
-### 3.4 维度框架（v1.1：五维扩为八维，正交化）
+### 3.4 维度框架（v1.3：九维，正交化）
 
-五维继承 v0；2026-09-21 话题主干核对（2026-06 后 KOL 证据）后按**正交纪律**（见目录 README）扩为八维。**⑤ 为门禁层**，其余七维参与加权。每维附与相邻维度的分界声明。**各维展开定义（核心问题/边界/判据族/依据/开放问题）一维一文件，见 [`10-dimensions/`](10-dimensions/README.md)；本表只留总表，不复制正文。**
+五维继承 v0；v1.1 按正交纪律扩为八维，v1.3 经充分性审查（[`30-dimension-sufficiency-v1.md`](30-dimension-sufficiency-v1.md)）扩为**九维**。**⑤ 为门禁层**，其余八维参与加权。每维附与相邻维度的分界声明。**各维展开定义（核心问题/边界/判据族/依据/开放问题）一维一文件，见 [`10-dimensions/`](10-dimensions/README.md)；本表只留总表，不复制正文。**
 
 | 维 | 名称 | 核心问题 | 2026-06+ 话题来源 | 与相邻维度的分界 |
 |---|---|---|---|---|
@@ -89,6 +89,7 @@ sampling:  抽样协议（tier-2 判据必填：抽几处、从哪里抽、几�
 | ⑥ | 失败可恢复性 | Agent 运行中卡住/失败时，有没有结构性的出口？ | T6（Amazon 6000+ trajectory 审计：死循环+超时约占 1/3，harness 决定恢复还是越陷越深，[AAIF](https://aaif.io/blog/code-is-cheap-proof-is-the-bottleneck)）：超时/重试预算、逃生舱命令、干净重来路径、失败上报通道 | ②管"判定对错"，⑥管"卡住脱身"；③管冷启动失败信息可行动，⑥管冷启动之后的循环与超时面 |
 | ⑦ | 指令资产新陈代谢 | Agent 指引资产（指令文件/skills/agent 文档）是否保鲜、有打扫机制？ | T2b 指令资产腐化（[Stale AI Configuration Artifacts](https://raw.githubusercontent.com/agentpatterns-ai/website/refs/heads/main/patterns/anti-patterns/stale-ai-configuration-artifacts.md)）、T4 定期打扫（[Anthropic session/compaction 2026](https://claude.com/blog/using-claude-code-session-management-and-1m-context)）：staleness 可检测、修剪政策成文、文档更新政策、清扫节奏 | 管的是**指引资产自身**随时间变质；指引描述的行为与实现不一致归⑧（⑦管"文件旧了没人删"，⑧管"文件还新但说的和代码做的已经是两回事"） |
 | ⑧ | 漂移治理（SDD） | 规格/契约/实现/文档声明之间的一致性，是否被机器守护？ | T1（SDD 工具链 drift detection 成一等公民：[spec-driven-development-skill](https://github.com/mariano-aguero/spec-driven-development-skill)；SDD 适用边界：[InfoQ](https://www.infoq.com/articles/when-spec-driven-development-pays-off/)）：规格-实现一致性测试、契约 lockstep、漂移检测门禁、spec 为单一事实源 | 管的是**仓库工件之间**的一致性；指引资产自身的新鲜度归⑦ |
+| ⑨ | 版本控制与协作面 | Agent 产出的改动能否顺畅进入版本主干——提交、隔离、合并、回退、进入 review——且不与人类或其他 agent 互相踩踏？ | 并行 agent（worktree 多会话）、code review agent、AI 产出披露与评审责任常态化（2026-06 后实践共识，多为经验判据） | 管的是改动的**协作旅程**；推送安全红线归⑤、卡住脱身剧本归⑥、PR 内证据义务归②、lockfile 漂移机器检查归⑧。详见 [`10-dimensions/09-vcs-collaboration.md`](10-dimensions/09-vcs-collaboration.md) |
 
 正交性自检（新增话题时执行）：一个话题若能被上表某维的核心问题完整覆盖→并入该维；若需引用另一维的结论才能打分→说明拆分不对，重新划界；若两维打分总是同起同落→不是正交坏了，就是效标重叠，校准时检验。
 
@@ -121,7 +122,7 @@ sampling:  抽样协议（tier-2 判据必填：抽几处、从哪里抽、几�
 总评 = 门禁判定 × 加权分
 门禁判定 = 维度⑤（安全护栏）任一 ❌ → 整体降为 D 级（不合格），
            无论加权分多高；所有 ❌ 进整改清单首部。
-加权分   = 维度①②③④⑥⑦⑧ 各自的条目得分聚合（聚合函数见 4.3），
+加权分   = 维度①②③④⑥⑦⑧⑨ 各自的条目得分聚合（聚合函数见 4.3），
            按维度权重加权求和。
 ```
 
@@ -153,10 +154,11 @@ raw 07 的四步中"打分与整改排序"是报告环节不是采证环节，v1
 
 | 事项 | v1 状态 |
 |---|---|
-| 60 条去 deer-flow 锚点、genericity 审查 → `10-checklist-v1.md` | 待办（下一交付） |
-| harness-specific 条目（.mdc、CLAUDE.md shim、paths: 规则等）拆出主清单 | 待办，随 checklist-v1 一并执行，落 `11-harness-profiles.md` |
-| 清单覆盖缺口：llms.txt/文档面、脚本输出 token 预算与截断引导、工具描述即 prompt 资产、集成测试层厚度 | 待办，checklist-v1 补条 |
-| 维度④条目逐条补 AX 理由或移出 | 待办，随 checklist-v1 执行 |
+| ~~60 条去 deer-flow 锚点、genericity 审查 → `10-checklist-v1.md`~~ | **路线废弃**（2026-09-21 用户定）：checklist 不从 raw 60 条派生；判据直接从九维判据族落条，行为描述、仓库无关，raw 只作素材源。deer-flow 锚点已从 result 全部剔除（v0 历史底稿除外） |
+| checklist-v1 落条 | 待办，改为 **A/B 两线分立**：checklist-A（[`40-line-a-traditional-repo.md`](40-line-a-traditional-repo.md) §5）、checklist-B（[`41-line-b-agentic-repo.md`](41-line-b-agentic-repo.md) §6） |
+| harness-specific 条目（.mdc、CLAUDE.md shim、paths: 规则等）拆出主清单 | 待办，随 checklist 落条执行，落 `11-harness-profiles.md` |
+| 清单覆盖缺口：llms.txt/文档面、脚本输出 token 预算与截断引导、工具描述即 prompt 资产、集成测试层厚度 | 待办，checklist 落条时按维归入 |
+| 维度④条目逐条补 AX 理由或移出 | 待办，随 checklist 落条执行 |
 | 权重数值 | v1 明确不给，走 §4.4 协议 |
 | 聚合结构 | **已定型**（§4.2/4.3） |
 
@@ -167,6 +169,8 @@ raw 07 的四步中"打分与整改排序"是报告环节不是采证环节，v1
 - 本仓库自举实测：待 checklist-v1 定稿后作为第一个 L-instance（v0 路线 4 保留）。
 
 ## 8. 变更记录
+
+- v1.3（2026-09-21）：**维度充分性审查**（[`30-dimension-sufficiency-v1.md`](30-dimension-sufficiency-v1.md)）：八维扩为**九维**，新增⑨版本控制与协作面（G1 立维；G2 工具面、G3 记忆、G4 成本、G5 供应链处置为归入现有维/不立，理由成文）。**A/B 两线分立**（[`40-line-a-traditional-repo.md`](40-line-a-traditional-repo.md)、[`41-line-b-agentic-repo.md`](41-line-b-agentic-repo.md)）：A 线 tier-0/1 为主可 CI 化，B 线 tier 倒置、模型升级为复验触发器、⑨升一等；checklist 改两线分立，不再自 raw 60 条派生；deer-flow 锚点自 result 全部剔除。
 
 - v1.2（2026-09-21）：**形态档案定调**（[`20-archetypes.md`](20-archetypes.md)）——A/B 按正确性模型分型；B 增运行时消费路径；六层 harness 架构映射验证八维可整体迁移评 B 产品；②⑥⑦⑧各增 B 子族（评估分离、组合可靠性/重启、harness 代谢、行为漂移）；A 线生态位=棕地改造；B 线判据带成熟度标注（共识/探索）。本轮对齐基于 2026-06 后共识核对（arXiv 2606.28791、OpenAI/Anthropic/LangChain/Stripe/Böckeler harness 论述）。
 - v1.1（2026-09-21）：话题主干核对（2026-06 后证据：SDD 漂移治理、proof-is-bottleneck、失败轨迹审计、渐进披露学术化、指令资产腐化反模式、session/compaction 工程）；五维正交扩为八维，新增⑥失败可恢复、⑦指令资产新陈代谢、⑧漂移治理；边界声明与话题映射台账成文（§3.4/3.5）；正交纪律升为目录级纪律。
