@@ -9,18 +9,18 @@
 ## 0. 调用契约
 
 - **输入**：用户给的目标仓库路径（通常在仓库外）+ 可选信息：实际使用的 harness 集合（Claude Code / Codex / Cursor / …）、关注维度。缺 harness 信息时**先问**，不猜——同一仓库对不同 harness 得分不同（framework §1）。
-- **输出**：一份评估报告，落在本目录 `30-runs/<日期>-<目标仓库名>-<harness集>/report.md`，附 `manifest.md`。
-- **铁律**：目标仓库**只读**。一切写入只发生在本目录 `30-runs/` 下。
+- **输出**：一个 **run bundle**（manifest + report，格式规范见 `20-instruments/bundle-format.md`），落**目标仓库** `<目标仓库>/agent-friendly-runs/<日期>-<harness集>[-pilot]/`；无写权限（第三方仓库）则交付用户放置。本仓库自身的自举审计，bundle 落本目录 `30-runs/`。
+- **铁律**：**评估器无状态**——运行期对被测目标只写 bundle 这一样东西，其余一律只读；对本系统目录零写入（裁决见 `10-spec/adr/2026-09-21-stateless-auditor-run-bundle.md`）。
 
 ## 1. 评估仪式（七步，顺序执行）
 
 1. **读法**：`10-spec/framework.md`（体系法律，当前权威）→ `10-spec/archetypes.md`（形态分型）→ 按分型读 `10-spec/line-a-traditional-repo.md` 或 `10-spec/line-b-agentic-repo.md`（评估面与重心维）→ `10-spec/dimensions/`（九维边界与判据族）。
 2. **分型**：按 archetypes §1 判定目标仓库是形态 A（确定性应用）还是 B（智能体产品）。分型依据是**正确性模型**，不是"代码由谁写"。混合形态按产出物拆开分评。拿不准 → 停下来问用户。
-3. **建 run 目录**：`30-runs/YYYY-MM-DD-<repo>-<harness集>[-pilot]/`，先写 `manifest.md`（模板见 `30-runs/README.md`）——钉住本轮用的 spec 版本（git commit hash）、checklist 版本、harness 及其版本、模型、观测日期。**没有 manifest 的报告无效**。
+3. **建 run bundle**：`<目标仓库>/agent-friendly-runs/<日期>-<harness集>[-pilot]/`（无写权限 → 交用户指定位置；本仓库自举则落 `30-runs/`），先写 `manifest.md`（模板见 `20-instruments/bundle-format.md`）——钉住本轮用的 spec 版本（git commit hash）、checklist 版本、harness 及其版本、模型、观测日期。**没有 manifest 的 bundle 无效**。
 4. **Tier-0 静态扫描**（便宜证据先采）：判据族中机器可判条目逐条过（文件存在性、体量、lockfile、CI 配置、契约测试存在性、VCS 惯例等）。有 `20-instruments/scan/` 脚本则跑脚本，没有则手工执行 probe。
 5. **Tier-1 注入验证**：在用户声明的每个实际 harness 内，确认指令真实加载、无静默失败、无超预算截断（如 Claude Code `/context`、Codex "Summarize the current instructions."）。记录 harness 版本。
 6. **Tier-2 演练与评审**：仅对 tier-0/1 无法判定的问题启用——一次真实小改动闭环演练（卡点映射到 ②③⑨ 条目）、协议化抽样评审（①④ 主观条目；抽样协议按判据的 sampling 字段，未落条时在报告中写明你抽了什么、抽了几处）。
-7. **产出**：`report.md`（模板见 `30-runs/README.md`）——门禁判定 + **A–D 总评评级**（framework §4.2 刻度，校准前可用）+ 各维短板分 + 加权数值分（权重未定型则留空）+ 按序整改清单（⑤❌ 置首 → 门禁 ⚠️ 次段 → 其余 ❌ 按维度短板分升序 → ⚠️ 随其维）；回本目录 `CURRENT.md` 登记一行。
+7. **产出**：bundle 内 `report.md`（模板见 `20-instruments/bundle-format.md`）——门禁判定 + **A–D 总评评级**（framework §4.2 刻度，校准前可用）+ 各维短板分 + 加权数值分（权重未定型则留空）+ 按序整改清单（⑤❌ 置首 → 门禁 ⚠️ 次段 → 其余 ❌ 按维度短板分升序 → ⚠️ 随其维）；外部 pilot 另在 `30-runs/pilot-index.md` 登记一行指针，本仓库自举则直接登记 `CURRENT.md`。
 
 ## 2. 打分纪律（违反即报告作废）
 
@@ -37,7 +37,8 @@
 
 | 组件 | 状态 |
 |---|---|
-| framework（九维、聚合结构、度量语义） | ✅ 已定型（v1.4：映射 1.0/0.5/0.25、A–D 刻度、门禁 ⚠️ 封顶 B） |
+| framework（九维、聚合结构、度量语义） | ✅ 已定型（v1.5：v1.4 定标映射/刻度/门禁 ⚠️，v1.5 无状态评估器） |
+| bundle-format（run bundle 规范） | ✅ 在 `20-instruments/bundle-format.md` |
 | 九维判据族（定义级草案） | ✅ 在 `10-spec/dimensions/` |
 | checklist-A / checklist-B（逐条判据） | ❌ 待建（`20-instruments/`） |
 | harness-profiles | ❌ 待建 |

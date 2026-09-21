@@ -2,6 +2,12 @@
 
 spec（`../10-spec/`）回答"体系是什么"；本目录回答"拿什么去测"。器械变更不改 spec；spec 变更时器械跟着升版本，已存 runs 的可比性影响记录在 `CURRENT.md`。
 
+## 现役组件
+
+| 文件 | 内容 | 状态 |
+|---|---|---|
+| [`bundle-format.md`](bundle-format.md) | run bundle 格式规范：放置规则（bundle 归属被测仓库）、manifest/report 模板、证据与可复现约定 | ✅ 就绪（ADR 无状态评估器） |
+
 ## 规划中的组件
 
 | 文件/目录 | 内容 | 状态 |

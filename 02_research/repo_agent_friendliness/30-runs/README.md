@@ -1,56 +1,18 @@
-# 30-runs — 运行层（L-instance 归档，只增不改）
+# 30-runs — 本仓库自举 bundle 归档 + pilot 索引（append-only）
 
-每次审计一个子目录，**append-only**：报告落盘后不修改原文（勘误以新版本文件追加，如 `report-v2.md`），spec/器械变更不回写历史报告——历史报告靠 manifest 自证当时依据。
+> 结构裁决（ADR `../10-spec/adr/2026-09-21-stateless-auditor-run-bundle.md`）：**run bundle 归属被测仓库**。
+> 本目录只收两样东西：① 本仓库自身自举审计的 bundle（被测对象就是本仓库，bundle 随仓库走）；
+> ② 外部仓库 pilot 的 **索引**（指针，不复制内容）。评估系统运行期对被测仓库之外零写入。
 
-## 目录命名
+## 内容
 
-```
-YYYY-MM-DD-<目标仓库名>-<harness集>[-pilot]/
-├── manifest.md   先写。没有 manifest 的报告无效
-└── report.md     评估报告
-```
+| 东西 | 说明 |
+|---|---|
+| `<日期>-ai-dev-sdlc-aidc-<harness>[-pilot]/` | 本仓库自举审计 bundle，格式见 [`../20-instruments/bundle-format.md`](../20-instruments/bundle-format.md) |
+| `pilot-index.md` | 外部 repo pilot 的登记表：bundle 路径指针 + 一行摘要（供 framework §4.4 校准取数） |
 
-`-pilot` 后缀标记校准试测（framework §4.4 效标回归的采数 run）；正式审计不带后缀。目标仓库名只用短名，不含路径分隔符。
+## 规矩
 
-## manifest.md 模板
-
-```markdown
-# Run Manifest
-- date:            YYYY-MM-DD
-- target_repo:     <名>（<URL 或本地路径>，观测日期 <日期>）
-- archetype:       A | B（分型理由一句话）
-- form:            定义层评审版 | 正式审计
-- spec_version:    repo_agent_friendliness @ <本仓库 git commit hash>
-- instruments:     checklist-A/B <版本或"未落条">；harness-profiles <版本或"未建">
-- harnesses:       <harness 名及版本，逐个列>
-- model:           <执行评估的模型标识>
-- scope_excluded:  <未覆盖的维度/判据及原因>
-```
-
-## report.md 模板
-
-```markdown
-# Repo Agent-Friendliness 评估报告 · <目标仓库名>
-> manifest：见同目录 manifest.md；形态：<A/B>；性质：<定义层评审版/正式审计>
-
-## 1. 门禁判定（维度⑤）
-<任一 ❌ → 总评 D 级，门禁 ❌ 全列于此；有 ⚠️ 无 ❌ → 总评封顶 B，⚠️ 列于此（framework §4.2）>
-
-## 2. 分维结果（①②③④⑥⑦⑧⑨）
-| 维 | 判据族要点 | 得分 | 证据（probe 实际观察） |
-每条 ⚠️/❌ 必须附证据；无证据不打分。得分按映射 ✅=1.0/⚠️=0.5/❌=0.25 与短板制 §4.3 计算。
-
-## 3. 总评
-- **评级（A–D）**：<按 framework §4.2 刻度：门禁 + 最弱维；校准前可用>
-- 加权数值分：<权重未定型 → 写"按 framework §4.4 留空">
-
-## 4. 整改清单
-<排序：⑤ ❌ 置首 → 其余 ❌ 按维度短板分升序 → ⚠️ 随其维；每条附判据 id 与依据>
-
-## 5. 采证记录
-<tier-0/1/2 各做了什么；tier-2 写明抽样对象与数量>
-```
-
-## 效标数据（pilot run 专用）
-
-pilot run 除 report 外，另存 `criteria.md`：真实 agent 会话的任务完成率、返工轮数、token 消耗、绕过/放弃点（采法承 framework §4.4）。这是日后权重校准的唯一数据源，缺了 run 就白跑。
+- append-only：落盘不改原文；重评开新目录，旧 bundle 留作本仓库的时间线。
+- 外部仓库的审计**不落这里**——bundle 在各自仓库的 `agent-friendly-runs/`，此处只留指针。
+- 本仓库自举的第一个 run = checklist-A 落条后的自举试测（见 `../CURRENT.md` 下一步 3），目前为空。

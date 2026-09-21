@@ -4,13 +4,14 @@
 
 ## 一句话
 
-定义层已定型（**v1.4**：九维 + A/B 两线 + 聚合结构 + 度量语义定标——映射 1.0/0.5/0.25、A–D 刻度、门禁 ⚠️ 封顶 B，见 ADR `10-spec/adr/2026-09-21-metric-semantics.md`），系统已完成目录重组与 agent 操作化；下一步是**器械层落条**（checklist-A 优先），然后自举试测喂效标。
+定义层已定型（**v1.5**：九维 + A/B 两线 + 聚合结构 + 度量语义定标 + 无状态评估器——run bundle 归属被测仓库，ADR 见 `10-spec/adr/`），系统已完成目录重组与 agent 操作化；下一步是**器械层落条**（checklist-A 优先），然后自举试测喂效标。
 
 ## 状态表
 
 | 组件 | 位置 | 状态 |
 |---|---|---|
-| framework v1.4（九维/门禁加权/tier/度量语义） | `10-spec/framework.md` | ✅ 定型 |
+| framework v1.5（九维/门禁加权/tier/度量语义/无状态评估器） | `10-spec/framework.md` | ✅ 定型 |
+| bundle-format（run bundle 规范） | `20-instruments/bundle-format.md` | ✅ 就绪 |
 | 九维定义 + 边界声明 | `10-spec/dimensions/01–09` | ✅ 判据族为草案级 |
 | A/B 分型 + 两线评估面 | `10-spec/archetypes.md` + `line-a/b` | ✅ 定型 |
 | 结构裁决（八维→九维） | `10-spec/adr/2026-09-21-dimension-sufficiency-review.md` | ✅ |
@@ -18,7 +19,7 @@
 | harness-profiles | `20-instruments/` | ❌ 待建 |
 | tier-0 扫描脚本 | `20-instruments/scan/` | ❌ 待建 |
 | 权重数值 | — | 有意不给，待效标回归 |
-| runs | `30-runs/`（模板就绪） | 空，待首跑 |
+| runs（本仓库自举） | `30-runs/`（仅自举 bundle + pilot 索引；外部 bundle 归属各自仓库） | 空，待首跑 |
 
 ## 下一步（顺序）
 
