@@ -9,25 +9,26 @@
 ## 0. 调用契约
 
 - **输入**：用户给的目标仓库路径（通常在仓库外）+ 可选信息：实际使用的 harness 集合（Claude Code / Codex / Cursor / …）、关注维度。缺 harness 信息时**先问**，不猜——同一仓库对不同 harness 得分不同（framework §1）。
-- **输出**：一个 **run bundle**（manifest + report，格式规范见 `20-instruments/bundle-format.md`），落**目标仓库** `<目标仓库>/agent-friendly-runs/<日期>-<harness集>[-pilot]/`；无写权限（第三方仓库）则交付用户放置。自举审计（被测对象是本仓库）同一条规则：bundle 落本仓库根 `agent-friendly-runs/`。
-- **铁律**：**评估器无状态**——运行期对被测目标只写 bundle 这一样东西，其余一律只读；对本系统目录零写入（裁决见 `10-spec/adr/2026-09-21-stateless-auditor-run-bundle.md`）。
+- **输出**：一个 **run bundle**（manifest + report；pilot 另含 criteria.md 效标数据，格式规范见 `20-instruments/bundle-format.md`），落**目标仓库** `<目标仓库>/agent-friendly-runs/<YYYY-MM-DD>-<目标仓库名>-<harness集>[-pilot]/`（叶子命名以 bundle-format 为权威）；无写权限（第三方仓库）则交付用户放置。自举审计（被测对象是本仓库）同一条规则：bundle 落本仓库根 `agent-friendly-runs/`。
+- **铁律**：**评估器无状态**——运行期对被测目标只写 bundle 这一样东西，其余一律只读；对本系统目录零写入（裁决见 `10-spec/adr/2026-09-21-stateless-auditor-run-bundle.md`）。**唯一例外**：tier-2 闭环演练在一次性 worktree/克隆内进行、结束即删（豁免细则见该 ADR 裁决 5）。
 
 ## 1. 评估仪式（七步，顺序执行）
 
 1. **读法**：`10-spec/framework.md`（体系法律，当前权威）→ `10-spec/archetypes.md`（形态分型）→ 按分型读 `10-spec/line-a-traditional-repo.md` 或 `10-spec/line-b-agentic-repo.md`（评估面与重心维）→ `10-spec/dimensions/`（九维边界与判据族）。
-2. **分型**：按 archetypes §1 判定目标仓库是形态 A（确定性应用）还是 B（智能体产品）。分型依据是**正确性模型**，不是"代码由谁写"。混合形态按产出物拆开分评。拿不准 → 停下来问用户。
-3. **建 run bundle**：`<目标仓库>/agent-friendly-runs/<日期>-<harness集>[-pilot]/`（无写权限 → 交用户指定位置；自举审计的目标就是本仓库，bundle 落仓库根同路径），先写 `manifest.md`（模板见 `20-instruments/bundle-format.md`）——钉住本轮用的 spec 版本（git commit hash）、checklist 版本、harness 及其版本、模型、观测日期。**没有 manifest 的 bundle 无效**。
+2. **分型**：按 archetypes §1 判定目标仓库是形态 A（确定性应用）还是 B（智能体产品）。分型依据是**正确性模型**，不是"代码由谁写"。混合形态按产出物拆开分评——**每个产出物一个 run bundle**、各自分型定线（manifest 单值 `archetype`）。拿不准 → 停下来问用户。
+3. **建 run bundle**：`<目标仓库>/agent-friendly-runs/<YYYY-MM-DD>-<目标仓库名>-<harness集>[-pilot]/`（无写权限 → 交用户指定位置；自举审计的目标就是本仓库，bundle 落仓库根同路径），先写 `manifest.md`（模板见 `20-instruments/bundle-format.md`）——钉住本轮用的 spec 版本（git commit hash）、checklist 版本、harness 及其版本、模型、观测日期。**没有 manifest 的 bundle 无效**。
 4. **Tier-0 静态扫描**（便宜证据先采）：判据族中机器可判条目逐条过（文件存在性、体量、lockfile、CI 配置、契约测试存在性、VCS 惯例等）。有 `20-instruments/scan/` 脚本则跑脚本，没有则手工执行 probe。
 5. **Tier-1 注入验证**：在用户声明的每个实际 harness 内，确认指令真实加载、无静默失败、无超预算截断（如 Claude Code `/context`、Codex "Summarize the current instructions."）。记录 harness 版本。
-6. **Tier-2 演练与评审**：仅对 tier-0/1 无法判定的问题启用——一次真实小改动闭环演练（卡点映射到 ②③⑨ 条目）、协议化抽样评审（①④ 主观条目；抽样协议按判据的 sampling 字段，未落条时在报告中写明你抽了什么、抽了几处）。
-7. **产出**：bundle 内 `report.md`（模板见 `20-instruments/bundle-format.md`）——门禁判定 + **A–D 总评评级**（framework §4.2 刻度，校准前可用）+ 各维短板分 + 加权数值分（权重未定型则留空）+ 按序整改清单（⑤❌ 置首 → 门禁 ⚠️ 次段 → 其余 ❌ 按维度短板分升序 → ⚠️ 随其维）。到此为止——**评估仪式不写本系统任何文件**：外部 pilot 的记录就是 bundle 自身；自举审计的进度状态由体系维护流程（非本仪式）另行更新。
+6. **Tier-2 演练与评审**：仅对 tier-0/1 无法判定的问题启用——一次真实小改动闭环演练（**在一次性 worktree/克隆内进行、结束即删**，痕迹只进 bundle 采证记录——写入豁免见 ADR 无状态评估器裁决 5；卡点及其脱身路径映射到 ②③⑥⑨ 条目）、协议化抽样评审（①④ 主观条目；抽样协议按判据的 sampling 字段，未落条时在报告中写明你抽了什么、抽了几处）。
+7. **产出**：bundle 内 `report.md`（模板见 `20-instruments/bundle-format.md`）——门禁判定 + **A–D 总评评级**（framework §4.2 刻度，校准前可用）+ 各维短板分 + 加权数值分（权重未定型则留空）+ 按序整改清单（⑤❌ 置首 → 门禁 ⚠️ 次段 → 其余 ❌ 按维度短板分升序 → ⚠️ 随其维）。B 形态目标按**双路径评级域**呈现（framework §3.5、ADR 度量语义 D6）。到此为止——**评估仪式不写本系统任何文件**：外部 pilot 的记录就是 bundle 自身；自举审计的进度状态由体系维护流程（非本仪式）另行更新。
 
 ## 2. 打分纪律（违反即报告作废）
 
 - **无证据不打分**：✅/⚠️/❌ 三档，⚠️ 与 ❌ 必须引用 probe 的实际观察（命令输出、文件行号、演练记录）。
+- **N/A 须给理由**：条件判据条件不满足记 N/A 并注明依据（framework §4.1、ADR 度量语义 D5）——无理由的 N/A 视同无证据打分；观察项单列不计分。
 - **tier 是判据的固定属性**：按 framework §3.2 采证顺序，不许用 tier-2 印象替代 tier-0 可判事实。
 - **判据只写行为描述**：目标仓库的具体做法可进证据列，不进合格标准。
-- **边界不双算**：一个事实只归一个维打分（各维边界声明优先；①④⑨ 的共享表面按各维"泛化注意"的归属执行）。
+- **边界不双算**：一个事实只归一个维打分，各维**边界声明**优先；已知共享表面（如 ①④、③⑤、③⑧、③⑨、②⑨、⑤⑥）按各维"边界声明/泛化注意"的归属执行——以各维文件为准，不在此枚举全集。
 - **checkpoint 隔离**：权重未校准前，报告给 **A–D 评级与分维短板分**，不给加权数值分与总分（framework §4.4）。
 - **内部命名不出门**：报告中不出现本仓库内部代号、姊妹项目名、"参考另一场 talk"类表述。
 
@@ -37,7 +38,7 @@
 
 | 组件 | 状态 |
 |---|---|
-| framework（九维、聚合结构、度量语义） | ✅ 已定型（v1.6：v1.4 定标映射/刻度/门禁 ⚠️，v1.5–v1.6 无状态评估器、无 `30-runs/`） |
+| framework（九维、聚合结构、度量语义） | ✅ 已定型（v1.7：v1.4 定标映射/刻度/门禁 ⚠️，v1.5–v1.6 无状态评估器、无 `30-runs/`，v1.7 一致性加固——N/A/条件判据/观察项语义、B 线双路径评级域、演练写入豁免） |
 | bundle-format（run bundle 规范） | ✅ 在 `20-instruments/bundle-format.md` |
 | 九维判据族（定义级草案） | ✅ 在 `10-spec/dimensions/` |
 | checklist-A / checklist-B（逐条判据） | ❌ 待建（`20-instruments/`） |

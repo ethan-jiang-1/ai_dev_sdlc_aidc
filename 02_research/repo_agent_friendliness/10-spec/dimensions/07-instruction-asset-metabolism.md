@@ -38,11 +38,11 @@ B 形态下本维从"修剪文档"加深为"harness 自身的退役机制"：
 - [Stale AI Configuration Artifacts (Context Rot)](https://raw.githubusercontent.com/agentpatterns-ai/website/refs/heads/main/patterns/anti-patterns/stale-ai-configuration-artifacts.md)（反模式化，2026）。
 - [Anthropic: Using Claude Code — session management](https://claude.com/blog/using-claude-code-session-management-and-1m-context)（2026：session/compaction/记忆管理工程化）。
 - raw 01 §2（/doctor 修剪标准）、raw 02 §4.1 原则 1（"技能/规则/prompt 片段的坟场"警告）。
-- raw 07 #6/#15/#46（矛盾、活文档、同源政策——v1.1 起划入本维）。
+- raw 90 篇（[90-audit-checklist.md](../../90-archive/raw/90-audit-checklist.md)）#6/#15/#46（矛盾、活文档、同源政策——v1.1 起划入本维）。
 
 ## 泛化注意
 
-- raw #15/#46 原在维度①④，v1.1 归此维；checklist-A/B 迁移时在原编号处留指针防漏。
+- raw #15/#46 原在维度①④，v1.1 归此维；checklist-A/B 落条时在**对应条目**上标注 raw 编号溯源（raw 已冻结只读，不在其原编号处回写）。
 
 ## 开放问题
 

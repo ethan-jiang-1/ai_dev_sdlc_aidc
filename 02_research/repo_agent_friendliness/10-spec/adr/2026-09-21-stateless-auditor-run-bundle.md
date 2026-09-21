@@ -14,9 +14,10 @@ v1.4 及之前的调用契约是"目标仓库只读，一切写入落本目录 `
 ## 裁决
 
 1. **评估器运行期零状态、零写入**：一次评估运行中，本系统目录不被写入；系统只在**体系演进**（改 spec/instruments）时才被写。
-2. **run bundle 归属被测仓库**：默认落 `<目标仓库>/agent-friendly-runs/<YYYY-MM-DD>-<harness集>[-pilot]/`（manifest + report + 效标数据，格式规范见 `20-instruments/bundle-format.md`）。对目标仓库唯一的允许写入就是这个 bundle；无写权限（第三方仓库）则把 bundle 交付用户放置。
+2. **run bundle 归属被测仓库**：默认落 `<目标仓库>/agent-friendly-runs/<YYYY-MM-DD>-<目标仓库名>-<harness集>[-pilot]/`（叶子目录命名以 [`20-instruments/bundle-format.md`](../../20-instruments/bundle-format.md) 为权威）（manifest + report + 效标数据，格式规范见 `20-instruments/bundle-format.md`）。对目标仓库的常规允许写入就是这个 bundle（tier-2 演练的写入豁免见裁决 5）；无写权限（第三方仓库）则把 bundle 交付用户放置。
 3. **`30-runs/` 删除**：自举审计也是"bundle 随仓库走"，被测仓库就是本仓库，bundle 落**仓库根** `agent-friendly-runs/`——与外部目标同一条规则，无特例；系统目录收敛为三层（spec / instruments / archive），L-instance 数据**永远不在本系统**。
 4. **不设任何运行时索引/登记表**：bundle 的 manifest 即分布式登记表；跨仓库校准取数时把各目标仓库的 manifest 临时聚合，工作清单放仓库根 `.tmp-` 刮擦区，用完即弃——**运行时累积状态不得入系统**（用户红线，曾试行的 pilot-index 表被否决撤销）。
+5. **tier-2 演练的写入豁免（v3 补）**：闭环演练是一次真实小改动，必然产生写入——与"只写 bundle"铁律冲突，v1/v2 未闭合。豁免规则：演练在**一次性 worktree/克隆**内进行，结束即删、不留分支、不动被测仓库主干与远程；演练痕迹（分支名、改动摘要、清理确认）只进 bundle 的采证记录。除此之外"对被测目标只写 bundle"铁律不变。
 
 ## 后果
 
@@ -26,5 +27,6 @@ v1.4 及之前的调用契约是"目标仓库只读，一切写入落本目录 `
 
 ## 变更记录
 
+- v3（2026-09-21）：补裁决 5——tier-2 演练写入豁免（一次性 worktree/克隆，结束即删）；裁决 2 的叶子目录命名与 bundle-format 统一（含目标仓库名）。一致性加固（framework v1.7）产物。
 - v2（2026-09-21）：后果修订——删除 `30-runs/`，自举落仓库根；撤销试点索引（运行时状态不入系统）（framework v1.6）。
 - v1（2026-09-21）：初版，四条裁决。

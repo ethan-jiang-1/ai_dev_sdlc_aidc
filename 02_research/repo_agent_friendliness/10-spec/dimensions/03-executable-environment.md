@@ -13,7 +13,7 @@ Agent 能否从零把环境跑起来，冷启动失败是否可行动？
 ## 边界声明
 
 - 归此维：setup 顺序显式、缺失前置的失败模式已说明、配置模板分离、就绪探测真实、确定性命令包装器、隐式全局状态清零、跨平台/编码兼容、依赖 pin、日志可定位。
-- 归他维：报错信息可行动是共用能力——冷启动路径上的归此维，测试失败信息归 02，运行循环卡死的逃生舱归 06。
+- 归他维：报错信息可行动是共用能力——冷启动路径上的归此维，测试失败信息归 02，运行循环卡死的逃生舱归 06；**lockfile 漂移的机器检查归 08**（判据族 2）——本维只管 lockfile **入库/可安装**这一工件面，一致性守护归 ⑧（与 09 边界声明同口径）。
 
 ## 判据族（草案）
 
@@ -21,11 +21,11 @@ Agent 能否从零把环境跑起来，冷启动失败是否可行动？
 2. **配置卫生**：模板入库 + 真实配置 gitignored；无隐式全局状态（hosts/一次性脚本）。
 3. **就绪真实性**：健康检查失败输出诊断而非谎报成功。
 4. **包装器**：统一入口吸收平台差异；显式 encoding；Windows/POSIX 差异脚本化。
-5. **依赖确定**：lockfile 入库 + 漂移有机器检查；日志去向与查看命令文档化。
+5. **依赖确定**：lockfile 入库、从零安装可复现（漂移的机器检查归 08 判据族 2，勿在此双算）；日志去向与查看命令文档化。
 
 ## 依据
 
-- raw 01 篇维度三、raw 07 篇 #29–38。
+- raw 01 篇维度三、raw 90 篇（[90-audit-checklist.md](../../90-archive/raw/90-audit-checklist.md)）#29–38。
 - raw 04 篇 §4（错误可行动）、[GEMINI.md best practices](https://mintlify.wiki/google-gemini/gemini-cli/reference/gemini-md#best-practices)、[builder.io AX 原则 2](https://www.builder.io/blog/agent-experience)（environment is part of the prompt）。
 
 ## 泛化注意

@@ -12,8 +12,8 @@
 
 ## 边界声明
 
-- 归此维：上下文 vs 强制的分界（hooks/permissions）、指令文件自身供应链攻击面、敏感操作就近显式禁令、禁令带安全替代路径、破坏性操作可辨识、agent 环境限制成文、凭证分离、human-in-the-loop、远程操作 guardrails、安全模型文档化。
-- 归他维：破坏性脚本"可辨识"的接口面在 03 打分，本维只收其安全后果；禁令的"就近放置"机制与 01 的分层共享原理，但本维条目只评安全类禁令。
+- 归此维：上下文 vs 强制的分界（hooks/permissions）、指令文件自身供应链攻击面、敏感操作就近显式禁令、禁令带安全替代路径、破坏性操作的**安全后果条目**（其"可辨识"接口面归 03 打分）、agent 环境限制成文、凭证分离、human-in-the-loop、远程操作 guardrails、安全模型文档化。
+- 归他维：破坏性脚本"可辨识"的接口面在 03 打分，本维只收其安全后果；禁令的"就近放置"机制与 01 的分层共享原理，但本维条目只评安全类禁令；**"需确认"类条目的分界**——安全后果型（发布/迁移/删除、凭证、远程写）归本维，资源/时间预算型（长任务、全量套件先问）归 06，分界是**危险后果 vs 成本预算**。
 
 ## 判据族（草案）
 
@@ -26,7 +26,7 @@
 
 ## 依据
 
-- raw 01 篇维度五、raw 07 篇 #51–60。
+- raw 01 篇维度五、raw 90 篇（[90-audit-checklist.md](../../90-archive/raw/90-audit-checklist.md)）#51–60。
 - [Claude Code memory docs](https://code.claude.com/docs/en/memory)（"上下文而非 enforced configuration"官方红线）、[builder.io AX 原则 4](https://www.builder.io/blog/agent-experience)（safety needs to be deterministic）。
 
 ## 泛化注意

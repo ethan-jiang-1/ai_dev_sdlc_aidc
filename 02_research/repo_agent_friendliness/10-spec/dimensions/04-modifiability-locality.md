@@ -27,7 +27,7 @@ Agent 改一处代码时，需要理解的涟漪范围有多大？
 
 ## 依据
 
-- raw 01 篇维度四、raw 04 篇（namespacing、聚合、工具数量）、raw 07 篇 #39–50。
+- raw 01 篇维度四、raw 04 篇（namespacing、聚合、工具数量）、raw 90 篇（[90-audit-checklist.md](../../90-archive/raw/90-audit-checklist.md)）#39–50。
 - [builder.io AX](https://www.builder.io/blog/agent-experience) 原则 1/6、[Anthropic writing tools](https://www.anthropic.com/engineering/writing-tools-for-agents)。
 
 ## 泛化注意

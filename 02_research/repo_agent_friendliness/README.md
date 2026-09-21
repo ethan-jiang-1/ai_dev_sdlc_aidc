@@ -2,7 +2,7 @@
 
 **定位**：一套**仓库无关**的"代码仓库对 coding agent 友好度"评估系统——九维正交框架 + 可操作判据 + 门禁/加权分离的打分模型。已从研究主题升级为**可被 agent 执行的评估系统**（2026-09-21 重组）：拽任意一个 repo 进来要求评估，按 [`AGENTS.md`](AGENTS.md) 的仪式走完即出报告。
 
-## 分法（系统四层：spec → instruments → runs → archive）
+## 分法（体系四层对象——系统目录内三层：spec → instruments → archive；runs 层外置，归属被测仓库）
 
 | 层 | 目录 | 是什么 | 变化频率 |
 |---|---|---|---|
@@ -20,7 +20,7 @@
 
 - harness/context 治理的**实践方法论**（DSLC、漂移治理）→
   [`../../03_practice/harness_governance/`](../../03_practice/harness_governance/README.md)；
-  其 `03b` 的"度量缺口"待由本体系 pilot 校准数据（聚合各自目标仓库 bundle 的 manifest，不入本系统）补度量方案（framework §4.4）。
+  其 `02b` 的"度量缺口"待由本体系 pilot 校准数据（聚合各自目标仓库 bundle 的 manifest，不入本系统）补度量方案（framework §4.4）。
 - 活跃对客交付在 `talk-ai-coding-evolution-harness/`；本主题暂不与其 `02_evidence/` 关联（2026-09-21 用户定）。
 
 ## 纪律

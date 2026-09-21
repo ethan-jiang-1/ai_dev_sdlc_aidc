@@ -30,7 +30,7 @@ Agent 能否在合适时机、以最低 token 成本找到正确指引？
 - raw 01 篇维度一、raw 03 篇（注入机制横向对照）、raw 04 篇 §2/§3（命名、返回值预算）。
 - [Knowledge Activation](https://arxiv.org/html/2603.14805v2)（AKU：只注入任务相关知识单元，precision/relevance 硬要求，2026）。
 - 各 harness 官方 docs（Claude Code memory / Codex AGENTS.md / Cursor rules / Gemini GEMINI.md / Aider repo map）——**实现级，带观测日期**。
-- **40% 上下文利用率阈值**（Horthy 的 smart/dumb zone 分界；0–40% 推理聚焦，超过后幻觉/兜圈子明显增多）——①在 B 形态产品层最接近可操作化的定量线，见 [`../archetypes.md`](../archetypes.md) §5。判据化为"监控+阈值告警"设计，标"经验/共识"依据。
+- **40% 上下文利用率阈值**（Horthy 的 smart/dumb zone 分界；0–40% 推理聚焦，超过后幻觉/兜圈子明显增多）——①在 B 形态产品层最接近可操作化的定量线，见 [`../archetypes.md`](../archetypes.md) §4（六层映射 L1 行）。判据化为"监控+阈值告警"设计，标"经验/共识"依据。
 
 ## 泛化注意
 
