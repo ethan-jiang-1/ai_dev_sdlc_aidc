@@ -68,13 +68,16 @@
 **子目录标准件（所有可独立工作的目录通用）**：
 - 能独立承载工作流的目录（talk、研究主题、实践主题）至少配一个 **`README.md`**：定位、分工约定、信息往哪放。
 - 有"当前进度"概念的目录（talk）加 **`CURRENT.md`**；状态一旦滚出热区就移入冷区文件，热文件不背历史。
-- 研究主题内部按 `raw / digested / result` 分层；没有 README 的旧主题，动手前先读目录内现有文档摸清分法，**顺手补一个最小 README**（只写定位与分法，不搬运正文）。
+- 研究主题内部按 `raw / digested / result` 分层（活跃评估系统 `repo_agent_friendliness` 除外，见 §4 例外）；没有 README 的旧主题，动手前先读目录内现有文档摸清分法，**顺手补一个最小 README**（只写定位与分法，不搬运正文）。
 
 ---
 
 ## 4. 研究层与实践层怎么动
 
 `01_sources/` / `02_research/` / `03_practice/` / `04_enterprise/` 目前是**沉淀状态**，不是日常推进对象。
+**例外**：`02_research/repo_agent_friendliness/` 是**活跃的评估系统**（2026-09-21 升级）：独立四层分法
+（`10-spec / 20-instruments / 30-runs / 90-archive`）且有自己的 `AGENTS.md` 操作手册——路由进去后按它
+自己的纪律走，不适用本节"沉淀状态"与本文件 §3 的研究层默认分法。
 
 - 补素材、改研究结论前，先确认它是否为某场 talk 服务。**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**，避免事实分散到两处。
 - `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含四个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`、`harness_governance/`（2026-09-21 自 beyond 抽出：AI 形态下新的 SDLC——harness/context 治理）。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。

@@ -6,7 +6,7 @@
 
 | 层 | 目录 | 是什么 | 变化频率 |
 |---|---|---|---|
-| 定义层（≈L-core） | [`10-spec/`](10-spec/) | 体系法律：[`framework.md`](10-spec/framework.md)（v1.3 权威）、[`dimensions/`](10-spec/dimensions/README.md)（01–09 一维一文件）、[`archetypes.md`](10-spec/archetypes.md)（A/B 分型）、[`line-a/line-b`](10-spec/line-a-traditional-repo.md)（两线评估面）、[`adr/`](10-spec/adr/)（结构裁决记录） | 慢，版本化 |
+| 定义层（≈L-core） | [`10-spec/`](10-spec/) | 体系法律：[`framework.md`](10-spec/framework.md)（v1.4 权威，含度量语义定标）、[`dimensions/`](10-spec/dimensions/README.md)（01–09 一维一文件）、[`archetypes.md`](10-spec/archetypes.md)（A/B 分型）、[`line-a/line-b`](10-spec/line-a-traditional-repo.md)（两线评估面）、[`adr/`](10-spec/adr/)（结构裁决记录） | 慢，版本化 |
 | 器械层 | [`20-instruments/`](20-instruments/README.md) | checklist-A/B、harness-profiles、tier-0 扫描脚本（**多待建**） | 中，随 spec 版本走 |
 | 运行层（≈L-instance） | [`30-runs/`](30-runs/README.md) | 每次审计一目录（manifest + report），**append-only** | 只增不改 |
 | 冷区 | `90-archive/` | [`framework-v0.md`](90-archive/framework-v0.md)（历史底稿）、[`raw/`](90-archive/raw/README.md)（deer-flow 冻结素材，来源考古） | 不更新 |
