@@ -5,18 +5,18 @@ topic: SDD 替代形态之三——context engineering 派（repo 级上下文�
 accessed_at: 2026-09-20
 round2_accessed_at: 2026-09-21   # 二轮深挖两节：§7（渐进披露，档案 01a-progressive-disclosure-evidence.md）、§8（团队治理，档案 01b-agents-md-governance-evidence.md）
 collector: delegated research agent
-parent_doc: ../beyond_spec_driven_development/README.md   # 原单文件底稿 alternatives.md 第 3 节（旧编号；context 派现为该 README §2）；本文在其基础上深挖，不复制正文
+parent_doc: ../../beyond_spec_driven_development/README.md   # 原单文件底稿 alternatives.md 第 3 节（旧编号；context 派现为该 README §2）；本文在其基础上深挖，不复制正文
 scope: 2026 年（尤其 2026-02 之后的论文与社区材料）
 evidence_archive:
   - ./01a-progressive-disclosure-evidence.md       # §7 渐进披露深挖的逐字原文档案（2026-09-21 二轮）
 related:
-  - ../requirements_engineering/deep_research_topics/_reference/00-shared-codex-agents-md-spec.md   # AGENTS.md 规范 + Codex CLI 官方集成 + AAIF 治理（主锚点）
-  - ../requirements_engineering/deep_research_topics/_reference/00-shared-cursor-rules-official.md  # Cursor 四类 rules + AGENTS.md 嵌套合并
-  - ../requirements_engineering/deep_research_topics/_reference/06-agent-format-openai-harness-engineering.md  # ~100 行目录论
-  - ../requirements_engineering/deep_research_topics/_reference/06-agent-format-rule-loading-semantics-comparison.md  # 跨工具加载语义差异
-  - ../requirements_engineering/deep_research_topics/_reference/06-agent-format-evaluating-agents-md-agentbench-2026.md  # AGENTbench 学术评测
-  - ../requirements_engineering/deep_research_topics/_reference/06-agent-format-umans-agents-md-following-experiment.md  # 跨工具遵循度实验
-  - ../requirements_engineering/deep_research_topics/_reference/06-agent-format-openwork-oss-usage.md  # OSS repo 实例
+  - ../../requirements_engineering/deep_research_topics/_reference/00-shared-codex-agents-md-spec.md   # AGENTS.md 规范 + Codex CLI 官方集成 + AAIF 治理（主锚点）
+  - ../../requirements_engineering/deep_research_topics/_reference/00-shared-cursor-rules-official.md  # Cursor 四类 rules + AGENTS.md 嵌套合并
+  - ../../requirements_engineering/deep_research_topics/_reference/06-agent-format-openai-harness-engineering.md  # ~100 行目录论
+  - ../../requirements_engineering/deep_research_topics/_reference/06-agent-format-rule-loading-semantics-comparison.md  # 跨工具加载语义差异
+  - ../../requirements_engineering/deep_research_topics/_reference/06-agent-format-evaluating-agents-md-agentbench-2026.md  # AGENTbench 学术评测
+  - ../../requirements_engineering/deep_research_topics/_reference/06-agent-format-umans-agents-md-following-experiment.md  # 跨工具遵循度实验
+  - ../../requirements_engineering/deep_research_topics/_reference/06-agent-format-openwork-oss-usage.md  # OSS repo 实例
 weights: 高=ICSE/arXiv 论文、大厂一手、Linux Foundation 治理事实；中=有实证的工程博客（Osmani、Codacy）；低=个人观点/社区讨论
 limitations:
   - AGENTS.md 官方站 60k+ 采纳数为站点自述口径，未做 GitHub code search 独立复核（_reference 文件已标注此风险）。
@@ -29,7 +29,7 @@ limitations:
 
 ## 0. 本文在系列中的位置
 
-底稿（../beyond_spec_driven_development/README.md §2；原单文件底稿 alternatives.md 第 3 节）已经给出 context 派的骨架：约束对象从"这个 feature 要什么"上移为"这个仓库的 agent 该怎么干活"，纪律永久但轻量，feature 级意图不落盘。本文回答五个底稿留白的问题：**① AGENTS.md 这个事实标准在 2026 年到底走到哪一步了（含各工具读取行为的真实差异）；② 好的规则文件长什么样（真实 repo 实例）；③ 渐进式披露在 2026 年怎么落地；④ context 派的留白（跨服务语义契约、"为什么"流失）实际怎么补；⑤ 规则文件作为团队资产的治理**。
+底稿（../../beyond_spec_driven_development/README.md §2；原单文件底稿 alternatives.md 第 3 节）已经给出 context 派的骨架：约束对象从"这个 feature 要什么"上移为"这个仓库的 agent 该怎么干活"，纪律永久但轻量，feature 级意图不落盘。本文回答五个底稿留白的问题：**① AGENTS.md 这个事实标准在 2026 年到底走到哪一步了（含各工具读取行为的真实差异）；② 好的规则文件长什么样（真实 repo 实例）；③ 渐进式披露在 2026 年怎么落地；④ context 派的留白（跨服务语义契约、"为什么"流失）实际怎么补；⑤ 规则文件作为团队资产的治理**。
 
 一句话结论先行：2026 年上半年，这个派别经历了从"怎么写好一份 AGENTS.md"到"AGENTS.md 只是上下文架构的一层"的重心迁移——两篇 2026 年初的实证论文（见 §1.3）把"写什么"变成了可度量问题，而渐进式披露与 skills 生态把"放哪里"变成了架构问题。context 派没有消失，它在**升维成上下文工程（context engineering 的本义）**。
 
@@ -171,7 +171,7 @@ Codacy 2026-08 的长文（[Repository Instructions Are Becoming Engineering Art
 
 ---
 
-## 6. 对底稿的修订建议（供 ../beyond_spec_driven_development/README.md §2 吸收；原指单文件底稿 alternatives.md 第 3 节）
+## 6. 对底稿的修订建议（供 ../../beyond_spec_driven_development/README.md §2 吸收；原指单文件底稿 alternatives.md 第 3 节）
 
 1. "AGENTS.md 标准已成事实标准"→ 精确化为**格式制度化、语义不统一、有效载荷社区收敛**三层（§1.4）。
 2. 补 2026 年实证反转信息：CTXbench/ETH Zurich 显示 context file 有净成本风险，AGENTS.md 不是免费的，"写什么"比"有没有"重要（§1.3）。

@@ -2,10 +2,10 @@
 
 > **元数据**
 > - 观测日期：2026-09-20（2026 材料优先；OpenAI 原文 2026-02-11，Hashimoto 2026-02-05，arXiv 2026-08-31）
-> - 底稿：`../beyond_spec_driven_development/README.md` §3（原单文件底稿 `02_research/spec_driven_development/alternatives.md` 第 4 节；2026-09-21 随目录升格为 beyond_spec_driven_development 并重排节号，同日随实践层拆分迁至 `03_practice/beyond_spec_driven_development/`）（本文为深挖展开，不复制底稿结论）
+> - 底稿：`../../beyond_spec_driven_development/README.md` §3（原单文件底稿 `02_research/spec_driven_development/alternatives.md` 第 4 节；2026-09-21 随目录升格为 beyond_spec_driven_development 并重排节号，同日随实践层拆分迁至 `03_practice/beyond_spec_driven_development/`）（本文为深挖展开，不复制底稿结论）
 > - 定位：五形态中**证据最硬、最可能是团队级收敛点**的一条，故挖最深
 > - 证据强度说明：OpenAI 一手原文（openai.com）在本次观测中直接抓取被拒（403），细节经两个高保真第三方消化源交叉核验后引用，已逐条标注；一手源（Hashimoto、arXiv HTML 全文）均直接回源
-> - 上游文档指针：五形态总览见 `../beyond_spec_driven_development/README.md` §0–§5、光谱图见其 §6；验证优先派见 `../beyond_spec_driven_development/01-verifiable-specs.md`（跨目录）
+> - 上游文档指针：五形态总览见 `../../beyond_spec_driven_development/README.md` §0–§5、光谱图见其 §6；验证优先派见 `../../beyond_spec_driven_development/01-verifiable-specs.md`（跨目录）
 
 ---
 

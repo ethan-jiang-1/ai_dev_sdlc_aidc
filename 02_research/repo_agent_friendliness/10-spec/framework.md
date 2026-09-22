@@ -187,7 +187,7 @@ raw 90 篇（[审计清单](../90-archive/raw/90-audit-checklist.md)）的四步
 
 ## 7. 与本仓库其他层的接口
 
-- `03_practice/harness_governance/02b` 的"度量缺口"：由本体系 §4 度量层补方案（双方互加指针，届时执行）。
+- `03_practice/harness_governance/research/02b` 的"度量缺口"：由本体系 §4 度量层补方案（双方互加指针，届时执行）。
 - 活跃对客交付 `talk-ai-coding-evolution-harness/`：暂不关联（2026-09-21 用户定，见目录 README）。
 - 本仓库自举实测：待 checklist-A 定稿后作为第一个 A 线 L-instance（落本仓库根 `agent-friendly-runs/`，目录名带 -pilot，与外部目标同一规则）。
 
