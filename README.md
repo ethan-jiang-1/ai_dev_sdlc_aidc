@@ -18,6 +18,7 @@ ai_dev_sdlc_aidc/
 ├── 04_enterprise/     研究层 · 映射     SDLC 在企业侧的等价物（BPM）与案例
 ├── 05_output/         产出层            主线 Keynote（deck_ai_sdlc_keynote）
 │
+├── talk-ai-coding-evolution-agent-101/ 交付层 · 新增·入门场（20 张 = 18 正文 + 2 停顿页 / 20–30 min）
 ├── talk-ai-coding-evolution-opc/       交付层 · 已定稿 v8（23 页 / 45 min，只作内部参考）
 ├── talk-ai-coding-evolution-org-sdlc/  交付层 · 待 review（50 页 / 75–90 min）
 └── talk-ai-coding-evolution-harness/   交付层 · ★ 当前活跃（42 张 = 37 页正文 + 5 停顿页 / 75–90 min）
@@ -54,12 +55,14 @@ ai_dev_sdlc_aidc/
 
 | 目录 | 规格 | 状态 | 说明 |
 |---|---|---|---|
+| `talk-ai-coding-evolution-agent-101/` | 18 页正文 + 2 停顿页 = 20 张 / 20–30 min | ★ **新增 · 待 review** | **入门场**：`Agent = Model + Harness` 的零术语版，面向会用 AI 但不写代码的人；v4 已落盘（故事线 + 证据 + 03 页结构 + 04 PPT 事实稿） |
 | `talk-ai-coding-evolution-harness/` | 37 页正文 + 5 停顿页 = 42 张 / 75–90 min | ★ **活跃** | v3.3 全链已走完，PPTX v0.4 待 review；生产路线已改为「内容事实源 → handoff 稿」 |
 | `talk-ai-coding-evolution-org-sdlc/` | 50 页 / 75–90 min | 暂停在 review | v0.16 已渲染，等用户确认视觉门禁 |
 | `talk-ai-coding-evolution-opc/` | 23 页 / 45 min | 已定稿（v8） | **只作内部参考**，其命名与内容不得出现在其他 talk 的对客文字里 |
 | `05_output/deck_ai_sdlc_keynote/` | 40 min / 标准档 | 历史主线稿 | Phase 0 研究与 v1 大纲/讲稿已产出，2026-08 后未继续推进（`project-metadata.yaml` 中 phases 仍标 pending） |
 
-> **不确定该动哪里时，先看 `talk-ai-coding-evolution-harness/CURRENT.md`**——它是当前态的唯一权威。
+> **不确定该动哪里时**：主线看 `talk-ai-coding-evolution-harness/CURRENT.md`，
+> 入门场看 `talk-ai-coding-evolution-agent-101/CURRENT.md`——**各自是那一场当前态的唯一权威**。
 
 ---
 
@@ -86,8 +89,9 @@ ai_dev_sdlc_aidc/
 **人：**
 
 1. 本文件（全景）
-2. 想去活跃项目 → `talk-ai-coding-evolution-harness/README.md`
-3. 想知道现在做到哪 → `talk-ai-coding-evolution-harness/CURRENT.md`
+2. 想去活跃项目 → `talk-ai-coding-evolution-harness/README.md`（主线 / 75–90 min）
+   或 `talk-ai-coding-evolution-agent-101/README.md`（入门场 / 20–30 min）
+3. 想知道现在做到哪 → 对应目录的 `CURRENT.md`
 
 **agent：** 读根目录的 `AGENTS.md`，它会把你路由到正确的一层。
 **落点明确时不必读本文件**——直接进目标目录读 `CURRENT.md`（热区，最短行动入口）；
