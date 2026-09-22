@@ -228,3 +228,4 @@ __marimo__/
 
 # slidep CLI 运行态（命令日志 / 进程状态）
 .slidep/
+.tmp*/
