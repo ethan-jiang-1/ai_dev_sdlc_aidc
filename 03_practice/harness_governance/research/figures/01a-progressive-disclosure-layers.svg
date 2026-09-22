@@ -44,12 +44,12 @@
 
     <text x="70" y="400" fill="#222">openai/codex</text>
     <text x="330" y="400">320 行 / 22.4KB</text>
-    <text x="600" y="400">≈5k</text>
+    <text x="600" y="400">≈5.5k</text>
     <text x="820" y="400" fill="#555">单层深规则，无 skill 层</text>
 
     <text x="70" y="435" fill="#222">apache/airflow</text>
     <text x="330" y="435">246 行</text>
-    <text x="600" y="435">≈4k</text>
+    <text x="600" y="435">≈5.5k</text>
     <text x="820" y="435" fill="#555">明文"不支持 skill 发现就读 SKILL.md"降级协议</text>
 
     <text x="70" y="470" fill="#222">anthropics/skills (pdf)</text>
@@ -59,7 +59,7 @@
 
     <text x="70" y="505" fill="#222">ghostty</text>
     <text x="330" y="505" fill="#2c6e4f" font-weight="700">39 行 / 1.4KB</text>
-    <text x="600" y="505" fill="#2c6e4f">≈0.5k</text>
+    <text x="600" y="505" fill="#2c6e4f">≈0.35k</text>
     <text x="820" y="505" fill="#555">唯一符合 "~100 行目录" 教条的样本</text>
   </g>
 

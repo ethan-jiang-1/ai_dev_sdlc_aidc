@@ -15,9 +15,9 @@
 
 > 五层位 × 独立集群收敛地图（含复核勘误后的计数：11→7）与"清扫"隐喻命名收敛带。
 
-排除本文 §1–§4 已收四源（OpenAI/Hashimoto/arXiv 2609.00252/腾讯云）后，初查得 11 个集群；**经 [02a](02a-harness-convergence-evidence.md) 全文证据档案复核勘误（Trivedy 即 LangChain deepagents 作者，两集群合并；HumanLayer 引用链齐全改判聚合型），确认独立集群 7 个**——它们**独立说出同一件事**（agent 开发需要有人持续治理 harness/代码库卫生）：
+排除本文 §1–§4 已收四源（OpenAI/Hashimoto/arXiv 2609.00252/腾讯云）后，初查得 11 个集群；**经 [02a](02a-harness-convergence-evidence.md) 全文证据档案复核勘误（Trivedy 即 LangChain deepagents 作者，两集群合并；HumanLayer 引用链齐全改判聚合型），确认独立集群 7 个**（计数口径勘误说明：11 为初查集群总数（含聚合型），8 为其中初判独立数——见 02a 文首勘误 1；图题"11→7"记总数、下文结论句"8→7"记独立数，两说同轨不矛盾）——它们**独立说出同一件事**（agent 开发需要有人持续治理 harness/代码库卫生）：
 
-1. **Viv Trivedy（亦即 LangChain DeepAgents 作者）**（术语独立命源：Agent = Model + Harness，"skill issue" 重构；LangChain 团队实测只改 harness，TerminalBench 52.8%→66.5%）
+1. **Viv Trivedy（亦即 LangChain DeepAgents 作者）**（术语独立命源：Agent = Model + Harness；LangChain 团队实测只改 harness，TerminalBench 52.8%→66.5%）
 2. **Birgitta Böckeler / Thoughtworks**（guides/sensors + 持续调优 + 漂移传感器框架，自行从控制论推导，文中仅把 OpenAI/Stripe 当案例引用）
 3. **Stripe minions 团队**（shift-left feedback、pre-push 启发式 linter，纯自建实践；发布 2026-02-09；⚠ 正文 JS 渲染未回源，独立性待正文确认）
 4. **Anthropic 工程博客两个独立系列**（长任务 harness 设计；"harness 每个组件都编码了一个模型做不到的假设"）
@@ -27,7 +27,7 @@
 
 弱独立或聚合型（引用他人但贡献独立判据）：HumanLayer（"it's not a model problem. It's a configuration problem."——引用链指向 Hashimoto/Trivedy/OpenAI，改判聚合型）、Addy Osmani（聚合 Trivedy/Anthropic，但"every mistake becomes a rule"棘轮纪律为独立表述，且其身份是 Claude Code 团队 MTS）、Simon Willison（agentic loop 设计正典，维护/清扫角度着墨少）、Vercel（减工具实验，harness 简化侧）、Geoffrey Huntley（Ralph 循环——治理对象是"让 agent 一直跑"，非清扫，弱相关）、Olimpiu Pop / InfoQ（媒体确认"from vibe coding to harness engineering"已成为行业叙事）。
 
-**结论**：与 §1 单一 OpenAI 案例相比，"需要有人/机制持续打扫 harness"在 2026H1 已出现** practitioner 命名（Trivedy/LangChain）、个人方法论（Hashimoto/Osmani）、咨询公司框架（Thoughtworks）、大厂自建实践（Stripe/Anthropic/Vercel）、学术量化（3 篇独立得出、接力引用的论文）五个层位的独立收敛——**复核勘误后独立集群数从 8 下调为 7，但五层位结构不变**（逐条原文摘录与引用链核验见 [02a](02a-harness-convergence-evidence.md)）**——且各层术语（gardening / cleanup / pressure washing / 清洁工军团 / accretion heuristics / garbage collection）各自独立发明了"清扫"隐喻。这是本文五形态中最强的多人独立收敛信号。
+**结论**：与 §1 单一 OpenAI 案例相比，"需要有人/机制持续打扫 harness"在 2026H1 已出现** practitioner 命名（Trivedy/LangChain）、个人方法论（Hashimoto/Osmani）、咨询公司框架（Thoughtworks）、大厂自建实践（Stripe/Anthropic/Vercel）、学术量化（3 篇独立得出、接力引用的论文）五个层位的独立收敛（层位例证含聚合型成员——Osmani/Vercel 为汇聚点，不计入独立集群数）——**复核勘误后独立集群数从 8 下调为 7，但五层位结构不变**（逐条原文摘录与引用链核验见 [02a](02a-harness-convergence-evidence.md)）**——且各层术语（gardening / cleanup / pressure washing / 清洁工军团 / accretion heuristics / garbage collection）各自独立发明了"清扫"隐喻。这是本文五形态中最强的多人独立收敛信号。
 
 ---
 
@@ -202,7 +202,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 ### 7.1 Viv Trivedy —— "Agent = Model + Harness" 术语独立命源（约 2026-01）
 
-- **日期**：X 帖 "Anatomy of an Agent Harness"（2026-01，据 Osmani 转引）。
+- **日期**：X 帖 "Anatomy of an Agent Harness"（2026-01，据 Osmani 转引）。（⚠ 日期勘误，见 02a A1.1：HaaS 文实为 2025-09-23；Anatomy 正式版 2026-03-10 发于 LangChain 博客并署名 Vivek Trivedy；X 帖原日期未精确核验，"约 2026-01"系转引估计）
 - **影响力**：独立 practitioner，"harness engineering" 一词被 Osmani/Böckeler/arXiv 论文多方指认从他扩散。
 - **原话**："**Agent = Model + Harness. If you're not the model, you're the harness.**"；"good agent building is an exercise in iteration. You can't do iterations if you don't have a v0.1."；另提出 **Harness-as-a-Service (HaaS)**：从"建在 LLM API 上"转向"建在 harness API 上"。
 - **对应治理点**：把治理对象正式命名为 harness 本身；"if you can't name the behaviour a component exists to deliver, it probably shouldn't be there" 即组件级 hygiene 判据。
@@ -214,7 +214,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 - **原话**："**it's not a model problem. It's a configuration problem.**"；"success is silent, failures are verbose"；AGENTS.md 保持在 60 行内。
 - **对应治理点**：linter/钩子反馈回路（失败信息注入循环）；规则行的"棘轮"纪律。
 - **URL**：[humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents](https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents)（经 Osmani 转引）
-- **独立性**：**独立**。与 Trivedy 各自得出"同模型换 harness = 性能差数倍"的数据点。
+- **独立性**：**聚合型（02a A2.3 改判：文中直接引用 Hashimoto 原文、Trivedy 两文、OpenAI 博客与 ETH 研究，引用链齐全）**；独立增量在 stop-hook 验证回路实操、MCP→CLI 降级与"失败清单"。原文"独立"系初判，其 TerminalBench 数据点为转引 Trivedy 而非独立测得。
 
 ### 7.3 Birgitta Böckeler / Thoughtworks —— guides/sensors 控制论框架 + 持续调优（2026-04-02，全文已回源）
 
@@ -232,11 +232,11 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 ### 7.4 Stripe minions 团队 —— shift-left feedback 与预推送钩子（发布 2026-02-09；03-17 系消化稿日期，原稿误标，已勘误）
 
-- **影响力**：Stripe 工程博客，亿行级 Ruby/Sorbet 代码库，周千级无人值守 MR。
+- **影响力**：Stripe 工程博客，亿行级 Ruby/Sorbet 代码库，周千级 minion 生成、人审合并的 MR（官方摘要句："Though humans review the code, minions write it from start to finish"——生成无人值守 ≠ 评审无人值守）。
 - **主张**："反馈左移"（shift-left feedback）：本地 <5 秒快速 lint、失败自动修复再进 CI；pre-push 钩子按启发式只跑相关 linter；"blueprints" 把反馈传感器整合进 agent 工作流；混合"智能循环 + 确定性操作（Git、测试、linting）"。
 - **对应治理点**：linter 作为 agent 自修回路；启发式清扫（只跑相关检查）是成本治理。
 - **URL**：[stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents)（一手直接抓取被引至第三方逐条消化稿 [jerrylususu/bookmark-summary](https://github.com/jerrylususu/bookmark-summary) 2026-03-17，细节以消化稿一致转述，标注为半回源）
-- **独立性**：**独立**。金融级自建实践，与 OpenAI 无引用关系；Böckeler 反向引用了它（说明其影响级）。
+- **独立性**：**独立**（⚠ 降级待核：原文正文 JS 渲染未回源，此判定待正文确认——02a A4.4；可核的外部证据仅有 Böckeler 的反向引用）。金融级自建实践，与 OpenAI 无引用关系；Böckeler 反向引用了它（说明其影响级）。
 
 ### 7.5 Anthropic 工程博客 —— 两个独立系列的 harness 方法论（2025-11 / 2026-03-24）
 
@@ -256,7 +256,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 ### 7.7 学术端三重收敛：SWE-Bench Mobile / Meta-Harness / Tsinghua NLAH（2026-02~03；独立得出、接力引用——原判"互不引用"已按 04a 勘误修正）
 
 - **Stanford/MIT/KRAFTON**（Lee, Nair, Zhang, Lee, Khattab, Finn 等），[arXiv:2603.28052](https://arxiv.org/abs/2603.28052)（2026-03-30）："Changing the harness around a fixed LLM can produce a 6× performance gap on the same benchmark."（⚠ 归属勘误：该句实出自 SWE-Bench Mobile arXiv:2602.09540 摘要，Meta-Harness 摘要无此句、系经其引文 [47] 转述——引用时归 SWE-Bench Mobile）
-- **Tsinghua+Harbin IT**（Pan et al.），[arXiv:2603.25723](https://arxiv.org/abs/2603.25723)（2026-03-26）：harness 表示法改为自然语言后同任务 30.4%→47.2%、LLM 调用 1200→34；消融显示**外挂 verifier 模块反而有害**（-0.8 SWE-bench / -8.4 OSWorld），self-evolution 是唯一 consistently helpful 模块。
+- **Tsinghua+Harbin IT**（Pan et al.），[arXiv:2603.25723](https://arxiv.org/abs/2603.25723)（2026-03-26）：harness 表示法改为自然语言后同任务 30.4%→47.2%、LLM 调用 1200→34；消融显示**外挂 verifier 模块反而有害**（-0.8 SWE-bench / -8.4 OSWorld），self-evolution 是唯一 consistently helpful 模块。（⚠ 数字待核，见 02a A7.2："30.4%→47.2%、1200→34"在 v2 未出现，可能出自 v1；消融数字基于 v1，v2 已换后端待复核——引用时必须带此限定；v2 口径数字见 02b A.2 表）
 - **SWE-Bench Mobile**（Tian et al.），[arXiv:2602.09540](https://arxiv.org/abs/2602.09540)（2026-02-10，KDD '26）：最佳配置 12%，跨 agent 最大差距 6×（摘要口径；Cursor 12% vs OpenCode 2% 的具体配比待回源全文核对）。
 - **另加独立旁证**：Andrej Karpathy（No Priors 播客，2026-03）在未引用上述论文的情况下独立提出"meta-optimization of program.md"同一概念。
 - **对应治理点**：为"harness 是一级工程对象"提供了 practitioners 拿不出的受控证据；Tsinghua 消融还给出了 hygiene 的反例边界（不要预防性堆 verifier——机制也要打扫）。
@@ -269,7 +269,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 - **["The Tower Keeps Rising"](https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/)**（2026-07-13）："agent 辅助编码移除了过去维持团队共享理解的摩擦……**The tower does not fall, it just keeps rising.**（原句勘误：前稿"and so we do not notice what was lost"系意译误作直引）"——直指**漂移是无声的**：harness 能让代码库继续跑，而团队对它的心智模型在悄悄腐烂，且没有任何 harness 指标会报告这一点。这是对"必须有人负责打扫理解层卫生"的最强独立表述。
 - **独立性**：**独立**。个人实践者视角，无 OpenAI/Thoughtworks 引用链；其"accretion heuristics"（harness 积垢无人拔除）被社区分析稿视为与 Bitter Lesson 诊断并立的独有贡献。
 
-### 7.9 Addy Osmani（Anthropic Claude Code MTS，前 Google Chrome/Gemini 总监）—— "每个错误变成一条规则"（2026-04-19）
+### 7.9 Addy Osmani（Anthropic Claude Code MTS；前 Google——自述 "most recently as a Director at Google Cloud AI"，见 02a A9.1 逐字；原记"Chrome/Gemini 总监"不确，已勘误）—— "每个错误变成一条规则"（2026-04-19）
 
 - **原话**："**Roughly: anytime you find an agent makes a mistake, you take the time to engineer a solution such that the agent never makes that mistake again.**"；"**Every line in a good AGENTS.md should be traceable back to a specific thing that went wrong.**"；"A decent model with a great harness beats a great model with a bad harness."；"harnesses don't shrink, they move."
 - **对应治理点**：与 Hashimoto Step 5、Ghostty AGENTS.md 完全同构的棘轮纪律，但以团队/平台权威身份系统化；并记录"harness-as-a-living-system, not a config file you set up once"。
@@ -284,7 +284,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 ### 7.11 "清扫"隐喻的独立命名群（gardening / pressure washing / garbage collection / 清洁工军团）
 
-- **Teleport**（赞助位文案，观测 2026-09-18 goteleport.com 博客（Rob Picard，2026-08-19），经 simonwillison.net 2025-09-30 页转述确认）："how 13 engineers learned from '**pressure washing** their codebase using LLMs for 90 days'"——大扫除命名，90 天实验体量。
+- **Teleport**（一手：goteleport.com 博客《We Had 13 Engineers Spend Three Months Finding Vulnerabilities with LLMs》，Rob Picard，2026-08-19，全文回源见 02a A10）："**pressure washing**"——用前沿模型从多角度、可重复地 review 存量代码找安全漏洞；**一个季度 / 13 工程师**专项（⚠ 勘误：原稿"90 days"系意译误作直引，原文为 "Three Months"/"the past quarter"；场景为安全漏洞清扫，非泛代码卫生）。
 - **OpenAI**："doc-gardening agent"（§1.3，已有）。
 - **Böckeler/Thoughtworks**："清洁工军团"、"持续漂移与健康传感器"、"garbage collection（转引 OpenAI）"。
 - **flying-coyote 分析稿**："accretion heuristics"（harness 积垢）+ "auto-garbage-collection"支柱（worldmonitor 自评 0/10 项，见 §4.3）。
@@ -301,7 +301,7 @@ OpenAI 体系里，"spec"没有消失，而是被**按生命周期拆位**：`pr
 
 1. §6-2 的"最大未决风险"有了新表述者：Ronacher 的"塔"（§7.8）说明**团队理解层的腐烂连指标都没有**，比 OpenAI 自认的架构一致性风险更不可见。
 2. §6-4（cleanup agent 净收益无量化）部分被学术端反向补足：Tsinghua 消融证明**机制堆叠有害**，但 doc-gardening 类 PR 的净收益仍无量化。
-3. 新增遗留问题：**harness 自身的覆盖率/质量如何度量**（Böckeler 之问，§7.3）——**分层表述（已按 [02b](02b-harness-academic-and-metrics.md) 三轮深挖收窄）**：指令文件文本质量度量已有工具级雏形（agent-config-harness / schliff 两源独立 + arXiv:2604.07236 方法论）；但**传感器元覆盖率**（哪些失效模式没有任何 sensor 在看）与**团队理解层腐烂度量**（Ronacher 之塔）在 2026-09-20 仍为零方案——后者才是真正无主的开放问题。
+3. 新增遗留问题：**harness 自身的覆盖率/质量如何度量**（Böckeler 之问，§7.3）——**分层表述（已按 [02b](02b-harness-academic-and-metrics.md) 深挖收窄；其检索记录为 4 轮，见 02b §B.4）**：指令文件文本质量度量已有工具级雏形（agent-config-harness / schliff 两源独立 + arXiv:2604.07236 方法论）；但**传感器元覆盖率**（哪些失效模式没有任何 sensor 在看）与**团队理解层腐烂度量**（Ronacher 之塔）在 2026-09-20 仍为零方案——后者才是真正无主的开放问题。
 4. 术语链修正：§2 称 Hashimoto"独立命名 harness engineering"，补遗显示 Trivedy 为另一独立命源且传播更广——**双命源**成立，"自下而上多源命名"本身就是本派收敛强度的直接证据。
 
 ---

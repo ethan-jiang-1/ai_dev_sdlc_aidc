@@ -1,7 +1,7 @@
 # requirements_engineering — 需求工程
 
 **定位**：AI 时代的**需求表达格式**实践沉淀。兄弟主题：`../spec_driven_development/`、
-`../beyond_spec_driven_development/`（分工见 `../README.md`）。
+`../beyond_spec_driven_development/`、`../harness_governance/`（2026-09-21 自 beyond 抽出；其 deep_research_topics/_reference 的共享证据仍在本主题）（分工见 `../README.md`）。
 
 **分法**（四层）：
 - `raw_dr/` — 一手素材（单文件原文）。

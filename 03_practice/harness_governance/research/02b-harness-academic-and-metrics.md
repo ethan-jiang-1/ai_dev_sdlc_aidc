@@ -4,7 +4,7 @@
 > - 观测日期：2026-09-20
 > - 上游：`02-harness-governance.md` §7.7（三群学术收敛的初记）与 §7.13-3（Böckeler/Ronacher 两个度量开放问题）。本文为逐篇展开，**不重复** §7 已收的 practitioner 各条
 > - 证据分级：**一手** = arXiv HTML 全文 / abs 页 / GitHub README 直接回源（本文 A 部分三篇全部一手回源；B 部分工具两件一手回源）；**半手** = 经摘要页核验但全文未读；**二手/线索** = 仅搜索结果标题级，未回源（逐条标注）
-> - 检索记录：4 轮 web 检索（三篇论文定位 / harness 度量 + instruction file coverage / NLAH 代码释放 + 团队理解度量 / 补漏），详见 §B.5（⚠ 审计注：轮一/轮四检索式未逐字留痕，"零命中"断言按"未完整可复现"对待，引用时需带此限定）
+> - 检索记录：4 轮 web 检索（三篇论文定位 / harness 度量 + instruction file coverage / NLAH 代码释放 + 团队理解度量 / 补漏），详见 §B.4（⚠ 审计注：轮一/轮四检索式未逐字留痕，"零命中"断言按"未完整可复现"对待，引用时需带此限定；"§B.5"系本档案旧误指，检索记录实位于 B.4——2026-09-21 勘误，审计 C4）
 > - 指代消歧（2026-09-21 升格时补）：本档案所称"03 号文档"指上游 `research/02-harness-governance.md`（git 拆分前文件名号 03），与 `final/03` 无关
 
 ---
@@ -23,7 +23,7 @@
 |---|---|---|---|
 | 文本分类（3 数据集均值） | ACE 40.9 / MCE 40.0 / 最强 few-shot 40.8 | **48.6** | +7.7 pts，且上下文 token 少 4×（11.4k vs 50.8k）；达到次优方法终值只需 4 次评估（对方 60 次） |
 | 数学检索 | — | — | 单个发现的 harness 在 5 个 held-out 模型上平均 +4.7 pts |
-| TerminalBench-2 | 超过 Terminus-KIRA | Haiku 4.5 agent 排名 **#1** | 即 §7.7 所记"harness 优化后的 Haiku 4.5 超过更大模型" |
+| TerminalBench-2 | 超过 Terminus-KIRA | Haiku 4.5 agent 排名 **#1** | （勘误 2026-09-21：原注"即 §7.7 所记"——该句系 02 §7.7 初记，现行文已无此表述；beyond README §7 判据一同记此点。引用以本档案 A.1 为准。） |
 
 - **harness 治理的具体操作**：治理 = **自动化搜索**。与 practitioner 的"棘轮"（人看到错误→加规则）不同，这篇把治理本身变成 meta-level 的机器：outer loop 无父选择规则、Pareto 前沿保留、proposer 全权诊断。对本文主题的直接贡献是给出"治理可以自动化到什么程度"的上界样本。
 - **局限自述**：①成本——每 artifact 评估产生最多 **10M token** 诊断信息，是既有 text optimizer（0.002–0.026 MTok/iter）的**约三个数量级**（Table 1 自列）；②proposer 只见 search 集、结果依赖 search/test 划分；③§5 Discussion 全文未逐字核验（抓取截断），其额外自述局限未收录，引用时注明。
@@ -46,7 +46,7 @@
 
 - **harness 治理的具体操作**：治理 = **表示层工程**——把 harness 写成带 contracts/roles/stage/adapters/state semantics/failure taxonomy 六组件的可编辑文本，使"改 harness"变成 diff 一个工件而非改代码。对本文主题：这是治理**可审计化**的学术版。
 - **局限自述**：①样本子集+单种子（明说）；②harness/runtime 边界是分析性的、非绝对；③RQ1 结论本身是"行为改变"而非单调增益——作者明确警告不要把它读成增益故事。
-- **可复现性**：**未找到代码仓库**。全文（含参考文献段）未见 GitHub 链接；专门的代码释放检索也未命中（检索记录见 §B.5）。当前**不可独立复现**，引用其消融数字时强度降一级。
+- **可复现性**：**未找到代码仓库**。全文（含参考文献段）未见 GitHub 链接；专门的代码释放检索也未命中（检索记录见 §B.4——原误指 B.5，已勘误）。当前**不可独立复现**，引用其消融数字时强度降一级。
 
 ### A.3 SWE-Bench Mobile（arXiv:2602.09540，KDD '26）
 
@@ -64,7 +64,7 @@
 **判定：真收敛，但口径分三层，且需排除一个真正的同词不同义干扰项。**
 
 1. **操作定义不重合但同族**。Meta-Harness 的 harness = 单任务包裹程序（store/retrieve/present）；NLAH 的 harness = 任务族的编排层（control/contracts/state）；SWE-Bench Mobile 的 harness = 产品级 scaffold 整体。三者粒度从"单文件 Python"到"商用产品"差两个数量级，**不可直接互比数字**（Meta-Harness 的 6× 与 SWE-Bench Mobile 的 6× 是不同测量面上的巧合相等）。
-2. **但核心命题逐字同构**：三群都在"**固定模型、只变外部执行链路**"的受控设计下测得数倍级差距——这是同一因果主张的三次独立证实，且方法上互为补充（自动化搜索 / 表示层消融 / 产品级横断面）。互不引用方面：NLAH 引的是 practitioner 文献（OpenAI/LangChain/Anthropic）而非另两篇；SWE-Bench Mobile（2 月最早）不引用后两者；Meta-Harness 引 SWE-Bench Mobile 一线的 6× 作动机——即收敛是"独立得出 + 局部事后引用"，不是同一文本扩散。
+2. **但核心命题逐字同构**：三群都在"**固定模型、只变外部执行链路**"的受控设计下测得数倍级差距——这是同一因果主张的三次独立证实，且方法上互为补充（自动化搜索 / 表示层消融 / 产品级横断面）。互不引用方面：NLAH 引的是 practitioner 文献（OpenAI/LangChain/Anthropic）而非另两篇（⚠ 审计注 2026-09-21，A1：此为 **v1** 口径——本条及以下 NLAH 判断均基于 v1；**v2（2026-05-18）已明确引用 Meta-Harness（"Lee et al., 2026"）并以 MHTBA 为实验对象，引用关系以 v2 为准，见 research/02a §A7.4**）；SWE-Bench Mobile（2 月最早）不引用后两者；Meta-Harness 引 SWE-Bench Mobile 一线的 6× 作动机——即收敛是"独立得出 + 局部事后引用"，不是同一文本扩散。
 3. **真正的"同词不同义"在别处**：检索中撞见的 [Coverage-Guided Multi-Agent Harness Generation for Java Library Fuzzing](https://arxiv-org.规范链接 arxiv.org/abs/2603.08616（原 ezproxy 链接）) 一类工作里的 "harness" 指**模糊测试桩代码**——与 agent harness 完全无关。这说明 2026 年文献里 "harness" 一词确已歧义化，引用本节三篇时必须带限定语，但**不妨碍三群内部是真收敛**。
 
 ---

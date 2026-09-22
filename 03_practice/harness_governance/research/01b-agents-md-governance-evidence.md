@@ -45,7 +45,7 @@
 效果自述：
 > "Verification skills have had the most measurable impact on Claude's output quality internally. It can be worth having an engineer spend a week just making your verification skills excellent."
 
-### A1.2 《Running an AI-native engineering org》（Fiona Fung，Code w/ Claude（页面 fetch 截断，引语取自本场次页元数据，核对途径单一） SF 2026）
+### A1.2 《Running an AI-native engineering org》（Fiona Fung，Code w/ Claude SF 2026）——页面 fetch 截断，引语取自本场次页元数据，核对途径单一
 
 | 项 | 值 |
 |---|---|

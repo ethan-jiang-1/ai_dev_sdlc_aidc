@@ -328,17 +328,17 @@ SKILL.md 的层间指路原句（一手逐字）：
 
 > This guide covers essential PDF processing operations using Python libraries and command-line tools. For advanced features, JavaScript libraries, and detailed examples, see REFERENCE.md. If you need to fill out a PDF form, read FORMS.md and follow its instructions.
 
-（注意：03 文档 §3 引用过的旧路径 `document-skills/pdf` 在 2026-09-21 实测 404，官方博客配图中的旧结构已重组为 `skills/pdf`——repo 自身就是"披露地图过期"的注脚。）
+（注意：03 文档引用过的旧路径 `document-skills/pdf` 在 2026-09-21 实测 404，官方博客配图中的旧结构已重组为 `skills/pdf`——repo 自身就是"披露地图过期"的注脚。勘误 2026-09-21：该路径现行文见上游 §7.4，原记"§3"系旧节号。）
 
 ### B8.5 ghostty-org/ghostty（复核，观测 2026-09-20 → 2026-09-21）
 
-实测：**39 行 / 1,388 字节（≈350 tokens）**，与 03 文档 §2.2 "约 30 行"口径一致（按 raw 实测 39 行）。作为单层自足型对照样本保留。
+实测：**39 行 / 1,388 字节（≈350 tokens）**，与 03 文档 §2.2 口径一致（勘误 2026-09-21：上游现行 §2.2 已记"39 行（raw 实测）"，"约 30 行"系旧稿口径，引以 39 为准）。作为单层自足型对照样本保留。
 
 ### B8.6 五样本披露结构对照表（本轮新数据）
 
 | repo | 常驻层大小（实测） | 第 2 层载体 | 第 3 层载体 | 指向什么 / 触发条件 |
 |---|---|---|---|---|
-| vercel/next.js | 524 行 / 29.3KB（≈7k tok） | `.agents/skills/` 13+ 个 SKILL.md（45–74 行级）+ README 链 | 各 skill 的 scripts/、`.github/pull_request_template.md` | 任务类匹配（`$skill` 显式指针）；"改子目录前读 README 链" |
+| vercel/next.js | 524 行 / 29.3KB（≈7k tok） | `.agents/skills/` 12 个 $ 条目 + 4 个反模式节指向（B8.1 勘误后口径；45–74 行级）+ README 链 | 各 skill 的 scripts/、`.github/pull_request_template.md` | 任务类匹配（`$skill` 显式指针）；"改子目录前读 README 链" |
 | openai/codex | 320 行 / 22.4KB（≈5.5k tok） | 无（单层深规则） | `codex-rs/tui/styles.md`（"See `codex-rs/tui/styles.md`"） | 文件头目录限定（codex-rs） |
 | apache/airflow | 246 行 / 22.2KB（≈5.5k tok） | `.agents/skills/` 2 个贡献 skill + magpie 插件 skill | `contributing-docs/*.rst`、security model rst | 显式"runtime 不支持则直读 SKILL.md"降级协议 |
 | anthropics/skills (pdf) | —（skill 本体） | SKILL.md 314 行 / 8.1KB（≈2k tok） | REFERENCE.md / FORMS.md / scripts/ | "If you need to fill out a PDF form, read FORMS.md" |

@@ -17,7 +17,7 @@
 
 **研究优先级（2026-09-21 用户定，编号对应重排后）**：01 可验证 spec / 02 context engineering / 03 harness 治理曾为重点路线；**02 / 03 已于同日抽出为独立主题 [`../harness_governance/`](../harness_governance/README.md)**，本目录重点收敛为 **01 可验证 spec**；本目录 02 plan mode / 03 测试优先为背景参照、不作为重点——按用户经验：plan mode 是默认实践，够不上独立"后继形态"；测试优先是既有工程常识的延续，不是新范式。引用 plan mode / 测试优先时作对照用，不作主张依据。
 
-**最靠谱判断（2026-09-21）**：harness 治理最靠谱（五形态时期旧号 03，现属 [../harness_governance/research/02-harness-governance.md](../harness_governance/research/02-harness-governance.md)）——判据、排序与新实证见文末 §7。
+**最靠谱判断（2026-09-21）**：harness 治理最靠谱（五形态时期旧号 03，现属 [../harness_governance/research/02-harness-governance.md](../harness_governance/research/02-harness-governance.md)；实践主干定稿见 [../harness_governance/final/03-practice-backbone.md](../harness_governance/final/03-practice-backbone.md)）——判据、排序与新实证见文末 §7。
 
 ### 证据档案（逐字摘录 + 引用链核验，全部经 2026-09-21 审计）
 

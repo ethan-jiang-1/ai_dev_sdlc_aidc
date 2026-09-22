@@ -45,7 +45,7 @@
 
 1. ~~Superpowers 零覆盖~~（tools/ 已补）~~2026H2 信号~~（debate/ 已补）~~大规模团队案例~~（已补：NodeSource/网易智企 一手案例；Scott Logic 属失败实测/反面案例而非大规模采用案例，"几十人以上一手实证"仍缺）~~Kiro/BMAD 团队实例~~（已补：仅弱证据——Delta Air Lines 机器转写 + OCTO Talks PO 复盘；`.kiro/` 生产实例仍缺位）~~TW Vol.34 定级~~（已官方直读确证：SDD 主条目 NOT ON CURRENT EDITION）
 2. ~~思想谱系未梳理~~（已补：[lineage.md](lineage.md)——"SDD=MDD 的承诺+BDD 的模板，LLM 改变成本结构后的第三次重试"；"SDD=新瀑布"现在有史实坐标可对照）
-3. ~~替代/后继形态未成篇~~（已补，2026-09-21 进一步升格为独立研究目录 [../beyond_spec_driven_development/](../beyond_spec_driven_development/README.md)——五形态深挖 + SVG 光谱图；团队级收敛点=harness 治理路线）
+3. ~~替代/后继形态未成篇~~（已补，2026-09-21 进一步升格为独立研究目录 [../beyond_spec_driven_development/](../beyond_spec_driven_development/README.md)——五形态深挖 + SVG 光谱图；团队级收敛点=harness 治理路线，其后独立为主题 [../harness_governance/](../harness_governance/README.md)——实践主干定稿在其 final/）
 4. 实战团队场景比较已补：[comparison-field-reports.md](comparison-field-reports.md)——只收一线复盘的"spec 写作质量 × 工程控制"横向比较，每格挂真实案例、无证据的格子如实标注。
 5. 全部数据为 2026-09-20 单日快照，趋势判断依赖少量第三方历史锚点（如 OpenSpec 55.9k @06-22），无自建时间序列。
 
