@@ -22,7 +22,7 @@ first_party_instance: DeepSeek Harness（DSH）—— /Users/bowhead/deepseek-ha
 
 **被过滤（学术挂起）**：arXiv 2609.00252 八机制分类学、Meta-Harness、NLAH、SWE-Bench Mobile、CTXbench/Lulla 数字（详见 research/02b）。唯一保留句：CTXbench 的"勿 /init 自生成巨文件"教训——已被工程侧吸收（Upsun / HumanLayer 转述），按 practitioner 口径计入。"context ⊂ harness"判定保留为框架前提（另有 Chase / Cole Medin / OpenAI 用法三个工程源支撑，见 research/01c）。
 
-### 0.2 诊断轴：两失败六缺口（借自 DSH 消化稿，作全文"防什么"标签）
+### 0.2 诊断轴：两失败七缺口（①–⑥ 借自 DSH 消化稿；**⑦ 为 2026-09-21 用户实战补充**——agent 迭代中的概念叠层/沉积淹没现行。作全文"防什么"标签）
 
 | 缺口 | agent 缺的句子 | 缺了之后的症状 | 主要由哪些主干件填 |
 |---|---|---|---|
@@ -32,8 +32,9 @@ first_party_instance: DeepSeek Harness（DSH）—— /Users/bowhead/deepseek-ha
 | ④ 改动落在哪里 | "这个需求该改哪个机制？" | 改错地方、发明新接入方式 | 工件 8 |
 | ⑤ 用什么流程 | "这类任务按什么步骤做？" | 现场发明流程、漏步骤 | 工件 3；回路 3 |
 | ⑥ 怎么算做对 | "什么证据证明没做错？" | 交付无法验证的半成品 | 回路 1/5/6/7；节奏 1 |
+| **⑦ 现行共识（哪一版生效）** | "我们此刻做的是哪一版？哪些已废弃？" | 概念叠层 A→A′→B→A″；现行被沉积淹没；信噪比崩塌、概念技术债；**人机同晕** | 工件 4（docs 只写 now）、工件 5（现行共识唯一 home + ADR 生命周期 + 负知识）、回路 4（改事实只改 home）、节奏 2（清扫含概念沉积归档/删减） |
 
-糊涂 = ①②③；乱发挥 = ④⑤⑥。三问自评（知识外置 / 正确入口 / 反馈延迟）为手册级 Phase 0 工具，见 04 规划。
+糊涂 = ①②③**⑦**；乱发挥 = ④⑤⑥。（⑦ 根子在"分辨"，归糊涂侧；其后果也触发乱发挥——拿废弃版当现行去干。③与⑦是同一条"现行/历史"边界的两个塌法：③历史缺失、⑦历史淹没现行。）四问自评（知识外置 / 正确入口 / 反馈延迟 / **现行可辨**）为手册级 Phase 0 工具，见 04 §1。
 
 ## 1. 宪法（✅ 用户确认 2026-09-21）
 
@@ -48,8 +49,8 @@ first_party_instance: DeepSeek Harness（DSH）—— /Users/bowhead/deepseek-ha
 | 1 | **入口路由文件** | 只放路由 + 红线 + agent 自己发现不了的事实（精确命令含例外开关）；~100 行 TOC 教条（OpenAI）/ <60 行（HumanLayer）；**实态旗舰 5–7k tokens**（next.js 524 行 / codex 320 / airflow 246）；判据 = "每行是否路由或红线"而非行数；禁 /init 自生成 | ①② | 主干（research/01 §2/§7、research/01a B8） |
 | 2 | **可追溯规则行** | 一行 = 一次真实坏行为；Recent Learnings 式追加日志节，固定"现象 → 处置 → 为什么"（openai-cookbook）；ghostty 的 sad-dumb 硬红线条款 | ① | 主干（research/01 §2，实物三例） |
 | 3 | **按需披露层** | 入口 → README 链 / skills 按需：三层预算（~100 tok 常驻 / <5k 触发、正文 <500 行 / 附属零直到读取）；Cursor 四态规则；README 链按编辑路径触发（next.js）；降级协议（airflow：runtime 不支持 skill 发现就读 SKILL.md）；**嵌套语义三家三种实现（Codex 32KiB 截断 / Cursor 合并 / Claude 拼接）→ 必须按目标工具实测** | ②⑤ | 主干（research/01 §3/§7、research/01a B2–B8） |
-| 4 | **深文档 / 知识库（system of record）** | "agent 看不见的就不存在"；OpenAI 三目录：product-specs（行为语义真源）/ design-docs（为什么）/ exec-plans（active + completed + tech-debt-tracker；recovery note 给无记忆的新 agent）；有 index / owner / 保鲜期 | ②③ | 主干方向·OpenAI 主导（research/02 §1.2） |
-| 5 | **契约与决策工件（含负知识）** | 跨服务语义契约落 OpenAPI / schema / 显式契约文件，入口只放"改前必读哪个契约"的路由；决策史落 ADR——"值得写的变更才写"；**负知识也要 owner：记"为什么不做 X"、rejected 方案与 Known Limitations，带生命周期（proposed→implemented→rejected/archived）**——防"把明确的缺席当遗漏、反复提已否定方案" | ③（含暗面） | 主干方向 + DSH 强化（research/01 §4） |
+| 4 | **深文档 / 知识库（system of record）** | "agent 看不见的就不存在"；**docs 只写 now（当前事实层，不写 change history——与工件 5 配对填缺口⑦）**；OpenAI 三目录：product-specs（行为语义真源）/ design-docs（为什么）/ exec-plans（active + completed + tech-debt-tracker；recovery note 给无记忆的新 agent）；有 index / owner / 保鲜期 | ②③⑦ | 主干方向·OpenAI 主导（research/02 §1.2） |
+| 5 | **契约与决策工件（含负知识）** | 跨服务语义契约落 OpenAPI / schema / 显式契约文件，入口只放"改前必读哪个契约"的路由；决策史落 ADR——"值得写的变更才写"；**负知识也要 owner：记"为什么不做 X"、rejected 方案与 Known Limitations，带生命周期（proposed→implemented→rejected/archived）**——防"把明确的缺席当遗漏、反复提已否定方案"；**现行共识唯一 home——"当前怎么做"只在一处维护，历史决策全部降级进 ADR/notes 并带状态标记**（⑦ 的主填件） | ③⑦（含暗面） | 主干方向 + DSH 强化（research/01 §4） |
 | 6 | **单源化** | 防双文件漂移：CLAUDE.md→AGENTS.md symlink（next.js"They are the same file"）；一行 `@AGENTS.md` 引用（goose）；工具间兼容层（Shopify） | ①（双权威漂移） | 主干（research/01b B1–B3 + A2，实物） |
 | 7 | **元数据（owner / 新鲜度 / 版本）** | 规范层无 schema、无版本化（AAIF 设计选择）；治理层需要 owner/freshness → **团队自造**；工具层全是长尾（agentlinter / agnix / claudemd-pro），且无 repo 在 CI 直接 lint 规则文件内容 | ①②（时间维） | ⚠ **最不成熟**：共识是"需要"，做法未收敛（research/01 §1.2/§5、§8.2/§8.4） |
 | 8 | **正确路径 / 归属表** | "目标 → 机制"归属表（新行为该接哪里）+ 改动半径分层（配置→扩展点→完整 seam→核心循环）+ 每层**升级条件**；**归属问题先于实现问题**；阶梯不是价值排序——L0 是完整能力，L3 只是影响半径最大，乱发挥的典型形态是"本可 L0 表达却爬到 L3 改核心" | ④ | DSH 单源（实例化"扩展点优先"通用传统） |
@@ -62,7 +63,7 @@ first_party_instance: DeepSeek Harness（DSH）—— /Users/bowhead/deepseek-ha
 2. **错误信息写给 agent 读**：不只说错、还说怎么修（"positive prompt injection"）——OpenAI taste linter 与 Böckeler 独立同构，Stripe 同向。【主干 3 源；research/02 §1.4、research/02a A3】
 3. **升格通道**：review 评论里第二次出现的规则 → 升格为 lint/doc；AGENTS.md 里的约定固化成 CI lint（codex 的 argument-comment-lint 实例）。【主干；research/01 §8.2、research/02 §5.2】
 
-**B · 漂移链**（防"地图过期"——所有缺口的时间维）：
+**B · 漂移链**（防"地图过期"——⑦ 的主力回路、所有缺口的时间维）：
 
 4. **保鲜**：生成类文档"必须新鲜或明确标 stale"+ `git diff --exit-code` 兜底（OpenAI）；"stale 的 AGENTS.md 比没有更糟"+ AI Code Reviewer 反向触发更新（Cloudflare）；文档侧等价实现 = 防漂移三件套：verify 脚本（UTF-8/链接/锚点）+ 基线钉（"以 X commit 为准"）+ 改事实只改 home（DSH）。【主干 + DSH 单源操作；research/02 §1.3、research/01 §8.1】
 
@@ -75,7 +76,7 @@ first_party_instance: DeepSeek Harness（DSH）—— /Users/bowhead/deepseek-ha
 ## 4. 节奏（⏳ 待用户复核）
 
 1. **犯错时 → 棘轮**（宪法 2 的操作面）：同类失败第二次出现即动手（第一次只记录）；操作规程（触发 / 分流 / 验收 / 退出）为 04 手册级第一篇。【主干 5+ 源｜防①⑤⑥】
-2. **周期清扫 → 已成编制岗位**：doc-gardening 直接开 fix-up PR（OpenAI）、"清洁工军团"（Thoughtworks）、季度 13 工程师 pressure washing（Teleport，安全漏洞清扫场景）、janitor 常驻 agent 岗位（AssemblyZero）——"清扫"隐喻 ≥4 源独立发明，命名收敛本身即证据。【主干｜防所有缺口的时间维；research/02 §7.11、research/02a A10】
+2. **周期清扫 → 已成编制岗位**：doc-gardening 直接开 fix-up PR（OpenAI）、"清洁工军团"（Thoughtworks）、季度 13 工程师 pressure washing（Teleport，安全漏洞清扫场景）、janitor 常驻 agent 岗位（AssemblyZero）——"清扫"隐喻 ≥4 源独立发明，命名收敛本身即证据；**清扫对象含概念沉积：废弃方案、过期术语、叠层决策记录的归档与删减（⑦ 的节奏面）**。【主干｜防⑦及所有缺口的时间维；research/02 §7.11、research/02a A10】
 3. **模型升级时 → 复检触点**：每个 harness 组件都编码了"模型做不到"的假设，升级后拔枯枝（Anthropic / LangChain / Osmani 沙箱案例 / Ronacher tool schema）。**依赖 / 基线升级同理**：上游合入后按 change log 只复核被引文件、不全文重写（DSH）。【主干 4 源 + DSH 同构；research/02a A5/A6】
 
 ## 5. 组织与边界（⏳ 待用户复核）
