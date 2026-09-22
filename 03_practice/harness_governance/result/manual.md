@@ -1,13 +1,13 @@
-# 04 · Harness Governance 实践手册（定稿层·操作规程）
+# Harness Governance 实践手册（定稿层·操作规程）
 
-> **本文件是什么**：`final/03` 主干的**手册级下钻**——每条主干实践的"拿到手照着做"版。通用为主（不绑定具体 agent 工具），工具差异处显式标注。每条规程结构固定：操作化哪条主干 → 触发 → 动作 → 验收 → 退出 → 反例。
+> **本文件是什么**：`backbone.md` 主干的**手册级下钻**——每条主干实践的"拿到手照着做"版。通用为主（不绑定具体 agent 工具），工具差异处显式标注。每条规程结构固定：操作化哪条主干 → 触发 → 动作 → 验收 → 退出 → 反例。
 
 ```yaml
 topic: Harness / Context Governance —— AI 形态下新的 SDLC
-doc_layer: final（定稿层 · 手册，操作级）
+doc_layer: result（定稿层 · 手册，操作级）
 produced_at: 2026-09-21
-provenance: 自主生产，待用户复核（进度见 ../CURRENT.md）
-upstream: final/03-practice-backbone.md（主干总纲；本文件为其逐条操作化）
+provenance: 2026-09-21 生产，同日经用户复核确认（复核中新增：§2 转正环节、§7 第 6 条规则审计、§10 升级日绑定；2026-09-21 同日去序号更名 04-practice-manual → manual）
+upstream: backbone.md（同层主干总纲；本文件为其逐条操作化）
 granularity: 手册级 · 通用版（工具无关为主，工具差异处标注）
 ---
 ```
@@ -19,7 +19,7 @@ granularity: 手册级 · 通用版（工具无关为主，工具差异处标注
 3. **每条规程独立可用**：单条照做即有收益，不必全套齐备才开工；
 4. **反过度工程清单（§12）常备**：每加一个机制之前过一遍。
 
-## 1. Phase 0 · 四问打分表（诊断｜操作化：final/03 §0.2｜DSH 三问 + 用户实战补充第④问/缺口⑦）
+## 1. Phase 0 · 四问打分表（诊断｜操作化：backbone §0.2｜DSH 三问 + 用户实战补充第④问/缺口⑦）
 
 | 问 | 测什么 | 0 分 | 1 分 | 2 分 |
 |---|---|---|---|---|
@@ -128,7 +128,7 @@ granularity: 手册级 · 通用版（工具无关为主，工具差异处标注
 
 ## 10. 模型升级复检清单（操作化：节奏 3｜Anthropic / LangChain / Osmani / Ronacher + DSH）
 
-**执行方式（2026-09-21 用户复核定）：模型升级日 = 大扫除日**——本清单与周期清扫（§7 第 6 条规则审计 + final/03 节奏 2）合并执行：拔枯枝 + 用新模型做一轮深度 pressure washing（Teleport："in a way that we can repeat as newer, better models are released"）；触发频率低不是缺点，绑定到清扫日程即免维护第三种节奏。
+**执行方式（2026-09-21 用户复核定）：模型升级日 = 大扫除日**——本清单与周期清扫（§7 第 6 条规则审计 + backbone 节奏 2）合并执行：拔枯枝 + 用新模型做一轮深度 pressure washing（Teleport："in a way that we can repeat as newer, better models are released"）；触发频率低不是缺点，绑定到清扫日程即免维护第三种节奏。
 
 模型 / 依赖 / 基线升级时逐项过：
 

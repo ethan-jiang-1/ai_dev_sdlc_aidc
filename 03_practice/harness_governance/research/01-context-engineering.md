@@ -174,7 +174,7 @@ Codacy 的长文（[Repository Instructions Are Becoming Engineering Artifacts](
 
 ## 6. 对底稿的修订建议（供 ../../beyond_spec_driven_development/README.md §2 吸收；原指单文件底稿 alternatives.md 第 3 节）
 
-> （2026-09-21 升格注：底稿 beyond §2/§3 已随抽出收缩为"历史光谱定位卡"，本节所引底稿原句已不在引用位置；本节五条建议的实质内容已由本主题定稿层承载（`../final/03-practice-backbone.md`），此处留作一轮工作流的历史记录。）
+> （2026-09-21 升格注：底稿 beyond §2/§3 已随抽出收缩为"历史光谱定位卡"，本节所引底稿原句已不在引用位置；本节五条建议的实质内容已由本主题定稿层承载（`../result/backbone.md`），此处留作一轮工作流的历史记录。）
 
 1. "AGENTS.md 标准已成事实标准"→ 精确化为**格式制度化、语义不统一、有效载荷社区收敛**三层（§1.4）。
 2. 补 2026 年实证反转信息：CTXbench/ETH Zurich 显示 context file 有净成本风险，AGENTS.md 不是免费的，"写什么"比"有没有"重要（§1.3）。

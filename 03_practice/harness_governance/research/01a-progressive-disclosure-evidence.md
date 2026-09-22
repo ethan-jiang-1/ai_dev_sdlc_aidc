@@ -1,6 +1,6 @@
 # 03a：渐进式披露深挖——原文摘录档案
 
-> 编号说明：本档案旧编号 03a（渐进披露 03a，与 AGENTS.md 治理档案旧编号同为 03a、以主题区分），抽出后文件名重编为 01a；正文中"03a B1–B9"式引用即指本档案小节。本档案正文所称"03 文档"指上游 `research/01-context-engineering.md`（旧称），与 `final/03` 无关（2026-09-21 升格消歧）。
+> 编号说明：本档案旧编号 03a（渐进披露 03a，与 AGENTS.md 治理档案旧编号同为 03a、以主题区分），抽出后文件名重编为 01a；正文中"03a B1–B9"式引用即指本档案小节。本档案正文所称"03 文档"指上游 `research/01-context-engineering.md`（旧称），与 `result/backbone` 无关（2026-09-21 升格消歧）。
 
 > **元数据**
 > - accessed_at：2026-09-21（本轮逐条 web_fetch 回源；结构仿 `02a-harness-convergence-evidence.md`）

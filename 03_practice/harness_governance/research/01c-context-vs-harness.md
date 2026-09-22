@@ -112,7 +112,7 @@
 1. **静态层（规则文件治理 = harness 治理的 context 部分）**。OpenAI harness 文的 AGENTS.md（~100 行 TOC）+ docs 三目录 + doc-gardening agent（02 文档 §1.2–1.3）就是"规则文件作为 harness 静态层并配保鲜机制"的最完整实践；arXiv 论文把它抽象为机制 ①（context engineering）+ 机制 ②（persistent shared knowledge）两个并列座位。
 2. **动态层（可观测性/反馈回路）**。Böckeler 的 **guides / sensors 二分**（[martinfowler.com/articles/harness-engineering.html](https://martinfowler.com/articles/harness-engineering.html)，2026-04-02，02 文档一手回源）是目前**最接近"静态/动态分层并被论证"的公开框架**："Guides（前馈：AGENTS.md、skills、LSP）/ Sensors（反馈：linter、结构测试、AI review）"，并补了元治理之问："我们需要一种类似代码覆盖率对测试那样的方法，来评估 harness 覆盖率和质量。"——即**分层之后还要分层治理**。
 3. **显式分层并论证的最清晰实践文本**是阿里云三层文（§1.6 引文）：给出按失效模式诊断应诉诸哪一层的判定表（格式错→Prompt；知识缺失/选错工具→Context；漂移/静默失败/破坏性动作→Harness）——这是"关系判定有工程后果"的具象化：**判错层就会把反馈回路问题当成措辞问题去修**。
-4. 对本仓库既有结论的衔接：02 文档 §5.2 的 P0→P4 梯度，本质就是"先治理静态层（P0：AGENTS.md 砍成路由、spec 迁 docs）再上动态层（P1–P4：linter→可观测性→review loop→自愈）"——层级关系在团队落地顺序上被再次印证。（2026-09-21 注：P0→P4 梯子现有三个微移位版本——02 §4.3（worldmonitor）/ 02 §5.2 / 本条压缩版——统一版见 `../final/04-practice-manual.md` §11。）
+4. 对本仓库既有结论的衔接：02 文档 §5.2 的 P0→P4 梯度，本质就是"先治理静态层（P0：AGENTS.md 砍成路由、spec 迁 docs）再上动态层（P1–P4：linter→可观测性→review loop→自愈）"——层级关系在团队落地顺序上被再次印证。（2026-09-21 注：P0→P4 梯子现有三个微移位版本——02 §4.3（worldmonitor）/ 02 §5.2 / 本条压缩版——统一版见 `../result/manual.md` §11。）
 
 ---
 
