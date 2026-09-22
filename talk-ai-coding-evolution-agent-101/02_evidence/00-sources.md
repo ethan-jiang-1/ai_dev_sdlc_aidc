@@ -102,16 +102,16 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 4. **只改角色 / 规格设定、不换模型 → ChatDev 成功率 +9.4%**（原文："+9.4% increase in success rate
    for ChatDev, when running on the same user prompt and base LLM"）——**这是本场 ②「懂你的业务」的直接底稿支撑**。
 5. **验证错误 + 验证不完整合计 13.48%**（原文："incorrect or incomplete verification (FM-3.2 + FM-3.3)
-   accounting for 13.48% of all observed failures"）——P11 用这个数，**不要**用 FC3 整类 21.30%（含提前终止）。
+   accounting for 13.48% of all observed failures"）——P12 用这个数，**不要**用 FC3 整类 21.30%（含提前终止）。
 6. 效率问题不在分类法内：绕路可致成本 / 延迟 **10 倍以上**。
 
 **本场怎么用**：P3 五种症状的分类底稿——**14 个模式中 13 个归位到五件事，1 个未采用**
 （未采用：隐瞒关键信息 1.66%，属多 agent 间信息共享，本场听众用不上；③ 无 MAST 对应）。
-归位逐条见 `../01_storyline/00-storyline-map.md` 第一段；P11「怎么验」的直接支撑。
+归位逐条见 `../01_storyline/00-storyline-map.md` 第一段；P12「怎么验」的直接支撑。
 
 > **口径警告**：MAST 的研究对象是**多 agent 系统**，而本场多数听众在**第 1–2 档**（单 agent / 固定流程）。
 > 引用时**只说"失败模式"这一类结论，不引"多 agent 更容易失败"**——否则与本场四档口径打架。
-> **该警告同样适用于 P14 四档表的风险列**（第 3–4 档的风险描述借自多 agent 场景，只作方向提示）。
+> **该警告同样适用于 P15 四档表的风险列**（第 3–4 档的风险描述借自多 agent 场景，只作方向提示）。
 
 ---
 
@@ -149,7 +149,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 **本场怎么用**：
 
 - **P4「这一圈不会消失，只会移动」= 本卡直接支撑**（含"等下一代模型"这个反驳的正面回答）。
-- **P11 验证者分离**（generator / evaluator 分开；干活的和验收的，不能是同一个人）。
+- **P12 验证者分离**（generator / evaluator 分开；干活的和验收的，不能是同一个人）。
 - **① / ④ 的底稿**：context anxiety、context reset、把一个长任务拆成可续的块（**不上屏**）。
 
 **未采用**：具体成本与时长数字（$124 / 3h50m 一类）、GAN 类比、前端设计评分部分、多 agent 架构细节。
@@ -183,7 +183,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 
 **本场怎么用**：
 
-- P8 棘轮律（"Every line in a good AGENTS.md should be traceable back to a specific thing that went wrong."）
+- P9 棘轮律（"Every line in a good AGENTS.md should be traceable back to a specific thing that went wrong."）
   = 隐性知识显性化的操作面。
 - P5 / P4 的论证（"The gap between what today's models can do and what you see them doing is largely a
   harness gap."）。
@@ -233,7 +233,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
   `skills`（按需加载）**分层**，各有默认目录。
 - **③④⑤ 的机制底稿**：`interventions` 把工具调用挡在审批或策略后面（= 划圈 / 停手条件）；
   todos 插件跟踪多步（= 步骤）。
-- **P11 / P17 的支撑**：值得评的不是"哪个模型更强"，而是**这套组合在具体任务上花多少钱、成功率多少**。
+- **P12 / P18 的支撑**：值得评的不是"哪个模型更强"，而是**这套组合在具体任务上花多少钱、成功率多少**。
 
 **边界（必须与主张同段说，否则是软广）**：
 
@@ -250,8 +250,8 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 
 | 线索 | 出处 | 用途 |
 |---|---|---|
-| 《When Do Agent Loops Mistake Stagnation for Progress? Self-Evaluation Bias and Externally Grounded Verification in Long-Running Autonomous LLM Agent Loops》 | 检索命中（Semantic Scholar），**未读全文** | P11「自己评自己总说好」的学术支撑，可替或补 §3 的口径（§3 现为一手，故只作加固） |
-| Chroma《Context Rot》，2025-07 | 已在母版 `../../talk-ai-coding-evolution-harness/02_evidence/` 登记 | P7「塞得越满漏得越多」 |
+| 《When Do Agent Loops Mistake Stagnation for Progress? Self-Evaluation Bias and Externally Grounded Verification in Long-Running Autonomous LLM Agent Loops》 | 检索命中（Semantic Scholar），**未读全文** | P12「自己评自己总说好」的学术支撑，可替或补 §3 的口径（§3 现为一手，故只作加固） |
+| Chroma《Context Rot》，2025-07 | 已在母版 `../../talk-ai-coding-evolution-harness/02_evidence/` 登记 | P8「塞得越满漏得越多」 |
 | HumanLayer《Skill issue: harness engineering for coding agents》 | 经 Osmani 转引 | 棘轮律与入口文件尺寸 |
 
 **引用前必须回源**；本场当前不依赖**这三条**。
