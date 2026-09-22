@@ -9,7 +9,7 @@
 **核心命题只有一条**：
 
 > ## `Agent = Model + Harness`
-> **模型你只能选，选完大家都一样；差别在模型外面那一圈。**
+> **模型决定上限；那一圈决定你能拿到多少。**
 > **那一圈搭对了，它跑起来就不糊涂。这门手艺叫 harness engineering。**
 
 **这是一场独立成篇的 talk，不是任何其他场的删减版。** 它从 `talk-ai-coding-evolution-harness/` 与
@@ -81,6 +81,7 @@
 | **P4 的趋势判断（"不会消失，只会移动"）、P11 验证者分离** | `02_evidence/00-sources.md` §3（Anthropic，2026-03-24，**一手**） |
 | **核心命题与五件事的工程对应** | `02_evidence/00-sources.md` §1（Trivedy，2026-03-10） |
 | **五种症状的分类底稿** | `02_evidence/00-sources.md` §2（MAST，NeurIPS 2025） |
+| **P5 命题的行业旁证、①②④⑤ 的机制底稿** | `02_evidence/00-sources.md` §5（Strands Agents，2026-09-21，**⚠️ 厂商自述**） |
 | 七缺口诊断轴（"糊涂"的出处；上游分糊涂 / 乱发挥两侧，本场只用前者） | `../03_practice/harness_governance/result/backbone.md` §0.2 |
 | 棘轮律 / 现行共识 / 门禁 / 评审外置 / 反过度工程 | `.../result/backbone.md`、`.../result/manual.md`（前缀同上一行） |
 | 「两类程序」「圈住 / 拦住 / 看清」的原始推导 | `../talk-ai-coding-evolution-harness/01_storyline/00-storyline-map.md` |

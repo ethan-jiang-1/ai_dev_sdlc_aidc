@@ -2,7 +2,7 @@
 
 > **本文件是本场外部来源的唯一登记处。** 引用一律回这里取，不在别处重复摘录（单一事实来源）。
 > 纪律：一手源优先、来源可溯、标注观测日期；证据强度按 `../CONTEXT.md` 第六节四档，不发明新词。
-> **观测日期**：2026-09-22（下列 URL 均于该日逐条复验；v4 相对 v3 新增 §3 Anthropic 一手源）。
+> **观测日期**：2026-09-22（下列 URL 均于该日逐条复验；v4 新增 §3 Anthropic 一手源，v5 新增 §5 行业侧）。
 > **本场于 2026-09-22 首次引入外部来源**——此前口径是"原则上不引数字"，
 > 见 `../CURRENT.md` 定调「本场原则上不引数字」条（不再按条号引用，避免 v4 增条后指针失效）。
 
@@ -42,7 +42,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 > **Top 30 → Top 5 的回源结论（v4 新增）**：该句是**作者自述**，原始出处指向其**另一篇公司博客**，
 > 未在本场核验；公开基准榜（Terminal Bench）**本场观测时已换代到 4.0，2.0 榜名次表为空**——
 > 也就是说这个名次**既不能独立核验，也已经漂移**。按 `../CONTEXT.md` 第六节"会漂移的值标观测日期"，
-> 本场**默认不上屏**（见本文件 §6 红线 2）。原句**没有说模型被固定**；
+> 本场**默认不上屏**（见本文件 §7 红线 2）。原句**没有说模型被固定**；
 > "同一个模型"这层意思是 Osmani（本文件 §4）的解读，不是原文。
 
 ---
@@ -195,7 +195,58 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 
 ---
 
-## 5. 待回源（候选，尚未核验）
+## 5. Strands Agents《Introducing Strands harness》★ 行业侧：harness 与模型解耦被做成了产品
+
+| 项 | 内容 |
+|---|---|
+| 来源 | Strands Agents 官方博客（AWS；作者 Arron Bailiss、Tim Moreton、Albert Zhao） |
+| 发布 | 2026-09-21 |
+| URL | 博客 https://strandsagents.com/blog/introducing-strands-harness/ ／ 官方仓库 https://github.com/strands-agents/harness-sdk ／ 文档 https://strandsagents.com/docs/user-guide/harness/reference/configuration/ ／ 基准仓库 https://github.com/strands-labs/benchmark-harnesses |
+| 观测日期 | 2026-09-22 |
+| **证据强度** | **⚠️ 厂商自述**（官方自测，**论文未发**——原文："Keep an eye out for a follow-up paper from our researchers regarding these benchmarks"）；"确实开源了这套 harness（Apache 2.0）"这一事实本身为**一手（官方）** |
+| **中文界转述** | `../../../01_sources/weixin/raw_aws_strands_harness/aws_strands_harness_change_model_not_body.md`（DataFunTalk，2026-09-22）——**属二手，只作"中文界怎么说"的记录；引用一律回本卡** |
+
+**逐字直引（官方博客与文档，2026-09-22 核验）**：
+
+- "Today we're releasing Strands harness: a fully assembled state-of-the-art agent harness you can easily run locally or deploy to your favorite provider."
+- "All you need is one line of Python or TypeScript to get it working with your **choice of model**."
+- "Strands harness **costs 28% less** when using the same Claude or GPT models across six benchmarks."
+- "With Fable 5, Strands harness **cost 77% less** than Claude Code _and_ **scored higher** on Terminal Bench 2.1."
+- "Deepseek Harness proved to be the most token-efficient overall, however, it typically reported the lowest accuracy scores."
+- "Our testing setup was distributed benchmarking on EC2 with Harbor."
+- "tool results over ~1500 tokens get truncated, summarization (compaction) triggers when the context window hits above 85%, and context recovery runs within the loop if there's an overflow."
+- "It's built to be a general-purpose agent rather than a coding agent."
+- 文档 `Configuration reference`：`builtin_tools` 默认 shell / read / write / edit / web_fetch / web_search / programmatic_tool_caller / subagent；`caching` 默认 `"auto"`；`context_manager` 默认 `"auto"`；`memory` 默认开（`./.agent/memory`）；`skills` 默认 `./.agent/skills`；`session` 可按 id 持久化与续跑（`./.agent/sessions`）；**`interventions` = "Gate tool calls behind approval or a policy"**；`builtin_plugins` 默认 `["todos", "environment"]`。
+
+> **归因更正（回源的关键收获）**：中文界那篇的标题句「**只换模型、不换身体**／脑子继续换，身体不用每次重新造」
+> **官方博客里没有这句**——它是公众号的提炼。**可以当比喻用（而且很好用），但不能说成"AWS 说"**。
+> 官方自己的说法是"**一行代码 + 随便换模型**"（"your choice of model"）。
+
+**本场怎么用（只作底稿与口播，不上屏）**：
+
+- **P5 命题的行业旁证**：这套东西的官方卖点就是"一行代码 + 随便换模型"——**模型和那一圈可以分开**。
+  口播一句即可，**不点产品名、不报数字**。
+- **P4 同方向证据**："Agent 的 Scaling 对象正在从模型，向模型外面的运行系统扩散"。
+- **① 的机制底稿**：工具结果超约 1500 token 就截头尾、**原文外置到磁盘需要时再取回**（不是删掉）；
+  利用率超 85% 触发压缩；溢出在循环内恢复。
+- **② 的机制底稿**：`session`（这一段干过什么，可持久化续跑）／`memory`（跨会话还值得知道什么）／
+  `skills`（按需加载）**分层**，各有默认目录。
+- **③④⑤ 的机制底稿**：`interventions` 把工具调用挡在审批或策略后面（= 划圈 / 停手条件）；
+  todos 插件跟踪多步（= 步骤）。
+- **P11 / P17 的支撑**：值得评的不是"哪个模型更强"，而是**这套组合在具体任务上花多少钱、成功率多少**。
+
+**边界（必须与主张同段说，否则是软广）**：
+
+- **换模型 ≠ 性能不变**——与 P5 新口径一致：**模型决定上限，那一圈决定能发挥出多少**。
+- **诚实反例**：官方自己承认另有一套 harness 更便宜但准确率更低——**省 token ≠ 更强**。
+
+**未采用**：全部产品名（Strands / Claude Code / Codex / DeepSeek Harness / oh-my-pi / OpenCode 等）、
+全部成本与分数数字、Terminal-Bench 2.1 名次、多 provider 清单。
+**基准仓库 `strands-labs/benchmark-harnesses` 本场未读**（抓取失败）——若要引用方法学细节须先回源。
+
+---
+
+## 6. 待回源（候选，尚未核验）
 
 | 线索 | 出处 | 用途 |
 |---|---|---|
@@ -207,7 +258,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 
 ---
 
-## 6. 口径红线（本场自用）
+## 7. 口径红线（本场自用）
 
 1. **MAST 的频率数字不上屏**（本场原则上不引数字）——只作症状排序的底稿。
 2. **P5 的 Top 30 → Top 5：默认不上屏**（v4 改，原为"上屏并标厂商自述"）。
@@ -217,3 +268,5 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 4. **上屏只留作者 / 机构 + 年份**（如 "Trivedy, 2026"、"Anthropic, 2026"、"UC Berkeley 等, NeurIPS 2025"）；
    **不留产品名、工具名、公司名**。
 5. **每处引用必须能回指本文件的条目号**；讲稿里的 `[Sources]` 块按条目号写。
+6. **行业侧旁证只作方向（v5 补）**：§5 一律**不点产品名、不报数字**——连口播也不点
+   （CONTEXT 第四节禁具体产品名）。它的作用是证明"这件事正在发生"，不是提供案例。
