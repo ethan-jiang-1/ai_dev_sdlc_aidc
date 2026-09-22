@@ -96,7 +96,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 **本场怎么用**：P2 五种症状的分类底稿（14 → 5 归位见 `../01_storyline/00-storyline-map.md` 第一段）；
 P10「怎么验」的直接支撑。
 
-> **口径警告**：MAST 的研究对象是**多 agent 系统**，而本场多数听众在 ①② 档（单 agent / 固定流程）。
+> **口径警告**：MAST 的研究对象是**多 agent 系统**，而本场多数听众在**第 1–2 档**（单 agent / 固定流程）。
 > 引用时**只说"失败模式"这一类结论，不引"多 agent 更容易失败"**——否则与本场四档口径打架。
 
 ---
@@ -122,8 +122,17 @@ P10「怎么验」的直接支撑。
 - "agents reliably skew positive when grading their own work"
 - "The gap between what today's models can do and what you see them doing is largely a harness gap."
 
-**本场怎么用**：棘轮律（P7 隐性知识显性化的操作面）；验证者分离（P10）；
-"模型与 harness 之间的差距"（P3 / P4 的论证）。
+**本场怎么用**：
+
+- **P3「这一圈不会消失，只会移动」**——直接支撑句是
+  "every component in a harness encodes an assumption about what the model can't do on its own"，
+  以及该文 "Harnesses don't shrink, they move" 一节的观察（模型变强 → 旧组件退休 → 新天花板要新组件）。
+  **这是本场唯一的趋势判断**，用来回答听众最可能的反驳「等下一代模型不就行了」。
+- P7 棘轮律（"Every line in a good AGENTS.md should be traceable back to a specific thing that went wrong."）
+  = 隐性知识显性化的操作面。
+- P10 验证者分离（"agents reliably skew positive when grading their own work"）。
+- P3 / P4 的论证（"The gap between what today's models can do and what you see them doing is largely a
+  harness gap."）。
 
 > **转引警告**：该文引用的 HumanLayer（"it's not a model problem. It's a configuration problem."、
 > AGENTS.md <60 行）与 Anthropic 长任务 harness 文，**本场未直接核验原文**，属转引；要用先回源。
@@ -147,7 +156,7 @@ P10「怎么验」的直接支撑。
 1. **MAST 的频率数字不上屏**（本场原则上不引数字）——只作症状排序的底稿。
 2. **唯一允许上屏的数字是 P4 的 Top 30 → Top 5**，且必须同屏标 **⚠️ 厂商自述**；
    **若嫌风险，整页不引数字亦可**（待定项，见 `../CURRENT.md`）。
-3. **不引 MAST 的"多 agent 更容易失败"**——与本场四档口径冲突，且对 ①② 档听众是误导。
+3. **不引 MAST 的"多 agent 更容易失败"**——与本场四档口径冲突，且对**第 1–2 档**听众是误导。
 4. **上屏只留作者 / 机构 + 年份**（如 "Trivedy, 2026"、"UC Berkeley 等, NeurIPS 2025"）；
    **不留产品名、工具名、公司名**。
 5. **每处引用必须能回指本文件的条目号**；讲稿里的 `[Sources]` 块按条目号写。
