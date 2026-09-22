@@ -81,13 +81,13 @@ first_party_instance: DeepSeek Harness（DSH）—— /Users/bowhead/deepseek-ha
 2. **周期清扫 → 已成编制岗位**：doc-gardening 直接开 fix-up PR（OpenAI）、"清洁工军团"（Thoughtworks）、季度 13 工程师 pressure washing（Teleport，安全漏洞清扫场景）、janitor 常驻 agent 岗位（AssemblyZero）——"清扫"隐喻 ≥4 源独立发明，命名收敛本身即证据；**清扫对象含概念沉积：废弃方案、过期术语、叠层决策记录的归档与删减（⑦ 的节奏面）**。【主干｜防⑦及所有缺口的时间维；research/02 §7.11、research/02a A10】
 3. **模型升级时 → 复检触点**：每个 harness 组件都编码了"模型做不到"的假设，升级后拔枯枝（Anthropic / LangChain / Osmani 沙箱案例 / Ronacher tool schema）。**依赖 / 基线升级同理**：上游合入后按 change log 只复核被引文件、不全文重写（DSH）。**执行绑定（2026-09-21 用户复核定）**：模型升级日 = 大扫除日——拔枯枝与深度清扫合并执行（Teleport 的 pressure washing 原文即"每次新模型发布就重复一遍"），不为它单独维护第三种日程。【主干 4 源 + DSH 同构；research/02a A5/A6】
 
-## 5. 组织与边界（⏳ 待用户复核）
+## 5. 组织与边界（✅ 用户确认 2026-09-21——七条全过；单源条目处理（Cloudflare 靠规模 / Vercel 靠完整度 / OpenAI 靠坦诚）与反过度工程留在边界段不升宪法，均经用户认可）
 
 1. **规则变更一律 PR、有 owner**（codex / next.js / goose 三 repo 共同点 + Cloudflare MR 审 + Vercel）。【主干；research/01 §8.2、research/01b B4】
-2. **规模化路：机器生成 + 人审 + 反向触发更新**（Cloudflare 3900 repo、93% R&D 采用）。【单源·大规模采用；research/01b A4】
+2. **规模化路：机器生成 + 人审 + 反向触发更新**（Cloudflare 3900 repo、93% R&D 采用）。【单源·大规模采用；research/01b A4】（**规模适用注记，2026-09-21 用户复核定**：此为"千级 repo / 数千工程师"形态——**规模即组合压力的一种**（接第 5 条）；小团队不适用机器生成路线，与棘轮手写冲突时**以棘轮为准**（一行一事故、可追溯）。它与工件 1"禁 /init 自生成"不矛盾：Cloudflare 从权威元数据（服务目录 + Engineering Codex）生成、有人审与保鲜闭环，非 LLM 自由发挥。）
 3. **规则当产品**：准入双闸门（current-source verification + human acceptance）、淘汰条款、coverage-gaps、**触发与内容分开测**（Vercel：56% 失败是触发失败而非规则失败）。【单源强实践 → 主流候选；research/01b A3】
 4. **用量遥测**：PreToolUse hook 找过热/欠触发（Anthropic）+ evals（Vercel）。【2 源；research/01b A1/A3】
-5. **反过度工程**：复杂 harness 有害（Teleport 实测）；工具面 -80% → token -37%、3.5× 提速（Vercel，n=5 注意样本量）；预装几十 skills / 每次全量跑测试 = 失败清单（HumanLayer）；start empty → incremental → prune（Upsun）。**"组合压力"产物（插件图 / seam / 完整 inspect）确有压力才做**（DSH）。【主干，独立反例群；research/02 §7.12、research/02a A10】
+5. **反过度工程**：复杂 harness 有害（Teleport 实测）；工具面 -80% → token -37%、3.5× 提速（Vercel，n=5 注意样本量）；预装几十 skills / 每次全量跑测试 = 失败清单（HumanLayer）；start empty → incremental → prune（Upsun）。**"组合压力"产物（插件图 / seam / 完整 inspect）确有压力才做**（DSH）——**规模是组合压力的度量之一：千级 repo 的大厂路线（如第 2 条）在小团队语境即过度工程**（2026-09-21 用户复核定）。【主干，独立反例群；research/02 §7.12、research/02a A10】
 6. **merge 姿态按风险分级**：fix cheap / wait expensive 仅在真实 agent 吞吐 + 低修复成本下成立；高风险类目（auth / billing / 破坏性变更）保留人审 + 回滚计划。【单源（OpenAI 自认）+ research/02 §4.4 矩阵，标注】
 7. **四个不能混淆的边界**（DSH）：可读 ≠ 简单；Skill ≠ enforcement；清理 ≠ 回滚（disposer 不补偿已发生的外部写入）；运行时查询 ≠ 安全沙箱（bash-equivalent trust）。【DSH 单源，防迁移误读】
 
