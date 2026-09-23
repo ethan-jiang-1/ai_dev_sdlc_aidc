@@ -223,11 +223,13 @@
 | 文件 | 只装什么 | 是渲染输入吗 |
 |---|---|---|
 | `04_drafts/ppt-text-v5.md` | **只有上屏文案** | ✅ **唯一的渲染文案来源** |
+| `04_drafts/实战手册-v1.md` | **对客手册（草稿层）**：驾驭 AI 的操作手册 | 否（不是幻灯片，不进 PPT 渲染） |
 | `03_outline/00-page-structure-v4.md` | 页序 / 时长 / 上屏元素 / **讲法（不上屏）** | 页序与时长是；讲法不是 |
 | `01_storyline/00-storyline-map.md` | 内容与推导 | 否（文案以 04 为准） |
 | `01_storyline/01-narrative-check.md` | 自查与质检痕迹 | 否 |
 | `02_evidence/00-sources.md` | 证据与口径红线 | 否 |
 | `CONTEXT.md`（本文） | 术语 / 红线 / 记号约定 / 英文白名单 | 否 |
+| `05_output/` | **未建**——等 talk review 过再渲染 PPTX | — |
 
 **两种记号，各管一件事：**
 
