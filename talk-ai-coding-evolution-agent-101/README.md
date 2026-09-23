@@ -100,7 +100,8 @@
 
 - 管道：`01_storyline → 02_evidence → 03_outline → 04_drafts → 05_output`（与仓库其他 talk 一致）。
   **当前建到 `04_drafts/`**：03 / 04 已铺（`04_drafts` 里有 `ppt-text-v5.md` 上屏文案，
-  以及**驾驭 AI 实战手册 v5**，与上屏文案同版）；**`05_output/` 未建**（等 talk review 过再渲染 PPTX）。
+  以及**驾驭 AI 实战手册 v5** 的**长版**（讲义）与**页版**（一页一个提醒，供 PPT Agent）；
+  **`05_output/` 未建**（等 talk review 过再渲染 PPTX）。
 - **文件职责不混（v7）**：`04_drafts` **只放上屏文案**；**讲法在 `03_outline`**；
   自查与质检痕迹在 `01_storyline/01-narrative-check.md`；**记号约定**（`[不上屏]` 标签 +
   `<!-- off-screen:begin/end -->` 硬隔离）与**英文上屏白名单**见 `CONTEXT.md` 第七 / 八节。
