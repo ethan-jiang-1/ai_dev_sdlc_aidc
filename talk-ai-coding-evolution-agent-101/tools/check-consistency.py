@@ -89,7 +89,7 @@ def in_record_line(rel, lineno):
     return bool(RECORD_MARK.search(lines[lineno]))
 
 def check_structure():
-    for rel, want in ((PPT, 21), (PAGE, 20)):
+    for rel, want in ((PPT, 20), (PAGE, 20)):
         t = TXT[rel]
         bl, seps, lines = blocks(t)
         if len(bl) != want:
@@ -105,8 +105,8 @@ def check_structure():
             if s > 0 and lines[s - 1].strip() and lines[s + 1].strip():
                 rep('重要', '结构', f'{rel}: 第 {s+1} 行分割线前后没留空行')
         got = [pid for pid, _, _ in bl]
-        want_ids = ([f'P{i}' for i in range(1, 14)] + ['B1'] + [f'P{i}' for i in range(14, 17)] + ['B2']
-                    + [f'P{i}' for i in range(17, 20)]) if rel == PPT else [f'HP{i}' for i in range(1, 21)]
+        want_ids = ([f'P{i}' for i in range(1, 14)] + ['B1'] + [f'P{i}' for i in range(14, 16)] + ['B2']
+                    + [f'P{i}' for i in range(16, 19)]) if rel == PPT else [f'HP{i}' for i in range(1, 21)]
         if got != want_ids:
             rep('重要', '结构', f'{rel}: 页块顺序异常（应为 {want_ids[0]}..{want_ids[-1]}）')
 
@@ -303,8 +303,8 @@ STALE_TERMS = [
 DUAL_PROBES = [(TCUR, 'v4 已全部落盘', '文案 v6 已落盘')]
 
 COUNTS = [
-    ('19 页正文 / 19 正文', [CTX, OUT, STORY, TREAD]),
-    ('21 张', [CTX, OUT, STORY, TREAD, TCUR]),
+    ('18 页正文 / 18 正文', [CTX, OUT, STORY, TREAD]),
+    ('20 张', [CTX, OUT, STORY, TREAD, TCUR]),
     ('2 张停顿页 / 2 停顿页 / 2 停顿', [CTX, OUT, STORY, TREAD]),
     ('27.5 / 27.0', [OUT, STORY]),
     ('28.2 / 27.7', [OUT, STORY]),
@@ -401,8 +401,8 @@ def check_redlines():
             rep('重要', '红线', f'{rel}: 白名单外英文 {sorted(hits)}')
     bl, _, _ = blocks(TXT[PPT])
     for pid, _, b in bl:
-        if 'harness' in b.lower() and pid not in ('P5', 'P19'):
-            rep('严重', '红线', f'{PPT} {pid}: 出现 harness（只许 P5/P19）')
+        if 'harness' in b.lower() and pid not in ('P5', 'P18'):
+            rep('严重', '红线', f'{PPT} {pid}: 出现 harness（只许 P5/P18）')
     STRUCT = re.compile(r'(L[1-4]|HP\d+|\bP\d+|\bB[12]\b|页码\s*\d+|第\s*\d+(?:[–-]\d+)?\s*[档轮]|第\s*\d+\s*或\s*第\s*\d+\s*档|档\s*\d+\s*和\s*档\s*\d+|≥60%|Anthropic, 2026|Trivedy, 2026|^\s*\d+\.\s)')
     for rel, start in ((PPT, 47), (PAGE, 38)):
         for i, ln in enumerate(TXT[rel].split('\n'), 1):
