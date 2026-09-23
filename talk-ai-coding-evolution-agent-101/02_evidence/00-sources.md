@@ -27,9 +27,9 @@
 - "Today's models suffer from early stopping, issues decomposing complex problems, and incoherence as work stretches across multiple context windows."
 - "we improved our coding agent Top 30 to Top 5 on Terminal Bench 2.0 by only changing the harness"（**⚠️ 厂商自述**）
 
-**harness 组件面（原文列举）**：System Prompts／Tools, Skills, MCPs + descriptions /
-Bundled Infrastructure（filesystem, sandbox, browser）/ Orchestration Logic（subagent spawning, handoffs,
-model routing）/ Hooks & Middleware（compaction, continuation, lint checks）。
+**harness 组件面（原文列举）**：System Prompts／Tools, Skills, MCPs + descriptions／
+Bundled Infrastructure（filesystem, sandbox, browser）／Orchestration Logic（subagent spawning, handoffs,
+model routing）／Hooks & Middleware（compaction, continuation, lint checks）。
 
 **推导模式（原文）**：`Behavior we want (or want to fix) → Harness Design to help the model achieve this.`
 
@@ -176,7 +176,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 - "The gap between what today's models can do and what you see them doing is largely a harness gap."
 
 > **归因校正（v4）**：v3 把下面三条也登记为 Osmani 的"逐字直引"，**属误记**——它们是 Osmani **转引 Anthropic**：
-> "every component in a harness encodes an assumption about what the model can't do on its own." /
+> "every component in a harness encodes an assumption about what the model can't do on its own."／
 > "Harnesses don't shrink, they move"／"agents reliably skew positive when grading their own work"。
 > **本场引用这三条时一律引 §3（Anthropic 一手）**，并已据此把 P4 的证据等级从趋势级升为一手。
 > Osmani 保留的独有贡献：上述五条、以及把 Anthropic 的"移动"观察整理成可讲述的一节。
