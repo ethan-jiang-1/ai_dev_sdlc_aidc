@@ -100,10 +100,10 @@
 ## 三、目录约定
 
 - 管道：`01_storyline → 02_evidence → 03_outline → 04_drafts → 05_output`（与仓库其他 talk 一致）。
-  **当前建到 `04_drafts/`**：03／04 已铺（`04_drafts` 里有 `ppt-text-v5.md` 上屏文案，
-  以及**驾驭 AI 实战手册 v5** 的**长版**（讲义）与**页版**（一页一个提醒，供 PPT Agent）；
+  **当前建到 `04_drafts/`**：03／04 已铺（`04_drafts` 里有 `ppt-text-v6.md` 上屏文案，
+  以及**驾驭 AI 实战手册 v6** 的**长版**（讲义）与**页版**（一页一个提醒，供 PPT Agent）；
   **`05_output/` 未建**（等 talk review 过再渲染 PPTX）。
-- **文件职责不混（v7）**：`04_drafts` 放**上屏文案**（`ppt-text-v5.md`）与**配套手册**（页版＝渲染件、长版＝讲义）；**讲法在 `03_outline`**；
+- **文件职责不混（v7）**：`04_drafts` 放**上屏文案**（`ppt-text-v6.md`）与**配套手册**（页版＝渲染件、长版＝讲义）；**讲法在 `03_outline`**；
   自查与质检痕迹在 `01_storyline/01-narrative-check.md`；**记号约定**（`[不上屏]` 标签 +
   `<!-- off-screen:begin/end -->` 硬隔离）与**英文上屏白名单**见 `CONTEXT.md` 第七／八节。
 - 临时产物：仓库根目录、`.tmp-agent-101-` 前缀，不入库，版本收口即清理。
