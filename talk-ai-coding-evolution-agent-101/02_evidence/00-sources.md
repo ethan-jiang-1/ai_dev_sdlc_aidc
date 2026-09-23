@@ -27,17 +27,17 @@
 - "Today's models suffer from early stopping, issues decomposing complex problems, and incoherence as work stretches across multiple context windows."
 - "we improved our coding agent Top 30 to Top 5 on Terminal Bench 2.0 by only changing the harness"（**⚠️ 厂商自述**）
 
-**harness 组件面（原文列举）**：System Prompts / Tools, Skills, MCPs + descriptions /
+**harness 组件面（原文列举）**：System Prompts／Tools, Skills, MCPs + descriptions /
 Bundled Infrastructure（filesystem, sandbox, browser）/ Orchestration Logic（subagent spawning, handoffs,
 model routing）/ Hooks & Middleware（compaction, continuation, lint checks）。
 
 **推导模式（原文）**：`Behavior we want (or want to fix) → Harness Design to help the model achieve this.`
 
 **本场怎么用**：P5 核心命题的来源；第三段五件事的工程对应——
-① 上下文（context rot / compaction / progressive disclosure）；② 记忆与知识注入（AGENTS.md 式）；
-③ bash / 沙箱 / 工具面；④ planning + Ralph Loop；⑤ self-verification + hooks。
+① 上下文（context rot／compaction／progressive disclosure）；② 记忆与知识注入（AGENTS.md 式）；
+③ bash／沙箱／工具面；④ planning + Ralph Loop；⑤ self-verification + hooks。
 
-**未采用**：compaction / offloading 实现细节（本场听众不需要）。
+**未采用**：compaction／offloading 实现细节（本场听众不需要）。
 
 > **Top 30 → Top 5 的回源结论（v4 新增）**：该句是**作者自述**，原始出处指向其**另一篇公司博客**，
 > 未在本场核验；公开基准榜（Terminal Bench）**本场观测时已换代到 4.0，2.0 榜名次表为空**——
@@ -51,7 +51,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 
 | 项 | 内容 |
 |---|---|
-| 来源 | Cemri, Pan, Yang 等（UC Berkeley / Intesa Sanpaolo） |
+| 来源 | Cemri, Pan, Yang 等（UC Berkeley／Intesa Sanpaolo） |
 | 发布 | arXiv 2503.13657；**NeurIPS 2025 Datasets & Benchmarks Track** |
 | URL | https://ar5iv.labs.arxiv.org/html/2503.13657 |
 | 观测日期 | 2026-09-22（14 个频率与 3 个类别占比逐条复验，全部一致） |
@@ -60,7 +60,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 **方法**：7 个多 agent 框架、200+ 条执行轨迹（每条平均 15,000 行）、6 位专家标注；
 标注者一致性 Cohen's Kappa **0.88**。
 
-**14 种失败模式 / 3 大类**（括号内为出现频率）：
+**14 种失败模式／3 大类**（括号内为出现频率）：
 
 **FC1 规范问题（41.77%）**
 
@@ -88,7 +88,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 | 模式 | 频率 |
 |---|---:|
 | 提前终止 | 7.82% |
-| 未验证 / 验证不完整 | 6.82% |
+| 未验证／验证不完整 | 6.82% |
 | 验证错误 | 6.66% |
 
 **可直接引用的结构性结论**：
@@ -99,17 +99,17 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 2. **有验证者也不够**——"current verifiers often only perform superficial checks"（编译通过、有没有注释）。
 3. **加一层高层目标验证 → ChatDev 成功率 +15.6%**（原文 **absolute improvement，绝对改进**；
    v3 误记为"相对改进"，v4 已改正）。
-4. **只改角色 / 规格设定、不换模型 → ChatDev 成功率 +9.4%**（原文："+9.4% increase in success rate
+4. **只改角色／规格设定、不换模型 → ChatDev 成功率 +9.4%**（原文："+9.4% increase in success rate
    for ChatDev, when running on the same user prompt and base LLM"）——**这是本场 ②「懂你的业务」的直接底稿支撑**。
 5. **验证错误 + 验证不完整合计 13.48%**（原文："incorrect or incomplete verification (FM-3.2 + FM-3.3)
    accounting for 13.48% of all observed failures"）——P12 用这个数，**不要**用 FC3 整类 21.30%（含提前终止）。
-6. 效率问题不在分类法内：绕路可致成本 / 延迟 **10 倍以上**。
+6. 效率问题不在分类法内：绕路可致成本／延迟 **10 倍以上**。
 
 **本场怎么用**：P3 五种症状的分类底稿——**14 个模式中 13 个归位到五件事，1 个未采用**
 （未采用：隐瞒关键信息 1.66%，属多 agent 间信息共享，本场听众用不上；③ 无 MAST 对应）。
 归位逐条见 `../01_storyline/00-storyline-map.md` 第一段；P12「怎么验」的直接支撑。
 
-> **口径警告**：MAST 的研究对象是**多 agent 系统**，而本场多数听众在**第 1–2 档**（单 agent / 固定流程）。
+> **口径警告**：MAST 的研究对象是**多 agent 系统**，而本场多数听众在**第 1–2 档**（单 agent／固定流程）。
 > 引用时**只说"失败模式"这一类结论，不引"多 agent 更容易失败"**——否则与本场四档口径打架。
 > **该警告同样适用于 P15 四档表的风险列**（第 3–4 档的风险描述借自多 agent 场景，只作方向提示）。
 
@@ -149,10 +149,10 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 **本场怎么用**：
 
 - **P4「这一圈不会消失，只会移动」= 本卡直接支撑**（含"等下一代模型"这个反驳的正面回答）。
-- **P12 验证者分离**（generator / evaluator 分开；干活的和验收的，不能是同一个人）。
-- **① / ④ 的底稿**：context anxiety、context reset、把一个长任务拆成可续的块（**不上屏**）。
+- **P12 验证者分离**（generator／evaluator 分开；干活的和验收的，不能是同一个人）。
+- **①／④ 的底稿**：context anxiety、context reset、把一个长任务拆成可续的块（**不上屏**）。
 
-**未采用**：具体成本与时长数字（$124 / 3h50m 一类）、GAN 类比、前端设计评分部分、多 agent 架构细节。
+**未采用**：具体成本与时长数字（$124／3h50m 一类）、GAN 类比、前端设计评分部分、多 agent 架构细节。
 
 ---
 
@@ -177,7 +177,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 
 > **归因校正（v4）**：v3 把下面三条也登记为 Osmani 的"逐字直引"，**属误记**——它们是 Osmani **转引 Anthropic**：
 > "every component in a harness encodes an assumption about what the model can't do on its own." /
-> "Harnesses don't shrink, they move" / "agents reliably skew positive when grading their own work"。
+> "Harnesses don't shrink, they move"／"agents reliably skew positive when grading their own work"。
 > **本场引用这三条时一律引 §3（Anthropic 一手）**，并已据此把 P4 的证据等级从趋势级升为一手。
 > Osmani 保留的独有贡献：上述五条、以及把 Anthropic 的"移动"观察整理成可讲述的一节。
 
@@ -185,7 +185,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 
 - P9 棘轮律（"Every line in a good AGENTS.md should be traceable back to a specific thing that went wrong."）
   = 隐性知识显性化的操作面。
-- P5 / P4 的论证（"The gap between what today's models can do and what you see them doing is largely a
+- P5／P4 的论证（"The gap between what today's models can do and what you see them doing is largely a
   harness gap."）。
 - **"同一个模型换那一圈"这层解读**（原文只说改了 harness，见 §1 回源结论）——趋势级解读，可作方向，不作基准。
 
@@ -216,7 +216,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
 - "Our testing setup was distributed benchmarking on EC2 with Harbor."
 - "tool results over ~1500 tokens get truncated, summarization (compaction) triggers when the context window hits above 85%, and context recovery runs within the loop if there's an overflow."
 - "It's built to be a general-purpose agent rather than a coding agent."
-- 文档 `Configuration reference`：`builtin_tools` 默认 shell / read / write / edit / web_fetch / web_search / programmatic_tool_caller / subagent；`caching` 默认 `"auto"`；`context_manager` 默认 `"auto"`；`memory` 默认开（`./.agent/memory`）；`skills` 默认 `./.agent/skills`；`session` 可按 id 持久化与续跑（`./.agent/sessions`）；**`interventions` = "Gate tool calls behind approval or a policy"**；`builtin_plugins` 默认 `["todos", "environment"]`。
+- 文档 `Configuration reference`：`builtin_tools` 默认 shell／read／write／edit／web_fetch／web_search／programmatic_tool_caller／subagent；`caching` 默认 `"auto"`；`context_manager` 默认 `"auto"`；`memory` 默认开（`./.agent/memory`）；`skills` 默认 `./.agent/skills`；`session` 可按 id 持久化与续跑（`./.agent/sessions`）；**`interventions` = "Gate tool calls behind approval or a policy"**；`builtin_plugins` 默认 `["todos", "environment"]`。
 
 > **归因更正（回源的关键收获）**：中文界那篇的标题句「**只换模型、不换身体**／脑子继续换，身体不用每次重新造」
 > **官方博客里没有这句**——它是公众号的提炼。**可以当比喻用（而且很好用），但不能说成"AWS 说"**。
@@ -231,16 +231,16 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
   利用率超 85% 触发压缩；溢出在循环内恢复。
 - **② 的机制底稿**：`session`（这一段干过什么，可持久化续跑）／`memory`（跨会话还值得知道什么）／
   `skills`（按需加载）**分层**，各有默认目录。
-- **③④⑤ 的机制底稿**：`interventions` 把工具调用挡在审批或策略后面（= 划圈 / 停手条件）；
+- **③④⑤ 的机制底稿**：`interventions` 把工具调用挡在审批或策略后面（= 划圈／停手条件）；
   todos 插件跟踪多步（= 步骤）。
-- **P12 / P18 的支撑**：值得评的不是"哪个模型更强"，而是**这套组合在具体任务上花多少钱、成功率多少**。
+- **P12／P18 的支撑**：值得评的不是"哪个模型更强"，而是**这套组合在具体任务上花多少钱、成功率多少**。
 
 **边界（必须与主张同段说，否则是软广）**：
 
-- **换模型 ≠ 性能不变**——与 P5 新口径一致：**模型决定上限，那一圈决定能发挥出多少**。
-- **诚实反例**：官方自己承认另有一套 harness 更便宜但准确率更低——**省 token ≠ 更强**。
+- **换模型，不等于性能不变**——与 P5 新口径一致：**模型决定上限，那一圈决定能发挥出多少**。
+- **诚实反例**：官方自己承认另有一套 harness 更便宜但准确率更低——**省 token，不等于更强**。
 
-**未采用**：全部产品名（Strands / Claude Code / Codex / DeepSeek Harness / oh-my-pi / OpenCode 等）、
+**未采用**：全部产品名（Strands／Claude Code／Codex／DeepSeek Harness／oh-my-pi／OpenCode 等）、
 全部成本与分数数字、Terminal-Bench 2.1 名次、多 provider 清单。
 **基准仓库 `strands-labs/benchmark-harnesses` 本场未读**（抓取失败）——若要引用方法学细节须先回源。
 
@@ -265,7 +265,7 @@ model routing）/ Hooks & Middleware（compaction, continuation, lint checks）�
    理由：该名次**无法独立回源**（原始出处为另一篇公司博客），且公开基准榜在观测时**已换代、原榜名次表为空**，
    属"会漂移的值"。**若用户坚持上屏**，必须同时标 **⚠️ 厂商自述 + 观测日期**，并接受它只作方向性信号（待定项见 `../CURRENT.md`）。
 3. **不引 MAST 的"多 agent 更容易失败"**——与本场四档口径冲突，且对**第 1–2 档**听众是误导（同见 §2 口径警告）。
-4. **上屏只留作者 / 机构 + 年份**（如 "Trivedy, 2026"、"Anthropic, 2026"、"UC Berkeley 等, NeurIPS 2025"）；
+4. **上屏只留作者／机构 + 年份**（如 "Trivedy, 2026"、"Anthropic, 2026"、"UC Berkeley 等, NeurIPS 2025"）；
    **不留产品名、工具名、公司名**。
 5. **每处引用必须能回指本文件的条目号**；讲稿里的 `[Sources]` 块按条目号写。
 6. **行业侧旁证只作方向（v5 补）**：§5 一律**不点产品名、不报数字**——连口播也不点
