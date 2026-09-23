@@ -18,7 +18,7 @@ ai_dev_sdlc_aidc/
 ├── 04_enterprise/     研究层 · 映射     SDLC 在企业侧的等价物（BPM）与案例
 ├── 05_output/         产出层            主线 Keynote（deck_ai_sdlc_keynote）
 │
-├── talk-ai-coding-evolution-agent-101/ 交付层 · 新增·入门场（21 张 = 19 正文 + 2 停顿页 / 20–30 min）
+├── talk-ai-coding-evolution-agent-101/ 交付层 · 入门场（21 张 = 19 正文 + 2 停顿页 / 20–30 min，＋手册 20 页）
 ├── talk-ai-coding-evolution-opc/       交付层 · 已定稿 v8（23 页 / 45 min，只作内部参考）
 ├── talk-ai-coding-evolution-org-sdlc/  交付层 · 待 review（50 页 / 75–90 min）
 └── talk-ai-coding-evolution-harness/   交付层 · ★ 当前活跃（42 张 = 37 页正文 + 5 停顿页 / 75–90 min）
@@ -55,7 +55,7 @@ ai_dev_sdlc_aidc/
 
 | 目录 | 规格 | 状态 | 说明 |
 |---|---|---|---|
-| `talk-ai-coding-evolution-agent-101/` | 19 页正文 + 2 停顿页 = 21 张 / 20–30 min | ★ **新增 · 待 review** | **入门场**：`Agent = Model + Harness` 的零术语版，面向会用 AI 但不写代码的人；v4 已落盘（故事线 + 证据 + 03 页结构 + 04 PPT 事实稿） |
+| `talk-ai-coding-evolution-agent-101/` | 19 页正文 + 2 停顿页 = 21 张 / 20–30 min；＋配套手册 20 页 | ★ **待 review** | **入门场**：面向**已经在动手搭 Agent、但不知道怎么把它搭稳**的人（业务熟、技术一般）。**不是"零术语版"，是"术语按序入场"**——一条公式 `Agent = Model + Harness` + 五件事 + 四档。**文案 v6 已落盘**：上屏文案 21 张 ＋ 手册页版 20 页 ＋ 长版讲义；机械结构与四轴复核已过，**待用户拍板后渲染 `05_output/`** |
 | `talk-ai-coding-evolution-harness/` | 37 页正文 + 5 停顿页 = 42 张 / 75–90 min | ★ **活跃** | v3.3 全链已走完，PPTX v0.4 待 review；生产路线已改为「内容事实源 → handoff 稿」 |
 | `talk-ai-coding-evolution-org-sdlc/` | 50 页 / 75–90 min | 暂停在 review | v0.16 已渲染，等用户确认视觉门禁 |
 | `talk-ai-coding-evolution-opc/` | 23 页 / 45 min | 已定稿（v8） | **只作内部参考**，其命名与内容不得出现在其他 talk 的对客文字里 |

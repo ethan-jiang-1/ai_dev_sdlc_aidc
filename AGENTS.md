@@ -43,7 +43,9 @@
 **判不出来就问，不要猜。** 尤其是"这场 talk"没指名时——四场 talk 的对象、篇幅、红线完全不同，猜错代价很高。
 
 **默认优先交付层**：主线活跃工作在 `talk-ai-coding-evolution-harness/`；**入门场**在
-`talk-ai-coding-evolution-agent-101/`（20–30 min，面向会用 AI 但不写代码的人）。
+`talk-ai-coding-evolution-agent-101/`（20–30 min，面向**已经在动手搭 Agent、但不知道怎么把它搭稳**的人——
+业务熟、技术一般、AI 有初步理解）。
+**该场的定位、听众定义、术语与红线，一律以它自己的 `README.md` + `CONTEXT.md`（听众见 §〇）为准，本文件不重复定义。**
 没有任何上下文线索时，先去读 `harness/CURRENT.md` 确认主线，再看 `agent-101/CURRENT.md`。
 
 ---
