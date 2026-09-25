@@ -23,9 +23,9 @@ import os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 TALK = os.path.dirname(HERE)
 
-PPT   = '04_drafts/ppt-text-v6.md'
-PAGE  = '04_drafts/手册-页版-v6.md'
-LONG  = '04_drafts/实战手册-v6.md'
+PPT   = '04_drafts/ppt-text-v7.md'
+PAGE  = '04_drafts/手册-页版-v7.md'
+LONG  = '04_drafts/实战手册-v7.md'
 CTX   = 'CONTEXT.md'
 OUT   = '03_outline/00-page-structure-v4.md'
 STORY = '01_storyline/00-storyline-map.md'
@@ -266,6 +266,10 @@ FACTS = [
     dict(name='挑活判断力', canon='判得出对错', must=[PPT, PAGE, LONG, CTX]),
     dict(name='挑活阈值', canon='既别拿它练、也别让它自己跑', must=[CTX],
          alt=['也别让它自己跑', '也别交给它自己跑'], alt_must=[PPT, PAGE, LONG, STORY]),
+    dict(name='值不值得搭是一笔账', canon='值不值得搭，是一笔账', must=[PPT, PAGE, LONG, STORY, CTX],
+         stale=['一周做一次的事，别搭']),
+    dict(name='一年做两次的例', canon='这活我一年做两次', must=[PPT, PAGE, LONG]),
+    dict(name='一周一次重活的例', canon='一周就做一次，可一次要折腾半天', must=[PPT, PAGE, LONG]),
     dict(name='政策未定闸门', canon='政策还没定', must=[CTX],
          alt=['政策已经定了'], alt_must=[PPT, PAGE, LONG]),
     dict(name='维护闸门', canon='谁维护它？它坏了谁发现', must=[PPT, PAGE, LONG, STORY]),
@@ -299,8 +303,9 @@ STALE_TERMS = [
     ('循环往复',       'AI 腔／书面腔', [PPT, PAGE, LONG]),
     ('缺的是这五件',   '旧句式', [PPT, PAGE, LONG]),
     ('v4 已全部落盘',  '过期状态（第六轮重要1 修掉的正是这句）', [TCUR]),
+    ('-v6.md',         '文案已改名 -v7.md（v30）——活指针不允许', ALL),
 ]
-DUAL_PROBES = [(TCUR, 'v4 已全部落盘', '文案 v6 已落盘')]
+DUAL_PROBES = [(TCUR, 'v4 已全部落盘', '文案 v7 已落盘')]
 
 COUNTS = [
     ('18 页正文 / 18 正文', [CTX, OUT, STORY, TREAD]),
@@ -414,10 +419,10 @@ def check_redlines():
 
 SELFTEST_CASES = [
     ('CURRENT 热区换回"v4 已全部落盘…PPT 事实稿"',
-     lambda T: {**T, TCUR: T[TCUR].replace('文案 v6 已落盘', 'v4 已全部落盘（故事线 + 证据 + 术语 + 03 页结构 + 04 PPT 事实稿）')},
+     lambda T: {**T, TCUR: T[TCUR].replace('文案 v7 已落盘', 'v4 已全部落盘（故事线 + 证据 + 术语 + 03 页结构 + 04 PPT 事实稿）')},
      'v4 已全部落盘'),
-    ('往 P6 塞白名单外英文 Terminal Bench',
-     lambda T: {**T, PPT: T[PPT].replace('### P6 · 这一圈到底在调什么', '### P6 · 这一圈到底在调什么\n\n- Terminal Bench 上排名第一')},
+    ('往 P7 塞白名单外英文 Terminal Bench',
+     lambda T: {**T, PPT: T[PPT].replace('### P7 · 这一圈到底在调什么', '### P7 · 这一圈到底在调什么\n\n- Terminal Bench 上排名第一')},
      'Terminal Bench'),
     ('把 P14 的一个 ** 删掉',
      lambda T: {**T, PPT: T[PPT].replace('**这一页回答的是“搭多厚”', '这一页回答的是“搭多厚”', 1)},
