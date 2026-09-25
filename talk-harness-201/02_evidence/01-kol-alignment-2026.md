@@ -95,3 +95,66 @@
 - [Harness engineering — OpenAI（Ryan Lopopolo）](https://openai.com/index/harness-engineering/)，2026-02-11
 - [Evaluating AGENTS.md — ETH Zurich](https://arxiv.org/abs/2602.11988)；[When "do not" is not deny](https://arxiv.org/abs/2608.23550)；[Claude Code 设计空间逆向](https://arxiv.org/abs/2604.14228)；[NovaFabric](https://arxiv.org/abs/2609.12582)
 - [Anthropic 采纳 AGENTS.md 标准 — 36kr](https://eu.36kr.com/en/p/3989811919076098)；[Anthropic：harness 假设会腐](https://claude.com/blog/harnessing-claudes-intelligence)（经 marmelab 转引）
+
+## 六、KOL 点名背书（第二批，2026-09-25 补充轮）
+
+> 用户反馈"背书不够多"后补的**点名个人**。按人归档：引句（或转述）→ 背书的是哪条声称 → 强度。
+
+### Andrej Karpathy —— 背书：立场①＋全场主轴（赛道最大嗓门）
+
+- **言论**（2026-02-04，推文＋视频，经新智元/36kr 转述）：亲自终结自己一年前发明的 "Vibe Coding"，提出
+  **"Agentic Engineering（智能体工程）"**——"**99% 的时间不再直接写代码，而是在指挥智能体干活、充当监工**"；
+  "利用 LLM Agent 编程已成为专业人士的**默认设置**，只不过监督和审查要更多了"；预测 2026 年
+  "模型层 × 智能体层"**双线进化、乘积效应**。
+- **背书哪条**：立场①（开发主力就是 agent，人变成驾驭者/监工）——和 DSH 的"开发主力自称 coding agent"
+  是同一个时代的两种表述；"工程"二字也正是本场标题《解剖一只优秀的 harness》的立意。
+- **出处**：[36kr/新智元报道](https://www.36kr.com/p/3670333435798402)，2026-02-05；一手推文
+  [x.com/karpathy/status/2019137879310836075](https://x.com/karpathy/status/2019137879310836075)（**上屏用须先回源核原句英文**——见待回源）。
+- **强度**：趋势级（媒体转述一手推文；转述质量可信，上屏前须核原文）。
+
+### Harrison Chase（LangChain CEO）—— 背书：学科命名＋关键反转＋静与动＋隔离边界
+
+- **言论**（2026-03，VentureBeat 播客，经 digitaltoday 转述）：**"Harness engineering is an extension of
+  context engineering"**；harness＝让模型循环、调工具、跑长任务的执行环境；AutoGPT 当年消失是因为模型撑不起
+  loop；**"跨 200 步的任务要保持一致，需要边走边记录思考的结构"**；LangChain Deep Agents 的 subagent
+  **上下文与主 agent 分离**、大任务结果压缩成单一输出。
+- **背书哪条**：一次背四条——① harness 是学科（命名级）；② VentureBeat 报道标题即"**better models alone
+  won't get your AI agent to production**"（关键反转：光靠更好的模型到不了生产）；③ "边走边记录"＝静与动
+  （model-visible ⟺ logged）；④ subagent 上下文隔离＝披露管线层 5。
+- **出处**：[digitaltoday 转述](https://www.digitaltoday.co.kr/en/view/28196/langchain-ceo-ai-agent-success-depends-on-context-engineering)，2026-03-07（VentureBeat 播客的韩媒转述；原播客见 VentureBeat）。
+- **强度**：趋势级（媒体转述播客）。
+
+### Addy Osmani —— 背书：干活的和验收的不能是同一个
+
+- **言论**：agent harness engineering——**把"生成"与"评估"拆给不同的 agent，胜过让 agent 自我评估**。
+- **背书哪条**："干活的和验收的不能是同一个人"（101 canon／本场立场③的验收配套）的 agent 版。
+- **出处**：[addyosmani.com/blog/agent-harness-engineering](https://addyosmani.com/blog/agent-harness-engineering/)（经 [marmelab 语料](https://marmelab.com/blog/2026/09/24/the-state-of-ai-harness-engineering-2026.html)收录转述）。
+- **强度**：趋势级（KOL 博客，经二手转述——引用前核原文）。
+
+### 中文／国际圈的术语成型 —— 佐证：这条赛道不是我们自说自话
+
+- **Loop Engineering 橙皮书**（中文社区，alchaincyf 编，2026-06）："循环工程"在中文圈已写成体系化的开源书
+  （[橙皮书 PDF](https://github.com/alchaincyf/loop-engineering-orange-book)）——与 Ralph Wiggum loop 同一谱系。
+- **随机比特／腾讯云社区**（2026）："最近疯传的 Loop Engineering，是台印钞机，还是绞肉机？"——
+  讨论热度本身是佐证（[腾讯云社区](https://cloud.tencent.com.cn/developer/article/2696951)）。
+- **ITWorld Korea**：标题即判断——"Shopify 证明的：比 agent 更重要的是**工作场的设计**"
+  （[itworld.co.kr](https://www.itworld.co.kr/article/4192545/)）——"工作场设计"≈harness 的媒体说法。
+- **强度**：趋势级（社区/媒体）。
+
+### 已在第一批、此处归入"个人"的
+
+- **Birgitta Böckeler**（Thoughtworks）："Agent = Model + Harness" 公式出处（[martinfowler.com](https://martinfowler.com/articles/harness-engineering.html)，2026-04）。
+- **Ryan Lopopolo**（OpenAI）：命名学科；~100 万行、0 行手写（[openai.com](https://openai.com/index/harness-engineering/)，2026-02）。
+- **Geoffrey Huntley**：Ralph Wiggum loop／"不会说谎的裁判"（back pressure engineering）。
+- **James Beswick & Peter Epsteen**（Stripe devrel）：[You can't whisper at an AI agent](https://stripe.dev/blog/ai-steering-experiments)，2026-05。
+
+## 七、第二批小结与待回源
+
+- **点名个人已达七位**：Karpathy／Harrison Chase／Böckeler／Osmani／Huntley／Lopopolo／Stripe 团队，
+  外加中文圈 Loop Engineering 社区——**立场①②③各有 2–4 位独立背书**，学科命名（OpenAI）与唯一共识公式
+  （Böckeler）都是 2026 年上半年的事，本场选题正当其时。
+- **对 storyline 的增量**：段一时代注脚可以直接用 Karpathy 的"Vibe Coding 终结 → Agentic Engineering"
+  （与 OpenAI 命名 harness engineering 并列，说明"驾驭"已是行业主词）；段二立场②讲行业缺口时，
+  VentureBeat 那句"better models alone won't get your agent to production"是关键反转的最媒体化表述（口播用）。
+- **待回源（上屏前必须做）**：① Karpathy 推文的英文原句（现只有中文媒体转述）；② Osmani 博客原句；
+  ③ Harrison Chase 播客原句。**转述级引用只可口播，不上屏。**

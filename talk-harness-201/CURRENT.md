@@ -51,6 +51,11 @@
   "Agent = Model + Harness" 是全领域唯一共识（Birgitta Böckeler，2026-04）；Anthropic 自述 harness 假设随模型升级腐化（"那一圈会移动"的一手版）。
 - **两个 nuance（不反驳）**：ETH 研究显示机器生成的上下文文件反而降成功率（坐实"外置要有纪律"）；marmelab 提醒 harness 定义会过期（"不要照搬"已覆盖）。
 - **上屏候选新增**：Anthropic "assumptions rot" 引句（进 5–8 句精选池）；Composio 68%→88%（若上屏须标 ⚠️ 厂商自述＋观测日期）。
+- **第二批（用户反馈"背书不够多"后补点名个人，同日）**：**Karpathy**（2026-02 终结 Vibe Coding、提出 Agentic Engineering——
+  "99% 的时间在指挥智能体干活、充当监工"，背书立场①＋全场主轴）；**Harrison Chase**（LangChain CEO，"harness engineering is
+  an extension of context engineering"＋"跨 200 步要边走边记录"＋subagent 上下文隔离——一次背四条）；**Addy Osmani**
+  （生成与评估拆开＞自我评估）；中文圈 **Loop Engineering 橙皮书**。点名个人达七位，立场①②③各有 2–4 位独立背书。
+  **待回源三条**（Karpathy 推文英文原句／Osmani 原文／Chase 播客原句）：转述级只可口播不上屏。
 
 ## 下一步
 
