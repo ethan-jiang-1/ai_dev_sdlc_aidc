@@ -32,7 +32,7 @@
 
 | 信号 | 落点 | 动作 |
 |---|---|---|
-| 提到某一场 talk 的页、稿、版次、视觉、PPTX、故事线 | **交付层** `talk-ai-coding-evolution-*/` | 进对应 talk，按它自己的 `AGENTS.md` 走（`-agent-101` **无 `AGENTS.md`**，按它的 `README.md` + `CONTEXT.md`） |
+| 提到某一场 talk 的页、稿、版次、视觉、PPTX、故事线 | **交付层** `talk-*/`（主线三场带 `talk-ai-coding-evolution-` 前缀；入门场是 `talk-harness-101`） | 进对应 talk，按它自己的 `AGENTS.md` 走（`talk-harness-101` **无 `AGENTS.md`**，按它的 `README.md` + `CONTEXT.md`） |
 | 提到证据、来源卡片、口径、回源 | 先确认属于哪场 talk | 走该 talk 的 `02_evidence/`，不要动根级 `01_sources/` |
 | 泛泛谈研究主题、要补素材、要写一篇新研究 | **研究层** `01_sources/` / `02_research/` | 见第 4 节 |
 | 提到需求工程 / SDD / SDD 后继形态等 SDLC 实践体系，要改实践方法论文档 | **实践层** `03_practice/` | 见第 4 节；先读该目录 README 的分工与单一事实源约定 |
@@ -43,10 +43,10 @@
 **判不出来就问，不要猜。** 尤其是"这场 talk"没指名时——四场 talk 的对象、篇幅、红线完全不同，猜错代价很高。
 
 **默认优先交付层**：主线活跃工作在 `talk-ai-coding-evolution-harness/`；**入门场**在
-`talk-ai-coding-evolution-agent-101/`（20–30 min，面向**已经在动手搭 Agent、但不知道怎么把它搭稳**的人——
+`talk-harness-101/`（20–30 min，面向**已经在动手搭 Agent、但不知道怎么把它搭稳**的人——
 业务熟、技术一般、AI 有初步理解）。
 **该场的定位、听众定义、术语与红线，一律以它自己的 `README.md` + `CONTEXT.md`（听众见 §〇）为准，本文件不重复定义。**
-没有任何上下文线索时，先去读 `harness/CURRENT.md` 确认主线，再看 `agent-101/CURRENT.md`。
+没有任何上下文线索时，先去读 `talk-ai-coding-evolution-harness/CURRENT.md` 确认主线，再看 `talk-harness-101/CURRENT.md`。
 
 ---
 
@@ -71,7 +71,7 @@
 
 **子目录标准件（所有可独立工作的目录通用）**：
 - 能独立承载工作流的目录（talk、研究主题、实践主题）至少配一个 **`README.md`**：定位、分工约定、信息往哪放。
-- talk 目录可选 **`tools/`**：放该场自己的校验脚本（如 agent-101 的 `check-consistency.py`，
+- talk 目录可选 **`tools/`**：放该场自己的校验脚本（如 `talk-harness-101` 的 `check-consistency.py`，
   治"同一事实散在多文件、改一处漏同步"）。**要登记进该 talk 的 `README.md`**（跑法＋维护须知）；
   与「不把一次性脚本散落在 talk 目录里」不冲突——**那说的是一次性脚本，这是长期件**。
 - 有"当前进度"概念的目录（talk）加 **`CURRENT.md`**；状态一旦滚出热区就移入冷区文件，热文件不背历史。
@@ -110,7 +110,7 @@
 改完任何一层，都要做一件事：
 
 1. **更新该层的状态文件**——talk 是 `CURRENT.md`（本轮结束即收口：新结论进热区，被取代的记录移入 `CURRENT-history.md`）+ 该 talk 内的 `01_storyline/04-open-questions.md`；根级是 `README.md` / 本文件。
-   **例外（`-agent-101`）**：该场管道轻，**不设 `01_storyline/04-open-questions.md`**——
+   **例外（`talk-harness-101`）**：该场管道轻，**不设 `01_storyline/04-open-questions.md`**——
    它的开放问题与待定项登记在 `CURRENT.md` 的「待定 / 缺口」两节（见该场 `README.md` 的目录约定）。
    完成标准：下次进来的人（或零上下文的 agent）只读 L0+L2 热区文件就能接上，不需要聊天记录。
 
@@ -123,7 +123,7 @@
 | 想知道 | 去哪 |
 |---|---|
 | 这个仓库怎么回事（结构 / 素材 / 四场 talk 对比） | 根 `README.md` |
-| 现在哪场在跑、做到哪 | `talk-ai-coding-evolution-harness/CURRENT.md`（主线）/ `talk-ai-coding-evolution-agent-101/CURRENT.md`（入门场） |
+| 现在哪场在跑、做到哪 | `talk-ai-coding-evolution-harness/CURRENT.md`（主线）/ `talk-harness-101/CURRENT.md`（入门场） |
 | 某个词在这仓库里什么意思 | 对应 talk 的 `CONTEXT.md` |
 | 某场 talk 的规矩 | 对应 talk 的 `AGENTS.md` |
 | 某场 talk 历史上改过什么 | 对应 talk 的 `CURRENT-history.md`（若有） |

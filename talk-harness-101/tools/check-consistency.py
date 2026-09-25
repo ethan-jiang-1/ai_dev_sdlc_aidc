@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""agent-101 跨文件一致性检查器（v2，按第七轮审计重写）
+"""talk-harness-101 跨文件一致性检查器（v2，按第七轮审计重写）
 
 为什么存在：同一事实散在 6 个文件里，人眼同步不可靠，七轮复核反复栽在
 "改了 04 没同步上游"。把同步判定交给脚本。
@@ -12,7 +12,7 @@ v1 的教训（第七轮审计实测出 4 类假绿，v2 全部修掉）：
   4) ** 只按整文件奇偶 → 两处错误互相抵消；且无 --selftest 负样本
 
 判五类：A 结构不变量 / B 渲染安全 / C 跨文件事实 / D 上游同步 / E 红线
-跑法：python3 talk-ai-coding-evolution-agent-101/tools/check-consistency.py [--selftest]
+跑法：python3 talk-harness-101/tools/check-consistency.py [--selftest]
 退出码：0=全过；1=有任何问题（含"小"）
 
 维护须知：新增共享事实时同步在 FACTS/STALE_TERMS/COUNTS 加一行；
