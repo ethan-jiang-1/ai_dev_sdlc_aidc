@@ -21,7 +21,8 @@ ai_dev_sdlc_aidc/
 ├── talk-harness-101/                   交付层 · 入门场（20 张 = 18 正文 + 2 停顿页 / 20–30 min，＋手册 20 页；原名 talk-ai-coding-evolution-agent-101，2026-09-23 改）
 ├── talk-ai-coding-evolution-opc/       交付层 · 已定稿 v8（23 页 / 45 min，只作内部参考）
 ├── talk-ai-coding-evolution-org-sdlc/  交付层 · 待 review（50 页 / 75–90 min）
-└── talk-ai-coding-evolution-harness/   交付层 · ★ 当前活跃（42 张 = 37 页正文 + 5 停顿页 / 75–90 min）
+├── talk-ai-coding-evolution-harness/   交付层 · ★ 当前活跃（42 张 = 37 页正文 + 5 停顿页 / 75–90 min）
+└── talk-harness-201/                   交付层 · DSH 解剖场（advanced；storyline 阶段，约 30–38 张 / 45–60 min 提案）
 ```
 
 **研究层与实践层**（`01`–`05`）在 2026-07～08 建立，是长期素材与认知底座，目前处于**沉淀状态**，不再逐日推进。
@@ -60,6 +61,7 @@ ai_dev_sdlc_aidc/
 | `talk-ai-coding-evolution-org-sdlc/` | 50 页 / 75–90 min | 暂停在 review | v0.16 已渲染，等用户确认视觉门禁 |
 | `talk-ai-coding-evolution-opc/` | 23 页 / 45 min | 已定稿（v8） | **只作内部参考**，其命名与内容不得出现在其他 talk 的对客文字里 |
 | `05_output/deck_ai_sdlc_keynote/` | 40 min / 标准档 | 历史主线稿 | Phase 0 研究与 v1 大纲/讲稿已产出，2026-08 后未继续推进（`project-metadata.yaml` 中 phases 仍标 pending） |
+| `talk-harness-201/` | 约 30–38 张 / 45–60 min（提案） | ⏳ storyline v0.1 待 review | **DSH 解剖场（advanced）**：解剖 DSH 的 harness——**三条立场**（agent 一等参与／规则可执行／事实唯一 owner）＋道五概念＋术三巨头＋分寸（立即借／有压力再借／不要照搬）。语料＝deepseek-harness 仓库 FAQ 07（DSH 事实钉版 `46a7f68b09`）。**独立一场，不与 101／主线互为前提** |
 
 > **不确定该动哪里时**：主线看 `talk-ai-coding-evolution-harness/CURRENT.md`，
 > 入门场看 `talk-harness-101/CURRENT.md`——**各自是那一场当前态的唯一权威**。
