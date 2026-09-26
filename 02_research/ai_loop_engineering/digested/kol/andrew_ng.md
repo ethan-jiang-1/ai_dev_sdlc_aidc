@@ -1,6 +1,11 @@
 # 吴恩达谈 Loop Engineering：AI 编程真正的变化不是写代码更快
 
-> 原文: Andrew Ng, 2026.06.30 · 消化自 [X post](https://x.com/AndrewYNg/status/2071988145667928442) + ThinkInAI 中文解读
+> 原文: Andrew Ng, 2026-06-30 · 消化自 [X post](https://x.com/AndrewYNg/status/2071988145667928442) + ThinkInAI 中文解读
+>
+> **本文件是主题的消化稿，不是素材权威**。一手原文与逐字引句在
+> [`01_sources/reference/kol/_raw_loop_engineering/andrew_ng/`](../../../../01_sources/reference/kol/_raw_loop_engineering/andrew_ng/profile.md)
+> （`raw_ng_x_post_en.md` 英文原文 / `quotes.md` 逐字引句 / `sources.md` 来源与缺口）。
+> 素材与本文冲突时**以素材为准**。
 
 ---
 
@@ -16,7 +21,7 @@
 
 ## 全景：三个环怎么嵌套
 
-![三环全景](figures/01_three_loops_overview.svg)
+![三环全景](../../figures/01_three_loops_overview.svg)
 
 三个环不是孤立的——**外环的数据修正内环的方向**：
 
@@ -28,7 +33,7 @@
 
 ## Loop 1：Agentic 编码循环 — AI 自己写、自己测、自己改
 
-![Agentic Coding Loop](figures/02_agentic_coding_loop.svg)
+![Agentic Coding Loop](../../figures/02_agentic_coding_loop.svg)
 
 **这个环每几分钟跑一轮。** AI 拿到 Spec 和 Evals 之后：
 
@@ -45,7 +50,7 @@
 
 ## Loop 2：开发者反馈循环 — 人从 QA 升级为产品判断者
 
-![Developer Feedback Loop](figures/03_developer_feedback_loop.svg)
+![Developer Feedback Loop](../../figures/03_developer_feedback_loop.svg)
 
 **这个环每几十分钟到几小时跑一轮。**
 
@@ -62,7 +67,7 @@
 
 ## Loop 3：外部反馈循环 — 把真实用户带进来
 
-![External Feedback Loop](figures/04_external_feedback_loop.svg)
+![External Feedback Loop](../../figures/04_external_feedback_loop.svg)
 
 **这个环最慢，几天到几周。** 但最关键——它修正方向。
 
@@ -78,7 +83,7 @@
 
 ## 核心洞察：不是"品味"，是"上下文优势"
 
-![Context Advantage](figures/05_context_advantage.svg)
+![Context Advantage](../../figures/05_context_advantage.svg)
 
 很多人把人类在产品中的独特贡献叫"品味（taste）"。吴恩达不同意。
 

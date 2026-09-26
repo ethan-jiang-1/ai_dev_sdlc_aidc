@@ -1,6 +1,6 @@
 # 02_research — 研究层 · 分析
 
-**定位**：围绕主线的长期研究沉淀（当前**沉淀状态**，不是日常推进对象）。
+**定位**：围绕主线的长期研究沉淀（默认**沉淀状态**；**例外**：`repo_agent_friendliness/` 活跃评估系统、`ai_loop_engineering/` 活跃研究主题——见根 AGENTS §4）。
 补素材 / 改结论前先确认是否为某场 talk 服务——**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**。
 
 ## 统一分法
@@ -15,7 +15,7 @@
 | `agentic_engineering/` | AI-Coding 范式变迁主报告（多轮 wave 迭代，result_4_v5 为当前版） | `result_4_v5/` |
 | `agentic_management/` | Agentic 管理侧景观（一手 raw 尚未消化，result 为空） | `raw /` |
 | `agentic_teams/` | 多智能体团队（Agent Teams PPT 成稿） | `result/agent_teams_ppt.md` |
-| `ai_loop_engineering/` | 吴恩达 Loop Engineering 观点消化 | `digested_andrew/README.md` |
+| `ai_loop_engineering/` | Loop Engineering（2026-06 起这场**被命名的实践运动**）：命名谱系、KOL 一手见解与实战、构件、与 SDD 的边界判定。KOL 素材统一在 `01_sources/reference/kol/_raw_loop_engineering/` | `raw/kol-roster.md`（★ 名单权威）+ `digested/README.md`（问题看板） |
 | `ai_native_rnd/` | 从瀑布 / 敏捷到 AI-Native 研发的跃迁 | `result/AI_Native_Agile_Evolution.md` |
 | `ai_sdlc_frontier/` | 前沿议题：各家一线人物访谈 + 上下文压缩六家对比等 followup | `followup_research/` |
 | `anthropic_ai_sdlc/` | Anthropic 官方 AI-Native SDLC playbook（英译原文 + 中文编译） | `org/ai-native-sdlc-playbook.md` |
@@ -25,6 +25,10 @@
 
 > 2026-09-21 拆出记录：`requirements_engineering/`、`spec_driven_development/` 已移至
 > `03_practice/`（用户判定内容已是 practice 而非 research）。
+>
+> **两个遗留目录不在上表**（历史遗留，待清理）：`anthorpic_ai_sdlc/`（拼写错误的旧目录——正文已迁
+> `anthropic_ai_sdlc/`，但 figures 仍存于此且被其 playbook 引用，与 org-sdlc talk 的断链同源）；
+> `requirements_engineering/`（拆出后的空壳，仅剩空目录）。
 
 ## 纪律
 

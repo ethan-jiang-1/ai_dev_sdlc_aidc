@@ -23,6 +23,7 @@ reference/kol/
 ├── _raw_kol/                              ← 12 位影响力人物深度拆解
 ├── _raw_frontier/                         ← 跨公司变革共识合成（7 人 + 3 深度研究）
 ├── _raw_fable5/                           ← Fable 5 模型变革信号合成（16 样本）
+├── _raw_loop_engineering/                 ← Loop Engineering 一波声音（2026-06 起，一人一目录）
 ├── _raw_promatic_summit_2026/             ← Pragmatic Summit 2026（Beck+Fowler 同台）
 ├── _raw_agile_manifesto_2026/             ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
 ├── _raw_engelberg_2026/                   ← Engelberg Retreat 2026（从实验到生产的转折点）
@@ -78,7 +79,7 @@ reference/kol/
 
 ### `_raw_kol/` — 影响力人物深度拆解
 
-**是什么**：14 位历史上塑造了 SDLC 话语权的人/公司在 AI 时代的言论。从 ThoughtWorks 到 Martin Fowler，从 Kent Beck 到 Karpathy，从 Simon Willison 到前 GitHub CEO。
+**是什么**：12 位历史上塑造了 SDLC 话语权的人/公司在 AI 时代的言论（人物卡 12 张；导航表另含 06 综合篇与 11 峰会篇两个非人物条目）。从 ThoughtWorks 到 Martin Fowler，从 Kent Beck 到 Karpathy，从 Simon Willison 到前 GitHub CEO。
 
 **源头特征**：人物/组织的公开言论（博客、演讲、访谈、社交媒体）。每人有独立立场——先看 README 的共识/分歧矩阵再读个人。
 
@@ -103,6 +104,20 @@ reference/kol/
 **源头特征**：二次合成——README 标注了每个 insight 的证据强度（⭐~⭐⭐⭐）。Simon Willison 的案例有完整 transcript（可信度最高）。
 
 **当前状态**：全部有 frontmatter + section 级 citations + verified URLs。
+
+---
+
+### `_raw_loop_engineering/` — Loop Engineering 一波声音（2026-06 起）
+
+**是什么**：2026-06 "loop engineering" 成为公开名字后围绕它发声的人的一手素材，**一人一目录**（`profile.md` + `quotes.md` + `sources.md` + `raw_*.md`，与 `../field_samples/fable5/run_*/` 同构）。
+
+**源头特征**：一手优先（原帖 / 博客原文 / 官方发布 / 播客原版 / 演讲 transcript）；中文编译只作交叉验证。**时间窗 2026-06 起**——更早的谱系背景（Ralph Wiggum loop、Anthropic《Building effective agents》）不入本集合。
+
+**与 `_raw_kol/` 的分工**：`_raw_kol/` 按**人**铺全景（12 位）；本集合按**一次命名事件**收一波声音。已在 `_raw_kol/` 有卡片的人（Boris Cherny、Kief Morris、Ryan Lopopolo、Karpathy、Gergely Orosz）**不重复建目录**，只写指针 + loop 专项增量。
+
+**唯一名单权威不在本集合**——谁入册、号召力依据、每人主张一句话，在 [`02_research/ai_loop_engineering/raw/kol-roster.md`](../../../02_research/ai_loop_engineering/raw/kol-roster.md)。本集合只管素材。
+
+**当前状态**：`andrew_ng/` 四件套齐；**当前无待建卡**（建卡规则见集合 README——素材常态在研究主题的 evidence 回源档案）。
 
 ---
 
@@ -153,7 +168,8 @@ reference/kol/
 
 | 场景 | 先看 |
 |---|---|
-| 想知道具体的人在说什么 | `_raw_kol/`（14 人）、`_raw_frontier/`（7 人共识） |
+| 想知道具体的人在说什么 | `_raw_kol/`（12 人）、`_raw_frontier/`（7 人共识） |
+| 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | `_raw_loop_engineering/`（素材）→ [`02_research/ai_loop_engineering/`](../../../02_research/ai_loop_engineering/README.md)（判读与台账） |
 | 想知道 Fable 5 具体改变了什么 | `_raw_fable5/` |
 | 想知道 2026 年 AI 软件工程的关键事件 | `_raw_promatic_summit_2026/` + `_raw_agile_manifesto_2026/` |
 | 想知道 agentic engineering 从实验到生产的转折 | `_raw_engelberg_2026/` |
@@ -164,6 +180,7 @@ reference/kol/
 
 ## 最后更新
 
+- 2026-09-26：新增 `_raw_loop_engineering/`（Loop Engineering 一波声音，2026-06 起，一人一目录）；Andrew Ng 四件套入库（自 `02_research/ai_loop_engineering/andrew_ng/` 迁入，原目录撤销）。**名单权威在** [`02_research/ai_loop_engineering/raw/kol-roster.md`](../../../02_research/ai_loop_engineering/raw/kol-roster.md)。
 - 2026-07-08：**一手源大清洗**——全库删除所有中文二手源（36kr、微信、BAAI、CSDN、toutiao 等），补充 30+ 条原始英文一手 URL。Simon Willison (2→8 URLs)、Dave Farley (2→6 URLs)。来源铁律新增"一手源优先"硬要求。Erik Schluntz 源从 36kr 编译切换到 YouTube 原视频。
 - 2026-07-08：更名为 `aidlc_reference_kol`（历史名，现为 `reference/kol`），`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`（现为 `reference/corp`）。新增 `_raw_promatic_summit_2026/`、`_raw_agile_manifesto_2026/`、`_raw_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
 - 2026-07-07：创建 `_raw_fable5/` 和 `_raw_frontier/`，全库 frontmatter + section citations + URL 溯源运动

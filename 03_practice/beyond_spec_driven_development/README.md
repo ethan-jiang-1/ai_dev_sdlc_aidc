@@ -44,6 +44,7 @@ collector: delegated research agent
 scope: 2026 年（尤其 2026Q2–Q3）社区材料；承接 ../spec_driven_development/debate/critiques.md「批判观点聚类」第 5 条的出路指向
 related:
   - ../harness_governance/README.md                          # 两分篇抽出后的新家（抽出前编号 02/03，现 01/02）（内容权威）
+  - ../../02_research/ai_loop_engineering/README.md          # Loop Engineering：光谱外的正交轴（§6.1 定位说明，证据权威在彼）
   - ../spec_driven_development/debate/critiques.md          # 批判面（本文的"问题从哪来"）
   - ../spec_driven_development/comparison.md             # SDD 工具横比（光谱图左端的素材）
   - ../spec_driven_development/debate/authoritative-verdicts.md
@@ -164,6 +165,25 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 3. 越靠右越抗漂移（无工件即无 spec 债），但表达力越低——"为什么这样设计"与跨服务语义契约只有左半能承载，这决定了重工件形态不会归零，只会收缩到值得它的场景。
 4. Harness 治理是唯一同时吸收全部三条重批判（验证缺失、漂移留白、context tax）的形态，也是唯一有学术化（arXiv 2609.00252）与大厂一手（OpenAI）双重背书的中间路线，大概率是团队级的收敛点。
 5. 对个人与小团队，2026 年的事实默认已经右移到"plan mode + AGENTS.md + 测试先行"；为每个 feature 维护 spec 工件链正在变成需要特别论证的重决策，而非默认动作。
+
+### 6.1 为什么"Loop Engineering"不在光谱上（2026-09-26 登记）
+
+2026-06 起，光谱**右端**的实践（plan mode / facts / TDD / harness 治理 + 机械门）在公开讨论里被一个名字统摄：
+**loop engineering**。但它**不是本光谱的一行**——因为它的主轴不是"留多少 spec 工件"，而是另一条正交的轴：
+
+| | 本光谱的轴 | loop engineering 的轴 |
+|---|---|---|
+| 问的是 | **留多少 spec 工件、验证交给谁** | **谁决定下一轮、循环何时停、人站在哪** |
+| 典型问题 | "要不要为这个 feature 维护 spec 链？" | "停止条件怎么写才算可核？跑几轮才需要人看？下一件工作由什么决定？" |
+
+把 loop engineering 塞进光谱右端会掩盖它真正的主张：**它要求的是"可核的停止条件 + 决定下一件工作的外层调度系统"**——
+这两样在光谱的任一位置上都可能缺。所以本条**只作定位说明，不新增形态行**。
+
+- **证据与判读权威在** [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)（研究层·分析；
+  2026-09-26 三路回源完成——evidence-a/b/c 一手档案 + digested 01/03/05 判读）。
+- **实践主题已立题**：[`../loop_governance/`](../loop_governance/README.md)（2026-09-26，控制轴主干：
+  停止条件 / 外层调度 / 自主度分档 / 检查点）——命名不沿用 KOL 词（词源＝热度碎片、外延未收敛，判定见研究层 digested/01）。
+- **与 `../harness_governance/` 的分界**：harness 治理管"约束写进环境"（知识/环境轴），loop 治理管"循环怎么跑、谁决定下一轮、人站在哪"（控制/分配轴）——两主题同构成对，见 [`../loop_governance/README.md`](../loop_governance/README.md)。
 
 ---
 

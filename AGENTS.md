@@ -86,9 +86,12 @@
 （`10-spec / 20-instruments / 90-archive`，被测数据不落本系统——run bundle 归属被测仓库）
 且有自己的 `AGENTS.md` 操作手册——路由进去后按它自己的纪律走，不适用本节"沉淀状态"与
 本文件 §3 的研究层默认分法。其自举审计会在仓库根产生 `agent-friendly-runs/`（bundle 归档，勿清理）。
+`02_research/ai_loop_engineering/` 是**活跃的研究主题**（2026-09-26 起）：loop engineering 三路回源完成，
+素材与判读在该主题内（`raw/evidence-*.md` 回源档案 + `digested/` 判读 + KOL 台账），按研究层默认分法走；
+其下游实践主题 `03_practice/loop_governance/`（同日立题）的 backbone 待用户复核。
 
 - 补素材、改研究结论前，先确认它是否为某场 talk 服务。**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**，避免事实分散到两处。
-- `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含四个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`、`harness_governance/`（2026-09-21 自 beyond 抽出：AI 形态下新的 SDLC——harness/context 治理）。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。
+- `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含五个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`、`harness_governance/`（2026-09-21 自 beyond 抽出：AI 形态下新的 SDLC——harness/context 治理）、`loop_governance/`（2026-09-26 立题：loop 层实践主干——停止条件/外层调度/自主度分档，**环境轴与控制轴与 harness_governance 同构成对**，证据权威在 `02_research/ai_loop_engineering/`）。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。
 - 研究层与实践层遵守统一纪律：一手源优先、来源可溯、标注观测日期。
 
 ---
