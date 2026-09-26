@@ -13,8 +13,8 @@
 | `README.md` | ✅ 定位 / 命名理由 / 分工边界 / 信息流 / 核心结论速览 |
 | `result/backbone.md` | ✅ §0–§6 **七节**初版（定义与判据 / 停止条件 / 外层调度 / 自主度阶梯 / 检查点与反例 / 接口 / 升格依据）——**未经用户逐段确认** |
 | `result/README.md` | ✅ 入层判据 |
-| `manual.md` | ✅ 12 节初版（2026-09-26 与 backbone 同日成稿，自 evidence-a/b/c＋playbook＋fable5 一手挖掘）——**待用户逐节确认** |
-| 证据层 | ✅ 全部在 [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)（evidence-a/b/c 1175 行一手档案 + digested 01/03/05 + KOL 台账 + 时间线） |
+| `result/manual.md` | ✅ 12 节初版（2026-09-26 与 backbone 同日成稿，自 evidence-a/b/c＋playbook＋fable5 一手挖掘；同日晚经第三轮内容评审修正并补 Osmani 逐字）——**待用户逐节确认** |
+| 证据层 | ✅ 全部在 [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)（evidence-a/b/c 一手档案＋补充回源节 + digested 01/03/05 + KOL 台账 + 时间线） |
 
 ## 下一步
 

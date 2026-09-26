@@ -357,3 +357,35 @@ Claude Code 团队（Cherny 领导）2026-06-30 官方博客给出了产品的�
 | Peter Steinberger | 2026-06-08 02:58 CST 推文（两句话） | 未核验（X 不可达；Osmani 转引最接近） | steipete.me 两长文（2025-12-28/2026-02-14）＋ OpenClaw 官方 docs | **部分回源** |
 | LangChain / Sydney Runkle | 《The Art of Loop Engineering》2026-06-16 | **已核验**（全文取得） | 即该文（四环栈+原语映射） | **已回源** |
 | Addy Osmani | 《Loop Engineering》2026-06-07（命名篇）＋《Practical Loop Engineering》2026-08-14 | **已核验**（两篇全文取得；对官方文章的转引逐字比对一致） | 即此两篇＋交叉核验的 Claude 官方博客与 docs | **已回源** |
+
+
+---
+
+## 补充回源（2026-09-26 晚 · 父代理直取，HTTP 200 全文）
+
+> Osmani 两篇原文由父代理直接取得（A 路子代理当时已回源全文；本节为第三轮内容评审后的**终审补充**，逐字句用于替换此前无锚的转述）。出处与日期以页面为准。
+
+### 《Loop Engineering》命名篇（addyosmani.com/blog/loop-engineering/，2026-06-07）
+
+- 定义句："Loop engineering is replacing yourself as the person who prompts the agent. You design the system that does it instead."
+- 分层句："Loop engineering sits one floor above the harness."
+- **Steinberger 推文逐字（经本帖转引）**："You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents."
+- **Cherny 语逐字（经 rohanpaul 推文转引，本帖收录）**："I don't prompt Claude anymore. I have loops running that prompt Claude and figuring out what to do. My job is to write loops"
+- /goal 机制句："a separate small model checks whether you are done, so the agent that wrote the code isnt the one grading it"；"the maker and checker split applied to the stop condition itself"
+- 判断力警告句："Designing the loop is the cure when you do it with judgement and the accelerant when you do it to avoid thinking"
+- **bio（身份与书名裁决依据）**："a Member of Technical Staff at Anthropic, where he works on Claude Code. He spent over 14 years at Google…most recently as a Director at Google Cloud AI"；书名《**Agentic Engineering**》（O'Reilly，官网链接可证）
+
+### 《Practical Loop Engineering》操作篇（addyosmani.com/blog/practical-loop-engineering/，2026-08-14）
+
+- 定义句（块引）："A loop is an autonomous, self-correcting feedback cycle where an AI agent repeatedly acts, tests its results and adjusts its approach until a specific goal is met"
+- **含糊目标警告（此前被误并成"品味一起交出去"一句）**："a vague goal would be 'keep going until this UI design is good'. What does that mean? Good to who? How is it being evaluated? Tasks that require human taste, subjective design, or open-ended creative exploration aren't a good fit."
+- **品味委托警告**："check yourself, that you are not delegating the taste and the judgment to your agent. You're delegating the task, and then you are actually checking back that it's meeting your bar."
+- 评估器澄清（与 §8 强度总表互证）："The evaluator sitting behind goal is not that checker… It doesn't look at the content to see if it's good or bad in any way, shape, or form. All it does is examine the conversation transcript to see if the hard rules you specified have been met."
+- **实战 /goal 全例（含全部要素）**："/goal Refactor the data-fetching layer in Dashboard.tsx until Lighthouse performance score is >= 92 and LCP is under 1.8s as shown by the Lighthouse CLI output. Do not change the public API of any hooks. Each turn must improve at least one reported metric; abort if two consecutive turns show no improvement. Stop after 10 turns."
+- 细则："Recurring loops expire seven days after creation… loops are session-scoped"；空转判据："same command being tried over and over without any change in the result… a third time with no change from the second and it's probably time to stop"
+
+### 本补充裁决/解决的三个悬案
+
+1. **书名矛盾**：《Agentic Engineering》正确（O'Reilly 链接实锤）；evidence-c:57 的《Beyond Vibe Coding》为误。
+2. **此前无锚的"品味警告"**：真实原文为上述两句（含糊目标＋品味委托）；台账/时间线/manual 中旧转述（"停止条件含糊、或把品味一起交出去，这套做法会出问题"）系姊妹仓 FAQ 15 的合并式转述，与原文有出入——各处已按逐字替换。
+3. **Steinberger 推文正文**：经 Osmani 06-07 帖逐字转引（上列）——从"未取得"升级为"有日期转引"，直接引用须标"经 Osmani 转引"。

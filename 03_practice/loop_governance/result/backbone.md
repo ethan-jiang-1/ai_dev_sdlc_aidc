@@ -41,7 +41,7 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 | ⑦ 自主度超前 | 门禁还不会红就把人撤出循环 | §3 升档判据；manual §9 |
 | ⑧ 操纵裁判 | agent 改测试 / 绕审批 / 哄评估器 | §1 保护裁判；manual §4/§7 |
 
-（①② 是 §0 两判据的失败面；③④⑤ 来自 Anthropic 官方失败模式表，evidence-b §3；⑥ 的私有一手样本见姊妹仓 FAQ 15 owner 案例·转引；⑦⑧ 由骨架三与升档判据推出。）
+（①② 是 §0 两判据的失败面；③④⑤ 来自 Anthropic 官方失败模式表，evidence-b §3；⑥ 的私有一手样本见姊妹仓 FAQ 15 owner 案例·转引；⑦ 由 §3 升档判据推出；⑧ 来自保护裁判与反操纵监控的一手证据——evidence-b §3 测试不可删改 / §4b reasoning-blind / §2.3 反复拒绝熔断。）
 
 ## 1. 停止条件（跑到哪算完）
 
@@ -56,15 +56,7 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 **写法（CC 官方三要素，一手）**：**一个可度量终态 + 一个声明式检查 + 路径约束**（"`npm test` exits 0"、"no other test file is modified"，evidence-b §4a）。**实践例证**：Jesse Vincent 的 `/goal` 实验（过夜 25 实验那例——**中文转述·非逐字**，仅作用法样本，不作独立收敛依据；[`fable5/run_superpowers_jesse_vincent`](../../../01_sources/field_samples/fable5/run_superpowers_jesse_vincent/quotes.md)）。
 停止条件是**三值状态机**（Not yet met / Met / Impossible），不是布尔（evidence-b §4a）；Osmani 澄清：`/goal` 评估器**只核 transcript 硬规则、不判内容好坏**（evidence-a）——判好坏的是人或上级环。
 
-**裁判权选型（研究层确认的未收敛点——这里是设计空间，不是缺口）**：
-
-| 裁判 | 适用场景 | 源 |
-|---|---|---|
-| 人判（taste） | greenfield 探索、清单语义撑不住时 | Huntley（TODO 耗尽是 "a matter of taste"） |
-| 文件清单逐条判定 | 功能型长跑、目标可枚举 | Anthropic feature_list.json |
-| 独立小模型每轮判定 | 会话内 goal | Claude Code `/goal` |
-| 干活模型自判 | 默认形态——**最弱**，必须配骨架 2/3 补偿 | Anthropic 2024 |
-| 被审批方提出、审批方判定 | 越界动作 | OpenAI auto-review |
+**裁判权选型**（研究层确认的未收敛点——这里是设计空间，不是缺口）：五型裁判（人判 taste／文件清单逐条／独立小模型每轮／干活模型自判——**最弱**，须配本节骨架二、三与 [`manual.md §4/§7`](manual.md) 补偿／审批对方判定）的**选型表（适用场景＋成本/风险＋源）在 [`manual.md §3`](manual.md)**——单一事实源，此处不复制。
 
 **保护裁判（"agent 修代码时不得削弱对代码的检查"一族）**：测试不可删改 + JSON 选型防整文件改写（Anthropic，单源但机制成型）；评估器输入防操纵（auto mode 分类器 "reasoning-blind by design"）；Ralph 防作弊条款——测试当场写明**为什么存在**，因为 "future loops will not have the reasoning in their context window"（evidence-b §1）。
 
