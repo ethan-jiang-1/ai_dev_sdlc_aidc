@@ -22,7 +22,8 @@ loop_governance/
 ├── CURRENT.md           # 热区：当前态 / 下一步 / 缺口
 └── result/
     ├── README.md        # 入层判据与命名规则
-    └── backbone.md      # ★ 实践主干（§0 定义与判据 / §1 停止条件 / §2 外层调度 / §3 自主度阶梯 / §4 检查点与反例 / §5 接口 / §6 升格依据）
+    ├── backbone.md      # ★ 实践主干（§0 定义与判据＋失败模式诊断轴 / §1 停止条件 / §2 外层调度 / §3 自主度阶梯 / §4 检查点与反例 / §5 接口 / §6 升格依据）
+    └── manual.md        # ★ 操作规程 12 节（诊断 → 写法 → 选型 → 保护 → 进度规格 → 触发器 → 熔断 → Ralph → 升档 → 验收独立性 → 落地梯子 P0→P4 → 反过度工程）
 ```
 
 **没有 `research/` 层**：证据与判读的唯一 home 在 [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)

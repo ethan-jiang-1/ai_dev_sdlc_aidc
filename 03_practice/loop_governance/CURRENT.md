@@ -4,7 +4,7 @@
 
 ## 一句话
 
-**立题完成：backbone §0–§6 七节已成（每条带证据指针），量化自主度分档与跨 feature 在途可见性是两项如实登记的开放缺口；manual 未建，待主干稳定后操作化。**
+**立题完成：backbone §0–§6 七节（含 §0.2 八条失败模式诊断轴）＋ manual 12 节操作规程已成——全部自一手 evidence 挖掘、每条带证据指针；量化分档与在途可见性是两项如实登记的开放缺口；两件均待用户逐段确认。**
 
 ## 状态
 
@@ -13,17 +13,17 @@
 | `README.md` | ✅ 定位 / 命名理由 / 分工边界 / 信息流 / 核心结论速览 |
 | `result/backbone.md` | ✅ §0–§6 **七节**初版（定义与判据 / 停止条件 / 外层调度 / 自主度阶梯 / 检查点与反例 / 接口 / 升格依据）——**未经用户逐段确认** |
 | `result/README.md` | ✅ 入层判据 |
-| `manual.md` | ⬜ 未建——待主干经用户确认后再操作化（参照 harness_governance 的 backbone→manual 节奏） |
+| `manual.md` | ✅ 12 节初版（2026-09-26 与 backbone 同日成稿，自 evidence-a/b/c＋playbook＋fable5 一手挖掘）——**待用户逐节确认** |
 | 证据层 | ✅ 全部在 [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)（evidence-a/b/c 1175 行一手档案 + digested 01/03/05 + KOL 台账 + 时间线） |
 
 ## 下一步
 
-1. **用户复核 backbone**（§0–§6 七节逐段过，参照 harness_governance 2026-09-21 的确认流程）——确认后再谈 manual。
+1. **用户复核 backbone（§0–§6 七节）＋ manual（12 节）**——建议对照着过（manual 是 backbone 各节的操作化展开）；参照 harness_governance 2026-09-21 的逐段确认流程。
 2. 研究层遗留（不阻塞本主题，登记在研究层 CURRENT）：
    - 《Unwinding Codex's Agent Loop》正文未取得（openai.com 站点级 403）——"四拍循环 / assistant message 终止态"**上屏前必须回源**；
    - `talk-harness-201/02_evidence/01-kol-alignment-2026.md` 的 "Agent = Model + Harness" 归属需按 C 路一手链修正（原创＝Viv Trivedy/LangChain，Böckeler 是传播锚点）；
    - Kief Morris 卡片（`_raw_kol/10`）是三档版，C 路核实实为**四级**（+agentic flywheel），待修订。
-3. manual 候选篇（主干确认后）：停止条件写法模板（三要素 + 三值判定）/ 裁判权选型表展开 / 触发器四型选型 / 升档操作规程。
+3. manual 已成（12 节）——后续增补走「研究层新证据 → backbone 修订 → manual 对应节同步」的信息流。
 
 ## 缺口（backbone 登记的两项开放缺口 + 两项附加）
 

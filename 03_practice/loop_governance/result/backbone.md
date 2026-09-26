@@ -2,7 +2,7 @@
 
 > **本文件是什么**：loop 层（五层框架第 4 层）的实践主干，**§0–§6 共七节**——§0 定义与判据、§1–§4 核心四段（停止条件 / 外层调度 / 自主度分档 / 检查点）、§5 接口、§6 升格依据；
 > 每条带源强度与证据指针（指向研究层 evidence 档案与判读篇，**本主题不复制证据**）。
-> 手册级操作规程（SOP / 模板 / 选型表展开）待主干稳定后另立 `manual.md`。
+> 手册级操作规程（SOP / 模板 / 选型表展开）在 [`manual.md`](manual.md)——12 节，与本主干同日成稿。
 
 ```yaml
 topic: Loop Governance —— loop 层的实践主干（Prompt → Context → Harness → Loop → Graph 第 4 层）
@@ -27,6 +27,21 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 2. **单次运行不受控 → loop 只是把错误复制得更快**——与 Ralph 的 greenfield 限定（"There's no way in heck would I use Ralph in an existing code base"，evidence-b §1）、Anthropic 的"每轮先过基线再干活"（evidence-b 问题2 §1）三方同向。
 
 **术语注记**：KOL 词 "loop engineering"（2026-06 命名）经研究层回源判定——**词源＝热度碎片（Cherny 06-02 访谈句未逐字核验、Steinberger 06-08 两句话推文无深度），定义＝事后工程化（Osmani 06-07 → Runkle 06-16 → CC 团队 06-30）**；四人核心同指（系统替人逐轮提示）但**外延不兼容**（Runkle 第 4 环属 harness 层；验证语义分歧）。本主题因此不沿用该词。判定全文：[`digested/01`](../../../02_research/ai_loop_engineering/digested/01-命名谱系.md)。
+
+### 0.2 loop 层失败模式（诊断轴——各节的"防什么"标签）
+
+| 失败模式 | 症状 | 主要由哪些节填 |
+|---|---|---|
+| ① 重试冒充循环 | 停止条件不看上一轮结果，原地空转 | 判据一（§0）；manual §1 |
+| ② 错误复制机 | 单次运行不受控就开循环，错误滚雪球 | 判据二（§0）；manual §9 升档前置 |
+| ③ one-shot 冲动 | agent 试图一次做完所有 | §2 一次一件；manual §5 |
+| ④ 提前宣告完成 | "declares victory on the entire project too early" | §1 三件骨架；manual §2/§5 |
+| ⑤ 未验证标 done | 单测或 curl 过就翻 passes | §1 骨架一/三；manual §5/§10 |
+| ⑥ 无进度盘 | 跨轮状态只在人的记忆里，退化为对话催促 | §2 形态一；manual §5 |
+| ⑦ 自主度超前 | 门禁还不会红就把人撤出循环 | §3 升档判据；manual §9 |
+| ⑧ 操纵裁判 | agent 改测试 / 绕审批 / 哄评估器 | §1 保护裁判；manual §4/§7 |
+
+（①② 是 §0 两判据的失败面；③④⑤ 来自 Anthropic 官方失败模式表，evidence-b §3；⑥ 的私有一手样本见姊妹仓 FAQ 15 owner 案例·转引；⑦⑧ 由骨架三与升档判据推出。）
 
 ## 1. 停止条件（跑到哪算完）
 

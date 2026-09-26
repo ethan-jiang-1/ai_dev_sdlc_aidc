@@ -22,7 +22,7 @@
 | `digested/03-构件.md` | ✅ 停止条件三件骨架收敛；外层调度两形态收敛；自主度位置成型/量化未成型 |
 | `digested/05-边界判定.md` | ✅ 三层分工；收敛成立且双向；**三条引用归属修正**（影响全仓） |
 | ~~`raw/org/` · `raw/community/`~~ | ✅ **已撤销**（2026-09-26 评审决定 5）：evidence 档案为素材常态形态，纪律要点已并入 README §1「回源档案纪律」 |
-| 实践层 `03_practice/loop_governance/` | ✅ README + CURRENT + result/README + **result/backbone.md（§0–§6 七节）**——**待用户逐段确认** |
+| 实践层 `03_practice/loop_governance/` | ✅ README + CURRENT + result/README + **result/backbone.md（§0–§6 七节＋§0.2 诊断轴）+ result/manual.md（12 节操作规程）**——**均待用户逐段确认** |
 
 ## 下一步
 
