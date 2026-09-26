@@ -27,7 +27,7 @@ loop_governance/
 
 **没有 `research/` 层**：证据与判读的唯一 home 在 [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)
 （evidence-a/b/c 回源档案 + digested 01/03/05 判读 + KOL 台账）。本主题只引用、不复制——防双权威。
-引用写法：`evidence-a/b/c §节号`、`digested/编号`、`fable5/run_*/`（库内一手样本）。
+引用写法：`evidence-a/b/c §节号`、`digested/编号`、`fable5/run_*/`（库内一手信号——**整理者转述句 ≠ 逐字引句**，引用其句子须按 backbone §1 的降级标注处理）。
 
 ## 分工边界（与兄弟主题，冲突时以本表为准）
 

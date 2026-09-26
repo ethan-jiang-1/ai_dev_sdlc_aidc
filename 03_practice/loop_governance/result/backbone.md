@@ -58,7 +58,7 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 **主导形态一：文件即队列。**（Huntley 与 Anthropic 两家独立、句式同构）
 
 - **三件套**：进度规格（feature_list.json / fix_plan.md / loop.md）＋ 叙事日志（progress 文件）＋ git 历史；
-- **每轮冷启动重读 + 固定开场序列**：定位 → 读 git log / progress → **选清单里最高优先级的未完成项** → 先过基线再干活（evidence-b §2.1/§4）；
+- **每轮冷启动重读 + 固定开场序列**：定位 → 读 git log / progress → **选清单里最高优先级的未完成项** → 先过基线再干活（evidence-b 问题2 §1/§4）；
 - **决定"下一轮跑什么"的不是人、不是定时器，是规格文件里第一个 `passes: false` 的条目**；
 - 一次只做一件 + 干净收尾（commit + progress 更新）——对抗 one-shot 冲动（Anthropic 点名的失败模式一）。
 

@@ -35,6 +35,6 @@
 
 | 档案 | 内容 | 服务的判读 |
 |---|---|---|
-| [`../raw/evidence-2026-09-26-a-originators.md`](../raw/evidence-2026-09-26-a-originators.md) | 词源与定义者四人（Cherny / Steinberger / Runkle / Osmani） | 01 |
-| [`../raw/evidence-2026-09-26-b-stop-and-scheduling.md`](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) | 停止条件与外层调度（7 组一手全文） | 03 + 实践层 §1–§2 |
+| [`../raw/evidence-2026-09-26-a-originators.md`](../raw/evidence-2026-09-26-a-originators.md) | 词源与定义者四人（Cherny / Steinberger / Runkle / Osmani） | 01 · 实践层 backbone §0/§4（自报）；backbone §1/§3 亦实引 |
+| [`../raw/evidence-2026-09-26-b-stop-and-scheduling.md`](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) | 停止条件与外层调度（9 个一手记录块全文） | 03 + 实践层 §1–§2 |
 | [`../raw/evidence-2026-09-26-c-autonomy-and-convergence.md`](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md) | 自主度阶梯与 SDD 对照面 | 03 §三 + 05 + 实践层 §3–§4 |

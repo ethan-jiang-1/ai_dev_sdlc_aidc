@@ -15,7 +15,7 @@
 | `agentic_engineering/` | AI-Coding 范式变迁主报告（多轮 wave 迭代，result_4_v5 为当前版） | `result_4_v5/` |
 | `agentic_management/` | Agentic 管理侧景观（一手 raw 尚未消化，result 为空） | `raw /` |
 | `agentic_teams/` | 多智能体团队（Agent Teams PPT 成稿） | `result/agent_teams_ppt.md` |
-| `ai_loop_engineering/` | Loop Engineering（2026-06 起这场**被命名的实践运动**）：命名谱系、KOL 一手见解与实战、构件、与 SDD 的边界判定。KOL 素材统一在 `01_sources/reference/kol/_raw_loop_engineering/` | `raw/kol-roster.md`（★ 名单权威）+ `digested/README.md`（问题看板） |
+| `ai_loop_engineering/` | Loop Engineering（2026-06 起这场**被命名的实践运动**，**活跃**）：命名谱系、KOL 一手见解与实战、构件、与 SDD 的边界判定。素材常态在 `raw/evidence-*.md` 回源档案（深度卡仅 Andrew Ng） | `raw/kol-roster.md`（★ 名单权威）+ `digested/README.md`（问题看板）；未来综述 → `result/` |
 | `ai_native_rnd/` | 从瀑布 / 敏捷到 AI-Native 研发的跃迁 | `result/AI_Native_Agile_Evolution.md` |
 | `ai_sdlc_frontier/` | 前沿议题：各家一线人物访谈 + 上下文压缩六家对比等 followup | `followup_research/` |
 | `anthropic_ai_sdlc/` | Anthropic 官方 AI-Native SDLC playbook（英译原文 + 中文编译） | `org/ai-native-sdlc-playbook.md` |

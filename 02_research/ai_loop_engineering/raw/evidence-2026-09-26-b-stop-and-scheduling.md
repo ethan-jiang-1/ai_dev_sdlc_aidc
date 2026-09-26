@@ -3,7 +3,7 @@ type: evidence_archive
 collected_by: 委派回源子代理（B 路 · 停止条件与外层调度）
 collected_at: 2026-09-26
 serves: digested 构件篇 · 03_practice/loop_governance/result/backbone.md（停止条件 / 外层调度两节）
-status: 7 组一手全文取得（Ralph / Building effective agents / Effective harnesses / CC /goal / CC auto mode / CC /loop / OpenAI auto-review / LangChain 四环）
+status: 一手全文 9 个记录块（Ralph / Anthropic×3 篇：Building effective agents、Effective harnesses、Managed Agents / Claude Code 官方文档×3 页：/goal、auto mode、/loop / OpenAI auto-review / LangChain 四环）
 negatives: 4 条见文末（Unwinding Codex's Agent Loop 站点级 403 未取得——"四拍循环/assistant message 终止态"未逐字核实，引用前必须回源）
 quality_bar: 2026-09-26 用户质量门槛——只收高影响力一手；不入册内容单列文末「不入册·仅社区情绪」
 ---

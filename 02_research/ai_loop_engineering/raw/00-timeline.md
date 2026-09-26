@@ -51,7 +51,7 @@
 | **2026-03-25** | Anthropic《How we built Claude Code auto mode》（John Hughes） | 审批循环的官方解剖：deny-and-continue（拒绝带理由回给模型换安全路径，不终止循环）；**双阈值熔断**（3 连拒或累计 20 拒 → 停机升级给人；headless 无 UI 直接终止进程；阈值官方写明不可配置）；分类器 "reasoning-blind by design"（只看用户消息与工具调用，剥掉模型自述——防评估器被操纵） | ✅ [evidence-b §4b](evidence-2026-09-26-b-stop-and-scheduling.md) |
 | **2026-04-08** | Anthropic《Managed Agents》（Lance Martin 等） | 把"外层"本身接口化：session（append-only 日志）/ harness（循环本体）/ sandbox 三件虚拟化，harness 崩了 `wake(sessionId)` 从最后事件恢复；《Building effective agents》页顶官方注记指其为 current approach | ✅ [evidence-b §5](evidence-2026-09-26-b-stop-and-scheduling.md) |
 | **2026-04-30** | OpenAI《Auto-review of agent actions without synchronous human oversight》 | 标题即立场：人工同步审批退出调度回路。独立审批 agent（"The separation of roles matters"——主 agent 有把审批边界当障碍绕过的压力）；审批停机约 200× 减少、 escalated 动作约 99% 通过；"automatically stop the trajectory after repeated denials"；官方自述边界："Auto-review should not be treated as a guarantee of security" | ✅ [evidence-b §4d](evidence-2026-09-26-b-stop-and-scheduling.md) |
-| 活文档（锚点 v2.1.228/283/269） | Claude Code 官方文档：`/goal` · `/loop` · permission-modes | `/goal`＝条件驱动（独立小模型每轮判定，三值：Not yet met / Met / Impossible）；`/loop`＝时间驱动（间隔可固定/模型自选/loop.md 定制，7 天硬过期"bounds how long a forgotten loop can run"）；auto mode v2.1.283+ 为内置默认 | ✅ [evidence-b §4a/4c](evidence-2026-09-26-b-stop-and-scheduling.md) |
+| 活文档（锚点 v2.1.228/283/269） | Claude Code 官方文档：`/goal` · `/loop` · permission-modes | `/goal`＝条件驱动（独立小模型每轮判定，三值：Not yet met / Met / Impossible）；`/loop`＝时间驱动（间隔可固定/模型自选/loop.md 定制，7 天硬过期"bounds how long a forgotten loop can run"）；auto mode v2.1.283+ 为内置默认 | ✅ [evidence-b §4a/4b/4c](evidence-2026-09-26-b-stop-and-scheduling.md) |
 
 ---
 
@@ -64,6 +64,8 @@
 | **Viv Trivedy**（LangChain） | **"Agent = Model + Harness" 公式的原创者**——⚠️ **归属修正（C 路）**：marmelab 记功给 Böckeler，但 Böckeler 本人文章把公式链到 LangChain《The anatomy of an agent harness》，Osmani 明写是 Trivedy 的 one-liner。**一手链：Trivedy/LangChain 原创 → Böckeler 传播锚点化** | 2026 上半年 | 无卡片（候选入册） |
 | Andrej Karpathy | Vibe Coding → Agentic Engineering | 2026-02 | [`_raw_kol/07`](../../../01_sources/reference/kol/_raw_kol/07_andrej_karpathy.md) ⏳ |
 | Ryan Lopopolo | 命名 harness engineering | 2026-02 | [`_raw_kol/09`](../../../01_sources/reference/kol/_raw_kol/09_ryan_lopopolo.md) ⏳ |
+| **Stripe**（Beswick & Epsteen） | 《You can't whisper at an AI agent》hard / soft steering——"errors block progress but warnings don't"（C 路逐字到手） | 2026-05-14 | ✅ evidence-c |
+| **Harrison Chase**（LangChain CEO） | "harness engineering is an extension of context engineering"（播客转述）；LangChain 四环文页尾致谢含他（evidence-b）但非本人署名 | 2026-03 | ⏳ |
 
 > ⚠️ **本仓受影响的旧账**：[`talk-harness-201/02_evidence/01-kol-alignment-2026.md`](../../../talk-harness-201/02_evidence/01-kol-alignment-2026.md) 立场①表格里把公式记为"出自 Birgitta Böckeler"——与一手链冲突，**建议该 talk 复核时修正**（`03_practice/harness_governance/result/backbone.md` 宪法 1 的记法"Trivedy 命源 + Böckeler 框架化"是对的）。
 
@@ -75,7 +77,8 @@
 |---|---|
 | 2026-06~07 | 主题建立，只消化 Andrew Ng 一篇（原 `digested_andrew/`） |
 | 2026-09-26（上午） | **主题重构**：三层 + KOL 主轴；KOL 素材迁入 `01_sources/reference/kol/_raw_loop_engineering/`；建台账与时间线；登记与 `03_practice/` 的分工边界与升格触发器 |
-| 2026-09-26（下午） | **三路回源全部完成**：A 路（词源与定义者）· B 路（停止条件/调度，7 组一手）· C 路（自主度/收敛）归档为 `raw/evidence-*.md`；**用户质量门槛**落库（论坛评论者/聚合媒体/碎片推文不入册） |
+| 2026-09-26（下午） | **三路回源全部完成**：A 路（词源与定义者）· B 路（停止条件/调度，9 个一手记录块）· C 路（自主度/收敛）归档为 `raw/evidence-*.md`；**用户质量门槛**落库（论坛评论者/聚合媒体/碎片推文不入册） |
+| 2026-09-26（晚） | **两轮四维评审 + 全部修复**：第一轮（自查 24 项 + 冷读 20 项）与第二轮（合并 29 项）全部落地——引用强度降级、时间窗合规移行、计数统一、evidence 调和注记、org/community 撤销；git 提交 8396657 后复检再修 |
 
 ---
 

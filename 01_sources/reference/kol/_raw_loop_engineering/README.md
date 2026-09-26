@@ -50,7 +50,7 @@ _raw_loop_engineering/
 **建卡规则（2026-09-26 回源轮定，取代"待建卡"清单）**：素材的常态形态是研究主题的
 `raw/evidence-*.md` 回源档案（见其 README §1「素材形态」）；四件套卡只给"独立一手长文 ≥3 份"的人。
 **当前无待建卡**——词源碎片级（Cherny / Steinberger）与中文编译（alchaincyf）不建卡；
-Runkle / Osmani / Huntley 等已回源者的素材在 evidence 档案（a/b/c）里，不为每人建卡。
+Runkle / Osmani / Huntley 等已回源者的素材在 evidence 档案（a/b/c）里，不为每人建卡；andrew_ng/ 的四件套是**规则设立前的历史卡**（其独立一手长文仅 1 份，因命名事件锚点而保留，不代表达标）。
 
 ## 与其他集合的关系
 

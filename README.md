@@ -25,7 +25,7 @@ ai_dev_sdlc_aidc/
 └── talk-harness-201/                   交付层 · DSH 解剖场（advanced；storyline 阶段，约 30–38 张 / 45–60 min 提案）
 ```
 
-**研究层与实践层**（`01`–`05`）在 2026-07～08 建立，是长期素材与认知底座，目前处于**沉淀状态**，不再逐日推进。
+**研究层与实践层**（`01`–`05`）在 2026-07～08 建立，是长期素材与认知底座，默认处于**沉淀状态**、不再逐日推进（**例外**：`02_research/repo_agent_friendliness/` 评估系统与 `02_research/ai_loop_engineering/`——后者 2026-09-26 起活跃，见根 AGENTS §4）。
 其中 `03_practice/` 是 2026-09-21 从研究层拆出的**实践层**，现含五个主题——需求工程、SDD 工具生态、SDD 后继形态、**harness 治理**（环境轴）、**loop 治理**（控制轴，2026-09-26 增 `loop_governance/`，证据权威在研究层 `ai_loop_engineering`）——内容是可执行的工程实践与方法论，不再算"研究"。
 **交付层**（`talk-*`）从 2026-08 起成为工作重心：每一场 talk 是一个自带完整管道的独立工作区。
 
@@ -73,7 +73,7 @@ ai_dev_sdlc_aidc/
 | 桶 | 定位 | 内容 |
 |---|---|---|
 | `01_sources/` | **证据层** | 一手信号与资料来源，按形态组织：真实使用样本（`field_samples/`）、学术论文（`papers/`）、人物与厂商参考库（`reference/kol` + `reference/corp`） |
-| `02_research/` | **分析层** | 多数主题是自包含的 `raw → digested → result` 管道：工程实践、反馈回路、管理与编排、多智能体团队、研发体系迁移、ThoughtWorks 方法论、前沿议题、Anthropic 实践、研发原生 2.0、**Loop Engineering 运动（`ai_loop_engineering/`，2026-09-26 三路回源完成）**；另有**活跃的仓库 Agent-Friendly 评估系统** `repo_agent_friendliness/`（独立三层分法 `10-spec/20-instruments/90-archive`，run 数据不落本仓库，见根 AGENTS §4 例外）（需求工程与 SDD 两主题已于 2026-09-21 拆出至 `03_practice/`） |
+| `02_research/` | **分析层** | 多数主题是自包含的 `raw → digested → result` 管道：工程实践、反馈回路、管理与编排、多智能体团队、研发体系迁移、ThoughtWorks 方法论、前沿议题、Anthropic 实践、研发原生 2.0；**另有两个活跃主题**——`repo_agent_friendliness/`（Agent-Friendly 评估系统，独立三层分法 `10-spec/20-instruments/90-archive`，run 数据不落本仓库，见根 AGENTS §4 例外）与 `ai_loop_engineering/`（Loop Engineering 运动，2026-09-26 三路回源完成）（需求工程与 SDD 两主题已于 2026-09-21 拆出至 `03_practice/`） |
 | `03_practice/` | **实践层** | SDLC 工程实践与方法论的沉淀（2026-09-21 自研究层拆出，用户判定其内容已是 practice 而非 research）：`requirements_engineering/`（需求表达格式）、`spec_driven_development/`（SDD 工具生态与辩论）、`beyond_spec_driven_development/`（SDD 批判之后的形态光谱）、`harness_governance/`（★ 环境轴：治理 agent 执行链路，2026-09-21 自 beyond 抽出）、`loop_governance/`（★ 控制轴：loop 层实践主干——停止条件/外层调度/自主度分档，2026-09-26 立题，证据权威在 `02_research/ai_loop_engineering`） |
 | `04_enterprise/` | **企业视角** | SDLC 在企业侧的映射：BPM 作为企业信息加工流的等价物，以及企业 AI 重构案例 |
 | `05_output/` | **产出层** | 主线 Keynote 交付物（含完整制作流程 `WORKFLOW.md` 与阶段管线） |

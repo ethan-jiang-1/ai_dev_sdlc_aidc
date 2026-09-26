@@ -4,14 +4,14 @@
 与 SDD / harness 治理的边界在哪。研究层·分析，不是操作规程（分工见 §4）。
 
 **分法**：`raw/`（一手素材）→ `digested/`（消化与判读）→ `result/`（成稿）。**两个增长轴独立可加**：
-轴一「人」＝加一个 KOL 加一个目录；轴二「问题」＝加一个议题加一个编号文件。加东西时不改别的文件。
+轴一「人」＝台账加一行（素材进回源档案；**建卡是例外**，判据见 §1 素材形态）；轴二「问题」＝加一个议题加一个编号文件。加东西时不改别的文件。
 
 ```text
 ai_loop_engineering/
 ├── README.md                  # 你在这里：地图 / 判据 / 分工 / 增长规则
 ├── CURRENT.md                 # 热区：本轮做到哪、下一步动哪个文件、缺口
 │
-├── raw/                       # 一手层：只放原文/原帖/转写，不改写、不评论
+├── raw/                       # 一手层：原文/原帖/转写 + 台账/时间线/回源档案（判读展开在 digested，时间线只留指向 digested 的压缩注记）
 │   ├── 00-timeline.md         #   命名与事件时间线（append-only，每条带日期 + 出处 + 强度）
 │   ├── kol-roster.md          #   ★ KOL 台账＝唯一名单权威（收录判据 / 名单 / 号召力依据 / 状态）
 │   └── evidence-*.md          #   回源档案：委派回源的逐字摘录 + 引用链（按日期-路别命名；素材的常态形态）
@@ -60,7 +60,7 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 **素材形态（2026-09-26 回源轮定，取代上午的"每人建卡"设想）**：
 **回源档案（`raw/evidence-*.md`）是素材的常态形态**——按问题组织、带引用链、一次回源一份档案。
 深度四件套卡（[`01_sources/reference/kol/_raw_loop_engineering/`](../../01_sources/reference/kol/_raw_loop_engineering/README.md) `<slug>/`）
-只给"素材多到一份档案装不下"（**≥3 份独立一手长文**）的人——**目前只有 Andrew Ng**；
+只给"素材多到一份回源档案装不下"（**≥3 份独立一手长文**）的人。**当前无待建卡**——已有的 andrew_ng 卡是**规则设立前的历史卡**（其独立一手长文仅 1 份；保留它因他是命名事件锚点，**不代表达标**）；
 其余入册者的素材留在 evidence 档案，**不为每人建卡**（词源碎片级、中文编译者更不建）。
 
 **回源档案纪律**（2026-09-26 自 org/、community/ 两 README 合并收敛，两者已撤销）：
@@ -89,8 +89,8 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 | 主题 | 管 | 不管 |
 |---|---|---|
 | **本主题** | loop engineering **这场运动本身**：命名谱系、KOL 一手见解与实战、构件定义、趋势判定、与 SDD 的边界**判定** | SDD 工具生态 → [`03_practice/spec_driven_development/`](../../03_practice/spec_driven_development/README.md)；harness/context 治理**操作规程** → [`03_practice/harness_governance/`](../../03_practice/harness_governance/README.md)；人物全景档案 → [`01_sources/reference/kol/_raw_kol/`](../../01_sources/reference/kol/_raw_kol/README.md) |
-| [`03_practice/harness_governance/`](../../03_practice/harness_governance/README.md) | **单次运行可信**：约束写进环境（门禁 / 传感器 / 漂移清理），诊断轴＝"agent 缺哪句话"①–⑦ | 多轮的**自主治理**（停止条件、外层调度、自主度分档、人在环位置；队列/次序经 feature_list 类进度规格覆盖——**跨 feature 在途可见性＝已登记的开放缺口**）——本主题的地盘 |
-| [`03_practice/beyond_spec_driven_development/`](../../03_practice/beyond_spec_driven_development/README.md) | SDD 批判之后的**形态光谱**（本主题在光谱右端占一个位置，该处只放定位卡与指针） | 不重复 KOL 一手台账 |
+| [`03_practice/harness_governance/`](../../03_practice/harness_governance/README.md) | **单次运行可信**：约束写进环境（门禁 / 传感器 / 漂移清理），诊断轴＝"agent 缺哪句话"①–⑦ | 多轮的**自主治理**（停止条件、外层调度、自主度分档、人在环位置；队列/次序经 feature_list 类进度规格覆盖——**跨 feature 在途可见性＝已登记的开放缺口**）——loop 治理的地盘（判读归本主题、操作规程归 [`03_practice/loop_governance/`](../../03_practice/loop_governance/README.md)） |
+| [`03_practice/beyond_spec_driven_development/`](../../03_practice/beyond_spec_driven_development/README.md) | SDD 批判之后的**形态光谱**（本主题与其是**正交轴关系、不是光谱上的一行**——定位说明在该主题 §6.1，本主题只放指针） | 不重复 KOL 一手台账 |
 | [`03_practice/spec_driven_development/debate/`](../../03_practice/spec_driven_development/debate/README.md) | SDD 阵营的辩论谱系与工具对照 | 不做 loop 侧的 KOL 调查 |
 
 **一句话分界**：**harness 治理管"约束写进环境"，本主题管"循环怎么跑、谁决定下一轮、人站在哪"。**
@@ -108,7 +108,7 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 |---|---|---|
 | ① 停止条件怎么写 | **收敛**——三件骨架（机器可核判据逐轮闸门 / 硬性熔断上限 / 验收与干活分离）各 ≥2 独立一手同向 | ✅ 过（[`digested/03`](digested/03-构件.md) §一） |
 | ② 外层调度谁做 | **收敛**——两种主导形态（文件即队列 / 触发器即节拍）≥2 独立一手；人工同步审批已退出调度回路 | ✅ 过（[`digested/03`](digested/03-构件.md) §二） |
-| ③ 自主度分档与人在环位置 | **位置分档成型**（两个独立四级阶梯＋一条厂商官方路径含 σ 分层——Morris 与 Böckeler 同属 Thoughtworks 只计一票，evidence-c 判读）；**量化分档＝0 一手来源**（"跑几轮必须人看"无判据） | ⚠️ 半过（[`digested/03`](digested/03-构件.md) §三） |
+| ③ 自主度分档与人在环位置 | **位置分档成型**（两个独立四级阶梯——Morris（evidence-c；Böckeler 同属 Thoughtworks 只计一票）＋Osmani（evidence-a）——＋一条厂商官方路径含 σ 分层（anthropic_ai_sdlc playbook））；**量化分档＝0 一手来源**（"跑几轮必须人看"无判据） | ⚠️ 半过（[`digested/03`](digested/03-构件.md) §三） |
 
 **结论**：两条全过、一条半过——**够格立题**；第三条的空白在实践主干里如实登记为开放缺口（不冒充共识）。
 
@@ -139,6 +139,7 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 | 这波谁在说、号召力依据是什么 | [`raw/kol-roster.md`](raw/kol-roster.md)（★ 唯一名单权威） |
 | 什么时候发生了什么事 | [`raw/00-timeline.md`](raw/00-timeline.md) |
 | 逐字引句与回源过程在哪 | `raw/evidence-*.md`（回源档案，按日期-路别命名） |
+| 未来综述成稿在哪 | [`result/`](result/README.md)（当前空——有意为之，是未来 landscape 综述的家） |
 | 现在做到哪、下一步干什么 | [`CURRENT.md`](CURRENT.md) |
 | 有哪些议题、答了几个 | [`digested/README.md`](digested/README.md)（问题看板） |
 | 单个人的完整观点 | [`digested/kol/`](digested/kol/andrew_ng.md)（已消化）/ `01_sources/reference/kol/_raw_loop_engineering/`（素材） |
