@@ -1,6 +1,6 @@
 # Deep Research 主题包：User Story × EARS 长文拆分
 
-本目录将 [User Story vs EARS 深度比较.md](../raw_dr/User%20Story%20vs%20EARS%20深度比较.md) 消化为 **6 个可独立做深度调研的主题** + 1 份**证据强度审查**，每个主题自带研究问题、原文锚点、嵌入式摘录、教程模块、待补方向、参考文献子集与 DR 查询种子。
+本目录将 [User Story vs EARS 深度比较.md](<../raw_dr/User Story vs EARS 深度比较.md>) 消化为 **6 个可独立做深度调研的主题** + 1 份**证据强度审查**，每个主题自带研究问题、原文锚点、嵌入式摘录、教程模块、待补方向、参考文献子集与 DR 查询种子。
 
 本轮进入 **一轮 Deep Research 执行态**：
 

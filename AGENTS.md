@@ -34,8 +34,8 @@
 |---|---|---|
 | 提到某一场 talk 的页、稿、版次、视觉、PPTX、故事线 | **交付层** `talk-*/`（主线三场带 `talk-ai-coding-evolution-` 前缀；入门场是 `talk-harness-101`） | 进对应 talk，按它自己的 `AGENTS.md` 走（`talk-harness-101` **无 `AGENTS.md`**，按它的 `README.md` + `CONTEXT.md`） |
 | 提到证据、来源卡片、口径、回源 | 先确认属于哪场 talk | 走该 talk 的 `02_evidence/`，不要动根级 `01_sources/` |
-| 泛泛谈研究主题、要补素材、要写一篇新研究 | **研究层** `01_sources/` / `02_research/` | 见第 4 节 |
-| 提到需求工程 / SDD / SDD 后继形态等 SDLC 实践体系，要改实践方法论文档 | **实践层** `03_practice/` | 见第 4 节；先读该目录 README 的分工与单一事实源约定 |
+| 泛泛谈研究主题、要补素材、要写一篇新研究（如 loop engineering 的 KOL 证据 / 回源） | **研究层** `01_sources/` / `02_research/` | 见第 4 节 |
+| 提到需求工程 / SDD / SDD 后继形态 / harness 治理 / loop 治理（循环、停止条件、外层调度、自主度分档）等 SDLC 实践体系，要改实践方法论文档 | **实践层** `03_practice/` | 见第 4 节；先读该目录 README 的分工与单一事实源约定 |
 | 提到 BPM、企业信息加工流、企业 AI 重构案例 | **研究层·映射** `04_enterprise/` | 沉淀状态：改前先确认是否为某场 talk 服务，是则走该 talk 的 `02_evidence/` |
 | 提到主线 Keynote / deck_ai_sdlc_keynote | **产出层** `05_output/` | 历史主线稿（2026-08 后未推进）；talk 交付不依赖它 |
 | 说"这个仓库 / 这个项目"、要改 README、要整理结构 | **根级** | 改 `README.md` / 本文件 |
@@ -130,6 +130,8 @@
 | 某个词在这仓库里什么意思 | 对应 talk 的 `CONTEXT.md` |
 | 某场 talk 的规矩 | 对应 talk 的 `AGENTS.md` |
 | 某场 talk 历史上改过什么 | 对应 talk 的 `CURRENT-history.md`（若有） |
+| AI 形态下的 SDLC 实践方法（harness 治理＝环境轴 / loop 治理＝控制轴） | `03_practice/README.md`（五主题分工） |
+| loop engineering 这场运动——谁在说、证据档案、判读 | `02_research/ai_loop_engineering/README.md`（活跃研究主题，2026-09-26 起） |
 
 ## Python / uv
 
