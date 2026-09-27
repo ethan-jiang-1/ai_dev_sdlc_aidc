@@ -26,9 +26,8 @@ loop_governance/
     └── manual.md        # ★ 操作规程 12 节（诊断 → 写法 → 选型 → 保护 → 进度规格 → 触发器 → 熔断 → Ralph → 升档 → 验收独立性 → 落地梯子 P0→P4 → 反过度工程）
 ```
 
-**没有 `research/` 层**：证据与判读的唯一 home 在 [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)
-（evidence-a/b/c 回源档案 + digested 01/03/05 判读 + KOL 台账）。本主题只引用、不复制——防双权威。
-引用写法：`evidence-a/b/c §节号`、`digested/编号`、`fable5/run_*/`（库内一手信号——**整理者转述句 ≠ 逐字引句**，引用其句子须按 backbone §1 的降级标注处理）。
+**没有 `research/` 层**：循环机制证据与判读在 [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)；goal/eval 如何构造及判据困难的分析在 [`02_research/agent_goal_eval/`](../../02_research/agent_goal_eval/README.md)。本主题只引用各自的控制接口，不复制研究正文或案例数值，防双权威。
+引用写法须带主题路径：`ai_loop_engineering/evidence-*` 与 `agent_goal_eval/digested/01/02/03` 不混称；库内一手如 `fable5/run_*/` 的整理者转述句 ≠ 逐字引句（见 backbone §1）。
 
 ## 分工边界（与兄弟主题，冲突时以本表为准）
 
@@ -37,6 +36,7 @@ loop_governance/
 | [`harness_governance`](../harness_governance/README.md) | 单次运行受控：门禁 / 传感器 / 漂移清理（诊断轴＝agent 缺哪句话 ①–⑦） | ——（本主题的前提层） |
 | **本主题** | 多轮的治理：停止条件 / 外层调度 / 自主度分档 / 检查点 | 单次运行内的约束（→harness）；跨 agent 编排（→Graph 层，未立题）；SDD 工件链与工具生态（→spec_driven_development）；intent/spec 写法（→requirements_engineering） |
 | [`spec_driven_development`](../spec_driven_development/README.md) | SDD 工具生态与辩论谱系 | ——（与本主题是收敛关系，证据互引） |
+| [`agent_goal_eval` 研究主题](../../02_research/agent_goal_eval/README.md) | goal 完成条件与 eval 的构造、校验、设计不出来时的处理 | 本主题只用其判读决定自动续跑、验收、升档或交人，不重写 goal/eval 方法 |
 
 ## 核心结论速览（展开在 [`result/backbone.md`](result/backbone.md)）
 
@@ -44,11 +44,11 @@ loop_governance/
 2. **停止条件三件骨架**（各 ≥2 独立一手）：机器可核判据逐轮闸门 ＋ 硬性熔断上限 ＋ 验收与干活分离。**目标敌人＝提前宣告完成**。
 3. **外层调度两种已观察形态**：文件即队列（进度外置、每轮重读并取未完成项）＋触发器即节拍（条件/时间/事件/脚本）；人工逐动作审批在部分公开机制里移向检查点，不能推断真实组织已全面退出。多 feature 的工作行只是待验证补法（见 [`manual §5`](result/manual.md)）。
 4. **自主度位置分档成型**（两个独立四级阶梯：Morris 的 outside→in→on→flywheel、Osmani 的 agentic→`/goal`→`/loop`→proactive；＋Anthropic 官方路径），**量化分档未成型**——没有一手源给出"跑几轮必须人看"的判据，这是如实登记的开放缺口。
-5. **升档判据**：机械门可信度之外，还要验证动作授权不跨轮泛化、拒绝后审批入口可达且能恢复；资源停机不等于验收完成（见 [`manual §7/§9/§10`](result/manual.md)）。
+5. **升档判据**：机械门可信度之外，还要验证动作授权不跨轮泛化、拒绝后审批入口可达且能恢复；裁判与人判冲突时先暂停自动验收和升档。资源停机、产出过闸与外部业务结果分账（见 [`manual §2/§7/§9/§10`](result/manual.md)）。
 
 ## 信息流
 
-1. **单向加工**：研究层 evidence → 研究层 digested → 本主题 result；review 改变主干 → 反向同步研究层判读。
+1. **单向加工**：对应研究主题的 evidence → 该主题 digested → 本主题 result；review 改变主干 → 反向核对并同步对应研究层判读。
 2. **result/ 只收过筛结论**（≥2 独立一手或单源标注）；未采纳线索留研究层原位。
 3. **过程件不入流**：仓库根 `.tmp-` 纪律。
 
