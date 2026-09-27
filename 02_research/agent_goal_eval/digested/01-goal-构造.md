@@ -25,7 +25,7 @@ Osmani（2026-08-14）把含糊的「把界面做好」排除在外：裁判只�
 - 否决权在干活模型之外，目前是 Claude 文档和 LangChain 的 grader 这样写的。Ng、Cherny、Karpathy 自己的帖没有这一票。不要把产品文档的裁判算成他们的主张。
 - 6 月以后 Karpathy 没有另写完成条件。被传的 CLAUDE.md 四条是别人从 1 月那帖收的，衍生仓库里的准确率不入。
 
-## 仍只有链
+## 打开了，仍没有新的完成条件
 
-- Cherny 7 月 17 日那张「采用步骤」挂在 Claude artifact 上，构件页没打开。回复全文已入 A4，里面没有新的终态句。
-- Loopcraft 付费墙后、Satya 自己的完成条件原文，这轮仍没有。
+- Cherny 7 月 17 日那张「采用步骤」页打开了，标题是 Steps of AI Adoption，正文要登录。回复全文已入 A4，里面没有新的终态句。
+- Loopcraft 公开段再读到 Twitter 回顾为止，仍没有检查句子。付费墙从 Reddit 回顾开始。Satya 自己的完成条件原文仍没有。

@@ -58,6 +58,6 @@ Runkle 2026-06-16 点名 swyx 的 loopcraft，给出的 URL `https://www.latent.
 
 ## 负结论与限制
 
-- Loopcraft 付费墙后未读。会场日记已读，没有检查句子。
+- Loopcraft 公开段于 2026-09-27 再读到 Twitter 回顾为止。公开段把 goal 说成该往上叠的一层，没有检查句子。付费墙从 Reddit 回顾开始，墙后仍未读。会场日记已读，也没有检查句子。
 - 推文被点名不等于那个人写过 goal 构造。Steipete、Boris、Karpathy 已另档主验。Satya 仍停在引用关系。
 - 87.2% 是一个租赁数据集上的召回，作者自己禁止把它读成厂商排名。

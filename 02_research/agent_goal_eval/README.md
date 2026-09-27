@@ -8,9 +8,10 @@ agent_goal_eval/
 ├── README.md                  # 你在这里：定调 / 边界 / 目录怎么长
 ├── CURRENT.md                 # 热区：做到哪、下一步动哪个文件
 ├── raw/
-│   ├── research-plan.md       # 问题树 / 分路 / 线索指针 / backlog
-│   ├── roster.md              # 人 / 社区 / 机构名单（有第一条再开，见 §3）
-│   └── evidence-<日期>-<路别>.md
+│   ├── research-plan.md       # 问题树 / 分路 / 档案一览 / backlog
+│   ├── roster.md              # 人 / 社区 / 机构名单（见 §3）
+│   ├── evidence-<日期>-<路别>.md
+│   └── transcript-*.md        # 口播全文，归对应 evidence，不是第二份证据
 ├── digested/
 │   ├── README.md              # 问题看板
 │   └── NN-<问题>.md           # 01 goal 构造 / 02 eval 与调优 / 03 难设计（有判读再写文件）
@@ -92,7 +93,7 @@ agent_goal_eval/
 |---|---|
 | 定调 | 本文件 §1 |
 | 边界与目录怎么长 | 本文件 §2、文首目录树、§3 |
-| 问题树、已有线索、下一步该回源什么 | [`raw/research-plan.md`](raw/research-plan.md) |
+| 问题树、档案一览、下一步该回源什么 | [`raw/research-plan.md`](raw/research-plan.md) |
 | 现在做到哪 | [`CURRENT.md`](CURRENT.md) |
 | 判读 | [`digested/README.md`](digested/README.md)（开题时无篇） |
 | 成稿 | [`result/README.md`](result/README.md)（空是有意的） |

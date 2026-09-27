@@ -44,7 +44,7 @@
   > “An automated grader can check whether links resolve; it takes a human to notice the framing is wrong for the audience.”
   > “Those traces contain high value signal regarding what's working and what isn't. The hill climbing loop runs an analysis agent over those traces and uses the findings to rewrite the harness with improved configuration. That can include prompt/tool tweaks or grader tweaks.”
 - 该摘录支持的最小主张：LangChain 把「检查」写成对着 rubric 打分，不过就退回并附反馈。grader 可以是确定性的，也可以是模型。人被留在「受众是否接得住」这种判断上。trace 被写成以后改 grader 的材料。这是另一家，不是 Anthropic 的转述。
-- 不支持什么：文档 agent 的例子（链接能打开、CI 过、diff 不越界）是他们的内部做法叙述，没有对照数据。hill-climbing 改 grader 只说明他们把调优设计成读 trace，不证明这样调了就更好。文中点名的 swyx《loopcraft》本次没有打开原文（https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking）。
+- 不支持什么：文档 agent 的例子（链接能打开、CI 过、diff 不越界）是他们的内部做法叙述，没有对照数据。hill-climbing 改 grader 只说明他们把调优设计成读 trace，不证明这样调了就更好。文中点名的 swyx《loopcraft》旧链 404。活链的公开段在 [`evidence-2026-09-27-a3-citation-map.md`](evidence-2026-09-27-a3-citation-map.md)，没有检查句子。
 
 ## 判读
 
@@ -54,6 +54,6 @@
 
 ## 负结论与限制
 
-- swyx 的 Loopcraft：Runkle 给出的旧链 404。活链与公开摘录见 [`evidence-2026-09-27-a3-citation-map.md`](evidence-2026-09-27-a3-citation-map.md)。全文在付费墙后，未读完。
+- swyx 的 Loopcraft：Runkle 给出的旧链 404。活链的公开段见 [`evidence-2026-09-27-a3-citation-map.md`](evidence-2026-09-27-a3-citation-map.md)。付费墙从 Reddit 回顾起，墙后未读。
 - 社区里在谈论的人不少，见 a3。还没有一份团体章程。通讯和会场发言算摸索中的谈论，不算已沉淀的做法。
 - 不能推出：rubric、skill、`/goal` 三者可以互换；trace 改 grader 已经是可用的调优方法。

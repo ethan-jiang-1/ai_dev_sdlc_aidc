@@ -107,7 +107,7 @@ private struct Answer {
 - 公开部分写明的操作：trace 落到本地 `traces/traces.jsonl`，一条会话一个 JSON，含用户输入、系统提示、每次工具调用和结果、检索、中间模型调用、最后给用户的输出。没有 trace 就让 coding agent 先加日志。合成查询按固定维度拼，租赁例子是三列：任务（约看房、问价、问宠物）、租客类型、请求清楚还是含糊还是越界。每个组合单独打一次模型，不许一次生成全部。
 - 标注：先亲手看至少 10 条，只写失败，停在上游第一处。句子要让同事看得懂。他们给的句子是「工具输出写着已租出，助手却说还能租」，不是「回复很差」。不做根因。审阅界面按用户看到的样子渲染。标完至少 10 条之后，模型可以提议更多失败，人接受或拒绝，不要照单全收。到大约 100 条再让模型按失败模式聚类。插件入口是 `npx skills add https://github.com/ai-evals-course/evals-skills`，然后点 `/evals-start`。
 - 该摘录支持的最小主张：工程上先把会话落成一条 JSON，人先标 10 条能转述的失败，再让模型找同类，提议要人点头。上面那段对话是一条会被自动检查放过的失败。
-- 不支持什么：第三步的聚类计数表和优先级没有读到。文首转述的 Ramp「35% 到 83%」、Shopify、Cursor、Harvey 以各公司自己的帖为准，不以这篇转述为准。文首点名的 Rippling、Glean、ElevenLabs 这轮没有打开。Robinhood 与 Abridge 另见 B4。
+- 不支持什么：第三步的聚类计数表和优先级没有读到。文首转述的 Ramp「35% 到 83%」、Shopify、Cursor、Harvey 以各公司自己的帖为准，不以这篇转述为准。文首点名的 Rippling、Glean、ElevenLabs 已打开，见 [`evidence-2026-09-27-b5-company-posts.md`](evidence-2026-09-27-b5-company-posts.md)。Robinhood 与 Abridge 另见 B4。
 
 ## 判读
 

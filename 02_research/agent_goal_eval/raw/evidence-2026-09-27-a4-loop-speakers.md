@@ -31,15 +31,15 @@
 ## Source 3 · Boris Cherny，2026-07-17 回复（全文）
 
 - URL：https://x.com/bcherny/status/2077929390806073807
-- 发布日期：2026-07-17 01:32 UTC。回复他自己稍早的一条（https://x.com/bcherny/status/2077929386146169269）。那条把步骤表挂在 `https://claude.ai/code/artifact/bfdfaef9-bc62-4dfe-ba9e-c58a26c9accf`。构件页这次没打开
+- 发布日期：2026-07-17 01:32 UTC。回复他自己稍早的一条（https://x.com/bcherny/status/2077929386146169269）。那条把步骤表挂在 `https://claude.ai/code/artifact/bfdfaef9-bc62-4dfe-ba9e-c58a26c9accf`。构件页 2026-09-27 再打开：标题是 Steps of AI Adoption，正文要登录，步骤没有读到
 - 访问/观测日期：2026-09-27，经 fxtwitter API【主验】
 - 原文摘录：
   > “In practice that means giving Claude ways to verify its own work end to end. It means enabling auto mode for permissions, defaulting on automated code review and security review, and using interfaces that let you manage multiple agents at once”
   > “To get to higher levels it means /loop, /batch, dynamic workflows, and worktree isolation for subagents.”
 - 该摘录支持的最小主张：窗内全文仍是让干活的 Claude 自己从头核到尾，并默认打开自动代码审和安全审。`/loop` 放在更高一档，不是这句回复里的完成条件。没有写裁判是否换一只模型。
-- 不支持什么：步骤表的构件页没有读到，不能用二手转述把每一档写成他的原句。6 月访谈里「我的工作是写 loops」仍没有逐字稿。
+- 不支持什么：步骤表的构件页要登录，不能用二手转述把每一档写成他的原句。6 月访谈里「我的工作是写 loops」仍没有逐字稿。
 
-## 同层还没打开的人
+## 同层已打开的人
 
 Ng 的信点名的另一个人是 Peter Steinberger。原帖已打开，见 [`evidence-2026-09-27-a9-x-goal.md`](evidence-2026-09-27-a9-x-goal.md)。2026-06-07 那条没有完成条件；2026-06-12 他给了一句 `/goal`。Karpathy 的两帖已打开，见 [`evidence-2026-09-27-a10-karpathy.md`](evidence-2026-09-27-a10-karpathy.md)，都在窗边。
 

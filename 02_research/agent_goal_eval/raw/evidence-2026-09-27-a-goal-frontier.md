@@ -33,7 +33,7 @@
   > “if you don’t have a clear idea of what the end-state/done/good means for your completion, it may not be the right pattern for your work. For example, a vague goal would be “keep going until this UI design is good”.”
   > “you need to sometimes check yourself, that you are not delegating the taste and the judgment to your agent.”
 - 该摘录支持的最小主张：Osmani 的可跑写法是「可证明做完」的硬规则，并写明 `/goal` 后面的裁判不判断内容好不好。含糊的「做好看」他明确排除。品味仍留在人这边。他同时转述了 Claude Code 团队对 goal-based loop 的定义（确定性标准如测试数、Lighthouse 分数）。
-- 不支持什么：文中 Lighthouse、issue 清理是他的自述实验（“Sometimes that works well, sometimes it doesn’t”），不是对照实验。他转述的团队博文，本次没有打开官方 URL，不另计 Anthropic 博客一票。
+- 不支持什么：文中 Lighthouse、issue 清理是他的自述实验（“Sometimes that works well, sometimes it doesn’t”），不是对照实验。他转述的团队博文后来在 [`evidence-2026-09-27-a2-goal-more.md`](evidence-2026-09-27-a2-goal-more.md) 主验，仍不另计 Anthropic 博客一票。
 
 ## Source 3 · OpenAI Cookbook《Using Goals in Codex》
 

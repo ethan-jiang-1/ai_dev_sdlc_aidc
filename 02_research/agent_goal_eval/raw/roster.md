@@ -12,7 +12,7 @@
 | `hamel_husain` | 2026-06-29《“It’s Hard to Eval” Is a Product Smell》：把「很难 eval」收成产品问题，主张先让产物容易核对，再写 eval。前沿依据：与 Shreya Shankar 共同做 AI Evals 课；此文在主证据窗内，且直接回答定调里的「设计不出来」 | 验不了，先改产品让输出可核对 | [`evidence-2026-09-27-a-goal-frontier.md`](evidence-2026-09-27-a-goal-frontier.md) 登记节。判读留给 Q3 |
 | `sydney_runkle` | 2026-06-16 LangChain《The Art of Loop Engineering》：verification loop 写成 rubric + grader（确定性或 LLM-as-judge），失败则退回并给反馈；人判断受众是否接得住。前沿依据：LangChain 工程博客署名，并给出他们内部 docs agent 的检查项 | 检查是对着 rubric 打分；好坏里「对不对受众」仍给人 | [`evidence-2026-09-27-a2-goal-more.md`](evidence-2026-09-27-a2-goal-more.md) Source 3 |
 | `andrew_ng` | 2026-06-26 The Batch 公开信：内环停在「符合规格且无 bug」；eval 是可选数据集，同一类问题反复出现后才建。前沿依据：他在信里直接回应 Cherny / Steinberger 带起来的 loop engineering | 完成条件是规格，不是一句可核终态；外环靠人的上下文 | [`evidence-2026-09-27-a4-loop-speakers.md`](evidence-2026-09-27-a4-loop-speakers.md) Source 1 |
-| `boris_cherny` | 2026-01-02 帖（窗边）：给干活的 Claude 一条核对通道，停在代码能工作且体验好；长任务可用另一只 agent、Stop hook 或 ralph。2026-07-17 全文仍是核对自己的工作，并默认自动代码审和安全审；`/loop` 在更高一档。前沿依据：Claude Code 作者。六月访谈句仍无逐字稿。步骤表构件页没打开 | 核对通道要先建好；「体验好」留在停的句子里，不是硬规则 | A4 Source 2–3。不把他的帖算成 `/goal` 文档的第二票 |
+| `boris_cherny` | 2026-01-02 帖（窗边）：给干活的 Claude 一条核对通道，停在代码能工作且体验好；长任务可用另一只 agent、Stop hook 或 ralph。2026-07-17 全文仍是核对自己的工作，并默认自动代码审和安全审；`/loop` 在更高一档。前沿依据：Claude Code 作者。六月访谈句仍无逐字稿。步骤表页要登录，步骤没有读到 | 核对通道要先建好；「体验好」留在停的句子里，不是硬规则 | A4 Source 2–3。不把他的帖算成 `/goal` 文档的第二票 |
 | `shreya_shankar` | 2026-07-03 口播：失败类型由人在 trace 上标出来，agent 只把已说出的类型铺开，不新增类型。前沿依据：与 Hamel 共同开 AI Evals 课；这场是她自己的做法，不是转述 | 标准长在看数据之后；人保留哪种失败算数 | [`evidence-2026-09-27-a5-shankar-talk.md`](evidence-2026-09-27-a5-shankar-talk.md) |
 | `eugene_yan` | 2026-06-21 长文把开放任务收成四件套：沙箱目标、用提示多少控制难度、工具、看环境结果的确定性裁判；结果太粗就沿过程拆部分分，并审 transcript 防抄近路。前沿依据：一手里的构造；他是 Applied LLMs 的共同作者。文中成功率是所引基准的数字 | 开放任务的成功句写在环境状态上，不写在路径上 | [`evidence-2026-09-27-b-eval-shape.md`](evidence-2026-09-27-b-eval-shape.md) Source 1 |
 | `yuval_yeret` | 2026-05-27（窗边）：写 goal 前先问停的是产出还是结果；看不见结果时 agent 交还，人留在那一层。前沿依据：一手长文对着 Claude `/goal` 写的问法，不是转述 | 判不了的业务结果先不要写成 agent 的完成条件 | [`evidence-2026-09-27-c-hard.md`](evidence-2026-09-27-c-hard.md) Source 2 |
@@ -39,6 +39,8 @@
 | Harvey | 2026-09-02：律师写的风险分类加逐条红线 rubric，三只模型投票。换架构后 59% → 77%，53% → 87% | [B3 Source 2](evidence-2026-09-27-b3-engineering.md) | 升幅来自改了某一句 prompt |
 | Shopify | 2026-04-22（窗边）：300 条手写例子，语义用裁判、语法用程序。1% 流量的打开率低 35%，随后不把打开率当模型分 | [B3 Source 3](evidence-2026-09-27-b3-engineering.md) | 两周后打开率回到原水平 |
 | Abridge | 2026-08-17：按就诊写「必须出现某事实」，模型逐条过/不过。裁判对过 300 条规则（真阳性 0.78，假阳性 0.07）。一次改 agent 之后专家盲比 91% 更倾向新稿 | [B4](evidence-2026-09-27-b4-abridge.md) | 91% 是人的偏好，不是规则通过率；0.78 能外推 |
+| Rippling | 2026-08-25：MCP 说明文字的金数据是提示、参考答案、桩、期望代码。裁判打四格。改动要所有客户端配置一起升才留。动作头让 Claude Code 升 41%；写出 p95 后生产超时降 70%。2026-06-01 另有一套 Rippling AI 的四层检查，没有质量前后数 | [B5](evidence-2026-09-27-b5-company-posts.md) | 41% 盖住 Codex / Cursor；70% 是裁判总分；两套产品是同一次调优 |
+| Glean | 2026-02（窗边）：技能例子把准确率从 73% 做到 85%，题目没写。另一次盲比在有偏好时正确性 1.9 倍 / 1.6 倍，评分人可以借 Glean 找专家 | [B5](evidence-2026-09-27-b5-company-posts.md) | 73% 的检查句子已经公开；1.9 倍是改完再测 |
 
 ## 候选 · 未入
 
