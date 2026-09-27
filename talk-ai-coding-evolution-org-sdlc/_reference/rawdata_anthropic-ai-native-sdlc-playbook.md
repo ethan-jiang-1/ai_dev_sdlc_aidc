@@ -1,1 +1,1 @@
-../../02_research/anthorpic_ai_sdlc/org/ai-native-sdlc-playbook.md
+../../02_research/anthropic_ai_sdlc/org/ai-native-sdlc-playbook.md

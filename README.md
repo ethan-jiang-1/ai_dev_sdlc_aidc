@@ -49,7 +49,7 @@ ai_dev_sdlc_aidc/
 
 **铁律：symlink 指向的目录只读。** 要引用就摘进 talk 自己的 `02_evidence/`，并标注来源路径与证据强度。
 看到 `_reference/` 里有断链，说明素材根不在本机或已移动，不要就地创建文件"补上"。
-（2026-09-26 检查：`ai_tool_deepresearch/` 下的 `dpt_rb_ai-coding-evolution/` 与 `dpt_rb_harness-agent-selection-*` 两个研究子目录已不在原位——harness / opc / org-sdlc 三场 talk 共 **8 条 symlink 断链**，处置待定；另 org-sdlc 有 1 条 anthorpic→anthropic 改名遗留断链。）
+（2026-09-26 检查：`ai_tool_deepresearch/` 下的 `dpt_rb_ai-coding-evolution/` 与 `dpt_rb_harness-agent-selection-*` 两个研究子目录已不在原位——harness / opc / org-sdlc 三场 talk 共 **8 条 symlink 断链**，处置待定。2026-09-27：原另有的 1 条 anthorpic→anthropic 改名遗留断链已随 `02_research` 重名目录合并修复。）
 
 ---
 
@@ -74,7 +74,7 @@ ai_dev_sdlc_aidc/
 | 桶 | 定位 | 内容 |
 |---|---|---|
 | `01_sources/` | **证据层** | 一手信号与资料来源，按形态组织：真实使用样本（`field_samples/`）、学术论文（`papers/`）、人物与厂商参考库（`reference/kol` + `reference/corp`）、微信公众号原文归档（`weixin/`） |
-| `02_research/` | **分析层** | 多数主题是自包含的 `raw → digested → result` 管道：工程实践、反馈回路、管理与编排、多智能体团队、研发体系迁移、ThoughtWorks 方法论、前沿议题、Anthropic 实践、研发原生 2.0；**另有两个活跃主题**——`repo_agent_friendliness/`（Agent-Friendly 评估系统，独立三层分法 `10-spec/20-instruments/90-archive`，run 数据不落本仓库，见根 AGENTS §4 例外）与 `ai_loop_engineering/`（Loop Engineering 运动，2026-09-26 三路回源完成）（需求工程与 SDD 两主题已于 2026-09-21 拆出至 `03_practice/`） |
+| `02_research/` | **分析层** | 多数主题是自包含的 `raw → digested → result` 管道：工程实践、反馈回路、管理与编排、多智能体团队、研发体系迁移、ThoughtWorks 方法论、前沿议题、Anthropic 实践；**另有两个活跃主题**——`repo_agent_friendliness/`（Agent-Friendly 评估系统，独立三层分法 `10-spec/20-instruments/90-archive`，run 数据不落本仓库，见根 AGENTS §4 例外）与 `ai_loop_engineering/`（Loop Engineering 运动，2026-09-26 三路回源完成）（需求工程与 SDD 两主题已于 2026-09-21 拆出至 `03_practice/`；重名目录 `anthorpic_ai_sdlc/`→`anthropic_ai_sdlc/`、`rnd_native_2.0/`→`ai_native_rnd/` 已于 2026-09-27 合并） |
 | `03_practice/` | **实践层** | SDLC 工程实践与方法论的沉淀（2026-09-21 自研究层拆出，用户判定其内容已是 practice 而非 research）：`requirements_engineering/`（需求表达格式）、`spec_driven_development/`（SDD 工具生态与辩论）、`beyond_spec_driven_development/`（SDD 批判之后的形态光谱）、`harness_governance/`（★ 环境轴：治理 agent 执行链路，2026-09-21 自 beyond 抽出）、`loop_governance/`（★ 控制轴：loop 层实践主干——停止条件/外层调度/自主度分档，2026-09-26 立题，证据权威在 `02_research/ai_loop_engineering`） |
 | `04_enterprise/` | **企业视角** | SDLC 在企业侧的映射：BPM 作为企业信息加工流的等价物，以及企业 AI 重构案例 |
 | `05_output/` | **产出层** | 主线 Keynote 交付物（含完整制作流程 `WORKFLOW.md` 与阶段管线） |
