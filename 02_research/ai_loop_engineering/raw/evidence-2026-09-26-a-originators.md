@@ -389,3 +389,60 @@ Claude Code 团队（Cherny 领导）2026-06-30 官方博客给出了产品的�
 1. **书名矛盾**：《Agentic Engineering》正确（O'Reilly 链接实锤）；evidence-c:57 的《Beyond Vibe Coding》为误。
 2. **此前无锚的"品味警告"**：真实原文为上述两句（含糊目标＋品味委托）；台账/时间线/manual 中旧转述（"停止条件含糊、或把品味一起交出去，这套做法会出问题"）系姊妹仓 FAQ 15 的合并式转述，与原文有出入——各处已按逐字替换。
 3. **Steinberger 推文正文**：经 Osmani 06-07 帖逐字转引（上列）——从"未取得"升级为"有日期转引"，直接引用须标"经 Osmani 转引"。
+
+---
+
+## 补充回源（2026-09-27 · Osmani 原文实践细节增量）
+
+> 本节只收本轮对两篇 Osmani 原文的新增展开，不重复 §4 已有定义、四级分层、Ralph 谱系、`/goal` evaluator 边界、maker/checker、含糊目标与品味警告。来源仍是 Osmani 本人一手原文；这些内容按**定义 / 建议 / 个人观察 / 示例**分类，不能互相升格。
+
+### D5 · 命名篇的设计清单：五件套 + 记忆脊柱
+
+- 来源：Addy Osmani，《Loop Engineering》，https://addyosmani.com/blog/loop-engineering/，发布日期 2026-06-07，观测日期 2026-09-27。
+- 原文关键句："A loop needs five things and then one place to remember stuff."；"The agent forgets, the repo doesnt."。
+- 五件套的操作化细节：
+  1. **Automations**：按计划运行，用于发现与 triage；
+  2. **Worktrees**：并行隔离工作，但作者明确指出 "YOU are still the ceiling"，可运行数量受人的 review bandwidth 限制；
+  3. **Skills**：把 intent/context 外置，避免每轮重新推断；
+  4. **Plugins / connectors**：插件是 skills/connectors 的分发格式；connectors/MCP 把循环接到 issue tracker、数据库、staging、Slack，并可开 PR、关联 ticket、等待 CI 变绿后通知；
+  5. **Sub-agents**：explore / implement / verify 分工；额外 token 只在 second opinion 值得时花；
+  6. **Memory**：状态文件、仓库历史或其他外部记忆是跨轮接续的脊柱。
+- 最小主张：Osmani 提供的是一份**设计 checklist 和组合建议**，不是 Claude 官方四类 loop taxonomy，也不是所有 loop 的准入条件。
+
+### D6 · 命名篇的串联示例：从发现到次日恢复
+
+- Osmani 的示例链：每日 automation 读取 CI failures、open issues、recent commits，写入 Markdown/Linear 状态；每个 finding 开隔离 worktree；sub-agent 起草；第二个 agent 依据 skills/tests review；connector 开 PR、更新 ticket；状态文件成为 spine，次日从中恢复。
+- 证据性质：**作者建议/示例**，不是他对行业采用率或效果的实证证明。
+- 可供后续研究的问题：这种链条是否真正覆盖“候选→授权→在途→阻塞→验收→完成”，尤其在多 feature、并发和优先级变化时如何保持可见性。
+
+### D7 · 命名篇的风险与人的位置
+
+- 原文关键句："a loop running unattended is also a loop making mistakes unattended"；"done is a claim and not a proof"。
+- 原文还警告 comprehension debt 与 cognitive surrender 会随着平滑循环加速；直接 prompt 仍然有效，需要平衡自动循环与人工理解。
+- 最小主张：Osmani 个人明确把**无人值守错误、完成声明不等于证明、理解债务和认知让渡（cognitive surrender）**视为循环的风险；这应进入反例/风险材料，不应被改写成“loop 一定失控”或“必须人工逐轮”。
+
+### D8 · 操作篇的个人规模与任务适配观察
+
+- 来源：Addy Osmani，《Practical Loop Engineering》，https://addyosmani.com/blog/practical-loop-engineering/，发布日期 2026-08-14，观测日期 2026-09-27。
+- 个人实践观察：每日约运行 5–10 个 agents，通常最多约 5 个并发；文档、覆盖率等安全任务可完全委派；auth/security/finance、接触敏感系统，或复杂且 spec/stop 仍可能漏项的任务需要密切观察。
+- 证据性质：**个人规模与风险经验**，不是通用并发上限、风险分档或量化自主度标准。
+
+### D9 · 官方四类模式的选型语义与组合
+
+- Osmani 转引并对照 Claude Code 官方四类循环时，分类不只是“自主度等级”，还同时包含 trigger、stop、primitive、task fit；原文明确："Not all tasks require complex loops; start with the simplest solution and use these patterns selectively."
+- 组合建议：`/loop` 做 heartbeat/discovery，`/goal` 做单问题闭环；示例是 `/loop every 24h ... if bug exists, use /goal ... until all local tests pass and push branch`；进一步可组合 `/schedule`、`/goal`、skills、dynamic workflows 与 auto mode，再用 adversarial judge 评审多个 worktree 方案。
+- 最小主张：这是**组合与选型建议**。`/goal` 是单个 bounded task 的循环，并不要求一个外层 scheduler 才能成立；因此“外层调度”是常见扩展/控制问题，不应被回写成 Osmani 核心定义的必要条件。
+
+### D10 · verification skill 示例与生命周期边界
+
+- Osmani 的 verification skill 示例要求：UI 变化不能仅凭 edit 成功宣告完成；要启动 dev server、进行浏览器真实交互、保存前后截图、确认 console 没有新增错误/警告，并可用 Chrome DevTools MCP 检查 performance/Core Web Vitals；失败后修复，再从步骤 1 重跑。
+- 证据性质：**作者建议/示范模板**，不能当作 `/goal` evaluator 已具备的内容质量判断能力。`/goal` evaluator 仍只核 transcript hard rules；真正的质量 verification 由 skill、独立 checker 或人完成。
+- 生命周期 nuance：本机 `/loop` 是 session-scoped，关机停止；resume/continue 可在 7-day window 内恢复；跨 session 需要 cloud `/schedule`。这使“循环存在”与“循环能否跨会话持久接续”成为两个不同问题。
+- 另一个 triage 示例：贡献指南明确不收 translations，可作为定时任务的可核 stopping condition；这属于作者工作流实例。
+
+### 本节的判读边界
+
+- **定义**：Osmani 的核心句、`loop` 作为替代逐轮提示的系统、以及其与 harness 的层次关系，见 §4。
+- **建议**：五件套、状态 spine、组合模式、verification skill 和“最简方案优先”，见本节 D5–D10。
+- **个人观察**：每日 agent 数量、并发量、任务风险分类，见 D8。
+- **不能推出**：不能从这些文章推出行业采用率、五件套的普遍必要性、5 个并发是安全阈值、`/goal` 能判断内容质量，或所有 loop 都必须具备外层调度。

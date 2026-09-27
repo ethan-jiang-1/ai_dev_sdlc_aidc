@@ -21,6 +21,7 @@
 | 03 | **构件**：停止条件与外层调度的收敛判定（三件骨架 / 两种调度形态 / 自主度位置 vs 量化） | ✅ 已答（2026-09-26，evidence-b/c） | [`03-构件.md`](03-构件.md) |
 | 04 | **实战配方**：各家怎么实操 | ➡️ **归并实践层**——操作规程的权威在 [`03_practice/loop_governance/result/backbone.md`](../../../03_practice/loop_governance/result/backbone.md)（§1–§4），本层不重复 | — |
 | 05 | **边界判定**：loop / SDD / harness 各管哪层；收敛成立且双向；三条引用归属修正 | ✅ 已答（2026-09-26，evidence-c） | [`05-边界判定.md`](05-边界判定.md) |
+| 06 | **Automation → Autonomy → Harness → Loop？**：是阶段迁移、harness 引发，还是控制面逐层外移与构件重命名；DSH 为什么“跑得动但看不清” | ✅ 初步判读（2026-09-27，evidence-e/g/h；P-existence/P-mechanism） | [`06-automation-autonomy-harness-loop.md`](06-automation-autonomy-harness-loop.md) |
 
 ## 已完成的 KOL 专项消化
 
@@ -38,3 +39,7 @@
 | [`../raw/evidence-2026-09-26-a-originators.md`](../raw/evidence-2026-09-26-a-originators.md) | 词源与定义者四人（Cherny / Steinberger / Runkle / Osmani） | 01 · 实践层 backbone §0/§4（自报）；backbone §1/§3 亦实引 |
 | [`../raw/evidence-2026-09-26-b-stop-and-scheduling.md`](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) | 停止条件与外层调度（9 个一手记录块全文） | 03 + 实践层 §1–§2 |
 | [`../raw/evidence-2026-09-26-c-autonomy-and-convergence.md`](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md) | 自主度阶梯与 SDD 对照面 | 03 §三 + 05 + 实践层 §3–§4 |
+| [`../raw/evidence-2026-09-27-e-cross-feature-observability.md`](../raw/evidence-2026-09-27-e-cross-feature-observability.md) | Anthropic Managed Agents、OpenClaw tasks/flow、feature_list 的在途/授权/阻塞/验收/恢复状态矩阵 | 06 + 03 外层调度扩展；P0 跨 feature 缺口 |
+| [`../raw/evidence-2026-09-27-f-autonomy-gates.md`](../raw/evidence-2026-09-27-f-autonomy-gates.md) | Codex action policy、拒绝升级、Spec Kit/OpenSpec 歧义门、LangChain HITL、授权漂移反例 | 03 §三；实践层自主度/检查点候选，尚非规范 |
+| [`../raw/evidence-2026-09-27-g-dsh-control-surface.md`](../raw/evidence-2026-09-27-g-dsh-control-surface.md) | DSH goal/driver/todo/plan/session persistence 的原生控制面与跨 feature 边界 | 06；DSH 对照与 FAQ 15 体感定位 |
+| [`../raw/evidence-2026-09-27-h-automation-to-autonomy.md`](../raw/evidence-2026-09-27-h-automation-to-autonomy.md) | automation/autonomy/harness/loop 时间轴、概念依赖、竞争解释与因果边界 | 06；不支持单向阶段史/简单因果 |
