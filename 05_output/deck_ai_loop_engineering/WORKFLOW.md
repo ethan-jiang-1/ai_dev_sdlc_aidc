@@ -9,10 +9,10 @@
 
 ```
 素材里哪几句能进故事    →  research/source-synthesis.md
-入门场的故事与每页主张  →  intro/outline/outline.md
-入门场每页怎么说        →  intro/manuscript/manuscript.md
-技术产品场的故事与主张  →  advanced/outline/outline.md
-技术产品场每页怎么说    →  advanced/manuscript/manuscript.md
+入门场的故事与每页主张  →  intro/outline/outline-intro.md
+入门场每页怎么说        →  intro/manuscript/manuscript-intro.md
+技术产品场的故事与主张  →  advanced/outline/outline-advanced.md
+技术产品场每页怎么说    →  advanced/manuscript/manuscript-advanced.md
 ```
 
 做完的标准是 `AGENTS.md` 的四条：结构、系统、叙事、自洽。
@@ -44,7 +44,7 @@
 
 ### Phase 1 — 叙事大纲（intro/outline/ 与 advanced/outline/）
 
-**产出**：`intro/outline/outline.md` 与 `advanced/outline/outline.md`（两场各自过闸）
+**产出**：`intro/outline/outline-intro.md` 与 `advanced/outline/outline-advanced.md`（两场各自过闸）
 
 **内容**：
 ```
@@ -61,7 +61,7 @@
 
 ### Phase 2 — 完整文稿（intro/manuscript/ 与 advanced/manuscript/）
 
-**产出**：各场 `manuscript/manuscript.md`（该场大纲过闸后逐场展开）
+**产出**：`intro/manuscript/manuscript-intro.md` 与 `advanced/manuscript/manuscript-advanced.md`（该场大纲过闸后逐场展开）
 
 每张 slide 展开为：主张句（与大纲相同）+ 上屏（title / subtitle / content，复杂页加 callout）+ 口播 + 接到下一页 + 备注。subtitle 等于主张句。content 把这一步说满，供后面的做片使用。备注放证据和不能说的边界。
 

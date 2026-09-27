@@ -8,8 +8,8 @@ source:
   - 03_practice/loop_governance/result/backbone.md
   - 03_practice/loop_governance/result/manual.md
 feeds_into:
-  - intro/outline/outline.md
-  - advanced/outline/outline.md
+  - intro/outline/outline-intro.md
+  - advanced/outline/outline-advanced.md
 ---
 
 # Phase 0：素材合成

@@ -11,7 +11,7 @@
 1. **结构**：每一页只推进故事的一步。两场都是平铺单档；追问的答案进备注，不开加深页。
 2. **系统**：公式里的每个因子都能在大纲里指到页；多出来的页要写明它为什么不是第四个因子。
 3. **叙事**：听众能用一句话接上下一页。接不上的页，删或并。
-4. **自洽**：各场大纲（`intro/outline/outline.md`、`advanced/outline/outline.md`）的主张句与该场文稿的 CLAIM 是同一句。上屏的 subtitle 用这一句。研究层的边界写在讲者备注或 callout，不另起一套主张。
+4. **自洽**：各场大纲（`intro/outline/outline-intro.md`、`advanced/outline/outline-advanced.md`）的主张句与该场文稿的 CLAIM 是同一句。上屏的 subtitle 用这一句。研究层的边界写在讲者备注或 callout，不另起一套主张。
 
 内容权威是大纲，展开在文稿。
 
@@ -26,14 +26,14 @@
 
 ```
 素材里哪几句能进故事    →  research/source-synthesis.md
-入门场的故事与每页主张  →  intro/outline/outline.md
-入门场每页怎么说        →  intro/manuscript/manuscript.md
-技术产品场的故事与主张  →  advanced/outline/outline.md
-技术产品场每页怎么说    →  advanced/manuscript/manuscript.md
+入门场的故事与每页主张  →  intro/outline/outline-intro.md
+入门场每页怎么说        →  intro/manuscript/manuscript-intro.md
+技术产品场的故事与主张  →  advanced/outline/outline-advanced.md
+技术产品场每页怎么说    →  advanced/manuscript/manuscript-advanced.md
 每页上屏                →  同场文稿的 title / subtitle / content
 ```
 
-上屏给后面的做片用——**做片方未必懂 loop engineering，写少了会乱发挥**。title 短，subtitle 等于主张句，只读二者应能跟上论证。content 分两档：第一档「必须写出」是这页的最小完整版面，缺一行这页就不成立；第二档 nice to have 版面有余再上，放不下整档舍弃。引用块是给做片的补充材料——这页的意思、词解、禁止、版面——永远不上屏，拿不准时以它为准。红、绿、灯只允许出现在引用块里。本目录仍不出 PPTX、PNG、风格母版。
+上屏给后面的做片用——**做片方未必懂 loop engineering，写少了会乱发挥**。title 短，subtitle 等于主张句，只读二者应能跟上论证。content 分两档：第一档「必须写出」是这页的最小完整版面，缺一行这页就不成立；第二档 nice to have 版面有余再上，放不下整档舍弃。引用块是给做片的补充材料——这页的意思、词解、禁止、版面——永远不上屏，拿不准时以它为准。个别难点页加一句 callout 点睛（自造金句，或已回源复核的署名引语），放页角或底部一行；未复核引语照旧不上屏。红、绿、灯只允许出现在引用块里。本目录仍不出 PPTX、PNG、风格母版。
 
 改故事先改该场的大纲，再改该场文稿，使两处的主张句重新相同。
 
@@ -84,7 +84,7 @@
 | 稿 | 状态 |
 |---|---|
 | `research/source-synthesis.md` | 素材信号。早于「它说做完了」这一版故事 |
-| `intro/outline/outline.md` | 入门场大纲（19 页），2026-09-27 用户过闸 |
-| `advanced/outline/outline.md` | 技术产品场大纲（27 页），2026-09-27 用户过闸 |
-| `intro/manuscript/manuscript.md` | 入门场文稿（三档格式）：19 页，主张句与大纲相同，每页第一档＋nice to have＋做片补充材料，待用户收口 |
-| `advanced/manuscript/manuscript.md` | 技术产品场文稿（三档格式）：27 页，主张句与大纲相同，每页第一档＋nice to have＋做片补充材料，待用户收口 |
+| `intro/outline/outline-intro.md` | 入门场大纲（19 页），2026-09-27 用户过闸 |
+| `advanced/outline/outline-advanced.md` | 技术产品场大纲（27 页），2026-09-27 用户过闸 |
+| `intro/manuscript/manuscript-intro.md` | 入门场文稿（三档格式＋难点页 callout 点睛）：19 页，主张句与大纲相同，待用户收口 |
+| `advanced/manuscript/manuscript-advanced.md` | 技术产品场文稿（三档格式＋难点页 callout 点睛）：27 页，主张句与大纲相同，待用户收口 |
