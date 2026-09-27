@@ -1,34 +1,35 @@
-# Project Metadata — 它说做完了
-# 叙事以 v1/outline/outline.md 为准。页、画面、PPTX 不在本目录的工作里。
+# Project Metadata — Loop Engineering（两场分稿）
+# 两场叙事分别以 intro/outline/outline.md 与 advanced/outline/outline.md 为准。页、画面、PPTX 不在本目录的工作里。
 
 project:
   name: "Loop Engineering"
   slug: "deck_ai_loop_engineering"
   type: strategy_keynote
   created: 2026-09-27
+  split: 2026-09-27
 
 language:
-  slides: "中文短句。loop、harness、goal、eval 可以出现在备注里，主张句不依赖它们"
+  slides: "中文短句。术语进备注，主张句不依赖英文术语（advanced 场展开与备注可放开机制术语）"
   speech: "中文"
   source_materials: "英文一手源（evidence 档案）+ 中文实践层总纲"
 
 audience:
-  primary: "技术与管理混合（两个版本分别侧重）"
-  ai_literacy: "有初步 AI 理解，部分已动手搭 agent"
+  intro: "没跑过循环的通识场——听说过 agent 自动干活，自己没跑过；业务与管理为主"
+  advanced: "正在搭或维护 agent 系统的工程师＋设计 agent 功能的产品经理"
 
 scope:
-  versions:
-    standard:
-      tier: "standard"
-      duration_minutes: 40
-      slides: 15
-    deep:
-      tier: "extended"
+  decks:
+    intro:
+      tier: intro
+      duration_minutes: 45
+      slides: 19
+    advanced:
+      tier: advanced
       duration_minutes: 75
-      slides: 10
-  focus: "Loop Engineering：系统替人完成一轮。本场确定何时允许这一转向，难点在何处，哪些问题与场合适合"
+      slides: 27
+  focus: "Loop Engineering：系统替人完成一轮。两场都确定何时允许这一转向；入门场铺概念，技术产品场放机制"
   harness: "这一轮会不会在已知的错上变红的条件。不是循环的历史原因，也没有证明因此更好"
-  goal_eval: "完成条件写不成一句能检查的话，就交给人。怎么写那一句是旁边的题目，不在这场展开"
+  goal_eval: "完成条件写不成一句能检查的话，就交给人。怎么写那一句是旁边的题目，两场都不展开"
 
 source:
   primary:
@@ -44,26 +45,22 @@ phases:
     status: draft
     directory: "research/"
     note: "source-synthesis.md 是素材信号，早于当前故事"
-  phase_1_outline:
+  intro_outline:
     status: draft
-    directory: "v1/outline/"
-    note: "当前故事。隐喻是灯。标准 15 页：先点明这一转，再讲适合的问题、难处和场合。加深 10 页只回答追问"
-  phase_2_manuscript:
+    directory: "intro/outline/"
+    note: "入门场大纲 19 页，2026-09-27 用户过闸"
+  intro_manuscript:
     status: draft
-    directory: "v1/manuscript/"
-    note: "主张句与大纲相同。每页有上屏 title / subtitle / content。标准 S01–S15，加深 E1–E10"
-  phase_3_slide_specs:
-    status: stopped
-    directory: "v1/session_design/"
-    note: "deck-brief.md 是上一版画面说明，不是内容权威，不续写、不出图"
-  phase_4_visual_style:
-    status: removed
-    directory: "v1/style/"
-    note: "风格说明和母版图已删除，不重建"
-  phase_5_production:
-    status: removed
-    directory: "v1/production/"
-    note: "页面图、PPTX、出图脚本已于 2026-09-27 删除，不重建"
+    directory: "intro/manuscript/"
+    note: "入门场文稿 19 页，四轴与红线自查过，待用户收口"
+  advanced_outline:
+    status: draft
+    directory: "advanced/outline/"
+    note: "技术产品场大纲 27 页，2026-09-27 用户过闸"
+  advanced_manuscript:
+    status: draft
+    directory: "advanced/manuscript/"
+    note: "技术产品场文稿 27 页，四轴与红线自查过，待用户收口"
 
 prerequisites:
   - "03_practice/loop_governance backbone + manual 已确认（见该目录 CURRENT.md）"

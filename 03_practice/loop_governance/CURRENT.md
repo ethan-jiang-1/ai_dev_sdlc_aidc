@@ -1,6 +1,6 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-27（deck Phase 0–2 draft）**：backbone 与 manual 的确认不变。四处表述微调已收进 deck 的 `research/source-synthesis.md` 与 `v1/outline/outline.md`，没有回改本目录正文。文稿在 `v1/manuscript/manuscript.md`。三份都是 draft。
+> 最近一次更新：**2026-09-27（deck 两场分稿）**：backbone 与 manual 的确认不变。deck 按用户决定劈成两场：`intro/`（入门场 19 页）与 `advanced/`（技术产品场 27 页），各自大纲已过用户闸门、文稿成草案；原统一稿已全部迁入两场并按用户决定移除。没有回改本目录正文。
 
 ## 一句话
 
@@ -15,11 +15,11 @@
 | `result/README.md` | ✅ 入层判据 |
 | `result/manual.md` | ✅ 12 节——**2026-09-27 用户确认通过** |
 | 证据层 | ✅ 循环机制见 [`ai_loop_engineering`](../../02_research/ai_loop_engineering/README.md)；控制接口见 [`agent_goal_eval`](../../02_research/agent_goal_eval/digested/README.md) |
-| deck | 内容稿。大纲与文稿的主张句已对齐（标准 15 页「Loop Engineering」）。每页有上屏 title / subtitle / content。画面与 PPTX 已删除 |
+| deck | 两场分稿（2026-09-27 用户定）：`intro/` 入门场 19 页、`advanced/` 技术产品场 27 页，主张句与各自大纲对齐，每页有上屏；原统一稿已迁入两场并移除。画面与 PPTX 已删除 |
 
 ## 下一步
 
-1. **叙事以大纲为准。** 标准 15 页。S02 点明这一转：系统替人把一轮收尾，名字叫 loop engineering，做法不统一。其后回答什么问题值得转、难在哪、什么场合可以。文稿每页有上屏 title / subtitle / content。主张句与大纲相同。画面与 PPTX 不重建。deck 自 `0bedfea` 起的改动已随本轮提交。
+1. **叙事以各场大纲为准。** 入门场 `intro/` 19 页（通识听众，从「一轮是什么」讲起）；技术产品场 `advanced/` 27 页（在跑循环的工程师与产品，机制放开讲）。两场主张句已与各自文稿对齐，四轴与红线自查通过，待用户收口。原统一稿已迁移移除。画面与 PPTX 不重建。改动未提交。
 2. 研究层遗留（不阻塞 deck，登记在研究层 CURRENT）：Unrolling 候选 403 / 归属修正 / Morris 四级。
 
 ## 缺口（backbone 登记的两项开放缺口 + 两项附加）

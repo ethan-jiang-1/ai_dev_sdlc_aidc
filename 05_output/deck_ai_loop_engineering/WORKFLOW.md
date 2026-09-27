@@ -8,9 +8,11 @@
 ## 内容怎么往前走
 
 ```
-素材里哪几句能进故事  →  research/source-synthesis.md
-故事的一步一步        →  v1/outline/outline.md
-每一步怎么说          →  v1/manuscript/manuscript.md
+素材里哪几句能进故事    →  research/source-synthesis.md
+入门场的故事与每页主张  →  intro/outline/outline.md
+入门场每页怎么说        →  intro/manuscript/manuscript.md
+技术产品场的故事与主张  →  advanced/outline/outline.md
+技术产品场每页怎么说    →  advanced/manuscript/manuscript.md
 ```
 
 做完的标准是 `AGENTS.md` 的四条：结构、系统、叙事、自洽。
@@ -40,26 +42,26 @@
 
 ---
 
-### Phase 1 — 叙事大纲（v1/outline/）
+### Phase 1 — 叙事大纲（intro/outline/ 与 advanced/outline/）
 
-**产出**：`v1/outline/outline.md`
+**产出**：`intro/outline/outline.md` 与 `advanced/outline/outline.md`（两场各自过闸）
 
 **内容**：
 ```
-1. Core Metaphor（2–3 个候选 → 用户选一个）
-2. Core Formula（可证伪）
-3. Narrative Arc（旅程地图）
-4. Block 结构（每个 Block 的叙事目的 + slide 归属）
-5. Slide Map（序号 / VISUAL TYPE / 一句话 CLAIM）
+1. 核心判断与核心公式（可证伪）
+2. Narrative Arc（叙事弧：只读 title+subtitle 应能复述）
+3. 页面清单（每页 title + 一句话主张）
+4. 公式落在哪一页（因子 → 页）
+5. 语言纪律（本场红线与术语档）
 ```
 
 **⛔ 闸门**：隐喻不是"差不多"是"就是它"、公式可证伪、故事线成立 → Phase 2
 
 ---
 
-### Phase 2 — 完整文稿（v1/manuscript/）
+### Phase 2 — 完整文稿（intro/manuscript/ 与 advanced/manuscript/）
 
-**产出**：`v1/manuscript/manuscript.md`
+**产出**：各场 `manuscript/manuscript.md`（该场大纲过闸后逐场展开）
 
 每张 slide 展开为：主张句（与大纲相同）+ 上屏（title / subtitle / content，复杂页加 callout）+ 口播 + 接到下一页 + 备注。subtitle 等于主张句。content 把这一步说满，供后面的做片使用。备注放证据和不能说的边界。
 
@@ -69,7 +71,7 @@
 
 ## 改故事时
 
-先改 `v1/outline/outline.md`，再改 `v1/manuscript/manuscript.md`，直到两处主张句相同。
+先改该场大纲，再改该场文稿，直到两处主张句相同。
 
 ## 前置条件
 
