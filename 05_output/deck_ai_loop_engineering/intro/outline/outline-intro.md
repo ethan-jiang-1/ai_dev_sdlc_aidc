@@ -1,7 +1,7 @@
 ---
 title: Outline — Loop Engineering 入门场
 version: intro-v1
-status: draft
+status: confirmed
 language: 中文为主，术语保留英文
 total_slides: 19
 duration_minutes: 45
@@ -153,7 +153,7 @@ Loop Engineering：由系统替人完成一轮，而不是由人逐轮发起
 
 ## 6. 语言
 
-投影用完整中文。主题在前。title 短，subtitle 是主张。只读二者应能跟上论证。loop、harness、goal、eval 可以出现在备注里，主张句不依赖它们。
+投影用完整中文，措辞按大陆中文习惯，避免翻译腔。主题在前。title 短，subtitle 是主张，主张句不依赖英文术语。关键术语保留英文：首次出现处用「中文（英文）」标注——检查（check）、执行方（agent）、触发（trigger）、上限（limit）、已知错误（known error）、验收（sign-off）；loop、agent、harness、goal、eval、webhook、deny-and-continue 直接用英文。文稿头部的术语中英对照表是唯一映射权威。
 
 第一页 title 就是 Loop Engineering。不解释谁在哪一天起的名。
 

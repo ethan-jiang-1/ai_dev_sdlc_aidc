@@ -1,7 +1,7 @@
 ---
 title: Outline — Loop Engineering 技术产品场
 version: advanced-v1
-status: draft
+status: confirmed
 language: 中文为主，术语保留英文
 total_slides: 27
 duration_minutes: 75
@@ -171,7 +171,7 @@ Loop Engineering：由系统替人完成一轮，而不是由人逐轮发起
 
 ## 6. 语言
 
-投影用完整中文。主题在前。title 短，subtitle 是主张。只读二者应能跟上论证。
+投影用完整中文，措辞按大陆中文习惯，避免翻译腔。主题在前。title 短，subtitle 是主张，主张句不依赖英文术语。关键术语保留英文：首次出现处用「中文（英文）」标注——检查（check）、执行方（agent）、裁判（grader）、触发（trigger）、上限（limit）、基线（baseline）、已知错误（known error）、验收（sign-off）。
 
 术语放开档：grader、evaluator、deny-and-continue、负例控制这类词可以进展开与备注；主张句仍由中文短句承载，不依赖英文术语。
 
