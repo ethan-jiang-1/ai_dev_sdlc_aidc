@@ -70,6 +70,8 @@ agent_goal_eval/
 | 社区 | 不进人物名单。第一人称实战写入 `raw/evidence-*`，来源类型标成社区，热度不算证据 |
 | 机构 / 产品 | 官方文档里的构造方法是机制证据，作者不因此成为名单上的人 |
 
+**时间窗**（2026-09-27 用户定）：主证据是 **2026-06 及以后**。2026-01 至 2026-05 可以入档，标「窗边」。2025 及更早本主题不挖，除非某篇窗内原文自己引用了它。
+
 回源档案的字段、采样纪律、证据层级（P-existence / P-mechanism / P-outcome）沿用方法样本 [`../ai_loop_engineering/raw/research-plan.md`](../ai_loop_engineering/raw/research-plan.md) 的 §4、§4.1、§5。临时产物放仓库根 `.tmp-agent-goal-eval-`。
 
 ---
