@@ -93,9 +93,10 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 | [`03_practice/harness_governance/`](../../03_practice/harness_governance/README.md) | **单次运行可信**：约束写进环境（门禁 / 传感器 / 漂移清理），诊断轴＝"agent 缺哪句话"①–⑦ | 多轮的**自主治理**（停止条件、外层调度、自主度分档、人在环位置；队列/次序经 feature_list 类进度规格覆盖——**跨 feature 在途可见性＝已登记的开放缺口**）——loop 治理的地盘（判读归本主题、操作规程归 [`03_practice/loop_governance/`](../../03_practice/loop_governance/README.md)） |
 | [`03_practice/beyond_spec_driven_development/`](../../03_practice/beyond_spec_driven_development/README.md) | SDD 批判之后的**形态光谱**（本主题与其是**正交轴关系、不是光谱上的一行**——定位说明在该主题 §6.1，本主题只放指针） | 不重复 KOL 一手台账 |
 | [`03_practice/spec_driven_development/debate/`](../../03_practice/spec_driven_development/debate/README.md) | SDD 阵营的辩论谱系与工具对照 | 不做 loop 侧的 KOL 调查 |
+| [`../agent_goal_eval/`](../agent_goal_eval/README.md) | 前沿来源如何构造 goal 与 eval（定调在该目录 README §1） | 循环怎么跑、取题、授权、调度、停止骨架仍归本主题。本主题已有的 `/goal`、grader、验证格引句留在原档案 |
 
 **一句话分界**：**harness 治理管"约束写进环境"，本主题管"循环怎么跑、谁决定下一轮、人站在哪"。**
-前者是**知识/环境**轴，后者是**控制/分配**轴——两个轴不同，故不合并。
+前者是**知识/环境**轴，后者是**控制/分配**轴——两个轴不同，故不合并。goal 与 eval 如何构造另立 [`agent_goal_eval`](../agent_goal_eval/README.md)。
 
 ---
 

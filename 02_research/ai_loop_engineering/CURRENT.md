@@ -47,5 +47,6 @@
 ## 铁律速记
 
 - **素材权威在 evidence 档案与 `01_sources/`，判读权威在 `digested/`，操作权威在 `03_practice/loop_governance/`**。
+- **goal 与 eval 如何构造**归 [`../agent_goal_eval/`](../agent_goal_eval/README.md)（定调在该目录 README §1）。本主题的验证格与 `/goal` 引句留在原档案，不在这里扩成那个主题。
 - **`⏳ 待回源` 不进结论**；**B 路**负结论里，Unrolling 候选文本已登记（旧题 Unwinding），但直接页面仍 403，不能当完全主验。其余仍在：CC CHANGELOG、auto mode 公告正文、Codex auto-review docs。台账 §E 收跨路汇总。
 - 姊妹仓 FAQ 15 的旧判定（切片层/管线层）**只作对照**——本主题全部结论以自己的回源为准。

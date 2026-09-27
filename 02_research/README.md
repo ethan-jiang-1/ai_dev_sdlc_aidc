@@ -1,6 +1,6 @@
 # 02_research — 研究层 · 分析
 
-**定位**：围绕主线的长期研究沉淀（默认**沉淀状态**；**例外**：`repo_agent_friendliness/` 活跃评估系统、`ai_loop_engineering/` 活跃研究主题——见根 AGENTS §4）。
+**定位**：围绕主线的长期研究沉淀（默认**沉淀状态**；**例外**：`repo_agent_friendliness/` 活跃评估系统、`ai_loop_engineering/` 与 `agent_goal_eval/` 活跃研究主题——见根 AGENTS §4）。
 补素材 / 改结论前先确认是否为某场 talk 服务——**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**。
 
 ## 统一分法
@@ -16,6 +16,7 @@
 | `agentic_management/` | Agentic 管理侧景观（一手 raw 尚未消化，result 为空） | `raw /` |
 | `agentic_teams/` | 多智能体团队（Agent Teams PPT 成稿） | `result/agent_teams_ppt.md` |
 | `ai_loop_engineering/` | Loop Engineering（2026-06 起这场**被命名的实践运动**，**活跃**）：命名谱系、KOL 一手见解与实战、构件、与 SDD 的边界判定。素材常态在 `raw/evidence-*.md` 回源档案（深度卡仅 Andrew Ng） | `raw/kol-roster.md`（★ 名单权威）+ `digested/README.md`（问题看板）；未来综述 → `result/` |
+| `agent_goal_eval/` | 前沿来源如何构造 goal 与 eval（**活跃**，2026-09-27 定调）。重心是 goal 让 loop 跑起来；eval 量化后可调优；设计不出来的情况一并研究。定调全文不在本表 | `README.md` §1 + `CURRENT.md` |
 | `ai_native_rnd/` | 从瀑布 / 敏捷到 AI-Native 研发的跃迁 | `result/AI_Native_Agile_Evolution.md` |
 | `ai_sdlc_frontier/` | 前沿议题：各家一线人物访谈 + 上下文压缩六家对比等 followup | `followup_research/` |
 | `anthropic_ai_sdlc/` | Anthropic 官方 AI-Native SDLC playbook（英译原文 + 中文编译） | `org/ai-native-sdlc-playbook.md` |
