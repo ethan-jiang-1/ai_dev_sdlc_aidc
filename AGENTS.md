@@ -38,7 +38,8 @@
 | 提到如何构造 goal / eval、goal 如何让 loop 跑起来、量化后如何调优、设计不出好的 goal 或 eval 时怎么办 | **研究层** `02_research/agent_goal_eval/` | 读该目录 `README.md` §1 + `CURRENT.md`；循环怎么跑仍走 `ai_loop_engineering/` |
 | 提到需求工程 / SDD / SDD 后继形态 / harness 治理 / loop 治理（循环、停止条件、外层调度、自主度分档）等 SDLC 实践体系，要改实践方法论文档 | **实践层** `03_practice/` | 见第 4 节；先读该目录 README 的分工与单一事实源约定 |
 | 提到 BPM、企业信息加工流、企业 AI 重构案例 | **研究层·映射** `04_enterprise/` | 沉淀状态：改前先确认是否为某场 talk 服务，是则走该 talk 的 `02_evidence/` |
-| 提到主线 Keynote / deck_ai_sdlc_keynote | **产出层** `05_output/` | 历史主线稿（2026-08 后未推进）；talk 交付不依赖它 |
+| 提到主线 Keynote / deck_ai_sdlc_keynote | **产出层** `05_output/deck_ai_sdlc_keynote/` | 历史主线稿（2026-08 后未推进）；talk 交付不依赖它 |
+| 提到 loop engineering 的 deck / keynote / 综述报告、或要把研究层 loop 成果做成演示 | **产出层** `05_output/deck_ai_loop_engineering/` | 只写叙事。页面图和 PPTX 已删除。按该目录 `AGENTS.md` 走 |
 | 说"这个仓库 / 这个项目"、要改 README、要整理结构 | **根级** | 改 `README.md` / 本文件 |
 
 **判不出来就问，不要猜。** 尤其是"这场 talk"没指名时——五场 talk 的对象、篇幅、红线完全不同，猜错代价很高。
@@ -136,6 +137,7 @@
 | AI 形态下的 SDLC 实践方法（harness 治理＝环境轴 / loop 治理＝控制轴） | `03_practice/README.md`（五主题分工） |
 | loop engineering 这场运动——谁在说、证据档案、判读 | `02_research/ai_loop_engineering/README.md`（活跃研究主题，2026-09-26 起） |
 | 前沿来源如何构造 goal 与 eval | `02_research/agent_goal_eval/README.md` §1（活跃研究主题，2026-09-27 定调） |
+| Loop Engineering Deck 制作进度 | `05_output/deck_ai_loop_engineering/AGENTS.md`（只写叙事；画面与 PPTX 已删除） |
 
 ## Python / uv
 

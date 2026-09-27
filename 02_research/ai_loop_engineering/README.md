@@ -22,7 +22,7 @@ ai_loop_engineering/
 │   ├── kol/<slug>.md          #   一人的消化（有料才写；slug 与台账对齐）
 │   └── NN-<question>.md       #   跨源综合（编号增长）
 │
-├── result/                    # 成稿层：未来对外综述报告的家（当前空是有意的，见 result/README）
+├── result/                    # 成稿层：landscape.md（2026-09-27 过筛综述）
 └── figures/                   # SVG
 ```
 
@@ -141,7 +141,7 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 | 这波谁在说、号召力依据是什么 | [`raw/kol-roster.md`](raw/kol-roster.md)（★ 唯一名单权威） |
 | 什么时候发生了什么事 | [`raw/00-timeline.md`](raw/00-timeline.md) |
 | 逐字引句与回源过程在哪 | `raw/evidence-*.md`（回源档案，按日期-路别命名） |
-| 未来综述成稿在哪 | [`result/`](result/README.md)（当前空——有意为之，是未来 landscape 综述的家） |
+| 过筛综述在哪 | [`result/landscape.md`](result/landscape.md) |
 | 现在做到哪、下一步干什么 | [`CURRENT.md`](CURRENT.md) |
 | 有哪些议题、答了几个 | [`digested/README.md`](digested/README.md)（问题看板） |
 | 单个人的完整观点 | [`digested/kol/`](digested/kol/andrew_ng.md)（已消化）/ `01_sources/reference/kol/_raw_loop_engineering/`（素材） |

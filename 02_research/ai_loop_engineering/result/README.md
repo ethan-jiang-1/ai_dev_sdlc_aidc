@@ -12,6 +12,6 @@
 **命名**：语义命名、无序号（对齐 [`03_practice/harness_governance/result/`](../../../03_practice/harness_governance/result/README.md)
 的 `backbone` / `manual` 口径——序号是 `research/` 与 `digested/` 的封存序列专属）。
 
-**定位（2026-09-26 用户定）**：本层是**未来对外综述报告的家**——若要写一篇 loop engineering landscape 综述（KOL 全景 + 命名谱系 + 构件判定的成稿版），终稿进这里；三篇判读（digested 01/03/05）过筛稳定后可升级上来。
+**定位（2026-09-26 用户定）**：本层是对外综述的家。终稿是 [`landscape.md`](landscape.md)——命名、构件、边界、控制面叠加、八问空字段的过筛版。判读全文仍在 `digested/`，操作规程仍在 `03_practice/loop_governance/`。
 
-**当前状态**：**空——有意为之，不是缺文件**（判读在 `digested/`、操作规程已归实践层 `03_practice/loop_governance/`）。升格触发器的评估结果见 [`../README.md`](../README.md) §4。
+**当前状态**：[`landscape.md`](landscape.md) 已入层（2026-09-27）。未过筛的线索留在 `digested/`，不删。升格触发器的评估结果见 [`../README.md`](../README.md) §4。

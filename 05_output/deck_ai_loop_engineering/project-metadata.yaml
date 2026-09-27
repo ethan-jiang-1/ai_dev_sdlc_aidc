@@ -1,0 +1,70 @@
+# Project Metadata — 它说做完了
+# 叙事以 v1/outline/outline.md 为准。页、画面、PPTX 不在本目录的工作里。
+
+project:
+  name: "它说做完了"
+  slug: "deck_ai_loop_engineering"
+  type: strategy_keynote
+  created: 2026-09-27
+
+language:
+  slides: "中文短句。loop、harness、goal、eval 可以出现在备注里，主张句不依赖它们"
+  speech: "中文"
+  source_materials: "英文一手源（evidence 档案）+ 中文实践层总纲"
+
+audience:
+  primary: "技术与管理混合（两个版本分别侧重）"
+  ai_literacy: "有初步 AI 理解，部分已动手搭 agent"
+
+scope:
+  versions:
+    standard:
+      tier: "standard"
+      duration_minutes: 40
+      slides: 14
+    deep:
+      tier: "extended"
+      duration_minutes: 75
+      slides: 10
+  focus: "你离开之后它继续跑，你回来时它说做完了。整场回答你凭什么信"
+  harness: "这一轮会不会在已知的错上变红的条件。不是循环的历史原因，也没有证明因此更好"
+  goal_eval: "完成条件写不成一句能检查的话，就交给人。怎么写那一句是旁边的题目，不在这场展开"
+
+source:
+  primary:
+    - "../../02_research/ai_loop_engineering/"
+    - "../../03_practice/loop_governance/"
+  supplementary:
+    - "../../02_research/agent_goal_eval/"
+    - "../../03_practice/harness_governance/"
+    - "../../01_sources/reference/kol/_raw_loop_engineering/"
+
+phases:
+  phase_0_research:
+    status: draft
+    directory: "research/"
+    note: "source-synthesis.md 是素材信号，早于当前故事"
+  phase_1_outline:
+    status: draft
+    directory: "v1/outline/"
+    note: "当前故事。隐喻是灯。标准 14 页，加深 10 页只回答追问"
+  phase_2_manuscript:
+    status: draft
+    directory: "v1/manuscript/"
+    note: "主张句与大纲相同。标准 S01–S14，加深 E1–E10"
+  phase_3_slide_specs:
+    status: stopped
+    directory: "v1/session_design/"
+    note: "deck-brief.md 是上一版画面说明，不是内容权威，不续写、不出图"
+  phase_4_visual_style:
+    status: removed
+    directory: "v1/style/"
+    note: "风格说明和母版图已删除，不重建"
+  phase_5_production:
+    status: removed
+    directory: "v1/production/"
+    note: "页面图、PPTX、出图脚本已于 2026-09-27 删除，不重建"
+
+prerequisites:
+  - "03_practice/loop_governance backbone + manual 已确认（见该目录 CURRENT.md）"
+  - "02_research/ai_loop_engineering/result/landscape.md 已入层（2026-09-27）"

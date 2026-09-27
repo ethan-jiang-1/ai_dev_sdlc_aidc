@@ -1,6 +1,6 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-27（I/J/K 扩容与融合审阅）**：I 路补入簇外控制实践，I2 形成五切口扩容档案（主验与侦察回源混合），J 完成一条本地 goal 的 `n=1` 事后编码，K 取得 Codex agent loop 的候选原文摘录但直接 HTTP 仍 403。当前第一阶段问题树可以收口；I2 未复核来源、DSH 对照实验和行为面验证仍保持开放，不把它们写成已证结论。
+> 最近一次更新：**2026-09-27（landscape 入 result）**：digested 01/03/05/06/07 过筛为 [`result/landscape.md`](result/landscape.md)。实践层 backbone 与 manual 的确认记录在 [`loop_governance/CURRENT.md`](../../03_practice/loop_governance/CURRENT.md)，本文件不再写「待逐段确认」。I2 未复核来源、DSH 对照实验、行为面正反例矩阵、K 的直接页面仍开放，不进成稿主张。
 
 ## 一句话
 
@@ -21,13 +21,14 @@
 | `digested/03-构件.md` | ✅ 停止条件三件骨架；外层调度是长程扩展。动作门四种处置已按出处画出（evidence-f，无新抓取）；没有通用轮次刻度 |
 | `digested/05-边界判定.md` | ✅ 三层分工；收敛成立且双向；**三条引用归属修正**（影响全仓） |
 | ~~`raw/org/` · `raw/community/`~~ | ✅ **已撤销**（2026-09-26 评审决定 5）：evidence 档案为素材常态形态，纪律要点已并入 README §1「回源档案纪律」 |
-| 实践层 `03_practice/loop_governance/` | ✅ README + CURRENT + result/README + **result/backbone.md（§0–§6 七节＋§0.2 诊断轴）+ result/manual.md（12 节操作规程）**——**均待用户逐段确认** |
+| `result/landscape.md` | ✅ 2026-09-27 入层。过筛结论；未复核的 I2 / K 不进主张 |
+| 实践层 `03_practice/loop_governance/` | ✅ backbone 与 manual 已确认。确认记录在该目录 `CURRENT.md`，本行不复制审阅过程 |
 
 ## 下一步
 
-1. **第一阶段研究判读可以收口，但验证支线不能写成已完成。** I/J/K 的增量已登记；I2 的侦察回源条目、行为面正反例矩阵、自我改写保护链仍需主 Agent 复核或实验验证。
-2. **下一唯一研究入口**：先完成 I2 主验筛选和 `digested/07` 的控制矩阵融合；随后再决定是否做 DSH 外置行对照。对照实验的验收仍是可重复日志与指标，不用 J 路 `n=1` 代替 P-outcome。
-3. **用户复核实践层 backbone（§0–§6 七节＋§0.2 诊断轴）与 manual（12 节）**——2026-09-27 经用户要求，F 的动作门/升级可达性、I 的行为面反例转为受限操作检查；digested/07 的四列空格只在多 feature 交接问题出现时作为工作行试点。I2 未复核材料、K 候选与 J 单次观察不作效果依据。
+1. **成稿已入层，验证支线仍未完成。** I2 侦察回源、行为面正反例矩阵、自我改写保护链、DSH 外置行对照都不进 `landscape.md`。对照实验的验收仍是可重复日志与指标，不用 J 路 `n=1` 代替 P-outcome。
+2. **deck 只写叙事。** 页面图和 PPTX 已删除。研究侧不另起主张。
+3. **实践层确认不再阻塞。** F 的动作门、I 的行为面反例、四列空格的工作行试点，边界已写在 landscape §5–§7；I2 / K / J 不作效果依据。
 4. **跨仓修正三处**（本轮一手证据触发，不属本主题但已查明）：
    - `talk-harness-201/02_evidence/01-kol-alignment-2026.md`：公式 "Agent = Model + Harness" 归属改为 **Trivedy/LangChain 原创 → Böckeler 传播锚点化**；
    - `01_sources/reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；
