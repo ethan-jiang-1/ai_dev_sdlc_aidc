@@ -1,6 +1,6 @@
 # 06 · Automation、Autonomy、Harness 与 Loop：是阶段迁移还是控制面叠加？
 
-> **证据**：[`raw/evidence-2026-09-27-h-automation-to-autonomy.md`](../raw/evidence-2026-09-27-h-automation-to-autonomy.md)（H 路，2024-12 → 2026-09 的一手时间轴与反证）＋
+> **证据**：[`raw/evidence-2026-09-27-h-automation-to-autonomy.md`](../raw/evidence-2026-09-27-h-automation-to-autonomy.md)（H 路）＋ [`raw/evidence-2026-09-27-i-high-influence-control.md`](../raw/evidence-2026-09-27-i-high-influence-control.md)（I 路，簇外高影响面）＋
 > [`raw/evidence-2026-09-27-g-dsh-control-surface.md`](../raw/evidence-2026-09-27-g-dsh-control-surface.md)（DSH 一手机制）＋
 > [`raw/evidence-2026-09-27-e-cross-feature-observability.md`](../raw/evidence-2026-09-27-e-cross-feature-observability.md)（跨 feature 可见性）＋既有 `evidence-a/b/c`。
 >
@@ -30,13 +30,19 @@
 
 | 时间 | 一手材料 | 研究意义 |
 |---|---|---|
+| 2024-05 | Aider：编辑后 lint，错误喂回模型（I 路） | 内环早于 Ralph，也早于本词 |
 | 2024-12 | Anthropic《Building effective agents》：workflow 是预定义路径，agent 动态决定过程和工具；环境反馈、循环、停止上限和人类 checkpoint 同时出现 | automation 与 autonomy 从一开始就并存，不是互斥阶段 |
+| 2025-03 | Horthy / 12-factor：反对 “loop until goal”，要在工具执行前打断 | 高影响面里存在反自由循环的生产主张，样本是客户向 agent |
 | 2025-07 | Huntley 的 Ralph：Bash while loop、back pressure、外置 TODO/spec、每轮测试，但停止依赖人工 taste，适用 greenfield | loop 构件先于“loop engineering”命名存在；自动运行仍可能脆弱 |
+| 2025-09-30 | Willison 命名 *designing agentic loops* | 相邻专名，不是 loop engineering 的提前发明 |
 | 2025-11 | Anthropic 长程 harness：initializer/coding agent、feature list、progress、git、增量工作和端到端验收 | 长程自主失败暴露跨 context 状态、取题顺序、提前完成和验证问题；harness 把控制点外置 |
 | 2026-02 | Boris Cherny 的 YC transcript：spec+Asana、spawn agents、几天无人干预，但 transcript 中 `loop` 出现 0 次 | 同构实践可以先用 swarm/spec/agent 语言存在，名称后贴上去 |
+| 2026-02-11 | OpenAI harness 全文：环境、短地图、仓内计划、自称为 Ralph 的评审循环；并写明不可外推 | harness 与 loop 在同一团队叠在一起；自述吞吐不是独立效果 |
 | 2026-06 | Osmani：loop 被定义为替代人逐轮 prompt 的系统，并称其“one floor above the harness”；LangChain 与 Claude Code 随后分别体系化/产品化 | 新标签把既有构件组合成一个可讨论、可销售、可设计的控制层 |
 
 **时间顺序支持“harness 让 loop 更可设计/更可见”这一机制解释；不支持“harness 是 loop 的充分原因”。**
+
+I 路还修正了一个样本偏差：此前时间轴过重依赖 Anthropic / Claude Code / LangChain。Aider、Willison、Beck、Yegge、OpenAI 内部团队、Cursor 与 GitHub Copilot 给出的是同一组控制问题的其他答案，不是第二条阶段史。Horthy 的反模型尤其说明，不能把“模型自己 loop 到目标”写成先进团队的共识。
 
 ## 四、当前最强的解释与竞争解释
 
@@ -83,15 +89,16 @@ DSH 的一手机制正好落在“有执行 loop，但没有完整 feature contr
 
 1. 不能说 automation 已被 autonomy 取代；自动触发、自动执行、模型自主选择和系统自主继续是不同维度。
 2. 不能说 harness engineering 引发了 loop engineering；loop 构件早于命名，且 Ralph 等实践没有成熟 harness 也能运行。
-3. 不能说 harness 或 loop 已证明提升 coding quality、减少返工或提高吞吐；当前主要是设计/机制证据，真实 P-outcome 不足。
+3. 不能说 harness 或 loop 已证明提升 coding quality、减少返工或提高吞吐；已有 METR、Peng、DORA、GitClear 等跨场景/代际的 P-outcome，但它们没有把 loop 设计作为自变量，方向也不一致，不能外推为 loop 效果。
 4. 不能说人退出系统；现有材料反复保留高风险动作、模糊意图、最终验收、品味/体验和熔断升级的人类责任。
-5. 不能把 durable memory 写成 feature queue；DSH goal/session log、Anthropic progress、Managed Agents session、OpenClaw task ledger 解决的是不同尺度的记忆/在途问题。
+5. 不能把 durable memory 写成 feature queue；DSH goal/session log、Anthropic progress、Managed Agents session、OpenClaw task ledger、Beads 的 issue 图、OpenAI 的 exec-plans、Cursor/Copilot 的分支与日志，解决的是不同尺度的记忆/在途问题。
+6. 不能把 OpenAI 自述的 PR 吞吐，或 Horthy 对客户向 agent 的反循环主张，外推成 coding 团队的普遍效果或普遍禁令。
 
 ## 八、下一步可检验命题
 
 - 在同一 DSH feature 上对照：单轮 automation、`goal` bounded autonomy、外置 feature ledger + `goal` + 独立 checker，记录下一项选择、目标漂移、提前完成、返工、人工介入和成本。
 - 对照逐层加 harness：权限/sandbox → 外部状态 → 机器验证 → 调度器，观察 loop 是否更可见，同时记录新增复杂度和错误复制。
 - 把动作面安全（auto mode/auto-review 的 deny）与行为面正确（feature/spec/browser/E2E 验收）分开计量。
-- 用跨 feature 的 current pointer、blocked reason、accepted/rolled-back、priority change 作为观察单位，检验单 session loop 是否真正升级为组织级 autonomous workflow。
+- 用跨 feature 的 current pointer、blocked reason、accepted/rolled-back、priority change 作为观察单位，检验单 session loop 是否真正升级为组织级 autonomous workflow。字段哪几列已经有邻近物、哪几列仍空，以 [`07-控制问题矩阵.md`](07-控制问题矩阵.md) 为准。
 
 **本篇判定强度**：概念/机制为中高置信；“harness 放大 loop 可设计性”为中置信机制解释；行业阶段史、效果、采用率为开放问题。

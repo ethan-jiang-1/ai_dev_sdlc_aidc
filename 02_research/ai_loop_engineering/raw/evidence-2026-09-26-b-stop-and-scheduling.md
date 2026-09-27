@@ -4,7 +4,7 @@ collected_by: 委派回源子代理（B 路 · 停止条件与外层调度）
 collected_at: 2026-09-26
 serves: digested 构件篇 · 03_practice/loop_governance/result/backbone.md（停止条件 / 外层调度两节）
 status: 一手全文 9 个记录块（Ralph / Anthropic×3 篇：Building effective agents、Effective harnesses、Managed Agents / Claude Code 官方文档×3 页：/goal、auto mode、/loop / OpenAI auto-review / LangChain 四环）
-negatives: 4 条见文末（Unwinding Codex's Agent Loop 站点级 403 未取得——"四拍循环/assistant message 终止态"未逐字核实，引用前必须回源）
+negatives: 4 条见文末。2026-09-27 勘误：第 1 条发现了同文候选页面文本，正题是 Unrolling 不是 Unwinding，见 evidence-k；直接页面仍 403，候选摘录待独立复核。旧负结论保留不删。
 quality_bar: 2026-09-26 用户质量门槛——只收高影响力一手；不入册内容单列文末「不入册·仅社区情绪」
 ---
 
@@ -398,7 +398,7 @@ quality_bar: 2026-09-26 用户质量门槛——只收高影响力一手；不�
 | 完成判定权归谁（人判/清单/独立模型/自判） | **未收敛** | 各家分歧（见上） |
 | 测试不可改写条款＋JSON 选型理由 | 1（单源） | Anthropic 2025 |
 | 评估器输入防操纵设计（reasoning-blind） | 2（Anthropic×2：auto mode 文档＋博客） | CC auto mode |
-| Codex 四拍循环与 assistant-message 终止态 | **0（正文未取得）** | 仅负结论＋官方仓库用户报告佐证（不入册） |
+| Codex 四拍循环与 assistant-message 终止态 | **2026-09-27 起见 evidence-k 候选摘录**：摘录称终止态有原句；「四拍」不是已核实的原文用语。本行的「0」是 09-26 的旧计数 | 候选线索，待独立复核；仅负结论＋官方仓库用户报告佐证（不入册） |
 
 ---
 
@@ -408,6 +408,7 @@ quality_bar: 2026-09-26 用户质量门槛——只收高影响力一手；不�
    试过的路径：① web_fetch 原 URL → 403；② 搜索发现同文 slug `unrolling-the-codex-agent-loop`（openai.com/index/ 与 openai.com/ro-RO/ 两个入口）→ 均 403；③ **对照实验**：已知存在的 openai.com/index/harness-engineering/ 同样 403 ⇒ openai.com 对本环境是**站点级**封锁，非单篇问题；④ bash curl 带浏览器 UA → HTTP 403（10KB 拦截页）；⑤ web.archive.org → 本环境网络不可达（fetch failed，多 URL 重试同）；⑥ Ars Technica 的报道 → HTTP 405 人机验证；⑦ 搜作者个人站镜像（bolinfest / "Michael Bolin codex agent loop"）→ 未找到；⑧ openai/codex 仓库 `docs/` 目录（GitHub API 列目录）→ 全是 126–150 字节的跳转占位文件，无 agent loop 文档等价物。
    存在的可见证据：官方 ro-RO locale URL 出现在搜索结果（标题 "Desfășurarea buclei agentului Codex"）；Ars Technica 2026-01 报道标题 "OpenAI spills technical details about how its AI coding agent works"；Michael Bolin（bolinfest）在 openai/codex 仓库有大量合并 PR（作者身份可交叉印证）。
    **"四拍循环""每轮以一条 assistant message 收尾进入终止态"等表述未能逐字核实，上屏引用前必须回源。**
+   **2026-09-27 勘误（本段不删）**：文本已登记在 [evidence-k](evidence-2026-09-27-k-unrolling-codex-agent-loop.md)，但来自检索工具摘录；正题是 *Unrolling the Codex agent loop*。摘录称 assistant message 终止态有原句；「四拍」不是已核实的原文用语。直接 HTTP 在本环境仍是 403；因此 assistant message 终止态仍待独立一手复核，本条负结论的安全状态仍有效。
 2. **Claude Code 官方 CHANGELOG（github.com/anthropics/claude-code CHANGELOG.md）——未取得。**
    web_fetch raw.githubusercontent.com 超时（30s）；bash curl 两次失败（exit 28/56，本环境到 raw.githubusercontent.com 网络不可达）。auto mode/`/goal`/`/loop` 的引入日期未从 changelog 拿到；已用官方文档的版本锚点替代（auto mode 内置默认：v2.1.228+（Pro/Max/Team）、v2.1.283+（所有 plan）；`/goal` 恢复逻辑锚点最高 v2.1.269）。
 3. **Claude Code auto mode 公告博客正文——标题已确认、正文未取得。**

@@ -1,6 +1,6 @@
 # Loop Engineering 研究推进计划
 
-> 状态：v0.2，2026-09-27 建立、同日补充文章/KOL归档映射与 Osmani 增量规则。本文是研究过程的控制面，不是 loop governance 操作规程，也不把当前假设写成行业共识。
+> 状态：v0.4，2026-09-27 建立并持续更新；补充文章/KOL归档映射、Osmani 增量规则、§2.3「高影响 KOL / 先进 AI 团队 / 社区扩容地图」、§4.1 采样预算纪律。本文是研究过程的控制面，不是 loop governance 操作规程，也不把当前假设写成行业共识。
 >
 > 研究主题入口：[`../README.md`](../README.md)。素材权威在本目录 `raw/` 与 `01_sources/`，判读权威在 `digested/`，实践操作权威在 [`../../03_practice/loop_governance/`](../../03_practice/loop_governance/README.md)。
 
@@ -80,8 +80,9 @@
 | F harness/context 接口 | 单次运行约束与多轮控制的边界 | 官方工程文、源码、失败复盘 | `evidence-*` + 边界判读 | 已有分层，待找反例 |
 | G DSH 一手对照 | 原生能力、实际行为、插件补层 | DSH 源码、官方 docs、session schema、插件 repo | 独立 evidence，不把 FAQ 当主证 | FAQ 有初步样本，需按真实实验复核 |
 | H 反方与失败 | 失控、腐化、过度自动化、假把控 | 失败复盘、issue、漏洞公告、反对者长文 | `evidence-*` + 反例表 | 已有材料，需补“成功但有边界”的案例 |
+| I 先进团队与思想扩容 | 命名簇（Osmani/Runkle/Ng/Anthropic）之外的高影响 KOL、先进 AI 团队、社区的盲区扫描——每个候选必须绑定一个缺口或控制问题，不按人名扫街 | 官方 docs、工程博客、本人长文、论文页、定量研究报告 | `evidence-i*` + 台账 §B/§C1（处置规则见 §2.3） | 批次 1 已收口（高影响面控制实践）；批次 2 raw 档案已形成，主验与侦察回源混合，综合判读待筛选 |
 
-**委派原则**：A–H 可以并行，但同一事实只有一个素材 home。新 Agent 先读 `CURRENT.md`、本计划和对应 evidence 索引，先声明不重复的切口，再写档案。
+**委派原则**：A–I 可以并行，但同一事实只有一个素材 home。新 Agent 先读 `CURRENT.md`、本计划和对应 evidence 索引，先声明不重复的切口，再写档案。
 
 ### 2.1 一篇文章如何进入主题：文章、KOL、判读三层拆分
 
@@ -137,6 +138,31 @@
 ### 当前初步判断（待 H 路回源修订）
 
 最可能不是“automation 被 autonomy 取代”，而是**控制对象外移**：早期自动化控制动作，模型变强后控制权部分移给模型；于是工程师必须设计环境与反馈（harness），再设计循环的触发、停止、记忆、调度和授权（loop）。因此可以暂定为“控制问题逐层外移/叠加”，不能暂定为严格的行业阶段论。
+
+
+### 2.3 高影响 KOL / 先进 AI 团队 / 社区扩容地图（2026-09-27 立项）
+
+**为什么扩容**：A–H 收口后发现，已入册 6 人全部来自命名事件链（Osmani/Runkle/Cherny/Steinberger/Ng/Anthropic），是**同一簇的自我叙述**；问题树里三块最有分量的证据面还缺高影响来源——① 统一 feature-level 控制面（C 路缺口）；② 真实 P-outcome（缺口 4，**跨场景效果证据此前为 0，但 loop 设计因果效果仍为 0**）；③ 行为面验证与自我改进保护（P1.5/P1.6）。扩容按**缺口绑定**组织，不按人物扫描。
+
+**批次划分**（同一 I 路下的互斥切口，避免跨批次重复）：
+
+| 批次 | 切口 | 覆盖对象 | 绑定的缺口/问题 | 状态 |
+|---|---|---|---|---|
+| I-1 | 簇外高影响面控制实践 | Aider/Gauthier、12-factor/Horthy、Kent Beck、Simon Willison、Steve Yegge/Beads、OpenAI harness 全文、Cursor Cloud Agents、GitHub Copilot cloud agent | Q2/Q3 控制面 + H1–H4 的簇外检验 | ✅ [`evidence-2026-09-27-i-high-influence-control.md`](evidence-2026-09-27-i-high-influence-control.md) |
+| I-2a | 厂商控制面剩余 + 社区编排 | GitHub Agent HQ/Mission Control/企业控制面、Google Jules/Antigravity、Cursor 演进线、Devin/Cognition、社区编排工具（vibe-kanban 等） | C 路跨 feature 控制面；I-1 负结论清单里仍未回源的 Devin/Jules | ⚠️ [`evidence-2026-09-27-i2-teams-evals-outcome.md`](evidence-2026-09-27-i2-teams-evals-outcome.md) 切口 a；主验与侦察回源混合 |
+| I-2b | 验证与 evals 思想 | Hamel Husain、Shreya Shankar、Eugene Yan、Chip Huyen；GEPA/DSPy/AlphaEvolve；Anthropic writing-tools | Q2.4 验证分界 · P1.5 行为面 · P1.6 自我改写保护链 | ⚠️ 同上切口 b；主验与侦察回源混合，均不入册 |
+| I-2c | 定量效果（P-outcome 候选） | METR RCT 与 long-tasks 与续测、DORA 两年度、GitClear、Peng RCT | P2.10 真实效果；H 路“成功但有边界” | ⚠️ 同上切口 c；结果可作场景地图，不能证明 loop 设计因果 |
+| I-2d | 谱系背景实践者长文 | Thorsten Ball（Amp）、Walden Yan、Manus、Armin Ronacher、aider 2023 | 时间线 §四之二 谱系 + Q1/Q2（2026-06 前一手机制文本） | ⚠️ 同上切口 d；逐条以 `【主验】` / `【侦察回源】` 为准 |
+| I-2e | SDD×loop 厂商组合形态 | AWS Kiro、Tessl/Podjarny、Linear | E 路厂商级一手（补齐 OpenSpec/Spec Kit 之外的厂商侧） | ⚠️ 同上切口 e；Tessl 三层是候选定义，主验前不回填已确认谱系 |
+
+**扩容纪律（与 §4.1 同源，高于“影响面大”直觉）**：
+
+- 侦察（并行弱模型）只产出候选记录；入册、分级、归属由主 Agent 回源核验后决定；
+- **定量研究报告（METR/DORA/GitClear）是证据来源，不是发声 KOL**——不进名单权威，只进 evidence 与 backlog，且必须带样本/受控性/外推边界字段；
+- 社区编排工具的 README/docs 只作 P-mechanism 证据；其作者是否入册按 §1 四步门另行判定，不入册不等于材料不可用；
+- 2026-06 前的谱系人物按时间窗规则**不入 §A**，只入 §B 与时间线 §四；
+- 每个候选的「影响面依据」必须落到可核的量（引用、star、装机量、被谁引用），粉丝数只作辅助；
+- I-1 已立的规矩已收口：A–I 的控制问题矩阵在 [`../digested/07-控制问题矩阵.md`](../digested/07-控制问题矩阵.md)（2026-09-27，无新一手）。对话内 goal 的事后编码在 [`evidence-2026-09-27-j-local-goal-session.md`](evidence-2026-09-27-j-local-goal-session.md)。**I-2 五切口 raw 档案已形成，尚未作为同质证据包收口**（[`evidence-2026-09-27-i2-teams-evals-outcome.md`](evidence-2026-09-27-i2-teams-evals-outcome.md)）：按 `【主验】` / `【侦察回源】` 筛选；侦察条目不增加独立票、不关闭空列。主验定量材料只说明效果依赖场景/代际，仍无 loop 设计自变量的受控比较。外置行已写在 [`ledger-row-2026-09-27-k.md`](ledger-row-2026-09-27-k.md)；下一轮只在交互式 DSH 里让 goal 引用它。
 
 
 ### 阶段 0：建立共同基线（本轮）
@@ -256,9 +282,10 @@
 ### 并行批次怎么跑
 
 1. **一个问题拆多个互斥切口**：例如同一 P0 分为官方产品文档、开源源码、失败 issue、反方来源、历史来源，不让所有 Agent 重复扫同一个搜索结果页。
-2. **至少三种角色交叉**：一批 scout 找来源，一批 extractor 摘句，一批 skeptic 专门找反例；不要让同一个模型既找证据又替证据判案。
-3. **独立提示、隔离结果**：弱模型先不要看到其他 Agent 的答案，避免共识只是互相模仿；结果放仓库根 `.tmp-loop-research-<batch>/` 或直接返回，不进入 canonical 目录。
-4. **结构化交付**：每条候选事实至少返回以下字段：
+2. **至少三种角色交叉**：一批 scout 找来源，一批 extractor 摘句，一批 skeptic 专门找反例；不要让同一个模型既找证据又替证据判案。每批开始前必须声明 `max_agents`、`max_attempts_per_agent`、时间/Token 预算和允许的重复率；没有预算就不启动批次。
+3. **默认预算而非无限并发**：一个研究切口先用 3–5 个 Agent 做第一批；只有出现新的独立一手来源或真正新反例，才开第二批。达到预算、连续 3 个 Agent 无新增，或候选结果重复率超过预设阈值时停止。
+4. **独立提示、隔离结果**：弱模型先不要看到其他 Agent 的答案，避免共识只是互相模仿；结果放仓库根 `.tmp-loop-research-<batch>/` 或直接返回，不进入 canonical 目录。
+5. **结构化交付**：每条候选事实至少返回以下字段：
 
 ```json
 {
@@ -337,23 +364,27 @@
 
 ## 6. 当前 backlog（按优先级）
 
+### 已完成、不要重扫（2026-09-27 I 路）
+
+簇外高影响面已归档为 [`evidence-2026-09-27-i-high-influence-control.md`](evidence-2026-09-27-i-high-influence-control.md)：Aider、12-factor、Kent Beck、Simon Willison、Beads、OpenAI harness 全文、Cursor Cloud Agents、GitHub Copilot cloud agent。下一轮按控制问题收矩阵，不按人名再扫一遍。仍未回源、不要用二手填空：Karpathy 原帖、Gas Town 机制。K 路已有检索工具取得的 Unrolling 候选文本，但直接页面仍 403，不能按完全主验使用。Devin / Amp / Jules 的机制候选在 evidence-i2，不要按这条旧句重扫。
+
 ### P0：先补齐会影响概念边界的证据
 
 1. **Osmani 两篇文章逐字审计**：✅ 已完成。核心事实已在既有 `evidence-a`，本轮追加 D5–D10；增量包括五件套与 memory spine、组合建议、verification skill、个人并发/风险观察和 session/cloud 生命周期。后续只在出现新一手事实时增量回源，不新建重复档案。
-2. **回取 OpenAI《Unwinding Codex's Agent Loop》**：若正文持续 403，记录访问路径与替代的一手镜像/源码，不上屏未经回源的“四拍循环”细节。验收：取得正文或形成可审计的负结论。
-3. **跨 feature 在途可见性**：⚠️ 已取得部分答案（evidence-e）：Managed Agents 的单 session 状态/验收/恢复 + OpenClaw detached task/flow ledger；仍缺统一 feature-level 候选、授权历史、priority 变化、业务阻塞和跨 feature 验收总览。下一步转为 DSH 小 feature 实验与字段矩阵。
+2. **回取 OpenAI《Unrolling the Codex agent loop》**：⚠️ 候选文本已写入 [`evidence-2026-09-27-k-unrolling-codex-agent-loop.md`](evidence-2026-09-27-k-unrolling-codex-agent-loop.md)，旧题 Unwinding 作废；「四拍」不是已核实的原文用语。直接 HTTP 仍 403，验收尚未完全通过：需要独立一手镜像、源码或可复核访问路径，才可将 assistant-message 终止语义升为主验。
+3. **跨 feature 在途可见性**：⚠️ 矩阵已收口于 [`../digested/07-控制问题矩阵.md`](../digested/07-控制问题矩阵.md)。邻近物（session、task ledger、仓内计划、issue 图）都在。仍空的是授权史、priority 变更、业务阻塞原因、跨 feature 验收。对话内 goal 的事后编码已在 [`evidence-2026-09-27-j-local-goal-session.md`](evidence-2026-09-27-j-local-goal-session.md)。外置行在 [`ledger-row-2026-09-27-k.md`](ledger-row-2026-09-27-k.md)。Unrolling 已在本会话取到，没有 goal 引用，所以这行不再是干净的对照样本。对照臂仍未跑。
 
 ### P1：把“像 loop”变成可观察的控制模型
 
-4. **自主度升档判据**：⚠️ 已取得 F 路事件判据候选（动作类别/目标与沙箱边界/关键歧义/政策例外/拒绝预算/工具级 interrupt/授权 scope）；未找到通用轮次阈值或质量置信度放行曲线。下一步验收：把 auto / human approve / hard deny / escalate 画成字段与状态机，并用 DSH 小 feature 验证可达性和人工成本。
-5. **行为面验证**：寻找能检查“是否做了该做的事”的实践，而不只是拦危险动作；比较测试、独立评估、spec 场景、人工抽查的覆盖盲点。验收：正反例矩阵。
-6. **loop 自我改写**：研究 trace → harness/rules/prompt 更新的 hill-climbing 机制，重点看版本化、回滚、评估和错误放大风险。验收：一条可观察反馈链 + 一条保护链。
+4. **自主度升档判据**：✅ 字段和四种处置已画在 [`../digested/03-构件.md`](../digested/03-构件.md) §三（2026-09-27，无新抓取）。没有通用轮次阈值。DSH 上这些边是否点得通仍未测，不阻塞研究层收口。
+5. **行为面验证**：⚠️ I 路补了反例形状（Beck：关/删测试；Yegge：缺测试当成通过、否认既有失败），以及“测试/成功标准是放大器”的实践句（Aider、Willison、OpenAI linter）。仍缺正反例矩阵：这些门拦不住“没做该做的事”的覆盖边界。验收不变：正反例矩阵。
+6. **loop 自我改写**：⚠️ OpenAI harness 文给出一条自述链：评审意见和事故收成文档，文档不够就升成 linter，另有 doc-gardening agent。缺的是版本化、回滚和“错误被写进规则后如何发现”。验收不变：一条可观察反馈链 + 一条保护链。
 7. **失败与安全**：补自动审批、拒绝循环、资源耗尽、权限扩大和质量逃逸的官方事故/设计文档。验收：失败模式不与“停止条件”混为一谈。
 
 ### P2：为下游实践选择合适厚度
 
 8. **SDD 产物作为 loop 外部记忆**：比较 proposal/spec/tasks/feature_list/progress log 的功能同构与差异，避免“SDD vs loop”二选一。验收：按控制问题而非工具品牌归类。
-9. **DSH 对照实验**：用小 feature 记录原生 goal、todo、plan、外置 roadmap 的实际行为和人工介入，验证 FAQ 15 的样本结论。验收：实验日志与可重复的观察指标。
+9. **DSH 对照实验**：⚠️ 对话内 goal 臂已事后编码（evidence-j，n=1）。外置行 K 已在执行前写下，goal 未创建，工作未开始。返工和人工分钟还没有计数口径。验收不变：实验日志与可重复的观察指标；FAQ 15 仍只是线索。
 10. **成本与收益**：找真实实践中的吞吐、返工、人工时间、失败率或至少可复核的第一人称指标，避免只用“更快/更自主”叙事。验收：指标定义、样本限制、不能外推的范围。
 
 ## 7. 每轮收口格式
@@ -368,8 +399,9 @@
 
 ## 8. 现阶段暂定结论
 
-- `loop engineering` 已是公开使用的命名，但核心共识比外延更稳定；不能把单一作者的模型当成统一标准。
+- `loop engineering` 已是公开使用的命名，但核心共识比外延更稳定；不能把单一作者的模型当成统一标准。Willison 2025-09 的 *designing agentic loops* 是相邻旧名，不是这个词的提前发明。
+- 高影响面并不共识“让模型自己 loop 到目标”。Horthy 要求人拥有控制流；Beck、Yegge 把删测试和提前宣布完成写成真实失败。OpenAI、Cursor、GitHub 的循环都还把环境和人的交接留在外面。这扩大了样本，没有产生新的行业规范。
 - 当前最可靠的共同问题不是“要不要一直跑”，而是：下一步工作从哪里来、如何验证、何时停止、状态如何跨轮记住、人在何处负责授权与判断。
 - 现有材料支持 loop 与 SDD 组合，而不支持“loop 已取代 SDD”；规格可以是工作来源、外部记忆和验收依据，循环可以自动推进和反馈。
-- 现有 DSH 对照支持“执行循环与跨 feature 控制面不一定同等成熟”的研究假设，但需要继续把外部 FAQ 的样本与本主题一手回源、以及真实实验分开。
+- 现有 DSH 对照支持“执行循环与跨 feature 控制面不一定同等成熟”的研究假设。`digested/07` 把这句话收成四列空格：授权史、priority 变更、业务阻塞原因、跨 feature 验收。这是综合，不是新的一手证实。2026-09-27 的本地日志（evidence-j）只再确认：一条真实 goal 上这四列仍空，而且 goal 被 resume 时 driver 可以一次轮都不计。对照臂没跑，所以这不是效果证据。
 - `03_practice/loop_governance/` 当前已有实践主干初稿；本计划的作用是约束它后续只吸收达到证据门槛的结论，并保留开放缺口。

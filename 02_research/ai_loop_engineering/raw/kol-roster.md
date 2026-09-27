@@ -4,7 +4,7 @@
 > 一手素材统一在 [`01_sources/reference/kol/_raw_loop_engineering/`](../../../01_sources/reference/kol/_raw_loop_engineering/README.md)
 > （本文件**只放台账与指针，不放人物卡片**）。
 
-**观测日期**：2026-09-26 · **本表当前状态**：三路回源**全部完成并归档**——[evidence-a](evidence-2026-09-26-a-originators.md)（词源与定义者）· [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md)（停止条件与调度）· [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)（自主度与收敛）。**「待回源」= 不可作主张依据。**
+**观测日期**：2026-09-26；**2026-09-27 I 路**追加谱系与候选注记，**§A 六人名单不增**。三路回源见 [evidence-a](evidence-2026-09-26-a-originators.md) / [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) / [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)。簇外高影响面见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)；I2 档案混合主验与侦察回源，侦察条目不计票。**「待回源」= 不可作主张依据。**
 
 > ⚠️ **质量门槛（2026-09-26 用户定，先于本表的一切口径）**：只收真正有影响力的 KOL，
 > 且内容必须有深度（操作性洞察）。**论坛评论者不算 KOL、聚合媒体与标题党不入册、碎片推文不作深度证据**——
@@ -39,12 +39,20 @@
 | **Anthropic** | 《Building effective agents》机制句 + stopping conditions 首次成文 | 2024-12-19 | ✅ evidence-b §2 | 见 §A `anthropic_org`（机构连续体） |
 | **Anthropic** | 《Effective harnesses for long-running agents》：feature_list.json | 2025-11-26 | ✅ evidence-b §3 | 同上 |
 | **marmelab**（François Zaninotto） | "Natural Language Development" 命名 + "SDD adds little benefit" / "False Sense of Security"（⚠️ 两条名言出处是 **2025-11-12《The Waterfall Strikes Back》**，非 2026-09-24 审计文——C 路全文 grep 实锤） | 2025-11-12 / 2026-09-24 | ✅ evidence-c | 无卡片（候选） |
-| **OpenAI**（Ryan Lopopolo） | 命名 "harness engineering" | 2026-02-11 | ⏳ | [`_raw_kol/09`](../../../01_sources/reference/kol/_raw_kol/09_ryan_lopopolo.md) |
+| **OpenAI**（Ryan Lopopolo） | 命名 "harness engineering"。**2026-09-27 正文已取得**：0 行手写 / 约百万行 / 约 1500 PR 为该团队自述；评审循环自称为 Ralph Wiggum Loop；短 AGENTS.md + 仓内 exec-plans；不可外推 | 2026-02-11 | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 6 | [`_raw_kol/09`](../../../01_sources/reference/kol/_raw_kol/09_ryan_lopopolo.md) |
+| **Paul Gauthier**（Aider） | 2024-05-22 起把「编辑 → lint → 喂回模型」做成产品内环；测试环须显式 `--auto-test`。窗口前，不入 §A | 2024-05-22 | ✅ evidence-i Source 1 | 无卡片 |
+| **Dex Horthy**（HumanLayer） | 12-factor agents：反对自由 “loop until goal”，要求在工具选定与执行之间打断。客户向生产 agent 的反模型，不是 coding-agent 采用率证据。窗口前，不入 §A | 2025-03-30 | ✅ evidence-i Source 2 | 无卡片 |
+| **Kent Beck** | 《Augmented Coding》：人说 go 才做下一条测试；删/关测试是作弊信号。单人案例。窗口前，不入 §A | 2025-06-25 | ✅ evidence-i Source 3 | 无卡片 |
+| **Steve Yegge** | Beads：用 git JSONL issue 替代会失忆的 markdown 计划；做完一个 issue 就杀掉会话。单人观察，alpha。Gas Town 机制本轮未逐段核。窗口前，不入 §A | 2025-10-13 | ✅ evidence-i Source 5 | 无卡片 |
 | **Andrej Karpathy** | 终结自创的 "Vibe Coding"，提 "Agentic Engineering" | 2026-02 | ⏳ | [`_raw_kol/07`](../../../01_sources/reference/kol/_raw_kol/07_andrej_karpathy.md) |
 | **Stripe**（Beswick & Epsteen） | 《You can't whisper at an AI agent》hard/soft steering——"errors block progress but warnings don't"（C 路逐字到手） | 2026-05-14 | ✅ evidence-c | 无卡片（候选：属 harness 侧，与停止条件的同层性待判） |
 | **Geoffrey Huntley** | Ralph Wiggum loop 原语（故意无限 bash 循环、无内建停止条件、back pressure、signs、greenfield 限定）——本词公认起点文献，2026 年仍被 LangChain/marmelab 引用 | 2025-07-14 | ✅ evidence-b §1 | 无卡片（素材在 evidence-b；**窗口内本人新发声待查，有则升 §A**） |
 | **Harrison Chase**（LangChain CEO） | "harness engineering is an extension of context engineering"（播客转述）；LangChain 四环文页尾致谢含他（evidence-b）但非本人署名 | 2026-03 | ⏳ | 无卡片（**窗口内本人新发声待查，有则升 §A**） |
 | **OpenAI**（alignment / Codex 团队） | 《Auto-review of agent actions without synchronous human oversight》：人工同步审批退出调度回路、独立审批 agent（"The separation of roles matters"）、反复拒绝熔断——loop 侧自主度治理的厂商一手 | 2026-04-30 | ✅ evidence-b §4d | 无卡片（机构条目；素材在 evidence 档案） |
+| **Thorsten Ball**（Amp co-creator） | 《How to Build an Agent》（⚠️ 一手标题；流传《How to Build a Coding Agent》为二手变体）："It's an LLM, a loop, and enough tokens"——机制本体最短表述的传播源头之一。<400 行可教学。窗口前，不入 §A | 2025-04-15 | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D1【主验】 | 无卡片 |
+| **Walden Yan**（Cognition 联创） | 《Don't Build Multi-Agents》：单线程 agent ＋ Principles of Context Engineering（Share context / Actions carry implicit decisions）；反并行立场在命名前成形。影响力峰值在 2025-09-01 HN 重投。窗口前，不入 §A。**后续立场修订线索（multi-agents-working）待回源** | 2025-06-12 | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D2【主验】 | 无卡片 |
+| **Yichao "Peak" Ji**（Manus 联创兼首席科学家） | 《Context Engineering for AI Agents》：最完整的 "loop until the task is complete" 机制句＋KV-cache 命中率为生产 agent 第一指标＋文件系统外部记忆支撑长循环。窗口前，不入 §A | 2025-07-18 | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D3【主验（loop/KV-cache 段）】 | 无卡片 |
+| **Armin Ronacher**（Flask/Werkzeug 作者） | 两篇：《Agentic Coding Recommendations》（派活全权等待完成的实践自述；agentic loop 作性能工程对象，HN 296 分）＋《Building an Agent That Leverages Throwaway Code》（MAX_STEPS＋reachedEndCondition＋逐步缓存的一手伪代码）。窗口前，不入 §A | 2025-06-12 / 2025-10-17 | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D4/D5【主验】 | 无卡片 |
 
 ---
 
@@ -52,7 +60,7 @@
 
 | 候选 | 线索 | 待判什么 |
 |---|---|---|
-| **Simon Willison** | vibe coding 收窄与警告 | 他是本词的**反方**还是仅作语义纠偏？人物全景已在 [`_raw_kol/04`](../../../01_sources/reference/kol/_raw_kol/04_simon_willison.md) |
+| **Simon Willison** | 2025-09-30《Designing agentic loops》已回源：他是循环实践者（工具环 + 成功标准 + 测试套件），同时指出 YOLO 的破坏/外泄风险。这不是对本词的反方论文，也不是语义纠偏 alone。**2026-06 后对本词 “loop engineering” 的专门发声仍未核，故不升 §A** | 人物全景已在 [`_raw_kol/04`](../../../01_sources/reference/kol/_raw_kol/04_simon_willison.md)；本主题引句在 [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 4 |
 | **Gergely Orosz** | 六预测；"Something precious is being taken away" | 怀疑派代表，是否构成本主题的对照声部。人物全景已在 [`_raw_kol/12`](../../../01_sources/reference/kol/_raw_kol/12_gergely_orosz.md) |
 | **swyx**（latent.space） | 《loopcraft: the art of stacking loops》——**被 LangChain 官方博客引用并致谢**（"This is what loop engineering — or loopcraft, as swyx puts it — actually looks like in practice"） | 个人 newsletter，按质量门槛暂不入册；但被厂商一手引用这一点值得记着——若后续发现更多厂商引用，可升入册（B 路线索） |
 | **Jesse Vincent**（obra / Superpowers 作者） | Superpowers（289k★，口径④＋③一线规模）；其 Fable 5 时代的 `/goal` 实验（过夜 25 实验＋失败日志）是实践层 backbone §1 的例证来源；素材在 [`field_samples/fable5/run_superpowers_jesse_vincent/`](../../../01_sources/field_samples/fable5/run_superpowers_jesse_vincent/profile.md)（既有，只引用） | **待判**：其 `/goal` 写法是否独立于 CC 官方文档（与 backbone §1 例证的降级标注是同一件事）——确认独立后升 §A |
@@ -79,15 +87,18 @@
 | [`raw/evidence-2026-09-26-b-stop-and-scheduling.md`](evidence-2026-09-26-b-stop-and-scheduling.md) | **一手回源档案**（B 路，9 个一手记录块全文） | Ralph 原文、Anthropic 两篇工程文、Claude Code `/goal`//`/loop`/auto mode 官方文档、OpenAI auto-review、LangChain 四环；**停止条件与外层调度两问判定收敛**；负结论 4 条 |
 | [`raw/evidence-2026-09-26-c-autonomy-and-convergence.md`](evidence-2026-09-26-c-autonomy-and-convergence.md) | **一手回源档案**（C 路） | Kief Morris 四级阶梯、Böckeler steering loop 与归属修正、marmelab 两篇辨析、Stripe steering 原句、OpenSpec/Spec Kit 官方动作、橙皮书定性；**自主度位置分档成立/量化分档未成型**；**收敛判定成立** |
 | [`talk-harness-201/02_evidence/01-kol-alignment-2026.md`](../../../talk-harness-201/02_evidence/01-kol-alignment-2026.md) | 本仓证据（2026-09-25 web 检索） | Karpathy、Harrison Chase、Osmani、Böckeler、Huntley、Lopopolo、Stripe。⚠️ 其中"公式出自 Böckeler"已被 C 路一手链推翻，**该文件待复核修正** |
+| [`raw/evidence-2026-09-27-i-high-influence-control.md`](evidence-2026-09-27-i-high-influence-control.md) | **一手回源档案**（I 路·簇外高影响面） | Aider lint 环、Horthy 反自由循环、Beck 单测试节拍、Willison 2025-09 相邻专名、Yegge Beads、OpenAI harness 全文、Cursor / Copilot 云端循环。**不升 §A** |
+| [`raw/evidence-2026-09-27-i2-teams-evals-outcome.md`](evidence-2026-09-27-i2-teams-evals-outcome.md) | **批次回源档案**（I 路批次 2·五切口；主验与侦察回源混合） | (a) 厂商控制面候选形态；(b) evals 思想；(c) 定量效果成对地图；(d) 谱系候选；(e) SDD×loop 厂商组合。主验条目可进入判读，侦察条目待复验，不增加独立票；**不升 §A** |
 | `/Users/bowhead/deepseek-harness/_faq_on_digested/15_loop-engineering-vs-sdd/`（**仓库外**） | 外部研究·转引 | LangChain / Osmani 的日期与定义分界、命名时间线序列、SDD 阵营反方线索——**全部仅作检索方向，本主题结论一律以自己的回源为准** |
 
 ---
 
 ## §E 本轮已确认的负结论（"搜过什么、没找到什么"）
 
-1. **《Unwinding Codex's Agent Loop》（OpenAI，Michael Bolin，2026-01-23）正文未取得**——openai.com 对本环境**站点级 403**（B 路做对照实验实锤：已知存在的 harness-engineering 文同样 403；curl 带 UA、archive.org、Ars Technica、作者个人站、codex 仓库 docs/ 全试过）。**"四拍循环 / assistant message 终止态"未逐字核实，上屏引用前必须回源。** 库内 [`02_research/ai_sdlc_frontier/`](../../ai_sdlc_frontier/)（其下 `raw_OpenAI_Michael Bolin/`）有中文编译二手版，只作线索。
+1. **《Unrolling the Codex agent loop》（OpenAI，Michael Bolin，2026-01-23）**已有检索工具取得的候选文本（[evidence-k](evidence-2026-09-27-k-unrolling-codex-agent-loop.md)）。库内旧题 Unwinding 是错的；assistant message 终止态和「四拍」否定仍待独立一手复核。本环境直接 HTTP 仍 403。不升 §A。harness engineering 全文仍见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 6。
 2. **Claude Code 官方 CHANGELOG 不可达**（raw.githubusercontent.com 网络超时）——auto mode/`/goal`/`/loop` 引入日期未从 changelog 取得，已用官方文档版本锚点替代（v2.1.228 / v2.1.283 / v2.1.269）。
 3. **Claude Code auto mode 公告博客正文截断**——标题经搜索逐字确认（"Auto mode is now the default in Claude Code for Pro, Max, and Team plans"），页面发布日期未取得；机制证据已由官方文档 + 工程博客覆盖。
 4. **Cherny 访谈句逐字原文 / Steinberger 推文正文未取得**（X 全域不可达）——Cherny 名句三个流传版本措辞不一致（对照表见 [evidence-a](evidence-2026-09-26-a-originators.md)）；Steinberger 推文正文**已获 Osmani 06-07 帖逐字转引**（"You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents."，见 evidence-a 补充回源节）——从「未取得」升级为「有日期转引」，直接引用仍须标「经 Osmani 转引」。另两条开放问题：LangChain 帖中 "Boris"→`0xwhrrari` 身份待核、swyx《loopcraft》原文 404（详见 evidence-a §6 与 [`../digested/01-命名谱系.md`](../digested/01-命名谱系.md) §五）。
 5. **B 路第 4 条负结论**：Codex auto-review 官方 docs 页 403（机制证据已由 alignment.openai.com 官方博客全文覆盖，见 [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) 负结论#4）。
 6. ~~Osmani 的 O'Reilly 书名两档案矛盾~~——**已裁决**（2026-09-26 晚补充回源，Osmani 官网 O'Reilly 链接实锤）：正确书名《Agentic Engineering》，evidence-c:57 的《Beyond Vibe Coding》为误（见 evidence-a 补充回源节）。
+7. **I-2 批次负结论**（详见 [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) 线索登记与负结论节）：DORA 2025 年报正文具体系数 gated 未取得（官方摘要页口径可用，系数不引）；GitClear 白皮书全文需邮箱下载（落地页摘要已核）；Kiro docs 正文客户端渲染未取得（以官方博客＋官方 README 替代）；Devin docs.devin.ai 被 Mintlify 壳层截断（官方博客一条已回源）；Thorsten Ball 文章一手标题为《How to Build an Agent》（《…Coding Agent》系二手变体，Wayback 本环境不可达未核原始快照）；Manus 文件系统段经第三方镜像补齐（主站截断，主验待补）；AlphaEvolve 白皮书 §2.4–2.5 截断（摘要＋§1–2.1＋图注已核）。

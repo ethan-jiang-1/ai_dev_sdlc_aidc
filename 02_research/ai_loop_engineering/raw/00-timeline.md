@@ -4,7 +4,7 @@
 > **强度口径**：【一手】＝本主题已归档原文 ｜【转引】＝来自外部/他处研究，**未独立回源** ｜【聚合】＝多源综合判断。
 > **回源状态**：`✅` 已回源（一手原文已归档，证据在 [`raw/evidence-*.md`](.)）｜ `⏳` 待回源（**不可作主张依据，只可作检索方向**）。
 
-**观测日期**：2026-09-26 · **本轮回源**：三路全部完成并归档——[evidence-a](evidence-2026-09-26-a-originators.md)（词源与定义者）· [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md)（停止条件与调度）· [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)（自主度与收敛）。
+**观测日期**：2026-09-26 起，**2026-09-27 I/J/K 追加**（不改旧行）。三路回源见 [evidence-a](evidence-2026-09-26-a-originators.md) / [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) / [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)。高影响面控制实践见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)。I2 扩容档案含主验与侦察回源，侦察条目不计票；本地 goal 观察见 [evidence-j](evidence-2026-09-27-j-local-goal-session.md)；K 的 Codex 摘录直接页面仍 403，见 [evidence-k](evidence-2026-09-27-k-unrolling-codex-agent-loop.md)。
 
 ---
 
@@ -19,14 +19,17 @@
 | **2026-06-08** | **Peter Steinberger** 词源推文（snowflake 解码精确到 2026-06-08 02:58 CST；X 全域不可达，**正文经 Osmani 06-07 帖逐字转引**："You shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents."） | **词源是碎片级的，无深度内容**（A 路明确结论）：两句话推文；博客自 2026-02-14 后无新帖、无 loop engineering 长文。**重要 nuance**：其 2025-12-28 长文《Shipping at Inference-Speed》明确**反对自动编排**（"usually I'm the bottleneck"）——与 6 月推文立场相反，一手证据 | 【部分一手】 | ✅ [evidence-a](evidence-2026-09-26-a-originators.md) |
 | **2026-06-16** | **LangChain / Sydney Runkle**《The Art of Loop Engineering》 | **四环模型**：agent loop（核心："an agent is just a model calling tools in a loop until a task is complete"）→ verification loop（rubric + grader，grader 分 deterministic 与 agentic/LLM-as-judge）→ event-driven loop（cron/webhook/channel 触发）→ hill-climbing loop（用 trace 改写 harness 本身——"the return arrow doesn't just loop back to the top — it reaches inside and updates the agent loop directly"） | **【一手】** | ✅ [evidence-b §4e](evidence-2026-09-26-b-stop-and-scheduling.md) |
 | **2026-06-30** | **Claude Code 团队**官方博客给出 loop engineering 定义（**团队官方 ≠ Cherny 本人**）；**Andrew Ng**《Loop Engineering: My 3 Key Loops for Building 0-to-1 Products》（*The Batch* → X）同日 | Ng：**三环嵌套**（agentic coding / developer feedback / external feedback），外环修正内环方向，人类价值＝**上下文优势**而非"品味"；CC 团队《Loop engineering: Getting started with loops》（Delba de Oliveira & Michael Segner）：loop ＝ "agents repeating cycles of work until a stop condition is met"，四类循环 turn-based / goal-based / time-based / proactive（evidence-a D3 逐字核验） | **【一手】** | ✅ [Ng 归档](../../../01_sources/reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md) · [CC 团队见 evidence-a](evidence-2026-09-26-a-originators.md) |
-| **2026-08-14** | **Addy Osmani**《Practical Loop Engineering》（操作篇） | 把 06-07 命名篇的操作层展开；`/goal`/`/loop` 转述已被 Claude Code 官方文档一手取代（B 路判定），但**四级分层**与两条警告句是其独有（含糊目标不配循环；别把品味和判断委托给 agent——两句均经 evidence-a 补充回源取得逐字） | **【一手】** | ✅ [evidence-a](evidence-2026-09-26-a-originators.md) |
 | **2026-06**（日不详） | 中文圈《Loop Engineering 橙皮书》（花叔 / alchaincyf 编） | **C 路定性：英文谱系的中文转述/编译，非独立发明**——作者 README 明写初版 "based on Addy Osmani's founding post and the official Claude Code / Codex docs"，并把术语起源完整归于 2026-06 同一周的 Steinberger / Cherny / Osmani | 【一手（其 README 自述）】 | ✅ [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md) |
+| **2026-08-14** | **Addy Osmani**《Practical Loop Engineering》（操作篇） | 把 06-07 命名篇的操作层展开；`/goal`/`/loop` 转述已被 Claude Code 官方文档一手取代（B 路判定），但**四级分层**与两条警告句是其独有（含糊目标不配循环；别把品味和判断委托给 agent——两句均经 evidence-a 补充回源取得逐字） | **【一手】** | ✅ [evidence-a](evidence-2026-09-26-a-originators.md) |
+
+| **2026-09-14** | **Tessl**（员工署名博客《Who owns your context?》）官方直接使用并定义 "loop engineering" | **候选五定义源，待主验**：若原文复核成立，它把 loop engineering 与 context engineering 分界为内环单次运行、中环跨运行行为改进、外环业务指标；外延比 Runkle/Osmani 更宽，但不计入已确认定义源 | **【候选一手文本】**（侦察回源·主验待补） | ⏳ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source E2 |
+| **2026-09-27 勘误** | 上一行 Tessl 的定义冲突已登记为候选判读，**主验仍待补** | 暂按 `digested/01` §二处理：若原文复核成立，同指只覆盖内环；中环接近 Runkle，外环不等同 Ng 的 external feedback。侦察回源，未复验 | 【候选判读】 | ⏳ digested/01 |
+
 
 > **本词的操作定义与"体感像 loop"的分界**（判据，展开见 [`../digested/01-命名谱系.md`](../digested/01-命名谱系.md)）：
-> 公开定义比"入口是粗目标、后面在循环"**多出两样**——**① 人能核的停止条件；② 决定下一件工作的外层调度系统。**
-> B 路已验证这两样的成型做法（三件骨架 + 两种调度形态，各有 ≥2 独立一手同向）。
+> 公开材料比"入口是粗目标、后面反复调用工具"通常多出**①人能核的停止/继续条件；②在长程场景中外置的工作来源、记忆或调度**。后者是重要扩展，不是单个 bounded task loop 的必要条件；B 路、E 路只证明若干机制形态存在，不证明行业主导或效果。
 >
-> **命名事件的定性（A 路一手证据）**：**词源＝热度碎片，定义＝事后工程化**——两条 viral 碎片（Cherny 06-02 访谈句未逐字核验 + Steinberger 06-08 两句话推文无深度）触发，Osmani 06-07 命名并定义、Runkle 06-16 给四环栈、CC 团队 06-30 给官方定义。**四人核心同指一件事（系统替人逐轮提示），但外延不兼容**（Runkle 第 4 环 hill-climbing 按 Osmani 的分层属 harness 层；验证语义也不同：机器可核停止条件 vs rubric 评分）。
+> **命名事件的定性（A 路一手证据）**：**词源＝热度碎片，定义＝事后工程化**——两条 viral 碎片（Cherny 06-02 访谈句未逐字核验 + Steinberger 06-08 两句话推文无深度）触发，Osmani 06-07 命名并定义、Runkle 06-16 给四环栈、CC 团队 06-30 给官方定义。**四个已确认定义源的核心同指一件事（系统替人逐轮提示），但外延不兼容**；Tessl 2026-09-14 暂作候选，待主验。
 
 ---
 
@@ -41,6 +44,7 @@
 | **2025-11-12** | **Natural Language Development** | François Zaninotto（marmelab《The Waterfall Strikes Back》） | **另一次命名**："'Vibe coding' sounds dismissive"。⚠️ **归属修正（C 路）**："Most coding agents already have a plan mode and a task list. In most cases, SDD adds little benefit." 与 "False Sense of Security" 两条名言的出处是**这篇 2025-11-12**，不是 2026-09-24 审计文 | **【一手】** | ✅ [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md) |
 | 2026-02-11 | **harness engineering** 正式命名 | OpenAI（Ryan Lopopolo） | **学科**：~100 万行代码、0 行手写、约 1500 个合并 PR | 【转引】 | ⏳ |
 | 2026-02 | **Agentic Engineering** | Karpathy（终结自创的 Vibe Coding） | **另一次命名**：99% 时间不直接写代码，在指挥 agent | 【转引】 | ⏳ |
+| **2026-09-27 勘误** | 上一行 2026-02-11 的【转引】⏳ **已被一手正文取代**（旧行保留） | OpenAI / Ryan Lopopolo《Harness engineering》全文已取得 | 0 行手写、约百万行、约 1500 PR、3→7 名工程师均为**该团队自述**；文中把自己的评审循环称为 Ralph Wiggum Loop；巨型 AGENTS.md 失败，短地图 + `docs/exec-plans` 为记录；明确写不可外推，多年一致性未知 | **【一手】** | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 6 |
 
 ---
 
@@ -48,6 +52,7 @@
 
 | 日期 | 事件 | 要点 | 回源 |
 |---|---|---|---|
+| **2026-01-23** | OpenAI / Michael Bolin《Unrolling the Codex agent loop》 | 候选页面文本显示：turn 在模型不再发出工具调用、写出 assistant message 时结束，文本称 termination state，控制交还用户；该消息可以是追问。一个 turn 内可有多次推理与工具调用。compact 是上下文资源兜底，不是质量验收。**「四拍」不是已核实的原文用语。** | ⏳ [evidence-k](evidence-2026-09-27-k-unrolling-codex-agent-loop.md)（直接 HTTP 403，待独立复核） |
 | **2026-03-25** | Anthropic《How we built Claude Code auto mode》（John Hughes） | 审批循环的官方解剖：deny-and-continue（拒绝带理由回给模型换安全路径，不终止循环）；**双阈值熔断**（3 连拒或累计 20 拒 → 停机升级给人；headless 无 UI 直接终止进程；阈值官方写明不可配置）；分类器 "reasoning-blind by design"（只看用户消息与工具调用，剥掉模型自述——防评估器被操纵） | ✅ [evidence-b §4b](evidence-2026-09-26-b-stop-and-scheduling.md) |
 | **2026-04-08** | Anthropic《Managed Agents》（Lance Martin 等） | 把"外层"本身接口化：session（append-only 日志）/ harness（循环本体）/ sandbox 三件虚拟化，harness 崩了 `wake(sessionId)` 从最后事件恢复；《Building effective agents》页顶官方注记指其为 current approach | ✅ [evidence-b §5](evidence-2026-09-26-b-stop-and-scheduling.md) |
 | **2026-04-30** | OpenAI《Auto-review of agent actions without synchronous human oversight》 | 标题即立场：人工同步审批退出调度回路。独立审批 agent（"The separation of roles matters"——主 agent 有把审批边界当障碍绕过的压力）；审批停机约 200× 减少、 escalated 动作约 99% 通过；"automatically stop the trajectory after repeated denials"；官方自述边界："Auto-review should not be treated as a guarantee of security" | ✅ [evidence-b §4d](evidence-2026-09-26-b-stop-and-scheduling.md) |
@@ -71,6 +76,26 @@
 
 ---
 
+## 四之二、高影响面控制实践（本词命名之外；I 路，2026-09-27）
+
+不入 §A 名册：要么早于 2026-06，要么是活文档产品机制、并未使用 “loop engineering” 这个词。主张以 [evidence-i](evidence-2026-09-27-i-high-influence-control.md) 与 [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) 为准。
+
+| 日期 | 事件 | 要点 | 回源 |
+|---|---|---|---|
+| **2023-07-02** | **Paul Gauthier / Aider** benchmark 测试反馈环 | "Aider updates the implementation file based on GPT's reply and runs the unit tests. If all tests pass, the exercise is considered complete. If some tests fail, aider sends GPT a second message with the test error output."——本主题最早已归档的脚本化「跑→测→喂错→重试」循环（硬性 2 次尝试，benchmark harness 非日常工作流） | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D6 |
+| **2024-05-22** | **Paul Gauthier / Aider**《Linting code for LLMs》 | 每次 LLM 编辑后 lint，人点头后把错误喂回模型，可迭代数次。现行文档：lint 默认开，测试环要 `--auto-test` | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 1 |
+| **2025-03-30** | **Dex Horthy** 12-factor agents 仓库创建（最后 push 2025-09-21） | 反对 “prompt + 工具袋 + loop until goal”；控制流要在工具选定与执行之间可打断 | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 2 |
+| **2025-04-15** | **Thorsten Ball**（Amp）《How to Build an Agent》（⚠️ 一手标题非《How to Build a Coding Agent》——后者在本人页面与 HN 提交中均不存在，属二手变体） | **机制本体最短表述**："There isn't. It's an LLM, a loop, and enough tokens."＋agent 定义 "an LLM with access to tools, giving it the ability to modify something outside the context window"；<400 行可教学。无停止条件/治理讨论 | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D1【主验】 |
+| **2025-06-12** | **Walden Yan**（Cognition 联创）《Don't Build Multi-Agents》 | 单线程 agent ＋ Principles of Context Engineering（"Share context, and share full agent traces"；"Actions carry implicit decisions, and conflicting decisions carry bad results"）；context engineering ＝ "effectively the #1 job of engineers building AI agents"。**反并行立场在命名前已公开成形**（影响力峰值在 2025-09-01 HN 重投，引用须分时点） | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D2【主验】 |
+| **2025-06-12** | **Armin Ronacher**（Flask 作者）《Agentic Coding Recommendations》 | 派活后等待完成的自述（"assigning a job to an agent (which effectively has full permissions) and then waiting for it to complete"）；agentic loop 已被当性能与可靠性工程对象（测试缓存 "Surprisingly crucial for efficient agentic loops"）。作者自警会过时 | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D4【主验】 |
+| **2025-06-25** | **Kent Beck**《Augmented Coding: Beyond the Vibes》 | 人说 go 才做计划中的下一条测试；跑偏信号含空转、超范围、关/删测试 | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 3 |
+| **2025-07-18** | **Manus**（Yichao 'Peak' Ji）《Context Engineering for AI Agents》 | **最完整的 "loop until the task is complete" 机制句逐字成文**＋循环工程约束（"the KV-cache hit rate is the single most important metric for a production-stage AI agent"、append-only context）；文件系统作为外部记忆支撑长循环（该段经镜像补齐·主验待补） | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D3【主验（loop/KV-cache 段）】 |
+| **2025-09-30** | **Simon Willison**《Designing agentic loops》 | 相邻专名，不是 loop engineering 的词源。agent ＝ tools in a loop；要有清楚成功标准；测试套件放大价值；YOLO 同时放大破坏与外泄 | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 4 |
+| **2025-10-13** | **Steve Yegge**《Introducing Beads》 | 会话间无记忆；层级 markdown 计划导致提前宣布 DONE；主张 git JSONL issue + 做完一个 issue 就杀掉会话。单人观察，alpha | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 5 |
+| **2025-10-17** | **Armin Ronacher**《Building an Agent That Leverages Throwaway Code》 | **命名前把「步数上限＋显式终止判据＋逐步缓存恢复」写成一手伪代码**：`while (stepCount < MAX_STEPS) { … if (reachedEndCondition(state)) { break; } }`；durable execution ＝ "retry a complex workflow safely without losing progress"。玩具级示例，非生产主张 | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D5【主验】 |
+| **2025-12-09** | **Amp**《200k Tokens Is Plenty》（谱系内部反例） | 同一团队八个月内从 "loop＋enough tokens" 转向短线程反长循环（"Agents get drunk if you feed them too many tokens."）；该文现被官方加 Archived 头撤销（auto-compaction 时代已变）。**立场随模型/上下文条件摆动的一手记录，不作任何一方定论** | ✅ [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md) Source D7（侦察回源） |
+| 活文档（观测 2026-09-27） | **Cursor Cloud Agents**、**GitHub Copilot cloud agent** | Cursor：不能跑测试就闭不上环，交接是分支/PR + 截图视频日志。Copilot：Actions 环境里跑测试/linter，59 分钟硬停，单仓库单分支单 PR | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 7–8 |
+
 ## 五、本主题的观测锚点（不是外部事件，是我们自己的动作）
 
 | 日期 | 动作 |
@@ -79,6 +104,11 @@
 | 2026-09-26（上午） | **主题重构**：三层 + KOL 主轴；KOL 素材迁入 `01_sources/reference/kol/_raw_loop_engineering/`；建台账与时间线；登记与 `03_practice/` 的分工边界与升格触发器 |
 | 2026-09-26（下午） | **三路回源全部完成**：A 路（词源与定义者）· B 路（停止条件/调度，9 个一手记录块）· C 路（自主度/收敛）归档为 `raw/evidence-*.md`；**用户质量门槛**落库（论坛评论者/聚合媒体/碎片推文不入册） |
 | 2026-09-26（晚） | **两轮四维评审 + 全部修复**：第一轮（自查 24 项 + 冷读 20 项）与第二轮（合并 29 项）全部落地——引用强度降级、时间窗合规移行、计数统一、evidence 调和注记、org/community 撤销；git 提交 8396657 后复检再修 |
+| 2026-09-27 | **I 路**：簇外高影响面控制实践归档为 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)。OpenAI harness 正文从 ⏳ 改为已取得；《Unwinding》仍未取得。不升 §A |
+| 2026-09-27 | **J 路**：一条本机 DSH goal session 的七字段事后编码，见 [evidence-j](evidence-2026-09-27-j-local-goal-session.md)。外置行对照臂未跑。不是公开事件 |
+| 2026-09-27 | **行 K**：执行前写下 [ledger-row-2026-09-27-k.md](ledger-row-2026-09-27-k.md)，工作项是尚未开始的 Unwinding。本机 headless 没有 `/goal`，goal 未创建，正文未取。不是公开事件 |
+| 2026-09-27 | **K 路勘误**：Unrolling 的检索工具候选摘录写入 [evidence-k](evidence-2026-09-27-k-unrolling-codex-agent-loop.md)。直接 HTTP 仍 403，终止态仍待独立复核。没有 DSH goal，不是对照臂 |
+| 2026-09-27 | **I 路批次 2（扩容扫描）**：五切口（厂商控制面 / evals 思想 / 定量效果 / 谱系长文 / SDD×loop 厂商）归档为 [evidence-i2](evidence-2026-09-27-i2-teams-evals-outcome.md)；每条区分 `【主验】` 与 `【侦察回源】`，后者待复核、不增加独立票。§一保留 Tessl 候选定义行；§四之二新增 2023–2025 谱系候选。不升 §A |
 
 ---
 
