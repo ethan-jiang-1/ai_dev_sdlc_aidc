@@ -52,7 +52,7 @@ phases:
   intro_manuscript:
     status: draft
     directory: "intro/manuscript/"
-    note: "入门场文稿 19 页，四轴与红线自查过，待用户收口"
+    note: "入门场文稿 19 页，三档格式（必须写出 / nice to have / 做片补充材料），待用户收口"
   advanced_outline:
     status: draft
     directory: "advanced/outline/"
@@ -60,7 +60,7 @@ phases:
   advanced_manuscript:
     status: draft
     directory: "advanced/manuscript/"
-    note: "技术产品场文稿 27 页，四轴与红线自查过，待用户收口"
+    note: "技术产品场文稿 27 页，三档格式（必须写出 / nice to have / 做片补充材料），待用户收口"
 
 prerequisites:
   - "03_practice/loop_governance backbone + manual 已确认（见该目录 CURRENT.md）"

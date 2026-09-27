@@ -86,5 +86,5 @@
 | `research/source-synthesis.md` | 素材信号。早于「它说做完了」这一版故事 |
 | `intro/outline/outline.md` | 入门场大纲（19 页），2026-09-27 用户过闸 |
 | `advanced/outline/outline.md` | 技术产品场大纲（27 页），2026-09-27 用户过闸 |
-| `intro/manuscript/manuscript.md` | 入门场文稿草案：19 页，主张句与大纲相同，四轴与红线自查过，待用户收口 |
-| `advanced/manuscript/manuscript.md` | 技术产品场文稿草案：27 页，主张句与大纲相同，四轴与红线自查过，待用户收口 |
+| `intro/manuscript/manuscript.md` | 入门场文稿（三档格式）：19 页，主张句与大纲相同，每页第一档＋nice to have＋做片补充材料，待用户收口 |
+| `advanced/manuscript/manuscript.md` | 技术产品场文稿（三档格式）：27 页，主张句与大纲相同，每页第一档＋nice to have＋做片补充材料，待用户收口 |
