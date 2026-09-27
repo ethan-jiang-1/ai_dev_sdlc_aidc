@@ -8,7 +8,7 @@
 topic: Loop Governance —— loop 层的实践主干（Prompt → Context → Harness → Loop → Graph 第 4 层）
 doc_layer: result（定稿层 · 总纲，清单级）
 produced_at: 2026-09-26
-provenance: 升格依据＝研究层三路回源（evidence-a/b/c，全部一手）+ 判读 01/03/05；用户 2026-09-26 决定立题并授权命名
+provenance: 2026-09-26 立题＝研究层 evidence-a/b/c + digested 01/03/05；2026-09-27 补充＝evidence-f/i 的机制及限定性反例 + digested/03/07 的边界；用户决定立题并授权命名
 filter: ≥2 独立一手来源 → 主干；单源强实践 → 标注"单源"；未收敛点 → 如实标注为设计空间或开放缺口，不冒充共识
 evidence_home: 02_research/ai_loop_engineering（证据与判读权威；本主题不建 research/ 层，防双权威）
 naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延未收敛（判定见研究层 digested/01）；按仓库五层框架命名，与 harness_governance 同构成对（环境轴 / 控制轴）
@@ -40,8 +40,10 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 | ⑥ 无进度盘 | 跨轮状态只在人的记忆里，退化为对话催促 | §2 形态一；manual §5 |
 | ⑦ 自主度超前 | 门禁还不会红就把人撤出循环 | §3 升档判据；manual §9 |
 | ⑧ 操纵裁判 | agent 改测试 / 绕审批 / 哄评估器 | §1 保护裁判；manual §4/§7 |
+| ⑨ 授权漂移 / 升级不可达 | 旧批准被拿来执行新动作，或拒绝后无人能接手 | §3 控制路径；manual §7/§9 |
+| ⑩ 资源停机冒充验收 | 超时、拒绝或模型收尾被写成任务完成 | §1 停止与验收分离；manual §7/§10 |
 
-（①② 是 §0 两判据的失败面；③④⑤ 来自 Anthropic 官方失败模式表，evidence-b §3；⑥ 的私有一手样本见姊妹仓 FAQ 15 owner 案例·转引；⑦ 由 §3 升档判据推出；⑧ 来自保护裁判与反操纵监控的一手证据——evidence-b §3 测试不可删改 / §4b reasoning-blind / §2.3 反复拒绝熔断。）
+（①② 是 §0 两判据的失败面；③④⑤ 来自 Anthropic 官方失败模式表，evidence-b §3；⑥ 的私有一手样本见姊妹仓 FAQ 15 owner 案例·转引；⑦ 由 §3 升档判据推出；⑧ 来自保护裁判与反操纵监控的一手证据——evidence-b §3 测试不可删改 / §4b reasoning-blind / §2.3 反复拒绝熔断；⑨ 是 evidence-f 的源码/文档机制与单用户反例导出的试点检查；⑩ 区分资源上限与任务验收，见 digested/07 停止格。）
 
 ## 1. 停止条件（跑到哪算完）
 
@@ -52,6 +54,8 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 1. **机器可核判据做逐轮闸门**——back pressure（类型 / 测试 / linter / 静态分析 / 安全扫描，evidence-b §1）/ grader（deterministic 优先，agentic/LLM-as-judge 慎用——它是评分不是闸门，evidence-b §4e）。
 2. **硬性熔断上限做兜底**——把轮次 / 时间 / 拒绝计数写进条件（`or stop after 20 turns`）；auto mode 3 连拒 / 20 总拒停机；`/loop` 7 天硬过期（"bounds how long a forgotten loop can run"）。（evidence-b §4a/4b/4c）
 3. **验收与干活分离**——五处一手跨三家：evaluator-optimizer、"只许改 `passes` 字段"、"/goal adds a separate evaluator… completion is decided by a fresh model rather than the one doing the work"、"The separation of roles matters"、grader 与 agent 分置。（evidence-b 综合节）
+
+**停止原因不等于完成证据**：轮次耗尽、超时、连续拒绝、模型返回消息只说明控制流停止或交还；是否验收仍由预定的检查者和证据决定。长程任务的交接记录应把两者分开（[`digested/07` 停止格](../../../02_research/ai_loop_engineering/digested/07-控制问题矩阵.md)；记录写法见 [`manual.md §7`](manual.md)）。
 
 **写法（CC 官方三要素，一手）**：**一个可度量终态 + 一个声明式检查 + 路径约束**（"`npm test` exits 0"、"no other test file is modified"，evidence-b §4a）。**实践例证**：Jesse Vincent 的 `/goal` 实验（过夜 25 实验那例——**中文转述·非逐字**，仅作用法样本，不作独立收敛依据；[`fable5/run_superpowers_jesse_vincent`](../../../01_sources/field_samples/fable5/run_superpowers_jesse_vincent/quotes.md)）。
 停止条件是**三值状态机**（Not yet met / Met / Impossible），不是布尔（evidence-b §4a）；Osmani 澄清：`/goal` 评估器**只核 transcript 硬规则、不判内容好坏**（evidence-a）——判好坏的是人或上级环。
@@ -66,18 +70,20 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 
 - **三件套**：进度规格（feature_list.json / fix_plan.md / loop.md）＋ 叙事日志（progress 文件）＋ git 历史；
 - **每轮冷启动重读 + 固定开场序列**：定位 → 读 git log / progress → **选清单里最高优先级的未完成项** → 先过基线再干活（evidence-b 问题2 §1/§4）；
-- **决定"下一轮跑什么"的不是人、不是定时器，是规格文件里第一个 `passes: false` 的条目**；
+- **在这个文件队列形态中**，下一项从进度规格里的未完成条目取；人可改变清单及优先级，不能把“从文件取题”外推为所有 loop 都不需人决定下一轮；
 - 一次只做一件 + 干净收尾（commit + progress 更新）——对抗 one-shot 冲动（Anthropic 点名的失败模式一）。
 
 **主导形态二：触发器即节拍。**条件驱动（`/goal`）/ 时间驱动（`/loop`、cron、Routines——间隔可固定、可模型自选、可 loop.md 定制）/ 事件驱动（webhook，LangChain event-driven loop）/ 脚本驱动（Stop hook）。`/loop` 的内置维护 prompt 是"下一件工作"的清单化变体：固定优先级（未完工作 → PR 偶发维护 → 清理），且**不在该范围外开新动作**（evidence-b §4c）。
 
 **审批作为独立角色**：auto mode 分类器与 OpenAI auto-review 都把"越界判定"做成**独立模型调用**——主 agent 有把审批边界当障碍绕过的压力，所以判定必须分离（"The separation of roles matters"）。单次拒绝**不终止循环**：deny-and-continue，拒绝带理由回给模型换安全路径（过半场景模型自找替代路径，evidence-b §4b/4d）。
 
-**人的位置**：**人工同步审批已退出调度回路**（Anthropic 2024→2025 演化 + OpenAI auto-review 标题即立场，两家一线厂商一手）。人留在三处：**熔断升级、ask 规则、显式清除**。
+**人的位置**：部分公开机制将逐动作同步审批移到风险动作、关键歧义和熔断等检查点；这不证明真实组织里人工审批已退出调度回路（[`digested/03 §二`](../../../02_research/ai_loop_engineering/digested/03-构件.md)）。自动拒绝也不等于有人能接手，升级入口须在具体运行方式中走通。
 
 **外层的接口化（前沿形态）**：Managed Agents 把 session log 独立于 harness 存活，`wake(sessionId)` 从最后事件恢复——"外层"本身正在成为可调用的接口（evidence-b §5，单源·标注）。
 
-**开放缺口（如实登记，与 §3「量化分档未成型」同格式）**：**跨 feature 的在途可见性与逐 feature 验证汇总**——本轮全部一手材料均未给出成型做法（Anthropic 的 progress 文件是**单 feature 长跑内**的；姊妹仓 FAQ 15 的 owner 四仓自建队列属外部个案·转引）。队列与次序有覆盖（本节形态一），在途视图没有——不冒充共识。
+**开放缺口（如实登记，与 §3「量化分档未成型」同格式）**：**跨 feature 的在途可见性与逐 feature 验证汇总**——已复核的材料尚未给出同时覆盖授权史、priority 变更、业务阻塞和跨 feature 验收的统一做法（单任务 progress 文件不能替代）。队列与次序有覆盖（本节形态一），在途控制面仍待验证，不冒充行业共识。
+
+**待验证的补法，不是已证规范**：当多项工作同时在途且交接反复丢授权、优先级或验收信息时，可在现有进度文件之外试一行 feature 控制记录；只记工作来源、授权变更、优先级变更、阻塞原因及验收指针，不替代单任务的 feature_list / progress / git。字段和退出条件在 [`manual.md §5`](manual.md)，缺口边界见 [`digested/07 §一`](../../../02_research/ai_loop_engineering/digested/07-控制问题矩阵.md)。尚无对照证明该记录能减少催问或返工。
 
 ## 3. 自主度阶梯（人在哪一站、什么时候升档）
 
@@ -95,15 +101,18 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 
 **升档判据**：**机械门可信度决定可授权的自主度**——门会红才配当门（负例控制，衔接 [`harness_governance` 回路 1](../../harness_governance/result/backbone.md)）；门不可信时升档＝把错误复制得更快（本主干 §0 判据 2）。
 
+**升档还须查控制路径**：一次批准绑定本次动作、目标和有效期；下一轮不自动继承到另一分支、另一 feature 或发布动作。对可审批的中断要验证人能看到动作和风险、作决定、从同一状态恢复；对硬政策拒绝只停下并暴露原因，不通过人工提示绕过。动作门和恢复机制见 [`digested/03 §三`](../../../02_research/ai_loop_engineering/digested/03-构件.md) 与 [`evidence-f` Sources 1/7](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)；授权漂移/审批不可达只有单用户反例，不是发生率证据。操作检查在 [`manual.md §9`](manual.md)；沙箱与工具策略本身仍归 harness 治理。
+
 **反面声音（一手）**：Steinberger 2025-12 长文明确反对自动编排（"usually I'm the bottleneck"）——与他的 6 月词源推文立场相反（evidence-a）。**自主度升档不是免费的方向**；词源人物自己的摇摆就是证据。
 
 ## 4. 检查点与反例（什么时候必须人看 / 什么时候不要 loop）
 
-1. **人的注意力集中在门禁**："Human attention concentrates at the gates, reviewing what the agent flagged rather than starting each stage from scratch"（playbook）——审 agent 标记的，不从零开始。（与 §2 的「人留三处」不冲突，是**两个尺度、同一方向**：§2 是会话尺度（CC `/goal` 原语的熔断/ask/清除），本条是 SDLC 阶段尺度（playbook 的工件门）——人都从逐动作、逐轮的同步审批退出，集中到检查点。）
+1. **在 playbook 描述的阶段门集中注意力**："Human attention concentrates at the gates, reviewing what the agent flagged rather than starting each stage from scratch"（playbook）。这是该做法对阶段审阅位置的建议，不等于所有团队都撤掉了逐动作审批；会话内风险动作仍可按 §2 的 ask 规则暂停并交人。
 2. **风险分级保留人审**：auth / billing / 破坏性变更 + 回滚计划（引用 [`harness_governance` 组织 6](../../harness_governance/result/backbone.md)，不重复）。
 3. **假把控的两面镜**：SDD 侧 "False Sense of Security"（agent 把 verify implementation 标 done 却零单测，marmelab 2025-11-12——**注意出处修正**，evidence-c）↔ loop 侧没有进度盘时退回人的工作记忆与对话催促。**真实把控＝机器可查的门 + 少量真人在环点。**
 4. **什么时候不要 loop**：单次小任务（为它建循环脚手架是过度工程）；brownfield 慎用无限循环（Ralph 自限 greenfield）；**先有真实失控，再上循环治理**（对齐 harness_governance 反过度工程条）。
 5. **非保证声明要跟着走**："Auto-review should not be treated as a guarantee of security"（OpenAI 官方自述）——机械门自身也是攻击面（DSH 的 CVE-2026-82533 样本，**转引·待回源**——见姊妹仓 FAQ 15，未独立回源前不作主张依据）。
+6. **行为面交接异常**：测试被删/关/弱化、额外做了未授权功能、失败测试未说明，都先暂停标完成并转交独立核对（[`evidence-i` Beck/Yegge](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-27-i-high-influence-control.md)，两个第一人称案例，无效果对照）。测试保护由 harness 执行；本层只管轮末是否继续和谁接手，见 [`manual.md §10`](manual.md)。
 
 ## 5. 与兄弟主题的接口
 

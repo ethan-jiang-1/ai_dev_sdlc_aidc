@@ -27,7 +27,7 @@
 
 1. **第一阶段研究判读可以收口，但验证支线不能写成已完成。** I/J/K 的增量已登记；I2 的侦察回源条目、行为面正反例矩阵、自我改写保护链仍需主 Agent 复核或实验验证。
 2. **下一唯一研究入口**：先完成 I2 主验筛选和 `digested/07` 的控制矩阵融合；随后再决定是否做 DSH 外置行对照。对照实验的验收仍是可重复日志与指标，不用 J 路 `n=1` 代替 P-outcome。
-3. **用户复核实践层 backbone（§0–§6 七节＋§0.2 诊断轴）与 manual（12 节）**——F 路动作边界/升级可达性、I 路行为面反例先作为研究候选，不自动写进规程。
+3. **用户复核实践层 backbone（§0–§6 七节＋§0.2 诊断轴）与 manual（12 节）**——2026-09-27 经用户要求，F 的动作门/升级可达性、I 的行为面反例转为受限操作检查；digested/07 的四列空格只在多 feature 交接问题出现时作为工作行试点。I2 未复核材料、K 候选与 J 单次观察不作效果依据。
 4. **跨仓修正三处**（本轮一手证据触发，不属本主题但已查明）：
    - `talk-harness-201/02_evidence/01-kol-alignment-2026.md`：公式 "Agent = Model + Harness" 归属改为 **Trivedy/LangChain 原创 → Böckeler 传播锚点化**；
    - `01_sources/reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；
