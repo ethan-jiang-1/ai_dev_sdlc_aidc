@@ -28,9 +28,9 @@
 
 | 路 | 目标 | 当前状态 |
 |---|---|---|
-| A goal 构造 | Q1。定调写明重心在 goal，所以这是第一路 | ✅ A / A2 / A3 / A4。A4 是退回 loop 提出者本人 |
-| B eval 与调优 | Q2 | 未开 |
-| C 难设计 | Q3 | 未开。窗内已登记 Hamel 2026-06-29 与 Yeret（日期未核），判读仍不写 |
+| A goal 构造 | Q1。定调写明重心在 goal，所以这是第一路 | ✅ A / A2 / A3 / A4 / A9 / A10。判读在 [`../digested/01-goal-构造.md`](../digested/01-goal-构造.md) |
+| B eval 与调优 | Q2 | ✅ 构造在 B，动作在 B2，工程读数在 B3，Abridge 在 [`evidence-2026-09-27-b4-abridge.md`](evidence-2026-09-27-b4-abridge.md)。判读在 [`../digested/02-eval-调优.md`](../digested/02-eval-调优.md) |
+| C 难设计 | Q3 | ✅ [`evidence-2026-09-27-c-hard.md`](evidence-2026-09-27-c-hard.md)。判读在 [`../digested/03-难设计.md`](../digested/03-难设计.md) |
 
 一个回源档案只回答一个路。档案名：`evidence-<日期>-<路别>.md`。
 人、社区、机构出现在档案里；谁进名单按 [`../README.md`](../README.md) §3。社区实战可以进任何一路，不单独占一路。
@@ -56,9 +56,9 @@ loop 主题里已有文字。用的时候自行回源，不抄引句，不把对
 
 ## 5. 当前 backlog
 
-1. **写 `digested/01` 与 `03` 的判读**。实战步骤已在 [`evidence-2026-09-27-a6-how.md`](evidence-2026-09-27-a6-how.md)。01 写能写成两人同判的任务时，goal 怎么写成循环的停止句。03 写标准还在人脑子里时，先标再铺。AdaRubric 的自动生成维度不要并进 Shankar 那一步。
-2. Tessl 的两套 rubric 已在 [`evidence-2026-09-27-a7-practices.md`](evidence-2026-09-27-a7-practices.md)。FAQ 的动手节拍在 [`evidence-2026-09-27-a8-faq-practices.md`](evidence-2026-09-27-a8-faq-practices.md)。判读按做法并列写，不收成一条。
-3. Steinberger 原帖仍只有转述。不挡实战步骤。
+1. 判读已写在 `digested/01`–`03`。做法并列，不收成一步。
+2. 仍只有链、不挡阅读：Lenny 第三步聚类表（付费墙）、Loopcraft 全文（付费墙）、Cherny 7 月 17 日步骤表的构件页。
+3. 再收工程帖时，仍要有检查的句子，以及改了哪一步、哪个数动了。见解不入档。
 
 ## 6. 每轮收口
 

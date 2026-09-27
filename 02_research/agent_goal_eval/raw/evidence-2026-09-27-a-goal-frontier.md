@@ -78,11 +78,11 @@
 ### Yuval Yeret《Goal-Based Loop Engineering》
 
 - URL：https://yuvalyeret.com/blog/ai-agent-completion-goals-aim-at-outcomes
-- 发布日期：**本次摘录未见页面日期**。不能确认落在 2026-06 以后
-- 访问/观测日期：2026-09-27【主验正文，日期未核】
-- 摘录只留一句，供 Q3 使用：
+- 发布日期：**2026-05-27**，窗边。日期与做法节拍在 [`evidence-2026-09-27-c-hard.md`](evidence-2026-09-27-c-hard.md)，本段不扩写
+- 访问/观测日期：2026-09-27【主验正文】
+- 摘录只留一句，供对照：
   > “When you set a completion goal around a technical criterion, the agent has clear stopping conditions it can evaluate autonomously and reliably. When you set one around an outcome, you immediately run into the question: how would the agent observe whether that condition holds?”
-- 不据此入册，也不据此写 Q1 结论。
+- 不据此写 Q1 结论。
 
 ### Hamel Husain《“It’s Hard to Eval” Is a Product Smell》
 

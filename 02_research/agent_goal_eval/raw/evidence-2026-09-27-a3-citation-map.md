@@ -16,7 +16,15 @@ Runkle 2026-06-16 点名 swyx 的 loopcraft，给出的 URL `https://www.latent.
 - 该摘录支持的最小主张：2026-06 中旬这份通讯把 goal 说成该往上叠的一层，不是某一条完成条件怎么写。同页声明扫过 12 个 subreddit、544 个 Twitter。这是社区在传，不是一份做法。
 - 不支持什么：付费墙后的名单和原帖没有读到。不能从「通讯在汇总」推出每个被点名的人已经会构造 goal。
 
-同站另一页 https://www.latent.space/p/aiewf-daily-dispatch-loops 在检索摘要里写 swyx 以 “Loopcraft: The Art of Stacking Loops” 作 AI Engineer World's Fair 开场，并把工程演化说成从 chat 到 tools 到 goals。**派稿全文未提取，这句不升为引句。**
+同站另一页已打开：
+
+- URL：https://www.latent.space/p/aiewf-daily-dispatch-loops
+- 访问/观测日期：2026-09-27【主验】
+- 原文摘录：
+  > “swyx began by commenting on the evolution of AI engineering from 2022: from chat, to tools, to goals.”
+  > “These days, we’re all about automations,” he added. “We’re all about cron jobs and loops.”
+- 该摘录支持的最小主张：会场日记确认开场标题是 Loopcraft，并把演化说成从 chat 到 tools 到 goals。同页没有一条完成条件，也没有检查句子。
+- 不支持什么：这是记者的转述，不是 swyx 讲稿全文。不能从「谈到 goals」推出他已经写出可核终态。
 
 ## 链 2 · Hamel → 还在摸标准的人
 
@@ -37,10 +45,10 @@ Runkle 2026-06-16 点名 swyx 的 loopcraft，给出的 URL `https://www.latent.
 |---|---|---|
 | Osmani、Runkle、Hamel、Anthropic 文档与博客、OpenAI cookbook、Cursor changelog | 已有一段可操作说法，分见 A / A2 | 已主验 |
 | Saha | 与 Hamel 同一篇 7 月 11 日实验的共同作者 | 本档案链 2。不另算一家 |
-| Shankar | 窗内在教「先标注、再让 agent 找同类失败」；标准会漂移是她被引用的理由 | 做法由 Parlance 文转述。她自己的站未打开 |
-| swyx / Latent Space AINews | 2026-06 中旬在汇总「把 goal 当成可叠的一层」；会场开场标题是 Loopcraft | 公开段已读；全文和开场派稿未读完 |
-| Runkle 点名的 Steipete、Boris、Andrej、Satya | 被写成「也到达了循环」 | 只是引用关系。推文和视频未打开，不能写成他们已经在讲 goal 怎么构造 |
-| Yeret | 技术完成条件和业务结果的差别 | 日期仍未核，见 A 档 |
+| Shankar | 窗内在教「先标注、再让 agent 找同类失败」；标准会漂移是她被引用的理由 | 口播已核对。个人站已打开，是学术主页，没有完成条件写法 |
+| swyx / Latent Space AINews | 2026-06 中旬在汇总「把 goal 当成可叠的一层」；会场开场把演化说成 chat → tools → goals | 公开段和会场日记已读。Loopcraft 付费墙后仍未读。日记里没有完成条件 |
+| Runkle 点名的 Steipete、Boris、Andrej、Satya | 被写成「也到达了循环」 | Steipete 见 A9。Boris 见 A4。Karpathy 见 A10，两帖都在窗边。Satya 仍没有完成条件原文 |
+| Yeret | 技术完成条件和业务结果的差别 | 日期已核为 2026-05-27，节拍在 C 档 |
 
 ## 判读
 
@@ -50,6 +58,6 @@ Runkle 2026-06-16 点名 swyx 的 loopcraft，给出的 URL `https://www.latent.
 
 ## 负结论与限制
 
-- Loopcraft 付费墙后未读。World's Fair 派稿未全文提取。
-- 推文被点名不等于那个人写过 goal 构造。Steipete / Boris / Andrej / Satya 仍停在引用关系。
+- Loopcraft 付费墙后未读。会场日记已读，没有检查句子。
+- 推文被点名不等于那个人写过 goal 构造。Steipete、Boris、Karpathy 已另档主验。Satya 仍停在引用关系。
 - 87.2% 是一个租赁数据集上的召回，作者自己禁止把它读成厂商排名。

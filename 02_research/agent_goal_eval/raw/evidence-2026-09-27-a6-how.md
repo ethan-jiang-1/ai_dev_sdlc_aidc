@@ -58,4 +58,4 @@
 
 - arXiv:2606.17819 的页面抽取仍然失败，本档没有它的句子。
 - OpenAI 活文档无发布日。
-- Steinberger 原帖仍未打开。本档不需要那两句热度句才能写出步骤。
+- Steinberger 原帖已打开，见 [`evidence-2026-09-27-a9-x-goal.md`](evidence-2026-09-27-a9-x-goal.md)。本档不靠那两句热度句写步骤。
