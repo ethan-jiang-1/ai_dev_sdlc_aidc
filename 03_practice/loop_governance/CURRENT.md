@@ -15,11 +15,11 @@
 | `result/README.md` | ✅ 入层判据 |
 | `result/manual.md` | ✅ 12 节——**2026-09-27 用户确认通过** |
 | 证据层 | ✅ 循环机制见 [`ai_loop_engineering`](../../02_research/ai_loop_engineering/README.md)；控制接口见 [`agent_goal_eval`](../../02_research/agent_goal_eval/digested/README.md) |
-| deck | 内容稿。大纲与文稿的主张句已对齐（「它说做完了」）。画面与 PPTX 已删除 |
+| deck | 内容稿。大纲与文稿的主张句已对齐（标准 15 页「Loop Engineering」）。每页有上屏 title / subtitle / content。画面与 PPTX 已删除 |
 
 ## 下一步
 
-1. **叙事以大纲为准。** 标准 14 页是「它说做完了」。文稿主张句与大纲相同。人站在哪是三套说法，不能换算成第几级。画面、PPTX、上一版画面说明不重建。下一轮只在某一句会听成效果已证、或听成材料里没有的事时，改那一句。
+1. **叙事以大纲为准。** 标准 15 页。S02 点明这一转：系统替人把一轮收尾，名字叫 loop engineering，做法不统一。其后回答什么问题值得转、难在哪、什么场合可以。文稿每页有上屏 title / subtitle / content。主张句与大纲相同。画面与 PPTX 不重建。deck 自 `0bedfea` 起的改动已随本轮提交。
 2. 研究层遗留（不阻塞 deck，登记在研究层 CURRENT）：Unrolling 候选 403 / 归属修正 / Morris 四级。
 
 ## 缺口（backbone 登记的两项开放缺口 + 两项附加）

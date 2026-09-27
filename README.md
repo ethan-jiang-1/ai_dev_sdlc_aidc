@@ -78,7 +78,7 @@ ai_dev_sdlc_aidc/
 | `02_research/` | **分析层** | 多数主题是自包含的 `raw → digested → result` 管道：工程实践、反馈回路、管理与编排、多智能体团队、研发体系迁移、ThoughtWorks 方法论、前沿议题、Anthropic 实践；**另有三个活跃主题**——`repo_agent_friendliness/`（Agent-Friendly 评估系统，独立三层分法 `10-spec/20-instruments/90-archive`，run 数据不落本仓库，见根 AGENTS §4 例外）、`ai_loop_engineering/`（Loop Engineering 运动，2026-09-26 三路回源完成）与 `agent_goal_eval/`（goal 与 eval 如何构造，2026-09-27 定调）（需求工程与 SDD 两主题已于 2026-09-21 拆出至 `03_practice/`；重名目录 `anthorpic_ai_sdlc/`→`anthropic_ai_sdlc/`、`rnd_native_2.0/`→`ai_native_rnd/` 已于 2026-09-27 合并） |
 | `03_practice/` | **实践层** | SDLC 工程实践与方法论的沉淀（2026-09-21 自研究层拆出，用户判定其内容已是 practice 而非 research）：`requirements_engineering/`（需求表达格式）、`spec_driven_development/`（SDD 工具生态与辩论）、`beyond_spec_driven_development/`（SDD 批判之后的形态光谱）、`harness_governance/`（★ 环境轴：治理 agent 执行链路，2026-09-21 自 beyond 抽出）、`loop_governance/`（★ 控制轴：loop 层实践主干——停止条件/外层调度/自主度分档，2026-09-26 立题，证据权威在 `02_research/ai_loop_engineering`） |
 | `04_enterprise/` | **企业视角** | SDLC 在企业侧的映射：BPM 作为企业信息加工流的等价物，以及企业 AI 重构案例 |
-| `05_output/` | **产出层** | 主线 Keynote：`deck_ai_sdlc_keynote/`（历史主线稿，2026-08 后未推进，自带 6-Phase 出图管道）+ `deck_ai_loop_engineering/`（只写叙事，标准 14 页；页面图与 PPTX 已删除，进度见该目录 `AGENTS.md`） |
+| `05_output/` | **产出层** | 主线 Keynote：`deck_ai_sdlc_keynote/`（历史主线稿，2026-08 后未推进，自带 6-Phase 出图管道）+ `deck_ai_loop_engineering/`（只写叙事，标准 15 页；页面图与 PPTX 已删除，进度见该目录 `AGENTS.md`） |
 
 各研究主题遵守统一的信息处理纪律：**一手源优先、来源可溯、聚焦当前时刻**。
 参考库的"来源/时间铁律"见 `01_sources/reference/kol/README.md` 与 `01_sources/reference/corp/README.md`。

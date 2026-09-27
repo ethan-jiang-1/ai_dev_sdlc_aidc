@@ -11,7 +11,7 @@
 1. **结构**：标准档每一页只推进故事的一步。加深页是追问的答案，不插进标准档中间。
 2. **系统**：公式里的每个因子都能在大纲里指到页；多出来的页要写明它为什么不是第四个因子。
 3. **叙事**：听众能用一句话接上下一页。接不上的页，删或并。
-4. **自洽**：`v1/outline/outline.md` 的主张句与 `v1/manuscript/manuscript.md` 的 CLAIM 是同一句。研究层的边界写在讲者备注，不另起一套主张。
+4. **自洽**：`v1/outline/outline.md` 的主张句与 `v1/manuscript/manuscript.md` 的 CLAIM 是同一句。上屏的 subtitle 用这一句。研究层的边界写在讲者备注或 callout，不另起一套主张。
 
 内容权威是大纲，展开在文稿。`v1/session_design/`、`v1/style/`、`v1/production/` 不是内容权威。
 
@@ -27,7 +27,10 @@
 素材里哪几句能进故事  →  research/source-synthesis.md
 故事的一步一步        →  v1/outline/outline.md
 每一步怎么说          →  v1/manuscript/manuscript.md
+每页上屏              →  同文稿的 title / subtitle / content
 ```
+
+上屏给后面的做片用。title 短，subtitle 等于主张句。只读二者应能跟上论证。content 写看得见的场面。红、绿、灯和版面分组放在引用块里，不上屏。本目录仍不出 PPTX、PNG、风格母版。
 
 改故事先改大纲，再改文稿，使两处的主张句重新相同。
 
@@ -79,4 +82,4 @@
 |---|---|
 | `research/source-synthesis.md` | 素材信号。早于「它说做完了」这一版故事 |
 | `v1/outline/outline.md` | 当前故事 |
-| `v1/manuscript/manuscript.md` | 主张句已与大纲对齐。标准 S01–S14，加深 E1–E10 |
+| `v1/manuscript/manuscript.md` | 主张句与大纲相同。标准 15 页：S02 点明这一转，其后分适合的问题、难处、场合。每页有上屏 |

@@ -2,7 +2,7 @@
 # 叙事以 v1/outline/outline.md 为准。页、画面、PPTX 不在本目录的工作里。
 
 project:
-  name: "它说做完了"
+  name: "Loop Engineering"
   slug: "deck_ai_loop_engineering"
   type: strategy_keynote
   created: 2026-09-27
@@ -21,12 +21,12 @@ scope:
     standard:
       tier: "standard"
       duration_minutes: 40
-      slides: 14
+      slides: 15
     deep:
       tier: "extended"
       duration_minutes: 75
       slides: 10
-  focus: "你离开之后它继续跑，你回来时它说做完了。整场回答你凭什么信"
+  focus: "Loop Engineering：系统替人完成一轮。本场确定何时允许这一转向，难点在何处，哪些问题与场合适合"
   harness: "这一轮会不会在已知的错上变红的条件。不是循环的历史原因，也没有证明因此更好"
   goal_eval: "完成条件写不成一句能检查的话，就交给人。怎么写那一句是旁边的题目，不在这场展开"
 
@@ -47,11 +47,11 @@ phases:
   phase_1_outline:
     status: draft
     directory: "v1/outline/"
-    note: "当前故事。隐喻是灯。标准 14 页，加深 10 页只回答追问"
+    note: "当前故事。隐喻是灯。标准 15 页：先点明这一转，再讲适合的问题、难处和场合。加深 10 页只回答追问"
   phase_2_manuscript:
     status: draft
     directory: "v1/manuscript/"
-    note: "主张句与大纲相同。标准 S01–S14，加深 E1–E10"
+    note: "主张句与大纲相同。每页有上屏 title / subtitle / content。标准 S01–S15，加深 E1–E10"
   phase_3_slide_specs:
     status: stopped
     directory: "v1/session_design/"
