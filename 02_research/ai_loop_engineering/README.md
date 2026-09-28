@@ -5,6 +5,7 @@
 
 **分法**：`raw/`（一手素材）→ `digested/`（消化与判读）→ `result/`（成稿）。**两个增长轴独立可加**：
 轴一「人」＝台账加一行（素材进回源档案；**建卡是例外**，判据见 §1 素材形态）；轴二「问题」＝加一个议题加一个编号文件。加东西时不改别的文件。
+**一个专项深挖区**（2026-09-28 用户决定）：`stop_conditions/`＝停止条件三件骨架按点深挖（每点一孙目录，practices＋insights）；素材仍进 raw、判定仍归 digested，它只装做法与洞察，见该目录 README。
 
 ```text
 ai_loop_engineering/
@@ -23,6 +24,11 @@ ai_loop_engineering/
 │   └── NN-<question>.md       #   跨源综合（编号增长）
 │
 ├── result/                    # 成稿层：landscape.md（2026-09-27 过筛综述）
+├── stop_conditions/           # ★ 专项深挖区（2026-09-28 立）：三件骨架按点切片
+│   ├── README.md              #   地图 / 分工边界 / 增长规则
+│   ├── 01_machine_gates/      #   ① 机器可核判据逐轮闸门（practices + insights + 待挖）
+│   ├── 02_hard_caps/          #   ② 硬性资源上限兜底
+│   └── 03_verdict_split/      #   ③ 验收与干活分离
 └── figures/                   # SVG
 ```
 
@@ -79,6 +85,7 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 | 老人出新料 | 追加对应 evidence 档案（或其卡片，若有）→ 台账只改状态列 | 不新建目录 |
 | 新证据（任何来源） | 新开一路回源档案 `raw/evidence-<日期>-<路别>.md` → `00-timeline.md` 加行（若有日期锚） | 不改 KOL 侧 |
 | 新议题 | `digested/NN-<slug>.md` → `digested/README.md` 看板加一行 | 不改编号顺序（编号 = 创建序） |
+| 三件骨架深挖（新做法/新洞察） | `stop_conditions/<点>/practices.md`（或 `insights.md`）加行；新来源仍先进 evidence 档案 | 不动 digested 判定——判定级结论回流 `digested/03`，本目录只留指针 |
 | 结论过筛 | 从 `digested/` 抽进 `result/` | 未采纳线索留 `digested/` 原位，不删 |
 
 ---
@@ -144,4 +151,5 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 | 过筛综述在哪 | [`result/landscape.md`](result/landscape.md) |
 | 现在做到哪、下一步干什么 | [`CURRENT.md`](CURRENT.md) |
 | 有哪些议题、答了几个 | [`digested/README.md`](digested/README.md)（问题看板） |
+| 三件骨架每一点上各家怎么做、为什么工作、边界在哪 | [`stop_conditions/README.md`](stop_conditions/README.md)（按点深挖区，2026-09-28 起） |
 | 单个人的完整观点 | [`digested/kol/`](digested/kol/andrew_ng.md)（已消化）/ `01_sources/reference/kol/_raw_loop_engineering/`（素材） |

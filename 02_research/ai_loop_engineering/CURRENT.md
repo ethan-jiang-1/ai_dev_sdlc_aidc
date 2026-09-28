@@ -1,6 +1,6 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-27（landscape 入 result）**：digested 01/03/05/06/07 过筛为 [`result/landscape.md`](result/landscape.md)。实践层 backbone 与 manual 的确认记录在 [`loop_governance/CURRENT.md`](../../03_practice/loop_governance/CURRENT.md)，本文件不再写「待逐段确认」。I2 未复核来源、DSH 对照实验、行为面正反例矩阵、K 的直接页面仍开放，不进成稿主张。
+> 最近一次更新：**2026-09-28（stop_conditions 深挖区立区）**：停止条件三件骨架按点深挖区落成（用户决定，理由＝三点埋在按路别组织的档案里信噪比差）——`stop_conditions/{01_machine_gates,02_hard_caps,03_verdict_split}/`，每点 practices（做法库）＋insights（洞察）＋待挖清单；初盘全部从既有 evidence（a/b/f/i/k）过筛，**未做新回源，判定权威仍在 digested/03**。上一轮（09-27）landscape 入 result 的收口不变。
 
 ## 一句话
 
@@ -22,6 +22,7 @@
 | `digested/05-边界判定.md` | ✅ 三层分工；收敛成立且双向；**三条引用归属修正**（影响全仓） |
 | ~~`raw/org/` · `raw/community/`~~ | ✅ **已撤销**（2026-09-26 评审决定 5）：evidence 档案为素材常态形态，纪律要点已并入 README §1「回源档案纪律」 |
 | `result/landscape.md` | ✅ 2026-09-27 入层。过筛结论；未复核的 I2 / K 不进主张 |
+| `stop_conditions/`（三件骨架深挖区） | ✅ 2026-09-28 立区：三点各一孙目录；practices 初盘 ① 9 条 / ② 9 条 / ③ 11 条（每条带 evidence 指针＋强度，含 2 条候选未复核：compact、assistant message）；insights 各带开放问题；待挖清单 5–6 条/点。**判定级结论回流 digested/03，本区不另立判定** |
 | 实践层 `03_practice/loop_governance/` | ✅ backbone 与 manual 已确认。确认记录在该目录 `CURRENT.md`，本行不复制审阅过程 |
 
 ## 下一步
@@ -29,11 +30,12 @@
 1. **成稿已入层，验证支线仍未完成。** I2 侦察回源、行为面正反例矩阵、自我改写保护链、DSH 外置行对照都不进 `landscape.md`。对照实验的验收仍是可重复日志与指标，不用 J 路 `n=1` 代替 P-outcome。
 2. **deck 只写叙事。** 页面图和 PPTX 已删除。研究侧不另起主张。
 3. **实践层确认不再阻塞。** F 的动作门、I 的行为面反例、四列空格的工作行试点，边界已写在 landscape §5–§7；I2 / K / J 不作效果依据。
-4. **跨仓修正三处**（本轮一手证据触发，不属本主题但已查明）：
+4. **三件骨架深挖区已开**（[`stop_conditions/`](stop_conditions/README.md)，2026-09-28）。下一步优先回源各点待挖清单的头部：① grader 失败模式与行为面（behaviour harness）候选做法；② 上限参数的选择逻辑与熔断恢复语义对照；③ 裁判权五极的选型依据与 evaluator 模型选型。**新素材先进 evidence 档案，再回填 practices**；判定回流 digested/03。
+5. **跨仓修正三处**（本轮一手证据触发，不属本主题但已查明）：
    - `talk-harness-201/02_evidence/01-kol-alignment-2026.md`：公式 "Agent = Model + Harness" 归属改为 **Trivedy/LangChain 原创 → Böckeler 传播锚点化**；
    - `01_sources/reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；
    - Böckeler "False sense of control?" 的出处标注改为 **2025-10-15 sdd-3-tools.html**（凡引用处）。
-5. **可跟踪预言**（登记防丢）：若出现第一条可复核自主度/质量放行阈值，回本主题补档、再评估实践层 §3；当前不以固定 N 轮作为目标。
+6. **可跟踪预言**（登记防丢）：若出现第一条可复核自主度/质量放行阈值，回本主题补档、再评估实践层 §3；当前不以固定 N 轮作为目标。
 
 
 ## 缺口
