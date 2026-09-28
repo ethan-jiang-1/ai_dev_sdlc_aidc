@@ -106,6 +106,8 @@ stop_conditions/
 ## 七、当前状态（快照，细节看各点 README 看板）
 
 - 2026-09-28：立区＋第一轮深挖收口＋自说明改版。6 个新 evidence 档案（l/m/n/o/p/q，32 条新来源，承重引文抽验/上 web 补齐原文）。
-- practices：① 20 条（五域＋框架缺省对照）／② 21 条（含失控实录 3 案、docs↔源码分歧 2 处、放弃记录 1 条）／③ 26 条（含裁判失效四机理实证、spec-kit 口径修正）。
-- **已登记的回流候选**（进 digested/03，尚未执行）：失控三型实录→②的存在理由细化；裁判失效四机理→③"分离≠判得对"实证化；docs↔源码分歧→参数引用规范。
-- 剩余待挖入口：三个点 README 的待挖清单（SQL/Great Expectations 域、LangSmith evals、判据可见性 trade-off、分歧版本考古、`/goal` evaluator"快 vs 准"理由）。
+- 2026-09-28（第二轮）：IAL-Scan（arxiv:2607.01641，2026-07）＋ ReliabilityBench（arxiv:2601.06112，2026-01）＋ OpenHands stuck detector 五模式 ＋ Augment CIV advisory mode，入 evidence-r。
+- practices：① 20 条（原）→ insights +1 条 ／② 21 条（原）→ 24 条（+3：effective bound coverage / OpenHands 五类重复 / rate limit）／③ 26 条（原）→ 28 条（+2：end-state oracle / CIV advisory mode）
+- insights：① +1（闸门放错位置）／② +2（bound 存在≠有效；rate limit 杀手）／③ +2（end-state oracle 汇合；advisory mode 渐进路径）
+- **已登记的回流候选**（进 digested/03，尚未执行）：失控三型实录→②的存在理由细化；裁判失效四机理→③"分离≠判得对"实证化；docs↔源码分歧→参数引用规范；IAL-Scan "effective bound coverage"→②工程要领升级。
+- 剩余待挖入口：三个点 README 的待挖清单（LangGraph/AutoGen tool dispatch 具体案例、SQL/Great Expectations 域、LangSmith evals、CIV advisory mode 原文逐字、Augment false-approve rate 阈值）。

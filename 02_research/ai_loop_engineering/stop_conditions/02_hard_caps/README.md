@@ -10,9 +10,9 @@
 
 | 件 | 状态 |
 |---|---|
-| [`practices.md`](practices.md) | ✅ **自说明版**：21 条（含放弃记录 1 条——Reddit $6k 案无逐字可取撤至 insights；候选/未合并单列 §六）：厂商产品层 8＋框架缺省 4＋失控检测闸门 3＋失控实录与补救 4＋Ralph 反例＋候选 2，每条自带核心片段 |
-| [`insights.md`](insights.md) | ✅ 初盘 6 条＋深挖批 5 条（四件套、默认无限实证、闸门误报与逃生、动作梯子、缓存经济学） |
-| 新回源 | ✅ 2026-09-28 补采收口：OpenHands 500／SWE-agent $3.0／LangGraph 1000↔10007／CrewAI 20↔25 入 [evidence-q](../../raw/evidence-2026-09-28-q-framework-defaults.md)；**两处 docs↔源码分歧双录**（insights #12–#14） |
+| [`practices.md`](practices.md) | ✅ **自说明版**：24 条（原 21 条＋第二轮深挖批 3 条：effective bound coverage、OpenHands 五类重复模式、rate limit 杀手效应）：厂商产品层 8＋框架缺省 4＋失控检测闸门 3＋失控实录与补救 4＋Ralph 反例＋候选 2＋学术层 3 |
+| [`insights.md`](insights.md) | ✅ 初盘 6 条＋深挖批 7 条（四件套、默认无限实证、闸门误报与逃生、动作梯子、缓存经济学、effective bound coverage 区分、rate limit 杀手效应） |
+| 新回源 | ✅ 2026-09-28 第一批：evidence-q；**第二批**：IAL-Scan arxiv:2607.01641 + ReliabilityBench arxiv:2601.06112 + OpenHands stuck detector 入 [evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md) |
 
 ## 待挖清单
 

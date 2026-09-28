@@ -247,4 +247,56 @@
 
 ---
 
-**同向票数**（判定归 digested/03）：硬上限构件五处一手同向（Anthropic 2024 / `/goal` / auto mode / `/loop` / auto-review）＋I 路 Copilot 补强；框架默认值与失控实录为 2026-09-28 深挖批（Q/O/L 路），不改收敛票数；#20/#21 为未合并提案与候选摘录，不计票。
+## 七、学术研究层（2026 新批次）
+
+### 22. IAL-Scan — "effective bound coverage"：上限放错位置和没有上限一样危险
+
+**核心**（一手·arxiv:2607.01641，Hou et al.，2026-07）：
+
+> "Developers may omit them, misuse them, configure them with ineffective bounds, or place them outside the actual feedback path."
+>
+> "An inner turn cap on a nested agent call does not cover an outer evaluator feedback cycle unless it dominates the outer feedback path."
+>
+> `BoundStatus: Covered: verified_bound | framework_default_bound | config_dependent_bound; UncoveredOrWeak: missing_bound | weak_bound | disabled_bound | ineffective_bound | bypassed_bound`
+
+**机制**：IAL-Scan 在 6,549 个真实仓库扫描，68 个确认 IAL 失败（91.9% 精度）。关键区分：**bound 存在 ≠ bound 有效**——bound 必须覆盖实际的 feedback path 才算 effective。最常见三类 IAL（69.1%）：重试无上限、工具迭代无上限、多智能体对话无轮次上限。两大危害：API 成本耗尽与模型拒绝服务，各占 95.6% 的确认失败。
+**边界**：static analysis，只检测结构可见的 IAL，不检测 runtime 语义无进展。
+**源**：[evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md) S1
+
+### 23. OpenHands Stuck Detector — 五类重复模式检测（语义判定，默认开启）
+
+**核心**（一手·官方文档 openhands.dev，观测 2026-09-28；⚠️ 原页 timeout，转述级）：
+
+五类检测模式及阈值：
+1. **Repeating Action-Observation Cycles**：同动作+同观察 ≥4 次
+2. **Repeating Action-Error Cycles**：同动作+同错误 ≥3 次
+3. **Agent Monologue**：≥3 条连续消息无用户输入
+4. **Alternating Patterns**：两种 action-obs 对交替 ≥6 轮
+5. **Context Window Errors**：重复上下文窗口错误
+
+> "Detection is based on the semantic content of the events (e.g., tool name and arguments) rather than simple object identity or timestamps."
+> "Stuck detection is enabled by default (stuck_detection=True)."
+
+**机制**：重复模式检测不是资源上限，是**行为等价性**检测——同工具名+同参数重复即判卡住。五类覆盖"卡住"的不同形状。
+**边界**：阈值实验依据未公开；转述级；与 zombie 孤儿进程（#46787）是不同构件。
+**源**：[evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md) S3
+
+### 24. ReliabilityBench — rate limiting 是最大杀手；pass@1 虚高 20-40%
+
+**核心**（一手·arxiv:2601.06112，Gupta，2026-01；1,280 episodes）：
+
+> "Rate limiting causes largest degradation: 2.5% below mixed baseline, suggesting agents struggle with backoff and retry logic for rate-limited APIs."
+>
+> "Transient timeouts well-handled: 98.75% pass rate indicates robust retry mechanisms for temporary failures."
+>
+> "pass@1 overestimates reliability by 20-40%"
+>
+> "Multiply benchmarks by reliability factor: If a benchmark reports 90% accuracy, expect 70-80% in production when accounting for consistency and faults."
+
+**机制**：rate limit 破坏性超过 transient timeout——agent 不知道等多久还是放弃，缺 backoff 策略。hard cap 设计必须考虑 retry 语义：上限遇到 rate limit 会被 retry 填满失去兜底作用。pass@1 虚高意味着上限设计应基于 pass^k × fault tolerance 联合评估，而非单次成功率。
+**边界**：4 个人工 domain，不含 coding；rate limit 结论来自故障注入实验，非生产测量。
+**源**：[evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md) S2
+
+---
+
+**同向票数**（判定归 digested/03）：硬上限构件五处一手同向（Anthropic 2024 / `/goal` / auto mode / `/loop` / auto-review）＋I 路 Copilot 补强；框架默认值与失控实录为 2026-09-28 深挖批（Q/O/L 路），不改收敛票数；#20/#21 为未合并提案与候选摘录，不计票；#22-#24 为 2026-09-28 第二轮深挖批（R 路），补充 effective bound coverage 区分、重复模式五分类、rate limit 杀手效应，不改收敛票数。

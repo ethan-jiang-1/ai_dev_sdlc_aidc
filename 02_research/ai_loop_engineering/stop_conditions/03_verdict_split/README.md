@@ -10,9 +10,9 @@
 
 | 件 | 状态 |
 |---|---|
-| [`practices.md`](practices.md) | ✅ **自说明版**：26 条，每条自带核心片段——产品层 8＋CI/review bot 5＋SDD 工具 2＋个人实践 2＋裁判谱系论文 6＋工具链 2＋METR 反例 1；含 spec-kit 口径修正 |
-| [`insights.md`](insights.md) | ✅ 初盘 5 条＋深挖批 6 条（失效四机理与三族防护、分离度三维度、CI-as-judge 断面、判判定器三形态、输出契约坑、SDD 修正） |
-| 新回源 | ⏳ 深挖批主体已收口；Spec Kit 旧 tag 考古、CodeRabbit slop-detection 子页、Graphite 底层模型（官方不公开）登记待挖 |
+| [`practices.md`](practices.md) | ✅ **自说明版**：28 条（原 26 条＋第二轮深挖批 2 条：end-state oracle 学术实现、Augment CIV advisory mode）；产品层 8＋CI/review bot 5＋SDD 工具 2＋个人实践 2＋裁判谱系论文 6＋工具链 2＋METR 反例 1＋学术层 2 |
+| [`insights.md`](insights.md) | ✅ 初盘 5 条＋深挖批 8 条（失效四机理与三族防护、分离度三维度、CI-as-judge 断面、判判定器三形态、输出契约坑、SDD 修正、end-state oracle 汇合点、advisory mode 渐进路径） |
+| 新回源 | ⏳ 深挖批主体已收口；**第二批**：ReliabilityBench + Augment CIV 入 [evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md)；Spec Kit 旧 tag 考古、CodeRabbit slop-detection 子页、Graphite 底层模型登记待挖 |
 
 ## 待挖清单
 

@@ -301,7 +301,47 @@
 
 ---
 
+## 八、学术研究层（2026 新批次）
+
+### 27. ReliabilityBench — end-state oracle：确定性状态验证是裁判的正确基础
+
+**核心**（一手·arxiv:2601.06112，Gupta，2026-01）：
+
+> "Unlike benchmarks that rely on LLM judges or text matching, ReliabilityBench uses deterministic state-based oracles."
+>
+> 代码示例（逐字）：
+> ```python
+> reservations[flight_id].status == "confirmed"
+> reservations[flight_id].passenger == expected_passenger
+> ```
+>
+> "An Action-MR is a tuple (φ, ψ) where: φ:D→D transforms task descriptions; ψ:S→S specifies expected state relationship. For most cases, ψ is identity: v(Sf, S0) = v(Sf', S0)."
+
+**机制**：Action Metamorphic Relations 把"正确"定义为 **end-state 等价**而非文本相似——同语义不同措辞的任务应产生相同最终状态。确定性 state-based oracle（如 `status == "confirmed"`）是机器可核的，不依赖 LLM judge。这是 ① 的"环境 ground truth"在非编码域的学术形态，也是 ③ "裁判输出契约"的可测量实现。
+**边界**：4 个人工 domain（scheduling/travel/support/e-commerce），不含 coding；state space 由实验者控制，生产环境 state 更复杂。
+**源**：[evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md) S2
+
+### 28. Augment Code CIV 模式 — advisory mode → hard gate 渐进升级路径
+
+**核心**（⚠️ 转述级·augmentcode.com 博客，观测 2026-09-28；未取原文逐字）：
+
+核心结构：**Coordinator-Implementor-Verifier（CIV）三角**
+- Coordinator：拆解任务
+- Implementor：写代码/生成测试  
+- Verifier：独立验证（不是同一个 agent 自验）
+
+关键概念：
+- **oracle risk**：写代码与验证同一 agent 做 → 关联错误（correlated errors）——与自我优化偏私机制同源
+- **advisory mode**：不阻断合并，只产出 PR 评论/发现报告；用于校准 false-approve rate 和 spec 准确性
+- **hard gate 升级**：advisory 数据证明可信后，将 advisory checks 提升为 blocking；由团队主动触发
+
+**机制**：advisory → hard gate 是生产部署的渐进路径：先观察（不拦截）→ 校准（看哪些发现团队确实跟进）→ 强制（升级为阻断）。这比"直接上 hard gate"减少摩擦；比"永远 advisory"增加约束。是 ③ "裁判权五极"里 multi-agent verifier 极的产品化形态。
+**边界**：转述级，false-approve rate 的阈值和 hard gate 升级标准未公开。
+**源**：[evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md) S4
+
+---
+
 **裁判权五极**（未收敛·设计空间，判定权威在 [`digested/03`](../../digested/03-构件.md) §一）：
 人判 taste（Huntley/Beck）／文件清单逐条（Anthropic feature_list）／独立小模型三值（`/goal`）／干活模型自判（Anthropic 2024 默认、`/loop` stop:true、Codex 候选、spec-kit/OpenSpec 同 agent 判定）／审批方判定（auto-review、CI、review bot）。
 
-**同向票数**（判定归 digested/03）：验收分离构件五处一手同向跨三家（Anthropic 2024/2025、`/goal`、auto-review、LangChain）；裁判谱系 8 条与 coding 实战 8 条为 2026-09-28 深挖批（M/N 路），按研究域/厂商文档强度计，不改收敛票数。
+**同向票数**（判定归 digested/03）：验收分离构件五处一手同向跨三家（Anthropic 2024/2025、`/goal`、auto-review、LangChain）；裁判谱系 8 条与 coding 实战 8 条为 2026-09-28 深挖批（M/N 路），按研究域/厂商文档强度计，不改收敛票数；#27-#28 为 2026-09-28 第二轮深挖批（R 路），补充 state-based oracle 学术实现与 CIV advisory mode 渐进路径，不改收敛票数。

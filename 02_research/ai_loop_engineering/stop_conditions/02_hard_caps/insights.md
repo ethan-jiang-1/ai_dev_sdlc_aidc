@@ -38,3 +38,6 @@
 
 14. **成本上限与轮次上限是两类不同的闸**。SWE-agent 把 `per_instance_cost_limit`（$3.0）做成 schema 级默认而调用数默认关；OpenHands 相反（轮次 500 有默认、预算 None）。成本上限随模型单价漂移、轮次上限随任务难度漂移——两者的失效模式不同（贵了才知道 vs 久 了才知道），选哪个当默认暴露了框架对"哪种失控更常见"的判断（evidence-q S2/S3）。
 
+15. **"bound 存在"≠"bound 有效"——static analysis 首次量化**（2026-07）。IAL-Scan 在 6,549 个真实仓库发现 68 个确认 IAL 失败（91.9% 精度）：开发者可能省略上限、误用上限、设置无效上限、或把上限放在实际 feedback path 之外。典型例子：内层 agent call 的 turn cap 不覆盖外层 evaluator 循环。两种上限失效模式与"没有上限"危害相当：`bypassed_bound`（上限在路径之外）和 `ineffective_bound`（上限覆盖不到实际重复点）。这把②的工程要领从"要加上限"推进到"要验证上限是否覆盖对的路径"（evidence-r S1）。
+
+16. **rate limit 比 transient timeout 更具破坏力——②的上限设计必须考虑 retry 语义**（2026-01）。ReliabilityBench（1,280 episodes）：rate limit 造成 2.5% 以上的额外降级，而 transient timeout 下 pass rate 高达 98.75%。机制：agent 遇到 rate limit 不知该等多久还是放弃，缺乏 backoff 策略——上限被 retry 填满后失去兜底作用。工程含义：hard cap 的 retry 行为需要显式设计（exponential backoff / retry budget），否则上限数字有名无实（evidence-r S2）。

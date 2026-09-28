@@ -33,3 +33,6 @@
 
 11. **SDD 阵营修正**（对 evidence-f 旧条目）：Spec Kit 的 /verify 已不在现行命令集（404），判定职能并入 implement→converge；其反自判设计（"completion claims are not evidence"＋append-only＋字节不变约束）说明**同 agent 自判是默认形态，模板防御是补偿**——与 OpenSpec "verify 不阻断 archive" 互证：SDD 工具的完成判定权实际也留在干活 agent 手里，独立性靠约定而非机制（evidence-n S6/S7）。
 
+12. **end-state oracle 是 ①+③ 的汇合点**（2026-01）。ReliabilityBench 用 deterministic state-based oracle 代替 LLM judge 或文本匹配，把"完成"定义为"end-state 等价"（Action Metamorphic Relations）：同语义任务应产生相同最终环境状态（`reservations[flight_id].status == "confirmed"`）。这在学术层确认了 ① 的"环境 ground truth"在非编码域同样可行，也为 ③ 的"裁判输出契约"提供了可量化的实现形态——不是问 LLM"做完了吗"，是断言环境状态（evidence-r S2）。
+
+13. **advisory mode 是 hard gate 的渐进部署路径——分离度可以逐步提升**（2026 观测）。Augment Code 的 CIV 模式：Verifier 先跑 advisory mode（不阻断，只评论），收集 false-approve rate 数据，校准 spec 准确性；达标后升级为 blocking hard gate。这与 ③ insight #7 的"分离度三维度"对应：执行位置从"同 agent 内"到"独立 PR bot advisory"再到"独立 bot blocking"，是连续可控的升级。工程含义：③的部署不是非此即彼，可以从最低分离度开始逐步强化（evidence-r S4）。
