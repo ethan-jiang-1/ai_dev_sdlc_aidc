@@ -11,7 +11,7 @@
 
 | 件 | 状态 |
 |---|---|
-| [`practices.md`](practices.md) | ✅ **自说明版**（2026-09-28 用户定硬要求）：18 条，每条自带核心片段（原句/代码/参数）＋机制＋源；覆盖 coding/docs/data/math/security 五域＋框架源码缺省 |
+| [`practices.md`](practices.md) | ✅ **自说明版**（2026-09-28 用户定硬要求）：20 条，每条自带核心片段（原句/代码/参数）＋机制＋源；覆盖 coding/docs/data/math/security 五域＋框架缺省对照＋行为面反例 |
 | [`insights.md`](insights.md) | ✅ 初盘 6 条＋深挖批 6 条（65% 量化、闸门分层、测试外置双源汇合、闸门自锁与放行、防削测试工程化） |
 | 新回源 | ✅ 2026-09-28 补采收口：Aider（auto_lint 默认开＋confirm 回灌）/ OpenHands（auto-lint 默认关）入 [evidence-q](../../raw/evidence-2026-09-28-q-framework-defaults.md)；SWE-agent/LangGraph 的 cap 侧记在 02 |
 

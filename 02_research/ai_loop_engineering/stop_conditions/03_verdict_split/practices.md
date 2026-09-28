@@ -17,6 +17,7 @@
 
 **机制**：分离的适用条件官方就写明了——有清晰评估标准＋迭代有可测收益；两个前提缺一分离无益。
 **源**：[evidence-b](../../raw/evidence-2026-09-26-b-stop-and-scheduling.md) §2
+**参见**：LangChain 的 grader 与 agent 分置（同一构件的厂商表述）已录在 [① #5](../01_machine_gates/practices.md)，此处不重复。
 
 ### 2. Anthropic 2025 — 写权限收窄到单字段
 
@@ -83,7 +84,7 @@
 > "Nevertheless, **each turn always ends with an assistant message**—such as 'I added the `architecture.md` you asked for'—**which signals a termination state in the agent loop. From the agent's perspective, its work is complete and control returns to the user.**"
 > 例外同文："it may also be a **follow-up question** for the user."
 
-**机制**：自判极的最强机制描述候选——模型停止发工具调用、改发 assistant message 即终止；但 assistant message 也可以是追问，自判信号本身有歧义。compact 是另一条资源兜底（非质量验收，见 [②](../02_hard_caps/practices.md)）。
+**机制**：自判极的最强机制描述候选——模型停止发工具调用、改发 assistant message 即终止；但 assistant message 也可以是追问，自判信号本身有歧义。compact 是另一条资源兜底（非质量验收，见 [② #21](../02_hard_caps/practices.md)）。
 **源**：[evidence-k](../../raw/evidence-2026-09-27-k-unrolling-codex-agent-loop.md)
 
 ---

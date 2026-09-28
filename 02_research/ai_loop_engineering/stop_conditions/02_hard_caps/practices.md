@@ -92,7 +92,7 @@
 
 ---
 
-## 二、框架层默认值（源码字面量）
+## 二、框架层默认值（源码字面量；含 docs↔源码分歧双录）
 
 ### 9. OpenHands — 轮次默认 500，预算默认无
 
@@ -219,4 +219,32 @@
 
 ---
 
-**同向票数**（判定归 digested/03）：硬上限构件五处一手同向（Anthropic 2024 / `/goal` / auto mode / `/loop` / auto-review）＋I 路 Copilot 补强；框架默认值与失控实录为 2026-09-28 深挖批（Q/O/L 路），不改收敛票数。
+## 六、候选与未合并设计（不与已发布行为混计）
+
+### 20. OpenAI Codex PR#20672 — 熔断后从硬停转人工决定（提案，未合并）
+
+**核心**（一手·官方仓库 PR，2026-05-01 提交、05-21 关闭、**merged_at: null**；evidence-f 收录）：
+
+> 标题：`core: escalate repeated auto-review denials to user approval`
+> "When Auto-review rejects too many approval requests in one turn, **hard-stopping the turn is abrupt and removes a useful recovery path.**"
+> "The request that tripped the breaker can still be handed to the user for an explicit manual decision **without changing the session's approval mode**."
+> "This changes the fallback after repeated Auto-review denials from 'stop the turn' to '**ask the user**', while keeping the existing denial thresholds intact."
+> "**preserve approval attribution across escalation**: the breaker-triggering Auto-review denial is still recorded as `source=AutomatedReviewer`; the final manual decision is recorded separately as `source=User`."
+> 测试名：`guardian_rejection_circuit_breaker`、`guardian_auto_review_warns_after_three_consecutive_denials`
+
+**机制**：明确的升档状态机——重复拒绝触发 circuit breaker → 触发熔断的那次动作转人工 → **机器拒绝与人的决定分开记账**（两个 source 字段）→ 决定后重置 breaker。**不是已发布行为**（PR 未合并），不能当 OpenAI 产品事实引用。
+**源**：[evidence-f](../../raw/evidence-2026-09-27-f-autonomy-gates.md) Source 2
+
+### 21. Codex — 上下文 compact：容易误当成停止条件的资源兜底（⚠️ 候选未复核）
+
+**核心**（检索工具摘录，直接页面 403 待独立复核；evidence-k 收录）：
+
+> 机制记录：上下文满了会 compact，**不是质量验收**。早期要人敲 `/compact`；现在超过 `auto_compact_limit` 就自动调用 `/responses/compact`。**文中没有给出这个阈值的数字。**
+> 同文边界："compact 是资源兜底，和 assistant message 不是同一种停。"（assistant message 终止态见 [③](../03_verdict_split/practices.md) #8）
+
+**机制**：compact 防的是**上下文物理耗尽**，与质量验收、轮次上限都是不同种的停——把"上下文兜底"混进"停止条件"会污染②的分类。
+**源**：[evidence-k](../../raw/evidence-2026-09-27-k-unrolling-codex-agent-loop.md)
+
+---
+
+**同向票数**（判定归 digested/03）：硬上限构件五处一手同向（Anthropic 2024 / `/goal` / auto mode / `/loop` / auto-review）＋I 路 Copilot 补强；框架默认值与失控实录为 2026-09-28 深挖批（Q/O/L 路），不改收敛票数；#20/#21 为未合并提案与候选摘录，不计票。

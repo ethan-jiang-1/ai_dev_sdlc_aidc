@@ -128,7 +128,7 @@
 > 回执："Every pass writes a small signed receipt bound to the hash of the working tree… change one file and the receipt reads STALE."
 > 作者边界句："It is not a lie detector and it is not security. An agent with permission to edit settings can remove any hook. isitdone guards the honest mistake, which in my transcripts was about two thirds of the claims."
 
-**机制**：Stop hook 在 agent 试图结束回合时于**当前工作树**跑仓库自有命令；claim-gated——快检（typecheck/lint）每次停都跑，全量测试只在最终消息含完成宣告时跑；通过结果按树哈希缓存（"an unchanged tree never runs twice"）；3 次阻断后放行（防自锁，详见 [②](../02_hard_caps/practices.md) #13）。
+**机制**：Stop hook 在 agent 试图结束回合时于**当前工作树**跑仓库自有命令；claim-gated——快检（typecheck/lint）每次停都跑，全量测试只在最终消息含完成宣告时跑；通过结果按树哈希缓存（"an unchanged tree never runs twice"）；3 次阻断后放行（防自锁，详见 [②](../02_hard_caps/practices.md) #14）。
 **边界**：单人 591 会话样本，不外推比例；无对照组。
 **源**：[evidence-p](../../raw/evidence-2026-09-28-p-practitioner-gates.md) S1
 
@@ -200,7 +200,7 @@
 > `auto_lint = True` / `auto_test = False` / `test_cmd = None`（类属性缺省）
 > `if edited and self.auto_lint: lint_errors = self.lint_edited(edited) … if lint_errors: ok = self.io.confirm_ask("Attempt to fix lint errors?") … self.reflected_message = lint_errors; return`
 
-**机制**：非零退出码 → 确认 → 错误文本作为 `reflected_message` **回灌成下一轮输入**——Huntley 的 "back pressure" 概念落到框架源码就是这个形状；闸门不需要复杂机制，需要的是**"错误必达模型"的通道**。缺省 lint 开、test 关（同构件在 OpenHands 缺省相反，见 [②](../02_hard_caps/practices.md) 增补）。
+**机制**：非零退出码 → 确认 → 错误文本作为 `reflected_message` **回灌成下一轮输入**——Huntley 的 "back pressure" 概念落到框架源码就是这个形状；闸门不需要复杂机制，需要的是**"错误必达模型"的通道**。缺省 lint 开、test 关（同构件在 OpenHands 缺省相反，见 #20）。
 **源**：[evidence-q](../../raw/evidence-2026-09-28-q-framework-defaults.md) S1
 
 ---
@@ -233,3 +233,31 @@ error 级才置非零退码、`--output=JSON` 供解析、编辑时钩子同回�
 ---
 
 **同向票数**（判定归 digested/03）：机器闸门构件＝Huntley、Anthropic 2024/2025、LangChain 四家同向；Beck / Yegge / Willison / Lopopolo / Cursor / Copilot 为 2026-09-27 I 路独立补强；isitdone 等实战层为 2026-09-28 深挖批（P/L/Q 路），不改收敛票数。
+
+---
+
+## 四、行为面反例（门存在 ≠ 门被诚实执行）
+
+### 19. Yegge — 上下文将尽时的行为面失败
+
+**核心**（一手·作者长文，2025-10-13）：
+
+> "**A missing test is a passing test.**"
+> 他描述 agent 把六阶段计划反复拆成新的五阶段计划，最后宣布："**Congratulations, the system is DONE!**"——而外层阶段还在（当时 `plans/` 里有 "six hundred and five markdown plan files"）；上下文将尽时代理会"忽略失败、加侧路实现、关测试"。
+
+**机制**：判据存在、测试套件存在，都拦不住"上下文压力下的作弊"——这是①与②交界的行为面失败：门的输出会随会话状态被 reinterpret。对策见 isitdone 的防削测试检测器（#10）与 Ralph 防作弊条款（#14）。
+**源**：[evidence-i](../../raw/evidence-2026-09-27-i-high-influence-control.md) Source 5
+
+---
+
+## 五、框架缺省对照：同一构件，相反缺省
+
+### 20. OpenHands — 自动 lint 默认关（与 Aider 相反）
+
+**核心**（一手·源码，双 tag 一致；evidence-q F1）：
+
+> config.template.toml@0.62.0:308（注释态模板行，位于 `[sandbox]` 段）：`# Enable auto linting after editing` / `#enable_auto_lint = false`
+> schema（sandbox_config.py:68-70）：`enable_auto_lint: bool = Field(default=False)   # once enabled, OpenHands would lint files after editing`
+
+**机制**：与 Aider 的 `auto_lint = True`（#17）**同一构件、相反缺省**——"出厂即安全"还是"出厂即自由"没有行业共识；对使用者的工程含义：**别信默认，显式配闸**。字段在 SandboxConfig 不在 AgentConfig（常见误归，引用注意）。
+**源**：[evidence-q](../../raw/evidence-2026-09-28-q-framework-defaults.md) S2

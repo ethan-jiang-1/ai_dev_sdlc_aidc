@@ -10,7 +10,7 @@
 
 | 件 | 状态 |
 |---|---|
-| [`practices.md`](practices.md) | ✅ **自说明版**：19 条（含 1 条放弃记录——Reddit $6k 案无逐字可取撤至 insights）：厂商产品层 8＋框架缺省 4＋失控检测闸门 3＋失控实录 3＋用户侧补救＋Ralph 反例，每条自带核心片段 |
+| [`practices.md`](practices.md) | ✅ **自说明版**：21 条（含放弃记录 1 条——Reddit $6k 案无逐字可取撤至 insights；候选/未合并单列 §六）：厂商产品层 8＋框架缺省 4＋失控检测闸门 3＋失控实录与补救 4＋Ralph 反例＋候选 2，每条自带核心片段 |
 | [`insights.md`](insights.md) | ✅ 初盘 6 条＋深挖批 5 条（四件套、默认无限实证、闸门误报与逃生、动作梯子、缓存经济学） |
 | 新回源 | ✅ 2026-09-28 补采收口：OpenHands 500／SWE-agent $3.0／LangGraph 1000↔10007／CrewAI 20↔25 入 [evidence-q](../../raw/evidence-2026-09-28-q-framework-defaults.md)；**两处 docs↔源码分歧双录**（insights #12–#14） |
 
