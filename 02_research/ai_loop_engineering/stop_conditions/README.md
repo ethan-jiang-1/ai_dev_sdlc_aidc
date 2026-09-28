@@ -26,7 +26,69 @@
 
 三件同向，对抗同一个目标敌人：**提前宣告完成**（Anthropic 官方点名的长程 agent 头号失败模式）。
 
-## 二、分工边界（防双权威，先读这个再动手）
+## 二、深挖总览：从“三条二元补丁”到“双环三层控制架构”的范式跃迁
+
+在本专项深挖之前，行业对停止条件往往停留在直觉性的“三条二元补丁”：
+1. 跑个测试（① 机器闸门）；
+2. 设个最大步数防死循环（② 硬上限）；
+3. 问问模型“检查一下是不是完成了”（③ 验收分离）。
+
+然而，深入 **75 条实战做法**、**47 条机制洞察**、6,549 个真实仓库扫描（IAL-Scan）、1,280 次压力故障注入（ReliabilityBench）以及前沿 Agent 运行时（LangGraph、OpenHands、Intent/Cosmos、dbt、Codex）后，我们提炼出**停止条件工程在 2026 年的实质范式跃迁**：
+
+### 1. 核心范式转移对照
+
+| 控制维度 | 朴素直觉（2024 初识） | 深挖后的工业真实（2026 实践） | 核心实证与反例支撑 |
+|---|---|---|---|
+| **① 机器闸门<br>(Machine Gates)** | **代码单测二元拦截**：<br>循环末尾跑 pytest，退出码为 0 就放行，否则让模型重试。 | **全域环境 Ground Truth + 行为防作弊 + 拓扑级联防震荡**：<br>1. 可核性扩展至 docs/data/math/security 全域；<br>2. 静态分析量化“闸门必须支配实际 feedback path”，否则工具迭代无界（IAL-Scan 69.1% 失败）；<br>3. 工程化拦截“削弱测试转绿”（192 例基准，拦截率 102/103）；<br>4. 数据域解析结构化 `run_results.json` 结合 DAG Lineage 阻断“修 A 坏 B”的级联死循环。 | - IAL-Scan (arXiv:2607.01641)<br>- isitdone 防削测试检测器<br>- dbt 退出码与 Lineage 契约<br>- METR 攻破实录（篡改测试） |
+| **② 硬性上限<br>(Hard Caps)** | **粗暴外部断电开关**：<br>设 `max_turns=25`，超限就抛异常崩溃或强制停机。 | **主动预算感知 + 语义行为卡滞检测 + 路径覆盖包络**：<br>1. **被动崩溃不是好的停止条件**：`GraphRecursionError` 会抛弃上下文与未持久化成果；2026 标准是通过托管值（如 `RemainingSteps`）让内部主动感知预算，耗尽前 1 步优雅降级与落盘；<br>2. **Bound 存在 ≠ Bound 有效**：上限放在路径外等于没有上限；<br>3. **语义卡滞识别**：针对无进展循环引入 4/3/3/6 模式行为检测；<br>4. **Retry 语义漏洞**：Rate Limit 破坏性远超超时，单纯限步数会被重试迅速耗尽。 | - LangGraph `RemainingSteps`<br>- OpenHands Stuck Detector<br>- ReliabilityBench (arXiv:2601.06112)<br>- 失控实录（194h zombie 孤儿进程） |
+| **③ 验收分离<br>(Verdict Split)** | **提示词换个角色**：<br>Prompt 里写“你现在是 Reviewer”或同会话让模型自省自判。 | **物理沙盒隔离 + Living Spec 动态契约 + 状态等价性**：<br>1. **自省在压力下放大失败**：Reflexion 自评在故障下性能降级梯度比简单 ReAct 更陡（∂R/∂λ = -0.50）；<br>2. **判据保密性**：判据对模型可见时，Reward Hacking 绕过率高出 43 倍；<br>3. **物理与契约双分离**：走向 Git Worktree 隔离干活、Coordinator 维护 Living Spec、独立 Verifier 裁决，以及 Advisory → Blocking 渐进门禁；<br>4. **End-State Oracle**：断言环境最终状态等价性，胜过 LLM 语义模糊评价。 | - Intent (`intentapp.dev`) CIV 架构<br>- METR 43× 绕过实录<br>- ReliabilityBench End-State Oracle<br>- Augment Code Advisory 模式 |
+
+### 2. 统一控制模型：双环三层控制闭环架构
+
+深挖之后，三个点不再是平铺并列的零散措施，而是在系统控制论视角下紧密协作的**双环三层控制架构**：
+
+```mermaid
+flowchart TD
+    subgraph Layer2["【外层底线包络】② 硬上限守卫（Failsafe & Resource Envelope）"]
+        direction TB
+        BudgetCheck{"主动步数感知 RemainingSteps > 0 ?\n无重复行为死锁 (Stuck Detector) ?"}
+        PanicStop["硬熔断 / 断电终止\n(Circuit Breaker / Emergency Stop)"]
+        GracefulDegrade["主动优雅降级\n(落盘局部成果 / 转人工终审 / 生成报告)"]
+        
+        subgraph DualLoop["双环收敛机制"]
+            subgraph InnerLoop["【内环】① 机器闸门（Physical Back-Pressure）"]
+                Worker["干活 Agent\n(Implementor / Worktree 物理隔离)"]
+                MachineGate{"环境 Ground Truth 检验\n(编译 / 测试 / Lint / dbt / 退出码)"}
+                Worker -->|"执行操作 / 产出修改"| MachineGate
+                MachineGate -->|"退出码 != 0 (错误信息回灌)"| Worker
+            end
+            
+            subgraph OuterLoop["【外环】③ 验收分离（Contractual Verification）"]
+                MachineGate -->|"退出码 == 0\n(局部通过)"| Verifier["独立裁决者\n(Verifier / CI / Review Bot)"]
+                LivingSpec["动态契约\n(Living Spec / End-State Oracle)"] -.->|"不可篡改契约"| Verifier
+                Verifier -->|"拒绝 (语义不合规 / Advisory 报警)"| Worker
+                Verifier -->|"通过 (Blocking Hard Gate 签署)"| TaskDone["任务正式完成\n(Safe Convergence)"]
+            end
+        end
+
+        BudgetCheck --"预算耗尽"--> GracefulDegrade
+        BudgetCheck --"严重失控 / 超时"--> PanicStop
+        BudgetCheck --"预算充足且行为健康"--> DualLoop
+    end
+```
+
+- **内环（Step-level 局部探索与物理负反馈）**：
+  - 核心是由 **① 机器闸门** 构成的高频反馈回路。它的职责是提供即时的、确定性的客观环境阻力。干活 Agent（Implementor）修改代码或执行数据变更后，必须立刻接受退出码与机器报告（如 `run_results.json`）的洗礼。只要物理闸门不绿，内环不放行。
+- **外环（Task-level 全局收敛与契约裁决）**：
+  - 核心是由 **③ 验收分离** 构成的终验闭环。哪怕内环测试全绿，干活 Agent 依然没有资格宣布完成。独立 Verifier 必须在物理隔离的环境中，以与干活 Agent 解耦的 Living Spec 或 End-State 状态等价性断言为基准，进行二次判定。这阻断了“测试通过但本意落空”或“作弊绕过”的虚假收敛。
+- **外层包络（System-level 资源边界与主动自救）**：
+  - 核心是由 **② 硬上限守卫** 构筑的全局安全包络。无论是内环反复修复引发的 Lineage 级联死循环、还是外环迟迟不能达成共识，硬上限机制全程监控步数预算与行为等价模式。当步数临界时，它通过主动感知触发优雅降级（Graceful Degradation）；当出现致命卡滞或孤儿进程时，它行使最后的硬断电（Hard Cap Breaker）。
+
+**结论**：停止条件不是在循环末尾加一个判断句，而是**以环境物理反馈为内环、以独立契约裁判为外环、以自适应预算守卫为包络**的控制系统。三者缺一不可，协同保障 Agentic Loop 在自主运行中不作弊、不撞墙、不跑飞。
+
+---
+
+## 三、分工边界（防双权威，先读这个再动手）
 
 | 层 | 管 | 不管 |
 |---|---|---|
@@ -37,13 +99,13 @@
 | `../result/landscape.md` | 对外成稿 | — |
 
 本目录是**研究主题内的专项深挖区**，不是新研究主题：不设自己的 raw/result；
-新素材照进 `../raw/evidence-<日期>-<路别>.md`；判定级结论回流 digested（见 §四流程）。
+新素材照进 `../raw/evidence-<日期>-<路别>.md`；判定级结论回流 digested（见 §五流程）。
 
-## 三、目录树与文件职责
+## 四、目录树与文件职责
 
 ```text
 stop_conditions/
-├── README.md             # 你在这里：初衷 / 分工 / 协作流程 / 格式期待
+├── README.md             # 你在这里：初衷 / 范式抽象 / 分工 / 协作流程 / 格式期待
 ├── 01_machine_gates/     # ① 机器可核判据逐轮闸门
 │   ├── README.md         #   定位一句 + 看板（挖到哪）+ 待挖清单（下一铲在哪）
 │   ├── practices.md      #   工程实践做法库（自说明：每条自带核心片段）
@@ -52,13 +114,13 @@ stop_conditions/
 └── 03_verdict_split/     # ③ 验收与干活分离（同构）
 ```
 
-## 四、协作流程（新素材怎么进来）
+## 五、协作流程（新素材怎么进来）
 
 ```text
 发现新来源
   → ① 回源进 ../raw/evidence-<日期>-<路别>-<主题>.md（URL＋发布日期＋观测日期＋逐字摘录＋最小主张＋不支持什么＋负结论）
   → ② 承重引文逐条核验（主代理直取原文；子代理带回的必须抽查）——标注"已复核"与否
-  → ③ 按点切片：把最有意义的核心片段（原句/代码/参数）＋机制写进对应点的 practices.md（格式见 §五）
+  → ③ 按点切片：把最有意义的核心片段（原句/代码/参数）＋机制写进对应点的 practices.md（格式见 §六）
   → ④ 跨点的共性认识写进 insights.md（带指针）
   → ⑤ 判定级结论（票数/强度变化、骨架被补强或推翻）→ 回流 ../digested/03-构件.md，本目录只留指针
   → ⑥ 同步该点 README 看板；待挖清单里已答的划掉并注"推进/已答＋指针"
@@ -67,7 +129,7 @@ stop_conditions/
 **证据纪律**（沿主题铁律）：一手原文 > 本人转述 > 媒体转述 > 二手编译；
 候选未复核（`⏳`）不进主张；热度不等于证据；docs 与源码打架时**双录不仲裁**（实例：LangGraph 1000↔10007，见 ② #11）。
 
-## 五、格式期待（practices 条目的硬标准）
+## 六、格式期待（practices 条目的硬标准）
 
 **practices 条目模板**（三个点统一）：
 
@@ -80,7 +142,7 @@ stop_conditions/
 
 **机制**：怎么工作（2-4 句，讲清为什么有效、关键参数与触发行为）
 **边界**：不能推出什么（一句；候选/未合并/转述级在此明示）
-**源**：[evidence-x](相对路径) §节
+**源**：`[evidence-x](<path-to-evidence>)` §节
 ```
 
 **硬要求（2026-09-28 用户定）**：
