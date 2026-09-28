@@ -1,6 +1,6 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-28（stop_conditions 深挖区立区）**：停止条件三件骨架按点深挖区落成（用户决定，理由＝三点埋在按路别组织的档案里信噪比差）——`stop_conditions/{01_machine_gates,02_hard_caps,03_verdict_split}/`，每点 practices（做法库）＋insights（洞察）＋待挖清单；初盘全部从既有 evidence（a/b/f/i/k）过筛，**未做新回源，判定权威仍在 digested/03**。上一轮（09-27）landscape 入 result 的收口不变。
+> 最近一次更新：**2026-09-28（stop_conditions 深挖批收口＋自说明改版）**：三件骨架按点深挖第一轮全量回源完成——6 个新 evidence 档案（l 官方 quickstart 源码 / m 裁判谱系 / n coding 验收分离 / o 失控实录 / p 实战闸门与非编码域 / q 框架默认值），32 条新来源，承重引文逐条抽验、缺原句的条目上 web 补齐原文。**用户定的硬要求已落规则**：practices 自说明——每条自带核心片段（原句/代码/参数），纯指针条目无效；取不到硬核内容的条目放弃并记录（Reddit $6k 案即此）。**方法论发现**：两处 docs↔源码默认值打架（LangGraph 1000↔10007、CrewAI 20↔25）——参数类主张必须锚源码/tag。**回流候选已登记**（失控三型→②、裁判失效四机理→③、docs↔源码分歧→引用规范），待进 digested/03。
 
 ## 一句话
 
@@ -22,7 +22,7 @@
 | `digested/05-边界判定.md` | ✅ 三层分工；收敛成立且双向；**三条引用归属修正**（影响全仓） |
 | ~~`raw/org/` · `raw/community/`~~ | ✅ **已撤销**（2026-09-26 评审决定 5）：evidence 档案为素材常态形态，纪律要点已并入 README §1「回源档案纪律」 |
 | `result/landscape.md` | ✅ 2026-09-27 入层。过筛结论；未复核的 I2 / K 不进主张 |
-| `stop_conditions/`（三件骨架深挖区） | ✅ 2026-09-28 立区：三点各一孙目录；practices 初盘 ① 9 条 / ② 9 条 / ③ 11 条（每条带 evidence 指针＋强度，含 2 条候选未复核：compact、assistant message）；insights 各带开放问题；待挖清单 5–6 条/点。**判定级结论回流 digested/03，本区不另立判定** |
+| `stop_conditions/`（三件骨架深挖区） | ✅ 2026-09-28 立区＋深挖批收口＋**自说明改版**（用户定硬要求：practices 每条必须自带核心片段——原句/代码/参数，纯指针条目无效；取不到硬核内容的条目放弃并记录，如 Reddit $6k 案）。6 个新档案（l/m/n/o/p/q）；practices ① 18 条（五域＋框架缺省）/ ② 19 条（失控实录 3 案＋docs↔源码分歧 2 处）/ ③ 26 条（裁判失效四机理实证＋spec-kit 口径修正）；判定权威仍在 digested/03，**回流候选已登记** |
 | 实践层 `03_practice/loop_governance/` | ✅ backbone 与 manual 已确认。确认记录在该目录 `CURRENT.md`，本行不复制审阅过程 |
 
 ## 下一步
@@ -30,7 +30,7 @@
 1. **成稿已入层，验证支线仍未完成。** I2 侦察回源、行为面正反例矩阵、自我改写保护链、DSH 外置行对照都不进 `landscape.md`。对照实验的验收仍是可重复日志与指标，不用 J 路 `n=1` 代替 P-outcome。
 2. **deck 只写叙事。** 页面图和 PPTX 已删除。研究侧不另起主张。
 3. **实践层确认不再阻塞。** F 的动作门、I 的行为面反例、四列空格的工作行试点，边界已写在 landscape §5–§7；I2 / K / J 不作效果依据。
-4. **三件骨架深挖区已开**（[`stop_conditions/`](stop_conditions/README.md)，2026-09-28）。下一步优先回源各点待挖清单的头部：① grader 失败模式与行为面（behaviour harness）候选做法；② 上限参数的选择逻辑与熔断恢复语义对照；③ 裁判权五极的选型依据与 evaluator 模型选型。**新素材先进 evidence 档案，再回填 practices**；判定回流 digested/03。
+4. **三件骨架深挖区已开**（[`stop_conditions/`](stop_conditions/README.md)，2026-09-28）。第一轮回源已全部收口（l/m/n/o/p/q 六档案，32 条新来源；中断的两路补采已完成）。**下一轮动作**：①判定回流——失控三型、裁判失效四机理、docs↔源码分歧三条候选进 digested/03（需按其编号纪律改判读）；②剩余待挖按各点 README 清单（SQL/Great Expectations 域、LangSmith evals、判据可见性 trade-off、CrewAI/LangGraph 分歧的版本考古）。
 5. **跨仓修正三处**（本轮一手证据触发，不属本主题但已查明）：
    - `talk-harness-201/02_evidence/01-kol-alignment-2026.md`：公式 "Agent = Model + Harness" 归属改为 **Trivedy/LangChain 原创 → Böckeler 传播锚点化**；
    - `01_sources/reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；

@@ -19,3 +19,22 @@
 - 时间/轮次/拒绝计数三个维度怎么选？没有一家公开给过理由（README 待挖 #1）。
 - 熔断恢复语义的适用场景对照——候选做法 0 条，需要从各家文档继续回源。
 - 动态上限（按任务难度调）在公开材料里 0 条——值得盯着 auto-review / Managed Agents 的后续更新。
+
+## 增补（2026-09-28 深挖批：evidence-o/l）
+
+7. **②的工程要领是"四件套"，不止一个上限**。失控实录显示四种独立失稳路径：跑飞（runaway-loop）、僵尸（zombie-cron，能**穿透用户的显式关闭**——kill 未传导到 tmux）、账单（bill-shock，间隔×缓存 TTL×上下文增长的机制性交互）、拒绝耗尽（已有档案）。对应四道闸：资源上限、**重复模式检测**（判据与拒绝计数不同——同动作同结果，不是被拒）、**孤儿进程清理/心跳**（进程层，厂商均无内建，用户自建审计钩子）、**花费实时可见性**（面板延迟被点名为事故放大器）（evidence-o）。
+
+8. **上限经常被省略——连官方 demo 都默认无限**。Anthropic 自己的配套代码 `max_iterations` 默认 None＝Unlimited，官方口径的停止方式是 Ctrl+C，prompt 里还写着 "You have unlimited time"；错误也不熔断（重试而非停机）。demo 定位、不能外推生产，但它证明：**上限是 opt-in 件，兜底缺省是"人盯着"**（evidence-l S1/S4）。
+
+9. **闸门有误报率，逃生口是标配**。三个独立来源同构：isitdone 3 次放行＋"能弄死 agent 的闸门一天内就会被卸载"；OpenHands 默认开启后因长任务合法重复**误报**改可配置；OpenRouter 诚实列出检测边界（变输入循环、同义复述漏检）。上限的设计问题不是"要不要"而是"误伤多少、怎么逃生"（evidence-o S4/S5；evidence-p S1）。
+
+10. **动作梯子优于二元开关**。OpenRouter 的 observe→steer→escalate→block→stop（escalate 档＝换更强模型＋整对话花费帽）与 auto mode 的"单拒回理由/累计熔断"同构：先低干预观察、再干预、再升级、最后停。二元"跑/停"丢掉了中间档（evidence-o S4；对照 evidence-b §4b）。
+
+11. **缓存经济学是上限的新维度**。$6k 案例的机制：循环间隔 > cache TTL 时上下文越长越贵——时间上限与计费机制的交互，纯粹"防跑飞"的轮次上限拦不住它。这类 bill-shock 的闸是**计费对齐**（间隔≤TTL 或无状态迭代）＋实时花费计数，不是轮数（evidence-o S3，转述级）。
+
+12. **上屏参数必须锚源码，不能引 docs**（evidence-q 的方法论发现）。两处独立案例：LangGraph recursion_limit docs 写 1000、发布版源码字面量 10007；CrewAI max_iter docs 写 20、同版本号源码 25。且默认值随版本漂移（OpenHands 500 只锚 Python 线，main 已 TS 化）。引用规范应为"字段＋文件＋tag＋字面量"；凡是"默认值"类主张，docs 单源不可信。
+
+13. **缺省状态没有行业共识，且是工程决策本身**。框架层盘点：闸门——Aider auto-lint 默认**开**、OpenHands auto-lint 默认**关**；上限——OpenHands 轮次有默认（500）但预算 None、SWE-agent 成本有默认（$3.0）但调用数 0、LangGraph/CrewAI 轮次有默认但两处口径存疑。同一个构件在相邻框架里缺省相反，说明"出厂即安全"还是"出厂即自由"没有收敛——**装不装、默认开不开，都要显式决策**（evidence-q）。
+
+14. **成本上限与轮次上限是两类不同的闸**。SWE-agent 把 `per_instance_cost_limit`（$3.0）做成 schema 级默认而调用数默认关；OpenHands 相反（轮次 500 有默认、预算 None）。成本上限随模型单价漂移、轮次上限随任务难度漂移——两者的失效模式不同（贵了才知道 vs 久 了才知道），选哪个当默认暴露了框架对"哪种失控更常见"的判断（evidence-q S2/S3）。
+

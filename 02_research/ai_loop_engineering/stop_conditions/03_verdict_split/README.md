@@ -10,15 +10,16 @@
 
 | 件 | 状态 |
 |---|---|
-| [`practices.md`](practices.md) | ✅ 初盘 2026-09-28：11 条做法（含 1 条候选未复核），来自既有 evidence（a/b/f/i/k）＋ digested/03 判定，未做新回源 |
-| [`insights.md`](insights.md) | ✅ 初盘：5 条洞察＋开放问题 |
-| 新回源 | ⏳ 未开始（待挖清单见下） |
+| [`practices.md`](practices.md) | ✅ **自说明版**：26 条，每条自带核心片段——产品层 8＋CI/review bot 5＋SDD 工具 2＋个人实践 2＋裁判谱系论文 6＋工具链 2＋METR 反例 1；含 spec-kit 口径修正 |
+| [`insights.md`](insights.md) | ✅ 初盘 5 条＋深挖批 6 条（失效四机理与三族防护、分离度三维度、CI-as-judge 断面、判判定器三形态、输出契约坑、SDD 修正） |
+| 新回源 | ⏳ 深挖批主体已收口；Spec Kit 旧 tag 考古、CodeRabbit slop-detection 子页、Graphite 底层模型（官方不公开）登记待挖 |
 
 ## 待挖清单
 
-1. **裁判权五极的选型依据**：什么任务/信任级别配哪一极裁判（人判/清单/独立小模型/自判/审批方）——实践层已做成选型表骨架，依据列仍薄（指针见 [`03_practice/loop_governance/`](../../../../03_practice/loop_governance/README.md)）。
-2. **evaluator 的模型选型**：`/goal` 用 small fast model——小模型的判定力边界在哪，有没有"裁判必须比干活者强/弱"的公开讨论。
-3. **验收标准（rubric/清单）从哪来、谁维护**：Anthropic 是 initializer agent 生成 feature_list；别的路径（人写、reviewer 写、模型自写）证据分布待回源。
-4. **同源污染**：裁判与干活模型同源（同一家/同一个模型）时的污染证据——目前只有 auto-review"便于评估监控改进"的正向说法。
-5. **SDD 阵营的验收分离**：Spec Kit / OpenSpec 的 reviewer-owned checklist 与 loop 阵营的 grader/evaluator 异同——跨阵营对照还没人做过（evidence-f 只有机制条目）。
-6. **Horthy 的打断点**（工具选定与执行之间）与完成判定的关系——它管的是授权时机不是完成，归③还是单列，等挖到更多材料再定（evidence-i Source 4）。
+1. ~~裁判权五极的选型依据~~ → **大幅推进**：改为"分离度三维度"选型（判据可见性/执行位置/判定权归属，insights #7）——维度框架已立，各场景推荐组合仍开放。
+2. ~~evaluator 的模型选型~~ → **推进**：promptfoo/Braintrust 给出 judge 独立选型与人类对齐校验法（evidence-m S7/S8）；"快 vs 准"的官方理由仍缺。
+3. ~~验收标准从哪来~~ → 仍开放（新增 spec-kit spec/plan/tasks 源一例）。
+4. ~~同源污染~~ → **已答（研究域）**：self-preference 受控实证＋线性相关（evidence-m S5）；生产 coding 场景的实例仍缺。
+5. ~~SDD 阵营对照~~ → **已答**：converge 口径＋OpenSpec 不阻断＋"completion claims are not evidence"（evidence-n S6/S7）。
+6. ~~Horthy 打断点归属~~ → 仍开放（未再挖）。
+7. **新开口**：判据内容可见性作为设计维度（METR 43×归因）——对判据保密 vs 可见的 trade-off 待挖（对抗可测性 vs 白盒协作）。

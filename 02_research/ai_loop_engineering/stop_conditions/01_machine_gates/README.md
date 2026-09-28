@@ -11,15 +11,15 @@
 
 | 件 | 状态 |
 |---|---|
-| [`practices.md`](practices.md) | ✅ 初盘 2026-09-28：9 条做法，全部从既有 evidence（a/b/i）过筛登记，未做新回源 |
-| [`insights.md`](insights.md) | ✅ 初盘：6 条洞察＋开放问题 |
-| 新回源 | ⏳ 未开始（待挖清单见下） |
+| [`practices.md`](practices.md) | ✅ **自说明版**（2026-09-28 用户定硬要求）：18 条，每条自带核心片段（原句/代码/参数）＋机制＋源；覆盖 coding/docs/data/math/security 五域＋框架源码缺省 |
+| [`insights.md`](insights.md) | ✅ 初盘 6 条＋深挖批 6 条（65% 量化、闸门分层、测试外置双源汇合、闸门自锁与放行、防削测试工程化） |
+| 新回源 | ✅ 2026-09-28 补采收口：Aider（auto_lint 默认开＋confirm 回灌）/ OpenHands（auto-lint 默认关）入 [evidence-q](../../raw/evidence-2026-09-28-q-framework-defaults.md)；SWE-agent/LangGraph 的 cap 侧记在 02 |
 
 ## 待挖清单
 
-1. **grader 选型依据**：deterministic 与 agentic（LLM-as-judge）两类的适用边界——什么错误类别只能靠哪类抓（LangChain 案例只有 docs writer 一例，evidence-b §4e）。
-2. **grader 失败模式**：判据被讨好/钻空子的实例（auto-review 已官方自述可被误导批准命令，OpenAI；测试 gaming 的具体形态待回源）。
-3. **非编码域的可核判据**：docs/迁移/分析类任务怎么做逐轮闸门（现行四家证据全是编码域）。
-4. **端到端自验证的工程细节**：browser automation 具体怎么配、成本多大（Anthropic 2025 只给了方向句，evidence-b §3）。
-5. **行为面验证（behaviour harness）**：门拦"做错事"，拦不住"该做的没做"（Böckeler 点名的公认缺口）——候选做法待挖。
-6. **判据的维护**：测试/清单本身谁来写、谁来更新、失效判据怎么被发现。
+1. ~~grader 选型依据~~ → **部分推进**：promptfoo/Braintrust 给出生产配置面与 judge 选型法（evidence-m S7/S8）；deterministic/agentic 的错误类别边界仍开放。
+2. ~~grader 失败模式~~ → **大幅推进**：isitdone 削弱测试检测器＋192 例基准（evidence-p S1）、METR 独立裁判被攻破实录（evidence-n S8）、裁判四类失效实证（evidence-m）。剩余：生产 grader 被讨好的具体案例。
+3. ~~非编码域~~ → **大幅推进**：docs/data/math/security 四域已有形态（evidence-p S5–S8）；SQL/Great Expectations 负结论待补。
+4. **端到端自验证的工程细节**——仍开放（官方 demo 只给方向）。
+5. ~~行为面验证~~ → **推进**：65% 量化＋检测器工程化（evidence-p S1）；对照组缺失仍开放。
+6. **判据的维护**：谁写、谁更新、失效怎么发现——仍开放（新条目只添了"测门本身"一个实例）。
