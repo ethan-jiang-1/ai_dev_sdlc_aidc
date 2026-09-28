@@ -39,3 +39,5 @@
 14. **闸门的出厂缺省没有共识**：Aider auto-lint 默认开、OpenHands enable_auto_lint 默认关（同一构件、相邻框架、相反缺省）。缺省状态是产品对"用户会不会自己配"的押注——对使用者的工程含义：**别信默认，显式配闸**（evidence-q S1/S2；与② insights #13 同源）。
 
 15. **静态分析首次量化"闸门放错位置"**（2026-07）。IAL-Scan 对 6,549 个真实 agent 仓库扫描，发现最常见 IAL 类型之一是 tool-call iteration without bounds（工具调用迭代无上限）——这正是①闸门失效的对应面：闸门通道里不只有测试/lint，还有 tool dispatch；当工具调用进入无界 feedback loop 时，①的闸门覆盖不到。两个失效模式：bound 不存在（忘加）vs bound 在错误层（framework API 外面有上限但实际 feedback path 不受控）。工程含义：在 LangGraph/AutoGen 等框架里，工具调用反馈路径需要单独核查 bound coverage，不能默认框架帮你兜住（arXiv:2607.01641，evidence-r S1）。
+
+16. **数据工程域的机器闸门：结构化报告（run_results.json）胜过文本解析，DAG 级联是防死循环关键**（2026 实践）。dbt 官方退出码契约（0=成功，1=测试失败，2=未处理异常）在 2026 年被数据 Agent 固化为 **Gate-Prompted Validation** 外部硬闸门。关键工程演进：Agent 停止判据不再靠模型“自读终端输出并声明正确”，而是硬性要求校验 `run_results.json` 中的 `status == "pass"` 与 `failures == 0`；同时引入 DAG Lineage 约束，避免修改当前模型导致下游依赖模型反复失败的“修复-震荡死循环（Fix-break oscillation loop）”（evidence-s S2）。

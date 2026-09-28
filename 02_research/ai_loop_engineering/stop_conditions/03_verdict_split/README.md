@@ -10,15 +10,15 @@
 
 | 件 | 状态 |
 |---|---|
-| [`practices.md`](practices.md) | ✅ **自说明版**：28 条（原 26 条＋第二轮深挖批 2 条：end-state oracle 学术实现、Augment CIV advisory mode）；产品层 8＋CI/review bot 5＋SDD 工具 2＋个人实践 2＋裁判谱系论文 6＋工具链 2＋METR 反例 1＋学术层 2 |
-| [`insights.md`](insights.md) | ✅ 初盘 5 条＋深挖批 8 条（失效四机理与三族防护、分离度三维度、CI-as-judge 断面、判判定器三形态、输出契约坑、SDD 修正、end-state oracle 汇合点、advisory mode 渐进路径） |
-| 新回源 | ⏳ 深挖批主体已收口；**第二批**：ReliabilityBench + Augment CIV 入 [evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md)；Spec Kit 旧 tag 考古、CodeRabbit slop-detection 子页、Graphite 底层模型登记待挖 |
+| [`practices.md`](practices.md) | ✅ **自说明版**：29 条（原 28 条＋第三轮深挖批 1 条：Intent Living Spec 与 Worktree 隔离 CIV 架构）；产品层 8＋CI/review bot 5＋SDD 工具 2＋个人实践 2＋裁判谱系论文 6＋工具链 2＋METR 反例 1＋学术层 2＋物理沙盒 CIV 1 |
+| [`insights.md`](insights.md) | ✅ 初盘 5 条＋深挖批 9 条（失效四机理与三族防护、分离度三维度、CI-as-judge 断面、判判定器三形态、输出契约坑、SDD 修正、end-state oracle 汇合点、advisory mode 渐进路径、Living Spec 与 Worktree 架构契约） |
+| 新回源 | ⏳ 深挖批主体已收口；第二批：ReliabilityBench + Augment CIV 入 [evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md)；**第三批**：Intent (`intentapp.dev`) CIV 物理隔离架构入 [evidence-s](../../raw/evidence-2026-09-28-s-langgraph-dbt-civ.md) |
 
 ## 待挖清单
 
 1. ~~裁判权五极的选型依据~~ → **大幅推进**：改为"分离度三维度"选型（判据可见性/执行位置/判定权归属，insights #7）——维度框架已立，各场景推荐组合仍开放。
 2. ~~evaluator 的模型选型~~ → **推进**：promptfoo/Braintrust 给出 judge 独立选型与人类对齐校验法（evidence-m S7/S8）；"快 vs 准"的官方理由仍缺。
-3. ~~验收标准从哪来~~ → 仍开放（新增 spec-kit spec/plan/tasks 源一例）。
+3. ~~验收标准从哪来~~ → **推进**：新增 spec-kit spec/plan/tasks 源与 Intent Living Spec 动态契约（Coordinator 从用户意图与上下文解耦出带依赖的 Living Spec 作为 Source of Truth，evidence-s S3）。
 4. ~~同源污染~~ → **已答（研究域）**：self-preference 受控实证＋线性相关（evidence-m S5）；生产 coding 场景的实例仍缺。
 5. ~~SDD 阵营对照~~ → **已答**：converge 口径＋OpenSpec 不阻断＋"completion claims are not evidence"（evidence-n S6/S7）。
 6. ~~Horthy 打断点归属~~ → 仍开放（未再挖）。

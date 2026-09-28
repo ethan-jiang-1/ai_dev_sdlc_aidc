@@ -339,9 +339,25 @@
 **边界**：转述级，false-approve rate 的阈值和 hard gate 升级标准未公开。
 **源**：[evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md) S4
 
+### 29. Intent (`intentapp.dev`) — Living Spec 与 Worktree 物理隔离的 CIV 落地架构
+
+**核心**（一手·官方平台发布与架构分析，2026 观测；evidence-s S3）：
+
+> 平台定位（逐字）：
+> "Large-scale agent coordination for developers. For decades, the job was writing code. When AI handles that, the job becomes something bigger: setting direction, deciding outcomes… operating at the level of intent."
+>
+> 核心实现特征：
+> 1. **Living Spec（动态契约）**：Coordinator 负责拆解生成带依赖关系的 Living Spec，作为真理来源（Source of Truth）。
+> 2. **物理沙盒隔离**：Implementor 强制运行在**隔离的 git worktree** 中执行任务，防止文件修改和状态污染。
+> 3. **Verifier 裁判权闭环**：Verifier 既不参与写代码，也不信任 Implementor 的自评声明，而是直接将工作区成果与 Living Spec 及环境构建/测试结果进行比对，产出判决。
+
+**机制**：通过“Living Spec（语义标准）+ Git Worktree（物理隔离）+ 独立 Verifier 进程”的三元分离，彻底消除了单 Agent 内部的 Oracle Risk。使得验收权不仅在模型提示词上分离，而且在文件系统与执行线程层面物理隔离。
+**边界**：Living Spec 本身若存在语义歧义或 Coordinator 生成了有缺陷的 spec，Verifier 会产生“合规但非用户本意”的假通过。
+**源**：[evidence-s](../../raw/evidence-2026-09-28-s-langgraph-dbt-civ.md) S3
+
 ---
 
 **裁判权五极**（未收敛·设计空间，判定权威在 [`digested/03`](../../digested/03-构件.md) §一）：
 人判 taste（Huntley/Beck）／文件清单逐条（Anthropic feature_list）／独立小模型三值（`/goal`）／干活模型自判（Anthropic 2024 默认、`/loop` stop:true、Codex 候选、spec-kit/OpenSpec 同 agent 判定）／审批方判定（auto-review、CI、review bot）。
 
-**同向票数**（判定归 digested/03）：验收分离构件五处一手同向跨三家（Anthropic 2024/2025、`/goal`、auto-review、LangChain）；裁判谱系 8 条与 coding 实战 8 条为 2026-09-28 深挖批（M/N 路），按研究域/厂商文档强度计，不改收敛票数；#27-#28 为 2026-09-28 第二轮深挖批（R 路），补充 state-based oracle 学术实现与 CIV advisory mode 渐进路径，不改收敛票数。
+**同向票数**（判定归 digested/03）：验收分离构件五处一手同向跨三家（Anthropic 2024/2025、`/goal`、auto-review、LangChain）；裁判谱系 8 条与 coding 实战 8 条为 2026-09-28 深挖批（M/N 路），按研究域/厂商文档强度计，不改收敛票数；#27-#28 为 2026-09-28 第二轮深挖批（R 路），补充 state-based oracle 学术实现与 CIV advisory mode 渐进路径；#29 为第三轮深挖批（S 路），提供 Living Spec 与 Git Worktree 物理隔离的生产级落地，不改收敛票数。

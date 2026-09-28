@@ -107,7 +107,8 @@ stop_conditions/
 
 - 2026-09-28：立区＋第一轮深挖收口＋自说明改版。6 个新 evidence 档案（l/m/n/o/p/q，32 条新来源，承重引文抽验/上 web 补齐原文）。
 - 2026-09-28（第二轮）：IAL-Scan（arxiv:2607.01641，2026-07）＋ ReliabilityBench（arxiv:2601.06112，2026-01）＋ OpenHands stuck detector 五模式 ＋ Augment CIV advisory mode，入 evidence-r。
-- practices：① 20 条（原）→ insights +1 条 ／② 21 条（原）→ 24 条（+3：effective bound coverage / OpenHands 五类重复 / rate limit）／③ 26 条（原）→ 28 条（+2：end-state oracle / CIV advisory mode）
-- insights：① +1（闸门放错位置）／② +2（bound 存在≠有效；rate limit 杀手）／③ +2（end-state oracle 汇合；advisory mode 渐进路径）
-- **已登记的回流候选**（进 digested/03，尚未执行）：失控三型实录→②的存在理由细化；裁判失效四机理→③"分离≠判得对"实证化；docs↔源码分歧→参数引用规范；IAL-Scan "effective bound coverage"→②工程要领升级。
-- 剩余待挖入口：三个点 README 的待挖清单（LangGraph/AutoGen tool dispatch 具体案例、SQL/Great Expectations 域、LangSmith evals、CIV advisory mode 原文逐字、Augment false-approve rate 阈值）。
+- 2026-09-28（第三轮）：LangGraph RemainingSteps 主动预算感知 ＋ dbt test / run_results.json 数据工程域机器闸门 ＋ Intent (`intentapp.dev`) Living Spec 与 Worktree 隔离 CIV 架构，入 evidence-s。
+- practices：① 21 条（+1 条 dbt 数据域机器闸门）／② 25 条（+1 条 LangGraph RemainingSteps 主动预算感知）／③ 29 条（+1 条 Intent Living Spec 与 Worktree 隔离 CIV）
+- insights：① 16 条（+1 数据域 run_results.json 与 DAG 级联防死循环）／② 17 条（+1 被动崩溃 vs 主动 RemainingSteps 降级）／③ 14 条（+1 Living Spec 与 Worktree 架构契约）
+- **已登记的回流候选**（进 digested/03，尚未执行）：失控三型实录→②的存在理由细化；裁判失效四机理→③"分离≠判得对"实证化；docs↔源码分歧→参数引用规范；IAL-Scan "effective bound coverage"→②工程要领升级；主动预算感知（RemainingSteps）→②构件语义补强；数据工程域机器闸门→①非编码域落地形态。
+- 剩余待挖入口：三个点 README 的待挖清单（LangGraph/AutoGen 框架内 tool dispatch 无界 feedback path 典型生产仓库实例、LangSmith evals 裁判闭环）。

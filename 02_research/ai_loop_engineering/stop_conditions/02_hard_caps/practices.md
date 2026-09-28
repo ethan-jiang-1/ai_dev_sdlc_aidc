@@ -297,6 +297,36 @@
 **边界**：4 个人工 domain，不含 coding；rate limit 结论来自故障注入实验，非生产测量。
 **源**：[evidence-r](../../raw/evidence-2026-09-28-r-ial-scan-reliability.md) S2
 
+### 25. LangGraph RemainingSteps — 主动预算感知防御（优雅降级 vs 被动崩溃）
+
+**核心**（一手·官方 API 规范 + 2026 生产模式；evidence-s S1）：
+
+> 代码实现（逐字/生产模式）：
+> ```python
+> from langgraph.graph import StateGraph, START, END
+> from langgraph.managed import RemainingSteps
+>
+> class AgentState(TypedDict):
+>     messages: Annotated[list, lambda x, y: x + y]
+>     remaining_steps: RemainingSteps  # 运行时自动填充剩余预算
+>
+> def reasoning_node(state: AgentState) -> dict:
+>     steps_left = state.get("remaining_steps")
+>     if steps_left is not None and steps_left <= 1:
+>         # 主动降级：预算耗尽前 1 步落盘与总结，避免 GraphRecursionError 异常崩溃丢上下文
+>         return {"messages": ["Finalizing partial state due to low step budget."]}
+>     return {"messages": ["Continuing execution..."]}
+>
+> def should_continue(state: AgentState) -> str:
+>     if state.get("remaining_steps", 1) <= 0:
+>         return END
+>     return "reasoning_node"
+> ```
+
+**机制**：`recursion_limit` 抛出 `GraphRecursionError` 是被动崩溃（reactive crash），会丢弃当轮未提交状态并破坏上层调度；LangGraph 通过 `RemainingSteps` 托管值将硬上限暴露为**状态机内的可读预算**，实现主动优雅降级（proactive degradation）。生产共识：单纯调大 `recursion_limit` 是钝器，不能解决状态停滞（State Stagnation）导致的循环。
+**边界**：仅覆盖单图内的 super-steps 预算；不感知跨图调度或外层持久化事务的预算。
+**源**：[evidence-s](../../raw/evidence-2026-09-28-s-langgraph-dbt-civ.md) S1
+
 ---
 
-**同向票数**（判定归 digested/03）：硬上限构件五处一手同向（Anthropic 2024 / `/goal` / auto mode / `/loop` / auto-review）＋I 路 Copilot 补强；框架默认值与失控实录为 2026-09-28 深挖批（Q/O/L 路），不改收敛票数；#20/#21 为未合并提案与候选摘录，不计票；#22-#24 为 2026-09-28 第二轮深挖批（R 路），补充 effective bound coverage 区分、重复模式五分类、rate limit 杀手效应，不改收敛票数。
+**同向票数**（判定归 digested/03）：硬上限构件五处一手同向（Anthropic 2024 / `/goal` / auto mode / `/loop` / auto-review）＋I 路 Copilot 补强；框架默认值与失控实录为 2026-09-28 深挖批（Q/O/L 路），不改收敛票数；#20/#21 为未合并提案与候选摘录，不计票；#22-#24 为 2026-09-28 第二轮深挖批（R 路），补充 effective bound coverage 区分、重复模式五分类、rate limit 杀手效应；#25 为第三轮深挖批（S 路），提供运行时主动预算感知模式，不改收敛票数。

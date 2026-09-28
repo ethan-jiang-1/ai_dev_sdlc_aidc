@@ -261,3 +261,24 @@ error 级才置非零退码、`--output=JSON` 供解析、编辑时钩子同回�
 
 **机制**：与 Aider 的 `auto_lint = True`（#17）**同一构件、相反缺省**——"出厂即安全"还是"出厂即自由"没有行业共识；对使用者的工程含义：**别信默认，显式配闸**。字段在 SandboxConfig 不在 AgentConfig（常见误归，引用注意）。
 **源**：[evidence-q](../../raw/evidence-2026-09-28-q-framework-defaults.md) S2
+
+---
+
+## 六、数据工程域机器闸门（2026 演进）
+
+### 21. dbt test & run_results.json — 数据工程域退出码与 Gate-Prompted Validation
+
+**核心**（一手·官方规范 getdbt.com + 2026 实践复核；evidence-s S2）：
+
+> dbt 官方退出码契约：
+> - `0`：Success（所选资源全部成功通过验证）
+> - `1`：Invocation completed but failed（命令完成但至少一个测试失败或有捕获错误）
+> - `2`：Invocation unhandled error（未捕获异常或环境中断）
+>
+> 2026 工程实践：
+> `dbt test --select state:modified+`
+> 结构化解析：读取 `target/run_results.json` 断言 `status == "pass"` 与 `failures == 0`，而非仅解析 stdout 文本。
+
+**机制**：数据 Agent 停止条件从“问模型是否做完”演进为**Gate-Prompted Validation**外部硬钩子。测试通过 `error_if=">10"` 等阈值区隔警告与致命错误；结合 DAG Lineage 约束，防止智能体“修复 A 模型 not_null 破坏下游 B 模型”引发级联震荡死循环（Fix-break oscillation loop）。
+**边界**：依赖底层数据库/计算引擎连接有效性；测试套件未覆盖的语义逻辑漂移无法拦截。
+**源**：[evidence-s](../../raw/evidence-2026-09-28-s-langgraph-dbt-civ.md) S2

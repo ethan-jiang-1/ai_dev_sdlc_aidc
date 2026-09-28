@@ -36,3 +36,5 @@
 12. **end-state oracle 是 ①+③ 的汇合点**（2026-01）。ReliabilityBench 用 deterministic state-based oracle 代替 LLM judge 或文本匹配，把"完成"定义为"end-state 等价"（Action Metamorphic Relations）：同语义任务应产生相同最终环境状态（`reservations[flight_id].status == "confirmed"`）。这在学术层确认了 ① 的"环境 ground truth"在非编码域同样可行，也为 ③ 的"裁判输出契约"提供了可量化的实现形态——不是问 LLM"做完了吗"，是断言环境状态（evidence-r S2）。
 
 13. **advisory mode 是 hard gate 的渐进部署路径——分离度可以逐步提升**（2026 观测）。Augment Code 的 CIV 模式：Verifier 先跑 advisory mode（不阻断，只评论），收集 false-approve rate 数据，校准 spec 准确性；达标后升级为 blocking hard gate。这与 ③ insight #7 的"分离度三维度"对应：执行位置从"同 agent 内"到"独立 PR bot advisory"再到"独立 bot blocking"，是连续可控的升级。工程含义：③的部署不是非此即彼，可以从最低分离度开始逐步强化（evidence-r S4）。
+
+14. **物理沙盒（Worktree）+ Living Spec 使得“分离”从提示词约定进化为架构契约**（2026 演进）。在 Intent/Cosmos 架构中，实现（Implementor）必须在隔离的 git worktree 中并行，无法触碰外层协调上下文；验证者（Verifier）不看 Implementor 的自我证明，只根据 Coordinator 产出的 Living Spec 与环境运行事实做比对。这推进了 insight #7 的“执行位置分离”：以往仅是 session/prompt 分离，2026 年已下沉到文件系统与进程空间隔离（evidence-s S3）。

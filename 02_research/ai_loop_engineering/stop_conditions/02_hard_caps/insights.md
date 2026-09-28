@@ -41,3 +41,5 @@
 15. **"bound 存在"≠"bound 有效"——static analysis 首次量化**（2026-07）。IAL-Scan 在 6,549 个真实仓库发现 68 个确认 IAL 失败（91.9% 精度）：开发者可能省略上限、误用上限、设置无效上限、或把上限放在实际 feedback path 之外。典型例子：内层 agent call 的 turn cap 不覆盖外层 evaluator 循环。两种上限失效模式与"没有上限"危害相当：`bypassed_bound`（上限在路径之外）和 `ineffective_bound`（上限覆盖不到实际重复点）。这把②的工程要领从"要加上限"推进到"要验证上限是否覆盖对的路径"（evidence-r S1）。
 
 16. **rate limit 比 transient timeout 更具破坏力——②的上限设计必须考虑 retry 语义**（2026-01）。ReliabilityBench（1,280 episodes）：rate limit 造成 2.5% 以上的额外降级，而 transient timeout 下 pass rate 高达 98.75%。机制：agent 遇到 rate limit 不知该等多久还是放弃，缺乏 backoff 策略——上限被 retry 填满后失去兜底作用。工程含义：hard cap 的 retry 行为需要显式设计（exponential backoff / retry budget），否则上限数字有名无实（evidence-r S2）。
+
+17. **被动抛出 recursion 异常不算好的 stop condition，主动感知 RemainingSteps 才是生产级兜底**（2026 演进）。框架层面的 recursion limit 若仅以异常形式终止（如 LangGraph `GraphRecursionError`），属于被动崩溃（reactive crash）：在外部调用者看来等同于中断，中间执行诊断和局部有效成果随之丢失。2026 生产级做法是将步数预算（Step Budget）转化为状态机内部可读的托管值（`RemainingSteps`），在预算耗尽前 1~2 步触发“生成局部成果/落盘/转人工确认”的优雅降级；同时行业共识明确指出：单纯提高上限数值（如 25 改为 1000）是掩耳盗铃，无法解决状态停滞（State Stagnation）的实质死循环（evidence-s S1）。
