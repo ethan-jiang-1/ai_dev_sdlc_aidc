@@ -18,7 +18,7 @@
 ## 项目定位
 
 - **讲的事**：你离开之后它继续跑，你回来时它说做完了。整场回答你凭什么信。
-- **两场分稿（2026-09-27 用户定）**：`intro/` 入门场（约 20 页，没跑过循环的通识听众，业务与管理为主）；`advanced/` 技术/产品场（在跑循环的工程师与产品，机制放开讲）。两场各自 outline → manuscript，互不搬页。原统一稿（标准 15 + 加深 10）已全部迁入两场，按用户决定移除。
+- **两场分稿（2026-09-27 用户定，2026-09-28 重构）**：`intro/` 入门场（约 15 页，没跑过循环的通识听众，业务与管理为主）；`advanced/` 技术/产品场（24 页，在跑循环的工程师与产品，机制放开讲）。两场各自 outline → manuscript，互不搬页。原统一稿（标准 15 + 加深 10）已全部迁入两场，按用户决定移除。
 - **语言**：大陆中文习惯的短句，避免翻译腔；主张句不依赖英文。关键术语保留英文——首现处「中文（英文）」标注（检查（check）、执行方（agent）等），映射表在各场文稿头部；细则见各场大纲的语言节。
 - **源**：上游只有两处——研究层 `../../02_research/ai_loop_engineering/`，实践层 `../../03_practice/loop_governance/`。主张不超出两处成稿：`result/landscape.md` 与 `result/backbone.md`。本目录是它们的加工下游；核出处时读两个上游各自的 README。
 
@@ -84,7 +84,7 @@
 | 稿 | 状态 |
 |---|---|
 | `research/source-synthesis.md` | 素材信号。早于「它说做完了」这一版故事 |
-| `intro/outline/outline-intro.md` | 入门场大纲（19 页），2026-09-27 用户过闸 |
-| `advanced/outline/outline-advanced.md` | 技术产品场大纲（27 页），2026-09-27 用户过闸 |
-| `intro/manuscript/manuscript-intro.md` | 入门场文稿（三档格式＋难点页 callout 点睛）：19 页，主张句与大纲相同，**2026-09-27 用户收口** |
-| `advanced/manuscript/manuscript-advanced.md` | 技术产品场文稿（三档格式＋难点页 callout 点睛）：27 页，主张句与大纲相同，**2026-09-27 用户收口** |
+| `intro/outline/outline-intro.md` | 入门场大纲（15 页），2026-09-28 控制链重构，待用户过闸 |
+| `advanced/outline/outline-advanced.md` | 技术产品场大纲（24 页），2026-09-28 控制链重构，待用户过闸 |
+| `intro/manuscript/manuscript-intro.md` | 入门场文稿（15 页＋逐页硬核备课卡），2026-09-28 已同步大纲，待用户过闸 |
+| `advanced/manuscript/manuscript-advanced.md` | 技术产品场文稿（24 页＋逐页工程师追问卡），2026-09-28 已同步大纲，待用户过闸 |

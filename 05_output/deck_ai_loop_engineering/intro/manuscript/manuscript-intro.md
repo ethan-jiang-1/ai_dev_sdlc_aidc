@@ -249,7 +249,7 @@ revised: 2026-09-28
 
 ### I13 · 人要守的是控制关口
 
-**CLAIM**：高风险动作、说不清的目标、拒绝后的接手、最终验收和外部结果，仍需要人承担判断和责任。
+**CLAIM**：高风险动作、说不清的目标、拒绝后的接手、最终验收和外部结果；人不是被移出循环，而是从机械 QA 转到上下文和责任判断。
 
 **上屏**
 
@@ -303,3 +303,231 @@ revised: 2026-09-28
 **展开**：这场不证明更快、更好或更省人。它只给出一个判断：当控制链不能被审计，就不要把人的逐轮判断拿走。
 
 **收束**：Loop Engineering 的硬核部分，不是让系统跑得更久，而是让每次继续、停止、升级和交还都有依据。
+
+---
+
+# 讲者硬核备课卡（不上屏）
+
+> 本节补充每页可追问的实战材料，不增加页面。示例中的搜索任务和数值是本主题示意，不是厂商实测；产品参数只按对应产品实例讲，不当通用阈值。Goal/Eval 的构造方法权威在 `02_research/agent_goal_eval/`，本稿只讲它如何接入 loop 控制。
+
+## I01 · 它说做完了
+
+- **状态例子**：`PR created; CI failing; accepted_by=null; outcome_status=pending`。这比一句“搜索完成”更诚实：产出已生成，但没有验收签署，外部采用率也没有观测。
+- **真实对照**：`stop_conditions/03_verdict_split/practices.md` 的 dotnet PR 案中，Agent 两次自称 fixed，CI 至少一次证伪；这是反例，不是发生率结论。
+- **追问**：完成钩子检查的是哪棵工作树、哪个版本、哪次证据？
+
+## I02 · 控制链
+
+- **贯穿例子**：`goal=搜索路径可用 → action=改分页 → feedback=浏览器第2页按钮无效 → eval=未满足 → continue=修路由`。
+- 这是本场研究抽象，不是某产品固定状态机；真正实现还必须记录 `goal_rev / action_id / evidence_ref / verdict / decision_source / state_rev`。
+- **边界**：画出链条不等于产品已经实现全部节点。
+
+## I03 · Goal
+
+- **弱写法**：`Improve the search experience until it feels good.`
+- **可核写法**：终态、检查、约束、停止语句四件套；例如 Lighthouse ≥92、LCP<1.8s、不改 hooks API、连续两轮无改善 abort、最多 10 轮。这是 Osmani 的实例，数字不可外推。
+- **追问**：若业务指标不可观测，结论只能是 `outcome_pending`，不能自动 `Met`。
+
+## I04 · Action
+
+- 同一个动作拆三把钥匙：`trigger=CI failure`、`choice=读日志选修复`、`authorization=仅当前分支编辑，不含 push`。
+- 触发器唤醒不等于获得无限权限；动作、目标、分支和有效期变化，必须重新授权。
+- 沙箱和单次动作约束属于 harness；本场只讲它们如何成为下一轮的资格条件。
+
+## I05 · Feedback
+
+- 示意管道：`cmd → exit_code + stdout/stderr artifact → durable evidence_ref → next action`。
+- Aider 的形状是非零 lint → 询问是否修复 → 将 lint 错误回灌下一轮；如果输出滚走、下一轮只重复命令，就没有真正消费反馈。
+- 数据工程例应读取结构化 `run_results.json` 的状态和失败数，并注意 DAG 下游的修复—震荡；不要只解析自然语言终端输出。
+
+## I06 · Eval
+
+- 同一个 `test exit=0` 只是反馈；Eval 还要核页面路径、API 约束和测试保护。
+- `/goal` 的三值可讲成：`Not yet met + reason → continue`、`Met + evidence → acceptance candidate`、`Impossible → stop/escalate`。独立小模型只核预设硬规则，不自动判断内容品味。
+- **失败例**：评估输出漏掉必需的 `pass` 字段又没有 threshold，score=0 仍可能默认放行；判定接口也要 fail closed。
+
+## I07 · 三出口
+
+- `Not yet met + known repair` → continue；`Met + evidence` → 停止候选并验收；认证失败、策略硬拒绝或审批入口不可达 → `blocked/awaiting_human`。
+- 单次拒绝可带理由继续寻安全路径；不要把一次拒绝直接讲成熔断。
+- `Impossible` 是条件逻辑上不可满足，不是“业务指标暂时看不到”。
+
+## I08 · Stop ≠ Accepted
+
+- 对照记录：`stop_reason=turn_limit; accepted_by=null` 与 `stop_reason=goal_gate; accepted_by=reviewer; evidence_link=CI run` 是两种不同状态。
+- `/goal` 的 `stop after 20 turns` 只限制消耗；`/loop` 的 fallback/过期只控制循环寿命。产品参数不能变成行业刻度。
+- 手册要求 `stop_reason` 和 `accepted_by/evidence_link` 分开记录。
+
+## I09 · State / Outcome
+
+- 本主题建议的虚构记录：`feature_id=search-42; status=blocked; stop_reason=human_pause; accepted_by=null; outcome_status=pending; owner=业务负责人; next_check=下周`。
+- 进度文件和 git history 能帮助恢复工作，但不天然回答授权史、优先级变更、阻塞原因、验收人四列。
+- 多 feature 控制行是本主题试点，不是已证明有效的行业标准。
+
+## I10 · 提前完成
+
+- Anthropic feature list 初始所有 `passes:false`；只有端到端浏览器验证后才翻 `true`。单测或 curl 通过、按钮仍不可用时不能翻。
+- Kent Beck 的实战反例是 Agent 删除或禁用测试；因此“测试通过”还要问测试是否被削弱。
+- 这防的是提前完成的一类形态，不等于业务结果已达成。
+
+## I11 · 三件停止骨架
+
+- `test exit=1` → 机器拒绝；`turns=10/10` → 资源熔断并保留状态；`test exit=0 + independent verifier` → 才是验收候选。
+- 机器闸门、硬上限、验收分离分别回答“这一轮过不过”“还允许消耗吗”“谁能签收”。不能合成“它停了”。
+- `stop_conditions/README.md` 的“双环三层”是专项提炼，尚未回流判定层，本场不把它说成行业架构。
+
+## I12 · 负例控制
+
+- 做一次故障注入：故意把搜索断言改成错误期望或植入 dummy API key，运行同一 `make check`；必须得到非零、明确原因并回到下一轮。
+- 测试削弱检测器关注 skip、删文件、断言降级、`|| true` 等模式。
+- 负例通过只证明这类已知错误能被拦，不证明漏做需求、真实质量或业务成功。
+
+## I13 · 人的关口
+
+- 人保留在危险动作、模糊目标、拒绝/熔断恢复、最终验收和外部业务结果。
+- Ng 的“context advantage”解释的是人为什么仍在环：人掌握模型不知道的用户、业务和场景信息；不是人必须继续做每轮机械 QA。
+- 没有审批入口、指定 reviewer 和 resume pointer，不能声称“已经升级给人”。
+
+## I14 · 不要自动继续
+
+- 小改文案拼写：一次做完，不建循环脚手架。
+- “UI 直到好看”：先人工标样、拆成可核局部目标或交人；不要靠更多轮次逼出品味。
+- 标准漂移、外部结果不可见、判据无法写出时，分别走拆小、待观测、人工核对三条路。
+
+## I15 · 回去审计
+
+让听众对真实任务填一张卡：`Goal/Scope | check+negative_control | feedback_link | stop_reason | accepted_by+evidence_link | outcome_owner+next_check | escalation_reviewer+resume_pointer`。缺可观察 Goal、负例拦不住、或升级不可达，就保留逐轮值守。
+
+**不能说**：这些机制已证明更快、更好、更省人。它们首先证明的是“能否建立可治理的控制链”。
+
+---
+
+# 一套可以现场拆开的实战样本（不上屏）
+
+> 下面是一个完整的虚构样本：给站内搜索增加分页。样本的价值是把每个控制节点落成工件；其中数值、分支名和命令都是演示模板，不是厂商默认值，也不是实测收益。
+
+## 1. Goal 工件：先把“做完”写成可判定对象
+
+```json
+{
+  "goal_id": "search-pagination-v1",
+  "terminal_state": "结果列表第二页可打开、可返回、查询条件不丢失",
+  "checks": [
+    "npm test -- search-pagination",
+    "npm run e2e -- search-pagination.spec.ts"
+  ],
+  "constraints": [
+    "只改 search 分支",
+    "不得修改公共 API",
+    "不得删除或放宽既有测试"
+  ],
+  "stop_clause": "两次连续无改善或达到项目资源上限时停止并保全状态",
+  "outcome": "用户采用率另行观测，不作为本轮自动 Met"
+}
+```
+
+讲者要指出四个细节：终态不是“搜索体验变好”；检查不是“模型觉得可以”；约束不是备注而是不可越过的边界；用户采用率不在当前运行中可见，所以只能是 `outcome_pending`。
+
+## 2. Action 工件：每次只拿一张可审计的动作单
+
+```json
+{
+  "action_id": "act-0042",
+  "principal": "search-agent",
+  "action": "edit",
+  "target": "src/search/pagination.ts",
+  "branch": "agent/search-pagination",
+  "scope": ["src/search", "tests/search"],
+  "expires_at": "2026-09-28T18:00:00Z",
+  "approval": "reviewer-17",
+  "denied": ["commit", "push", "public-api-change"]
+}
+```
+
+把 `edit` 改成 `push`、把 branch 改成 `main`、把目标移到 `deploy/`，都应被当成新动作重新审批。一次批准不能靠文字相似度继承。
+
+## 3. Feedback 工件：把环境返回物落盘
+
+```sh
+set -o pipefail
+mkdir -p .loop/runs/run-0042
+npm run e2e -- search-pagination.spec.ts \
+  > .loop/runs/run-0042/stdout.log \
+  2> .loop/runs/run-0042/stderr.log
+status=$?
+printf '{"run":"run-0042","exit_code":%s,"commit":"%s"}\n' \
+  "$status" "$(git rev-parse HEAD)" \
+  > .loop/runs/run-0042/result.json
+exit "$status"
+```
+
+这个模板故意保存退出码、标准输出、错误输出和 commit。下一轮不是重新问“刚才发生什么”，而是先读 `result.json`，再读失败日志，最后选择动作。命令形态需按项目 shell 和 CI 改写，不能把这段当通用安全脚本。
+
+## 4. Eval 工件：反馈和判定分开
+
+```json
+{
+  "eval_id": "eval-0042",
+  "goal_id": "search-pagination-v1",
+  "evidence": [
+    ".loop/runs/run-0042/result.json",
+    ".loop/runs/run-0042/stderr.log"
+  ],
+  "verdict": "NotYet",
+  "reasons": ["page_2_button_click_failed"],
+  "evaluator": "search-checker-v3",
+  "rubric_hash": "sha256:...",
+  "missing_fields_are": "reject"
+}
+```
+
+`exit_code=0` 只是一个环境事实；`verdict=Met` 还必须覆盖页面路径、API 约束和测试保护。评估器输出缺少 `verdict` 或 `evidence` 时，本模板选择拒绝，而不是猜测通过。
+
+## 5. 状态迁移：停止、验收、业务结果必须拆开
+
+```text
+running
+  ├─ feedback=NotYet, retryable ───────→ running
+  ├─ feedback=Met, artifact complete ──→ stopped_candidate
+  ├─ hard limit / no progress ─────────→ stopped
+  ├─ permission / dependency ───────────→ blocked
+  └─ ambiguity / reviewer needed ───────→ awaiting_human
+
+stopped_candidate + independent sign-off → accepted
+accepted + external metric unseen       → outcome_pending
+```
+
+必须能回答：“为什么停？”“谁验收？”“验收依据在哪？”“外部结果谁在什么时候复查？”因此示意记录不能只写 `status=done`。
+
+## 6. 负例演练：先证明门会拒绝
+
+在正常运行前临时把分页断言改成错误期望，或在测试中植入一个 dummy API key，然后运行同一个 `make check`。合格的反馈至少包含：非零退出码、明确失败位置、对应 evidence link、下一轮可读的修复理由。恢复负例后再跑正常路径。
+
+负例通过只证明这一类已知错误能被拦住；它不能证明遗漏需求、真实用户满意或业务指标已改善。若门没有失败，先停止升档，不要用“模型通常做得不错”补证据。
+
+## 7. 熔断交接单：人真正接得住才叫升级
+
+```yaml
+feature_id: search-42
+state: awaiting_human
+stop_reason: policy_denial
+last_action: edit src/search/pagination.ts
+last_feedback: page_2_button_click_failed
+accepted_by: null
+evidence_link: .loop/runs/run-0042/result.json
+reviewer: product-owner-7
+resume_pointer: run-0042/action-0043
+next_check: 2026-09-29T09:00:00Z
+```
+
+`reviewer` 为空，或 `resume_pointer` 指不到状态和证据，就不能对外说“已升级”。硬拒绝也不能改名成“等待审批”；它是 `blocked`，恢复路径由权限负责人决定。
+
+## 8. 现场审计顺序
+
+1. 先拿 `goal.json`，问终态、约束和检查是否可观察。
+2. 再拿动作单，问这次授权是否覆盖当前目标、分支和动作。
+3. 再读反馈 artifact，问下一轮是否真的消费了它。
+4. 再读 eval，问判据版本、证据和裁判是否独立。
+5. 最后看状态、验收和外部结果是否分账。
+
+任何一项答不上来，都保留逐轮人工判断。这里的“保留人工”是控制决策，不是失败。

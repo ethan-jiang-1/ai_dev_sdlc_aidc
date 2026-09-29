@@ -142,3 +142,309 @@ revised: 2026-09-28
 **上屏**：先审计控制链，再谈少守。机制存在，不等于效果已证。
 
 **收束**：Loop Governance 的硬核不是让循环活得更久，而是让继续、停止、升级和交还都留下能复查的理由。
+
+---
+
+# 工程师追问卡（不上屏）
+
+> 本节按 A01–A24 提供可追问的机制、反例和边界。伪配置是本主题设计题，产品参数保留产品语境；专项 `stop_conditions/README.md` 的“双环三层”仍是研究抽象，SOP 以 `03_practice/loop_governance/result/manual.md` 为准。
+
+## A01–A03 · 先问“控制对象是什么”
+
+- **A01**：追问完成钩子在何时检查、检查哪棵 tree、绑定哪份证据。一个可疑交付状态可以是 `PR created; CI failing; accepted_by=null; outcome_status=pending`；不要用最终 assistant message 推导完成。
+- **A02**：Ralph 的 `while :; do ...; done` 没有内建 stop，TODO 耗尽由人凭 taste 判断；Claude `/goal`、`/loop`、auto mode 分别是条件、时间/事件和轮内审批语义，不能合成同一个环。
+- **A03**：建议每次控制迁移写事件：`goal_rev/action_id/evidence_ref/verdict/decision_source/state_rev/stop_reason/resume_pointer`。这是本主题设计题，不是产品统一 schema。
+
+来源：`03_practice/loop_governance/result/manual.md` §7、§9–10；`02_research/ai_loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md` §1、§4a–c。
+
+## A04–A05 · Goal 与 Action
+
+- **A04**：把目标拆成 `terminal_state + check + constraints + stop_clause`。可核实例是 Lighthouse ≥92、LCP<1.8s、不改 hooks public API、连续两轮无改善 abort、最多 10 turns；这是个人实践例，数字不是通用阈值。
+- **A05**：授权最小绑定建议：`{principal, action, target, branch, expires_at, nonce}`。edit 的批准不自动覆盖 commit/push、另一分支或另一 feature；目标或动作变化即重问。
+- **失败边界**：`cron` 只唤醒，不能代替授权；选择下一步不等于拥有无限权限。具体越权案例只有单用户反例，不能外推发生率。
+
+来源：`manual.md` §2、§6–7、§9；`backbone.md` §3；`raw/evidence-2026-09-27-f-autonomy-gates.md`。
+
+## A06–A07 · Feedback 与 Eval
+
+- **A06**：最小反馈通道：`cmd → exit_code + stdout/stderr artifact → durable evidence_ref → next action`。Aider 的实现形状是 lint 非零 → 确认修复 → 将错误回灌；没有 `evidence_ref` 的“再跑一次”只是 retry。
+- **A07**：评估器 schema 必须有明确的 `pass`/verdict 和缺字段语义；promptfoo 记录显示缺 `pass` 且未设 threshold 时 score 0 仍可能放行。Feedback 是事实，Eval 才解释“是否满足 Goal”。
+- **工程追问**：判据测目标还是代理指标？执行方能否修改？裁判输入是否包含自我辩护？版本/样本集变化后能否比较？
+
+来源：`stop_conditions/01_machine_gates/insights.md` #13、`stop_conditions/03_verdict_split/insights.md` #10；`manual.md` §10。
+
+## A08–A10 · 三出口与三本账
+
+- **建议状态机**（本主题建议，不是产品统一实现）：
+  ```text
+  hard_deny → blocked
+  verdict=Met + artifact_check → stopped_candidate
+  verdict=NotYet + retryable → continue
+  unknown / timeout / no_recovery → awaiting_human
+  ```
+- `stopped` 不代表 `accepted`；资源耗尽、无进展、拒绝熔断和模型收尾都要写 `stop_reason`。`accepted_by + evidence_link` 另记；业务结果另记 `outcome_owner + next_check`。
+- 虚构记录：`feature_id=search-42; status=blocked; stop_reason=human_pause; accepted_by=null; outcome_status=pending`。多 feature work-row 是本主题试点，不是已证标准。
+
+来源：`backbone.md` §1–2；`manual.md` §5、§7、§10；`02_research/ai_loop_engineering/digested/07-控制问题矩阵.md`。
+
+## A11–A12 · 提前完成与停止骨架
+
+- **A11**：Anthropic feature list 初始全 `passes:false`，端到端浏览器验证后才翻 true；单测/curl 通过但按钮不可用不能翻。另有删除/禁用测试的第一人称反例。
+- **A12**：三张“票”分开：`test exit=1` 是机器拒绝；`turns=10/10` 是资源熔断；`test exit=0 + independent verifier` 才是验收候选。硬上限不是质量分。
+- **专项边界**：双环三层是 `stop_conditions` 的专项提炼，尚未回流 `digested/03`，不能在台上说成行业已证架构。
+
+来源：`stop_conditions/01_machine_gates/practices.md` #3；`02_hard_caps/insights.md` #1–3、#17；`03_verdict_split/practices.md` #3。
+
+## A13–A15 · 闸门和裁判也会失效
+
+- **A13**：把嵌套反馈路径画成图，逐边标 bound；IAL-Scan 区分 `bypassed_bound` 与 `ineffective_bound`。内层 agent 有 turn cap，不代表外层 evaluator/retry 没有无限路径。
+- **A14**：独立 evaluator 仍可能被样本顺序、自我偏好、谄媚目标或 Goodhart 代理目标操纵；分离解决利益冲突，不等于判得对。METR 的 monkeypatch evaluator/改时钟是压力样本，不外推普通 PR 发生率。
+- **A15**：裁判校验集至少分 `known-fail / ambiguous / adversarial / human-conflict`，记录 `judge_version/rubric_hash/false_accept/false_reject`。没有效果阈值，不伪造统一放行线。
+
+来源：`stop_conditions/02_hard_caps/insights.md` #15；`03_verdict_split/insights.md` #6–10；`03_verdict_split/practices.md` 裁判失效条目；`raw/evidence-2026-09-28-m/n/r-*.md`。
+
+## A16–A18 · 逐轮判定、资源和拒绝
+
+- **A16**：`Not yet met + reason → continue`；`Met + evidence → acceptance candidate`；`Impossible → stop/escalate`；unknown/timeout 不要强行归入 Impossible，通常保留为 blocked/awaiting_human。
+- **A17**：资源包络至少考虑轮次、wall clock、成本、retry budget、过期、无进展和嵌套路径覆盖；预算耗尽前先落盘/生成部分成果/交接。`RemainingSteps` 是框架机制实例，不是所有运行时默认保证。
+- **A18**：`deny_retryable` 可带理由继续寻安全路径；`deny_hard` 不可伪装成待人批准；`circuit_open` 记录拒绝计数与恢复条件。Claude 的 3/20 仅是产品实例，OpenAI 重复拒绝机制未公开相同阈值。
+
+来源：`manual.md` §2、§7；`stop_conditions/02_hard_caps/practices.md` #2–5、#25；`stop_conditions/02_hard_caps/insights.md` #4、#17。
+
+## A19–A20 · 审批可达与授权绑定
+
+- **A19**：人工接手最小包：`feature_id/action/target/thread_id/decision_source/denial_reason/authorized_scope/reviewer/resume_pointer`。分别演练 allow、需人批准、策略 hard deny；没有 reviewer 或 resume pointer 就是 blocked，不是“已升级”。
+- **A20**：用变异测试验证授权：把 edit 改成 commit、把当前分支换成 main、把目标换成 release、把时间推进到过期；旧批准都应失效。
+- **边界**：未合并 PR 只能作为候选机制，不能说成已发布产品行为。
+
+来源：`manual.md` §7、§9；`backbone.md` §3；`raw/evidence-2026-09-27-f-autonomy-gates.md`。
+
+## A21–A22 · State 与调度
+
+- **A21**：Anthropic 的 `feature_list.json + progress + git` 是长任务单项目实例，不是跨 feature 总账；四列仍要问：授权史、priority、blocked_reason、accepted_by/evidence。
+- **A22**：建议唤醒序列：`wake → restore state → validate scope/budget → choose next item → run`。`/goal`、`/loop`、webhook、Stop hook 是不同 trigger；轮内 auto mode 不等于启动下一轮。
+- **反例**：能 `resume` 只说明能接续会话，不说明 priority、权限和验收都可见。
+
+来源：`manual.md` §5–6；`backbone.md` §2；`02_research/ai_loop_engineering/digested/07-控制问题矩阵.md`。
+
+## A23–A24 · 升档与最终审计
+
+- **A23**：升档前联测三件事：负例会红；独立裁判可用且冲突可交人；预算、权限和恢复路径都点得通。没有通用“第 N 轮”门槛。
+- **A24**：审计卡：`Goal/constraints | eval+negative_control | feedback_artifacts | state/outcome | stop_reason | accepted_by+evidence | reviewer+resume_pointer`。任一字段为空，保持更强的人在环。
+- **不可说**：机制存在不等于 loop 已证明提升质量、吞吐或减少返工；这些需要 P-outcome。
+
+来源：`manual.md` §9–12；`backbone.md` §3–4；`02_research/ai_loop_engineering/README.md` §0。
+
+---
+
+# 可直接拆解的控制实验（不上屏）
+
+> 本节不是来源目录，而是一套可运行的演示设计。所有 YAML/JSON/伪代码都是本主题建议模板；要进入生产，必须绑定项目权限、运行器和真实审计存储。产品参数只保留产品语境，不当通用阈值。
+
+## 1. Goal / Eval 合约
+
+```yaml
+id: search-pagination-v1
+terminal_state:
+  - page_2_opens
+  - query_and_filters_survive_navigation
+checks:
+  - command: npm test -- search-pagination
+    type: deterministic
+  - command: npm run e2e -- search-pagination.spec.ts
+    type: environment_path
+constraints:
+  branch: agent/search-pagination
+  forbidden: [public_api_change, test_deletion, push]
+stop:
+  retryable: [page_2_button_click_failed, route_404]
+  impossible: [required_dependency_unavailable]
+  resource: [wall_clock, cost, retry_budget, expiry]
+external_outcome:
+  status: pending
+  owner: product-owner-7
+```
+
+工程审查不能只问“有没有 goal”，还要问：终态是否可观察、检查是否覆盖实际路径、约束是否由运行器 enforce、`impossible` 是否真的是逻辑不可满足而非暂时不可见。外部采用率不能填成 `Met`。
+
+## 2. Action authorization：把批准做成可失效对象
+
+```json
+{
+  "token_id": "auth-0042",
+  "principal": "search-agent",
+  "action": "edit",
+  "target": "src/search/**",
+  "branch": "agent/search-pagination",
+  "scope": ["src/search", "tests/search"],
+  "expires_at": "2026-09-28T18:00:00Z",
+  "nonce": "run-0042",
+  "denied_actions": ["commit", "push", "deploy"]
+}
+```
+
+**变异测试**：依次把 `edit` 改为 `commit`，把 branch 改成 `main`，把 target 换成 `deploy/`，把时间推进到过期，把 nonce 换成下一轮。每一次都应该拒绝旧 token，并写出 `authorization_drift` 事件。若变异仍能通过，不能升档。
+
+## 3. Environment Feedback：证据通道而不是聊天文本
+
+```text
+run command
+  ├─ exit_code
+  ├─ stdout/stderr artifact
+  ├─ browser trace / screenshot / network log
+  └─ commit/tree identity
+          ↓ durable evidence_ref
+     evaluator input
+          ↓ verdict + reasons
+     next action or control state
+```
+
+最小事件示例：
+
+```json
+{
+  "run_id": "run-0042",
+  "action_id": "act-0042",
+  "tree": "git:abc123",
+  "exit_code": 1,
+  "evidence_ref": ".loop/runs/run-0042/",
+  "observed": ["page_2_button_click_failed"],
+  "created_at": "2026-09-28T16:31:00Z"
+}
+```
+
+下一轮只能消费带 `evidence_ref` 的观察结果；“我刚才试过了”不是证据。嵌套工具、retry 和 evaluator 都要纳入实际 feedback path，否则内层通过、外层无限重试仍可能失控。
+
+## 4. Eval schema：缺证据必须 fail closed
+
+```json
+{
+  "verdict": "NotYet",
+  "reasons": ["page_2_button_click_failed"],
+  "evidence": [".loop/runs/run-0042/browser-trace.zip"],
+  "evaluator": "search-checker-v3",
+  "rubric_hash": "sha256:...",
+  "input_digest": "sha256:..."
+}
+```
+
+建议的 schema 规则：`verdict`、`reasons`、`evidence`、`rubric_hash` 缺一即拒绝；`Met` 没有证据即拒绝；未知 verdict 不得降级成 false 或 true。promptfoo 的缺 `pass`/无 threshold 反例说明，评估器接口本身也必须测试。
+
+## 5. 裁判校验集与反操纵
+
+```yaml
+cases:
+  - id: known-fail-route
+    expected: NotYet
+  - id: known-pass-route
+    expected: Met
+  - id: ambiguous-copy
+    expected: human
+  - id: adversarial-test-weakened
+    expected: NotYet
+  - id: human-conflict-01
+    expected: record_conflict
+record:
+  judge_version: search-checker-v3
+  rubric_hash: sha256:...
+  false_accept: 0
+  false_reject: 0
+```
+
+至少要保留 known-fail、ambiguous、adversarial 和人工冲突样本。`false_accept=0` 只是这批样本的观察，不是评估器的质量证明；METR 的 reward-hacking 样本说明独立 evaluator 仍可能被输入、时钟或代理目标操纵。
+
+## 6. 控制状态机与决策表
+
+```text
+observe feedback
+  ├─ hard_deny ------------------------→ blocked
+  ├─ unknown / missing evidence -------→ awaiting_human
+  ├─ NotYet + retryable + budget ------→ continue
+  ├─ Met + artifact complete ----------→ stopped_candidate
+  ├─ Impossible ------------------------→ stopped + escalate
+  └─ budget exhausted ------------------→ stopped + checkpoint
+
+stopped_candidate -- independent sign-off --> accepted
+accepted --------- external observation --> outcome_pending / outcome_met
+```
+
+`Impossible` 必须区分“逻辑上不可满足”和“当前没有观测”；后者通常是 `blocked` 或 `awaiting_human`。决策表的关键不是状态名称，而是每个分支都带 `reason`、`evidence_ref` 和下一责任人。
+
+## 7. 资源包络与优雅耗尽
+
+```yaml
+budget:
+  turns: task_specific
+  wall_clock: task_specific
+  cost_usd: explicit
+  retry_budget: explicit
+  deadline: explicit
+  nested_paths: [agent, tool_retry, evaluator, scheduler]
+checkpoint_before_exhaustion: true
+on_exhaustion:
+  - persist_state
+  - persist_last_feedback
+  - write_stop_reason
+  - assign_reviewer
+  - emit_resume_pointer
+```
+
+`max_turns` 只覆盖一个维度；如果 evaluator 或 tool retry 在预算外重调，系统仍可能无限运行。预算耗尽不是验收通过，优先保全状态并交接。产品的 3/20、20m、7d 等数值只能作为对应产品机制举例。
+
+## 8. 拒绝与审批恢复演练
+
+```yaml
+deny_retryable:
+  record_reason: true
+  next: choose_safe_alternative
+  max_retries: project_defined
+deny_hard:
+  next: blocked
+  approver_can_override: false
+circuit_open:
+  next: awaiting_human
+  requires: [reviewer, last_action, evidence_ref, resume_pointer]
+```
+
+演练三条路径：允许动作；一次拒绝后带理由换安全路径；硬拒绝或连续拒绝后熔断。父线程必须能看到子线程最后状态，reviewer 必须能从同一状态恢复。没有这些条件，只写“升级”是假的。
+
+## 9. 长任务 ledger：不要把三种状态压成 done
+
+```json
+{
+  "feature_id": "search-42",
+  "control": {
+    "status": "awaiting_human",
+    "stop_reason": "policy_denial",
+    "last_action_id": "act-0042",
+    "resume_pointer": "run-0042/action-0043"
+  },
+  "acceptance": {
+    "status": "unaccepted",
+    "accepted_by": null,
+    "evidence_link": null
+  },
+  "outcome": {
+    "status": "pending",
+    "owner": "product-owner-7",
+    "next_check": "2026-09-29T09:00:00Z"
+  },
+  "priority": {"old": 2, "new": 1, "changed_by": "release-lead", "reason": "release dependency"}
+}
+```
+
+这是本主题建议的控制行，不是公开统一标准。单任务 `progress` 和 git history 仍不能自动回答 priority、授权史、阻塞原因和验收人。
+
+## 10. 升档前故障注入清单
+
+```text
+[ ] 删除/削弱测试：机器闸门是否失败？
+[ ] 修改 evaluator 输入：是否被拒绝并记录？
+[ ] 让内层 retry 绕过 budget：是否被外层包络拦住？
+[ ] 让 token 换 branch/action/expiry：是否重新授权？
+[ ] 让 reviewer 入口不可达：是否进入 blocked 而非假升级？
+[ ] 让外部 outcome 不可见：是否保持 outcome_pending？
+[ ] 让人工与 evaluator 冲突：是否停止自动升档并保留样本？
+```
+
+这份清单验的是控制链能否拒绝已知坏路径，不证明业务质量、收益或组织可规模化。只有每项都能给出 evidence link、stop reason 和责任人，才有资格讨论减少逐轮值守。
