@@ -12,13 +12,14 @@
 |---|---|
 | `raw/evidence-2026-09-26-{a,b,c}-*.md` ×3 | ✅ **A**（词源四人：Runkle/Osmani 全取得；Cherny/Steinberger 定性碎片级）· **B**（停止条件/调度，9 个一手记录块）· **C**（自主度/收敛/归属修正）；**09-27 增量**：Osmani D5–D10 实践细节补入 evidence-a（不新建重复档案） |
 | `raw/evidence-2026-09-27-{e,f,g,h,i,j,k}-*.md` ＋ `evidence-2026-09-27-i2-*.md` | ✅ **E**–**I**、**J**（本地 goal，对照臂未跑）；**I2** 已形成五切口档案，但主验与侦察回源混合，未复核条目不计独立票；**K**（Unrolling：候选文本称 assistant message 是 turn 终止态；「四拍」不是原文；直接 HTTP 403，待独立复核） |
-| `raw/research-plan.md` | ✅ v0.4：v0.3 全部内容＋I 路混合验证门、K 候选来源状态与 §4.1 采样预算纪律；I1 已收口，I2 raw 批次已形成但综合判读仍需复核；已追加 automation→autonomy→harness→loop 竞争解释 |
+| `raw/research-plan.md` | ✅ v0.5：在 v0.4 基础上加入统一控制链（Goal → Action → Environment Feedback → Eval → Continue/Stop/Escalate → State/Outcome）与概念/机制/效果三层证据分离；后续回源按控制节点归位，不再按人物堆料 |
 | `digested/06-automation-autonomy-harness-loop.md` | ✅ 初步判读：控制对象逐层外移与叠加；harness 是 loop 可设计/可观察的条件之一，不是单向历史原因；DSH 执行循环与 feature control plane 分离 |
 | `digested/07-控制问题矩阵.md` | ✅ A–I1 综合，I2 仅登记候选来源，J 路加本地观察指针：八问只保留已回源做法；feature 四列在已复核材料和这一条 goal 日志里都是空 |
 | `raw/kol-roster.md` | ✅ §A **仍是 6 条，I 路/I2 不升人**。§B 补 Gauthier / Horthy / Beck / Yegge（I 批次 1）＋ **Ball / Walden / Manus / Armin（I2 批次）**，Lopopolo 从 ⏳ 改为 harness 全文已取得。Willison 仍在 §C1：循环实践者，但 2026-06 后对本词无已核发声。evals 四人＋定量机构按 §2.3 纪律**不入册**（证据来源非发声 KOL） |
 | `raw/00-timeline.md` | ✅ 词源周精确锚定（06-02 → 06-07 → 06-08 → 06-16 → 06-30，snowflake 解码）；新增 I/J/K 与 2023–2025 谱系候选；Tessl 2026-09-14 行保留为待主验候选，不计第五定义源 |
 | `digested/01-命名谱系.md` | ✅ 词源＝热度碎片、定义＝事后工程化；已纳入 Willison/Horthy 相邻实践；Tessl 三层定义保留为侦察回源候选，未升级为第五已证定义 |
 | `digested/03-构件.md` | ✅ 停止条件三件骨架；外层调度是长程扩展。动作门四种处置已按出处画出（evidence-f，无新抓取）；没有通用轮次刻度 |
+| `digested/08-kol-alignment-andrew-ng.md` | ✅ KOL 概念对齐：共同最小交集、Ng 三环与 stop_conditions / loop_governance 的对应及冲突边界（2026-09-28） |
 | `digested/05-边界判定.md` | ✅ 三层分工；收敛成立且双向；**三条引用归属修正**（影响全仓） |
 | ~~`raw/org/` · `raw/community/`~~ | ✅ **已撤销**（2026-09-26 评审决定 5）：evidence 档案为素材常态形态，纪律要点已并入 README §1「回源档案纪律」 |
 | `result/landscape.md` | ✅ 2026-09-27 入层。过筛结论；未复核的 I2 / K 不进主张 |
@@ -27,11 +28,13 @@
 
 ## 下一步
 
-1. **成稿已入层，验证支线仍未完成。** I2 侦察回源、行为面正反例矩阵、自我改写保护链、DSH 外置行对照都不进 `landscape.md`。对照实验的验收仍是可重复日志与指标，不用 J 路 `n=1` 代替 P-outcome。
-2. **deck 只写叙事。** 页面图和 PPTX 已删除。研究侧不另起主张。
-3. **实践层确认不再阻塞。** F 的动作门、I 的行为面反例、四列空格的工作行试点，边界已写在 landscape §5–§7；I2 / K / J 不作效果依据。
-4. **三件骨架深挖区已开**（[`stop_conditions/`](stop_conditions/README.md)，2026-09-28）。第一轮回源已全部收口（l/m/n/o/p/q 六档案，32 条新来源；中断的两路补采已完成）。**下一轮动作**：①判定回流——失控三型、裁判失效四机理、docs↔源码分歧三条候选进 digested/03（需按其编号纪律改判读）；②剩余待挖按各点 README 清单（SQL/Great Expectations 域、LangSmith evals、判据可见性 trade-off、CrewAI/LangGraph 分歧的版本考古）。
-5. **跨仓修正三处**（本轮一手证据触发，不属本主题但已查明）：
+1. **研究主轴已升级为控制链。** 后续回源按 `Goal/边界 → 行动 → 环境反馈 → Eval/裁判 → 继续/停止/升级 → 状态与结果分账` 归位；不再只按 KOL 或产品名堆素材。
+2. **下一轮唯一优先入口**：Goal/Eval 的可观察性与验收独立性；每条候选机制先填 `research-plan §1.1` 控制链审计卡，再决定是否进入 digested/practice。
+3. **硬核验证支线仍未完成。** I2 侦察回源、行为面正反例矩阵、自我改写保护链、DSH 外置行对照都不进 `landscape.md`，直到主验和可重复日志/指标齐备；不用 J 路 `n=1` 代替 P-outcome。
+4. **deck 只写叙事。** 页面图和 PPTX 已删除。研究侧不另起主张。
+5. **实践层确认不再阻塞。** F 的动作门、I 的行为面反例、四列空格的工作行试点，边界已写在 landscape §5–§7；I2 / K / J 不作效果依据。
+6. **三件骨架深挖区已开**（[`stop_conditions/`](stop_conditions/README.md)，2026-09-28）。第一轮回源已全部收口（l/m/n/o/p/q 六档案，32 条新来源；中断的两路补采已完成）。下一步按控制链审计卡归位，并将判定候选回流 digested/03。
+7. **跨仓修正三处**（本轮一手证据触发，不属本主题但已查明）：
    - `talk-harness-201/02_evidence/01-kol-alignment-2026.md`：公式 "Agent = Model + Harness" 归属改为 **Trivedy/LangChain 原创 → Böckeler 传播锚点化**；
    - `01_sources/reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；
    - Böckeler "False sense of control?" 的出处标注改为 **2025-10-15 sdd-3-tools.html**（凡引用处）。

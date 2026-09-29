@@ -23,6 +23,7 @@
 | 05 | **边界判定**：loop / SDD / harness 各管哪层；收敛成立且双向；三条引用归属修正 | ✅ 已答（2026-09-26，evidence-c） | [`05-边界判定.md`](05-边界判定.md) |
 | 06 | **Automation → Autonomy → Harness → Loop？**：是阶段迁移、harness 引发，还是控制面逐层外移与构件重命名；DSH 为什么“跑得动但看不清” | ✅ 初步判读（2026-09-27，evidence-e/g/h；P-existence/P-mechanism） | [`06-automation-autonomy-harness-loop.md`](06-automation-autonomy-harness-loop.md) |
 | 07 | **控制问题矩阵**：取题 / 授权 / 执行 / 验证 / 停止 / 记忆 / 升档 / 复盘。每格只有已回源做法和它证明不了的事；feature 级空的是授权史、priority 变更、业务阻塞原因、跨 feature 验收 | ✅ 综合判读（2026-09-27，无新一手；A–I） | [`07-控制问题矩阵.md`](07-控制问题矩阵.md) |
+| 08 | **KOL 概念对齐**：共同最小交集是 Goal/边界 → 行动 → 环境反馈 → Eval/裁判 → 继续/停止/升级 → 状态与结果分账；Ng 三环是产品反馈与规格演化总图，不是停止条件或自主度 taxonomy；Osmani/Runkle/Claude Code 的外延仍有冲突 | ✅ 已答（2026-09-28，基于 evidence-a/b 与 Andrew Ng 一手素材卡） | [`08-kol-alignment-andrew-ng.md`](08-kol-alignment-andrew-ng.md) |
 
 ## 已完成的 KOL 专项消化
 
