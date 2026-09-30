@@ -103,7 +103,7 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 
 **升档判据**：**机械门可信度决定可授权的自主度**——门会红才配当门（负例控制，衔接 [`harness_governance` 回路 1](../../harness_governance/result/backbone.md)）；门不可信时升档＝把错误复制得更快（本主干 §0 判据 2）。若裁判与指定的人工验收者对同一产出给出冲突判定，暂停自动升档及该产出的自动验收，先由人核对分歧和成功定义；修订后再用可比样本复核，不靠模型自报或提高轮次上限通过。这是借 [`agent_goal_eval` eval 判读](../../../02_research/agent_goal_eval/digested/02-eval-调优.md) 做的控制门；分歧处理建议出自 Hamel/Shankar 单源 FAQ，**没有前后效果对照，也没有通用一致率阈值**（[`manual.md §9/§10`](manual.md)）。
 
-**升档还须查控制路径**：一次批准绑定本次动作、目标和有效期；下一轮不自动继承到另一分支、另一 feature 或发布动作。对可审批的中断要验证人能看到动作和风险、作决定、从同一状态恢复；对硬政策拒绝只停下并暴露原因，不通过人工提示绕过。动作门和恢复机制见 [`digested/03 §三`](../../../02_research/ai_loop_engineering/digested/03-构件.md) 与 [`evidence-f` Sources 1/7](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)；授权漂移/审批不可达只有单用户反例，不是发生率证据。操作检查在 [`manual.md §9`](manual.md)；沙箱与工具策略本身仍归 harness 治理。
+**升档还须查控制路径**：一次批准绑定本次动作、目标和有效期；下一轮不自动继承到另一分支、另一 feature 或发布动作。对可审批的中断要验证人能看到动作和风险、作决定、从同一状态恢复；对硬政策拒绝只停下并暴露原因，不通过人工提示绕过。动作门和恢复机制见 [`digested/03 §三`](../../../02_research/ai_loop_engineering/digested/03-构件.md) 与 [`evidence-f` Sources 1/7](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)；授权漂移/审批不可达只有单用户反例，不是发生率证据。操作检查在 [`manual.md §9`](manual.md)，动作授权面的划定规程（LE1 交接面的操作化）在 [`manual.md §13`](manual.md)；沙箱与工具策略本身仍归 harness 治理。
 
 **反面声音（一手）**：Steinberger 2025-12 长文明确反对自动编排（"usually I'm the bottleneck"）——与他的 6 月词源推文立场相反（evidence-a）。**自主度升档不是免费的方向**；词源人物自己的摇摆就是证据。
 

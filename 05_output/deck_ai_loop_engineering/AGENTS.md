@@ -18,7 +18,8 @@
 ## 项目定位
 
 - **讲的事**：你离开之后它继续跑，你回来时它说做完了。整场回答你凭什么信。
-- **两场分稿（2026-09-27 用户定，2026-09-28 重构）**：`intro/` 入门场（约 15 页，没跑过循环的通识听众，业务与管理为主）；`advanced/` 技术/产品场（24 页，在跑循环的工程师与产品，机制放开讲）。两场各自 outline → manuscript，互不搬页。原统一稿（标准 15 + 加深 10）已全部迁入两场，按用户决定移除。
+- **两场分稿（2026-09-27 用户定，2026-09-28 重构；2026-09-30 加实操轨）**：`intro/` 入门场（15 页＋判断档三题，60 分钟，没跑过循环的通识听众，业务与管理为主）；`advanced/` 技术/产品场（24 页＋构造档三题，90 分钟，在跑循环的工程师与产品，机制放开讲）。两场各自 outline → manuscript → practice，互不搬页。原统一稿（标准 15 + 加深 10）已全部迁入两场，按用户决定移除。
+- **三件套分工**：两场 talk 回答「凭什么信」与「链怎么治理」；听众带走的操作件是本目录 [`manual/`](manual/README.md)《循环交接手册》（按时刻组织，2026-09-30 立项，同日自 `05_output/manual_loop_handover/` 移入）。两场收尾页的「带走」与练习的「回去照着做」全部指向手册，操作规程不在两场稿里重复——talk 是手册的叙事上游，不是它的第二权威。
 - **语言**：大陆中文习惯的短句，避免翻译腔；主张句不依赖英文。关键术语保留英文——首现处「中文（英文）」标注（检查（check）、执行方（agent）等），映射表在各场文稿头部；细则见各场大纲的语言节。
 - **源**：上游只有两处——研究层 `../../02_research/ai_loop_engineering/`，实践层 `../../03_practice/loop_governance/`。主张不超出两处成稿：`result/landscape.md` 与 `result/backbone.md`。本目录是它们的加工下游；核出处时读两个上游各自的 README。
 
@@ -28,12 +29,16 @@
 素材里哪几句能进故事    →  research/source-synthesis.md
 入门场的故事与每页主张  →  intro/outline/outline-intro.md
 入门场每页怎么说        →  intro/manuscript/manuscript-intro.md
+入门场练什么、怎么判卷  →  intro/practice/（exercises 学员版 + facilitator 讲者卡）
 技术产品场的故事与主张  →  advanced/outline/outline-advanced.md
 技术产品场每页怎么说    →  advanced/manuscript/manuscript-advanced.md
+技术产品场练什么、怎么判卷 →  advanced/practice/（exercises + facilitator）
 每页上屏                →  同场文稿的 title / subtitle / content
 ```
 
 上屏给后面的做片用——**做片方未必懂 loop engineering，写少了会乱发挥**。title 短，subtitle 等于主张句，只读二者应能跟上论证。content 分两档：第一档「必须写出」是这页的最小完整版面，缺一行这页就不成立；第二档 nice to have 版面有余再上，放不下整档舍弃。引用块是给做片的补充材料——这页的意思、词解、禁止、版面——永远不上屏，拿不准时以它为准。个别难点页加一句 callout 点睛（自造金句，或已回源复核的署名引语），放页角或底部一行；未复核引语照旧不上屏。红、绿、灯只允许出现在引用块里。本目录仍不出 PPTX、PNG、风格母版。
+
+**练习件与上屏分开（2026-09-30 增）**：practice/ 是新的工件类型，不是页面——不进 title/subtitle，不改任何页的 CLAIM。学员版（exercises）对外自足：不出现内部路径、研究层/实践层命名与代号，数值标教学示意；讲者卡（facilitator）可带内部 evidence 指针，供回源自查。每题答案可核对或给出合格线，不设无锚开放题。技术场操作题限定可回滚环境，并备纸面降级版。
 
 改故事先改该场的大纲，再改该场文稿，使两处的主张句重新相同。
 
@@ -84,7 +89,10 @@
 | 稿 | 状态 |
 |---|---|
 | `research/source-synthesis.md` | 素材信号。早于「它说做完了」这一版故事 |
-| `intro/outline/outline-intro.md` | 入门场大纲（15 页），2026-09-28 控制链重构，待用户过闸 |
-| `advanced/outline/outline-advanced.md` | 技术产品场大纲（24 页），2026-09-28 控制链重构，待用户过闸 |
-| `intro/manuscript/manuscript-intro.md` | 入门场文稿（15 页＋逐页硬核备课卡），2026-09-28 已同步大纲，待用户过闸 |
-| `advanced/manuscript/manuscript-advanced.md` | 技术产品场文稿（24 页＋逐页工程师追问卡），2026-09-28 已同步大纲，待用户过闸 |
+| `intro/outline/outline-intro.md` | 入门场大纲（15 页，60 分钟），2026-09-28 控制链重构；2026-09-30 增 §8 实操轨，待用户过闸 |
+| `advanced/outline/outline-advanced.md` | 技术产品场大纲（24 页，90 分钟），2026-09-28 控制链重构；2026-09-30 增 §8 实操轨，待用户过闸 |
+| `intro/manuscript/manuscript-intro.md` | 入门场文稿（15 页＋逐页硬核备课卡），2026-09-28 已同步大纲；2026-09-30 增 I15「带走」接手册，待用户过闸 |
+| `advanced/manuscript/manuscript-advanced.md` | 技术产品场文稿（24 页＋逐页工程师追问卡），2026-09-28 已同步大纲；2026-09-30 增 A24「带走」接手册，待用户过闸 |
+| `intro/practice/`（README＋exercises＋facilitator） | 判断档三题（嵌入 I08/I14/I15），2026-09-30 新建，待用户过闸 |
+| `advanced/practice/`（README＋exercises＋facilitator） | 构造档三题（嵌入 A16/A15/A24），2026-09-30 新建，待用户过闸 |
+| `manual/`（AGENTS＋README＋九章 00–08） | 《循环交接手册》：按时刻组织的现场操作件，2026-09-30 立项成稿，同日移入本目录；进度权威在其 `AGENTS.md` |

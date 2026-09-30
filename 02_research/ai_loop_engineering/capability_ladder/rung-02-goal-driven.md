@@ -39,9 +39,9 @@
 
 ## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）
 
-**① Osmani `/goal`（转述自台账，逐字在 evidence-a）** ⏳ 逐字待补
-- 要点（转述 [`raw/kol-roster.md`](../raw/kol-roster.md) §A `addy_osmani` 行）：`/goal` 评估器**只核 transcript 硬规则、不判内容好坏**；
-  分层运行模式第二级即 `/goal`。锚 [evidence-a](../raw/evidence-2026-09-26-a-originators.md)。
+**① Osmani `/goal` 评估器的边界（✅ 逐字，[evidence-a §4 D2](../raw/evidence-2026-09-26-a-originators.md)《Practical Loop Engineering》）**
+- > "The evaluator sitting behind goal is not that checker, by the way. It doesn't look at the content to see if it's good or bad in any way, shape, or form. All it does is examine the conversation transcript to see if the hard rules you specified have been met."
+- 分层定位（同档 D3 逐字）："Each time Claude tries to stop, an evaluator model checks your condition and sends it back to work until the goal is met…"——第二级即 `/goal`；完整分层为四级（evidence-a 结论节提醒，不作「只有两级」读）。
 
 **② Anthropic quickstart 源码（对“有 goal 就能自动判停”的反例）**——一手源码，观测 2026-09-28，全文在 [evidence-l](../raw/evidence-2026-09-28-l-quickstart-code.md)：
 - 驱动层退出路径逐字：
@@ -51,10 +51,10 @@
 - 通过率的实际住处：`count_passing_tests` 读 `feature_list.json` 的 `passes` 字段——**算给人看**（每轮打印），不以 `passing == total` 停机。
 - 对本阶的教训（落差即发现）：**博客叙事里的"goal 完成"，在配套驱动代码里是靠人看进度 summary 实现的**——LE2 的"交出判停权"在工程上并不自动成立，判据住哪一层是设计决定。
 
-**③ 可观察措辞纪律** ⏳ 逐字待补
-- 中文传播层的转述与本主题判读同构（[evidence-t](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md) §2，侦察级）：
+**③ 可观察措辞纪律（✅ 逐字在档 evidence-t §2·侦察级源，不支撑定阶）**
+- 中文传播层的同构转述（[evidence-t](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md) §2；侦察级、不进定阶票，引用前须回官方一手）：
   > "你不能写让代码达到生产就绪，因为AI没法验证，你必须写测试通过且lint检查无误，这样评估者才能通过读取终端输出判断是否真正完成。"
-- 主题侧权威表述在 [`agent_goal_eval/`](../../agent_goal_eval/README.md)（goal/eval 怎么构造归那个主题，此处只指针）。
+- 该条实质（可观察终态）已由 ⑦ 的官方三要素逐字承载，LE2 定阶不依赖本条。主题侧权威表述在 [`agent_goal_eval/`](../../agent_goal_eval/README.md)（goal/eval 怎么构造归那个主题，此处只指针）。
 
 **④ 学术共识口径（✅ 2026-09-30 锚 [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S6）**
 - arXiv:2608.21884（2026-08，ASE 2026 workshop 在审）摘要逐字——灰色文献"基本一致"的构件清单里，本阶占两头：

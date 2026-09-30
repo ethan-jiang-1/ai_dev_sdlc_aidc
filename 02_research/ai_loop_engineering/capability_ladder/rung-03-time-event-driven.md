@@ -37,8 +37,8 @@
 
 ## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）
 
-**① Runkle event-driven loop（B 类环对应本阶）** ⏳ 逐字待补
-- 要点（转述自台账 `sydney_runkle` 行）：四环之三，cron/webhook/channel 触发。锚 [evidence-b §4e](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)。
+**① Runkle event-driven loop（✅ 逐字见本档 ⑧，[evidence-b 问题2 §5「LangChain 四环的调度环」](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）**
+- 四环之三：事件 / 定时 / webhook 触发，agent 是更大系统内持续运行的组件而非手动调用——逐字引句即 ⑧。触发词以源文为准；台账综合节自撰的「channel」一词无逐字，不引用。（旧锚「§4e」有误：§4e 只含 verification loop 与四环表格第 2 行，event-driven 行原文未入档。）
 
 **② CC 团队 time-based / proactive 两类（[evidence-a D3](../raw/evidence-2026-09-26-a-originators.md)）**
 - > "For these, you can trigger when Claude runs with /loop, which re-runs a prompt on an interval."（[evidence-a D3](../raw/evidence-2026-09-26-a-originators.md)）
@@ -88,8 +88,7 @@
 
 ## 反例位（补充指针）
 
-- 无人值守×失控＝最危险的组合：失控实录三案（practices ②）中 194h zombie 孤儿进程等案例即本阶事故面 ⏳ 引句待搬
-  （锚 [stop_conditions/02_hard_caps](../stop_conditions/02_hard_caps/README.md) practices ②，不复制）。
+- 无人值守×失控＝最危险的组合：失控实录三案（资源层失控，锚 [stop_conditions/02_hard_caps](../stop_conditions/02_hard_caps/README.md) practices ②）即本阶事故面；zombie 穿透显式关闭的逐字引句已在 ⑩（evidence-o S2），无需另搬。
 - **传播层未讲无人值守**（[evidence-t](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)）：视频从 goal 直接讲并发，没有介绍持久运行的额外风险；这是一处叙事遗漏，不证明必须先掌握 LE3 才能并发。
 
 ## 四、可选方向：编排与元循环

@@ -8,6 +8,7 @@
 topic: Loop Governance —— 实践手册（backbone §0–§4 的操作化）
 doc_layer: result（定稿层 · 操作规程，SOP 级）
 produced_at: 2026-09-26
+revised: 2026-09-30 — 增 §13 授权面划定规程（LE1 交接面的操作化；证据自研究层 capability_ladder 与 evidence-f/u/w/b/c 升格）
 provenance: 2026-09-26 初版来自 ai_loop_engineering evidence-a/b/c 与库内一手；2026-09-27 补充 evidence-f/i 的已复核机制和第一人称反例、digested/07 的缺口边界；后续控制接口引自 agent_goal_eval digested/01/02/03（单源处标注）；工作行与交接核对为本主题试点编排
 filter: 官方一手逐字 > 实践者第一人称 > 本主题编排（编排处显式标注）
 ---
@@ -17,6 +18,7 @@ filter: 官方一手逐字 > 实践者第一人称 > 本主题编排（编排处
 
 backbone ＝ 主张（what/why，清单级）；本手册 ＝ 规程（how，SOP 级）。新场景从 §1 诊断进入，
 按 §11 落地梯子逐档爬升；backbone §0.2 失败模式表的最后一列指到本手册对应节（§1 的自检表是它的入口版）。
+各档通用的授权面地板在 §13——先划面，再谈停止与续跑。
 引用一手材料时带研究主题路径；goal/eval 构造与困难分支指向 [`agent_goal_eval/digested`](../../../02_research/agent_goal_eval/digested/README.md)，本手册只处理何时续轮、暂停、升档及交人。
 
 ## 1. Phase 0 · 诊断（要不要 loop 治理｜操作化：backbone §0 判据）
@@ -209,6 +211,7 @@ OpenAI——"The separation of roles matters…（主 agent）creates pressure t
 | **P4** 无人值守 | proactive 事件触发＋σ 分层响应＋生产回写 | 门禁过负例控制；回滚最演练；§9 三项门禁与控制路径演练全过 | §7/§9/§10 |
 
 **只逐档爬，不跳档**；**退档信号**：熔断频发、假把控症状（backbone §4.3 的两面镜）复现——退一档重新稳住再升。
+**各档地板**：§13 授权面划定——每一档都先过它；升档前先核面，不是只有 P0 需要。
 
 ## 12. 反过度工程清单（操作化：backbone §4）
 
@@ -219,3 +222,39 @@ OpenAI——"The separation of roles matters…（主 agent）creates pressure t
 5. 复杂 harness 有害的镜像教训同样适用于 loop 侧（Teleport 反例，见 [`harness_governance` 组织 5](../../harness_governance/result/backbone.md)）；
 6. **反面声音**：Steinberger 2025-12 长文——"usually I'm the bottleneck"——**通常人自己就是限速环节**（编排不是瓶颈、人是，所以他对自动编排「没看到多大必要」；**原文未说「自动化更慢」**）。与 §3 不冲突：§3 说的是**裁判**（完成判定）优先机器可核，本条说的是**调度自动化**收益有限——两个角色（evidence-a 一手）；
 7. **行为面验证缺口**：门拦得住动作、拦不住"没做该做的事"——减监督前先想清这一条还堵不上（登记在 backbone §3，开放缺口）。
+
+## 13. 授权面划定规程（操作化：backbone §3 控制路径｜LE1 交接面；一手证据 evidence-f/u/w/b/c，观测 2026-09-30）
+
+> 本节管**把动作审批交出去时怎么划定边界**；沙箱与工具策略的执行件归 harness 治理（[`harness_governance`](../../harness_governance/README.md)）。loop 层的问题是：授权面怎么切、批准绑定什么、拒绝怎么回流、什么情况不算交出。研究层教学档案：[`capability_ladder/rung-01`](../../../02_research/ai_loop_engineering/capability_ladder/rung-01-authorized-execution.md)。
+
+**原则一：授权面是分级处置表，不是开关。** 官方三级处置（Cursor 3.6 changelog，[evidence-u S4a](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-30-u-post-june-kols.md)）：
+
+> "Allowlisted calls run immediately, and calls that can be sandboxed run in the sandbox. All other agent actions go to a classifier subagent that decides whether to allow the call, try a different approach, or ask for your approval."
+
+同一动作落在哪级由三个独立维度判定（Codex `exec_policy.rs`，[evidence-f Source 1](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)）：**危险启发式 × 沙箱能力 × 项目可信度**——"If the command is flagged as dangerous or we have no sandbox protection, we should never allow it to run without approval."
+
+**原则二：一次批准绑定「动作 × 目标 × 有效期」，三个维度各自独立。** 授权继承失败的第一人称事故报告（[evidence-f Source 4](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)，逐字）：
+
+> "Editing files must not imply authorization to commit." / "Authorization to commit must not imply authorization to push." / "Authorization for one push must not become standing authorization for later pushes."
+
+换分支、换 feature、从 edit 变 commit/push 都算新动作，重新请求授权（backbone §3 控制路径）。
+
+**原则三：拒绝是引导信号，不是终点。** auto mode 的 deny-and-continue（[evidence-b §4b](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md)，逐字）：拒绝作为工具结果返回并附 "find a safer path" 指令；会话累计 **3 次连续或 20 次总拒绝**停机升级——官方明写不可配置（"These thresholds are not configurable."），headless 无人可问直接终止。**这两个数字是动作拒绝预算，不是轮数上限**；本节的自主度封顶在单轮内——"Auto mode on its own approves tool calls within a single turn but doesn't start a new one"，跨轮续跑权是 §2 的事。
+
+**审批的第三个动作最易被忽略**：approve / **edit** / reject（LangChain HITL docs，[evidence-f Source 7](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)）——"the action can be approved as-is (approve), modified before running (edit), or rejected with feedback (reject)."。改了再跑比二元放拦常用。
+
+**偏好与隔离是两层，不要混**：偏好规则（如 Cursor `permissions.json`）管「倾向批准/拦截什么」，执行隔离（如 `sandbox.json`）管「实际能碰到什么」；官方明说 Auto-review "is not a security boundary"，`Run Everything` 每个 tool call 自动运行、**无 sandbox 无 classifier**（[evidence-w W1](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-30-w-ladder-runtime-detail.md)）——它交出的是动作审批权本身，适用域单独评估，不是本节的默认形态。宽 allow 规则不能代替真正的执行隔离。
+
+**实测反例（写了规则 ≠ 有授权面）**：
+
+- 预写权限规则实测（[evidence-c 4a.1](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-26-c-autonomy-and-convergence.md) 引 arXiv 2608.27443）："The rule writers blocked **20.1 percentage points fewer** bad actions… **93% of permission prompts get approved. A rule that ends in a prompt isn't a rule.**"
+- 行业执行缺口（marmelab 2026-09-24 审计，evidence-c）："Everybody writes instructions, **almost nobody enforces them** … Only **12** of the 391 repositories commit a single `deny` rule."
+- 升级不可达（[evidence-f Source 3](../../../02_research/ai_loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)，issue #67519）："The denial is final, even when the user is actively in the conversation and has explicitly, repeatedly authorized the exact action in chat."——拒绝合理性之外，**升级可达性是独立的第二个控制问题**。
+
+**划定步骤（本主题编排，非厂商标准）**：
+
+1. 列本任务会发生的动作类别（读 / 写 / 测试 / commit / push / 部署 / 外部调用）；
+2. 每类标「允许直行 / 沙箱内 / 必须人批 / 硬拒绝」，写进**可执行的策略件**（allow/deny 规则、沙箱配置），不写在 prompt 里——"A rule that ends in a prompt isn't a rule"；
+3. 高风险类别（auth / billing / 破坏性变更）保留当场审批与随时中断（backbone §4.2 风险分级）；
+4. **演练**：低风险可回滚仓库里故意触发一个面外动作，核对记录里真实发生 `propose → decision → tool result`，不拿「最终测试通过」冒充审批通过；
+5. **验收本节**：抽一条已放行的动作，能答出「谁批的、批的哪个目标、有效期到哪」；答不出＝面没划过，是默认放行。

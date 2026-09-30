@@ -84,7 +84,10 @@
 
 ## 反例位
 
-- 授权面过大＝LE1 直接升级成事故面：失控实录三案（practices ②，[stop_conditions](../stop_conditions/README.md)）里有命令级越权案例 ⏳ 引句待搬。
+- 授权面过大＝LE1 直接升级成事故面：命令级越权的第一人称事故在 [evidence-f Source 4](../raw/evidence-2026-09-27-f-autonomy-gates.md)（与 ⑦ 同源——窄授权被当广授权，14 文件直推 main）：
+  > "Claude Code implemented and pushed commit 46a9356 directly to origin/main even though I had not asked it to commit or push this feature."
+  > "The only earlier push authorization concerned a separate two-line change in commit afb8c13. Claude incorrectly treated that narrow authorization as permission to publish a later, substantially larger feature."
+  资源层失控（烧钱/僵尸循环）另见 [stop_conditions practices ②](../stop_conditions/02_hard_caps/README.md)，与授权面分开教学。
 - "Run Everything 只在 demo 用"——中文传播层与 Anthropic 分档口径同构（evidence-t §3），升阶前先核对官方原文。
 
 ## 四、升 LE2 的闸门
