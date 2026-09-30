@@ -1,6 +1,6 @@
-# R3 按时/按事件唤醒（主线 · 机制已证）——交出再次起跑的时机
+# LE3 按时/按事件唤醒（主线 · 机制已证）——交出再次起跑的时机
 
-![R3 会话内定时与跨会话持久触发、状态和取消传播](figures/rung-03-time-event-driven.svg)
+![LE3 会话内定时与跨会话持久触发、状态和取消传播](figures/rung-03-time-event-driven.svg)
 
 > **交接面**：时间表或事件源决定**何时再次启动**，人设范围、成本上限、取消方式与升级路径。**会话内定时续跑**（如 Claude Code `/loop`）与**跨会话持久任务**（如云端调度）是不同运行边界：后者才可能在人不在场、会话结束后继续运行。
 
@@ -18,7 +18,7 @@
   → 达到目标、硬上限或人工停止时终止后续唤醒
 ```
 
-这张图是**跨实现检查清单**：调度只解决 **when**；操作权限仍由 R1 的 **what** 管，达成判断仍要看 R2 的目标与验收。OpenClaw 的原句是 “Standing orders define what the agent is authorized to do. Automations define when it happens.”（[evidence-e §2B](../raw/evidence-2026-09-27-e-cross-feature-observability.md)）。跨会话的“读取进度”还要求另有持久化实现，不能从存在定时器推出来。
+这张图是**跨实现检查清单**：调度只解决 **when**；操作权限仍由 LE1 的 **what** 管，达成判断仍要看 LE2 的目标与验收。OpenClaw 的原句是 “Standing orders define what the agent is authorized to do. Automations define when it happens.”（[evidence-e §2B](../raw/evidence-2026-09-27-e-cross-feature-observability.md)）。跨会话的“读取进度”还要求另有持久化实现，不能从存在定时器推出来。
 
 | 跑法 | 实际入口与轮间状态 | 切断什么会停 | 源中可核的机制 |
 |---|---|---|---|
@@ -33,7 +33,7 @@
 
 **最容易漏的失败现场**：[孤儿自动化 issue](../raw/evidence-2026-09-28-o-runaway-incidents.md) 中用户关掉自动化，实际 `tmux` worker 却没收到 kill。检查停止不能只看“控制台已关”，要核对 scheduler 不再派新任务、既有 worker 确已退出、外部副作用不再发生；这三项是针对事故的工程化验收问题，不是假定所有产品实现同一种取消协议。
 
-**结果可证成性仍是另一条轴**：[正交交接页](result-reliability-interface.md) 用夜间扫描和部署监视对比同一 R3 触发器下的完成证据。跨会话任务除取消与成本，还要保存目标/判据版本和可复核的观察结果；若业务结果尚不可见，状态应为“产物/检查条件已达成，业务待观察”，不能用运行次数或唤醒成功率替代质量。这里是按任务风险提出的联调检查，非产品通用默认配置。
+**结果可证成性仍是另一条轴**：[正交交接页](result-reliability-interface.md) 用夜间扫描和部署监视对比同一 LE3 触发器下的完成证据。跨会话任务除取消与成本，还要保存目标/判据版本和可复核的观察结果；若业务结果尚不可见，状态应为“产物/检查条件已达成，业务待观察”，不能用运行次数或唤醒成功率替代质量。这里是按任务风险提出的联调检查，非产品通用默认配置。
 
 ## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）
 
@@ -50,9 +50,9 @@
 **④ Cursor `/loop` 官方语义（✅ 2026-09-30 锚 [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S4b）**
 - Cursor 3.5 changelog（2026-05-20）逐字——**三种唤醒条件**，与 CC 分类同构：
   > "With /loop, Cursor can run a prompt repeatedly **on a local schedule**, **until a certain outcome is achieved**, or **until you stop it**. If you don't specify a fixed interval, **the agent decides when or what event should wake it**."
-- 注意第三个分句：**唤醒时机本身可以交给 agent 决定**——R3 内部还有一层"触发权"的微阶梯（人定间隔 → 人定结果条件 → agent 自主唤醒）。
+- 注意第三个分句：**唤醒时机本身可以交给 agent 决定**——LE3 内部还有一层"触发权"的微阶梯（人定间隔 → 人定结果条件 → agent 自主唤醒）。
 
-**⑤ R2↔R3 分界的最清晰表述（Ronacher，✅ S1）**
+**⑤ LE2↔LE3 分界的最清晰表述（Ronacher，✅ S1）**
 - > "There is already an **agent loop** inside every coding agent. The model calls a tool, incorporates the result, calls another tool, reads a file, edits a file, runs tests, and eventually produces some answer. … The other loop is the **harness level loop: the loop outside the agent loop**."
 - 教学价值：Ronacher 区分工具调用所在的 agent 内循环与决定是否重新驱动它的 harness 外循环；**内外是控制层次，不是会话边界**。`/goal` 也可能使用外层继续判定；跨会话持久性须另看调度器。
 
@@ -71,7 +71,7 @@
 **⑧ 环定义原文（✅ Runkle/LangChain，2026-06-16，[evidence-b §问题2.5](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）**
 > "The event-driven loop connects your agent to your ecosystem. An event fires — a new document lands, a schedule triggers, a webhook arrives — and the agent runs. **The agent isn't something you invoke manually**; it's a component running continuously inside a larger system."
 
-**⑨ R1×R3 正交分界句（✅ OpenClaw，[evidence-e §2B](../raw/evidence-2026-09-27-e-cross-feature-observability.md)）**
+**⑨ LE1×LE3 正交分界句（✅ OpenClaw，[evidence-e §2B](../raw/evidence-2026-09-27-e-cross-feature-observability.md)）**
 > "Standing orders define **what** the agent is authorized to do. Automations define **when** it happens."
 - 授权面（what）与触发器（when）是两个独立旋钮——教学时别让学员把"常设授权"和"定时触发"混成一个决定。
 
@@ -84,13 +84,13 @@
 
 - > "**a loop running unattended is also a loop making mistakes unattended**" / "**done is a claim and not a proof.**"（Osmani，[evidence-a D7](../raw/evidence-2026-09-26-a-originators.md)）
 - > "An AI agent is an LLM **wrecking its environment in a loop**."（Willison 转引 Solomon Hykes，[evidence-i Source 4](../raw/evidence-2026-09-27-i-high-influence-control.md)）
-- 放权卡点（Böckeler）：行为面 harness 尚不足以支撑减监督——见 rung-02 dissent 引句；R2→R3 之间最宽的沟。
+- 放权卡点（Böckeler）：行为面 harness 尚不足以支撑减监督——见 rung-02 dissent 引句；LE2→LE3 之间最宽的沟。
 
 ## 反例位（补充指针）
 
 - 无人值守×失控＝最危险的组合：失控实录三案（practices ②）中 194h zombie 孤儿进程等案例即本阶事故面 ⏳ 引句待搬
   （锚 [stop_conditions/02_hard_caps](../stop_conditions/02_hard_caps/README.md) practices ②，不复制）。
-- **传播层未讲无人值守**（[evidence-t](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)）：视频从 goal 直接讲并发，没有介绍持久运行的额外风险；这是一处叙事遗漏，不证明必须先掌握 R3 才能并发。
+- **传播层未讲无人值守**（[evidence-t](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)）：视频从 goal 直接讲并发，没有介绍持久运行的额外风险；这是一处叙事遗漏，不证明必须先掌握 LE3 才能并发。
 
 ## 四、可选方向：编排与元循环
 
@@ -99,4 +99,4 @@
 ## 五、与缺口的关系
 
 feature 级四列空矩阵（授权史/priority 变更/业务阻塞原因/跨 feature 验收，[`digested/07`](../digested/07-控制问题矩阵.md)）
-在本阶**最疼**：人不在场时，这四列是"回来之后还能不能接上"的全部依据。R3 档后续把四列作为观察清单挂靠。
+在本阶**最疼**：人不在场时，这四列是"回来之后还能不能接上"的全部依据。LE3 档后续把四列作为观察清单挂靠。

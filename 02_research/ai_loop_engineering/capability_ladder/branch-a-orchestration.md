@@ -2,7 +2,7 @@
 
 ![支线 A 的并行研究、单线程写入与隔离并发写入三种拓扑及工程边界](figures/branch-a-orchestration.svg)
 
-> **证据判定**：[evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S2/S3/S5 分别展示 Cognition 的写入单线程、Carlini 的分布式文件锁和 Anthropic 的研究编排器；它们**共同支持分工/并行的能力存在**，不共同支持同一写入拓扑或普遍收益。支线可以从有界任务进入，**不要求先完成 R3 的持久无人值守**；应用仍受任务可分性、验收与预算约束。
+> **证据判定**：[evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S2/S3/S5 分别展示 Cognition 的写入单线程、Carlini 的分布式文件锁和 Anthropic 的研究编排器；它们**共同支持分工/并行的能力存在**，不共同支持同一写入拓扑或普遍收益。支线可以从有界任务进入，**不要求先完成 LE3 的持久无人值守**；应用仍受任务可分性、验收与预算约束。
 
 ## 一、交接面（可选分支）
 
@@ -18,7 +18,7 @@
 
 **走一遍真实瓶颈（Carlini 案例）**：最初许多独立 failing tests 可由各 agent 各修一项；到编译 Linux kernel 时，内核编译成了一个巨大的失败目标，16 个 agent 都追同一 bug、互相覆盖，增加并发无收益。作者改用 GCC 作 known-good oracle：大部分文件由 GCC 编译，仅让自研编译器编译一小部分，再收窄出问题文件，让不同 agent 有**可独立工作的失败子集**；最后还要 delta debugging 识别“单独正常、组合失败”的文件对（[Carlini 一手文](https://www.anthropic.com/engineering/building-c-compiler)）。这说明规模上限先受**任务切分与 verifier 质量**制约，不是先受 agent 个数制约。
 
-**教学练习（示意协议，不是产品命令）**：给同一 repo 的两个独立问题开两个隔离工作区，事先写下 `(任务所有者, 可改路径, 基线 commit, 测试命令, merge owner)`。分别提交候选→集成负责人依次合并并重跑回归→保留失败 diff 和成本。若两人都须改同一核心文件，就先串行写入或细分任务，不要把 `git merge` 当自动验收。此练习可在 R1/R2 的有界任务做，**不需要**先让 R3 持久无人值守。
+**教学练习（示意协议，不是产品命令）**：给同一 repo 的两个独立问题开两个隔离工作区，事先写下 `(任务所有者, 可改路径, 基线 commit, 测试命令, merge owner)`。分别提交候选→集成负责人依次合并并重跑回归→保留失败 diff 和成本。若两人都须改同一核心文件，就先串行写入或细分任务，不要把 `git merge` 当自动验收。此练习可在 LE1/LE2 的有界任务做，**不需要**先让 LE3 持久无人值守。
 
 **成本与停止**：worker 的单轮上限不一定覆盖 lead 的再拆分与失败后重派，预算和取消须覆盖**整棵代理树**；测试/build 共用机器时会出现 back pressure，Huntley 特别警告数百子代理同时跑构建（[evidence-b §问题2.4](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）；OpenClaw Task Flow 的取消语义是拒新 child link、待已活跃子任务收敛后结案（[evidence-e §2B](../raw/evidence-2026-09-27-e-cross-feature-observability.md)）。这两者是不同系统的工程检查线索，不是 Carlini 原型的内置保障。
 
@@ -49,7 +49,7 @@ Carlini 的具体隔离/任务锁/合并链与只读研究拓扑，逐字取证�
 **④ 学术构件票（arXiv:2608.21884，2026-08，S6）**
 - 灰色文献综述把 "verifier sub-agents, token budgets" 列为建议构件；其 [全文 §3 O3、§4.1](https://arxiv.org/html/2608.21884v2) 同时声明来源非独立，仓库样本中 verifier 定义可见命中为零。不能把构件清单计为并发写入拓扑或工程普及的第四张独立票。
 
-## 三、采用前检查（不是 R3→R4 的升阶闸门）
+## 三、采用前检查（不是 LE3→R4 的升阶闸门）
 
 **可分性与可验证性**——Walden 对其案例的界限句：
 > "they all share a property most real software doesn't: **a simple, verifiable success criterion**. Real software requires a system that scales human taste and decision-making."

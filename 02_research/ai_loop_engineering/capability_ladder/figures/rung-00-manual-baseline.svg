@@ -7,7 +7,7 @@
     </style>
   </defs>
   <rect width="1280" height="720" fill="#f7fafc"/>
-  <text x="50" y="50" class="title">R0 · 人逐次发起：轮内可用工具，轮间由人决定</text>
+  <text x="50" y="50" class="title">LE0 · 人逐次发起：轮内可用工具，轮间由人决定</text>
   <text x="50" y="82" class="sub">教学基线：人把“现在开不开下一轮”留在手里，不等于 Agent 没有工具。</text>
 
   <rect x="50" y="112" width="820" height="478" rx="14" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
@@ -63,7 +63,7 @@
   <rect x="900" y="112" width="330" height="478" rx="14" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
   <text x="924" y="148" class="cardTitle" fill="#9a3412">工程注意 / 常见故障</text>
   <text x="924" y="188" class="note">• 工具调用很多，不等于跨轮</text>
-  <text x="942" y="214" class="note">  自主；R0 只看谁开下一轮。</text>
+  <text x="942" y="214" class="note">  自主；LE0 只看谁开下一轮。</text>
   <text x="924" y="258" class="note">• 轮内仍需明确授权与沙箱，</text>
   <text x="942" y="284" class="note">  “人逐次发起”不是无工具。</text>
   <text x="924" y="328" class="note">• 测试结果是反馈，不自动等于</text>
@@ -73,7 +73,7 @@
   <line x1="924" y1="450" x2="1206" y2="450" stroke="#fdba74" stroke-width="2"/>
   <text x="924" y="486" class="label">识别边界</text>
   <text x="924" y="516" class="note">下一轮仍由人按下“开始”：</text>
-  <text x="924" y="544" class="note">尚未交出 R2 的续跑权。</text>
+  <text x="924" y="544" class="note">尚未交出 LE2 的续跑权。</text>
 
   <text x="50" y="622" class="footer">来源短标：rung-00-manual-baseline.md；evidence-b §问题2.2（Claude Code 三种边界）。</text>
   <text x="50" y="650" class="footer">教学抽象 / 示例非同一产品；此图只说明控制关系，不给出跨产品默认配置。</text>

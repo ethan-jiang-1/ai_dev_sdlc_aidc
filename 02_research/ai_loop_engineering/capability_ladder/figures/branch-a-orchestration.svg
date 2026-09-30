@@ -8,7 +8,7 @@
   </defs>
   <rect width="1280" height="720" fill="#f7fafc"/>
   <text x="50" y="50" class="title">支线 A · 多主体编排：三种拓扑并列，不是一个共识方案</text>
-  <text x="50" y="82" class="sub">先问任务是否可分、谁拥有写入、谁合并与验收；可以从有界任务进入，不必先完成 R3。</text>
+  <text x="50" y="82" class="sub">先问任务是否可分、谁拥有写入、谁合并与验收；可以从有界任务进入，不必先完成 LE3。</text>
 
   <rect x="50" y="112" width="820" height="480" rx="14" fill="#ffffff" stroke="#c4b5fd" stroke-width="2"/>
   <text x="75" y="145" class="label">输入 → 决策 → 三种替代拓扑 → 反馈 / 停止</text>

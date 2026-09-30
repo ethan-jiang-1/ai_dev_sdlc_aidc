@@ -8,7 +8,7 @@
     </style>
   </defs>
   <rect width="1280" height="720" fill="#f7fafc"/>
-  <text x="50" y="50" class="title">R2 · 有界目标续跑：条件判停，不替代质量验收</text>
+  <text x="50" y="50" class="title">LE2 · 有界目标续跑：条件判停，不替代质量验收</text>
   <text x="50" y="82" class="sub">人给目标、检查方式和预算；外层检查器决定继续 / 停止 / 升级，真实产出仍由人或独立验收者把关。</text>
 
   <rect x="50" y="112" width="820" height="480" rx="14" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
@@ -23,7 +23,7 @@
 
   <rect x="333" y="178" width="210" height="132" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
   <text x="353" y="207" class="cardTitle" fill="#166534">动作 · 有界迭代</text>
-  <text x="353" y="235" class="body">按 R1 授权执行</text>
+  <text x="353" y="235" class="body">按 LE1 授权执行</text>
   <text x="353" y="262" class="small">工具动作 / 修复 / 测试</text>
   <text x="353" y="288" class="small">产出证据与副作用</text>
   <path d="M543 244 H584" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>

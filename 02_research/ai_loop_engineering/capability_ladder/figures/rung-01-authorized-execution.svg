@@ -7,7 +7,7 @@
     </style>
   </defs>
   <rect width="1280" height="720" fill="#f7fafc"/>
-  <text x="50" y="50" class="title">R1 · 有界执行：把“这一动作能否执行”交给授权门</text>
+  <text x="50" y="50" class="title">LE1 · 有界执行：把“这一动作能否执行”交给授权门</text>
   <text x="50" y="82" class="sub">单轮内减少逐动作提示；人仍定动作、目标、有效期，并保留高风险审批与中断。</text>
 
   <rect x="50" y="112" width="820" height="480" rx="14" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>

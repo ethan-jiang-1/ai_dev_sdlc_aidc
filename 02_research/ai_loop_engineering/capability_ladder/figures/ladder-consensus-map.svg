@@ -10,7 +10,7 @@
   <text x="1155" y="171" font-size="18" font-weight="bold" fill="#fff">不能推出什么</text>
 
   <rect x="60" y="204" width="1380" height="126" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
-  <text x="86" y="248" font-size="22" font-weight="bold" fill="#1e40af">R1 有界执行</text>
+  <text x="86" y="248" font-size="22" font-weight="bold" fill="#1e40af">LE1 有界执行</text>
   <text x="86" y="283" font-size="16" fill="#475569">单次运行 · 主线</text>
   <text x="370" y="245" font-size="17" fill="#334155">Cursor 审批面</text>
   <text x="370" y="279" font-size="17" fill="#334155">Claude Code auto mode / Codex</text>
@@ -20,7 +20,7 @@
   <text x="1155" y="278" font-size="16" fill="#475569">产出质量与安全</text>
 
   <rect x="60" y="341" width="1380" height="126" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
-  <text x="86" y="386" font-size="22" font-weight="bold" fill="#1e40af">R2 有界续跑</text>
+  <text x="86" y="386" font-size="22" font-weight="bold" fill="#1e40af">LE2 有界续跑</text>
   <text x="86" y="422" font-size="16" fill="#475569">按目标条件 · 主线</text>
   <text x="370" y="384" font-size="17" fill="#334155">Claude Code /goal</text>
   <text x="370" y="418" font-size="17" fill="#334155">Osmani 实践；quickstart 反例</text>
@@ -30,7 +30,7 @@
   <text x="1155" y="418" font-size="16" fill="#475569">所有驱动都会自动判停</text>
 
   <rect x="60" y="478" width="1380" height="126" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
-  <text x="86" y="524" font-size="22" font-weight="bold" fill="#1e40af">R3 定时唤醒</text>
+  <text x="86" y="524" font-size="22" font-weight="bold" fill="#1e40af">LE3 定时唤醒</text>
   <text x="86" y="560" font-size="16" fill="#475569">会话内 / 跨会话 · 主线</text>
   <text x="370" y="522" font-size="17" fill="#334155">Claude Code /loop 与云调度</text>
   <text x="370" y="556" font-size="17" fill="#334155">Cursor /loop；Runkle event-driven</text>
@@ -47,7 +47,7 @@
   <text x="830" y="660" font-size="17" fill="#334155">可分工与并行；须控制</text>
   <text x="830" y="694" font-size="17" fill="#334155">所有权、冲突及整树预算</text>
   <text x="1155" y="660" font-size="16" fill="#475569">写入单线程为三家共识；</text>
-  <text x="1155" y="694" font-size="16" fill="#475569">必须先掌握 R3</text>
+  <text x="1155" y="694" font-size="16" fill="#475569">必须先掌握 LE3</text>
 
   <rect x="60" y="752" width="1380" height="126" rx="12" fill="#f5f3ff" stroke="#c4b5fd"/>
   <text x="86" y="797" font-size="22" font-weight="bold" fill="#6d28d9">支线 B · 自改</text>
@@ -60,6 +60,6 @@
   <text x="1155" y="831" font-size="16" fill="#475569">已有通用安全放行阈值</text>
 
   <text x="70" y="933" font-size="17" font-weight="bold" fill="#9a3412">成熟度红线：</text>
-  <text x="215" y="933" font-size="17" fill="#7c2d12">R3 跨会话、编排写入与核心自改尤其依赖场景与护栏；有案例 ≠ 已普及 ≠ 已证净收益。</text>
+  <text x="215" y="933" font-size="17" fill="#7c2d12">LE3 跨会话、编排写入与核心自改尤其依赖场景与护栏；有案例 ≠ 已普及 ≠ 已证净收益。</text>
   <text x="70" y="973" font-size="15" fill="#64748b">判定与逐项证据：capability_ladder/00-map.md ｜ 观测 2026-09-30 ｜ arXiv:2608.21884 的来源承袭与样本可见性限制须并列讲。</text>
 </svg>

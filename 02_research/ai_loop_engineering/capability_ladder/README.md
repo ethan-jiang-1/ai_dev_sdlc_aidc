@@ -4,10 +4,10 @@
 
 ## 〇、初衷与定阶纪律
 
-用户 2026-09-30 要求：从学习者角度，一层层解释“把什么决定交给循环、需要补什么护栏”。2026-09-30 review 后区分**主线交接**与**高阶能力分支**，避免把五种不同维度硬排成人人必经的成熟度模型。
+本区从学习者角度，一层层解释“把什么决定交给循环、需要补什么护栏”。区分**主线交接**与**高阶能力分支**，避免把不同维度硬排成人人必经的成熟度模型。
 
-- **主线**：R0 人逐次提示（基线）→ R1 单次运行的有界执行 → R2 有界目标续跑 → R3 按时/按事件唤醒；R3 内把会话内定时与跨会话持久运行分开。
-- **两条高阶分支**：原 R4 多主体编排、原 R5 改进循环本身。两者都有一手机制与场景案例，但不是 R3 后自动解锁的第四、第五个必经台阶；高阶**不要求学员掌握**，展示趋势、适用域与未成熟之处即可。
+- **主线**：LE0 人逐次提示（基线）→ LE1 单次运行的有界执行 → LE2 有界目标续跑 → LE3 按时/按事件唤醒；LE3 内把会话内定时与跨会话持久运行分开。
+- **两条高阶分支**：支线 A 多主体编排、支线 B 改进循环本身。两者都有一手机制与场景案例，可从有界任务进入；高阶**不要求学员掌握**，展示趋势、适用域与未成熟之处即可。
 - **定阶门槛**：独立一手来源能支持某个**交接面存在**，才称“机制已证”；还须单独判断适用场景、运行风险、通用成熟度和效果。对照表的语义落位不计独立票；同机构作者、转述链、未经原声核验的视频不重复计票。不得用“有两个案例”推出普遍最佳实践。
 - **不叫成熟度模型、不按 N 轮切级**：阶段是教案，实际授权由任务风险、可逆性和验收成本决定，可以随时退回。学员学会选择**合适的**自主度，比爬到最高阶更重要。
 
@@ -27,16 +27,16 @@
 
 | 位置 | 学员回答“交出什么” | 教学定位 | 必须带走的限制 |
 |---|---|---|---|
-| **R0 人逐次提示** | 人选下一件事、逐次发起与检查 | 起点，非能力阶 | 一次请求中的 Agent 仍可自行读写与用工具 |
-| **R1 有界执行** | 单次运行中，授权面内的工具动作 | 主线 · 一手机制已证 | 动作/目标/时间授权不同；保留高风险审批和中断 |
-| **R2 目标续跑** | 每次结束后是否继续、下一轮怎样推进 | 主线 · 一手机制已证 | 完成条件须可观察；检查完成不等于验收质量 |
-| **R3 定时/事件唤醒** | 什么时候再次起跑 | 主线 · 一手机制已证；持久无人值守为高风险场景 | `/loop` 会话内，云端调度跨会话；后者需状态、取消、上限、升级 |
-| **支线 A（原 R4）多主体编排** | 谁分工、并行、汇总 | 高阶方向 · 部分场景已落地，非必修 | 写入拓扑未收敛；可验证性、所有权与整树预算 |
-| **支线 B（原 R5）改进循环本身** | 谁提议/应用 harness 改动 | 高阶方向 · 工具描述等外围改动有局部实例，核心自改未成熟 | 人改、代理建议、受控应用和改写判据不可混为一谈 |
+| **LE0 人逐次提示** | 人选下一件事、逐次发起与检查 | 起点，非能力阶 | 一次请求中的 Agent 仍可自行读写与用工具 |
+| **LE1 有界执行** | 单次运行中，授权面内的工具动作 | 主线 · 一手机制已证 | 动作/目标/时间授权不同；保留高风险审批和中断 |
+| **LE2 目标续跑** | 每次结束后是否继续、下一轮怎样推进 | 主线 · 一手机制已证 | 完成条件须可观察；检查完成不等于验收质量 |
+| **LE3 定时/事件唤醒** | 什么时候再次起跑 | 主线 · 一手机制已证；持久无人值守为高风险场景 | `/loop` 会话内，云端调度跨会话；后者需状态、取消、上限、升级 |
+| **支线 A 多主体编排** | 谁分工、并行、汇总 | 高阶方向 · 部分场景已落地，非必修 | 写入拓扑未收敛；可验证性、所有权与整树预算 |
+| **支线 B 改进循环本身** | 谁提议/应用 harness 改动 | 高阶方向 · 工具描述等外围改动有局部实例，核心自改未成熟 | 人改、代理建议、受控应用和改写判据不可混为一谈 |
 
 **教学收口**：前三个交接问题可以循序演示；高阶展示“这条路往哪走、哪些场景可用、我们还不知道什么”，不是保证学完就能无人值守地并发自改。[00-map](00-map.md) 列各档一手锚点、分歧与效果边界。
 
-**另一条轴**：上述 R0→R3 只解释交出哪些**控制决定**，不按“结果有多可靠”升阶。尤其 R3 的静默任务要另查目标可观察性、证据完整性、裁判可错性、外层预算及取消/接手。先读 [00-map「横切读法」](00-map.md) 的判定，再用 [结果可证成性交接页](result-reliability-interface.md) 对具体任务逐项检查；goal/eval 如何构造仍在 [agent_goal_eval](../../agent_goal_eval/README.md)，不是本区另立一套方法论。
+**结果可信闭环**：主线 LE0→LE3 只解释交出哪些**控制决定**；结果放行还须接通“目标 → 证据 → 裁决 → 停机/交接 → 后验复核”。尤其 LE3 的静默任务要查目标可观察性、证据完整性、裁判可错性、外层预算及取消/接手。先读 [00-map「结果可信闭环」](00-map.md) 的判定，再用 [结果可信闭环交接页](result-reliability-interface.md) 对具体任务逐项检查；goal/eval 如何构造仍在 [agent_goal_eval](../../agent_goal_eval/README.md)。
 
 ### 技术走读索引
 
@@ -44,10 +44,10 @@
 
 | 位置 | 运行时重点 | 独立机制图 | 详细档案 |
 |---|---|---|---|
-| R0 起点 | 人手动开轮；轮内仍可用工具 | [R0 图](figures/rung-00-manual-baseline.svg) | [R0 逐次发起](rung-00-manual-baseline.md) |
-| R1 有界执行 | 工具请求 → allow / sandbox / ask / deny | [R1 图](figures/rung-01-authorized-execution.svg) | [R1 授权面](rung-01-authorized-execution.md) |
-| R2 有界续跑 | goal + grader → 继续 / 达成 / 不可能；另有质量验收 | [R2 图](figures/rung-02-goal-driven.svg) | [R2 判停链](rung-02-goal-driven.md) |
-| R3 再次唤醒 | session 内 `/loop` 与跨会话 scheduler 各自持有何种状态 | [R3 图](figures/rung-03-time-event-driven.svg) | [R3 调度链](rung-03-time-event-driven.md) |
+| LE0 起点 | 人手动开轮；轮内仍可用工具 | [LE0 图](figures/rung-00-manual-baseline.svg) | [LE0 逐次发起](rung-00-manual-baseline.md) |
+| LE1 有界执行 | 工具请求 → allow / sandbox / ask / deny | [LE1 图](figures/rung-01-authorized-execution.svg) | [LE1 授权面](rung-01-authorized-execution.md) |
+| LE2 有界续跑 | goal + grader → 继续 / 达成 / 不可能；另有质量验收 | [LE2 图](figures/rung-02-goal-driven.svg) | [LE2 判停链](rung-02-goal-driven.md) |
+| LE3 再次唤醒 | session 内 `/loop` 与跨会话 scheduler 各自持有何种状态 | [LE3 图](figures/rung-03-time-event-driven.svg) | [LE3 调度链](rung-03-time-event-driven.md) |
 | 支线 A 编排 | 不同写入拓扑、合并与树级成本/取消 | [A 图](figures/branch-a-orchestration.svg) | [A 拓扑案例](branch-a-orchestration.md) |
 | 支线 B 元循环 | 规则/判据改动权限幅度、提案与独立评估 | [B 图](figures/branch-b-meta-loop.svg) | [B 改写边界](branch-b-meta-loop.md) |
 
@@ -66,9 +66,9 @@
 |---|---|
 | 本 README | 初衷、分工、教学路线、待办 |
 | [00-map](00-map.md) | 本区唯一的分层/证据判定与分歧边界 |
-| [结果可证成性交接页](result-reliability-interface.md) | 控制交接与目标/证据/裁判/外层预算/跨次责任如何联调，不是新的阶档或 goal/eval 判读权威 |
-| [R0 基线](rung-00-manual-baseline.md) | 人手动逐次发起的可演示对照，不是无工具 Agent |
-| `rung-01..03-*.md` | 主线三档：R1 有界执行、R2 有界目标续跑、R3 定时/事件唤醒 |
-| [branch-a-orchestration](branch-a-orchestration.md) / [branch-b-meta-loop](branch-b-meta-loop.md) | 可选高阶方向：编排与改进循环本身，非 R3 后必经阶 |
-| 六张档内机制图（[R0](figures/rung-00-manual-baseline.svg)、[R1](figures/rung-01-authorized-execution.svg)、[R2](figures/rung-02-goal-driven.svg)、[R3](figures/rung-03-time-event-driven.svg)、[A](figures/branch-a-orchestration.svg)、[B](figures/branch-b-meta-loop.svg)） | 每档自足呈现运行流程、交接决定与工程风险，细节回档案/证据源 |
+| [结果可信闭环交接页](result-reliability-interface.md) | 将目标、证据、裁决、停机/交接、后验复核接成一条可检查的放行链；goal/eval 的构造判读仍在其专项 |
+| [LE0 基线](rung-00-manual-baseline.md) | 人手动逐次发起的可演示对照，不是无工具 Agent |
+| `rung-01..03-*.md` | 主线三档：LE1 有界执行、LE2 有界目标续跑、LE3 定时/事件唤醒 |
+| [branch-a-orchestration](branch-a-orchestration.md) / [branch-b-meta-loop](branch-b-meta-loop.md) | 可选高阶方向：编排与改进循环本身，非 LE3 后必经阶 |
+| 六张档内机制图（[LE0](figures/rung-00-manual-baseline.svg)、[LE1](figures/rung-01-authorized-execution.svg)、[LE2](figures/rung-02-goal-driven.svg)、[LE3](figures/rung-03-time-event-driven.svg)、[A](figures/branch-a-orchestration.svg)、[B](figures/branch-b-meta-loop.svg)） | 每档自足呈现运行流程、交接决定与工程风险，细节回档案/证据源 |
 | [主图](figures/capability-ladder.svg) / [证据图](figures/ladder-consensus-map.svg) | 前者讲交接路径与分支，后者讲证据覆盖及未成熟之处；图是 00-map 的视图，不是第二权威 |

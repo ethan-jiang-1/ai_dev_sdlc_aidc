@@ -7,11 +7,11 @@
     </style>
   </defs>
   <rect width="1280" height="720" fill="#f7fafc"/>
-  <text x="50" y="50" class="title">R3 · 按时 / 按事件唤醒：交出 when，不等于交出 what</text>
+  <text x="50" y="50" class="title">LE3 · 按时 / 按事件唤醒：交出 when，不等于交出 what</text>
   <text x="50" y="82" class="sub">先教 session-scoped 的本地 /loop，再单列 cloud scheduled 的持久任务；两者都必须能取消、限额、接手。</text>
 
   <rect x="50" y="112" width="820" height="480" rx="14" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
-  <text x="75" y="145" class="label">正交控制轴：what（R1 授权 + R2 目标） × when（时间 / 事件触发）</text>
+  <text x="75" y="145" class="label">正交控制轴：what（LE1 授权 + LE2 目标） × when（时间 / 事件触发）</text>
 
   <rect x="78" y="175" width="164" height="80" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
   <text x="98" y="205" class="cardTitle" fill="#1e40af">what · 人定</text>
@@ -83,9 +83,9 @@
   <text x="924" y="318" class="note">• 取消必须传播：调度器停止</text>
   <text x="942" y="344" class="note">  派发，既有 worker 也要退出。</text>
   <text x="924" y="384" class="note">• scheduler 只回答 when；动作</text>
-  <text x="942" y="410" class="note">  what 仍由 R1 授权门控制。</text>
+  <text x="942" y="410" class="note">  what 仍由 LE1 授权门控制。</text>
   <text x="924" y="450" class="note">• 定时器存在不等于质量完成；</text>
-  <text x="942" y="476" class="note">  R2 判停与人工验收仍独立。</text>
+  <text x="942" y="476" class="note">  LE2 判停与人工验收仍独立。</text>
   <line x1="924" y1="500" x2="1206" y2="500" stroke="#fdba74" stroke-width="2"/>
   <text x="924" y="532" class="label">停止检查</text>
   <text x="924" y="558" class="note">状态、取消、硬上限、审批、</text>
