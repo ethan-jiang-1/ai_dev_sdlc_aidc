@@ -8,6 +8,19 @@
 修改对象从产物转向产生产物的系统；教学按**人亲自改 → 代理给提案、人审核 → 代理在受限外围件上应用、独立验证 → 代理改写核心规则/判据**讲清幅度。前两者有明确机制，工具描述等外围改动有案例；最后一项仍是高风险研究方向，不默认放权。Morris 的分界句说明“人改 harness”，他的 flywheel 才进一步讨论“代理参与管理/改进”。
 > "The 'in the loop' way is to fix the artefact … The 'on the loop' way is to **change the harness that produced the artefact** so it produces the results we want."
 
+### 技术剖面：这次改的是“产物”，还是“制造产物的规则”
+
+| 交接幅度 | 输入与实际改动对象 | 谁能应用 | 可核出处和限制 |
+|---|---|---|---|
+| **人修 harness** | 重复出现的失败 trace → 人改规则、工具描述、测试门或 linter | 人 | Böckeler 明确说人的工作是反复失败后改 feedforward/feedback controls；OpenAI 把无效文档规则升为代码约束（下文 ③/⑤） |
+| **代理提案、人审核** | Agent 分析 trace → 产出配置候选和理由 | 人决定采纳、何时部署 | Runkle 的 hill-climbing 描述方向；Morris “might … automatically approved” 是未来式，不能算已发布自动放行（[evidence-x B1–B2](../raw/evidence-2026-09-30-x-ladder-branches-detail.md)） |
+| **外围件局部自动修改** | 工具测试代理调用失败的 MCP 工具→改该工具的**描述文本** | 案例中代理改描述；部署和独立验收链未在原句交代 | Anthropic 报以后使用新描述的 agent 完成时间下降 40%，只属内部局部案例；不等于改判据（[evidence-x B3](../raw/evidence-2026-09-30-x-ladder-branches-detail.md)） |
+| **自动改评估器/核心循环** | 拟改 grader rubric、授权策略、停止条件或核心调度 | **不默认授权** | 这些对象掌控“成功/允许/何时停”的定义；目前这里的来源不足以证实通用安全效果 |
+
+**走一遍低风险演练（教学设计，不是上述厂商的端到端产品）**：某 MCP 工具连续返回参数错误→保留失败 trace 与旧描述→让代理只提出**新工具描述**的候选 diff→先由人核对未扩大工具权限、未偷改 grader→用同一组隔离任务做 A/B 对比，独立检查调用成功率、错误类别、额外成本→只有通过事先定义的准入规则才发布；未过则沿旧版本继续。不要让“提案 agent 自己说新描述更好”成为验收。这个演练的比较、审批与旧版回退是**建议配置的控制协议**，不是 Anthropic 40% 报告声称包含的步骤。
+
+**结构参考，不是 coding-agent 自改的成功证明**：DSPy GEPA 明确分开 proposal 的 reflection LM 与 evaluation 的 task model；可用 `max_metric_calls` 作计量调用上限，并留存每个 candidate、parent 与逐样本 score 的 `detailed_results`。保留旧候选为撤回新提案提供记录基础，但不等于生产环境有自动 rollback（[DSPy 官方文档及 evidence-x B4](../raw/evidence-2026-09-30-x-ladder-branches-detail.md)）。**最危险的闭环**是同时允许代理改规则和判定自己是否改得好：分离提案与评估、冻结验收样本并审计变化是工程上的必要检查，而不是“四条护栏齐备就可放行核心自改”的证明。
+
 ## 二、支撑条目（原文与成熟度分开）
 
 **① 定义句（Runkle/LangChain，2026-06-16，[evidence-a §3 C1](../raw/evidence-2026-09-26-a-originators.md)）**

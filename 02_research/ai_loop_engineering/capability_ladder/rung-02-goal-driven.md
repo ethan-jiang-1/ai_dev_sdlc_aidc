@@ -1,10 +1,39 @@
 # R2 有界目标续跑（主线 · 机制已证）——交出下一轮的启动与路径选择
 
+![R2 目标执行、完成检查、续跑出口与人工质量验收分离](figures/rung-02-goal-driven.svg)
+
 > **交接面**：人给出目标、检查方式和资源边界；系统在一轮结束后根据条件决定是否继续、下轮怎样推进。人保留目标措辞、实际产出验收及随时中断权；独立检查约定条件**不等于**独立判断实现是否足够好。
 
 ## 一、定义（跨源最小交集）
 
 入口是有界目标＋完成条件；循环以 goal 作为续跑/停止依据多轮自驱。条件应说明**可观察终态、检查方式和不该改变的边界**；检查可以由独立模型完成，不能把其 verdict 与独立质量验收画等号。这是本阶与 R1 的关键增量。
+
+### 技术剖面：谁真正按下“下一轮”
+
+```text
+人写 goal（终态 + 检查方式 + 不得更改的约束 + 轮/时间预算）
+  → 执行一轮（工具仍按 R1 授权）
+  → 本轮结束时，由外层完成检查器读取可见证据并给出 verdict
+  → 未达成：反馈下一轮；已达成：停；不可能：停并升级
+  → 人/独立验收者检查真实行为与副作用
+```
+
+上图是 [Claude Code `/goal` 规格](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)的**教学抽象**，不是“所有 Agent 的通用实现”。其三值为 `Not yet met / Met / Impossible`；在执行没有进展（连续若干 turn 没有工具调用等）时亦可停止；turn/time 子句用于设上限。`/goal` 是当前会话条件，Stop hook 则可由设置作用到其范围内的会话并用脚本或提示判断；auto mode 只移除**轮内**审批提示，不会替 `/goal` 发起下一轮（[evidence-b §问题2.2](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）。
+
+**走一遍（示意日志，不是产品跑出来的结果）**：采用下文 ⑧ 的 `Dashboard.tsx` Lighthouse 目标作为规格，预先约定 `score ≥ 92`、`LCP < 1.8s`、hooks 的 public API 不变、两次无改善或十轮即停。第一轮跑 Lighthouse 未达标→把指标反馈给执行者而非宣告完成；第二轮指标达标但 hooks 的 public API 改了→**只有约束检查能从 transcript/工具输出看到该违例**，检查器才应拒判 `Met`，否则可能误报完成；修复后指标与不变式同时满足→检查器可给 `Met`，**人还要检查**用户体验与是否测错页面。实际分数和轮次仅为教学假设，不能当作品效果报告（原命令及各约束见 ⑧、[evidence-a Osmani 原文](../raw/evidence-2026-09-26-a-originators.md)）。
+
+**另一套真实 API，不要与 `/goal` 混用**：Anthropic Managed Agents 的 `user.define_outcome` 要求提供 Markdown rubric，可内联或经 Files API 复用；单独 context 的 grader 按 criterion 给反馈，再送回执行 agent 迭代（[evidence-w W5](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md)）。会话先 `sessions.create(agent, environment_id)`，后送 `user.message` 才开工；已送事件 `processed_at=null` 只代表**在排队**，不是已执行。会话有 `idle / running / rescheduling / terminated`，其中预算暂停是 `idle` 而非完成或销毁（[evidence-w W3](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md)）。
+
+**可核参数示例**（仅属 Managed Agents）：`budget={"type":"limit","max_list_cost":{"amount":"125","currency":"USD"}}` 的 `"125"` 是**125 美分，即 $1.25**。触顶 `stop_reason=budget_reached`，在途请求仍可稍超额完成，新 `user.message` 得 400；提高/移除预算可恢复原 session（[evidence-w W6](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md)）。预算是**花费暂停阀**，不是 `Met` 的同义词；rubric grader 也不同于 R1 的工具审批器，更不是无条件的业务验收者。
+
+| 你看到的信号 | 它说明什么 | 它**不**说明什么 |
+|---|---|---|
+| 测试命令退出码 0 | 指定命令在该环境成功 | 测试覆盖真实需求或无回归 |
+| 独立检查器返回 `Met` | 约定条件在其可见证据内成立 | 实际用户已经验收 |
+| 进度文件显示 `passes == total` | 被记录的项目均标记通过 | 驱动进程必然据此停机 |
+| 轮数/时间耗尽 | 预算到边界，必须停或交人 | 任务自动已完成 |
+
+**最硬的反向实验**：Anthropic 的 [官方 quickstart 源码](../raw/evidence-2026-09-28-l-quickstart-code.md) 里，`progress.py` 会打印 `passing/total`，但 `agent.py` 没有 `passing == total` 的退出分支；成功时 `run_agent_session` 仍回 `continue`，`--max-iterations` 默认 `None`（无限），错误也换新 session 重试。单看进度条会误以为装了 R2 停机闸门；应追到**驱动层的 `break`/return 路径**。这是一个 demo 的源码现象，不外推为 `/goal` 的实现或 Anthropic 生产系统。
 
 ## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）
 

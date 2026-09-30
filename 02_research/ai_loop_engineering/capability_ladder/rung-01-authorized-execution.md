@@ -1,10 +1,40 @@
 # R1 有界执行（主线 · 机制已证）——交出单次运行中授权面内的工具动作
 
+![R1 单轮工具调用经授权门、沙箱或人工审批的控制关系](figures/rung-01-authorized-execution.svg)
+
 > **交接面**：人不再逐条批准授权面内的动作，改为划定**动作、目标与有效期**；面外动作拒绝或升级。人仍可中断并保留高风险动作审批。R0 中一次请求的 agent 也能调用工具：本阶的增量是**授权方式**，不是首次拥有工具。
 
 ## 一、定义（跨源最小交集）
 
-循环在**一轮之内**可以自主调用工具、执行命令、读写文件；失败自动重试；人的介入点从"每次动作"后移到"授权规则"。
+循环在**一轮之内**可依授权调用工具、执行命令、读写文件，收到失败反馈后可调整路径；人的介入点从“逐动作批准”后移到“设定与监督授权规则”，但高风险动作仍可能需要当场确认。
+
+### 技术剖面：谁拦住一条工具调用
+
+```text
+用户任务 + 已授权范围
+  → agent 提议 tool(name, args)
+  → 工具/命令策略检查：显式许可？项目可信？沙箱能约束？动作危险？
+  → 自动执行 | 放入沙箱 | 请求审批/修改 | 拒绝并返回工具结果
+  → agent 消化结果、换安全路径或在同一轮继续
+  → 本轮结束（不会仅因 auto mode 自动再开下一轮）
+```
+
+这是一张**跨产品教学流程图，不是某产品原样代码**。不同实现不能拼成一份默认配置：Cursor 对 Shell/MCP/Fetch 采用 allowlist→sandbox→classifier/人工的三级处置（[evidence-u S4a](../raw/evidence-2026-09-30-u-post-june-kols.md)）；Codex 固定版本的 `exec_policy.rs` 将危险命令、沙箱、项目信任和审批策略映射到 `Skip / NeedsApproval / Forbidden`，`Never` 对本需问人的操作可能变成**拒绝而非放行**（[evidence-f Source 1](../raw/evidence-2026-09-27-f-autonomy-gates.md)）。Claude Code auto mode 拒绝动作会作为工具结果返回，连续 3 次或累计 20 次拒绝便停机升级；这两个数字是**动作拒绝预算，不是工作轮数上限**（[evidence-b §4b](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）。
+
+**走一遍（示意任务：在一个受限仓库内修复测试）**：
+
+| 提议动作 | 规则应区分什么 | 学员实际查看什么 |
+|---|---|---|
+| 读取目标文件、跑定向测试 | 若策略显式许可或沙箱能拦住越界，则可少问人；*不是*这两个命令天然安全 | 调用参数、工作目录、实际沙箱、标准输出/退出码 |
+| 修改指定文件后再测 | 写入路径、文件范围是否仍属授权目标 | diff 是否只触及约定文件；测试失败有没有被掩盖 |
+| `git commit` / `git push` | “准许编辑”不等于“准许提交”；一次 push 不等于永久 push 许可 | 动作是否再次请求明确授权、目标分支与远端 |
+| 提议被拒 | Claude auto mode 的例子是拒绝回传并寻找安全替代，而非换种拼写绕过 | 拒绝原因、后续动作、拒绝计数、能否升级给人 |
+
+后三行体现的授权继承失败有第一人称事故报告（[evidence-f Source 4](../raw/evidence-2026-09-27-f-autonomy-gates.md)），表格是**练习时的检查法**，不声称各产品默认都采取同一策略。可以在低风险、可回滚的练习仓库中故意让一个面外动作请求审批，核对记录中是否真的经历了 `propose → decision → tool result`，不要拿“最终测试通过”冒充审批通过。
+
+**再看一个实配置边界**：Cursor 官方 [Run Modes 文档（evidence-w W1）](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md) 明确 `~/.cursor/permissions.json` 与项目 `.cursor/permissions.json` 管 Auto-review 倾向批准/拦截的规则，而 `sandbox.json` 管沙箱命令能访问的路径和网络；这是**策略偏好与实际隔离的两层**。同页 `Run Everything` 是每个 tool call 自动运行，**无 sandbox、无 classifier**；Auto-review 官方直说 “is not a security boundary”。故不要用宽泛 allow 规则代替真正的执行隔离，更不能把 Managed Agents worker 的 `--workdir` 当 shell 全局沙箱：其官方说明文件工具路径限制**不约束 bash**（[evidence-w W8](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md)）。这些均为各产品自己的语义，不混作同一套默认值。
+
+**常见错觉**：把“权限提示减少”当成“质量有人验”。R1 的门只判**能否做这个动作**，不判变更对不对；若一轮结束还需人说“继续”，就尚未交出 R2 的续跑权（[evidence-b §问题2.2](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）。
 
 ## 二、支撑条目与回源待办（⏳ 条目不计入支撑）
 
@@ -13,7 +43,7 @@
   > "Auto-review applies to Shell, MCP, and Fetch tool calls. **Allowlisted calls run immediately**, and **calls that can be sandboxed run in the sandbox**. **All other agent actions go to a classifier subagent** that decides whether to allow the call, try a different approach, or ask for your approval."
   > "Auto-review is a new run mode that allows Cursor to work for longer with fewer approval prompts and safer execution."
 - 设置路径：Settings > Cursor Settings > Agents > Approvals & Execution；分类子代理可被用户指令 steering。
-- **核销**：evidence-t §1 的 "Run Mode/Auto review/Command Allowlist" 三名词真实存在；"Run Everything""File Deletion Protection" 仍未在本页出现（⏳ 待 run-modes docs 复核：cursor.com/docs/agent/security/run-modes）。
+- **核销**：evidence-t §1 的 "Run Mode/Auto review/Command Allowlist" 三名词在 changelog 可见；`Run Everything` 已由 [官方 Run Modes docs（evidence-w W1）](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md) 证实，且无 sandbox/classifier；`File Deletion Protection` 在已核页面仍未确认（⏳，不能引用为已证配置）。
 - **界限价值**：官方把授权面切成**三级处置**（allowlist 直行 / 沙箱内跑 / 分类器裁决→人）——这正是"授权面"不是开关而是**分级处置表**的最好说明。
 
 **③ 本仓自证（DSH 授权面即此阶实现）**——指针：[evidence-g](../raw/evidence-2026-09-27-g-dsh-control-surface.md)（沙箱模式/审批策略即 R1 授权面的运行实例）。

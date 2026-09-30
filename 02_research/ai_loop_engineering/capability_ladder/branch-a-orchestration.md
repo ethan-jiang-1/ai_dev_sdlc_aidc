@@ -6,6 +6,22 @@
 
 人把可分的任务交给多个主体，另设分工、资源隔离、合并与验收机制。并发读、并发写、集中编排和分布协调是不同方案；人必须为重叠写入与结果冲突指定负责人。高阶不要求每位学员掌握，展示可用场景、成本与失败模式即可。
 
+### 技术剖面：三个不同拓扑，不能拿同一张“多代理图”代替
+
+| 拓扑与任务 | 调度/共享什么 | 写入与合并在哪里 | 该观察到的失败 |
+|---|---|---|---|
+| **Anthropic 研究编排器**：并行查不同问题 | lead agent 拆任务、workers 并行检索，lead 汇总；简单事实查询用 1 个 agent/3–10 次工具，比较任务可用 2–4 个（[evidence-u S5](../raw/evidence-2026-09-30-u-post-june-kols.md)） | 各 worker 回传研究材料，由 lead 综合；**不是**多人同时改同一仓库 | 50 个 subagents 查简单问题、无来源时无限搜；研究内部 eval 的 +90.2% 不外推编码域 |
+| **Cognition 受约束写入**：多方供分析 | manager 分解、children 提供判断或候选 | 它推荐把**写操作保持单线程**，由拥有最终写权的主体综合后行动（[evidence-u S2](../raw/evidence-2026-09-30-u-post-june-kols.md)） | 意见多不等于实际代码已被独立验收；这是该团队方案，不是多家共识 |
+| **Carlini 分布式并发改码**：16 个 agents 建 C 编译器 | 每个 Docker agent 把裸仓库 `/upstream` clone 到自己的 `/workspace`，用 `current_tasks/<任务>.txt` 占任务；冲突经 git 同步使后来者换任务（[Carlini 一手文](https://www.anthropic.com/engineering/building-c-compiler)） | 各自 pull/merge/push 到共享 upstream，完成后删 lock；**没有**单独的编排 agent，合并冲突频繁 | 任务锁只防“同一条任务被认领”；改同一底层模块仍会合并冲突，不能把锁等同于安全隔离 |
+
+**走一遍真实瓶颈（Carlini 案例）**：最初许多独立 failing tests 可由各 agent 各修一项；到编译 Linux kernel 时，内核编译成了一个巨大的失败目标，16 个 agent 都追同一 bug、互相覆盖，增加并发无收益。作者改用 GCC 作 known-good oracle：大部分文件由 GCC 编译，仅让自研编译器编译一小部分，再收窄出问题文件，让不同 agent 有**可独立工作的失败子集**；最后还要 delta debugging 识别“单独正常、组合失败”的文件对（[Carlini 一手文](https://www.anthropic.com/engineering/building-c-compiler)）。这说明规模上限先受**任务切分与 verifier 质量**制约，不是先受 agent 个数制约。
+
+**教学练习（示意协议，不是产品命令）**：给同一 repo 的两个独立问题开两个隔离工作区，事先写下 `(任务所有者, 可改路径, 基线 commit, 测试命令, merge owner)`。分别提交候选→集成负责人依次合并并重跑回归→保留失败 diff 和成本。若两人都须改同一核心文件，就先串行写入或细分任务，不要把 `git merge` 当自动验收。此练习可在 R1/R2 的有界任务做，**不需要**先让 R3 持久无人值守。
+
+**成本与停止**：worker 的单轮上限不一定覆盖 lead 的再拆分与失败后重派，预算和取消须覆盖**整棵代理树**；测试/build 共用机器时会出现 back pressure，Huntley 特别警告数百子代理同时跑构建（[evidence-b §问题2.4](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）；OpenClaw Task Flow 的取消语义是拒新 child link、待已活跃子任务收敛后结案（[evidence-e §2B](../raw/evidence-2026-09-27-e-cross-feature-observability.md)）。这两者是不同系统的工程检查线索，不是 Carlini 原型的内置保障。
+
+Carlini 的具体隔离/任务锁/合并链与只读研究拓扑，逐字取证集中在 [evidence-x §1 A1–A2](../raw/evidence-2026-09-30-x-ladder-branches-detail.md)。**停止整个树**不能照抄 Carlini 原型：OpenClaw 的 Task Flow 用 `queued → running → terminal` 记子任务，取消 flow 时先拒绝新的 child link、待活跃子任务收敛后才标 `cancelled`（[evidence-x A3](../raw/evidence-2026-09-30-x-ladder-branches-detail.md)）；它没有证明同一系统还实现了统一全树 dollar/token cap。这里是跨系统的风险检查，不是“已有成套方案”。
+
 ## 二、支撑条目（拓扑并列，不互相代言）
 
 **① 一种受约束的写入方案（Walden/Cognition，2026-04-22，S2）**

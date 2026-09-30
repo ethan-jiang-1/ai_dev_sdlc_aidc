@@ -1,10 +1,37 @@
 # R3 按时/按事件唤醒（主线 · 机制已证）——交出再次起跑的时机
 
+![R3 会话内定时与跨会话持久触发、状态和取消传播](figures/rung-03-time-event-driven.svg)
+
 > **交接面**：时间表或事件源决定**何时再次启动**，人设范围、成本上限、取消方式与升级路径。**会话内定时续跑**（如 Claude Code `/loop`）与**跨会话持久任务**（如云端调度）是不同运行边界：后者才可能在人不在场、会话结束后继续运行。
 
 ## 一、定义（跨源最小交集）
 
 本阶交出启动时机，而不是默认交出会话存续或所有高风险动作的授权。教学先演示会话内唤醒，再讨论跨会话持续运行所需的持久状态、取消传播与可达的人工接手；两者都需界定资源预算。
+
+### 技术剖面：一次唤醒要接上哪些状态
+
+```text
+触发器（固定间隔 / 动态间隔 / 事件）
+  → 判断任务还有效吗？会话还在吗？取消是否已传播？
+  → 读取上次运行的目标、进度与授权范围
+  → 启动受控迭代；写回结果 / 错误 / 新的唤醒计划
+  → 达到目标、硬上限或人工停止时终止后续唤醒
+```
+
+这张图是**跨实现检查清单**：调度只解决 **when**；操作权限仍由 R1 的 **what** 管，达成判断仍要看 R2 的目标与验收。OpenClaw 的原句是 “Standing orders define what the agent is authorized to do. Automations define when it happens.”（[evidence-e §2B](../raw/evidence-2026-09-27-e-cross-feature-observability.md)）。跨会话的“读取进度”还要求另有持久化实现，不能从存在定时器推出来。
+
+| 跑法 | 实际入口与轮间状态 | 切断什么会停 | 源中可核的机制 |
+|---|---|---|---|
+| **会话内定时** | 官方 `/loop 5m check the deploy`：每隔 5 分钟再跑该提示；也可省略间隔，由 Agent 在 1 分钟至 1 小时内动态选择下一次唤醒 | 会话退出便不再靠这个本地循环持续执行 | `ScheduleWakeup` 可用 `stop: true` 取消；未续排时约 20 分钟兜底；遗忘循环 7 天到期，见 [evidence-b §4c 与问题2.2](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) |
+| **跨会话持久任务** | 云端调度把触发配置与执行环境放到可在本地会话之外存活的一侧；持久日志/进度需在后续执行时重读 | 停止一条任务须核对调度器与正在运行的 worker **都收到取消** | `/schedule` 跨 session 的界限见 [evidence-a D10](../raw/evidence-2026-09-26-a-originators.md)；`emitEvent(id,event)`、失败后 `wake(sessionId)` 是 Anthropic Managed Agents 的**另一种**持久执行实现，见 [evidence-b §问题2.5](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) |
+
+**走一遍（示意值班任务，不是实测日志）**：先在开着的会话里设 `/loop 5m check the deploy`。一次迭代见 CI 仍在跑→约定只记录状态/等待，不把“未红”当“部署成功”；下次醒来若 CI 失败→保留错误日志、通知人，而不是擅自扩大为生产推送。要改成夜间云端任务时，必须额外明确重启后从哪读部署 ID、上次结果、谁可取消、同一失败事件重复投递怎么办；**幂等键与防重入是此示例的设计检查，不声称 `/loop` 默认自带**。官方 `/loop` 的过期和兜底也不等于云任务的默认上限。
+
+**跨会话参数长什么样**：[Managed Agents scheduled deployment（evidence-w W7）](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md) 的例子是 `ant apply deployment.md`，声明 `agent`、`environment_id`、`schedule.type: cron`、`expression: "0 20 * * 5"`、`timezone: America/New_York`，还必须有初始 `user.message` 或 `user.define_outcome` 告诉**每次**新 session 干什么；可看 `schedule.upcoming_runs_at` 校验下次起跑点。缺初始事件，即使 cron 正确也不会凭空产生任务。这是 Managed Agents 的 scheduled deployment，不是 Claude Code 本地 `/loop` 语法。
+
+[Cursor Automations（evidence-w W2）](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md) 则把 cron、GitHub/GitLab/Slack/Linear 事件或 webhook 与云端 Agent 绑定；创建时选择工具和 repo（可多 repo/无 repo），保存并激活后 webhook 才生成 URL/API key；cron **可能延迟，但不早于指定时间**。官方还说 fork 发来的 PR 触发会以 “Fork pull requests not supported” 失败。这些是各平台的**具体失败出口**，不能反向套给会话内 `/loop`。
+
+**最容易漏的失败现场**：[孤儿自动化 issue](../raw/evidence-2026-09-28-o-runaway-incidents.md) 中用户关掉自动化，实际 `tmux` worker 却没收到 kill。检查停止不能只看“控制台已关”，要核对 scheduler 不再派新任务、既有 worker 确已退出、外部副作用不再发生；这三项是针对事故的工程化验收问题，不是假定所有产品实现同一种取消协议。
 
 ## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）
 
