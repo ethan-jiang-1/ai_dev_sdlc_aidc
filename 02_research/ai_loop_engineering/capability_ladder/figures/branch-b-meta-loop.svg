@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#6d28d9"/></marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b91c1c"/></marker>
+    <style>
+      .title{font-size:32px;font-weight:700;fill:#102a43}.sub{font-size:18px;fill:#334e68}.label{font-size:16px;font-weight:700;fill:#486581}.cardTitle{font-size:18px;font-weight:700}.body{font-size:16px;fill:#243b53}.small{font-size:16px;fill:#486581}.note{font-size:17px;fill:#243b53}.footer{font-size:16px;fill:#52606d}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="#f7fafc"/>
+  <text x="50" y="50" class="title">支线 B · 改进循环本身：从人改到核心自改仍未成熟</text>
+  <text x="50" y="82" class="sub">四种交接面要分开看；图中箭头是教学对照，不表示一个已运行产品串起全部能力。</text>
+
+  <rect x="50" y="112" width="820" height="480" rx="14" fill="#ffffff" stroke="#c4b5fd" stroke-width="2"/>
+  <rect x="70" y="132" width="780" height="36" rx="8" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1"/>
+  <text x="90" y="156" class="label" fill="#6d28d9">证据拼接警告：机制 / 局部实例 / 优化器结构 / 构想，不是同一产品运行链</text>
+
+  <rect x="78" y="190" width="174" height="210" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="96" y="220" class="cardTitle" fill="#075985">① 人改 harness</text>
+  <text x="96" y="250" class="small">输入：重复失败 trace</text>
+  <text x="96" y="278" class="small">决策：人找出根因</text>
+  <text x="96" y="306" class="small">动作：改规则 / linter</text>
+  <text x="96" y="334" class="small">反馈：下一次失败减少？</text>
+  <text x="96" y="370" class="small" fill="#166534">人保留全部发布权</text>
+  <text x="96" y="390" class="small" fill="#92400e">Böckeler / Morris</text>
+
+  <path d="M252 294 H272" stroke="#6d28d9" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <rect x="272" y="190" width="174" height="210" rx="10" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
+  <text x="290" y="220" class="cardTitle" fill="#6d28d9">② 代理提案 · 人审</text>
+  <text x="290" y="250" class="small">输入：trace / 候选 diff</text>
+  <text x="290" y="278" class="small">决策：人审风险与范围</text>
+  <text x="290" y="306" class="small">动作：采纳 / 拒绝 / 修改</text>
+  <text x="290" y="334" class="small">反馈：独立评估前不发布</text>
+  <text x="290" y="370" class="small" fill="#166534">建议≠自动批准</text>
+  <text x="290" y="390" class="small" fill="#92400e">Runkle / Morris</text>
+
+  <path d="M446 294 H466" stroke="#6d28d9" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <rect x="466" y="190" width="174" height="210" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="484" y="220" class="cardTitle" fill="#166534">③ 外围局部应用</text>
+  <text x="484" y="250" class="small">输入：失败 MCP 工具</text>
+  <text x="484" y="278" class="small">决策：仅限描述文本</text>
+  <text x="484" y="306" class="small">动作：改 tool description</text>
+  <text x="484" y="334" class="small">反馈：独立任务 / A-B</text>
+  <text x="484" y="370" class="small" fill="#166534">局部实例，非核心自改</text>
+  <text x="484" y="390" class="small" fill="#92400e">Anthropic：内部案例</text>
+
+  <path d="M640 294 H660" stroke="#6d28d9" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <rect x="660" y="190" width="174" height="210" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="678" y="220" class="cardTitle" fill="#991b1b">④ 核心自改</text>
+  <text x="678" y="250" class="small">对象：grader / 权限 / stop</text>
+  <text x="678" y="278" class="small">决策：不能默认放权</text>
+  <text x="678" y="306" class="small">动作：高风险研究方向</text>
+  <text x="678" y="334" class="small">反馈：通用安全证据不足</text>
+  <text x="678" y="370" class="small" fill="#991b1b">未成熟，停止 / 升级</text>
+  <text x="678" y="390" class="small" fill="#92400e">不能由局部案例推出</text>
+
+  <path d="M165 400 V438 H510 V472" stroke="#0f766e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="254" y="432" class="small" fill="#115e59">反馈可回到下一次受控试验</text>
+  <rect x="78" y="472" width="310" height="84" rx="10" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="98" y="502" class="cardTitle" fill="#115e59">反馈 / 评估</text>
+  <text x="98" y="530" class="small">独立 task/eval、固定样本、候选 lineage</text>
+
+  <path d="M388 514 H438" stroke="#b91c1c" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+  <rect x="438" y="472" width="396" height="84" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="458" y="502" class="cardTitle" fill="#991b1b">停止 / 回退 · 人保留</text>
+  <text x="458" y="530" class="small">不达标留旧版；核心判据、权限、停止条件不自动改写</text>
+
+  <rect x="900" y="112" width="330" height="480" rx="14" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
+  <text x="924" y="148" class="cardTitle" fill="#9a3412">工程注意 / 常见故障</text>
+  <text x="924" y="186" class="note">• 人改 harness 是已描述机制，</text>
+  <text x="942" y="212" class="note">  不等于代理已获自改权。</text>
+  <text x="924" y="252" class="note">• Morris 的自动批准是 might /</text>
+  <text x="942" y="278" class="note">  future，不能画成已发布能力。</text>
+  <text x="924" y="318" class="note">• Anthropic 40% 是内部工具描述</text>
+  <text x="942" y="344" class="note">  案例，不是 coding-agent 通用效果。</text>
+  <text x="924" y="384" class="note">• GEPA/DSPy 的 proposal/eval、</text>
+  <text x="942" y="410" class="note">  budget、lineage 是结构参考，</text>
+  <text x="942" y="436" class="note">  不是核心自改成功证明。</text>
+  <text x="924" y="476" class="note">• 代理改规则并自评最危险；</text>
+  <text x="942" y="502" class="note">  评估者必须独立、可审计、可回退。</text>
+  <line x1="924" y1="522" x2="1206" y2="522" stroke="#fdba74" stroke-width="2"/>
+  <text x="924" y="550" class="label">人保留</text>
+  <text x="994" y="550" class="note">改动范围、发布、验收、回退与接手</text>
+
+  <text x="50" y="622" class="footer">来源短标：branch-b-meta-loop.md；evidence-x §B1–B4；evidence-c / evidence-u（人改、工具描述案例、优化器结构）。</text>
+  <text x="50" y="650" class="footer">教学抽象 / 示例非同一产品；四个交接面是证据对照，不应拼成“已运行同一产品”。</text>
+</svg>

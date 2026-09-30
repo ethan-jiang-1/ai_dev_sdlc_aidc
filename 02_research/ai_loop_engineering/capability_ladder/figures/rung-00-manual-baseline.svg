@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1e3a8a"/></marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0f766e"/></marker>
+    <style>
+      .title{font-size:32px;font-weight:700;fill:#102a43}.sub{font-size:18px;fill:#334e68}.label{font-size:16px;font-weight:700;fill:#486581}.cardTitle{font-size:21px;font-weight:700}.body{font-size:18px;fill:#243b53}.small{font-size:16px;fill:#486581}.note{font-size:17px;fill:#243b53}.footer{font-size:16px;fill:#52606d}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="#f7fafc"/>
+  <text x="50" y="50" class="title">R0 · 人逐次发起：轮内可用工具，轮间由人决定</text>
+  <text x="50" y="82" class="sub">教学基线：人把“现在开不开下一轮”留在手里，不等于 Agent 没有工具。</text>
+
+  <rect x="50" y="112" width="820" height="478" rx="14" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
+  <text x="75" y="145" class="label">一轮示意 · 输入 → 决策 → 动作 → 反馈 → 人决定下一轮</text>
+
+  <rect x="78" y="174" width="172" height="108" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="98" y="204" class="cardTitle" fill="#075985">输入</text>
+  <text x="98" y="233" class="body">人提出请求</text>
+  <text x="98" y="260" class="small">范围、目标、授权</text>
+
+  <path d="M250 228 H286" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="286" y="174" width="192" height="108" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="306" y="204" class="cardTitle" fill="#1e40af">决策 · 人保留</text>
+  <text x="306" y="233" class="body">开这一轮？</text>
+  <text x="306" y="260" class="small">确定边界与风险</text>
+
+  <path d="M478 228 H514" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="514" y="174" width="216" height="108" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="534" y="204" class="cardTitle" fill="#166534">动作 · Agent 轮内</text>
+  <text x="534" y="233" class="body">读文件 / 跑测试</text>
+  <text x="534" y="260" class="small">可写、重试、调用工具</text>
+
+  <path d="M730 228 H766" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="766" y="174" width="82" height="108" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="782" y="204" class="cardTitle" fill="#92400e">反馈</text>
+  <text x="780" y="233" class="small">结果</text>
+  <text x="780" y="258" class="small">日志</text>
+
+  <path d="M807 282 V334 H382 V364" stroke="#0f766e" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+  <text x="524" y="326" class="small" fill="#0f766e">本轮结束，结果回到人</text>
+
+  <rect x="286" y="364" width="192" height="102" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="306" y="394" class="cardTitle" fill="#1e40af">决策 · 人检查</text>
+  <text x="306" y="423" class="body">再开一轮？</text>
+  <text x="306" y="449" class="small">可改目标或授权</text>
+
+  <path d="M286 415 H190 V510 H270" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="92" y="400" class="small">否 / 停止</text>
+  <rect x="78" y="470" width="192" height="74" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="98" y="501" class="cardTitle" fill="#991b1b">停止</text>
+  <text x="98" y="528" class="small">人结束或交接</text>
+
+  <path d="M478 415 H492 V344 H275 V228 H286" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="88" y="341" class="small" fill="#1e3a8a">是：人再发起一轮</text>
+
+  <rect x="514" y="364" width="334" height="180" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
+  <text x="534" y="396" class="cardTitle" fill="#115e59">人保留的控制面</text>
+  <text x="534" y="427" class="body">• 下一轮何时开始</text>
+  <text x="534" y="456" class="body">• 是否扩大目标或写权限</text>
+  <text x="534" y="485" class="body">• 是否接受真实产出</text>
+  <text x="534" y="514" class="body">• 随时中断、接手、回滚</text>
+
+  <rect x="900" y="112" width="330" height="478" rx="14" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
+  <text x="924" y="148" class="cardTitle" fill="#9a3412">工程注意 / 常见故障</text>
+  <text x="924" y="188" class="note">• 工具调用很多，不等于跨轮</text>
+  <text x="942" y="214" class="note">  自主；R0 只看谁开下一轮。</text>
+  <text x="924" y="258" class="note">• 轮内仍需明确授权与沙箱，</text>
+  <text x="942" y="284" class="note">  “人逐次发起”不是无工具。</text>
+  <text x="924" y="328" class="note">• 测试结果是反馈，不自动等于</text>
+  <text x="942" y="354" class="note">  业务验收；人仍要判断。</text>
+  <text x="924" y="398" class="note">• 忘记在轮间停下，会把模糊</text>
+  <text x="942" y="424" class="note">  目标带入下一轮。</text>
+  <line x1="924" y1="450" x2="1206" y2="450" stroke="#fdba74" stroke-width="2"/>
+  <text x="924" y="486" class="label">识别边界</text>
+  <text x="924" y="516" class="note">下一轮仍由人按下“开始”：</text>
+  <text x="924" y="544" class="note">尚未交出 R2 的续跑权。</text>
+
+  <text x="50" y="622" class="footer">来源短标：rung-00-manual-baseline.md；evidence-b §问题2.2（Claude Code 三种边界）。</text>
+  <text x="50" y="650" class="footer">教学抽象 / 示例非同一产品；此图只说明控制关系，不给出跨产品默认配置。</text>
+</svg>

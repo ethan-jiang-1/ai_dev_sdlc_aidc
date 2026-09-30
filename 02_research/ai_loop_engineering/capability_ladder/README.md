@@ -36,10 +36,25 @@
 
 **教学收口**：前三个交接问题可以循序演示；高阶展示“这条路往哪走、哪些场景可用、我们还不知道什么”，不是保证学完就能无人值守地并发自改。[00-map](00-map.md) 列各档一手锚点、分歧与效果边界。
 
+### 技术走读索引
+
+每档正文先看**本档独立 SVG**，再读“技术剖面”的输入、状态、判断、执行与退出；表格中的任务示意是教学推演，不伪称产品运行日志。具体产品的参数与默认值仍以链接的一手档案为准。
+
+| 位置 | 运行时重点 | 独立机制图 | 详细档案 |
+|---|---|---|---|
+| R0 起点 | 人手动开轮；轮内仍可用工具 | [R0 图](figures/rung-00-manual-baseline.svg) | [R0 逐次发起](rung-00-manual-baseline.md) |
+| R1 有界执行 | 工具请求 → allow / sandbox / ask / deny | [R1 图](figures/rung-01-authorized-execution.svg) | [R1 授权面](rung-01-authorized-execution.md) |
+| R2 有界续跑 | goal + grader → 继续 / 达成 / 不可能；另有质量验收 | [R2 图](figures/rung-02-goal-driven.svg) | [R2 判停链](rung-02-goal-driven.md) |
+| R3 再次唤醒 | session 内 `/loop` 与跨会话 scheduler 各自持有何种状态 | [R3 图](figures/rung-03-time-event-driven.svg) | [R3 调度链](rung-03-time-event-driven.md) |
+| 支线 A 编排 | 不同写入拓扑、合并与树级成本/取消 | [A 图](figures/branch-a-orchestration.svg) | [A 拓扑案例](branch-a-orchestration.md) |
+| 支线 B 元循环 | 规则/判据改动权限幅度、提案与独立评估 | [B 图](figures/branch-b-meta-loop.svg) | [B 改写边界](branch-b-meta-loop.md) |
+
+新增一手细节见 [运行时证据 W](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md) 和 [高阶支线证据 X](../raw/evidence-2026-09-30-x-ladder-branches-detail.md)。图为这些材料的**教学抽象**，不是跨产品 API 的实现图。
+
 ## 三、引用与待办
 
 1. [中文视频文字稿](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md) 属传播侦察级，不进定阶票；未经核对的产品名和“90%”统计不得对外当事实。
-2. [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S4a/S4b 已收 Cursor changelog；`Run Everything` / `File Deletion Protection` 仍待官方 run-modes docs 核验。
+2. [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S4a/S4b 已收 Cursor changelog；官方 [Run Modes docs（evidence-w W1）](../raw/evidence-2026-09-30-w-ladder-runtime-detail.md) 已核 `Run Everything` 与其无 sandbox/classifier 的边界。`File Deletion Protection` 名称仍待单独核验，不作事实引用。
 3. LangGraph supervisor 等可补支线 A 拓扑变体；GEPA/DSPy 属提案-评估结构参考，不作为 coding-agent 自改效果证据；NLAH 原文待核。[arXiv:2608.21884](https://arxiv.org/html/2608.21884v2) 的独立性提醒与仓库挖掘口径已补进 [evidence-u S6](../raw/evidence-2026-09-30-u-post-june-kols.md)，不再只引用摘要。
 4. 阶档内的 `⏳ 逐字待补` 优先补齐或移出支撑条目；高阶实践准入还需效果、回滚与负例，不以来源数替代。
 
@@ -49,6 +64,8 @@
 |---|---|
 | 本 README | 初衷、分工、教学路线、待办 |
 | [00-map](00-map.md) | 本区唯一的分层/证据判定与分歧边界 |
+| [R0 基线](rung-00-manual-baseline.md) | 人手动逐次发起的可演示对照，不是无工具 Agent |
 | `rung-01..03-*.md` | 主线三档：R1 有界执行、R2 有界目标续跑、R3 定时/事件唤醒 |
 | [branch-a-orchestration](branch-a-orchestration.md) / [branch-b-meta-loop](branch-b-meta-loop.md) | 可选高阶方向：编排与改进循环本身，非 R3 后必经阶 |
+| 六张档内机制图（[R0](figures/rung-00-manual-baseline.svg)、[R1](figures/rung-01-authorized-execution.svg)、[R2](figures/rung-02-goal-driven.svg)、[R3](figures/rung-03-time-event-driven.svg)、[A](figures/branch-a-orchestration.svg)、[B](figures/branch-b-meta-loop.svg)） | 每档自足呈现运行流程、交接决定与工程风险，细节回档案/证据源 |
 | [主图](figures/capability-ladder.svg) / [证据图](figures/ladder-consensus-map.svg) | 前者讲交接路径与分支，后者讲证据覆盖及未成熟之处；图是 00-map 的视图，不是第二权威 |

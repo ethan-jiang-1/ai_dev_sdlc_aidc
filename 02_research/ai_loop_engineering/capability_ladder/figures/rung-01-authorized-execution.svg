@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1e3a8a"/></marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b91c1c"/></marker>
+    <style>
+      .title{font-size:32px;font-weight:700;fill:#102a43}.sub{font-size:18px;fill:#334e68}.label{font-size:16px;font-weight:700;fill:#486581}.cardTitle{font-size:20px;font-weight:700}.body{font-size:17px;fill:#243b53}.small{font-size:16px;fill:#486581}.note{font-size:17px;fill:#243b53}.footer{font-size:16px;fill:#52606d}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="#f7fafc"/>
+  <text x="50" y="50" class="title">R1 · 有界执行：把“这一动作能否执行”交给授权门</text>
+  <text x="50" y="82" class="sub">单轮内减少逐动作提示；人仍定动作、目标、有效期，并保留高风险审批与中断。</text>
+
+  <rect x="50" y="112" width="820" height="480" rx="14" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
+  <text x="75" y="145" class="label">单次 tool call 的真实控制关系 · 不是所有产品的统一默认值</text>
+
+  <rect x="78" y="182" width="185" height="94" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="98" y="211" class="cardTitle" fill="#075985">输入</text>
+  <text x="98" y="239" class="body">Agent 提议动作</text>
+  <text x="98" y="263" class="small">tool(name, args)</text>
+  <path d="M263 229 H305" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="305" y="166" width="260" height="126" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="325" y="196" class="cardTitle" fill="#1e40af">决策 · 授权 / 沙箱门</text>
+  <text x="325" y="224" class="body">动作 × 目标 × 有效期</text>
+  <text x="325" y="252" class="small">风险、可信项目、隔离能力</text>
+  <text x="325" y="277" class="small">逐 call 判定，不能继承过宽</text>
+
+  <path d="M565 195 H600" stroke="#16a34a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="600" y="166" width="112" height="56" rx="9" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="625" y="201" class="cardTitle" fill="#166534">allow</text>
+  <path d="M565 229 H582 V264 H600" stroke="#0284c7" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="600" y="236" width="112" height="56" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="625" y="271" class="cardTitle" fill="#075985">sandbox</text>
+  <path d="M565 263 H582 V334 H600" stroke="#d97706" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="600" y="306" width="112" height="56" rx="9" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="630" y="341" class="cardTitle" fill="#92400e">ask</text>
+  <path d="M565 277 H582 V406 H600" stroke="#dc2626" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+  <rect x="600" y="378" width="112" height="56" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="630" y="413" class="cardTitle" fill="#991b1b">deny</text>
+
+  <path d="M712 194 H754" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M712 264 H754" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M712 334 H754" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M712 406 H754" stroke="#b91c1c" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+  <rect x="754" y="166" width="96" height="268" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="762" y="201" class="small" fill="#166534">直接执行</text>
+  <text x="762" y="271" class="small" fill="#075985">沙箱执行</text>
+  <text x="762" y="341" class="small" fill="#92400e">待人确认</text>
+  <text x="762" y="413" class="small" fill="#991b1b">拒绝/换路</text>
+
+  <path d="M802 434 V472 H450 V514" stroke="#0f766e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="580" y="463" class="small" fill="#0f766e">工具结果 / 拒绝原因反馈回 Agent</text>
+  <rect x="305" y="514" width="260" height="54" rx="9" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"/>
+  <text x="337" y="548" class="cardTitle" fill="#115e59">反馈：结果、换路、升级</text>
+
+  <path d="M305 541 H188 V454 H263" stroke="#b91c1c" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+  <text x="92" y="445" class="small" fill="#991b1b">人中断 / 高风险停</text>
+  <rect x="78" y="468" width="185" height="100" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="98" y="498" class="cardTitle" fill="#991b1b">停止</text>
+  <text x="98" y="527" class="small">拒绝、升级、终止</text>
+  <text x="98" y="552" class="small">本轮结束，不自动开新轮</text>
+
+  <rect x="900" y="112" width="330" height="480" rx="14" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
+  <text x="924" y="148" class="cardTitle" fill="#9a3412">工程注意 / 常见故障</text>
+  <text x="924" y="186" class="note">• allow / sandbox / ask / deny</text>
+  <text x="942" y="212" class="note">  是不同出口，不是“全开”。</text>
+  <text x="924" y="252" class="note">• 权限偏好与实际隔离分开：</text>
+  <text x="942" y="278" class="note">  permissions ≠ sandbox。</text>
+  <text x="924" y="318" class="note">• 允许动作不等于产出正确；</text>
+  <text x="942" y="344" class="note">  质量另由独立检查 / 人验收。</text>
+  <text x="924" y="384" class="note">• 编辑权不自动包含 commit，</text>
+  <text x="942" y="410" class="note">  commit 也不自动包含 push。</text>
+  <text x="924" y="450" class="note">• “Run Everything”没有 sandbox</text>
+  <text x="942" y="476" class="note">  或 classifier；不要跨产品抄值。</text>
+  <line x1="924" y1="500" x2="1206" y2="500" stroke="#fdba74" stroke-width="2"/>
+  <text x="924" y="532" class="label">人保留</text>
+  <text x="924" y="558" class="note">动作边界、目标范围、有效期、</text>
+  <text x="924" y="582" class="note">高风险审批、随时中断与接手。</text>
+
+  <text x="50" y="622" class="footer">来源短标：rung-01-authorized-execution.md；evidence-w W1/W4、evidence-f（授权门与拒绝升级）。</text>
+  <text x="50" y="650" class="footer">教学抽象 / 示例非同一产品；Cursor、Claude Managed Agents、Codex 的策略语义不可拼成普适默认。</text>
+</svg>

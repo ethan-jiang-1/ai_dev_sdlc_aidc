@@ -30,12 +30,13 @@ ai_loop_engineering/
 │   ├── 02_hard_caps/          #   ② 硬性资源上限兜底
 │   └── 03_verdict_split/      #   ③ 验收与干活分离
 ├── capability_ladder/         # ★ 专项深挖区（2026-09-30 立）：能力爬梯按学习者交接面切片
-│   ├── README.md              #   定位 / 定阶门槛（共识阶才立）/ 回源队列
+│   ├── README.md              #   定位 / 教学交接面 / 证据边界 / 技术走读索引
 │   ├── 00-map.md              #   主线与可选高阶分支的证据边界（本区教学判定权威）
+│   ├── rung-00-manual-baseline.md # R0 人手动续轮基线
 │   ├── rung-0N-*.md           #   R1–R3 主线三档
 │   ├── branch-a-orchestration.md # 可选编排支线
 │   ├── branch-b-meta-loop.md  #   可选元循环支线
-│   └── figures/               #   学习路径图＋证据边界图
+│   └── figures/               #   总览两图＋六张档内独立技术机制图
 └── figures/                   # SVG
 ```
 

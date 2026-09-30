@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5b21b6"/></marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b91c1c"/></marker>
+    <style>
+      .title{font-size:32px;font-weight:700;fill:#102a43}.sub{font-size:18px;fill:#334e68}.label{font-size:16px;font-weight:700;fill:#486581}.cardTitle{font-size:19px;font-weight:700}.body{font-size:16px;fill:#243b53}.small{font-size:16px;fill:#486581}.note{font-size:17px;fill:#243b53}.footer{font-size:16px;fill:#52606d}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="#f7fafc"/>
+  <text x="50" y="50" class="title">支线 A · 多主体编排：三种拓扑并列，不是一个共识方案</text>
+  <text x="50" y="82" class="sub">先问任务是否可分、谁拥有写入、谁合并与验收；可以从有界任务进入，不必先完成 R3。</text>
+
+  <rect x="50" y="112" width="820" height="480" rx="14" fill="#ffffff" stroke="#c4b5fd" stroke-width="2"/>
+  <text x="75" y="145" class="label">输入 → 决策 → 三种替代拓扑 → 反馈 / 停止</text>
+
+  <rect x="78" y="174" width="190" height="96" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="98" y="204" class="cardTitle" fill="#075985">输入 · 根任务</text>
+  <text x="98" y="232" class="body">可分问题 / 代码任务</text>
+  <text x="98" y="258" class="small">基线、测试、资源预算</text>
+  <path d="M268 222 H308" stroke="#5b21b6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="308" y="174" width="220" height="96" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="328" y="204" class="cardTitle" fill="#6d28d9">决策 · 先核四件事</text>
+  <text x="328" y="232" class="body">可分性 / 写入所有权</text>
+  <text x="328" y="258" class="small">验收能力 / 取消路径</text>
+  <path d="M528 205 H576" stroke="#7c3aed" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M528 222 H576" stroke="#7c3aed" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M528 239 H576" stroke="#7c3aed" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="576" y="158" width="274" height="126" rx="10" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
+  <text x="596" y="188" class="cardTitle" fill="#9a3412">共用停止检查</text>
+  <text x="596" y="216" class="small">冲突、验收、成本、取消</text>
+  <text x="596" y="243" class="small">人保留：写入 owner 与最终验收</text>
+  <text x="596" y="270" class="small">三种拓扑是替代项，不要混作默认</text>
+
+  <path d="M152 270 V308 H192 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <path d="M190 270 V308 H436 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <path d="M228 270 V308 H680 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <text x="78" y="320" class="small" fill="#6d28d9">选择一个拓扑</text>
+
+  <rect x="78" y="340" width="220" height="184" rx="10" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
+  <text x="98" y="370" class="cardTitle" fill="#6d28d9">拓扑 1 · 单线程写</text>
+  <text x="98" y="400" class="small">manager 分工</text>
+  <text x="98" y="426" class="small">children 给判断 / 候选</text>
+  <text x="98" y="452" class="small">一个 owner 综合后写入</text>
+  <text x="98" y="478" class="small">反馈：回归 + 人工验收</text>
+  <text x="98" y="508" class="small" fill="#92400e">Cognition 方案</text>
+
+  <rect x="330" y="340" width="220" height="184" rx="10" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
+  <text x="350" y="370" class="cardTitle" fill="#6d28d9">拓扑 2 · 只读并行</text>
+  <text x="350" y="400" class="small">lead 拆检索问题</text>
+  <text x="350" y="426" class="small">subagents 独立上下文</text>
+  <text x="350" y="452" class="small">汇总 findings / 引文</text>
+  <text x="350" y="478" class="small">反馈：lead 决定是否够</text>
+  <text x="350" y="508" class="small" fill="#92400e">Anthropic Research</text>
+
+  <rect x="582" y="340" width="268" height="184" rx="10" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
+  <text x="602" y="370" class="cardTitle" fill="#6d28d9">拓扑 3 · 隔离多写</text>
+  <text x="602" y="400" class="small">各 agent 独立 clone / worktree</text>
+  <text x="602" y="426" class="small">task lock 认领、修改</text>
+  <text x="602" y="452" class="small">pull / merge / push，冲突处理</text>
+  <text x="602" y="478" class="small">反馈：测试 + 合并 owner</text>
+  <text x="602" y="508" class="small" fill="#92400e">Carlini 研究原型</text>
+
+  <rect x="78" y="542" width="772" height="30" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+  <text x="96" y="563" class="small" fill="#991b1b">树级预算：应覆盖 outer feedback path；这里是跨源教学检查线，非已实现通用能力。</text>
+
+  <rect x="900" y="112" width="330" height="480" rx="14" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
+  <text x="924" y="148" class="cardTitle" fill="#9a3412">工程注意 / 常见故障</text>
+  <text x="924" y="186" class="note">• 三种拓扑不是三家共同默认：</text>
+  <text x="942" y="212" class="note">  单线程写、只读并行、隔离多写</text>
+  <text x="942" y="238" class="note">  必须并列讲。</text>
+  <text x="924" y="278" class="note">• 并行读不推出并行写安全；</text>
+  <text x="942" y="304" class="note">  task lock 也不等于无冲突。</text>
+  <text x="924" y="344" class="note">• “子代理单轮上限”不覆盖</text>
+  <text x="942" y="370" class="note">  lead 重派 / 外层评估反馈。</text>
+  <text x="924" y="410" class="note">• 取消应拒绝新 child，等待既有</text>
+  <text x="942" y="436" class="note">  child 收敛；不要假设即时 kill。</text>
+  <text x="924" y="476" class="note">• 测试绿不等于业务验收；复杂</text>
+  <text x="942" y="502" class="note">  软件的可分性与 verifier 先行。</text>
+  <line x1="924" y1="522" x2="1206" y2="522" stroke="#fdba74" stroke-width="2"/>
+  <text x="924" y="550" class="label">人保留</text>
+  <text x="994" y="550" class="note">写入所有权、合并、验收、预算、取消</text>
+
+  <text x="50" y="622" class="footer">来源短标：branch-a-orchestration.md；evidence-x §A1–A3；Anthropic Research / Cognition / Carlini。</text>
+  <text x="50" y="650" class="footer">教学抽象 / 示例非同一产品；规模、token、成本与子代理数均为来源自报，不是跨任务默认值。</text>
+</svg>

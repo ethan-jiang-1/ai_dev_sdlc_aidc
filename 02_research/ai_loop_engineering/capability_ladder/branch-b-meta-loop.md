@@ -1,5 +1,7 @@
 # 支线 B · 改进循环本身——局部实例已证，广义自动自改未成熟
 
+![支线 B 从人改到代理提案与外围局部应用的权限幅度及核心自改边界](figures/branch-b-meta-loop.svg)
+
 > **证据边界**：Runkle（[evidence-a §3 C1](../raw/evidence-2026-09-26-a-originators.md)）、Morris（[evidence-c §问题3.1](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md)）定义元循环；Anthropic 工具测试代理改写**工具描述**是一个局部实例（[evidence-u S5](../raw/evidence-2026-09-30-u-post-june-kols.md)）。Böckeler 描述的是**人**根据重复失败改进 harness，不能算代理获得自改权的独立票；与 Morris 同属 Thoughtworks 也不作独立机构票。
 > 此支线用于展示将来的方向，**不是学员必修的最高阶**。尤其是代理自动更改评估器或核心循环结构，当前不能从工具描述案例推断为已成熟做法。
 
