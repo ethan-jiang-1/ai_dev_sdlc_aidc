@@ -2,15 +2,18 @@
 type: evidence_archive
 collected_by: 主代理直采（web_fetch 全文取得；服务 capability_ladder 阶位升降与界限刻画）
 collected_at: 2026-09-30
-serves: capability_ladder/{00-map,rung-01..05}
+serves: capability_ladder/{00-map,rung-01..03,branch-a-orchestration,branch-b-meta-loop}
 status: 五篇全文逐字取得（S1–S4、S6）；S5 全文取得；S7 正文截断仅脚注转述
 quality_bar: 官方 changelog/工程博客/顶会 workshop 在审论文＝一手；Walden/Carlini/Ronacher 为个人作者一手；注意 S5 是 2025-06-13（词源周前一年的机制谱系票）
 ---
 
 # 回源档案 U：词源周前后 KOL/社区批——阶梯升降票（观测 2026-09-30）
 
+> **2026-09-30 复审注**：本档的一手引文与来源元数据保留；原来用“几张票升格 R4/R5”“写入单线程为多家收敛形态”“verifier sub-agents 支持 R4 写入单线程”作出的**跨源判读已撤回**。R4/R5 改列可选高阶方向，适用场景与成熟度分开，详见 [capability_ladder/00-map](../capability_ladder/00-map.md)。下面的“与 ladder 对账”是当时的历史判读，不再作当前定阶依据。
+
+
 > **任务**：用户要求给 capability_ladder 补 2026-06 之后的高影响力 KOL/社区支撑，并允许分歧、要求清晰界限。
-> 本批拿到 **六篇一手＋一篇待补**，直接决定 R4 升格、R3/R1 的官方语义核销、以及全梯的 dissent 边界。
+> 本批取得多代理、调度和裁判边界的一手案例；原“直接决定 R4 升格”判读经复审撤回，现只支持可选高阶方向中的部分场景可行。
 
 ## Source 1 · Armin Ronacher《The Coming Loop》（2026-06-23，词源周后 16 天）
 
@@ -48,11 +51,11 @@ quality_bar: 官方 changelog/工程博客/顶会 workshop 在审论文＝一手
 
 **逐字摘录**：
 
-- **R4 共识形态（对多代理的修正票）**：
+- **Walden/Cognition 的受约束并发方案（不是跨来源共同拓扑）**：
   > "multi-agent systems work best today when writes stay single-threaded and the additional agents contribute intelligence rather than actions."
   > "The practical shape is map-reduce-and-manage: a manager splits work, children execute, the manager synthesizes and reports back."
   > "We think the unstructured-swarm approach, arbitrary networks of agents negotiating with each other, is mostly a distraction."
-- **R4 升阶闸门（可验证性界限）**：
+- **该方案的适用域提醒（可验证性）**：
   > "they all share a property most real software doesn't: a simple, verifiable success criterion. Real software requires a system that scales human taste and decision-making."
 - **验收分离实证（干净上下文评审）**：
   > "Devin Review catches an average of 2 bugs per PR, of which roughly 58% are severe"
@@ -62,7 +65,7 @@ quality_bar: 官方 changelog/工程博客/顶会 workshop 在审论文＝一手
   > "The cost and speed wins were real, but the quality ceiling was set by the primary, and the primary wasn't strong enough."
   > "The delegation logic becomes a capability router rather than a difficulty escalator."
 
-**该摘录支持的最小主张**：从"反多代理"到"受约束的多代理"的演化本身是 R4 的共识形成过程——**写入保持单线程、其余代理贡献智能而非动作**是当前收敛形态；demo 可行域需要"简单可验证的成败判据"。
+**该摘录支持的最小主张（复审收窄）**：Walden/Cognition 从“反多代理”转向**写入单线程、其余代理贡献智能**的受约束方案；这是**该机构的推荐拓扑**，不能与 Carlini 的并发修改/合并或 Anthropic 的并行只读研究合并计作同一种写入拓扑的多家共识。demo 可行域需要简单可验证的判据。
 
 ## Source 3 · Nicholas Carlini（Anthropic）《Building a C compiler with a team of parallel Claudes》（2026-02-05）
 
@@ -92,7 +95,7 @@ quality_bar: 官方 changelog/工程博客/顶会 workshop 在审论文＝一手
 **S4b · Shared Canvases and /loop Skill（2026-05-20，Cursor 3.5）**：https://cursor.com/changelog/shared-canvases
 - **R3 官方语义（逐字，三种子条件）**：
   > "With /loop, Cursor can run a prompt repeatedly on a local schedule, until a certain outcome is achieved, or until you stop it. If you don't specify a fixed interval, the agent decides when or what event should wake it."
-- 注：R3 的授权面证据再＋1（时间/结果/事件三种唤醒条件，与 CC time-based/goal-based 分类同构）。
+- 注：此条支持 R3 的**唤醒/触发面**（时间/结果/事件），不是 R1 的动作**授权面**；与 CC time-based/goal-based 的分类有交叉但不是新的独立来源票。
 
 ## Source 5 · Anthropic《How we built our multi-agent research system》（2025-06-13，谱系票）
 
@@ -104,19 +107,19 @@ quality_bar: 官方 changelog/工程博客/顶会 workshop 在审论文＝一手
 - **适用域边界（编码 vs 研究）**：> "most coding tasks involve fewer truly parallelizable tasks than research, and LLM agents are not yet great at coordinating and delegating to other agents in real time."
 - **编排尺度规则（参数级）**：> "Simple fact-finding requires just 1 agent with 3-10 tool calls, direct comparisons might need 2-4 subagents with 10-15 calls each, and complex research might use more than 10 subagents with clearly divided responsibilities."
 - **失败模式（参数级）**：> "Early agents made errors like spawning 50 subagents for simple queries, scouring the web endlessly for nonexistent sources"
-- **R5 惊喜票（agent 改写 harness 自身）**：> "Let agents improve themselves. … it attempts to use the tool and then rewrites the tool description to avoid failures. … resulted in a 40% decrease in task completion time"
+- **局部自改案例（不计通用自改成熟票）**：> "Let agents improve themselves. … it attempts to use the tool and then rewrites the tool description to avoid failures. … resulted in a 40% decrease in task completion time"。这是 Anthropic 内部一项工具描述改写，不能外推为核心判据/循环结构自动改写的普遍效果。
 
 ## Source 6 · arXiv:2608.21884《Loop Engineering: Building Blocks, Adoption, and Impact》（2026-08-22 v1 / 08-26 v2）
 
 - URL：https://arxiv.org/abs/2608.21884 ｜ 作者：Lulla, Nersesyan, Mohsenimofidi, Treude, Baltes ｜ JAWs@ASE 2026 在审，CC BY 4.0
-- 来源类型：**学术综述＋实证挖掘**（共识的最硬形态；摘要逐字，全文待挖）
+- 来源类型：**灰色文献探索性综述＋仓库挖掘**（一手研究，非同行评审结论；摘要与 [v2 全文](https://arxiv.org/html/2608.21884v2) 于 2026-09-30 核对）。全文 §3 O3 明言灰色文献来源互相承袭、并非独立票；§4.1 Table 2 在筛中样本的仓库可见检测里，goal/stop conditions＝0、verification＝0；这些零不能证明运行时完全没有对应机制，只限定可观察范围。
 
 **摘要逐字**：
-- **共识构件清单（与 ladder 五构件高度同构）**：
+- **灰色文献列出的建议构件（不可作阶梯顺序票）**：
   > "the emerging gray literature … largely agrees on what a well-engineered loop contains: **triggered agent runs bounded by machine-checkable stop conditions, persistent state files, verifier sub-agents, token budgets, and defined points of escalation to humans**."
 - **实证结果**：> "We confirmed the operation of autonomous agent loops in 217 of the 256 repositories our heuristics matched. The repositories commit the configuration around these loops, but almost none commits the state files the discourse prescribes, and the loops' runtime state remains outside version control."
 - **研究议程**：> "a planned controlled study of agent autonomy levels and their effect on effort and outcomes."
-- **与主题的衔接**：①"triggered runs + machine-checkable stop conditions + escalation points"正是 R1–R3 交接面的学术口径；②"verifier sub-agents"是 R4 的写单线程形态票；③**状态文件不入库**（217/256 确认运行、几乎无 state file 提交）＝跨 feature 可观察性缺口（digested/07 四列）的实证回响；④"autonomy levels"受控研究＝主题"可跟踪预言"的学术对照物。
+- **与主题的衔接（复审收窄）**：①“triggered runs + machine-checkable stop conditions + escalation points”是文献中的设计词汇，不能当 R1–R3 必经阶序；②“verifier sub-agents”是综述提及的建议构件，不是 R4 写入单线程票；③217/256 仅确认筛中仓库的自动 agent loop，论文全文 §4.1 中 goal/stop 与 verifier 的仓库可见命中均为 0，不能推断这些构件已在真实仓库普及；④自治等级效果研究**仍是计划**。论文全文也明示灰色来源不独立，见 [全文 §3、§4.1](https://arxiv.org/html/2608.21884v2)。
 
 ## Source 7 · Anthropic《The advisor strategy》 ⏳ 待补
 
@@ -130,8 +133,8 @@ quality_bar: 官方 changelog/工程博客/顶会 workshop 在审论文＝一手
 | R1 | **官方语义落定**（S4a 三级处置逐字）——Cursor 讹变部分核销 |
 | R2 | 判据性质 nuance（S1"不必二值"）＋闸门质量实证（S3"verifier 不完美→解错题"） |
 | R3 | 官方第二票（S4b /loop 三种唤醒）；人角色成本证词（S1） |
-| R4 | **升格票集齐**：Anthropic 编排器-工人（S5）＋Walden 写单线程共识（S2）＋Carlini 文件锁变体（S3）＋视频概念位——建议升正式阶，共识形态＝"写入单线程＋智能旁路" |
-| R5 | 第二票挂上（S5"Let agents improve themselves"＋40% 参数）；操作素材仍待缺口 5 搬运——维持候选，票况记入 00-map |
+| R4（现为多主体编排支线） | Anthropic 研究编排器、Walden 受约束方案、Carlini 多写入合并，证明**不同场景和拓扑有落地案例**，不形成“写入单线程＋智能旁路”的共同拓扑，也不证明必须排在 R3 后。中文视频只作传播材料，不计票。 |
+| R5（现为改进循环支线） | Anthropic 工具描述改写给出**外围件局部实例**；Runkle/Morris 提供方向概念。广义自动改写核心 harness/评估器的安全性和效果仍待验证，不能依“第二票”升为普遍正式阶。 |
 
 ## 不支持什么
 

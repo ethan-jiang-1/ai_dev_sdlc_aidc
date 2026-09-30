@@ -1,24 +1,22 @@
-# R3 时间/事件驱动（正式阶）——交出"开不开跑"本身，循环脱离会话在跑
+# R3 按时/按事件唤醒（主线 · 机制已证）——交出再次起跑的时机
 
-> **交接面**：人不再手动起跑循环。循环由**时间表**（cron/间隔）或**事件**（webhook/渠道消息/状态变化）触发，
-> 起跑后人不在场。人保留的东西：触发条件、资源上限、熔断与过期、升级可达性。
+> **交接面**：时间表或事件源决定**何时再次启动**，人设范围、成本上限、取消方式与升级路径。**会话内定时续跑**（如 Claude Code `/loop`）与**跨会话持久任务**（如云端调度）是不同运行边界：后者才可能在人不在场、会话结束后继续运行。
 
 ## 一、定义（跨源最小交集）
 
-循环的**启动权**交给了调度器或事件源。这是所有来源里"人退出会话"的第一阶——也是唯一一阶
-**人不在场看着它跑**的正式阶，所以硬上限/熔断从"保险"变成"唯一刹车"。
+本阶交出启动时机，而不是默认交出会话存续或所有高风险动作的授权。教学先演示会话内唤醒，再讨论跨会话持续运行所需的持久状态、取消传播与可达的人工接手；两者都需界定资源预算。
 
-## 二、支撑条目（自说明）
+## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）
 
 **① Runkle event-driven loop（B 类环对应本阶）** ⏳ 逐字待补
 - 要点（转述自台账 `sydney_runkle` 行）：四环之三，cron/webhook/channel 触发。锚 [evidence-b §4e](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)。
 
-**② CC 团队 time-based / proactive 两类（A 类双落位）** ⏳ 逐字待补
-- 要点（转述自台账 `anthropic_org` 行）：`/loop` 时间驱动、**7 天硬过期**；auto mode 的 deny-and-continue＋**3/20 熔断**。
-  锚 [evidence-b](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) / evidence-c。
-- 7 天硬过期与 3/20 熔断是本阶"人不在场也要有刹车"的两个已回源参数级实例 ⏳ 参数逐字待补（须锚 docs/源码，本主题纪律）。
+**② CC 团队 time-based / proactive 两类（[evidence-a D3](../raw/evidence-2026-09-26-a-originators.md)）**
+- > "For these, you can trigger when Claude runs with /loop, which re-runs a prompt on an interval."（[evidence-a D3](../raw/evidence-2026-09-26-a-originators.md)）
+- `/loop` 的 7 天到期见 [evidence-b §4c](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)；auto mode 的 3/20 拒绝熔断见同档 §4b。两者分别管**调度寿命**与**动作审批**，后者并非本阶专属，也不能代替跨会话任务的停止上限。
 
-**③ Osmani 三/四级** ⏳ 逐字待补：三级 `/loop`/`schedule`、四级 proactive 事件触发无人值守（[evidence-a](../raw/evidence-2026-09-26-a-originators.md)）。
+**③ Osmani 的实践界限（[evidence-a](../raw/evidence-2026-09-26-a-originators.md)，[2026-08-14 原文 Fine print](https://addyosmani.com/blog/practical-loop-engineering/)）**
+- > "loops are session-scoped … If you need something that outlives your session, /schedule runs it in the cloud."——先教“再次唤醒”，再单列“跨会话持久”所需保障。
 
 **④ Cursor `/loop` 官方语义（✅ 2026-09-30 锚 [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S4b）**
 - Cursor 3.5 changelog（2026-05-20）逐字——**三种唤醒条件**，与 CC 分类同构：
@@ -27,7 +25,7 @@
 
 **⑤ R2↔R3 分界的最清晰表述（Ronacher，✅ S1）**
 - > "There is already an **agent loop** inside every coding agent. The model calls a tool, incorporates the result, calls another tool, reads a file, edits a file, runs tests, and eventually produces some answer. … The other loop is the **harness level loop: the loop outside the agent loop**."
-- 教学价值：R2 的循环在**会话内**（agent loop），R3 的循环在**会话外**（harness loop 决定起跑、续命、换会话）。一句话把两阶的边界钉死。
+- 教学价值：Ronacher 区分工具调用所在的 agent 内循环与决定是否重新驱动它的 harness 外循环；**内外是控制层次，不是会话边界**。`/goal` 也可能使用外层继续判定；跨会话持久性须另看调度器。
 
 **⑥ 本阶的人本成本证词（Ronacher，✅ S1——dissent）**
 - > "In the harness operated loop **I'm not sure what my role even is**. Even the 'done' signal loses all meanings … **My role is reduced to that of a messenger**."
@@ -38,7 +36,7 @@
 > "Recurring tasks automatically **expire 7 days** after creation. The task fires one final time, then deletes itself. This bounds how long **a forgotten loop** can run."
 > "If an iteration ends without either rescheduling or stopping, Claude Code schedules one **fallback wakeup about 20 minutes later** and ends the loop when that iteration doesn't reschedule either."
 > "Claude calls the `ScheduleWakeup` tool with `stop: true`, which cancels the pending wakeup immediately."
-- 三层终止：人 Esc / 模型自停（续跑权本身是可调用工具）/ 7 天硬过期；中间还有未续排→20 分钟收尾的兜底。
+- 这是**该 `/loop` 机制**的终止路径：人 Esc、模型自停、未续排时的 20 分钟兜底、7 天到期；不等于所有跨会话任务都有同样的默认保护。
 - 无 prompt 时循环干什么也有官方规格（范围封顶＋不可逆动作须有授权继承）：> "Claude does not start new initiatives outside that scope, and irreversible actions such as pushing or deleting only proceed when they continue something the transcript already authorized."
 
 **⑧ 环定义原文（✅ Runkle/LangChain，2026-06-16，[evidence-b §问题2.5](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）**
@@ -63,12 +61,11 @@
 
 - 无人值守×失控＝最危险的组合：失控实录三案（practices ②）中 194h zombie 孤儿进程等案例即本阶事故面 ⏳ 引句待搬
   （锚 [stop_conditions/02_hard_caps](../stop_conditions/02_hard_caps/README.md) practices ②，不复制）。
-- **中文传播层在本阶缺位**（[00-map](00-map.md) §三.5）：视频三层从 goal 直接跳编排，无人值守没有切片——传播层把最危险的一阶跳过去了。
+- **传播层未讲无人值守**（[evidence-t](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)）：视频从 goal 直接讲并发，没有介绍持久运行的额外风险；这是一处叙事遗漏，不证明必须先掌握 R3 才能并发。
 
-## 四、升 R4/R5 的方向
+## 四、可选方向：编排与元循环
 
-R4/R5 均已升正式阶（[00-map](00-map.md) §三判读 2026-09-30 修订）：R4 需"成败判据简单可验"的活才并发（可验证性闸门）；
-R5 改写的是 harness 本身，护栏随改写幅度递增。两阶的闸门与 dissent 见各自阶档。
+从有界任务可直接探索[多主体编排](branch-a-orchestration.md)，不必先做跨会话无人值守。另一条是[改进循环本身](branch-b-meta-loop.md)：先由人审核修改建议，再讨论外围件的受控应用；自动改核心判据仍未成熟。两者均不是本阶后必修的高阶方向。
 
 ## 五、与缺口的关系
 

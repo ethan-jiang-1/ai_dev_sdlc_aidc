@@ -1,18 +1,14 @@
-# R4 编排与并发（正式阶 ✅ 2026-09-30 升格）——交出任务分解与子代理调度权
+# 支线 A · 多主体编排——部分场景已落地，非必经阶
 
-> **升格判定**：本批回源（[evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md)）集齐 ≥3 独立一手来源站在同一交接面——
-> Anthropic orchestrator-worker（S5）＋Cognition 受约束多代理（S2）＋Carlini agent teams（S3）＋学术构件清单"verifier sub-agents"（S6）。
-> 升格同时**收窄形态**：共识不是"任意并发"，是 **"写入单线程＋智能旁路"**（见 §二①）。
+> **证据判定**：[evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S2/S3/S5 分别展示 Cognition 的写入单线程、Carlini 的分布式文件锁和 Anthropic 的研究编排器；它们**共同支持分工/并行的能力存在**，不共同支持同一写入拓扑或普遍收益。支线可以从有界任务进入，**不要求先完成 R3 的持久无人值守**；应用仍受任务可分性、验收与预算约束。
 
-## 一、交接面（共识版）
+## 一、交接面（可选分支）
 
-人把**一类活**连同步役结构交出去：编排器（或文件锁等去中心化机制）分解任务、子代理并发、结果汇综；
-人的介入点上移到**拓扑形状、努力尺度规则、token 预算**。R4 与 R3 的边界：R3 交的是"什么时候跑一个循环"，
-R4 交的是"这个活由几个循环分担、谁管谁"。
+人把可分的任务交给多个主体，另设分工、资源隔离、合并与验收机制。并发读、并发写、集中编排和分布协调是不同方案；人必须为重叠写入与结果冲突指定负责人。高阶不要求每位学员掌握，展示可用场景、成本与失败模式即可。
 
-## 二、支撑条目（自说明，均一手）
+## 二、支撑条目（拓扑并列，不互相代言）
 
-**① 共识形态：写入单线程（Walden/Cognition，2026-04-22，S2）**
+**① 一种受约束的写入方案（Walden/Cognition，2026-04-22，S2）**
 - 演化背景：2025-06《Don't Build Multi-Agents》→ 2026-04 修正票：
   > "**multi-agent systems work best today when writes stay single-threaded** and the additional agents **contribute intelligence rather than actions**."
 - 实用拓扑：> "The practical shape is **map-reduce-and-manage**: a manager splits work, children execute, the manager synthesizes and reports back."
@@ -33,14 +29,13 @@ R4 交的是"这个活由几个循环分担、谁管谁"。
 - 角色专门化：> "Parallelism also enables specialization."（去重/性能/质量/文档各占一个 agent）
 
 **④ 学术构件票（arXiv:2608.21884，2026-08，S6）**
-- 灰色文献共识构件含 "verifier sub-agents, token budgets"——评审子代理与预算是编排层构件而非可选项。
+- 灰色文献综述把 "verifier sub-agents, token budgets" 列为建议构件；其 [全文 §3 O3、§4.1](https://arxiv.org/html/2608.21884v2) 同时声明来源非独立，仓库样本中 verifier 定义可见命中为零。不能把构件清单计为并发写入拓扑或工程普及的第四张独立票。
 
-## 三、升阶闸门（比 R3 多什么）
+## 三、采用前检查（不是 R3→R4 的升阶闸门）
 
-**可验证性闸门**——Walden 的界限句是本阶最好的教学材料：
+**可分性与可验证性**——Walden 对其案例的界限句：
 > "they all share a property most real software doesn't: **a simple, verifiable success criterion**. Real software requires a system that scales human taste and decision-making."
-即：R4 的并发只在"成败判据简单可验"的活上放开；判据要靠人的品味承担的活，留在 R2/R3。
-其余闸门照 stop_conditions 三件＋token 预算（整棵代理树的预算，不是单循环预算）。
+这支持“简单、可验证的任务更适合扩大并行”，**不推出所有复杂软件都不得并行**；并行读与并行改写应分别评估。其余核查见 stop_conditions 三件，另加整棵代理树的成本上限、写入所有权、合并责任与人工验收能力。
 
 ## 四、反例位与警示
 
@@ -66,7 +61,7 @@ R4 交的是"这个活由几个循环分担、谁管谁"。
 > "Retry feedback without bounds, tool-call iteration without bounds, and **multi-agent chat without turn bounds** account for 47 findings (69.1%)."
 > "An inner turn cap on a nested agent call **does not cover an outer evaluator feedback cycle unless it dominates the outer feedback path**."
 
-**⑨ 历史注记（诚实教学用）**：Anthropic 2025-11 曾自认 open question——> "it's still unclear whether a single, general-purpose coding agent performs best across contexts, or if better performance can be achieved through a multi-agent architecture."（[evidence-b §问题2.1](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）。R4 升格反映的是 2026 上半年的收敛（evidence-u），不是这问题从来有答案。
+**⑨ 历史注记**：Anthropic 2025-11 明言单代理与多代理编码何者更优仍是开放问题——> "it's still unclear whether a single, general-purpose coding agent performs best across contexts, or if better performance can be achieved through a multi-agent architecture."（[evidence-b §问题2.1](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）。后续案例证明一些场景可行，不代表已解决通用选型。
 
 ## 本阶 dissent
 

@@ -440,6 +440,13 @@ Claude Code 团队（Cherny 领导）2026-06-30 官方博客给出了产品的�
 - 生命周期 nuance：本机 `/loop` 是 session-scoped，关机停止；resume/continue 可在 7-day window 内恢复；跨 session 需要 cloud `/schedule`。这使“循环存在”与“循环能否跨会话持久接续”成为两个不同问题。
 - 另一个 triage 示例：贡献指南明确不收 translations，可作为定时任务的可核 stopping condition；这属于作者工作流实例。
 
+### D11 · 自主度与编排是两轴（2026-09-30 增量回源）
+
+- 来源：Addy Osmani，《Agentic Autonomy Levels》，https://addyosmani.com/blog/agentic-autonomy-levels/，发布日期 2026-07-02；本轮观测 2026-09-30（作者个人一手文章，不是效果试验）。
+- 原文："almost every autonomy debate I’ve seen conflates two questions that should be separated: **how far away from yourself are we letting this single agent go, and what is our skill at coordinating many agents?**"；"To capture these two dimensions separately, we’ll use two axes: **agency and orchestration**."
+- 结构：agency 轴按单代理允许多远走；orchestration 轴按多少代理参与、谁协调。文章把 manager agent 唤醒并持续验证描为前沿形态，但同时指出单一阶梯不足以定位多代理能力。
+- 最小主张：能用来校验 [`capability_ladder/00-map`](../capability_ladder/00-map.md) 的教学轴——多主体编排不必排列在定时/事件触发**之后**；不能由该文证明任何具体支线已通用成熟。与 D9 的“按任务组合和选型”同向。
+
 ### 本节的判读边界
 
 - **定义**：Osmani 的核心句、`loop` 作为替代逐轮提示的系统、以及其与 harness 的层次关系，见 §4。

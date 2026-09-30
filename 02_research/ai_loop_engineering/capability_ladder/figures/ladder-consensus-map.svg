@@ -1,108 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1120" viewBox="0 0 1560 1120" font-family="'PingFang SC','Hiragino Sans GB',sans-serif">
-  <rect width="1560" height="1120" fill="#ffffff"/>
-  <text x="60" y="48" font-size="30" font-weight="bold" fill="#1a202c">共识矩阵与分歧带</text>
-  <text x="60" y="80" font-size="16" fill="#4a5568">谁在哪个阶位上落了位（●显式落位 ◐语义/构件覆盖 ○缺位/不适用 ✗被跳过）｜ 判定权威：capability_ladder/00-map.md ｜ 观测 2026-09-30</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="1500" height="1000" fill="#f8fafc"/>
+  <text x="60" y="62" font-size="33" font-weight="bold" fill="#172554">证据地图：存在、可用与成熟不是同一件事</text>
+  <text x="60" y="100" font-size="18" fill="#475569">不再数“六源命中率”：功能类型、运行模式、传播转述不能作为同一种独立票相加。</text>
 
-  <!-- header row -->
-  <rect x="60" y="100" width="300" height="44" fill="#2d3748"/>
-  <text x="80" y="128" font-size="16" font-weight="bold" fill="#ffffff">来源（12）</text>
-  <rect x="360" y="100" width="150" height="44" fill="#2d3748"/><text x="400" y="128" font-size="16" font-weight="bold" fill="#ffffff">R1 授权</text>
-  <rect x="510" y="100" width="150" height="44" fill="#2d3748"/><text x="550" y="128" font-size="16" font-weight="bold" fill="#ffffff">R2 目标</text>
-  <rect x="660" y="100" width="150" height="44" fill="#2d3748"/><text x="700" y="128" font-size="16" font-weight="bold" fill="#ffffff">R3 触发</text>
-  <rect x="810" y="100" width="150" height="44" fill="#2d3748"/><text x="850" y="128" font-size="16" font-weight="bold" fill="#ffffff">R4 编排</text>
-  <rect x="960" y="100" width="150" height="44" fill="#2d3748"/><text x="1000" y="128" font-size="16" font-weight="bold" fill="#ffffff">R5 自改</text>
-  <rect x="1110" y="100" width="390" height="44" fill="#2d3748"/><text x="1130" y="128" font-size="16" font-weight="bold" fill="#ffffff">证据锚（主题内回源档案）</text>
+  <rect x="60" y="132" width="1380" height="61" rx="12" fill="#1e293b"/>
+  <text x="86" y="171" font-size="18" font-weight="bold" fill="#fff">交接面</text>
+  <text x="370" y="171" font-size="18" font-weight="bold" fill="#fff">一手锚点</text>
+  <text x="830" y="171" font-size="18" font-weight="bold" fill="#fff">能证明什么</text>
+  <text x="1155" y="171" font-size="18" font-weight="bold" fill="#fff">不能推出什么</text>
 
-  <!-- rows: y = 144 + 46*i -->
-  <!-- 1 Osmani -->
-  <rect x="60" y="144" width="300" height="46" fill="#f7fafc"/><rect x="360" y="144" width="750" height="46" fill="#f7fafc"/><rect x="1110" y="144" width="390" height="46" fill="#f7fafc"/>
-  <text x="80" y="173" font-size="15" font-weight="bold" fill="#1a202c">Osmani 四级运行模式</text>
-  <text x="425" y="173" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="575" y="173" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="725" y="173" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="875" y="173" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="1025" y="173" font-size="20" fill="#a0aec0" text-anchor="middle">○</text>
-  <text x="1130" y="173" font-size="14" fill="#4a5568">evidence-a（2026-06-07 命名篇＋08-14 操作篇）</text>
+  <rect x="60" y="204" width="1380" height="126" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="86" y="248" font-size="22" font-weight="bold" fill="#1e40af">R1 有界执行</text>
+  <text x="86" y="283" font-size="16" fill="#475569">单次运行 · 主线</text>
+  <text x="370" y="245" font-size="17" fill="#334155">Cursor 审批面</text>
+  <text x="370" y="279" font-size="17" fill="#334155">Claude Code auto mode / Codex</text>
+  <text x="830" y="246" font-size="17" fill="#334155">动作可分级处置：</text>
+  <text x="830" y="279" font-size="17" fill="#334155">放行、沙箱、拒绝或升级</text>
+  <text x="1155" y="245" font-size="16" fill="#475569">仅有授权面就能保证</text>
+  <text x="1155" y="278" font-size="16" fill="#475569">产出质量与安全</text>
 
-  <!-- 2 CC 团队 -->
-  <rect x="60" y="190" width="300" height="46" fill="#ffffff"/><rect x="360" y="190" width="750" height="46" fill="#ffffff"/><rect x="1110" y="190" width="390" height="46" fill="#ffffff"/>
-  <text x="80" y="219" font-size="15" font-weight="bold" fill="#1a202c">CC 团队 四类循环</text>
-  <text x="425" y="219" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="575" y="219" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="725" y="219" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="875" y="219" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="1025" y="219" font-size="20" fill="#a0aec0" text-anchor="middle">○</text>
-  <text x="1130" y="219" font-size="14" fill="#4a5568">evidence-a D3（2026-06-30 官方定义）＋ /goal /loop docs</text>
+  <rect x="60" y="341" width="1380" height="126" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="86" y="386" font-size="22" font-weight="bold" fill="#1e40af">R2 有界续跑</text>
+  <text x="86" y="422" font-size="16" fill="#475569">按目标条件 · 主线</text>
+  <text x="370" y="384" font-size="17" fill="#334155">Claude Code /goal</text>
+  <text x="370" y="418" font-size="17" fill="#334155">Osmani 实践；quickstart 反例</text>
+  <text x="830" y="384" font-size="17" fill="#334155">有继续/完成/不可能出口</text>
+  <text x="830" y="418" font-size="17" fill="#334155">与机器可核任务实例</text>
+  <text x="1155" y="384" font-size="16" fill="#475569">检查通过等于真实质量；</text>
+  <text x="1155" y="418" font-size="16" fill="#475569">所有驱动都会自动判停</text>
 
-  <!-- 3 Morris -->
-  <rect x="60" y="236" width="300" height="46" fill="#f7fafc"/><rect x="360" y="236" width="750" height="46" fill="#f7fafc"/><rect x="1110" y="236" width="390" height="46" fill="#f7fafc"/>
-  <text x="80" y="265" font-size="15" font-weight="bold" fill="#1a202c">Kief Morris 四级阶梯</text>
-  <text x="425" y="265" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="575" y="265" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="725" y="265" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="875" y="265" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="1025" y="265" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text>
-  <text x="1130" y="265" font-size="14" fill="#4a5568">evidence-c（2026-03-04；flywheel 落 R5）</text>
+  <rect x="60" y="478" width="1380" height="126" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="86" y="524" font-size="22" font-weight="bold" fill="#1e40af">R3 定时唤醒</text>
+  <text x="86" y="560" font-size="16" fill="#475569">会话内 / 跨会话 · 主线</text>
+  <text x="370" y="522" font-size="17" fill="#334155">Claude Code /loop 与云调度</text>
+  <text x="370" y="556" font-size="17" fill="#334155">Cursor /loop；Runkle event-driven</text>
+  <text x="830" y="522" font-size="17" fill="#334155">不同的时间、结果、事件</text>
+  <text x="830" y="556" font-size="17" fill="#334155">触发方式确实存在</text>
+  <text x="1155" y="522" font-size="16" fill="#475569">/loop 必然跨会话；</text>
+  <text x="1155" y="556" font-size="16" fill="#475569">持久运行已通用成熟</text>
 
-  <!-- 4 Runkle -->
-  <rect x="60" y="282" width="300" height="46" fill="#ffffff"/><rect x="360" y="282" width="750" height="46" fill="#ffffff"/><rect x="1110" y="282" width="390" height="46" fill="#ffffff"/>
-  <text x="80" y="311" font-size="15" font-weight="bold" fill="#1a202c">Runkle 四环模型</text>
-  <text x="425" y="311" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="575" y="311" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="725" y="311" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="875" y="311" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="1025" y="311" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text>
-  <text x="1130" y="311" font-size="14" fill="#4a5568">evidence-b §4e（2026-06-16 四环）</text>
+  <rect x="60" y="615" width="1380" height="126" rx="12" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <text x="86" y="660" font-size="22" font-weight="bold" fill="#6d28d9">支线 A · 编排</text>
+  <text x="86" y="696" font-size="16" fill="#475569">部分场景落地 · 非必修</text>
+  <text x="370" y="660" font-size="17" fill="#334155">Anthropic 研究编排器</text>
+  <text x="370" y="694" font-size="17" fill="#334155">Cognition / Carlini 不同写拓扑</text>
+  <text x="830" y="660" font-size="17" fill="#334155">可分工与并行；须控制</text>
+  <text x="830" y="694" font-size="17" fill="#334155">所有权、冲突及整树预算</text>
+  <text x="1155" y="660" font-size="16" fill="#475569">写入单线程为三家共识；</text>
+  <text x="1155" y="694" font-size="16" fill="#475569">必须先掌握 R3</text>
 
-  <!-- 5 Ng -->
-  <rect x="60" y="328" width="300" height="46" fill="#f7fafc"/><rect x="360" y="328" width="750" height="46" fill="#f7fafc"/><rect x="1110" y="328" width="390" height="46" fill="#f7fafc"/>
-  <text x="80" y="357" font-size="15" font-weight="bold" fill="#1a202c">Ng 三环嵌套</text>
-  <text x="425" y="357" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="575" y="357" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="725" y="357" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="875" y="357" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="1025" y="357" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text>
-  <text x="1130" y="357" font-size="14" fill="#4a5568">evidence-a；判读 digested/08（B 类环类型学）</text>
+  <rect x="60" y="752" width="1380" height="126" rx="12" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <text x="86" y="797" font-size="22" font-weight="bold" fill="#6d28d9">支线 B · 自改</text>
+  <text x="86" y="833" font-size="16" fill="#475569">局部实例 · 前沿方向</text>
+  <text x="370" y="797" font-size="17" fill="#334155">Runkle / Morris 概念</text>
+  <text x="370" y="831" font-size="17" fill="#334155">Anthropic 工具描述改写案例</text>
+  <text x="830" y="797" font-size="17" fill="#334155">外围件可受控试验；</text>
+  <text x="830" y="831" font-size="17" fill="#334155">人改与代理改须分开</text>
+  <text x="1155" y="797" font-size="16" fill="#475569">核心判据自动改写</text>
+  <text x="1155" y="831" font-size="16" fill="#475569">已有通用安全放行阈值</text>
 
-  <!-- 6 视频三层 -->
-  <rect x="60" y="374" width="300" height="46" fill="#ffffff"/><rect x="360" y="374" width="750" height="46" fill="#ffffff"/><rect x="1110" y="374" width="390" height="46" fill="#ffffff"/>
-  <text x="80" y="403" font-size="15" font-weight="bold" fill="#1a202c">视频三层·中文传播（为什么叫QQ）</text>
-  <text x="425" y="403" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="575" y="403" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="725" y="403" font-size="20" font-weight="bold" fill="#e53e3e" text-anchor="middle">✗</text><text x="875" y="403" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="1025" y="403" font-size="20" fill="#a0aec0" text-anchor="middle">○</text>
-  <text x="1130" y="403" font-size="14" fill="#4a5568">evidence-t（侦察级）——最危险的一阶被跳过</text>
-
-  <!-- 7 Cursor 官方 -->
-  <rect x="60" y="420" width="300" height="46" fill="#f7fafc"/><rect x="360" y="420" width="750" height="46" fill="#f7fafc"/><rect x="1110" y="420" width="390" height="46" fill="#f7fafc"/>
-  <text x="80" y="449" font-size="15" font-weight="bold" fill="#1a202c">Cursor 官方 changelog ×2</text>
-  <text x="425" y="449" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="575" y="449" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="725" y="449" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="875" y="449" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="1025" y="449" font-size="20" fill="#a0aec0" text-anchor="middle">○</text>
-  <text x="1130" y="449" font-size="14" fill="#4a5568">evidence-u S4a/S4b（05-29 三级处置；05-20 /loop）</text>
-
-  <!-- 8 Anthropic 工程 -->
-  <rect x="60" y="466" width="300" height="46" fill="#ffffff"/><rect x="360" y="466" width="750" height="46" fill="#ffffff"/><rect x="1110" y="466" width="390" height="46" fill="#ffffff"/>
-  <text x="80" y="495" font-size="15" font-weight="bold" fill="#1a202c">Anthropic 工程博客（2025-06 → 2026-04）</text>
-  <text x="425" y="495" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="575" y="495" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="725" y="495" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="875" y="495" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="1025" y="495" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text>
-  <text x="1130" y="495" font-size="14" fill="#4a5568">evidence-b/c（auto mode；Managed Agents）；evidence-u S5</text>
-
-  <!-- 9 Cognition -->
-  <rect x="60" y="512" width="300" height="46" fill="#f7fafc"/><rect x="360" y="512" width="750" height="46" fill="#f7fafc"/><rect x="1110" y="512" width="390" height="46" fill="#f7fafc"/>
-  <text x="80" y="541" font-size="15" font-weight="bold" fill="#1a202c">Cognition / Walden（2026-04-22）</text>
-  <text x="425" y="541" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="575" y="541" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="725" y="541" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="875" y="541" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="1025" y="541" font-size="20" fill="#a0aec0" text-anchor="middle">○</text>
-  <text x="1130" y="541" font-size="14" fill="#4a5568">evidence-u S2（写入单线程＋Devin Review）</text>
-
-  <!-- 10 Carlini -->
-  <rect x="60" y="558" width="300" height="46" fill="#ffffff"/><rect x="360" y="558" width="750" height="46" fill="#ffffff"/><rect x="1110" y="558" width="390" height="46" fill="#ffffff"/>
-  <text x="80" y="587" font-size="15" font-weight="bold" fill="#1a202c">Carlini agent teams（2026-02-05）</text>
-  <text x="425" y="587" font-size="20" fill="#a0aec0" text-anchor="middle">○</text><text x="575" y="587" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="725" y="587" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="875" y="587" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="1025" y="587" font-size="20" fill="#a0aec0" text-anchor="middle">○</text>
-  <text x="1130" y="587" font-size="14" fill="#4a5568">evidence-u S3（16 agents／文件锁／$20k）</text>
-
-  <!-- 11 arXiv -->
-  <rect x="60" y="604" width="300" height="46" fill="#f7fafc"/><rect x="360" y="604" width="750" height="46" fill="#f7fafc"/><rect x="1110" y="604" width="390" height="46" fill="#f7fafc"/>
-  <text x="80" y="633" font-size="15" font-weight="bold" fill="#1a202c">arXiv:2608.21884（ASE 2026 在审）</text>
-  <text x="425" y="633" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="575" y="633" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="725" y="633" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="875" y="633" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="1025" y="633" font-size="20" fill="#a0aec0" text-anchor="middle">○</text>
-  <text x="1130" y="633" font-size="14" fill="#4a5568">evidence-u S6（36,710 仓库挖掘：217 确认运行）</text>
-
-  <!-- 12 OpenAI / OpenClaw / huntley 等机制票 -->
-  <rect x="60" y="650" width="300" height="46" fill="#ffffff"/><rect x="360" y="650" width="750" height="46" fill="#ffffff"/><rect x="1110" y="650" width="390" height="46" fill="#ffffff"/>
-  <text x="80" y="679" font-size="15" font-weight="bold" fill="#1a202c">OpenAI · OpenClaw · Huntley 等</text>
-  <text x="425" y="679" font-size="20" font-weight="bold" fill="#2f855a" text-anchor="middle">●</text><text x="575" y="679" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="725" y="679" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="875" y="679" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text><text x="1025" y="679" font-size="20" font-weight="bold" fill="#b7791f" text-anchor="middle">◐</text>
-  <text x="1130" y="679" font-size="14" fill="#4a5568">evidence-i/e（standing orders；harness engineering）</text>
-
-  <!-- status col labels -->
-  <text x="1130" y="173" font-size="14" fill="#4a5568"></text>
-
-  <!-- ladder status column -->
-  <rect x="60" y="712" width="1440" height="52" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="1.5"/>
-  <text x="80" y="744" font-size="16" font-weight="bold" fill="#2b6cb0">阶位判定（2026-09-30）：</text>
-  <text x="330" y="744" font-size="16" fill="#1a202c">R1 ✅ 正式 · R2 ✅ 正式（6/6 最稳） · R3 ✅ 正式 · R4 ✅ 正式（evidence-u 三票升格，共识＝写入单线程） · R5 ✅ 正式（3 概念源＋实证票，护栏即闸门）</text>
-
-  <!-- dissent band -->
-  <rect x="60" y="784" width="1440" height="250" fill="#fff5f5" stroke="#e53e3e" stroke-width="1.5"/>
-  <text x="80" y="816" font-size="18" font-weight="bold" fill="#c53030">分歧带——总趋势一致，争论在坡度（每阶一条，教学时必须并列给出）</text>
-  <text x="80" y="848" font-size="15" fill="#742a2a">R1 ｜ "93% 的权限提示被顺手放行……以提示结束的规则不是规则"（marmelab 引 arXiv 2608.27443：预写规则比逐条批准少拦 20.1pp 坏动作）</text>
-  <text x="80" y="878" font-size="15" fill="#742a2a">R2 ｜ "对 AI 生成的测试寄予太多信任，这还不够好"（Böckeler）＋ 自反思在故障下放大失败 ∂R/∂λ=−0.50（ReliabilityBench）</text>
-  <text x="80" y="908" font-size="15" fill="#742a2a">R3 ｜ "无人值守的循环，也是无人看守地犯错" ＋ "done 是声明不是证明"（Osmani）＋ zombie 循环穿透显式关闭（issue #46787）</text>
-  <text x="80" y="938" font-size="15" fill="#742a2a">R4 ｜ "单代理 vs 多代理至今是 open question"（Anthropic 2025-11）＋ 审批代理可被红队误导（OpenAI 自警）＋ swarm 是 distraction（Walden）</text>
-  <text x="80" y="968" font-size="15" fill="#742a2a">R5 ｜ "判据可见时被绕过率高 43×"（METR）＋ Goodhart 定律 ＋ "模型升级会抹掉 scaffolding 收益"（Cherny：never bet against the model）</text>
-  <text x="80" y="1004" font-size="16" font-weight="bold" fill="#c53030">总趋势：所有分歧针对升阶速度与适用域，无一否认阶序本身——"从授权执行到目标驱动到触发外移"无反向案例。</text>
-
-  <text x="60" y="1074" font-size="13" fill="#718096">● 显式落位 ｜ ◐ 语义或构件覆盖 ｜ ○ 缺位或不适用 ｜ ✗ 被跳过（红） ｜ 候选阶已于 2026-09-30 全部升格，详见 00-map.md §三判读与 evidence-u</text>
+  <text x="70" y="933" font-size="17" font-weight="bold" fill="#9a3412">成熟度红线：</text>
+  <text x="215" y="933" font-size="17" fill="#7c2d12">R3 跨会话、编排写入与核心自改尤其依赖场景与护栏；有案例 ≠ 已普及 ≠ 已证净收益。</text>
+  <text x="70" y="973" font-size="15" fill="#64748b">判定与逐项证据：capability_ladder/00-map.md ｜ 观测 2026-09-30 ｜ arXiv:2608.21884 的来源承袭与样本可见性限制须并列讲。</text>
 </svg>

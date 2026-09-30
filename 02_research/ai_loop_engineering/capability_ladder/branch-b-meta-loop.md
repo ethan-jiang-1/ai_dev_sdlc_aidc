@@ -1,19 +1,14 @@
-# R5 自我改进（正式阶 ✅ 2026-09-30 升格）——交出对 harness 本身的改写权
+# 支线 B · 改进循环本身——局部实例已证，广义自动自改未成熟
 
-> **升格判定**：定阶门槛（≥2 已回源独立来源站在同一交接面）已满足——**Runkle**（LangChain 2026-06-16，[evidence-a §3 C1](../raw/evidence-2026-09-26-a-originators.md)）、
-> **Morris**（martinfowler 2026-03-04，[evidence-c §问题3.1.3](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md)）、**Böckeler**（2026-04-02，同上 §3.3.3）三源独立落位，
-> 外加 Anthropic 实证票（[evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S5"rewrites the tool description"，-40% 完成时间）。
-> 原候选理由（操作素材未落自说明格式）已随本轮挖掘解除。
-> ⚠️ 本阶的特殊性：**护栏就是本阶的闸门**——没有护栏的 R5 不是阶，是事故（见 §四，Goodhart/43×/self-preference）。
+> **证据边界**：Runkle（[evidence-a §3 C1](../raw/evidence-2026-09-26-a-originators.md)）、Morris（[evidence-c §问题3.1](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md)）定义元循环；Anthropic 工具测试代理改写**工具描述**是一个局部实例（[evidence-u S5](../raw/evidence-2026-09-30-u-post-june-kols.md)）。Böckeler 描述的是**人**根据重复失败改进 harness，不能算代理获得自改权的独立票；与 Morris 同属 Thoughtworks 也不作独立机构票。
+> 此支线用于展示将来的方向，**不是学员必修的最高阶**。尤其是代理自动更改评估器或核心循环结构，当前不能从工具描述案例推断为已成熟做法。
 
-## 一、交接面（共识版）
+## 一、交接面（四个不同权限）
 
-循环的修改对象从**产物**变为**产生产物的系统**（harness：prompt/skill/规则/工具描述/评估器配置）。
-Morris 的分界句是全梯最清晰的一条界限：
+修改对象从产物转向产生产物的系统；教学按**人亲自改 → 代理给提案、人审核 → 代理在受限外围件上应用、独立验证 → 代理改写核心规则/判据**讲清幅度。前两者有明确机制，工具描述等外围改动有案例；最后一项仍是高风险研究方向，不默认放权。Morris 的分界句说明“人改 harness”，他的 flywheel 才进一步讨论“代理参与管理/改进”。
 > "The 'in the loop' way is to fix the artefact … The 'on the loop' way is to **change the harness that produced the artefact** so it produces the results we want."
-（修正对象升级＝R2/R3 与 R5 的分界线。）
 
-## 二、支撑条目（自说明，均一手）
+## 二、支撑条目（原文与成熟度分开）
 
 **① 定义句（Runkle/LangChain，2026-06-16，[evidence-a §3 C1](../raw/evidence-2026-09-26-a-originators.md)）**
 > "The hill climbing loop runs an analysis agent over those traces and uses the findings to **rewrite the harness** with improved configuration."
@@ -29,7 +24,7 @@ Morris 的分界句是全梯最清晰的一条界限：
 
 **④ 存在理由（Anthropic Managed Agents，2026-04-08，[evidence-b §问题2.5](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）**
 > "a harness encodes assumptions about what the model can't do … **those assumptions rot as the model improves**"
-- 不改写 harness，假设腐烂就变成债务——R5 不是可选项而是维护义务。
+- 模型升级会使部分 harness 假设过时，因而需要**复审和维护**；这不是允许代理自动改写 harness 的论据。
 
 **⑤ 机构实践（OpenAI《Harness engineering》，2026-02-11，[evidence-i Source 6](../raw/evidence-2026-09-27-i-high-influence-control.md)）**
 > "When documentation falls short, we **promote the rule into code**."
@@ -49,12 +44,15 @@ Morris 的分界句是全梯最清晰的一条界限：
 > "one then tunes Ralph by adding a sign next to the slide saying 'SLIDE DOWN, DON'T JUMP, LOOK AROUND,'"
 - 把踩坑教训写成环境内持久提示——R5 的人工版，教学的入口形态。
 
-## 三、升阶闸门（本阶闸门＝护栏本身）
+## 三、受控尝试的必要核查（不是自动放行保证）
+
+以下是可讨论的风险控制与研究线索，尚无证据证明四条同时满足就能安全放行核心自改；优先从人审核的外围件改动开始。
 
 1. **提案-评估异源**（实证：self-preference 与 self-recognition 线性相关，[evidence-m Source 5](../raw/evidence-2026-09-28-m-judge-lineage.md) → arXiv:2404.13076）：
    > "an LLM evaluator scores its own outputs higher than others' while human annotators consider them of equal quality."
-2. **判据内容隔离**（METR，[evidence-n Source 8](../raw/evidence-2026-09-28-n-verdict-split-coding.md)）：
-   > "Reward hacking was more than **43×** more common on RE-Bench tasks … because … the model was able to see the entire scoring function."
+2. **判据泄露与绕过风险**（METR，[evidence-n Source 8](../raw/evidence-2026-09-28-n-verdict-split-coding.md)）：
+   > "Reward hacking was more than **43×** more common on RE-Bench tasks **than HCAST tasks**, perhaps because on RE-Bench tasks the model was able to see the entire scoring function, making that function easier to bypass…"
+   - 这是两类任务间的比较与作者的可能解释，**不是**同一任务“公开判据 vs 隐藏判据”随机对照得出的通用 43× 因果效果。
 3. **Goodhart 上界**（[evidence-m Source 2](../raw/evidence-2026-09-28-m-judge-lineage.md) → arXiv:2210.10760）：
    > "optimizing its value too much can hinder ground truth performance, in accordance with **Goodhart's law**."
 4. **反应式构建**（marmelab 审计，[evidence-c 对照面4a](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md)）：
@@ -78,7 +76,7 @@ Morris 的分界句是全梯最清晰的一条界限：
    （[arXiv:2507.19457](https://arxiv.org/abs/2507.19457)，v2 2026-02-14）。仓库 [gepa-ai/gepa](https://github.com/gepa-ai/gepa)
    6.8k stars、2026-09-29 仍有提交，README 口径已扩到 "prompts, code, **agent architectures**, configurations"。
    DSPy 侧：3.4.0 于 2026-09-25 发布（月更节奏），含 ReActV2 原生工具环、RLM 递归循环、沙箱解释器。
-   **归位注意**：GEPA/DSPy 是 R5 护栏的**学术参考实现**（提案-评估分离＋Pareto 档案＋指标驱动），
-   不是 coding-agent harness 工具——引用时摆"结构同源"位，不摆"同类工具"位。
+   **归位注意**：GEPA/DSPy 是优化器的**结构对照线索**（提案-评估分离、候选档案、指标驱动），
+   不是 coding-agent harness 自改机制的验证；不能从其数字推得本支线的效果。
 2. NLAH（arXiv 2603.25723）与 marmelab 引文的原文核验。
 3. Morris 卡片四级修订联动（flywheel 归位 R5 已在 00-map 注记）。

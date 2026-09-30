@@ -31,9 +31,11 @@ ai_loop_engineering/
 │   └── 03_verdict_split/      #   ③ 验收与干活分离
 ├── capability_ladder/         # ★ 专项深挖区（2026-09-30 立）：能力爬梯按学习者交接面切片
 │   ├── README.md              #   定位 / 定阶门槛（共识阶才立）/ 回源队列
-│   ├── 00-map.md              #   六源阶梯对照矩阵（本区判定权威）
-│   ├── rung-0N-*.md           #   R1–R5 正式阶（09-30 全部升格）
-│   └── figures/               #   capability-ladder.svg ＋ ladder-consensus-map.svg
+│   ├── 00-map.md              #   主线与可选高阶分支的证据边界（本区教学判定权威）
+│   ├── rung-0N-*.md           #   R1–R3 主线三档
+│   ├── branch-a-orchestration.md # 可选编排支线
+│   ├── branch-b-meta-loop.md  #   可选元循环支线
+│   └── figures/               #   学习路径图＋证据边界图
 └── figures/                   # SVG
 ```
 

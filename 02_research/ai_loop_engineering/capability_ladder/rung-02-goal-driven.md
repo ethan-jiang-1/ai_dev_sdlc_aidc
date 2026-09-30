@@ -1,19 +1,18 @@
-# R2 目标驱动（正式阶）——交出多轮的路径选择，人只给可观察的完成条件
+# R2 有界目标续跑（主线 · 机制已证）——交出下一轮的启动与路径选择
 
-> **交接面**：人不再描述"每步做什么"，只描述**可观察的最终状态**（测试通过、构建成功、调用点清零）；
-> 循环自己决定每轮改哪里、怎么改，由独立评估者对状态逐轮判定。人保留的东西：目标措辞、验收判据、边界。
+> **交接面**：人给出目标、检查方式和资源边界；系统在一轮结束后根据条件决定是否继续、下轮怎样推进。人保留目标措辞、实际产出验收及随时中断权；独立检查约定条件**不等于**独立判断实现是否足够好。
 
 ## 一、定义（跨源最小交集）
 
-入口是粗目标＋完成条件；循环以 goal 为终止判据多轮自驱。判据必须是**机器/环境可观察的**，这是本阶与 R1 的本质差。
+入口是有界目标＋完成条件；循环以 goal 作为续跑/停止依据多轮自驱。条件应说明**可观察终态、检查方式和不该改变的边界**；检查可以由独立模型完成，不能把其 verdict 与独立质量验收画等号。这是本阶与 R1 的关键增量。
 
-## 二、支撑条目（自说明）
+## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）
 
 **① Osmani `/goal`（转述自台账，逐字在 evidence-a）** ⏳ 逐字待补
 - 要点（转述 [`raw/kol-roster.md`](../raw/kol-roster.md) §A `addy_osmani` 行）：`/goal` 评估器**只核 transcript 硬规则、不判内容好坏**；
   分层运行模式第二级即 `/goal`。锚 [evidence-a](../raw/evidence-2026-09-26-a-originators.md)。
 
-**② Anthropic quickstart 源码（本区唯一已带逐字的条目）**——一手源码，观测 2026-09-28，全文在 [evidence-l](../raw/evidence-2026-09-28-l-quickstart-code.md)：
+**② Anthropic quickstart 源码（对“有 goal 就能自动判停”的反例）**——一手源码，观测 2026-09-28，全文在 [evidence-l](../raw/evidence-2026-09-28-l-quickstart-code.md)：
 - 驱动层退出路径逐字：
   > `while True:` / `iteration += 1` / `if max_iterations and iteration > max_iterations:` →
   > `print(f"\nReached max iterations ({max_iterations})")` / `break`
@@ -24,12 +23,12 @@
 **③ 可观察措辞纪律** ⏳ 逐字待补
 - 中文传播层的转述与本主题判读同构（[evidence-t](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md) §2，侦察级）：
   > "你不能写让代码达到生产就绪，因为AI没法验证，你必须写测试通过且lint检查无误，这样评估者才能通过读取终端输出判断是否真正完成。"
-- 主题侧权威表述在 [`../agent_goal_eval/`](../agent_goal_eval/README.md)（goal/eval 怎么构造归那个主题，此处只指针）。
+- 主题侧权威表述在 [`agent_goal_eval/`](../../agent_goal_eval/README.md)（goal/eval 怎么构造归那个主题，此处只指针）。
 
 **④ 学术共识口径（✅ 2026-09-30 锚 [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S6）**
 - arXiv:2608.21884（2026-08，ASE 2026 workshop 在审）摘要逐字——灰色文献"基本一致"的构件清单里，本阶占两头：
   > "triggered agent runs bounded by **machine-checkable stop conditions**, persistent state files, verifier sub-agents, token budgets, and **defined points of escalation to humans**."
-- 这是 R2 交接面成为**共识**的最硬形态：独立学术综述把"机器可核停止条件＋人升级点"列为 well-engineered loop 的定义件。
+- 这说明“机器可核停止条件＋人升级点”已成为灰色文献的**设计词汇**；论文 [§3 O3 与 §4.1](https://arxiv.org/html/2608.21884v2) 同时提醒来源承袭、仓库中可见的 goal/stop 定义未检出。不能写成已普及或已证明 R2 效果。
 
 **⑤ 判据性质的 nuance（Ronacher，✅ S1）——纪律的边界**
 - > "The harness just needs some signal that lets it continue. **It does not have to be objective or binary**, it just has to be useful enough to drive another iteration."
@@ -67,8 +66,6 @@
 - goal 措辞含糊 → 循环烧钱无果：行为面反例矩阵待收口（CURRENT 缺口 5），落位后搬入 ⏳。
 - 评估者只读 transcript 的局限（Osmani 口径）→ 与 ③ 验收分离（[`stop_conditions/03_verdict_split/`](../stop_conditions/03_verdict_split/README.md)）衔接。
 
-## 四、升 R3 的闸门
+## 四、进入 R3 前的额外检查
 
-R2 的循环仍靠"人开一次会话"起跑。当任务需要**定时起跑或事件触发**（CI 轮询、夜间跑批），交出去的就是
-"开不开跑"本身——必须先补**硬上限与熔断**（[`stop_conditions/02_hard_caps/`](../stop_conditions/02_hard_caps/README.md)），
-否则无人值守＝无人拉闸。
+R2 的多轮续跑不自动提供定时或事件唤醒。当任务需要**以后再次起跑**（CI 轮询、夜间跑批），先定触发范围和**硬上限与熔断**（[`stop_conditions/02_hard_caps/`](../stop_conditions/02_hard_caps/README.md)）；如跨会话运行，还须状态持久、取消传播和人工接手。也可停留在 R2，直接探索有界的并行研究支线，不把 R3 当所有后续能力的前置。

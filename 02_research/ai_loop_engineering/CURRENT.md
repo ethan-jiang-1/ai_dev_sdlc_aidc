@@ -1,6 +1,6 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-30（T 路入库＋capability_ladder 立区）**：①中文视频传播锚文字稿入库为 [evidence-t](raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)（侦察级；视频本体存在已核；回源负结论同日记录——机房 IP 出口下 YouTube/B站/转写站均不可得，音频字幕未独立取得）。②用户定调"按学习者交接面立能力爬梯，只要共识阶"→ **[`capability_ladder/`](capability_ladder/README.md) 立区**：00-map 六源对照矩阵判读出 **R1–R3 正式阶 / R4 编排、R5 自我改进候选阶**；回源队列 #1＝Anthropic multi-agent（决定 R4 升降）。B站/YouTube「为什么叫QQ」实操指南视频文字稿入库为 [evidence-t](raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)（侦察级：文字稿由用户提供、未对原声核验；视频本体存在已核）。定性=与花叔橙皮书同类的中文转述层，**不入册**，时间线记传播位。价值点：三层实操叙述与本主题已回源机制多处同构（自主度分档/可观察停止条件/对抗验证），但"90% 开发者"统计无源、专名 ASR 讹变多处——引用前先过 §1 校验点。回源负结论同日记录：本环境（机房 IP 出口）YouTube 全 client 风控、B站 412、主流转写站全部有盾，音频与字幕均未能独立取得。
+> 最近一次更新：**2026-09-30（capability_ladder 回源 review 后重定教学结构）**：本区不再宣称 R1–R5 五阶必经、R4“写入单线程”为跨机构共同拓扑或 R5 广义自改已成熟。[00-map](capability_ladder/00-map.md) 改为 **R0 起点 → R1 有界执行 → R2 有界续跑 → R3 定时/事件唤醒**的教学主线，以及**多主体编排 / 改进循环本身**两条可选高阶方向；R3 区分会话内与跨会话，所有高阶按场景展示、不要求学员掌握。`branch-a/b` 已由原 `rung-04/05` 改名，两张图已同步。原文取证仍以 evidence 档案为权威：Osmani 双轴增量已进 evidence-a D11，论文全文限制与跨源判读修正在 evidence-u S6；T 路视频仍为侦察级、文字稿未对原声，不入定阶票。
 >
 > **2026-09-28（stop_conditions 深挖批收口＋自说明改版）**：三件骨架按点深挖第一轮全量回源完成——6 个新 evidence 档案（l 官方 quickstart 源码 / m 裁判谱系 / n coding 验收分离 / o 失控实录 / p 实战闸门与非编码域 / q 框架默认值），32 条新来源，承重引文逐条抽验、缺原句的条目上 web 补齐原文。**用户定的硬要求已落规则**：practices 自说明——每条自带核心片段（原句/代码/参数），纯指针条目无效；取不到硬核内容的条目放弃并记录（Reddit $6k 案即此）。**方法论发现**：两处 docs↔源码默认值打架（LangGraph 1000↔10007、CrewAI 20↔25）——参数类主张必须锚源码/tag。**回流候选已登记**（失控三型→②、裁判失效四机理→③、docs↔源码分歧→引用规范），待进 digested/03。
 
@@ -27,7 +27,7 @@
 | `result/landscape.md` | ✅ 2026-09-27 入层。过筛结论；未复核的 I2 / K 不进主张 |
 | `stop_conditions/`（三件骨架深挖区） | ✅ 2026-09-28 立区＋深挖批收口＋**自说明改版**（用户定硬要求：practices 每条必须自带核心片段——原句/代码/参数，纯指针条目无效；取不到硬核内容的条目放弃并记录，如 Reddit $6k 案；**README 已升级为协作入口**：初衷/流程/格式期待）。6 个新档案（l/m/n/o/p/q）；practices ① 20 条（五域＋框架缺省对照＋行为面反例）/ ② 21 条（失控实录 3 案＋docs↔源码分歧 2 处＋候选单列＋放弃记录）/ ③ 26 条（裁判失效四机理实证＋spec-kit 口径修正）；判定权威仍在 digested/03，**回流候选已登记** |
 | `raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md` | ✅ **T 路**：中文视频传播锚（为什么叫QQ 实操指南）文字稿＋ASR 讹变对照表＋与已回源机制的同构归位候选。侦察级，不进结论；时间线已记传播位，KOL 不入册 |
-| `capability_ladder/`（能力爬梯深挖区） | ✅ 2026-09-30 立区＋首批深挖收口：**R1–R5 全部正式阶**（R4 靠 evidence-u 三票升格、共识形态＝写入单线程；R5 靠子代理全档挖掘升格，护栏随改写幅度递增）。图两张：[`figures/capability-ladder.svg`](capability_ladder/figures/capability-ladder.svg)＋[`figures/ladder-consensus-map.svg`](capability_ladder/figures/ladder-consensus-map.svg)。回源批次入 [evidence-u](raw/evidence-2026-09-30-u-post-june-kols.md)（Ronacher/Walden/Carlini/Cursor×2/arXiv 全文逐字）。rung 档已充实自说明条目＋每阶 dissent；余项：LangGraph 归位、run-modes docs 两名词复核、NLAH 核验 |
+| `capability_ladder/`（学习者交接面横切） | ✅ **2026-09-30 review 后重构**：[00-map](capability_ladder/00-map.md) 为本区唯一判定权威，R0 基线＋R1–R3 主线，原 R4/R5 改为可选高阶分支（场景可行≠通用成熟）。R3 会话内 `/loop` 与持久云端调度分列；Cognition 写入单线程仅是一个方案，Carlini 展示不同拓扑；R5 工具描述改写仅为局部案例。主线三档及 `branch-a/b` 两图已同步，后续：逐字待补清理、run-modes 名词/NLAH 核验，评估能否回流 `digested/` |
 | 实践层 `03_practice/loop_governance/` | ✅ backbone 与 manual 已确认。确认记录在该目录 `CURRENT.md`，本行不复制审阅过程 |
 
 ## 下一步
@@ -43,8 +43,8 @@
    - `01_sources/reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；
    - Böckeler "False sense of control?" 的出处标注改为 **2025-10-15 sdd-3-tools.html**（凡引用处）。
 8. **T 路判读候选待处置**（[evidence-t §3](raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)）：六处与已回源机制的同构对号**不重复计票**；"Run Everything 只在 demo 用"的自主度分档句、三个可跟踪预言（编排框架/动态 Loop/云规划+本地 SLM 执行）先填控制链审计卡，再决定是否回流 digested/03。"90%" 统计与 Lance Martin 人物在回源核实前不得引用。
-9. **capability_ladder 回源批**（[`capability_ladder/README.md`](capability_ladder/README.md) §四）：①Anthropic multi-agent（R4 升降决定票）→ ②Cursor 官方 docs（R1 一手＋核销 evidence-t §1 讹变）→ ③LangGraph supervisor 归位；同时把 rung 档内 `⏳ 逐字待补` 清零（升正式阶前必须）。00-map §三.4 的"A/B 两类阶梯维度错位"回流候选登记到 digested/01 侧。
-6. **可跟踪预言**（登记防丢）：若出现第一条可复核自主度/质量放行阈值，回本主题补档、再评估实践层 §3；当前不以固定 N 轮作为目标。
+9. **capability_ladder 后续**（[README](capability_ladder/README.md) §三）：R1/R2 阶档的 `⏳ 逐字待补` 清理；Cursor run-modes 中 `Run Everything` / `File Deletion Protection` 名称复核；NLAH 原文核验。Anthropic multi-agent 与 Cursor changelog 已归档，不再作为“升五阶”的待办。新核对的 Osmani 双轴已进 evidence-a D11，arXiv 全文限制及旧升格推断撤回已进 evidence-u S6；Carlini/Morris 原文仍分别见 evidence-u/evidence-c。下一步按控制链判据评估是否回流 digested；目前 [00-map](capability_ladder/00-map.md) 仅负责本区教学判定。
+10. **可跟踪预言**（登记防丢）：若出现第一条可复核自主度/质量放行阈值，回本主题补档、再评估实践层 §3；当前不以固定 N 轮作为目标。
 
 
 ## 缺口

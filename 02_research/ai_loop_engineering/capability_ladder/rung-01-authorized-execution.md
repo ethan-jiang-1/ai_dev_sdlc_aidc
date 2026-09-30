@@ -1,18 +1,12 @@
-# R1 授权执行（正式阶）——交出单轮内的工具与命令执行权
+# R1 有界执行（主线 · 机制已证）——交出单次运行中授权面内的工具动作
 
-> **交接面**：人不再逐句批准"能不能跑这条命令/改这个文件"，改为一次性划定**授权面**（允许哪些工具、哪些命令模式），
-> 循环在面内自主、面外拒绝或升级。人保留的东西：授权面本身＋机器可核判据（测试门）。
+> **交接面**：人不再逐条批准授权面内的动作，改为划定**动作、目标与有效期**；面外动作拒绝或升级。人仍可中断并保留高风险动作审批。R0 中一次请求的 agent 也能调用工具：本阶的增量是**授权方式**，不是首次拥有工具。
 
 ## 一、定义（跨源最小交集）
 
 循环在**一轮之内**可以自主调用工具、执行命令、读写文件；失败自动重试；人的介入点从"每次动作"后移到"授权规则"。
 
-## 二、支撑条目（自说明）
-
-**① Anthropic（deny-and-continue 授权语义）** ⏳ 逐字待补
-- 出处：auto mode / Claude Code docs（已回源，锚 [evidence-b](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) / evidence-c）
-- 要点：面外动作不中断循环，拒绝并继续（deny-and-continue），拒绝计数累积触发熔断（3/20 口径，转述自台账 `anthropic_org` 行）
-- 逐字摘录待补齐后此条才可外引。
+## 二、支撑条目与回源待办（⏳ 条目不计入支撑）
 
 **② Cursor 官方语义（✅ 一手已核，2026-09-30 锚 [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S4a）**
 - Cursor 3.6 changelog（2026-05-29）逐字：
@@ -65,6 +59,5 @@
 
 ## 四、升 R2 的闸门
 
-单轮授权跑顺后，瓶颈移到"每轮都要人来判停/续"——此时需要**可观察的完成条件**（机器闸门 ①）与
-**验收分离**（③）才能把"判停权"交出去。停止条件三件的对应做法在
-[`stop_conditions/01_machine_gates/`](../stop_conditions/01_machine_gates/README.md) 与 [`03_verdict_split/`](../stop_conditions/03_verdict_split/README.md)，不复制。
+授权面内的执行可减少逐动作打断，但必须先能**界定可做动作、拒绝与升级路径**；测试/机器闸门能降低产出风险，不能取代沙箱和动作授权。要再交出跨轮续跑权，还需可观察的完成条件、资源上限与独立验收边界。对应做法见
+[`stop_conditions/01_machine_gates/`](../stop_conditions/01_machine_gates/README.md) 与 [`03_verdict_split/`](../stop_conditions/03_verdict_split/README.md)。
