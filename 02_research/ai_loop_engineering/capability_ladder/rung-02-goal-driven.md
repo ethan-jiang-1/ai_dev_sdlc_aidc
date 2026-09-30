@@ -26,6 +26,42 @@
   > "你不能写让代码达到生产就绪，因为AI没法验证，你必须写测试通过且lint检查无误，这样评估者才能通过读取终端输出判断是否真正完成。"
 - 主题侧权威表述在 [`../agent_goal_eval/`](../agent_goal_eval/README.md)（goal/eval 怎么构造归那个主题，此处只指针）。
 
+**④ 学术共识口径（✅ 2026-09-30 锚 [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md) S6）**
+- arXiv:2608.21884（2026-08，ASE 2026 workshop 在审）摘要逐字——灰色文献"基本一致"的构件清单里，本阶占两头：
+  > "triggered agent runs bounded by **machine-checkable stop conditions**, persistent state files, verifier sub-agents, token budgets, and **defined points of escalation to humans**."
+- 这是 R2 交接面成为**共识**的最硬形态：独立学术综述把"机器可核停止条件＋人升级点"列为 well-engineered loop 的定义件。
+
+**⑤ 判据性质的 nuance（Ronacher，✅ S1）——纪律的边界**
+- > "The harness just needs some signal that lets it continue. **It does not have to be objective or binary**, it just has to be useful enough to drive another iteration."
+- 与"机器可核"纪律构成真实张力：**停止条件要可核，续跑信号可以只是"够用的信号"**——两句话别混成一句。入口 goal 要可验，中间迭代的推进信号可以弱得多。这挡住了把"判据必须二值"教条化的误读。
+
+**⑥ 闸门质量实证（Carlini，✅ S3）**
+- > "it's important that the **task verifier is nearly perfect**, otherwise Claude will solve the wrong problem."
+- 16-agent / $20k 的 C 编译器项目里，作者自述大部分精力花在验证器与环境设计——R2 阶"人保留的东西"的重心：**判据质量本身就是工作量**。
+
+**⑦ 官方规格：可核条件三要素与三值判定（✅ 逐字，[evidence-b §4a](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) → Claude Code /goal docs）**
+> "A condition that holds up across many turns usually has: **One measurable end state** … **A stated check**: how Claude should prove it, such as '`npm test` exits 0' … **Constraints that matter**: anything that must not change on the way there"
+> "The model returns one of three verdicts: **Not yet met** … **Met** … **Impossible**: the evaluator judged that the condition can never be satisfied."
+> "If Claude keeps answering the evaluator without making progress (no tool use for several turns in a row), Claude Code stops the loop … with the goal still set."
+> "To bound how long a goal runs, include a turn or time clause in the condition, such as `or stop after 20 turns`."
+- 教学四件：三要素写法、三值出口（含 Impossible）、无进展熔断、上限作为条件子句。
+
+**⑧ 教科书级 goal 全例（✅ Osmani，2026-08-14，[evidence-a 补充回源](../raw/evidence-2026-09-26-a-originators.md)）**
+> "/goal Refactor the data-fetching layer in Dashboard.tsx until Lighthouse performance score is >= 92 and LCP is under 1.8s as shown by the Lighthouse CLI output. Do not change the public API of any hooks. Each turn must improve at least one reported metric; abort if two consecutive turns show no improvement. Stop after 10 turns."
+- 六要素齐全：可度量终态＋检查方式＋约束＋单调进步＋空转熔断＋轮数上限。直接可背的模板。
+
+**⑨ 为什么评估者必须独立（✅ 一句机制解释）**
+> "agents reliably skew positive when grading their own work. **It's GANs for prose.**"（Osmani，2026-04-19，[evidence-c §问题3.2.1](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md)）
+
+## 本阶 dissent
+
+- **"测试绿了"不等于行为对**（Böckeler，2026-04-02，[evidence-c §问题3.3.4](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md)）：
+  > "This approach puts a lot of faith into the AI-generated tests, **that's not good enough yet**."
+- **自纠正循环的定量反调**（ReliabilityBench，[evidence-r S2](../raw/evidence-2026-09-28-r-ial-scan-reliability.md)）：
+  > "The degradation gradient ∂R/∂λ is steeper for Reflexion (−0.50 per 0.1 λ) than ReAct (−0.38), indicating that **self-reflection mechanisms may amplify rather than mitigate fault impacts**."
+- **准入反句**（Osmani，2026-08-14）：> "a vague goal would be 'keep going until this UI design is good'. What does that mean? Good to who? … Tasks that require human taste, subjective design, or open-ended creative exploration **aren't a good fit**."
+- **适用性独立判据**（Willison，2025-09-30，[evidence-i Source 4](../raw/evidence-2026-09-27-i-high-influence-control.md)）：> "problems with **clear success criteria** where finding a good solution is likely to involve (potentially slightly tedious) **trial and error**."
+
 ## 三、反例位
 
 - goal 措辞含糊 → 循环烧钱无果：行为面反例矩阵待收口（CURRENT 缺口 5），落位后搬入 ⏳。

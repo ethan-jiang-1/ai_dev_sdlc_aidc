@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1160" viewBox="0 0 1560 1160" font-family="'PingFang SC','Hiragino Sans GB',sans-serif">
+  <rect width="1560" height="1160" fill="#ffffff"/>
+  <text x="60" y="50" font-size="30" font-weight="bold" fill="#1a202c">Loop Engineering 能力爬梯</text>
+  <text x="60" y="82" font-size="16" fill="#4a5568">交接面逐阶扩大：每一阶你把什么交给循环、人保留什么、升阶先补哪道闸门 ｜ 判定权威：capability_ladder/00-map.md ｜ 观测 2026-09-30</text>
+
+  <text x="470" y="122" font-size="17" font-weight="bold" fill="#2b6cb0">交出去（交接面）</text>
+  <text x="1030" y="122" font-size="17" font-weight="bold" fill="#276749">人保留</text>
+  <text x="100" y="122" font-size="17" font-weight="bold" fill="#4a5568">阶位</text>
+
+  <!-- R5 lane (top) -->
+  <rect x="360" y="190" width="1140" height="128" fill="#eef4fb" stroke="#2b6cb0" stroke-width="2.5"/>
+  <text x="382" y="228" font-size="22" font-weight="bold" fill="#2b6cb0">R5 自我改进</text>
+  <text x="382" y="254" font-size="14" fill="#2b6cb0">✅ 正式阶（2026-09-30 升格）</text>
+  <text x="382" y="300" font-size="15" fill="#233a52">交出：对 harness 本身的改写权——幅度光谱：工具描述（已实证 -40%）→ 循环结构（概念）</text>
+  <text x="1030" y="248" font-size="15" fill="#233a52">提案-评估异源、判据内容隔离、</text>
+  <text x="1030" y="272" font-size="15" fill="#233a52">Goodhart 上界、反应式构建、审计谱系</text>
+
+  <!-- gate R4→R5 -->
+  <text x="392" y="346" font-size="15" font-weight="bold" fill="#c05621">↑ 闸门：护栏随改写幅度递增——判据可见时被绕过率高 43×（METR），先装护栏再交改写权</text>
+
+  <!-- R4 lane -->
+  <rect x="300" y="352" width="1200" height="128" fill="#eef4fb" stroke="#2b6cb0" stroke-width="2.5"/>
+  <text x="322" y="390" font-size="22" font-weight="bold" fill="#2b6cb0">R4 编排与并发</text>
+  <text x="322" y="416" font-size="14" fill="#2b6cb0">✅ 正式阶（2026-09-30 升格）</text>
+  <text x="322" y="442" font-size="15" fill="#233a52">共识形态＝写入单线程：map-reduce-and-manage ／ orchestrator-worker ／ 文件锁变体</text>
+  <text x="322" y="464" font-size="13" fill="#5a718a">unstructured swarm 被明确判为 distraction（Cognition）</text>
+  <text x="1030" y="410" font-size="15" fill="#233a52">拓扑形状、努力尺度规则、token 预算</text>
+  <text x="1030" y="434" font-size="15" fill="#233a52">品味——"判据要品味承担"的活别进来</text>
+  <text x="1030" y="458" font-size="13" fill="#5a718a">（Anthropic：编码任务的并行度低于研究）</text>
+
+  <!-- gate R3→R4 -->
+  <text x="332" y="508" font-size="15" font-weight="bold" fill="#c05621">↑ 闸门：可验证性判据＋树级 token 预算——"成败判据简单可验"的活才并发</text>
+
+  <!-- R3 lane -->
+  <rect x="240" y="514" width="1260" height="128" fill="#eef4fb" stroke="#2b6cb0" stroke-width="2.5"/>
+  <text x="262" y="552" font-size="22" font-weight="bold" fill="#2b6cb0">R3 时间/事件驱动</text>
+  <text x="262" y="578" font-size="14" fill="#2b6cb0">✅ 正式阶</text>
+  <text x="262" y="604" font-size="15" fill="#233a52">交出：起跑权——cron／事件／agent 自主唤醒；"done"的语义移交给 harness 层循环</text>
+  <text x="262" y="626" font-size="13" fill="#5a718a">（CC /loop 7 天硬过期＋3/20 熔断；Cursor /loop 三种唤醒条件）</text>
+  <text x="1030" y="572" font-size="15" fill="#233a52">触发条件、硬上限、熔断、升级可达性</text>
+  <text x="1030" y="596" font-size="13" fill="#5a718a">人不在场时这是唯一刹车</text>
+  <text x="1030" y="620" font-size="13" fill="#5a718a">⚠️ 话语有共识、仓库无 state file（arXiv 217/256）</text>
+
+  <!-- gate R2→R3 -->
+  <text x="272" y="670" font-size="15" font-weight="bold" fill="#c05621">↑ 闸门②：硬上限＋熔断——边界线＝会话内循环(agent loop) → 会话外循环(harness loop)</text>
+
+  <!-- R2 lane -->
+  <rect x="180" y="676" width="1320" height="128" fill="#eef4fb" stroke="#2b6cb0" stroke-width="2.5"/>
+  <text x="202" y="714" font-size="22" font-weight="bold" fill="#2b6cb0">R2 目标驱动</text>
+  <text x="202" y="740" font-size="14" fill="#2b6cb0">✅ 正式阶（6/6 源落位，最稳一阶）</text>
+  <text x="202" y="766" font-size="15" fill="#233a52">交出：多轮路径选择——入口＝粗目标＋机器可核完成条件；判停交独立评估者</text>
+  <text x="202" y="788" font-size="13" fill="#5a718a">（Osmani /goal 只核硬规则不判好坏；arXiv 共识构件"machine-checkable stop conditions"）</text>
+  <text x="1030" y="732" font-size="15" fill="#233a52">goal 措辞、判据质量、任务边界</text>
+  <text x="1030" y="756" font-size="13" fill="#5a718a">"verifier 不完美→解错题"（Carlini）</text>
+  <text x="1030" y="780" font-size="13" fill="#5a718a">推进信号可弱于判据（Ronacher nuance）</text>
+
+  <!-- gate R1→R2 -->
+  <text x="212" y="832" font-size="15" font-weight="bold" fill="#c05621">↑ 闸门①③：可观察停止条件＋验收分离——判停权交出去之前先让它可核</text>
+
+  <!-- R1 lane -->
+  <rect x="120" y="838" width="1380" height="128" fill="#eef4fb" stroke="#2b6cb0" stroke-width="2.5"/>
+  <text x="142" y="876" font-size="22" font-weight="bold" fill="#2b6cb0">R1 授权执行</text>
+  <text x="142" y="902" font-size="14" fill="#2b6cb0">✅ 正式阶（5/6 源落位）</text>
+  <text x="142" y="928" font-size="15" fill="#233a52">交出：单轮内的工具与命令执行——授权面三级处置：allowlist 直行 / 沙箱内跑 / 分类器裁决→人</text>
+  <text x="142" y="950" font-size="13" fill="#5a718a">（Cursor 3.6 Auto-review 官方语义，2026-05-29）</text>
+  <text x="1030" y="894" font-size="15" fill="#233a52">授权规则＋机器可核测试门</text>
+  <text x="1030" y="918" font-size="13" fill="#5a718a">授权面是分级处置表，不是开关</text>
+
+  <!-- gate R0→R1 -->
+  <text x="152" y="994" font-size="15" font-weight="bold" fill="#c05621">↑ 闸门①：机器可核判据——敢把"逐条批准"换成"授权面"</text>
+
+  <!-- R0 lane -->
+  <rect x="60" y="1000" width="1440" height="128" fill="#edf0f2" stroke="#718096" stroke-width="2"/>
+  <text x="82" y="1038" font-size="22" font-weight="bold" fill="#4a5568">R0 人肉 API</text>
+  <text x="82" y="1064" font-size="14" fill="#718096">反面基线（非阶）</text>
+  <text x="82" y="1090" font-size="15" fill="#2d3748">交出：无——你自己就是循环：提示 → 等待 → 读输出 → 再提示，一天几十上百次</text>
+  <text x="1030" y="1056" font-size="15" fill="#2d3748">保留：一切（所以一切瓶颈都在你身上）</text>
+
+  <!-- left ascending arrow -->
+  <line x1="38" y1="1080" x2="38" y2="230" stroke="#c05621" stroke-width="3"/>
+  <polygon points="38,214 28,236 48,236" fill="#c05621"/>
+  <text x="16" y="660" font-size="16" font-weight="bold" fill="#c05621" transform="rotate(-90 16 660)">从最简单到最复杂 · 逐阶放权</text>
+
+  <text x="60" y="1146" font-size="13" fill="#718096">分歧不是阶梯的敌人：全部分歧针对升阶速度与适用域，无一条否认阶序（分歧带见图 2）｜ 升格判定：capability_ladder/00-map.md §三 ｜ 素材：raw/evidence-u</text>
+</svg>

@@ -41,8 +41,8 @@
 | **R1 授权执行** | 交出**单轮内的工具与命令执行权**；人只设授权面＋测试门 | Osmani 运行模式一级 · CC turn-based · Anthropic deny-and-continue · Cursor 设置面（官方一手⏳） | ✅ 正式阶 | 机器闸门（①） |
 | **R2 目标驱动** | 交出**多轮的路径选择**；人只给可观察的完成条件 | Osmani `/goal` · CC goal-based · Anthropic quickstart 源码 | ✅ 正式阶 | 可观察停止条件＋验收分离（①③） |
 | **R3 时间/事件驱动** | 交出**"要不要开跑"本身**；循环脱离会话在跑，人管触发与熔断 | Runkle event-driven 环 · CC time-based/proactive · Osmani `/loop`/`schedule` | ✅ 正式阶 | 硬上限＋熔断（②） |
-| **R4 编排与并发** | 交出**任务分解与子代理调度**；人管拓扑与预算 | 视频三层之三 · Anthropic multi-agent（⏳待回源） | ⏳ 候选阶 | 全三件＋token 预算 |
-| **R5 自我改进** | 交出**对 harness 本身的改写权**；人管提案-评估分离与审计谱系 | Runkle hill-climbing 环 · GEPA/DSPy 保护链（缺口5 素材） | ⏳ 候选阶（单源＋生态） | 提案-评估分离＋改写审计链 |
+| **R4 编排与并发** | 交出**任务分解与子代理调度**；人管拓扑与预算 | Anthropic orchestrator-worker · Cognition 写单线程 · Carlini 文件锁 · arXiv 构件清单 | ✅ 正式阶（2026-09-30 升格，共识形态＝写入单线程＋智能旁路） | 可验证性闸门＋全三件＋token 预算 |
+| **R5 自我改进** | 交出**对 harness 本身的改写权**；人管提案-评估分离与审计谱系 | Runkle hill-climbing · Morris flywheel · Böckeler steering · Anthropic 工具描述改写（-40%） | ✅ 正式阶（2026-09-30 升格；护栏随改写幅度递增） | 提案-评估异源＋判据内容隔离＋Goodhart 上界＋反应式构建 |
 
 ## 三、纪律（沿用＋本区新增）
 
@@ -54,18 +54,21 @@
 5. 与 deck 的关系：[`05_output/deck_ai_loop_engineering/`](../../05_output/deck_ai_loop_engineering/AGENTS.md) 只写叙事；
    本区供给叙事素材，叙事改动不回写本区判定。
 
-## 四、回源队列（按优先级）
+## 四、回源队列（按优先级；2026-09-30 首批已收口 [evidence-u](../raw/evidence-2026-09-30-u-post-june-kols.md)）
 
-1. **Anthropic《How we built our multi-agent research system》**——R4 头号一手，主题内尚无档案；决定 R4 能否升正式。
-2. **Cursor 官方 docs**（Run Mode / Auto review / Command Allowlist / File Deletion Protection）——R1 一手；
-   顺带核销 [evidence-t](../raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md) §1 校验点里 Cursor 相关讹变。
-3. **LangGraph supervisor / orchestrator-worker docs**——R4 第二票（evidence-q/s 有部分，需按控制链归位）。
+1. ~~Anthropic multi-agent~~ ✅ 已归档（evidence-u S5，2025-06-13 谱系票）→ **R4 已升正式**。
+2. ~~Cursor 官方 changelog×2~~ ✅ 已归档（evidence-u S4a/S4b，R1 三级处置＋R3 `/loop` 逐字核销）；
+   余项：run-modes docs 复核 "Run Everything"/"File Deletion Protection" 两名词（⏳）。
+3. LangGraph supervisor / orchestrator-worker docs——R4 补强（evidence-q/s 有部分，需按控制链归位）。
 4. R5 升阶材料：缺口 5 已集齐的 GEPA/DSPy 提案-评估分离素材按自说明格式搬入（不新建回源）。
+5. arXiv:2608.21884 全文精读（摘要已档 S6；217/256 仓库挖掘与 autonomy levels 受控研究计划直接关系本主题缺口 3 与可跟踪预言）。
+6. advisor strategy 正文补全（evidence-u S7 截断待补）。
 
 ## 五、文件分工
 
 | 文件 | 职责 |
 |---|---|
 | `README.md`（本文件） | 定位、纪律、定阶门槛、回源队列 |
-| [`00-map.md`](00-map.md) | 六源阶梯对照矩阵＋收敛/分叉判读（**本区判定权威**） |
-| `rung-0N-*.md` | 每阶一档：定义、支撑条目（自说明）、反例位、升阶条件、待补清单 |
+| [`00-map.md`](00-map.md) | 六源阶梯对照矩阵＋收敛/分叉判读＋分歧带（**本区判定权威**） |
+| `rung-0N-*.md` | 每阶一档：定义、支撑条目（自说明）、本阶 dissent、反例位、升阶条件、待补清单 |
+| `figures/` | [`capability-ladder.svg`](figures/capability-ladder.svg)（主阶梯）＋ [`ladder-consensus-map.svg`](figures/ladder-consensus-map.svg)（共识矩阵＋分歧带） |

@@ -32,7 +32,8 @@ ai_loop_engineering/
 ├── capability_ladder/         # ★ 专项深挖区（2026-09-30 立）：能力爬梯按学习者交接面切片
 │   ├── README.md              #   定位 / 定阶门槛（共识阶才立）/ 回源队列
 │   ├── 00-map.md              #   六源阶梯对照矩阵（本区判定权威）
-│   └── rung-0N-*.md           #   R1–R3 正式阶 / R4–R5 候选阶
+│   ├── rung-0N-*.md           #   R1–R5 正式阶（09-30 全部升格）
+│   └── figures/               #   capability-ladder.svg ＋ ladder-consensus-map.svg
 └── figures/                   # SVG
 ```
 

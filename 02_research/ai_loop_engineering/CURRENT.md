@@ -27,7 +27,7 @@
 | `result/landscape.md` | ✅ 2026-09-27 入层。过筛结论；未复核的 I2 / K 不进主张 |
 | `stop_conditions/`（三件骨架深挖区） | ✅ 2026-09-28 立区＋深挖批收口＋**自说明改版**（用户定硬要求：practices 每条必须自带核心片段——原句/代码/参数，纯指针条目无效；取不到硬核内容的条目放弃并记录，如 Reddit $6k 案；**README 已升级为协作入口**：初衷/流程/格式期待）。6 个新档案（l/m/n/o/p/q）；practices ① 20 条（五域＋框架缺省对照＋行为面反例）/ ② 21 条（失控实录 3 案＋docs↔源码分歧 2 处＋候选单列＋放弃记录）/ ③ 26 条（裁判失效四机理实证＋spec-kit 口径修正）；判定权威仍在 digested/03，**回流候选已登记** |
 | `raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md` | ✅ **T 路**：中文视频传播锚（为什么叫QQ 实操指南）文字稿＋ASR 讹变对照表＋与已回源机制的同构归位候选。侦察级，不进结论；时间线已记传播位，KOL 不入册 |
-| `capability_ladder/`（能力爬梯深挖区） | ✅ 2026-09-30 立区：R1 授权执行 / R2 目标驱动 / R3 时间事件驱动（正式阶），R4 编排 / R5 自我改进（候选阶）。定阶判定权威在 [`00-map.md`](capability_ladder/00-map.md)；升阶闸门＝stop_conditions 三件。回源队列：multi-agent → Cursor docs → LangGraph 归位；逐字段 ⏳ 待补清零后才可外引 |
+| `capability_ladder/`（能力爬梯深挖区） | ✅ 2026-09-30 立区＋首批深挖收口：**R1–R5 全部正式阶**（R4 靠 evidence-u 三票升格、共识形态＝写入单线程；R5 靠子代理全档挖掘升格，护栏随改写幅度递增）。图两张：[`figures/capability-ladder.svg`](capability_ladder/figures/capability-ladder.svg)＋[`figures/ladder-consensus-map.svg`](capability_ladder/figures/ladder-consensus-map.svg)。回源批次入 [evidence-u](raw/evidence-2026-09-30-u-post-june-kols.md)（Ronacher/Walden/Carlini/Cursor×2/arXiv 全文逐字）。rung 档已充实自说明条目＋每阶 dissent；余项：LangGraph 归位、run-modes docs 两名词复核、NLAH 核验 |
 | 实践层 `03_practice/loop_governance/` | ✅ backbone 与 manual 已确认。确认记录在该目录 `CURRENT.md`，本行不复制审阅过程 |
 
 ## 下一步
