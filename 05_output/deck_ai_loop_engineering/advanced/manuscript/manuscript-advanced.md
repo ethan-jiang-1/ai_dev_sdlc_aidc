@@ -448,3 +448,97 @@ circuit_open:
 ```
 
 这份清单验的是控制链能否拒绝已知坏路径，不证明业务质量、收益或组织可规模化。只有每项都能给出 evidence link、stop reason 和责任人，才有资格讨论减少逐轮值守。
+
+## 11. 从示意 YAML 泛化成项目控制面
+
+这些 YAML 是**语义参考模型**，不是 Loop Governance 的标准协议。泛化的对象不是字段名，而是控制不变量：
+
+| 语义不变量 | 搜索案例字段 | CI / 数据管道 / 发布系统的可能映射 |
+|---|---|---|
+| 目标与终态 | `terminal_state` | build artifact ready / DAG partition complete / release candidate healthy |
+| 路径与动作约束 | `constraints`, `scope` | 允许目录 / 允许表分区 / 允许环境与变更类型 |
+| 环境事实 | `evidence_ref`, `exit_code`, trace | test report / run manifest / deploy health events |
+| 判定 | `verdict`, `reasons`, rubric | gate result / data-quality rule / canary policy |
+| 继续资格 | `retryable`, budget remaining | retry class / backfill budget / rollback window |
+| 停止原因 | `stop_reason` | failed gate / budget exhausted / policy denied / human pause |
+| 权威与责任 | `accepted_by`, reviewer | release approver / data owner / on-call |
+| 恢复 | `resume_pointer`, checkpoint | rerun key / partition cursor / rollback or resume version |
+| 外部结果 | `outcome.owner`, `next_check` | adoption / freshness / incident-free window |
+
+**先分三层，不要把整份 YAML 当成通用标准**：
+
+| 层 | 是否应跨领域保留 | 例子 |
+|---|---|---|
+| 控制不变量 | 是 | 目标可观察、证据可追溯、判定有理由、停止原因独立、验收有权威、升级可恢复 |
+| 承载结构 | 可变 | YAML、JSON、数据库行、事件流、CI artifact、工单字段 |
+| 领域策略 | 不可直接搬运 | 阈值、重试次数、谁审批、什么算不可修复、回滚/补数/恢复动作 |
+
+例如 `accepted_by` 这个**语义**可以跨领域保留，但 CI 可能叫 `release_approver`，数据管道可能叫 `data_owner`；`max_turns: 10` 这个**数字**不能因为搜索案例存在就搬到发布或数据回填。
+
+**迁移规则**：
+
+1. 先写领域的终态和不可变约束，不要先复制 `goal.yaml`；
+2. 把每个控制动作映射为领域事件，而不是只存最终状态；
+3. 给每条判定绑定 evidence、判据版本和责任来源；
+4. 明确缺证据、未知、拒绝、资源耗尽是否 fail closed；
+5. 用领域特有的已知坏样本做负例，而不是复用搜索案例的负例；
+6. 演练恢复：进程重启、权限过期、上游延迟、人工冲突时，能否从同一状态继续或交接；
+7. 最后才决定 YAML、数据库、事件流或现有平台字段如何承载。
+
+**三个迁移例子**：
+
+```text
+CI：build artifact + test report → gate verdict → retry / block / release approval
+数据管道：partition manifest + quality report → freshness/completeness verdict → backfill / pause / owner review
+发布：canary health + rollback checkpoint → policy verdict → continue rollout / rollback / incident handoff
+```
+
+它们共享控制语义，但不能共享阈值、判据或恢复动作。`p95 < 300ms`、`3 次拒绝`、`10 轮` 等数字必须由领域风险、成本和历史基线决定；如果没有基线，只能标为待定，不能从搜索案例搬过去。
+
+## 12. 两个领域的完整迁移例子
+
+### A. 数据管道：从“页面完成”换成“分区可交付”
+
+```yaml
+terminal_state: partition=2026-09-28 is complete and queryable
+constraints: do_not_overwrite certified partitions; source schema unchanged
+feedback: run_manifest + row_count + null_rate + freshness_timestamp
+verdict: quality_gate_version=12
+continue: retry transient source read or backfill missing partition
+stop: certified or budget exhausted
+escalate: schema drift / owner decision required
+accepted_by: data_owner
+resume_pointer: dag_run=...; partition=...
+outcome_pending: downstream dashboard freshness not yet observed
+```
+
+迁移时保留的是“终态—事实—判定—出口—责任—恢复—外部结果”语义；换掉的是页面路径、浏览器检查和搜索分支。**领域负例**不是“按钮坏了”，而是：row count 为零、freshness 超期、schema drift、已认证分区被覆盖。每个负例都要确认同一质量门会失败，并且失败原因能回到下一步。
+
+### B. 发布系统：从“产出验收”换成“风险可控地推进”
+
+```yaml
+terminal_state: canary meets release policy for the observation window
+constraints: deploy only approved artifact; no production schema migration
+feedback: health events + error budget + rollback checkpoint
+verdict: canary_policy_version=7
+continue: expand rollout within authorized slice
+stop: policy met, then release_approver signs
+escalate: error budget breach / rollback unavailable / conflicting verdict
+accepted_by: release_approver
+resume_pointer: rollout_id + last healthy checkpoint
+outcome_pending: incident-free window not yet complete
+```
+
+发布系统的 `stop` 不是“部署命令返回 0”；可能是回滚、暂停或等待观察窗。**领域负例**包括：部署成功但错误率超预算、artifact digest 不在批准清单、rollback checkpoint 不可恢复。搜索案例的 `npm test`、10 轮和页面按钮都不能搬进来。
+
+## 13. 泛化验收：用变换而不是改名检查
+
+对任何新领域做三轮测试：
+
+1. **换领域**：同一控制语义映射到数据管道和发布系统，能否说清终态、事实、判定、出口、责任和恢复？
+2. **换承载**：把 YAML 改成数据库事件或 CI artifact，审计信息是否仍然可追溯？
+3. **换失败类型**：把“检查失败”换成权限过期、外部依赖延迟、判据版本漂移、人工冲突，状态是否仍能区分 `blocked / stopped / accepted / outcome_pending`？
+
+若只是替换字段名、但没有定义领域终态、负例和恢复动作，叫“泛化”是假的。若每换一个领域就能保留控制不变量、重写领域策略，并能用负例让门失败，这才是**语义泛化**，不是格式复制。
+
+**判断一个模板是否真的泛化**：至少做三次变换——换领域、换存储、换失败类型；如果只改字段名仍能回答“目标是什么、证据是什么、谁判、为什么停、谁接、如何恢复”，它具有语义泛化性。若必须保留搜索分支、浏览器按钮等具体词才能工作，它只是案例，不是模板。
