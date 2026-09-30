@@ -29,7 +29,7 @@
 > "The hill climbing loop runs an analysis agent over those traces and uses the findings to **rewrite the harness** with improved configuration."
 > "the return arrow doesn't just loop back to the top — **it reaches inside and updates the agent loop directly**. Each cycle of the outer loop makes the inner loops more effective."
 
-**② 人机分工与首个自动放行判据（Morris flywheel，[evidence-c §问题3.1.4/5](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md)）**
+**② 人机分工与未来式自动批准设想（Morris flywheel，[evidence-c §问题3.1.4/5](../raw/evidence-2026-09-26-c-autonomy-and-convergence.md)）**
 > "The next level is humans directing agents to manage and improve the harness rather than doing it by hand."
 > "As we gain confidence, the agents can assign scores to their recommendations, including the risks, costs, and benefits. We might then decide that recommendations with certain scores should be **automatically approved and applied**."
 
