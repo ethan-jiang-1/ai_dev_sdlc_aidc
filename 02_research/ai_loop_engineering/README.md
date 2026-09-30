@@ -29,6 +29,10 @@ ai_loop_engineering/
 │   ├── 01_machine_gates/      #   ① 机器可核判据逐轮闸门（practices + insights + 待挖）
 │   ├── 02_hard_caps/          #   ② 硬性资源上限兜底
 │   └── 03_verdict_split/      #   ③ 验收与干活分离
+├── capability_ladder/         # ★ 专项深挖区（2026-09-30 立）：能力爬梯按学习者交接面切片
+│   ├── README.md              #   定位 / 定阶门槛（共识阶才立）/ 回源队列
+│   ├── 00-map.md              #   六源阶梯对照矩阵（本区判定权威）
+│   └── rung-0N-*.md           #   R1–R3 正式阶 / R4–R5 候选阶
 └── figures/                   # SVG
 ```
 
