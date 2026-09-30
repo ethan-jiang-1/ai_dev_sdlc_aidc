@@ -50,7 +50,7 @@
   <text x="975" y="837" font-size="16" font-weight="bold" fill="#7c3aed">展示趋势 · 不要求学员掌握</text>
 
   <rect x="70" y="952" width="1365" height="100" rx="14" fill="#fff7ed" stroke="#fdba74"/>
-  <text x="93" y="988" font-size="19" font-weight="bold" fill="#9a3412">选择规则</text>
-  <text x="230" y="988" font-size="18" fill="#7c2d12">只交出能及时发现错误、可回滚、可独立核验的一部分；按任务降低或提高自主度。</text>
+  <text x="93" y="988" font-size="19" font-weight="bold" fill="#9a3412">结果可信闭环</text>
+  <text x="230" y="988" font-size="18" fill="#7c2d12">目标 → 证据 → 裁决 → 停机/交接 → 后验复核；缺少业务结果观察时不宣告完成。</text>
   <text x="93" y="1026" font-size="15" fill="#64748b">证据和边界：capability_ladder/00-map.md ｜ 观测 2026-09-30 ｜ 本图是教学路径，不是行业成熟度标准。</text>
 </svg>

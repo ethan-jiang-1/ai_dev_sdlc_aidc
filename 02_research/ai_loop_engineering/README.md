@@ -32,9 +32,9 @@ ai_loop_engineering/
 ├── capability_ladder/         # ★ 专项深挖区（2026-09-30 立）：能力爬梯按学习者交接面切片
 │   ├── README.md              #   定位 / 教学交接面 / 证据边界 / 技术走读索引
 │   ├── 00-map.md              #   主线与可选高阶分支的证据边界（本区教学判定权威）
-│   ├── result-reliability-interface.md # 结果可证成性横切检查，非新增 R4
-│   ├── rung-00-manual-baseline.md # R0 人手动续轮基线
-│   ├── rung-0N-*.md           #   R1–R3 主线三档
+│   ├── result-reliability-interface.md # 结果可信闭环：目标、证据、裁决、停机/交接、复核
+│   ├── rung-00-manual-baseline.md # LE0 人手动续轮基线
+│   ├── rung-0N-*.md           #   LE1–LE3 主线三档
 │   ├── branch-a-orchestration.md # 可选编排支线
 │   ├── branch-b-meta-loop.md  #   可选元循环支线
 │   └── figures/               #   总览两图＋六张档内独立技术机制图

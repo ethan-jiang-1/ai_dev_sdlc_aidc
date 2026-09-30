@@ -57,7 +57,7 @@
 
 **⑧ 人肉前身（Huntley Ralph"signs"，[evidence-b §问题1.1](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）**
 > "one then tunes Ralph by adding a sign next to the slide saying 'SLIDE DOWN, DON'T JUMP, LOOK AROUND,'"
-- 把踩坑教训写成环境内持久提示——R5 的人工版，教学的入口形态。
+- 把踩坑教训写成环境内持久提示——人工改进 harness 的入口形态。
 
 ## 三、受控尝试的必要核查（不是自动放行保证）
 
@@ -80,7 +80,7 @@
 - **反直觉 ablation**（marmelab）：> "we think a harness should be built by a human, instead of an agent. If an agent needs supervision, how can it decide the supervision it needed? This is **our opinion rather than a finding**: the only ablation study we found (NLAH, arXiv 2603.25723) **measures the opposite**, with a self-improving harness gaining 4.8 and 2.7 points."
 - **哲学张力**（Cherny YC，2026-02-17，[evidence-a §1b A3](../raw/evidence-2026-09-26-a-originators.md)）：
   > "you can improve performance maybe 10, 20% … And then essentially **the gain is wiped out with the next model**. … never bet against the model."
-  ——loop 配置本身也是 scaffolding；R5 改写的东西会随模型换代贬值，这是本阶投资回报的内在折扣。
+  ——loop 配置本身也是 scaffolding；支线 B 改写的东西会随模型换代贬值，这是本方向投资回报的内在折扣。
 
 ## 五、待补清单
 
@@ -94,4 +94,4 @@
    **归位注意**：GEPA/DSPy 是优化器的**结构对照线索**（提案-评估分离、候选档案、指标驱动），
    不是 coding-agent harness 自改机制的验证；不能从其数字推得本支线的效果。
 2. NLAH（arXiv 2603.25723）与 marmelab 引文的原文核验。
-3. Morris 卡片四级修订联动（flywheel 归位 R5 已在 00-map 注记）。
+3. Morris 卡片四级修订联动（flywheel 的元循环概念对照见 [00-map](00-map.md)）。

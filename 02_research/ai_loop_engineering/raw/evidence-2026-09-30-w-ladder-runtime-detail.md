@@ -11,7 +11,7 @@ quality_bar: 官方 docs/API 示例；页面未标发布日期时明确记录；
 
 > 本档不重抄 evidence-b/f/l/u 已有原句：新增的是官方运行时文档/API 对“输入 → 外部状态 → 决策 → 动作 → 出口/失败”的可教学细节。Cursor Run Modes 是对 evidence-u S4a changelog 的 docs 级补强；Managed Agents 是新的 API/运行时来源，不能与 Claude Code `/goal`、`/loop` 自动视为同一实现。
 
-## Source W1 · Cursor Run Modes（R1：动作授权）
+## Source W1 · Cursor Run Modes（LE1：动作授权）
 
 - URL：https://cursor.com/docs/agent/security/run-modes
 - 发布日期：页面未标单页发布日期；观测日期：2026-09-30（HTTP 200）
@@ -57,10 +57,10 @@ quality_bar: 官方 docs/API 示例；页面未标发布日期时明确记录；
 - **动作**：立即执行、沙箱执行、换一种 agent 路径、或暂停等人批准。
 - **出口**：动作完成；classifier 放行/阻断；阻断后 agent 改路；若 agent 仍要求执行则出现 approval prompt。
 - **失败模式**：官方明确 classifier 可能误放行或误阻断；Auto-review “is not a security boundary”。`Run Everything` 明确无 sandbox/classifier，不能当成 Auto-review 的更宽版本来继承其保护。
-- **支持**：R1 动作授权面与人在环出口。
-- **不支持**：没有声称会启动下一轮、保存跨会话状态、定义完成条件或定时唤醒；不能把 Run Mode 当 R2/R3。
+- **支持**：LE1 动作授权面与人在环出口。
+- **不支持**：没有声称会启动下一轮、保存跨会话状态、定义完成条件或定时唤醒；不能把 Run Mode 当 LE2/LE3。
 
-## Source W2 · Cursor Automations（R3：跨会话事件/时间触发）
+## Source W2 · Cursor Automations（LE3：跨会话事件/时间触发）
 
 - URL：https://cursor.com/docs/cloud-agent/automations
 - 发布日期：页面未标单页发布日期；观测日期：2026-09-30（HTTP 200）
@@ -90,10 +90,10 @@ quality_bar: 官方 docs/API 示例；页面未标发布日期时明确记录；
 - **动作**：后台启动 cloud agent，按 prompt 使用所选 tools，在绑定资源上运行。
 - **出口**：run 完成/失败；automation 可继续等待下一次 trigger。页面未给出统一的完成验收或跨 run 状态恢复契约。
 - **失败模式**：fork PR 直接失败；webhook 未先保存 automation 无 URL/API key；未指定 repo 时，Slack/cron 默认可能不使用 repo，若需改代码必须显式指定 repo。
-- **支持**：R3 跨会话的时间/事件唤醒存在，并给出输入、触发、资源绑定与失败出口。
-- **不支持**：不等于 Cursor 本地 `/loop`；不提供 R2 的“达到目标才继续”判定，也不证明 cloud run 自动继承本地 Run Mode/审批设置。
+- **支持**：LE3 跨会话的时间/事件唤醒存在，并给出输入、触发、资源绑定与失败出口。
+- **不支持**：不等于 Cursor 本地 `/loop`；不提供 LE2 的“达到目标才继续”判定，也不证明 cloud run 自动继承本地 Run Mode/审批设置。
 
-## Source W3 · Claude Managed Agents overview/sessions/events（R2/R3：持久会话运行时）
+## Source W3 · Claude Managed Agents overview/sessions/events（LE2/LE3：持久会话运行时）
 
 - URLs：
   - https://platform.claude.com/docs/en/managed-agents/overview
@@ -165,10 +165,10 @@ client.beta.sessions.events.send(
 - **动作**：harness 在 managed/self-hosted environment 执行工具并回传 agent/session events；应用通过 SSE/事件流观察状态。
 - **出口**：正常结束回到 `idle`，而不是自动 `terminated`；不可恢复错误或 archive 才到 `terminated`；事件可再次送入以恢复/续跑。
 - **失败模式**：服务端不可恢复错误导致 `terminated`；事件可能排队（`processed_at=null`），不能把“已提交”当“已执行”；会话的 agent 配置变更有边界——运行中需先 `user.interrupt` 等回 `idle`；页面还明确该能力为 beta。
-- **支持**：R2 的持久目标/状态/事件续跑基础；R3 跨会话唤醒的可持久 session runtime。
+- **支持**：LE2 的持久目标/状态/事件续跑基础；LE3 跨会话唤醒的可持久 session runtime。
 - **不支持**：session 持久化本身不等于定时/事件 scheduler；必须另有 scheduled deployment 或外部事件发送。也不等于 Claude Code 本地 `/goal` 的 session-scoped Stop hook。
 
-## Source W4 · Claude Managed Agents permission policies（R1：服务端工具动作门）
+## Source W4 · Claude Managed Agents permission policies（LE1：服务端工具动作门）
 
 - URL：https://platform.claude.com/docs/en/managed-agents/permission-policies
 - 发布日期：页面未标单页发布日期；文档版本标识 `managed-agents-2026-04-01`；观测日期：2026-09-30
@@ -208,10 +208,10 @@ tools:
 - **动作**：工具执行、拒绝、等待 `user.tool_confirmation`。
 - **出口**：执行结果回到 agent；确认/拒绝事件结束该工具门；custom tool 不走此 policy。
 - **失败模式**：把 MCP 的默认 `always_ask` 当成 agent toolset 默认值会错；把 custom tools 当作平台自动审查也会错。
-- **支持**：R1 工具动作授权。
+- **支持**：LE1 工具动作授权。
 - **不支持**：不是 goal 完成判定；不是 scheduler；不提供“自动执行即质量正确”的保证。
 
-## Source W5 · Claude Managed Agents outcomes（R2：目标/评估续跑）
+## Source W5 · Claude Managed Agents outcomes（LE2：目标/评估续跑）
 
 - URL：https://platform.claude.com/docs/en/managed-agents/define-outcomes
 - 发布日期：页面未标单页发布日期；文档版本标识 `managed-agents-2026-04-01`；观测日期：2026-09-30
@@ -236,11 +236,11 @@ tools:
 - **决策**：grader 按 rubric 返回哪些 criteria passed/failed；反馈驱动下一轮。
 - **动作**：agent 继续迭代 artifact，或在 outcome met 后结束该目标。
 - **出口**：outcome met；每轮反馈后继续；真实 session 仍可能因 interrupt、budget、不可恢复错误而停。
-- **失败模式**：rubric 是 required，空泛目标不能由该 API 自动补成可验条件；grader 的“满足 rubric”不是人对业务质量的最终验收；不能把 grader 与 R1 permission policy 混成同一裁判。
-- **支持**：R2 有界目标续跑的输入、独立评估、反馈与停止出口。
+- **失败模式**：rubric 是 required，空泛目标不能由该 API 自动补成可验条件；grader 的“满足 rubric”不是人对业务质量的最终验收；不能把 grader 与 LE1 permission policy 混成同一裁判。
+- **支持**：LE2 有界目标续跑的输入、独立评估、反馈与停止出口。
 - **不支持**：没有声明固定轮数；“outcome met”不等于所有业务风险已验收；不能据此推出 Claude Code `/goal` 的具体三值 verdict。
 
-## Source W6 · Claude Managed Agents budgets（R2/R3：硬成本出口）
+## Source W6 · Claude Managed Agents budgets（LE2/LE3：硬成本出口）
 
 - URL：https://platform.claude.com/docs/en/managed-agents/budgets
 - 发布日期：页面未标单页发布日期；文档版本标识 `managed-agents-2026-04-01`；观测日期：2026-09-30
@@ -277,10 +277,10 @@ session = client.beta.sessions.create(
 - **动作**：在途请求完成；随后暂停；只接受 `user.tool_confirmation`、`user.tool_result`、`user.custom_tool_result`、`user.interrupt` 等结算在途工作的事件。
 - **出口**：预算暂停（可调高/移除后自动恢复）；不是 terminated。
 - **失败模式**：在途请求造成 bounded overshoot（每线程最多一请求的余量）；把 budget 当精确停止点会误判；达到 cap 时新的 `user.message` 会 400，不能把“发消息”当恢复动作。
-- **支持**：R2/R3 必须有的硬预算与可恢复出口。
+- **支持**：LE2/LE3 必须有的硬预算与可恢复出口。
 - **不支持**：budget 是花费上限，不是完成条件；不能用它替代 outcome/grader 或 scheduler。
 
-## Source W7 · Claude Managed Agents scheduled deployments（R3：跨会话定时唤醒）
+## Source W7 · Claude Managed Agents scheduled deployments（LE3：跨会话定时唤醒）
 
 - URL：https://platform.claude.com/docs/en/managed-agents/scheduled-deployments
 - 发布日期：页面未标单页发布日期；文档版本标识 `managed-agents-2026-04-01`；观测日期：2026-09-30
@@ -323,10 +323,10 @@ Run the weekly compliance scan.
 - **动作**：自主启动 session，执行初始 event 指定的工作。
 - **出口**：每次 run 的 session 自己按 outcome、interrupt、budget、错误等出口结束/暂停；deployment 仍可等待下一次计划。
 - **失败模式**：没有 initial event 不能启动工作；cron 语义是跨 session scheduler，不是本地 `/loop`；官方页没有声称任意云端任务都拥有 `/loop` 的 7 天过期或 20 分钟 fallback。
-- **支持**：R3 跨会话持久唤醒的实际 API/CLI 机制。
-- **不支持**：不证明所有会话内定时任务都能跨会话；不自动赋予 R1 高风险动作权限；具体 permission policy 仍由 agent/tool 配置决定。
+- **支持**：LE3 跨会话持久唤醒的实际 API/CLI 机制。
+- **不支持**：不证明所有会话内定时任务都能跨会话；不自动赋予 LE1 高风险动作权限；具体 permission policy 仍由 agent/tool 配置决定。
 
-## Source W8 · Claude Managed Agents worker reference（R1/R3：执行环境与守护出口）
+## Source W8 · Claude Managed Agents worker reference（LE1/LE3：执行环境与守护出口）
 
 - URL：https://platform.claude.com/docs/en/managed-agents/reference
 - 发布日期：页面未标单页发布日期；文档版本标识 `managed-agents-2026-04-01`；观测日期：2026-09-30
@@ -349,7 +349,7 @@ Run the weekly compliance scan.
 
 ## 三档精炼机制卡（教学版；来源指针，不替代上面逐字档案）
 
-### R1 · 有界执行：把“能做什么”交给动作门
+### LE1 · 有界执行：把“能做什么”交给动作门
 
 - **输入**：tool call＋allowlist/sandbox/classifier 或 `always_allow/always_ask/auto`。
 - **状态**：动作类别、目标路径/网络、sandbox 与 policy 状态；审批是否待决。
@@ -357,9 +357,9 @@ Run the weekly compliance scan.
 - **动作**：执行、拒绝、换路、暂停等确认；custom tool 另由应用控制。
 - **出口**：结果返回；拒绝后换路；人确认/拒绝；硬边界停下。
 - **失败**：误放行/误阻断；权限策略默认值混淆；`Run Everything` 无安全审查；`--unrestricted-paths` 不约束 bash。
-- **不混用**：R1 只回答“这一动作现在能否执行”；不回答“下一轮何时启动”或“产出是否完成”。见 W1/W4/W8 与既有 evidence-f。
+- **不混用**：LE1 只回答“这一动作现在能否执行”；不回答“下一轮何时启动”或“产出是否完成”。见 W1/W4/W8 与既有 evidence-f。
 
-### R2 · 有界目标续跑：把“是否值得再跑”交给目标/评估器＋硬预算
+### LE2 · 有界目标续跑：把“是否值得再跑”交给目标/评估器＋硬预算
 
 - **输入**：goal/outcome＋可观察 rubric/check；Managed Agents 用 `user.define_outcome`，Claude Code `/goal` 仍是另一套 session-scoped Stop hook（见 evidence-b）。
 - **状态**：每轮 artifact、独立 grader feedback、session event history、list cost、暂停/恢复状态。
@@ -367,17 +367,17 @@ Run the weekly compliance scan.
 - **动作**：继续迭代、回传反馈、人工 interrupt/redirect；预算更新后恢复。
 - **出口**：outcome met；预算 `budget_reached`→idle；不可恢复错误→terminated；人 interrupt。
 - **失败**：rubric 空泛；grader 误判；预算在途 overshoot；把已排队事件当已处理；把预算当完成条件。
-- **不混用**：R2 的“再跑”是条件/反馈驱动；没有 scheduler 就不会因日历/外部事件在会话外重新起跑。见 W3/W5/W6 与既有 evidence-b/l。
+- **不混用**：LE2 的“再跑”是条件/反馈驱动；没有 scheduler 就不会因日历/外部事件在会话外重新起跑。见 W3/W5/W6 与既有 evidence-b/l。
 
-### R3 · 定时/事件唤醒：把“什么时候再跑”交给 scheduler
+### LE3 · 定时/事件唤醒：把“什么时候再跑”交给 scheduler
 
 - **输入**：cron/timezone、webhook/event、initial event、repo/resource binding。
 - **状态**：deployment/automation active、next run、session history、cancel/interrupt、budget 与 policy。
 - **决策**：任一 trigger fire 或 cron 到点（可能延迟）；每次新 session 由 initial event 定义工作。
 - **动作**：后台 cloud agent / scheduled deployment 启动 session；本地 `/loop` 则仅在原 session 内重复 prompt（既有 evidence-b/u）。
 - **出口**：单次 run 完成/暂停/失败；deployment/automation 留待下一触发；可由 webhook/API/取消动作停下。
-- **失败**：fork PR 不支持；webhook 未保存无 URL/API key；无 initial event 不起跑；事件排队/状态丢接手；未继承 R1 policy 或无预算；跨会话系统可能没有本地 `/loop` 的 7 天/20 分钟保护。
-- **不混用**：R3 只交出“何时唤醒”，不自动授予动作权限，也不自动定义完成条件；会话内 `/loop`、Cursor Automations、Claude Managed Agents scheduled deployment 是三种不同运行边界，不能互相套参数。见 W2/W3/W7 与既有 evidence-b/u。
+- **失败**：fork PR 不支持；webhook 未保存无 URL/API key；无 initial event 不起跑；事件排队/状态丢接手；未继承 LE1 policy 或无预算；跨会话系统可能没有本地 `/loop` 的 7 天/20 分钟保护。
+- **不混用**：LE3 只交出“何时唤醒”，不自动授予动作权限，也不自动定义完成条件；会话内 `/loop`、Cursor Automations、Claude Managed Agents scheduled deployment 是三种不同运行边界，不能互相套参数。见 W2/W3/W7 与既有 evidence-b/u。
 
 ## 回源纪律与负结论
 

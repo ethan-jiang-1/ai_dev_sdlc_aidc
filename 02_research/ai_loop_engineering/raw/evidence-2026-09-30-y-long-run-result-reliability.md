@@ -1,8 +1,8 @@
 ---
 type: evidence_archive
 collected_at: 2026-09-30
-collected_by: 主代理直采（Y 路：长程静默运行的结果可信度）
-serves: ai_loop_engineering 的 R3 边界、stop_conditions 三件骨架、agent_goal_eval 的 goal/eval 接口
+collected_by: Y 路回源核验
+serves: ai_loop_engineering 的 LE3 边界、stop_conditions 三件骨架、agent_goal_eval 的 goal/eval 接口
 status: 一手官方文档/源码与公司一手工程帖；不新增通用成熟度刻度
 quality_bar: 每条承重主张保留原始 URL、短引句或代码/参数、范围与负结论；既有证据只用指针
 ---
@@ -11,7 +11,7 @@ quality_bar: 每条承重主张保留原始 URL、短引句或代码/参数、�
 
 ## 0. 先给结论
 
-**已证机制**：调度解决“何时再跑、是否续轮、何时过期”；目标构造解决“什么叫完成、用哪份可见证据检查”；验收解决“谁来判、判什么、裁判是否可信”；结果可信还要有外部状态、线上观测和人工/业务校准。这些是正交控制面，不能合并成一个“自主度/R3 成熟度”分数。
+**已证机制**：调度解决“何时再跑、是否续轮、何时过期”；目标构造解决“什么叫完成、用哪份可见证据检查”；验收解决“谁来判、判什么、裁判是否可信”；结果可信还要有外部状态、线上观测和人工/业务校准。这些是正交控制面，不能合并成一个“自主度/LE3 成熟度”分数。
 
 **工程推论（不是跨产品效果定律）**：长程静默运行至少要把以下四条线分别落账：
 
@@ -21,10 +21,10 @@ quality_bar: 每条承重主张保留原始 URL、短引句或代码/参数、�
 
 因此：
 
-- **R3 有调度不代表结果可靠**：按时唤醒、事件触发、云端持久化只证明能再次启动或维持运行，不证明目标已达成。
+- **LE3 有调度不代表结果可靠**：按时唤醒、事件触发、云端持久化只证明能再次启动或维持运行，不证明目标已达成。
 - **上限停机不代表达成**：turn/time/拒绝/预算上限是安全出口，语义通常是 paused、terminated、expired 或 cancelled，不是 success。
 - **分离裁判不保证准确**：独立 evaluator 可以降低“干活者给自己打分”的利益冲突，但仍可能只核 hard rules、看不到事实，或与专家不一致。
-- **境外业务结果无法观察时不称自动完成**：如果业务结果在 loop 的环境外、没有可回读的状态或遥测，只能称“产出/检查完成”或“等待人工确认”，不能称业务自动完成。
+- **环境外业务结果无法观察时不称自动完成**：如果业务结果在 loop 的环境外、没有可回读的状态或遥测，只能称“产出/检查完成”或“等待人工确认”，不能称业务自动完成。
 
 本文只写增量判读，已有逐字原文优先指向：
 [`evidence-b`](evidence-2026-09-26-b-stop-and-scheduling.md)、[`evidence-l`](evidence-2026-09-28-l-quickstart-code.md)、[`evidence-n`](evidence-2026-09-28-n-verdict-split-coding.md)、[`evidence-r`](evidence-2026-09-28-r-ial-scan-reliability.md)、[`evidence-s`](evidence-2026-09-28-s-langgraph-dbt-civ.md)，以及 [`agent_goal_eval/raw/evidence-2026-09-27-a-goal-frontier.md`](../../agent_goal_eval/raw/evidence-2026-09-27-a-goal-frontier.md)、[`agent_goal_eval/raw/evidence-2026-09-27-a6-how.md`](../../agent_goal_eval/raw/evidence-2026-09-27-a6-how.md)、[`agent_goal_eval/raw/evidence-2026-09-27-b3-engineering.md`](../../agent_goal_eval/raw/evidence-2026-09-27-b3-engineering.md)、[`agent_goal_eval/raw/evidence-2026-09-27-b4-abridge.md`](../../agent_goal_eval/raw/evidence-2026-09-27-b4-abridge.md)、[`agent_goal_eval/raw/evidence-2026-09-27-b5-company-posts.md`](../../agent_goal_eval/raw/evidence-2026-09-27-b5-company-posts.md)、[`agent_goal_eval/raw/evidence-2026-09-27-c-hard.md`](../../agent_goal_eval/raw/evidence-2026-09-27-c-hard.md)。
@@ -48,7 +48,7 @@ quality_bar: 每条承重主张保留原始 URL、短引句或代码/参数、�
 - **原始 URL**：<https://code.claude.com/docs/en/goal>
 - **短引句/参数**：官方写明 `The model returns one of three verdicts`：`Not yet met`、`Met`、`Impossible`；并写明 `completion is decided by a fresh model rather than the one doing the work`。同页还说 evaluator `doesn’t run commands or read files independently`，只判断 Claude 已在 conversation 中呈现的内容。
 - **适用范围**：Claude Code 当前会话的 `/goal` Stop hook；不是所有 Claude/agent API 的通用协议。
-- **对结果可信的启示**：三值是控制状态机（继续/清 goal/判不可行），不是质量分数。要让它对事实有用，目标必须把命令输出、文件状态、测试结果或其他证据显式带入可见 transcript；没有被呈现的境外状态，evaluator 没有观察通道。
+- **对结果可信的启示**：三值是控制状态机（继续/清 goal/判不可行），不是质量分数。要让它对事实有用，目标必须把命令输出、文件状态、测试结果或其他证据显式带入可见 transcript；没有被呈现的环境外状态，evaluator 没有观察通道。
 
 已有原文与版本/恢复边界见 [`agent_goal_eval/raw/evidence-2026-09-27-a-goal-frontier.md`](../../agent_goal_eval/raw/evidence-2026-09-27-a-goal-frontier.md) §Source 1 和 [`evidence-b`](evidence-2026-09-26-b-stop-and-scheduling.md) §4a。不要把“三值”写成“评估器能辨别真实完成”。
 
@@ -171,7 +171,7 @@ OpenAI Codex 固定 commit 的执行策略源码也只回答“动作能否执�
 - **原始 URL**：<https://yuvalyeret.com/blog/ai-agent-completion-goals-aim-at-outcomes>
 - **短引句**：先问 goal 是 `completion condition for an output, or for an outcome`；若 outcome 在 agent 可观察范围外，`how would the agent observe whether that condition holds?`；他观察到无 observability loop 时，agent 会 stop and hand it back。
 - **适用范围**：作者对 outcome-oriented goal 的工程观察，2026-05-27，窗边；不是运行统计。
-- **对结果可信的启示**：把 output（文件、测试、报告）和 outcome（客户采用、财务及时性、临床结果、境外系统状态）分层。结果不可观察时，正确状态是 `blocked/awaiting human or external signal`，不是 `completed`。
+- **对结果可信的启示**：把 output（文件、测试、报告）和 outcome（客户采用、财务及时性、临床结果、环境外系统状态）分层。结果不可观察时，正确状态是 `blocked/awaiting human or external signal`，不是 `completed`。
 
 ## 6. 目标构造与可观察验收的最小组合
 
@@ -185,7 +185,7 @@ OpenAI Codex 固定 commit 的执行策略源码也只回答“动作能否执�
 
 ## 7. 不可推出清单
 
-- 不能从 R3 的 `/loop`、cron、webhook、cloud routine 或事件触发，推出结果已经可靠；R3 只证明再次启动/维持运行的控制面存在。
+- 不能从 LE3 的 `/loop`、cron、webhook、cloud routine 或事件触发，推出结果已经可靠；LE3 只证明再次启动/维持运行的控制面存在。
 - 不能从 `/goal` 的 `Not yet met / Met / Impossible` 三值推出 evaluator 判得准、产物质量好或业务 outcome 发生。
 - 不能从 `fresh model`、separate evaluator、CIV verifier 或 OpenAI auto-review 推出无误报、无漏报、抗 reward hacking；分离不等于准确。
 - 不能从 turn/time/7-day/denial/token/dollar cap 触发后的停止推出任务达成；上限停机、错误暂停、取消、过期都必须与 `Met/succeeded` 分开。
@@ -195,7 +195,7 @@ OpenAI Codex 固定 commit 的执行策略源码也只回答“动作能否执�
 - 不能把 Shopify activation rate、Glean preference ratio、用户点击/打开等线上代理信号直接称为模型完成率；必须先验证它们与目标 outcome 的因果/测量连接。
 - 不能把 OpenAI Goal cookbook 的“对照 files/tests/logs/artifacts”写法，填充成 OpenAI 已公开实现独立 evaluator 的证明；该页是构造指南，未给出该实现细节。
 - 不能把“测试不可改”从 Anthropic quickstart 的局部 prompt/权限约束，升级成 OpenAI 或所有 Anthropic 产品的默认不变量；只能说这是应由控制面强制的工程要求。
-- **境外业务结果无法观察时不称自动完成**：没有可回读状态、独立遥测或人工确认，只能报告 output/verification 状态与 `awaiting external signal`。
+- **环境外业务结果无法观察时不称自动完成**：没有可回读状态、独立遥测或人工确认，只能报告 output/verification 状态与 `awaiting external signal`。
 
 ## 8. 与既有档案的精确关系
 
@@ -209,5 +209,5 @@ OpenAI Codex 固定 commit 的执行策略源码也只回答“动作能否执�
 ## 9. 观测与验证记录
 
 - 观测日期：2026-09-30；官方 URL 已用 `web_fetch` 复核：Claude Code `/goal`、`/scheduled-tasks`、Anthropic long-running harness、Anthropic evals、OpenAI eval best practices、OpenAI Codex Goals、OpenAI Auto-review、Abridge、Rippling、Shopify、Osmani、Yeret。
-- 本次只应新增本文件；未改既有 evidence、README、CURRENT 或其他研究文件。
+- 本档是回源增量，不改其他已有 evidence 的逐字摘录；教学结构与术语以 [`capability_ladder/00-map`](../capability_ladder/00-map.md) 为准。
 - Markdown 链接检查重点：本档案内的相对链接均指向已存在的既有 evidence/raw 文件；外部链接均保留为原始官方/作者 URL。若后续页面改版，需按本档案的“短引句 + 适用范围 + 不支持什么”重新回源，不把活文档当永久快照。

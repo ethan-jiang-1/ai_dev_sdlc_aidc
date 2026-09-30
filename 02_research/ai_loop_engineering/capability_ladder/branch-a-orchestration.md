@@ -49,7 +49,7 @@ Carlini 的具体隔离/任务锁/合并链与只读研究拓扑，逐字取证�
 **④ 学术构件票（arXiv:2608.21884，2026-08，S6）**
 - 灰色文献综述把 "verifier sub-agents, token budgets" 列为建议构件；其 [全文 §3 O3、§4.1](https://arxiv.org/html/2608.21884v2) 同时声明来源非独立，仓库样本中 verifier 定义可见命中为零。不能把构件清单计为并发写入拓扑或工程普及的第四张独立票。
 
-## 三、采用前检查（不是 LE3→R4 的升阶闸门）
+## 三、采用前检查
 
 **可分性与可验证性**——Walden 对其案例的界限句：
 > "they all share a property most real software doesn't: **a simple, verifiable success criterion**. Real software requires a system that scales human taste and decision-making."
@@ -79,7 +79,7 @@ Carlini 的具体隔离/任务锁/合并链与只读研究拓扑，逐字取证�
 > "Retry feedback without bounds, tool-call iteration without bounds, and **multi-agent chat without turn bounds** account for 47 findings (69.1%)."
 > "An inner turn cap on a nested agent call **does not cover an outer evaluator feedback cycle unless it dominates the outer feedback path**."
 
-**⑨ 历史注记**：Anthropic 2025-11 明言单代理与多代理编码何者更优仍是开放问题——> "it's still unclear whether a single, general-purpose coding agent performs best across contexts, or if better performance can be achieved through a multi-agent architecture."（[evidence-b §问题2.1](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）。后续案例证明一些场景可行，不代表已解决通用选型。
+**⑨ 选型仍开放**：Anthropic 2025-11 明言单代理与多代理编码何者更优仍是开放问题——> "it's still unclear whether a single, general-purpose coding agent performs best across contexts, or if better performance can be achieved through a multi-agent architecture."（[evidence-b §问题2.1](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）。后续案例证明一些场景可行，不代表已解决通用选型。
 
 ## 本阶 dissent
 
@@ -91,4 +91,4 @@ Carlini 的具体隔离/任务锁/合并链与只读研究拓扑，逐字取证�
 
 1. S7 advisor strategy 正文（官方"聪明朋友"形态，与 S2 ② 互证）。
 2. LangGraph supervisor 按 (evidence-q/s) 控制链归位。
-3. 子代理工作流的失败模式与 R5 交接界面（manager Devin 的沟通问题，S2"Looking Ahead"节）。
+3. 子代理工作流的失败模式与支线 B 交接界面（manager Devin 的沟通问题，S2"Looking Ahead"节）。
