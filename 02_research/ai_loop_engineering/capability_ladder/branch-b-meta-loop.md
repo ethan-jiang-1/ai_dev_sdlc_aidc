@@ -21,7 +21,7 @@
 
 **走一遍低风险演练（教学设计，不是上述厂商的端到端产品）**：某 MCP 工具连续返回参数错误→保留失败 trace 与旧描述→让代理只提出**新工具描述**的候选 diff→先由人核对未扩大工具权限、未偷改 grader→用同一组隔离任务做 A/B 对比，独立检查调用成功率、错误类别、额外成本→只有通过事先定义的准入规则才发布；未过则沿旧版本继续。不要让“提案 agent 自己说新描述更好”成为验收。这个演练的比较、审批与旧版回退是**建议配置的控制协议**，不是 Anthropic 40% 报告声称包含的步骤。
 
-**结构参考，不是 coding-agent 自改的成功证明**：DSPy GEPA 明确分开 proposal 的 reflection LM 与 evaluation 的 task model；可用 `max_metric_calls` 作计量调用上限，并留存每个 candidate、parent 与逐样本 score 的 `detailed_results`。保留旧候选为撤回新提案提供记录基础，但不等于生产环境有自动 rollback（[DSPy 官方文档及 evidence-x B4](../raw/evidence-2026-09-30-x-ladder-branches-detail.md)）。**最危险的闭环**是同时允许代理改规则和判定自己是否改得好：分离提案与评估、冻结验收样本并审计变化是工程上的必要检查，而不是“四条护栏齐备就可放行核心自改”的证明。
+**结构参考，不是 coding-agent 自改的成功证明**：DSPy GEPA 区分 proposal 的 reflection LM 与 evaluation 使用的 task model；两种**角色**不保证默认是不同模型或独立所有权。可用 `max_metric_calls` 作计量调用上限，并留存每个 candidate、parent 与逐样本 score 的 `detailed_results`。若任务要求异源验收，还须分别配置模型和评估数据/权限；保留旧候选只提供撤回记录，不等于生产环境有自动 rollback（[DSPy 官方文档及 evidence-x B4](../raw/evidence-2026-09-30-x-ladder-branches-detail.md)）。**最危险的闭环**是同时允许代理改规则和判定自己是否改得好：分离提案与评估、冻结验收样本并审计变化是工程上的必要检查，不证明核心自改可安全放行。
 
 ## 二、支撑条目（原文与成熟度分开）
 
@@ -87,7 +87,7 @@
 1. GEPA/DSPy 提案-评估分离素材从缺口 5 按本档格式搬运（护栏四条的工程化展开）。
    ✅ 活跃度与身份核验（2026-09-30 观测）：**GEPA（Genetic-Pareto）**＝斯坦福/Databricks 线（Agrawal…Khattab）的
    反思式文本参数优化器——LLM 通读执行 trace（报错/工具输出/推理日志）诊断失败原因→提案修改→按指标测试→
-   从自身尝试的 **Pareto 前沿**合并互补教训；对比 RL(GRPO) 平均 +6%、rollout 少 **35×**，**ICLR 2026 Oral**
+   从自身尝试的 **Pareto 前沿**合并互补教训；六项任务对比 RL(GRPO) 平均高 **6%**、rollout 最多减少 **35×**（非平均值），**ICLR 2026 Oral**
    （[arXiv:2507.19457](https://arxiv.org/abs/2507.19457)，v2 2026-02-14）。仓库 [gepa-ai/gepa](https://github.com/gepa-ai/gepa)
    6.8k stars、2026-09-29 仍有提交，README 口径已扩到 "prompts, code, **agent architectures**, configurations"。
    DSPy 侧：3.4.0 于 2026-09-25 发布（月更节奏），含 ReActV2 原生工具环、RLM 递归循环、沙箱解释器。
