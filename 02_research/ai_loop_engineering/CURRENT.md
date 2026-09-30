@@ -1,6 +1,8 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-30（逐档技术走读增量）**：`capability_ladder` 保留原 R0→R3 主线＋A/B 可选支线判定，新增 [R0 实战基线](capability_ladder/rung-00-manual-baseline.md)；六档各自补运行时决策链、示意现场与失败出口，并各有一张独立 SVG，索引见 [capability_ladder/README](capability_ladder/README.md)「技术走读索引」。新增 [evidence-w](raw/evidence-2026-09-30-w-ladder-runtime-detail.md)（官方 Run Modes / Automations / Managed Agents API）与 [evidence-x](raw/evidence-2026-09-30-x-ladder-branches-detail.md)（并行拓扑/元循环案例）；数字和配置均标产品边界，图只是教学抽象。`Run Everything` 已官方核实；`File Deletion Protection`、NLAH 与部分 `⏳` 条目仍待逐字核验，未当成实证。
+> 最近一次更新：**2026-09-30（长程结果可证成性横切）**：用户指出“会唤醒/能续跑”不足以支持长程静默任务的可靠结果声明。[00-map](capability_ladder/00-map.md) 保留 R0→R3 交接主线＋A/B 可选支线，明确**结果可证成性是正交诊断轴，不添必经 R4**；新增 [交接检查页](capability_ladder/result-reliability-interface.md) 将可观察 goal、外置证据/裁判、预算、状态与取消接到 R2/R3。goal/eval 如何构造仍归 [agent_goal_eval](../agent_goal_eval/README.md)，三件停止骨架归 [stop_conditions](stop_conditions/README.md)；案例是教学设计，不是无人工验收的可靠性证明。
+>
+> **2026-09-30（逐档技术走读增量）**：`capability_ladder` 保留原 R0→R3 主线＋A/B 可选支线判定，新增 [R0 实战基线](capability_ladder/rung-00-manual-baseline.md)；六档各自补运行时决策链、示意现场与失败出口，并各有一张独立 SVG，索引见 [capability_ladder/README](capability_ladder/README.md)「技术走读索引」。新增 [evidence-w](raw/evidence-2026-09-30-w-ladder-runtime-detail.md)（官方 Run Modes / Automations / Managed Agents API）与 [evidence-x](raw/evidence-2026-09-30-x-ladder-branches-detail.md)（并行拓扑/元循环案例）；数字和配置均标产品边界，图只是教学抽象。`Run Everything` 已官方核实；`File Deletion Protection`、NLAH 与部分 `⏳` 条目仍待逐字核验，未当成实证。
 >
 > **2026-09-30（capability_ladder 回源 review 后重定教学结构）**：本区不再宣称 R1–R5 五阶必经、R4“写入单线程”为跨机构共同拓扑或 R5 广义自改已成熟。[00-map](capability_ladder/00-map.md) 改为 **R0 起点 → R1 有界执行 → R2 有界续跑 → R3 定时/事件唤醒**的教学主线，以及**多主体编排 / 改进循环本身**两条可选高阶方向；R3 区分会话内与跨会话，所有高阶按场景展示、不要求学员掌握。`branch-a/b` 已由原 `rung-04/05` 改名，两张图已同步。原文取证仍以 evidence 档案为权威：Osmani 双轴增量已进 evidence-a D11，论文全文限制与跨源判读修正在 evidence-u S6；T 路视频仍为侦察级、文字稿未对原声，不入定阶票。
 >

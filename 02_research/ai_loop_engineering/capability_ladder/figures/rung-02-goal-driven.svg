@@ -73,7 +73,7 @@
   <text x="924" y="384" class="note">• 无进展、时间 / 成本到顶也要</text>
   <text x="942" y="410" class="note">  停并升级，不冒充完成。</text>
   <text x="924" y="450" class="note">• Claude /goal 的三值与 Managed</text>
-  <text x="942" y="476" class="note">  Agents outcome/grader 不是同一 API。</text>
+  <text x="942" y="476" class="note">  Agents outcome 是另一 API。</text>
   <line x1="924" y1="500" x2="1206" y2="500" stroke="#fdba74" stroke-width="2"/>
   <text x="924" y="532" class="label">边界</text>
   <text x="924" y="558" class="note">条件可核、反馈够用、验收仍独立；</text>

@@ -33,6 +33,8 @@
 | 进度文件显示 `passes == total` | 被记录的项目均标记通过 | 驱动进程必然据此停机 |
 | 轮数/时间耗尽 | 预算到边界，必须停或交人 | 任务自动已完成 |
 
+**结果可证成性的附加检查**：即使三值检查器给 `Met`，仍需核它看见的证据是否覆盖目标、不变式和真实版本，执行者是否能改判据；量不到的业务结果继续留给人或另设外部观察。见 [正交交接页](result-reliability-interface.md) 的五个接口。它不把所有 R2 任务强制升级成独立模型裁判，也不拿预算上限当成功信号。
+
 **最硬的反向实验**：Anthropic 的 [官方 quickstart 源码](../raw/evidence-2026-09-28-l-quickstart-code.md) 里，`progress.py` 会打印 `passing/total`，但 `agent.py` 没有 `passing == total` 的退出分支；成功时 `run_agent_session` 仍回 `continue`，`--max-iterations` 默认 `None`（无限），错误也换新 session 重试。单看进度条会误以为装了 R2 停机闸门；应追到**驱动层的 `break`/return 路径**。这是一个 demo 的源码现象，不外推为 `/goal` 的实现或 Anthropic 生产系统。
 
 ## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）

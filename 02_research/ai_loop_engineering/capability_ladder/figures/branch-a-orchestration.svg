@@ -23,9 +23,7 @@
   <text x="328" y="204" class="cardTitle" fill="#6d28d9">决策 · 先核四件事</text>
   <text x="328" y="232" class="body">可分性 / 写入所有权</text>
   <text x="328" y="258" class="small">验收能力 / 取消路径</text>
-  <path d="M528 205 H576" stroke="#7c3aed" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
   <path d="M528 222 H576" stroke="#7c3aed" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-  <path d="M528 239 H576" stroke="#7c3aed" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
   <rect x="576" y="158" width="274" height="126" rx="10" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
   <text x="596" y="188" class="cardTitle" fill="#9a3412">共用停止检查</text>
@@ -33,9 +31,9 @@
   <text x="596" y="243" class="small">人保留：写入 owner 与最终验收</text>
   <text x="596" y="270" class="small">三种拓扑是替代项，不要混作默认</text>
 
-  <path d="M152 270 V308 H192 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
-  <path d="M190 270 V308 H436 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
-  <path d="M228 270 V308 H680 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <path d="M360 270 V308 H192 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <path d="M418 270 V308 H436 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <path d="M476 270 V308 H680 V340" stroke="#7c3aed" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
   <text x="78" y="320" class="small" fill="#6d28d9">选择一个拓扑</text>
 
   <rect x="78" y="340" width="220" height="184" rx="10" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
@@ -56,10 +54,10 @@
 
   <rect x="582" y="340" width="268" height="184" rx="10" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
   <text x="602" y="370" class="cardTitle" fill="#6d28d9">拓扑 3 · 隔离多写</text>
-  <text x="602" y="400" class="small">各 agent 独立 clone / worktree</text>
+  <text x="602" y="400" class="small">各 agent 在容器内独立 clone</text>
   <text x="602" y="426" class="small">task lock 认领、修改</text>
   <text x="602" y="452" class="small">pull / merge / push，冲突处理</text>
-  <text x="602" y="478" class="small">反馈：测试 + 合并 owner</text>
+  <text x="602" y="478" class="small">反馈：测试 + 解决冲突</text>
   <text x="602" y="508" class="small" fill="#92400e">Carlini 研究原型</text>
 
   <rect x="78" y="542" width="772" height="30" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
@@ -80,7 +78,8 @@
   <text x="942" y="502" class="note">  软件的可分性与 verifier 先行。</text>
   <line x1="924" y1="522" x2="1206" y2="522" stroke="#fdba74" stroke-width="2"/>
   <text x="924" y="550" class="label">人保留</text>
-  <text x="994" y="550" class="note">写入所有权、合并、验收、预算、取消</text>
+  <text x="1000" y="550" class="note">写入 / 合并 / 验收</text>
+  <text x="1000" y="578" class="note">预算 / 取消</text>
 
   <text x="50" y="622" class="footer">来源短标：branch-a-orchestration.md；evidence-x §A1–A3；Anthropic Research / Cognition / Carlini。</text>
   <text x="50" y="650" class="footer">教学抽象 / 示例非同一产品；规模、token、成本与子代理数均为来源自报，不是跨任务默认值。</text>
