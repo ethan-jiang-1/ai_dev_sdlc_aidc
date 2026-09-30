@@ -54,7 +54,7 @@
   <text x="86" y="833" font-size="16" fill="#475569">局部实例 · 前沿方向</text>
   <text x="370" y="797" font-size="17" fill="#334155">Runkle / Morris 概念</text>
   <text x="370" y="831" font-size="17" fill="#334155">Anthropic 工具描述改写案例</text>
-  <text x="830" y="797" font-size="17" fill="#334155">外围件可受控试验；</text>
+  <text x="830" y="797" font-size="17" fill="#334155">外围工具描述有局部改写；</text>
   <text x="830" y="831" font-size="17" fill="#334155">人改与代理改须分开</text>
   <text x="1155" y="797" font-size="16" fill="#475569">核心判据自动改写</text>
   <text x="1155" y="831" font-size="16" fill="#475569">已有通用安全放行阈值</text>

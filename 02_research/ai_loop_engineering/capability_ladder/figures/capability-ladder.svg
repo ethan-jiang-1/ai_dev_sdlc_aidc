@@ -44,7 +44,7 @@
 
   <rect x="950" y="652" width="485" height="227" rx="18" fill="#f5f3ff" stroke="#a78bfa" stroke-width="2"/>
   <text x="975" y="694" font-size="23" font-weight="bold" fill="#6d28d9">支线 B · 改进循环本身</text>
-  <text x="975" y="732" font-size="18" fill="#5b21b6">人改 → 代理提案 → 外围件受控应用</text>
+  <text x="975" y="732" font-size="18" fill="#5b21b6">人改 → 代理提案 → 外围件局部改动</text>
   <text x="975" y="767" font-size="16" fill="#475569">工具描述改写有局部案例；自动改核心判据</text>
   <text x="975" y="797" font-size="16" fill="#475569">仍是高风险方向，不从局部案例外推。</text>
   <text x="975" y="837" font-size="16" font-weight="bold" fill="#7c3aed">展示趋势 · 不要求学员掌握</text>

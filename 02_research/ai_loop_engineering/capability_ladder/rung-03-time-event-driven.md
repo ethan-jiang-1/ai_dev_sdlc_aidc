@@ -59,7 +59,7 @@
 **⑥ 本阶的人本成本证词（Ronacher，✅ S1——dissent）**
 - > "In the harness operated loop **I'm not sure what my role even is**. Even the 'done' signal loses all meanings … **My role is reduced to that of a messenger**."
 - > "If attackers and reporters loop, defenders will eventually need to loop too to keep up."（不可退出的趋势证词）
-- 教学时必须并列给出：这一阶交出去的不只是触发权，还有**"done"的语义**。
+- 教学时并列给出：无人值守可能让人的“done”判断变得模糊；**LE3 交出的是触发权，不是成果裁决权**。必须另外指定可复核判据与接手者。
 
 **⑦ 官方终止栈（✅ 逐字，[evidence-b §4c](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) → CC scheduled-tasks docs）**
 > "Recurring tasks automatically **expire 7 days** after creation. The task fires one final time, then deletes itself. This bounds how long **a forgotten loop** can run."

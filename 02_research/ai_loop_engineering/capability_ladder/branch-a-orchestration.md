@@ -43,7 +43,7 @@ Carlini 的具体隔离/任务锁/合并链与只读研究拓扑，逐字取证�
 **③ 变体形态：无编排器（Carlini/Anthropic，2026-02-05，S3）**
 - 文件锁同步：> "Claude takes a 'lock' on a task by writing a text file to current_tasks/ … If two agents try to claim the same task, git's synchronization forces the second agent to pick a different one."
 - > "I don't use an orchestration agent. Instead, I leave it up to each Claude agent to decide how to act."
-- 参数：16 agents / 近 2,000 sessions / 2B input tokens / 约 **$20,000** / 100k 行编译器过 GCC torture test 99%。
+- 参数：16 agents / 近 2,000 sessions / 2B input tokens / 约 **$20,000** / 100k 行编译器；作者称其通过包括 GCC torture tests 在内的多数编译器测试套件，相关通过率 **99%**（[Carlini 原文](https://www.anthropic.com/engineering/building-c-compiler)），不等于“GCC torture 单项 99%”或生产正确率。
 - 角色专门化：> "Parallelism also enables specialization."（去重/性能/质量/文档各占一个 agent）
 
 **④ 学术构件票（arXiv:2608.21884，2026-08，S6）**
