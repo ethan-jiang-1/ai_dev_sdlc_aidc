@@ -37,7 +37,7 @@
 
 - 练习 1：信号表＝capability_ladder/rung-02「你看到的信号」三列表的入门裁剪；C 的反例＝evidence-l（Anthropic quickstart 源码，2026-09-28 观测）；状态语义＝result-reliability-interface §四（手册卷首·状态语汇表）。
 - 练习 2：三问＝loop_governance manual §1（backbone §0 判据）；丙的纠正＝manual §2 模板入口分流。
-- 练习 3：坏目标原句＝Addy Osmani《Practical Loop Engineering》（2026-08-14，https://addyosmani.com/blog/practical-loop-engineering/），原文见 [evidence-a 补充回源](../../../../02_research/ai_loop_engineering/raw/evidence-2026-09-26-a-originators.md)；零件池与干扰项为本练习编排，不是作者原题；⑤⑦ 区别参照 [evidence-b §4a](../../../../02_research/ai_loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md)。
+- 练习 3：坏目标原句＝Addy Osmani《Practical Loop Engineering》（2026-08-14，https://addyosmani.com/blog/practical-loop-engineering/），原文见 [evidence-a 补充回源](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md)；零件池与干扰项为本练习编排，不是作者原题；⑤⑦ 区别参照 [evidence-b §4a](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md)。
 - 手册指向：[《循环交接手册》](../../manual/循环交接手册.md)：练习 1→卷首·状态语汇；练习 2→入门一；练习 3→**入门四·目标模板**。
 
 ## 红线自查

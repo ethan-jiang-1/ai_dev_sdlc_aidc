@@ -69,7 +69,7 @@ revised: 2026-10-01 — 内容复核：四处署名引用、分页对照、术�
 
 **来源（页内完整信息）**：Addy Osmani，《Loop Engineering》，2026-06-07，https://addyosmani.com/blog/loop-engineering/
 
-**原文复核（同页备注）**："Loop engineering is replacing yourself as the person who prompts the agent. You design the system that does it instead." 已对照 [evidence-a §4 D1](../../../../02_research/ai_loop_engineering/raw/evidence-2026-09-26-a-originators.md)。反馈补句依据同档 D2《Practical Loop Engineering》（2026-08-14，https://addyosmani.com/blog/practical-loop-engineering/）原文 "repeatedly acts, tests its results and adjusts its approach"；不把反馈补句冒充 D1 定义的逐字原话。
+**原文复核（同页备注）**："Loop engineering is replacing yourself as the person who prompts the agent. You design the system that does it instead." 已对照 [evidence-a §4 D1](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md)。反馈补句依据同档 D2《Practical Loop Engineering》（2026-08-14，https://addyosmani.com/blog/practical-loop-engineering/）原文 "repeatedly acts, tests its results and adjusts its approach"；不把反馈补句冒充 D1 定义的逐字原话。
 
 > **PPT-agent 引用块（不上屏）**
 > - 意思：N02 只承担“为什么开始写 loop”的定义，不证明效果收益。
@@ -149,7 +149,7 @@ revised: 2026-10-01 — 内容复核：四处署名引用、分页对照、术�
 
 **来源（页内完整信息）**：Erik S.、Barry Zhang（Anthropic），《Building effective agents》，2024-12-19，https://www.anthropic.com/engineering/building-effective-agents
 
-**原文复核（同页备注）**："They are typically just LLMs using tools based on environmental feedback in a loop." 已对照 [evidence-b §2](../../../../02_research/ai_loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md)；这是机制说明，不是质量收益数据。
+**原文复核（同页备注）**："They are typically just LLMs using tools based on environmental feedback in a loop." 已对照 [evidence-b §2](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md)；这是机制说明，不是质量收益数据。
 
 > **PPT-agent 引用块（不上屏）**
 > - 意思：N05 定义反馈是循环的必要燃料，同时保留人的反馈路径。
@@ -544,7 +544,7 @@ revised: 2026-10-01 — 内容复核：四处署名引用、分页对照、术�
 
 **展开**：仍是同一分页案例：失败断言是“返回后查询仍保留”，不能删掉断言或加 skip 得到通过。后态保留单测、API 与端到端判据，修改分页行为后重跑。执行方不能自行改目标、测试描述或裁判；必要的测试变更由有权的人复核并重新演练。保护可以由权限、受保护文件或差异检查实施，具体做法留手册，不塞上屏。
 
-**来源与边界（备注）**：Justin Young（Anthropic），《Effective harnesses for long-running agents》，2025-11-26，https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents 。原文 "It is unacceptable to remove or edit tests" 是强措辞提示；配套 quickstart 仅在 prompt 约束，源码未强制校验（[evidence-l](../../../../02_research/ai_loop_engineering/raw/evidence-2026-09-28-l-quickstart-code.md)，观测 2026-09-28）。本场要求控制面保护是工程建议，不冒充产品默认。
+**来源与边界（备注）**：Justin Young（Anthropic），《Effective harnesses for long-running agents》，2025-11-26，https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents 。原文 "It is unacceptable to remove or edit tests" 是强措辞提示；配套 quickstart 仅在 prompt 约束，源码未强制校验（[evidence-l](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-28-l-quickstart-code.md)，观测 2026-09-28）。本场要求控制面保护是工程建议，不冒充产品默认。
 
 > **PPT-agent 引用块（不上屏）**
 > - 意思：第三页保护同一案例的尺子，服务“谁能改变系统”。
@@ -654,7 +654,7 @@ revised: 2026-10-01 — 内容复核：四处署名引用、分页对照、术�
 
 **来源（页内完整信息）**：Sydney Runkle（LangChain），《The Art of Loop Engineering》，2026-06-16，https://www.langchain.com/blog/the-art-of-loop-engineering
 
-**原文复核（同页备注）**："The event-driven loop connects your agent to your ecosystem. An event fires — a new document lands, a schedule triggers, a webhook arrives — and the agent runs." 已对照 [evidence-a §3 C1](../../../../02_research/ai_loop_engineering/raw/evidence-2026-09-26-a-originators.md)。
+**原文复核（同页备注）**："The event-driven loop connects your agent to your ecosystem. An event fires — a new document lands, a schedule triggers, a webhook arrives — and the agent runs." 已对照 [evidence-a §3 C1](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md)。
 
 > **PPT-agent 引用块（不上屏）**
 > - 意思：N24 只解释事件驱动的唤醒面，不把醒来写成完成。
