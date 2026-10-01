@@ -26,7 +26,25 @@ graph_engineering/
 │   ├── 02-two-tier-self-healing-architecture.md     # 议题 02：两层自愈体系：Worker 局部 Loop vs 编排者动态 DAG 重排
 │   ├── 03-session-internal-vs-external-state-machine.md # 议题 03：Session 内 Tool 编排 vs Session 外 外部状态机/运行时
 │   ├── 04-artifact-contract-and-blackboard.md       # 议题 04：工件契约、A2A 协议与全局共享黑板状态机
-│   └── 05-heterogeneous-model-governance.md         # 议题 05：异构模型拓扑分工与通信治理（汇报冲动与配额约束）
+│   ├── 05-heterogeneous-model-governance.md         # 议题 05：异构模型拓扑分工与通信治理（汇报冲动与配额约束）
+│   ├── 06-sota-model-pathologies-and-defenses.md     # 议题 06：2026 SOTA 顶级模型五大病理与确定性状态机防御
+│   ├── 07-dynamic-dag-replanning-mechanics.md       # 议题 07：动态 DAG 重规划机制与原子状态机突变
+│   ├── 08-superagent-harness-deerflow-langgraph.md  # 议题 08：企业级 SuperAgent Harness：DeerFlow 与 LangGraph 的解剖
+│   └── 09-meta-graph-vs-dynamic-task-dag.md         # 议题 09：固定元图 vs 动态任务 DAG：工业落地终局方案
+│
+├── harness_langgraph_ecosystem/ # 【专有子目录】LangGraph 及其衍生基座生态深度实战
+│   ├── README.md              #   体系定位与选型全景
+│   ├── 01-langgraph-native-dynamic.md # LangGraph 原生动态原语 (Send API / Command / Subgraphs)
+│   ├── 02-langchain-deepagents.md     # LangChain 官方 Harness: Deep Agents 剖析
+│   ├── 03-bytedance-deerflow.md       # 字节跳动 DeerFlow 2.0：架构取舍与 DAG 演进路线
+│   └── 04-gpt-researcher-case.md      # 生产实战标杆: GPT Researcher v3 的动态 Map-Reduce DAG
+│
+├── harness_frontier_systems/  # 【专有子目录】四大前沿顶级 Agent Harness 体系深度解密
+│   ├── README.md              #   四大前沿体系核心横向对比矩阵
+│   ├── 01-claude-code-workflows.md    # Anthropic Claude Code：Code-as-Workflow 动态脚本沙箱
+│   ├── 02-deepseek-harness-dsh.md     # DeepSeek Harness (dsh)：Cordis 插件底座与显式 Task DAG
+│   ├── 03-openai-codex-harness.md     # OpenAI Codex 体系：Worktree 物理隔离与 Manifest 任务流
+│   └── 04-openhands-subagents.md      # OpenHands：Manager DAG 分解、委托原语与会话树虚拟化
 │
 └── result/                    # 成稿层
     └── landscape.md           # Graph Engineering 全景技术白皮书（过筛综述）

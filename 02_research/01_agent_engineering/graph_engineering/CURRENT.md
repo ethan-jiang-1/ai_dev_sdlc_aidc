@@ -24,6 +24,8 @@
 | [`digested/07-dynamic-dag-replanning-mechanics.md`](digested/07-dynamic-dag-replanning-mechanics.md) | ✅ 已判读 | L2 拓扑自愈实操：局部子图切片替换（Sub-graph Splicing）与防死锁单调收敛算法 |
 | [`digested/08-superagent-harness-deerflow-langgraph.md`](digested/08-superagent-harness-deerflow-langgraph.md) | ✅ 已判读 | 工业落地样本解剖：字节跳动 DeerFlow 2.0 与 LangGraph 衍生架构——确立“外层传统程序控流程、内层智能体干活”与 Docker 沙箱闭环 |
 | [`digested/09-meta-graph-vs-dynamic-task-dag.md`](digested/09-meta-graph-vs-dynamic-task-dag.md) | ✅ 已判读 | 血泪反思：纯动态编译的生产陷阱与“固定元图+动态任务DAG”终局——解决检查点失效、Trace观测性崩溃与元状态抖动 |
+| [`harness_langgraph_ecosystem/`](harness_langgraph_ecosystem/) | ✅ 垂直生态已打透 | 4 篇实战：LangGraph 原生动态原语 (`Send`/`Command`/Subgraphs)、LangChain 官方 Deep Agents 剖析、字节跳动 DeerFlow 2.0 架构取舍与演进路线、GPT Researcher v3 动态 Map-Reduce 标杆 |
+| [`harness_frontier_systems/`](harness_frontier_systems/) | ✅ 四大体系已解密 | 4 篇解密：Anthropic Claude Code（Code-as-Workflow 动态 JS 脚本）、DeepSeek Harness (`dsh`) 显式 Task DAG 与 Cordis 插件底座、OpenAI Codex（Worktree 物理并行与 Manifest）、OpenHands（Manager DAG、`AgentDelegateAction` 与上下文树虚拟化） |
 | [`result/landscape.md`](result/landscape.md) | ✅ 过筛综述成稿 | 工业级 Graph Engineering 全景架构白皮书（含 2026 顶级模型攻防、子图切片、DeerFlow 超级底座与元图数据分离终局架构） |
 
 ## 下一步
