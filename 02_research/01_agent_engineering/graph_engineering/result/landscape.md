@@ -181,6 +181,10 @@ Graph Engineering 与 Loop Engineering 并不对立，生产系统通过**异常
 | **可观测性 (APM)** | 灾难。Trace 拓扑每次变动，监控看板无法建立错误率基准 | **极佳**。统一的调用链路，每个子任务作为标准 Span 挂载在 Trace 下 |
 | **改图机制** | 推翻整张图重新生图，引发状态抖动与元死循环 | **局部子图切片（Sub-graph Splicing）**：主控只在状态字典里修改未执行节点 |
 
+### 6.1 源码校准（2026-10-01 回源 deer-flow @ `ethan` / v2.1.0-rc0）
+
+上图与四点总结中，"确定性状态机 + 物理沙箱 + 渐进装配"三点为源码实证；**"Lead 动态分解为子任务 DAG"需降格**：源码中不存在任务 DAG 数据结构（无 `task_dag` 通道 / Planner / Dispatcher / 拓扑校验），动态分解是 lead agent 通过 `task` 工具的涌现式派发（`todos` 为扁平清单、`delegations` 为台账），`Send()` 仅用于节点内工具并行。DeerFlow 的真实样本价值：**固定元图的极小实现 + 动态性全部下放工具层**——它证明"固定元图"是超级智能体形态的必要半边，也证明"数据任务 DAG"在该形态下并非必要（边界反例；详见 digested/08、09 源码校准注记与 `/Users/bowhead/deer-flow/_digest/concepts/graph-engineering-support.md` 支持度地图）。
+
 ---
 
 ## 7. 状态总线与协作协议：共享黑板与 Git Worktree 隔离

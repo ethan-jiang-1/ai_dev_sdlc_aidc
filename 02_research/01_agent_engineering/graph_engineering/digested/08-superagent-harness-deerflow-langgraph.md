@@ -85,3 +85,21 @@ DeerFlow 2.0 经历了从 1.x 纯文本搜索流到 2.0“超级智能体底座�
    - **Agent 管算子**（在受限沙箱里做高质量的代码推演）。
 
 这三大支柱的结合，构成了 2026 年现代 AI 软件工程（Agentic SDLC）最坚固的技术底座。
+
+---
+
+## 附：源码校准注记（2026-10-01，回源 deer-flow @ `ethan` / v2.1.0-rc0 口径）
+
+> 本节由 DeerFlow 源码研究库 `_digest/`（graph 维度）回源产生。上文正文保留为当时判读，以下为逐条对表的源码事实。
+
+| 本文表述 | 源码事实（deer-flow @ ethan, v2.1.0-rc0） | 判定 |
+|---|---|---|
+| §1 外层：LangGraph 确定性图状态机 | 成立，但元图**极小**：`create_agent()` 编译的 model↔tools **两固定节点** + 编译期展开的 middleware 钩子节点；不是 Planner/Dispatcher/Aggregator/Gate 多角色元图 | ✅ 方向对，形态远更极简 |
+| §1 Lead Agent 动态生成 Sub-task DAG | **不存在任务 DAG 数据结构**。动态分解 = lead agent 自发调用 `task` 工具派发子代理（涌现式）；`todos` 为扁平清单（无依赖边）；`delegations` 仅为台账 | ⚠️ 需降格为"动态任务清单 / 派发流" |
+| §1 Fan-out 并发调度（LangGraph Send 原语） | `Send()` 仅用于 tools 节点**内部**并行执行多个 tool call；子代理 fan-out 走 `task`/`batch_task` 工具层（独立编译图 + SubagentRuntime），不经图拓扑 | ⚠️ Send 的实际角色与本文叙事不同 |
+| §1 检查点落盘 / 中断恢复 | 检查点成立（sqlite/postgres，delta/full 双模式）；HITL 为 `ask_clarification`（`jump_to="end"`，对话回合级），**全库零处图级 `interrupt()`** | ✅ / ◐ |
+| §1 Docker 物理沙箱 | 成立且超配：Local/Docker/K8s/BoxLite/E2B/Tenki/OpenSandbox 七实现 | ✅ |
+| §1 渐进式技能装配 | 成立：Skill Registry + deferred discovery + DeferredToolFilter + `skill_context` channel | ✅ |
+| （本文未涉）L2 拓扑自愈 | **全库不存在**：无 replan / 拓扑校验 / 子图切片 / 失败信封。失败升级 = error ToolMessage 回流 lead agent 上下文自纠 | ❌ |
+
+**修正后的样本定位**：DeerFlow 2.0 实证的是"**固定元图（极小形态）+ 物理沙箱 + 渐进装配 + 涌现式工具级 fan-out**"；它**不是**"固定元图 + 动态任务 DAG"完整范式的实证——数据 DAG 半边在源码中不存在，动态性活在 lead agent 的对话上下文里。完整支持度地图（12 项三档判定）：`/Users/bowhead/deer-flow/_digest/concepts/graph-engineering-support.md`。
