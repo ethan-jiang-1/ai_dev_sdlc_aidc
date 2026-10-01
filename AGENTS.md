@@ -94,6 +94,7 @@
 其下游实践主题 `03_practice/loop_governance/`（同日立题）的 backbone 待用户复核。
 `02_research/01_agent_engineering/goal_eval_engineering/` 是**活跃的研究主题**（2026-09-27 定调）：前沿来源如何构造 goal 与 eval。
 定调全文在该目录 `README.md` §1。管道同 loop 主题。尚无实践层。
+`02_research/01_agent_engineering/graph_engineering/` 是**活跃的研究主题**（2026-10-01 定调）：从单体 Loop 到显式 DAG 状态机、两层自愈体系、Session 内外架构与异构治理。定调全文在该目录 `README.md` §1。管道同 loop 主题。
 
 - 补素材、改研究结论前，先确认它是否为某场 talk 服务。**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**，避免事实分散到两处。
 - `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含五个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`、`harness_governance/`（2026-09-21 自 beyond 抽出：AI 形态下新的 SDLC——harness/context 治理）、`loop_governance/`（2026-09-26 立题：loop 层实践主干——停止条件/外层调度/自主度分档，**环境轴与控制轴与 harness_governance 同构成对**，证据权威在 `02_research/01_agent_engineering/loop_engineering/`）。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。

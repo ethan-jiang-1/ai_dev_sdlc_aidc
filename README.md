@@ -24,7 +24,7 @@ ai_dev_sdlc_aidc/
 └── talk-harness-201/                   交付层 · DSH 解剖场（advanced；storyline 阶段，约 30–38 张 / 45–60 min 提案）
 ```
 
-**研究层与实践层**（`01`–`04`）在 2026-07～08 建立，是长期素材与认知底座，默认处于**沉淀状态**、不再逐日推进（**例外**：`02_research/01_agent_engineering/repo_agent_friendliness/` 评估系统、`02_research/01_agent_engineering/loop_engineering/`（2026-09-26 起活跃）、`02_research/01_agent_engineering/goal_eval_engineering/`（2026-09-27 定调，见该目录 README §1），见根 AGENTS §4）。
+**研究层与实践层**（`01`–`04`）在 2026-07～08 建立，是长期素材与认知底座，默认处于**沉淀状态**、不再逐日推进（**例外**：`02_research/01_agent_engineering/repo_agent_friendliness/` 评估系统、`02_research/01_agent_engineering/loop_engineering/`（2026-09-26 起活跃）、`02_research/01_agent_engineering/goal_eval_engineering/`（2026-09-27 定调，见该目录 README §1）、`02_research/01_agent_engineering/graph_engineering/`（2026-10-01 升级定调，见该目录 README §1），见根 AGENTS §4）。
 其中 `03_practice/` 是 2026-09-21 从研究层拆出的**实践层**，现含五个主题——需求工程、SDD 工具生态、SDD 后继形态、**harness 治理**（环境轴）、**loop 治理**（控制轴，2026-09-26 增 `loop_governance/`，证据权威在研究层 `01_agent_engineering/loop_engineering`）——内容是可执行的工程实践与方法论，不再算"研究"。
 **交付层**（`talk-*`）从 2026-08 起成为工作重心：每一场 talk 是一个自带完整管道的独立工作区。
 
