@@ -20,7 +20,7 @@
 - **两场分稿（2026-09-27 定，2026-09-28 控制链重构，2026-10-01 阶梯脊柱完全重排）**：`intro/` 入门场（**27 页**＋判断档三题，60 分钟，没跑过循环的通识听众，业务与管理为主）；`advanced/` 技术/产品场（**35 页**＋构造档三题，90 分钟，在跑循环的工程师与产品，机制放开讲）。脊柱＝capability_ladder 交接面：开场故事（系统接替逐次提示→「写 loop」）→ 定档四问 → 按交接面交决定配护栏 → 高手错觉收尾。基线不算已交动作；阶梯是教学顺序，真实系统三个交接面分别核查，不由 `/loop` 推断前两面成立。两场各自 outline → manuscript → practice，互不搬页。
 - **三件套分工**：两场 talk 回答「凭什么信」与「链怎么治理」；听众带走的操作件是本目录 [`manual/循环交接手册.md`](manual/循环交接手册.md)——单文件双篇（卷首语汇权威＋入门篇判断层＋高级篇操作层，2026-09-30 立项、合册并移入本目录）。两场收尾页的「带走」与练习的「回去照着做」全部指向手册，操作规程不在两场稿里重复——talk 是手册的叙事上游，不是它的第二权威。
 - **语言**：大陆中文习惯的短句，避免翻译腔；主张句不依赖英文。关键术语保留英文——首现处「中文（英文）」标注（检查（check）、执行方（agent）等），映射表在各场文稿头部；细则见各场大纲的语言节。
-- **源**：上游两处——研究层 `../../02_research/ai_loop_engineering/`，实践层 `../../03_practice/loop_governance/`。主张不超出它们的成稿：研究层 `result/landscape.md`（§3.5 交接面）与 `capability_ladder/00-map.md`＋`result-reliability-interface.md`；实践层 `backbone.md` 与 `manual.md`（§0–§13）。本目录是它们的加工下游；核出处时读两个上游各自的 README。
+- **源**：上游两处——研究层 `../../02_research/01_agent_engineering/loop_engineering/`，实践层 `../../03_practice/loop_governance/`。主张不超出它们的成稿：研究层 `result/landscape.md`（§3.5 交接面）与 `capability_ladder/00-map.md`＋`result-reliability-interface.md`；实践层 `backbone.md` 与 `manual.md`（§0–§13）。本目录是它们的加工下游；核出处时读两个上游各自的 README。
 
 ## 内容流程
 
@@ -45,20 +45,20 @@
 
 | 想看什么 | 路径 |
 |---------|------|
-| Loop Engineering 研究全景 | `../../02_research/ai_loop_engineering/README.md` |
-| 当前研究态 | `../../02_research/ai_loop_engineering/CURRENT.md` |
-| KOL 台账（6 位核心） | `../../02_research/ai_loop_engineering/raw/kol-roster.md` |
-| 12 份回源档案（逐字引句） | `../../02_research/ai_loop_engineering/raw/evidence-*.md` |
-| 命名谱系判读 | `../../02_research/ai_loop_engineering/digested/01-命名谱系.md` |
-| 构件判读 | `../../02_research/ai_loop_engineering/digested/03-构件.md` |
-| 控制问题矩阵 | `../../02_research/ai_loop_engineering/digested/07-控制问题矩阵.md` |
+| Loop Engineering 研究全景 | `../../02_research/01_agent_engineering/loop_engineering/README.md` |
+| 当前研究态 | `../../02_research/01_agent_engineering/loop_engineering/CURRENT.md` |
+| KOL 台账（6 位核心） | `../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md` |
+| 12 份回源档案（逐字引句） | `../../02_research/01_agent_engineering/loop_engineering/raw/evidence-*.md` |
+| 命名谱系判读 | `../../02_research/01_agent_engineering/loop_engineering/digested/01-命名谱系.md` |
+| 构件判读 | `../../02_research/01_agent_engineering/loop_engineering/digested/03-构件.md` |
+| 控制问题矩阵 | `../../02_research/01_agent_engineering/loop_engineering/digested/07-控制问题矩阵.md` |
 | 实践主干（backbone 7 节） | `../../03_practice/loop_governance/result/backbone.md` |
 | 操作规程（manual 13 节，2026-09-30 增 §13 授权面） | `../../03_practice/loop_governance/result/manual.md` |
-| goal/eval 构造 | `../../02_research/agent_goal_eval/` |
+| goal/eval 构造 | `../../02_research/01_agent_engineering/goal_eval_engineering/` |
 | harness 治理（环境轴对照） | `../../03_practice/harness_governance/` |
-| Andrew Ng 消化稿 | `../../02_research/ai_loop_engineering/digested/kol/andrew_ng.md` |
+| Andrew Ng 消化稿 | `../../02_research/01_agent_engineering/loop_engineering/digested/kol/andrew_ng.md` |
 | Andrew Ng 素材卡 | `../../01_sources/reference/kol/_raw_loop_engineering/andrew_ng/` |
-| 边界判定 | `../../02_research/ai_loop_engineering/digested/05-边界判定.md` |
+| 边界判定 | `../../02_research/01_agent_engineering/loop_engineering/digested/05-边界判定.md` |
 
 ## 故事在哪
 
@@ -67,7 +67,7 @@
 | 被追问时才翻 | 路径 |
 |---|---|
 | 两判据、十种失败、停止三件 | `../../03_practice/loop_governance/result/backbone.md` |
-| 哪些已经有公开办法、哪四列是空的 | `../../02_research/ai_loop_engineering/result/landscape.md` |
+| 哪些已经有公开办法、哪四列是空的 | `../../02_research/01_agent_engineering/loop_engineering/result/landscape.md` |
 
 ## 三条铁律
 

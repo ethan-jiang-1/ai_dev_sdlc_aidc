@@ -13,7 +13,7 @@ research_date: 2026-09-26
 > `_raw_kol/` 按人铺全景，本集合按**一次命名事件**（2026-06 loop engineering 成为公开名字）收一波声音。
 
 **唯一名单权威不在这里**——谁入册、号召力依据是什么、每个人对本主题的主张一句话，
-在 [`02_research/ai_loop_engineering/raw/kol-roster.md`](../../../../02_research/ai_loop_engineering/raw/kol-roster.md)。
+在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
 本 README 只管**素材索引**（这个集合里有什么、卡片怎么写）。
 
 ## 收录判据

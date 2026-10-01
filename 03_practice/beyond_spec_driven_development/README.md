@@ -44,7 +44,7 @@ collector: delegated research agent
 scope: 2026 年（尤其 2026Q2–Q3）社区材料；承接 ../spec_driven_development/debate/critiques.md「批判观点聚类」第 5 条的出路指向
 related:
   - ../harness_governance/README.md                          # 两分篇抽出后的新家（抽出前编号 02/03，现 01/02）（内容权威）
-  - ../../02_research/ai_loop_engineering/README.md          # Loop Engineering：光谱外的正交轴（§6.1 定位说明，证据权威在彼）
+  - ../../02_research/01_agent_engineering/loop_engineering/README.md          # Loop Engineering：光谱外的正交轴（§6.1 定位说明，证据权威在彼）
   - ../spec_driven_development/debate/critiques.md          # 批判面（本文的"问题从哪来"）
   - ../spec_driven_development/comparison.md             # SDD 工具横比（光谱图左端的素材）
   - ../spec_driven_development/debate/authoritative-verdicts.md
@@ -179,7 +179,7 @@ critiques.md 的批判聚类收敛到两个死结：**spec 无法自我验证**�
 把 loop engineering 塞进光谱右端会掩盖它真正的主张：**它要求的是"可核的停止条件 + 决定下一件工作的外层调度系统"**——
 这两样在光谱的任一位置上都可能缺。所以本条**只作定位说明，不新增形态行**。
 
-- **证据与判读权威在** [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)（研究层·分析；
+- **证据与判读权威在** [`02_research/01_agent_engineering/loop_engineering/`](../../02_research/01_agent_engineering/loop_engineering/README.md)（研究层·分析；
   2026-09-26 三路回源完成——evidence-a/b/c 一手档案 + digested 01/03/05 判读）。
 - **实践主题已立题**：[`../loop_governance/`](../loop_governance/README.md)（2026-09-26，控制轴主干：
   停止条件 / 外层调度 / 自主度分档 / 检查点）——命名不沿用 KOL 词（词源＝热度碎片、外延未收敛，判定见研究层 digested/01）。

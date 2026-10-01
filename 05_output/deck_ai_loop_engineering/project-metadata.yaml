@@ -33,10 +33,10 @@ scope:
 
 source:
   primary:
-    - "../../02_research/ai_loop_engineering/"
+    - "../../02_research/01_agent_engineering/loop_engineering/"
     - "../../03_practice/loop_governance/"
   supplementary:
-    - "../../02_research/agent_goal_eval/"
+    - "../../02_research/01_agent_engineering/goal_eval_engineering/"
     - "../../03_practice/harness_governance/"
     - "../../01_sources/reference/kol/_raw_loop_engineering/"
 
@@ -64,4 +64,4 @@ phases:
 
 prerequisites:
   - "03_practice/loop_governance backbone + manual 已确认（见该目录 CURRENT.md）"
-  - "02_research/ai_loop_engineering/result/landscape.md 已入层（2026-09-27）"
+  - "02_research/01_agent_engineering/loop_engineering/result/landscape.md 已入层（2026-09-27）"

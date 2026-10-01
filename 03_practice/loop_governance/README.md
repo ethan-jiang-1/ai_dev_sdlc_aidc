@@ -8,7 +8,7 @@
 > （四人核心同指但两处硬分歧），沿用即把热度误当收敛、且即站队。按仓库自己的五层框架命名，
 > 与 [`../harness_governance/`](../harness_governance/README.md) **同构成对**：
 > **harness 治理管「约束写进环境」（知识/环境轴）；loop 治理管「循环怎么跑、谁决定下一轮、人站在哪」（控制/分配轴）。**
-> 命名判定全文：[`../../02_research/ai_loop_engineering/digested/01-命名谱系.md`](../../02_research/ai_loop_engineering/digested/01-命名谱系.md) §四。
+> 命名判定全文：[`../../02_research/01_agent_engineering/loop_engineering/digested/01-命名谱系.md`](../../02_research/01_agent_engineering/loop_engineering/digested/01-命名谱系.md) §四。
 
 ## 一句话分界
 
@@ -26,7 +26,7 @@ loop_governance/
     └── manual.md        # ★ 操作规程 12 节（诊断 → 写法 → 选型 → 保护 → 进度规格 → 触发器 → 熔断 → Ralph → 升档 → 验收独立性 → 落地梯子 P0→P4 → 反过度工程）
 ```
 
-**没有 `research/` 层**：循环机制证据与判读在 [`02_research/ai_loop_engineering/`](../../02_research/ai_loop_engineering/README.md)；goal/eval 如何构造及判据困难的分析在 [`02_research/agent_goal_eval/`](../../02_research/agent_goal_eval/README.md)。本主题只引用各自的控制接口，不复制研究正文或案例数值，防双权威。
+**没有 `research/` 层**：循环机制证据与判读在 [`02_research/01_agent_engineering/loop_engineering/`](../../02_research/01_agent_engineering/loop_engineering/README.md)；goal/eval 如何构造及判据困难的分析在 [`02_research/01_agent_engineering/goal_eval_engineering/`](../../02_research/01_agent_engineering/goal_eval_engineering/README.md)。本主题只引用各自的控制接口，不复制研究正文或案例数值，防双权威。
 引用写法须带主题路径：`ai_loop_engineering/evidence-*` 与 `agent_goal_eval/digested/01/02/03` 不混称；库内一手如 `fable5/run_*/` 的整理者转述句 ≠ 逐字引句（见 backbone §1）。
 
 ## 分工边界（与兄弟主题，冲突时以本表为准）
@@ -36,7 +36,7 @@ loop_governance/
 | [`harness_governance`](../harness_governance/README.md) | 单次运行受控：门禁 / 传感器 / 漂移清理（诊断轴＝agent 缺哪句话 ①–⑦） | ——（本主题的前提层） |
 | **本主题** | 多轮的治理：停止条件 / 外层调度 / 自主度分档 / 检查点 | 单次运行内的约束（→harness）；跨 agent 编排（→Graph 层，未立题）；SDD 工件链与工具生态（→spec_driven_development）；intent/spec 写法（→requirements_engineering） |
 | [`spec_driven_development`](../spec_driven_development/README.md) | SDD 工具生态与辩论谱系 | ——（与本主题是收敛关系，证据互引） |
-| [`agent_goal_eval` 研究主题](../../02_research/agent_goal_eval/README.md) | goal 完成条件与 eval 的构造、校验、设计不出来时的处理 | 本主题只用其判读决定自动续跑、验收、升档或交人，不重写 goal/eval 方法 |
+| [`agent_goal_eval` 研究主题](../../02_research/01_agent_engineering/goal_eval_engineering/README.md) | goal 完成条件与 eval 的构造、校验、设计不出来时的处理 | 本主题只用其判读决定自动续跑、验收、升档或交人，不重写 goal/eval 方法 |
 
 ## 核心结论速览（展开在 [`result/backbone.md`](result/backbone.md)）
 

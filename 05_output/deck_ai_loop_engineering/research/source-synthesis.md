@@ -4,7 +4,7 @@ stage: phase_0
 status: draft
 created: 2026-09-27
 source:
-  - 02_research/ai_loop_engineering/result/landscape.md
+  - 02_research/01_agent_engineering/loop_engineering/result/landscape.md
   - 03_practice/loop_governance/result/backbone.md
   - 03_practice/loop_governance/result/manual.md
 feeds_into:
@@ -32,7 +32,7 @@ feeds_into:
 - Loop 层管「怎么回头」：上次结果改变下次行动。四要素是触发、验证、停止条件、记忆。
 - 硬判据一：停止不看上次结果，那是重试。
 - 硬判据二：单次不受控，循环是错误复制机。
-- 权威表述：[`landscape.md`](../../../02_research/ai_loop_engineering/result/landscape.md) §3.1；展开在 backbone §0。
+- 权威表述：[`landscape.md`](../../../02_research/01_agent_engineering/loop_engineering/result/landscape.md) §3.1；展开在 backbone §0。
 
 ### 1.2 命名，点到为止
 

@@ -4,7 +4,7 @@
 
 ## 一句话
 
-**立题初稿已确认通过**：backbone 与 manual 可用。研究层 [`landscape.md`](../../02_research/ai_loop_engineering/result/landscape.md) 已入层。
+**立题初稿已确认通过**：backbone 与 manual 可用。研究层 [`landscape.md`](../../02_research/01_agent_engineering/loop_engineering/result/landscape.md) 已入层。
 
 ## 状态
 
@@ -14,7 +14,7 @@
 | `result/backbone.md` | ✅ §0–§6 七节——**2026-09-27 用户确认通过**；2026-09-30 §3 补 §13 指针（仅指针，未改主张） |
 | `result/README.md` | ✅ 入层判据 |
 | `result/manual.md` | ✅ 13 节——§0–§12 于 2026-09-27 用户确认通过；§13 授权面划定（2026-09-30 增，待复核） |
-| 证据层 | ✅ 循环机制见 [`ai_loop_engineering`](../../02_research/ai_loop_engineering/README.md)；控制接口见 [`agent_goal_eval`](../../02_research/agent_goal_eval/digested/README.md) |
+| 证据层 | ✅ 循环机制见 [`ai_loop_engineering`](../../02_research/01_agent_engineering/loop_engineering/README.md)；控制接口见 [`agent_goal_eval`](../../02_research/01_agent_engineering/goal_eval_engineering/digested/README.md) |
 
 ## 下一步
 
@@ -30,7 +30,7 @@
 
 ## 铁律速记
 
-- **证据权威在对应研究主题**：循环机制来自 [`ai_loop_engineering`](../../02_research/ai_loop_engineering/README.md)；goal/eval 条件和裁判分歧来自 [`agent_goal_eval`](../../02_research/agent_goal_eval/README.md)。F 的未合并 PR/单用户报告只作反例，I 的个人案例不作效果证据，I2 侦察与 K 候选不入规程；goal/eval 的单人观察与单源 FAQ 不作通用效果结论。
+- **证据权威在对应研究主题**：循环机制来自 [`ai_loop_engineering`](../../02_research/01_agent_engineering/loop_engineering/README.md)；goal/eval 条件和裁判分歧来自 [`agent_goal_eval`](../../02_research/01_agent_engineering/goal_eval_engineering/README.md)。F 的未合并 PR/单用户报告只作反例，I 的个人案例不作效果证据，I2 侦察与 K 候选不入规程；goal/eval 的单人观察与单源 FAQ 不作通用效果结论。
 - **result 层语义命名、无序号**；主干结论改动 → 反向同步研究层 digested。
 - **未回源的东西不上主干**（`⏳ 待回源` 只能出现在研究层的线索区）。
 - **本层状态不记下游**：下游产物（deck、手册等）的进度归它们自己的状态文件与根 README，本文件只记本层事实。
