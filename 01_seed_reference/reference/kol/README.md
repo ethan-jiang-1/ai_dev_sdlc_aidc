@@ -24,6 +24,7 @@ reference/kol/
 ├── _raw_frontier/                         ← 跨公司变革共识合成（7 人 + 3 深度研究）
 ├── _raw_fable5/                           ← Fable 5 模型变革信号合成（16 样本）
 ├── _raw_loop_engineering/                 ← Loop Engineering 一波声音（2026-06 起，一人一目录）
+├── _raw_graph_engineering/                ← Graph Engineering 一波声音（2026-07 起，DAG 与拓扑编排）
 ├── _raw_promatic_summit_2026/             ← Pragmatic Summit 2026（Beck+Fowler 同台）
 ├── _raw_agile_manifesto_2026/             ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
 ├── _raw_engelberg_2026/                   ← Engelberg Retreat 2026（从实验到生产的转折点）
@@ -118,6 +119,16 @@ reference/kol/
 **唯一名单权威不在本集合**——谁入册、号召力依据、每人主张一句话，在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。本集合只管素材。
 
 **当前状态**：`andrew_ng/` 四件套齐；**当前无待建卡**（建卡规则见集合 README——素材常态在研究主题的 evidence 回源档案）。
+
+---
+
+### `_raw_graph_engineering/` — Graph Engineering 一波声音（2026-07 起）
+
+**是什么**：2026-07 起关于 "graph engineering" / "DAG 状态机编排" / "From Loops to Graphs" 的一手讨论与实操记录。
+
+**源头特征**：一手优先（Peter Steinberger 的 2026-07-18 X 提问、真实一线开发团队关于 DAG 状态机替代多 Agent 聊天的工程对话、开源项目 A2A 协议等）。**时间窗 2026-07 起**。
+
+**当前状态**：README 架构定义已建；已归档 2026-10-01 一线工程交流实录（DAG 状态机与两层自愈机制）。
 
 ---
 

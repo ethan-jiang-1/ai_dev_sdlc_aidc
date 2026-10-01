@@ -9,6 +9,7 @@
 | 子目录 | 是什么 | 入口 |
 |---|---|---|
 | `field_samples/` | 早期真实使用样本（agentic 开发者洞察索引、fable5） | `field_samples/agentic/agentic_developer_insights_index.md` |
+| `graph_engineering/` | Graph Engineering 与 DAG 拓扑编排（2026-07 起，从单循环走向状态机编排与多 Agent 协作） | `graph_engineering/README.md` |
 | `papers/` | 学术论文参考，`raw → digested → result` 管道 | `papers/README.md` |
 | `reference/` | 人物与厂商参考库（KOL / Corp 静态卡片） | `reference/kol/README.md`、`reference/corp/README.md` |
 | `weixin/` | 微信公众号原文归档（HTML → MD + 原图） | `weixin/README.md` |
