@@ -1,12 +1,10 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-30（manual 增 §13）**：backbone §0–§4 与 manual §0–§12 的既有确认不变。manual 增 **§13 授权面划定规程**（LE1 交接面的操作化：分级处置表、动作×目标×有效期、拒绝语义、偏好与隔离两层、实测反例、划定五步），证据自研究层 capability_ladder 与 evidence-f/u/w/b/c 升格；backbone §3 补指针，manual §0/§11 补路由。§13 为新增节，**待用户复核**。背景：下游《循环交接手册》（[`05_output/deck_ai_loop_engineering/manual`](../../05_output/deck_ai_loop_engineering/manual/README.md)）立项，§13 是其「交动作」章的上游。
->
-> **2026-09-27（deck 两场收口）**：backbone 与 manual 的确认不变。deck 两场——`intro/`（入门场 19 页）与 `advanced/`（技术产品场 27 页）——经四轮反馈打磨（三档格式、场别命名、难点页 callout、术语中英对照）后，2026-09-27 用户收口。原统一稿已迁入两场并按用户决定移除。没有回改本目录正文。
+> 最近一次更新：**2026-09-30（manual 增 §13）**：backbone §0–§4 与 manual §0–§12 的既有确认不变。manual 增 **§13 授权面划定规程**（LE1 交接面的操作化：分级处置表、动作×目标×有效期、拒绝语义、偏好与隔离两层、实测反例、划定五步），证据自研究层 capability_ladder 与 evidence-f/u/w/b/c 升格；backbone §3 补指针，manual §0/§11 补路由。§13 为新增节，**待用户复核**。
 
 ## 一句话
 
-**立题初稿已确认通过**：backbone 与 manual 可用。研究层 [`landscape.md`](../../02_research/ai_loop_engineering/result/landscape.md) 已入层。deck 只写叙事：大纲与文稿主张句已对齐，画面与 PPTX 已删除。
+**立题初稿已确认通过**：backbone 与 manual 可用。研究层 [`landscape.md`](../../02_research/ai_loop_engineering/result/landscape.md) 已入层。
 
 ## 状态
 
@@ -17,14 +15,11 @@
 | `result/README.md` | ✅ 入层判据 |
 | `result/manual.md` | ✅ 13 节——§0–§12 于 2026-09-27 用户确认通过；§13 授权面划定（2026-09-30 增，待复核） |
 | 证据层 | ✅ 循环机制见 [`ai_loop_engineering`](../../02_research/ai_loop_engineering/README.md)；控制接口见 [`agent_goal_eval`](../../02_research/agent_goal_eval/digested/README.md) |
-| deck | 两场分稿：2026-09-27 收口（19/27 页）→ 2026-09-28 控制链重构为入门 15 页 / 技术产品 24 页 → **2026-09-30 按用户要求增实操轨**：入门加判断档三题（60 min）、技术场加构造档三题（90 min），收尾页「带走」接《循环交接手册》；练习件在两场 `practice/`，进度权威在该目录 `AGENTS.md` |
 
 ## 下一步
 
-1. **deck 两场**：2026-09-27 收口后内容冻结；2026-09-28 控制链重构（15/24 页，待用户过闸）；**2026-09-30 按用户明确要求增实操轨**（入门判断档三题 / 技术场构造档三题，时长 60/90，收尾接手册），练习件在两场 `practice/`。做片交由下游 agent（读各场 manuscript-*.md）。改动未提交，提交与否由用户定。
-2. 研究层遗留（不阻塞 deck，登记在研究层 CURRENT）：Unrolling 候选 403 / 归属修正 / Morris 四级。
-3. **manual §13（2026-09-30 增）待用户复核**；复核通过后作为下游《循环交接手册》「交动作」章的上游，判定链＝landscape §3.5 → 00-map → rung-01 → §13。
-4. **两场 deck 的实操轨与时长调整已落地（2026-09-30）**：入门 60 分钟 / 技术场 90 分钟，练习落点全部指向《循环交接手册》（05_output 侧工作，本目录只作上游，未动）。
+1. **manual §13（2026-09-30 增）待用户复核**；判定链＝landscape §3.5 → 00-map → rung-01 → §13。
+2. 研究层遗留（登记在研究层 CURRENT）：Unrolling 候选 403 / 归属修正 / Morris 四级。
 
 ## 缺口（backbone 登记的两项开放缺口 + 两项附加）
 
@@ -38,3 +33,4 @@
 - **证据权威在对应研究主题**：循环机制来自 [`ai_loop_engineering`](../../02_research/ai_loop_engineering/README.md)；goal/eval 条件和裁判分歧来自 [`agent_goal_eval`](../../02_research/agent_goal_eval/README.md)。F 的未合并 PR/单用户报告只作反例，I 的个人案例不作效果证据，I2 侦察与 K 候选不入规程；goal/eval 的单人观察与单源 FAQ 不作通用效果结论。
 - **result 层语义命名、无序号**；主干结论改动 → 反向同步研究层 digested。
 - **未回源的东西不上主干**（`⏳ 待回源` 只能出现在研究层的线索区）。
+- **本层状态不记下游**：下游产物（deck、手册等）的进度归它们自己的状态文件与根 README，本文件只记本层事实。

@@ -62,7 +62,7 @@ ai_dev_sdlc_aidc/
 | `talk-ai-coding-evolution-org-sdlc/` | 50 页 / 75–90 min | 暂停在 review | v0.16 已渲染，等用户确认视觉门禁 |
 | `talk-ai-coding-evolution-opc/` | 23 页 / 45 min | 已定稿（v8） | **只作内部参考**，其命名与内容不得出现在其他 talk 的对客文字里 |
 | `05_output/deck_ai_sdlc_keynote/` | 40 min / 标准档 | 历史主线稿 | Phase 0 研究与 v1 大纲/讲稿已产出，2026-08 后未继续推进（`project-metadata.yaml` 中 phases 仍标 pending） |
-| `05_output/deck_ai_loop_engineering/` | 两场分稿：入门 15 页＋判断档三题（60 min）/ 技术产品 24 页＋构造档三题（90 min） | 内容稿 | **循环治理 keynote**。只写叙事＋练习件。页面图和 PPTX 已删除。进度权威在该目录 `AGENTS.md` |
+| `05_output/deck_ai_loop_engineering/` | 两场分稿：入门 27 页＋判断档三题（60 min）/ 技术产品 35 页＋构造档三题（90 min） | 内容稿 | **循环治理 keynote**（阶梯脊柱重排：开场故事→定档→逐级交决定配护栏→高手错觉收尾）。只写叙事＋练习件。页面图和 PPTX 已删除。进度权威在该目录 `AGENTS.md` |
 | `05_output/deck_ai_loop_engineering/manual/` | 单文件双篇 | 内容稿 | **循环交接手册**（2026-09-30 立项；同日自 05_output 根移入 deck 目录并合册）：`循环交接手册.md` 一个文件——卷首（状态语汇权威）＋入门篇（判断层）＋高级篇（操作层，按时刻七节），面向读者、参数带版本锚。进度权威在该目录 `AGENTS.md` |
 | `talk-harness-201/` | 20 张短版（另有 35 张长版并存）/ ≈50 min | ⏳ 04 文案 v1 双切法待 review | **DSH 解剖场（advanced）**：《解剖一只优秀的 harness》——三条立场（agent 一等参与／规则可执行／事实唯一 owner）＋道五概念＋术三链＋分寸。语料＝deepseek-harness 仓库 FAQ 07（钉版 `46a7f68b09`）＋KOL 对齐账本（七位点名背书）。**独立一场，不与 101／主线互为前提** |
 
@@ -79,7 +79,7 @@ ai_dev_sdlc_aidc/
 | `02_research/` | **分析层** | 多数主题是自包含的 `raw → digested → result` 管道：工程实践、反馈回路、管理与编排、多智能体团队、研发体系迁移、ThoughtWorks 方法论、前沿议题、Anthropic 实践；**另有三个活跃主题**——`repo_agent_friendliness/`（Agent-Friendly 评估系统，独立三层分法 `10-spec/20-instruments/90-archive`，run 数据不落本仓库，见根 AGENTS §4 例外）、`ai_loop_engineering/`（Loop Engineering 运动，2026-09-26 三路回源完成）与 `agent_goal_eval/`（goal 与 eval 如何构造，2026-09-27 定调）（需求工程与 SDD 两主题已于 2026-09-21 拆出至 `03_practice/`；重名目录 `anthorpic_ai_sdlc/`→`anthropic_ai_sdlc/`、`rnd_native_2.0/`→`ai_native_rnd/` 已于 2026-09-27 合并） |
 | `03_practice/` | **实践层** | SDLC 工程实践与方法论的沉淀（2026-09-21 自研究层拆出，用户判定其内容已是 practice 而非 research）：`requirements_engineering/`（需求表达格式）、`spec_driven_development/`（SDD 工具生态与辩论）、`beyond_spec_driven_development/`（SDD 批判之后的形态光谱）、`harness_governance/`（★ 环境轴：治理 agent 执行链路，2026-09-21 自 beyond 抽出）、`loop_governance/`（★ 控制轴：loop 层实践主干——停止条件/外层调度/自主度分档，2026-09-26 立题，证据权威在 `02_research/ai_loop_engineering`） |
 | `04_enterprise/` | **企业视角** | SDLC 在企业侧的映射：BPM 作为企业信息加工流的等价物，以及企业 AI 重构案例 |
-| `05_output/` | **产出层** | 主线 Keynote：`deck_ai_sdlc_keynote/`（历史主线稿，2026-08 后未推进，自带 6-Phase 出图管道）+ `deck_ai_loop_engineering/`（loop 三件套：两场分稿——入门 15 页＋判断档三题、技术产品 24 页＋构造档三题，只写叙事＋练习件，画面图与 PPTX 已删除；＋`manual/` 循环交接手册，按时刻组织的现场操作件。进度见该目录 `AGENTS.md`） |
+| `05_output/` | **产出层** | 主线 Keynote：`deck_ai_sdlc_keynote/`（历史主线稿，2026-08 后未推进，自带 6-Phase 出图管道）+ `deck_ai_loop_engineering/`（loop 三件套：两场分稿——入门 27 页＋判断档三题、技术产品 35 页＋构造档三题，阶梯脊柱重排；只写叙事＋练习件，画面图与 PPTX 已删除；＋`manual/` 循环交接手册，按时刻组织的现场操作件。进度见该目录 `AGENTS.md`） |
 
 各研究主题遵守统一的信息处理纪律：**一手源优先、来源可溯、聚焦当前时刻**。
 参考库的"来源/时间铁律"见 `01_sources/reference/kol/README.md` 与 `01_sources/reference/corp/README.md`。

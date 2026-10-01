@@ -1,250 +1,672 @@
 ---
 title: 文稿 — Loop Engineering 技术产品场
 status: draft-for-review
-source: advanced/outline/outline-advanced.md
-revised: 2026-09-28
+source: advanced/outline/outline-advanced.md（v3 阶梯脊柱）
+revised: 2026-10-01
 ---
 
 # 文稿 — 技术产品场
 
-> 本稿与 [`../outline/outline-advanced.md`](../outline/outline-advanced.md) 同步。每页 `CLAIM` 与 outline subtitle 完全相同；引用块不上屏。
-> 实操轨（2026-09-30 增，90 分钟版）：三道构造档练习，题面与讲者卡在 [`../practice/`](../practice/README.md)，嵌入位置见 outline §8；上屏内容不因练习改动。
+> 本稿与 [`../outline/outline-advanced.md`](../outline/outline-advanced.md)（v3 阶梯脊柱）同步。每页 `CLAIM` 必须与 outline 的 subtitle 完全相同；**一页一个概念，content 不超过三条**；引用块不上屏。
+> 实操轨（90 分钟版）：三道构造档练习，题面与讲者卡在 [`../practice/`](../practice/README.md)，嵌入位置见 outline §8。
 
 ## 术语
 
-目标（Goal）｜行动（Action）｜环境反馈（Environment Feedback）｜评估/裁判（Eval/Grader）｜继续（Continue）｜停止（Stop）｜交还（Escalate）｜状态（State）｜结果（Outcome）｜验收（Accepted）。
+档｜授权面｜策略件｜裁判（grader）｜负例｜验收（accepted）｜外部结果（outcome）｜交接单｜反馈回路｜定档四问
 
 ---
 
-### A01 · 你离开后，它说做完了
+### B01 · 你离开后，它说做完了
+
 **CLAIM**：Loop 的难题不是能否行动，而是回来时凭什么信完成宣告。
 
-**上屏**：你离开了；它继续跑；你回来听到“完成”。**凭什么信？**
+**上屏**
 
-**接到下一页**：名称不能替我们回答这个问题。
+- title: 你离开后，它说做完了
+- content:
+  - 你离开了；它继续跑；它说：完成。
+  - 治理要回答的是：这句话凭什么**被系统接受**。
 
-### A02 · 名称不是方法
-**CLAIM**：不同来源的 loop 外延不兼容；本场治理的是可审计控制决策，不站队某一种环数。
+**接到下一页**：先说这个词为什么突然到处都是。
 
-**上屏**：同一个名字，可能指运行时循环、轨迹改写环境，或产品反馈三环。本场只谈控制决策。
+### B02 · 别写 prompt 了，写 loop？
 
-**接到下一页**：先把我们要审计的链条画出来。
+**CLAIM**：模型已经强到能知错改错——知道错在哪就能改对，所以有人开始不写 prompt，改写 loop；这两个前提，就是本场要工程化的东西。
 
-### A03 · 先画完整控制链
-**CLAIM**：Goal/边界 → Action/授权 → 环境反馈 → Eval/裁判 → 继续/停止/升级 → State/Outcome；这是研究抽象，不是 KOL 原话。
+**上屏**
 
-**上屏**：目标与边界 → 本轮行动与授权 → 环境事实 → 判据与裁判 → 继续/停止/交人 → 状态与外部结果。
+- title: 别写 prompt 了，写 loop？
+- content:
+  - 模型很强，而且能知错改错。
+  - 所以有人说：别写 prompt 了，写 loop。
+  - 这句话是真的——但它是门手艺。
 
-**备注**：控制链是本仓研究抽象，不冒充统一 taxonomy。
+**展开**：故事成立的前提有两条：模型能力够强，**并且反馈进得来**（它得知道错在哪）。今天全场讲的，就是把这两条前提变成工程：反馈落成工件、判断写成判据、护栏可以演练、升档用门禁说话。掌握 loop 需要锻炼——阶梯就是练法。
 
-### A04 · Goal 决定“完成什么”
-**CLAIM**：目标必须有可观察终态、检查方式和路径约束；外部业务结果不可见时不能伪装成自动 `Met`。
+**接到下一页**：练法的第一步，是定位你在阶梯的哪一级。
 
-**上屏**：终态是什么？怎么查？什么不能改？业务结果看不见时，产出只能停在待观测。
+### B03 · 你在哪一档
 
-### A05 · Action 决定“允许做什么”
-**CLAIM**：下一步行动必须落在本轮授权的目标、范围和有效期内；选择下一步不等于权限自动扩大。
+**CLAIM**：治理从定档开始——交动作、交续跑、交唤醒，每一级交出一个决定、配上一组护栏。
 
-**上屏**：能选下一步，不等于能做任何下一步；授权绑定对象、范围、动作和期限。
+**上屏**
 
-### A06 · Feedback 是环境事实
-**CLAIM**：工具结果、测试、构建、浏览器路径、拒绝和失败原因必须进入下一步；不看反馈就重跑是 retry，不是 loop。
+- title: 你在哪一档
+- content:
+  - 第一级 交动作：授权面内的动作不再逐条批。
+  - 第二级 交续跑：它自己跑到目标为止。
+  - 第三级 交唤醒；再往上有两条支线——局部已证，未成熟。
 
-**上屏**：Action → 环境事实 → 下一 Action。没有反馈回路，只是重复执行。
+**备注**：命名争议压缩为背景——各家 loop 外延不兼容，本场治理的是可审计控制决策，不站队环数。Ralph 的 `while :; do...done` 无内建 stop；`/goal`、`/loop`、auto mode 分别是条件、时间/事件、轮内审批语义，不能合成一个环。
 
-### A07 · Eval 是裁判，不是反馈
-**CLAIM**：Eval 用预设判据解释环境反馈；判据要能观察、能复查，并明确谁能修改它。
+**接到下一页**：定档有一把公共的尺。
 
-**上屏**：Feedback 说发生了什么；Eval 判断是否满足 Goal。两者不能写成同一个“通过”。
+### B04 · 定档四问
 
-### A08 · 继续、停止、升级是三条控制路径
-**CLAIM**：未满足且可修复才继续；满足预设产出才成为停止候选；不可判、高风险、拒绝或无法恢复就升级/交人。
+**CLAIM**：谁启动下一轮、谁判断完成、谁能改变系统、出了错谁能停下接手——四问在每个档位都有不同答案，这张表就是全场的检查表。
 
-**上屏**：Continue / Stop / Escalate。出口不同，责任和恢复语义不同。
+**上屏**
 
-### A09 · Stop ≠ Accepted
-**CLAIM**：资源耗尽、无进展、拒绝熔断、模型收尾和人工暂停都可能停止控制流，但不自动代表产出被接受。
+- title: 定档四问
+- content:
 
-**上屏**：`stopped` 只表示停了；`accepted` 才表示预设产出验收通过。
+| 四问 | 第一级 | 第二级 | 第三级 |
+|---|---|---|---|
+| 谁启动下一轮 | 人 | 目标条件 | 时间表/事件 |
+| 谁判断完成 | 人 | 裁判＋人守验收 | 裁判＋人守总账 |
+| 谁能改变系统 | 授权面 | 授权面 | 授权面＋调度配置 |
+| 出错谁接手 | 人当场 | 交接单＋人 | 交接单＋升级渠道 |
 
-### A10 · State 与 Outcome 分账
-**CLAIM**：`running / blocked / awaiting_human / stopped` 是控制状态；`accepted` 是产出验收；`outcome_pending` 是外部结果等待观测。
+**备注**：建议每次控制迁移写事件：`goal_rev/action_id/evidence_ref/verdict/decision_source/state_rev/stop_reason/resume_pointer`——本主题设计题，不是产品统一 schema。
 
-**上屏**：控制状态 ≠ 产出状态 ≠ 业务结果。三本账不能合并。
+**接到下一页**：从第一级开始，逐级看门票与护栏。
 
-### A11 · 第一类失败：提前宣告完成
-**CLAIM**：文件变多、回复很满、空壳能打开或单测通过，都可能不是目标完成；目标敌人是 premature completion。
+### B05 · 授权面是分级处置表
 
-**上屏**：能打开 ≠ 做完；单测过 ≠ 目标满足；回复满 ≠ 结果正确。
+**CLAIM**：交出动作审批，交的不是开关，是一张表：允许直行、沙箱内跑、必须人批、硬拒绝。
 
-### A12 · 三件停止骨架各管一件事
-**CLAIM**：机器闸门拦局部事实错误；硬上限管资源与失控；验收与干活分离处理签署权；三者不可合并为“它停了”。
+**上屏**
 
-**上屏**：机器闸门问“这一轮过不过”；硬上限问“还允不允许活”；分离问“谁能签完成”。
+- title: 授权面是分级处置表
+- content:
 
-### A13 · 闸门必须覆盖真实 feedback path
-**CLAIM**：存在一个 bound 或测试不够；实际嵌套反馈路径未覆盖、基线未过、测试被削弱或该做的事没做，仍会产生假通过。
+| 处置 | 例 |
+|---|---|
+| 允许直行 | 读目标文件、跑定向测试 |
+| 沙箱内跑 | 写指定目录、无网络出站 |
+| 必须人批 | commit、外部调用 |
+| 硬拒绝 | push、删库、生产配置 |
 
-**上屏**：Bound 存在 ≠ Bound 有效。测试存在 ≠ 目标被覆盖。通过 ≠ 该做的事都做了。
+**展开**：官方样本：Cursor 对 Shell/MCP/Fetch 三级处置（allowlist→sandbox→classifier，2026-05 changelog）；Codex `exec_policy` 按危险启发式×沙箱能力×项目可信度映射 Skip/NeedsApproval/Forbidden。控制迁移建议每次落事件（`action_id/evidence_ref/decision_source`），不是产品统一 schema。
 
-### A14 · Eval 分离不等于判得对
-**CLAIM**：输入可被操纵、裁判偏好自身输出、代理目标会被过优化；独立模型不是可信度证明。
+**接到下一页**：表怎么落地——先看最常见的假动作。
 
-**上屏**：分离解决利益冲突，不自动解决判定能力、输入操纵和代理目标失真。
+### B06 · 规则要写进策略件
 
-### A15 · 裁判要被单独校验
-**CLAIM**：用已知失败、人工标注冲突样本和版本化判据检查 false approve/false reject；没有效果阈值就不能伪造通用放行线。
+**CLAIM**：93% 的权限提示最终被人批准——写在提示词里的规则等于没写，规则必须进策略件。
 
-**上屏**：不仅评估 Agent，也评估 evaluator：误放、误拒、冲突、版本漂移。
+**上屏**
 
-### A16 · 逐轮判断要改变下一步
-**CLAIM**：`Not yet met` 带理由继续；`Met` 只接受预设产出；`Impossible` 停止并交人/改条件；不是问模型“做完了吗”。
+- title: 规则要写进策略件
+- content:
+  - 预写规则只让坏动作少拦 20.1 个百分点。
+  - 93% 的权限提示，人顺手就批。
+  - 391 个仓库里，只有 12 个提交过一条 deny 规则。
 
-**上屏**：判定必须产生下一步语义：继续、接受、停止并交还，不能只有一句自述。
+**展开**："A rule that ends in a prompt isn't a rule."（arXiv 2608.27443，2026-08）；"Everybody writes instructions, almost nobody enforces them."（marmelab 审计，2026-09-24）。规则要落成 allow/deny 配置与沙箱约束。
 
-### A17 · 资源上限是包络，不是质量分
-**CLAIM**：轮数、时间、拒绝、成本、过期和无进展检测保护系统资源；覆盖不到实际路径的上限等于没有上限，耗尽后先保全状态和交接。
+**接到下一页**：就算写进了配置，还有一层混淆要拆。
 
-**上屏**：资源耗尽不是验收失败，也不是验收通过。先落盘、标状态、交接，再决定是否恢复。
+### B07 · 策略偏好不等于执行隔离
 
-### A18 · 拒绝不是统一的停机语义
-**CLAIM**：单次拒绝可以带理由寻安全路径；持续拒绝可熔断；硬政策拒绝不可改名为“待人批准”；每种出口必须记录原因和恢复语义。
+**CLAIM**：Auto-review 不是安全边界，宽 allow 规则代替不了沙箱——两层配置不能混为一谈。
 
-**上屏**：deny-and-continue；重复拒绝熔断；硬拒绝不可绕。拒绝之后去哪里，必须写清。
+**上屏**
 
-### A19 · 人工审批必须可达
-**CLAIM**：执行前让指定人看到动作、目标和风险，能作决定，并能从同一状态恢复；父线程看不见、无恢复指针时，不能声称“已升级”。
+- title: 偏好 ≠ 隔离
+- content:
+  - 偏好规则（permissions.json）：倾向批准/拦截什么。
+  - 执行隔离（sandbox.json）：实际能碰到什么。
+  - Run Everything：每个调用自动跑，无沙箱无分类器。
 
-**上屏**：升级不是画一条箭头；要有人看见、能决定、能恢复。
+**展开**：官方原话 "Auto-review is not a security boundary"（Cursor Run Modes，观测 2026-09-30）；worker 的 `--workdir` 不约束 bash。宽 allow 永远不能替代真正的执行隔离。
 
-### A20 · 批准只绑定一次动作
-**CLAIM**：授权绑定动作、目标、分支和有效期；换 feature、扩大范围或从 edit 变 commit/push 必须重新授权。
+**接到下一页**：表和配置都齐了——批准本身的边界要绑死。
 
-**上屏**：一次批准只批准一次动作。旧批准不自动继承到新目标、新分支或发布。
+### B08 · 一次批准绑三样
 
-### A21 · 长任务把状态移出对话
-**CLAIM**：每轮恢复 State，再从未完成项选择 Action；文件队列和事件触发解决接续，不自动解决 feature 级授权史、优先级变更、阻塞和验收总账。
+**CLAIM**：一次批准只绑定动作、目标、有效期；窄授权被当广授权用是真实事故。
 
-**上屏**：下一轮先恢复状态，再选工作；能 resume 不等于有总账。
+**上屏**
 
-### A22 · 外层调度只决定“何时再跑”
-**CLAIM**：条件、时间、事件和持久进度是触发形态；触发前仍要检查目标、权限、反馈和资源资格。
+- title: 授权绑三样
+- content:
+  - 准许编辑 ≠ 准许提交 ≠ 准许推送 ≠ 永久推送。
+  - 事故：两行修改的推送授权，被当成大功能发布许可。
+  - 最小绑定：`{principal, action, target, branch, expires_at, nonce}`。
 
-**上屏**：trigger 解决何时醒来；不替你解决能不能继续。
+**展开**：第一人称事故（issue #95749）："Editing files must not imply authorization to commit…"——14 个文件直推主干。edit 的批准不自动覆盖 commit/push、另一分支或另一 feature。
 
-### A23 · 自主度是控制权转移，不是第 N 轮
-**CLAIM**：升档要联测负例闸门、独立判据、预算、权限和接手路径；判定冲突或接手不可达就退回人工。
+**接到下一页**：授权面还有一个经常被漏掉的维度——人的入口。
 
-**上屏**：不是跑到第几轮，而是哪些控制权已经有证据可以转移。
+### B09 · 审批要可达
 
-### A24 · 先审计链，再撤逐轮值守
-**CLAIM**：Goal/边界 → Eval/负例 → 真实 Feedback → State/Outcome → Stop/Escalate/恢复；只证明可治理设计，不宣称效率或质量收益。
+**CLAIM**：人看不到动作与风险、状态不可恢复，就不是「已升级」——审批可达性是独立的控制问题。
 
-**上屏**：先审计控制链，再谈少守。机制存在，不等于效果已证。
+**上屏**
 
-**收束**：Loop Governance 的硬核不是让循环活得更久，而是让继续、停止、升级和交还都留下能复查的理由。
+- title: 审批要可达
+- content:
+  - 指定人能看到：动作、目标、风险。
+  - 父线程必须能看到子线程的请求。
+  - 决定后能从同一状态恢复。
 
-**带走**（收束句后接练习 3 的抽查，最后一句口播）：这张升档表今天填不完是正常的——它本来就该对着真实任务慢慢填。填完那天你就知道该不该升、该升哪一档。回去照着《循环交接手册》高级篇走：交动作、交续跑、交唤醒、升一档，按时刻翻；它说做完了之后的放行检查，在「它说做完了」一节。
+**展开**：反例（issue #67519）：用户在对话里反复明确授权同一动作，拒绝依然不可翻案——拒绝合理性和升级可达性是两个问题。没有审批入口、指定 reviewer 和 resume pointer，不能声称「已升级」。
+
+**接到下一页**：人不在时拒绝怎么处理——拒绝是引导信号。
+
+### B10 · 拒绝是引导信号
+
+**CLAIM**：拒绝作为工具结果返回并附安全路径提示；拒绝预算（3/20，不可配置）是动作熔断，不是轮数上限。
+
+**上屏**
+
+- title: 拒绝是引导信号
+- content:
+  - deny-and-continue：拒绝回传＋"find a safer path"。
+  - 3 次连续或 20 次累计 → 停机升级（官方明写不可配置）。
+  - 这是动作拒绝预算，不是轮数上限。
+
+**展开**：分类器只看用户消息与工具调用、剥掉模型自述——"reasoning-blind by design"（auto mode 文档，观测 2026-09-26）。headless 无人可问→直接终止。OpenAI 侧重复拒绝机制未公开相同阈值——参数不通用。
+
+**接到下一页**：这套授权面怎么验证？——用变异测试。
+
+### B11 · 变异测试验证授权
+
+**CLAIM**：把 edit 换成 commit、分支换成 main、时间推到过期——旧批准都应失效；变异仍能通过就不能升档。
+
+**上屏**
+
+- title: 变异测试验证授权
+- content:
+  - 依次变异：动作 / 分支 / 目标 / 有效期 / nonce。
+  - 每次变异都应拒绝旧批准。
+  - 写出 `authorization_drift` 事件。
+
+**展开**：若任一变异仍能通过，授权面没有真正生效——不能升档。这是把「授权绑三样」变成可测试断言的方法。
+
+**接到下一页**：第一级到此配齐。第二级的门票，贵了一个数量级。
+
+### B12 · 门票：goal 三要素
+
+**CLAIM**：交出续跑的门票是可测终态、声明式检查、不变式——外加无进展出口与上限子句。
+
+**上屏**
+
+- title: 门票：goal 三要素
+- content:
+  - 终态：可观察的产出状态。
+  - 检查：哪条命令、哪个退出码、哪份输出。
+  - 约束：路径上不许变的东西。
+
+**展开**：官方规格（evidence-b §4a）：可核条件 = one measurable end state + a stated check + constraints that matter；轮次或时间子句作上限。全例（Osmani）：Lighthouse ≥92、LCP<1.8s、CLI 输出证明、不改 hooks、两轮无改善 abort、10 轮上限——数字不可外推。合约样式的完整模板见文末控制实验 §1。
+
+**接到下一页**：goal 之外，这一级还有一条生命线——反馈。
+
+### B13 · 反馈是循环的燃料
+
+**CLAIM**：下一轮消费的是落盘的工件和 evidence_ref，不是聊天记忆；没有反馈的重跑是 retry。
+
+**上屏**
+
+- title: 反馈是循环的燃料
+- content:
+  - 最小通道：命令 → 退出码＋输出 → 落盘证据 → 下一动作。
+  - 下一轮先读工件，再选动作。
+  - 没有反馈的重跑，只是再抽一次卡。
+
+**展开**：Aider 的形状：lint 非零 → 确认修复 → 错误回灌；数据管道读结构化 `run_results.json`，不解析自然语言输出。判据一：停止或继续不看上一轮结果的重试是 retry——有 feedback_ref 的迭代才是 loop。嵌套工具、retry、evaluator 都要纳入实际反馈路径。
+
+**接到下一页**：燃料之外，这一级还要装两个保险丝。
+
+### B14 · 兜底：无进展出口＋上限子句
+
+**CLAIM**：没有兜底的续跑是烧钱——出口管质量，上限管资源，两个都要有。
+
+**上屏**
+
+- title: 兜底
+- content:
+  - 出口：连续 N 轮无改善／无工具调用，停。
+  - 上限：轮次、时间、成本子句。
+  - 只带上限的循环会硬跑到最后一轮。
+
+**展开**：官方规格（evidence-b §4a）："If Claude keeps answering the evaluator without making progress… stops the loop"；`stop after 20 turns` 类子句只限消耗。上限不是质量分。
+
+**接到下一页**：条件立好了——谁来判？
+
+### B15 · 裁判五式选型
+
+**CLAIM**：人判、清单、独立小模型、自判、审批方判定按场景选；干活模型自判是最弱一极，必须配保护与熔断。
+
+**上屏**
+
+- title: 裁判五式
+- content:
+
+| 裁判 | 适用 | 风险 |
+|---|---|---|
+| 人判 | 品味、探索 | 不可规模化 |
+| 文件清单 | 目标可枚举 | 清单要保护 |
+| 独立小模型 | 会话内目标 | 裁判自身可信度 |
+| 自判 | 默认形态 | **最弱**——必须补偿 |
+| 审批方判定 | 越界动作 | 可被操纵 |
+
+**展开**：选型次序：优先机器可核；必须人判的，把判断点集中在门上（backbone §4.1）。
+
+**接到下一页**：选完裁判，第一件事是保护它。
+
+### B16 · 保护裁判四件
+
+**CLAIM**：测试不可删改、清单用 JSON、裁判输入防操纵、只认原始证据。
+
+**上屏**
+
+- title: 保护裁判四件
+- content:
+  - 强措辞条款＋test-file hook 硬拦；清单选 JSON。
+  - 分类器剥掉模型自述："reasoning-blind by design"。
+  - 只认带运行 ID、版本与原始输出的证据。
+
+**展开**：agent 修代码时不得削弱对代码的检查——promptfoo 反例：评估输出缺 `pass` 字段又无 threshold，score=0 仍可能默认放行；评估接口本身要 fail closed。
+
+**接到下一页**：保护之外，门还有一个覆盖问题。
+
+### B17 · 门要覆盖真实反馈路径
+
+**CLAIM**：门存在不等于门覆盖——嵌套反馈路径要逐边标注哪道门管着它。
+
+**上屏**
+
+- title: 门要覆盖真实路径
+- content:
+  - 把嵌套路径画成图，逐边标 bound。
+  - 区分 bypassed_bound 与 ineffective_bound。
+  - 内层有 turn cap，不代表外层 retry 有限。
+
+**展开**：IAL-Scan 的区分方法适用于任何嵌套 agent 结构：外层 evaluator/retry 无限时，内层的门形同虚设。基线带病、检查被跳过、该做的检查没安排——都是同族漏洞。
+
+**接到下一页**：覆盖之外，裁判本身也要被测。
+
+### B18 · 裁判要被单独校验
+
+**CLAIM**：裁判分离只减利益冲突，不保证判对——校验集、判据版本和 fail-closed 接口是裁判自己的门。
+
+**上屏**
+
+- title: 校验裁判
+- content:
+  - 校验集：known-fail / ambiguous / adversarial / 人工冲突。
+  - 记录 `judge_version / rubric_hash / false_accept / false_reject`。
+  - 无效果阈值，不伪造统一放行线。
+
+**展开**：独立 evaluator 仍可能被样本顺序、自我偏好、谄媚或 Goodhart 代理目标操纵（METR 的 monkeypatch/改时钟是压力样本，不外推发生率）。判据改版后，新旧分数不直接横比。
+
+**接到下一页**：裁判给判之后，逐轮怎么走。
+
+### B19 · 逐轮判断要改变下一步
+
+**CLAIM**：未达成带理由继续、达成只认预设产出、不可能停并交人——判定及理由必须回到下一行动。
+
+**上屏**
+
+- title: 逐轮判断
+- content:
+  - Not yet met ＋ 理由 → 继续，理由指导下一轮。
+  - Met ＋ 预设产出 → 停止候选。
+  - Impossible → 停并交人；unknown/超时不强行归入。
+
+**展开**：不是问模型「做完了吗」；是让判定接口的三值语义驱动控制流。unknown/timeout 通常保留为 blocked/awaiting_human。
+
+**接到下一页**：这一档的专属事故，从这里开始。
+
+### B20 · 专属事故：提前宣告完成
+
+**CLAIM**：交出续跑后最大的敌人是提前宣告完成——「完成」住在哪一层，要追到驱动代码。
+
+**上屏**
+
+- title: 提前宣告完成
+- content:
+  - 文件多了、语气满了、测试绿了——都可能不是完成。
+  - 官方示例驱动循环：唯一退出分支是轮数上限，默认无限。
+  - 进度条给人看，驱动层不停机。
+
+**展开**：Anthropic quickstart 源码（观测 2026-09-28）：`while True` ＋ `max_iterations` 分支；`count_passing_tests` 的结果只打印；「不可改测试」只在提示词。博客叙事里「goal 会自己完成」，代码里＝跑到你按 Ctrl-C。
+
+**接到下一页**：防它有三层。
+
+### B21 · 防它第一层：清单逐条判定
+
+**CLAIM**：「整个项目做完了」没法判，「第 37 条通过」可以——只许改完成标记这一个字段。
+
+**上屏**
+
+- title: 第一层：清单
+- content:
+  - 目标拆成逐条可验证条目，全 `passes:false` 起步。
+  - 每轮选最高优先级未完成项，先过基线。
+  - 只许改 `passes` 字段；清单用 JSON。
+
+**展开**：官方样例 200+ 条；官方失败模式原话 "declares victory on the entire project too early" / "marks features as done prematurely"——对策分别是设清单与端到端后才翻。
+
+**接到下一页**：第二层管「通过」的成色。
+
+### B22 · 防它第二层：端到端验证才翻完成
+
+**CLAIM**：真实路径走通，单测和 curl 不算——翻「完成」的资格来自真实路径。
+
+**上屏**
+
+- title: 第二层：端到端
+- content:
+  - 浏览器自动化走真实用户路径。
+  - 按钮点得动、页面出得来，才算。
+  - 基线带病先修基线，不积新功能。
+
+**展开**：每轮固定开场序列：定位目录 → 读 git log 与 progress → 选未完成项 → 先过基线 → 一次只做一件 → 干净收尾（描述性 commit＋progress 更新）。
+
+**接到下一页**：第三层管绿灯的来源。
+
+### B23 · 防它第三层：测试不可删改
+
+**CLAIM**：删了测试，绿灯就没有意义——硬约束加钩子，不是提示词。
+
+**上屏**
+
+- title: 第三层：测试不可删改
+- content:
+  - 删、禁、放宽断言都算作弊。
+  - test-file hook 硬拦＋强措辞条款。
+  - 实战反例：agent 删除或禁用测试（Kent Beck 记录）。
+
+**展开**：测试削弱检测关注 skip、删文件、断言降级、`|| true`。轮末核对清单：对比前后测试清单、列出基线失败与新失败、列出越界改动——出现异常先不翻完成。
+
+**接到下一页**：事故防住之后，是出口与账本。
+
+### B24 · Stop ≠ Accepted；三本账
+
+**CLAIM**：控制状态、产出验收、外部结果三本账分开记——谁停的、谁验收的、结果谁在何时复查。
+
+**上屏**
+
+- title: 三本账
+- content:
+  - 控制账：`running/blocked/awaiting_human/stopped` ＋ `stop_reason`。
+  - 验收账：`accepted_by ＋ evidence_link`。
+  - 结果账：`outcome_status ＋ owner ＋ next_check`。
+
+**展开**：建议状态机（本主题设计，非产品统一实现）：hard_deny→blocked；Met＋artifact→stopped_candidate；NotYet＋retryable→continue；unknown/timeout→awaiting_human。`stopped_candidate＋独立签署→accepted；accepted＋外部未见→outcome_pending`。多 feature 控制行是本主题试点，非行业标准。
+
+**接到下一页**：停机的语义还要再拆。
+
+### B25 · 资源上限是包络，不是质量分
+
+**CLAIM**：覆盖不到嵌套路径的上限等于没有上限；耗尽先保全状态并交接。
+
+**上屏**
+
+- title: 资源包络
+- content:
+  - 轮次、wall clock、成本、retry budget、过期、无进展。
+  - 嵌套路径（agent/tool retry/evaluator/scheduler）都要在包络内。
+  - 耗尽前：persist state ＋ last feedback ＋ stop reason ＋ reviewer ＋ resume pointer。
+
+**展开**：`RemainingSteps` 是框架机制实例，不是所有运行时的默认保证。Copilot 云端 agent 59 分钟硬超时、不可延长——产品实例，不通用。
+
+**接到下一页**：包络烧尽或熔断触发，系统就会停——停了之后怎么办，是下一页。
+
+### B26 · 停机不是统一语义，交接才是终点
+
+**CLAIM**：为什么停、谁接手、从哪恢复——交接单答不全就不算升级；硬拒绝不能改名「待人批准」。
+
+**上屏**
+
+- title: 停机与交接
+- content:
+  - `deny_hard` → blocked，不可被普通审批覆盖。
+  - `circuit_open` → awaiting_human。
+  - 交接单：`feature_id/action/target/thread_id/decision_source/denial_reason/authorized_scope/reviewer/resume_pointer`。
+
+**展开**：父线程必须能看到子线程请求；恢复后重核授权有效期，不继承上次对另一目标的批准。不可恢复错误四类清空目标（认证失败/额度耗尽/上下文溢出/模型不可用），其余错误重试若干次后暂停。
+
+**接到下一页**：机器的部分讲完了——有一路输入不能断：你的。
+
+### B27 · 人的反馈要留在环里
+
+**CLAIM**：纠偏、品味、拒绝的理由回灌下一轮——完全静默不是目标；人的角色是最高处的判断，不是传话筒。
+
+**上屏**
+
+- title: 人的反馈留在环里
+- content:
+  - 方向纠偏、品味判断——机器判不了。
+  - 拒绝的理由，要让下一轮看到。
+  - 无人值守≠无人反馈：接手、验收、复查都是反馈。
+
+**展开**：Ronacher 警告：无人值守循环里 "I'm not sure what my role even is… My role is reduced to that of a messenger"——人的反馈断掉后 done 失去含义。Ng 的 context advantage：人掌握模型不知道的业务上下文。技术风险：硬核玩家「放手也行」的隐性护栏不可见也不可迁移——详见文尾。
+
+**接到下一页**：第三级——把「何时再跑」也交出去。
+
+### B28 · 两种运行边界
+
+**CLAIM**：会话内定时与跨会话持久是两种边界——醒来不等于达成。
+
+**上屏**
+
+- title: 两种运行边界
+- content:
+  - 会话内：`/loop` 固定或动态间隔（1 分钟–1 小时）；关会话即停。
+  - 跨会话：云端调度；另配持久状态、取消、预算、接手。
+  - 唤醒序列：wake → restore state → validate scope/budget → choose → run。
+
+**展开**：Osmani："loops are session-scoped… /schedule runs it in the cloud."。触发器选型：`/goal`（条件）、`/loop`（时间）、Stop hook（脚本）、webhook/cron（外部）——轮内 auto mode 不等于启动下一轮。能 resume 只说明能接续会话，不说明 priority、权限和验收可见。
+
+**接到下一页**：跨会话的第一件硬事——取消。
+
+### B29 · 取消要传播到 worker
+
+**CLAIM**：面板关闭不算停——调度器和运行中的进程都要收到取消，幂等与防重入要预先设计。
+
+**上屏**
+
+- title: 取消传播
+- content:
+  - 事故：面板已关，"the kill did not propagate to the actual tmux sessions"。
+  - 核对三步：调度器不派新／worker 真退出／副作用停止。
+  - 同一事件重复投递怎么办——幂等键预先设计。
+
+**展开**：检查停止要核对三项，不是查开关。fork PR 触发会以 "Fork pull requests not supported" 失败（Cursor Automations 样本）——各平台失败出口不通用。
+
+**接到下一页**：跨会话还要管钱和时间。
+
+### B30 · 预算是花费阀不是完成
+
+**CLAIM**：按会话计不等于跨次总额；被遗忘的循环要有过期时间；异常循环要有检测。
+
+**上屏**
+
+- title: 预算与过期
+- content:
+  - `"amount":"125"` 是 125 美分＝$1.25（Managed Agents 样本）。
+  - 触顶 `budget_reached`：在途可稍超额，新消息 400；恢复原 session 可调预算。
+  - 定时任务 7 天过期＋20 分钟兜底唤醒；doom-loop 检测默认关闭。
+
+**展开**：会话状态 `idle/running/rescheduling/terminated`——预算暂停是 `idle`，不是完成也不是销毁。Copilot 59 分钟硬超时是不可延长硬顶。doom-loop 默认 observe@2/block@3/stop@6（OpenRouter 样本）——默认值不通用。
+
+**接到下一页**：三级的护栏都见过了——升档怎么决定。
+
+### B31 · 升档门禁
+
+**CLAIM**：负例会红、裁判独立、熔断配齐，外加一次控制路径演练——缺一不可，不靠轮数说话。
+
+**上屏**
+
+- title: 升档门禁
+- content:
+  - 门会红吗：负例控制，没红过的门是摆设。
+  - 裁判独立且判据可用：冲突时暂停自动验收与升档。
+  - 熔断配齐＋控制路径演练：允许／需人批准／硬拒绝三条路都走通。
+
+**展开**：升档前故障注入清单（文末控制实验 §10）：删测、改裁判输入、内层绕预算、token 变异、reviewer 不可达、outcome 不可见、人工冲突——每项都要给出 evidence link 和责任人。演练不通过就退回；退档信号：熔断频发、假把控复现、交接丢信息。
+
+**接到下一页**：门禁之上还有两条岔路——不是必经之路。
+
+### B32 · 支线 A：多主体编排
+
+**CLAIM**：写入拓扑未收敛——共同问题只有避免冲突、合并与验证；改动者不能自行放行。
+
+**上屏**
+
+- title: 支线 A · 编排
+- content:
+  - 实例：编排器-工人（Anthropic）／受约束并发（Cognition）／各自 clone-push-merge（Carlini，16 代理 $20k）。
+  - 共同问题：避免冲突、合并、独立验收。
+  - 整树预算、写入所有权先配；验证器近乎完美才可行。
+
+**展开**：Carlini："it's important that the task verifier is nearly perfect, otherwise Claude will solve the wrong problem."——大部分精力在验证器与环境。两条拓扑路线都真实，没有「正确拓扑」；可从有界任务直接进入，不以交唤醒为前置。
+
+**接到下一页**：另一条岔路——让循环改自己。
+
+### B33 · 支线 B：改进循环本身
+
+**CLAIM**：四层权限：人改→代理建议→受控外围→自动改核心；自动改写判据仍未成熟，提案与应用必须分离。
+
+**上屏**
+
+- title: 支线 B · 元循环
+- content:
+  - 局部实例：工具描述改写（Anthropic，观测 2026-09-30）。
+  - 未成熟：自动应用外围、自动改核心判据。
+  - 提案与评估分离；改动可回滚、被评估。
+
+**展开**：Morris 的 flywheel 说的是「人在环上修 harness」，不等于代理已获自改权；GEPA/DSPy 的提案-评估结构是参考，不是 coding-agent 效果证据。Shankar criteria drift 反例：判据漂移会让循环悄悄变味。
+
+**接到下一页**：收尾之前，拆一个流传最广的传说。
+
+### B34 · 高手的错觉
+
+**CLAIM**：「完全放手也出色」的传闻，兜底的是看不见的护栏——你教别人放手时，对方复制的是行为，不是你的隐性裁判。
+
+**上屏**
+
+- title: 高手的错觉
+- content:
+  - 他的技术背景：目标在心里，对错一眼明。
+  - 隐性裁判不可见——对持有者也是。
+  - 抄行为＝抽卡：问题简单像行，复杂开盲盒。
+
+**展开**：呼应开场那个故事——传说是真的，但燃料与护栏都要显性化。本场的 35 页，翻译成一句话：**把高手那套看不见的护栏，变成看得见、可测试、可交接的工件**。你自己「放手也行」的日子，是这些护栏（或你的隐性版本）在买单。教学含义：向别人推荐「放手」之前，先确认对方有没有你的兜底。
+
+**接到下一页**：回去的第一步，不是配工具。
+
+### B35 · 先定档，再爬
+
+**CLAIM**：四问答不出就留在原级——那是控制决策，不是失败；逐档的检查表就是控制链。
+
+**上屏**
+
+- title: 先定档，再爬
+- content:
+  - 四问：谁启动／谁判完成／谁能改系统／出错谁接手。
+  - 每档检查表：Goal/约束｜负例｜反馈工件｜判据版本｜三本账｜交接单。
+  - 反过度工程：单次不建循环、存量库慎无限循环、门不可信不升、先有失控再治理。
+
+**展开**：审计卡任一字段为空，保持更强的人在环。不可说：机制存在不等于 loop 已证明提升质量、吞吐或减少返工——那需要 P-outcome。Steinberger："usually I'm the bottleneck"——调度自动化收益有限，先把人和门摆对。逐档操作：《循环交接手册》。
+
+**收束**：Loop Governance 的硬核不是让循环活得更久，而是继续、停止、升级和交还都留下能复查的理由。它是一门要锻炼的手艺——阶梯就是练法，从你站的那一级练起。
 
 ---
 
 # 工程师追问卡（不上屏）
 
-> 本节按 A01–A24 提供可追问的机制、反例和边界。伪配置是本主题设计题，产品参数保留产品语境；专项 `stop_conditions/README.md` 的“双环三层”仍是研究抽象，SOP 以 `03_practice/loop_governance/result/manual.md` 为准。
+> 按 B 页提供可追问的机制、反例和边界。伪配置是本主题设计题，产品参数保留产品语境；`stop_conditions` 的「双环三层」仍是研究抽象，SOP 以 `03_practice/loop_governance/result/manual.md` 为准。
 
-## A01–A03 · 先问“控制对象是什么”
+## B01–B04 · 钩子、故事与定档
 
-- **A01**：追问完成钩子在何时检查、检查哪棵 tree、绑定哪份证据。一个可疑交付状态可以是 `PR created; CI failing; accepted_by=null; outcome_status=pending`；不要用最终 assistant message 推导完成。
-- **A02**：Ralph 的 `while :; do ...; done` 没有内建 stop，TODO 耗尽由人凭 taste 判断；Claude `/goal`、`/loop`、auto mode 分别是条件、时间/事件和轮内审批语义，不能合成同一个环。
-- **A03**：建议每次控制迁移写事件：`goal_rev/action_id/evidence_ref/verdict/decision_source/state_rev/stop_reason/resume_pointer`。这是本主题设计题，不是产品统一 schema。
+- **B01**：完成钩子在何时检查、检查哪棵 tree、绑定哪份证据；可疑交付状态例 `PR created; CI failing; accepted_by=null; outcome_status=pending`。
+- **B02 讲法**：故事只讲半分钟——成立的前提两条（模型强＋反馈进得来），全场就是要把它们工程化；「需要锻炼」说一次就够。
+- **B03**：Ralph 无内建 stop，TODO 耗尽凭 taste；`/goal`/`/loop`/auto mode 分别是条件、时间/事件、轮内审批语义。
+- **B04**：控制迁移事件字段 `goal_rev/action_id/evidence_ref/verdict/decision_source/state_rev/stop_reason/resume_pointer`——设计题非标准 schema。
 
-来源：`03_practice/loop_governance/result/manual.md` §7、§9–10；`02_research/ai_loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md` §1、§4a–c。
+来源：manual §7、§9–10；evidence-b §1、§4a–c。
 
-## A04–A05 · Goal 与 Action
+## B05–B11 · 第一级
 
-- **A04**：把目标拆成 `terminal_state + check + constraints + stop_clause`。可核实例是 Lighthouse ≥92、LCP<1.8s、不改 hooks public API、连续两轮无改善 abort、最多 10 turns；这是个人实践例，数字不是通用阈值。
-- **A05**：授权最小绑定建议：`{principal, action, target, branch, expires_at, nonce}`。edit 的批准不自动覆盖 commit/push、另一分支或另一 feature；目标或动作变化即重问。
-- **失败边界**：`cron` 只唤醒，不能代替授权；选择下一步不等于拥有无限权限。具体越权案例只有单用户反例，不能外推发生率。
+- **B05**：授权最小绑定 `{principal, action, target, branch, expires_at, nonce}`；`cron` 只唤醒，不代替授权。
+- **B08**：edit 批准不自动覆盖 commit/push、另一分支或另一 feature；越权案例只有单用户反例，不外推发生率。
+- **B10**：3/20 是 Claude auto mode 实例，官方明写不可配置；headless 直接终止；OpenAI 未公开相同阈值。
+- **B11**：变异测试逐项改 `action/branch/target/expiry/nonce`，每次都应拒绝旧 token 并写 `authorization_drift` 事件；未合并 PR 只是候选机制。
 
-来源：`manual.md` §2、§6–7、§9；`backbone.md` §3；`raw/evidence-2026-09-27-f-autonomy-gates.md`。
+来源：manual §2、§6–7、§9；backbone §3；evidence-f；evidence-u S4a；evidence-w W1。
 
-## A06–A07 · Feedback 与 Eval
+## B12–B14 · 门票与燃料
 
-- **A06**：最小反馈通道：`cmd → exit_code + stdout/stderr artifact → durable evidence_ref → next action`。Aider 的实现形状是 lint 非零 → 确认修复 → 将错误回灌；没有 `evidence_ref` 的“再跑一次”只是 retry。
-- **A07**：评估器 schema 必须有明确的 `pass`/verdict 和缺字段语义；promptfoo 记录显示缺 `pass` 且未设 threshold 时 score 0 仍可能放行。Feedback 是事实，Eval 才解释“是否满足 Goal”。
-- **工程追问**：判据测目标还是代理指标？执行方能否修改？裁判输入是否包含自我辩护？版本/样本集变化后能否比较？
+- **B12**：`terminal_state + check + constraints + stop_clause` 四件套；Lighthouse 数字是个人实践例。
+- **B13**：最小反馈通道 `cmd → exit_code + artifact → durable evidence_ref → next action`；无 evidence_ref 的「再跑一次」只是 retry；DAG 下游注意修复—震荡。
+- **B14**：`/goal` 的 turn/time 子句、无进展停机均有官方规格；上限不是质量分。
 
-来源：`stop_conditions/01_machine_gates/insights.md` #13、`stop_conditions/03_verdict_split/insights.md` #10；`manual.md` §10。
+来源：manual §2；evidence-b §4a；stop_conditions/01_machine_gates/insights #13。
 
-## A08–A10 · 三出口与三本账
+## B15–B18 · 裁判
 
-- **建议状态机**（本主题建议，不是产品统一实现）：
-  ```text
-  hard_deny → blocked
-  verdict=Met + artifact_check → stopped_candidate
-  verdict=NotYet + retryable → continue
-  unknown / timeout / no_recovery → awaiting_human
-  ```
-- `stopped` 不代表 `accepted`；资源耗尽、无进展、拒绝熔断和模型收尾都要写 `stop_reason`。`accepted_by + evidence_link` 另记；业务结果另记 `outcome_owner + next_check`。
-- 虚构记录：`feature_id=search-42; status=blocked; stop_reason=human_pause; accepted_by=null; outcome_status=pending`。多 feature work-row 是本主题试点，不是已证标准。
+- **B15**：五式选型表在 manual §3（单一事实源）；人判 taste 见 Huntley（evidence-b §1）。
+- **B16**：promptfoo 缺 `pass`/无 threshold 反例；hook 做法 playbook Test 节；`reasoning-blind by design`（evidence-b §4b）。
+- **B17**：IAL-Scan 的 `bypassed_bound/ineffective_bound` 区分；嵌套路径逐边标 bound。
+- **B18**：METR monkeypatch/改时钟是压力样本不外推；校验集四类＋判据版本化；Hamel/Shankar FAQ 是单源建议，无效果对照。
 
-来源：`backbone.md` §1–2；`manual.md` §5、§7、§10；`02_research/ai_loop_engineering/digested/07-控制问题矩阵.md`。
+来源：stop_conditions/02_hard_caps/insights #15；03_verdict_split/insights #6–10；evidence-2026-09-28-m/n/r-*。
 
-## A11–A12 · 提前完成与停止骨架
+## B19–B23 · 出口与防线
 
-- **A11**：Anthropic feature list 初始全 `passes:false`，端到端浏览器验证后才翻 true；单测/curl 通过但按钮不可用不能翻。另有删除/禁用测试的第一人称反例。
-- **A12**：三张“票”分开：`test exit=1` 是机器拒绝；`turns=10/10` 是资源熔断；`test exit=0 + independent verifier` 才是验收候选。硬上限不是质量分。
-- **专项边界**：双环三层是 `stop_conditions` 的专项提炼，尚未回流 `digested/03`，不能在台上说成行业已证架构。
+- **B19**：状态机建议（hard_deny→blocked 等）是本主题设计；unknown 不归 Impossible。
+- **B20**：quickstart 源码逐行（观测 2026-09-28）；`count_passing_tests` 只打印不停机。
+- **B21**：feature_list 结构 `category/description/steps/passes`； initializer 展开；只许改 `passes`。
+- **B22**：固定开场序列与基线修复（evidence-b 问题2§1）。
+- **B23**：删测反例（evidence-i Beck）；测试削弱检测模式清单。
 
-来源：`stop_conditions/01_machine_gates/practices.md` #3；`02_hard_caps/insights.md` #1–3、#17；`03_verdict_split/practices.md` #3。
+来源：manual §5、§10；backbone §1–2；digested/07；evidence-i Sources 3/5。
 
-## A13–A15 · 闸门和裁判也会失效
+## B24–B26 · 三本账与包络
 
-- **A13**：把嵌套反馈路径画成图，逐边标 bound；IAL-Scan 区分 `bypassed_bound` 与 `ineffective_bound`。内层 agent 有 turn cap，不代表外层 evaluator/retry 没有无限路径。
-- **A14**：独立 evaluator 仍可能被样本顺序、自我偏好、谄媚目标或 Goodhart 代理目标操纵；分离解决利益冲突，不等于判得对。METR 的 monkeypatch evaluator/改时钟是压力样本，不外推普通 PR 发生率。
-- **A15**：裁判校验集至少分 `known-fail / ambiguous / adversarial / human-conflict`，记录 `judge_version/rubric_hash/false_accept/false_reject`。没有效果阈值，不伪造统一放行线。
+- **B24**：work-row 控制行试点字段与退出条件（manual §5）；多 feature 行仅当并行且交接丢信息时建。
+- **B25**：不可恢复四类清空目标；其余错误重试后暂停；交接单字段全表（manual §7）。
+- **B26**：`RemainingSteps` 是框架实例；Copilot 59 分钟硬超时（evidence-i Source 8）。
 
-来源：`stop_conditions/02_hard_caps/insights.md` #15；`03_verdict_split/insights.md` #6–10；`03_verdict_split/practices.md` 裁判失效条目；`raw/evidence-2026-09-28-m/n/r-*.md`。
+来源：manual §5/§7；backbone §2；digested/07；evidence-i。
 
-## A16–A18 · 逐轮判定、资源和拒绝
+## B27–B30 · 人的反馈与唤醒
 
-- **A16**：`Not yet met + reason → continue`；`Met + evidence → acceptance candidate`；`Impossible → stop/escalate`；unknown/timeout 不要强行归入 Impossible，通常保留为 blocked/awaiting_human。
-- **A17**：资源包络至少考虑轮次、wall clock、成本、retry budget、过期、无进展和嵌套路径覆盖；预算耗尽前先落盘/生成部分成果/交接。`RemainingSteps` 是框架机制实例，不是所有运行时默认保证。
-- **A18**：`deny_retryable` 可带理由继续寻安全路径；`deny_hard` 不可伪装成待人批准；`circuit_open` 记录拒绝计数与恢复条件。Claude 的 3/20 仅是产品实例，OpenAI 重复拒绝机制未公开相同阈值。
+- **B27**：Ronacher 无人值守证词（evidence-u S1）；Ng context advantage（digested/08）；Steinberger "usually I'm the bottleneck"（evidence-a，原话未说「自动化更慢」）。
+- **B28**：唤醒序列 `wake → restore → validate → choose → run`；trigger 四类对照（manual §6）。
+- **B29**：zombie 事故（evidence-o）；Cursor fork PR 失败出口（evidence-w W2）。
+- **B30**：Managed Agents 预算语义与会话状态（evidence-w W3/W6）；7 天过期与 20 分钟兜底（evidence-b §4c）；doom-loop 默认关闭（evidence-o）。
 
-来源：`manual.md` §2、§7；`stop_conditions/02_hard_caps/practices.md` #2–5、#25；`stop_conditions/02_hard_caps/insights.md` #4、#17。
+## B31–B35 · 门禁、支线、尾巴
 
-## A19–A20 · 审批可达与授权绑定
-
-- **A19**：人工接手最小包：`feature_id/action/target/thread_id/decision_source/denial_reason/authorized_scope/reviewer/resume_pointer`。分别演练 allow、需人批准、策略 hard deny；没有 reviewer 或 resume pointer 就是 blocked，不是“已升级”。
-- **A20**：用变异测试验证授权：把 edit 改成 commit、把当前分支换成 main、把目标换成 release、把时间推进到过期；旧批准都应失效。
-- **边界**：未合并 PR 只能作为候选机制，不能说成已发布产品行为。
-
-来源：`manual.md` §7、§9；`backbone.md` §3；`raw/evidence-2026-09-27-f-autonomy-gates.md`。
-
-## A21–A22 · State 与调度
-
-- **A21**：Anthropic 的 `feature_list.json + progress + git` 是长任务单项目实例，不是跨 feature 总账；四列仍要问：授权史、priority、blocked_reason、accepted_by/evidence。
-- **A22**：建议唤醒序列：`wake → restore state → validate scope/budget → choose next item → run`。`/goal`、`/loop`、webhook、Stop hook 是不同 trigger；轮内 auto mode 不等于启动下一轮。
-- **反例**：能 `resume` 只说明能接续会话，不说明 priority、权限和验收都可见。
-
-来源：`manual.md` §5–6；`backbone.md` §2；`02_research/ai_loop_engineering/digested/07-控制问题矩阵.md`。
-
-## A23–A24 · 升档与最终审计
-
-- **A23**：升档前联测三件事：负例会红；独立裁判可用且冲突可交人；预算、权限和恢复路径都点得通。没有通用“第 N 轮”门槛。
-- **A24**：审计卡：`Goal/constraints | eval+negative_control | feedback_artifacts | state/outcome | stop_reason | accepted_by+evidence | reviewer+resume_pointer`。任一字段为空，保持更强的人在环。
-- **不可说**：机制存在不等于 loop 已证明提升质量、吞吐或减少返工；这些需要 P-outcome。
-
-来源：`manual.md` §9–12；`backbone.md` §3–4；`02_research/ai_loop_engineering/README.md` §0。
+- **B31**：门禁三项＋演练（manual §9）；故障注入清单见文末控制实验 §10；退档信号（manual §11）。
+- **B32**：Carlini C 编译器案例（evidence-u S3）；Cognition 受约束并发（S2）；Anthropic 编排器-工人（S2）；「不以交唤醒为前置」。
+- **B33**：四层权限（00-map 支线 B 行）；工具描述改写（S5）；GEPA/DSPy 只作结构参考；Shankar criteria drift 反例。
+- **B34**：抽卡＝retry 的口语版（判据一）；Osmani「别把品味和判断一起委托」；本页不点名真实人物。
+- **B35**：审计卡字段（Goal/约束|负例|反馈|三本账|交接）；P-outcome 缺口（landscape §7）；Steinberger 反面声音。
 
 ---
 
 # 可直接拆解的控制实验（不上屏）
 
-> 本节不是来源目录，而是一套可运行的演示设计。所有 YAML/JSON/伪代码都是本主题建议模板；要进入生产，必须绑定项目权限、运行器和真实审计存储。产品参数只保留产品语境，不当通用阈值。
+> 一套可运行的演示设计，对应阶梯各级护栏。所有 YAML/JSON/伪代码都是本主题建议模板；进生产必须绑定项目权限、运行器和真实审计存储。产品参数只保留产品语境。
 
-## 1. Goal / Eval 合约
+## 1. Goal / Eval 合约（第二级门票）
 
 ```yaml
 id: search-pagination-v1
@@ -268,9 +690,9 @@ external_outcome:
   owner: product-owner-7
 ```
 
-工程审查不能只问“有没有 goal”，还要问：终态是否可观察、检查是否覆盖实际路径、约束是否由运行器 enforce、`impossible` 是否真的是逻辑不可满足而非暂时不可见。外部采用率不能填成 `Met`。
+工程审查四问：终态可观察吗？检查覆盖实际路径吗？约束由运行器 enforce 吗？`impossible` 是逻辑不可满足还是暂时不可见？外部采用率不能填 `Met`。
 
-## 2. Action authorization：把批准做成可失效对象
+## 2. Action authorization：把批准做成可失效对象（第一级护栏）
 
 ```json
 {
@@ -286,7 +708,7 @@ external_outcome:
 }
 ```
 
-**变异测试**：依次把 `edit` 改为 `commit`，把 branch 改成 `main`，把 target 换成 `deploy/`，把时间推进到过期，把 nonce 换成下一轮。每一次都应该拒绝旧 token，并写出 `authorization_drift` 事件。若变异仍能通过，不能升档。
+**变异测试**：依次改 `action`→commit、branch→main、target→`deploy/`、时间→过期、nonce→下一轮；每次都应拒绝旧 token 并写 `authorization_drift` 事件。变异仍通过，不能升档。
 
 ## 3. Environment Feedback：证据通道而不是聊天文本
 
@@ -302,7 +724,7 @@ run command
      next action or control state
 ```
 
-最小事件示例：
+最小事件：
 
 ```json
 {
@@ -316,7 +738,7 @@ run command
 }
 ```
 
-下一轮只能消费带 `evidence_ref` 的观察结果；“我刚才试过了”不是证据。嵌套工具、retry 和 evaluator 都要纳入实际 feedback path，否则内层通过、外层无限重试仍可能失控。
+下一轮只能消费带 `evidence_ref` 的观察；嵌套工具、retry、evaluator 都纳入实际 feedback path。
 
 ## 4. Eval schema：缺证据必须 fail closed
 
@@ -331,7 +753,7 @@ run command
 }
 ```
 
-建议的 schema 规则：`verdict`、`reasons`、`evidence`、`rubric_hash` 缺一即拒绝；`Met` 没有证据即拒绝；未知 verdict 不得降级成 false 或 true。promptfoo 的缺 `pass`/无 threshold 反例说明，评估器接口本身也必须测试。
+`verdict/reasons/evidence/rubric_hash` 缺一即拒绝；`Met` 无证据即拒绝；未知 verdict 不得降级成 true/false。promptfoo 缺 `pass`/无 threshold 反例说明评估器接口本身要测。
 
 ## 5. 裁判校验集与反操纵
 
@@ -354,7 +776,7 @@ record:
   false_reject: 0
 ```
 
-至少要保留 known-fail、ambiguous、adversarial 和人工冲突样本。`false_accept=0` 只是这批样本的观察，不是评估器的质量证明；METR 的 reward-hacking 样本说明独立 evaluator 仍可能被输入、时钟或代理目标操纵。
+至少保留 known-fail、ambiguous、adversarial、人工冲突四类。`false_accept=0` 只是本批样本观察，不是质量证明；METR reward-hacking 样本说明独立 evaluator 仍可能被输入、时钟或代理目标操纵。
 
 ## 6. 控制状态机与决策表
 
@@ -371,7 +793,7 @@ stopped_candidate -- independent sign-off --> accepted
 accepted --------- external observation --> outcome_pending / outcome_met
 ```
 
-`Impossible` 必须区分“逻辑上不可满足”和“当前没有观测”；后者通常是 `blocked` 或 `awaiting_human`。决策表的关键不是状态名称，而是每个分支都带 `reason`、`evidence_ref` 和下一责任人。
+`Impossible` 必须区分「逻辑不可满足」和「当前没有观测」；后者是 blocked 或 awaiting_human。决策表每个分支都带 `reason`、`evidence_ref` 和下一责任人。
 
 ## 7. 资源包络与优雅耗尽
 
@@ -392,7 +814,7 @@ on_exhaustion:
   - emit_resume_pointer
 ```
 
-`max_turns` 只覆盖一个维度；如果 evaluator 或 tool retry 在预算外重调，系统仍可能无限运行。预算耗尽不是验收通过，优先保全状态并交接。产品的 3/20、20m、7d 等数值只能作为对应产品机制举例。
+`max_turns` 只覆盖一个维度；evaluator 或 tool retry 在预算外重调仍可能无限运行。耗尽不是验收通过，优先保全状态并交接。
 
 ## 8. 拒绝与审批恢复演练
 
@@ -409,7 +831,7 @@ circuit_open:
   requires: [reviewer, last_action, evidence_ref, resume_pointer]
 ```
 
-演练三条路径：允许动作；一次拒绝后带理由换安全路径；硬拒绝或连续拒绝后熔断。父线程必须能看到子线程最后状态，reviewer 必须能从同一状态恢复。没有这些条件，只写“升级”是假的。
+演练三条路径：允许；拒绝后带理由换安全路径；硬拒或熔断。父线程必须能看到子线程最后状态，reviewer 必须能从同一状态恢复。
 
 ## 9. 长任务 ledger：不要把三种状态压成 done
 
@@ -436,7 +858,7 @@ circuit_open:
 }
 ```
 
-这是本主题建议的控制行，不是公开统一标准。单任务 `progress` 和 git history 仍不能自动回答 priority、授权史、阻塞原因和验收人。
+本主题建议的控制行，不是公开统一标准。单任务 progress 和 git history 不能自动回答 priority、授权史、阻塞原因和验收人四列。
 
 ## 10. 升档前故障注入清单
 
@@ -450,11 +872,9 @@ circuit_open:
 [ ] 让人工与 evaluator 冲突：是否停止自动升档并保留样本？
 ```
 
-这份清单验的是控制链能否拒绝已知坏路径，不证明业务质量、收益或组织可规模化。只有每项都能给出 evidence link、stop reason 和责任人，才有资格讨论减少逐轮值守。
+这份清单验的是控制链能否拒绝已知坏路径，不证明业务质量、收益或组织可规模化。每项都有 evidence link、stop reason 和责任人，才有资格讨论减少逐轮值守。
 
 ## 11. 从示意 YAML 泛化成项目控制面
-
-这些 YAML 是**语义参考模型**，不是 Loop Governance 的标准协议。泛化的对象不是字段名，而是控制不变量：
 
 | 语义不变量 | 搜索案例字段 | CI / 数据管道 / 发布系统的可能映射 |
 |---|---|---|
@@ -468,25 +888,9 @@ circuit_open:
 | 恢复 | `resume_pointer`, checkpoint | rerun key / partition cursor / rollback or resume version |
 | 外部结果 | `outcome.owner`, `next_check` | adoption / freshness / incident-free window |
 
-**先分三层，不要把整份 YAML 当成通用标准**：
+**先分三层，不要把整份 YAML 当通用标准**：控制不变量（跨领域保留：目标可观察、证据可追溯、判定有理由、停止原因独立、验收有权威、升级可恢复）／承载结构（可变：YAML、JSON、数据库行、事件流、CI artifact）／领域策略（不可直接搬运：阈值、重试次数、谁审批、什么算不可修复）。
 
-| 层 | 是否应跨领域保留 | 例子 |
-|---|---|---|
-| 控制不变量 | 是 | 目标可观察、证据可追溯、判定有理由、停止原因独立、验收有权威、升级可恢复 |
-| 承载结构 | 可变 | YAML、JSON、数据库行、事件流、CI artifact、工单字段 |
-| 领域策略 | 不可直接搬运 | 阈值、重试次数、谁审批、什么算不可修复、回滚/补数/恢复动作 |
-
-例如 `accepted_by` 这个**语义**可以跨领域保留，但 CI 可能叫 `release_approver`，数据管道可能叫 `data_owner`；`max_turns: 10` 这个**数字**不能因为搜索案例存在就搬到发布或数据回填。
-
-**迁移规则**：
-
-1. 先写领域的终态和不可变约束，不要先复制 `goal.yaml`；
-2. 把每个控制动作映射为领域事件，而不是只存最终状态；
-3. 给每条判定绑定 evidence、判据版本和责任来源；
-4. 明确缺证据、未知、拒绝、资源耗尽是否 fail closed；
-5. 用领域特有的已知坏样本做负例，而不是复用搜索案例的负例；
-6. 演练恢复：进程重启、权限过期、上游延迟、人工冲突时，能否从同一状态继续或交接；
-7. 最后才决定 YAML、数据库、事件流或现有平台字段如何承载。
+**迁移规则**：①先写领域终态与不可变约束，不复制 goal.yaml；②控制动作映射为领域事件；③判定绑定 evidence、判据版本、责任来源；④明确缺证据/未知/拒绝/耗尽是否 fail closed；⑤用领域特有坏样本做负例；⑥演练恢复（进程重启、权限过期、上游延迟、人工冲突）；⑦最后才决定承载。
 
 **三个迁移例子**：
 
@@ -496,11 +900,11 @@ CI：build artifact + test report → gate verdict → retry / block / release a
 发布：canary health + rollback checkpoint → policy verdict → continue rollout / rollback / incident handoff
 ```
 
-它们共享控制语义，但不能共享阈值、判据或恢复动作。`p95 < 300ms`、`3 次拒绝`、`10 轮` 等数字必须由领域风险、成本和历史基线决定；如果没有基线，只能标为待定，不能从搜索案例搬过去。
+共享控制语义，不共享阈值、判据或恢复动作。`p95 < 300ms`、`3 次拒绝`、`10 轮` 必须由领域风险、成本和历史基线决定；没有基线只能标待定。
 
 ## 12. 两个领域的完整迁移例子
 
-### A. 数据管道：从“页面完成”换成“分区可交付”
+### A. 数据管道：从「页面完成」换成「分区可交付」
 
 ```yaml
 terminal_state: partition=2026-09-28 is complete and queryable
@@ -515,9 +919,9 @@ resume_pointer: dag_run=...; partition=...
 outcome_pending: downstream dashboard freshness not yet observed
 ```
 
-迁移时保留的是“终态—事实—判定—出口—责任—恢复—外部结果”语义；换掉的是页面路径、浏览器检查和搜索分支。**领域负例**不是“按钮坏了”，而是：row count 为零、freshness 超期、schema drift、已认证分区被覆盖。每个负例都要确认同一质量门会失败，并且失败原因能回到下一步。
+领域负例不是「按钮坏了」，而是：row count 为零、freshness 超期、schema drift、已认证分区被覆盖——每个负例都要确认同一质量门会失败，且失败原因能回到下一步。
 
-### B. 发布系统：从“产出验收”换成“风险可控地推进”
+### B. 发布系统：从「产出验收」换成「风险可控地推进」
 
 ```yaml
 terminal_state: canary meets release policy for the observation window
@@ -532,16 +936,12 @@ resume_pointer: rollout_id + last healthy checkpoint
 outcome_pending: incident-free window not yet complete
 ```
 
-发布系统的 `stop` 不是“部署命令返回 0”；可能是回滚、暂停或等待观察窗。**领域负例**包括：部署成功但错误率超预算、artifact digest 不在批准清单、rollback checkpoint 不可恢复。搜索案例的 `npm test`、10 轮和页面按钮都不能搬进来。
+发布系统的 `stop` 不是「部署命令返回 0」；可能是回滚、暂停或等待观察窗。领域负例：部署成功但错误率超预算、artifact digest 不在批准清单、rollback checkpoint 不可恢复。
 
 ## 13. 泛化验收：用变换而不是改名检查
 
-对任何新领域做三轮测试：
-
 1. **换领域**：同一控制语义映射到数据管道和发布系统，能否说清终态、事实、判定、出口、责任和恢复？
-2. **换承载**：把 YAML 改成数据库事件或 CI artifact，审计信息是否仍然可追溯？
-3. **换失败类型**：把“检查失败”换成权限过期、外部依赖延迟、判据版本漂移、人工冲突，状态是否仍能区分 `blocked / stopped / accepted / outcome_pending`？
+2. **换承载**：YAML 改成数据库事件或 CI artifact，审计信息仍可追溯吗？
+3. **换失败类型**：权限过期、外部依赖延迟、判据版本漂移、人工冲突——状态仍能区分 `blocked/stopped/accepted/outcome_pending` 吗？
 
-若只是替换字段名、但没有定义领域终态、负例和恢复动作，叫“泛化”是假的。若每换一个领域就能保留控制不变量、重写领域策略，并能用负例让门失败，这才是**语义泛化**，不是格式复制。
-
-**判断一个模板是否真的泛化**：至少做三次变换——换领域、换存储、换失败类型；如果只改字段名仍能回答“目标是什么、证据是什么、谁判、为什么停、谁接、如何恢复”，它具有语义泛化性。若必须保留搜索分支、浏览器按钮等具体词才能工作，它只是案例，不是模板。
+只替换字段名、没定义领域终态/负例/恢复动作的「泛化」是假的。每换一个领域都能保留控制不变量、重写领域策略、并用负例让门失败，才是**语义泛化**。

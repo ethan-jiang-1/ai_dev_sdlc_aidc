@@ -1,6 +1,6 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-30 晚（ladder 回流＋手册立项）**：[landscape](result/landscape.md) 增 §3.5 交接面（LE 四档＋支线＋结果可信检查链，§6 上屏清单已放行）；[digested/07](digested/07-控制问题矩阵.md) §二登记交接面读法；实践层 [manual](../../03_practice/loop_governance/result/manual.md) 增 §13 授权面划定规程（LE1 操作化，[backbone](../../03_practice/loop_governance/result/backbone.md) §3 补指针）。承重 ⏳ 清理完成：rung-02 ① 锚 evidence-a §4 D2、rung-03 ① 改锚 evidence-b 问题2 §5（旧锚 §4e 有误）、rung-01 反例位改锚 evidence-f Source 4（原 practices ②「命令级越权」指针有误，实为资源层失控）、rung-02 ③ 标注改「逐字在档·侦察级不支撑定阶」。**LE1–LE3 定阶支撑零 ⏳ 依赖**。下游《循环交接手册》立项：[05_output/deck_ai_loop_engineering/manual](../../05_output/deck_ai_loop_engineering/manual/README.md)（AGENTS＋README＋00 章已建，逐章成稿中；同日应用户要求自 `05_output/manual_loop_handover/` 移入 deck 目录）。
+> 最近一次更新：**2026-09-30 晚（ladder 回流＋手册立项）**：[landscape](result/landscape.md) 增 §3.5 交接面（LE 四档＋支线＋结果可信检查链，§6 上屏清单已放行）；[digested/07](digested/07-控制问题矩阵.md) §二登记交接面读法；实践层 [manual](../../03_practice/loop_governance/result/manual.md) 增 §13 授权面划定规程（LE1 操作化，[backbone](../../03_practice/loop_governance/result/backbone.md) §3 补指针）。承重 ⏳ 清理完成：rung-02 ① 锚 evidence-a §4 D2、rung-03 ① 改锚 evidence-b 问题2 §5（旧锚 §4e 有误）、rung-01 反例位改锚 evidence-f Source 4（原 practices ②「命令级越权」指针有误，实为资源层失控）、rung-02 ③ 标注改「逐字在档·侦察级不支撑定阶」。**LE1–LE3 定阶支撑零 ⏳ 依赖**。
 >
 > **2026-09-30（LE 主线＋结果可信闭环）**：[00-map](capability_ladder/00-map.md) 以 **LE0→LE3 执行委托线、A/B 可选支线**讲交接决定；[结果可信闭环](capability_ladder/result-reliability-interface.md)讲“目标→证据→裁决→停机/交接→后验复核”。六档各有独立 SVG 和运行示例，[capability_ladder/README](capability_ladder/README.md) 索引。新增 [evidence-w](raw/evidence-2026-09-30-w-ladder-runtime-detail.md)、[evidence-x](raw/evidence-2026-09-30-x-ladder-branches-detail.md)、[evidence-y](raw/evidence-2026-09-30-y-long-run-result-reliability.md)；官方机制、案例与教学设计分列。goal/eval 构造归 [agent_goal_eval](../agent_goal_eval/README.md)，停止骨架归 [stop_conditions](stop_conditions/README.md)。`File Deletion Protection`、NLAH 与部分 `⏳` 条目尚待核验。
 >
@@ -45,7 +45,7 @@
    - `01_sources/reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；
    - Böckeler "False sense of control?" 的出处标注改为 **2025-10-15 sdd-3-tools.html**（凡引用处）。
 8. **T 路判读候选待处置**（[evidence-t §3](raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)）：六处与已回源机制的同构对号**不重复计票**；"Run Everything 只在 demo 用"的自主度分档句、三个可跟踪预言（编排框架/动态 Loop/云规划+本地 SLM 执行）先填控制链审计卡，再决定是否回流 digested/03。"90%" 统计与 Lance Martin 人物在回源核实前不得引用。
-9. **capability_ladder 后续**：2026-09-30 晚承重 ⏳ 清理完成（LE1–LE3 定阶支撑零 ⏳ 依赖），判定经 landscape §3.5＋digested/07 交接面读法回流，实践层 manual §13 补上 LE1 操作化缺口；`Run Everything` 已由官方 Run Modes docs 核实。剩余不承重待办：`File Deletion Protection` 名称核验、NLAH 原文、rung-02 行为面反例矩阵 ⏳。下游《循环交接手册》（[05_output/deck_ai_loop_engineering/manual](../../05_output/deck_ai_loop_engineering/manual/README.md)）逐章取材中。
+9. **capability_ladder 后续**：2026-09-30 晚承重 ⏳ 清理完成（LE1–LE3 定阶支撑零 ⏳ 依赖），判定经 landscape §3.5＋digested/07 交接面读法回流，实践层 manual §13 补上 LE1 操作化缺口；`Run Everything` 已由官方 Run Modes docs 核实。剩余不承重待办：`File Deletion Protection` 名称核验、NLAH 原文、rung-02 行为面反例矩阵 ⏳。
 10. **可跟踪预言**（登记防丢）：若出现第一条可复核自主度/质量放行阈值，回本主题补档、再评估实践层 §3；当前不以固定 N 轮作为目标。
 
 
