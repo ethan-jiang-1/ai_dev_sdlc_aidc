@@ -102,4 +102,4 @@ DeerFlow 2.0 经历了从 1.x 纯文本搜索流到 2.0“超级智能体底座�
 | §1 渐进式技能装配 | 成立：Skill Registry + deferred discovery + DeferredToolFilter + `skill_context` channel | ✅ |
 | （本文未涉）L2 拓扑自愈 | **全库不存在**：无 replan / 拓扑校验 / 子图切片 / 失败信封。失败升级 = error ToolMessage 回流 lead agent 上下文自纠 | ❌ |
 
-**修正后的样本定位**：DeerFlow 2.0 实证的是"**固定元图（极小形态）+ 物理沙箱 + 渐进装配 + 涌现式工具级 fan-out**"；它**不是**"固定元图 + 动态任务 DAG"完整范式的实证——数据 DAG 半边在源码中不存在，动态性活在 lead agent 的对话上下文里。完整支持度地图（12 项三档判定）：`/Users/bowhead/deer-flow/_digest/concepts/graph-engineering-support.md`。
+**修正后的样本定位**：DeerFlow 2.0 实证的是"**固定元图（极小形态）+ 物理沙箱 + 渐进装配 + 涌现式工具级 fan-out**"；它**不是**"固定元图 + 动态任务 DAG"完整范式的实证——数据 DAG 半边在源码中不存在，动态性活在 lead agent 的对话上下文里。完整支持度地图（12 项三档判定）：`/Users/bowhead/deer-flow/_digest/graph-engineering/01-support-map.md`。

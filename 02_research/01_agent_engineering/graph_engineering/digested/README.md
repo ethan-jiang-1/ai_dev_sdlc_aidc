@@ -26,4 +26,4 @@
 | **08** | **工业落地样本解剖：从理论图编排到“超级智能体底座”** | ✅ 已收口 | 深入字节跳动 DeerFlow 2.0 与 LangGraph 工业衍生生态：确立“外层确定性程序控流程、内层智能体干活”、Docker 物理沙箱隔离、Lead-Subagent 动态任务切片与渐进式技能装配。 | [`08-superagent-harness-deerflow-langgraph.md`](08-superagent-harness-deerflow-langgraph.md) |
 | **09** | **血泪反思：纯动态图编译的生产陷阱与“固定元图+动态任务DAG”终局** | ✅ 已收口 | 剖析学院派“现场编译新图”的致命死穴（Checkpointer断裂、Trace无法监控、元状态抖动）；确立“静态编译固定元图（Meta-Graph）+ 状态消费动态任务数据（Task DAG）”的工业终局解法。 |
 
-> **2026-10-01 源码校准**：议题 08/09 已回源 deer-flow（`ethan` / v2.1.0-rc0）并各附校准注记——DeerFlow 实证"固定元图"半边（两节点极小元图）；"动态任务 DAG as data"半边无源码支撑（动态分解 = `task` 工具涌现式派发，`Send()` 仅用于节点内工具并行，L2 改图全库不存在）。完整支持度地图：`/Users/bowhead/deer-flow/_digest/concepts/graph-engineering-support.md`。 [`09-meta-graph-vs-dynamic-task-dag.md`](09-meta-graph-vs-dynamic-task-dag.md) |
+> **2026-10-01 源码校准**：议题 08/09 已回源 deer-flow（`ethan` / v2.1.0-rc0）并各附校准注记——DeerFlow 实证"固定元图"半边（两节点极小元图）；"动态任务 DAG as data"半边无源码支撑（动态分解 = `task` 工具涌现式派发，`Send()` 仅用于节点内工具并行，L2 改图全库不存在）。完整支持度地图：`/Users/bowhead/deer-flow/_digest/graph-engineering/01-support-map.md`。 [`09-meta-graph-vs-dynamic-task-dag.md`](09-meta-graph-vs-dynamic-task-dag.md) |
