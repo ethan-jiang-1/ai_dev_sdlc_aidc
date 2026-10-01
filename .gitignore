@@ -218,8 +218,9 @@ __marimo__/
 .streamlit/secrets.toml
 
 *.png
-# 例外：素材归档里的原文图是证据的一部分，必须入库（如 01_sources/weixin/**/images/）
-!01_sources/**/images/**/*.png
+# 例外：素材归档与研究报告里的原文图是证据的一部分，必须入库
+!01_seed_reference/**/images/**/*.png
+!02_research/**/figures/**/*.png
 *.webp
 *.pptx
 .ppt-*/
