@@ -29,16 +29,16 @@
 
 **点评钩子**：问「⑤ 和 ⑦ 有什么区别？」——⑤ 是无进展出口（质量维度的兜底），⑦ 是资源上限（时间维度的兜底），**两个都要**；只带 ⑦ 的循环会硬跑到第 10 轮才停，烧的是你的预算。
 
-**收束**（接 I15 收束句之后）：「今天三题练的都是判断。回去之后要动手配的话——交什么决定、配什么护栏、它说做完了凭什么放行，按《循环交接手册》逐章走。」
+**收束**（接 I15 收束句之后）：「今天三题练的都是判断。回去之后要动手配的话——交什么决定、配什么护栏、它说做完了凭什么放行，按《循环交接手册》入门篇起步。」
 
 **时间**：填空 2.5 min，对答案 1.5 min，收束 1 min。
 
 ## 素材出处（讲者自查用，不进学员版）
 
-- 练习 1：信号表＝capability_ladder/rung-02「你看到的信号」三列表的入门裁剪；C 的反例＝evidence-l（Anthropic quickstart 源码，2026-09-28 观测）；状态语义＝result-reliability-interface §四（手册 00 章）。
+- 练习 1：信号表＝capability_ladder/rung-02「你看到的信号」三列表的入门裁剪；C 的反例＝evidence-l（Anthropic quickstart 源码，2026-09-28 观测）；状态语义＝result-reliability-interface §四（手册卷首·状态语汇表）。
 - 练习 2：三问＝loop_governance manual §1（backbone §0 判据）；丙的纠正＝manual §2 模板入口分流。
 - 练习 3：坏目标原句与干扰项设计＝Osmani《Practical Loop Engineering》（evidence-a，2026-08-14）；⑤⑦ 区别＝evidence-b §4a（/goal 三要素＋上限子句）。
-- 手册指向：《循环交接手册》05_output/deck_ai_loop_engineering/manual/（00/01/03 章）。
+- 手册指向：《循环交接手册》05_output/deck_ai_loop_engineering/manual/循环交接手册.md（卷首＋入门篇一/二）。
 
 ## 红线自查
 

@@ -63,7 +63,7 @@ ai_dev_sdlc_aidc/
 | `talk-ai-coding-evolution-opc/` | 23 页 / 45 min | 已定稿（v8） | **只作内部参考**，其命名与内容不得出现在其他 talk 的对客文字里 |
 | `05_output/deck_ai_sdlc_keynote/` | 40 min / 标准档 | 历史主线稿 | Phase 0 研究与 v1 大纲/讲稿已产出，2026-08 后未继续推进（`project-metadata.yaml` 中 phases 仍标 pending） |
 | `05_output/deck_ai_loop_engineering/` | 两场分稿：入门 15 页＋判断档三题（60 min）/ 技术产品 24 页＋构造档三题（90 min） | 内容稿 | **循环治理 keynote**。只写叙事＋练习件。页面图和 PPTX 已删除。进度权威在该目录 `AGENTS.md` |
-| `05_output/deck_ai_loop_engineering/manual/` | 九个时刻章（00–08） | 内容稿 | **循环交接手册**（2026-09-30 立项，同日自 05_output 根移入 deck 目录）：两场 loop talk 的听众操作件，按时刻组织、面向读者、参数带版本锚。进度权威在该目录 `AGENTS.md` |
+| `05_output/deck_ai_loop_engineering/manual/` | 单文件双篇 | 内容稿 | **循环交接手册**（2026-09-30 立项；同日自 05_output 根移入 deck 目录并合册）：`循环交接手册.md` 一个文件——卷首（状态语汇权威）＋入门篇（判断层）＋高级篇（操作层，按时刻七节），面向读者、参数带版本锚。进度权威在该目录 `AGENTS.md` |
 | `talk-harness-201/` | 20 张短版（另有 35 张长版并存）/ ≈50 min | ⏳ 04 文案 v1 双切法待 review | **DSH 解剖场（advanced）**：《解剖一只优秀的 harness》——三条立场（agent 一等参与／规则可执行／事实唯一 owner）＋道五概念＋术三链＋分寸。语料＝deepseek-harness 仓库 FAQ 07（钉版 `46a7f68b09`）＋KOL 对齐账本（七位点名背书）。**独立一场，不与 101／主线互为前提** |
 
 > **不确定该动哪里时**：主线看 `talk-ai-coding-evolution-harness/CURRENT.md`，

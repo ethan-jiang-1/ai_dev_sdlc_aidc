@@ -19,7 +19,7 @@
 
 - **讲的事**：你离开之后它继续跑，你回来时它说做完了。整场回答你凭什么信。
 - **两场分稿（2026-09-27 用户定，2026-09-28 重构；2026-09-30 加实操轨）**：`intro/` 入门场（15 页＋判断档三题，60 分钟，没跑过循环的通识听众，业务与管理为主）；`advanced/` 技术/产品场（24 页＋构造档三题，90 分钟，在跑循环的工程师与产品，机制放开讲）。两场各自 outline → manuscript → practice，互不搬页。原统一稿（标准 15 + 加深 10）已全部迁入两场，按用户决定移除。
-- **三件套分工**：两场 talk 回答「凭什么信」与「链怎么治理」；听众带走的操作件是本目录 [`manual/`](manual/README.md)《循环交接手册》（按时刻组织，2026-09-30 立项，同日自 `05_output/manual_loop_handover/` 移入）。两场收尾页的「带走」与练习的「回去照着做」全部指向手册，操作规程不在两场稿里重复——talk 是手册的叙事上游，不是它的第二权威。
+- **三件套分工**：两场 talk 回答「凭什么信」与「链怎么治理」；听众带走的操作件是本目录 [`manual/循环交接手册.md`](manual/循环交接手册.md)——单文件双篇（卷首语汇权威＋入门篇判断层＋高级篇操作层，2026-09-30 立项、合册并移入本目录）。两场收尾页的「带走」与练习的「回去照着做」全部指向手册，操作规程不在两场稿里重复——talk 是手册的叙事上游，不是它的第二权威。
 - **语言**：大陆中文习惯的短句，避免翻译腔；主张句不依赖英文。关键术语保留英文——首现处「中文（英文）」标注（检查（check）、执行方（agent）等），映射表在各场文稿头部；细则见各场大纲的语言节。
 - **源**：上游只有两处——研究层 `../../02_research/ai_loop_engineering/`，实践层 `../../03_practice/loop_governance/`。主张不超出两处成稿：`result/landscape.md` 与 `result/backbone.md`。本目录是它们的加工下游；核出处时读两个上游各自的 README。
 
@@ -54,7 +54,7 @@
 | 构件判读 | `../../02_research/ai_loop_engineering/digested/03-构件.md` |
 | 控制问题矩阵 | `../../02_research/ai_loop_engineering/digested/07-控制问题矩阵.md` |
 | 实践主干（backbone 7 节） | `../../03_practice/loop_governance/result/backbone.md` |
-| 操作规程（manual 12 节） | `../../03_practice/loop_governance/result/manual.md` |
+| 操作规程（manual 13 节，2026-09-30 增 §13 授权面） | `../../03_practice/loop_governance/result/manual.md` |
 | goal/eval 构造 | `../../02_research/agent_goal_eval/` |
 | harness 治理（环境轴对照） | `../../03_practice/harness_governance/` |
 | Andrew Ng 消化稿 | `../../02_research/ai_loop_engineering/digested/kol/andrew_ng.md` |
@@ -95,4 +95,4 @@
 | `advanced/manuscript/manuscript-advanced.md` | 技术产品场文稿（24 页＋逐页工程师追问卡），2026-09-28 已同步大纲；2026-09-30 增 A24「带走」接手册，待用户过闸 |
 | `intro/practice/`（README＋exercises＋facilitator） | 判断档三题（嵌入 I08/I14/I15），2026-09-30 新建，待用户过闸 |
 | `advanced/practice/`（README＋exercises＋facilitator） | 构造档三题（嵌入 A16/A15/A24），2026-09-30 新建，待用户过闸 |
-| `manual/`（AGENTS＋README＋九章 00–08） | 《循环交接手册》：按时刻组织的现场操作件，2026-09-30 立项成稿，同日移入本目录；进度权威在其 `AGENTS.md` |
+| `manual/`（`循环交接手册.md`＋AGENTS＋README） | 《循环交接手册》：单文件双篇（卷首＋入门篇＋高级篇），2026-09-30 立项、加密度、合册并移入本目录；进度权威在其 `AGENTS.md` |
