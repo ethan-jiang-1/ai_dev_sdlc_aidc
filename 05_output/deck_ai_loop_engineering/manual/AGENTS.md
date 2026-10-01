@@ -39,10 +39,10 @@
 
 | 想看什么 | 路径 |
 |---|---|
-| 交接面判定（LE0–LE3＋A/B） | `../../../02_research/ai_loop_engineering/capability_ladder/00-map.md` |
-| 可引用结论（含 §3.5 交接面） | `../../../02_research/ai_loop_engineering/result/landscape.md` |
+| 交接面判定（LE0–LE3＋A/B） | `../../../02_research/01_agent_engineering/loop_engineering/capability_ladder/00-map.md` |
+| 可引用结论（含 §3.5 交接面） | `../../../02_research/01_agent_engineering/loop_engineering/result/landscape.md` |
 | 实践层主张与规程 | `../../../03_practice/loop_governance/result/backbone.md` / `manual.md` |
-| 放行链判定与案例 | `../../../02_research/ai_loop_engineering/capability_ladder/result-reliability-interface.md` |
-| LE1–LE3 教学档案（技术剖面/信号表/示意日志） | `../../../02_research/ai_loop_engineering/capability_ladder/rung-0*.md` |
-| 各阶档一手引句 | `../../../02_research/ai_loop_engineering/raw/evidence-*.md` |
+| 放行链判定与案例 | `../../../02_research/01_agent_engineering/loop_engineering/capability_ladder/result-reliability-interface.md` |
+| LE1–LE3 教学档案（技术剖面/信号表/示意日志） | `../../../02_research/01_agent_engineering/loop_engineering/capability_ladder/rung-0*.md` |
+| 各阶档一手引句 | `../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-*.md` |
 | 两场 talk（叙事上游） | `../{intro,advanced}/` |

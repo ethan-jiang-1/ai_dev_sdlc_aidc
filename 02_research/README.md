@@ -1,37 +1,57 @@
 # 02_research — 研究层 · 分析
 
-**定位**：围绕主线的长期研究沉淀（默认**沉淀状态**；**例外**：`repo_agent_friendliness/` 活跃评估系统、`ai_loop_engineering/` 与 `agent_goal_eval/` 活跃研究主题——见根 AGENTS §4）。
+**定位**：围绕主线（AI Coding 时代 SDLC 如何变化）的长期研究沉淀。
+包含三大顶层研究支柱：**智能体机制工程**、**AI-Native SDLC 与组织**、**需求与规格工程**。
+
 补素材 / 改结论前先确认是否为某场 talk 服务——**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**。
 
-## 统一分法
+## 顶层结构
 
-多数主题是自包含的 `raw → digested → result` 管道：`raw_*` 收一手素材，`digested` 收消化稿，
-`result` 收成稿。各主题入口见下表；动手前先读该主题 README（没有的，agent 摸清分法后补一个最小 README）。
+```text
+02_research/
+├── 01_agent_engineering/         运行时与控制机制（Loop, Harness, Graph, Goal/Eval, 评估系统）
+├── 02_ai_sdlc/                   生命周期、研发演进、业界实践与组织管理
+└── 03_requirement_engineering/   输入端需求工程与可验证规格理论沉淀
+```
 
 ## 主题一览
 
-| 主题 | 讲什么 | 入口 |
-|---|---|---|
-| `agentic_engineering/` | AI-Coding 范式变迁主报告（多轮 wave 迭代，result_4_v5 为当前版） | `result_4_v5/` |
-| `agentic_management/` | Agentic 管理侧景观（一手 raw 尚未消化，result 为空） | `raw /` |
-| `agentic_teams/` | 多智能体团队（Agent Teams PPT 成稿） | `result/agent_teams_ppt.md` |
-| `ai_loop_engineering/` | Loop Engineering（2026-06 起这场**被命名的实践运动**，**活跃**）：命名谱系、KOL 一手见解与实战、构件、与 SDD 的边界判定。素材常态在 `raw/evidence-*.md` 回源档案（深度卡仅 Andrew Ng） | `raw/kol-roster.md`（★ 名单权威）+ `digested/README.md`（问题看板）；未来综述 → `result/` |
-| `agent_goal_eval/` | 前沿来源如何构造 goal 与 eval（**活跃**，2026-09-27 定调）。重心是 goal 让 loop 跑起来；eval 量化后可调优；设计不出来的情况一并研究。定调全文不在本表 | `README.md` §1 + `CURRENT.md` |
-| `ai_native_rnd/` | 从瀑布 / 敏捷到 AI-Native 研发的跃迁 | `result/AI_Native_Agile_Evolution.md` |
-| `ai_sdlc_frontier/` | 前沿议题：各家一线人物访谈 + 上下文压缩六家对比等 followup | `followup_research/` |
-| `anthropic_ai_sdlc/` | Anthropic 官方 AI-Native SDLC playbook（英译原文 + 中文编译） | `org/ai-native-sdlc-playbook.md` |
-| `repo_agent_friendliness/` | 仓库 Agent-Friendly **评估系统**（九维框架 + A/B 分型 + 门禁/加权分离打分；**活跃**——拽任意 repo 进来按其 `AGENTS.md` 仪式出报告。**例外分法**：`10-spec / 20-instruments / 90-archive` 三层，run 数据归属被测仓库、不落本仓库） | `README.md`（体系权威 `10-spec/framework.md`） |
-| `thoughtworks_ai_sdlc/` | ThoughtWorks 方法论视角的 AI-Native SDLC 最终报告 | `final/AI_NATIVE_SDLC_FINAL_ENGINEER_REPORT.md` |
+### 1. 01_agent_engineering（智能体工程）
+详见 [`01_agent_engineering/README.md`](01_agent_engineering/README.md)。
 
-> 2026-09-21 拆出记录：`requirements_engineering/`、`spec_driven_development/` 已移至
-> `03_practice/`（用户判定内容已是 practice 而非 research）。
->
-> 2026-09-27 合并记录（同名重复目录收口，均保留「有实质内容 + 名字正确」的一方）：
-> ① `anthorpic_ai_sdlc/`（拼写错）→ 并入 `anthropic_ai_sdlc/`：仅剩的 `org/figures/`、`raw/figures/`
-> 迁回，旧目录删除（此前 org-sdlc talk 的 `rawdata_anthropic-ai-native-sdlc-playbook.md` 断链随此修复）；
-> ② `rnd_native_2.0/`（2026-08 脚手架，空目录 + 两句未动工意向）→ 并入 `ai_native_rnd/`，旧目录删除。
->
-> **遗留目录不在上表**：`requirements_engineering/`（2026-09-21 拆出后的空壳，仅剩空目录）。
+| 主题 | 核心维度 | 讲什么 | 入口 |
+|---|---|---|---|
+| `loop_engineering/` | 时间 / 迭代 | Loop Engineering 运动（**活跃**）：命名谱系、KOL 实战、构件、停止条件、外层调度与自主度分档 | `raw/kol-roster.md` + `digested/README.md` |
+| `harness_engineering/` | 空间 / 环境 | 环境治理：约束写进环境、规则机器级阻断、沙箱与上下文注入 | `README.md` |
+| `graph_engineering/` | 拓扑 / 状态机 | 拓扑编排：DAG 编排、多步骤分支与合并、多智能体协同机制 | `README.md` |
+| `goal_eval_engineering/` | 目标 / 驱动 | 目标与评估（**活跃**）：如何构造 goal 与 eval 让 loop 跑起来并量化调优 | `README.md` §1 + `CURRENT.md` |
+| `repo_agent_friendliness/` | 成熟度 / 评估 | 仓库 Agent-Friendly **评估系统**（**活跃**）：九维框架 + 门禁打分规范与工具 | `README.md`（体系权威 `10-spec/framework.md`） |
+
+### 2. 02_ai_sdlc（AI 软件研发范式与生命周期）
+详见 [`02_ai_sdlc/README.md`](02_ai_sdlc/README.md)。
+
+| 模块 | 子目录 | 讲什么 | 入口 |
+|---|---|---|---|
+| **01_evolution/** | `paradigm_evolution/` | AI-Coding 范式变迁主报告（多轮 wave 迭代） | `result_4_v5/` |
+| | `agile_to_native/` | 从瀑布 / 敏捷到 AI-Native 研发的范式跃迁 | `result/AI_Native_Agile_Evolution.md` |
+| **02_industry_playbooks/** | `anthropic/` | Anthropic 官方 AI-Native SDLC Playbook（英译原文 + 中文编译） | `org/ai-native-sdlc-playbook.md` |
+| | `thoughtworks/` | ThoughtWorks 方法论视角的 AI-Native SDLC 深度工程报告 | `final/AI_NATIVE_SDLC_FINAL_ENGINEER_REPORT.md` |
+| | `frontier_interviews/` | 前沿议题：OpenAI、Anthropic、Cursor 等一线人物访谈与分析 | `followup_research/` |
+| **03_org_and_management/** | `teams/` | 智能体团队形态（Agent Teams PPT 成稿，人类与 Agent 协同模式） | `result/agent_teams_ppt.md` |
+| | `management/` | Agentic 管理侧景观（效能度量与治理考量） | `raw/` |
+
+### 3. 03_requirement_engineering（需求与规格工程）
+详见 [`03_requirement_engineering/README.md`](03_requirement_engineering/README.md)。
+- 沉淀 AI 时代输入端意图表达、形式化规格、契约设计与需求工程演进。
+- 与下游实践层 [`../03_practice/requirements_engineering/`](../03_practice/requirements_engineering/final/00-reading-guide.md) 呼应。
+
+---
+
+## 历史架构调整记录
+
+- **2026-09-21**：实践性主题（`requirements_engineering/`、`spec_driven_development/`）拆出至 `03_practice/`。
+- **2026-09-27**：修复同名错写目录（`anthorpic_ai_sdlc` 合并至 `anthropic`，`rnd_native_2.0` 合并至 `ai_native_rnd`）。
+- **2026-10-01**：全面重构收敛为 3 大顶层支柱（`01_agent_engineering`、`02_ai_sdlc`、`03_requirement_engineering`），消除平铺碎片，实现高内聚分类与分层治理。
 
 ## 纪律
 

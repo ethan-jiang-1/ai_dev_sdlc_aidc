@@ -115,7 +115,7 @@ reference/kol/
 
 **与 `_raw_kol/` 的分工**：`_raw_kol/` 按**人**铺全景（12 位）；本集合按**一次命名事件**收一波声音。已在 `_raw_kol/` 有卡片的人（Boris Cherny、Kief Morris、Ryan Lopopolo、Karpathy、Gergely Orosz）**不重复建目录**，只写指针 + loop 专项增量。
 
-**唯一名单权威不在本集合**——谁入册、号召力依据、每人主张一句话，在 [`02_research/ai_loop_engineering/raw/kol-roster.md`](../../../02_research/ai_loop_engineering/raw/kol-roster.md)。本集合只管素材。
+**唯一名单权威不在本集合**——谁入册、号召力依据、每人主张一句话，在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。本集合只管素材。
 
 **当前状态**：`andrew_ng/` 四件套齐；**当前无待建卡**（建卡规则见集合 README——素材常态在研究主题的 evidence 回源档案）。
 
@@ -169,7 +169,7 @@ reference/kol/
 | 场景 | 先看 |
 |---|---|
 | 想知道具体的人在说什么 | `_raw_kol/`（12 人）、`_raw_frontier/`（7 人共识） |
-| 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | `_raw_loop_engineering/`（素材）→ [`02_research/ai_loop_engineering/`](../../../02_research/ai_loop_engineering/README.md)（判读与台账） |
+| 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | `_raw_loop_engineering/`（素材）→ [`02_research/01_agent_engineering/loop_engineering/`](../../../02_research/01_agent_engineering/loop_engineering/README.md)（判读与台账） |
 | 想知道 Fable 5 具体改变了什么 | `_raw_fable5/` |
 | 想知道 2026 年 AI 软件工程的关键事件 | `_raw_promatic_summit_2026/` + `_raw_agile_manifesto_2026/` |
 | 想知道 agentic engineering 从实验到生产的转折 | `_raw_engelberg_2026/` |
@@ -180,7 +180,7 @@ reference/kol/
 
 ## 最后更新
 
-- 2026-09-26：新增 `_raw_loop_engineering/`（Loop Engineering 一波声音，2026-06 起，一人一目录）；Andrew Ng 四件套入库（自 `02_research/ai_loop_engineering/andrew_ng/` 迁入，原目录撤销）。**名单权威在** [`02_research/ai_loop_engineering/raw/kol-roster.md`](../../../02_research/ai_loop_engineering/raw/kol-roster.md)。
+- 2026-09-26：新增 `_raw_loop_engineering/`（Loop Engineering 一波声音，2026-06 起，一人一目录）；Andrew Ng 四件套入库（自 `02_research/01_agent_engineering/loop_engineering/andrew_ng/` 迁入，原目录撤销）。**名单权威在** [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
 - 2026-07-08：**一手源大清洗**——全库删除所有中文二手源（36kr、微信、BAAI、CSDN、toutiao 等），补充 30+ 条原始英文一手 URL。Simon Willison (2→8 URLs)、Dave Farley (2→6 URLs)。来源铁律新增"一手源优先"硬要求。Erik Schluntz 源从 36kr 编译切换到 YouTube 原视频。
 - 2026-07-08：更名为 `aidlc_reference_kol`（历史名，现为 `reference/kol`），`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`（现为 `reference/corp`）。新增 `_raw_promatic_summit_2026/`、`_raw_agile_manifesto_2026/`、`_raw_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
 - 2026-07-07：创建 `_raw_fable5/` 和 `_raw_frontier/`，全库 frontmatter + section citations + URL 溯源运动

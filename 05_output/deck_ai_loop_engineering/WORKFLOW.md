@@ -31,13 +31,13 @@
 
 | 来源 | 提供什么 |
 |---|---|
-| `02_research/ai_loop_engineering/result/landscape.md` | 综述成稿（含 §3.5 交接面——阶梯主张的引用依据） |
-| `02_research/ai_loop_engineering/capability_ladder/` | LE 交接面判定（00-map）、逐档教学档案、结果可信闭环 |
-| `02_research/ai_loop_engineering/digested/` | 命名谱系、构件、边界判定、控制问题矩阵 |
-| `02_research/ai_loop_engineering/raw/evidence-*.md` | 回源档案（逐字引句） |
+| `02_research/01_agent_engineering/loop_engineering/result/landscape.md` | 综述成稿（含 §3.5 交接面——阶梯主张的引用依据） |
+| `02_research/01_agent_engineering/loop_engineering/capability_ladder/` | LE 交接面判定（00-map）、逐档教学档案、结果可信闭环 |
+| `02_research/01_agent_engineering/loop_engineering/digested/` | 命名谱系、构件、边界判定、控制问题矩阵 |
+| `02_research/01_agent_engineering/loop_engineering/raw/evidence-*.md` | 回源档案（逐字引句） |
 | `03_practice/loop_governance/result/backbone.md` | 实践主干（判据/失败模式/检查点） |
 | `03_practice/loop_governance/result/manual.md` | 操作规程 13 节（含 §13 授权面） |
-| `02_research/agent_goal_eval/` | goal/eval 构造（如作为子话题纳入） |
+| `02_research/01_agent_engineering/goal_eval_engineering/` | goal/eval 构造（如作为子话题纳入） |
 | `03_practice/harness_governance/` | 环境轴对照 |
 
 **产出**：`research/source-synthesis.md`
@@ -106,5 +106,5 @@
 ## 前置条件
 
 - [x] `03_practice/loop_governance/result/backbone.md` 与 manual §0–§12 已确认（§13 待复核）
-- [x] `02_research/ai_loop_engineering/result/landscape.md`（含 §3.5 交接面）
+- [x] `02_research/01_agent_engineering/loop_engineering/result/landscape.md`（含 §3.5 交接面）
 - [x] 听众 / scope / 语言见 `project-metadata.yaml`

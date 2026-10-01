@@ -14,7 +14,7 @@
 | `rawdata_dsh-plugin-business-ladder/` | `deepseek-harness/_faq_on_digested/09_plugin-business-ladder` | 插件收益阶梯 | 组织可验证的能力组合 |
 | `rawdata_dsh-plugin-ecosystem-distribution/` | `awesome-dsh-plugin/_faq_on_digested/01_ecosystem-distribution` | 插件生态分布快照 | 扩展面信号与口径边界 |
 | `rawdata_dsh-plugin-seam-maturity/` | `deepseek-harness/_faq_on_digested/08_plugin-seam-maturity` | 插件接缝与成熟度 | 合同、门禁、事实记录（治理机制） |
-| `rawdata_anthropic-ai-native-sdlc-playbook.md` | 本仓库 `02_research/anthropic_ai_sdlc/org/ai-native-sdlc-playbook.md` | Anthropic 官方 **AI-Native SDLC Playbook** 全文（英文原版） | 组织级 AI-native SDLC 的官方实践蓝本：闭环 + 六阶段 + 治理门禁（对照锚点） |
+| `rawdata_anthropic-ai-native-sdlc-playbook.md` | 本仓库 `02_research/02_ai_sdlc/02_industry_playbooks/anthropic/org/ai-native-sdlc-playbook.md` | Anthropic 官方 **AI-Native SDLC Playbook** 全文（英文原版） | 组织级 AI-native SDLC 的官方实践蓝本：闭环 + 六阶段 + 治理门禁（对照锚点） |
 
 前三份主源分工：① 讲"为什么和往哪走"，② 讲"具体长什么样"，③ 讲"底层机制怎么实现"。
 后三份专题源只补生态、收益与成熟度证据。Anthropic Playbook 是**软件 SDLC 视角的官方对照物**：同讲「闭环 + 六阶段 + 人在门禁」，可作为本 talk 论点的外部锚点（注意：它是 Claude 生态实现，引用时类比而非照搬）。
