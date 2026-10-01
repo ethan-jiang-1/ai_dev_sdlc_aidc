@@ -21,15 +21,15 @@ scope:
   decks:
     intro:
       tier: intro
-      duration_minutes: 45
-      slides: 19
+      duration_minutes: 60
+      slides: 27
     advanced:
       tier: advanced
-      duration_minutes: 75
-      slides: 27
-  focus: "Loop Engineering：系统替人完成一轮。两场都确定何时允许这一转向；入门场铺概念，技术产品场放机制"
-  harness: "这一轮会不会在已知的错上变红的条件。不是循环的历史原因，也没有证明因此更好"
-  goal_eval: "完成条件写不成一句能检查的话，就交给人。怎么写那一句是旁边的题目，两场都不展开"
+      duration_minutes: 90
+      slides: 35
+  focus: "Loop Engineering：系统接替逐次提示；按动作、续跑、唤醒分别交决定和配护栏。入门场讲判断，技术产品场讲机制"
+  harness: "约束一次运行的环境与工具边界；存在机制不等于已有质量或收益证明"
+  goal_eval: "在交续跑时写终态、检查、约束及失败出口；技术场练最小合约，深入调优不在本场"
 
 source:
   primary:
@@ -46,21 +46,21 @@ phases:
     directory: "research/"
     note: "source-synthesis.md 是素材信号，早于当前故事"
   intro_outline:
-    status: confirmed
+    status: draft-for-review
     directory: "intro/outline/"
-    note: "入门场大纲 19 页，2026-09-27 用户过闸并随全稿收口"
+    note: "27 页、60 分钟；基线与三交接面，修订状态见 AGENTS.md"
   intro_manuscript:
-    status: confirmed
+    status: draft-for-review
     directory: "intro/manuscript/"
-    note: "入门场文稿 19 页，三档格式＋难点页 callout＋术语中英对照，2026-09-27 用户收口"
+    note: "27 页＋判断练习三题；与大纲 CLAIM 同步，待排练与用户复核"
   advanced_outline:
-    status: confirmed
+    status: draft-for-review
     directory: "advanced/outline/"
-    note: "技术产品场大纲 27 页，2026-09-27 用户过闸并随全稿收口"
+    note: "35 页、90 分钟；分面门禁＋可选支线，修订状态见 AGENTS.md"
   advanced_manuscript:
-    status: confirmed
+    status: draft-for-review
     directory: "advanced/manuscript/"
-    note: "技术产品场文稿 27 页，三档格式＋难点页 callout＋术语中英对照，2026-09-27 用户收口"
+    note: "35 页＋构造练习三题；证据 callout 与分页贯穿案例，待排练与用户复核"
 
 prerequisites:
   - "03_practice/loop_governance backbone + manual 已确认（见该目录 CURRENT.md）"
