@@ -9,7 +9,9 @@
 | [exercises-intro.md](exercises-intro.md) | 学员 | 三题题面＋判断格式，单页可打印 |
 | [facilitator-intro.md](facilitator-intro.md) | 讲者 | 答案＋误读点评＋时间控制＋手册指向，不上屏不发学员 |
 
-## 三题一览（嵌入位置以 outline §8 为准）
+## 三题一览（嵌点不变，对应六章）
+
+第四章在 N14 后练信号边界，第六章在 N26/N27 练任务选档和 Goal。最终 PPT Agent 只读[文稿](../manuscript/manuscript-intro.md)，其中已放三题最小题面、答案、操作方式与时间；这里保留学员发放版与讲者完整版，不作为制作依赖。练习口头/纸面进行，不生成额外页。
 
 | # | 嵌入 | 时长 | 练的判断 | 手册指向 |
 |---|---|---|---|---|

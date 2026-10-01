@@ -13,7 +13,7 @@
 - ① 写在条件里的检查，在该环境通过了
 - ② 需求没有遗漏，业务会变好
 
-**B. 裁判（独立评估器）给出 `Met`**
+**B. 评估器（evaluator）按约定判据作出 Eval，给出 `Met`**
 - ① 人已经验收，生产业务已经改善
 - ② 约定条件在这个裁判可见的证据里成立
 
@@ -46,7 +46,9 @@
 
 ---
 
-## 练习 3 · 把坏目标改好（5 min）
+## 练习 3 · 把 Goal 写成可检查的目标（5 min）
+
+Goal 写本次要达到的终态；check 写怎么取得证明，Eval 按判据解释这些证据。三者不能用一句“模型觉得好了”代替。
 
 Addy Osmani 在[《Practical Loop Engineering》](https://addyosmani.com/blog/practical-loop-engineering/)（2026-08-14，观测 2026-09-26）点名的坏写法是：
 

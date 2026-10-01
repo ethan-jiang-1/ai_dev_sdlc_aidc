@@ -9,7 +9,7 @@ project:
   split: 2026-09-27
 
 language:
-  slides: "中文短句。术语进备注，主张句不依赖英文术语（advanced 场展开与备注可放开机制术语）"
+  slides: "自然中文句法，重要概念保留英文名称（Loop / Agent / Harness / Goal / Eval / Feedback），首现解释、后续稳定；上屏易读，背景与推理集中各场稿件"
   speech: "中文"
   source_materials: "英文一手源（evidence 档案）+ 中文实践层总纲"
 
@@ -52,7 +52,7 @@ phases:
   intro_manuscript:
     status: draft-for-review
     directory: "intro/manuscript/"
-    note: "27 页＋判断练习三题；与大纲 CLAIM 同步，待排练与用户复核"
+    note: "27 页、六章；单稿内含背景、术语、章节节奏、逐页知识与三题说明。持续盲审修订中，状态见 AGENTS.md"
   advanced_outline:
     status: draft-for-review
     directory: "advanced/outline/"
@@ -60,7 +60,7 @@ phases:
   advanced_manuscript:
     status: draft-for-review
     directory: "advanced/manuscript/"
-    note: "35 页＋构造练习三题；证据 callout 与分页贯穿案例，待排练与用户复核"
+    note: "35 页、七章；单稿内含背景、术语、章节节奏、逐页知识与三题说明。持续盲审修订中，状态见 AGENTS.md"
 
 prerequisites:
   - "03_practice/loop_governance backbone + manual 已确认（见该目录 CURRENT.md）"
