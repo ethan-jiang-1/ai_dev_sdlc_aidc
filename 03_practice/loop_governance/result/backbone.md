@@ -59,7 +59,7 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 
 **产出边界不等于外部结果**：可观察的代码、测试或交付物可作为本轮自动停止条件；系统外的业务结果若当前无观测，就保留待人判或待观测，不能因为产出过闸而自动标成结果达成。品味/标准仍在变化时可做有边界的探索与人工检查，不冒充机器可判的 `Met`。这是控制边界，不在本主题定义 goal/eval 的写法；出处为 [`agent_goal_eval` goal 判读](../../../02_research/01_agent_engineering/goal_eval_engineering/digested/01-goal-构造.md) 与 [`难设计` 三条路](../../../02_research/01_agent_engineering/goal_eval_engineering/digested/03-难设计.md)（其中结果不可见的交还属 Yeret 单人观察，非效果证明），操作分支见 [`manual.md §2`](manual.md)。
 
-**写法（CC 官方三要素，一手）**：**一个可度量终态 + 一个声明式检查 + 路径约束**（"`npm test` exits 0"、"no other test file is modified"，evidence-b §4a）。**实践例证**：Jesse Vincent 的 `/goal` 实验（过夜 25 实验那例——**中文转述·非逐字**，仅作用法样本，不作独立收敛依据；[`fable5/run_superpowers_jesse_vincent`](../../../01_sources/field_samples/fable5/run_superpowers_jesse_vincent/quotes.md)）。
+**写法（CC 官方三要素，一手）**：**一个可度量终态 + 一个声明式检查 + 路径约束**（"`npm test` exits 0"、"no other test file is modified"，evidence-b §4a）。**实践例证**：Jesse Vincent 的 `/goal` 实验（过夜 25 实验那例——**中文转述·非逐字**，仅作用法样本，不作独立收敛依据；[`fable5/run_superpowers_jesse_vincent`](../../../01_seed_reference/field_samples/fable5/run_superpowers_jesse_vincent/quotes.md)）。
 停止条件是**三值状态机**（Not yet met / Met / Impossible），不是布尔（evidence-b §4a）；Osmani 澄清：`/goal` 评估器**只核 transcript 硬规则、不判内容好坏**（evidence-a）——判好坏的是人或上级环。
 
 **裁判权选型**（研究层确认的未收敛点——这里是设计空间，不是缺口）：五型裁判（人判 taste／文件清单逐条／独立小模型每轮／干活模型自判——**最弱**，须配本节骨架二、三与 [`manual.md §4/§7`](manual.md) 补偿／审批对方判定）的**选型表（适用场景＋成本/风险＋源）在 [`manual.md §3`](manual.md)**——单一事实源，此处不复制。

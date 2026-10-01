@@ -29,7 +29,7 @@
 
 | slug | 人物 | 状态 | 素材 |
 |---|---|---|---|
-| [`kol/andrew_ng.md`](kol/andrew_ng.md) | Andrew Ng | ✅ 通读版 | [`_raw_loop_engineering/andrew_ng/`](../../../../01_sources/reference/kol/_raw_loop_engineering/andrew_ng/profile.md) |
+| [`kol/andrew_ng.md`](kol/andrew_ng.md) | Andrew Ng | ✅ 通读版 | [`_raw_loop_engineering/andrew_ng/`](../../../../01_seed_reference/reference/kol/_raw_loop_engineering/andrew_ng/profile.md) |
 
 **不建消化稿的人**（2026-09-26 台账定性）：Cherny / Steinberger（词源碎片级，无深度内容可消化）、alchaincyf（中文编译非独立发明）。
 **素材已归档但走 evidence 档案不建个人卡**：Runkle（四环，evidence-b §4e）、Osmani（两篇，evidence-a）、Huntley（Ralph，evidence-b §1）、Anthropic/OpenAI 机构条目（evidence-b/c）。

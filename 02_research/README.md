@@ -1,7 +1,7 @@
 # 02_research — 研究层 · 分析
 
 **定位**：围绕主线（AI Coding 时代 SDLC 如何变化）的长期研究沉淀。
-包含三大顶层研究支柱：**智能体机制工程**、**AI-Native SDLC 与组织**、**需求与规格工程**。
+包含四大支柱：**智能体机制工程**、**AI-Native SDLC 与组织**、**需求与规格工程**、以及**企业侧镜像与案例**。
 
 补素材 / 改结论前先确认是否为某场 talk 服务——**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**。
 
@@ -11,7 +11,8 @@
 02_research/
 ├── 01_agent_engineering/         运行时与控制机制（Loop, Harness, Graph, Goal/Eval, 评估系统）
 ├── 02_ai_sdlc/                   生命周期、研发演进、业界实践与组织管理
-└── 03_requirement_engineering/   输入端需求工程与可验证规格理论沉淀
+├── 03_requirement_engineering/   输入端需求工程与可验证规格理论沉淀
+└── 04_enterprise_mirror/         企业信息流等价物（BPM）与真实转型案例（2026-10-01 归入）
 ```
 
 ## 主题一览
@@ -45,14 +46,19 @@
 - 沉淀 AI 时代输入端意图表达、形式化规格、契约设计与需求工程演进。
 - 与下游实践层 [`../03_practice/requirements_engineering/`](../03_practice/requirements_engineering/final/00-reading-guide.md) 呼应。
 
+### 4. 04_enterprise_mirror（企业侧镜像与案例）
+详见 [`04_enterprise_mirror/README.md`](04_enterprise_mirror/README.md)。
+- 探讨 SDLC 在企业非代码信息流中的等价物（BPM、Agentic BPM、Framed Autonomy）。
+- 收录真实企业重构案例（Block、Cloudflare、捷普制造）。（沉淀状态）
+
 ---
 
 ## 历史架构调整记录
 
 - **2026-09-21**：实践性主题（`requirements_engineering/`、`spec_driven_development/`）拆出至 `03_practice/`。
 - **2026-09-27**：修复同名错写目录（`anthorpic_ai_sdlc` 合并至 `anthropic`，`rnd_native_2.0` 合并至 `ai_native_rnd`）。
-- **2026-10-01**：全面重构收敛为 3 大顶层支柱（`01_agent_engineering`、`02_ai_sdlc`、`03_requirement_engineering`），消除平铺碎片，实现高内聚分类与分层治理。
+- **2026-10-01**：全面重构收敛：散碎研究主题收拢为前沿机制、SDLC 与需求工程三大主干；原根目录 `02_research/04_enterprise_mirror/` 降维归入本层为 `04_enterprise_mirror/`。
 
 ## 纪律
 
-一手源优先、来源可溯、标注观测日期（与 `01_sources/`、`03_practice/` 统一）。
+一手源优先、来源可溯、标注观测日期（与 `01_seed_reference/`、`03_practice/` 统一）。

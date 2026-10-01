@@ -33,14 +33,14 @@
 | 信号 | 落点 | 动作 |
 |---|---|---|
 | 提到某一场 talk 的页、稿、版次、视觉、PPTX、故事线 | **交付层** `talk-*/`（主线三场带 `talk-ai-coding-evolution-` 前缀；入门场是 `talk-harness-101`） | 进对应 talk，按它自己的 `AGENTS.md` 走（`talk-harness-101` **无 `AGENTS.md`**，按它的 `README.md` + `CONTEXT.md`） |
-| 提到证据、来源卡片、口径、回源 | 先确认属于哪场 talk | 走该 talk 的 `02_evidence/`，不要动根级 `01_sources/` |
-| 泛泛谈研究主题、要补素材、要写一篇新研究（如 loop engineering 的 KOL 证据 / 回源） | **研究层** `01_sources/` / `02_research/` | 见第 4 节 |
+| 提到证据、来源卡片、口径、回源 | 先确认属于哪场 talk | 走该 talk 的 `02_evidence/`，不要动根级 `01_seed_reference/` |
+| 泛泛谈研究主题、要补素材、要写一篇新研究（如 loop engineering 的 KOL 证据 / 回源） | **研究层** `01_seed_reference/` / `02_research/` | 见第 4 节 |
 | 提到如何构造 goal / eval、goal 如何让 loop 跑起来、量化后如何调优、设计不出好的 goal 或 eval 时怎么办 | **研究层** `02_research/01_agent_engineering/goal_eval_engineering/` | 读该目录 `README.md` §1 + `CURRENT.md`；循环怎么跑仍走 `01_agent_engineering/loop_engineering/` |
 | 提到需求工程 / SDD / SDD 后继形态 / harness 治理 / loop 治理（循环、停止条件、外层调度、自主度分档）等 SDLC 实践体系，要改实践方法论文档 | **实践层** `03_practice/` | 见第 4 节；先读该目录 README 的分工与单一事实源约定 |
-| 提到 BPM、企业信息加工流、企业 AI 重构案例 | **研究层·映射** `04_enterprise/` | 沉淀状态：改前先确认是否为某场 talk 服务，是则走该 talk 的 `02_evidence/` |
-| 提到主线 Keynote / deck_ai_sdlc_keynote | **产出层** `05_output/deck_ai_sdlc_keynote/` | 历史主线稿（2026-08 后未推进）；talk 交付不依赖它 |
-| 提到 loop engineering 的 deck / keynote / 综述报告、或要把研究层 loop 成果做成演示 | **产出层** `05_output/deck_ai_loop_engineering/` | 只写叙事。页面图和 PPTX 已删除。按该目录 `AGENTS.md` 走 |
-| 提到循环交接手册 / loop 成果的操作件 / 按时刻查的现场手册 | **产出层** `05_output/deck_ai_loop_engineering/manual/` | 2026-09-30 立项（同日自 `05_output/manual_loop_handover/` 移入 deck 目录）：两场 loop talk 的听众操作件，按时刻组织、面向读者、参数带版本锚。按该目录 `AGENTS.md` 走 |
+| 提到 BPM、企业信息加工流、企业 AI 重构案例 | **研究层·映射** `02_research/04_enterprise_mirror/` | 沉淀状态：改前先确认是否为某场 talk 服务，是则走该 talk 的 `02_evidence/` |
+| 提到主线 Keynote / deck_ai_sdlc_keynote | **产出层** `04_output/deck_ai_sdlc_keynote/` | 历史主线稿（2026-08 后未推进）；talk 交付不依赖它 |
+| 提到 loop engineering 的 deck / keynote / 综述报告、或要把研究层 loop 成果做成演示 | **产出层** `04_output/deck_ai_loop_engineering/` | 只写叙事。页面图和 PPTX 已删除。按该目录 `AGENTS.md` 走 |
+| 提到循环交接手册 / loop 成果的操作件 / 按时刻查的现场手册 | **产出层** `04_output/deck_ai_loop_engineering/manual/` | 2026-09-30 立项（同日自 `04_output/manual_loop_handover/` 移入 deck 目录）：两场 loop talk 的听众操作件，按时刻组织、面向读者、参数带版本锚。按该目录 `AGENTS.md` 走 |
 | 说"这个仓库 / 这个项目"、要改 README、要整理结构 | **根级** | 改 `README.md` / 本文件 |
 
 **判不出来就问，不要猜。** 尤其是"这场 talk"没指名时——五场 talk 的对象、篇幅、红线完全不同，猜错代价很高。
@@ -84,7 +84,7 @@
 
 ## 4. 研究层与实践层怎么动
 
-`01_sources/` / `02_research/` / `03_practice/` / `04_enterprise/` 目前是**沉淀状态**，不是日常推进对象。
+`01_seed_reference/` / `02_research/` / `03_practice/` 目前是**沉淀状态**，不是日常推进对象。
 **例外**：`02_research/01_agent_engineering/repo_agent_friendliness/` 是**活跃的评估系统**（2026-09-21 升级）：独立三层分法
 （`10-spec / 20-instruments / 90-archive`，被测数据不落本系统——run bundle 归属被测仓库）
 且有自己的 `AGENTS.md` 操作手册——路由进去后按它自己的纪律走，不适用本节"沉淀状态"与
@@ -139,8 +139,8 @@
 | AI 形态下的 SDLC 实践方法（harness 治理＝环境轴 / loop 治理＝控制轴） | `03_practice/README.md`（五主题分工） |
 | loop engineering 这场运动——谁在说、证据档案、判读 | `02_research/01_agent_engineering/loop_engineering/README.md`（活跃研究主题，2026-09-26 起） |
 | 前沿来源如何构造 goal 与 eval | `02_research/01_agent_engineering/goal_eval_engineering/README.md` §1（活跃研究主题，2026-09-27 定调） |
-| Loop Engineering Deck 制作进度 | `05_output/deck_ai_loop_engineering/AGENTS.md`（只写叙事；画面与 PPTX 已删除） |
-| 循环交接手册（loop 操作件）制作进度 | `05_output/deck_ai_loop_engineering/manual/AGENTS.md`（按时刻组织的现场手册，2026-09-30 立项） |
+| Loop Engineering Deck 制作进度 | `04_output/deck_ai_loop_engineering/AGENTS.md`（只写叙事；画面与 PPTX 已删除） |
+| 循环交接手册（loop 操作件）制作进度 | `04_output/deck_ai_loop_engineering/manual/AGENTS.md`（按时刻组织的现场手册，2026-09-30 立项） |
 
 ## Python / uv
 

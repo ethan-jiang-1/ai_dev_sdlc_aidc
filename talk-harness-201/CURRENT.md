@@ -20,7 +20,7 @@
 | **PPT 文案 · 短版** | `04_drafts/ppt-text-v1-short.md` | ✅ **20 页块（一页一个完整单元，实战手册味）——当前 20 页资源的渲染输入，待 review** |
 | 页结构 · 长版 | `03_outline/00-page-structure-v1.md` | ✅ **35 张页表，与短版并存**（资源充足或 75–90 min 场次用；头部已声明与短版的分工） |
 | PPT 文案 · 长版 | `04_drafts/ppt-text-v1.md` | ✅ **35 页块，与短版并存**（同上） |
-| 产出 | `05_output/` | ⬜ 未建（文案 review 过再渲染 PPTX） |
+| 产出 | `04_output/` | ⬜ 未建（文案 review 过再渲染 PPTX） |
 
 ## 当前定调（未经变更不得漂移）
 
