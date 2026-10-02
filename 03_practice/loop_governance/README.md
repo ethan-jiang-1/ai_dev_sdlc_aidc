@@ -34,7 +34,7 @@ loop_governance/
 | 主题 | 它管 | 本主题不管 |
 |---|---|---|
 | [`harness_governance`](../harness_governance/README.md) | 单次运行受控：门禁 / 传感器 / 漂移清理（诊断轴＝agent 缺哪句话 ①–⑦） | ——（本主题的前提层） |
-| **本主题** | 多轮的治理：停止条件 / 外层调度 / 自主度分档 / 检查点 | 单次运行内的约束（→harness）；跨 agent 编排（→Graph 层，未立题）；SDD 工件链与工具生态（→spec_driven_development）；intent/spec 写法（→requirements_engineering） |
+| **本主题** | 多轮的治理：停止条件 / 外层调度 / 自主度分档 / 检查点 | 单次运行内的约束（→harness）；跨 agent 编排（→Graph 层：[`graph_governance`](../graph_governance/README.md)）；SDD 工件链与工具生态（→spec_driven_development）；intent/spec 写法（→requirements_engineering） |
 | [`spec_driven_development`](../spec_driven_development/README.md) | SDD 工具生态与辩论谱系 | ——（与本主题是收敛关系，证据互引） |
 | [`agent_goal_eval` 研究主题](../../02_research/01_agent_engineering/goal_eval_engineering/README.md) | goal 完成条件与 eval 的构造、校验、设计不出来时的处理 | 本主题只用其判读决定自动续跑、验收、升档或交人，不重写 goal/eval 方法 |
 

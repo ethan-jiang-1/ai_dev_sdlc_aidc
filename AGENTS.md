@@ -96,9 +96,7 @@
 定调全文在该目录 `README.md` §1。管道同 loop 主题。尚无实践层。
 `02_research/01_agent_engineering/graph_engineering/` 是**活跃的研究主题**（2026-10-01 定调）：从单体 Loop 到显式 DAG 状态机、两层自愈体系、Session 内外架构与异构治理。定调全文在该目录 `README.md` §1。管道同 loop 主题。
 
-- 补素材、改研究结论前，先确认它是否为某场 talk 服务。**是 → 走该 talk 的 `02_evidence/`，不在根级研究层改**，避免事实分散到两处。
-- `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含五个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`、`harness_governance/`（2026-09-21 自 beyond 抽出：AI 形态下新的 SDLC——harness/context 治理）、`loop_governance/`（2026-09-26 立题：loop 层实践主干——停止条件/外层调度/自主度分档，**环境轴与控制轴与 harness_governance 同构成对**，证据权威在 `02_research/01_agent_engineering/loop_engineering/`）。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。
-- 研究层与实践层遵守统一纪律：一手源优先、来源可溯、标注观测日期。
+- `03_practice/` 是 2026-09-21 自研究层拆出的**实践层**，含六个主题：`requirements_engineering/`、`spec_driven_development/`、`beyond_spec_driven_development/`、`harness_governance/`（2026-09-21 自 beyond 抽出：AI 形态下新的 SDLC——harness/context 治理＝环境轴）、`loop_governance/`（2026-09-26 立题：loop 层实践主干——停止条件/外层调度/自主度分档＝控制轴，证据权威在 `02_research/01_agent_engineering/loop_engineering/`）、`graph_governance/`（2026-10-02 立题：graph 层实践主干——拓扑依赖/固定元图/工件契约/L2子图切片自愈＝拓扑协作轴，与前两者构成三维治理闭环，证据权威在 `02_research/01_agent_engineering/graph_engineering/`）。互为兄弟、互相有相对指针，动手前先读各自 README 的分工约定。
 
 ---
 
@@ -137,7 +135,7 @@
 | 某个词在这仓库里什么意思 | 对应 talk 的 `CONTEXT.md` |
 | 某场 talk 的规矩 | 对应 talk 的 `AGENTS.md` |
 | 某场 talk 历史上改过什么 | 对应 talk 的 `CURRENT-history.md`（若有） |
-| AI 形态下的 SDLC 实践方法（harness 治理＝环境轴 / loop 治理＝控制轴） | `03_practice/README.md`（五主题分工） |
+| AI 形态下的 SDLC 实践方法（harness 治理＝环境轴 / loop 治理＝控制轴 / graph 治理＝拓扑协作轴） | `03_practice/README.md`（六主题分工） |
 | loop engineering 这场运动——谁在说、证据档案、判读 | `02_research/01_agent_engineering/loop_engineering/README.md`（活跃研究主题，2026-09-26 起） |
 | 前沿来源如何构造 goal 与 eval | `02_research/01_agent_engineering/goal_eval_engineering/README.md` §1（活跃研究主题，2026-09-27 定调） |
 | Loop Engineering Deck 制作进度 | `04_output/deck_ai_loop_engineering/AGENTS.md`（只写叙事；画面与 PPTX 已删除） |

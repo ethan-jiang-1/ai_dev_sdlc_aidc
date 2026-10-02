@@ -14,7 +14,7 @@ ai_dev_sdlc_aidc/
 │
 ├── 01_seed_reference/  种子参考 · 证据   冷启动参考库（Kicker）：一手信号、论文、人物与厂商卡片
 ├── 02_research/        研究层 · 分析     四大支柱：01_agent_engineering / 02_ai_sdlc / 03_requirement_engineering / 04_enterprise_mirror
-├── 03_practice/        实践层 · 方法     SDLC 工程实践体系：需求工程、SDD 工具生态、SDD 后继形态、harness 治理、loop 治理（2026-09-21 自研究层拆出）
+├── 03_practice/        实践层 · 方法     SDLC 工程实践体系：需求工程、SDD 工具生态、SDD 后继形态、harness 治理、loop 治理、graph 治理（2026-09-21 自研究层拆出，2026-10-02 补齐 graph 治理）
 ├── 04_output/          产出层            Keynote 交付物：deck_ai_sdlc_keynote（历史）+ deck_ai_loop_engineering（2026-09-27 立项；内含 intro / advanced 两场分稿与 manual 循环交接手册）
 │
 ├── talk-harness-101/                   交付层 · 入门场（20 张 = 18 正文 + 2 停顿页 / 20–30 min，＋手册 20 页；原名 talk-ai-coding-evolution-agent-101，2026-09-23 改）
@@ -25,7 +25,7 @@ ai_dev_sdlc_aidc/
 ```
 
 **研究层与实践层**（`01`–`04`）在 2026-07～08 建立，是长期素材与认知底座，默认处于**沉淀状态**、不再逐日推进（**例外**：`02_research/01_agent_engineering/repo_agent_friendliness/` 评估系统、`02_research/01_agent_engineering/loop_engineering/`（2026-09-26 起活跃）、`02_research/01_agent_engineering/goal_eval_engineering/`（2026-09-27 定调，见该目录 README §1）、`02_research/01_agent_engineering/graph_engineering/`（2026-10-01 升级定调，见该目录 README §1），见根 AGENTS §4）。
-其中 `03_practice/` 是 2026-09-21 从研究层拆出的**实践层**，现含五个主题——需求工程、SDD 工具生态、SDD 后继形态、**harness 治理**（环境轴）、**loop 治理**（控制轴，2026-09-26 增 `loop_governance/`，证据权威在研究层 `01_agent_engineering/loop_engineering`）——内容是可执行的工程实践与方法论，不再算"研究"。
+其中 `03_practice/` 是 2026-09-21 从研究层拆出的**实践层**，现含六个主题——需求工程、SDD 工具生态、SDD 后继形态、**harness 治理**（环境轴）、**loop 治理**（控制轴，2026-09-26 增）、**graph 治理**（拓扑协作轴，2026-10-02 增 `graph_governance/`，证据权威在研究层 `01_agent_engineering/graph_engineering`）——内容是可执行的工程实践与方法论，不再算"研究"。三个治理主题共同构成三维治理闭环（Governance Triad）。
 **交付层**（`talk-*`）从 2026-08 起成为工作重心：每一场 talk 是一个自带完整管道的独立工作区。
 
 各层不是串联关系——`talk-*` 里的 talk **不依赖** `04_output/deck_ai_sdlc_keynote`，各自独立成篇，
