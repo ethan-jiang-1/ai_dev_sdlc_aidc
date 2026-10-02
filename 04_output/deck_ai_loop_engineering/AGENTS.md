@@ -57,6 +57,7 @@
 | 实践主干（backbone 7 节） | `../../03_practice/loop_governance/result/backbone.md` |
 | 操作规程（manual 13 节，2026-09-30 增 §13 授权面） | `../../03_practice/loop_governance/result/manual.md` |
 | goal/eval 构造 | `../../02_research/01_agent_engineering/goal_eval_engineering/` |
+| 讲感写作要求（manuscript 怎么写好讲，2026-10-02 立） | `craft/讲感写作要求.md` |
 | harness 治理（环境轴对照） | `../../03_practice/harness_governance/` |
 | Andrew Ng 消化稿 | `../../02_research/01_agent_engineering/loop_engineering/digested/kol/andrew_ng.md` |
 | Andrew Ng 素材卡 | `../../01_seed_reference/reference/kol/_raw_loop_engineering/andrew_ng/` |
