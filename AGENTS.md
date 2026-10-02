@@ -41,6 +41,7 @@
 | 提到主线 Keynote / deck_ai_sdlc_keynote | **产出层** `04_output/deck_ai_sdlc_keynote/` | 历史主线稿（2026-08 后未推进）；talk 交付不依赖它 |
 | 提到 loop engineering 的 deck / keynote / 综述报告、或要把研究层 loop 成果做成演示 | **产出层** `04_output/deck_ai_loop_engineering/` | 只写叙事。页面图和 PPTX 已删除。按该目录 `AGENTS.md` 走 |
 | 提到循环交接手册 / loop 成果的操作件 / 按时刻查的现场手册 | **产出层** `04_output/deck_ai_loop_engineering/manual/` | 2026-09-30 立项（同日自 `04_output/manual_loop_handover/` 移入 deck 目录）：两场 loop talk 的听众操作件，按时刻组织、面向读者、参数带版本锚。按该目录 `AGENTS.md` 走 |
+| 提到 graph engineering 的 deck / keynote / 综述报告、或要把图工程与多智能体成果做成演示 | **产出层** `04_output/deck_ai_graph_engineering/` | 2026-10-02 立项。只写叙事＋练习件＋手册。按该目录 `AGENTS.md` 走 |
 | 说"这个仓库 / 这个项目"、要改 README、要整理结构 | **根级** | 改 `README.md` / 本文件 |
 
 **判不出来就问，不要猜。** 尤其是"这场 talk"没指名时——五场 talk 的对象、篇幅、红线完全不同，猜错代价很高。
@@ -140,6 +141,7 @@
 | 前沿来源如何构造 goal 与 eval | `02_research/01_agent_engineering/goal_eval_engineering/README.md` §1（活跃研究主题，2026-09-27 定调） |
 | Loop Engineering Deck 制作进度 | `04_output/deck_ai_loop_engineering/AGENTS.md`（只写叙事；画面与 PPTX 已删除） |
 | 循环交接手册（loop 操作件）制作进度 | `04_output/deck_ai_loop_engineering/manual/AGENTS.md`（按时刻组织的现场手册，2026-09-30 立项） |
+| Graph Engineering Deck 制作进度 | `04_output/deck_ai_graph_engineering/AGENTS.md`（只写叙事＋练习件＋手册，2026-10-02 立项） |
 
 ## Python / uv
 

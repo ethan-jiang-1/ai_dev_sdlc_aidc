@@ -1,0 +1,75 @@
+# Project Metadata — Graph Engineering（两场分稿）
+# 两场叙事分别以 intro/outline/outline-intro.md 与 advanced/outline/outline-advanced.md 为准。页、画面、PPTX 不在本目录的工作里。
+
+project:
+  name: "Graph Engineering"
+  slug: "deck_ai_graph_engineering"
+  type: strategy_keynote
+  created: 2026-10-02
+  split: 2026-10-02
+
+language:
+  slides: "自然中文句法，重要概念保留英文名称（Graph / DAG / State Machine / Artifact / Failure Envelope / Sub-graph Splicing / HITL），首现解释、后续稳定；上屏易读，背景与推理集中各场稿件"
+  speech: "中文"
+  source_materials: "英文一手源（evidence 档案、开源代码）+ 中文实践层与研究层总纲"
+
+audience:
+  intro: "业务负责人、研发主管、被 Multi-Agent 概念轰炸但实际落地频频翻车的管理者；业务与技术管理为主"
+  advanced: "正在搭建或维护 Multi-Agent 拓扑系统的资深工程师、平台架构师与 LLM 应用产品经理"
+
+scope:
+  decks:
+    intro:
+      tier: intro
+      duration_minutes: 60
+      slides: 27
+    advanced:
+      tier: advanced
+      duration_minutes: 90
+      slides: 37
+  focus: "Graph Engineering：告别单体 Loop 瓶颈与伪群聊幻觉；以固定元图编排动态任务数据，通过强类型工件契约、物理隔离、Session 外持久化状态机与 L2 局部切片自愈，实现确定性多智能体研发流水线"
+  harness: "约束 Worker 节点内部物理沙箱与工具边界"
+  loop: "Worker 节点内部的 L1 微循环退避与单测门禁"
+
+source:
+  primary:
+    - "../../02_research/01_agent_engineering/graph_engineering/"
+    - "../../03_practice/graph_governance/"
+  supplementary:
+    - "../../03_practice/loop_governance/"
+    - "../../03_practice/harness_governance/"
+    - "../../02_research/01_agent_engineering/goal_eval_engineering/"
+
+phases:
+  phase_0_research:
+    status: completed
+    directory: "research/"
+    note: "source-synthesis.md 素材信号抽取完成，覆盖 9 大议题与实践主干"
+  intro_outline:
+    status: completed
+    directory: "intro/outline/"
+    note: "27 页、60 分钟；六章架构，从消灭群聊到组织同构，图治理四问贯穿"
+  intro_manuscript:
+    status: completed
+    directory: "intro/manuscript/"
+    note: "27 页单稿自足文稿；CLAIM=大纲=subtitle 逐字一致，content<=3 条，内嵌判断题与完整图示说明"
+  advanced_outline:
+    status: completed
+    directory: "advanced/outline/"
+    note: "37 页、90 分钟；七章架构，双轨元图、Session 外状态机、L2 切片自愈与 2026 顶级模型防御"
+  advanced_manuscript:
+    status: completed
+    directory: "advanced/manuscript/"
+    note: "37 页单稿自足文稿；CLAIM=大纲=subtitle 逐字一致，content<=3 条，内嵌构造题与深度代码/图示说明"
+  practice_workpieces:
+    status: completed
+    directory: "intro/practice/ & advanced/practice/"
+    note: "入门场 3 道场景判断题 + 技术场 3 道硬核构造题（附 facilitator 讲者卡与标准实现）"
+  governance_manual:
+    status: completed
+    directory: "manual/"
+    note: "《图工程与多智能体协作治理手册》单文件双篇已完稿落盘"
+
+prerequisites:
+  - "03_practice/graph_governance backbone + manual 已确认（2026-10-02）"
+  - "02_research/01_agent_engineering/graph_engineering/result/landscape.md 已入层（2026-10-01）"
