@@ -96,15 +96,17 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 | 关键引用 | 哪句话最有冲击力？ | "SDLC is built around 200 lines a day" — Willison |
 | 数据点 | 有什么量化证据？ | Laura Tacho: 450+ 公司 12 万开发者数据 |
 
-**源材料在哪里**：
+**源材料在哪里**（2026-10-03 种子层净化后：kol/ 只留人与事件，话题/合成迁出）：
 ```
 ../../01_seed_reference/kol/
-├── _raw_kol/              ← 14 位 KOL（Fowler, Farley, Willison, Beck, Karpathy...）
-├── _raw_frontier/         ← 跨公司共识（Anthropic/OpenAI/Cursor/Google 七人）
-├── _raw_fable5/           ← Fable 5 变革信号（16 个使用样本）
+├── _raw_kol/              ← KOL 深度卡（Fowler, Farley, Willison, Beck, Karpathy...）
 ├── _raw_agile_manifesto_2026/  ← Deer Valley Retreat（Feb 2026）
 ├── _raw_promatic_summit_2026/  ← Pragmatic Summit（Feb 2026）
 └── _raw_engelberg_2026/        ← Engelberg Retreat（Jul 2026）
+
+../../01_seed_reference/field_samples/fable5/synthesis/   ← Fable 5 变革信号（16 个使用样本合成）
+../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/
+└── frontier_synthesis_2026-07/  ← 跨公司共识（Anthropic/OpenAI/Cursor/Google 七人）
 ```
 
 **Agent 的工作方式**：

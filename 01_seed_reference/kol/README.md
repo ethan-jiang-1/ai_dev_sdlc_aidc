@@ -142,8 +142,8 @@ kol/
 
 | | `kol` | `corp` |
 |---|---|---|
-| **视角** | 个体——人、对话、事件 | 组织——公司、厂商、分析机构 |
-| **材料性质** | 个人言论 + 合成分析 + 事件拆解 | 厂商方法论 + 生态全景 |
+| **视角** | 个体与聚会——人、对话、事件 | 组织——公司、厂商、分析机构 |
+| **材料性质** | 个人/机构言论 + 事件拆解 | 厂商方法论 + 生态全景 |
 | **偏向性处理** | 标注证据强度 + 分歧矩阵 | 对抗性验证（claim_verification 文件） |
 | **URL 状态** | 大部分已完成 frontmatter + URL | _raw_aws 有 URL，_raw_ecosystem 部分待补 |
 
@@ -155,9 +155,11 @@ kol/
 
 | 场景 | 先看 |
 |---|---|
-| 想知道具体的人在说什么 | `_raw_kol/`（12 人）、`_raw_frontier/`（7 人共识） |
-| 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | `_raw_loop_engineering/`（素材）→ [`02_research/01_agent_engineering/loop_engineering/`](../../02_research/01_agent_engineering/loop_engineering/README.md)（判读与台账） |
-| 想知道 Fable 5 具体改变了什么 | `_raw_fable5/` |
+| 想知道具体的人在说什么 | `_raw_kol/`（19+ 人/机构卡） |
+| 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | [`../loop_engineering/`](../loop_engineering/README.md)（素材）→ [`02_research/01_agent_engineering/loop_engineering/`](../../02_research/01_agent_engineering/loop_engineering/README.md)（判读与台账） |
+| 想知道 graph engineering / DAG 编排这波在说什么 | [`../graph_engineering/`](../graph_engineering/README.md)（素材与判读入口） |
+| 想知道 Fable 5 具体改变了什么 | [`../field_samples/fable5/`](../field_samples/fable5/README.md)（样本池 + synthesis/） |
+| 想知道四家前沿公司达成了什么共识 | [`02_research/.../paradigm_evolution/frontier_synthesis_2026-07/`](../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/README.md) |
 | 想知道 2026 年 AI 软件工程的关键事件 | `_raw_promatic_summit_2026/` + `_raw_agile_manifesto_2026/` |
 | 想知道 agentic engineering 从实验到生产的转折 | `_raw_engelberg_2026/` |
 | 想知道 Agile 社区怎么回应 AI | `_raw_agile_manifesto_2026/` + `_raw_kol/`（Fowler, Beck, Farley, ThoughtWorks） |
@@ -204,6 +206,7 @@ kol/
 
 ## 最后更新
 
+- 2026-10-03：**净化收窄为「意见来源库」（人/组织/事件）**——四类话题/合成材料迁出：`_raw_frontier/` → `02_research/.../paradigm_evolution/frontier_synthesis_2026-07/`（跨人判读归研究层，本 README 规矩 #5 的执行）；`_raw_fable5/` → `../field_samples/fable5/synthesis/`（回归其样本池）；`_raw_loop_engineering/` → `../loop_engineering/`（上移为种子层话题目录，与 graph 同构）；`_raw_graph_engineering/` → 并入 `../graph_engineering/`（一线实录系逐字重复件，去重）。`_abandoned_no_reference/` 上移至种子层顶层（收容内容跨 kol/corp，公共设施）。本库现仅含 `_raw_kol/` + 三场 2026 事件；库内全部外向链接已同步改写。
 - 2026-10-03：**六人深挖集成批**——Farley（`03`：8-10 月 20 条一手入卡；归属勘误两条——8-19/9-23 热门视频系 Emily Bache 主讲非第一人称；安全工程转向 08-05 "the engineering discipline is the safety"；Bluesky 成最高质量一手源）；Lopopolo（`09`：org 一手核验 OpenAI→Google Cloud Principal Engineer、Symphony 开源 27.5k stars、Zechner–Lopopolo Continuum、GC 官方 "coined the term agent harness"）；Morris（`10`：勘误两条——PlatformCon 实为 06-23、"build the system…" 系转述口号化；三级演进 on the loop→管道化→决策参数化）；Orosz（`12`：回源校正——01 长文≠调查（调查 04-14/05-19）、Meta 文实为 06-17；09-15 工厂七受访者事实）；Huntley（`16`：全年 15 篇八阶段弧线 + 07-23 加入 Antithesis 验证转向）；Ronacher（`17`：32 篇 P1-P6 转冷弧线 + 对照节深化——与 Searls/Osmani"独立同词异源"零互引、工厂实验四组数字）。工作档暂存 `.tmp-kol-deep-2026-10/`，下次收口清理。
 - 2026-10-03：**Böckeler 入册（`20`）+ `_raw_kol/README.md` 补写作思路节**——"为什么是人是口径的单一事实来源 / 卡片标准结构 / 思想变迁轨迹方法论与六种轨迹类型 / 库的边界"；六人深挖（Farley / Lopopolo / Morris / Orosz / Huntley / Ronacher）进行中。
 - 2026-10-03：**新面孔入册 ×4 + 全员轨迹覆盖**——`16` Huntley / `17` Ronacher / `18` Valim / `19` Thorsten Ball（按当日开荒扫描建卡）；全部 19 张卡补齐「思想变迁轨迹（2026）」节（阶段×日期×立场标记×一手锚点+判语；≤2025 按时间铁律压缩为背景行）；观察名单落入 `_raw_kol/README.md`。

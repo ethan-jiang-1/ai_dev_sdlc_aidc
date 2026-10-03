@@ -57,15 +57,12 @@ description: 企业/厂商/分析机构的 AIDLC 参考材料——AWS 方法论
 ```
 corp/     ← 企业/厂商/分析机构（你在这里）
   ├── _raw_aws/                    ← AWS 官方方法论
-  ├── _raw_ecosystem/              ← 多厂商 + 分析机构 + 社区全景
-  └── _abandoned_no_reference/     ← 无源可溯的内容收容所
+  └── _raw_ecosystem/              ← 多厂商 + 分析机构 + 社区全景
 
-kol/      ← 人物与事件（影响力个体 + 线下聚会）
+../_abandoned_no_reference/        ← 无源可溯的内容收容所（种子层公共设施，2026-10-03 上移）
+
+kol/      ← 人物与事件（影响力个体 + 线下聚会；2026-10-03 净化，话题类已迁出）
   ├── _raw_kol/                     ← 人物/机构深度卡（见其 README 导航表）
-  ├── _raw_frontier/                ← 跨公司变革共识合成
-  ├── _raw_fable5/                  ← Fable 5 模型变革信号合成
-  ├── _raw_loop_engineering/        ← Loop Engineering 一波声音（2026-06 起）
-  ├── _raw_graph_engineering/       ← Graph Engineering 一波声音（2026-07 起）
   ├── _raw_promatic_summit_2026/    ← Pragmatic Summit 2026
   ├── _raw_agile_manifesto_2026/    ← Deer Valley Retreat 2026
   └── _raw_engelberg_2026/          ← Engelberg Retreat 2026
