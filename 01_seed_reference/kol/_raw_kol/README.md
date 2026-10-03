@@ -4,6 +4,31 @@
 
 ---
 
+## 这个库为什么存在 & 卡片写作思路（2026-10-03 定）
+
+**为什么是"人"**：AI-SDLC 的术语与立场不是从论文里长出来的，是从具体的人嘴里长出来的（vibe coding→Karpathy、harness engineering→Lopopolo/Böckeler、loop engineering→Osmani、pencils down→DHH）。要追话语的演化，就得追人——**人是口径的单一事实来源**。
+
+**每张卡的标准结构**（写作时按此组织，缺的注明待补）：
+1. **frontmatter**：person / organization / verification_status / source_urls（全部一手）/ key_concepts
+2. **标题 + 一句话定位引言**
+3. **当前立场小结**（建卡时点的 3-6 条，每条可回源）
+4. **思想变迁轨迹（2026）★ 本库的构图中心**：阶段 × 日期 × 立场标记 × 一手锚点的表格 + 一段**判语**。范围只收 2026 年以后（时间铁律 2026-01 硬底线）；≤2025 一律压缩为一行"背景"。判语要点名轨迹的**类型**：
+   - **反转型**（DHH：抵制→pencils down）
+   - **细化/自限型**（Fowler：验证主张加张力；Beck：TDD 口径双重限定；Cherny："已死"→质量守门）
+   - **稳定型**（Farley / Tacho / Morris / ThoughtWorks——零漂移本身是事实，也是场内锚点）
+   - **产品化直线型**（Dohmke：宣言→机制）
+   - **单点宣言型**（Valim：待观察）
+   - **上行/下行对轴**（Ball 上行 vs Ronacher 转冷）
+5. **正文专题节**：带日期小节，按「确认/延伸/修正」标注与既有口径的关系
+6. **与库内其他人物的立场对照**（指针式，不展开判读）
+7. **关键引用汇总 + Source 尾链**
+
+**两条库规的落点**：来源铁律（一手英文源）与时间铁律（2026 窗口）见 [`../README.md`](../README.md)；滚动更新的操作流程（回源核查→只进卡片→新人入册→口径显式标注→判读不进种子层）见 [`../README.md`](../README.md)「滚动更新规矩」节。
+
+**库的边界**：本库只收"谁在哪天说了什么（带源）"；跨人的横向判读（话语场转变、阵营划分）沉淀在 `02_research/`（当前：`02_research/02_ai_sdlc/01_evolution/paradigm_evolution/`）。
+
+---
+
 ## 文件导航
 
 | 文件 | 人物/公司 | 一句话 |
@@ -26,6 +51,7 @@
 | `17_armin_ronacher.md` | Armin Ronacher | "内卷派"主笔：Better Models Worse Tools、slop factory，与 Thorsten 公开互驳 |
 | `18_jose_valim.md` | José Valim | 语言层为 agent 重构：program databases over LSPs、runtime observability over debuggers |
 | `19_thorsten_ball.md` | Thorsten Ball | Amp 共创者，"aim higher" 乐观极，agent 派生 agent 黑盒测试实录 |
+| `20_birgitta_bockeler.md` | Birgitta Böckeler | Harness Engineering 方法论第一作者：Guides + Sensors 矩阵；08-11 用实验质疑自己的 TDD 主张 |
 
 ---
 

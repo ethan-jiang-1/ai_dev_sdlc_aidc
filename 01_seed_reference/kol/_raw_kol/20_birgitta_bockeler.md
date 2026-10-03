@@ -1,0 +1,66 @@
+---
+type: kol_deep_dive
+person: Birgitta Böckeler
+organization: ThoughtWorks (Exploring Gen AI series)
+content_type: thought_leader_analysis
+verification_status: verified
+source_urls:
+  - https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html
+  - https://martinfowler.com/articles/exploring-gen-ai/
+key_concepts:
+  - guides_and_sensors
+  - computational_over_inferential_sensors
+  - tdd_in_agent_loop_experiment
+  - steering_loop
+---
+
+# Birgitta Böckeler — Harness Engineering 方法论的第一作者：Guides + Sensors
+
+> ThoughtWorks Distinguished Engineer，martinfowler.com《Exploring Gen AI》系列主笔。**Harness Engineering 作为方法论的第一作者**（Fowler 是发布者与背书者，她是定义者）：Guides（前馈）+ Sensors（反馈）矩阵、"计算传感器优于推理传感器"、以及 2026-08 亲自用实验质疑自己的主张——库内罕见的"自我检验型"声音。
+
+---
+
+> 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。建卡日 2026-10-03（深挖待下轮：系列早期五篇 02-17→05-27 逐篇回源）。
+
+## 当前立场小结（2026-10-03 建卡）
+
+1. **Guides + Sensors 矩阵**（2026-04-02《Harness Engineering for Coding Agent Users》）：Guides 喂给 agent（前馈）× Sensors 检查输出（反馈），各分 Computational（确定性工具执行）与 Inferential（LLM 解读）两类。
+2. **关键发现：计算传感器被低估**——客观质量检查优先用确定性工具（静态分析、类型检查器、测试套件、变异测试），LLM-as-judge 只作补充。
+3. **用实验质疑自己**（2026-08-11《TDD inside the agent loop》）："Based on Opus's judgment of the quality of the outcomes, there was **no clearly discernable difference** based on TDD workflow versus no TDD workflow. On the contrary, more than once Opus ranked the non-TDD workflow solutions slightly higher…"（小样本 + 自评判断，作者自列 caveat）
+4. **steering-loop 审慎**：与 Fowler 联名警告 "A weak harness means better prompts just produce more sophisticated bugs"。
+
+---
+
+## 思想变迁轨迹（2026）
+
+| 日期 | 立场标记 | 锚点 |
+|------|---------|------|
+| 2026-02-17 | 《Harness Engineering》定义篇（回应 OpenAI 零人写码实验） | martinfowler.com 系列（下轮回源取 URL） |
+| 2026-04-02 | 《HE for Coding Agent Users》：Guides + Sensors 完整心智模型 | 同上系列 |
+| 2026-05-19→05-27 | 传感器三部曲：Maintainability Sensors / Three More Static Code Analysis Sensors / The Test Suite as a Regression Sensor | 同上系列 |
+| 2026-08-11 | **TDD inside the agent loop**：实验显示 agent 循环内跑 TDD 无可测收益——对自己的主张做实证检验 | [已核 URL](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) |
+
+**判语**：2026 年内她是"方法论从定义走向实证"的唯一样本——别人在表态，她在做实验；08-11 的 null result 是本库"验证口径拉扯"（见 `02` 卡张力线）的第一块实证砖。
+
+---
+
+## 与库内其他人物的立场对照
+
+- **Fowler（`02`）**：发布者/背书者关系——他站内推广她的系列并形容"疯狂的流量"；她提供框架，他提供势能。
+- **Cherny（`08`）/ Orosz（`12`）9 月守门叙事**：同向——她 5 月的传感器系列就是这个议题的方法论底座。
+- **Huntley（`16`）/ Thorsten（`19`）宽自主派**：对立——她的 steering-loop 审慎与"人定义期望状态"立场正面顶住"让模型决定 workflow"。
+- **Beck（`05`）TDD 口径**：她的 08-11 实验给了 Beck 的"TDD 超能力"论一记数据侧质疑（注意小样本 caveat）——两条卡必须并读。
+
+---
+
+## 关键引用汇总
+
+> *"A weak harness means better prompts just produce more sophisticated bugs."* — 与 Fowler 共同警告
+
+> *"There was no clearly discernable difference based on TDD workflow versus no TDD workflow."* — 2026-08-11 实验
+
+> *"Computational sensors are usually preferable to inferential sensors for objective quality checks."* — 矩阵关键发现（转述）
+
+---
+
+**Source:** [TDD inside the agent loop (2026-08-11)](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) · [Exploring Gen AI 系列（martinfowler.com）](https://martinfowler.com/articles/exploring-gen-ai/) · 系列五篇（02-17 / 04-02 / 05-19 / 05-20 / 05-27，URL 下轮逐篇回源）
