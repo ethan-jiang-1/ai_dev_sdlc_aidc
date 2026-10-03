@@ -1,6 +1,5 @@
 ---
-type: kol_deep_dive
-person: ThoughtWorks
+type: org_deep_dive
 organization: ThoughtWorks
 content_type: technology_radar_analysis
 verification_status: verified

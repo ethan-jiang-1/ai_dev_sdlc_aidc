@@ -48,7 +48,7 @@ key_concepts:
 
 **判语**：与 TW 的「收紧路线」（经典实践是 AI 速度的制衡力量）相对，微软/GitHub 走的是「吸收路线」——不发明新学科，而是把 agent 装进既有平台原语（PR/Actions/CODEOWNERS/branch protections），让平台默认值替你执行纪律。两条路线在同一批词汇（harness、loop、factory）上交叉，构成本库最有观测价值的对照张力（见文末三重对照节）。
 
-> 📎 本文全部内容来源：见文末 "Source:" 节及 frontmatter `source_urls`。全部证据逐条一手核验（github.blog / developer.microsoft.com / microsoft.com / arxiv.org / icfp26.sigplan.org），日期读自页面本体 meta（datePublished / arXiv Submitted），搜索摘要不采。组织卡评估底稿：`.tmp-msft-github-org-scan-2026-10/`（工作档，收口后清理）。
+> 📎 本文全部内容来源：见文末 "Source:" 节及 frontmatter `source_urls`。全部证据逐条一手核验（github.blog / developer.microsoft.com / microsoft.com / arxiv.org / icfp26.sigplan.org），日期读自页面本体 meta（datePublished / arXiv Submitted），搜索摘要不采。组织卡评估底稿：`.tmp-msft-github-org-scan-2026-10/`（工作档，已随本批收口清理）。
 
 ---
 

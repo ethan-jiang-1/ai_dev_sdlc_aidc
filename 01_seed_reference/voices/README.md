@@ -24,7 +24,7 @@ research_date: 2026-07-08
 voices/
 ├── README.md                              ← 你在这里
 ├── _raw_people/                           ← 人物深度卡（轨迹中心，见其 README 导航表）
-├── _raw_orgs/                             ← 组织卡（机构作为发声体；2026-10-03 建，ThoughtWorks 首卡）
+├── _raw_orgs/                             ← 组织卡（机构作为发声体；6 张 top 卡——次级组织收档于其 README 收档表）
 ├── _raw_event_pragmatic_summit_2026/      ← Pragmatic Summit 2026（Beck+Fowler 同台）
 ├── _raw_event_deer_valley_2026/           ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
 └── _raw_event_engelberg_2026/             ← Engelberg Retreat 2026（从实验到生产的转折点）
@@ -88,7 +88,7 @@ voices/
 
 ### `_raw_people/` — 影响力人物深度拆解（组织卡在 [`../_raw_orgs/`](../_raw_orgs/README.md)）
 
-**是什么**：17 位历史上塑造了 SDLC 话语权的人在 AI 时代的言论（人物卡 17 张；组织的声音在 [`../_raw_orgs/`](../_raw_orgs/README.md)——ThoughtWorks 首卡；峰会专题在 [`_raw_event_pragmatic_summit_2026/`](_raw_event_pragmatic_summit_2026/README.md)）。从 Martin Fowler 到 Kent Beck，从 Karpathy 到前 GitHub CEO。
+**是什么**：17 位历史上塑造了 SDLC 话语权的人在 AI 时代的言论（人物卡 17 张；组织的声音在 [`../_raw_orgs/`](../_raw_orgs/README.md)——6 张 top 组织卡；峰会专题在 [`_raw_event_pragmatic_summit_2026/`](_raw_event_pragmatic_summit_2026/README.md)）。从 Martin Fowler 到 Kent Beck，从 Karpathy 到前 GitHub CEO。
 
 **源头特征**：人物/组织的公开言论（博客、演讲、访谈、社交媒体）。每人有独立立场——先看 README 的共识/分歧矩阵再读个人。
 
@@ -202,17 +202,27 @@ voices/
 | Thorsten Ball | registerspill.thorstenball.com/p/joy-and-curiosity-NNN（**编号连续，直接探 +1**） | 周（周六） | |
 | Böckeler | martinfowler.com 单页直抓 ＋ bsky（她有转帖出现） | 不定 | 系列索引页 403，新篇靠 feed/镜像发现 |
 | ThoughtWorks | thoughtworks.com/radar ＋ insights 博客 | 季/周 | Vol 35 待出（2026-10-03 核验未出） |
+| **组织卡轮查行（2026-10-03 挖掘批新增、同日收束为 top 6；判新同样以页面本体日期为准，web_fetch DNS 故障一律 curl + Chrome UA）** | | | |
+| Google | developers.googleblog.com（日期在页面 JSON 内）＋ cloud.google.com/blog ＋ sre.google ＋ dora.dev/insights | 周 | DORA 线并入 `google.md` 卡（dora.dev 直连无墙）；2026 年报 9–11 月出 |
+| Microsoft+GitHub | github.blog（datePublished meta）＋ developer.microsoft.com/blog | 周 | Octoverse 2026 / Universe 2026（10-28/29）待出——待回查日历见 [`_raw_orgs/README.md`](_raw_orgs/README.md) |
+| 37signals | 37signals.com/podcast（REWORK 归档页）＋ Ruby on Rails 官方频道 | 周 | pencils down 无公司署名书面版（软肋已注记） |
+| Shopify | shopify.engineering（datePublished meta） | 周 | |
+| Stripe | stripe.dev/blog（日期在页面 JSON "date"）＋ stripe.com/blog | 月 | |
 
 ---
 
 ## 最后更新
+
+- 2026-10-03（深夜·二）：**`_raw_orgs` 收束为 top 卡位（13 → 6 张，用户定调）**——新增判据 #5「话语塑造力」：只留改变别人怎么做的组织。保留 thoughtworks / google / microsoft_github / 37signals / shopify / stripe 六张；Stack Overflow（被 AI 淘汰的当事人）、JetBrains（数据权威非立场权威）、Atlassian（产品护城河喉舌）、GitLab、Spotify、O'Reilly 收档为「一行一信号」表（最强单条＋主 URL，保留重启开卡线索）；DORA 立场线（amplifier 论、反 tokenmaxxing）并入 `google.md`。评估结论未丢：当量分组、负发现（Pivotal 消亡、Netflix 官方失声）、跨卡发现（harness 四家收编路径等）仍在 [`_raw_orgs/README.md`](_raw_orgs/README.md)。
+
+- 2026-10-03（深夜）：**`_raw_orgs` 当量对标挖掘批——组织卡 1 → 13 张**。以「ThoughtWorks 同当量组织是否存在、其 2026+ 影响是什么」为题，6 路并行回源（约 80 个一手页面逐条核验，全部过 2026 时间窗＋一手源铁律，载荷 URL 二次抽验），新增 12 张组织卡：Google / Microsoft+GitHub（生态卡）/ 37signals / Shopify / Spotify / Stripe / GitLab / Atlassian / JetBrains / Stack Overflow / DORA / O'Reilly。跨卡发现与当量分组（当量高+有声 12 家／当量高+无声：Pivotal 消亡、Netflix 官方失声／新生当量：AI 原生待开卡）登记在 [`_raw_orgs/README.md`](_raw_orgs/README.md)「当量对标」节；候选清单勘误一条（Shopify「agent 评审 PR 更少事故」研究核不到，系第三方转述误记）；AWS 意见面证据备齐（Vogels 修订 Working Backwards＋Swami frontier 文）待切磋是否双卡位；待回查日历（Octoverse 2026 / SO Survey / GitLab 第 10 届 / DORA 年报 / QCon Netflix talk 11-18 等 8 项）入库；thoughtworks 卡 frontmatter 归一为 org 类型。评估底稿 `.tmp-*` 已清理。
 
 - 2026-10-03（夜）：**事件目录统一 `_raw_event_` 前缀，三轴命名全部显式**——`_raw_promatic_summit_2026/` → `_raw_event_pragmatic_summit_2026/`（修正 promatic 拼写）、`_raw_agile_manifesto_2026/` → `_raw_event_deer_valley_2026/`（事件官方名 Future of Software Development Retreat @ Deer Valley，与 engelberg 地名命名对称）、`_raw_engelberg_2026/` → `_raw_event_engelberg_2026/`。库内外引用全量同步（产出层旧稿 6 文件 13 处一并扫尾）；顺带修复 `_raw_kol` 活引用（corp 相邻树、loop/graph README、两事件 README、andrew_ng sources 断链、本 README 滚动更新规矩）、deer_valley overview 两处悬空 follow_up 指针（改指 `../_raw_event_engelberg_2026/README.md`）、人物卡计数修正（12/19 → 17，实际卡数）。
 
 - 2026-10-03（晚）：**`kol` → `voices` 更名 + 意见来源库三分落地**——人物（`_raw_people/`，原 `_raw_kol/`）、组织（`_raw_orgs/`，新建）、事件（三场 2026 聚会）三轴成型；ThoughtWorks 卡自 `_raw_kol/01` 迁入 `_raw_orgs/thoughtworks.md`（组织非个人，归属修正）；组织候选清单（Anthropic / OpenAI / GC / LangChain / 37signals / Stripe / Shopify…）在 [`_raw_orgs/README.md`](_raw_orgs/README.md) 备切磋。全库 27 个引用文件路径已同步改写。
 
 - 2026-10-03：**净化收窄为「意见来源库」（人/组织/事件）**——四类话题/合成材料迁出：`_raw_frontier/` → `02_research/.../paradigm_evolution/frontier_synthesis_2026-07/`（跨人判读归研究层，本 README 规矩 #5 的执行）；`_raw_fable5/` → `../field_samples/fable5/synthesis/`（回归其样本池）；`_raw_loop_engineering/` → `../loop_engineering/`（上移为种子层话题目录，与 graph 同构）；`_raw_graph_engineering/` → 并入 `../graph_engineering/`（一线实录系逐字重复件，去重）。`_abandoned_no_reference/` 上移至种子层顶层（收容内容跨 kol/corp，公共设施）。本库现仅含 `_raw_kol/` + 三场 2026 事件；库内全部外向链接已同步改写。
-- 2026-10-03：**六人深挖集成批**——Farley（`03`：8-10 月 20 条一手入卡；归属勘误两条——8-19/9-23 热门视频系 Emily Bache 主讲非第一人称；安全工程转向 08-05 "the engineering discipline is the safety"；Bluesky 成最高质量一手源）；Lopopolo（`09`：org 一手核验 OpenAI→Google Cloud Principal Engineer、Symphony 开源 27.5k stars、Zechner–Lopopolo Continuum、GC 官方 "coined the term agent harness"）；Morris（`10`：勘误两条——PlatformCon 实为 06-23、"build the system…" 系转述口号化；三级演进 on the loop→管道化→决策参数化）；Orosz（`12`：回源校正——01 长文≠调查（调查 04-14/05-19）、Meta 文实为 06-17；09-15 工厂七受访者事实）；Huntley（`16`：全年 15 篇八阶段弧线 + 07-23 加入 Antithesis 验证转向）；Ronacher（`17`：32 篇 P1-P6 转冷弧线 + 对照节深化——与 Searls/Osmani"独立同词异源"零互引、工厂实验四组数字）。工作档暂存 `.tmp-kol-deep-2026-10/`，下次收口清理。
+- 2026-10-03：**六人深挖集成批**——Farley（`03`：8-10 月 20 条一手入卡；归属勘误两条——8-19/9-23 热门视频系 Emily Bache 主讲非第一人称；安全工程转向 08-05 "the engineering discipline is the safety"；Bluesky 成最高质量一手源）；Lopopolo（`09`：org 一手核验 OpenAI→Google Cloud Principal Engineer、Symphony 开源 27.5k stars、Zechner–Lopopolo Continuum、GC 官方 "coined the term agent harness"）；Morris（`10`：勘误两条——PlatformCon 实为 06-23、"build the system…" 系转述口号化；三级演进 on the loop→管道化→决策参数化）；Orosz（`12`：回源校正——01 长文≠调查（调查 04-14/05-19）、Meta 文实为 06-17；09-15 工厂七受访者事实）；Huntley（`16`：全年 15 篇八阶段弧线 + 07-23 加入 Antithesis 验证转向）；Ronacher（`17`：32 篇 P1-P6 转冷弧线 + 对照节深化——与 Searls/Osmani"独立同词异源"零互引、工厂实验四组数字）。工作档暂存 `.tmp-kol-deep-2026-10/`（同日夜已清理）。
 - 2026-10-03：**Böckeler 入册（`20`）+ `_raw_kol/README.md` 补写作思路节**——"为什么是人是口径的单一事实来源 / 卡片标准结构 / 思想变迁轨迹方法论与六种轨迹类型 / 库的边界"；六人深挖（Farley / Lopopolo / Morris / Orosz / Huntley / Ronacher）**已完成并集成**（见上方深挖集成批条目）。
 - 2026-10-03：**新面孔入册 ×4 + 全员轨迹覆盖**——`16` Huntley / `17` Ronacher / `18` Valim / `19` Thorsten Ball（按当日开荒扫描建卡）；全部 19 张卡补齐「思想变迁轨迹（2026）」节（阶段×日期×立场标记×一手锚点+判语；≤2025 按时间铁律压缩为背景行）；观察名单落入 `_raw_kol/README.md`。
 - 2026-10-03：**存量卡扫描批**——Willison（`04`：思想转变节——守门锚从人审换成 harness/eval，auto mode 默认化 + 年度综述）、Cherny（`08`："已死"论细化为质量守门）、Dohmke（`14`：SDLC 重审 + forge 治理件）、Orosz（`12`：OpenAI 软件工厂一手取样 + 评审制度议程）、Tacho（`13`：J 曲线 + 任职更新为 AWS）；Karpathy（`07`）加术语谱系勘误（"agentic engineering" 系 Zed/Sobo 2025-06 引入，Karpathy 为扩散者）。Farley / Lopopolo / Morris / ThoughtWorks 窗口内无可核验新增（渠道受限明细见当日扫描档）。

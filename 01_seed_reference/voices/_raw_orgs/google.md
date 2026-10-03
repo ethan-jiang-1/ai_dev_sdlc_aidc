@@ -9,6 +9,8 @@ source_urls:
   - https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/
   - https://cloud.google.com/blog/products/devops-sre/how-google-sre-is-using-agentic-ai-to-improve-operations
   - https://dora.dev/ai/roi/report/
+  - https://dora.dev/insights/balancing-ai-tensions/
+  - https://dora.dev/insights/finding-balance-in-the-era-of-tokenmaxxing/
   - https://developers.googleblog.com/driving-the-agent-quality-flywheel-from-your-coding-agent/
   - https://developers.googleblog.com/measuring-what-matters-with-jules/
   - https://developers.googleblog.com/build-better-ai-agents-5-developer-tips-from-the-agent-bake-off/
@@ -19,6 +21,7 @@ key_concepts:
   - behavioral_evals
   - sre_ai
   - dora_j_curve
+  - ai_as_amplifier
   - writing_to_reviewing
   - customer_zero
 ---
@@ -37,6 +40,7 @@ key_concepts:
 |------|------|---------|------|
 | agentic 工程纪律定调 | 2026-04-14 | Agent Bake-Off 方法论：*"The honeymoon phase of simply chatting with an LLM is over… It's about rigorous agentic engineering."*；harness 按「无常性」设计 | Bake-Off 文 |
 | 度量权威出手 | 2026-04-22 | **DORA《ROI of AI-assisted Software Development》**（by Google LLC，v.2026.1）：*"code is often seen as a liability, not an asset"*；J 曲线；verification tax | DORA ROI 节 |
+| 测量线加码 | 2026-03-10→06-02 | DORA **amplifier 论**（放大好组织也放大坏组织）＋**反 tokenmaxxing**（token 消耗是 vanity metric） | DORA ROI 节 |
 | SRE 学科续作 | 2026-05-28 | **SRE AI** 白皮书：*"We call this SRE AI"*；"SREs must move up the abstraction ladder" | SRE AI 节 |
 | 评测观转向 | 2026-05-07→06-22 | Jules 论文：agentic coding 需要 **proactivity 而非 autonomy**——*"evaluated by the quality and improvement of their insight policy"*；内部 705 bugs / 1,178 CLs 评测集 | arXiv 2605.06717＋博文 |
 | customer zero 数据 | 2026-05-19 | I/O 2026 keynote：内部 AI 开发工具日处理 token 从 3 月的 0.5 万亿升至 **3 万亿+/天**（官方 edited transcript，引用须标注） | blog.google |
@@ -48,7 +52,7 @@ key_concepts:
 
 **判语**：Google 把「AI 时代 SDLC 怎么变」回答成**工程纪律问题**——harness 是环境工程（为无常性设计）、评测是护栏工程（behavioral evals、优化者不自评）、可靠性是自主控制面工程（SRE AI）、度量是组织系统问题（DORA 放大器论）。方法论输出与 customer zero 自用数据互为表里，是「工程化收口派」的机构锚；与 OpenAI 的 Symphony 外泄叙事相对，Google 选择了公开出版路线。
 
-> 📎 本文全部内容来源：见文末 "Source:" 节及 frontmatter `source_urls`。全部证据逐条一手核验（developers.googleblog.com / cloud.google.com / sre.google / blog.google / dora.dev / arxiv.org），日期读自页面本体（JSON-LD datePublished / 页面可见日期 / arXiv Submitted）。评估底稿：`.tmp-google-research/`（工作档，收口后清理）。Lopopolo 个人线见 [`../_raw_people/09_ryan_lopopolo.md`](../_raw_people/09_ryan_lopopolo.md)（素材引用不复制）。
+> 📎 本文全部内容来源：见文末 "Source:" 节及 frontmatter `source_urls`。全部证据逐条一手核验（developers.googleblog.com / cloud.google.com / sre.google / blog.google / dora.dev / arxiv.org），日期读自页面本体（JSON-LD datePublished / 页面可见日期 / arXiv Submitted）。评估底稿：`.tmp-google-research/`（工作档，已随本批收口清理）。Lopopolo 个人线见 [`../_raw_people/09_ryan_lopopolo.md`](../_raw_people/09_ryan_lopopolo.md)（素材引用不复制）。
 
 ---
 
@@ -69,6 +73,12 @@ DORA（"a program run by Google Cloud"）《ROI of AI-assisted Software Developm
 > *"The greatest returns on AI investment come not from the tools themselves but from a strategic focus on the underlying organizational system: the quality of the internal platform, the clarity of workflows, and the alignment of teams."*
 
 三件套：**代码负债论**（*"code is often seen as a liability, not an asset"*）、**J 曲线**（early adoption 的生产力下蹲期）、**verification tax**（官方解读文：*"developers must invest extra time rigorously reviewing generated outputs"*）——对「AI 生产力叙事」最系统的机构级降温。TW 雷达 Vol 34 的「认知债/DORA 指标更关键」与之同向（TW 卡交叉引用，不复制）。
+
+DORA 线全年加码（2026-10-03 收档定调：DORA 为 Google Cloud 旗下 program，立场线并入本卡，不单独开卡）：
+
+- **Amplifier 论**（dora.dev，2026-03-10）：*"AI's primary role in software development is that of an amplifier. It magnifies the strengths of high-performing organizations and the dysfunctions of struggling ones."*——AI 是放大器不是平均器，对「给全员发 agent 就有回报」rollout 逻辑的直接否定。
+- **反 tokenmaxxing**（dora.dev，2026-06-02）：*"token consumption… prioritizes quantifying activity over examining actual outcomes"*——点名 token 消耗排行榜为 vanity metric。
+- 2026 年度 DORA Report 未出（9–11 月节奏）——发布后回查补为主锚。
 
 ## harness 工程：术语正史化节点（2026-09-09 / 09-25）
 
