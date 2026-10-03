@@ -1,7 +1,7 @@
 ---
 type: index
 content_type: readme
-directory: _raw_promatic_summit_2026
+directory: _raw_event_pragmatic_summit_2026
 description: Pragmatic Summit 2026 全部 session 拆解
 event_date: 2026-02
 research_date: 2026-07-07
@@ -25,7 +25,7 @@ verification_status: verified
 | `02_willison_agentic_engineering.md` | Simon Willison 炉边谈话 | Agentic Engineering 三阶段；Conformance-Driven Development；Showboat |
 | `03_dohmke_rajan_roundtable.md` | Dohmke + Rajan 圆桌 | Homer Simpson 车；Atlassian Rovo Dev 数据；角色坍缩；CTO 们又写代码了 |
 | `04_tacho_dx_data_joint_statement.md` | Laura Tacho DX 数据 | AI 是放大器（50% fewer incidents vs 2x more）；失望鸿沟；联合声明 |
-| `05_fowler_deer_valley_retreat.md` | ~~Fowler Deer Valley Retreat~~ → 文件不存在（Deer Valley 材料见 `../_raw_agile_manifesto_2026/`） |
+| `05_fowler_deer_valley_retreat.md` | ~~Fowler Deer Valley Retreat~~ → 文件不存在（Deer Valley 材料见 `../_raw_event_deer_valley_2026/`） |
 | `06_cross_session_themes.md` | 跨 Session 主题分析 | 五个跨 session 主题；⚠️ 含作者分析，非官方联合声明 |
 
 ---

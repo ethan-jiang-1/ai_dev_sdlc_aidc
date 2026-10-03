@@ -166,9 +166,9 @@ ai_sdlc_frontier/
 ├── corp/_raw_ecosystem/      ← 非 AWS 全景
 └── kol/                      ← 人物与事件（人物卡 + 三场 2026 聚会）
     ├── _raw_kol/
-    ├── _raw_promatic_summit_2026/
-    ├── _raw_agile_manifesto_2026/
-    └── _raw_engelberg_2026/
+    ├── _raw_event_pragmatic_summit_2026/
+    ├── _raw_event_deer_valley_2026/
+    └── _raw_event_engelberg_2026/
 01_seed_reference/field_samples/fable5/
 └── synthesis/                ← Fable 5 变革信号（16 个 run_* 样本合成）
 paradigm_evolution/（本主题）

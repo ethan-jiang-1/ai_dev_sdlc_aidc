@@ -43,7 +43,7 @@
 | `08_boris_cherny.md` | Boris Cherny | Claude Code 之父，"软件工程已死"，150 PR/天，零手写代码 |
 | `09_ryan_lopopolo.md` | Ryan Lopopolo | Harness Engineering 提出者（OpenAI→Google Cloud，2026-07 一手核验），100 万行零人写零人审，70 PR/周 |
 | `10_kief_morris.md` | Kief Morris | IaC 之父，"in the loop → on the loop" 框架，Agentic Flywheel |
-| （Pragmatic Summit 2026）→ 独立库 | 峰会专题已独立成库：Beck+Fowler 同台、Willison、前GitHub CEO+Atlassian CTO | [`../_raw_promatic_summit_2026/`](../_raw_promatic_summit_2026/README.md) |
+| （Pragmatic Summit 2026）→ 独立库 | 峰会专题已独立成库：Beck+Fowler 同台、Willison、前GitHub CEO+Atlassian CTO | [`../_raw_event_pragmatic_summit_2026/`](../_raw_event_pragmatic_summit_2026/README.md) |
 | `12_gergely_orosz.md` | Gergely Orosz | *The Pragmatic Engineer* 作者，六预测（好/坏/丑），"Something precious is being taken away" |
 | `13_laura_tacho.md` | Laura Tacho | 前 DX CTO，450+ 公司 12 万开发者数据，"AI 是放大器"，"失望鸿沟" |
 | `14_thomas_dohmke.md` | Thomas Dohmke | 前 GitHub CEO，Entire 创始人（$60M 种子轮），"Homer Simpson 车"，"Agent 装配线" |

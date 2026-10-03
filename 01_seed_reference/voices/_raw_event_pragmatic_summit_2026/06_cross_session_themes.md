@@ -15,7 +15,7 @@ note: |
   ⚠️ 本文件将 Pragmatic Summit (San Francisco, Gergely Orosz 主办) 与 Deer Valley Retreat (Utah, Martin Fowler/ThoughtWorks 主办) 的材料进行了交叉对比。
   这两个是不同的活动：Pragmatic Summit 是公开售票大会，Deer Valley 是闭门邀请 retreat。
   文中的对比和关联是作者的分析，并非两个活动组织者的联合声明。
-  引用的 05_fowler_deer_valley_retreat.md 不存在——Deer Valley 材料在 ../_raw_agile_manifesto_2026/ 目录。
+  引用的 05_fowler_deer_valley_retreat.md 不存在——Deer Valley 材料在 ../_raw_event_deer_valley_2026/ 目录。
 ---
 
 # Pragmatic Summit 2026 — 跨 Session 主题分析

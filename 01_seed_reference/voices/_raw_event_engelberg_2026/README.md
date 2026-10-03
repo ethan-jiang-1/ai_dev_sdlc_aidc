@@ -1,7 +1,7 @@
 ---
 type: index
 content_type: readme
-directory: _raw_engelberg_2026
+directory: _raw_event_engelberg_2026
 description: FOSE Europe — Engelberg 2026，Agentic Engineering 从实验到生产的转折点
 event_date: 2026-07
 research_date: 2026-07-07
@@ -56,6 +56,6 @@ Engelberg 不只是 Deer Valley 的续集。它是 **agentic engineering 从实�
 
 ## 与相邻目录的关系
 
-- `../_raw_agile_manifesto_2026/` — Deer Valley Retreat。Engelberg 的前身和对比基线
-- `../_raw_promatic_summit_2026/` — 同一周的 Pragmatic Summit。两个活动共同构成 2026 年 2 月 AI 软件工程的"伍德斯托克时刻"
+- `../_raw_event_deer_valley_2026/` — Deer Valley Retreat。Engelberg 的前身和对比基线
+- `../_raw_event_pragmatic_summit_2026/` — 同一周的 Pragmatic Summit。两个活动共同构成 2026 年 2 月 AI 软件工程的"伍德斯托克时刻"
 - `../../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/` — 跨公司变革共识（2026-10-03 自 `../_raw_frontier/` 迁入研究层）。Harness Engineering 在其中被独立验证

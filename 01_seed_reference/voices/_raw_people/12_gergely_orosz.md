@@ -28,7 +28,7 @@ key_concepts:
 | 阶段 | 日期 | 立场标记 | 锚点 |
 |------|------|---------|------|
 | 长文定调 | 2026-01-06 | 个人长文（⚠️ 非调查，校正见上）："**software engineering fundamentals should become more important**" + "Something precious is being taken away" | 卡内 + frontmatter |
-| 峰会主办 | 2026-02 | Pragmatic Summit（Beck+Fowler 同台） | `../_raw_promatic_summit_2026/` |
+| 峰会主办 | 2026-02 | Pragmatic Summit（Beck+Fowler 同台） | `../_raw_event_pragmatic_summit_2026/` |
 | 上半年节拍 | 2026-01→07 | 01-22 Pulse#160："writing code by hand is almost dead… **mere months**"；02-17 How Codex is built；02-24 六预测成文；03-17 "Are AI agents actually slowing us down?"；**04-08 DHH 访谈（亲录其 agent-first 起点）**；06-23 Slow down to speed up；06-30 三实验室走访；07-14 loop engineering；07-28 Inside Anthropic；**读者调查两部 04-14 / 05-19**（Part 2："the benefits of AI heavily depend on **the engineering culture that was in place before**"） | PE 各期（2026-10-03 深挖档，40 页存证） |
 | 文化批判 | 2026-06-17 | 《Why is Meta destroying its engineering organization?》："**people stop caring about real work and focus on performative work**"＋"writing code by hand…could cost you your job"（DF 07-02 转链；2026-10-03 校正：原文 6-17） | frontmatter + 深挖档 |
 | **一线取证 + 制度议程** | 2026-09 | 三连：code reviews 是适应还是消亡（09-08）/ 潜入 OpenAI 软件工厂（09-15）/ 手写代码终结议程化（09-24） | 本卡"2026-09 增量"节 |

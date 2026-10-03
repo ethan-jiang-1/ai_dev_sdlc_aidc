@@ -25,9 +25,9 @@ voices/
 ├── README.md                              ← 你在这里
 ├── _raw_people/                           ← 人物深度卡（轨迹中心，见其 README 导航表）
 ├── _raw_orgs/                             ← 组织卡（机构作为发声体；2026-10-03 建，ThoughtWorks 首卡）
-├── _raw_promatic_summit_2026/             ← Pragmatic Summit 2026（Beck+Fowler 同台）
-├── _raw_agile_manifesto_2026/             ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
-└── _raw_engelberg_2026/                   ← Engelberg Retreat 2026（从实验到生产的转折点）
+├── _raw_event_pragmatic_summit_2026/             ← Pragmatic Summit 2026（Beck+Fowler 同台）
+├── _raw_event_deer_valley_2026/             ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
+└── _raw_event_engelberg_2026/                   ← Engelberg Retreat 2026（从实验到生产的转折点）
 
 ../corp/                   ← 企业与生态（兄弟目录）
 ├── _raw_aws/                              ← AWS 官方 AI-DLC 方法论
@@ -109,7 +109,7 @@ voices/
 
 ---
 
-### `_raw_promatic_summit_2026/` — Pragmatic Summit 2026
+### `_raw_event_pragmatic_summit_2026/` — Pragmatic Summit 2026
 
 **是什么**：Gergely Orosz 主办的首届线下大会。Beck+Fowler 同台、Simon Willison、Dohmke+Rajan 圆桌、Laura Tacho DX 数据。
 
@@ -119,7 +119,7 @@ voices/
 
 ---
 
-### `_raw_agile_manifesto_2026/` — Deer Valley Retreat 2026
+### `_raw_event_deer_valley_2026/` — Deer Valley Retreat 2026
 
 **是什么**：Martin Fowler 在 Agile Manifesto 诞生 25 年后的同一片山召集的闭门 retreat。"严苛去哪儿了？"、Supervisory Engineering、Cognitive Debt 等概念的发源地。
 
@@ -129,7 +129,7 @@ voices/
 
 ---
 
-### `_raw_engelberg_2026/` — Engelberg Retreat 2026
+### `_raw_event_engelberg_2026/` — Engelberg Retreat 2026
 
 **是什么**：Deer Valley 五个月后的欧洲续篇。"证据在握"——从实验到生产的转折点。Optimiser vs Learner、Galaxy Brain 辩论、Harness Engineering 术语的诞生。
 
@@ -161,9 +161,9 @@ voices/
 | 想知道 graph engineering / DAG 编排这波在说什么 | [`../graph_engineering/`](../graph_engineering/README.md)（素材与判读入口） |
 | 想知道 Fable 5 具体改变了什么 | [`../field_samples/fable5/`](../field_samples/fable5/README.md)（样本池 + synthesis/） |
 | 想知道四家前沿公司达成了什么共识 | [`02_research/.../paradigm_evolution/frontier_synthesis_2026-07/`](../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/README.md) |
-| 想知道 2026 年 AI 软件工程的关键事件 | `_raw_promatic_summit_2026/` + `_raw_agile_manifesto_2026/` |
-| 想知道 agentic engineering 从实验到生产的转折 | `_raw_engelberg_2026/` |
-| 想知道 Agile 社区怎么回应 AI | `_raw_agile_manifesto_2026/` + `_raw_people/`（Fowler, Beck, Farley）+ `_raw_orgs/`（ThoughtWorks） |
+| 想知道 2026 年 AI 软件工程的关键事件 | `_raw_event_pragmatic_summit_2026/` + `_raw_event_deer_valley_2026/` |
+| 想知道 agentic engineering 从实验到生产的转折 | `_raw_event_engelberg_2026/` |
+| 想知道 Agile 社区怎么回应 AI | `_raw_event_deer_valley_2026/` + `_raw_people/`（Fowler, Beck, Farley）+ `_raw_orgs/`（ThoughtWorks） |
 | 想知道组织/厂商的框架设计 | `../corp/_raw_aws/` + `_raw_ecosystem/` |
 
 ---
@@ -219,5 +219,5 @@ voices/
 
 - 2026-09-26：新增 `_raw_loop_engineering/`（Loop Engineering 一波声音，2026-06 起，一人一目录）；Andrew Ng 四件套入库（自 `02_research/01_agent_engineering/loop_engineering/andrew_ng/` 迁入，原目录撤销）。**名单权威在** [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
 - 2026-07-08：**一手源大清洗**——全库删除所有中文二手源（36kr、微信、BAAI、CSDN、toutiao 等），补充 30+ 条原始英文一手 URL。Simon Willison (2→8 URLs)、Dave Farley (2→6 URLs)。来源铁律新增"一手源优先"硬要求。Erik Schluntz 源从 36kr 编译切换到 YouTube 原视频。
-- 2026-07-08：更名为 `aidlc_reference_kol`（历史名，现为 `kol`），`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`（现为 `corp`）。新增 `_raw_promatic_summit_2026/`、`_raw_agile_manifesto_2026/`、`_raw_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
+- 2026-07-08：更名为 `aidlc_reference_kol`（历史名，现为 `kol`），`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`（现为 `corp`）。新增 `_raw_event_pragmatic_summit_2026/`、`_raw_event_deer_valley_2026/`、`_raw_event_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
 - 2026-07-07：创建 `_raw_fable5/` 和 `_raw_frontier/`，全库 frontmatter + section citations + URL 溯源运动

@@ -11,7 +11,7 @@ source_urls:
 preceding_event:
   name: Deer Valley Retreat
   date: 2026-02
-  dir: ../_raw_agile_manifesto_2026/
+  dir: ../_raw_event_deer_valley_2026/
 key_concepts:
   - evidence_is_in
   - harness_engineering_emergence

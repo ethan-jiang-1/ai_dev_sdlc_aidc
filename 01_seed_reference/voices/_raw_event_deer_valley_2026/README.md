@@ -1,7 +1,7 @@
 ---
 type: index
 content_type: readme
-directory: _raw_agile_manifesto_2026
+directory: _raw_event_deer_valley_2026
 description: Deer Valley Retreat — Agile Manifesto 诞生 25 年后，同一片山，不同的问题
 event_date: 2026-02
 research_date: 2026-07-07
@@ -47,7 +47,7 @@ note: |
 
 ## 后续
 
-2026 年 7 月 Engelberg Retreat——语气从"可能有点东西"彻底转变为"证据在握"。详见 `../_raw_engelberg_2026/`。
+2026 年 7 月 Engelberg Retreat——语气从"可能有点东西"彻底转变为"证据在握"。详见 `../_raw_event_engelberg_2026/`。
 
 ---
 
@@ -74,6 +74,6 @@ note: |
 
 ## 与相邻目录的关系
 
-- `../_raw_engelberg_2026/` — Engelberg 后续 retreat。Deer Valley 的对比基线
-- `../_raw_promatic_summit_2026/` — 同一周的 Pragmatic Summit。Deer Valley 是闭门 retreat，Pragmatic Summit 是公开大会——两个视角互补
+- `../_raw_event_engelberg_2026/` — Engelberg 后续 retreat。Deer Valley 的对比基线
+- `../_raw_event_pragmatic_summit_2026/` — 同一周的 Pragmatic Summit。Deer Valley 是闭门 retreat，Pragmatic Summit 是公开大会——两个视角互补
 - `../_raw_kol/` — 单人分析。Deer Valley 是一群人的碰撞
