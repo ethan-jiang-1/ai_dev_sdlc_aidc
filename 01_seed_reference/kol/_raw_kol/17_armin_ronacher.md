@@ -61,8 +61,15 @@ key_concepts:
 ## 与库内其他人物的立场对照
 
 - **与 Thorsten Ball（`19`）直接对立**：RS #99（09-12）点名 "Armin with some cold water to splash on the golden geese"，并反问 "Shouldn't present-day software engineering processes change to wield the power of these models…? **And these aren't rhetorical questions.**"——截至 10-03，Armin 博客/Bluesky **零回应**（P(doom) 的靶子是 Dario 不是 Thorsten，勿误读）；对立保持单向敞开。
-- **同向 Osmani（loop 台账 §A）、Searls（观察名单）**：人的品味、验收与"为什么做"的提问权不可外包；对"让模型决定 workflow"持质量反证。
-- **对 harness/loop 治理的价值**：他提供了"工厂叙事失败的一手标本"（35 小时白卷），是 loop 治理研究"停止条件/收益判据"的反面样本。
+- **同向 Osmani（loop 台账 §A）、Searls（观察名单）——"独立同词异源"，截至 10-03 无任何直接互引**（本卡 32 篇 + bsky 全量 grep：Searls / Osmani 均 0 命中）：
+  - 三人各自独立命名了同一种担忧——Armin "**slop factory**"（09-07，质量/经济向：内卷判词 + $15.5/commit 白卷）；Searls "**dark factory**"（10-02 播客自嘲："how I've accidentally constructed a dark factory with agents building and maintaining my iOS apps"；其 02-26 定调句 "today's agents are nowhere close to being able to write software that won't fall over without supervision"）；Osmani "**skill decay**"（08-31："Agents can finish the task without teaching you anything… **A completed task is not necessarily a rep.**"，并引 Anthropic Trio 研究 AI 组测验 50% vs 手写组 67%）。
+  - 共同点（各卡可回源）：品味、验收与"为什么做"的提问权不可外包——Armin 的版本是 "let the model decide the how" 实验失败后的自我诊断，Osmani 的版本是 outer-loop 所有权论，Searls 的版本是退役前的个人清算。
+- **对 harness/loop 治理的价值：工厂叙事失败的一手标本（09-07《Astra: why?》）**——loop 治理研究"停止条件 / 收益判据"的反面样本，事实面四组数字（全部原句在档）：
+  - 投入：35 小时 / ~1B tokens / ~$1200 API 成本；整个项目累计 "a full reset's worth of ChatGPT tokens… **around 4 billion tokens**"；
+  - 产出：79 commits ≈ **$15.5 per commit**；agent 间 ~1400 条消息；净增 ~75k 行；
+  - 自我归因（他自己的失败诊断，非外部批评）："My software factory was intentionally set up to **let the model decide the how of the workflow entirely**" ＋ "delivered absolutely nothing of value and also **not taught me anything about how to operate a better one**"；
+  - 收束问句："**Which is why I'm honestly asking myself more and more why we are doing this.**"
+  - → 对 loop 治理的含义（指针，判读在 `02_research/01_agent_engineering/loop_engineering/` 停止条件区）：这是"**无停止条件、无收益判据的无限执行**"的一手标本——与 Osmani 的 outer-loop 裁决、Cherny 的质量守门同题对照。⚠️ 引用必须带两个 caveat：单样本、单人、任务域未公开。
 
 ---
 

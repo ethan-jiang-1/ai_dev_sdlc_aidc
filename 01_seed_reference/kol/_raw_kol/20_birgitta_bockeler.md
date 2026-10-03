@@ -43,7 +43,7 @@ key_concepts:
 | 2026-02-17 | 《Harness Engineering - first thoughts》定义篇（回应 OpenAI 零人写码实验） | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html) |
 | 2026-04-02 | 《Harness engineering for coding agent users》：Guides + Sensors 完整心智模型 | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html) |
 | 2026-05 | 传感器三部曲（Maintainability / Three More Static Analysis / Test Suite as Regression Sensor）——⚠️ 日期与 URL 待统一核验（2026-10-03 Morris 深挖核得 Maintainability=05-27，与早期研究的 05-19 序列冲突） | ⏳ |
-| 2026-08-11 | **TDD inside the agent loop**：实验显示 agent 循环内跑 TDD 无可测收益——对自己的主张做实证检验 | [已核](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) |
+| 2026-08-10/11 | **TDD inside the agent loop**：实验显示 agent 循环内跑 TDD 无可测收益——对自己的主张做实证检验（页标 08-10，另一回源记 08-11——时区/更新差异待统一；Farley 频道 09-23 已出频道级回应，见 `03` 卡归属勘误） | [已核](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) |
 | （系列延续，日期待核） | 《The role of developer skills in agentic coding》 | [页已核](https://martinfowler.com/articles/exploring-gen-ai/13-role-of-developer-skills.html)，作者/日期待核 |
 
 **判语**：2026 年内她是"方法论从定义走向实证"的唯一样本——别人在表态，她在做实验；08-11 的 null result 是本库"验证口径拉扯"（见 `02` 卡张力线）的第一块实证砖。
