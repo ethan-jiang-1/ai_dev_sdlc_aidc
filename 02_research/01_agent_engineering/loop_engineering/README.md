@@ -102,7 +102,7 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 
 **素材形态（2026-09-26 回源轮定，取代上午的"每人建卡"设想）**：
 **回源档案（`raw/evidence-*.md`）是素材的常态形态**——按问题组织、带引用链、一次回源一份档案。
-深度四件套卡（[`01_seed_reference/kol/_raw_loop_engineering/`](../../../01_seed_reference/kol/_raw_loop_engineering/README.md) `<slug>/`）
+深度四件套卡（[`01_seed_reference/loop_engineering/`](../../../01_seed_reference/loop_engineering/README.md) `<slug>/`）
 只给"素材多到一份回源档案装不下"（**≥3 份独立一手长文**）的人。**当前无待建卡**——已有的 andrew_ng 卡是**规则设立前的历史卡**（其独立一手长文仅 1 份；保留它因他是命名事件锚点，**不代表达标**）；
 其余入册者的素材留在 evidence 档案，**不为每人建卡**（词源碎片级、中文编译者更不建）。
 
@@ -188,4 +188,4 @@ harness engineering 2025-11）**只入 `raw/00-timeline.md` 作谱系背景，�
 | 现在做到哪、下一步干什么 | [`CURRENT.md`](CURRENT.md) |
 | 有哪些议题、答了几个 | [`digested/README.md`](digested/README.md)（问题看板） |
 | 三件骨架每一点上各家怎么做、为什么工作、边界在哪 | [`stop_conditions/README.md`](stop_conditions/README.md)（按点深挖区，2026-09-28 起） |
-| 单个人的完整观点 | [`digested/kol/`](digested/kol/andrew_ng.md)（已消化）/ `01_seed_reference/kol/_raw_loop_engineering/`（素材） |
+| 单个人的完整观点 | [`digested/kol/`](digested/kol/andrew_ng.md)（已消化）/ `01_seed_reference/loop_engineering/`（素材） |

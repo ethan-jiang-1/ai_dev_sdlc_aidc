@@ -3,7 +3,7 @@
 > 原文: Andrew Ng, 2026-06-30 · 消化自 [X post](https://x.com/AndrewYNg/status/2071988145667928442) + ThinkInAI 中文解读
 >
 > **本文件是主题的消化稿，不是素材权威**。一手原文与逐字引句在
-> [`01_seed_reference/kol/_raw_loop_engineering/andrew_ng/`](../../../../../01_seed_reference/kol/_raw_loop_engineering/andrew_ng/profile.md)
+> [`01_seed_reference/loop_engineering/andrew_ng/`](../../../../../01_seed_reference/loop_engineering/andrew_ng/profile.md)
 > （`raw_ng_x_post_en.md` 英文原文 / `quotes.md` 逐字引句 / `sources.md` 来源与缺口）。
 > 素材与本文冲突时**以素材为准**。
 

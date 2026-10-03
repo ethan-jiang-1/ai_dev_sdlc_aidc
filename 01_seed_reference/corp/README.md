@@ -90,5 +90,5 @@ kol/      ← 人物与事件（影响力个体 + 线下聚会）
 ## 当前状态
 
 - `_raw_aws/`：6 个内容文件 + README + figures/。有 `## 来源` 节但缺少 frontmatter
-- `_raw_ecosystem/`：7 个内容文件 + README + figures/。原 02/03/05/07 已移至 `../kol/_abandoned_no_reference/`（缺少可验证 URL）
+- `_raw_ecosystem/`：7 个内容文件 + README + figures/。原 02/03/05/07 已移至 `../_abandoned_no_reference/`（缺少可验证 URL）
 - 待办：frontmatter + URL 溯源（与 `kol` 下的文件同样的处理标准）

@@ -71,8 +71,8 @@ research/
 | 想看什么 | 路径 |
 |---------|------|
 | 具体的人怎么说 | `../../../01_seed_reference/kol/_raw_kol/` |
-| 四家公司达成了什么共识 | `../../../01_seed_reference/kol/_raw_frontier/` |
-| Fable 5 具体改变了什么 | `../../../01_seed_reference/kol/_raw_fable5/` |
+| 四家公司达成了什么共识 | `../../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/` |
+| Fable 5 具体改变了什么 | `../../../01_seed_reference/field_samples/fable5/synthesis/` |
 | Agile 社区怎么回应 AI | `../../../01_seed_reference/kol/_raw_agile_manifesto_2026/` |
 | 工业界的大会声音 | `../../../01_seed_reference/kol/_raw_promatic_summit_2026/` |
 | 从实验到生产的转折 | `../../../01_seed_reference/kol/_raw_engelberg_2026/` |

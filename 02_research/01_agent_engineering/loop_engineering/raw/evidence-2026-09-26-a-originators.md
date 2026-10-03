@@ -324,7 +324,7 @@ Claude Code 团队（Cherny 领导）2026-06-30 官方博客给出了产品的�
 5. **Cherny 无个人博客/长文谈 loop engineering**：搜索结果中他的深度输出全部是访谈/对谈（YC、WorkOS×Acquired、Station F 等），无个人书面长文。
 6. **swyx "loopcraft" 原文未取回**：latent.space/p/ainews-loopcraft-the-art-of-stacking 404（经 latent.space 根域跳转）；仅持有 Runkle 对它的引用句。
 7. **Andrew Ng 2026-06-30 公开信原文未取得**：仅 Times of India / storyboard18 / otontechnology / 知乎转述（"three loops" 框架）；Ng 的信不是本次四目标之一，未继续追。
-   > ⚠️ **调和注记（2026-09-26 评审轮）**：本条指 **A 路未能从 X 重新抓取**（X 全域不可达）。该文**库内早有一手归档**——[`01_seed_reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md`](../../../../01_seed_reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md)（The Batch 交叉发布全文，sources.md 标"一手·全文完整"），台账 §A 的"一手"标记以此为准，**不受本负结论影响**。
+   > ⚠️ **调和注记（2026-09-26 评审轮）**：本条指 **A 路未能从 X 重新抓取**（X 全域不可达）。该文**库内早有一手归档**——[`01_seed_reference/loop_engineering/andrew_ng/raw_ng_x_post_en.md`](../../../../01_seed_reference/loop_engineering/andrew_ng/raw_ng_x_post_en.md)（The Batch 交叉发布全文，sources.md 标"一手·全文完整"），台账 §A 的"一手"标记以此为准，**不受本负结论影响**。
 8. **ADTmag 2026-07-01 文章 HTTP 403**（标题确认存在：Loop Engineering Emerges as Developers Put AI Coding Agents on Repeat）。
 9. **bianews Steinberger 采访（"闭合环路才是编程Agent的唯一生死线"）HTTP 502**；未取得，原访谈出处不明。
 10. **awesome-loop-engineering 的 QUOTES.md / HF dataset resources.jsonl 不可达**（raw.githubusercontent.com 与 huggingface.co 在本环境间歇超时）；该库本身是二手聚合，不入册。

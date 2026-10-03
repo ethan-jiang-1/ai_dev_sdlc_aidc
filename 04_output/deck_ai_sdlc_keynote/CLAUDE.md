@@ -104,8 +104,8 @@ Phase 5: 生产管线 → 生成图片 → 合成 PPTX
 | 想看什么 | 路径 |
 |---------|------|
 | 14 位 KOL 深度拆解 | `../../01_seed_reference/kol/_raw_kol/` |
-| 跨公司变革共识（7人） | `../../01_seed_reference/kol/_raw_frontier/` |
-| Fable 5 变革信号 | `../../01_seed_reference/kol/_raw_fable5/` |
+| 跨公司变革共识（7人） | `../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/` |
+| Fable 5 变革信号 | `../../01_seed_reference/field_samples/fable5/synthesis/` |
 | Deer Valley Retreat (Feb 2026) | `../../01_seed_reference/kol/_raw_agile_manifesto_2026/` |
 | Pragmatic Summit (Feb 2026) | `../../01_seed_reference/kol/_raw_promatic_summit_2026/` |
 | Engelberg Retreat (Jul 2026) | `../../01_seed_reference/kol/_raw_engelberg_2026/` |

@@ -1,7 +1,7 @@
 # KOL 台账 — Loop Engineering（2026-06 起）
 
 > ★ **本文件是本主题「谁在说」的唯一名单权威。** 收录判据见 [`../README.md`](../README.md) §1；
-> 一手素材统一在 [`01_seed_reference/kol/_raw_loop_engineering/`](../../../../01_seed_reference/kol/_raw_loop_engineering/README.md)
+> 一手素材统一在 [`01_seed_reference/loop_engineering/`](../../../../01_seed_reference/loop_engineering/README.md)
 > （本文件**只放台账与指针，不放人物卡片**）。
 
 **观测日期**：2026-09-26；**2026-09-27 I 路**追加谱系与候选注记，**§A 六人名单不增**。三路回源见 [evidence-a](evidence-2026-09-26-a-originators.md) / [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) / [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)。簇外高影响面见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)；I2 档案混合主验与侦察回源，侦察条目不计票。**「待回源」= 不可作主张依据。**
@@ -85,7 +85,7 @@
 
 | 来源 | 性质 | 提供了哪些线索 / 已核实哪些 |
 |---|---|---|
-| [`01_seed_reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md`](../../../../01_seed_reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md) | **一手**（已归档） | Andrew Ng 三环；**Cherny / Steinberger 两个词源人物** |
+| [`01_seed_reference/loop_engineering/andrew_ng/raw_ng_x_post_en.md`](../../../../01_seed_reference/loop_engineering/andrew_ng/raw_ng_x_post_en.md) | **一手**（已归档） | Andrew Ng 三环；**Cherny / Steinberger 两个词源人物** |
 | [`raw/evidence-2026-09-26-a-originators.md`](evidence-2026-09-26-a-originators.md) | **一手回源档案**（A 路·词源与定义者四人） | Cherny 访谈句三版本对照与 YC transcript「loop 出现 0 次」；Steinberger 推文 snowflake 定位与「无深度内容」结论；Runkle 四环逐字；Osmani 两篇全取得（分层四级）；CC 团队 06-30 官方定义交叉核验——**「词源＝热度碎片、定义＝事后工程化」的判定依据** |
 | [`raw/evidence-2026-09-26-b-stop-and-scheduling.md`](evidence-2026-09-26-b-stop-and-scheduling.md) | **一手回源档案**（B 路，9 个一手记录块全文） | Ralph 原文、Anthropic 两篇工程文、Claude Code `/goal`//`/loop`/auto mode 官方文档、OpenAI auto-review、LangChain 四环；**停止条件与外层调度两问判定收敛**；负结论 4 条 |
 | [`raw/evidence-2026-09-26-c-autonomy-and-convergence.md`](evidence-2026-09-26-c-autonomy-and-convergence.md) | **一手回源档案**（C 路） | Kief Morris 四级阶梯、Böckeler steering loop 与归属修正、marmelab 两篇辨析、Stripe steering 原句、OpenSpec/Spec Kit 官方动作、橙皮书定性；**自主度位置分档成立/量化分档未成型**；**收敛判定成立** |

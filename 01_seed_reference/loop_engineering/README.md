@@ -1,24 +1,24 @@
 ---
 type: index
 content_type: readme
-directory: kol/_raw_loop_engineering
+directory: 01_seed_reference/loop_engineering
 description: Loop Engineering 一波声音（2026-06 起）——一人一目录的一手素材集合
 research_date: 2026-09-26
 ---
 
-# _raw_loop_engineering — Loop Engineering 一波声音（2026-06 起）
+# loop_engineering — Loop Engineering 一波声音（2026-06 起）
 
 > 本集合收 **2026-06 起**围绕 "loop engineering" 这个公开名字发声的人的一手素材。
-> 它是 [`_raw_kol/`](../_raw_kol/README.md)（12 位影响力人物深度拆解，2026-07-08）的**主题波次补充**：
+> 它是 [`_raw_kol/`](../kol/_raw_kol/README.md)（12 位影响力人物深度拆解，2026-07-08）的**主题波次补充**：
 > `_raw_kol/` 按人铺全景，本集合按**一次命名事件**（2026-06 loop engineering 成为公开名字）收一波声音。
 
 **唯一名单权威不在这里**——谁入册、号召力依据是什么、每个人对本主题的主张一句话，
-在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
+在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
 本 README 只管**素材索引**（这个集合里有什么、卡片怎么写）。
 
 ## 收录判据
 
-沿用 [`../README.md`](../README.md) 的两条铁律，另加本集合自己的时间窗：
+沿用 [`../kol/README.md`](../kol/README.md) 的两条铁律，另加本集合自己的时间窗：
 
 | 项 | 规则 |
 |---|---|
@@ -28,10 +28,10 @@ research_date: 2026-09-26
 
 ## 卡片格式（一人一目录）
 
-与 [`01_seed_reference/field_samples/fable5/run_*/`](../../field_samples/fable5/README.md) 同构，四件套：
+与 [`../field_samples/fable5/run_*/`](../field_samples/fable5/README.md) 同构，四件套：
 
 ```text
-_raw_loop_engineering/
+loop_engineering/
 └── <slug>/                    # 目录名用英文小写下划线，如 andrew_ng
     ├── profile.md             # 这人是谁、为什么在这波里、对本主题的主张
     ├── quotes.md              # 逐字引句（英文原句优先）+ 每句为什么重要
@@ -56,5 +56,5 @@ Runkle / Osmani / Huntley 等已回源者的素材在 evidence 档案（a/b/c）
 
 | 集合 | 关系 |
 |---|---|
-| [`../_raw_kol/`](../_raw_kol/README.md) | 人物全景档案。本集合里若有人已在那边有卡片（Boris Cherny、Kief Morris、Ryan Lopopolo、Karpathy、Gergely Orosz），**只写指针 + loop 专项增量，不复制人物背景** |
-| [`../../field_samples/fable5/`](../../field_samples/fable5/README.md) | 按**模型**（Fable 5）收样本；本集合按**命名事件**收声音。同一人可能两边都有，各收各的角度 |
+| [`../kol/_raw_kol/`](../kol/_raw_kol/README.md) | 人物全景档案。本集合里若有人已在那边有卡片（Boris Cherny、Kief Morris、Ryan Lopopolo、Karpathy、Gergely Orosz），**只写指针 + loop 专项增量，不复制人物背景** |
+| [`../field_samples/fable5/`](../field_samples/fable5/README.md) | 按**模型**（Fable 5）收样本；本集合按**命名事件**收声音。同一人可能两边都有，各收各的角度 |

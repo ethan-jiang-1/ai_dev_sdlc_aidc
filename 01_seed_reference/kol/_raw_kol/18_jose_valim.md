@@ -21,12 +21,14 @@ key_concepts:
 
 > 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。建卡日 2026-10-03。
 
-## 当前立场小结（2026-10-03 建卡）
+## 当前立场小结（2026-10-03 建卡，同日全文细读补强）
 
 1. **反"为 agent 设计语法"**："any new programming language that claims to be made 'for coding agents' and ultimately focuses on syntax is effectively **building around today's limitations**."
-2. **IDE/LSP 讣告体**："The death of IDEs has been pronounced several times over the last two years. Once the obituary is finally published, **I don't expect LSPs to survive either.**"——主张 **program databases over LSPs**。
-3. **运行时可观测取代调试器**："We should expose the runtime and state in our systems in ways that **agents can query and explore programmatically**."（runtime observability over debuggers）
-4. **保证更强了**："there has never been a better time to provide **stronger guarantees** about our software."
+2. **IDE/LSP 讣告体**："The death of IDEs has been pronounced several times over the last two years. Once the obituary is finally published, **I don't expect LSPs to survive either.**"（原句精确版："The Language Server Protocol was designed primarily for IDEs, and many of its operations are biased towards documents and positions: file, line, and column"）——主张 **program databases over LSPs**。
+3. **运行时可观测取代调试器**："agents can instrument code, collect traces, and correlate information **much faster than we can**. We should give them interfaces that take advantage of that."——runtime observability over debuggers。
+4. **类型 = 信息而非省事（新增）**："making types and intentions explicit gives the compiler, other agents, and ourselves **more information to work with**. More importantly, the languages whose types can be fully inferred are generally a subset of those whose types can be checked, so optimizing for inference can ultimately limit both expressiveness and the guarantees."——推理/检查的权衡直指"语法省事"路线的隐藏代价。
+5. **生态论（新增维度）**："Coding agents could dramatically reduce the cost of building an ecosystem while **simultaneously weakening one of the forces that causes ecosystems to form in the first place**."＋"agents are not bothered by boilerplate"（人体工学贬值）；跨语言体感："the differences in syntax that feel enormous to me seem considerably less important to them"（HTML/CSS/JS/Elixir/Rust/Lean 实测）。
+6. **保证更强了**："there has never been a better time to provide **stronger guarantees** about our software."（文章官方 tags：AI · runtime · guarantees；全文分 Reflections / Agentic tooling 两部）
 
 ---
 
