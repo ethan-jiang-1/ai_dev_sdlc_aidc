@@ -152,7 +152,7 @@ Entire 是 15 人、6 个国家的全远程团队。Agent 解决了远程工作�
 > 2026-10-03 增量回源（keynote 页与播客页直抓）。"Agent 装配线"口径的两步延伸：
 
 - **08-20 TestMu keynote《Is the developer lifecycle dead?》**："The tools and processes we use to ship software — **tickets, repos, pull requests, deployments — were designed for humans writing every line of code.** In a world where agents are running the loops, is the software development lifecycle as we know it dead?"——工厂重置论推到整个 SDLC。
-- **09-22 Dev Interrupted《Stop pretending you read every line of code》**：治理机制落地——"**Hooks carry the context, session logs the why, PRs need owners.**"——git forge 成为 agent 时代的治理面。
+- **09-22 Dev Interrupted《Stop pretending you read every line of code》**（transcript 全文已核）：治理机制完整表述——"the fix is **context, injected before the prompt through hooks and captured afterward as session logs committed next to the code**"；他的核心框架："**code is the what and the session log is the why**"；所有权升级："**every pull request needs a business owner, not just a code owner**"——git forge 成为 agent 时代的治理面（同场 Apiiro 的 Idan Plotnik 给出风暴数据："agents shipping more code as Mythos scans surface **10x the vulnerabilities**"）。
 - （口径追溯，窗口边缘）07-13 Stellar Work #61："agents write the code, **humans own the intent**, and the most valuable artifact in software is no longer the file. **It's the session.**"
 
 **判语**：2 月的"工厂重置"是产品宣言；8-9 月它长出了具体机制（hook / session / owner）与一个被点名的靶子——"假装每行都读"的人审惯例。
