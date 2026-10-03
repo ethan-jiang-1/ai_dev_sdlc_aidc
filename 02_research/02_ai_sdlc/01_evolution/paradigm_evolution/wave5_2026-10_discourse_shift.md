@@ -26,7 +26,7 @@
 
 ## 四、下一轮待办
 
-1. 六人深挖（Farley / Lopopolo / Morris / Orosz / Huntley / Ronacher）结果并入各卡轨迹表（进行中）。
-2. Lopopolo org 归属一手核验；TW Vol 35 回查；Farley YouTube 通道补口。
+1. ~~六人深挖~~ **已完成（2026-10-03）**：Farley/Lopopolo/Morris/Orosz/Huntley/Ronacher 六档案已集成入各卡——**七条全部得到加强**，新增跨卡发现：agent 间通信现象 09-06 即现形（Thorsten #98 → Willison 10-01 理论化）、idea guy 平反的时间线（Huntley 02-27 → DHH 07-26）、Lopopolo 自述五轴（utilization→effectiveness 降级）。**建议：七条已具备进 result 线的证据密度，待用户判定。**
+2. Lopopolo org 归属一手核验 ✅（hyperbo.la + GC 官方博客）；TW Vol 35 回查（未出）；Farley [asr] 待核句已核（Claude Mythos）。
 3. Osmani 剩余 5 篇正文回源（evidence-z §五）。
-4. wave5 升格判断：若六人深挖后七条仍成立 → 提请进入 result 线。
+4. wave5 升格判断：**七条已强化，待用户判定是否进 result 线。**

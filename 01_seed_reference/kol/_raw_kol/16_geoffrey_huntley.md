@@ -60,8 +60,8 @@ key_concepts:
 | 阶段 | 日期 | 立场标记 | 关键原句 / 锚点 |
 |------|------|---------|----------------|
 | A Ralph 世界观化 | 2026-01-13/17 | "everything is a ralph loop"；"**software development is dead - I killed it**"；Loom 首曝 | /loop/ + Dev Interrupted 播客（01-13） |
-| B 个体体验普遍化 | 2026-02-05 | "teleport to the future and rob your future self"；**"no artisanal hand-crafted commits by end of 2026"** | /teleport/（回应 Orosz swarm 失眠帖） |
-| C 经济判断定调 | 2026-02-27 | 开发成本 **$10.42/小时**；K 形分化；护城河 = distribution/brand/steaks-handshakes | /real/ |
+| B 个体体验普遍化 | 2026-02-05 | "teleport to the future and rob your future self"；**"no artisanal hand-crafted commits by end of 2026"**；同帖已喊 "**The future belongs to idea guys that can just do**"——比 DHH `15` 卡 07-26 的 idea guy 平反早五个月 | /teleport/（回应 Orosz swarm 失眠帖）＋ /real/ 页眉 |
+| C 经济判断定调 | 2026-02-27 | 开发成本 **$10.42/小时**（"less than minimum wage and a burger flipper at macca's gets paid more"）；**知识/技能商品化 → 身份危机**（Cursor 聚会上"几乎没人是软件开发者"）；护城河 = "Distribution. Any form of distribution. Brand awareness. **Steaks and handshakes.** Utility-based pricing"；激进建议："If your company has banned AI outright, you need to **depart right now**"；认识论："Anyone who says that they know for sure is selling horseshit. One thing is absolutely certain: **things will change, and there's no going back.**" | /real/（全文 17k chars 已核） |
 | D 软件工厂具象化 | 2026-03-09→15 | "**I'm on the loop, not in the loop**"；risk-matrix 免人工评审；三段移植法 | /rad/ · /frontier/（采访）· /porting/ |
 | E 地缘/认知安全 | 2026-03-16 | "Open source always was and always will be a **financial weapon**"；cogsec："outsourcing their cognitive security to someone else" | /warfare/ · /cogsec/ |
 | F 布道高峰 | 2026-05→06 | Miami 炉边 13 条 hot takes："**JIRA ticket monkeys are cooked**"；17 城巡回（/livid/ 付费墙） | /miami/（06-26）+ AI Engineer Miami/Singapore |
