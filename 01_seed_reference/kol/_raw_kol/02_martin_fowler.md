@@ -169,6 +169,10 @@ Fowler 的基本判断：敏捷核心原则与 AI 有强烈协同效应。
 
 文章核心是**反拟人化**："we shouldn't anthropomorphize, treating them as conscious beings… They are (software) machines… nurtured with the values of their creators."——反的是 LLM-voice 与拟人化，**不反使用**，且把责任指回培养它们的公司与文化。07-21 他已写 "I've been noticing the stench of LLM-speak more and more"，09-17 收拢成文。文中他引 Jessica Kerr 的**使用义务论**作为自己的实用立场（与个人反感并置）："not only are they useful, **it is irresponsible not to use them**…. They're more thorough, as well as faster."——"不喜欢"与"必须用"在同一篇文章里正面共存，这是他 9 月立场最诚实的切面。
 
+**全文补采（2026-10-03）**两个此前未入卡的论点：
+- **乐观机制**："Much of this may be because **LLMs are young - we haven't trained them to grow up yet. Maybe I'll like them once they mature.**"（并引民调：人们觉得有用但认为对社会有害——他把这个矛盾归因于"年轻"）；
+- **把处世 hack 套在 LLM 上**："One of my most successful life-hacks is to **avoid people I don't like or don't trust**… hanging out with pleasant, capable people, the people with integrity, has made my life a far better one."——对"培养者价值观"论的私人操作面：避开不喜欢的 agent，如同避开不喜欢的人。
+
 **关系：确认③（照用不误）+ 新增"个人情感立场"维度**（卡内此前缺失的一层）。
 
 ### 二、验证口径被双向拉扯：强化与内部张力并存（2026-07～09）
