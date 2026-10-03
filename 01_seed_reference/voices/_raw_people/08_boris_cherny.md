@@ -143,7 +143,7 @@ Cherny × Karpathy（2026）增添了哲学层次：
 
 > 2026-10-03 增量回源（CHM 官方回顾 + Business Insider 直抓；X 原帖经 Willison 转载页核实并标注）。9 月三连发声把口号收束成机制主张：
 
-- **09-23 CHM Live 对谈**："What happens when coding stops being the hard part?… why he believes **curiosity and judgment may matter more than coding expertise** in the years ahead."——"已死"落到人的剩余价值：好奇与判断。
+- **09-23 CHM Live 对谈**："What happens when coding stops being the hard part?… why he believes **curiosity and judgment may matter more than coding expertise** in the years ahead."——"已死"落到人的剩余价值：好奇与判断。同场新表述：用 AI 造产品"feels more like **studying a living system** than writing traditional software"（CHM Editorial 回顾语，2026-09-29）。
 - **09-12 回信开发者（Business Insider）**：邮件标题 "What to do about slop?"——他的回答：开发者职责是 "**hold the bar on code quality**"。
 - **09-11 X 帖（经 Willison 转载）**："**Production code written by Claude should have a higher bar than if it was written by a human.** At Anthropic, we have many guardrails in place… Claude-powered fuzzers running daily, automated code reviews and security reviews…"——"已死"论者同时主张 AI 代码标准应**高于**人工。
 
