@@ -32,12 +32,13 @@ key_concepts:
 
 ## 当前立场小结（2026-10-03 建卡，同日深挖扩充）
 
-1. **双纲领（2026-10-02，技术层 + 组织层）**："Software doesn't need to be readable by a human. **It needs to be explainable to a human.**" ＋ "The craft has been commoditized, but **access has not**."＋ "Agile assumed writing software was the costly, scarce activity."
+1. **双纲领（2026-10-02，技术层 + 组织层）**："Software doesn't need to be readable by a human. **It needs to be explainable to a human.**" ＋ "The craft has been commoditized, but **access has not**."＋ "Agile assumed writing software was the costly, scarce activity."；框架前提："Forty years of computing was designed around humans as **the reader, writer and operator**"——他主张这不再是设计目标。
 2. **验证转向（2026-07-23，加入 Antithesis）**："**Creation is now near-free. Verification/understanding is not, yet.**"——他自己从"造"转向"验"，并给评审争论开方：形式验证 + LLM adversarial review + pre-commit 分析器。
-3. **极端自动化的自述**："I haven't written code by hand for **two years**."
-4. **经济判断**："The economics can be cooked, and how I develop software has completely, fundamentally changed."＋"cost of software development is **$10.42 an hour**"（02-27，K 形分化，护城河=distribution/brand）。
-5. **环上站位**："**I'm on the loop, not in the loop**"（03-09）——risk-matrix 免人工评审，验证交给类型背压。
-6. **类型系统 = 背压**："Types are a form of verification. They provide back pressure: compiler errors that the LLM picks up and fixes automatically, every loop."
+3. **经济机制（全文精化）**："the economics of AI are cooked because **adoption is nowhere near what is needed to achieve ROI on the amount of capital deployed**. This is why all the labs are hiring aggressively to staff up **professional services organizations**."——"cooked" 不是修辞，是资本部署/采纳率/ROI 的缺口论证。
+4. **languages are fungible now**：CTO 旧世界要养 Ruby/.NET/Java 三支队伍（"tribal ideology about programming languages"）→ "**Now you can run loops to port from one language to the next.**"——语言可移植循环让语言选择失去护城河意义。
+5. **极端自动化的自述**："I haven't written code by hand for **two years**."
+6. **环上站位**："**I'm on the loop, not in the loop**"（03-09）——risk-matrix 免人工评审，验证交给类型背压。
+7. **类型系统 = 背压**："Types are a form of verification. They provide back pressure: compiler errors that the LLM picks up and fixes automatically, every loop."
 
 ---
 
@@ -66,7 +67,7 @@ key_concepts:
 | E 地缘/认知安全 | 2026-03-16 | "Open source always was and always will be a **financial weapon**"；cogsec："outsourcing their cognitive security to someone else" | /warfare/ · /cogsec/ |
 | F 布道高峰 | 2026-05→06 | Miami 炉边 13 条 hot takes："**JIRA ticket monkeys are cooked**"；17 城巡回（/livid/ 付费墙） | /miami/（06-26）+ AI Engineer Miami/Singapore |
 | G **验证转向** | 2026-07-23 | **加入 Antithesis**；"Creation is now near-free. **Verification/understanding is not, yet.**"；评审解法 = 形式验证 + LLM adversarial review + pre-commit 分析器 | /slop/ |
-| H 纲领收束 | 2026-09-27→10-02 | Singapore 演讲全稿："unit economics of business have forever changed"；10-02 双纲领：技术层 readable→explainable ＋ 组织层 "commoditized craft, access has not"；同日引 Valim 并评 "**agent-first rather than human-first will get ahead… end up like Solaris**" | /eighteen-month-recap/ · /readable/ · /access/ |
+| H 纲领收束 | 2026-09-27→10-02 | Singapore 演讲全稿："unit economics of business have forever changed"；10-02 双纲领：技术层 readable→explainable ＋ 组织层 "commoditized craft, access has not"；**Valim 完整语境**：引其 9-24 推文（communities/ergonomics/compilers 三问）后表态 "Highly recommend reading this article"，随即立场相反："**agent-first rather than human-first will get ahead**. Those who don't will fall behind and **end up like Solaris**"；另立 "**languages are fungible now**"（CTO 旧世界养三支语言队伍 → "run loops to port from one language to the next"） | /eighteen-month-recap/ · /readable/ · /access/ |
 
 **判语**：2026 年他是"实践者 → 布道者 → **验证转向者**"的完整弧线——1 月把 Ralph loop 世界观化，2-3 月给出经济判词与工厂方法论，3 月中起加挂地缘/认知安全轴，7 月用加入 Antithesis 的行动给"验证不可省"背书，10 月收束成双纲领。对本库争论的两点价值：①他是"评审门免除派"里唯一给出替代方案（形式验证+对抗评审）的人；②他与 Valim 的引用互动（human-first vs agent-first，"end up like Solaris"）是"人类受众派 vs agent 受众派"对立轴的第一现场。Ralph 起源（2025-07-14 /ralph/）按时间铁律留一行背景，详见 loop 台账 evidence-b §1。
 
