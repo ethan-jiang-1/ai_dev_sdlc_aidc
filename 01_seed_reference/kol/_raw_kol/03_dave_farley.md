@@ -55,7 +55,7 @@ Farley 做了一个大胆的历史比较：
 | **Böckeler 实验的频道回应（⚠️ 归属勘误）** | 2026-08-19 / 09-23 | 两条为 **Emily Bache 主讲**（频道系列）；9-23（wK5WgbqtI50）回应 Böckeler《TDD inside the agent loop》（页标 2026-08-10）："I am not convinced… **I'm not going to be abandoning TDD with agentic AI**"，公开挑战实验设计并征集研究——**引用须写"频道立场/Farley 认可转发"** | 频道页 + 字幕在档 |
 | 大事回应 + 会议 | 2026-07→10 | **DHH pencils down：查无回应**（10 个字幕 grep=0、bsky 全 feed 无、Sam Ruby 文 0 次）；**10-14/15 KanDDinsky 2026 Berlin 已证实**（bsky 07-30 自宣） | 深挖档 |
 
-**判语**：稳定型锚点的加强版——他不但没有 2026 式转身，还在 08-05 给出年度最重的安全工程表述（"the engineering discipline is the safety"），对 loop 之争认 fitness function 而拒 eval 词汇，9 月守门大讨论以"频道回应 Böckeler"的方式参与而非亲自下场。**渠道结论**：Bluesky（davefarley77.bsky.social）已取代被墙的 YouTube/个人站成为其最高质量一手源；字幕均为 [asr]，"Mythus model" 等句标注待回源不引用。
+**判语**：稳定型锚点的加强版——他不但没有 2026 式转身，还在 08-05 给出年度最重的安全工程表述（"the engineering discipline is the safety"），对 loop 之争认 fitness function 而拒 eval 词汇，9 月守门大讨论以"频道回应 Böckeler"的方式参与而非亲自下场。**渠道结论**：Bluesky（davefarley77.bsky.social）已取代被墙的 YouTube/个人站成为其最高质量一手源；字幕均为 [asr]，其中 "Mythus" 已核为 **Anthropic Claude Mythos**（红队演习在公开 N-day 披露后数小时内产出可利用弱点、"N-day to N-hour"、发布一度被锁——与 Fowler `02` 卡 08-04 "实验室逃逸" 同一背景事件；来源：[CSA 研究注记](https://labs.cloudsecurityalliance.org/research/csa-research-note-claude-mythos-autonomous-offensive-thresho/)等，二手转述为主、引用时标注）。
 
 > 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。
 
