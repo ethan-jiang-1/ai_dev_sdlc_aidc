@@ -15,6 +15,7 @@ key_concepts:
   - computational_over_inferential_sensors
   - tdd_in_agent_loop_experiment
   - steering_loop
+  - ashby_requisite_variety
 ---
 
 # Birgitta Böckeler — Harness Engineering 方法论的第一作者：Guides + Sensors
@@ -42,7 +43,7 @@ key_concepts:
 |------|---------|------|
 | 2026-02-05 | 《Context Engineering for Coding Agents》——系列先声：context engineering 定义（引同事 Bharani Subramaniam："**curating what the model sees so that you get a better result**"）；Instructions vs Guidance 分类；**"Allowing the LLM to decide when to load context is a prerequisite for running agents in an unsupervised way"** | [已核](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) |
 | 2026-02-17 | 《Harness Engineering - first thoughts》定义篇（回应 OpenAI 零人写码实验）：**guides and sensors 原创定义**（"This frames the elements of a harness as **guides and sensors**, which may be computational or inferential."）；"Harnesses attempt to **externalise and make explicit what human developer experience brings to the table**, but they can only go so far."；"A good harness should not necessarily aim to fully eliminate human input, but to **direct it to where our input is most important**."；已预演 topology 思路（"teams pick from a set of harnesses for common application topologies"）并指出 OpenAI 原文 "only mentions 'harness' once" | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html) |
-| 2026-04-02 | 《Harness engineering for coding agent users》：Guides + Sensors 完整心智模型 | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html) |
+| 2026-04-02 | 《Harness engineering for coding agent users》：Guides + Sensors 完整心智模型——**精确定义**："**Guides (feedforward controls)** - anticipate the agent's behaviour and aim to steer it before it acts. Guides increase the probability that the agent creates good results in the first attempt. **Sensors (feedback controls)** - observe after the agent acts and help it self-correct."；调节分类三件（Maintainability / Architecture fitness / Behaviour harness）；**Ashby 必需多样性定律**作预定义拓扑的论证（"a regulator must have at least as much variety as the system it governs"）；拓扑愿景："a bundle of guides and sensors that **leash** a coding agent to the structure, conventions and tech stack of a topology"（动词用 leash） | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html) |
 | 2026-05-19→27 | 传感器长文 *[Maintainability sensors for coding agents](https://martinfowler.com/articles/sensors-for-coding-agents.html)*——**单篇持续更新（19 May 发布、20/27 两度更新，2026-10-03 页面核验）**，内含 "The test suite as a regression sensor" 等节（早期研究误拆为三篇，已修正） | 页面已核 |
 | 2026-08-10/11 | **TDD inside the agent loop**：实验显示 agent 循环内跑 TDD 无可测收益——对自己的主张做实证检验（页标 08-10，另一回源记 08-11——时区/更新差异待统一；Farley 频道 09-23 已出频道级回应，见 `03` 卡归属勘误） | [已核](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) |
 | （系列延续，日期待核） | 《The role of developer skills in agentic coding》 | [页已核](https://martinfowler.com/articles/exploring-gen-ai/13-role-of-developer-skills.html)，作者/日期待核 |

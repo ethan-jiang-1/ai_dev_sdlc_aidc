@@ -3,11 +3,12 @@ type: index
 content_type: readme
 directory: _abandoned_no_reference
 description: 无源可溯的内容收容所——所有文件因违反来源铁律或时间铁律被移入
+moved: 2026-10-03 自 kol/ 上移至种子层顶层（收容内容跨 kol/corp 两库，是种子层公共设施）
 ---
 
 # _abandoned_no_reference — 内容收容所
 
-> **铁律**：本库所有材料必须有可验证的来源 URL + 必须在 2026 年 1 月之后。
+> **铁律**：种子参考库（`kol/`、`corp/` 等）所有材料必须有可验证的来源 URL + 必须在 2026 年 1 月之后。
 > 以下文件因不满足此要求被移入此地。若日后找到可靠来源，可恢复。
 
 ---

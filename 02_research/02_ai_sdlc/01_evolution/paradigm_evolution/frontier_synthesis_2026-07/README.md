@@ -1,16 +1,17 @@
 ---
 type: index
 content_type: readme
-directory: _raw_frontier
+directory: 02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07
 description: 跨公司（Anthropic/OpenAI/Cursor/Google）变革共识合成，从 7 位人物 + 3 份深度研究提取
-derived_from: ai_sdlc_frontier/
+derived_from: ai_sdlc_frontier/（历史素材库位置，见 §来源全量映射）
 people_count: 7
 research_pieces: 3
 files_indexed: 4
 research_date: 2026-07-07
+moved: 2026-10-03 自 01_seed_reference/kol/_raw_frontier/ 迁入（跨人判读归研究层，kol/README 规矩#5）
 ---
 
-# _raw_frontier — 跨公司变革共识：信息地图
+# frontier_synthesis_2026-07 — 跨公司变革共识：信息地图
 
 > 来源库：`ai_sdlc_frontier/`（7 个人物/组织的一手材料 + 3 份深度研究）
 > 研究日期：2026-07-07
@@ -27,7 +28,7 @@ research_date: 2026-07-07
 3. 然后看 `02_人物深度_每个人的变革视角.md` — 每个人的独特角度和分歧
 4. 再看 `03_流程死亡清单_什么不再适用.md` — 22 条被宣布已死的做法
 
-> 原 `04_技术深水区` 已移至 `../_abandoned_no_reference/`——该文件基于 Claude Code 源码逆向分析，核心内容无法通过公开 URL 验证。
+> 原 `04_技术深水区` 已移至种子层收容所 `../../../../01_seed_reference/_abandoned_no_reference/from_frontier_04_技术深水区.md`——该文件基于 Claude Code 源码逆向分析，核心内容无法通过公开 URL 验证。
 
 如果你只读一份，读 `01`。
 如果你想知道他们哪里不一致，读 `02` 的最后一节。
@@ -42,7 +43,7 @@ research_date: 2026-07-07
 | `02_人物深度_每个人的变革视角.md` | 七人各自的触发事件、独特视角、变革处方 + 分歧矩阵 | 想做比较分析的人 |
 | `03_流程死亡清单_什么不再适用.md` | 22 条被明确宣布不再适用的流程（☠️/⚠️/🔮），每条附替代方案 | 想审计团队现有流程的人 |
 
-> ⚠️ 原 `04_技术深水区` 已移至 `../_abandoned_no_reference/from_frontier_04_技术深水区.md`——该文件核心内容（四层压缩模型、marble_origami、cache_edits 协议等）基于 Claude Code 源码逆向分析，非 Anthropic 官方公开文档，无法通过公开 URL 验证。
+> ⚠️ 原 `04_技术深水区` 已移至 `../../../../01_seed_reference/_abandoned_no_reference/from_frontier_04_技术深水区.md`——该文件核心内容（四层压缩模型、marble_origami、cache_edits 协议等）基于 Claude Code 源码逆向分析，非 Anthropic 官方公开文档，无法通过公开 URL 验证。
 
 ---
 
@@ -151,40 +152,44 @@ ai_sdlc_frontier/
 
 如果你对某个具体人物的完整论述感兴趣，应该回到 `ai_sdlc_frontier/raw_*/` 读原文 + 要点总结。
 
-如果你对原始人物**在 Fable 5 具体使用上的信号**感兴趣，去看 `../_raw_fable5/` ——那边是从 `fable5_field_signals/`（16 个样本）合成的。
+如果你对原始人物**在 Fable 5 具体使用上的信号**感兴趣，去看 [`../../../../01_seed_reference/field_samples/fable5/synthesis/`](../../../../01_seed_reference/field_samples/fable5/synthesis/README.md)——那边是从 field_samples/fable5 样本池（16 个 `run_*`）合成的。
 
 ---
 
 ## 和相邻目录的关系
 
+> 2026-10-03 迁移注记：本目录原在 `01_seed_reference/kol/_raw_frontier/`，因属跨人判读（kol/README 规矩 #5「判读不进种子层」）迁入本主题。人物素材仍在种子层，判读在研究层。
+
 ```
-aidlc_reference_kol/       ← 人物与事件
-├── _raw_fable5/           ← Fable 5 变革信号（16 个样本合成）
-├── _raw_frontier/         ← 你在这里。跨公司变革共识（7 人物 + 3 研究）
-├── _raw_kol/              ← 影响力人物深度分析
-├── _raw_promatic_summit_2026/
-├── _raw_agile_manifesto_2026/
-└── _raw_engelberg_2026/
-
-aidlc_reference_corp/      ← 企业与生态
-├── _raw_aws/              ← AWS AI-DLC 方法论
-└── _raw_ecosystem/        ← 非 AWS 全景
+01_seed_reference/
+├── corp/_raw_aws/            ← AWS AI-DLC 方法论
+├── corp/_raw_ecosystem/      ← 非 AWS 全景
+└── kol/                      ← 人物与事件（人物卡 + 三场 2026 聚会）
+    ├── _raw_kol/
+    ├── _raw_promatic_summit_2026/
+    ├── _raw_agile_manifesto_2026/
+    └── _raw_engelberg_2026/
+01_seed_reference/field_samples/fable5/
+└── synthesis/                ← Fable 5 变革信号（16 个 run_* 样本合成）
+paradigm_evolution/（本主题）
+├── frontier_synthesis_2026-07/   ← 你在这里。跨公司变革共识（7 人物 + 3 研究）
+└── wave5_2026-10_discourse_shift.md 等
 ```
 
-**`_raw_frontier` 和 `_raw_fable5` 的差别：**
+**`frontier_synthesis_2026-07`（本目录）和 `field_samples/fable5/synthesis/` 的差别：**
 
-| | `_raw_frontier` | `_raw_fable5` |
+| | 本目录 | `field_samples/fable5/synthesis/` |
 |---|---|---|
-| 来源 | `ai_sdlc_frontier/`（7 人 + 3 研究） | `fable5_field_signals/`（16 个样本） |
+| 来源 | `ai_sdlc_frontier/`（7 人 + 3 研究） | field_samples/fable5 样本池（16 个 `run_*`） |
 | 核心问题 | 人在说什么必须变？ | Fable 5 这个模型导致了什么可能要变？ |
 | 视角 | 方法论者、工程领导者 | 一线使用者、早期 adopters |
 | 证据类型 | 团队实践、官方博客、方法论框架 | 个人体验、行为观察、制度调整 |
 
-两者互补。`_raw_frontier` 给出"为什么变"的论证，`_raw_fable5` 给出"变了之后什么样"的实例。
+两者互补。本目录给出"为什么变"的论证，fable5 synthesis 给出"变了之后什么样"的实例。
 
-**`_raw_frontier` 和 `_raw_aws` 的差别：**
-- `_raw_aws`：AWS 的自顶向下方法论设计——"正确的流程应该长这样"
-- `_raw_frontier`：四家公司一线人物的自底向上实践报告——"我们试过了，旧流程死了，新做法管用"
+**本目录和 `corp/_raw_aws/` 的差别：**
+- `_raw_aws/`：AWS 的自顶向下方法论设计——"正确的流程应该长这样"
+- 本目录：四家公司一线人物的自底向上实践报告——"我们试过了，旧流程死了，新做法管用"
 
 ---
 
