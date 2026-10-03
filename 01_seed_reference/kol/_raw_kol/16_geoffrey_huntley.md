@@ -6,11 +6,19 @@ content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
   - https://ghuntley.com/readable/
+  - https://ghuntley.com/access/
+  - https://ghuntley.com/slop/
+  - https://ghuntley.com/rad/
+  - https://ghuntley.com/real/
+  - https://ghuntley.com/loop/
 key_concepts:
   - explainable_over_readable
   - software_factory
   - types_as_back_pressure
   - economics_cooked
+  - on_the_loop_not_in
+  - creation_free_verification_not
+  - access_not_commoditized
 ---
 
 # Geoffrey Huntley — "代码不需要人类可读，只需要人类可解释"
@@ -21,12 +29,14 @@ key_concepts:
 
 > 📎 本文全部内容来源：见文末 "Source:" 节及文件 frontmatter 中的 `source_urls`。本文为单人深度分析，所有引用和判断均基于该人物的公开材料。建卡日 2026-10-03。
 
-## 当前立场小结（2026-10-03 建卡）
+## 当前立场小结（2026-10-03 建卡，同日深挖扩充）
 
-1. **纲领句**："Software doesn't need to be readable by a human. **It needs to be explainable to a human.**"
-2. **极端自动化的自述**："I haven't written code by hand for **two years**."
-3. **经济判断与实践判断同时为真**："The economics can be cooked, and how I develop software has completely, fundamentally changed."
-4. **类型系统 = 背压**："Types are a form of verification. They provide back pressure: compiler errors that the LLM picks up and fixes automatically, every loop."
+1. **双纲领（2026-10-02，技术层 + 组织层）**："Software doesn't need to be readable by a human. **It needs to be explainable to a human.**" ＋ "The craft has been commoditized, but **access has not**."＋ "Agile assumed writing software was the costly, scarce activity."
+2. **验证转向（2026-07-23，加入 Antithesis）**："**Creation is now near-free. Verification/understanding is not, yet.**"——他自己从"造"转向"验"，并给评审争论开方：形式验证 + LLM adversarial review + pre-commit 分析器。
+3. **极端自动化的自述**："I haven't written code by hand for **two years**."
+4. **经济判断**："The economics can be cooked, and how I develop software has completely, fundamentally changed."＋"cost of software development is **$10.42 an hour**"（02-27，K 形分化，护城河=distribution/brand）。
+5. **环上站位**："**I'm on the loop, not in the loop**"（03-09）——risk-matrix 免人工评审，验证交给类型背压。
+6. **类型系统 = 背压**："Types are a form of verification. They provide back pressure: compiler errors that the LLM picks up and fixes automatically, every loop."
 
 ---
 
@@ -44,11 +54,20 @@ key_concepts:
 
 ## 思想变迁轨迹（2026）
 
-| 日期 | 立场标记 | 锚点 |
-|------|---------|------|
-| 2026-10-02 | 纲领成文：readable→explainable + 自述两年未手写码 + types as back pressure | ghuntley.com/readable |
+> 2026-10-03 深挖：ghuntley.com 全年 15 篇逐篇核日期（RSS 全覆盖；/livid/ 付费墙只存标题；/frontier/ 为 AI 转写稿；X 登录墙内容不采）。
 
-**判语**：入库时点单一锚点（"起点即纲领"）；Ralph loop 期前史按时间铁律留在 loop 台账（`02_research/.../loop_engineering/raw/kol-roster.md`），后续按周观察。
+| 阶段 | 日期 | 立场标记 | 关键原句 / 锚点 |
+|------|------|---------|----------------|
+| A Ralph 世界观化 | 2026-01-13/17 | "everything is a ralph loop"；"**software development is dead - I killed it**"；Loom 首曝 | /loop/ + Dev Interrupted 播客（01-13） |
+| B 个体体验普遍化 | 2026-02-05 | "teleport to the future and rob your future self"；**"no artisanal hand-crafted commits by end of 2026"** | /teleport/（回应 Orosz swarm 失眠帖） |
+| C 经济判断定调 | 2026-02-27 | 开发成本 **$10.42/小时**；K 形分化；护城河 = distribution/brand/steaks-handshakes | /real/ |
+| D 软件工厂具象化 | 2026-03-09→15 | "**I'm on the loop, not in the loop**"；risk-matrix 免人工评审；三段移植法 | /rad/ · /frontier/（采访）· /porting/ |
+| E 地缘/认知安全 | 2026-03-16 | "Open source always was and always will be a **financial weapon**"；cogsec："outsourcing their cognitive security to someone else" | /warfare/ · /cogsec/ |
+| F 布道高峰 | 2026-05→06 | Miami 炉边 13 条 hot takes："**JIRA ticket monkeys are cooked**"；17 城巡回（/livid/ 付费墙） | /miami/（06-26）+ AI Engineer Miami/Singapore |
+| G **验证转向** | 2026-07-23 | **加入 Antithesis**；"Creation is now near-free. **Verification/understanding is not, yet.**"；评审解法 = 形式验证 + LLM adversarial review + pre-commit 分析器 | /slop/ |
+| H 纲领收束 | 2026-09-27→10-02 | Singapore 演讲全稿："unit economics of business have forever changed"；10-02 双纲领：技术层 readable→explainable ＋ 组织层 "commoditized craft, access has not"；同日引 Valim 并评 "**agent-first rather than human-first will get ahead… end up like Solaris**" | /eighteen-month-recap/ · /readable/ · /access/ |
+
+**判语**：2026 年他是"实践者 → 布道者 → **验证转向者**"的完整弧线——1 月把 Ralph loop 世界观化，2-3 月给出经济判词与工厂方法论，3 月中起加挂地缘/认知安全轴，7 月用加入 Antithesis 的行动给"验证不可省"背书，10 月收束成双纲领。对本库争论的两点价值：①他是"评审门免除派"里唯一给出替代方案（形式验证+对抗评审）的人；②他与 Valim 的引用互动（human-first vs agent-first，"end up like Solaris"）是"人类受众派 vs agent 受众派"对立轴的第一现场。Ralph 起源（2025-07-14 /ralph/）按时间铁律留一行背景，详见 loop 台账 evidence-b §1。
 
 ---
 
@@ -65,10 +84,14 @@ key_concepts:
 
 > *"Software doesn't need to be readable by a human. It needs to be explainable to a human."*
 
-> *"The economics can be cooked, and how I develop software has completely, fundamentally changed."*
+> *"Creation is now near-free. Verification/understanding is not, yet."* — 2026-07-23，加入 Antithesis 当日
 
-> *"Types are a form of verification. They provide back pressure."*
+> *"The craft has been commoditized, but access has not."* — 2026-10-02，组织层纲领
+
+> *"I'm on the loop, not in the loop."* — 2026-03-09
+
+> *"The economics can be cooked, and how I develop software has completely, fundamentally changed."*
 
 ---
 
-**Source:** [readable→explainable（2026-10-02，ghuntley.com）](https://ghuntley.com/readable/)
+**Source:** [readable→explainable（2026-10-02，ghuntley.com）](https://ghuntley.com/readable/) · [access（2026-10-02）](https://ghuntley.com/access/) · [slop：加入 Antithesis（2026-07-23）](https://ghuntley.com/slop/) · [rad：on the loop not in（2026-03-09）](https://ghuntley.com/rad/) · [real：$10.42/h（2026-02-27）](https://ghuntley.com/real/) · [loop：software development is dead（2026-01-17）](https://ghuntley.com/loop/) · [eighteen-month-recap（2026-09-27）](https://ghuntley.com/eighteen-month-recap/)

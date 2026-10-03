@@ -61,7 +61,7 @@ corp/     ← 企业/厂商/分析机构（你在这里）
   └── _abandoned_no_reference/     ← 无源可溯的内容收容所
 
 kol/      ← 人物与事件（影响力个体 + 线下聚会）
-  ├── _raw_kol/                     ← 13 位影响力人物深度拆解
+  ├── _raw_kol/                     ← 人物/机构深度卡（见其 README 导航表）
   ├── _raw_frontier/                ← 跨公司变革共识合成
   ├── _raw_fable5/                  ← Fable 5 模型变革信号合成
   ├── _raw_loop_engineering/        ← Loop Engineering 一波声音（2026-06 起）

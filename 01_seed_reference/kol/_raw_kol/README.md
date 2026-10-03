@@ -40,7 +40,7 @@
 | `05_kent_beck_agile.md` | Kent Beck + Agile 社区 | XP 在 AI 时代复苏；TDD 是 Agent 的理想搭档；"我们保持怀疑，保持人性" |
 | `07_andrej_karpathy.md` | Andrej Karpathy | Vibe Coding 造词者；"agentic engineering" 扩散者（该词实为 Zed/Sobo 2025-06 引入，见卡内勘误）；Software 3.0 |
 | `08_boris_cherny.md` | Boris Cherny | Claude Code 之父，"软件工程已死"，150 PR/天，零手写代码 |
-| `09_ryan_lopopolo.md` | Ryan Lopopolo | OpenAI Harness Engineering 先驱，100 万行零人写零人审，70 PR/周 |
+| `09_ryan_lopopolo.md` | Ryan Lopopolo | Harness Engineering 提出者（OpenAI→Google Cloud，2026-07 一手核验），100 万行零人写零人审，70 PR/周 |
 | `10_kief_morris.md` | Kief Morris | IaC 之父，"in the loop → on the loop" 框架，Agentic Flywheel |
 | （Pragmatic Summit 2026）→ 独立库 | 峰会专题已独立成库：Beck+Fowler 同台、Willison、前GitHub CEO+Atlassian CTO | [`../_raw_promatic_summit_2026/`](../_raw_promatic_summit_2026/README.md) |
 | `12_gergely_orosz.md` | Gergely Orosz | *The Pragmatic Engineer* 作者，六预测（好/坏/丑），"Something precious is being taken away" |

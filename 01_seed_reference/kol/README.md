@@ -20,7 +20,7 @@ research_date: 2026-07-08
 ```
 kol/
 ├── README.md                              ← 你在这里
-├── _raw_kol/                              ← 13 位影响力人物深度拆解
+├── _raw_kol/                              ← 人物/机构深度卡（轨迹中心，见其 README 导航表）
 ├── _raw_frontier/                         ← 跨公司变革共识合成（7 人 + 3 深度研究）
 ├── _raw_fable5/                           ← Fable 5 模型变革信号合成（16 样本）
 ├── _raw_loop_engineering/                 ← Loop Engineering 一波声音（2026-06 起，一人一目录）

@@ -23,13 +23,17 @@ key_concepts:
 
 ## 思想变迁轨迹（2026）
 
+> 2026-10-03 深挖后**勘误两条**：①PlatformCon 演讲现场为 **2026-06-23**（官方议程页 + 本人 bsky 06-10 预告双证；官方视频 06-25 上线）——旧记 07-04 是 lucaberton 转述文的发布日；②"build the system that builds the software" **仅见场边转述**（官方议程页、YouTube 描述、本人笔下均无）——判为对既有立场的口号化，不是新一级框架，正式引文以官方 Key points 为准。
+
 | 阶段 | 日期 | 立场标记 | 锚点 |
 |------|------|---------|------|
 | 框架提出 | 2026-03-04 | martinfowler.com《Humans and Agents in Software Engineering Loops》：**in the loop → on the loop** | 卡内 + mf 站内 |
-| 推进到元系统 | 2026-07-04 | PlatformCon "Human on the Loop" 访谈（转述页已核）："**build the system that builds the software, not just the software**" | lucaberton.com |
-| 窗口内（07→10） | — | 个人博客无新增（最近一篇 07-09，且在窗口边缘） | 2026-10-03 扫描档 |
+| 雷达贡献者 | 2026-04 | Tech Radar Vol 34 列名贡献者：主题 "Putting coding agents on a leash"、条目 Feedback sensors（Trial）/ Codebase cognitive debt（Caution） | TW 雷达 |
+| 管道化 | 2026-06-04 / 06-23 | Craft 演讲："**pull the path to production inside the agentic development flow**"；PlatformCon London "Humans on the Loop, Not in It"（官方 Key points："As feedback loops tighten across the full cycle, **teams progressively trust agents with more**." / "humans steer outcomes while agents do the heavy lifting"） | 自站演讲页 + [官方议程页](https://2026.platformcon.com/sessions/humans-on-the-loop-not-in-it-taking-agentic-engineering-end-to-end-ldn) + [官方视频 06-25](https://youtube.com/watch?v=ETwP693yVTU) |
+| **决策参数化** | 2026-07-09 | 双载体同日：博客 "**unit of work**" 五旋钮 + "**control at a more useful altitude**"；TW 播客 "**levels of strength of assurance**" + 自主度随成熟扩围；**提前回答 9 月评审大讨论**："review was never the guardrail... build something that earns trust in its place" | infrastructure-as-code.com 07-09 + TW 播客（07-09 上线，transcript 在档） |
+| 窗口内（08→10） | — | bsky 08-05→10-03 静默 8 周（两路 feed 验证）；HN/TW 站内无直接表态——**7-09 已提前给出立场，9 月不跟热点** | 2026-10-03 深挖档 |
 
-**判语**：稳定演化，词汇从"环上监督"走向"造系统的系统"——与 Fowler 站内互为放大器；他是 harness 治理谱系里"不变中渐进"的代表。
+**判语**：稳定演化为三级——on the loop（3 月）→ 管道化（6 月）→ **决策参数化**（7 月，"unit of work" 五旋钮 + assurance 强度分级）；与 Fowler 站内互为放大器。9 月评审大讨论他没有下场，因为他 7-09 已把答案给出：评审从来不是护栏，护栏是"赢得信任的系统"。
 
 ---
 

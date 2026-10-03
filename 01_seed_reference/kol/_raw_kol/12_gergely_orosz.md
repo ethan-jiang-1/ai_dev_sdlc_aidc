@@ -19,7 +19,7 @@ key_concepts:
 ---
 # Gergely Orosz — "代码量爆炸，工程基本功反而更重要了"
 
-> *The Pragmatic Engineer* 作者，Pragmatic Summit 主办者。2026 年 1 月发表万字长文 *"What Happens to Software Engineering When AI Writes Almost All the Code"*，采访了 Kent Beck、Martin Fowler、Simon Willison，基于 900+ 工程师调查。
+> *The Pragmatic Engineer* 作者，Pragmatic Summit 主办者。2026 年 1 月发表万字长文 *"What Happens to Software Engineering When AI Writes Almost All the Code"*（个人长文＋访谈 Kent Beck、Martin Fowler、Simon Willison；**读者调查另行发布于 04-14 / 05-19 两部**——2026-10-03 回源校正，长文与调查非一体）。
 
 ---
 
@@ -27,9 +27,11 @@ key_concepts:
 
 | 阶段 | 日期 | 立场标记 | 锚点 |
 |------|------|---------|------|
-| 全景长文 | 2026-01 | 万字调查（900+ 工程师；采访 Beck/Fowler/Willison）："**软件基本功更重要**" + "Something precious is being taken away" | 卡内 + frontmatter |
+| 长文定调 | 2026-01-06 | 个人长文（⚠️ 非调查，校正见上）："**software engineering fundamentals should become more important**" + "Something precious is being taken away" | 卡内 + frontmatter |
 | 峰会主办 | 2026-02 | Pragmatic Summit（Beck+Fowler 同台） | `../_raw_promatic_summit_2026/` |
-| 文化批判 | 2026-07 | Meta engineering culture 分析（Daring Fireball 转链 07-02） | frontmatter |
+| 上半年节拍 | 2026-01→07 | 01-22 Pulse#160："writing code by hand is almost dead… **mere months**"；02-17 How Codex is built；02-24 六预测成文；03-17 "Are AI agents actually slowing us down?"；**04-08 DHH 访谈（亲录其 agent-first 起点）**；06-23 Slow down to speed up；06-30 三实验室走访；07-14 loop engineering；07-28 Inside Anthropic；**读者调查两部 04-14 / 05-19**（Part 2："the benefits of AI heavily depend on **the engineering culture that was in place before**"） | PE 各期（2026-10-03 深挖档，40 页存证） |
+| 文化批判 | 2026-06-17 | 《Why is Meta destroying its engineering organization?》："**people stop caring about real work and focus on performative work**"＋"writing code by hand…could cost you your job"（DF 07-02 转链；2026-10-03 校正：原文 6-17） | frontmatter + 深挖档 |
+| **一线取证 + 制度议程** | 2026-09 | 三连：code reviews 是适应还是消亡（09-08）/ 潜入 OpenAI 软件工厂（09-15）/ 手写代码终结议程化（09-24） | 本卡"2026-09 增量"节 |
 | **一线取证 + 制度议程** | 2026-09 | 三连：code reviews 是适应还是消亡（09-08）/ 潜入 OpenAI 软件工厂（09-15）/ 手写代码终结议程化（09-24） | 本卡"2026-09 增量"节 |
 
 **判语**：从综合访谈的观察者变成一线取证者——1 月的"基本功"判断仍在，但 9 月的主叙事换成了"制度来不及适应"。

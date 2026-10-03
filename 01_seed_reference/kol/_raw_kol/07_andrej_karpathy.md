@@ -38,6 +38,8 @@ key_concepts:
 
 一个完整的炒作→高潮→幻灭→纠正周期被压缩到 **仅 13 个月**。之前的类似周期（如 "Agile"）用了 10+ 年。
 
+> **📎 2026-07→10 窗口补记（2026-10-03 扫描）**：2026-07-27 有删改 X 简介引发离职猜测的风波，**本人否认离职**（c114 中文二手转述，X 原帖登录墙未核——仅作状态线索不作主张依据）；个人博客最后一篇为 2026-04-30（Sequoia Ascent 总结），**窗口内（07→10）无可核验一手新增**——他是"造词者退潮、词汇离手自行扩散"的样本：Vibe Coding 与 agentic engineering 的公共讨论都在他离场后继续升温。
+
 > **⚠️ 2026-10-03 勘误（术语谱系，修正上表第三行）**：Zed 一手页（2025-06-12《The Case for Software Craftsmanship in the Era of Vibes》及站内 "introducing Agentic Engineering" 介绍页）表明 **"Agentic Engineering" 一词由 Zed/Nathan Sobo 于 2025-06 引入**；Karpathy 是关键扩散节点（其推文因 X 登录墙无法一手核验；旁证＝Zed 2026-04-22《Parallel Agents》称该词 "recently… grow in popularity" 并引用其推文）。Karpathy 的原创词是 **Vibe Coding**（2025-02）与 **Software 3.0**；他对 agentic engineering 的贡献是**定义与扩散**（见下节他自己的定义），不是命名。待办：`02_research/.../loop_engineering/raw/kol-roster.md` §B Karpathy 行（"2026-02 提 Agentic Engineering ⏳"）同步前移至 Zed/Sobo 2025-06。
 
 ---

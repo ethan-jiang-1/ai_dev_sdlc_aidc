@@ -1,25 +1,29 @@
 ---
 type: kol_deep_dive
 person: Ryan Lopopolo
-organization: OpenAI (Harness Engineering)
+organization: Google Cloud (Principal Engineer, Agentic Google Cloud Platform)；ex-OpenAI
 content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
   - https://openai.com/index/harness-engineering/
+  - https://github.com/openai/symphony
+  - https://github.com/lopopolo/harness-engineering
   - https://www.zenml.io/llmops-database/zero-human-written-code-harness-engineering-for-autonomous-ai-agents-at-scale
   - https://www.zenml.io/llmops-database/extreme-harness-engineering-building-production-software-with-zero-human-written-code
   - https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/
   - https://tessl.io/podcast/109/
   - https://podcasts.apple.com/sg/podcast/ryan-lopopolo-openais-framework-for-shipping-code-at/id1756073806?i=1000771862526
+  - https://hyperbo.la/contact/
+  - https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding/
 key_concepts:
   - zero_human_written_code
   - harness_engineering
   - agent_self_review_loop
   - progressive_disclosure
 ---
-# Ryan Lopopolo — OpenAI Harness Engineering 先驱
+# Ryan Lopopolo — Harness Engineering 提出者（OpenAI → Google Cloud）
 
-> OpenAI Frontier Product Exploration 团队 Member of Technical Staff。曾任职 Stripe、Snowflake、Citadel、Brex（领导 350 人 developer productivity）。他领导了零人手写代码实验，创造了 "Harness Engineering" 概念，已被 Martin Fowler 和 ThoughtWorks 推广。
+> 原 OpenAI Frontier Product Exploration 团队 Member of Technical Staff，**2026-07 加入 Google Cloud（Principal Engineer, Agentic Google Cloud Platform，一手核验见轨迹表）**。曾任职 Citadel → Box → Stripe → Brex → Snowflake。他领导了零人手写代码实验，创造了 "Harness Engineering" 概念，已被 Martin Fowler 和 ThoughtWorks 推广；Google Cloud 官方口径称他 "the person who coined the term agent harness"。
 
 ---
 
@@ -29,10 +33,13 @@ key_concepts:
 |------|------|---------|------|
 | 实验定调 | 2026-02 | OpenAI 官方页 + InfoQ 报道：harness engineering 进入公共视野 | frontmatter source_urls |
 | 极端化展示 | 2026-04-17 | AI Engineer 演讲《Humans Steer, Agents Execute》；1M LOC、0% 人写人审；Symphony 编排 "**removing humans from the code review and merge loop entirely**" | 卡内实验节 + ZenML 档案 |
+| **Symphony 开源** | 2026-02-26 | openai/symphony（Apache-2.0，Elixir，**27.5k stars**，最后 push 09-15；无 v2，他离开后由 OpenAI 侧维护）：README "**moving from managing coding agents to managing work that needs to get done**"；03-13 本人一手口径："**3-5 PRs per engineer per day** on GPT-5.2 without Symphony and about **75 PRs per engineer per week** with Symphony" | GitHub API 一手 + 03-13 博文 |
 | **术语被采纳（影响力弧线）** | 2026-02→05 | Fowler 站内 Böckeler 系列（02-17→05-27）+ TW 雷达背书——harness engineering 从实验报告变成学科名 | `02_martin_fowler.md` 系列表 |
-| 窗口内（07→10） | — | 本人无可核新增；07-09 跳槽 Google Cloud **仅二手快讯**（BlockBeats），org 归属待一手核验 | 2026-10-03 扫描档 |
+| 评审立场收束 | 2026-03→09 | 人只保留 **merge decision / release authority**；04-28 ablation framing 自我约束 harness 膨胀；Volkov 6 月底命名 "**Zechner–Lopopolo Continuum**"（"not about the people, it's about the task… **different tasks just need different proof**"）；未点名回应 Cherny/Orosz 的 9 月守门话题 | 轨迹档案 + 03-13 博文《Software Work Is No Longer Scheduled》 |
+| 窗口内（07→10） | 2026-07→09 | **org 变动已一手核验**：加入 Google Cloud，职衔 **Principal Engineer, Agentic Google Cloud Platform**（本人站点自述 + Google Cloud 官方博客 09-25 确认在职；BlockBeats 快讯 "Chief Engineer" 系拔高误译，不用） | [hyperbo.la/contact/](https://hyperbo.la/contact/)（last-modified 2026-09-26）|
+| **窗口内最重发声** | 2026-09-25 | Google Cloud 官方博客/播客 **The Agent Factory**：harness 定义收束（"**the study and practice of putting a model into an environment where it can succeed**"）、"prompt and pray"、**只审终态工件**、tightly scoped PR 逐级放大循环；工具栈 Gemini 3.8 Flash / Antigravity /boost / Google Skills Repo（19k stars）——"he hasn't opened a traditional code editor since May of last year, maintaining that streak **through his transition into Google Cloud**" | [GC 官方博客](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding/)（datePublished 已核）|
 
-**判语**：他本人 2026 年发声不多，但"被采纳率"全场最高——库内 Fowler/TW/Willison 线的 harness 话语都回溯到他的实验；下轮优先核验 org 归属。
+**判语**：他本人 2026 年发声不多，但"被采纳率"全场最高——库内 Fowler/TW/Willison 线的 harness 话语都回溯到他的实验；且 **harness 术语归属已进入雇主官方口径**（Google Cloud 官方博客称他 "the person who coined the term agent harness"，09-25）——归属叙事本身已成为争论点（Böckeler memo 有"harness 或源自 Mitchell Hashimoto"的猜源说，而他 2026-07-18 开源的 field guide `lopopolo/harness-engineering` docs/lineage/ 自建谱系、并把 Böckeler 系列定性为 "later interpretations of Ryan's essay"——单向引用已变互引）。org 变动未改其主张，只放大了平台。
 
 ---
 

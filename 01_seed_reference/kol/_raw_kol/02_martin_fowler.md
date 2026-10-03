@@ -95,11 +95,11 @@ Fowler 在 martinfowler.com 上发布了 Birgitta Böckeler 的 Harness Engineer
 
 | 日期 | 文章 | 核心内容 |
 |------|------|---------|
-| 2026/02/17 | *Harness Engineering* | 初始概念，回应 OpenAI 的实验 |
-| 2026/04/02 | *Harness Engineering for Coding Agent Users* | 完整心智模型：Guides + Sensors 矩阵 |
-| 2026/05/19 | *Maintainability Sensors for Coding Agents* | 静态代码分析作为计算传感器 |
-| 2026/05/20 | *Three More Static Code Analysis Sensors* | 模块化检查扩展 |
-| 2026/05/27 | *The Test Suite as a Regression Sensor* | 已有测试套件作为 Agent 代码的回归传感器 |
+| 2026/02/05 | *[Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html)* | 系列先声（2026-10-03 核实补录） |
+| 2026/02/17 | *[Harness Engineering - first thoughts](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html)* | 初始概念，回应 OpenAI 的实验（URL 2026-10-03 核实） |
+| 2026/04/02 | *[Harness engineering for coding agent users](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)* | 完整心智模型：Guides + Sensors 矩阵（URL 2026-10-03 核实） |
+| 2026/05 | *传感器三部曲*：Maintainability Sensors / Three More Static Code Analysis Sensors / The Test Suite as a Regression Sensor | 静态代码分析与测试套件作为计算传感器（⚠️ 2026-10-03 Morris 深挖核得 Maintainability=05-27 且 Böckeler 署名，与早期研究的 05-19/20/27 序列冲突——三篇日期与 URL 待统一核验；另见 `20` 卡勘误） |
+| 2026/08/11 | *[TDD inside the agent loop](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html)* | 实验文：agent 循环内跑 TDD 无可测收益（详见 2026-07～10 转变节） |
 
 ---
 

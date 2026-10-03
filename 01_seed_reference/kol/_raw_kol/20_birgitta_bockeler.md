@@ -6,7 +6,9 @@ content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
   - https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html
-  - https://martinfowler.com/articles/exploring-gen-ai/
+  - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html
+  - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
+  - https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html
 key_concepts:
   - guides_and_sensors
   - computational_over_inferential_sensors
@@ -33,12 +35,16 @@ key_concepts:
 
 ## 思想变迁轨迹（2026）
 
+> 2026-10-03 系列 URL 核实（curl 直抓原页逐篇取标题/日期）：memo（02-17）、harness-engineering（04-02）、context-engineering（02-05）、tdd-in-the-agent-loop（08-11）四篇 ✅；三篇 sensors 文（05-19/05-20/05-27，据早期研究）URL 待回源。
+
 | 日期 | 立场标记 | 锚点 |
 |------|---------|------|
-| 2026-02-17 | 《Harness Engineering》定义篇（回应 OpenAI 零人写码实验） | martinfowler.com 系列（下轮回源取 URL） |
-| 2026-04-02 | 《HE for Coding Agent Users》：Guides + Sensors 完整心智模型 | 同上系列 |
-| 2026-05-19→05-27 | 传感器三部曲：Maintainability Sensors / Three More Static Code Analysis Sensors / The Test Suite as a Regression Sensor | 同上系列 |
-| 2026-08-11 | **TDD inside the agent loop**：实验显示 agent 循环内跑 TDD 无可测收益——对自己的主张做实证检验 | [已核 URL](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) |
+| 2026-02-05 | 《Context Engineering for Coding Agents》——系列先声 | [已核](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) |
+| 2026-02-17 | 《Harness Engineering - first thoughts》定义篇（回应 OpenAI 零人写码实验） | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html) |
+| 2026-04-02 | 《Harness engineering for coding agent users》：Guides + Sensors 完整心智模型 | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html) |
+| 2026-05 | 传感器三部曲（Maintainability / Three More Static Analysis / Test Suite as Regression Sensor）——⚠️ 日期与 URL 待统一核验（2026-10-03 Morris 深挖核得 Maintainability=05-27，与早期研究的 05-19 序列冲突） | ⏳ |
+| 2026-08-11 | **TDD inside the agent loop**：实验显示 agent 循环内跑 TDD 无可测收益——对自己的主张做实证检验 | [已核](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) |
+| （系列延续，日期待核） | 《The role of developer skills in agentic coding》 | [页已核](https://martinfowler.com/articles/exploring-gen-ai/13-role-of-developer-skills.html)，作者/日期待核 |
 
 **判语**：2026 年内她是"方法论从定义走向实证"的唯一样本——别人在表态，她在做实验；08-11 的 null result 是本库"验证口径拉扯"（见 `02` 卡张力线）的第一块实证砖。
 
@@ -50,6 +56,7 @@ key_concepts:
 - **Cherny（`08`）/ Orosz（`12`）9 月守门叙事**：同向——她 5 月的传感器系列就是这个议题的方法论底座。
 - **Huntley（`16`）/ Thorsten（`19`）宽自主派**：对立——她的 steering-loop 审慎与"人定义期望状态"立场正面顶住"让模型决定 workflow"。
 - **Beck（`05`）TDD 口径**：她的 08-11 实验给了 Beck 的"TDD 超能力"论一记数据侧质疑（注意小样本 caveat）——两条卡必须并读。
+- **谱系注意（2026-10-03 深挖发现）**：Lopopolo（`09`）在开源 field guide（lopopolo/harness-engineering，docs/lineage/）把本系列定性为 "**later interpretations of Ryan's essay**"（其 02-17 memo 曾猜 "harness" 或源自 Mitchell Hashimoto）；而 Google Cloud 官方博客（09-25）称 Lopopolo 为 "the person who coined the term agent harness"——**术语归属已成多方叙事之争**，引用 harness engineering 概念时须注明采用哪条谱系。
 
 ---
 

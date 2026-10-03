@@ -1,6 +1,8 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-30 晚（ladder 回流＋手册立项）**：[landscape](result/landscape.md) 增 §3.5 交接面（LE 四档＋支线＋结果可信检查链，§6 上屏清单已放行）；[digested/07](digested/07-控制问题矩阵.md) §二登记交接面读法；实践层 [manual](../../../03_practice/loop_governance/result/manual.md) 增 §13 授权面划定规程（LE1 操作化，[backbone](../../../03_practice/loop_governance/result/backbone.md) §3 补指针）。承重 ⏳ 清理完成：rung-02 ① 锚 evidence-a §4 D2、rung-03 ① 改锚 evidence-b 问题2 §5（旧锚 §4e 有误）、rung-01 反例位改锚 evidence-f Source 4（原 practices ②「命令级越权」指针有误，实为资源层失控）、rung-02 ③ 标注改「逐字在档·侦察级不支撑定阶」。**LE1–LE3 定阶支撑零 ⏳ 依赖**。
+> 最近一次更新：**2026-10-03（KOL 扫描批：evidence-z ＋ 台账升格 ×3 ＋ 谱系修正）**：新增 [evidence-z](raw/evidence-2026-10-03-z-osmani-increment.md)——Osmani 07-15→09-14 八篇增量（3 篇正文已核、5 篇待回源），词表升级 **loop → harness → factory**（outer loop 所有权 / verdict / light-dark factory / skill decay）。**§A 6→9 条**（用户批"增量回源+升格"，触发条件即台账 §B 自身规则"窗口内新发声有则升 §A"）：`geoffrey_huntley`（10-02 纲领帖 readable→explainable）、`armin_ronacher`（07→09 十篇）、`thorsten_ball`（#98-100 周更）——三家种子层卡已建（`_raw_kol/16/17/19`），深挖集成进行中。**Karpathy 行谱系修正**："Agentic Engineering" 系 Zed/Sobo 2025-06-12 引入（zed.dev 一手已核），Karpathy 为扩散节点（种子层 `07` 卡勘误同步）。Böckeler §B 行卡片指针更新（`_raw_kol/20` 新卡）。
+>
+> **2026-09-30 晚（ladder 回流＋手册立项）**：[landscape](result/landscape.md) 增 §3.5 交接面（LE 四档＋支线＋结果可信检查链，§6 上屏清单已放行）；[digested/07](digested/07-控制问题矩阵.md) §二登记交接面读法；实践层 [manual](../../../03_practice/loop_governance/result/manual.md) 增 §13 授权面划定规程（LE1 操作化，[backbone](../../../03_practice/loop_governance/result/backbone.md) §3 补指针）。承重 ⏳ 清理完成：rung-02 ① 锚 evidence-a §4 D2、rung-03 ① 改锚 evidence-b 问题2 §5（旧锚 §4e 有误）、rung-01 反例位改锚 evidence-f Source 4（原 practices ②「命令级越权」指针有误，实为资源层失控）、rung-02 ③ 标注改「逐字在档·侦察级不支撑定阶」。**LE1–LE3 定阶支撑零 ⏳ 依赖**。
 >
 > **2026-09-30（LE 主线＋结果可信闭环）**：[00-map](capability_ladder/00-map.md) 以 **LE0→LE3 执行委托线、A/B 可选支线**讲交接决定；[结果可信闭环](capability_ladder/result-reliability-interface.md)讲“目标→证据→裁决→停机/交接→后验复核”。六档各有独立 SVG 和运行示例，[capability_ladder/README](capability_ladder/README.md) 索引。新增 [evidence-w](raw/evidence-2026-09-30-w-ladder-runtime-detail.md)、[evidence-x](raw/evidence-2026-09-30-x-ladder-branches-detail.md)、[evidence-y](raw/evidence-2026-09-30-y-long-run-result-reliability.md)；官方机制、案例与教学设计分列。goal/eval 构造归 [agent_goal_eval](../goal_eval_engineering/README.md)，停止骨架归 [stop_conditions](stop_conditions/README.md)。`File Deletion Protection`、NLAH 与部分 `⏳` 条目尚待核验。
 >
@@ -19,7 +21,7 @@
 | `raw/research-plan.md` | ✅ v0.5：在 v0.4 基础上加入统一控制链（Goal → Action → Environment Feedback → Eval → Continue/Stop/Escalate → State/Outcome）与概念/机制/效果三层证据分离；后续回源按控制节点归位，不再按人物堆料 |
 | `digested/06-automation-autonomy-harness-loop.md` | ✅ 初步判读：控制对象逐层外移与叠加；harness 是 loop 可设计/可观察的条件之一，不是单向历史原因；DSH 执行循环与 feature control plane 分离 |
 | `digested/07-控制问题矩阵.md` | ✅ A–I1 综合，I2 仅登记候选来源，J 路加本地观察指针：八问只保留已回源做法；feature 四列在已复核材料和这一条 goal 日志里都是空；2026-09-30 增 §二交接面读法（指向 00-map，不改格子判定） |
-| `raw/kol-roster.md` | ✅ §A **仍是 6 条，I 路/I2 不升人**。§B 补 Gauthier / Horthy / Beck / Yegge（I 批次 1）＋ **Ball / Walden / Manus / Armin（I2 批次）**，Lopopolo 从 ⏳ 改为 harness 全文已取得。Willison 仍在 §C1：循环实践者，但 2026-06 后对本词无已核发声。evals 四人＋定量机构按 §2.3 纪律**不入册**（证据来源非发声 KOL） |
+| `raw/kol-roster.md` | ✅ **2026-10-03：§A 6→9 条**（+huntley/ronacher/ball，升格依据见顶部更新；evidence-z 增 Osmani 八篇增量；Karpathy 行谱系修正）。此前：§A 6 条、I 路/I2 不升人；§B 补 Gauthier / Horthy / Beck / Yegge（I 批次 1）＋ **Ball / Walden / Manus / Armin（I2 批次）**，Lopopolo 从 ⏳ 改为 harness 全文已取得。Willison 仍在 §C1：循环实践者，但 2026-06 后对本词无已核发声。evals 四人＋定量机构按 §2.3 纪律**不入册**（证据来源非发声 KOL） |
 | `raw/00-timeline.md` | ✅ 词源周精确锚定（06-02 → 06-07 → 06-08 → 06-16 → 06-30，snowflake 解码）；新增 I/J/K 与 2023–2025 谱系候选；Tessl 2026-09-14 行保留为待主验候选，不计第五定义源 |
 | `digested/01-命名谱系.md` | ✅ 词源＝热度碎片、定义＝事后工程化；已纳入 Willison/Horthy 相邻实践；Tessl 三层定义保留为侦察回源候选，未升级为第五已证定义 |
 | `digested/03-构件.md` | ✅ 停止条件三件骨架；外层调度是长程扩展。动作门四种处置已按出处画出（evidence-f，无新抓取）；没有通用轮次刻度 |

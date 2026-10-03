@@ -43,6 +43,7 @@ key_concepts:
 ## 传播链与库内关联
 
 - 文章致谢名单含 **Ryan Lopopolo**（`09`，Harness Engineering 提出者）——新面孔与库内卡片的一手网络直接相连；随即被 Geoffrey Huntley（`16`）10-02 长文引用扩散。
+- **Huntley 的引用语境（10-02 /readable/，一手已核）**：引 Valim 9-24 推文 "If coding agents will write most of our code, what happens with our communities and sense of ergonomics?…" 后评价 "**agent-first rather than human-first will get ahead… end up like Solaris**"——注意：Huntley 是把 Valim 当作**警示的引用源**（ ergonomic 阵营的警报），不是同路人；两人只在"工具层要为 agent 重构"上同向，在"社区/人体工学命运"的判断上相异。引用对立轴时勿把这条连线标错方向。
 - **与 Huntley 独立同向**：两人都在撤除"人类受众假设"——Valim 说人体工学/语法优先级让位于保证，Huntley 说 readable→explainable。这是 2026-08 后话语场最锋利的新对立轴（人类受众派 vs agent 受众派）的"基础设施派"代表。
 
 ---
