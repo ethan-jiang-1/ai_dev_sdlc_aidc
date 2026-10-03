@@ -16,17 +16,17 @@
 
 - `要点总结.md`
   - 类型：本地整理
-  - 路径：`ai_sdlc_frontier/raw_Anthropic_Thariq Shihipar/要点总结.md`
+  - 路径：`02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Anthropic_Thariq Shihipar/要点总结.md`
   - 价值：整理了 `A Field Guide to Fable: Finding Your Unknowns` 的主框架。
 
 - `Thariq Shihipar.md`
   - 类型：本地全文整理
-  - 路径：`ai_sdlc_frontier/raw_Anthropic_Thariq Shihipar/Thariq Shihipar.md`
+  - 路径：`02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Anthropic_Thariq Shihipar/Thariq Shihipar.md`
   - 价值：收录了机器之心对 Thariq 长文的整编版本，包含大量代表性原话、提示词示例和方法步骤。
 
 - `new_talk.md`
   - 类型：本地整理
-  - 路径：`ai_sdlc_frontier/raw_Anthropic_Thariq Shihipar/new_talk.md`
+  - 路径：`02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Anthropic_Thariq Shihipar/new_talk.md`
   - 价值：补充了 AI Engineer World's Fair 演讲中的 `unhobbling Claude`、`capability overhang`、`be unreasonable`。
 
 ## 当前目录内已补原始材料

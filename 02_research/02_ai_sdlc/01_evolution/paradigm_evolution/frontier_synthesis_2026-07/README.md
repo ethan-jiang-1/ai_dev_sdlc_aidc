@@ -8,12 +8,12 @@ people_count: 7
 research_pieces: 3
 files_indexed: 4
 research_date: 2026-07-07
-moved: 2026-10-03 自 02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/ 迁入（跨人判读归研究层，kol/README 规矩#5）
+moved: 2026-10-03 自种子层 `kol/_raw_frontier/`（同日晚 kol 更名 voices）迁入（跨人判读归研究层，voices/README 规矩 #5）
 ---
 
 # frontier_synthesis_2026-07 — 跨公司变革共识：信息地图
 
-> 来源库：`ai_sdlc_frontier/`（7 个人物/组织的一手材料 + 3 份深度研究）
+> 来源库：`ai_sdlc_frontier/`（历史名，现位于 `../../../02_industry_playbooks/frontier_interviews/`；7 个人物/组织的一手材料 + 3 份深度研究）
 > 研究日期：2026-07-07
 > 核心问题：站在 AI 辅助软件开发最前沿的人，在说什么东西必须变？
 
@@ -49,7 +49,7 @@ moved: 2026-10-03 自 02_research/02_ai_sdlc/01_evolution/paradigm_evolution/fro
 
 ## 来源全量映射
 
-### 原始材料来源（`ai_sdlc_frontier/` 目录结构）
+### 原始材料来源（`ai_sdlc_frontier/` 目录结构——现位于 `../../../02_industry_playbooks/frontier_interviews/`）
 
 ```
 ai_sdlc_frontier/
@@ -150,7 +150,7 @@ ai_sdlc_frontier/
 
 原始材料（`ai_sdlc_frontier/` 中每个人物目录下的 `*.md`）已经经过一轮"要点总结"的提炼。本目录的四份文件是在此基础上的**第二次合成**——不再逐人复述，而是跨人物提取共识、分歧、模式、死亡清单。
 
-如果你对某个具体人物的完整论述感兴趣，应该回到 `ai_sdlc_frontier/raw_*/` 读原文 + 要点总结。
+如果你对某个具体人物的完整论述感兴趣，应该回到 `../../../02_industry_playbooks/frontier_interviews/raw_*/` 读原文 + 要点总结。
 
 如果你对原始人物**在 Fable 5 具体使用上的信号**感兴趣，去看 [`../../../../../01_seed_reference/field_samples/fable5/synthesis/`](../../../../../01_seed_reference/field_samples/fable5/synthesis/README.md)——那边是从 field_samples/fable5 样本池（16 个 `run_*`）合成的。
 
@@ -158,14 +158,15 @@ ai_sdlc_frontier/
 
 ## 和相邻目录的关系
 
-> 2026-10-03 迁移注记：本目录原在 `02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/`，因属跨人判读（kol/README 规矩 #5「判读不进种子层」）迁入本主题。人物素材仍在种子层，判读在研究层。
+> 2026-10-03 迁移注记：本目录原在种子层 `kol/_raw_frontier/`（同日晚 `kol` 更名 `voices`），因属跨人判读（voices/README 规矩 #5「判读不进种子层」）迁入研究层。人物素材仍在种子层，判读在研究层。
 
 ```
 01_seed_reference/
 ├── corp/_raw_aws/            ← AWS AI-DLC 方法论
 ├── corp/_raw_ecosystem/      ← 非 AWS 全景
-└── kol/                      ← 人物与事件（人物卡 + 三场 2026 聚会）
-    ├── _raw_kol/
+└── voices/                  ← 声音库（人物 + 组织 + 事件）
+    ├── _raw_people/
+    ├── _raw_orgs/
     ├── _raw_event_pragmatic_summit_2026/
     ├── _raw_event_deer_valley_2026/
     └── _raw_event_engelberg_2026/
@@ -202,4 +203,4 @@ paradigm_evolution/（本主题）
 | 我的团队现在有哪些流程该杀了 | `03` §十（死亡清单总表） | 按类别查 `03` §一~§九 |
 | 这些说法有没有矛盾 | `02` §九（四个分歧） | `01` §三（变革烈度） |
 | 和 AWS AIDLC 什么关系 | `01` §四 | — |
-| 我还想读原始材料 | 看本文件 §来源全量映射 | 去 `ai_sdlc_frontier/` 读对应 `要点总结.md` |
+| 我还想读原始材料 | 看本文件 §来源全量映射 | 去 `../../../02_industry_playbooks/frontier_interviews/` 读对应 `要点总结.md` |

@@ -3,7 +3,7 @@ type: synthesis
 content_type: change_signals
 research_date: 2026-07-07
 derived_from:
-  local_dir: fable5_field_signals/
+  local_dir: 01_seed_reference/field_samples/fable5/
   sample_count: 16
 verification_status: urls_added
 evidence_strength: mixed
@@ -76,13 +76,13 @@ primary_sources:
 cross_references:
   - 02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/
   - 01_seed_reference/corp/_raw_aws/
-  - ai_sdlc_frontier/raw_OpenAI_Ryan Lopopolo/
-  - ai_sdlc_frontier/raw_Anthropic_Fiona Fung/
+  - 02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_OpenAI_Ryan Lopopolo/
+  - 02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Anthropic_Fiona Fung/
 ---
 
 # Fable 5 颠覆了什么：核心信号
 
-> 来源：`fable5_field_signals/` 全部 16 个样本（Anthropic 内部 ×3, Every ×5, Simon Willison, Zed, Superpowers, Wharton, 及其他）
+> 来源：`01_seed_reference/field_samples/fable5/`（原 `fable5_field_signals/`）全部 16 个样本（Anthropic 内部 ×3, Every ×5, Simon Willison, Zed, Superpowers, Wharton, 及其他）
 > 研究日期：2026-07-07
 > 核心问题：Fable 5 这个模型到底有什么不一样，导致软件开发流程可能要变？
 
@@ -318,7 +318,7 @@ Fable 5 最适合的位置是**中间层**——不是全自动，也不是手�
 
 ## 十一、信号十：约束不是束缚，是给 Agent 的轨道
 
-> 本节来源：Thariq Shihipar, AI Engineer World's Fair 演讲（[Field Guide to Fable](https://x.com/trq212/status/2073100352921215386), 本地归档于 `fable5_field_signals/run_anthropic_thariq_shihipar/raw_ai_engineer_worlds_fair_fable_talk.md`）; Jesse Vincent ([That time it tried to delete all my tests](https://blog.fsck.com/2026/04/30/that-time-it-tried-to-delete-all-my-tests/))
+> 本节来源：Thariq Shihipar, AI Engineer World's Fair 演讲（[Field Guide to Fable](https://x.com/trq212/status/2073100352921215386), 本地归档于 `01_seed_reference/field_samples/fable5/run_anthropic_thariq_shihipar/raw_ai_engineer_worlds_fair_fable_talk.md`）; Jesse Vincent ([That time it tried to delete all my tests](https://blog.fsck.com/2026/04/30/that-time-it-tried-to-delete-all-my-tests/))
 
 Thariq Shihipar 在 AI Engineer World's Fair 演讲中透露：
 

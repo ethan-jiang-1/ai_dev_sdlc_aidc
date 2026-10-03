@@ -3,7 +3,7 @@
 来源线索：
 
 - X 帖子：`https://x.com/trq212/status/2073100352921215386`
-- 本地整理来源：`ai_sdlc_frontier/raw_Anthropic_Thariq Shihipar/Thariq Shihipar.md`
+- 本地整理来源：`02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Anthropic_Thariq Shihipar/Thariq Shihipar.md`
 - 示例页：`https://thariqs.github.io/html-effectiveness/unknowns/`
 
 ## 这篇材料在讲什么

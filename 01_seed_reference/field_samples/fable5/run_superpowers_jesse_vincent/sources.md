@@ -21,7 +21,7 @@
 
 - `raw_digital_life_khazix_fable5_8_prompts.md`
   - 类型：本地整理
-  - 路径：`fable5_field_signals/run_digital_life_khazix/raw_digital_life_khazix_fable5_8_prompts.md`
+  - 路径：`01_seed_reference/field_samples/fable5/run_digital_life_khazix/raw_digital_life_khazix_fable5_8_prompts.md`
   - 价值：记录了 Jesse 的 `/goal` 实验、25 次实验、成本优化以及几个“省钱反而更贵”的反例。
 
 ## 当前目录内已补原始材料

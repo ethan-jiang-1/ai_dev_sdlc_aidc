@@ -25,5 +25,5 @@
 
 - Austin 的价值在于他来自应用公司，而且不是传统工程领袖视角。
 - 他说明了 Fable 5 最真实的一个落点：不是替代所有 AI 工具，而是接管那些你愿意真正放手的长任务。
-- 这条线很适合留在 `fable5_field_signals/`，因为它讲的就是 Fable 5 用后 workflow 的变化。
+- 这条线很适合留在 `field_samples/fable5/`，因为它讲的就是 Fable 5 用后 workflow 的变化。
 - 现在这条目录已经更像一个“应用侧 operator 样本”，而不只是团队文章摘录。

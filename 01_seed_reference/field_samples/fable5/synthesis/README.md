@@ -54,7 +54,7 @@ moved: 2026-10-03 自 01_seed_reference/field_samples/fable5/synthesis/ 并入�
 | 信号三：Spec 取代代码 | `run_superpowers_jesse_vincent/`（"Specs are the thing that matters now"） | `run_anthropic_thariq_shihipar/`（实现计划前置） |
 | 信号四：判断力/品味/多维思考 | `run_anthropic_boris_cherny/`（"judgment, taste, dimensionality"） | — |
 | 信号五：无情地主动 | `run_datasette_simon_willison/`（$12 CSS debugging 全案例） | `run_generativeai_net_martin_musiol/`（"It takes problems whole"） |
-| 信号六：角色边界打乱 | `run_anthropic_mike_krieger/`、`run_superpowers_jesse_vincent/`、`run_wharton_ethan_mollick/` | `ai_sdlc_frontier/raw_Anthropic_Fiona Fung/`（交叉验证） |
+| 信号六：角色边界打乱 | `run_anthropic_mike_krieger/`、`run_superpowers_jesse_vincent/`、`run_wharton_ethan_mollick/` | `02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Anthropic_Fiona Fung/`（交叉验证） |
 | 信号七：能力≠最好协作者 | `run_every_willie_williams/`（benchmark 赢但迭代体验差） | `run_mclayer_plugin_codeforge/`（外科手术式采用） |
 | 信号八：AI Sandwich | `run_every_kieran_klaassen/`（命名者） | `run_superpowers_jesse_vincent/`（brief-review-signoff 同一模式） |
 | 信号九：治理成为主问题 | `run_every_mike_taylor/`（NDA 硬边界）、`run_zed_richard_feldman/`（consent/retention/fallback）、`run_datasette_simon_willison/`（sandbox 生死线） | Anthropic policy 回滚事件 |
@@ -64,9 +64,9 @@ moved: 2026-10-03 自 01_seed_reference/field_samples/fable5/synthesis/ 并入�
 
 | 模式/章节 | 主要来源样本 |
 |---|---|
-| AI Sandwich 个人工作流 | `run_every_kieran_klaassen/`（命名 + 结构）、`run_anthropic_thariq_shihipar/`（五步法）、`run_anthropic_boris_cherny/`（Erik Schluntz 前置仪式，交叉引用自 ai_sdlc_frontier） |
+| AI Sandwich 个人工作流 | `run_every_kieran_klaassen/`（命名 + 结构）、`run_anthropic_thariq_shihipar/`（五步法）、`run_anthropic_boris_cherny/`（Erik Schluntz 前置仪式，交叉引用自 frontier_interviews） |
 | Brief-Review-Signoff 制度化 | `run_superpowers_jesse_vincent/`（全流程：brainstorming→spec→解耦 agent 执行→MP4 验证→防作弊） |
-| 组织级四条流程重写 | `ai_sdlc_frontier/raw_Anthropic_Fiona Fung/`（交叉引用） |
+| 组织级四条流程重写 | `02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Anthropic_Fiona Fung/`（交叉引用） |
 | Agent 制度经验法则 | `run_superpowers_jesse_vincent/`（失败路线记录、/goal 结构、latent space engineering） |
 | 不同阶段模型策略 | `run_every_willie_williams/`（benchmark vs 迭代体验）、`run_mclayer_plugin_codeforge/`（外科手术式采用 + 版本依赖 + fallback） |
 | 安全与治理专属流程门 | `run_datasette_simon_willison/`（sandbox）、`run_zed_richard_feldman/`（consent/retention/fallback 三合一）、`run_every_mike_taylor/`（NDA 硬边界）、Anthropic 静默干预回滚事件 |
@@ -83,8 +83,8 @@ moved: 2026-10-03 自 01_seed_reference/field_samples/fable5/synthesis/ 并入�
 | Fable 不可用 fallback | `run_mclayer_plugin_codeforge/`（已编码进运行时） | ⭐⭐⭐ 公开工程证据 |
 | Agent 投机取巧是系统性行为 | `run_superpowers_jesse_vincent/`（删测试 + 三条失败省钱路线） | ⭐⭐ 单团队但证据链完整 |
 | 代码库健康度是第一变量 | `run_every_willie_williams/` 引用 Rody Davis | ⭐ 断言级，无量化数据 |
-| AI 残留物清理 | `ai_sdlc_frontier/raw_OpenAI_Ryan Lopopolo/`（交叉引用） | ⭐⭐⭐ 有团队数据（~20% 时间→自动化） |
-| 上下文腐烂 | `ai_sdlc_frontier/raw_Cursor_Jediah Katz/`（交叉引用） | ⭐⭐ 团队识别但无公开修复数据 |
+| AI 残留物清理 | `02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_OpenAI_Ryan Lopopolo/`（交叉引用） | ⭐⭐⭐ 有团队数据（~20% 时间→自动化） |
+| 上下文腐烂 | `02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Cursor_Jediah Katz/`（交叉引用） | ⭐⭐ 团队识别但无公开修复数据 |
 | 写代码变成爱好 | `run_superpowers_jesse_vincent/` | ⭐ 单人大胆断言 |
 
 ---

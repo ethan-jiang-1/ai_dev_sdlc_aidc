@@ -2,7 +2,7 @@
 
 来源线索：
 
-- 本地整理来源：`ai_sdlc_frontier/raw_Anthropic_Thariq Shihipar/new_talk.md`
+- 本地整理来源：`02_research/02_ai_sdlc/02_industry_playbooks/frontier_interviews/raw_Anthropic_Thariq Shihipar/new_talk.md`
 - 相关主题：Thariq 在 AI Engineer World's Fair 上围绕 Fable 5 的演讲
 
 ## 这场演讲补充了什么

@@ -24,5 +24,5 @@
 
 ## 总结判断
 
-- `plugin-codeforge` 这条线很适合补在 `fable5_field_signals/` 里，因为它给出了公开、硬核、可复核的采用制度。
+- `plugin-codeforge` 这条线很适合补在 `field_samples/fable5/` 里，因为它给出了公开、硬核、可复核的采用制度。
 - 它和 `Every` 样本形成互补：`Every` 更像组织中的 workflow 口述，这条线更像 repo 里的治理与角色编排证据。

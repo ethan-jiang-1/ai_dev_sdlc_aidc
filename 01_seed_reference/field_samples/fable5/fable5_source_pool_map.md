@@ -83,7 +83,7 @@
 
 ## 收录规则
 
-- 明确是 `Fable 5` 用后感、工作流或组织变化的，优先进入 `fable5_field_signals/`
-- 不是 `Fable 5` 专属，但 agentic / harness / context engineering 价值很高的，进入 `agentic_field_signals/`
+- 明确是 `Fable 5` 用后感、工作流或组织变化的，优先进入 `field_samples/fable5/`
+- 不是 `Fable 5` 专属，但 agentic / harness / context engineering 价值很高的，进入 `field_samples/agentic/`
 - 只会喊“很强”“很快”“很震撼”的，不单独立目录
 - 能提供具体任务、角色、边界、限制、证据的，优先立目录
