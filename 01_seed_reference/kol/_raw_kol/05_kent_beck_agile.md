@@ -218,6 +218,12 @@ XP 的核心洞见是：**软件开发的瓶颈不是打字速度，是理解、
 
 > *"**Genies Hate the Invisible**… The visible stuff is better done by machine. The invisible stuff is, well, invisible."*（人的价值锚在不可见的 futures 工作：理解、教育、简化、抽象）
 
+> *"If all we work on is the visible part, progress on that visible part **slows to a crawl**. But **nobody gets credit for the invisible work**, so we rely on an ethos of work to ensure that the invisible work gets done."*（credit/ethos 机制——不可见劳动为什么总被欠账）
+
+> *"I call this hidden dimension 'futures', although **'optionality' might be a more accurate word (if less alliterative)**."*（他自评措辞：期权性比头韵更准）
+
+> 技术债对接："In programming we also call this inverse of this axis '**technical debt**', coined by **Ward Cunningham**. Sometimes you have to pay off your debts to get 'interest' payments low enough that you can get back to progress on the principal."
+
 > *"I'm here to keep the genie on course… my strategic decisions are more valuable than ever because they come more frequently."*
 
 **关系：延伸**——把"AI 暴露没学会工程师思维的人"升级为完整的"身份重建框架"（features vs futures / 可见 vs 不可见劳动），是他对"AI 时代工程师凭什么存在"迄今最系统的正面回答。
