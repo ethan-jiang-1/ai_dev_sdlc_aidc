@@ -144,7 +144,7 @@ Analyze → Plan → Implement → Test → Review → Iterate
 
 ---
 
-## 思想转变（2026-08～10）：从「人在环内」到「信 harness、人审不可靠」再到「agent 间传染」
+## 思想变迁轨迹（2026-08～10）：从「人在环内」到「信 harness、人审不可靠」再到「agent 间传染」
 
 > 2026-10-03 增量回源（simonwillison.net 原页直抓）。两条轨迹线：把"工程师 = 定义目标的人"升格为年度主叙事，同时在"谁来做守门"上明确换了锚——**从人审换成 harness/eval**。
 
