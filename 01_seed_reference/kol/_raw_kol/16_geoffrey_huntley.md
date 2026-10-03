@@ -11,6 +11,7 @@ source_urls:
   - https://ghuntley.com/rad/
   - https://ghuntley.com/real/
   - https://ghuntley.com/loop/
+  - https://ghuntley.com/feed/
 key_concepts:
   - explainable_over_readable
   - software_factory
