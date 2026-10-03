@@ -199,6 +199,31 @@ kol/
 4. **口径变化显式标注**：新言论若与本卡已有结论有关，在小节内写明「确认 / 延伸 / 修正已有口径」，不悄悄改写旧结论。
 5. **判读不进种子层**：本库只收"谁在哪天说了什么（带源）"；跨人的分析与判读沉淀在 `02_research/` 对应主题，本库不做。
 
+### 轮查渠道速查表（2026-10-03 首版，轮查时的探路成果）
+
+> 判新通用规则：以 **feed `<item>` 内日期**为准（勿读 lastBuildDate/页脚）；web_search 摘要不作证据；web_fetch 故障→curl + Chrome UA；X 全员登录墙，只认转载页间接核验。
+
+| 人物/机构 | 轮查入口 | 节奏 | 已知墙/备注 |
+|---|---|---|---|
+| Fowler | martinfowler.com 各单页直抓（无总 feed；recentChanges 页未核） | 周 | 站点对脚本 UA 偶发 403；/articles/exploring-gen-ai/ 目录索引 403 但**单页可抓** |
+| Farley | Bluesky `davefarley77.bsky.social`（public.api.bsky.app 无登录可读）＋ YouTube 频道 RSS `feeds/videos.xml?channel_id=UCCfqyGl3nq_V0bo64CjZh8g` | 周多更 | 频道列表有 consent 墙；**频道多主播**（AI briefing 期引用须核主讲人）；字幕均 [asr] |
+| Willison | simonwillison.net 首页 | 日 | 无墙，最高性价比轮查 |
+| Beck | newsletter.kentbeck.com/feed | 周 | X/Medium 双墙；Medium 写作已迁出 |
+| Karpathy | karpathy.bearblog.dev/blog/ | 不定 | X 双墙，轮查性价比最低 |
+| Cherny | X 墙→经 Willison 转载页间接 | 不定 | |
+| Lopopolo | hyperbo.la/contact/（自述页）＋ github.com/lopopolo/harness-engineering（lineage） | 月 | GC 官方博客只在大事件时更新 |
+| Morris | infrastructure-as-code.com/posts/ ＋ bsky（剔转帖） | 周 | |
+| Orosz | newsletter.pragmaticengineer.com/feed | 日 | 免费层即可判增量；深度文常付费墙 |
+| Tacho | lauratacho.com ＋ Stellar Work 档案页 | 月 | 任职信息以 Stellar Work 自述为准 |
+| Dohmke | entire.io 博客 ＋ linearb/testmu 等演讲页 | 周 | Bloomberg/LinkedIn 墙 |
+| DHH | world.hey.com/dhh/feed.atom | 周 | X 墙；HEY World 无反爬 |
+| Huntley | ghuntley.com/feed/（**判新读 `<item>` 日期**，lastBuildDate 是构建时间戳） | 周多更 | /livid/ 等 - 付费墙；RSS 覆盖全年 |
+| Ronacher | lucumr.pocoo.org/2026/ | 周 | 无墙，月归档即全列表 |
+| Valim | dashbit.co/blog | 月 | |
+| Thorsten Ball | registerspill.thorstenball.com/p/joy-and-curiosity-NNN（**编号连续，直接探 +1**） | 周（周六） | |
+| Böckeler | martinfowler.com 单页直抓 ＋ bsky（她有转帖出现） | 不定 | 系列索引页 403，新篇靠 feed/镜像发现 |
+| ThoughtWorks | thoughtworks.com/radar ＋ insights 博客 | 季/周 | Vol 35 待出（2026-10-03 核验未出） |
+
 ---
 
 ## 最后更新
