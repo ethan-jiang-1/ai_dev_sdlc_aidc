@@ -28,7 +28,7 @@ key_concepts:
 | 阶段 | 日期 | 立场标记 | 锚点 |
 |------|------|---------|------|
 | 数据口径确立 | 2026 上半年 | 450+ 公司 / 12 万开发者数据；失望鸿沟；"AI 是放大器"（好团队更好、差团队更差）；Core 4 | 卡内各节 |
-| 稳定确认 + 任职更新 | 2026-08-24 | **J 曲线**（代码 ~17×、变更集 ~2×、到生产几乎未动）；"AI did not break engineering metrics"；DX → AWS | 本卡"2026-08 增量"节 |
+| 稳定确认 + 任职更新 | 2026-08-24 | **J 曲线**（代码 ~17×——出处为 NBER working paper；变更集 ~2×、到生产几乎未动）；"AI did not break engineering metrics"；DX → AWS | 本卡"2026-08 增量"节 |
 
 **判语**：2026 年内立场**零漂移**——"稳定"本身是她数据派身份的注脚：所有 KOL 都在改口时，她只用新数据复述同一个判断。
 
@@ -140,12 +140,14 @@ Tacho 在 O'Reilly Radar 上发表的 *"Measuring What Matters in the Age of AI 
 
 ---
 
-## 2026-08 增量：度量口径确认 + 任职更新
+## 2026-08 增量：度量口径确认 + 任职更新（2026-10-03 全页细读）
 
-> 2026-10-03 增量回源（Stellar Work #64 页直抓）。**任职更新**：已离开 DX，现就职 AWS（developer experience）——来源页自述 "ran DX as CTO, and now works on developer experience at AWS"。
+> 增量回源（Stellar Work #64 页直抓 + 同日全页补采）。**任职更新**：已离开 DX，现就职 AWS（developer experience）——来源页自述 "ran DX as CTO, and now works on developer experience at AWS"（15 年 developer tools 经历、数百个工程组织的实测数据视角）。
 
 - **08-24 Stellar Work #64《You weren't measuring well before AI either》**："**AI did not break engineering metrics. It made it obvious that most companies never had any worth trusting.**" / "**AI just amplifies everything. It amplifies the good, and it amplifies the bad.**"
-- **J 曲线**（同集）：代码量 ~17×、变更集 ~2×、到生产的产出几乎未动——产出堵在验证/发布侧，不是生成侧。
+- **J 曲线（含出处与 caveat）**：代码量 **~17×——出处为她引用的 NBER working paper**；变更集 ~2×（多个独立数据集一致）；到生产的产出几乎未动——**"The gap is where the productivity story falls apart."**（产出堵在验证/发布侧，不是生成侧）；caveat："the future is **unevenly distributed** and some organisations are experiencing this very differently from others."
+- **每周都被问的问题**："does AI need new metrics? No. What it needs is **the discipline most companies skipped the first time**."——且当领导带着"AI 度量问题"来找她时，"she usually finds **they weren't measuring efficiency or performance well before AI either**"；实践要义：**several metrics rather than one**。
+- **个体级度量红线**："**Any engineering metric measured at the individual level is a red flag.**"
 - 与卡内"失望鸿沟"一脉相承：她反对为 AI 另造新指标，主张补上此前缺失的度量纪律。
 
 ---
