@@ -42,6 +42,16 @@ key_concepts:
 
 ---
 
+## 思想变迁轨迹（2026）
+
+| 日期 | 立场标记 | 锚点 |
+|------|---------|------|
+| 2026-10-02 | 纲领成文：readable→explainable + 自述两年未手写码 + types as back pressure | ghuntley.com/readable |
+
+**判语**：入库时点单一锚点（"起点即纲领"）；Ralph loop 期前史按时间铁律留在 loop 台账（`02_research/.../loop_engineering/raw/kol-roster.md`），后续按周观察。
+
+---
+
 ## 与库内其他人物的立场对照
 
 - **对立 Fowler（`02`）与可读性传统**："readable→explainable" 正面冲击"代码为下一个读者而写"的工艺教条；也对立 Böckeler 的 steering-loop 审慎。

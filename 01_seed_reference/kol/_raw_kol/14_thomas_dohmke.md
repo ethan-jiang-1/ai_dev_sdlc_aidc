@@ -24,6 +24,18 @@ key_concepts:
 
 ---
 
+## 思想变迁轨迹（2026）
+
+| 阶段 | 日期 | 立场标记 | 锚点 |
+|------|------|---------|------|
+| 创业宣言 | 2026-02-10 | Entire 成立（$60M）："GitHub 那代平台诞生于人类写码的时代——**整个栈需要工厂重置**" | 卡内 + frontmatter |
+| 叙事起点 | 2026-07-13 | "agents write the code, **humans own the intent**… the most valuable artifact is no longer the file. **It's the session.**"（Stellar Work #61，窗口边缘已核） | 本卡"2026-08～09 增量"节·追溯 |
+| **制度议程** | 2026-08-20 → 09-22 | "Is the developer lifecycle dead?" → forge 治理件落地（**hooks carry context / session logs the why / PRs need owners**）+ "stop pretending you read every line of code" | 同上 |
+
+**判语**：2026 年内从宣言到产品机制的直线推进——全场节奏最快的"产品化轨迹"；每一步都在为 Entire 的 thesis 添机制。
+
+---
+
 ## 从 GitHub CEO 到 AI-Native 创业者
 
 Dohmke 是极少数**在 Copilot 时代领导过全球最大开发者平台**、现在又亲自下场重建的人。他的转型路径本身就值得注意：

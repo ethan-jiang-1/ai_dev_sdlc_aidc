@@ -203,6 +203,7 @@ kol/
 
 ## 最后更新
 
+- 2026-10-03：**新面孔入册 ×4 + 全员轨迹覆盖**——`16` Huntley / `17` Ronacher / `18` Valim / `19` Thorsten Ball（按当日开荒扫描建卡）；全部 19 张卡补齐「思想变迁轨迹（2026）」节（阶段×日期×立场标记×一手锚点+判语；≤2025 按时间铁律压缩为背景行）；观察名单落入 `_raw_kol/README.md`。
 - 2026-10-03：**存量卡扫描批**——Willison（`04`：思想转变节——守门锚从人审换成 harness/eval，auto mode 默认化 + 年度综述）、Cherny（`08`："已死"论细化为质量守门）、Dohmke（`14`：SDLC 重审 + forge 治理件）、Orosz（`12`：OpenAI 软件工厂一手取样 + 评审制度议程）、Tacho（`13`：J 曲线 + 任职更新为 AWS）；Karpathy（`07`）加术语谱系勘误（"agentic engineering" 系 Zed/Sobo 2025-06 引入，Karpathy 为扩散者）。Farley / Lopopolo / Morris / ThoughtWorks 窗口内无可核验新增（渠道受限明细见当日扫描档）。
 - 2026-10-03：**扁平化提层**——本库自 `reference/kol/` 移至种子层顶层 `kol/`（`reference/` 薄壳撤销，与 `corp/` 一同上移）；库内全部外向相对链接与 frontmatter `directory` 已同步改写。
 - 2026-10-03：「滚动更新规矩」落地（见上节）；Fowler（`02`）与 Beck（`05`）两卡按窗口 2026-07～10 增量回源并追加带日期更新小节；新增 DHH 卡 `_raw_kol/15_dhh.md`（库内首个条目——Rails World 2026 "Pencils down"、Lex #501、agent-accelerated development）；`_raw_kol/README.md` 导航表与共识/分歧矩阵同步登记 DHH 列。

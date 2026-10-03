@@ -22,6 +22,10 @@
 | `13_laura_tacho.md` | Laura Tacho | 前 DX CTO，450+ 公司 12 万开发者数据，"AI 是放大器"，"失望鸿沟" |
 | `14_thomas_dohmke.md` | Thomas Dohmke | 前 GitHub CEO，Entire 创始人（$60M 种子轮），"Homer Simpson 车"，"Agent 装配线" |
 | `15_dhh.md` | DHH | Rails World 2026 "Pencils down"：37signals 停止手写代码；从头号抵制者到 agent 加速派（"agent-accelerated development"） |
+| `16_geoffrey_huntley.md` | Geoffrey Huntley | "代码不需要人类可读，只需要人类可解释"；工厂派纲领（2026-10-02） |
+| `17_armin_ronacher.md` | Armin Ronacher | "内卷派"主笔：Better Models Worse Tools、slop factory，与 Thorsten 公开互驳 |
+| `18_jose_valim.md` | José Valim | 语言层为 agent 重构：program databases over LSPs、runtime observability over debuggers |
+| `19_thorsten_ball.md` | Thorsten Ball | Amp 共创者，"aim higher" 乐观极，agent 派生 agent 黑盒测试实录 |
 
 ---
 
@@ -62,3 +66,11 @@
 ## 新增 KOL
 
 Kief Morris 的 "in the loop → on the loop" 框架已被 ThoughtWorks (Böckeler)、Martin Fowler、OpenAI (Lopopolo) 广泛引用，是 Harness Engineering 思想谱系的基础性贡献。
+
+## 观察名单（2026-10-03 开荒扫描产出）
+
+- **Justin Searls**——10-02 播客《Retiring from programming》+ 自述"意外建了 dark factory"；事件型、书面长文少，**书面化后开卡**。
+- **Mitchell Hashimoto**——07-29 创办 Superlogical（"durable session… visible and controllable by people"，人机共栖会话层）；一手仅宣言一篇，**再写人机协作文即升卡**。
+- **Alexander Embiricos**（OpenAI Codex 产品负责人）——Lenny 专访付费墙未破、X 登录墙，**无一手可核；transcript 可得后评估**。
+- **Dex Horthy**（HumanLayer）——"Harness Engineering is not Enough: Why Software Factories Fail"（AI Engineer World's Fair，经 Osmani 07-20 帖一手转介）；**演讲本体待回源**。
+- **Nathan Sobo**（Zed CEO）——"agentic engineering" 命名者（Zed 2025-06），**不建卡**；谱系修正见 `07_andrej_karpathy.md` 卡内勘误。

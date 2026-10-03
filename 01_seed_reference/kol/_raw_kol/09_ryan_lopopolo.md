@@ -23,6 +23,19 @@ key_concepts:
 
 ---
 
+## 思想变迁轨迹（2026）
+
+| 阶段 | 日期 | 立场标记 | 锚点 |
+|------|------|---------|------|
+| 实验定调 | 2026-02 | OpenAI 官方页 + InfoQ 报道：harness engineering 进入公共视野 | frontmatter source_urls |
+| 极端化展示 | 2026-04-17 | AI Engineer 演讲《Humans Steer, Agents Execute》；1M LOC、0% 人写人审；Symphony 编排 "**removing humans from the code review and merge loop entirely**" | 卡内实验节 + ZenML 档案 |
+| **术语被采纳（影响力弧线）** | 2026-02→05 | Fowler 站内 Böckeler 系列（02-17→05-27）+ TW 雷达背书——harness engineering 从实验报告变成学科名 | `02_martin_fowler.md` 系列表 |
+| 窗口内（07→10） | — | 本人无可核新增；07-09 跳槽 Google Cloud **仅二手快讯**（BlockBeats），org 归属待一手核验 | 2026-10-03 扫描档 |
+
+**判语**：他本人 2026 年发声不多，但"被采纳率"全场最高——库内 Fowler/TW/Willison 线的 harness 话语都回溯到他的实验；下轮优先核验 org 归属。
+
+---
+
 ## 实验：零人手写代码，零人审查
 
 2025 年中，Lopopolo 对团队施加了一条极端约束：**不写一行代码，不做一次代码审查。** 团队构建了一个内部 beta 产品（Electron 数据分析 Agent 应用），完全由 AI Agent 产出。

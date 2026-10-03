@@ -49,15 +49,13 @@ key_concepts:
 
 ---
 
-## 思想转变轨迹：从抵制到 pencils down（2025-07 → 2026-09）
+## 思想变迁轨迹（2026）：从抵制到 pencils down
 
-> 2026-10-03 前半程回源（Lex #474 官方 transcript + RSS 日期核验、world.hey.com 逐篇直抓、Anthropic 官方页核验；X 原帖登录墙未核处均标注）。**这是库内唯一的"立场反转"样本，且转变的分水岭是模型事件，不是顿悟**——先看轨迹表，再读后半程证据：
+> 2026-10-03 前半程回源（world.hey.com 逐篇直抓、PE#58 官方 transcript、Anthropic 官方页核验；X 原帖登录墙未核处均标注）。**这是库内唯一的"立场反转"样本，且转变的分水岭是模型事件，不是顿悟**。按时间铁律，≤2025 压缩为一行背景：
 
 | 阶段 | 日期 | 立场标记 | 关键原句 / 锚点 |
 |------|------|---------|----------------|
-| 抵制态 | 2025-07-12 | 手艺/学习论（不是"AI 无用"论）：拒自动补全、怕 competence 流失、自嘲当"agent 乌鸦群的项目经理" | Lex #474："**I chisel them out of the screen with my bare hands. I don't auto-complete.**" / "**I can literally feel competence draining out of my fingers.**"（01:29:03，此句原始出处即此）/"I have to do the typing myself **because you learn with your fingers.**"（吉他类比）/"**a project manager of a murder of AI crows**" / "I don't actually use it very much for Ruby code." |
-| 抵制的边界 | 2025-10-07 | 只反"替我写码"，不反 AI 内容 | 博文《Give me AI slop over human sludge any day》 |
-| **拐点** | 2025-11-24 | **Claude Opus 4.5 发布日**——后被他定名为 "the Kodak Brownie of our era"（keynote 官方章节 [00:11:20]）。当天本人原话无一手可核（X 登录墙）；可核锚点：Anthropic 官方页 datePublished=2025-11-24 + 次日博文已锚定"租用 frontier 模型干活" | 《Local LLMs…》(11-25)："you'll be back to using the rented models **for the vast majority of the work you're doing**."；PE#58 追述："it just happened from November… when Opus 4.5 dropped."（他把日期记成 27，实际 24） |
+| 背景（≤2025） | 2025-07→11-24 | 抵制态：手艺/学习论，只反"AI 替我写码"；**拐点 = 2025-11-24 Claude Opus 4.5 发布**，后被他自名 "the Kodak Brownie of our era"（keynote 官方章节 [00:11:20]） | "I chisel them out of the screen with my bare hands." / "I can literally feel competence draining out of my fingers." / "because you learn with your fingers"（Lex #474 官方 transcript，2025-07-12）；《Give me AI slop over human sludge any day》(2025-10-07)；《Local LLMs…》(11-25)；Anthropic Opus 4.5 官方页 |
 | 自我修正分水岭 | 2026-01-07 | 给 2025 年夏的自己打补丁：agent 从"顾问"升职为"能出生产级贡献的同事"，但仍自任把关人 | 《Promoting AI agents》："**At the end of last year, AI agents really came alive for me.**" / "**Yes, I'm ready to give the current crop of AI agents a promotion.**" / "I'm nowhere close to the claims of having agents write 90%+ of the code… **if I hold the line on quality and cohesion.**" / "Supervised collaboration, though, is here today." |
 | 升为公司战略 | 2026-03-25 | 个人用法 → 37signals 全线产品的一等公民接口 | 《Basecamp becomes agent accessible》："**Anything you can do in Basecamp, agents can now do too.**" / "This is where the puck is going." |
 | agent-first 日常化（判断权仍在手） | 2026-04-08 | "code first" → "agent first"；4 月刻度＝还留 review 和 taste——与 8 月的差值就是这一步 | PE#58："**I went from early November last year — code first… Now I start with the agent.**" / "stepping into this **super mech suit**… **I'm still the one doing it, even if I'm not typing.**" / "90 minutes… I processed 100 PRs… maybe 10% got merged as is… What the heck?" / 保留："Then I'll go in and also code myself." |
@@ -65,7 +63,7 @@ key_concepts:
 | 为 agent 参与权站队 | 2026-06-01 | 把 AI 辅助贡献权定义为开源创始愿景，守门者 = "旧行会" | 《Let the agents democratize open source》："…**to preserve the privileges of the old programmer guilds.**" / "**Don't succumb to this insular, fearful, protectionist thinking. Programming is evolving.**" |
 | 乐趣重定义 → 100% → pencils down | 2026-07→09 | 见下文各节（Endless execution / Lex #501 / Rails World / Thought Economics） | — |
 
-**转变判语**：2025-07 他说"AI 让我指尖的 competence 流失"，2026-09 他说"手写代码退役，怀着喜悦"。中间每一格都有日期与一手锚点：**模型跃迁（Opus 4.5，2025-11-24）→ 工作流改造（升职 → 产品化 → agent-first）→ 乐趣重定义（07）→ 判断权让渡（08 "agent knows best"）→ 组织与经济结论（09 pencils down / Agent Luther）**。4 月的 "super mech suit / I'm still the one doing it" 与 8 月的 "agent knows best" 之间的差值——把"还是我在做"改成"agent 最懂"——就是他走完反转的最后一格。
+**转变判语**：2026-01 他还在"给 agent 升职、自任把关人"，2026-09 他说"手写代码退役，怀着喜悦"。每一格都有日期与一手锚点：**工作流改造（升职 → 产品化 → agent-first）→ 乐趣重定义（07）→ 判断权让渡（08 "agent knows best"）→ 组织与经济结论（09 pencils down / Agent Luther）**。4 月的 "super mech suit / I'm still the one doing it" 与 8 月的 "agent knows best" 之间的差值——把"还是我在做"改成"agent 最懂"——就是他走完反转的最后一格。
 
 ---
 

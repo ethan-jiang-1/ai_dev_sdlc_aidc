@@ -25,6 +25,18 @@ key_concepts:
 
 ---
 
+## 思想变迁轨迹（2026）
+
+| 阶段 | 日期 | 立场标记 | 锚点 |
+|------|------|---------|------|
+| 背景一句话（≤2025） | 2025-11 起未手写码 | （时间铁律压缩；详见卡内"核心论点"） | 本卡 |
+| 口号期 | 2026-06 | 同时管理数万 agent；"coding is solved"；150 PR/天；"Builder 取代工程师" | Fortune 两篇 + Frontend Mentor（卡内各节） |
+| **细化（被自己修正）** | 2026-09 | 三连：**curiosity and judgment may matter more than coding expertise**（09-23 CHM）/ **hold the bar on code quality**（09-12 BI）/ **Claude 写的生产代码门槛应高于人写**（09-11 X，经转载核验） | 本卡"2026-09 增量"节 |
+
+**判语**：2026 年内他的弧线是"被自己细化"——口号没变，内容从挑衅变成机制；9 月与 Karpathy"不能外包理解"、Fowler"验证投入须超生成"意外合流。
+
+---
+
 ## 核心论点
 
 > *"Software engineering as we knew it is already gone. What replaced it is something closer to what I call a builder — someone who knows what to build, not how to type it out."*

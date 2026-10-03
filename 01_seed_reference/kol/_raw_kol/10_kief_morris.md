@@ -21,6 +21,18 @@ key_concepts:
 
 ---
 
+## 思想变迁轨迹（2026）
+
+| 阶段 | 日期 | 立场标记 | 锚点 |
+|------|------|---------|------|
+| 框架提出 | 2026-03-04 | martinfowler.com《Humans and Agents in Software Engineering Loops》：**in the loop → on the loop** | 卡内 + mf 站内 |
+| 推进到元系统 | 2026-07-04 | PlatformCon "Human on the Loop" 访谈（转述页已核）："**build the system that builds the software, not just the software**" | lucaberton.com |
+| 窗口内（07→10） | — | 个人博客无新增（最近一篇 07-09，且在窗口边缘） | 2026-10-03 扫描档 |
+
+**判语**：稳定演化，词汇从"环上监督"走向"造系统的系统"——与 Fowler 站内互为放大器；他是 harness 治理谱系里"不变中渐进"的代表。
+
+---
+
 ## 人物背景
 
 Morris 的故事比大多数 KOL 更有"实战感"：

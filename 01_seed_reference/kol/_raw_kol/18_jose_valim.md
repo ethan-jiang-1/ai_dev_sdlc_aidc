@@ -30,6 +30,16 @@ key_concepts:
 
 ---
 
+## 思想变迁轨迹（2026）
+
+| 日期 | 立场标记 | 锚点 |
+|------|---------|------|
+| 2026-09-24 | 宣言成文：program databases over LSPs / runtime observability over debuggers / guarantees over syntax | dashbit.co |
+
+**判语**：单点宣言，轨迹待观察；致谢链（Lopopolo `09`）与扩散链（Huntley `16`）均已接入库内网络——后续若有续篇即成完整弧线。
+
+---
+
 ## 传播链与库内关联
 
 - 文章致谢名单含 **Ryan Lopopolo**（`09`，Harness Engineering 提出者）——新面孔与库内卡片的一手网络直接相连；随即被 Geoffrey Huntley（`16`）10-02 长文引用扩散。

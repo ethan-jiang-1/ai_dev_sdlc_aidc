@@ -23,6 +23,19 @@ key_concepts:
 
 ---
 
+## 思想变迁轨迹（2026）
+
+| 阶段 | 日期 | 立场标记 | 锚点 |
+|------|------|---------|------|
+| 全景长文 | 2026-01 | 万字调查（900+ 工程师；采访 Beck/Fowler/Willison）："**软件基本功更重要**" + "Something precious is being taken away" | 卡内 + frontmatter |
+| 峰会主办 | 2026-02 | Pragmatic Summit（Beck+Fowler 同台） | `../_raw_promatic_summit_2026/` |
+| 文化批判 | 2026-07 | Meta engineering culture 分析（Daring Fireball 转链 07-02） | frontmatter |
+| **一线取证 + 制度议程** | 2026-09 | 三连：code reviews 是适应还是消亡（09-08）/ 潜入 OpenAI 软件工厂（09-15）/ 手写代码终结议程化（09-24） | 本卡"2026-09 增量"节 |
+
+**判语**：从综合访谈的观察者变成一线取证者——1 月的"基本功"判断仍在，但 9 月的主叙事换成了"制度来不及适应"。
+
+---
+
 ## 2025 年末的拐点
 
 Orosz 精确标定了 AI 编码跨过关键门槛的时间窗口：
