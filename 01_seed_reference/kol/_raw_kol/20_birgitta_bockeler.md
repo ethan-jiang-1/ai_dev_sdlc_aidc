@@ -57,7 +57,7 @@ key_concepts:
 - **Cherny（`08`）/ Orosz（`12`）9 月守门叙事**：同向——她 5 月的传感器系列就是这个议题的方法论底座。
 - **Huntley（`16`）/ Thorsten（`19`）宽自主派**：对立——她的 steering-loop 审慎与"人定义期望状态"立场正面顶住"让模型决定 workflow"。
 - **Beck（`05`）TDD 口径**：她的 08-11 实验给了 Beck 的"TDD 超能力"论一记数据侧质疑（注意小样本 caveat）——两条卡必须并读。
-- **谱系注意（2026-10-03 深挖发现）**：Lopopolo（`09`）在开源 field guide（lopopolo/harness-engineering，docs/lineage/）把本系列定性为 "**later interpretations of Ryan's essay**"（其 02-17 memo 曾猜 "harness" 或源自 Mitchell Hashimoto）；而 Google Cloud 官方博客（09-25）称 Lopopolo 为 "the person who coined the term agent harness"——**术语归属已成多方叙事之争**，引用 harness engineering 概念时须注明采用哪条谱系。
+- **谱系注意（2026-10-03 细读 Lopopolo field guide 后修正）**：Lopopolo 的 docs/lineage/ 把她的 02-17 memo 定性为对 02-11 OpenAI 文章的 "**[initial memo]** responded through context, deterministic constraints, LLM review, and recurring feedback"，并与 Zhang 并称 "**both … later interpretations of Ryan's essay**"；其 04-02 正式文的 "constrained service topologies" 段（"committing to a topology narrows that space, making a comprehensive harness more achievable"）即经此谱系被引用核验。**谱系争论现状**：Lopopolo 自指 "seminal essay"、GC 官方称他 "coined the term agent harness"（09-25）、她的 memo 曾猜 "harness" 或源自 Mitchell Hashimoto（该猜源说在 Lopopolo 谱系中零回应）——**引用 harness engineering 概念时须注明采用哪条谱系**。
 
 ---
 

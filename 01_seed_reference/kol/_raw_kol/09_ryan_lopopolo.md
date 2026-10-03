@@ -8,6 +8,7 @@ source_urls:
   - https://openai.com/index/harness-engineering/
   - https://github.com/openai/symphony
   - https://github.com/lopopolo/harness-engineering
+  - https://raw.githubusercontent.com/lopopolo/harness-engineering/trunk/docs/lineage/README.md
   - https://www.zenml.io/llmops-database/zero-human-written-code-harness-engineering-for-autonomous-ai-agents-at-scale
   - https://www.zenml.io/llmops-database/extreme-harness-engineering-building-production-software-with-zero-human-written-code
   - https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/
@@ -39,7 +40,7 @@ key_concepts:
 | 窗口内（07→10） | 2026-07→09 | **org 变动已一手核验**：加入 Google Cloud，职衔 **Principal Engineer, Agentic Google Cloud Platform**（本人站点自述 + Google Cloud 官方博客 09-25 确认在职；BlockBeats 快讯 "Chief Engineer" 系拔高误译，不用） | [hyperbo.la/contact/](https://hyperbo.la/contact/)（last-modified 2026-09-26）|
 | **窗口内最重发声** | 2026-09-25 | Google Cloud 官方博客/播客 **The Agent Factory**：harness 定义收束（"**the study and practice of putting a model into an environment where it can succeed**"）、"prompt and pray"、**只审终态工件**、tightly scoped PR 逐级放大循环；工具栈 Gemini 3.8 Flash / Antigravity /boost / Google Skills Repo（19k stars）——"he hasn't opened a traditional code editor since May of last year, maintaining that streak **through his transition into Google Cloud**" | [GC 官方博客](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding/)（datePublished 已核）|
 
-**判语**：他本人 2026 年发声不多，但"被采纳率"全场最高——库内 Fowler/TW/Willison 线的 harness 话语都回溯到他的实验；且 **harness 术语归属已进入雇主官方口径**（Google Cloud 官方博客称他 "the person who coined the term agent harness"，09-25）——归属叙事本身已成为争论点（Böckeler memo 有"harness 或源自 Mitchell Hashimoto"的猜源说，而他 2026-07-18 开源的 field guide `lopopolo/harness-engineering` docs/lineage/ 自建谱系、并把 Böckeler 系列定性为 "later interpretations of Ryan's essay"——单向引用已变互引）。org 变动未改其主张，只放大了平台。
+**判语**：他本人 2026 年发声不多，但"被采纳率"全场最高——库内 Fowler/TW/Willison 线的 harness 话语都回溯到他的实验；且 **harness 术语归属已进入雇主官方口径**（Google Cloud 官方博客称他 "the person who coined the term agent harness"，09-25）。**谱系自述已细读**（2026-07-18 开源 field guide `lopopolo/harness-engineering`，docs/lineage/README.md 18KB，trunk 分支）：①他把自己的 02-11 OpenAI 文章称为 "**seminal harness-engineering essay**"；②Böckeler 的 02-17 memo 定性为 "responded through context, deterministic constraints, LLM review, and recurring feedback"；③George Zhang（03-07《Harness Engineering Is Cybernetics》）与 Böckeler 并称 "**both … later interpretations of Ryan's essay**"（Zhang 显式化 higher-level control loop 与校准；Böckeler 按 direction / execution type / lifecycle timing / quality 分离控制）；④Fowler 在其谱系中仅以 Strangler Fig 作采纳隐喻入谱；⑤**Böckeler memo 的 Hashimoto 猜源说在其谱系中零回应**（Hashimoto 0 命中）。org 变动未改其主张，只放大了平台。
 
 ---
 
