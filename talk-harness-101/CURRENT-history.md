@@ -121,7 +121,7 @@
 
 ## v5 消化行业侧素材（2026-09-22）
 
-> 来源：用户投递的公众号归档 `01_seed_reference/weixin/raw_aws_strands_harness/`。**已回源**到官方博客与官方文档，
+> 来源：用户投递的公众号归档 `01_seed_reference/zh_discourse/raw_aws_strands_harness/`（原 `weixin/`，2026-10-04 更名）。**已回源**到官方博客与官方文档，
 > 二手转述只作"中文界怎么说"的记录。卡片见 `02_evidence/00-sources.md` §5。
 
 | 项 | 处置 |

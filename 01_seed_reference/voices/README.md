@@ -213,6 +213,8 @@ voices/
 
 ## 最后更新
 
+- 2026-10-04：**corp 边界判据全层统一 + AWS 双卡位定案**——「主张什么进 voices，怎么做 / 卖什么进 corp」一句话判据上门面（本 README、`_raw_orgs/README.md`、`corp/README.md`、种子层 README 四处对齐，入座判据总表见 [`../README.md`](../README.md)）；AWS 悬案定案：**允许双卡位**（AI-DLC 方法论留 `corp/_raw_aws/`，Vogels 修订 Working Backwards / Swami frontier 文等立场性主张可在 `_raw_orgs/` 开卡，开卡时遵循其入册判据）。同日种子层 `weixin/` → `zh_discourse/` 更名（中文圈话语快照，本库一手源铁律的例外收容区；详情见种子层 README 迁移记录）。
+
 - 2026-10-03（深夜·二）：**`_raw_orgs` 收束为 top 卡位（13 → 6 张，用户定调）**——新增判据 #5「话语塑造力」：只留改变别人怎么做的组织。保留 thoughtworks / google / microsoft_github / 37signals / shopify / stripe 六张；Stack Overflow（被 AI 淘汰的当事人）、JetBrains（数据权威非立场权威）、Atlassian（产品护城河喉舌）、GitLab、Spotify、O'Reilly 收档为「一行一信号」表（最强单条＋主 URL，保留重启开卡线索）；DORA 立场线（amplifier 论、反 tokenmaxxing）并入 `google.md`。评估结论未丢：当量分组、负发现（Pivotal 消亡、Netflix 官方失声）、跨卡发现（harness 四家收编路径等）仍在 [`_raw_orgs/README.md`](_raw_orgs/README.md)。
 
 - 2026-10-03（深夜）：**`_raw_orgs` 当量对标挖掘批——组织卡 1 → 13 张**。以「ThoughtWorks 同当量组织是否存在、其 2026+ 影响是什么」为题，6 路并行回源（约 80 个一手页面逐条核验，全部过 2026 时间窗＋一手源铁律，载荷 URL 二次抽验），新增 12 张组织卡：Google / Microsoft+GitHub（生态卡）/ 37signals / Shopify / Spotify / Stripe / GitLab / Atlassian / JetBrains / Stack Overflow / DORA / O'Reilly。跨卡发现与当量分组（当量高+有声 12 家／当量高+无声：Pivotal 消亡、Netflix 官方失声／新生当量：AI 原生待开卡）登记在 [`_raw_orgs/README.md`](_raw_orgs/README.md)「当量对标」节；候选清单勘误一条（Shopify「agent 评审 PR 更少事故」研究核不到，系第三方转述误记）；AWS 意见面证据备齐（Vogels 修订 Working Backwards＋Swami frontier 文）待切磋是否双卡位；待回查日历（Octoverse 2026 / SO Survey / GitLab 第 10 届 / DORA 年报 / QCon Netflix talk 11-18 等 8 项）入库；thoughtworks 卡 frontmatter 归一为 org 类型。评估底稿 `.tmp-*` 已清理。

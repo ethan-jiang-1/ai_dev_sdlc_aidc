@@ -204,7 +204,7 @@ model routing）／Hooks & Middleware（compaction, continuation, lint checks）
 | URL | 博客 https://strandsagents.com/blog/introducing-strands-harness/ ／ 官方仓库 https://github.com/strands-agents/harness-sdk ／ 文档 https://strandsagents.com/docs/user-guide/harness/reference/configuration/ ／ 基准仓库 https://github.com/strands-labs/benchmark-harnesses |
 | 观测日期 | 2026-09-22 |
 | **证据强度** | **⚠️ 厂商自述**（官方自测，**论文未发**——原文："Keep an eye out for a follow-up paper from our researchers regarding these benchmarks"）；"确实开源了这套 harness（Apache 2.0）"这一事实本身为**一手（官方）** |
-| **中文界转述** | `../../../01_seed_reference/weixin/raw_aws_strands_harness/aws_strands_harness_change_model_not_body.md`（DataFunTalk，2026-09-22）——**属二手，只作"中文界怎么说"的记录；引用一律回本卡** |
+| **中文界转述** | `../../../01_seed_reference/zh_discourse/raw_aws_strands_harness/aws_strands_harness_change_model_not_body.md`（DataFunTalk，2026-09-22）——**属二手，只作"中文界怎么说"的记录；引用一律回本卡** |
 
 **逐字直引（官方博客与文档，2026-09-22 核验）**：
 

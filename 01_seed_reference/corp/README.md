@@ -59,6 +59,8 @@ corp/     ← 企业/厂商/分析机构（你在这里）
   ├── _raw_aws/                    ← AWS 官方方法论
   └── _raw_ecosystem/              ← 多厂商 + 分析机构 + 社区全景
 
+../voices/_raw_orgs/               ← 组织的立场卡（机构作为发声体）
+../zh_discourse/                   ← 中文圈话语快照（二手渠道例外区，原 weixin）
 ../_abandoned_no_reference/        ← 无源可溯的内容收容所（种子层公共设施，2026-10-03 上移）
 
 voices/   ← 声音库：人物、组织与事件（2026-10-03 净化，话题类已迁出）
@@ -69,8 +71,13 @@ voices/   ← 声音库：人物、组织与事件（2026-10-03 净化，话题�
   └── _raw_event_engelberg_2026/         ← Engelberg Retreat 2026
 ```
 
-**`corp`** 是**组织视角**——公司、厂商、分析机构在说什么。
-**`voices`** 是**个体与聚会视角**——人、组织、事件在说什么。
+**corp 与 `voices/_raw_orgs/` 的一句话判据（2026-10-04 定，全层统一）**：
+**主张什么进 voices，怎么做 / 卖什么进 corp。**
+
+- 立场 / 主张（含高管言论、雷达主题、公司级判断）→ `voices/_raw_orgs/` 开卡；
+- 方法论 / 产品材料 / 生态盘点 → `corp/`；两类都有 → **双卡位合法，两卡互指**。
+- AWS 双卡位悬案同日定案：**允许双卡位**——AI-DLC 方法论留在 `corp/_raw_aws/`，Vogels 修订 Working Backwards / Swami frontier 文等立场性主张可在 `_raw_orgs/` 开 AWS 卡（开卡时遵循其入册判据）。
+- 判据全表见 [`../README.md`](../README.md)「新素材入座判据」。
 
 ---
 
