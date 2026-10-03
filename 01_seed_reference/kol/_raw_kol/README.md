@@ -13,7 +13,7 @@
 | `03_dave_farley.md` | Dave Farley | CD 让 AI 时代可以存活；AI 暴露那些从未学会工程师思维的人；12,000 行问题 |
 | `04_simon_willison.md` | Simon Willison | SDLC 是围绕"一天几百行"设计的——10x 后全崩；"有没有人每天用了两周"是新质量信号 |
 | `05_kent_beck_agile.md` | Kent Beck + Agile 社区 | XP 在 AI 时代复苏；TDD 是 Agent 的理想搭档；"我们保持怀疑，保持人性" |
-| `07_andrej_karpathy.md` | Andrej Karpathy | Vibe Coding→Agentic Engineering，Software 3.0，AI 编码时代最有影响力的单人声音 |
+| `07_andrej_karpathy.md` | Andrej Karpathy | Vibe Coding 造词者；"agentic engineering" 扩散者（该词实为 Zed/Sobo 2025-06 引入，见卡内勘误）；Software 3.0 |
 | `08_boris_cherny.md` | Boris Cherny | Claude Code 之父，"软件工程已死"，150 PR/天，零手写代码 |
 | `09_ryan_lopopolo.md` | Ryan Lopopolo | OpenAI Harness Engineering 先驱，100 万行零人写零人审，70 PR/周 |
 | `10_kief_morris.md` | Kief Morris | IaC 之父，"in the loop → on the loop" 框架，Agentic Flywheel |

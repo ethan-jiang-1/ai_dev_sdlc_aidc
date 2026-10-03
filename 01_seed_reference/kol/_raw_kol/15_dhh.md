@@ -12,6 +12,13 @@ source_urls:
   - https://thoughteconomics.com/david-heinemeier-hansson/
   - https://world.hey.com/dhh/i-m-sorry-dave-380ec27d
   - https://github.com/omacom/omarchy/pull/13770
+  - https://lexfridman.com/dhh-david-heinemeier-hansson-transcript/
+  - https://world.hey.com/dhh/promoting-ai-agents-3ee04945
+  - https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949
+  - https://newsletter.pragmaticengineer.com/p/dhhs-new-way-of-writing-code
+  - https://world.hey.com/dhh/the-malleable-computer-7c187a9b
+  - https://world.hey.com/dhh/let-the-agents-democratize-open-source-9fd630a9
+  - https://www.anthropic.com/news/claude-opus-4-5
 key_concepts:
   - pencils_down
   - agent_accelerated_development
@@ -19,11 +26,13 @@ key_concepts:
   - agent_luther
   - open_weight_advocacy
   - anti_upfront_specification
+  - opus_4_5_inflection
+  - supervised_collaboration
 ---
 
 # DHH — "Pencils down"：从 AI coding 头号抵制者到最激进的 agent 派
 
-> Ruby on Rails 创造者、37signals 联合创始人。2023–2025 年他是"不用 AI 写代码"的最著名声明者；他把拐点自定为 2025-11-24（"the Kodak Brownie of our era"），此后 180° 转身——2026-09-23 在 Rails World 2026 开幕 keynote 官宣 37signals **"pencils down on hand-written code"**。他的自我标签既不是 agentic engineering 也不是 vibe coding，而是 **"agent-accelerated development"**。
+> Ruby on Rails 创造者、37signals 联合创始人。2023–2025 年他是"不用 AI 写代码"的最著名声明者；他把拐点自定为 2025-11-24——**Claude Opus 4.5 发布日**（"the Kodak Brownie of our era"），此后 180° 转身——2026-09-23 在 Rails World 2026 开幕 keynote 官宣 37signals **"pencils down on hand-written code"**。他的自我标签既不是 agentic engineering 也不是 vibe coding，而是 **"agent-accelerated development"**。
 
 ---
 
@@ -40,9 +49,23 @@ key_concepts:
 
 ---
 
-## 立场背景（2025 及更早，一句话带过）
+## 思想转变轨迹：从抵制到 pencils down（2025-07 → 2026-09）
 
-2023–2025 公开声明不做 AI-assisted coding；2025 年夏在 Lex 节目仍说 "did not let AI write his code, and that programmers learn with their fingers"，同年自述 "can literally feel competence draining out of my fingers"（回溯见 [Thought Economics 2026-09-28](https://thoughteconomics.com/david-heinemeier-hansson/)）。2026 上半年过渡轨迹：《Promoting AI agents》(01-07)、《Basecamp becomes agent accessible》(03-25)、Pragmatic Engineer Ep.58 *"DHH's new way of writing code"* (04-08)、《Let the agents democratize open source》(06-01)。
+> 2026-10-03 前半程回源（Lex #474 官方 transcript + RSS 日期核验、world.hey.com 逐篇直抓、Anthropic 官方页核验；X 原帖登录墙未核处均标注）。**这是库内唯一的"立场反转"样本，且转变的分水岭是模型事件，不是顿悟**——先看轨迹表，再读后半程证据：
+
+| 阶段 | 日期 | 立场标记 | 关键原句 / 锚点 |
+|------|------|---------|----------------|
+| 抵制态 | 2025-07-12 | 手艺/学习论（不是"AI 无用"论）：拒自动补全、怕 competence 流失、自嘲当"agent 乌鸦群的项目经理" | Lex #474："**I chisel them out of the screen with my bare hands. I don't auto-complete.**" / "**I can literally feel competence draining out of my fingers.**"（01:29:03，此句原始出处即此）/"I have to do the typing myself **because you learn with your fingers.**"（吉他类比）/"**a project manager of a murder of AI crows**" / "I don't actually use it very much for Ruby code." |
+| 抵制的边界 | 2025-10-07 | 只反"替我写码"，不反 AI 内容 | 博文《Give me AI slop over human sludge any day》 |
+| **拐点** | 2025-11-24 | **Claude Opus 4.5 发布日**——后被他定名为 "the Kodak Brownie of our era"（keynote 官方章节 [00:11:20]）。当天本人原话无一手可核（X 登录墙）；可核锚点：Anthropic 官方页 datePublished=2025-11-24 + 次日博文已锚定"租用 frontier 模型干活" | 《Local LLMs…》(11-25)："you'll be back to using the rented models **for the vast majority of the work you're doing**."；PE#58 追述："it just happened from November… when Opus 4.5 dropped."（他把日期记成 27，实际 24） |
+| 自我修正分水岭 | 2026-01-07 | 给 2025 年夏的自己打补丁：agent 从"顾问"升职为"能出生产级贡献的同事"，但仍自任把关人 | 《Promoting AI agents》："**At the end of last year, AI agents really came alive for me.**" / "**Yes, I'm ready to give the current crop of AI agents a promotion.**" / "I'm nowhere close to the claims of having agents write 90%+ of the code… **if I hold the line on quality and cohesion.**" / "Supervised collaboration, though, is here today." |
+| 升为公司战略 | 2026-03-25 | 个人用法 → 37signals 全线产品的一等公民接口 | 《Basecamp becomes agent accessible》："**Anything you can do in Basecamp, agents can now do too.**" / "This is where the puck is going." |
+| agent-first 日常化（判断权仍在手） | 2026-04-08 | "code first" → "agent first"；4 月刻度＝还留 review 和 taste——与 8 月的差值就是这一步 | PE#58："**I went from early November last year — code first… Now I start with the agent.**" / "stepping into this **super mech suit**… **I'm still the one doing it, even if I'm not typing.**" / "90 minutes… I processed 100 PRs… maybe 10% got merged as is… What the heck?" / 保留："Then I'll go in and also code myself." |
+| 论域换轨 | 2026-04-15 | 从"护手艺"换成"AI 兑现个人计算/开源能动性承诺" | 《The malleable computer》："**Now, with AI, it suddenly isn't [too hard].**" / "AI is compressing that complexity and making it malleable at a ferocious rate." |
+| 为 agent 参与权站队 | 2026-06-01 | 把 AI 辅助贡献权定义为开源创始愿景，守门者 = "旧行会" | 《Let the agents democratize open source》："…**to preserve the privileges of the old programmer guilds.**" / "**Don't succumb to this insular, fearful, protectionist thinking. Programming is evolving.**" |
+| 乐趣重定义 → 100% → pencils down | 2026-07→09 | 见下文各节（Endless execution / Lex #501 / Rails World / Thought Economics） | — |
+
+**转变判语**：2025-07 他说"AI 让我指尖的 competence 流失"，2026-09 他说"手写代码退役，怀着喜悦"。中间每一格都有日期与一手锚点：**模型跃迁（Opus 4.5，2025-11-24）→ 工作流改造（升职 → 产品化 → agent-first）→ 乐趣重定义（07）→ 判断权让渡（08 "agent knows best"）→ 组织与经济结论（09 pencils down / Agent Luther）**。4 月的 "super mech suit / I'm still the one doing it" 与 8 月的 "agent knows best" 之间的差值——把"还是我在做"改成"agent 最懂"——就是他走完反转的最后一格。
 
 ---
 
@@ -135,6 +158,10 @@ RubyEvents 官方简介：
 
 ## 关键引用汇总
 
+> *"I can literally feel competence draining out of my fingers."* — Lex #474, 2025-07-12（转变弧线的起点）
+
+> *"Yes, I'm ready to give the current crop of AI agents a promotion."* — 2026-01-07（自我修正分水岭）
+
 > *"I have not written any of the code that's shipped in Quattro by hand."* — Lex #501, 2026-08-26
 
 > *"37signals goes pencils down on hand-written code."* — Rails World 2026 keynote, 2026-09-23
@@ -149,4 +176,4 @@ RubyEvents 官方简介：
 
 ---
 
-**Source:** [Rails World 2026 Opening Keynote（官方视频）](https://www.youtube.com/watch?v=vDjW_dRyKXY) · [RubyEvents 官方条目（keynote + Matz fireside chat）](https://www.rubyevents.org/talks/opening-keynote-rails-world-2026) · [Lex Fridman #501 官方转录](https://lexfridman.com/dhh-2-transcript/) · [Endless execution](https://world.hey.com/dhh/endless-execution-4157e065) · [I'm sorry, Dave](https://world.hey.com/dhh/i-m-sorry-dave-380ec27d) · [Thought Economics 访谈](https://thoughteconomics.com/david-heinemeier-hansson/) · [Sitting down with Senra](https://world.hey.com/dhh/sitting-down-with-senra-69f5e368) · [omacom/omarchy PR #13770](https://github.com/omacom/omarchy/pull/13770) · [Rails World 2026 官方回顾](https://rubyonrails.org/2026/10/1/rails-world-2026-recap)
+**Source:** [Rails World 2026 Opening Keynote（官方视频）](https://www.youtube.com/watch?v=vDjW_dRyKXY) · [RubyEvents 官方条目（keynote + Matz fireside chat）](https://www.rubyevents.org/talks/opening-keynote-rails-world-2026) · [Lex Fridman #501 官方转录](https://lexfridman.com/dhh-2-transcript/) · [Endless execution](https://world.hey.com/dhh/endless-execution-4157e065) · [I'm sorry, Dave](https://world.hey.com/dhh/i-m-sorry-dave-380ec27d) · [Thought Economics 访谈](https://thoughteconomics.com/david-heinemeier-hansson/) · [Sitting down with Senra](https://world.hey.com/dhh/sitting-down-with-senra-69f5e368) · [omacom/omarchy PR #13770](https://github.com/omacom/omarchy/pull/13770) · [Rails World 2026 官方回顾](https://rubyonrails.org/2026/10/1/rails-world-2026-recap) · [Lex Fridman #474 transcript（2025-07-12，抵制态原话）](https://lexfridman.com/dhh-david-heinemeier-hansson-transcript/) · [Promoting AI agents（2026-01-07）](https://world.hey.com/dhh/promoting-ai-agents-3ee04945) · [Basecamp becomes agent accessible（2026-03-25）](https://world.hey.com/dhh/basecamp-becomes-agent-accessible-3ae6b949) · [PE Ep.58: DHH's new way of writing code（2026-04-08）](https://newsletter.pragmaticengineer.com/p/dhhs-new-way-of-writing-code) · [The malleable computer（2026-04-15）](https://world.hey.com/dhh/the-malleable-computer-7c187a9b) · [Let the agents democratize open source（2026-06-01）](https://world.hey.com/dhh/let-the-agents-democratize-open-source-9fd630a9) · [Local LLMs（2025-11-25）](https://world.hey.com/dhh/local-llms-are-how-nerds-now-justify-a-big-computer-they-don-t-need-af2fcb7b) · [Anthropic: Claude Opus 4.5（2025-11-24）](https://www.anthropic.com/news/claude-opus-4-5)

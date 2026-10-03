@@ -158,9 +158,19 @@ XP 的核心洞见是：**软件开发的瓶颈不是打字速度，是理解、
 
 ---
 
-## 2026-07～10 更新：信任不可自动化、Long Volatility 与身份重建
+## 思想转变（2026-07～10）：从「TDD 超能力」到「不可知论 + 身份重建」
 
-> 2026-10-03 增量回源（窗口 2026-07-01 ～ 10-03，一手英文源：本人 newsletter（newsletter.kentbeck.com）、*Still Burning* 官方转写、Pragmatic Engineer 访谈；X 与 Medium 无法回源不采，Medium 写作已整体迁至 newsletter）。渠道空报如实登记：*Still Burning* 07-22 后至 10-03 无新集。按「确认/延伸/修正」标注对既有口径的关系。
+> 2026-10-03 回源（窗口 2026-07-01 ～ 10-03，一手英文源：本人 newsletter（newsletter.kentbeck.com）、*Still Burning* 官方转写、Pragmatic Engineer 访谈；X 与 Medium 无法回源不采，Medium 写作已整体迁至 newsletter）。渠道空报如实登记：*Still Burning* 07-22 后至 10-03 无新集。**这个窗口他的变化不是观点叠加，而是三步走的理论重建**——先看轨迹表，再读证据：
+
+| 阶段 | 日期 | 立场标记 | 一手锚点 |
+|------|------|---------|---------|
+| 口号期（上半场，卡内已有） | 2026-02→05 | TDD 是 superpower；Genie 隐喻；Re-Soloing；"Nobody knows" 首次 | Pragmatic Summit / 上文各节 |
+| **口径自我限定（转变第一步）** | 2026-07-01 | "None of that can be automated"；TDD 在 augmented coding 怎么用——"nobody knows"；"not manifesto time yet"；同时 "hog heaven" 全情投入 | PE 访谈 |
+| 经济学化 | 2026-07-01 | 20 年 playbook 变白纸；测试套件=可被 Genie 复制的规格；"a moat and it's gigawatts"；feedback exhausting | *Still Burning* E8 |
+| **理论重建（转变第二步）** | 2026-07-14→09-29 | XP is Long Volatility（用金融波动率重述 XP）；features vs futures；"Genies Hate the Invisible"；"keep the genie on course" | newsletter 系列 |
+| 补课 | 2026-08-14 | 从"用 Genie"转向研究"模型如何被造出来" | Baking a Model |
+
+**转变判语**：他没有撤回 TDD 口径——他给它上了双重限定（不可自动化 + 适用方式无人知道），然后把回答"工程师凭什么存在"的重心从实践推销移到理论重建：Long Volatility 解释为什么旧实践在高波动环境反而升值，features vs futures 解释人的价值搬到了哪里。**上半场的他是"说 TDD 重要的人"，下半场的他是"解释为什么没人能再给方法论打包票的人"。**
 
 ### 一、旗舰金句的深化："代码积累快于信任积累——而这一切无法自动化"（07-01 Pragmatic Engineer 访谈）
 

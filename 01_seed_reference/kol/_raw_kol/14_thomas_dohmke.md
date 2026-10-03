@@ -11,6 +11,8 @@ source_urls:
   - https://devops.com/former-github-ceo-bets-60m-that-developer-tools-need-a-factory-reset-for-the-ai-age/
   - https://rcpmag.com/articles/2026/02/12/ex-github-ceo-thomas-dohmke-unveils-entire.aspx
   - https://entire.io
+  - https://www.testmuai.com/testmuconf-2026/is-the-developer-lifecycle-dead/
+  - https://linearb.io/dev-interrupted/podcast/entire-thomas-dohmke-apiiro-idan-plotnik-securing-git-forge-agents
 key_concepts:
   - homer_simpson_car
   - agent_assembly_line
@@ -133,6 +135,18 @@ Entire 是 15 人、6 个国家的全远程团队。Agent 解决了远程工作�
 
 ---
 
+## 2026-08～09 增量：从「装配线」到「SDLC 本身要重审」
+
+> 2026-10-03 增量回源（keynote 页与播客页直抓）。"Agent 装配线"口径的两步延伸：
+
+- **08-20 TestMu keynote《Is the developer lifecycle dead?》**："The tools and processes we use to ship software — **tickets, repos, pull requests, deployments — were designed for humans writing every line of code.** In a world where agents are running the loops, is the software development lifecycle as we know it dead?"——工厂重置论推到整个 SDLC。
+- **09-22 Dev Interrupted《Stop pretending you read every line of code》**：治理机制落地——"**Hooks carry the context, session logs the why, PRs need owners.**"——git forge 成为 agent 时代的治理面。
+- （口径追溯，窗口边缘）07-13 Stellar Work #61："agents write the code, **humans own the intent**, and the most valuable artifact in software is no longer the file. **It's the session.**"
+
+**判语**：2 月的"工厂重置"是产品宣言；8-9 月它长出了具体机制（hook / session / owner）与一个被点名的靶子——"假装每行都读"的人审惯例。
+
+---
+
 ## 关键引用汇总
 
 > *"GitHub's generation of developer platforms was born in an era when humans wrote code, not agents. The entire stack needs a factory reset."*
@@ -145,4 +159,4 @@ Entire 是 15 人、6 个国家的全远程团队。Agent 解决了远程工作�
 
 ---
 
-**Source:** [Bloomberg: Former GitHub CEO Raises $60M](https://www.bloomberg.com/news/articles/2026-02-10/former-github-ceo-thomas-dohmke-raises-60-million-for-new-startup) · [GeekWire: $60M seed round](https://www.geekwire.com/2026/former-github-ceo-launches-new-developer-platform-with-huge-60m-seed-round/) · [Axios: Former GitHub CEO launches AI coding startup](https://www.axios.com/2026/02/10/former-github-ceo-ai-coding-startup) · [DevOps.com: Factory Reset for the AI Age](https://devops.com/former-github-ceo-bets-60m-that-developer-tools-need-a-factory-reset-for-the-ai-age/) · [RCP Mag: Ex-GitHub CEO Unveils Entire](https://rcpmag.com/articles/2026/02/12/ex-github-ceo-thomas-dohmke-unveils-entire.aspx) · [entire.io](https://entire.io)
+**Source:** [Bloomberg: Former GitHub CEO Raises $60M](https://www.bloomberg.com/news/articles/2026-02-10/former-github-ceo-thomas-dohmke-raises-60-million-for-new-startup) · [GeekWire: $60M seed round](https://www.geekwire.com/2026/former-github-ceo-launches-new-developer-platform-with-huge-60m-seed-round/) · [Axios: Former GitHub CEO launches AI coding startup](https://www.axios.com/2026/02/10/former-github-ceo-ai-coding-startup) · [DevOps.com: Factory Reset for the AI Age](https://devops.com/former-github-ceo-bets-60m-that-developer-tools-need-a-factory-reset-for-the-ai-age/) · [RCP Mag: Ex-GitHub CEO Unveils Entire](https://rcpmag.com/articles/2026/02/12/ex-github-ceo-thomas-dohmke-unveils-entire.aspx) · [entire.io](https://entire.io) · [TestMu Conf keynote: Is the developer lifecycle dead? (2026-08-20)](https://www.testmuai.com/testmuconf-2026/is-the-developer-lifecycle-dead/) · [Dev Interrupted: Stop pretending you read every line of code (2026-09-22)](https://linearb.io/dev-interrupted/podcast/entire-thomas-dohmke-apiiro-idan-plotnik-securing-git-forge-agents)

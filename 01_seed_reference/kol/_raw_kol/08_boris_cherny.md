@@ -11,6 +11,9 @@ source_urls:
   - https://www.frontendmentor.io/articles/coding-is-solved-boris-cherny
   - https://www.xda-developers.com/set-up-claude-code-like-boris-cherny/
   - https://www.theneuron.ai/explainer-articles/-when-three-of-ais-top-builders-tell-you-coding-is-solved-pay-attention-to-what-they-mean/
+  - https://computerhistory.org/blog/in-conversation-with-boris-cherny-creator-of-claude-code/
+  - https://africa.businessinsider.com/news/a-developer-emailed-claude-codes-creator-about-ai-slop-boris-cherny-wrote-back/0w3qb8t
+  - https://simonwillison.net/2026/Sep/11/boris-cherny/
 key_concepts:
   - software_engineering_is_dead
   - claude_code_design_philosophy
@@ -124,6 +127,18 @@ Cherny × Karpathy（2026）增添了哲学层次：
 
 ---
 
+## 2026-09 增量：「已死」论细化为「质量守门 + 角色重定义」
+
+> 2026-10-03 增量回源（CHM 官方回顾 + Business Insider 直抓；X 原帖经 Willison 转载页核实并标注）。9 月三连发声把口号收束成机制主张：
+
+- **09-23 CHM Live 对谈**："What happens when coding stops being the hard part?… why he believes **curiosity and judgment may matter more than coding expertise** in the years ahead."——"已死"落到人的剩余价值：好奇与判断。
+- **09-12 回信开发者（Business Insider）**：邮件标题 "What to do about slop?"——他的回答：开发者职责是 "**hold the bar on code quality**"。
+- **09-11 X 帖（经 Willison 转载）**："**Production code written by Claude should have a higher bar than if it was written by a human.** At Anthropic, we have many guardrails in place… Claude-powered fuzzers running daily, automated code reviews and security reviews…"——"已死"论者同时主张 AI 代码标准应**高于**人工。
+
+**判语**：卡内"软件工程已死 / Builder 取代工程师"是挑衅框架；9 月三连把它细化为可操作的分工——**人守质量门槛与判断，机器守产量，且 AI 代码的门槛更高而非更低**。9 月这与 Karpathy 的"不能外包理解"、Fowler 的"验证投入须超生成"意外合流。
+
+---
+
 ## 底线
 
 Boris Cherny 是 Anthropic 内部最突出的声音，主张 **Agentic Coding 已经在前沿 AI 实验室内部终结了手动编程作为一种职业**，而行业其他部分落后 6-18 个月。
@@ -134,4 +149,4 @@ Boris Cherny 是 Anthropic 内部最突出的声音，主张 **Agentic Coding �
 
 ---
 
-**Source:** [Yahoo/Tech: Interview with Claude Code Creator](https://tech.yahoo.com/ai/claude/articles/interview-claude-code-creator-accident-171651759.html) · [Fortune: Manages Tens of Thousands of AI Agents](https://fortune.com/2026/06/08/anthropics-boris-cherny-creator-of-claude-code-says-there-are-days-he-manages-tens-of-thousands-of-ai-agents-at-once/) · [Fortune: Comparing AI Costs to the Wrong Thing](https://fortune.com/2026/06/09/boris-cherny-claude-code-says-comparing-ai-costs-to-wrong-thing-anthropic/) · [Frontend Mentor: Is Coding Solved?](https://www.frontendmentor.io/articles/coding-is-solved-boris-cherny) · [The Neuron: Karpathy × Cherny × Brockman](https://www.theneuron.ai/explainer-articles/-when-three-of-ais-top-builders-tell-you-coding-is-solved-pay-attention-to-what-they-mean/) · [XDA Developers: Setup like Boris Cherny](https://www.xda-developers.com/set-up-claude-code-like-boris-cherny/)
+**Source:** [Yahoo/Tech: Interview with Claude Code Creator](https://tech.yahoo.com/ai/claude/articles/interview-claude-code-creator-accident-171651759.html) · [Fortune: Manages Tens of Thousands of AI Agents](https://fortune.com/2026/06/08/anthropics-boris-cherny-creator-of-claude-code-says-there-are-days-he-manages-tens-of-thousands-of-ai-agents-at-once/) · [Fortune: Comparing AI Costs to the Wrong Thing](https://fortune.com/2026/06/09/boris-cherny-claude-code-says-comparing-ai-costs-to-wrong-thing-anthropic/) · [Frontend Mentor: Is Coding Solved?](https://www.frontendmentor.io/articles/coding-is-solved-boris-cherny) · [The Neuron: Karpathy × Cherny × Brockman](https://www.theneuron.ai/explainer-articles/-when-three-of-ais-top-builders-tell-you-coding-is-solved-pay-attention-to-what-they-mean/) · [XDA Developers: Setup like Boris Cherny](https://www.xda-developers.com/set-up-claude-code-like-boris-cherny/) · [CHM Live: In Conversation with Boris Cherny (2026-09-23)](https://computerhistory.org/blog/in-conversation-with-boris-cherny-creator-of-claude-code/) · [Business Insider: Cherny on slop (2026-09-12)](https://africa.businessinsider.com/news/a-developer-emailed-claude-codes-creator-about-ai-slop-boris-cherny-wrote-back/0w3qb8t) · [Cherny X 帖经 Willison 转载 (2026-09-11)](https://simonwillison.net/2026/Sep/11/boris-cherny/)

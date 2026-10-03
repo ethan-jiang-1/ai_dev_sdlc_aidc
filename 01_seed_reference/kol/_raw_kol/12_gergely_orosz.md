@@ -9,6 +9,9 @@ source_urls:
   - https://securityboulevard.com/2026/03/top-6-takeaways-on-the-future-of-coding-from-sonar-summit-2026-7/
   - https://sourcelabs.nl/blog/pragmatic-engineer-survey-how-ai-tools-reshape-engineering-roles/
   - https://daringfireball.net/linked/2026/07/02/orosz-meta-engineering-culture
+  - https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews
+  - https://newsletter.pragmaticengineer.com/p/openai-software-factory
+  - https://newsletter.pragmaticengineer.com/p/the-pulse-end-of-coding-by-hand
 key_concepts:
   - six_predictions_good_bad_ugly
   - something_precious_being_taken_away
@@ -135,4 +138,16 @@ Claude Code 在发布仅 8 个月后飙升到 #1：
 
 ---
 
-**Source:** [Pragmatic Engineer: What Happens to Software Engineering When AI Writes Almost All the Code](https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai) (2026/01/06) · [Sonar Summit 2026 keynote](https://securityboulevard.com/2026/03/top-6-takeaways-on-the-future-of-coding-from-sonar-summit-2026-7/) · [Hanselminutes: Where is AI taking us](https://zencastr.com/z/P-ljHViI) · [Pragmatic Engineer Survey](https://sourcelabs.nl/blog/pragmatic-engineer-survey-how-ai-tools-reshape-engineering-roles/) · [Daring Fireball: Why Is Meta Destroying Its Engineering Organization](https://daringfireball.net/linked/2026/07/02/orosz-meta-engineering-culture)
+## 2026-09 增量：从访谈者到一线取样者，聚焦评审制度
+
+> 2026-10-03 增量回源（newsletter 原页直抓）。三篇把"人-模型协作"讨论推进一步：
+
+- **09-08《What is happening with code reviews?》**："AI generates more code than devs can track in 2026, so will the code review process have to adapt – or is it doomed?"——他记录的业界主流已是 "**Humans review the AI code reviews.**"（人审 AI 的评审）。
+- **09-15《Inside OpenAI's agentic software factory》**："**Codex has gone from a 'nice-to-have' tool to being the backbone of pretty much everything at the company.**"——亲自进前沿实验室取样，作为"软件工程去向"的一线证据。
+- **09-24 The Pulse**：转 DHH Rails World 宣告——"declared the end for writing code by hand for professional work… **Is this change now unstoppable?**"（副题："code reviews will probably also go away"）。
+
+**判语**：1 月他是综合访谈与调查的观察者；9 月他一手进入 OpenAI 内部取证，并把"评审制度"立为行业议程——与其 1 月"基本功更重要"的判断相比，9 月的语气更像在记录一场来不及适应的制度变迁。
+
+---
+
+**Source:** [Pragmatic Engineer: What Happens to Software Engineering When AI Writes Almost All the Code](https://newsletter.pragmaticengineer.com/p/the-future-of-software-engineering-with-ai) (2026/01/06) · [Sonar Summit 2026 keynote](https://securityboulevard.com/2026/03/top-6-takeaways-on-the-future-of-coding-from-sonar-summit-2026-7/) · [Hanselminutes: Where is AI taking us](https://zencastr.com/z/P-ljHViI) · [Pragmatic Engineer Survey](https://sourcelabs.nl/blog/pragmatic-engineer-survey-how-ai-tools-reshape-engineering-roles/) · [Daring Fireball: Why Is Meta Destroying Its Engineering Organization](https://daringfireball.net/linked/2026/07/02/orosz-meta-engineering-culture) · [What is happening with code reviews? (2026-09-08)](https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews) · [Inside OpenAI's agentic software factory (2026-09-15)](https://newsletter.pragmaticengineer.com/p/openai-software-factory) · [The Pulse: writing code by hand, is it over? (2026-09-24)](https://newsletter.pragmaticengineer.com/p/the-pulse-end-of-coding-by-hand)

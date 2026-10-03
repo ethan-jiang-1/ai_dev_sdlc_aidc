@@ -10,6 +10,8 @@ source_urls:
   - https://www.glideapps.com/blog/what-is-agentic-engineering
   - https://sdtimes.com/ai/andrej-karpathy-has-renamed-vibe-coding-heres-what-engineering-leaders-need-to-do-about-it/
   - https://www.ibm.com/think/topics/agentic-engineering
+  - https://zed.dev/blog/software-craftsmanship-in-the-era-of-vibes
+  - https://zed.dev/blog/parallel-agents
   - https://www.theneuron.ai/explainer-articles/-when-three-of-ais-top-builders-tell-you-coding-is-solved-pay-attention-to-what-they-mean/
 key_concepts:
   - vibe_coding
@@ -35,6 +37,8 @@ key_concepts:
 | **2026/05** | 加入 **Anthropic** 重建预训练研究团队 |
 
 一个完整的炒作→高潮→幻灭→纠正周期被压缩到 **仅 13 个月**。之前的类似周期（如 "Agile"）用了 10+ 年。
+
+> **⚠️ 2026-10-03 勘误（术语谱系，修正上表第三行）**：Zed 一手页（2025-06-12《The Case for Software Craftsmanship in the Era of Vibes》及站内 "introducing Agentic Engineering" 介绍页）表明 **"Agentic Engineering" 一词由 Zed/Nathan Sobo 于 2025-06 引入**；Karpathy 是关键扩散节点（其推文因 X 登录墙无法一手核验；旁证＝Zed 2026-04-22《Parallel Agents》称该词 "recently… grow in popularity" 并引用其推文）。Karpathy 的原创词是 **Vibe Coding**（2025-02）与 **Software 3.0**；他对 agentic engineering 的贡献是**定义与扩散**（见下节他自己的定义），不是命名。待办：`02_research/.../loop_engineering/raw/kol-roster.md` §B Karpathy 行（"2026-02 提 Agentic Engineering ⏳"）同步前移至 Zed/Sobo 2025-06。
 
 ---
 

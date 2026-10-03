@@ -1,7 +1,7 @@
 ---
 type: kol_deep_dive
 person: Laura Tacho
-organization: ex-DX CTO
+organization: AWS (developer experience)；ex-DX CTO
 content_type: thought_leader_analysis
 verification_status: verified
 source_urls:
@@ -10,6 +10,7 @@ source_urls:
   - https://www.thoughtworks.com/en-cn/insights/podcasts/technology-podcasts/what-is-spec-driven-development
   - https://lauratacho.com
   - https://www.martinfowler.com/fragments/2026-02-25.html
+  - https://www.stellarwork.com/audio-transmissions/64-laura-tacho---you-werent-measuring-well-before-ai-either
 key_concepts:
   - ai_is_amplifier_not_replacement
   - disappointment_gap
@@ -128,6 +129,16 @@ Tacho 在 O'Reilly Radar 上发表的 *"Measuring What Matters in the Age of AI 
 
 ---
 
+## 2026-08 增量：度量口径确认 + 任职更新
+
+> 2026-10-03 增量回源（Stellar Work #64 页直抓）。**任职更新**：已离开 DX，现就职 AWS（developer experience）——来源页自述 "ran DX as CTO, and now works on developer experience at AWS"。
+
+- **08-24 Stellar Work #64《You weren't measuring well before AI either》**："**AI did not break engineering metrics. It made it obvious that most companies never had any worth trusting.**" / "**AI just amplifies everything. It amplifies the good, and it amplifies the bad.**"
+- **J 曲线**（同集）：代码量 ~17×、变更集 ~2×、到生产的产出几乎未动——产出堵在验证/发布侧，不是生成侧。
+- 与卡内"失望鸿沟"一脉相承：她反对为 AI 另造新指标，主张补上此前缺失的度量纪律。
+
+---
+
 ## 关键引用汇总
 
 > *"AI is an amplifier. In high-performing organizations, it accelerates success. In struggling ones, it exposes existing flaws."*
@@ -140,4 +151,4 @@ Tacho 在 O'Reilly Radar 上发表的 *"Measuring What Matters in the Age of AI 
 
 ---
 
-**Source:** [DX: Building better software faster](https://getdx.com/blog/building-better-software-faster/) · [Tech Lead Journal #233: Data Beats Hype](https://music.amazon.com/podcasts/0571a9b1-c3ca-493a-9523-47937e58bb70/episodes/4b3e7fad-6131-4135-88fd-105dbf8639e0/tech-lead-journal-233---data-beats-hype-measuring-your-ai-adoption-impact---laura-tacho) · [ThoughtWorks Podcast: What is spec-driven development](https://www.thoughtworks.com/en-cn/insights/podcasts/technology-podcasts/what-is-spec-driven-development) · [ShiftMag: 93% of Developers Use AI](https://shiftmag.dev/this-cto-says-93-of-developers-use-ai-but-productivity-is-still-10-8013/) · [lauratacho.com](https://lauratacho.com) · [Martin Fowler Fragments Feb 25](https://www.martinfowler.com/fragments/2026-02-25.html)
+**Source:** [DX: Building better software faster](https://getdx.com/blog/building-better-software-faster/) · [Tech Lead Journal #233: Data Beats Hype](https://music.amazon.com/podcasts/0571a9b1-c3ca-493a-9523-47937e58bb70/episodes/4b3e7fad-6131-4135-88fd-105dbf8639e0/tech-lead-journal-233---data-beats-hype-measuring-your-ai-adoption-impact---laura-tacho) · [ThoughtWorks Podcast: What is spec-driven development](https://www.thoughtworks.com/en-cn/insights/podcasts/technology-podcasts/what-is-spec-driven-development) · [ShiftMag: 93% of Developers Use AI](https://shiftmag.dev/this-cto-says-93-of-developers-use-ai-but-productivity-is-still-10-8013/) · [lauratacho.com](https://lauratacho.com) · [Martin Fowler Fragments Feb 25](https://www.martinfowler.com/fragments/2026-02-25.html) · [Stellar Work #64: You weren't measuring well before AI either (2026-08-24)](https://www.stellarwork.com/audio-transmissions/64-laura-tacho---you-werent-measuring-well-before-ai-either)
