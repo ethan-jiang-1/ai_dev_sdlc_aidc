@@ -9,6 +9,7 @@ source_urls:
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html
   - https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
   - https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html
+  - https://martinfowler.com/articles/sensors-for-coding-agents.html
 key_concepts:
   - guides_and_sensors
   - computational_over_inferential_sensors
@@ -42,7 +43,7 @@ key_concepts:
 | 2026-02-05 | 《Context Engineering for Coding Agents》——系列先声 | [已核](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) |
 | 2026-02-17 | 《Harness Engineering - first thoughts》定义篇（回应 OpenAI 零人写码实验） | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html) |
 | 2026-04-02 | 《Harness engineering for coding agent users》：Guides + Sensors 完整心智模型 | [已核](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html) |
-| 2026-05 | 传感器三部曲（Maintainability / Three More Static Analysis / Test Suite as Regression Sensor）——⚠️ 日期与 URL 待统一核验（2026-10-03 Morris 深挖核得 Maintainability=05-27，与早期研究的 05-19 序列冲突） | ⏳ |
+| 2026-05-19→27 | 传感器长文 *[Maintainability sensors for coding agents](https://martinfowler.com/articles/sensors-for-coding-agents.html)*——**单篇持续更新（19 May 发布、20/27 两度更新，2026-10-03 页面核验）**，内含 "The test suite as a regression sensor" 等节（早期研究误拆为三篇，已修正） | 页面已核 |
 | 2026-08-10/11 | **TDD inside the agent loop**：实验显示 agent 循环内跑 TDD 无可测收益——对自己的主张做实证检验（页标 08-10，另一回源记 08-11——时区/更新差异待统一；Farley 频道 09-23 已出频道级回应，见 `03` 卡归属勘误） | [已核](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) |
 | （系列延续，日期待核） | 《The role of developer skills in agentic coding》 | [页已核](https://martinfowler.com/articles/exploring-gen-ai/13-role-of-developer-skills.html)，作者/日期待核 |
 
@@ -70,4 +71,4 @@ key_concepts:
 
 ---
 
-**Source:** [TDD inside the agent loop (2026-08-11)](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) · [Exploring Gen AI 系列（martinfowler.com）](https://martinfowler.com/articles/exploring-gen-ai/) · 系列五篇（02-17 / 04-02 / 05-19 / 05-20 / 05-27，URL 下轮逐篇回源）
+**Source:** [TDD inside the agent loop (2026-08-10/11)](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html) · [Harness Engineering - first thoughts (2026-02-17)](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html) · [Harness engineering for coding agent users (2026-04-02)](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html) · [Context Engineering for Coding Agents (2026-02-05)](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) · [Maintainability sensors for coding agents（持续更新长文，2026-05-19→27）](https://martinfowler.com/articles/sensors-for-coding-agents.html)

@@ -31,7 +31,7 @@ key_concepts:
 | 口径铺陈 | 2026 上半年 | "AI works 开启 agile 新时代"官方叙事线；为雷达定调 | 官方 news（见 frontmatter） |
 | 雷达定调 | 2026-04 | Vol 34：**"拐点不是技术拐点，是技术运用方式的拐点"**；认知债；经典实践 = AI 速度的制衡力量；保护"权限饥渴"的 Agent | 本卡 Volume 34 节 |
 | 学科化背书 | 2026-07 | 报告五大发现：**verification is the bottleneck / harness engineering 是独立可拥有的学科 / apprenticeship crisis**；harness engineering 首成 retreat 完整 session | 07-13 · 07-21（Fowler 卡同步收录） |
-| 窗口内（07→10） | — | **官方雷达/博客无可核新增**——Vol 35 未出，10 月起需回查 | 2026-10-03 扫描档 |
+| 窗口内（07→10） | — | **官方雷达/博客无可核新增**——Vol 35 截至 2026-10-03 未出（radar 官网当日核验，仍为 Vol 34）；等 Vol 35 发布再回查 | 2026-10-03 扫描档 + radar 官网当日核验 |
 
 **判语**：2026 年机构口径与 Fowler 个人线同步推进（他站内发布 Böckeler 系列、TW 报告背书五发现）——本卡是"收紧路线"的机构锚，起伏小但每一步都在加码。
 

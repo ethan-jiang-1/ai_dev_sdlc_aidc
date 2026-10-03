@@ -98,7 +98,7 @@ Fowler 在 martinfowler.com 上发布了 Birgitta Böckeler 的 Harness Engineer
 | 2026/02/05 | *[Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html)* | 系列先声（2026-10-03 核实补录） |
 | 2026/02/17 | *[Harness Engineering - first thoughts](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering-memo.html)* | 初始概念，回应 OpenAI 的实验（URL 2026-10-03 核实） |
 | 2026/04/02 | *[Harness engineering for coding agent users](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)* | 完整心智模型：Guides + Sensors 矩阵（URL 2026-10-03 核实） |
-| 2026/05 | *传感器三部曲*：Maintainability Sensors / Three More Static Code Analysis Sensors / The Test Suite as a Regression Sensor | 静态代码分析与测试套件作为计算传感器（⚠️ 2026-10-03 Morris 深挖核得 Maintainability=05-27 且 Böckeler 署名，与早期研究的 05-19/20/27 序列冲突——三篇日期与 URL 待统一核验；另见 `20` 卡勘误） |
+| 2026/05/19→27 | *[Maintainability sensors for coding agents](https://martinfowler.com/articles/sensors-for-coding-agents.html)*（**单篇持续更新长文，2026-10-03 页面核验修正**：19 May 发布、20/27 两度更新，Böckeler 署名；内含 "The test suite as a regression sensor" 等节——早期研究误拆为三篇；镜像站的 "Three more static code analysis sensors" 分节标题在原文页内已不可见） | 静态代码分析与测试套件作为计算传感器（原句锚点：#StaticCodeAnalysisDependencyRules / #TheTestSuiteAsARegressionSensor） |
 | 2026/08/11 | *[TDD inside the agent loop](https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html)* | 实验文：agent 循环内跑 TDD 无可测收益（详见 2026-07～10 转变节） |
 
 ---
