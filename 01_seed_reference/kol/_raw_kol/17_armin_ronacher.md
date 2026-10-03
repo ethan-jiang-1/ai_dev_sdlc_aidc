@@ -35,7 +35,7 @@ key_concepts:
 3. **对"agent-only 代码库"留了一个口子**："Astra is in my mind 'objectively bad'. But it's objectively bad **by my human sense**. Maybe it's objectively good for a codebase that is entirely written by agents and only needs to be understood by agents."
 4. **工具侧反证**："What surprised me is that this is getting **worse with newer Anthropic models** as both Opus 4.8 and Sonnet 5 show it but none of the older models."（07-04《Better Models: Worse Tools》——SOTA 模型工具调用反而退化，给 harness 侧提供一手反例）
 5. **忧虑的对象是人，不是灭绝**："**I don't think AI is going to usher in an extinction event.**"（09-12《P(doom)》，反 Dario pacing、"total regulatory failure"——忧的是 "what this does to us as humans"）
-6. **情绪摆动的一手自述**："Some days that feels liberating, but on others I wake up feeling like **the ground is crumbling beneath me**."（08-24）；Bluesky 一周内从 "cool shit is happening"（09-03）摆到 "cannot trust it"（09-09）
+6. **情绪摆动的一手自述**："Some days that feels liberating, but on others I wake up feeling like **the ground is crumbling beneath me**."（08-24）；Bluesky 一周内从 "cool shit is happening"（09-03）摆到 "cannot trust it"（09-09）；他的情绪框架——**anger 是"带反派的安慰性故事"**（"It turns a loss of control into a comforting story with a villain"），AI 时代最容易选错反派；anxiety 虽难受但诚实；答案是 agency
 7. **收束回纯工程**：09-29《Deser》后至 10-03 无新篇——对 Thorsten #99 的点名反驳，博客/Bluesky 全 grep 零回应
 
 ---
@@ -50,7 +50,7 @@ key_concepts:
 | P1 重度信徒 + 同步警告 | 2026-01→02 | "addicted"、为 Pi 代言；但警告 slop/成瘾/评审瓶颈 | 01-18："AI agents are amazing and a huge productivity boost. They are also **massive slop machines** if you turn off your brain and let go completely." |
 | P2 批判线成型 | 2026-03→06 | 兴奋仍在，"时间被竞争捕获"、"loops 会到来而我 resent it" | 03-20："**Any time saved gets immediately captured by competition.**"；06-23《The Coming Loop》："this looping future is going to be our future **despite the fact that I presently resent it.**" |
 | P3 工具退化判词 | 2026-07 | 转折点：SOTA 新模型在第三方工具 schema 上**比旧模型差** | 07-04；07-13："The tower does not fall, it just keeps rising." |
-| P4 情绪摆动 | 2026-08 | "excited + ground crumbling" 并存 | 08-24《Anger, Anxiety and Agency》 |
+| P4 情绪摆动 | 2026-08 | "excited + ground crumbling" 并存；《Anger, Anxiety and Agency》给出三情绪框架：**anger = "a comforting story with a villain"**（AI 时代最容易选错反派——领导层自己也在装确定）、anxiety = 承认"不知道且可能拦不住"、出路是第三项 **agency**；自认 "tremendously excited" 与 "unsure what will happen next" 并存，"including ideas I considered **fundamental to my craft and business**" | 08-24《Anger, Anxiety and Agency》 |
 | P5 **内卷判词 + 工厂失败** | 2026-09 上旬 | "**all of AI engineering is Neijuan (内卷)**"；自家软件工厂：35 小时 / ~1B tokens / ~$1200 / 79 commits ≈ **$15.5 per commit** / 净增 75k LOC，"delivered **absolutely nothing of value**" | 09-07《Astra: why?》 |
 | P6 收束与沉默 | 2026-09-12→10-03 | P(doom)：反 pacing、忧"对人做什么"；09-29 回到纯工程（Deser）；10 月无新篇；对 Thorsten 点名反驳零回应 | 09-12 · 09-14 · 09-29 |
 
