@@ -57,6 +57,11 @@ key_concepts:
 3. **Behaviour harness = "the elephant in the room"**：现状做法（spec + 绿测 + 覆盖率 + 变异测试 + 手工测试）"puts a lot [of weight on the spec]"——她明说这是当前最薄弱件（也是她 08-11 实验选它做的原因）。
 4. **Harnessability（可 harness 性）**："Not every codebase is equally amenable to harnessing"——强类型 = 免费传感器；清晰模块边界 = 架构约束规则；Spring 类框架隐式提高 agent 成功率；并引同事 Ned Letcher 的 "**ambient affordances**"（环境的可供性属性）。
 5. **The role of the human**："we know that **our name is on the commit**. We also carry organisational alignment… We go in small steps and at our human pace, which creates the thinking space for that experience to get tri[ed]."——人的角色 = 隐性 harness（惯例/复杂度痛感/组织对齐/步调节奏）。
+6. **两个术语的精确关系**："**Engineering a user harness for a coding agent is a specific form of context engineering.**"（harness ⊂ context engineering——她 02-05 的 context engineering 是父集，04-02 的 harness 是其 agent 治理子集；与 `02` 卡 Fowler 的 context engineering 引用对接）。
+7. **Harness templates 的版本化难题**："would face the same versioning and contribution problems, **maybe even worse with non-deterministic guides and sensors that are harder to test**."
+8. **Ambient affordances 完整定义**（Ned Letcher）："structural properties of the environment itself that make it **legible, navigable, and tractable** to agents operating within it"；greenfield/legacy 分叉："Greenfield teams can **bake harnessability in from day one**… Legacy teams, especially with applications that have accrued a lot of technical debt, face the harder problem."——与 Osmani `07`（loop 台账）的 brownfield 立场直接共振。
+9. **自嘲与两目标**："Have you ever tried to put a harness on the inside of a dog?"（她自己承认隐喻有极限）；"A well-built outer harness serves two goals: it **increases the probability that the agent gets it right in the first place**, and it provides **a feedback loop that self-corrects as many issues as possible before they even reach human** [review]."
+10. **文章自定位**："raise the conversation **above the feature level** - from skills and MCP servers to how we strategically design **a system of controls that gives us genuine confidence** in what agents produce."
 
 ---
 
