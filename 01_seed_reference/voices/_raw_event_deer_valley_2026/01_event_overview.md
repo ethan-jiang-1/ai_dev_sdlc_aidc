@@ -20,7 +20,7 @@ key_concepts:
 follow_up_event:
   name: Engelberg Retreat
   date: 2026-06 to 2026-07
-  file: 06_engelberg_2026_followup.md
+  file: ../_raw_event_engelberg_2026/README.md
 ---
 
 # Future of Software Development Retreat — Deer Valley 2026
@@ -71,7 +71,7 @@ Fowler 将此描述为面对 **"一个新的拐点：向 AI-native 软件开发�
 
 ## 后续：2026 年 7 月 Engelberg Retreat
 
-第二场 retreat 在瑞士 Engelberg 举行。语气从 Deer Valley 的 *"可能有点东西"* 彻底转变为 *"证据在握"*——参会者正在生产环境中交付 AI-native 软件。详见 [`06_engelberg_2026_followup.md`](06_engelberg_2026_followup.md)。
+第二场 retreat 在瑞士 Engelberg 举行。语气从 Deer Valley 的 *"可能有点东西"* 彻底转变为 *"证据在握"*——参会者正在生产环境中交付 AI-native 软件。详见 [`../_raw_event_engelberg_2026/`](../_raw_event_engelberg_2026/README.md)。
 
 ## 关键引用
 

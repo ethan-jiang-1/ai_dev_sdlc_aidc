@@ -10,8 +10,8 @@ research_date: 2026-09-26
 
 > 本集合收 **2026-06 起**围绕 "loop engineering" 这个公开名字发声的人的一手素材。
 > 2026-10-03 自 `kol/_raw_loop_engineering/` 上移至种子层专题位（话题出库，与 [`graph_engineering/`](../graph_engineering/README.md) 同构）。
-> 它是 [`_raw_kol/`](../voices/_raw_people/README.md)（12 位影响力人物深度拆解，2026-07-08）的**主题波次补充**：
-> `_raw_kol/` 按人铺全景，本集合按**一次命名事件**（2026-06 loop engineering 成为公开名字）收一波声音。
+> 它是 [`_raw_people/`](../voices/_raw_people/README.md)（17 张影响力人物深度卡）的**主题波次补充**：
+> `_raw_people/` 按人铺全景，本集合按**一次命名事件**（2026-06 loop engineering 成为公开名字）收一波声音。
 
 **唯一名单权威不在这里**——谁入册、号召力依据是什么、每个人对本主题的主张一句话，
 在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
@@ -19,7 +19,7 @@ research_date: 2026-09-26
 
 ## 收录判据
 
-沿用 [`../kol/README.md`](../voices/README.md) 的两条铁律，另加本集合自己的时间窗：
+沿用 [`../voices/README.md`](../voices/README.md) 的两条铁律，另加本集合自己的时间窗：
 
 | 项 | 规则 |
 |---|---|
@@ -40,7 +40,7 @@ loop_engineering/
     └── raw_*.md               # 原文/原帖/转写归档，一份来源一个文件
 ```
 
-**已有 `_raw_kol/` 卡片的人不重复建目录**——在那人的 `sources.md` 里放指针，只补 loop 专项增量。
+**已有 `_raw_people/` 卡片的人不重复建目录**——在那人的 `sources.md` 里放指针，只补 loop 专项增量。
 
 ## 集合内容
 

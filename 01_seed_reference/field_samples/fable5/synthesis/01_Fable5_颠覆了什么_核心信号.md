@@ -74,8 +74,8 @@ primary_sources:
     urls:
       - https://every.to/context-window/fable-disabled
 cross_references:
-  - aidlc_reference/_raw_frontier/
-  - aidlc_reference/_raw_aws/
+  - 02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/
+  - 01_seed_reference/corp/_raw_aws/
   - ai_sdlc_frontier/raw_OpenAI_Ryan Lopopolo/
   - ai_sdlc_frontier/raw_Anthropic_Fiona Fung/
 ---

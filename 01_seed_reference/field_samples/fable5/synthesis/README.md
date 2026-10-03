@@ -111,7 +111,7 @@ moved: 2026-10-03 自 01_seed_reference/field_samples/fable5/synthesis/ 并入�
 ├── corp/_raw_aws/            ← AWS 的 AI-DLC 方法论（三阶段、14-Node AgentCore）
 ├── field_samples/fable5/     ← 你在这里。样本池（run_*）+ synthesis/（变革信号）
 ├── corp/_raw_ecosystem/      ← 非 AWS 全景
-└── kol/_raw_kol/             ← 历史 KOL（Fowler、Farley 等）
+└── voices/_raw_people/     ← 人物深度卡（Fowler、Farley 等）
 02_research/02_ai_sdlc/01_evolution/paradigm_evolution/
 └── frontier_synthesis_2026-07/  ← 跨公司（Anthropic/OpenAI/Cursor/Google）变革共识（2026-10-03 自 kol/_raw_frontier 迁入）
 ```

@@ -99,10 +99,10 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 **源材料在哪里**（2026-10-03 种子层净化后：kol/ 只留人与事件，话题/合成迁出）：
 ```
 ../../01_seed_reference/voices/
-├── _raw_people/              ← 人物深度卡（Fowler, Farley, Willison, Beck, Karpathy...）
-├── _raw_agile_manifesto_2026/  ← Deer Valley Retreat（Feb 2026）
-├── _raw_promatic_summit_2026/  ← Pragmatic Summit（Feb 2026）
-└── _raw_engelberg_2026/        ← Engelberg Retreat（Jul 2026）
+├── _raw_people/                       ← 人物深度卡（Fowler, Farley, Willison, Beck, Karpathy...）
+├── _raw_event_deer_valley_2026/       ← Deer Valley Retreat（Feb 2026）
+├── _raw_event_pragmatic_summit_2026/  ← Pragmatic Summit（Feb 2026）
+└── _raw_event_engelberg_2026/         ← Engelberg Retreat（Jul 2026）
 
 ../../01_seed_reference/field_samples/fable5/synthesis/   ← Fable 5 变革信号（16 个使用样本合成）
 ../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/

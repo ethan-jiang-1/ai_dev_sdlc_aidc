@@ -6,7 +6,7 @@ status: draft
 created: 2026-07-08
 summary: Deer Valley 的闭门 retreat 不是 2026 年 2 月唯一的大事。同一周，Gergely Orosz 在旧金山办了首届 Pragmatic Summit——Beck+Fowler 罕见同台、Tacho 的 12 万开发者硬数据、Willison 的 Agentic Engineering 三阶段。闭门+公开拼在一起，才是那个历史时刻的完整画面。
 sources:
-  - 01_seed_reference/voices/_raw_promatic_summit_2026/
+  - 01_seed_reference/voices/_raw_event_pragmatic_summit_2026/
 ---
 
 # Pragmatic Summit 2026 — 同一周，公开的那一半

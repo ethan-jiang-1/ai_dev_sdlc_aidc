@@ -76,4 +76,4 @@ note: |
 
 - `../_raw_event_engelberg_2026/` — Engelberg 后续 retreat。Deer Valley 的对比基线
 - `../_raw_event_pragmatic_summit_2026/` — 同一周的 Pragmatic Summit。Deer Valley 是闭门 retreat，Pragmatic Summit 是公开大会——两个视角互补
-- `../_raw_kol/` — 单人分析。Deer Valley 是一群人的碰撞
+- `../_raw_people/` — 人物深度卡。Deer Valley 是一群人的碰撞

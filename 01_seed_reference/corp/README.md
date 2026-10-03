@@ -61,15 +61,16 @@ corp/     ← 企业/厂商/分析机构（你在这里）
 
 ../_abandoned_no_reference/        ← 无源可溯的内容收容所（种子层公共设施，2026-10-03 上移）
 
-kol/      ← 人物与事件（影响力个体 + 线下聚会；2026-10-03 净化，话题类已迁出）
-  ├── _raw_kol/                     ← 人物/机构深度卡（见其 README 导航表）
-  ├── _raw_event_pragmatic_summit_2026/    ← Pragmatic Summit 2026
-  ├── _raw_event_deer_valley_2026/    ← Deer Valley Retreat 2026
-  └── _raw_event_engelberg_2026/          ← Engelberg Retreat 2026
+voices/   ← 声音库：人物、组织与事件（2026-10-03 净化，话题类已迁出）
+  ├── _raw_people/                 ← 人物深度卡（见其 README 导航表）
+  ├── _raw_orgs/                   ← 组织卡（机构作为发声体）
+  ├── _raw_event_pragmatic_summit_2026/  ← Pragmatic Summit 2026
+  ├── _raw_event_deer_valley_2026/       ← Deer Valley Retreat 2026
+  └── _raw_event_engelberg_2026/         ← Engelberg Retreat 2026
 ```
 
 **`corp`** 是**组织视角**——公司、厂商、分析机构在说什么。
-**`kol`** 是**个体视角**——人、对话、事件在说什么。
+**`voices`** 是**个体与聚会视角**——人、组织、事件在说什么。
 
 ---
 

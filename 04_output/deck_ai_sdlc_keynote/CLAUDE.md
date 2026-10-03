@@ -22,7 +22,7 @@ feeds_into:
 - **Topic**: AI 时代 SDLC 的变化
 - **形态**: 战略 Keynote（slides 是图片型）
 - **语言**: 中英双语（slides 英文为主，演讲可中文）
-- **源素材**: `../../01_seed_reference/voices/`（14 位 KOL + 3 场 2026 事件 + 跨公司共识 + Fable 5 信号）
+- **源素材**: `../../01_seed_reference/voices/`（17 位 KOL + 组织卡 + 3 场 2026 事件 + 跨公司共识 + Fable 5 信号）
 - **方法论文档**: `../../_ppt_framework_v1/`（PPT 四阶段加工流，只读参考）
 
 ## 固定流程（不可跳过，不可重排）
@@ -103,12 +103,12 @@ Phase 5: 生产管线 → 生成图片 → 合成 PPTX
 
 | 想看什么 | 路径 |
 |---------|------|
-| 14 位 KOL 深度拆解 | `../../01_seed_reference/voices/_raw_people/` |
+| 17 位 KOL 深度拆解 | `../../01_seed_reference/voices/_raw_people/` |
 | 跨公司变革共识（7人） | `../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/` |
 | Fable 5 变革信号 | `../../01_seed_reference/field_samples/fable5/synthesis/` |
-| Deer Valley Retreat (Feb 2026) | `../../01_seed_reference/voices/_raw_agile_manifesto_2026/` |
-| Pragmatic Summit (Feb 2026) | `../../01_seed_reference/voices/_raw_promatic_summit_2026/` |
-| Engelberg Retreat (Jul 2026) | `../../01_seed_reference/voices/_raw_engelberg_2026/` |
+| Deer Valley Retreat (Feb 2026) | `../../01_seed_reference/voices/_raw_event_deer_valley_2026/` |
+| Pragmatic Summit (Feb 2026) | `../../01_seed_reference/voices/_raw_event_pragmatic_summit_2026/` |
+| Engelberg Retreat (Jul 2026) | `../../01_seed_reference/voices/_raw_event_engelberg_2026/` |
 | AWS AIDLC 方法论 | `../../01_seed_reference/corp/_raw_aws/` |
 | 生态全景 | `../../01_seed_reference/corp/_raw_ecosystem/` |
 | PPT 方法论（只读） | `../../_ppt_framework_v1/` |

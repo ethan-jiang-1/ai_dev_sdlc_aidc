@@ -64,6 +64,6 @@ verification_status: verified
 
 ## 与相邻目录的关系
 
-- `../_raw_kol/` — 单人深度分析。本目录是一个**事件**的横截面，同一时刻、同一批人的碰撞
+- `../_raw_people/` — 单人深度分析。本目录是一个**事件**的横截面，同一时刻、同一批人的碰撞
 - `../../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/` — 跨公司变革共识（2026-10-03 自 `../_raw_frontier/` 迁入研究层）。本目录的很多信号（角色坍缩、TDD 不可协商、AI 是放大器）在其中得到了独立验证
 - `../../field_samples/fable5/synthesis/` — Fable 5 变革信号（2026-10-03 自 `../_raw_fable5/` 并入样本池）。Pragmatic Summit 发生的时间（2026-02）早于 Fable 5 发布（2026-06），但很多讨论已经预见了 Fable 5 级别的能力会带来的变化

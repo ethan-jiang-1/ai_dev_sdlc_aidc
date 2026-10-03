@@ -9,7 +9,7 @@ research_date: 2026-07-08
 # voices — 人物、组织与事件参考材料库（声音库）
 
 > 这是围绕 AI 驱动软件开发生命周期（AIDLC）的**声音库**：谁在说、说了什么、立场怎么变。
-> 本库只收**意见有明确来源实体**的材料：人（`_raw_people/`）、组织（`_raw_orgs/`）与线下聚会（三场 2026 事件）。
+> 本库只收**意见有明确来源实体**的材料：人（`_raw_people/`）、组织（`_raw_orgs/`）与线下聚会（`_raw_event_*`，三场 2026 事件）。
 > **话题与跨人合成不进本库**（2026-10-03 净化，见文末迁移记录）：两波命名事件在
 > [`../loop_engineering/`](../loop_engineering/README.md) 与 [`../graph_engineering/`](../graph_engineering/README.md)，
 > 跨人判读在 `02_research/`，模型使用样本在 [`../field_samples/`](../field_samples/README.md)。
@@ -25,9 +25,9 @@ voices/
 ├── README.md                              ← 你在这里
 ├── _raw_people/                           ← 人物深度卡（轨迹中心，见其 README 导航表）
 ├── _raw_orgs/                             ← 组织卡（机构作为发声体；2026-10-03 建，ThoughtWorks 首卡）
-├── _raw_event_pragmatic_summit_2026/             ← Pragmatic Summit 2026（Beck+Fowler 同台）
-├── _raw_event_deer_valley_2026/             ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
-└── _raw_event_engelberg_2026/                   ← Engelberg Retreat 2026（从实验到生产的转折点）
+├── _raw_event_pragmatic_summit_2026/      ← Pragmatic Summit 2026（Beck+Fowler 同台）
+├── _raw_event_deer_valley_2026/           ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
+└── _raw_event_engelberg_2026/             ← Engelberg Retreat 2026（从实验到生产的转折点）
 
 ../corp/                   ← 企业与生态（兄弟目录）
 ├── _raw_aws/                              ← AWS 官方 AI-DLC 方法论
@@ -88,7 +88,7 @@ voices/
 
 ### `_raw_people/` — 影响力人物深度拆解（组织卡在 [`../_raw_orgs/`](../_raw_orgs/README.md)）
 
-**是什么**：12 位历史上塑造了 SDLC 话语权的人/公司在 AI 时代的言论（人物卡 12 张；导航表另含 06 综合篇与 11 峰会篇两个非人物条目）。从 ThoughtWorks 到 Martin Fowler，从 Kent Beck 到 Karpathy，从 Simon Willison 到前 GitHub CEO。
+**是什么**：17 位历史上塑造了 SDLC 话语权的人在 AI 时代的言论（人物卡 17 张；组织的声音在 [`../_raw_orgs/`](../_raw_orgs/README.md)——ThoughtWorks 首卡；峰会专题在 [`_raw_event_pragmatic_summit_2026/`](_raw_event_pragmatic_summit_2026/README.md)）。从 Martin Fowler 到 Kent Beck，从 Karpathy 到前 GitHub CEO。
 
 **源头特征**：人物/组织的公开言论（博客、演讲、访谈、社交媒体）。每人有独立立场——先看 README 的共识/分歧矩阵再读个人。
 
@@ -143,7 +143,7 @@ voices/
 
 | | `voices` | `corp` |
 |---|---|---|
-| **视角** | 个体与聚会——人、对话、事件 | 组织——公司、厂商、分析机构 |
+| **视角** | 个体与聚会——人、组织、事件 | 组织——公司、厂商、分析机构 |
 | **材料性质** | 个人/机构言论 + 事件拆解 | 厂商方法论 + 生态全景 |
 | **偏向性处理** | 标注证据强度 + 分歧矩阵 | 对抗性验证（claim_verification 文件） |
 | **URL 状态** | 大部分已完成 frontmatter + URL | _raw_aws 有 URL，_raw_ecosystem 部分待补 |
@@ -156,7 +156,7 @@ voices/
 
 | 场景 | 先看 |
 |---|---|
-| 想知道具体的人在说什么 | `_raw_people/`（19 张人物卡）＋ `_raw_orgs/`（组织卡） |
+| 想知道具体的人在说什么 | `_raw_people/`（17 张人物卡）＋ `_raw_orgs/`（组织卡） |
 | 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | [`../loop_engineering/`](../loop_engineering/README.md)（素材）→ [`02_research/01_agent_engineering/loop_engineering/`](../../02_research/01_agent_engineering/loop_engineering/README.md)（判读与台账） |
 | 想知道 graph engineering / DAG 编排这波在说什么 | [`../graph_engineering/`](../graph_engineering/README.md)（素材与判读入口） |
 | 想知道 Fable 5 具体改变了什么 | [`../field_samples/fable5/`](../field_samples/fable5/README.md)（样本池 + synthesis/） |
@@ -174,7 +174,7 @@ voices/
 
 1. **回源核查先行**：逐条 web 回源到原帖/原文，核实 URL、日期与引文；搜索结果摘要不能直接当证据。查不到就明说"窗口内无新增"，不拿旧料凑数。
 2. **更新只进人物卡，以「思想转变」为组织单位**：口径在变时，先给轨迹表（阶段 × 日期 × 立场标记 × 一手锚点）+ 转变判语，证据小节挂在阶段下；单纯增量才以带日期小节追加（`## 2026-MM <主题>`）。frontmatter `source_urls` 同步追加。卡片是该人言论的单一事实来源。
-3. **新人入册**：库内没有的人，新建卡片于 `_raw_kol/`，编号 = 现有最大号 + 1，开头先给「当前立场小结」节；`_raw_kol/README.md` 导航表同步登记。
+3. **新人入册**：库内没有的人，新建卡片于 `_raw_people/`，编号 = 现有最大号 + 1，开头先给「当前立场小结」节；`_raw_people/README.md` 导航表同步登记。
 4. **口径变化显式标注**：新言论若与本卡已有结论有关，在小节内写明「确认 / 延伸 / 修正已有口径」，不悄悄改写旧结论。
 5. **判读不进种子层**：本库只收"谁在哪天说了什么（带源）"；跨人的分析与判读沉淀在 `02_research/` 对应主题，本库不做。
 
@@ -207,6 +207,8 @@ voices/
 
 ## 最后更新
 
+- 2026-10-03（夜）：**事件目录统一 `_raw_event_` 前缀，三轴命名全部显式**——`_raw_promatic_summit_2026/` → `_raw_event_pragmatic_summit_2026/`（修正 promatic 拼写）、`_raw_agile_manifesto_2026/` → `_raw_event_deer_valley_2026/`（事件官方名 Future of Software Development Retreat @ Deer Valley，与 engelberg 地名命名对称）、`_raw_engelberg_2026/` → `_raw_event_engelberg_2026/`。库内外引用全量同步（产出层旧稿 6 文件 13 处一并扫尾）；顺带修复 `_raw_kol` 活引用（corp 相邻树、loop/graph README、两事件 README、andrew_ng sources 断链、本 README 滚动更新规矩）、deer_valley overview 两处悬空 follow_up 指针（改指 `../_raw_event_engelberg_2026/README.md`）、人物卡计数修正（12/19 → 17，实际卡数）。
+
 - 2026-10-03（晚）：**`kol` → `voices` 更名 + 意见来源库三分落地**——人物（`_raw_people/`，原 `_raw_kol/`）、组织（`_raw_orgs/`，新建）、事件（三场 2026 聚会）三轴成型；ThoughtWorks 卡自 `_raw_kol/01` 迁入 `_raw_orgs/thoughtworks.md`（组织非个人，归属修正）；组织候选清单（Anthropic / OpenAI / GC / LangChain / 37signals / Stripe / Shopify…）在 [`_raw_orgs/README.md`](_raw_orgs/README.md) 备切磋。全库 27 个引用文件路径已同步改写。
 
 - 2026-10-03：**净化收窄为「意见来源库」（人/组织/事件）**——四类话题/合成材料迁出：`_raw_frontier/` → `02_research/.../paradigm_evolution/frontier_synthesis_2026-07/`（跨人判读归研究层，本 README 规矩 #5 的执行）；`_raw_fable5/` → `../field_samples/fable5/synthesis/`（回归其样本池）；`_raw_loop_engineering/` → `../loop_engineering/`（上移为种子层话题目录，与 graph 同构）；`_raw_graph_engineering/` → 并入 `../graph_engineering/`（一线实录系逐字重复件，去重）。`_abandoned_no_reference/` 上移至种子层顶层（收容内容跨 kol/corp，公共设施）。本库现仅含 `_raw_kol/` + 三场 2026 事件；库内全部外向链接已同步改写。
@@ -219,5 +221,5 @@ voices/
 
 - 2026-09-26：新增 `_raw_loop_engineering/`（Loop Engineering 一波声音，2026-06 起，一人一目录）；Andrew Ng 四件套入库（自 `02_research/01_agent_engineering/loop_engineering/andrew_ng/` 迁入，原目录撤销）。**名单权威在** [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
 - 2026-07-08：**一手源大清洗**——全库删除所有中文二手源（36kr、微信、BAAI、CSDN、toutiao 等），补充 30+ 条原始英文一手 URL。Simon Willison (2→8 URLs)、Dave Farley (2→6 URLs)。来源铁律新增"一手源优先"硬要求。Erik Schluntz 源从 36kr 编译切换到 YouTube 原视频。
-- 2026-07-08：更名为 `aidlc_reference_kol`（历史名，现为 `kol`），`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`（现为 `corp`）。新增 `_raw_event_pragmatic_summit_2026/`、`_raw_event_deer_valley_2026/`、`_raw_event_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
+- 2026-07-08：更名为 `aidlc_reference_kol`（历史名，现为 `voices`），`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`（现为 `corp`）。新增 `_raw_event_pragmatic_summit_2026/`、`_raw_event_deer_valley_2026/`、`_raw_event_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
 - 2026-07-07：创建 `_raw_fable5/` 和 `_raw_frontier/`，全库 frontmatter + section citations + URL 溯源运动
