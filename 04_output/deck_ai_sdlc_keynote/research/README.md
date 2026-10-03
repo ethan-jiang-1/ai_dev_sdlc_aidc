@@ -22,7 +22,7 @@ agent_action: guide
 research/
 │
 ├── software/                  ← SDLC（软件开发）
-│   │  来源：01_seed_reference/field_samples/fable5/ + 01_seed_reference/reference/kol/
+│   │  来源：01_seed_reference/field_samples/fable5/ + 01_seed_reference/kol/
 │   │
 │   ├── topics/                ← 5 个主题（概念/判断/框架）
 │   │   ├── 01-traditional-sdlc-premise.md
@@ -63,21 +63,21 @@ research/
 | 目录 | 源材料 | 内容 |
 |------|--------|------|
 | `software/` | `../../../01_seed_reference/field_samples/fable5/` | 16 位一线开发者使用 Fable 5 的真实信号（Willison, Mollick, Krieger, Klaassen, Vincent 等） |
-| `software/` | `../../../01_seed_reference/reference/kol/` | 14 位 KOL 深度拆解 + Deer Valley/Engelberg/Pragmatic Summit + 跨公司变革共识 + Fable 5 信号合成 |
+| `software/` | `../../../01_seed_reference/kol/` | 14 位 KOL 深度拆解 + Deer Valley/Engelberg/Pragmatic Summit + 跨公司变革共识 + Fable 5 信号合成 |
 | `business/` | `../../../02_research/02_research/04_enterprise_mirror_mirror/business_bpm/` | 7 轮探索 + 14 个 findings 文件：BPM = SDLC 等价物、Framed Autonomy、四层架构、竞争格局 |
 
 ### software/ 源目录速查
 
 | 想看什么 | 路径 |
 |---------|------|
-| 具体的人怎么说 | `../../../01_seed_reference/reference/kol/_raw_kol/` |
-| 四家公司达成了什么共识 | `../../../01_seed_reference/reference/kol/_raw_frontier/` |
-| Fable 5 具体改变了什么 | `../../../01_seed_reference/reference/kol/_raw_fable5/` |
-| Agile 社区怎么回应 AI | `../../../01_seed_reference/reference/kol/_raw_agile_manifesto_2026/` |
-| 工业界的大会声音 | `../../../01_seed_reference/reference/kol/_raw_promatic_summit_2026/` |
-| 从实验到生产的转折 | `../../../01_seed_reference/reference/kol/_raw_engelberg_2026/` |
+| 具体的人怎么说 | `../../../01_seed_reference/kol/_raw_kol/` |
+| 四家公司达成了什么共识 | `../../../01_seed_reference/kol/_raw_frontier/` |
+| Fable 5 具体改变了什么 | `../../../01_seed_reference/kol/_raw_fable5/` |
+| Agile 社区怎么回应 AI | `../../../01_seed_reference/kol/_raw_agile_manifesto_2026/` |
+| 工业界的大会声音 | `../../../01_seed_reference/kol/_raw_promatic_summit_2026/` |
+| 从实验到生产的转折 | `../../../01_seed_reference/kol/_raw_engelberg_2026/` |
 | 一线开发者真实使用 Fable 5 的信号 | `../../../01_seed_reference/field_samples/fable5/` |
-| 厂商方法论框架 | `../../../01_seed_reference/reference/corp/_raw_aws/` |
+| 厂商方法论框架 | `../../../01_seed_reference/corp/_raw_aws/` |
 
 ### business/ 源目录速查
 

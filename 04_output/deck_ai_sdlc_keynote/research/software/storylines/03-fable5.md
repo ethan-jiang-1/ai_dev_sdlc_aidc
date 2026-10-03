@@ -6,7 +6,7 @@ status: draft
 created: 2026-07-08
 summary: 2026年2月，最聪明的人在 Deer Valley 和 Pragmatic Summit 焦虑"SDLC 该怎么办"。6月 Fable 5 发布——焦虑变成了现实。这是第一个让"人的澄清能力"成为瓶颈的模型。12 条旧流程假设被它的实际行为逐一打破。人该干什么、AI 该干什么——这个分工被彻底重构了。
 sources:
-  - 01_seed_reference/reference/kol/_raw_fable5/
+  - 01_seed_reference/kol/_raw_fable5/
 ---
 
 # Fable 5 — 当那个让大家焦虑的模型真的来了

@@ -1,15 +1,15 @@
 ---
 type: index
 content_type: readme
-directory: reference/kol
+directory: kol
 description: 人物、事件、合成——围绕 AIDLC 的影响力个体、线下聚会与跨源分析
 research_date: 2026-07-08
 ---
 
-# reference/kol — 人物与事件参考材料库
+# kol — 人物与事件参考材料库
 
 > 这是围绕 AI 驱动软件开发生命周期（AIDLC）的**人物与事件**参考材料库。
-> 七个子目录覆盖：影响力个体、跨公司合成、模型变革信号、三场 2026 年关键线下聚会。
+> 九个子目录覆盖：影响力个体、跨公司合成、模型变革信号、两波命名事件（loop / graph）、三场 2026 年关键线下聚会。
 >
 > **企业/厂商/分析机构**的材料在兄弟目录 `../corp/`。
 
@@ -18,9 +18,9 @@ research_date: 2026-07-08
 ## 目录全景
 
 ```
-reference/kol/
+kol/
 ├── README.md                              ← 你在这里
-├── _raw_kol/                              ← 12 位影响力人物深度拆解
+├── _raw_kol/                              ← 13 位影响力人物深度拆解
 ├── _raw_frontier/                         ← 跨公司变革共识合成（7 人 + 3 深度研究）
 ├── _raw_fable5/                           ← Fable 5 模型变革信号合成（16 样本）
 ├── _raw_loop_engineering/                 ← Loop Engineering 一波声音（2026-06 起，一人一目录）
@@ -110,13 +110,13 @@ reference/kol/
 
 ### `_raw_loop_engineering/` — Loop Engineering 一波声音（2026-06 起）
 
-**是什么**：2026-06 "loop engineering" 成为公开名字后围绕它发声的人的一手素材，**一人一目录**（`profile.md` + `quotes.md` + `sources.md` + `raw_*.md`，与 `../field_samples/fable5/run_*/` 同构）。
+**是什么**：2026-06 "loop engineering" 成为公开名字后围绕它发声的人的一手素材，**一人一目录**（`profile.md` + `quotes.md` + `sources.md` + `raw_*.md`，与 `../../field_samples/fable5/run_*/` 同构）。
 
 **源头特征**：一手优先（原帖 / 博客原文 / 官方发布 / 播客原版 / 演讲 transcript）；中文编译只作交叉验证。**时间窗 2026-06 起**——更早的谱系背景（Ralph Wiggum loop、Anthropic《Building effective agents》）不入本集合。
 
 **与 `_raw_kol/` 的分工**：`_raw_kol/` 按**人**铺全景（12 位）；本集合按**一次命名事件**收一波声音。已在 `_raw_kol/` 有卡片的人（Boris Cherny、Kief Morris、Ryan Lopopolo、Karpathy、Gergely Orosz）**不重复建目录**，只写指针 + loop 专项增量。
 
-**唯一名单权威不在本集合**——谁入册、号召力依据、每人主张一句话，在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。本集合只管素材。
+**唯一名单权威不在本集合**——谁入册、号召力依据、每人主张一句话，在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。本集合只管素材。
 
 **当前状态**：`andrew_ng/` 四件套齐；**当前无待建卡**（建卡规则见集合 README——素材常态在研究主题的 evidence 回源档案）。
 
@@ -164,7 +164,7 @@ reference/kol/
 
 ## 与兄弟目录的关系
 
-| | `reference/kol` | `reference/corp` |
+| | `kol` | `corp` |
 |---|---|---|
 | **视角** | 个体——人、对话、事件 | 组织——公司、厂商、分析机构 |
 | **材料性质** | 个人言论 + 合成分析 + 事件拆解 | 厂商方法论 + 生态全景 |
@@ -180,7 +180,7 @@ reference/kol/
 | 场景 | 先看 |
 |---|---|
 | 想知道具体的人在说什么 | `_raw_kol/`（12 人）、`_raw_frontier/`（7 人共识） |
-| 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | `_raw_loop_engineering/`（素材）→ [`02_research/01_agent_engineering/loop_engineering/`](../../../02_research/01_agent_engineering/loop_engineering/README.md)（判读与台账） |
+| 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | `_raw_loop_engineering/`（素材）→ [`02_research/01_agent_engineering/loop_engineering/`](../../02_research/01_agent_engineering/loop_engineering/README.md)（判读与台账） |
 | 想知道 Fable 5 具体改变了什么 | `_raw_fable5/` |
 | 想知道 2026 年 AI 软件工程的关键事件 | `_raw_promatic_summit_2026/` + `_raw_agile_manifesto_2026/` |
 | 想知道 agentic engineering 从实验到生产的转折 | `_raw_engelberg_2026/` |
@@ -189,9 +189,24 @@ reference/kol/
 
 ---
 
+## 滚动更新规矩（2026-10-03 定）
+
+> 触发场景："某位 KOL 最近有新言论了"。按下面的固定动作处理；**更新只落在人物卡里，不开新散文件**。前提是先过上面两条铁律（一手源 + 时间窗）。
+
+1. **回源核查先行**：逐条 web 回源到原帖/原文，核实 URL、日期与引文；搜索结果摘要不能直接当证据。查不到就明说"窗口内无新增"，不拿旧料凑数。
+2. **更新只进人物卡**：以带日期的小节追加进该卡（`## 2026-MM <主题>`），frontmatter `source_urls` 同步追加。卡片是该人言论的单一事实来源。
+3. **新人入册**：库内没有的人，新建卡片于 `_raw_kol/`，编号 = 现有最大号 + 1，开头先给「当前立场小结」节；`_raw_kol/README.md` 导航表同步登记。
+4. **口径变化显式标注**：新言论若与本卡已有结论有关，在小节内写明「确认 / 延伸 / 修正已有口径」，不悄悄改写旧结论。
+5. **判读不进种子层**：本库只收"谁在哪天说了什么（带源）"；跨人的分析与判读沉淀在 `02_research/` 对应主题，本库不做。
+
+---
+
 ## 最后更新
 
-- 2026-09-26：新增 `_raw_loop_engineering/`（Loop Engineering 一波声音，2026-06 起，一人一目录）；Andrew Ng 四件套入库（自 `02_research/01_agent_engineering/loop_engineering/andrew_ng/` 迁入，原目录撤销）。**名单权威在** [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
+- 2026-10-03：**扁平化提层**——本库自 `reference/kol/` 移至种子层顶层 `kol/`（`reference/` 薄壳撤销，与 `corp/` 一同上移）；库内全部外向相对链接与 frontmatter `directory` 已同步改写。
+- 2026-10-03：「滚动更新规矩」落地（见上节）；Fowler（`02`）与 Beck（`05`）两卡按窗口 2026-07～10 增量回源并追加带日期更新小节；新增 DHH 卡 `_raw_kol/15_dhh.md`（库内首个条目——Rails World 2026 "Pencils down"、Lex #501、agent-accelerated development）；`_raw_kol/README.md` 导航表与共识/分歧矩阵同步登记 DHH 列。
+
+- 2026-09-26：新增 `_raw_loop_engineering/`（Loop Engineering 一波声音，2026-06 起，一人一目录）；Andrew Ng 四件套入库（自 `02_research/01_agent_engineering/loop_engineering/andrew_ng/` 迁入，原目录撤销）。**名单权威在** [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
 - 2026-07-08：**一手源大清洗**——全库删除所有中文二手源（36kr、微信、BAAI、CSDN、toutiao 等），补充 30+ 条原始英文一手 URL。Simon Willison (2→8 URLs)、Dave Farley (2→6 URLs)。来源铁律新增"一手源优先"硬要求。Erik Schluntz 源从 36kr 编译切换到 YouTube 原视频。
-- 2026-07-08：更名为 `aidlc_reference_kol`（历史名，现为 `reference/kol`），`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`（现为 `reference/corp`）。新增 `_raw_promatic_summit_2026/`、`_raw_agile_manifesto_2026/`、`_raw_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
+- 2026-07-08：更名为 `aidlc_reference_kol`（历史名，现为 `kol`），`_raw_aws`/`_raw_ecosystem` 移出到 `aidlc_reference_corp/`（现为 `corp`）。新增 `_raw_promatic_summit_2026/`、`_raw_agile_manifesto_2026/`、`_raw_engelberg_2026/`。Deer Valley 深挖完成（5→8 文件）。
 - 2026-07-07：创建 `_raw_fable5/` 和 `_raw_frontier/`，全库 frontmatter + section citations + URL 溯源运动

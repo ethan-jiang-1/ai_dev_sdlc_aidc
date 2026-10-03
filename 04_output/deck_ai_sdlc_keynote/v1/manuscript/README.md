@@ -43,7 +43,7 @@ feeds_into:
 | BPM 叙事线 | `../../research/business/storylines/` |
 | 软件案例（Block, Cloudflare） | `../../../../02_research/02_research/04_enterprise_mirror_mirror/cases/` |
 | BPM 源材料 | `../../../../02_research/02_research/04_enterprise_mirror_mirror/business_bpm/` |
-| KOL 源材料 | `../../../../01_seed_reference/reference/kol/` |
+| KOL 源材料 | `../../../../01_seed_reference/kol/` |
 | 一线开发者信号 | `../../../../01_seed_reference/field_samples/fable5/` |
 
 ## PENDING

@@ -42,7 +42,7 @@
 6. **三件骨架深挖区已开**（[`stop_conditions/`](stop_conditions/README.md)，2026-09-28）。第一轮回源已全部收口（l/m/n/o/p/q 六档案，32 条新来源；中断的两路补采已完成）。下一步按控制链审计卡归位，并将判定候选回流 digested/03。
 7. **跨仓修正三处**（本轮一手证据触发，不属本主题但已查明）：
    - `talk-harness-201/02_evidence/01-kol-alignment-2026.md`：公式 "Agent = Model + Harness" 归属改为 **Trivedy/LangChain 原创 → Böckeler 传播锚点化**；
-   - `01_seed_reference/reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；
+   - `01_seed_reference/kol/_raw_kol/10_kief_morris.md`：三档 → **四级**（+ agentic flywheel），且 flywheel 是节标题；
    - Böckeler "False sense of control?" 的出处标注改为 **2025-10-15 sdd-3-tools.html**（凡引用处）。
 8. **T 路判读候选待处置**（[evidence-t §3](raw/evidence-2026-09-30-t-shenmejiaoqq-video-zh.md)）：六处与已回源机制的同构对号**不重复计票**；"Run Everything 只在 demo 用"的自主度分档句、三个可跟踪预言（编排框架/动态 Loop/云规划+本地 SLM 执行）先填控制链审计卡，再决定是否回流 digested/03。"90%" 统计与 Lance Martin 人物在回源核实前不得引用。
 9. **capability_ladder 后续**：2026-09-30 晚承重 ⏳ 清理完成（LE1–LE3 定阶支撑零 ⏳ 依赖），判定经 landscape §3.5＋digested/07 交接面读法回流，实践层 manual §13 补上 LE1 操作化缺口；`Run Everything` 已由官方 Run Modes docs 核实。剩余不承重待办：`File Deletion Protection` 名称核验、NLAH 原文、rung-02 行为面反例矩阵 ⏳。

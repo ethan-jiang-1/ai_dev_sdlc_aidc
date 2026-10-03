@@ -15,7 +15,7 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 ## 总览：五阶段加工流
 
 ```
-源材料（01_seed_reference/reference/kol/）
+源材料（01_seed_reference/kol/）
         │
         ▼
 ┌─────────────────────────────────────────────┐
@@ -98,7 +98,7 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 
 **源材料在哪里**：
 ```
-../../01_seed_reference/reference/kol/
+../../01_seed_reference/kol/
 ├── _raw_kol/              ← 14 位 KOL（Fowler, Farley, Willison, Beck, Karpathy...）
 ├── _raw_frontier/         ← 跨公司共识（Anthropic/OpenAI/Cursor/Google 七人）
 ├── _raw_fable5/           ← Fable 5 变革信号（16 个使用样本）

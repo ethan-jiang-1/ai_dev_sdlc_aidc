@@ -125,7 +125,7 @@ Goal / 边界
 |---|---|---|---|
 | **文章原文及逐字摘录** | `raw/evidence-*.md` 回源档案 | 已在 [`evidence-2026-09-26-a-originators.md`](evidence-2026-09-26-a-originators.md) §4 与补充回源节 | 记录 URL、发布日期、观测日期、作者、原句、最小主张、证据强度、限制；同一篇文章不因“值得深挖”再复制成第二份事实档案 |
 | **作者是否算本主题 KOL** | `raw/kol-roster.md` 唯一名单权威 | `addy_osmani` 已入 §A | 记录身份、号召力依据、对本主题的一句话主张、证据指针；台账不复制文章正文 |
-| **作者的完整观点** | `01_seed_reference/reference/kol/_raw_loop_engineering/` 或已有个人卡 | Osmani 当前素材留 evidence；Andrew Ng 有历史四件套卡 | 只有独立一手长文达到主题建卡门槛（当前规则：≥3 份）才建卡；否则以 evidence 按问题组织 |
+| **作者的完整观点** | `01_seed_reference/kol/_raw_loop_engineering/` 或已有个人卡 | Osmani 当前素材留 evidence；Andrew Ng 有历史四件套卡 | 只有独立一手长文达到主题建卡门槛（当前规则：≥3 份）才建卡；否则以 evidence 按问题组织 |
 | **文章点名的其他人** | 先回到各自的 evidence，必要时更新台账 §A/§B/§C | Cherny、Steinberger 已有词源定性；Runkle 有独立一手文章；Andrej 等需按来源另判 | “被 Osmani 提到”只证明引用关系，不自动等于 KOL 入册；要分别检查其本人原文、深度、影响力和时间窗 |
 | **多篇文章之间的综合判断** | `digested/` | `digested/01`、`03`、`05` 已综合 | 只在这里比较“共同核心、外延冲突、定义/建议/案例”；不把某一作者的 opinion 直接升格为规范 |
 | **可执行的实践建议** | `03_practice/loop_governance/` | 已有 backbone/manual 初稿，待复核 | 只有经过证据筛选、写出边界/失败模式并能观察验证，才从 `digested/` 进入实践层 |

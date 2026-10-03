@@ -6,8 +6,8 @@ status: draft
 created: 2026-07-08
 summary: 2026 年 2 月到 7 月，同一群人在两场 retreat 之间经历了从"我们不确定这是什么"到"所有人都在生产环境里做"的观念巨变。这是 AI-SDLC 变革速度的最生动证据。
 sources:
-  - 01_seed_reference/reference/kol/_raw_agile_manifesto_2026/
-  - 01_seed_reference/reference/kol/_raw_engelberg_2026/
+  - 01_seed_reference/kol/_raw_agile_manifesto_2026/
+  - 01_seed_reference/kol/_raw_engelberg_2026/
 ---
 
 # 从 Deer Valley 到 Engelberg — 5 个月的大脑激荡

@@ -1,7 +1,7 @@
 ---
 type: index
 content_type: readme
-directory: reference/kol/_raw_graph_engineering
+directory: kol/_raw_graph_engineering
 description: Graph Engineering 一波声音（2026-07 起）——从单循环走向显式拓扑编排与 DAG 的一手素材集合
 research_date: 2026-10-01
 ---
@@ -13,7 +13,7 @@ research_date: 2026-10-01
 
 **分工定位**：
 - 本目录是**冷启动种子素材库**：记录这一波发声的事件锚点、核心讨论线索与一手源。
-- 理论与机制研究在 [`02_research/01_agent_engineering/graph_engineering/`](../../../../02_research/01_agent_engineering/graph_engineering/README.md)。
+- 理论与机制研究在 [`02_research/01_agent_engineering/graph_engineering/`](../../../02_research/01_agent_engineering/graph_engineering/README.md)。
 
 ---
 
@@ -106,7 +106,7 @@ research_date: 2026-10-01
 
 ## 7. 收录纪律与追踪清单
 
-- 遵守 `reference/kol/README.md` 一手源铁律。
+- 遵守 `kol/README.md` 一手源铁律。
 - 跟踪候选对象：
   - Peter Steinberger（OpenClaw 创作者，2026-07 讨论引爆者）
   - LangGraph / 状态机工作流代表性工程实践

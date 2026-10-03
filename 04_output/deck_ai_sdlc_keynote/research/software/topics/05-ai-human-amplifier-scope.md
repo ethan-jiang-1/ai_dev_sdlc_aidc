@@ -7,8 +7,8 @@ created: 2026-07-08
 summary: AI 时代 SDLC 最深刻的变化不是工具更好了——是人和 AI 的关系变了。从"操作者→工具"变成"委托人→执行者"。这个变化有大量一线开发者的真实体验为证，不只是理论推演。
 sources:
   - 01_seed_reference/field_samples/fable5/ (Willison, Mollick, Krieger, Klaassen, Vincent, Shihipar)
-  - 01_seed_reference/reference/kol/_raw_agile_manifesto_2026/ (Three-Tier Developer Split)
-  - 01_seed_reference/reference/kol/_raw_kol/ (ThoughtWorks, Fowler, Beck)
+  - 01_seed_reference/kol/_raw_agile_manifesto_2026/ (Three-Tier Developer Split)
+  - 01_seed_reference/kol/_raw_kol/ (ThoughtWorks, Fowler, Beck)
 ---
 
 # 人-AI 关系：从操作者到委托人

@@ -1,7 +1,7 @@
 # KOL 台账 — Loop Engineering（2026-06 起）
 
 > ★ **本文件是本主题「谁在说」的唯一名单权威。** 收录判据见 [`../README.md`](../README.md) §1；
-> 一手素材统一在 [`01_seed_reference/reference/kol/_raw_loop_engineering/`](../../../../01_seed_reference/reference/kol/_raw_loop_engineering/README.md)
+> 一手素材统一在 [`01_seed_reference/kol/_raw_loop_engineering/`](../../../../01_seed_reference/kol/_raw_loop_engineering/README.md)
 > （本文件**只放台账与指针，不放人物卡片**）。
 
 **观测日期**：2026-09-26；**2026-09-27 I 路**追加谱系与候选注记，**§A 六人名单不增**。三路回源见 [evidence-a](evidence-2026-09-26-a-originators.md) / [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) / [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)。簇外高影响面见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)；I2 档案混合主验与侦察回源，侦察条目不计票。**「待回源」= 不可作主张依据。**
@@ -33,18 +33,18 @@
 
 | 人物 / 机构 | 贡献 | 时间 | 回源 | 已有卡片 |
 |---|---|---|---|---|
-| **Kief Morris**（Thoughtworks） | **四级阶梯**：outside / in / on the loop → **agentic flywheel**（C 路：四级非三级；脚注澄清 ralph 原始形态里 operator 在 steering） | 2026-03-04 | ✅ evidence-c | [`_raw_kol/10`](../../../../01_seed_reference/reference/kol/_raw_kol/10_kief_morris.md)（卡片为三档版，**待按四级修订**） |
-| **Birgitta Böckeler**（Thoughtworks） | steering loop / guides-sensors：**spec 降格为 feedforward guide 而非审批门**；"False sense of control?"（⚠️ 出处是 **2025-10-15 sdd-3-tools.html**，非 2026-04 harness-engineering） | 2025-10-15 / 2026-04-02 | ✅ evidence-c | [`_raw_kol/01`](../../../../01_seed_reference/reference/kol/_raw_kol/01_thoughtworks.md) |
+| **Kief Morris**（Thoughtworks） | **四级阶梯**：outside / in / on the loop → **agentic flywheel**（C 路：四级非三级；脚注澄清 ralph 原始形态里 operator 在 steering） | 2026-03-04 | ✅ evidence-c | [`_raw_kol/10`](../../../../01_seed_reference/kol/_raw_kol/10_kief_morris.md)（卡片为三档版，**待按四级修订**） |
+| **Birgitta Böckeler**（Thoughtworks） | steering loop / guides-sensors：**spec 降格为 feedforward guide 而非审批门**；"False sense of control?"（⚠️ 出处是 **2025-10-15 sdd-3-tools.html**，非 2026-04 harness-engineering） | 2025-10-15 / 2026-04-02 | ✅ evidence-c | [`_raw_kol/01`](../../../../01_seed_reference/kol/_raw_kol/01_thoughtworks.md) |
 | **Viv Trivedy**（LangChain） | **"Agent = Model + Harness" 公式原创**（Osmani 明写是 Trivedy 的 one-liner；Böckeler 文把公式链到 LangChain；marmelab 记功给 Böckeler 是传播锚点化） | 2026 上半年 | ✅ evidence-c | 无卡片（**候选**：是否入册待判——公式原创者 + LangChain 工程师，可能满足口径①） |
 | **Anthropic** | 《Building effective agents》机制句 + stopping conditions 首次成文 | 2024-12-19 | ✅ evidence-b §2 | 见 §A `anthropic_org`（机构连续体） |
 | **Anthropic** | 《Effective harnesses for long-running agents》：feature_list.json | 2025-11-26 | ✅ evidence-b §3 | 同上 |
 | **marmelab**（François Zaninotto） | "Natural Language Development" 命名 + "SDD adds little benefit" / "False Sense of Security"（⚠️ 两条名言出处是 **2025-11-12《The Waterfall Strikes Back》**，非 2026-09-24 审计文——C 路全文 grep 实锤） | 2025-11-12 / 2026-09-24 | ✅ evidence-c | 无卡片（候选） |
-| **OpenAI**（Ryan Lopopolo） | 命名 "harness engineering"。**2026-09-27 正文已取得**：0 行手写 / 约百万行 / 约 1500 PR 为该团队自述；评审循环自称为 Ralph Wiggum Loop；短 AGENTS.md + 仓内 exec-plans；不可外推 | 2026-02-11 | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 6 | [`_raw_kol/09`](../../../../01_seed_reference/reference/kol/_raw_kol/09_ryan_lopopolo.md) |
+| **OpenAI**（Ryan Lopopolo） | 命名 "harness engineering"。**2026-09-27 正文已取得**：0 行手写 / 约百万行 / 约 1500 PR 为该团队自述；评审循环自称为 Ralph Wiggum Loop；短 AGENTS.md + 仓内 exec-plans；不可外推 | 2026-02-11 | ✅ [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 6 | [`_raw_kol/09`](../../../../01_seed_reference/kol/_raw_kol/09_ryan_lopopolo.md) |
 | **Paul Gauthier**（Aider） | 2024-05-22 起把「编辑 → lint → 喂回模型」做成产品内环；测试环须显式 `--auto-test`。窗口前，不入 §A | 2024-05-22 | ✅ evidence-i Source 1 | 无卡片 |
 | **Dex Horthy**（HumanLayer） | 12-factor agents：反对自由 “loop until goal”，要求在工具选定与执行之间打断。客户向生产 agent 的反模型，不是 coding-agent 采用率证据。窗口前，不入 §A | 2025-03-30 | ✅ evidence-i Source 2 | 无卡片 |
 | **Kent Beck** | 《Augmented Coding》：人说 go 才做下一条测试；删/关测试是作弊信号。单人案例。窗口前，不入 §A | 2025-06-25 | ✅ evidence-i Source 3 | 无卡片 |
 | **Steve Yegge** | Beads：用 git JSONL issue 替代会失忆的 markdown 计划；做完一个 issue 就杀掉会话。单人观察，alpha。Gas Town 机制本轮未逐段核。窗口前，不入 §A | 2025-10-13 | ✅ evidence-i Source 5 | 无卡片 |
-| **Andrej Karpathy** | 终结自创的 "Vibe Coding"，提 "Agentic Engineering" | 2026-02 | ⏳ | [`_raw_kol/07`](../../../../01_seed_reference/reference/kol/_raw_kol/07_andrej_karpathy.md) |
+| **Andrej Karpathy** | 终结自创的 "Vibe Coding"，提 "Agentic Engineering" | 2026-02 | ⏳ | [`_raw_kol/07`](../../../../01_seed_reference/kol/_raw_kol/07_andrej_karpathy.md) |
 | **Stripe**（Beswick & Epsteen） | 《You can't whisper at an AI agent》hard/soft steering——"errors block progress but warnings don't"（C 路逐字到手） | 2026-05-14 | ✅ evidence-c | 无卡片（候选：属 harness 侧，与停止条件的同层性待判） |
 | **Geoffrey Huntley** | Ralph Wiggum loop 原语（故意无限 bash 循环、无内建停止条件、back pressure、signs、greenfield 限定）——本词公认起点文献，2026 年仍被 LangChain/marmelab 引用 | 2025-07-14 | ✅ evidence-b §1 | 无卡片（素材在 evidence-b；**窗口内本人新发声待查，有则升 §A**） |
 | **Harrison Chase**（LangChain CEO） | "harness engineering is an extension of context engineering"（播客转述）；LangChain 四环文页尾致谢含他（evidence-b）但非本人署名 | 2026-03 | ⏳ | 无卡片（**窗口内本人新发声待查，有则升 §A**） |
@@ -60,8 +60,8 @@
 
 | 候选 | 线索 | 待判什么 |
 |---|---|---|
-| **Simon Willison** | 2025-09-30《Designing agentic loops》已回源：他是循环实践者（工具环 + 成功标准 + 测试套件），同时指出 YOLO 的破坏/外泄风险。这不是对本词的反方论文，也不是语义纠偏 alone。**2026-06 后对本词 “loop engineering” 的专门发声仍未核，故不升 §A** | 人物全景已在 [`_raw_kol/04`](../../../../01_seed_reference/reference/kol/_raw_kol/04_simon_willison.md)；本主题引句在 [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 4 |
-| **Gergely Orosz** | 六预测；"Something precious is being taken away" | 怀疑派代表，是否构成本主题的对照声部。人物全景已在 [`_raw_kol/12`](../../../../01_seed_reference/reference/kol/_raw_kol/12_gergely_orosz.md) |
+| **Simon Willison** | 2025-09-30《Designing agentic loops》已回源：他是循环实践者（工具环 + 成功标准 + 测试套件），同时指出 YOLO 的破坏/外泄风险。这不是对本词的反方论文，也不是语义纠偏 alone。**2026-06 后对本词 “loop engineering” 的专门发声仍未核，故不升 §A** | 人物全景已在 [`_raw_kol/04`](../../../../01_seed_reference/kol/_raw_kol/04_simon_willison.md)；本主题引句在 [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 4 |
+| **Gergely Orosz** | 六预测；"Something precious is being taken away" | 怀疑派代表，是否构成本主题的对照声部。人物全景已在 [`_raw_kol/12`](../../../../01_seed_reference/kol/_raw_kol/12_gergely_orosz.md) |
 | **swyx**（latent.space） | 《loopcraft: the art of stacking loops》——**被 LangChain 官方博客引用并致谢**（"This is what loop engineering — or loopcraft, as swyx puts it — actually looks like in practice"） | 个人 newsletter，按质量门槛暂不入册；但被厂商一手引用这一点值得记着——若后续发现更多厂商引用，可升入册（B 路线索） |
 | **Jesse Vincent**（obra / Superpowers 作者） | Superpowers（289k★，口径④＋③一线规模）；其 Fable 5 时代的 `/goal` 实验（过夜 25 实验＋失败日志）是实践层 backbone §1 的例证来源；素材在 [`field_samples/fable5/run_superpowers_jesse_vincent/`](../../../../01_seed_reference/field_samples/fable5/run_superpowers_jesse_vincent/profile.md)（既有，只引用） | **待判**：其 `/goal` 写法是否独立于 CC 官方文档（与 backbone §1 例证的降级标注是同一件事）——确认独立后升 §A |
 
@@ -82,7 +82,7 @@
 
 | 来源 | 性质 | 提供了哪些线索 / 已核实哪些 |
 |---|---|---|
-| [`01_seed_reference/reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md`](../../../../01_seed_reference/reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md) | **一手**（已归档） | Andrew Ng 三环；**Cherny / Steinberger 两个词源人物** |
+| [`01_seed_reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md`](../../../../01_seed_reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md) | **一手**（已归档） | Andrew Ng 三环；**Cherny / Steinberger 两个词源人物** |
 | [`raw/evidence-2026-09-26-a-originators.md`](evidence-2026-09-26-a-originators.md) | **一手回源档案**（A 路·词源与定义者四人） | Cherny 访谈句三版本对照与 YC transcript「loop 出现 0 次」；Steinberger 推文 snowflake 定位与「无深度内容」结论；Runkle 四环逐字；Osmani 两篇全取得（分层四级）；CC 团队 06-30 官方定义交叉核验——**「词源＝热度碎片、定义＝事后工程化」的判定依据** |
 | [`raw/evidence-2026-09-26-b-stop-and-scheduling.md`](evidence-2026-09-26-b-stop-and-scheduling.md) | **一手回源档案**（B 路，9 个一手记录块全文） | Ralph 原文、Anthropic 两篇工程文、Claude Code `/goal`//`/loop`/auto mode 官方文档、OpenAI auto-review、LangChain 四环；**停止条件与外层调度两问判定收敛**；负结论 4 条 |
 | [`raw/evidence-2026-09-26-c-autonomy-and-convergence.md`](evidence-2026-09-26-c-autonomy-and-convergence.md) | **一手回源档案**（C 路） | Kief Morris 四级阶梯、Böckeler steering loop 与归属修正、marmelab 两篇辨析、Stripe steering 原句、OpenSpec/Spec Kit 官方动作、橙皮书定性；**自主度位置分档成立/量化分档未成型**；**收敛判定成立** |

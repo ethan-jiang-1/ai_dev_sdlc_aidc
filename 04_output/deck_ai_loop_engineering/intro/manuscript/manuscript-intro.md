@@ -746,7 +746,7 @@ print(f"Progress: {passing}/{total} tests passing ({percentage:.1f}%)")
 
 **来源（页内完整信息）**：Andrew Ng，《Loop Engineering: My 3 Key Loops for Building 0-to-1 Products》，2026-06-30，https://x.com/AndrewYNg/status/2071988145667928442
 
-**原文复核（同页备注）**："humans as having a significant context advantage over current AI systems — we know a lot more than the AI system about the users and the context the product has to operate in"。已对照 [英文原文 §Loop 2](../../../../01_seed_reference/reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md)。
+**原文复核（同页备注）**："humans as having a significant context advantage over current AI systems — we know a lot more than the AI system about the users and the context the product has to operate in"。已对照 [英文原文 §Loop 2](../../../../01_seed_reference/kol/_raw_loop_engineering/andrew_ng/raw_ng_x_post_en.md)。
 
 > **PPT Agent 知识说明（不上屏）**
 > - 认知变化：人的价值不只是在终点打勾，还在把系统不知道的业务事实与拒绝理由补进下一步。

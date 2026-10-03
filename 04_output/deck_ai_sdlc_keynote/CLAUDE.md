@@ -22,7 +22,7 @@ feeds_into:
 - **Topic**: AI 时代 SDLC 的变化
 - **形态**: 战略 Keynote（slides 是图片型）
 - **语言**: 中英双语（slides 英文为主，演讲可中文）
-- **源素材**: `../../01_seed_reference/reference/kol/`（14 位 KOL + 3 场 2026 事件 + 跨公司共识 + Fable 5 信号）
+- **源素材**: `../../01_seed_reference/kol/`（14 位 KOL + 3 场 2026 事件 + 跨公司共识 + Fable 5 信号）
 - **方法论文档**: `../../_ppt_framework_v1/`（PPT 四阶段加工流，只读参考）
 
 ## 固定流程（不可跳过，不可重排）
@@ -53,7 +53,7 @@ Phase 5: 生产管线 → 生成图片 → 合成 PPTX
 ## 各 Phase 概览
 
 ### Phase 0: 素材抽取与合成
-- **输入**: `../../01_seed_reference/reference/kol/` 全部源材料
+- **输入**: `../../01_seed_reference/kol/` 全部源材料
 - **产出**: `research/source-synthesis.md`（按主题组织的关键信号 + 引用溯源）
 - **参考**: `research/README.md`
 
@@ -103,14 +103,14 @@ Phase 5: 生产管线 → 生成图片 → 合成 PPTX
 
 | 想看什么 | 路径 |
 |---------|------|
-| 14 位 KOL 深度拆解 | `../../01_seed_reference/reference/kol/_raw_kol/` |
-| 跨公司变革共识（7人） | `../../01_seed_reference/reference/kol/_raw_frontier/` |
-| Fable 5 变革信号 | `../../01_seed_reference/reference/kol/_raw_fable5/` |
-| Deer Valley Retreat (Feb 2026) | `../../01_seed_reference/reference/kol/_raw_agile_manifesto_2026/` |
-| Pragmatic Summit (Feb 2026) | `../../01_seed_reference/reference/kol/_raw_promatic_summit_2026/` |
-| Engelberg Retreat (Jul 2026) | `../../01_seed_reference/reference/kol/_raw_engelberg_2026/` |
-| AWS AIDLC 方法论 | `../../01_seed_reference/reference/corp/_raw_aws/` |
-| 生态全景 | `../../01_seed_reference/reference/corp/_raw_ecosystem/` |
+| 14 位 KOL 深度拆解 | `../../01_seed_reference/kol/_raw_kol/` |
+| 跨公司变革共识（7人） | `../../01_seed_reference/kol/_raw_frontier/` |
+| Fable 5 变革信号 | `../../01_seed_reference/kol/_raw_fable5/` |
+| Deer Valley Retreat (Feb 2026) | `../../01_seed_reference/kol/_raw_agile_manifesto_2026/` |
+| Pragmatic Summit (Feb 2026) | `../../01_seed_reference/kol/_raw_promatic_summit_2026/` |
+| Engelberg Retreat (Jul 2026) | `../../01_seed_reference/kol/_raw_engelberg_2026/` |
+| AWS AIDLC 方法论 | `../../01_seed_reference/corp/_raw_aws/` |
+| 生态全景 | `../../01_seed_reference/corp/_raw_ecosystem/` |
 | PPT 方法论（只读） | `../../_ppt_framework_v1/` |
 
 ## 三条铁律

@@ -60,7 +60,7 @@
 | 讲感写作要求（manuscript 怎么写好讲，2026-10-02 立） | `craft/讲感写作要求.md` |
 | harness 治理（环境轴对照） | `../../03_practice/harness_governance/` |
 | Andrew Ng 消化稿 | `../../02_research/01_agent_engineering/loop_engineering/digested/kol/andrew_ng.md` |
-| Andrew Ng 素材卡 | `../../01_seed_reference/reference/kol/_raw_loop_engineering/andrew_ng/` |
+| Andrew Ng 素材卡 | `../../01_seed_reference/kol/_raw_loop_engineering/andrew_ng/` |
 | 边界判定 | `../../02_research/01_agent_engineering/loop_engineering/digested/05-边界判定.md` |
 
 ## 故事在哪

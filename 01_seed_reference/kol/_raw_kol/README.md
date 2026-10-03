@@ -21,6 +21,7 @@
 | `12_gergely_orosz.md` | Gergely Orosz | *The Pragmatic Engineer* 作者，六预测（好/坏/丑），"Something precious is being taken away" |
 | `13_laura_tacho.md` | Laura Tacho | 前 DX CTO，450+ 公司 12 万开发者数据，"AI 是放大器"，"失望鸿沟" |
 | `14_thomas_dohmke.md` | Thomas Dohmke | 前 GitHub CEO，Entire 创始人（$60M 种子轮），"Homer Simpson 车"，"Agent 装配线" |
+| `15_dhh.md` | DHH | Rails World 2026 "Pencils down"：37signals 停止手写代码；从头号抵制者到 agent 加速派（"agent-accelerated development"） |
 
 ---
 
@@ -35,6 +36,9 @@
 ### 想了解"企业级 AI 开发治理"？
 → [01_thoughtworks.md](01_thoughtworks.md) + [02_martin_fowler.md](02_martin_fowler.md)
 
+### 想了解"最激进 agent 全速派"与"经典工程派"的对撞？
+→ [15_dhh.md](15_dhh.md) + [02_martin_fowler.md](02_martin_fowler.md) + [05_kent_beck_agile.md](05_kent_beck_agile.md)
+
 ### 想了解全貌和分歧？
 → 本文件下方「共识/分歧矩阵」一节（06 综合篇从未建成，跨人物综合由该矩阵承担）
 
@@ -42,16 +46,16 @@
 
 ## 共识/分歧矩阵
 
-| 话题 | Fowler | Farley | Willison | Beck | ThoughtWorks | Karpathy | Cherny | Lopopolo |
-|------|--------|--------|----------|------|-------------|----------|--------|----------|
-| **经典实践（TDD/CI/CD）更重要了** | ✅ | ✅ | ✅ | ✅ | ✅ | — | — | ✅ |
-| **SDLC 需要为 AI 吞吐量重新设计** | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ |
-| **Vibe Coding 对生产不负责任** | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ |
-| **AI 可以信任为半黑盒** | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
-| **AI 需要确定性传感器验证** | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **AI 是中层级工程师的就业风险** | — | — | ✅ | — | ✅ | — | ✅ | — |
-| **AI 是嵌入正确实践的最佳机会** | ✅ | ✅ | — | ✅ | ✅ | — | ✅ | — |
-| **手动编程作为一种职业正在终结** | — | — | — | — | — | ✅ | ✅ | ✅ | — |
+| 话题 | Fowler | Farley | Willison | Beck | ThoughtWorks | Karpathy | Cherny | Lopopolo | DHH |
+|------|--------|--------|----------|------|-------------|----------|--------|----------|-----|
+| **经典实践（TDD/CI/CD）更重要了** | ✅ | ✅ | ✅ | ✅ | ✅ | — | — | ✅ | — |
+| **SDLC 需要为 AI 吞吐量重新设计** | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Vibe Coding 对生产不负责任** | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **AI 可以信任为半黑盒** | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| **AI 需要确定性传感器验证** | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| **AI 是中层级工程师的就业风险** | — | — | ✅ | — | ✅ | — | ✅ | — | — |
+| **AI 是嵌入正确实践的最佳机会** | ✅ | ✅ | — | ✅ | ✅ | — | ✅ | — | — |
+| **手动编程作为一种职业正在终结** | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ |
 
 ✅ = 同意 · ❌ = 反对 · — = 未明确表态
 

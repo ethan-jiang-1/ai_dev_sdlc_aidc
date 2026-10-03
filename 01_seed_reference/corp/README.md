@@ -1,11 +1,11 @@
 ---
 type: index
 content_type: readme
-directory: reference/corp
+directory: corp
 description: 企业/厂商/分析机构的 AIDLC 参考材料——AWS 方法论 + 生态全景
 ---
 
-# reference/corp — 企业与生态参考材料
+# corp — 企业与生态参考材料
 
 > 两个子目录：AWS 官方 AI-DLC 方法论 + 非 AWS 生态全景（Google、Microsoft、Gartner、分析机构、社区）
 
@@ -55,22 +55,24 @@ description: 企业/厂商/分析机构的 AIDLC 参考材料——AWS 方法论
 ## 与相邻目录的关系
 
 ```
-reference/corp/     ← 企业/厂商/分析机构（你在这里）
+corp/     ← 企业/厂商/分析机构（你在这里）
   ├── _raw_aws/                    ← AWS 官方方法论
   ├── _raw_ecosystem/              ← 多厂商 + 分析机构 + 社区全景
   └── _abandoned_no_reference/     ← 无源可溯的内容收容所
 
-reference/kol/      ← 人物与事件（影响力个体 + 线下聚会）
-  ├── _raw_kol/           ← 14 位影响力人物深度拆解
-  ├── _raw_frontier/      ← 跨公司变革共识合成
-  ├── _raw_fable5/        ← Fable 5 模型变革信号合成
+kol/      ← 人物与事件（影响力个体 + 线下聚会）
+  ├── _raw_kol/                     ← 13 位影响力人物深度拆解
+  ├── _raw_frontier/                ← 跨公司变革共识合成
+  ├── _raw_fable5/                  ← Fable 5 模型变革信号合成
+  ├── _raw_loop_engineering/        ← Loop Engineering 一波声音（2026-06 起）
+  ├── _raw_graph_engineering/       ← Graph Engineering 一波声音（2026-07 起）
   ├── _raw_promatic_summit_2026/    ← Pragmatic Summit 2026
   ├── _raw_agile_manifesto_2026/    ← Deer Valley Retreat 2026
   └── _raw_engelberg_2026/          ← Engelberg Retreat 2026
 ```
 
-**`reference/corp`** 是**组织视角**——公司、厂商、分析机构在说什么。
-**`reference/kol`** 是**个体视角**——人、对话、事件在说什么。
+**`corp`** 是**组织视角**——公司、厂商、分析机构在说什么。
+**`kol`** 是**个体视角**——人、对话、事件在说什么。
 
 ---
 
@@ -89,4 +91,4 @@ reference/kol/      ← 人物与事件（影响力个体 + 线下聚会）
 
 - `_raw_aws/`：6 个内容文件 + README + figures/。有 `## 来源` 节但缺少 frontmatter
 - `_raw_ecosystem/`：7 个内容文件 + README + figures/。原 02/03/05/07 已移至 `../kol/_abandoned_no_reference/`（缺少可验证 URL）
-- 待办：frontmatter + URL 溯源（与 `reference/kol` 下的文件同样的处理标准）
+- 待办：frontmatter + URL 溯源（与 `kol` 下的文件同样的处理标准）

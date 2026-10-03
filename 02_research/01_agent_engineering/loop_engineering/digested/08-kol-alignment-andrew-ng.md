@@ -2,7 +2,7 @@
 
 > **问题**：KOL 反复谈的 loop engineering，是否与本主题的停止条件三件骨架、以及 `loop_governance` 的控制轴同指一套东西？重点核对 Andrew Ng 的三环。
 >
-> **证据范围**：仓内已回源的一手档案，逐字引句见 [`raw/evidence-2026-09-26-a-originators.md`](../raw/evidence-2026-09-26-a-originators.md)、[`raw/evidence-2026-09-26-b-stop-and-scheduling.md`](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) 与 Andrew Ng 素材卡 [`01_seed_reference/reference/kol/_raw_loop_engineering/andrew_ng/`](../../../../01_seed_reference/reference/kol/_raw_loop_engineering/)。本文做概念校准，不把厂商机制升级成行业效果证据。
+> **证据范围**：仓内已回源的一手档案，逐字引句见 [`raw/evidence-2026-09-26-a-originators.md`](../raw/evidence-2026-09-26-a-originators.md)、[`raw/evidence-2026-09-26-b-stop-and-scheduling.md`](../raw/evidence-2026-09-26-b-stop-and-scheduling.md) 与 Andrew Ng 素材卡 [`01_seed_reference/kol/_raw_loop_engineering/andrew_ng/`](../../../../01_seed_reference/kol/_raw_loop_engineering/)。本文做概念校准，不把厂商机制升级成行业效果证据。
 
 ## 一、结论先行
 
