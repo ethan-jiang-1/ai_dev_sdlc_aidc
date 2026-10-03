@@ -38,6 +38,7 @@ key_concepts:
 | 2026-09-06 | #98：编排实践推进（URL 已核） | registerspill #98 |
 | 2026-09-12 | **#99：agent 派生 agent 黑盒测试实录 + "aim higher"**；点名反驳 Armin（"cold water on the golden geese… these aren't rhetorical questions"） | registerspill #99 |
 | 2026-09-20 | #100："It's the week of Jev"（Jevons 悖论话题，URL 已核） | registerspill #100 |
+| 2026-09-26 | #101（URL 已核；**未再提 Ronacher**——互驳仍单向敞开） | registerspill #101 |
 
 **判语**：月内语调上行（更多野心、更多外包给机器证明）——与 Ronacher（`17`）恰成镜像（#99 点名互驳，Armin 零回应，对立单向敞开）。
 
@@ -61,4 +62,4 @@ key_concepts:
 
 ---
 
-**Source:** [Register Spill #99: Joy and Curiosity（2026-09-12）](https://registerspill.thorstenball.com/p/joy-and-curiosity-99) · [#98（2026-09-06）](https://registerspill.thorstenball.com/p/joy-and-curiosity-98) · [#100（2026-09-20）](https://registerspill.thorstenball.com/p/joy-and-curiosity-100)
+**Source:** [Register Spill #99: Joy and Curiosity（2026-09-12）](https://registerspill.thorstenball.com/p/joy-and-curiosity-99) · [#98（2026-09-06）](https://registerspill.thorstenball.com/p/joy-and-curiosity-98) · [#98（2026-09-06）](https://registerspill.thorstenball.com/p/joy-and-curiosity-98) · [#100（2026-09-20）](https://registerspill.thorstenball.com/p/joy-and-curiosity-100) · [#101（2026-09-26）](https://registerspill.thorstenball.com/p/joy-and-curiosity-101)
