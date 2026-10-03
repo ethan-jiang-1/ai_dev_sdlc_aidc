@@ -95,47 +95,16 @@ kol/
 
 ---
 
-### `_raw_frontier/` — 跨公司变革共识合成 ⚠️ 二次合成
+### 2026-10-03 迁出的目录（话题不进人物库）
 
-**是什么**：从 Anthropic/OpenAI/Cursor/Google 七位前沿人物的材料中提取的变革共识。
+> 本库收窄为「意见来源库」后，四类话题/合成材料迁出。内容未删，去向如下：
 
-**源头特征**：二次合成——每个 insight 在 README 中标注了来源人物和 URL，可回溯验证。共识部分可信度高（多人独立验证），死亡清单基于单人宣布。
-
-**当前状态**：全部有 frontmatter + section 级 citations + verified URLs。
-
----
-
-### `_raw_fable5/` — Fable 5 模型变革信号合成 ⚠️ 二次合成
-
-**是什么**：从 16 个真实使用 Fable 5 的样本中提取的变革信号（核心信号 + 流程模式 + 粗糙信号）。
-
-**源头特征**：二次合成——README 标注了每个 insight 的证据强度（⭐~⭐⭐⭐）。Simon Willison 的案例有完整 transcript（可信度最高）。
-
-**当前状态**：全部有 frontmatter + section 级 citations + verified URLs。
-
----
-
-### `_raw_loop_engineering/` — Loop Engineering 一波声音（2026-06 起）
-
-**是什么**：2026-06 "loop engineering" 成为公开名字后围绕它发声的人的一手素材，**一人一目录**（`profile.md` + `quotes.md` + `sources.md` + `raw_*.md`，与 `../../field_samples/fable5/run_*/` 同构）。
-
-**源头特征**：一手优先（原帖 / 博客原文 / 官方发布 / 播客原版 / 演讲 transcript）；中文编译只作交叉验证。**时间窗 2026-06 起**——更早的谱系背景（Ralph Wiggum loop、Anthropic《Building effective agents》）不入本集合。
-
-**与 `_raw_kol/` 的分工**：`_raw_kol/` 按**人**铺全景（12 位）；本集合按**一次命名事件**收一波声音。已在 `_raw_kol/` 有卡片的人（Boris Cherny、Kief Morris、Ryan Lopopolo、Karpathy、Gergely Orosz）**不重复建目录**，只写指针 + loop 专项增量。
-
-**唯一名单权威不在本集合**——谁入册、号召力依据、每人主张一句话，在 [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。本集合只管素材。
-
-**当前状态**：`andrew_ng/` 四件套齐；**当前无待建卡**（建卡规则见集合 README——素材常态在研究主题的 evidence 回源档案）。
-
----
-
-### `_raw_graph_engineering/` — Graph Engineering 一波声音（2026-07 起）
-
-**是什么**：2026-07 起关于 "graph engineering" / "DAG 状态机编排" / "From Loops to Graphs" 的一手讨论与实操记录。
-
-**源头特征**：一手优先（Peter Steinberger 的 2026-07-18 X 提问、真实一线开发团队关于 DAG 状态机替代多 Agent 聊天的工程对话、开源项目 A2A 协议等）。**时间窗 2026-07 起**。
-
-**当前状态**：README 架构定义已建；已归档 2026-10-01 一线工程交流实录（DAG 状态机与两层自愈机制）。
+| 原目录 | 是什么 | 新家 | 迁移动机 |
+|---|---|---|---|
+| `_raw_frontier/` | 跨 7 人变革共识合成（共识矩阵、死亡清单） | [`../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/`](../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/README.md) | 跨人判读归研究层（本 README 规矩 #5） |
+| `_raw_fable5/` | Fable 5 变革信号合成（16 样本） | [`../field_samples/fable5/synthesis/`](../field_samples/fable5/synthesis/README.md) | 回到它综合的样本池旁，raw→digested 一处完成 |
+| `_raw_loop_engineering/` | Loop Engineering 一波声音（2026-06 起，一人一目录；唯一名单权威在 [`02_research/.../loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)） | [`../loop_engineering/`](../loop_engineering/README.md) | 组织轴是命名事件不是人；上移为种子层话题目录 |
+| `_raw_graph_engineering/` | Graph Engineering 一波声音（2026-07 起） | [`../graph_engineering/`](../graph_engineering/README.md) | 与该话题目录大面积重复（一线实录为逐字重复件），并入去重 |
 
 ---
 

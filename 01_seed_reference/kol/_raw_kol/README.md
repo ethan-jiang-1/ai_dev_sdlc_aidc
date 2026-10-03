@@ -89,6 +89,8 @@
 
 ✅ = 同意 · ❌ = 反对 · — = 未明确表态
 
+> ⚠️ 矩阵范围说明（2026-10-03）：本矩阵只覆盖 2026-10-03 前入册的 9 列老成员。**新卡成员（`16` Huntley / `17` Ronacher / `18` Valim / `19` Thorsten Ball / `20` Böckeler）不入本矩阵**（列数已到可读性极限）——各自的立场定位与对照见各卡「与库内其他人物的立场对照」节；跨人合流/分叉的全景判读在 `02_research/02_ai_sdlc/01_evolution/paradigm_evolution/wave5_2026-10_discourse_shift.md`（对立轴：能力极 vs 经济-质量极、人类受众派 vs agent 受众派）。
+
 ## 新增 KOL
 
 Kief Morris 的 "in the loop → on the loop" 框架已被 ThoughtWorks (Böckeler)、Martin Fowler、OpenAI (Lopopolo) 广泛引用，是 Harness Engineering 思想谱系的基础性贡献。
