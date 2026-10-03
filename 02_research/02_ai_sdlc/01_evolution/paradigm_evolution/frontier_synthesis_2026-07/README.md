@@ -28,7 +28,7 @@ moved: 2026-10-03 自 01_seed_reference/kol/_raw_frontier/ 迁入（跨人判读
 3. 然后看 `02_人物深度_每个人的变革视角.md` — 每个人的独特角度和分歧
 4. 再看 `03_流程死亡清单_什么不再适用.md` — 22 条被宣布已死的做法
 
-> 原 `04_技术深水区` 已移至种子层收容所 `../../../../01_seed_reference/_abandoned_no_reference/from_frontier_04_技术深水区.md`——该文件基于 Claude Code 源码逆向分析，核心内容无法通过公开 URL 验证。
+> 原 `04_技术深水区` 已移至种子层收容所 `../../../../../01_seed_reference/_abandoned_no_reference/from_frontier_04_技术深水区.md`——该文件基于 Claude Code 源码逆向分析，核心内容无法通过公开 URL 验证。
 
 如果你只读一份，读 `01`。
 如果你想知道他们哪里不一致，读 `02` 的最后一节。
@@ -43,7 +43,7 @@ moved: 2026-10-03 自 01_seed_reference/kol/_raw_frontier/ 迁入（跨人判读
 | `02_人物深度_每个人的变革视角.md` | 七人各自的触发事件、独特视角、变革处方 + 分歧矩阵 | 想做比较分析的人 |
 | `03_流程死亡清单_什么不再适用.md` | 22 条被明确宣布不再适用的流程（☠️/⚠️/🔮），每条附替代方案 | 想审计团队现有流程的人 |
 
-> ⚠️ 原 `04_技术深水区` 已移至 `../../../../01_seed_reference/_abandoned_no_reference/from_frontier_04_技术深水区.md`——该文件核心内容（四层压缩模型、marble_origami、cache_edits 协议等）基于 Claude Code 源码逆向分析，非 Anthropic 官方公开文档，无法通过公开 URL 验证。
+> ⚠️ 原 `04_技术深水区` 已移至 `../../../../../01_seed_reference/_abandoned_no_reference/from_frontier_04_技术深水区.md`——该文件核心内容（四层压缩模型、marble_origami、cache_edits 协议等）基于 Claude Code 源码逆向分析，非 Anthropic 官方公开文档，无法通过公开 URL 验证。
 
 ---
 
@@ -152,7 +152,7 @@ ai_sdlc_frontier/
 
 如果你对某个具体人物的完整论述感兴趣，应该回到 `ai_sdlc_frontier/raw_*/` 读原文 + 要点总结。
 
-如果你对原始人物**在 Fable 5 具体使用上的信号**感兴趣，去看 [`../../../../01_seed_reference/field_samples/fable5/synthesis/`](../../../../01_seed_reference/field_samples/fable5/synthesis/README.md)——那边是从 field_samples/fable5 样本池（16 个 `run_*`）合成的。
+如果你对原始人物**在 Fable 5 具体使用上的信号**感兴趣，去看 [`../../../../../01_seed_reference/field_samples/fable5/synthesis/`](../../../../../01_seed_reference/field_samples/fable5/synthesis/README.md)——那边是从 field_samples/fable5 样本池（16 个 `run_*`）合成的。
 
 ---
 
