@@ -205,7 +205,7 @@ kol/
 
 | 人物/机构 | 轮查入口 | 节奏 | 已知墙/备注 |
 |---|---|---|---|
-| Fowler | martinfowler.com 各单页直抓（无总 feed；recentChanges 页未核） | 周 | 站点对脚本 UA 偶发 403；/articles/exploring-gen-ai/ 目录索引 403 但**单页可抓** |
+| Fowler | martinfowler.com 各单页直抓（无站内 feed；recentChanges 页不存在已核）＋ **feeder.co/discover/ac76a49582/martinfowler-com**（第三方 RSS 发现渠道，2026-10-03 实测可用） | 周 | 站点对脚本 UA 偶发 403；/articles/exploring-gen-ai/ 目录索引 403 但**单页可抓**；新篇靠 RSS/镜像发现（镜像常带 ?aid= 追踪参数，剥掉用规范 URL） |
 | Farley | Bluesky `davefarley77.bsky.social`（public.api.bsky.app 无登录可读）＋ YouTube 频道 RSS `feeds/videos.xml?channel_id=UCCfqyGl3nq_V0bo64CjZh8g` | 周多更 | 频道列表有 consent 墙；**频道多主播**（AI briefing 期引用须核主讲人）；字幕均 [asr] |
 | Willison | simonwillison.net 首页 | 日 | 无墙，最高性价比轮查 |
 | Beck | newsletter.kentbeck.com/feed | 周 | X/Medium 双墙；Medium 写作已迁出 |
