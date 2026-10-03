@@ -65,11 +65,11 @@
 
 | 人物 | 贡献 | 日期 | 已有卡片 / 回源 |
 |---|---|---|---|
-| Kief Morris | **四级阶梯**：outside / in / on the loop → **agentic flywheel**（C 路核实：四级非三级，flywheel 为节标题；脚注澄清 ralph 原始形态里 "operator plays an important role in steering"） | 2026-03-04 | [`_raw_kol/10`](../../../../01_seed_reference/kol/_raw_kol/10_kief_morris.md) ✅ [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md) |
-| Birgitta Böckeler | steering loop / guides-sensors 模型（**spec 降格为 feedforward guide 而非审批门**）。⚠️ **归属修正（C 路）**："False sense of control?" 在 **2025-10-15 的 sdd-3-tools.html**（含具体案例：agent 把既有类的 research 笔记当新规格重复生成 duplicates），不在 2026-04-02 的 harness-engineering.html | 2025-10-15 / 2026-04-02 | [`_raw_kol/01`](../../../../01_seed_reference/kol/_raw_kol/01_thoughtworks.md) ✅ [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md) |
+| Kief Morris | **四级阶梯**：outside / in / on the loop → **agentic flywheel**（C 路核实：四级非三级，flywheel 为节标题；脚注澄清 ralph 原始形态里 "operator plays an important role in steering"） | 2026-03-04 | [`_raw_people/10`](../../../../01_seed_reference/voices/_raw_people/10_kief_morris.md) ✅ [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md) |
+| Birgitta Böckeler | steering loop / guides-sensors 模型（**spec 降格为 feedforward guide 而非审批门**）。⚠️ **归属修正（C 路）**："False sense of control?" 在 **2025-10-15 的 sdd-3-tools.html**（含具体案例：agent 把既有类的 research 笔记当新规格重复生成 duplicates），不在 2026-04-02 的 harness-engineering.html | 2025-10-15 / 2026-04-02 | [`_raw_orgs/thoughtworks`](../../../../01_seed_reference/voices/_raw_orgs/thoughtworks.md) ✅ [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md) |
 | **Viv Trivedy**（LangChain） | **"Agent = Model + Harness" 公式的原创者**——⚠️ **归属修正（C 路）**：marmelab 记功给 Böckeler，但 Böckeler 本人文章把公式链到 LangChain《The anatomy of an agent harness》，Osmani 明写是 Trivedy 的 one-liner。**一手链：Trivedy/LangChain 原创 → Böckeler 传播锚点化** | 2026 上半年 | 无卡片（候选入册） |
-| Andrej Karpathy | Vibe Coding → Agentic Engineering | 2026-02 | [`_raw_kol/07`](../../../../01_seed_reference/kol/_raw_kol/07_andrej_karpathy.md) ⏳ |
-| Ryan Lopopolo | 命名 harness engineering | 2026-02 | [`_raw_kol/09`](../../../../01_seed_reference/kol/_raw_kol/09_ryan_lopopolo.md) ⏳ |
+| Andrej Karpathy | Vibe Coding → Agentic Engineering | 2026-02 | [`_raw_people/07`](../../../../01_seed_reference/voices/_raw_people/07_andrej_karpathy.md) ⏳ |
+| Ryan Lopopolo | 命名 harness engineering | 2026-02 | [`_raw_people/09`](../../../../01_seed_reference/voices/_raw_people/09_ryan_lopopolo.md) ⏳ |
 | **Stripe**（Beswick & Epsteen） | 《You can't whisper at an AI agent》hard / soft steering——"errors block progress but warnings don't"（C 路逐字到手） | 2026-05-14 | ✅ evidence-c |
 | **Harrison Chase**（LangChain CEO） | "harness engineering is an extension of context engineering"（播客转述）；LangChain 四环文页尾致谢含他（evidence-b）但非本人署名 | 2026-03 | ⏳ |
 

@@ -8,7 +8,7 @@ people_count: 7
 research_pieces: 3
 files_indexed: 4
 research_date: 2026-07-07
-moved: 2026-10-03 自 01_seed_reference/kol/_raw_frontier/ 迁入（跨人判读归研究层，kol/README 规矩#5）
+moved: 2026-10-03 自 02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/ 迁入（跨人判读归研究层，kol/README 规矩#5）
 ---
 
 # frontier_synthesis_2026-07 — 跨公司变革共识：信息地图
@@ -158,7 +158,7 @@ ai_sdlc_frontier/
 
 ## 和相邻目录的关系
 
-> 2026-10-03 迁移注记：本目录原在 `01_seed_reference/kol/_raw_frontier/`，因属跨人判读（kol/README 规矩 #5「判读不进种子层」）迁入本主题。人物素材仍在种子层，判读在研究层。
+> 2026-10-03 迁移注记：本目录原在 `02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/`，因属跨人判读（kol/README 规矩 #5「判读不进种子层」）迁入本主题。人物素材仍在种子层，判读在研究层。
 
 ```
 01_seed_reference/

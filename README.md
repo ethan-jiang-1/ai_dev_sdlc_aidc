@@ -75,13 +75,13 @@ ai_dev_sdlc_aidc/
 
 | 桶 | 定位 | 内容 |
 |---|---|---|
-| `01_seed_reference/` | **种子参考** | 冷启动参考库（Kicker）：一手信号与资料来源，按形态组织：真实使用样本（`field_samples/`）、学术论文（`papers/`）、人物与事件参考库（`kol/`，2026-10-03 自 `reference/` 提层，同日净化为纯"来源实体"库）、厂商参考库（`corp/`，同日提层）、两波命名事件专题（`loop_engineering/`、`graph_engineering/`）、微信公众号原文归档（`weixin/`）、无源收容所（`_abandoned_no_reference/`） |
+| `01_seed_reference/` | **种子参考** | 冷启动参考库（Kicker）：一手信号与资料来源，按形态组织：真实使用样本（`field_samples/`）、学术论文（`papers/`）、声音库（`voices/`——人/组织/事件三类意见来源实体；2026-10-03 自 `reference/` 提层、净化为纯"来源实体"库并更名）、厂商参考库（`corp/`，同日提层）、两波命名事件专题（`loop_engineering/`、`graph_engineering/`）、微信公众号原文归档（`weixin/`）、无源收容所（`_abandoned_no_reference/`） |
 | `02_research/` | **分析层** | 围绕主线的长期研究沉淀，收敛为四大支柱：`01_agent_engineering/`（智能体运行时机制：loop、harness、graph、goal_eval 及 repo_agent_friendliness 评估系统）、`02_ai_sdlc/`（生命周期演进、业界实践 Playbook、组织与团队管理）、`03_requirement_engineering/`（需求工程与形式化规格沉淀）、`04_enterprise_mirror/`（企业信息流等价物 BPM 与真实转型案例） |
 | `03_practice/` | **实践层** | SDLC 工程实践与方法论的沉淀（2026-09-21 自研究层拆出，用户判定其内容已是 practice 而非 research）：`requirements_engineering/`（需求表达格式）、`spec_driven_development/`（SDD 工具生态与辩论）、`beyond_spec_driven_development/`（SDD 批判之后的形态光谱）、`harness_governance/`（★ 环境轴：治理 agent 执行链路，2026-09-21 自 beyond 抽出）、`loop_governance/`（★ 控制轴：loop 层实践主干——停止条件/外层调度/自主度分档，2026-09-26 立题，证据权威在 `02_research/01_agent_engineering/loop_engineering`） |
 | `04_output/` | **产出层** | 主线 Keynote：`deck_ai_sdlc_keynote/`（历史主线稿，2026-08 后未推进，自带 6-Phase 出图管道）+ `deck_ai_loop_engineering/`（loop 三件套：两场分稿——入门 27 页＋判断档三题、技术产品 35 页＋构造档三题，阶梯脊柱重排；只写叙事＋练习件，画面图与 PPTX 已删除；＋`manual/` 循环交接手册，按时刻组织的现场操作件。进度见该目录 `AGENTS.md`）+ `deck_ai_graph_engineering/`（graph 三件套：两场分稿——入门 27 页、技术产品 37 页，双轨元图与两层自愈；只写叙事＋练习件＋`manual/` 图工程治理手册。进度见该目录 `AGENTS.md`） |
 
 各研究主题遵守统一的信息处理纪律：**一手源优先、来源可溯、聚焦当前时刻**。
-参考库的"来源/时间铁律"见 `01_seed_reference/kol/README.md` 与 `01_seed_reference/corp/README.md`。
+参考库的"来源/时间铁律"见 `01_seed_reference/voices/README.md` 与 `01_seed_reference/corp/README.md`。
 
 > 2026-09-21：`02_research/` 与 `03_practice/` 已补齐各自的主题索引 README 与最小主题 README，
 > 各主题入口见 `02_research/README.md` 与 `03_practice/README.md`。

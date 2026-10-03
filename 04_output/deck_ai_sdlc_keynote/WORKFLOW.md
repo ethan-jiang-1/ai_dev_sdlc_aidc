@@ -15,7 +15,7 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 ## 总览：五阶段加工流
 
 ```
-源材料（01_seed_reference/kol/）
+源材料（01_seed_reference/voices/）
         │
         ▼
 ┌─────────────────────────────────────────────┐
@@ -98,8 +98,8 @@ summary: 人类可读的工作流指南。从哪里开始、每一步做什么�
 
 **源材料在哪里**（2026-10-03 种子层净化后：kol/ 只留人与事件，话题/合成迁出）：
 ```
-../../01_seed_reference/kol/
-├── _raw_kol/              ← KOL 深度卡（Fowler, Farley, Willison, Beck, Karpathy...）
+../../01_seed_reference/voices/
+├── _raw_people/              ← 人物深度卡（Fowler, Farley, Willison, Beck, Karpathy...）
 ├── _raw_agile_manifesto_2026/  ← Deer Valley Retreat（Feb 2026）
 ├── _raw_promatic_summit_2026/  ← Pragmatic Summit（Feb 2026）
 └── _raw_engelberg_2026/        ← Engelberg Retreat（Jul 2026）

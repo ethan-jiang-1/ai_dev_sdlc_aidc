@@ -24,7 +24,7 @@ URL 模式：`https://addyosmani.com/blog/<slug>/`（slug 按 HTML title 对应�
 
 **07-20 Software Factories, Light and Dark**：
 > "**A software factory is harnessing loops at scale.** You can run the loop with humans in it (light factory)… Or you can ignore the humans (dark factory)… **But if people stop reading, they'll stop understanding your software.**"
-> （该框架依赖 Dex Horthy "Why Software Factories Fail" 演讲——Osmani 一手转介；Dex 演讲本体仍待回源，见 `_raw_kol/README.md` 观察名单）
+> （该框架依赖 Dex Horthy "Why Software Factories Fail" 演讲——Osmani 一手转介；Dex 演讲本体仍待回源，见 `_raw_people/README.md` 观察名单）
 
 **08-31 Agentic Skill Decay**：
 > "**Agents can finish the task without teaching you anything.** Building expertise now has to be deliberate."
@@ -38,7 +38,7 @@ URL 模式：`https://addyosmani.com/blog/<slug>/`（slug 按 HTML title 对应�
 ## 四、对台账的处置建议（2026-10-03）
 
 1. `addy_osmani` §A 行：**主张一句话**增补"07-15→09-14 八篇把词表升级为 loop→harness→factory，外环所有权/裁决（verdict）为中心"；证据强度维持一手。
-2. 人物全景卡：`01_seed_reference/kol/_raw_kol/` **评估升个人卡**（他同时定义术语＋给操作件，是厂商一线声音；2026-10-03 用户判：增量回源+升格注记，开卡待下一轮定）。
+2. 人物全景卡：`01_seed_reference/voices/_raw_people/` **评估升个人卡**（他同时定义术语＋给操作件，是厂商一线声音；2026-10-03 用户判：增量回源+升格注记，开卡待下一轮定）。
 3. 剩余 5 篇正文回源 → ✅ **已完成**（2026-10-03 同日补），见下节 §五。
 
 ## 五、剩余五篇回源（2026-10-03 补，§一 表内 ⏳ 行全部闭合）

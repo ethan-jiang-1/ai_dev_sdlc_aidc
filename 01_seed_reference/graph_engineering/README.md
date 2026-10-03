@@ -58,7 +58,7 @@
 
 ## 收录纪律与追踪候选
 
-> 2026-10-03：原 `01_seed_reference/kol/_raw_graph_engineering/` 集合整体并入本目录——其一线交流实录即 [05_field_exchange_20261001.md](05_field_exchange_20261001.md)（此前为逐字重复件），命名事件与五层光谱见 [01_origins_and_timeline.md](01_origins_and_timeline.md)，机制拆解见 [02_dag_vs_loop_mechanisms.md](02_dag_vs_loop_mechanisms.md)。收录纪律沿用 [`../kol/README.md`](../kol/README.md) 的一手源铁律；理论与机制研究在 [`../../02_research/01_agent_engineering/graph_engineering/`](../../02_research/01_agent_engineering/graph_engineering/)。
+> 2026-10-03：原 `01_seed_reference/graph_engineering/` 集合整体并入本目录——其一线交流实录即 [05_field_exchange_20261001.md](05_field_exchange_20261001.md)（此前为逐字重复件），命名事件与五层光谱见 [01_origins_and_timeline.md](01_origins_and_timeline.md)，机制拆解见 [02_dag_vs_loop_mechanisms.md](02_dag_vs_loop_mechanisms.md)。收录纪律沿用 [`../kol/README.md`](../voices/README.md) 的一手源铁律；理论与机制研究在 [`../../02_research/01_agent_engineering/graph_engineering/`](../../02_research/01_agent_engineering/graph_engineering/)。
 
 **追踪候选**：
 - Peter Steinberger（OpenClaw 创作者，2026-07 讨论引爆者）

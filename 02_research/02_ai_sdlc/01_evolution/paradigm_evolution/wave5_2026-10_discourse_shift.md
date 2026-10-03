@@ -1,10 +1,10 @@
 # wave5 — 2026-08 后人-机协作话语场转变（素材/工作波次种子）
 
-**定位**：wave4 系列之后的第五波素材种子。来源：2026-10-03 两轮回源扫描（存量 10 人口径扫描 + 新面孔开荒侦察，curl 实取一手页），原始判读暂存工作档（临时，已提炼进本档与 `_raw_kol/` 各卡）。**按本目录分法，本文件是 wave5 的素材种子，不动 `result_4_v5` 成稿线**；升格为正式结论需走 wave→result 管道。
+**定位**：wave4 系列之后的第五波素材种子。来源：2026-10-03 两轮回源扫描（存量 10 人口径扫描 + 新面孔开荒侦察，curl 实取一手页），原始判读暂存工作档（临时，已提炼进本档与 `_raw_people/` 各卡）。**按本目录分法，本文件是 wave5 的素材种子，不动 `result_4_v5` 成稿线**；升格为正式结论需走 wave→result 管道。
 
 ---
 
-## 一、话语场七条（2026-08 之后，全部一手锚点见 `01_seed_reference/kol/_raw_kol/` 各卡）
+## 一、话语场七条（2026-08 之后，全部一手锚点见 `01_seed_reference/voices/_raw_people/` 各卡）
 
 1. **词轴从 "loop" 漂移到 "factory"**。Osmani 把层级写成 loop → harness → factory（07-20），配 light/dark factory、outer loop / verdict / answerability；Armin 用 "slop factory"（09-07）做反讽变体，Searls 口语化 "dark factory"（10-02），Huntley 3 月已有 "embedded software factory"。分工假设的变化：**评审门（review gate）被点名为唯一不可规模化的人工环节**（"The agent can ship more than you can review"——Osmani）。
 2. **"代码为人类读者而写"的教条被正面撤除**。Huntley 10-02 "readable → explainable" × Valim 09-24 "人体工学/语法让位于保证"——两人独立同向。新对立轴：**人类受众假设派 vs agent 受众假设派**，正面冲击 Fowler/传统工艺立场。
@@ -20,7 +20,7 @@
 - **无新增（5 人，渠道受限明细见扫描档）**：Farley（YouTube 墙）、Karpathy（X 墙 + 博客止于 04-30）、Lopopolo（org 跳槽仅二手待核）、Morris（博客 07-09 后静默）、ThoughtWorks（等 Vol 35）。
 - **收紧路线（spec/验证优先）8 月后暂时沉默**：Farley/Kief 无可核新增——沉默 ≠ 放弃，是本轮最重要的"空档信号"。
 
-## 三、轨迹类型学（对应 `_raw_kol/` 各卡「思想变迁轨迹（2026）」节）
+## 三、轨迹类型学（对应 `_raw_people/` 各卡「思想变迁轨迹（2026）」节）
 
 反转型（DHH）· 细化/自限型（Fowler/Beck/Cherny）· 稳定型（Farley/Tacho/Morris/ThoughtWorks）· 产品化直线型（Dohmke）· 单点宣言型（Valim）· 上行/下行对轴（Ball ↑ vs Ronacher ↓）。
 

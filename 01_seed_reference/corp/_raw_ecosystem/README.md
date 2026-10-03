@@ -14,7 +14,7 @@
 | `03_community_reactions.md` | 社区五大阵营、七大争议、开发者情绪 |
 | `04_current_influencers.md` | 当前推手（KOL、平台、会议） |
 | `05_core_drivers.md` | 核心驱动力（技术、经济、组织），含 arXiv 基准分布图 |
-| `06_historical_influencers_kol.md` | 历史影响力声音摘要版（完整版见 `../../kol/_raw_kol/`） |
+| `06_historical_influencers_kol.md` | 历史影响力声音摘要版（完整版见 `../../voices/_raw_people/`） |
 | `07_synthesis.md` | 综合分析报告（五大发现、对抗性验证结果） |
 | `claim_verification*.md` | 声称验证记录（curl、agentic coding 等） |
 
@@ -36,4 +36,4 @@
 ## 关联目录
 
 - `../_raw_aws/` — AWS AI-DLC 专属（架构图、方法论、TT PSC 分析）
-- `../../kol/_raw_kol/` — 历史影响力人物深度拆解（ThoughtWorks, Fowler, Farley, Willison, Beck, Agile 社区, 跨人物合成）
+- `../../voices/_raw_people/` — 历史影响力人物深度拆解（ThoughtWorks, Fowler, Farley, Willison, Beck, Agile 社区, 跨人物合成）

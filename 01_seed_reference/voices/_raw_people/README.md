@@ -1,6 +1,6 @@
-# AIDLC KOL Deep-Dive — 历史上塑造 SDLC 的声音在 AI 时代
+# AIDLC 人物深度卡 — 塑造 SDLC 的声音在 AI 时代
 
-> 当 AI 开始重塑软件开发生命周期，那些曾经定义了"好的软件开发方式"的人和公司，现在在说什么？
+> 当 AI 开始重塑软件开发生命周期，那些曾经定义了"好的软件开发方式"的人，现在在说什么？（组织的声音在 [`../_raw_orgs/`](../_raw_orgs/README.md)）
 
 ---
 
@@ -15,7 +15,7 @@
 4. **思想变迁轨迹（2026）★ 本库的构图中心**：阶段 × 日期 × 立场标记 × 一手锚点的表格 + 一段**判语**。范围只收 2026 年以后（时间铁律 2026-01 硬底线）；≤2025 一律压缩为一行"背景"。判语要点名轨迹的**类型**：
    - **反转型**（DHH：抵制→pencils down）
    - **细化/自限型**（Fowler：验证主张加张力；Beck：TDD 口径双重限定；Cherny："已死"→质量守门）
-   - **稳定型**（Farley / Tacho / Morris / ThoughtWorks——零漂移本身是事实，也是场内锚点）
+   - **稳定型**（Farley / Tacho / Morris——零漂移本身是事实，也是场内锚点；ThoughtWorks 的稳定轨迹随卡迁 [`../_raw_orgs/thoughtworks.md`](../_raw_orgs/thoughtworks.md)）
    - **产品化直线型**（Dohmke：宣言→机制）
    - **单点宣言型**（Valim：待观察）
    - **上行/下行对轴**（Ball 上行 vs Ronacher 转冷）
@@ -31,9 +31,10 @@
 
 ## 文件导航
 
-| 文件 | 人物/公司 | 一句话 |
-|------|----------|--------|
-| `01_thoughtworks.md` | ThoughtWorks | 技术雷达 Vol.33/34：认知债、Harness Engineering、经典实践不是过时而是 AI 的制衡力 |
+> 组织卡已迁出（2026-10-03，归属修正）：ThoughtWorks → [`../_raw_orgs/thoughtworks.md`](../_raw_orgs/thoughtworks.md)。
+
+| 文件 | 人物 | 一句话 |
+|------|------|--------|
 | `02_martin_fowler.md` | Martin Fowler | "Verified" 的含义从"我读过"变成"被测试、类型检查器、自动化关隘验证过" |
 | `03_dave_farley.md` | Dave Farley | CD 让 AI 时代可以存活；AI 暴露那些从未学会工程师思维的人；12,000 行问题 |
 | `04_simon_willison.md` | Simon Willison | SDLC 是围绕"一天几百行"设计的——10x 后全崩；"有没有人每天用了两周"是新质量信号 |
@@ -64,7 +65,7 @@
 → [03_dave_farley.md](03_dave_farley.md) + [05_kent_beck_agile.md](05_kent_beck_agile.md)
 
 ### 想了解"企业级 AI 开发治理"？
-→ [01_thoughtworks.md](01_thoughtworks.md) + [02_martin_fowler.md](02_martin_fowler.md)
+→ [02_martin_fowler.md](02_martin_fowler.md)（机构视角见 [`../_raw_orgs/thoughtworks.md`](../_raw_orgs/thoughtworks.md)）
 
 ### 想了解"最激进 agent 全速派"与"经典工程派"的对撞？
 → [15_dhh.md](15_dhh.md) + [02_martin_fowler.md](02_martin_fowler.md) + [05_kent_beck_agile.md](05_kent_beck_agile.md)
@@ -89,9 +90,9 @@
 
 ✅ = 同意 · ❌ = 反对 · — = 未明确表态
 
-> ⚠️ 矩阵范围说明（2026-10-03）：本矩阵只覆盖 2026-10-03 前入册的 9 列老成员。**新卡成员（`16` Huntley / `17` Ronacher / `18` Valim / `19` Thorsten Ball / `20` Böckeler）不入本矩阵**（列数已到可读性极限）——各自的立场定位与对照见各卡「与库内其他人物的立场对照」节；跨人合流/分叉的全景判读在 `02_research/02_ai_sdlc/01_evolution/paradigm_evolution/wave5_2026-10_discourse_shift.md`（对立轴：能力极 vs 经济-质量极、人类受众派 vs agent 受众派）。
+> ⚠️ 矩阵范围说明（2026-10-03）：本矩阵只覆盖 2026-10-03 前入册的 9 列老成员。**新卡成员（`16` Huntley / `17` Ronacher / `18` Valim / `19` Thorsten Ball / `20` Böckeler）不入本矩阵**（列数已到可读性极限）——各自的立场定位与对照见各卡「与库内其他人物的立场对照」节；跨人合流/分叉的全景判读在 `02_research/02_ai_sdlc/01_evolution/paradigm_evolution/wave5_2026-10_discourse_shift.md`（对立轴：能力极 vs 经济-质量极、人类受众派 vs agent 受众派）。**ThoughtWorks 列已随卡迁出至 [`../_raw_orgs/thoughtworks.md`](../_raw_orgs/thoughtworks.md)（立场数据仍有效，列保留）。**
 
-## 新增 KOL
+## 新增人物
 
 Kief Morris 的 "in the loop → on the loop" 框架已被 ThoughtWorks (Böckeler)、Martin Fowler、OpenAI (Lopopolo) 广泛引用，是 Harness Engineering 思想谱系的基础性贡献。
 

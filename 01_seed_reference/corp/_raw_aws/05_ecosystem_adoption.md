@@ -208,7 +208,7 @@ AWS 和第三方文章引用的数据：
 
 ### 与其他 _raw 目录的关联
 
-- `[[../../kol/_raw_kol/]]` — Martin Fowler、Dave Farley 等历史影响力人物对 AI-DLC 类方法论的看法
+- `[[../../voices/_raw_people/]]` — Martin Fowler、Dave Farley 等历史影响力人物对 AI-DLC 类方法论的看法
 - `[[../_raw_ecosystem/]]` — Google、Microsoft、Gartner 的竞争/互补方案
 - AI-DLC 的三阶段模型与 ThoughtWorks 的 CD4ML 有结构上的相似性
 

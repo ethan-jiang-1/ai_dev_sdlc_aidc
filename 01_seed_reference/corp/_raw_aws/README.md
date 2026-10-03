@@ -28,5 +28,5 @@
 
 ## 关联
 
-- `../../kol/_raw_kol/` — 历史影响力人物（ThoughtWorks, Fowler, Farley, Willison, Beck）
+- `../../voices/_raw_people/` — 历史影响力人物（ThoughtWorks, Fowler, Farley, Willison, Beck）
 - `../_raw_ecosystem/` — 非 AWS 全景（Google, Microsoft, Gartner, 学术, 社区, 综合）

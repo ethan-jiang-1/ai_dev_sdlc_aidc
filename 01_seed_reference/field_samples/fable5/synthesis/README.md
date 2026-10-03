@@ -7,7 +7,7 @@ derived_from: ../（field_samples/fable5 样本池，16 个 run_*）
 sample_count: 16
 files_indexed: 4
 research_date: 2026-07-07
-moved: 2026-10-03 自 01_seed_reference/kol/_raw_fable5/ 并入本样本池（话题合成回归其 raw 层）
+moved: 2026-10-03 自 01_seed_reference/field_samples/fable5/synthesis/ 并入本样本池（话题合成回归其 raw 层）
 ---
 
 # Fable 5 变革信号：信息地图（synthesis）

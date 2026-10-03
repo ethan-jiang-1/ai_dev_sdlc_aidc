@@ -1,15 +1,15 @@
 ---
 type: index
 content_type: readme
-directory: kol
-description: 人物与事件——围绕 AIDLC 的影响力个体与线下聚会（意见来源库：人/组织/事件）
+directory: voices
+description: 声音库——围绕 AIDLC 的人物、组织与线下聚会（意见来源库：人/组织/事件）
 research_date: 2026-07-08
 ---
 
-# kol — 人物与事件参考材料库
+# voices — 人物、组织与事件参考材料库（声音库）
 
-> 这是围绕 AI 驱动软件开发生命周期（AIDLC）的**人物与事件**参考材料库。
-> 本库只收**意见有明确来源实体**的材料：人（`_raw_kol/`）与线下聚会（三场 2026 事件）。
+> 这是围绕 AI 驱动软件开发生命周期（AIDLC）的**声音库**：谁在说、说了什么、立场怎么变。
+> 本库只收**意见有明确来源实体**的材料：人（`_raw_people/`）、组织（`_raw_orgs/`）与线下聚会（三场 2026 事件）。
 > **话题与跨人合成不进本库**（2026-10-03 净化，见文末迁移记录）：两波命名事件在
 > [`../loop_engineering/`](../loop_engineering/README.md) 与 [`../graph_engineering/`](../graph_engineering/README.md)，
 > 跨人判读在 `02_research/`，模型使用样本在 [`../field_samples/`](../field_samples/README.md)。
@@ -21,9 +21,10 @@ research_date: 2026-07-08
 ## 目录全景
 
 ```
-kol/
+voices/
 ├── README.md                              ← 你在这里
-├── _raw_kol/                              ← 人物/机构深度卡（轨迹中心，见其 README 导航表）
+├── _raw_people/                           ← 人物深度卡（轨迹中心，见其 README 导航表）
+├── _raw_orgs/                             ← 组织卡（机构作为发声体；2026-10-03 建，ThoughtWorks 首卡）
 ├── _raw_promatic_summit_2026/             ← Pragmatic Summit 2026（Beck+Fowler 同台）
 ├── _raw_agile_manifesto_2026/             ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
 └── _raw_engelberg_2026/                   ← Engelberg Retreat 2026（从实验到生产的转折点）
@@ -85,7 +86,7 @@ kol/
 
 ## 各目录定位与源头特征
 
-### `_raw_kol/` — 影响力人物深度拆解
+### `_raw_people/` — 影响力人物深度拆解（组织卡在 [`../_raw_orgs/`](../_raw_orgs/README.md)）
 
 **是什么**：12 位历史上塑造了 SDLC 话语权的人/公司在 AI 时代的言论（人物卡 12 张；导航表另含 06 综合篇与 11 峰会篇两个非人物条目）。从 ThoughtWorks 到 Martin Fowler，从 Kent Beck 到 Karpathy，从 Simon Willison 到前 GitHub CEO。
 
@@ -140,7 +141,7 @@ kol/
 
 ## 与兄弟目录的关系
 
-| | `kol` | `corp` |
+| | `voices` | `corp` |
 |---|---|---|
 | **视角** | 个体与聚会——人、对话、事件 | 组织——公司、厂商、分析机构 |
 | **材料性质** | 个人/机构言论 + 事件拆解 | 厂商方法论 + 生态全景 |
@@ -155,14 +156,14 @@ kol/
 
 | 场景 | 先看 |
 |---|---|
-| 想知道具体的人在说什么 | `_raw_kol/`（19+ 人/机构卡） |
+| 想知道具体的人在说什么 | `_raw_people/`（19 张人物卡）＋ `_raw_orgs/`（组织卡） |
 | 想知道 2026-06 后 loop engineering 这波谁在说、说什么 | [`../loop_engineering/`](../loop_engineering/README.md)（素材）→ [`02_research/01_agent_engineering/loop_engineering/`](../../02_research/01_agent_engineering/loop_engineering/README.md)（判读与台账） |
 | 想知道 graph engineering / DAG 编排这波在说什么 | [`../graph_engineering/`](../graph_engineering/README.md)（素材与判读入口） |
 | 想知道 Fable 5 具体改变了什么 | [`../field_samples/fable5/`](../field_samples/fable5/README.md)（样本池 + synthesis/） |
 | 想知道四家前沿公司达成了什么共识 | [`02_research/.../paradigm_evolution/frontier_synthesis_2026-07/`](../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/README.md) |
 | 想知道 2026 年 AI 软件工程的关键事件 | `_raw_promatic_summit_2026/` + `_raw_agile_manifesto_2026/` |
 | 想知道 agentic engineering 从实验到生产的转折 | `_raw_engelberg_2026/` |
-| 想知道 Agile 社区怎么回应 AI | `_raw_agile_manifesto_2026/` + `_raw_kol/`（Fowler, Beck, Farley, ThoughtWorks） |
+| 想知道 Agile 社区怎么回应 AI | `_raw_agile_manifesto_2026/` + `_raw_people/`（Fowler, Beck, Farley）+ `_raw_orgs/`（ThoughtWorks） |
 | 想知道组织/厂商的框架设计 | `../corp/_raw_aws/` + `_raw_ecosystem/` |
 
 ---
@@ -205,6 +206,8 @@ kol/
 ---
 
 ## 最后更新
+
+- 2026-10-03（晚）：**`kol` → `voices` 更名 + 意见来源库三分落地**——人物（`_raw_people/`，原 `_raw_kol/`）、组织（`_raw_orgs/`，新建）、事件（三场 2026 聚会）三轴成型；ThoughtWorks 卡自 `_raw_kol/01` 迁入 `_raw_orgs/thoughtworks.md`（组织非个人，归属修正）；组织候选清单（Anthropic / OpenAI / GC / LangChain / 37signals / Stripe / Shopify…）在 [`_raw_orgs/README.md`](_raw_orgs/README.md) 备切磋。全库 27 个引用文件路径已同步改写。
 
 - 2026-10-03：**净化收窄为「意见来源库」（人/组织/事件）**——四类话题/合成材料迁出：`_raw_frontier/` → `02_research/.../paradigm_evolution/frontier_synthesis_2026-07/`（跨人判读归研究层，本 README 规矩 #5 的执行）；`_raw_fable5/` → `../field_samples/fable5/synthesis/`（回归其样本池）；`_raw_loop_engineering/` → `../loop_engineering/`（上移为种子层话题目录，与 graph 同构）；`_raw_graph_engineering/` → 并入 `../graph_engineering/`（一线实录系逐字重复件，去重）。`_abandoned_no_reference/` 上移至种子层顶层（收容内容跨 kol/corp，公共设施）。本库现仅含 `_raw_kol/` + 三场 2026 事件；库内全部外向链接已同步改写。
 - 2026-10-03：**六人深挖集成批**——Farley（`03`：8-10 月 20 条一手入卡；归属勘误两条——8-19/9-23 热门视频系 Emily Bache 主讲非第一人称；安全工程转向 08-05 "the engineering discipline is the safety"；Bluesky 成最高质量一手源）；Lopopolo（`09`：org 一手核验 OpenAI→Google Cloud Principal Engineer、Symphony 开源 27.5k stars、Zechner–Lopopolo Continuum、GC 官方 "coined the term agent harness"）；Morris（`10`：勘误两条——PlatformCon 实为 06-23、"build the system…" 系转述口号化；三级演进 on the loop→管道化→决策参数化）；Orosz（`12`：回源校正——01 长文≠调查（调查 04-14/05-19）、Meta 文实为 06-17；09-15 工厂七受访者事实）；Huntley（`16`：全年 15 篇八阶段弧线 + 07-23 加入 Antithesis 验证转向）；Ronacher（`17`：32 篇 P1-P6 转冷弧线 + 对照节深化——与 Searls/Osmani"独立同词异源"零互引、工厂实验四组数字）。工作档暂存 `.tmp-kol-deep-2026-10/`，下次收口清理。
