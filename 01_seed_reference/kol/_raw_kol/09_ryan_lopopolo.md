@@ -42,6 +42,18 @@ key_concepts:
 
 **判语**：他本人 2026 年发声不多，但"被采纳率"全场最高——库内 Fowler/TW/Willison 线的 harness 话语都回溯到他的实验；且 **harness 术语归属已进入雇主官方口径**（Google Cloud 官方博客称他 "the person who coined the term agent harness"，09-25）。**谱系自述已细读**（2026-07-18 开源 field guide `lopopolo/harness-engineering`，docs/lineage/README.md 18KB，trunk 分支）：①他把自己的 02-11 OpenAI 文章称为 "**seminal harness-engineering essay**"；②Böckeler 的 02-17 memo 定性为 "responded through context, deterministic constraints, LLM review, and recurring feedback"；③George Zhang（03-07《Harness Engineering Is Cybernetics》）与 Böckeler 并称 "**both … later interpretations of Ryan's essay**"（Zhang 显式化 higher-level control loop 与校准；Böckeler 按 direction / execution type / lifecycle timing / quality 分离控制）；④Fowler 在其谱系中仅以 Strangler Fig 作采纳隐喻入谱；⑤**Böckeler memo 的 Hashimoto 猜源说在其谱系中零回应**（Hashimoto 0 命中）。org 变动未改其主张，只放大了平台。
 
+### 自述五轴演变（同谱系文档 "Evolution across Ryan's work" 节，2026-10-03 细读）
+
+他亲笔写下的五个立场迁移，每轴带一手锚点——库内唯一的**自我文档化轨迹**：
+
+1. **手动中继 → 整任务自治**：2023 年 ChatGPT 周末 4,000 行（人工在编辑器与模型间复制粘贴）→ 2026 年 RustSec / robot-vacuum 案例（agent 直连复现行为、实现变更、跑测试、备交付、组证据）；intaglio#360 评审记录显示**实现评审保留、merge/release 由人授权**——"The evolution reduced manual relay while preserving implementation judgment and release authority."
+2. **拟议的专家分工 → 固定 worker + 检索**：2023 提议按 crate/Ruby Core 分训专家 agent → 后来只养一个通用 worker，环境即时供给代码、历史、流程数据与工具——"goal of situated expertise remains"，专长从训练迁移到环境策展。
+3. **MCP 工具发现 → progressive disclosure**：2025 年《MCP Solves Tool Discovery for LLMs》→ 2026 年自评其上下文成本（整目录加载像装每本手册），改为 `--help` 式按需暴露。
+4. **"代码免费"获得所有权与比例约束**：2026 年初以便宜 justify 全量迁移/100% 覆盖 → 《Software Work Is No Longer Scheduled》划界：清晰状态+可验证结果的活给异步 agent，**zero-to-one 产品、困难接口重构、未知接口域保留持续人类判断**（Latent Space 访谈同口径：困难深重构仍是 open problem）；ablation framing（[X 原帖](https://x.com/_lopopolo/status/2049145174790725654)）让每条控制自证注意力与维护成本。
+5. **利用率降级为诊断**：1B tokens/人/天 从"目标"降为 "a utilization target"（探针：agent 被允许观察与操作多少生命周期）→ 后续修正："**token spend is unanchored in business value or ROI**"＋"**effectiveness is what matters**"。
+
+（锚点：hyperbo.la/w/* 各文、intaglio#360 评审记录、[Latent Space 访谈](https://www.latent.space/p/harness-eng)、X 帖经谱系文档转引——X 原帖登录墙未核，已标注。）
+
 ---
 
 ## 实验：零人手写代码，零人审查
