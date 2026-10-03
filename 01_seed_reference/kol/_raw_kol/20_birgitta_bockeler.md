@@ -50,6 +50,14 @@ key_concepts:
 
 **判语**：2026 年内她是"方法论从定义走向实证"的唯一样本——别人在表态，她在做实验；08-11 的 null result 是本库"验证口径拉扯"（见 `02` 卡张力线）的第一块实证砖。且 02-17 memo 已预演 04-02 正式文的 topology 思路——她的方法论是**线性生长**的（定义→分类→实例→实证），与 Fowler 的"背书放大"节奏互补。
 
+### 04-02 正式文细读（2026-10-03 全文补采，五个此前未入卡的框架件）
+
+1. **steering loop 元回路**："The human's job in this is to **steer the agent by iterating on the harness**. Whenever an issue happens multiple times, the feedforward and feedback controls should be improved…"——且 **"we can of course also use AI to improve the harness"**（用 agent 改 harness 本身，元层级）。
+2. **Keep quality left**："checks as far left in the path to production as possible, since the earlier you find issues, the cheaper they are to fix. Feedback sensors, **including the new inferential ones**, need to be distributed across the lifecycle according to [cost, speed and criticality]."
+3. **Behaviour harness = "the elephant in the room"**：现状做法（spec + 绿测 + 覆盖率 + 变异测试 + 手工测试）"puts a lot [of weight on the spec]"——她明说这是当前最薄弱件（也是她 08-11 实验选它做的原因）。
+4. **Harnessability（可 harness 性）**："Not every codebase is equally amenable to harnessing"——强类型 = 免费传感器；清晰模块边界 = 架构约束规则；Spring 类框架隐式提高 agent 成功率；并引同事 Ned Letcher 的 "**ambient affordances**"（环境的可供性属性）。
+5. **The role of the human**："we know that **our name is on the commit**. We also carry organisational alignment… We go in small steps and at our human pace, which creates the thinking space for that experience to get tri[ed]."——人的角色 = 隐性 harness（惯例/复杂度痛感/组织对齐/步调节奏）。
+
 ---
 
 ## 与库内其他人物的立场对照
