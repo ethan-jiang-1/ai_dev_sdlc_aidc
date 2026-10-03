@@ -54,6 +54,12 @@ key_concepts:
 
 （锚点：hyperbo.la/w/* 各文、intaglio#360 评审记录、[Latent Space 访谈](https://www.latent.space/p/harness-eng)、X 帖经谱系文档转引——X 原帖登录墙未核，已标注。）
 
+### 谱系技术根基（同文档前三节，2026-10-03 细读）
+
+- **Artichoke 实践前身（2021）**：capability seams 架构（Rust traits 独立于 mruby 后端）——2021-02-07 首个架构文档的 commit **明确引 matklad**；2021-02-08 **显式 Strangler Fig**（逐函数禁用替换、边界保持兼容）。harness 方法论不是 2026 年凭空出现，是他 2021 年在 Artichoke 就在做的"接缝渐进替换"的推广。
+- **Alexis King "Parse, don't validate"**：typed boundary discipline——"manifests, CLI arguments, workflow files… are external syntax that should be **parsed once into semantic values**"；且 **"A sensor that understands the domain can report the violated relationship and the intended repair. A string comparison can usually report only that bytes differ."**（传感器质量 = 领域理解深度，这句对 harness 治理的"传感器分级"是直接论据）
+- **Zhang 的反馈回路闭合论**（他转述并采纳）：compiler/test/linter 只能检测**机械可观察偏差**；capable agent 能 **inspect and repair architecture and design**——反馈回路可以在更深处闭合，repo 上下文与控制把它校准到系统期望状态。（原文链接：Zhang X 文章 2026-03-07）
+
 ---
 
 ## 实验：零人手写代码，零人审查
