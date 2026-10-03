@@ -39,4 +39,16 @@ URL 模式：`https://addyosmani.com/blog/<slug>/`（slug 按 HTML title 对应�
 
 1. `addy_osmani` §A 行：**主张一句话**增补"07-15→09-14 八篇把词表升级为 loop→harness→factory，外环所有权/裁决（verdict）为中心"；证据强度维持一手。
 2. 人物全景卡：`01_seed_reference/kol/_raw_kol/` **评估升个人卡**（他同时定义术语＋给操作件，是厂商一线声音；2026-10-03 用户判：增量回源+升格注记，开卡待下一轮定）。
-3. 剩余 5 篇正文回源 → 追加本档案 §五。
+3. 剩余 5 篇正文回源 → ✅ **已完成**（2026-10-03 同日补），见下节 §五。
+
+## 五、剩余五篇回源（2026-10-03 补，§一 表内 ⏳ 行全部闭合）
+
+| # | 日期 | slug（标题） | 关键引文（逐字） |
+|---|------|--------------|------------------|
+| 4 | 2026-08-08 | agentic-code-quality | "there's just **too much code for anyone to read**." / "more and more of our quality checks have to happen **in the harness, environment, and operating system around the agent**." / "I still read and review code, but am very intentional about **where I am comfortable with constraints as the check**." |
+| 5 | 2026-08-21 | human-judgment-doesnt-leave-the-software | "You'll likely need **humans in the loop upfront for deciding on product intent, system design (if you care) and your quality bar**." / "Do review code (lights-on factory) but be intentional with where it's needed the most." / "Aim for quality checks to happen as **early and continuously** as possible." |
+| 6 | 2026-08-27 | audit-your-agent-files | "I now run Claude's /doctor every few weeks, review memory separately, and **ask each instruction to earn its place again**."（AGENTS.md/CLAUDE.md/技能文件治理） |
+| 7 | 2026-09-14 | brownfield-agentic-engineering | "**the repository is no longer a complete description of how the thing actually behaves.**" / "Institutional knowledge, duct tape, legacy services, and expectations other teams depend on live outside the tree." / "throw them at an older brownfield codebase unsupervised and you may end up with something that 'works' but with **the wrong system design and brittle tests**." |
+| — | 2026-08-14 | practical-loop-engineering | 确认与 evidence-a 操作篇**同篇**（不重复建档） |
+
+**闭合说明**：§一 表 8 篇全部有日期与直链；"Human judgment…" 一篇日期定为 08-21。Osmani 增量回源**完成**——八篇词表升级（loop→harness→factory）+ 五个新概念（outer loop / verdict / answerability / light-dark factory / skill decay）证据链完整。
