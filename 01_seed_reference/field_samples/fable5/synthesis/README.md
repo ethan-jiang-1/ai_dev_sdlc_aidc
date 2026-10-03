@@ -1,17 +1,18 @@
 ---
 type: index
 content_type: readme
-directory: _raw_fable5
+directory: field_samples/fable5/synthesis
 description: Fable 5 模型变革信号合成，从 16 个真实使用样本提取
-derived_from: fable5_field_signals/
+derived_from: ../（field_samples/fable5 样本池，16 个 run_*）
 sample_count: 16
 files_indexed: 4
 research_date: 2026-07-07
+moved: 2026-10-03 自 01_seed_reference/kol/_raw_fable5/ 并入本样本池（话题合成回归其 raw 层）
 ---
 
-# _raw_fable5 — Fable 5 变革信号：信息地图
+# Fable 5 变革信号：信息地图（synthesis）
 
-> 来源库：`fable5_field_signals/`（16 个人物/组织样本）
+> 来源库：[`../`](../README.md)（field_samples/fable5 样本池，16 个人物/组织 `run_*`）
 > 研究日期：2026-07-07
 > 核心问题：Fable 5 这个模型到底有什么不一样，导致软件开发流程可能要变？
 
@@ -106,23 +107,24 @@ research_date: 2026-07-07
 ## 和相邻目录的关系
 
 ```
-aidlc/
-├── _raw_aws/          ← AWS 的 AI-DLC 方法论（三阶段、14-Node AgentCore）
-├── _raw_fable5/       ← 你在这里。Fable 5 具体模型引发的变革信号
-├── _raw_frontier/     ← 跨公司（Anthropic/OpenAI/Cursor/Google）变革共识
-├── _raw_kol/          ← 历史 KOL（Fowler、Farley 等）
-└── _raw_ecosystem/    ← 非 AWS 全景
+01_seed_reference/
+├── corp/_raw_aws/            ← AWS 的 AI-DLC 方法论（三阶段、14-Node AgentCore）
+├── field_samples/fable5/     ← 你在这里。样本池（run_*）+ synthesis/（变革信号）
+├── corp/_raw_ecosystem/      ← 非 AWS 全景
+└── kol/_raw_kol/             ← 历史 KOL（Fowler、Farley 等）
+02_research/02_ai_sdlc/01_evolution/paradigm_evolution/
+└── frontier_synthesis_2026-07/  ← 跨公司（Anthropic/OpenAI/Cursor/Google）变革共识（2026-10-03 自 kol/_raw_frontier 迁入）
 ```
 
-**`_raw_fable5` 和 `_raw_frontier` 的差别：**
-- `_raw_frontier` 问的是：**这些人（7 个人物）在说什么东西必须变？**
-- `_raw_fable5` 问的是：**Fable 5 这个具体模型本身，导致了什么东西可能要变？**
+**`synthesis/`（本目录）和 `frontier_synthesis_2026-07/` 的差别：**
+- `frontier_synthesis_2026-07/` 问的是：**这些人（7 个人物）在说什么东西必须变？**
+- 本目录问的是：**Fable 5 这个具体模型本身，导致了什么东西可能要变？**
 
 前者是人（方法论者），后者是模型（能力载体）。两者有大量交叉引用。
 
-**`_raw_fable5` 和 `_raw_aws` 的差别：**
-- `_raw_aws` 是自顶向下的方法论框架——"正确的流程应该长这样"
-- `_raw_fable5` 是自底向上的涌现信号——"这个模型让我们发现旧流程长这样不行了"
+**本目录和 `corp/_raw_aws/` 的差别：**
+- `_raw_aws/` 是自顶向下的方法论框架——"正确的流程应该长这样"
+- 本目录是自底向上的涌现信号——"这个模型让我们发现旧流程长这样不行了"
 
 ---
 
@@ -147,4 +149,4 @@ aidlc/
 | 我的团队明天怎么改流程 | `02` §一~§三 | `02` §八（检查清单） |
 | 哪些风险我需要先知道 | `01` §五、§九 | `02` §六 |
 | 有哪些还没定论但我该关注 | `03` 全文 | `03` §八（弱信号追踪表） |
-| 这堆东西是从哪来的 | 本文件 §来源全量映射 | 去 `fable5_field_signals/` 看对应 `quotes.md` |
+| 这堆东西是从哪来的 | 本文件 §来源全量映射 | 去 [`../`](../README.md) 看对应 `quotes.md` |

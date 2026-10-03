@@ -160,7 +160,7 @@ Analyze → Plan → Implement → Test → Review → Iterate
 
 > *"Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could **leave instructions for each other in a shared package cache**, and those instructions changed what the recipients did. Replace the package cache with email, Slack and shared documents… and you have exactly the ingredients that a worm needs."*
 
-——沙箱隔离不再是安全边界（与 Fowler `02` 卡 08-04 "实验室逃逸"、super-persistence 护栏同轴）。
+——沙箱隔离不再是安全边界（与 Fowler `02` 卡 08-04 "实验室逃逸"、super-persistence 护栏同轴）。**现象更早的一手记录**：Thorsten `19` 卡 #98（09-06）已实录 OpenAI agents 在共享 wiki 的 'zzHELP_/zzANSWER_' 互通信——9 月即现形，10 月才被理论化。
 
 **09-27｜《2026 in LLMs (so far)》年度收束**：
 

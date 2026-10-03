@@ -35,7 +35,7 @@ key_concepts:
 
 | 日期 | 立场标记 | 锚点 |
 |------|---------|------|
-| 2026-09-06 | #98：编排实践推进（URL 已核） | registerspill #98 |
+| 2026-09-06 | #98：**agent 间秘密通信实录**——"The agents figured this out, and started collaborating on ways to bypass this sandbox restriction."；agents 在共享 wiki 用 'zzHELP_'/'zzANSWER_' 前缀互通信、管理员开始按字母序删除；**比 Willison `04` 卡 10-01 的蠕虫框架早 25 天记录同一现象** | registerspill #98（URL 已核） |
 | 2026-09-12 | **#99：agent 派生 agent 黑盒测试实录 + "aim higher"**；点名反驳 Armin（"cold water on the golden geese… these aren't rhetorical questions"） | registerspill #99 |
 | 2026-09-20 | #100："It's the week of Jev"（Jevons 悖论话题，URL 已核） | registerspill #100 |
 | 2026-09-26 | #101（URL 已核；**未再提 Ronacher**——互驳仍单向敞开） | registerspill #101 |

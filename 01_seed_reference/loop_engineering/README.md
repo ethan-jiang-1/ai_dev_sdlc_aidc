@@ -9,6 +9,7 @@ research_date: 2026-09-26
 # loop_engineering — Loop Engineering 一波声音（2026-06 起）
 
 > 本集合收 **2026-06 起**围绕 "loop engineering" 这个公开名字发声的人的一手素材。
+> 2026-10-03 自 `kol/_raw_loop_engineering/` 上移至种子层专题位（话题出库，与 [`graph_engineering/`](../graph_engineering/README.md) 同构）。
 > 它是 [`_raw_kol/`](../kol/_raw_kol/README.md)（12 位影响力人物深度拆解，2026-07-08）的**主题波次补充**：
 > `_raw_kol/` 按人铺全景，本集合按**一次命名事件**（2026-06 loop engineering 成为公开名字）收一波声音。
 
