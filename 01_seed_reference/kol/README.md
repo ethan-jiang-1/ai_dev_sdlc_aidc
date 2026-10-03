@@ -2,14 +2,17 @@
 type: index
 content_type: readme
 directory: kol
-description: 人物、事件、合成——围绕 AIDLC 的影响力个体、线下聚会与跨源分析
+description: 人物与事件——围绕 AIDLC 的影响力个体与线下聚会（意见来源库：人/组织/事件）
 research_date: 2026-07-08
 ---
 
 # kol — 人物与事件参考材料库
 
 > 这是围绕 AI 驱动软件开发生命周期（AIDLC）的**人物与事件**参考材料库。
-> 九个子目录覆盖：影响力个体、跨公司合成、模型变革信号、两波命名事件（loop / graph）、三场 2026 年关键线下聚会。
+> 本库只收**意见有明确来源实体**的材料：人（`_raw_kol/`）与线下聚会（三场 2026 事件）。
+> **话题与跨人合成不进本库**（2026-10-03 净化，见文末迁移记录）：两波命名事件在
+> [`../loop_engineering/`](../loop_engineering/README.md) 与 [`../graph_engineering/`](../graph_engineering/README.md)，
+> 跨人判读在 `02_research/`，模型使用样本在 [`../field_samples/`](../field_samples/README.md)。
 >
 > **企业/厂商/分析机构**的材料在兄弟目录 `../corp/`。
 
@@ -21,18 +24,22 @@ research_date: 2026-07-08
 kol/
 ├── README.md                              ← 你在这里
 ├── _raw_kol/                              ← 人物/机构深度卡（轨迹中心，见其 README 导航表）
-├── _raw_frontier/                         ← 跨公司变革共识合成（7 人 + 3 深度研究）
-├── _raw_fable5/                           ← Fable 5 模型变革信号合成（16 样本）
-├── _raw_loop_engineering/                 ← Loop Engineering 一波声音（2026-06 起，一人一目录）
-├── _raw_graph_engineering/                ← Graph Engineering 一波声音（2026-07 起，DAG 与拓扑编排）
 ├── _raw_promatic_summit_2026/             ← Pragmatic Summit 2026（Beck+Fowler 同台）
 ├── _raw_agile_manifesto_2026/             ← Deer Valley Retreat 2026（Agile Manifesto 25 年后）
-├── _raw_engelberg_2026/                   ← Engelberg Retreat 2026（从实验到生产的转折点）
-└── _abandoned_no_reference/               ← 无源可溯的内容收容所
+└── _raw_engelberg_2026/                   ← Engelberg Retreat 2026（从实验到生产的转折点）
 
 ../corp/                   ← 企业与生态（兄弟目录）
 ├── _raw_aws/                              ← AWS 官方 AI-DLC 方法论
 └── _raw_ecosystem/                        ← 非 AWS 生态全景
+
+../_abandoned_no_reference/                ← 无源可溯的内容收容所（种子层公共设施，2026-10-03 上移）
+
+# 2026-10-03 迁出的话题类目录（去向指针）
+../loop_engineering/                       ← Loop Engineering 一波声音（自 _raw_loop_engineering 上移）
+../graph_engineering/                      ← Graph Engineering 与 DAG 编排（_raw_graph_engineering 并入）
+../field_samples/fable5/synthesis/         ← Fable 5 变革信号合成（自 _raw_fable5 并入样本池）
+../../02_research/02_ai_sdlc/01_evolution/paradigm_evolution/frontier_synthesis_2026-07/
+                                           ← 跨公司变革共识合成（自 _raw_frontier 迁入研究层）
 ```
 
 ---
@@ -44,7 +51,7 @@ kol/
 | 情况 | 处置 | 说明 |
 |---|---|---|
 | **有来源** | 放入对应 `_raw_*` 子目录 | 必须在文件中标注来源 URL/出处，可回溯验证 |
-| **没有来源** | 只能放入 `_abandoned_no_reference/` | 不得混入任何 `_raw_*` 目录 |
+| **没有来源** | 只能放入 [`../_abandoned_no_reference/`](../_abandoned_no_reference/README.md) | 不得混入任何 `_raw_*` 目录 |
 
 **一手源优先（硬要求）**：
 - **只接受原始英文一手源**——博客原文、官方发布、演讲视频/transcript、播客原版、X/Twitter 原帖
@@ -58,7 +65,7 @@ kol/
 - 不可"来源忘了，但内容很重要所以留着"
 - 不可"中文翻译更方便读者，留着吧"
 
-没有一手源 = 进 `_abandoned_no_reference/`。没有例外。
+没有一手源 = 进 [`../_abandoned_no_reference/`](../_abandoned_no_reference/README.md)。没有例外。
 
 ---
 

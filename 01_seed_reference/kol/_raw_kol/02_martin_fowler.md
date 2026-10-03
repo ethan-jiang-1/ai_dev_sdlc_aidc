@@ -167,7 +167,7 @@ Fowler 的基本判断：敏捷核心原则与 AI 有强烈协同效应。
 
 > *"Fundamentally I don't think we have a choice about riding on the AI technology train."*
 
-文章核心是**反拟人化**："we shouldn't anthropomorphize, treating them as conscious beings… They are (software) machines… nurtured with the values of their creators."——反的是 LLM-voice 与拟人化，**不反使用**，且把责任指回培养它们的公司与文化。07-21 他已写 "I've been noticing the stench of LLM-speak more and more"，09-17 收拢成文。
+文章核心是**反拟人化**："we shouldn't anthropomorphize, treating them as conscious beings… They are (software) machines… nurtured with the values of their creators."——反的是 LLM-voice 与拟人化，**不反使用**，且把责任指回培养它们的公司与文化。07-21 他已写 "I've been noticing the stench of LLM-speak more and more"，09-17 收拢成文。文中他引 Jessica Kerr 的**使用义务论**作为自己的实用立场（与个人反感并置）："not only are they useful, **it is irresponsible not to use them**…. They're more thorough, as well as faster."——"不喜欢"与"必须用"在同一篇文章里正面共存，这是他 9 月立场最诚实的切面。
 
 **关系：确认③（照用不误）+ 新增"个人情感立场"维度**（卡内此前缺失的一层）。
 
