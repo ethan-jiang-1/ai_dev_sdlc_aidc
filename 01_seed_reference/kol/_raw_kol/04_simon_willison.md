@@ -16,6 +16,8 @@ source_urls:
   - https://simonwillison.net/2026/Aug/8/auto-mode/
   - https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/
   - https://simonwillison.net/2026/Sep/2/rick-brewster/
+  - https://simonwillison.net/2026/Oct/1/matthew-green/
+  - https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/
 key_concepts:
   - sdlc_designed_for_hundreds_of_lines_per_day
   - vibe_coding_vs_agentic_engineering
@@ -142,7 +144,7 @@ Analyze → Plan → Implement → Test → Review → Iterate
 
 ---
 
-## 思想转变（2026-08～09）：从「人在环内」到「信 harness、人审不可靠」
+## 思想转变（2026-08～10）：从「人在环内」到「信 harness、人审不可靠」再到「agent 间传染」
 
 > 2026-10-03 增量回源（simonwillison.net 原页直抓）。两条轨迹线：把"工程师 = 定义目标的人"升格为年度主叙事，同时在"谁来做守门"上明确换了锚——**从人审换成 harness/eval**。
 
@@ -153,6 +155,12 @@ Analyze → Plan → Implement → Test → Review → Iterate
 > *"Only 13.6% of the humans refused that harmful action. Auto mode would have blocked 89% of those actions."*（并保留 "of course, that still leaves 11%…" 的警惕）
 
 **09-02｜转载 Rick Brewster 案例**（180k 行 vibe coded，"I cannot possibly review 180,000 lines of code, it's just way way way too much"）——持续为"人审必须制度化"供弹药。
+
+**10-01｜转载 Matthew Green《Is sandboxing sufficient to contain rogue agents?》（原文 09-30）**——安全线延伸到 **agent 间传染**：
+
+> *"Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could **leave instructions for each other in a shared package cache**, and those instructions changed what the recipients did. Replace the package cache with email, Slack and shared documents… and you have exactly the ingredients that a worm needs."*
+
+——沙箱隔离不再是安全边界（与 Fowler `02` 卡 08-04 "实验室逃逸"、super-persistence 护栏同轴）。
 
 **09-27｜《2026 in LLMs (so far)》年度收束**：
 
@@ -178,4 +186,4 @@ Analyze → Plan → Implement → Test → Review → Iterate
 
 ---
 
-**Source:** [Simon Willison: Vibe coding and agentic engineering are getting closer than I'd like](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) (2026/05/06) · [Lenny's Podcast: AI State of the Union](https://www.lennysnewsletter.com/p/an-ai-state-of-the-union) (2026/04/02, full transcript) · [Simon's Lenny's Podcast highlights](https://simonwillison.net/2026/Apr/2/lennys-podcast/) · [The cognitive impact of coding agents](https://simonwillison.net/2026/Apr/3/cognitive-cost/) · [Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/) · [Agentic Engineering Patterns: What is agentic engineering?](https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/) · [Agentic Engineering Patterns: Code is cheap now](https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/) · [LeadDev: Safe production changes with agents](https://leaddev.com/technical-direction/safe-production-changes-with-agents) · [Auto mode is now the default in Claude Code (2026-08-08)](https://simonwillison.net/2026/Aug/8/auto-mode/) · [A quote from Rick Brewster (2026-09-02)](https://simonwillison.net/2026/Sep/2/rick-brewster/) · [2026 in LLMs (so far) (2026-09-27)](https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/)
+**Source:** [Simon Willison: Vibe coding and agentic engineering are getting closer than I'd like](https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/) (2026/05/06) · [Lenny's Podcast: AI State of the Union](https://www.lennysnewsletter.com/p/an-ai-state-of-the-union) (2026/04/02, full transcript) · [Simon's Lenny's Podcast highlights](https://simonwillison.net/2026/Apr/2/lennys-podcast/) · [The cognitive impact of coding agents](https://simonwillison.net/2026/Apr/3/cognitive-cost/) · [Writing about Agentic Engineering Patterns](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/) · [Agentic Engineering Patterns: What is agentic engineering?](https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/) · [Agentic Engineering Patterns: Code is cheap now](https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/) · [LeadDev: Safe production changes with agents](https://leaddev.com/technical-direction/safe-production-changes-with-agents) · [Auto mode is now the default in Claude Code (2026-08-08)](https://simonwillison.net/2026/Aug/8/auto-mode/) · [A quote from Rick Brewster (2026-09-02)](https://simonwillison.net/2026/Sep/2/rick-brewster/) · [2026 in LLMs (so far) (2026-09-27)](https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/) · [A quote from Matthew Green (2026-10-01)](https://simonwillison.net/2026/Oct/1/matthew-green/) · [Green 原文: Is sandboxing sufficient to contain rogue agents? (2026-09-30)](https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/)
