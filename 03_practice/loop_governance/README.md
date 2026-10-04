@@ -23,7 +23,7 @@ loop_governance/
 └── result/
     ├── README.md        # 入层判据与命名规则
     ├── backbone.md      # ★ 实践主干（§0 定义与判据＋失败模式诊断轴 / §1 停止条件 / §2 外层调度 / §3 自主度阶梯 / §4 检查点与反例 / §5 接口 / §6 升格依据）
-    └── manual.md        # ★ 操作规程 12 节（诊断 → 写法 → 选型 → 保护 → 进度规格 → 触发器 → 熔断 → Ralph → 升档 → 验收独立性 → 落地梯子 P0→P4 → 反过度工程）
+    └── manual.md        # ★ 操作规程 13 节（诊断 → 写法 → 选型 → 保护 → 进度规格＋反馈准入表/消费记录 §5.1–5.2 → 触发器 → 熔断＋异常处置表 → Ralph → 升档＋闭环演练 → 验收独立性 → 落地梯子 P0→P4 → 反过度工程 → 授权面 §13）
 ```
 
 **没有 `research/` 层**：循环机制证据与判读在 [`02_research/01_agent_engineering/loop_engineering/`](../../02_research/01_agent_engineering/loop_engineering/README.md)；goal/eval 如何构造及判据困难的分析在 [`02_research/01_agent_engineering/goal_eval_engineering/`](../../02_research/01_agent_engineering/goal_eval_engineering/README.md)。本主题只引用各自的控制接口，不复制研究正文或案例数值，防双权威。
@@ -45,6 +45,7 @@ loop_governance/
 3. **外层调度两种已观察形态**：文件即队列（进度外置、每轮重读并取未完成项）＋触发器即节拍（条件/时间/事件/脚本）；人工逐动作审批在部分公开机制里移向检查点，不能推断真实组织已全面退出。多 feature 的工作行只是待验证补法（见 [`manual §5`](result/manual.md)）。
 4. **自主度位置分档成型**（两个独立四级阶梯：Morris 的 outside→in→on→flywheel、Osmani 的 agentic→`/goal`→`/loop`→proactive；＋Anthropic 官方路径），**量化分档未成型**——没有一手源给出"跑几轮必须人看"的判据，这是如实登记的开放缺口。
 5. **升档判据**：机械门可信度之外，还要验证动作授权不跨轮泛化、拒绝后审批入口可达且能恢复；裁判与人判冲突时先暂停自动验收和升档。资源停机、产出过闸与外部业务结果分账（见 [`manual §2/§7/§9/§10`](result/manual.md)）。
+6. **反馈接口（2026-10-04 增）**：「有观察、有记录、实际用于本次控制」是三件事；反馈断点定位表在 [`backbone §0.2`](result/backbone.md)，四件操作物在 [`manual`](result/manual.md)——准入表与消费/交接记录 §5.1–5.2、异常处置表 §7、闭环演练 §9。逐机制判读权威在研究层 [`digested/09`](../../02_research/01_agent_engineering/loop_engineering/digested/09-feedback-harness-interface.md)，本层不复制证据。
 
 ## 信息流
 

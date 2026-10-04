@@ -8,7 +8,7 @@
 topic: Loop Governance —— 实践手册（backbone §0–§4 的操作化）
 doc_layer: result（定稿层 · 操作规程，SOP 级）
 produced_at: 2026-09-26
-revised: 2026-09-30 — 增 §13 授权面划定规程（LE1 交接面的操作化；证据自研究层 capability_ladder 与 evidence-f/u/w/b/c 升格）
+revised: 2026-10-04 — 反馈接口增补：§1 断点路由入口、§2 继续适用条件、§4 裁判输入按角色分（J2）、§5.1 反馈准入表＋变更走读、§5.2 消费/交接记录、§7 异常处置表、§9 反馈闭环演练、§10 验收判读三问、§11 梯子定位限定（J3）、§12 第 8 条、§13 拒绝回传与在途处置（新增内容待复核）；机制依据研究层 digested/09-feedback-harness-interface（evidence aa–ae）。2026-09-30 — 增 §13 授权面划定规程（LE1 交接面的操作化；证据自研究层 capability_ladder 与 evidence-f/u/w/b/c 升格）
 provenance: 2026-09-26 初版来自 ai_loop_engineering evidence-a/b/c 与库内一手；2026-09-27 补充 evidence-f/i 的已复核机制和第一人称反例、digested/07 的缺口边界；后续控制接口引自 agent_goal_eval digested/01/02/03（单源处标注）；工作行与交接核对为本主题试点编排
 filter: 官方一手逐字 > 实践者第一人称 > 本主题编排（编排处显式标注）
 ---
@@ -31,6 +31,8 @@ backbone ＝ 主张（what/why，清单级）；本手册 ＝ 规程（how，SOP
 
 **失败模式自检**（编号对应 backbone §0.2；①②已由三问覆盖；症状对上就翻对应节）：
 ③ one-shot 冲动→§5｜④ 提前宣告完成→§2/§5｜⑤ 未验证标 done→§2/§5/§10｜⑥ 无进度盘→§5｜⑦ 自主度超前于门禁可信度→§9｜⑧ 操纵裁判→§4/§7｜⑨ 授权漂移或升级不可达→§7/§9｜⑩ 资源停机冒充验收→§7/§10。
+
+**「有结果却没影响下一步」（反馈断点入口，2026-10-04 增）**：按 backbone §0.2 断点定位表分流——没产生/没送达→§7 排查；错关联（旧版/他次结果对到当前工作）→§5 准入表；没消费/无明确去向→§5/§7/§9。这是路由入口，不另加第四条全民准入问题。
 
 ## 2. 停止条件写法规程（操作化：backbone §1｜CC 官方文档，evidence-b §4a 一手）
 
@@ -57,6 +59,8 @@ backbone ＝ 主张（what/why，清单级）；本手册 ＝ 规程（how，SOP
 **三值判定语义（仅限预设的可观察目标，非外部结果状态）**：**Not yet met**→继续，且评估理由作为下一轮指导；
 **Met**→清空该目标并在 transcript 记该条件 achieved，按上述分流另交验收；**Impossible**→评估器判该条件不可满足，停；不能把“还看不到业务结果”误报为 `Impossible`。
 
+**继续的适用条件（2026-10-04 增；本主题控制建议——产品原生三值语义以官方文档为准）**：`Not yet met`→继续只在以下三条同时成立时——①**当前证据适用当轮**（目标/工件/判据/环境版本未变，准入核查见 §5）；②**授权仍有效**（批准的动作×目标×有效期仍覆盖本轮）；③**有推进或补查依据**且未触资源出口。证据缺失或检查未执行**不是 `Impossible`**，也不能默记为通过——Aider 的 outcome 通道把「未执行」与「通过」记成同值（evidence-aa，机制依源码）；此时先按 §7 补原始输出或交人，不续轮。
+
 **写法红线（Osmani 操作篇逐字，evidence-a 补充回源）**：① 含糊目标不配循环——"a vague goal would be 'keep going until this UI design is good'. What does that mean? Good to who? How is it being evaluated?"；② **别把品味和判断一起委托**——"check yourself, that you are not delegating the taste and the judgment to your agent. You're delegating the task, and then you are actually checking back that it's meeting your bar."；③ 评估器只核 transcript 硬规则、**不判内容好坏**——"It doesn't look at the content to see if it's good or bad in any way, shape, or form"（判好坏的是人或上级环——前两句逐字·evidence-a 补充回源；"上级环"为本主题依 Ng 三环补的推断）。
 
 **实战例（Osmani 逐字，全部要素一次配齐）**：`/goal Refactor the data-fetching layer in Dashboard.tsx until Lighthouse performance score is >= 92 and LCP is under 1.8s as shown by the Lighthouse CLI output. Do not change the public API of any hooks. Each turn must improve at least one reported metric; abort if two consecutive turns show no improvement. Stop after 10 turns.`——可度量终态（Lighthouse ≥92 / LCP <1.8s）、声明式检查（Lighthouse CLI 输出）、约束（不改 public API）、无进展中止（连续两轮无改进即 abort）、轮次上限（10 turns）。
@@ -79,7 +83,7 @@ backbone ＝ 主张（what/why，清单级）；本手册 ＝ 规程（how，SOP
 
 1. **测试不可删改**：强措辞条款（"It is unacceptable to remove or edit tests…"）＋ test-file hook 硬拦（evidence-b §3 一手；hook 做法 playbook Test 节）；
 2. **清单选 JSON 不选 Markdown**：模型对 JSON 整文件改写的概率更低（evidence-b §3 一手）；
-3. **评估器输入防操纵**：分类器只看用户消息与工具调用、剥掉模型自述——"reasoning-blind by design"（evidence-b §4b 一手）；
+3. **裁判输入按角色分**（2026-10-04 拆句；裁定依据＝现有 auto mode 工程文一手足够支撑，无需新增回源）：**动作审批分类器**可采用更窄输入——只看用户消息与工具调用、剥掉模型自述，"reasoning-blind by design"（evidence-b §4b 一手）；**完成裁判相反，必须看真实证据**（测试输出、原始结果），这套剥输出的机制不能直接套给完成裁判；完成裁判的防操纵走测试保护（第 1 条）、判据所有权与独立检查者。测试保护与 JSON 格式经验（第 1/2 条）也与权限隔离是不同机制，不互相替代；
 4. **测试当场写明为什么存在**：因为"future loops will not have the reasoning in their context window"（evidence-b §1 一手）。
 
 ## 5. feature_list 进度规格规程（操作化：backbone §2 形态一｜evidence-b 问题2 §1 一手全套）
@@ -112,6 +116,34 @@ accepted_by / evidence_link: 验收者及测试、PR、日志或人工记录的�
 
 同一行只放链接，不复制测试/审批日志；`accepted_by` 只记本行约定的产出验收，不代表外部业务结果已达成（外部结果另按 §10 分账）；`stop_reason` 不能自动填 `accepted_by`。先在小范围记录催问、重复授权、交接遗漏和维护时间；若没有实际交接问题或记录成本超过收益，撤掉该行。四列缺口和观察字段见 [`digested/07 §一/§五`](../../../02_research/01_agent_engineering/loop_engineering/digested/07-控制问题矩阵.md)；Beads 和 exec-plans 只提供邻近记忆形态（[`evidence-i` Sources 5/6](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-27-i-high-influence-control.md)），没有证明该试点有效。
 
+### 5.1 反馈准入表（操作物①，2026-10-04 增；本主题编排，机制依据见研究层 [`digested/09 §三/§五`](../../../02_research/01_agent_engineering/loop_engineering/digested/09-feedback-harness-interface.md)）
+
+每轮读 progress 之后、**选动作之前**，对上一轮结果做准入核查：
+
+| 核查 | 通过条件 | 不通过时 |
+|---|---|---|
+| 适用当轮 | 目标/工件/判据/环境版本未变 | 旧结果降级为历史（只存指针），按当前版本重验；不作放行依据 |
+| 授权有效 | 批准的动作×目标×有效期仍覆盖本轮 | 重问授权（§13），不继承旧批 |
+| 可推进 | 有推进/补查依据且未触资源出口 | 停止或交人（§7/§9） |
+| 关联可查 | 结果能对到当前工作（版本锚/运行 ID/原始输出位置） | 无法关联则补原始输出或交人 |
+
+**相关变更（目标/判据/授权）后的重验走读（操作物①的变更分支；P3）**：记录变更人与生效版本 → 列受影响的证据/裁决 → 处置在途工作（在途 worker 确认收到新边界，或暂停）→ 确认执行者/控制者收到并生效 → 按新边界重验。**消息发出不等于 worker 已停**；是否生效仍未知就保持未知，不写成功。机制边界：「旧版只作历史、不默默覆写当前控制状态」**无一手机制**（digested/09 §六负结论），本表是显式工程建议，不是产品能力描述。
+
+**记录负担按任务分级**：同步短任务可只留工具结果与本次决定；跨轮恢复才补版本/证据/恢复指针；实际存在异步并发时再补次序、去重与在途确认。没有压力不要求全字段填写；同步/内存可闭环的任务不强制持久总线。
+
+### 5.2 反馈消费/交接记录（操作物②，2026-10-04 增；本主题试点，字段不是产品 API；只存指针，不复制日志）
+
+```text
+本次目标/工件版本/检查环境：
+实际执行的检查及原始结果位置：
+结果是否适用；不适用的理由：
+环境观察事实：
+解释或判定（与事实分开）：
+预期消费者；实际可见输入或控制分支：
+本次去向与理由：修复 / 重查 / 有界重试 / 停止 / 交人
+后续复验与恢复位置：
+```
+
 ## 6. 触发器选型规程（操作化：backbone §2 形态二｜官方对照表逐字，evidence-b 问题2 §2）
 
 | 方式 | 下一轮何时开 | 何时停 |
@@ -143,6 +175,19 @@ auto mode 不在此列——它只管轮内审批，不开新轮。
 
 **控制流停止时记录两件不同的事**：`stop_reason` 记目标门通过而停止、资源耗尽、连续拒绝、无法恢复、人暂停或模型自行收尾；`accepted_by + evidence_link` 另记预设产出范围的验收者及证据，系统外结果按 §10 另记。没有验收证据就保留未验收/待接手，不能从超时、assistant 消息或测试进程结束推断已交付（[`digested/07` 停止格](../../../02_research/01_agent_engineering/loop_engineering/digested/07-控制问题矩阵.md)）。
 
+**异常处置表（操作物③，2026-10-04 增；本主题编排，机制依据研究层 [`digested/09 §五`](../../../02_research/01_agent_engineering/loop_engineering/digested/09-feedback-harness-interface.md)；产品行为与建议分栏）**：
+
+| 异常事实 | 处置（本主题建议） | 依据 / 边界 |
+|---|---|---|
+| 目标失败（检查执行了且失败） | 修复 → 重验：重跑同一检查并核对版本 | 退出码通道不区分失败种类（Aider：formatter 非零/OSError/127 不可分辨，evidence-aa）——先分清检查错误与目标失败 |
+| 工具/环境异常 | 恢复检查设施；有界重查；**不与目标失败混记** | lint 进程拉不起被记成「通过」是反面教材（evidence-aa §4d，机制依源码） |
+| 缺失/截断证据 | 补原始输出；没有原始结果不判通过 | DSH spill 文件指回全文（evidence-ac）；压缩会失真（evidence-ad H1 一手句） |
+| 旧版结果 | 降级为历史，按当前版重验；不作放行依据 | 树哈希 STALE 是树粒度触发（evidence-ab M1）；不把任何 commit 改变一律当所有证据失效 |
+| 重复结果 | 复用缓存，防重复副作用 | 重复**通过**的平台级去重未见显式机制（evidence-ab 负结论） |
+| 政策拒绝 | 沿原授权流程（§13 与上方交接段） | deny-and-continue；3/20 熔断是产品阈值，非通用刻度 |
+
+**未知阻止达成与扩权**：证据缺失、变更是否生效未知时，不写达成声明、不扩权；允许授权内有界补查（evidence-aa 三例雏形：未执行≠通过）。
+
 ## 8. Ralph 式循环规程（greenfield 专用｜evidence-b §1 一手）
 
 **适用警告先行**："There's no way in heck would I use Ralph in an existing code base"——存量库禁用；预期用它做到 ~90%。
@@ -169,6 +214,8 @@ auto mode 不在此列——它只管轮内审批，不开新轮。
 3. **熔断配了吗**——§7 六道闸至少配了拒绝熔断与硬过期。
 
 **再演练控制路径（本主题建议，非产品已实现的默认策略）**：挑一条有外部副作用的动作，写清 `动作 + 目标 + 本次授权有效期`，分别触发“允许 / 需人批准 / 策略硬拒绝”；前者只在当前边界执行，中者在工具执行前暂停并让指定人看见具体参数与风险、作决定后按同一 `thread_id` 恢复，后者停下且不得用普通审批覆盖。若人不在、父线程看不见请求、状态不可恢复，就保持暂停并退回需要人在环的运行档；不要把权限开大来让演练通过。下一轮换目标或从 edit 变为 commit/push 时重新请求授权。Codex 固定提交源码与 LangChain HITL 文档只证明可配置机制（[`evidence-f` Sources 1/7](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)）；反例是单用户报告，不证明本流程有量化收益。
+
+**反馈闭环演练（操作物④，2026-10-04 增；本主题编排）**：把「门会红」延伸一步——红灯要送到**正确消费者**并产生**预期处置**：可回滚失败 → 取原始结果 → 确认它进入实际输入/控制分支（不是只贴日志、不是模型说读过）→ 修复/重查/暂停之一实际发生 → 复验通过。只证明这一条坏路径已演练，不声称覆盖全部失败；纸面填完不记已演练，未实做保持待演练。机制依据：反馈断点六类（研究层 digested/09 §二）。
 
 **σ 分层响应配置**（无人值守档的成品样板，playbook《Closing the loop》一手）：
 
@@ -198,6 +245,8 @@ OpenAI——"The separation of roles matters…（主 agent）creates pressure t
 
 **产出验收与外部结果分账**：交接时分别记 `artifact_check + evidence_link`（本轮可复查的测试/产出）和 `outcome_status + owner + next_check`（业务结果已观测/待观测及责任人、复查时点）。离线检查全绿可停止这项 bounded 任务，不能自动填写外部结果成功；若业务结果尚不可见，保持 `outcome_status=待观测`。例如 `CI 通过 + PR 已交付` 只使本轮产出进入验收；尚无使用数据时，`用户采用率` 仍是待观测，由业务负责人另行复查。这是本主题的记录建议，不是某厂商标准；[`agent_goal_eval` eval 判读](../../../02_research/01_agent_engineering/goal_eval_engineering/digested/02-eval-调优.md) 区分离线检查与上线信号，其案例数字不作为这里的验收线。
 
+**验收判读三问（2026-10-04 增；本主题编排，机制依据 digested/09）**：对每条验收证据核三件——①**实际执行了吗**：检查真的跑了（原始输出位置可查），不是 outcome 通道里与「通过」同值的「未执行」（evidence-aa）；②**覆盖当前版本吗**：版本锚对得上本次工作，旧版绿灯只作历史；③**适用范围说清了吗**：测了什么、没测什么，未覆盖维度记待验收。**变更判据后**：受影响的旧裁决按 §5.1 准入表降级为历史并逐条复核，不能默认继承；复核操作引用 §5/§7 的操作物。
+
 **轮末交接核对（本主题试点，不替代 goal/eval 判据）**：将本轮工作与起始任务/已授权范围逐项对照：① 对比前后测试文件和测试清单，列出删除、跳过、弱化或本该新增却缺失的测试；② 列出基线已有失败、本轮新失败和实际跑过的检查及退出码；③ 列出超出本轮范围的功能/文件改动。出现删测、未解释的失败或越界实现，先不要翻 `passes`，交独立检查者决定修复、回退或重新授权；不能以“缺失的测试没有失败”代替通过。拦截删改测试的 hook 属 harness（§4），验收标准和内容质量仍由 goal/eval 或人确定。本检查来自 Beck/Yegge 的独立第一人称失败案例（[`evidence-i` Sources 3/5](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-27-i-high-influence-control.md)），没有受控效果数据。
 
 ## 11. 统一落地梯子 P0→P4（操作化：全手册｜**本梯子为本主题编排**，档位依据各有一手、梯子本身是合成）
@@ -211,6 +260,7 @@ OpenAI——"The separation of roles matters…（主 agent）creates pressure t
 | **P4** 无人值守 | proactive 事件触发＋σ 分层响应＋生产回写 | 门禁过负例控制；回滚最演练；§9 三项门禁与控制路径演练全过 | §7/§9/§10 |
 
 **只逐档爬，不跳档**；**退档信号**：熔断频发、假把控症状（backbone §4.3 的两面镜）复现——退一档重新稳住再升。
+**梯子定位限定（2026-10-04 增，J3 裁定）**：本梯子是**推荐搭建顺序**，不是授权推断规则——处在某一档**不推断其他交接面已授权**；真实系统按交接面分别核查（谁启动下一轮/谁判断完成/谁能改变系统/出错谁能接手），不能由唤醒推断动作审批或续跑判停也已交出。是否调整「只逐档爬」本身，另作裁定，不借反馈主题改变全部阶梯。
 **各档地板**：§13 授权面划定——每一档都先过它；升档前先核面，不是只有 P0 需要。
 
 ## 12. 反过度工程清单（操作化：backbone §4）
@@ -221,7 +271,8 @@ OpenAI——"The separation of roles matters…（主 agent）creates pressure t
 4. 评估器别越权判内容好坏——判好坏的是人或上级环（Osmani 澄清）；
 5. 复杂 harness 有害的镜像教训同样适用于 loop 侧（Teleport 反例，见 [`harness_governance` 组织 5](../../harness_governance/result/backbone.md)）；
 6. **反面声音**：Steinberger 2025-12 长文——"usually I'm the bottleneck"——**通常人自己就是限速环节**（编排不是瓶颈、人是，所以他对自动编排「没看到多大必要」；**原文未说「自动化更慢」**）。与 §3 不冲突：§3 说的是**裁判**（完成判定）优先机器可核，本条说的是**调度自动化**收益有限——两个角色（evidence-a 一手）；
-7. **行为面验证缺口**：门拦得住动作、拦不住"没做该做的事"——减监督前先想清这一条还堵不上（登记在 backbone §3，开放缺口）。
+7. **行为面验证缺口**：门拦得住动作、拦不住"没做该做的事"——减监督前先想清这一条还堵不上（登记在 backbone §3，开放缺口）；
+8. **反馈断点频发（2026-10-04 增）**：结果丢失、错版误用、重复修复反复出现 → 先回 §5.1/§7 补准入与消费，**不加档**；同步/内存可闭环的任务不强制持久总线（与 §5.1 分级一致）。
 
 ## 13. 授权面划定规程（操作化：backbone §3 控制路径｜LE1 交接面；一手证据 evidence-f/u/w/b/c，观测 2026-09-30）
 
@@ -258,3 +309,5 @@ OpenAI——"The separation of roles matters…（主 agent）creates pressure t
 3. 高风险类别（auth / billing / 破坏性变更）保留当场审批与随时中断（backbone §4.2 风险分级）；
 4. **演练**：低风险可回滚仓库里故意触发一个面外动作，核对记录里真实发生 `propose → decision → tool result`，不拿「最终测试通过」冒充审批通过；
 5. **验收本节**：抽一条已放行的动作，能答出「谁批的、批的哪个目标、有效期到哪」；答不出＝面没划过，是默认放行。
+
+**拒绝回传与授权撤回后的在途处置（2026-10-04 增；新增内容待复核）**：拒绝结果的去向与撤回授权后对在途任务的处置，指向 §7 异常处置表与 §9 闭环演练——撤回后按 §5.1 变更走读核在途工作（确认收到或暂停），按 §7 记录已知与未知；补一个版本走读：变更人/生效版本/受影响证据/在途处置/重验。**不把正常失败都变成权限问题**：工具异常与目标失败按 §7 分栏处置，不自动升格为授权事件。

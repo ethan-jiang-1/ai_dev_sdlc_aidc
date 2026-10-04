@@ -1,6 +1,8 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-30（manual 增 §13）**：backbone §0–§4 与 manual §0–§12 的既有确认不变。manual 增 **§13 授权面划定规程**（LE1 交接面的操作化：分级处置表、动作×目标×有效期、拒绝语义、偏好与隔离两层、实测反例、划定五步），证据自研究层 capability_ladder 与 evidence-f/u/w/b/c 升格；backbone §3 补指针，manual §0/§11 补路由。§13 为新增节，**待用户复核**。
+> 最近一次更新：**2026-10-04（反馈接口增补）**：依据研究层 [`digested/09`](../../02_research/01_agent_engineering/loop_engineering/digested/09-feedback-harness-interface.md)（2026-10-04 用户确认的反馈接口范围）：[backbone](result/backbone.md) 增 §0 反馈接口段、§0.2 反馈断点定位表、§1 闸门生效条件、§2 重读核当前目标/版本、§3 反馈消费演练、§5 反馈接口分工；[manual](result/manual.md) 增 §1 断点路由入口、§2 继续适用条件、§4 裁判输入按角色分、**§5.1 反馈准入表（含变更走读）／§5.2 消费记录**、**§7 异常处置表**、**§9 反馈闭环演练**、§10 验收判读三问、§11 梯子定位限定、§12 第 8 条、§13 拒绝回传与在途处置；[README](README.md) 速览增第 6 条并核对 §13 导航（操作规程实为 13 节）。**已确认不变**：backbone §0–§4 与 manual §0–§12 的 2026-09-27 用户确认内容未改主张，本次只做增补与限定；**本次新增内容全部待用户复核**；manual §13（2026-09-30 增）仍维持待复核，不因本次自动确认。研究依赖：机制证据在研究层 evidence-2026-10-04-{aa..ae}；本层不登记下游（deck/手册）进度。
+>
+> **2026-09-30（manual 增 §13）**：backbone §0–§4 与 manual §0–§12 的既有确认不变。manual 增 **§13 授权面划定规程**（LE1 交接面的操作化：分级处置表、动作×目标×有效期、拒绝语义、偏好与隔离两层、实测反例、划定五步），证据自研究层 capability_ladder 与 evidence-f/u/w/b/c 升格；backbone §3 补指针，manual §0/§11 补路由。§13 为新增节，**待用户复核**。
 
 ## 一句话
 
@@ -10,16 +12,17 @@
 
 | 件 | 状态 |
 |---|---|
-| `README.md` | ✅ 定位 / 命名理由 / 分工边界 / 信息流 / 核心结论速览 |
-| `result/backbone.md` | ✅ §0–§6 七节——**2026-09-27 用户确认通过**；2026-09-30 §3 补 §13 指针（仅指针，未改主张） |
+| `README.md` | ✅ 定位 / 命名理由 / 分工边界 / 信息流 / 核心结论速览（2026-10-04 增第 6 条反馈接口；操作规程节数核对为 13 节） |
+| `result/backbone.md` | ✅ §0–§6 七节——**2026-09-27 用户确认通过**；2026-09-30 §3 补 §13 指针（仅指针，未改主张）；2026-10-04 增反馈接口段与断点定位表（**新增待复核**） |
 | `result/README.md` | ✅ 入层判据 |
-| `result/manual.md` | ✅ 13 节——§0–§12 于 2026-09-27 用户确认通过；§13 授权面划定（2026-09-30 增，待复核） |
-| 证据层 | ✅ 循环机制见 [`ai_loop_engineering`](../../02_research/01_agent_engineering/loop_engineering/README.md)；控制接口见 [`agent_goal_eval`](../../02_research/01_agent_engineering/goal_eval_engineering/digested/README.md) |
+| `result/manual.md` | ✅ 13 节——§0–§12 于 2026-09-27 用户确认通过；§13 授权面划定（2026-09-30 增，待复核）；2026-10-04 反馈接口增补（§1/§2/§4/§5.1–5.2/§7/§9/§10/§11/§12/§13，**新增待复核**） |
+| 证据层 | ✅ 循环机制见 [`ai_loop_engineering`](../../02_research/01_agent_engineering/loop_engineering/README.md)（反馈接口判读在其 digested/09）；控制接口见 [`agent_goal_eval`](../../02_research/01_agent_engineering/goal_eval_engineering/digested/README.md) |
 
 ## 下一步
 
-1. **manual §13（2026-09-30 增）待用户复核**；判定链＝landscape §3.5 → 00-map → rung-01 → §13。
-2. 研究层遗留（登记在研究层 CURRENT）：Unrolling 候选 403 / 归属修正 / Morris 四级。
+1. **2026-10-04 反馈接口增补待用户复核**（本轮新增，判定链＝研究层 digested/09 → backbone §0 反馈接口段/§0.2 断点定位表 → manual 四件操作物 §5.1/§5.2/§7/§9）；复核重点：四件操作物是否可照做、记录分级是否过重、§13 新增段是否与授权面协调。
+2. **manual §13（2026-09-30 增）待用户复核**（维持，不因本次自动确认）；判定链＝landscape §3.5 → 00-map → rung-01 → §13。
+3. 研究层遗留（登记在研究层 CURRENT）：反馈接口待核清单（digested/09 §七）；Unrolling 候选 403 / 归属修正 / Morris 四级。
 
 ## 缺口（backbone 登记的两项开放缺口 + 两项附加）
 

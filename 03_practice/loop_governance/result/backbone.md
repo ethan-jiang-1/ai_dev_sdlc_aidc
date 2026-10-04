@@ -26,6 +26,8 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 1. **停止条件不依赖上次结果 → 那是重试，不是 loop**（[`digested/01 §三`](../../../02_research/01_agent_engineering/loop_engineering/digested/01-命名谱系.md) 硬判据）；
 2. **单次运行不受控 → loop 只是把错误复制得更快**——与 Ralph 的 greenfield 限定（"There's no way in heck would I use Ralph in an existing code base"，evidence-b §1）、Anthropic 的"每轮先过基线再干活"（evidence-b 问题2 §1）三方同向。
 
+**反馈接口（2026-10-04 增；逐机制判读权威在研究层 [`digested/09`](../../../02_research/01_agent_engineering/loop_engineering/digested/09-feedback-harness-interface.md)）**：「有观察、有记录、实际用于本次控制」是三件事——上次结果要改变下次行动，前提是结果被产生、与当前目标/版本关联、投递到实际决策分支并被消费。本主题**不要求每次动作都改变**（同一轮内多次尝试不算失败）、**不要求所有任务持久化记录**（同步短任务可只留工具结果与本次决定，见 [`manual.md §5`](manual.md) 分级）；断点如何定位见 §0.2，操作物在 [`manual.md §5/§7/§9`](manual.md)。
+
 **术语注记**：KOL 词 "loop engineering"（2026-06 命名）经研究层回源判定——**词源＝热度碎片（Cherny 06-02 访谈句未逐字核验、Steinberger 06-08 两句话推文无深度），定义＝事后工程化（Osmani 06-07 → Runkle 06-16 → CC 团队 06-30）**；四人核心同指（系统替人逐轮提示）但**外延不兼容**（Runkle 第 4 环属 harness 层；验证语义分歧）。本主题因此不沿用该词。判定全文：[`digested/01`](../../../02_research/01_agent_engineering/loop_engineering/digested/01-命名谱系.md)。
 
 ### 0.2 loop 层失败模式（诊断轴——各节的"防什么"标签）
@@ -45,6 +47,16 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 
 （①② 是 §0 两判据的失败面；③④⑤ 来自 Anthropic 官方失败模式表，evidence-b §3；⑥ 的私有一手样本见姊妹仓 FAQ 15 owner 案例·转引；⑦ 由 §3 升档判据推出；⑧ 来自保护裁判与反操纵监控的一手证据——evidence-b §3 测试不可删改 / §4b reasoning-blind / §2.3 反复拒绝熔断；⑨ 是 evidence-f 的源码/文档机制与单用户反例导出的试点检查；⑩ 区分资源上限与任务验收，见 digested/07 停止格。）
 
+**反馈断点定位（2026-10-04 增；机制依据见研究层 [`digested/09 §二`](../../../02_research/01_agent_engineering/loop_engineering/digested/09-feedback-harness-interface.md)，不另立平行失败分类体系）**：
+
+| 断点 | 症状 | 先回 Harness 排查还是 Loop 处理 | 规程节号 |
+|---|---|---|---|
+| 没产生 | 检查未配置/未执行，或未执行与通过不可区分 | Harness（执行件与观察面） | manual §7 |
+| 错关联 | 旧版/他次结果被对到当前工作 | Loop（准入核查） | manual §5 |
+| 没送达 | 截断/摘要/压缩丢关键事实 | Harness（投递通道） | manual §7 |
+| 没消费 | 有裁决，没有任何续停/修复分支读它 | Loop（消费者与去向） | manual §5/§9 |
+| 无明确去向 | 结果到了，但不知该修代码、修环境、重查、暂停还是交人 | Loop（处置分派） | manual §7/§9 |
+
 ## 1. 停止条件（跑到哪算完）
 
 **目标敌人**：**提前宣告完成**。Anthropic 官方把两种头号失败模式写成表格——"Claude declares victory on the entire project too early" / "Claude marks features as done prematurely"（evidence-b §3）；LangChain verification loop 的存在理由同源；Huntley 的对应物是占位实现（"inherent bias to do minimal and placeholder implementations"，evidence-b §1）。**停止条件的全部设计都是在对抗这一条。**
@@ -56,6 +68,8 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 3. **验收与干活分离**——五处一手跨三家：evaluator-optimizer、"只许改 `passes` 字段"、"/goal adds a separate evaluator… completion is decided by a fresh model rather than the one doing the work"、"The separation of roles matters"、grader 与 agent 分置。（evidence-b 综合节）
 
 **停止原因不等于完成证据**：轮次耗尽、超时、连续拒绝、模型返回消息只说明控制流停止或交还；是否验收仍由预定的检查者和证据决定。长程任务的交接记录应把两者分开（[`digested/07` 停止格](../../../02_research/01_agent_engineering/loop_engineering/digested/07-控制问题矩阵.md)；记录写法见 [`manual.md §7`](manual.md)）。
+
+**闸门生效条件（2026-10-04 增）**：检查结果须实际进入裁决与续停分支——红灯打出来而没有消费者，门禁只是输出、不拦截。已核证的断点样本：检查未执行与通过在 outcome 通道同值（Aider 源码，evidence-aa）；闸门结果要返回到提议动作的同一执行者并有人能接手（evidence-f 反例）。逐机制判读见研究层 [`digested/09 §二/§三`](../../../02_research/01_agent_engineering/loop_engineering/digested/09-feedback-harness-interface.md)；准入与消费的核查操作在 [`manual.md §5`](manual.md)。
 
 **产出边界不等于外部结果**：可观察的代码、测试或交付物可作为本轮自动停止条件；系统外的业务结果若当前无观测，就保留待人判或待观测，不能因为产出过闸而自动标成结果达成。品味/标准仍在变化时可做有边界的探索与人工检查，不冒充机器可判的 `Met`。这是控制边界，不在本主题定义 goal/eval 的写法；出处为 [`agent_goal_eval` goal 判读](../../../02_research/01_agent_engineering/goal_eval_engineering/digested/01-goal-构造.md) 与 [`难设计` 三条路](../../../02_research/01_agent_engineering/goal_eval_engineering/digested/03-难设计.md)（其中结果不可见的交还属 Yeret 单人观察，非效果证明），操作分支见 [`manual.md §2`](manual.md)。
 
@@ -71,7 +85,7 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 **主导形态一：文件即队列。**（Huntley 与 Anthropic 两家独立、句式同构）
 
 - **三件套**：进度规格（feature_list.json / fix_plan.md / loop.md）＋ 叙事日志（progress 文件）＋ git 历史；
-- **每轮冷启动重读 + 固定开场序列**：定位 → 读 git log / progress → **选清单里最高优先级的未完成项** → 先过基线再干活（evidence-b 问题2 §1/§4）；
+- **每轮冷启动重读 + 固定开场序列**：定位 → 读 git log / progress → **选清单里最高优先级的未完成项** → 先过基线再干活（evidence-b 问题2 §1/§4）；**重读之外还须核当前目标/版本**——进度文件对不上当前目标或工件版本时，先做准入核查再续跑（2026-10-04 增；操作表见 [`manual.md §5`](manual.md)）；
 - **在这个文件队列形态中**，下一项从进度规格里的未完成条目取；人可改变清单及优先级，不能把“从文件取题”外推为所有 loop 都不需人决定下一轮；
 - 一次只做一件 + 干净收尾（commit + progress 更新）——对抗 one-shot 冲动（Anthropic 点名的失败模式一）。
 
@@ -105,6 +119,8 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 
 **升档还须查控制路径**：一次批准绑定本次动作、目标和有效期；下一轮不自动继承到另一分支、另一 feature 或发布动作。对可审批的中断要验证人能看到动作和风险、作决定、从同一状态恢复；对硬政策拒绝只停下并暴露原因，不通过人工提示绕过。动作门和恢复机制见 [`digested/03 §三`](../../../02_research/01_agent_engineering/loop_engineering/digested/03-构件.md) 与 [`evidence-f` Sources 1/7](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-27-f-autonomy-gates.md)；授权漂移/审批不可达只有单用户反例，不是发生率证据。操作检查在 [`manual.md §9`](manual.md)，动作授权面的划定规程（LE1 交接面的操作化）在 [`manual.md §13`](manual.md)；沙箱与工具策略本身仍归 harness 治理。
 
+**反馈消费演练（2026-10-04 增）**：续跑委托前先演练「红灯能送达正确消费者并产生预期处置」——可回滚失败 → 原始结果 → 实际输入/控制分支 → 修复/重查/暂停 → 复验（操作见 [`manual.md §9`](manual.md)）；要求或授权变更后，重核旧证据与在途工作再继续（变更走读见 [`manual.md §5/§7`](manual.md)）；**高阶不因「跑得久」成立**，只因每个新交出的决定都演练过坏路径成立。
+
 **反面声音（一手）**：Steinberger 2025-12 长文明确反对自动编排（"usually I'm the bottleneck"）——与他的 6 月词源推文立场相反（evidence-a）。**自主度升档不是免费的方向**；词源人物自己的摇摆就是证据。
 
 ## 4. 检查点与反例（什么时候必须人看 / 什么时候不要 loop）
@@ -120,7 +136,7 @@ naming: 不沿用 KOL 词 "loop engineering"——词源＝热度碎片、外延
 
 | 主题 | 关系 |
 |---|---|
-| [`harness_governance`](../../harness_governance/README.md) | **前提层**：单次运行受控（门禁/传感器/漂移清理在那边，诊断轴＝"agent 缺哪句话"①–⑦）。本主题引用其回路 1（门禁可信度）/5（评审外置）/7（反馈分层）与组织 6（风险分级），不复制 |
+| [`harness_governance`](../../harness_governance/README.md) | **前提层**：单次运行受控（门禁/传感器/漂移清理在那边，诊断轴＝"agent 缺哪句话"①–⑦）。本主题引用其回路 1（门禁可信度）/5（评审外置）/7（反馈分层）与组织 6（风险分级），不复制。**反馈接口分工（2026-10-04 增）**：Harness 提供观察、工具结果、隔离、恢复等**环境能力**（回路已有，指针引用、不重开主干）；Loop 核查反馈是否适用于本次决定、如何继续/停止/升级——逐项要求与机制锚见研究层 [`digested/09 §三`](../../../02_research/01_agent_engineering/loop_engineering/digested/09-feedback-harness-interface.md) |
 | [`spec_driven_development`](../../spec_driven_development/README.md) | **收敛证据**：OpenSpec 拆刚性阶段（"No more rigid phases"）、spec-kit 收 Ralph Loop extension 与 Autonomous Run Governance preset；SDD 工件链（intent.md/spec.md）可担任 loop 的检查点（playbook 实证） |
 | [`requirements_engineering`](../../requirements_engineering/README.md) | 停止条件的"写清楚"部分（intent / spec 怎么写）归那边 |
 | [`beyond_spec_driven_development`](../../beyond_spec_driven_development/README.md) §6.1 | 本主题在形态光谱上的定位：**正交轴**（光谱问"留多少 spec 工件"，本主题问"谁决定下一轮、何时停、人站哪"） |
