@@ -7,7 +7,7 @@
 
 **答案**：A①、B②、C①、D②。要求每项补一句理由：这个信号最多支持什么，哪个判断仍缺证据？选项位置已打散，避免凭格式猜中。
 
-- **A②**：测试通过 ≠ 需求无遗漏／业务变好（覆盖写在条件里的部分）。
+- **A②**：旧版通过报告只支持「上一版那次工作通过」的历史声明，不支持当前版——当前版已改动、尚未检查，本次决定要用这次工作的证据；旧证据只能作历史，不能作当前放行。误读成 A② 就是拿上一版的绿灯替当前版放行。
 - **B①**：`Met` 是裁判对其**可见证据**的判断；人没验收、业务没被观测。
 - **C②**：进度文件**算给人看**不等于驱动层据此停机——官方 quickstart 源码里就没有「全部通过即停」的分支（讲者可展开：判停权住在哪一层要追到驱动代码）。
 - **D①**：轮数上限是资源熔断，不是质量分。
@@ -36,7 +36,7 @@
 
 ## 素材出处（讲者自查用，不进学员版）
 
-- 练习 1：信号表＝capability_ladder/rung-02「你看到的信号」三列表的入门裁剪；C 的反例＝evidence-l（Anthropic quickstart 源码，2026-09-28 观测）；状态语义＝result-reliability-interface §四（手册卷首·状态语汇表）。
+- 练习 1：信号表＝capability_ladder/rung-02「你看到的信号」三列表的入门裁剪；C 的反例＝evidence-l（Anthropic quickstart 源码，2026-09-28 观测）；状态语义＝result-reliability-interface §四（手册卷首·状态语汇表）。A 条信号于 2026-10-04 换为旧版对照（原 `npm test 退出码 0` 撤下），依据 [`research/source-synthesis.md`](../../research/source-synthesis.md) §1.12（研究层 digested/09，evidence aa–ae）；「旧证据只作历史」是教学判断，未见产品级执行机制，不作机制声明。
 - 练习 2：三问＝loop_governance manual §1（backbone §0 判据）；丙的纠正＝manual §2 模板入口分流。
 - 练习 3：坏目标原句＝Addy Osmani《Practical Loop Engineering》（2026-08-14，https://addyosmani.com/blog/practical-loop-engineering/），原文见 [evidence-a 补充回源](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md)；零件池与干扰项为本练习编排，不是作者原题；⑤⑦ 区别参照 [evidence-b §4a](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md)。
 - 手册指向：[《循环交接手册》](../../manual/循环交接手册.md)：练习 1→卷首·状态语汇；练习 2→入门一；练习 3→**入门四·目标模板**。
