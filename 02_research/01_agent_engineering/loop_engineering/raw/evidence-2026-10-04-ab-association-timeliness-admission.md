@@ -184,3 +184,16 @@ quality_bar: 引句逐字，双重锚＝本仓库档案行锚＋原始 URL/commi
 | 判据版本切换后的结果失效 | 判据更新 | **无任何来源**；只能写「显式工程建议」（rubric 版本化＋失效规则需自行设计，标非产品机制） | ⚠️ **缺一手锚**——建议该行只给显式工程建议并如实标注 |
 
 **结论**：10 行中 8 行材料齐备；2 行缺——「恢复后旧状态是否复用」（等 LangGraph persistence 补抓）与「判据版本切换后的失效」（无来源，只能以显式工程建议行落地）。
+
+---
+
+## 补抓核证（2026-10-04 晚·curl 直取；闭合 §三待核 1 与准入表缺行 1）
+
+**LangGraph persistence.mdx @ 官方 docs 固定 commit `933a2f9`**（raw.githubusercontent.com 直取全文 1172 行，观测 2026-10-04）：
+
+- 逐字（L196）："When interacting with the saved graph state, you **must** specify a thread identifier. You can view the _latest_ state of the graph by calling `graph.get_state(config)`."——**恢复/读取以 thread_id（可加 checkpoint_id）定位**，无版本准入语义。
+- 逐字（L25）："When a graph node fails mid-execution at a given super-step, LangGraph stores pending checkpoint writes from any other nodes that completed successfully at that super-step. When you resume graph execution from that super-step you don't re-run the successful nodes."——**恢复不重跑成功节点**。
+- 逐字（L12–13）："**Agent Server handles checkpointing automatically** … The server handles all persistence infrastructure for you behind the scenes."——Agent Server 自动持久化已核。
+- time travel / use-time-travel 的 replay 语义见 evidence-ad L4（分叉不改历史、replay 真·重跑）。
+
+**准入表缺行 1「恢复后旧状态是否复用」闭合**：恢复机制已核（从 checkpoint 读取、thread_id 定位、成功节点不重跑）；**「以什么资格复用旧状态」的显式准入规则仍未见**——checkpoint 层只存取状态、不做版本准入，该行维持「显式工程建议」定性不变。

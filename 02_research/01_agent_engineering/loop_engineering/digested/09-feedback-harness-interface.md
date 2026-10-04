@@ -95,7 +95,7 @@
 ## 七、证据强度与未答问题
 
 - **分层**：本篇全部为 P-mechanism / P-existence；不写「已部署」「有收益」。效果层为空。
-- **访问通道说明**：2026-10-04 会话内 web_fetch 工具对多域名报 "hostname resolves to a non-public IP"（**工具层 DNS 异常，非网络不可达**）；[aa]/[ad] 按 evidence-z 先例以 `curl -sL` 实取一手正文并逐字核验。ab/ae 未能补抓的页面（HITL 当日版本、PR #7498）登记待核。
-- **待核**：HITL 文档当日版本变化；Claude Code 25k 上限现状与可配置性；H 三件套是否进入 SDK 默认；Agent Server 自动持久化行为；Aider「auto-test 开而 test-cmd 未配」的实际运行验证与 max_reflections 可配置性、lint/test 超时与截断语义（[aa] 待核 2–6，均为「机制依源码、非实际执行」）。
+- **访问通道说明**：2026-10-04 会话内 web_fetch 工具对多域名报 "hostname resolves to a non-public IP"（**工具层 DNS 异常，非网络不可达**）；全部补抓改走 `curl -sL` 一手直取（[aa]/[ad] 正文及当晚待核闭合批，见各 evidence「补抓核证」节）。
+- **待核（2026-10-04 晚 curl 补抓后更新）**：~~HITL 文档当日版本~~ ✅ 关键句仍在、机制未漂移（[ae 补抓]）；~~LangGraph persistence 逐字~~ ✅ persistence.mdx @ `933a2f9` 全文取得，准入表「恢复后旧状态是否复用」行闭合——恢复机制已核（thread_id 定位、成功节点不重跑），显式版本准入规则仍未见（[ab 补抓]）；~~PR #7498~~ ✅ 已合并 2026-04-16（[ae 补抓]）；~~Agent Server 自动持久化~~ ✅ 官方明写自动处理（[ab 补抓]）；~~Aider max_reflections 可配置性／超时／OSError 分层~~ ✅ 类常量无开关、无超时、两层行为已证（[aa 补抓]）。**仍开放**：Claude Code 25k 上限现状（公开 CHANGELOG 与 settings 页均无该数字，仅 2025-09 博客自述，[ad 补抓]）；H 三件套是否进 SDK 默认；「auto-test 开而 test-cmd 未配」的实际运行验证（仍为机制依源码）。
 - **负结论（未见显式处置）**：平台级旧版结果批量失效；重复通过结果去重；判据版本切换后旧结果失效；resume 起点与中断前证据存留；新批准与旧授权区分；Aider 文档不区分工具异常与目标失败（唯一官方承认的歧义是 formatter 特例，[aa S1b]）。
 - **单源标注**：isitdone 回执机制为实践者一手单人样本（65% 数字不外推）；M8 为未合并提案；M9 为固定 commit 源码证据；[ac] 为打包产物走读（0.2.0-rc.2），非仓库源码。

@@ -190,3 +190,10 @@ update_state 的 reducers 语义（Checkpointers 页）：
 5. W 提到的官方工具定义最佳实践页（"our Developer Guide"）与 tools 动态加载机制页未回源，属 W 路延展。
 
 **临时产物**：本轮抓取的 HTML/文本存于仓库根 `.tmp-t3b-web/`（`.gitignore` 已覆盖），已用毕即弃，不入库。
+
+---
+
+## 补抓核证（2026-10-04 晚·curl 直取；25k 现状仍开放）
+
+- **Claude Code 25k 上限现状**：公开渠道核查无果——anthropics/claude-code `CHANGELOG.md`（main，8204 行，观测 2026-10-04）与 code.claude.com / docs.claude.com 两个 settings 页均无 "25,000" 表述。**W1 的 25k 仍只有 2025-09 工程博客自述一个来源，产品文档现状未核**；不做「仍有效/已失效」任一判断。
+- **H 三件套是否进 SDK 默认**：仍开放（需 Claude Agent SDK 官方文档专项核查，本轮未展开）。

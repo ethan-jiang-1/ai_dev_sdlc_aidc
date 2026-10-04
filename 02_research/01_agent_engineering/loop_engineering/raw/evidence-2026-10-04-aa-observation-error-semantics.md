@@ -274,3 +274,12 @@ if self.test_cmd:
 4. **待核：max_reflections=3 是否可配置**——源码为类常量（base_coder.py L101），文档未见暴露开关。
 5. **待核：run_cmd / run_cmd_subprocess 的失败分层细节**——aider/run_cmd.py 未回源全文；「OSError vs shell 127」的分界按 linter.py 与 commands.py 的调用面推断（已标注机制来源，未读 run_cmd.py 本体）。
 6. **待核：timeout/输出截断语义**——lint/test 命令有无超时、输出上限、编码处理（io.encoding 出现在调用面），文档与已读源码段均未写。
+
+---
+
+## 补抓核证（2026-10-04 晚·curl 直取；闭合待核 3/4，收窄 6）
+
+1. **max_reflections 可配置性**：main 分支 `aider/coders/base_coder.py` L101 仍为类常量 `max_reflections = 3`，全文仅 L939–940 两处使用、无任何配置开关（观测 2026-10-04，机制依源码）——**不可配置**成立。
+2. **超时语义**：`aider/run_cmd.py`（132 行）全文无 timeout 字样；`base_coder.py` 亦无——lint/test **未见超时机制**（机制依源码）。
+3. **OSError/127 分层**：`run_cmd.py` L17 顶层捕获 OSError 并打印 "Error occurred while running command…"；与 `linter.py` 自身的 OSError→None→「无错误」路径是**两层不同行为**——§4d 的推断由 run_cmd.py 本体证实。
+4. 待核 6 收窄：无超时已核；**输出截断上限**在 run_cmd.py/base_coder.py 仍未见显式设定（lint/test 通道），仅 DSH/claude 侧有截断机制对照。

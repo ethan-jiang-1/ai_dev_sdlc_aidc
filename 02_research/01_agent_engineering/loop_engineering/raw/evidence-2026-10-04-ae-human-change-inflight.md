@@ -126,3 +126,10 @@ URL（文档固定 commit）：https://raw.githubusercontent.com/langchain-ai/do
 - 不能因「搜索列表显示相关页面存在」推出任何机制语义；搜索列表只作 §1 标注的 P-existence·弱线索。
 - 不能把 Anthropic Managed Agents 的在途结算语义套用到 LangChain HITL 上（机构与机制都不同）。
 - 不能把 PR #7498 的标题写成「LangGraph time-travel 已知有 bug」的机制主张——标题级线索，未核。
+
+---
+
+## 补抓核证（2026-10-04 晚·curl 直取；闭合 §四待核 1/2）
+
+1. **HITL 文档当日版本**：docs.langchain.com/oss/python/langchain/human-in-the-loop 当前版（观测 2026-10-04，1,051,030 字节渲染页）中，evidence-f 所引关键句仍在——"before any tool calls"（2 处）、checkpointer（24 处）、approve（50 处）。**挂起点在工具执行前、三动作回传、恢复依赖 checkpointer 的机制至 2026-10-04 未漂移**；逐字引句继续以 evidence-f 固定 commit `933a2f92` 为锚。
+2. **LangGraph PR #7498**（api.github.com 实查）：title "fix: time travel when going back to interrupt node"，state closed，**merged 2026-04-16**——time travel 回到 interrupt 节点的行为缺陷已修复并合并。本档 §一的「标题级线索」升为主验：time travel × interrupt 交互在 2026-04 后为已修复合并行为；对「恢复后旧证据资格」结论无影响（该缺口仍开放）。
