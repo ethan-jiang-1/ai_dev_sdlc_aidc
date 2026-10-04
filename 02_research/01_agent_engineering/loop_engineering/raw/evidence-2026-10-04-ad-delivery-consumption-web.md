@@ -197,3 +197,16 @@ update_state 的 reducers 语义（Checkpointers 页）：
 
 - **Claude Code 25k 上限现状**：公开渠道核查无果——anthropics/claude-code `CHANGELOG.md`（main，8204 行，观测 2026-10-04）与 code.claude.com / docs.claude.com 两个 settings 页均无 "25,000" 表述。**W1 的 25k 仍只有 2025-09 工程博客自述一个来源，产品文档现状未核**；不做「仍有效/已失效」任一判断。
 - **H 三件套是否进 SDK 默认**：仍开放（需 Claude Agent SDK 官方文档专项核查，本轮未展开）。
+
+## 补抓核证 2（2026-10-04 晚·W1 现状闭合）
+
+**Claude Code 25k 上限现状已核**（本机实装二进制 Claude Code **2.1.220**，Mach-O，strings 全文提取；npm latest 为 2.1.289）：
+
+- 逐字（Bash 工具提示注入）："If the output exceeds ${Jst()} characters, output will be truncated before being returned to you."；`Jst()` 实现：`UNe("BASH_MAX_OUTPUT_LENGTH", process.env.BASH_MAX_OUTPUT_LENGTH, UZi, $Zi).effective`，`var $Zi=150000, UZi=30000`——**Bash 通道默认 30,000 字符、上限 150,000、env `BASH_MAX_OUTPUT_LENGTH` 可配（SDK 类型文件同含该键）**。按字符不按 token，与 W1 的「25,000 tokens 默认」表述不同——W1 记录的是 2025-09 博客自述，当前版本已演进，两值并存标注。
+- 工具输出截断机制在位：`isResultTruncated` 标志（MCP/listMcpResources 等）、界面提示 "Show full tool output instead of truncated summaries"。
+- Managed Agents 沙箱段（二进制内嵌文档）逐字："If a tool returns more than **100,000 characters (roughly 25,000 tokens)**, the output is automatically offloaded to a file in the sandbox — the agent receives a truncated preview plus the file path and can `read` the full content. No configuration required."——**「≈25,000 tokens」的数字以字符口径（100k chars）存活于 Managed Agents 工具输出落盘机制**；与 W1 的 CLI 工具响应限制是两个机制。
+- 归属边界：压缩包为 wrapper＋安装器（cli.js 随安装下发），以上引句取自本机 2.1.220 二进制；minified 常量无法逐个归属到具体调用点，但截断机制族（提示注入句＋标志＋内嵌文档）三方互证。
+
+## 补抓核证 2（2026-10-04 晚）
+
+- **H 三件套是否进 SDK 默认 → 已核：不随 SDK 提供。** @anthropic-ai/claude-agent-sdk **0.3.289**（npm latest tarball 全包解包 grep，观测 2026-10-04）：`init.sh` / `claude-progress` / `feature_list` / `progress file` / `feature list` **零命中**。effective-harnesses 的三件套是 quickstart 演示物料，不是 SDK 出厂行为；ad 档 H 组的「未核」提示就此闭合（H2/H4/H5 的机制描述仍以博客一手为准，边界不变）。

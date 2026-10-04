@@ -283,3 +283,11 @@ if self.test_cmd:
 2. **超时语义**：`aider/run_cmd.py`（132 行）全文无 timeout 字样；`base_coder.py` 亦无——lint/test **未见超时机制**（机制依源码）。
 3. **OSError/127 分层**：`run_cmd.py` L17 顶层捕获 OSError 并打印 "Error occurred while running command…"；与 `linter.py` 自身的 OSError→None→「无错误」路径是**两层不同行为**——§4d 的推断由 run_cmd.py 本体证实。
 4. 待核 6 收窄：无超时已核；**输出截断上限**在 run_cmd.py/base_coder.py 仍未见显式设定（lint/test 通道），仅 DSH/claude 侧有截断机制对照。
+
+## 实际运行验证（2026-10-04 晚·uv 隔离环境实跑，闭合「auto-test 未配」运行验证项）
+
+环境：aider-chat **0.86.2**（PyPI 实装版），Python 3.11.10，隔离 venv；对真实 `aider.commands.Commands` 实例执行（不做 LLM 调用，io 层以 MagicMock 计数）。
+
+1. **未配置路径（test_cmd=None）实跑确认静默**：`cmd_test("")` 返回 `None`，`tool_output/tool_error/confirm_ask` 计数全 0——模型与用户都收不到「没执行」的信号。§4a 的机制判读由运行时证实（升级为 P-mechanism·运行观测）。
+2. **对照（配置 test_cmd="true"）**：命令进入 `cmd_run` 通道；因 mock cwd 触发 OSError，输出被包进模型可见模板 "I ran this command:\n\ntrue\n\nAnd got this output:\n\n[Errno 2] …"——**环境故障与测试失败在 /test 通道同形**（运行时实证 §三例 3 的判读；该错误文本来自 mock 环境伪影，非产品缺陷声明）。
+3. **版本注意**：0.86.2 的 `cmd_test` 与 main 分支有差异——多一个 callable 分支（`errors = args()`，支持可调用 test_cmd）。本仓引句以 main 源码档为准；运行验证在 0.86.2 上进行，两版「未配置即静默」语义一致（0.86.2 源码 L100–104 同为 `if not args: return`）。
