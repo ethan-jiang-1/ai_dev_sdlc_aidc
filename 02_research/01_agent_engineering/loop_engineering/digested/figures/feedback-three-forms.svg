@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1e3a8a"/></marker>
+    <style>
+      .title{font-size:30px;font-weight:700;fill:#102a43}.sub{font-size:17px;fill:#334e68}.laneTitle{font-size:19px;font-weight:700;fill:#0f172a}.cardTitle{font-size:17px;font-weight:700}.body{font-size:14px;fill:#243b53}.small{font-size:13px;fill:#486581}.limit{font-size:14px;font-weight:700;fill:#92400e}.footer{font-size:14px;fill:#52606d}.legend{font-size:14px;fill:#334e68}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="#f7fafc"/>
+  <text x="50" y="48" class="title">反馈的三条形态：同一问题，三种投递与恢复方式</text>
+  <text x="50" y="78" class="sub">三态各自作用于不同环节（单次工具响应 / 图状态 / 上下文窗口），不可直接互比；蓝卡＝已核机制，黄条＝限定与边界。</text>
+
+  <!-- 形态一 -->
+  <rect x="50" y="104" width="1180" height="168" rx="12" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
+  <text x="70" y="132" class="laneTitle" fill="#075985">形态一 · 同步工具回灌（同一会话，轮内闭环）</text>
+  <rect x="70" y="148" width="200" height="76" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="84" y="174" class="cardTitle" fill="#075985">工具 / 命令执行</text>
+  <text x="84" y="196" class="body">stdout / stderr / 退出码</text>
+  <text x="84" y="216" class="small">DSH：保尾丢头 64KB＋spill</text>
+  <path d="M270 186 H306" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="310" y="148" width="200" height="76" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="324" y="174" class="cardTitle" fill="#075985">收集与截断</text>
+  <text x="324" y="196" class="body">Claude Code 默认 25k token</text>
+  <text x="324" y="216" class="small">截断须附引导指令</text>
+  <path d="M510 186 H546" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="550" y="148" width="200" height="76" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="564" y="174" class="cardTitle" fill="#075985">格式化标记</text>
+  <text x="564" y="196" class="body">[exit code: N] 文本标记</text>
+  <text x="564" y="216" class="small">Aider：非零才喂，exit 0 不留痕</text>
+  <path d="M750 186 H786" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="790" y="148" width="200" height="76" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="804" y="174" class="cardTitle" fill="#1e40af">下一轮模型输入</text>
+  <text x="804" y="196" class="body">role:tool / tool_result</text>
+  <text x="804" y="216" class="small">DSH 9 跳走读：全量派生</text>
+  <path d="M990 186 H1026" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="1030" y="148" width="180" height="76" rx="9" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="1044" y="174" class="cardTitle" fill="#166534">改变下一动作</text>
+  <text x="1044" y="196" class="body">修复回环（Aider ≤3 次</text>
+  <text x="1044" y="216" class="small">且需人确认）</text>
+  <text x="70" y="252" class="limit">限定：工具失败无 harness 侧重试/熔断——"the model decides how to react"（DSH 源码）；观察是失败侧单向，通过事件不留痕。</text>
+
+  <!-- 形态二 -->
+  <rect x="50" y="290" width="1180" height="150" rx="12" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
+  <text x="70" y="318" class="laneTitle" fill="#1e40af">形态二 · 独立 grader 回传（角色分离）</text>
+  <rect x="70" y="334" width="200" height="66" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="84" y="360" class="cardTitle" fill="#075985">干活模型产出</text>
+  <text x="84" y="382" class="small">与判定角色分置</text>
+  <path d="M270 367 H306" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="310" y="334" width="200" height="66" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="324" y="360" class="cardTitle" fill="#075985">独立 evaluator</text>
+  <text x="324" y="382" class="body">按 rubric 裁决</text>
+  <path d="M510 367 H546" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="550" y="334" width="200" height="66" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="564" y="360" class="cardTitle" fill="#1e40af">裁决＋理由回灌</text>
+  <text x="564" y="382" class="body">同一 session 下一轮</text>
+  <path d="M750 367 H786" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="790" y="334" width="240" height="66" rx="9" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="804" y="360" class="cardTitle" fill="#92400e">rubric 跨会话复用</text>
+  <text x="804" y="382" class="body">Files API；无版本字段（未见）</text>
+  <text x="70" y="426" class="limit">限定：reasoning-blind（剥模型自述）只适用动作审批分类器；完成裁判必须看真实证据。判据版本切换后旧结果如何失效：未见任何来源。</text>
+
+  <!-- 形态三 -->
+  <rect x="50" y="458" width="1180" height="150" rx="12" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
+  <text x="70" y="486" class="laneTitle" fill="#334155">形态三 · 跨会话重装状态（恢复）</text>
+  <rect x="70" y="502" width="200" height="66" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="84" y="528" class="cardTitle" fill="#075985">session 结束</text>
+  <text x="84" y="550" class="small">中断 / 过期 / 交人</text>
+  <path d="M270 535 H306" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="310" y="502" width="200" height="66" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="324" y="528" class="cardTitle" fill="#075985">持久化</text>
+  <text x="324" y="550" class="body">checkpoint/thread_id、日志</text>
+  <path d="M510 535 H546" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="550" y="502" width="200" height="66" rx="9" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="564" y="528" class="cardTitle" fill="#075985">恢复</text>
+  <text x="564" y="550" class="body">DSH：旧工具结果逐字重放</text>
+  <path d="M750 535 H786" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="790" y="502" width="240" height="66" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="804" y="528" class="cardTitle" fill="#991b1b">旧证据以什么资格复用</text>
+  <text x="804" y="550" class="body">未见一手机制（负结论）</text>
+  <text x="70" y="594" class="limit">限定：LangGraph 恢复只能从检查点，time-travel 分叉不改历史、replay 真·重跑；关键事实不进压缩摘要、进外置工件。</text>
+
+  <!-- 底部 -->
+  <rect x="50" y="626" width="1180" height="52" rx="10" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
+  <text x="70" y="648" class="legend">读法：蓝＝已核机制（源码 / 官方文档）；黄＝限定或未见；红＝断点 / 负结论。三形态分别作用于单次工具响应、判定角色、跨会话状态——逐机制判读见 digested/09 §四。</text>
+  <text x="70" y="670" class="legend">证据：evidence-ac（DSH 0.2.0-rc.2 源码走读）· evidence-ad（Anthropic ×2 + LangGraph，curl 一手）· evidence-aa/ab/ae（2026-10-04）；机制存在 ≠ 效果已证。</text>
+  <text x="50" y="704" class="footer">digested/figures · 与 digested/09-feedback-harness-interface.md §四 配套 · 绘制 2026-10-04</text>
+</svg>

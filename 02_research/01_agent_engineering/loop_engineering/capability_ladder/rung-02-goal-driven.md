@@ -35,6 +35,8 @@
 
 **结果可信闭环的附加检查**：即使三值检查器给 `Met`，仍需核它看见的证据是否覆盖目标、不变式和真实版本，执行者是否能改判据；量不到的业务结果继续留给人或另设外部观察。见 [结果可信闭环交接页](result-reliability-interface.md) 的五个接口。它不把所有 LE2 任务强制升级成独立模型裁判，也不拿预算上限当成功信号。
 
+**未达成理由的消费（2026-10-04 增；逐机制判读见 [digested/09](../digested/09-feedback-harness-interface.md)）**：`Not yet met` 的评估理由要有指定消费者（下一轮的行动依据），否则续轮没有依据；续跑资格＝证据适用当轮＋授权有效＋有推进/补查依据。正常值（达成理由）与未知反馈（证据缺失/未执行）分开记录——证据缺失不是 `Impossible`，也不能默记为通过（Aider 的 outcome 通道把「未执行」与「通过」记成同值，[digested/09](../digested/09-feedback-harness-interface.md) §二）。
+
 **最硬的反向实验**：Anthropic 的 [官方 quickstart 源码](../raw/evidence-2026-09-28-l-quickstart-code.md) 里，`progress.py` 会打印 `passing/total`，但 `agent.py` 没有 `passing == total` 的退出分支；成功时 `run_agent_session` 仍回 `continue`，`--max-iterations` 默认 `None`（无限），错误也换新 session 重试。`only modify passes` 与“不可改测试”只写在 prompt，驱动层也未校验遵从；进度条既不是停机闸门，文本禁令也不是测试权限隔离。应分别追到驱动层 `break`/return 路径和实际写权限。这是 demo 的源码现象，不外推为 `/goal` 的实现或 Anthropic 生产系统。
 
 ## 二、支撑、反例与回源待办（⏳ 条目不计入支撑）

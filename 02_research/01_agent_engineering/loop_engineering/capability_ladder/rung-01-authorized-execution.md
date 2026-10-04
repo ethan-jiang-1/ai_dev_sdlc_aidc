@@ -21,6 +21,8 @@
 
 这是一张**跨产品教学流程图，不是某产品原样代码**。不同实现不能拼成一份默认配置：Cursor 对 Shell/MCP/Fetch 采用 allowlist→sandbox→classifier/人工的三级处置（[evidence-u S4a](../raw/evidence-2026-09-30-u-post-june-kols.md)）；Codex 固定版本的 `exec_policy.rs` 将危险命令、沙箱、项目信任和审批策略映射到 `Skip / NeedsApproval / Forbidden`，`Never` 对本需问人的操作可能变成**拒绝而非放行**（[evidence-f Source 1](../raw/evidence-2026-09-27-f-autonomy-gates.md)）。Claude Code auto mode 拒绝动作会作为工具结果返回，连续 3 次或累计 20 次拒绝便停机升级；这两个数字是**动作拒绝预算，不是工作轮数上限**（[evidence-b §4b](../raw/evidence-2026-09-26-b-stop-and-scheduling.md)）。
 
+**拒绝结果的反馈去向（2026-10-04 增；逐机制判读见 [digested/09](../digested/09-feedback-harness-interface.md)）**：拒绝要作为工具结果返回到**提议该动作的同一执行者**，并附「换安全路径」指引（auto mode deny-and-continue）；没有消费者或接手路径的拒绝不算完成反馈——用户报告中「分类器拒绝了，但无人在环接手」就是这条断掉的实例（evidence-f，见 digested/03 §三）。
+
 **走一遍（示意任务：在一个受限仓库内修复测试）**：
 
 | 提议动作 | 规则应区分什么 | 学员实际查看什么 |

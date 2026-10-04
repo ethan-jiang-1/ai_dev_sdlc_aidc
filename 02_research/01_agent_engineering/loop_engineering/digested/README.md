@@ -6,6 +6,7 @@
 ## 增长规则
 
 - 新议题 → 建 `NN-<slug>.md`（编号取当前最大 +1）→ 下表加一行。**不改已有编号**。
+- **判读配图（2026-10-04 增）**：判读如需机制图，放 `figures/`（命名 `<议题>-<内容>.svg`，与 1280×720、PingFang SC 的 [capability_ladder/figures](../capability_ladder/figures/) 风格一致），正文用相对路径引用并在图注写清「研究归纳 / 已核机制」口径；现役图只在 [`09`](09-feedback-harness-interface.md)（feedback-path-breaks、feedback-three-forms）。
 - 新 KOL 的专项消化 → 建 `kol/<slug>.md`（slug 与 [`../raw/kol-roster.md`](../raw/kol-roster.md) 对齐）。
   **有料才写**——词源碎片级的人（Cherny / Steinberger，见台账定性）不建消化稿，其结论在 digested/01 与时间线。
 - 结论过筛后进实践层 [`03_practice/loop_governance/`](../../../../03_practice/loop_governance/README.md)；**未过筛的不要搬走**。
@@ -24,6 +25,7 @@
 | 06 | **Automation → Autonomy → Harness → Loop？**：是阶段迁移、harness 引发，还是控制面逐层外移与构件重命名；DSH 为什么“跑得动但看不清” | ✅ 初步判读（2026-09-27，evidence-e/g/h；P-existence/P-mechanism） | [`06-automation-autonomy-harness-loop.md`](06-automation-autonomy-harness-loop.md) |
 | 07 | **控制问题矩阵**：取题 / 授权 / 执行 / 验证 / 停止 / 记忆 / 升档 / 复盘。每格只有已回源做法和它证明不了的事；feature 级空的是授权史、priority 变更、业务阻塞原因、跨 feature 验收 | ✅ 综合判读（2026-09-27，无新一手；A–I） | [`07-控制问题矩阵.md`](07-控制问题矩阵.md) |
 | 08 | **KOL 概念对齐**：共同最小交集是 Goal/边界 → 行动 → 环境反馈 → Eval/裁判 → 继续/停止/升级 → 状态与结果分账；Ng 三环是产品反馈与规格演化总图，不是停止条件或自主度 taxonomy；Osmani/Runkle/Claude Code 的外延仍有冲突 | ✅ 已答（2026-09-28，基于 evidence-a/b 与 Andrew Ng 一手素材卡） | [`08-kol-alignment-andrew-ng.md`](08-kol-alignment-andrew-ng.md) |
+| 09 | **反馈接口**：结果从环境到控制路径——断点六类、Loop 对 Harness 的能力要求七项、三形态跨实现比较（同步工具回灌/独立 grader 回传/跨会话重装状态）、异常资格、人的变更传播；不把 Feedback 立为第四分类 | ✅ 初步判读（2026-10-04，evidence aa–ae；P-mechanism；T5/T6 条件增补未启动） | [`09-feedback-harness-interface.md`](09-feedback-harness-interface.md) |
 
 ## 已完成的 KOL 专项消化
 
@@ -49,3 +51,8 @@
 | [`../raw/evidence-2026-09-27-j-local-goal-session.md`](../raw/evidence-2026-09-27-j-local-goal-session.md) | 一条真实 DSH goal 的七字段事后编码。对照臂未跑。`roundsStarted` 为 0 | 07 §五。不是 P-outcome |
 | [`../raw/evidence-2026-09-27-k-unrolling-codex-agent-loop.md`](../raw/evidence-2026-09-27-k-unrolling-codex-agent-loop.md) | Codex agent loop 的候选页面摘录：assistant message 据摘录是 turn 的终止态。正题 Unrolling；直接 HTTP 403，待独立复核 | 03 候选裁判语义。不增加 OpenAI 票。不把「四拍」当原文 |
 | [`../raw/evidence-2026-09-27-i2-teams-evals-outcome.md`](../raw/evidence-2026-09-27-i2-teams-evals-outcome.md) | I 路批次 2 五切口：控制面候选形态、行为面验证、定量效果、谱系、SDD×loop 组合；档案内逐条区分 `【主验】` 与 `【侦察回源】`，后者须复验，不增加独立票 | 01/06/07 候选增量；P-outcome 场景地图；不自动关闭缺口 |
+| [`../raw/evidence-2026-10-04-aa-observation-error-semantics.md`](../raw/evidence-2026-10-04-aa-observation-error-semantics.md) | T1 观察与错误语义：Aider 退出码契约、未执行与通过在 outcome 通道同值、formatter/OSError/127 三类异常不可分辨、「观察最多支持何种声明」三例雏形 | 09 |
+| [`../raw/evidence-2026-10-04-ab-association-timeliness-admission.md`](../raw/evidence-2026-10-04-ab-association-timeliness-admission.md) | T2 关联时效与准入：M1–M10 绑定机制、迟到/旧版/重复处置（含两处「未见显式处置」负结论） | 09 |
+| [`../raw/evidence-2026-10-04-ac-delivery-consumption-dsh.md`](../raw/evidence-2026-10-04-ac-delivery-consumption-dsh.md) | T3a DSH 0.2.0-rc.2 源码 9 跳端到端走读：截断/spill/格式化/注入/派生/映射；工具失败无 harness 侧熔断 | 09 |
+| [`../raw/evidence-2026-10-04-ad-delivery-consumption-web.md`](../raw/evidence-2026-10-04-ad-delivery-consumption-web.md) | T3b 网页一手（curl 实取）：writing-tools-for-agents / effective-harnesses / LangGraph persistence＋checkpointers＋use-time-travel | 09 |
+| [`../raw/evidence-2026-10-04-ae-human-change-inflight.md`](../raw/evidence-2026-10-04-ae-human-change-inflight.md) | T4 人的变更与在途处置：中断→恢复→变更传播机制清单；「旧版只作历史」未见一手机制（负结论） | 09 |

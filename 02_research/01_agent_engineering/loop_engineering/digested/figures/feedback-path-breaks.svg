@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1e3a8a"/></marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b91c1c"/></marker>
+    <style>
+      .title{font-size:30px;font-weight:700;fill:#102a43}.sub{font-size:17px;fill:#334e68}.label{font-size:16px;font-weight:700;fill:#486581}.cardTitle{font-size:19px;font-weight:700}.body{font-size:15px;fill:#243b53}.small{font-size:13.5px;fill:#486581}.breakTitle{font-size:15px;font-weight:700;fill:#991b1b}.breakBody{font-size:13px;fill:#7f1d1d}.footer{font-size:14px;fill:#52606d}.legend{font-size:14px;fill:#334e68}
+    </style>
+  </defs>
+  <rect width="1280" height="720" fill="#f7fafc"/>
+  <text x="50" y="48" class="title">反馈路径与六类断点：结果从环境到控制路径</text>
+  <text x="50" y="78" class="sub">路径分段是研究归纳（digested/09 §二），不是某产品的统一协议；红色＝断点（有已核证样本或负结论）。</text>
+
+  <!-- 人的变更泳道（断点⑥） -->
+  <rect x="50" y="102" width="960" height="58" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="70" y="127" class="breakTitle">人的变更（目标 / 判据 / 授权）</text>
+  <text x="70" y="149" class="breakBody">变更传播链：记录变更人与生效版本 → 列受影响证据 → 处置在途工作 → 确认收到并生效 → 按新边界重验</text>
+  <path d="M1010 131 H1108" stroke="#dc2626" stroke-width="3" fill="none" marker-end="url(#arrowRed)"/>
+  <rect x="1112" y="104" width="118" height="54" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="1124" y="126" class="breakTitle">⑥ 未到在途</text>
+  <text x="1124" y="147" class="breakBody">消息发出≠worker 已停</text>
+
+  <!-- 主路径：五卡 -->
+  <text x="50" y="196" class="label">一条结果的主路径（每段都可独立断）</text>
+
+  <rect x="50" y="214" width="210" height="118" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="66" y="242" class="cardTitle" fill="#075985">环境产生</text>
+  <text x="66" y="268" class="body">退出码、原始输出</text>
+  <text x="66" y="290" class="body">检查是否真的执行</text>
+  <text x="66" y="316" class="small">DSH：保尾丢头＋spill 指回</text>
+
+  <path d="M260 273 H296" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="300" y="214" width="210" height="118" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="316" y="242" class="cardTitle" fill="#075985">关联当前对象</text>
+  <text x="316" y="268" class="body">目标 × 工件 × 判据 × 环境</text>
+  <text x="316" y="290" class="body">版本锚 / 运行 ID / 树哈希</text>
+  <text x="316" y="316" class="small">isitdone：change one file → STALE</text>
+
+  <path d="M510 273 H546" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="550" y="214" width="210" height="118" rx="10" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="566" y="242" class="cardTitle" fill="#075985">投递</text>
+  <text x="566" y="268" class="body">格式化、截断、摘要</text>
+  <text x="566" y="290" class="body">截断须附引导指令</text>
+  <text x="566" y="316" class="small">压缩会失真（Anthropic 一手句）</text>
+
+  <path d="M760 273 H796" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="800" y="214" width="210" height="118" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="816" y="242" class="cardTitle" fill="#1e40af">实际消费者</text>
+  <text x="816" y="268" class="body">下一轮模型输入，</text>
+  <text x="816" y="290" class="body">或 harness 控制分支</text>
+  <text x="816" y="316" class="small">grader 回灌 / 独立 retry</text>
+
+  <path d="M1010 273 H1046" stroke="#1e3a8a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="1050" y="214" width="180" height="118" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="1066" y="242" class="cardTitle" fill="#166534">去向与复验</text>
+  <text x="1066" y="268" class="body">修 / 重查 / 有界重试</text>
+  <text x="1066" y="290" class="body">/ 停止 / 交人</text>
+  <text x="1066" y="316" class="small">复验后再进入下一轮</text>
+
+  <path d="M1140 332 V368 H155 V332" stroke="#0284c7" stroke-width="2.5" fill="none" stroke-dasharray="8 5" marker-end="url(#arrow)"/>
+  <text x="560" y="360" class="small">下一轮（复验：核对版本锚与旧证据资格）</text>
+
+  <!-- 断点徽标行 -->
+  <rect x="50" y="398" width="210" height="86" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="64" y="422" class="breakTitle">① 没产生</text>
+  <text x="64" y="444" class="breakBody">检查未配置是出厂默认</text>
+  <text x="64" y="466" class="breakBody">「未执行」与「通过」同值</text>
+
+  <rect x="300" y="398" width="210" height="86" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="314" y="422" class="breakTitle">③ 错关联</text>
+  <text x="314" y="444" class="breakBody">旧版绿灯放行当前版</text>
+  <text x="314" y="466" class="breakBody">平台级批量失效：未见</text>
+
+  <rect x="550" y="398" width="210" height="86" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="564" y="422" class="breakTitle">② 没送达 / 失真</text>
+  <text x="564" y="444" class="breakBody">截断、摘要、压缩丢关键事实</text>
+  <text x="564" y="466" class="breakBody">裸错误码不可行动</text>
+
+  <rect x="800" y="398" width="210" height="86" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="814" y="422" class="breakTitle">⑤ 没消费</text>
+  <text x="814" y="444" class="breakBody">有裁决，没有分支读它</text>
+  <text x="814" y="466" class="breakBody">拒绝了但没人接手</text>
+
+  <rect x="425" y="516" width="430" height="86" rx="9" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="439" y="540" class="breakTitle" fill="#92400e">④ 检查错误与目标失败混淆</text>
+  <text x="439" y="562" class="breakBody" fill="#92400e">退出码通道不区分失败种类：formatter 非零 / OSError→通过 / 127→失败，互相不可分辨</text>
+  <text x="439" y="584" class="breakBody" fill="#92400e">（Aider 文档未区分、源码通道设计不区分；CC /goal 有显式错误分类）</text>
+  <path d="M640 516 V490" stroke="#d97706" stroke-width="2" fill="none"/>
+
+  <!-- 底部判定句 -->
+  <rect x="50" y="620" width="1180" height="66" rx="10" fill="#ffffff" stroke="#bcccdc" stroke-width="2"/>
+  <text x="70" y="647" class="legend">核心限定：日志是记录形式，不等于结果被使用；「有回执」≠「修复正确」；结果产生 → 成为当前证据 → 参与实际决定，是三个环节。</text>
+  <text x="70" y="672" class="legend">异常资格：缺失 / 过期 / 迟到 / 重复 / 矛盾——不预设统一状态枚举，不预设每次异常都停机；未知阻止达成声明与扩权，允许授权内补查。</text>
+  <text x="50" y="708" class="footer">来源：digested/09-feedback-harness-interface（2026-10-04）· 机制锚 evidence-aa/ac/ad/ab/ae · 路径分段为研究归纳，非 KOL 原文</text>
+</svg>

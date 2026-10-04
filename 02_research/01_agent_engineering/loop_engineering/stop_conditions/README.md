@@ -26,6 +26,8 @@
 
 三件同向，对抗同一个目标敌人：**提前宣告完成**（Anthropic 官方点名的长程 agent 头号失败模式）。
 
+**反馈接口指针（2026-10-04 增）**：闸门与上限的红灯要进入实际控制路径才生效——结果产生、关联、投递、消费与异常资格的逐机制判读见 [`../digested/09-feedback-harness-interface.md`](../digested/09-feedback-harness-interface.md)。本区深挖表述为进行时工作稿，过筛口径以 [`result/landscape.md`](../result/landscape.md) §7 为准。
+
 ## 二、深挖总览：从“三条二元补丁”到“双环三层控制架构”的范式跃迁
 
 在本专项深挖之前，行业对停止条件往往停留在直觉性的“三条二元补丁”：

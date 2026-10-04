@@ -43,7 +43,7 @@ LE0→LE3 量的是**授权、续跑、唤醒交给谁**；结果可信闭环问
 | LE3 | 在 LE2 问题上再查状态/证据新鲜度、外层预算、取消传播、跨次及跨 feature 接手；定时唤醒不是质量放行。 |
 | 支线 A/B | 分工后还需合并/整树验收；改动判据、权限、停止规则不能让改动者自行放行。 |
 
-[结果可信闭环交接页](result-reliability-interface.md)给出可观察证据、裁决协议、资源和跨次责任的联调问题与失败例子；一手对照补档见 [evidence-y](../raw/evidence-2026-09-30-y-long-run-result-reliability.md)。goal/eval **构造与调优**仍由 [agent_goal_eval](../../goal_eval_engineering/README.md) 判读，停止构件归 [stop_conditions](../stop_conditions/README.md)。外置否决是对静默高风险任务的**审慎准入建议**，不声称各家实例都采用同一个 grader，也不把“裁判分离”误写成“判得一定对”。
+[结果可信闭环交接页](result-reliability-interface.md)给出可观察证据、裁决协议、资源和跨次责任的联调问题与失败例子；一手对照补档见 [evidence-y](../raw/evidence-2026-09-30-y-long-run-result-reliability.md)。反馈路径的逐机制判读（结果如何从环境到达实际消费者、Loop 对 Harness 的能力要求）见 [digested/09](../digested/09-feedback-harness-interface.md)，不改 LE 分档。goal/eval **构造与调优**仍由 [agent_goal_eval](../../goal_eval_engineering/README.md) 判读，停止构件归 [stop_conditions](../stop_conditions/README.md)。外置否决是对静默高风险任务的**审慎准入建议**，不声称各家实例都采用同一个 grader，也不把“裁判分离”误写成“判得一定对”。
 
 ## 三、三处容易教错的边界
 

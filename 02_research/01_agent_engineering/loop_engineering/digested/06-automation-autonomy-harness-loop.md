@@ -82,6 +82,7 @@ DSH 的一手机制正好落在“有执行 loop，但没有完整 feature contr
 - **Harness**：先把单次运行托住。它回答“模型看到什么、能做什么、哪些动作被拦、结果如何验证、崩溃后怎么恢复”。
 - **Loop**：再把多轮运行组织起来。它回答“下一轮为什么启动、下一项从哪里来、何时停止、谁升级、状态如何接续”。
 - **SDD**：提供变更/意图/任务/验收的外部产物。它可以成为 loop 的工作来源、状态记忆和验收依据，但不是 loop 的对立面。
+- **反馈接口（2026-10-04 增）**：上述分工落到反馈路径上——Harness 承担环境事实的**取得与投递**（观察、截断、摘要、恢复；DSH 源码 9 跳走读与三形态比较见 [`09`](09-feedback-harness-interface.md) §四），Loop 负责**核查**结果是否适用于本次决定、并被实际消费（续停/修复/停止/升级的分支归属）。[`09`](09-feedback-harness-interface.md) 的跨实现比较是 §八实验候选的机制基础；feature-ledger 议题保留不变，本篇「叠加而非阶段史」的判定不改。
 
 因此用户从 SDD 到 DSH 的感觉不是“SDD 被 automation 取代”，而是**原来由 SDD 产物显性承担的工作控制面，在 DSH 中部分落到 goal/对话/agent 临时判断上，而 DSH 原生没有替插件仓补齐 feature-level ledger**。这也是为什么后续 `loop_governance` 需要和 `harness_governance` 成对，而不应吞掉 `spec_driven_development`。
 
