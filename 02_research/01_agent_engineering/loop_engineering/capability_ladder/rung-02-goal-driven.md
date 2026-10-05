@@ -99,6 +99,8 @@
 - goal 措辞含糊 → 循环烧钱无果：行为面反例矩阵待收口（CURRENT 缺口 5），落位后搬入 ⏳。
 - 评估者只读 transcript 的局限（Osmani 口径）→ 与 ③ 验收分离（[`stop_conditions/03_verdict_split/`](../stop_conditions/03_verdict_split/README.md)）衔接。
 
+**目标难定义或只有步骤时**：不要求先把所有质量写成数字。可以把“可复核诊断报告”“候选集与对照证据”设成局部交付目标，自动完成它不等于最终体验/业务验收；固定步骤运行与真正按失败理由续跑分开。目的选择、有界探索与最小协议见 [Goal/Eval × Loop](goal-eval-axis.md)。
+
 ## 四、进入 LE3 前的额外检查
 
 LE2 的多轮续跑不自动提供定时或事件唤醒。当任务需要**以后再次起跑**（CI 轮询、夜间跑批），先定触发范围和**硬上限与熔断**（[`stop_conditions/02_hard_caps/`](../stop_conditions/02_hard_caps/README.md)）；如跨会话运行，还须状态持久、取消传播和人工接手。也可停留在 LE2，直接探索有界的并行研究支线，不把 LE3 当所有后续能力的前置。

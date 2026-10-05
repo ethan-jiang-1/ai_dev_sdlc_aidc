@@ -37,7 +37,7 @@
 
 **教学收口**：前三个交接问题可以循序演示；高阶展示“这条路往哪走、哪些场景可用、我们还不知道什么”，不是保证学完就能无人值守地并发自改。[00-map](00-map.md) 列各档一手锚点、分歧与效果边界。
 
-**结果可信闭环**：主线 LE0→LE3 只解释交出哪些**控制决定**；结果放行还须接通“目标 → 证据 → 裁决 → 停机/交接 → 后验复核”。尤其 LE3 的静默任务要查目标可观察性、证据完整性、裁判可错性、外层预算及取消/接手。先读 [00-map「结果可信闭环」](00-map.md) 的判定，再用 [结果可信闭环交接页](result-reliability-interface.md) 对具体任务逐项检查；goal/eval 如何构造仍在 [agent_goal_eval](../../goal_eval_engineering/README.md)。
+**结果可信闭环**：主线 LE0→LE3 只解释交出哪些**控制决定**；结果放行还须接通“目标 → 证据 → 裁决 → 停机/交接 → 后验复核”。尤其 LE3 的静默任务要查目标可观察性、证据完整性、裁判可错性、外层预算及取消/接手。先读 [00-map「结果可信闭环」](00-map.md) 的判定，再用 [结果可信闭环交接页](result-reliability-interface.md) 对具体任务逐项检查；goal/eval 如何构造仍在 [agent_goal_eval](../../goal_eval_engineering/README.md)。新增 [Goal/Eval × Loop](goal-eval-axis.md)：按任务目的选择流程、诊断、修复、优化、探索、巡检；G0–G3 解释发现判据、构造交付、判定迭代与校准验收四种能力，外部结果观察另列。支持有界自动探索和过程型交付，LE3 巡检不以业务指标为前提。
 
 ### 技术走读索引
 
@@ -68,6 +68,8 @@
 | 本 README | 初衷、分工、教学路线、待办 |
 | [00-map](00-map.md) | 本区唯一的分层/证据判定与分歧边界 |
 | [结果可信闭环交接页](result-reliability-interface.md) | 将目标、证据、裁决、停机/交接、后验复核接成一条可检查的放行链；goal/eval 的构造判读仍在其专项 |
+| [Goal/Eval × Loop](goal-eval-axis.md) | 任务目的 × 控制交接 × 判定能力的选择框架；只有步骤、目标难写时的可执行路径、最小协议与三份任务合同 |
+| Goal/Eval 三张图：[双轴与组合](figures/goal-eval-dual-axis.svg)、[任务选型](figures/goal-eval-task-selection.svg)、[每轮判定](figures/goal-eval-decision-loop.svg) | 对应综合页 §2、§3、§5；图是正文的教学视图，保留声明边界与未知出口 |
 | [LE0 基线](rung-00-manual-baseline.md) | 人手动逐次发起的可演示对照，不是无工具 Agent |
 | `rung-01..03-*.md` | 主线三档：LE1 有界执行、LE2 有界目标续跑、LE3 定时/事件唤醒 |
 | [branch-a-orchestration](branch-a-orchestration.md) / [branch-b-meta-loop](branch-b-meta-loop.md) | 可选高阶方向：编排与改进循环本身，非 LE3 后必经阶 |

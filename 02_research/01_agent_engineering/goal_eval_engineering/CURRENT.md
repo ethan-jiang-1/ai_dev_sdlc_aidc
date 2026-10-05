@@ -1,6 +1,6 @@
 # 当前状态（热区）
 
-> 最近一次更新：**2026-09-27**。Lenny 点名的公司帖已打开。能进主表的是 Rippling 8 月那套金数据。档案一览在 [`raw/research-plan.md`](raw/research-plan.md) §2.1。
+> 最近一次更新：**2026-10-05**。在既有三篇判读和 loop 主题结果可信闭环上，新增既有证据桥接索引与跨主题综合指针；官方网页抓取受限，未新增网页主验。当前综合结论：步骤执行可以是合法交付目标，但不能代替隐藏需求验收；目标难判时做有界探索、切片验收或外部结果观察。档案一览在 [`raw/research-plan.md`](raw/research-plan.md) §2.1。
 
 ## 一句话
 
@@ -14,12 +14,15 @@
 | [`digested/02-eval-调优.md`](digested/02-eval-调优.md) | ✅ 五家进主表。Glean 的数单独放，因为检查句子或实验形状不够 |
 | [`digested/03-难设计.md`](digested/03-难设计.md) | ✅ 切开核对面 / 结果留给人 / 人先标 |
 | [`raw/evidence-2026-09-27-b5-company-posts.md`](raw/evidence-2026-09-27-b5-company-posts.md) | ✅ Rippling 8 月 25 日：四格裁判，Claude Code +41%，超时 −70%。Glean、ElevenLabs 打开后不进主表 |
-| [`raw/research-plan.md`](raw/research-plan.md) | ✅ §2.1 是档案一览。一份档案只回答一路 |
+| [`raw/research-plan.md`](raw/research-plan.md) | ✅ §2.1 是档案一览；跨主题汇编标为桥接索引，不增加新来源票 |
+| [`raw/evidence-2026-10-05-goal-eval-loop-bridge.md`](raw/evidence-2026-10-05-goal-eval-loop-bridge.md) | ✅ 既有一手档案的桥接汇编；保留 URL 与原核验日期，不算本轮重新网页主验 |
+| [Goal/Eval × Loop](../loop_engineering/capability_ladder/goal-eval-axis.md) | ✅ 同层综合接口：目的选择、G0–G3 局部能力、最小协议与三份任务合同；goal/eval 构造的权威仍为三篇判读 |
 
 ## 下一步
 
-1. 再收工程帖：要有检查的句子，以及改了哪一步、哪个数动了。
-2. 付费墙或登录墙后面仍然没有：Lenny 聚类表、Loopcraft 后半、Cherny 步骤表正文。
+1. 新增索引没有新主验条目；下一轮在真实任务中检验跨主题选择框架，记录判据变更、未知与交接；不把 G0–G3 说成已验证标准。
+2. 再收工程帖：要有检查的句子，以及改了哪一步、哪个数动了。
+3. 付费墙或登录墙后面仍然没有：Lenny 聚类表、Loopcraft 后半、Cherny 步骤表正文。
 
 ## 缺口
 
@@ -33,6 +36,7 @@
 ## 铁律速记
 
 - **定调在 `README.md` §1。**
+- Loop 交接轴与 Goal/Eval 判定轴分开；跨主题综合见 [`../loop_engineering/capability_ladder/goal-eval-axis.md`](../loop_engineering/capability_ladder/goal-eval-axis.md)。
 - 站得住的做法并列保留。
 - 要收的是动作和例子，不是更糊的方向。
 - 引句留在 `raw/`。判读只在 `digested/`。名单只在 `roster.md`。

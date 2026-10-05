@@ -57,6 +57,7 @@
 | [`evidence-2026-09-27-b4-abridge.md`](evidence-2026-09-27-b4-abridge.md) | B | Abridge 的逐条必须项。Robinhood 的负结论 |
 | [`evidence-2026-09-27-b5-company-posts.md`](evidence-2026-09-27-b5-company-posts.md) | B | Rippling、Glean、ElevenLabs。此前只有链 |
 | [`evidence-2026-09-27-c-hard.md`](evidence-2026-09-27-c-hard.md) | C | 验不了时切开核对面；结果看不见时留在人这边 |
+| [`evidence-2026-10-05-goal-eval-loop-bridge.md`](evidence-2026-10-05-goal-eval-loop-bridge.md) | 跨主题桥接索引 | 既有回源的合同、停止语义、持久反馈与裁判边界；官方网页本轮抓取受限，不增加新主验或独立来源票，综合结论由 capability ladder 接口承载 |
 
 A5、A8 的小标题是口播和 FAQ 的字段，不另套一套 Source 编号。主张、不支持什么、观测日仍然要有。
 

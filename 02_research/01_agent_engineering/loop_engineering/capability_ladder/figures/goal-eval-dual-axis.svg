@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+  <title id="title">控制交接与判定能力是两条轴，不是一个升级阶梯</title>
+  <desc id="desc">上方 LE0 到 LE3 说明谁执行、谁续跑、何时唤醒。下方 G0 到 G3 说明发现判据、构造交付、控制迭代、校准验收。三个组合案例说明判定能力可局部组合，业务结果观察是按声明需要附加的维度。</desc>
+  <defs>
+    <style>
+      text{font-family:'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:0;fill:#20313c}
+      .title{font-size:34px;font-weight:700}.sub{font-size:22px;fill:#52616b}.label{font-size:24px;font-weight:700}.code{font-size:26px;font-weight:700}.body{font-size:22px}.small{font-size:20px;fill:#52616b}.foot{font-size:18px;fill:#52616b}
+    </style>
+  </defs>
+  <rect width="1280" height="900" fill="#f7fafc"/>
+  <text x="48" y="60" class="title">Loop 能力：谁来推进，与凭什么相信，要分开看</text>
+  <text x="48" y="98" class="sub">自主度决定控制权；判据与证据限定完成声明。按任务组合，不给整个项目贴总等级。</text>
+
+  <text x="48" y="156" class="label" fill="#176b8a">控制交接轴 LE · 把哪个决定交出去？</text>
+  <g>
+    <rect x="48" y="181" width="278" height="120" rx="8" fill="#e7f2fa" stroke="#9bbacf"/>
+    <text x="68" y="216" class="code">LE0 · 人逐次发起</text>
+    <text x="68" y="252" class="body">人选任务、开轮、检查</text>
+    <text x="68" y="281" class="small">轮内仍可用工具</text>
+    <rect x="350" y="181" width="278" height="120" rx="8" fill="#e7f2fa" stroke="#9bbacf"/>
+    <text x="370" y="216" class="code">LE1 · 有界执行</text>
+    <text x="370" y="252" class="body">授权范围内的工具动作</text>
+    <text x="370" y="281" class="small">越界仍需拒绝或审批</text>
+    <rect x="652" y="181" width="278" height="120" rx="8" fill="#e7f2fa" stroke="#9bbacf"/>
+    <text x="672" y="216" class="code">LE2 · 目标续跑</text>
+    <text x="672" y="252" class="body">按条件决定下一轮</text>
+    <text x="672" y="281" class="small">条件满足不等于质量接受</text>
+    <rect x="954" y="181" width="278" height="120" rx="8" fill="#e7f2fa" stroke="#9bbacf"/>
+    <text x="974" y="216" class="code">LE3 · 时间 / 事件</text>
+    <text x="974" y="252" class="body">决定何时再次起跑</text>
+    <text x="974" y="281" class="small">跨次需状态、取消、接手</text>
+  </g>
+  <line x1="48" y1="335" x2="1232" y2="335" stroke="#b9cbd4" stroke-width="2"/>
+  <rect x="387" y="315" width="506" height="40" fill="#f7fafc"/>
+  <text x="640" y="342" class="body" text-anchor="middle" font-weight="700">两轴独立组合 · 升 LE 不自动升 G</text>
+
+  <text x="48" y="395" class="label" fill="#17735c">判定能力轴 G · 能支持什么判断？</text>
+  <g>
+    <rect x="48" y="420" width="278" height="120" rx="8" fill="#e9f6ee" stroke="#9bc9ae"/>
+    <text x="68" y="455" class="code">G0 · 发现判据</text>
+    <text x="68" y="491" class="body">找问题、看样本、提假设</text>
+    <text x="68" y="520" class="small">可做有界自动探索</text>
+    <rect x="350" y="420" width="278" height="120" rx="8" fill="#e9f6ee" stroke="#9bc9ae"/>
+    <text x="370" y="455" class="code">G1 · 可观察交付</text>
+    <text x="370" y="491" class="body">产物 + 约束 + 检查入口</text>
+    <text x="370" y="520" class="small">过程证据包也可作目标</text>
+    <rect x="652" y="420" width="278" height="120" rx="8" fill="#e9f6ee" stroke="#9bc9ae"/>
+    <text x="672" y="455" class="code">G2 · 判定控制迭代</text>
+    <text x="672" y="491" class="body">取证 → 判定 → 实际决定</text>
+    <text x="672" y="520" class="small">失败理由进入下一轮</text>
+    <rect x="954" y="420" width="278" height="120" rx="8" fill="#e9f6ee" stroke="#9bc9ae"/>
+    <text x="974" y="455" class="code">G3 · 校准验收</text>
+    <text x="974" y="491" class="body">样本、误判、独立验证</text>
+    <text x="974" y="520" class="small">修正判据并保留回归</text>
+  </g>
+
+  <text x="48" y="592" class="label">三种合理组合 · 同一任务可以局部不同</text>
+  <rect x="48" y="618" width="376" height="120" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <text x="68" y="652" class="label">缺陷修复 · LE2 + G2</text>
+  <text x="68" y="688" class="body">当前版回归驱动修复与重验</text>
+  <text x="68" y="718" class="small">差异质量与需求覆盖另验</text>
+  <rect x="452" y="618" width="376" height="120" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <text x="472" y="652" class="label">体验探索 · 全局 G0</text>
+  <text x="472" y="688" class="body">候选交付可局部 G1 / G2</text>
+  <text x="472" y="718" class="small">人评体验，局部修复可自动续跑</text>
+  <rect x="856" y="618" width="376" height="120" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <text x="876" y="652" class="label">夜间巡检 · LE3 + G1 / G2</text>
+  <text x="876" y="688" class="body">每次观察、分类、报告有终态</text>
+  <text x="876" y="718" class="small">不要求先有 G3 或业务指标</text>
+
+  <rect x="48" y="772" width="1184" height="65" rx="0" fill="#f9eaf0"/>
+  <text x="68" y="811" class="body" font-weight="700">外部结果另列：只有要声称用户 / 生产 / 业务改善时，才追加观察通路、时间窗与归因。</text>
+  <text x="48" y="872" class="foot">教学综合视图，非行业成熟度标准。依据：goal-eval-axis.md §1–2、§6；LE 定义以 00-map.md 为准。</text>
+</svg>

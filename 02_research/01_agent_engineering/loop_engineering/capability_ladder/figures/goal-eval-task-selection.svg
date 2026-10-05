@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1030" viewBox="0 0 1280 1030" role="img" aria-labelledby="title desc">
+  <title id="title">按任务目的选择六种循环</title>
+  <desc id="desc">流程、诊断、修复、优化、探索、巡检各自使用不同反馈。每行列出行动循环、取证方式和完成声明边界。所有模式都需要授权预算和未知出口。</desc>
+  <defs><style>
+    text{font-family:'PingFang SC','Microsoft YaHei',sans-serif;fill:#20313c}
+    .title{font-size:34px;font-weight:700}.sub{font-size:22px;fill:#52616b}.head{font-size:23px;font-weight:700}.name{font-size:25px;font-weight:700}.body{font-size:22px}.small{font-size:20px;fill:#52616b}.foot{font-size:18px;fill:#52616b}
+  </style></defs>
+  <rect width="1280" height="1030" fill="#f7fafc"/>
+  <text x="48" y="60" class="title">先问“这次要做什么”，再选循环</text>
+  <text x="48" y="98" class="sub">相同自主度可以服务不同目的；反馈与完成声明必须匹配。本表是工程选择建议。</text>
+  <text x="68" y="153" class="head">任务目的</text>
+  <text x="280" y="153" class="head">行动循环 · 用什么推进下一步</text>
+  <text x="815" y="153" class="head">能交付什么 · 声明止于哪里</text>
+
+  <rect x="48" y="178" width="1184" height="111" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <rect x="48" y="178" width="7" height="111" fill="#5589ad"/>
+  <text x="68" y="217" class="name">01 确定流程</text>
+  <text x="68" y="251" class="small">步骤已明确</text>
+  <text x="280" y="217" class="body" font-weight="700">步骤 → 回执 → 下一步 / 有限重试</text>
+  <text x="280" y="253" class="small">证据：执行状态、检查输出、工件完整性</text>
+  <text x="815" y="217" class="body">流程与证据包可以完成</text>
+  <text x="815" y="253" class="small">隐藏的需求目标仍需另验</text>
+
+  <rect x="48" y="307" width="1184" height="111" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <rect x="48" y="307" width="7" height="111" fill="#5589ad"/>
+  <text x="68" y="346" class="name">02 未知诊断</text>
+  <text x="68" y="380" class="small">根因待发现</text>
+  <text x="280" y="346" class="body" font-weight="700">假设 → 实验 → 观察 → 更新假设</text>
+  <text x="280" y="382" class="small">证据：复现、日志、对照、排除理由</text>
+  <text x="815" y="346" class="body">根因证据 / 排查报告</text>
+  <text x="815" y="382" class="small">预算耗尽不等于根因已定位</text>
+
+  <rect x="48" y="436" width="1184" height="111" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <rect x="48" y="436" width="7" height="111" fill="#24876b"/>
+  <text x="68" y="475" class="name">03 明确修复</text>
+  <text x="68" y="509" class="small">缺陷可复现</text>
+  <text x="280" y="475" class="body" font-weight="700">实现 → 验证 → 失败反馈 → 修复</text>
+  <text x="280" y="511" class="small">证据：当前版缺陷回归 + 不变式 + diff</text>
+  <text x="815" y="475" class="body">约定检查满足，交质量验收</text>
+  <text x="815" y="511" class="small">测试绿不证明需求覆盖完整</text>
+
+  <rect x="48" y="565" width="1184" height="111" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <rect x="48" y="565" width="7" height="111" fill="#24876b"/>
+  <text x="68" y="604" class="name">04 性能优化</text>
+  <text x="68" y="638" class="small">测量目标明确</text>
+  <text x="280" y="604" class="body" font-weight="700">提案 → 基准 → 比较 → 保留 / 回退</text>
+  <text x="280" y="640" class="small">证据：固定负载、多次测量、质量约束</text>
+  <text x="815" y="604" class="body">在约定环境与负载下达标</text>
+  <text x="815" y="640" class="small">不许削弱质量或换测法取巧</text>
+
+  <rect x="48" y="694" width="1184" height="111" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <rect x="48" y="694" width="7" height="111" fill="#b18231"/>
+  <text x="68" y="733" class="name">05 体验探索</text>
+  <text x="68" y="767" class="small">好坏标准待澄清</text>
+  <text x="280" y="733" class="body" font-weight="700">候选 → 人评 → 局部标准 → 再试</text>
+  <text x="280" y="769" class="small">证据：候选差异、试用、接受 / 拒绝理由</text>
+  <text x="815" y="733" class="body">候选和对照报告可交付</text>
+  <text x="815" y="769" class="small">“体验已好”由指定人接受</text>
+
+  <rect x="48" y="823" width="1184" height="111" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <rect x="48" y="823" width="7" height="111" fill="#8a709f"/>
+  <text x="68" y="862" class="name">06 持续巡检</text>
+  <text x="68" y="896" class="small">职责长期存在</text>
+  <text x="280" y="862" class="body" font-weight="700">时间 / 事件 → 观察 → 受权动作 → 报告</text>
+  <text x="280" y="898" class="small">证据：当前版本、外部状态、异常与送达</text>
+  <text x="815" y="862" class="body">每次检查有终态；职责可持续</text>
+  <text x="815" y="898" class="small">无告警不等于线上风险归零</text>
+
+  <text x="48" y="975" class="body" font-weight="700">共同底线：授权范围 + 总预算 + 未知 / 无进展出口 + 可接手的证据。</text>
+  <text x="48" y="1009" class="foot">教学综合，非产品原生模式列表。依据：goal-eval-axis.md §3–4；使用最低复杂度满足本次目的。</text>
+</svg>

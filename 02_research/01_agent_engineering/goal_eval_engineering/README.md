@@ -51,6 +51,7 @@ agent_goal_eval/
 | [`../repo_agent_friendliness/`](../repo_agent_friendliness/README.md) | 仓库对 agent 好不好用（九维评估系统） | 被测对象是仓库，不是 agent 交出的结果 |
 | [`../../../03_practice/harness_governance/`](../../../03_practice/harness_governance/README.md) | 单次运行的环境约束 | 环境里的门可以是判定的一种材料；门的操作规程仍归该主题 |
 | [`../../../03_practice/loop_governance/`](../../../03_practice/loop_governance/README.md) | 循环控制的操作规程 | 本主题不写规程。升格见 §4 |
+| [`../loop_engineering/capability_ladder/goal-eval-axis.md`](../loop_engineering/capability_ladder/goal-eval-axis.md) | Loop 能交出多少控制权时，目标/验收证据是否够用的正交判定框架 | 本主题提供构造与困难分支的证据；该页综合 G0–G3 判定能力与任务选择，外部结果观察另列，不取代本主题三篇判读 |
 
 ---
 

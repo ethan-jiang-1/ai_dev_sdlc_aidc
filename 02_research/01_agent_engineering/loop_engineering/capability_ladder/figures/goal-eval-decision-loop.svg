@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1010" viewBox="0 0 1280 1010" role="img" aria-labelledby="title desc">
+  <title id="title">每轮取证后的三种状态、控制出口和判据改进</title>
+  <desc id="desc">最小合同定义交付、约束、预算和接手。每轮先确认授权预算，再行动取当前证据，区分满足、未满足、未知。满足结束局部工作，未满足有依据才继续，未知有限补查。全路径预算停滞取消保存成果交接。真实失败和人工分歧反过来改进判据，保持版本可追溯。</desc>
+  <defs>
+    <style>
+      text{font-family:'PingFang SC','Microsoft YaHei',sans-serif;fill:#20313c}
+      .title{font-size:34px;font-weight:700}.sub{font-size:22px;fill:#52616b}.head{font-size:24px;font-weight:700}.body{font-size:22px}.small{font-size:20px;fill:#52616b}.foot{font-size:18px;fill:#52616b}
+      .link{fill:none;stroke:#607a8a;stroke-width:2.5;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#607a8a"/></marker>
+  </defs>
+  <rect width="1280" height="1010" fill="#f7fafc"/>
+  <text x="48" y="60" class="title">每轮都要取证、分型，再决定</text>
+  <text x="48" y="98" class="sub">继续、结束局部工作、暂停交接各有理由；条件满足、质量接受、业务改善分开记录。</text>
+
+  <rect x="48" y="132" width="1184" height="95" rx="8" fill="#e7f2fa" stroke="#9bbacf"/>
+  <text x="68" y="168" class="head">最小合同 · 先定义此次委托</text>
+  <text x="68" y="205" class="body">交付 / 完成与不变式 / 取证 / 接受人 / 下一轮依据 / 预算与停滞 / 授权变更 / 退出接手</text>
+
+  <path d="M190 227 V259" class="link"/>
+  <rect x="48" y="264" width="280" height="106" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <text x="68" y="301" class="head">① 检查运行资格</text>
+  <text x="68" y="340" class="body">目标、授权、预算有效？</text>
+  <path d="M328 317 H362" class="link"/>
+  <rect x="372" y="264" width="265" height="106" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <text x="392" y="301" class="head">② 有界行动</text>
+  <text x="392" y="340" class="body">实验 / 修复 / 局部交付</text>
+  <path d="M637 317 H671" class="link"/>
+  <rect x="681" y="264" width="270" height="106" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <text x="701" y="301" class="head">③ 当前证据</text>
+  <text x="701" y="340" class="body">版本 + 原始输出 + 判据</text>
+  <path d="M951 317 H985" class="link"/>
+  <rect x="995" y="264" width="237" height="106" rx="8" fill="#e7f2fa" stroke="#9bbacf"/>
+  <text x="1015" y="301" class="head">④ 状态分型</text>
+  <text x="1015" y="340" class="body">证据是否支持达成？</text>
+
+  <path d="M1113 370 V405 H230 V431" class="link"/>
+  <path d="M640 405 V431" class="link"/>
+  <path d="M1050 405 V431" class="link"/>
+
+  <rect x="48" y="440" width="364" height="200" rx="8" fill="#e9f6ee" stroke="#9bc9ae"/>
+  <text x="68" y="479" class="head">满足 · satisfied</text>
+  <text x="68" y="520" class="body">结束此次局部工作</text>
+  <text x="68" y="557" class="small">保留版本与检查证据</text>
+  <text x="68" y="591" class="small">质量验收 / 外部结果可仍待判断</text>
+  <text x="68" y="623" class="body" font-weight="700">条件满足 ≠ 业务改善</text>
+
+  <rect x="458" y="440" width="364" height="200" rx="8" fill="#e7f2fa" stroke="#9bbacf"/>
+  <text x="478" y="479" class="head">未满足 · unsatisfied</text>
+  <text x="478" y="520" class="body">有推进依据 + 授权 + 预算</text>
+  <text x="478" y="557" class="small">带失败理由进入下一轮 ①</text>
+  <text x="478" y="591" class="small">无新证据或路径受阻 → 交接</text>
+  <text x="478" y="623" class="body" font-weight="700">失败理由必须被实际消费</text>
+
+  <rect x="868" y="440" width="364" height="200" rx="8" fill="#fff4db" stroke="#d6b76a"/>
+  <text x="888" y="479" class="head">未知 · unknown</text>
+  <text x="888" y="520" class="body">未执行 / 工具坏 / 证据过期</text>
+  <text x="888" y="557" class="small">有限补查、重验或修观察通路</text>
+  <text x="888" y="591" class="small">补齐后回到 ①；无法补齐 → 交接</text>
+  <text x="888" y="623" class="body" font-weight="700">未知绝不默认成功</text>
+
+  <rect x="48" y="669" width="1184" height="97" rx="8" fill="#f9eaf0" stroke="#d5a7b7"/>
+  <text x="68" y="705" class="head">全路径出口 · 触顶 / 无进展 / 授权失效 / 取消</text>
+  <text x="68" y="743" class="body">停止或暂停；保存部分产物、退出原因、未验证项与接手点。预算覆盖续轮、重试、子代理与调度。</text>
+
+  <rect x="48" y="797" width="1184" height="132" rx="8" fill="#fff" stroke="#bccbd3"/>
+  <text x="68" y="833" class="head">判据改进 · 与本次运行并行积累</text>
+  <text x="68" y="872" class="body">真实失败 / 人工分歧 → 修正 goal 与验收器 → 显式记录新判据 → 重验受影响工件</text>
+  <text x="68" y="906" class="small">最小合同可以先跑；标准逐步完善。不要暗改门槛让旧结果变绿，也不必把所有判断交给另一只模型。</text>
+  <text x="48" y="973" class="foot">教学协议，非通用产品 API。依据：goal-eval-axis.md §2、§5；异常分型与反馈消费回源见 digested/09。</text>
+</svg>
