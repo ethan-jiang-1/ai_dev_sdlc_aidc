@@ -231,11 +231,6 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 - B 站搜索 API（`/x/web-interface/search/type`）返回风控 HTML 页——不可用；但视频元数据 view API 无需登录即可取（本轮 5 条视频全部经此核到）。
 
 
-## 拉取纪律执行（2026-10-06 用户定：两轮拉不到就放弃）
-
-- **放弃**：Doc Searls 两句（两轮零命中、线索存疑）——出候选、不再挂账；Kelsey Hightower 逐字（两轮 403，一手载体不存在）；Reddit 死通道（old.json / pullpush / redlib / r.jina.ai）——keeper 通道为 arctic-shift＋wayback；Lobsters 搜索路径（标签页通道为 keeper）。
-- **保留**：无（本派无"未发布"类项）。
-- 本节之上的"仍开放"表述凡与本节冲突，以本节为准。
 
 ## 第三轮挖掘（2026-10-06）：中文圈（事故/质疑层）
 
@@ -330,8 +325,3 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 - 奇绩创坛镜像 404；B 站"四笔账"系列稿件不可见——两条质疑向本体不可核，只记存在。
 
 
-## 相关性审计（2026-10-06，用户判据回溯）
-
-**结论**：本档钩子整体明确——HN 热度层（事故/成本/loop 串）、GitHub 故障清单（停止条件失效）、Reddit 计费簇与 #99652（无人值守运行）、OWASP（loop control）、中文圈三帖（无人值守/中转站/auto 失控）与 smzdm/知乎（术语舆论本身）均为直接证据。
-**已丢弃（2026-10-06 用户第二版纪律：没挂钩就丢弃）**：Beck/Tacho/Yegge 联署宣言（组织绩效层，无 loop 钩子；README 部分票行与 raw_scan S9 同步移除）、METR（无 loop 钩子）。**保留并注明**：Willison 行（10-03 budget caps 为直接钩；09-24 门槛句为泛 coding agents 表述，引用带注）；Hashimoto（有 loop 档位边界句——直接钩）。
-**无钩移出**：无（本文件内）。

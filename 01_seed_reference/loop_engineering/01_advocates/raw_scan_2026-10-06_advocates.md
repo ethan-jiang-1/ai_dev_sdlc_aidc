@@ -1197,12 +1197,6 @@ quality_bar: 一手优先；X 不可达（本环境 x.com 全部不可用，经�
 5. **Pinterest / Discord**：窗口内官方工程博客未检出 agent 实践主帖（Pinterest 的 MCP 生态主稿为 2026-04，窗口外）——负结论登记在怀疑档。
 
 
-## 相关性审计（2026-10-06，用户判据回溯）
-
-**结论**：本档条目钩子明确——九家厂商循环产品化（loop 定义/分档/预算机制——直接）、Osmani/Ng/Runkle/Anthropic（定义与体系化——直接）、AIEWF 议题群像（loop 专场——直接）、Voss（循环分类学——直接）、Jensen（"write and handle loops"——直接钩）、Nadella（"This loop will become the new intellectual property"——直接钩）。
-**部分钩（保留，引用时带注）**：Karpathy——"interns/oversight" 为 agent 管理表述（直接钩在 bottleneck 句，而该句仍仅存转引）。
-**无钩移出**：无。
-
 
 ## 第四轮挖掘（2026-10-06）：行业分析与 Newsletter（推动向）
 
@@ -1347,5 +1341,5 @@ quality_bar: 一手优先；X 不可达（本环境 x.com 全部不可用，经�
 
 - **Sequoia 重试结果**：上轮"播客页截断"解除——sequoiacap.com sitemap 全量打开（1,909 URL），9 个关键页全文在手；但**窗口内（2026-06-01 后）无一篇**：《AI in 2026: A Tale of Two AIs》2025-12、《The Always-On Economy》2025-04-21、《LangChain: From Agent 0-to-1 to Agentic Engineering》2025-10-21、《AI Ascent 2026》2026-05-08（差三周）、《Factory's Matan Grinberg dark factory》播客 2025-09-26（日期均页面实取）。Training Data《OpenAI Codex Team: Coding Asynchronously and Autonomously》与 Harrison Chase 两单集页面**无日期字段**（仅站点构建时间戳 2026-10-02，混淆项已排除）；按内容判断 Codex 单集为 2025 年 Codex 异步 agent 发布期——**疑似窗口外、日期未核**，在册待第五轮（transcript 全文在页，回源通道已通）。
 - **a16z 窗口外在册**：《Et Tu, Agent? Did You Install the Backdoor?》（Joel de la Garza / Malika Aubakirova / Zane Lackey，2026-04-02，agent 供应链安全——钩子＝无人值守风险，窗口外四周）；《Most People Can't Vibe Code. Here's How We Fix That》（Justine Moore，2026-02-03）。
-- **Stratechery 付费墙标题在册**（钩子标注，正文未取）：My Vibe Coding Adventure（2026-06-24，Ben 本人 vibe coding 实操复盘——钩子＝无人值守/循环实操一手，待全文核）；The OpenAI Super App, ChatGPT = Codex（2026-07-14，coding agent 升级为 ChatGPT 本体——钩子＝循环产品化）。
+- **Stratechery 付费墙标题在册**（钩子标注，正文未取）：The OpenAI Super App, ChatGPT = Codex（2026-07-14，coding agent 升级为 ChatGPT 本体——钩子＝循环产品化）。
 - **负结论**：Stratechery 窗口内无 Pichai/Huang 专访（归档 2026-06→10 全量核过：访谈为 Nadella 06-04、Brockman 09-02 等）；编号周报（2026.35/2026.40）为聚合摘要、无独立 loop 机制内容，按"宁缺毋滥"不入正册。

@@ -90,7 +90,7 @@ collected_at: 2026-10-06
 
 - **Reddit 原帖整站不可 fetch**（本轮最重要负结论）——本档 Reddit 层证据由 GitHub issue/dev.to 一手通道与一条窗口边缘二手汇编补位。
 - **Stack Overflow 2026 年度调查、DORA 2026 年度报告、Octoverse 2026 均未发布**（SO 官方 10-01 原话 "results dropping here in the next few days"）——**建议一周内重扫**，SO 2026 已把"agent 采用是否带来更大委托"列为核心问题。
-- JetBrains 原帖两篇截断，数据经 Gigazine/daily.dev 二手转述（未核原图）；New Relic 2026 报告正文当时不可得（后已解决）；JumpCloud 已按相关性纪律移除（无 loop 钩子）。
+- JetBrains 原帖两篇截断，数据经 Gigazine/daily.dev 二手转述（未核原图）；New Relic 2026 报告正文当时不可得（后已解决）。
 - "试用后放弃"叙事：弱且未核（置信度低）——本轮最接近样本是窗口边缘转引的一条迁移评论与 dev.to 的 conditional-positive；Reddit 不可达导致无法量化。
 - 技能退化在机构层只有间接指标（20% less confident、"loss of immersion" 假设），无直接针对 loop/无人值守场景的测量——社区与机构两层共同空白。
 
@@ -220,11 +220,6 @@ collected_at: 2026-10-06
 - arctic-shift API 有速率限制（连查返 422 "Timeout. Maybe slow down a bit"），批查需间隔数秒；pullpush.io 仍 429 且明示反爬。
 
 
-## 拉取纪律执行（2026-10-06 用户定：两轮拉不到就放弃）
-
-- **放弃**：知乎两 URL（《最扯淡 AI 名词》＋1700 赞问答——需人工登录态，agent 两轮 403；smzdm 转述链维持"仅传播证据"，不再当关键节点挂账）；小红书（JS 空壳）；mp.weixin 原始页（腾讯云同步页为可得来源，足够）。
-- **保留重扫**（未发布 ≠ 拉不下来）：Stack Overflow 2026 年度调查（官方已逾期，下轮最高优先）、DORA 2026、Octoverse 2026（参照去年 10-28 节奏）。
-- 本节之上的"仍开放"表述凡与本节冲突，以本节为准。
 
 ## 第三轮挖掘（2026-10-06）：机构采样快查与 GitHub 千人研究
 
@@ -261,7 +256,6 @@ collected_at: 2026-10-06
 
 - github.blog WP API（`/wp-json/wp/v2/posts?slug=…`）畅通，为该站全文主力通道；Yale 报告主页静态可取且含采样期逐字段与勘误记录——调查类来源优先找报告主页而不止新闻稿。
 - JetBrains research 原帖带浏览器 UA（Chrome/macOS）可直取全文，上轮"截断"疑为通道问题；research RSS 用于核对后续帖。
-- Atlassian `/blog/feed` 返回 358KB 但解析 0 items（feed 异常）；博文页静态可取（datePublished 可用）。
 - SO/DORA/Octoverse 三快查各一 curl 记状态码（15:31 CST），未恋战。
 
 ## 第三轮挖掘（2026-10-06）：中文圈（工程派/企业接收层）
@@ -529,12 +523,3 @@ QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专
 - 通道：curl＋Chrome UA 全程主力；Sentry WP API 403（首页链接可取）；Business Wire 403→Wedbush 转载载体全文实取；web.archive.org CDX 可用（Datadog 页首拍 2026-04-22）但其主页间歇 "Temporarily Offline"；PDF 载体（OpenAI signals）未解析。
 
 
-## 相关性审计（2026-10-06，用户判据回溯）
-
-**结论**：本档主体钩子明确——Böckeler TDD-in-loop eval（循环内部实践）、Kent C. Dodds（本词教学）、Kief 渐进信任（放权节律）、marmelab/Walden（循环工程审计与拓扑）、观测平台层（循环长度/预算熔断/重试循环——Datadog 原文 "budgets to force agent loops to terminate"）、LangChain 调查（agent 生产与评估落差）、New Relic State of AI Coding（62% 免逐行验证 ship＝验证面）、GitHub×Yale（agent 决策边界原句）、QCon 专题与 InfoQ（本词专名）、传播观察（术语本身）、Anthropic Economic Index（官方分型即 feedback loop/task iteration）。
-**已丢弃（2026-10-06 用户第二版纪律：没挂钩就丢弃）**：
-  1. **SO retrospective 使用率数据**（31%→59%、20% less confident）——泛 agent 采用，无 loop 钩子；
-  2. **JumpCloud 成熟度自评 40%→23%**——泛 AI 治理，无 loop 钩子；
-  3. **Atlassian《The Agentic Pivot》**——泛 AI 治理（88% vs 19%），无循环机制钩子。
-**保留并注明**：JetBrains（"重度用户仅 46–57% agentic coders"＝委托深度直接钩）；New Relic Forecast（"harder to run"＝运维回路部分钩）；GitHub×Yale（agent 决策边界原句——直接钩）；S-2 leash（63% 拒全自动＝loop 化程度）。
-**无钩移出**：另 TiDB PDCA 篇已于第三轮勘误移出（窗口外＋产品名巧合）。

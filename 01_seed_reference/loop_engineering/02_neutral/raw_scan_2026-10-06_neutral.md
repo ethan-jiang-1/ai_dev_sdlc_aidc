@@ -448,11 +448,10 @@ URL：https://ghuntley.com/lisp/
 ## 第四轮挖掘（2026-10-06）：arXiv 学术层扫描（中立工具性主场，逐篇带派别适配标注）
 
 > **任务**：用户 2026-10-06 委派：扫 2026-06～10 月 arXiv（cs.SE / cs.AI / cs.PL），找尚未入库的 agent loop / 自主编码 agent 可靠性论文。**学术旁证层，不与 KOL 证据并列。**
-> **与库内既有学术件的关系**：arXiv:2608.21884（Loop Engineering 综述）、2607.00038（Macedo）、2507.09089（METR RCT）、2512.23982、2606.04056（Token Budgets 63 事故目录）均已在库，本轮不重复立条。通道交叉复核：2608.21884 现为 **v2（2026-08-26 更新，comment 仍标 under review）**；2607.00038 仍为 v1（2026-06-28），Semantic Scholar 实核引用数 7——两件状态稳定，无新版本事件。
+> **与库内既有学术件的关系**：arXiv:2608.21884（Loop Engineering 综述）、2607.00038（Macedo）、2606.04056（Token Budgets 63 事故目录）均已在库，本轮不重复立条。通道交叉复核：2608.21884 现为 **v2（2026-08-26 更新，comment 仍标 under review）**；2607.00038 仍为 v1（2026-06-28），Semantic Scholar 实核引用数 7——两件状态稳定，无新版本事件。
 > **通道状态（拉取纪律交代）**：web_fetch 工具对 export.arxiv.org 报 non-public IP 拒绝（与本档第三轮记录一致）；本轮实际取证通道＝**curl＋浏览器 UA，http 301 跳 https 后正常**（响应头 Server: Varnish，Date: 2026-10-06，通道活性核实）。共执行 14 组 search_query＋5 组 id_list 摘要实取＋2 组 Semantic Scholar batch 引用数实核；引句全部来自实取返回。引用数通道（api.semanticscholar.org）首次请求 429 限流，等 20s 重试成功。Google Scholar 不可用（任务预设）；wayback 未启用（arXiv 直连成功，无需要）。
 > **规模参照**（search_query 命中总数，2026-10-06 实取）：`all:"loop engineering"`=22；`all:"agentic loop"`=168；`all:"coding agent"`+cs.SE=648（其中 2026-06-01→09-21 切片 292、06-01→08-26 切片 238）；`all:"reward hacking"`（cs.SE/cs.AI）=381；`all:"SWE-bench"`+cs.SE=376；SWE-agent=136；stop condition/stopping criteria×agent=28；unattended/runaway×agent=26；cs.PL×agentic=326；multi-agent×failure=300。
 > **派别适配口径**（任务口径）：中立工具性＝中性；失败模式研究＝怀疑；效果正报告＝推动（注明单样本 caveat）。
-> **挂钩硬性判据（2026-10-06 用户新增，本轮即时执行）**：每条素材必须写明与 loop engineering 的明确挂钩点（循环结构／停止条件／预算与熔断／外层调度／验证回路／无人值守运行／循环产品化机制之一），见各条「与 loop engineering 的挂钩」行；纯泛 AI/LLM 应用论文不收，挂钩牵强者弃收（见负结论 7）。
 > **引用数诚实声明**：Semantic Scholar 2026-10-06 实核，**本轮全部候选引用数 0–7，无一"高引"**——"候选入册（学术旁证层）"的判定依据是多作者／组织级开源仓库／已录用 venue，不是引用数；单作者无引用者标"边缘候选"。凡外部常识推断的机构归属一律标"未核"。个别极新件 S2 未收录（标注 None）。
 
 ### 方向 A · 专名谱系："loop engineering" 已沉淀为 arXiv 可测量术语（A1–A7）
@@ -723,7 +722,7 @@ URL：https://ghuntley.com/lisp/
 
   > "Small differences on coding-agent leaderboards are often read as an ordering of systems. We audit whether the published verdicts support this reading, using 254 SWE-bench submissions across four splits without running models. On Verified, the leading two entries each resolve 396 of 500 instances. The top ten share 285 successes and 51 failures, leaving 164 instances that distinguish their outcomes. Frontier solution sets have median nesting 0.935 against a score-implied baseline of 0.774, indicating strongly shared successes. Scores also depend on the evaluated model-scaffold pair: observed within-model scaffold ranges reach 29.8 percentage points, compared with the 8.8-point spread of the top thirty. Six of nine cell-mean interaction tests remain significant after Holm correction, although this observational design does not identify causal scaffold effects. Exact paired McNemar tests separate none of the 29 adjacent Verified top-thirty pairs at alpha=0.05, while the larger Test split separates 14 of 23. A stated leader-based rule yields three descriptive tiers, or two after Holm correction; non-rejection does not establish equivalence. We release the partition and a five-step audit protocol that profiles shared outcomes, tests paired differences, reports grouping sensitivity, and estimates the instance budget needed for resolution. The results motivate reporting comparison-set-specific resolution and model-scaffold provenance instead of interpreting small aggregate gaps as established rank differences."
 
-- **与 loop engineering 的挂钩**：验证回路（评测回路已无区分度）｜**SWE-bench 局限批判的直接命中**——榜首两强同分（396/500）、top10 共享 285 成功、模型×scaffold 交互范围 29.8pp＞top30 分差 8.8pp、相邻排名全部不可区分（McNemar）；与库内 METR RCT（2507.09089）构成"榜单→实践推断"链条的两端质疑。
+- **与 loop engineering 的挂钩**：验证回路（评测回路已无区分度）｜**SWE-bench 局限批判的直接命中**——榜首两强同分（396/500）、top10 共享 285 成功、模型×scaffold 交互范围 29.8pp＞top30 分差 8.8pp、相邻排名全部不可区分（McNemar）；与库内 2608.21884 的"话语/实践脱节"发现构成"榜单→实践推断"链条的两端质疑。
 - 证据级别：**已录用会议（ADMA 2026）**——本轮命中中唯一确定 peer-reviewed venue 的主条目｜S2 引用数 0（2026-10-06 实核）。
 - 派别适配：怀疑档（评测批判）；作者自述 observational design 不识别因果。
 - 入册建议：**候选入册（学术旁证层）**（已录用 venue）。
@@ -964,7 +963,6 @@ URL：https://ghuntley.com/lisp/
 4. **S2 未收录个别极新件**：arXiv:2610.05943（Runaway Reaction）batch 返回 None——极新件引用数为"无数据"而非"零引用"，已分开标注。
 5. **cs.PL 命中密度低**：326 条中实质相关约 10 条，PL 社区刚形成议程（H1）；任务第三分类（cs.PL）由 B4（Assurance Envelopes）、F6、H1–H4 覆盖。
 6. **同作者多投观察**：Vansh Wahi 两天内两篇（2609.02246 评委非神谕／2609.25848 reward hacking 跨权重-选择-提示）；Sakhinana & Runkana 同月三篇（A4 系列）；Murat Ozer 亦有 2610.04793（犯罪学视角 reward hacking，元数据层）——高频单点作者群，引用时按单件处理不并案。
-7. **泛应用面弃收（按 2026-10-06 新增挂钩硬性判据）**：2610.05750（agentic 检索成本——泛检索应用，无循环机制）、2609.08248（Ads Ranking 的 agentic ML——广告排序应用）、2610.06599（光网络数字孪生 agent——物理层应用）、2609.29465（SWE-Prometheus——摘要未取，无法核实"治理"是否 loop 治理）、2609.32965（Relic——多 agent 组织能力，标题层无法确认循环机制挂钩）。均命中检索但**不入本集合**；如需引用先回源核实挂钩。
 
 ### 对本节的诚实评估
 
@@ -977,7 +975,7 @@ URL：https://ghuntley.com/lisp/
 
 ## 第四轮挖掘（2026-10-06）：甲方工程博客（边界与混合结果）
 
-> **任务**：与推动档同源的甲方工程博客扫（窗口 2026-06-01 后），本档收**边界划定/混合结果/审慎实证**；2026-10-06 用户新增硬性判据已执行——每条标注「与 loop engineering 的挂钩」（循环结构/停止条件/预算与熔断/外层调度/验证回路/无人值守运行/循环产品化机制之一），挂钩不实者弃收（本轮弃收登记见文末）。
+> **任务**：与推动档同源的甲方工程博客扫（窗口 2026-06-01 后），本档收**边界划定/混合结果/审慎实证**；每条标注「与 loop engineering 的挂钩」。
 > **拉取通道**：engineering.zalando.com / airbnb.tech / tech.meituan.com 直取成功；medium 系被 Cloudflare 盾（Airbnb 经自有工程站绕开；Netflix 仅得 InfoQ 中文编译）；zhihu 登录墙；infoq.com 英文版 CAPTCHA；wayback 全程 429。逐字引句全部来自实际 fetch 的页面。
 
 ### 中-1 · Zalando《Agentic Engineering at Zalando: a snapshot》（2026-08-14）
@@ -1158,7 +1156,7 @@ URL：https://ghuntley.com/lisp/
 - **该条支持的最小主张**：甲方把"可信 AI 编码"定义为"严苛约束下的精准工程"——自由度做减法（spec）、能力做加法（多 agent＋上下文），循环全自动化但止步于人工 CR 前。
 - 派别适配：**中性偏推动**（窗口外，谨慎引用；其"可用但不可信"开局与"尝试-验证-纠错"环有判读价值）。
 
-### 弃收登记（判据执行记录）与通道状态（中性面）
+### 通道状态（中性面）
 
 1. **Shopify《Gisting》（2026-08-19）**：全文已取得，但内容为 agent 服务的上下文压缩优化（TTFT/吞吐/GPU），循环结构/停止条件/无人值守内容不足——按 2026-10-06 硬性判据**弃收**，标题级留档：https://shopify.engineering/gisting 。
 2. **Shopify《Building production-ready agentic systems》（2025-08-26）**：窗口外（2025 年），不入。
@@ -1166,12 +1164,6 @@ URL：https://ghuntley.com/lisp/
 4. **Netflix 英文一手**：仍开放（medium 盾＋wayback 限流，编译层已登记）。
 5. **字节 Force 2026 演讲一手**：仍开放（官方视频/火山引擎渠道未取，现载媒体转述档）。
 
-
-## 相关性审计（2026-10-06，用户判据回溯）
-
-**结论**：本档条目钩子明确——Böckeler/Kief/marmelab/Walden/Beck/Kent C. Dodds/swyx（循环实践与教学）、arXiv:2607.00038（autonomy spectrum 即循环治理）、播客会议层（loop 主题专场）、新 KOL 层（Goedecke dev loop / Horthy sandbox the agent loop / Shepherd——均为循环机制表述）。
-**部分钩（保留，引用时带注）**：《An Accidental Blackboard》——10 人团队全 agentic 开发四天实录，钩子在"agentic 开发中的涌现协调"（repo 作 blackboard），非循环机制本身。
-**无钩移出**：无。
 
 
 ## 第四轮挖掘（2026-10-06）：行业分析与 Newsletter（中性/分析层）

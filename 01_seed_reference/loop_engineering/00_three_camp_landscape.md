@@ -86,7 +86,7 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - GitHub 层是**故障清单而非立场表态**：claude-code #98708（20 子代理＋Stop hook 下唯一停法是关 VS Code 窗口）、#93744/#98066（/goal 评估器失效×互锁重触发）、codex #32389（假 stop 信号）；**行动级反证：opencode 内置 /goal 23 天后被维护者整体 revert**；Boris Cherny 官方确认尚无通用 loop-detection 权限门（厂商声音）。
 
 **机构采样层——主流立场是"要更自动，但要可停"**：
-- 使用暴涨、信任没跟上：agent 使用 31%→59%（SO pulse）但 "20.0% less confident in their own problem-solving"；DORA ~30% 开发者 trust AI little/not at all；
+- DORA ~30% 开发者 trust AI outputs little/not at all；
 - 《Agents on a leash》（SO）：**63% rarely/never 全自动、60% 锁未授权系统变更、68% 偏好单代理**；JetBrains：90% 周用、平均 47% 代码 agent 全生成，但重度 agentic 派仅 ~31%；
 - DORA tokenmaxxing 洞察：runaway agents 需要 circuit breaker；OWASP 目录 **63 起已确认生产预算超支事故**（Anthropic 6/15 计费拆分当日被暂停——社区怒气与厂商让步的因果对）；
 - 判读：社区主流不拒绝自动化，**要求可停**——与 loop engineering 的 stop-conditions 主张实际同向；社区反对声音集中在**执行故障与计费**，极少范式批判，**不能与 KOL 反对派互换引用**。
@@ -107,8 +107,7 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **Lobsters 翻案**：标签页可抓，四个月两标签全量扫出 6 条 loop 串、全部 ≤30 分——与 HN 同构（该词在资深开源社区同样低热）。
 - **B 站**：质疑向头部【闪客】《你管这破玩意叫 Loop Engineering？》**10.9 万播放**（中文圈最大单条流量）vs 正方教程 9.4 千——**热度对照 ≈ 1:12**。
 - **InfoQ 两篇全文解决**：QQ 飞车 Agentic 转型（"最近一个月我大概消耗了三百亿 token"）、《龙虾之父一条推文，Loop 时代终结？》。
-- **机构层两项解决**：New Relic 2026——**62% 团队免逐行验证直接 ship vs 生产侧 78% 事故上升、AI 代码关键运行时问题 1.7×**（"委托越过人工核验线而质量反向坍塌"的首个机构级配对数字；95% 组织已授权机器生成代码进核心生产）；TechCrunch 全文核销（人均 token 9 个月 **18.6×**，归因 agentic；FinOps 圈 "from tokenmaxxing to guardrails"）。JumpCloud：AI 成熟度自评 **40%→23% 反降**（治理滞后首个量化缺口）。
-- **拉取纪律执行（用户定：两轮拉不到就放弃）**：Searls 两句、Hightower 逐字、Jensen/Nadella 一手、Karpathy 原句、Orosz 付费墙、知乎两 URL——**全部放弃出档**（登记防反复）；**保留重扫位的只有三份未发布的年度报告**（SO 2026 逾期、DORA、Octoverse——未发布 ≠ 拉不下来）。
+- **机构层两项解决**：New Relic 2026——**62% 团队免逐行验证直接 ship vs 生产侧 78% 事故上升、AI 代码关键运行时问题 1.7×**（"委托越过人工核验线而质量反向坍塌"的首个机构级配对数字；95% 组织已授权机器生成代码进核心生产）；TechCrunch 全文核销（人均 token 9 个月 **18.6×**，归因 agentic；FinOps 圈 "from tokenmaxxing to guardrails"）。
 
 **第三轮挖掘增补（同日，细节在三派目录各档"第三轮挖掘"节）**：
 - **厂商面（最大增量）**：九家厂商 2026-06 后的循环产品化全登记（Warp inner/outer loop＋软件工厂、Replit "core loop" 正式架构词、OpenAI dots 常驻自主 agent、Kiro "loops, waits, and completion conditions" 正式词表、Devin $10M 对赌、Factory "continuous feedback loop"）；机制登记表负发现：**没有任何厂商官方文档使用 "loop detection" / "circuit breaker" 术语**——DORA/Willison 呼吁的断路器，厂商全都没做成官方机制。厂商自认面 12 组：OpenAI 回撤 `untrusted` approval policy、Warp "Run until completion" 默认击穿自家 denylist（官方 Caution）、Kiro 官方承认无人值守会被仓库恶意指令劫持、Gemini CLI release note 自证 auth 无限循环 bug。
@@ -121,15 +120,14 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **厂商面**：九家厂商循环产品化全登记（Warp/Replit core loop/OpenAI dots/Kiro 词表/Devin 对赌/Factory）；机制登记表负发现——**无厂商官方使用 "loop detection"/"circuit breaker" 术语**；厂商自认 12 组（OpenAI 回撤 untrusted、Warp 默认击穿自家 denylist、Kiro 自认无人值守可被仓库恶意指令劫持）。
 - **甲方工程博客**：Uber 70%+ PR 归因 agent（3600 skills/30K 执行每日）、Shopify River 自主修复环（11 天积压 -70%、"another edit is a bet rather than a fix"）、字节 TRAE 悖论（90% AI 代码 vs 吞吐仅 1.6 倍，900 次实验可交付性 40→80 分）；**甲方 agent 事故 postmortem 零命中**（负结论：失败以经济失控/不收敛/传播失真三种变体公开，不以事故报告形式公开）。
 - **arXiv 学术层（53 条，全部带七类挂钩标注）**：专名沉淀五来源互证（LoopArena/LoopsBench/范式综述/教科书）；怀疑面弹药首次与推动面持平（评测批判："What Does a Harness Buy"换 harness 波动≈重跑波动；"Coding Agents Have Converged" 榜首不可分；reward hacking 分类学：删测试检测 AUC 0.997）；**"loop engineering" 全 arXiv 仅 22 条 vs agentic loop 168**——专名进入学术层是真信号但早期。
-- **scope 决定（用户口径）**：vibe coding 整条线移出（非专业层讨论）；Farley 出 §C1；泛 AI 采样（METR/SO 采用率/JumpCloud/Atlassian/宣言类）按相关性纪律丢弃。
 
 ## 四、不支持什么（证据边界）
 
 1. **所有失败账本都是单样本**（Ronacher n=1、Yegge n=1、Gas Town 单 harness）——引用必带 caveat；
 2. **0.59% 不证明"没人用"**——只限定"仓库可见的自主循环"这一观测口径（state files 不进版本控制是论文自己的发现）；
-3. **P-outcome 缺口照旧**：METR/DORA/GitClear 测的是不同工具场景，**没有一项把 loop 设计当自变量证明因果效果**；
+3. **P-outcome 缺口照旧**：DORA/GitClear 等测的是不同工具场景，**没有一项把 loop 设计当自变量证明因果效果**；
 4. **派别规模 ≠ 采用率**：反对派小不等于社区多数支持，中性派大也不等于主流——X（术语层争论主战场）整体不可达，本批只靠一手博客/播客/官方文本补偿；
-5. **"待回源"不作依据**：Searls、Steinberger 07-18 终结宣言、Voss 的 Arize 原文、Farley transcript、Orosz 付费墙 §5–7。
+5. **"待回源"不作依据**：Steinberger 07-18 终结宣言、Orosz 付费墙 §5–7。
 
 ## 五、一句话回答用户的问题
 
