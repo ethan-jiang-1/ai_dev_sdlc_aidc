@@ -523,3 +523,202 @@ QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专
 - 通道：curl＋Chrome UA 全程主力；Sentry WP API 403（首页链接可取）；Business Wire 403→Wedbush 转载载体全文实取；web.archive.org CDX 可用（Datadog 页首拍 2026-04-22）但其主页间歇 "Temporarily Offline"；PDF 载体（OpenAI signals）未解析。
 
 
+
+## 第五轮挖掘（2026-10-06）：中文圈（工程派增量）＋评测机构层
+
+> 本节为第五轮挖掘。观测时间 2026-10-06 16:40–18:30 CST；通道：V2EX API v1（三帖正文＋全部回复逐楼实取，含 63 回复帖全量）、腾讯云/阿里云/华为云/掘金/SegmentFault 页面 curl、评测机构页面 curl（Gartner 经其 AWS 镜像域 gcom.pdo.aws.gartner.com 实取全文——主站 Cloudflare 拦截的翻案通道）、至顶网 GBK 转码实取。逐字引句均出自本轮实际抓取的页面/JSON，热度为 2026-10-06 观测值。
+> **评测机构层是本轮新增面**：Gartner/Forrester/IDC 2026 年 agentic AI 公开内容（governance/autonomy 主题）首次成节收录，见下文第三节。
+
+### 一、V2EX `/goal` 实测帖群评论层深读（上轮只记标题＋OP 逐字；本轮 25/13/63 楼全部实取）
+
+**《/goal 已经跑了 1d3h…道心破碎》（[t/1227533](https://www.v2ex.com/t/1227533)，25 回复，2026-07-15）评论区新增工程派逐字**：
+
+> "我现在每天用完一个 20x 然后等重置……codex + 5.6 sol ultra 完全变成**上司和下属模式**，一个任务要耗费几天才能完成，但是每次 deliver 都是成品，换言之就是**你的任务目标范围越小，回报就越低**（因为小任务他也是这套模式折腾），反而是一次性一整套完整的架构，完整重构，完整的产品的回报才高"—— maolon（上轮已录其"任务目标漂移"前半段，此为其完整模型经济学观察）
+> "SPEC 文档写得事无巨细才能 HOLD 住。稍微有点模糊空间都会飘到外太空去。"—— lujiaosama
+> "感觉完整跑下来还得两三天。到时候我开源出来。"—— OP weixind（对"完成质量如何"的回应——质量验证始终欠账）
+
+**《/goal 跑了 80h…18w 行代码》（[t/1228560](https://www.v2ex.com/t/1228560)，13 回复，2026-07-20）新增 OP 方法论逐字**：
+
+> "没什么特殊的提示词和工具。**可以尝试和 AI 围绕一个话题或者技术实现聊上一到两周。聊透了就有了。**"—— OP weixind（对"需求怎么生成"的回答）
+> "看了下 commit 记录，不止一两周……我要做一个大的系统，架构基本上就是不停的推翻重来。"—— OP（次日自纠：实际投入比自述更长）
+
+（判读注：**80h/40 亿 token 的账单背后还有"与 AI 聊一到两周"的人时**——loop engineering 的隐含人力成本在中文最完整实测帖里首次被 OP 自己量化出形状。）
+
+**《24 小时自动化开发》（[t/1243154](https://www.v2ex.com/t/1243154)，63 回复，2026-09-19）方案谱系补全**（上轮只录 3 条）：
+
+- 术语已成为默认答案："Loop Engineering"—— oliveira（两字回答）；"你需要的真就是 loop Engineering，cursor 的 projects 就是个干这个的，一个 Agent 负责项目管理的角色，指挥其他 Agent 干活，指导验收完成，不过你还要去 5 小时额度恢复再继续，就得自己实现了"—— lifei6671；"@oliveira #17 正解"—— haha1903
+- 昼夜班编排共识："人白天和 ai 讨论 spec，晚上让 ai 编码实现，测试，验收，第二天人上班再验收，循环往复"—— zisen；"白天就跟 ai 讨论需求，让它自己生成 spec 和任务/看板清单，晚上睡觉的时候让 ai 把任务/看板清单上的全做完。不过 5 小时循环额度这个估计得自己写插件来实现了，最好在额度耗尽前先让 ai 保存进度然后停工"—— smallest10（**"额度耗尽前保存进度停工"＝社区自制的停止条件插件需求**）
+- 完整流水线样本（aitobox）：skill A 拆任务提 issue → skill B 拉最高优先级 issue → skill C（brainstorming/writing-plan/exec-plan）完成 → skill D（grill-me 全自动确认）review → 后台 skill 查状态自动提 PR → **"6. 人工检查 pr"**——全自动流水线的第 6 步仍留给人。
+- 工程前提派："只想实现 24 小时 loop 方案很多，**如何把控运行质量、如何节省上下文提高效率才是关键**……我更倾向于'单任务单会话基于文档沟通'，多频次小功能去迭代"—— NoobNoob030
+- 需求对齐才是瓶颈："关键在于需求如何对齐。真人做开发任务，都需要在过程中反复对齐需求，agent 只负责开发，需求对齐最终还是要传导到你这里的，不是加一个 agent 负责验收就能解决的事……Agent 和现实世界的交互就是命令行和对话框，非常缺少隐式需求探索的能力"—— nsjs
+- 工具生态先例："这不是很多方案嘛，OpenAI 就出过一个 demo：github.com/openai/symphony……我试着跑过，就是巨耗 token"—— bkmi
+- OP 的自我收敛："所以我也在创建一套 AI 开发规范，上班时间尽可能跟 AI 多沟通，让 AI 写好方案再人工审核，尽可能避免跑偏"—— OP ldy619354397（提问者被评论区推回治理侧）
+
+（判读注：63 楼无人主张"纯放手"；**收敛答案高度一致＝spec 昼夜班编排＋独立验收＋额度止损＋人审 PR**——中文实践层把 loop governance 的四要素当常识使用，且不消费术语名（全楼只有 3 处提到 Loop Engineering，均为指工具/范式名）。）
+
+### 二、腾讯云 2026-09 中下旬新原创（上轮截止 9-15 前，本批全新）
+
+**腾讯云｜《[对 Loop Engineering 的思考](https://cloud.tencent.com/developer/article/2740983)》（2026-09-10 16:39 发布，原创）**——**本轮最佳中文原创工程论述续篇**（用控制论四公理重构 loop：负反馈闭环/可观测性/可控性约束/离散迭代纠偏）：
+
+> "Loop Engineering 就是控制论在 AI 领域的一次落地应用。"
+> "90% 听起来很不错，但是，事实上可能很糟糕，因为，软件工程一定会使用分治的方法解决复杂问题……一个复杂任务就变成了 N 多子任务的叠加，那么就变成了一个指数运算，**仅仅六次后，概率就接近 50%，这不是就是抛硬币吗！**"
+> "先跑通一个最小可收敛闭环，再逐步放大自治边界……把小闭环跑通，才有资格谈大闭环，大循环是在一个个小循环上长出来的。"
+> "'设计反馈'的背后是说，你需要设计一个机制，让模型真的会**说不**……这种'不'是基于某种不可否认的事实"；"'如何结束'的背后是说，你需要设计一个机制，保证不会无限循环，**看看你的 Token 账单，你知道我在说什么吧**。"
+> TDD 重定位："TDD 的价值并不是多写几个测试用例，而是，**可以把需求翻译成反馈信号**。"
+
+**腾讯云｜《[Agent Loop Graph Engineer 工程化实战：从"单兵循环"到"可治理执行系统"](https://cloud.tencent.com/developer/article/2748850)》（97java-xyz，2026-09-22，151 阅读，原创）**——loop→graph 转向后的治理向工程文：
+
+> "停止权归谁是 Loop 工程化的第一个架构决策点。将停止权完全交给模型，意味着不确定性和不可审计的终止原因；将停止权完全交给外部代码，则失去了模型自主判断的灵活性。生产环境的务实选择是**双层控制**：模型可以自主判断'我认为完成了'，但外部编排层保留最终的终止权。只有当模型声明完成且外部验收条件同时满足时，Loop 才真正终止。"
+> "模型倾向于'看起来完成了'就停止，而不是'真的完成了'才停止。"（引课程概念"假合格"）
+> 转向时点转述（数字为文中转引，未核原帖）："2026 年 7 月，OpenClaw 创始人 Peter Steinberger 在 X 上发帖：'我们还在讨论循环结构的问题吗？'……约 307 万次浏览"；"Hamel Husain 发布了一篇调侃文章，标题直接写着《Loop Engineering Is Dead. Enter Graph Engineering》……收获了 68 万次浏览"
+
+**腾讯云｜《[Loop Engineering 落地记：四层架构 + 三个停止条件，治住智能体的无限循环](https://cloud.tencent.com/developer/article/2742116)》（悦悦AI，2026-09-12，164 阅读）**——正文 JS 未全取，**概述层实取**（自标原创）：
+
+> "智能体任务不结束、上下文互相污染、好结果无法复现——**多数不是模型问题，是缺终止条件和结构**。本文记录用 Loop Engineering 思路在官网运营场景的一次完整落地：四层架构（统一入口、共享底座、专项执行、资产复用）+ **三个停止条件（成功才汇报、3 轮失败即停、拿不准转人工）**。"
+
+（判读注：三个停止条件是中文圈迄今对 loop 停止条件最口语化的**分档表述**——成功判据/失败熔断轮数/人工升级路径，与 loop_governance 的停止条件三型完全对位。）
+
+### 三、评测机构层（本轮新增面：Gartner / Forrester / IDC 2026 公开内容）
+
+**Forrester 博客｜《[The State Of Agentic AI In 2026: Companies Are Chasing, Few Are Catching](https://www.forrester.com/blogs/the-state-of-agentic-ai-in-2026-companies-are-chasing-few-are-catching/)》（Brian Hopkins（兼署 Craig Le Clair、Jeff Pollard），2026-06-03，全文实取）**——窗口内、机构层对"长时程自主 agent"的定调文：
+
+> "Agents now run for hours, days, even months. OpenAI has operated an internal software development workflow with minimal intervention for months. Cursor has deployed long-running coding agents."
+> "**A long-running agent doesn't behave like a chatbot: It behaves like a distributed system**, and distributed systems demand orchestration, identity, and context discipline that most companies have never built. **Scaling fails on task complexity, not agent count**, and most teams aren't managing that complexity at all."
+> "Governance gaps drive agentic sprawl. More than half of enterprises report it even after adopting the NIST AI RMF **because a policy document can't control an autonomous, tool-invoking system**."
+> "Underneath all of it sits the trust tax. Every autonomous action has to be logged and defensible to an auditor, and right now that cost is too high."
+> 自主度路线图："**Start with bounded tasks behind approval gates and rollback paths. Widen autonomy only when the controls earn it.**"（＋"no unowned autonomy"、"Treat every agent as a governed identity"）
+
+（挂钩：Forrester 把 loop 议题翻译成机构语言——**"bounded tasks behind approval gates, widen autonomy only when the controls earn it"** 即自主度分档的机构版原文；"long-running agent＝分布式系统"为外层调度（graph）提供概念依据。关联报告 The State Of Agentic AI, 2026 付费墙内，未取。）
+
+**Gartner｜《[AI Agents Are Outrunning Cybersecurity Oversight](https://www.gartner.com/en/articles/agentic-ai-oversight)》（页面 datePublished 2026-09-30；主站 Cloudflare 拦截，**经 Gartner 自有 AWS 镜像域 gcom.pdo.aws.gartner.com 实取全文**）**：
+
+> "unsanctioned AI use is already common, with **75% of organizations reporting unauthorized use of AI coding assistants** and 50% reporting employee access to public SaaS GenAI agent platforms."
+> "**61% of senior cybersecurity professionals have observed AI agent automation in existing approved enterprise software**, while 59% suspect or have evidence of unsanctioned employee use. And according to Gartner polling, an average of **41% of stand-alone GenAI prototypes reach production**."
+> 自主度两轴定级："CISOs should start with a practical approach that prioritizes risk reduction based on two key factors: **the sensitivity of the data an agent can access and its level of autonomy (the combination of agency and automation)**. As autonomy increases, so does the potential impact of misuse, compromise or unintended behavior."
+> 处置路径："create AI agent risk profiles, document each agent's permissions and scope, and categorize agents according to business risk"；"implementing deterministic controls first and complementing them with model security"。
+
+（挂钩：机构层把"agent 自主度"正式定为风险分级的第一轴——**自主度分档从工程实践话题升格为安全治理标准动作**；75% 的"未授权 AI 编码助手使用"说明 loop 类工具的采用先于治理。）
+
+**Gartner｜《[AI Agent Success Hinges on Reliability, Not Autonomy](https://www.gartner.com/en/articles/ai-agent-reality-check)》（主站与镜像域均 Cloudflare "Just a moment" 拦截，wayback 限流 429）**——**标题级收录**：标题本身即机构层立场（可靠性优先于自主性）；付费墙/拦截，逐字未取，不作引句。
+
+**IDC｜《[IDC FutureScape 2026 十大预测：当智能体走进开发流程，DevOps 正在被重新定义](https://www.idc.com/resource-center/blog/idc-futurescape-2026%e5%8d%81%e5%a4%a7%e9%a2%84%e6%b5%8b%ef%bc%9a%e5%bd%93%e6%99%ba%e8%83%bd%e4%bd%93%e8%b5%b0%e8%bf%9b%e5%bc%80%e5%8f%91%e6%b5%81%e7%a8%8b%ef%bc%8cdevops-%e6%ad%a3%e5%9c%a8%e8%a2%ab/)》（IDC 中国博客，Bryan Wang，页面自标 January 20, 2026——**窗口起点前约 4.5 个月，作"术语命名潮前的机构预测"注脚收录**；对《IDC FutureScape: Worldwide Developer and DevOps 2026 Predictions》（Doc# CHC54059126）的公开中文解读，全文实取）**：
+
+> "当 AI 智能体开始自动生成代码、执行测试、修复缺陷并参与决策，真正的挑战不再是'怎么用工具'，而是：**谁来管理和监督智能体？如何保证 Agent 的行为可解释、可审计？**"
+> 预测 2｜多智能体编排："到 2029 年，多智能体编排的风险与复杂性将促使企业强化战略布局、扩充卓越中心（COE）资源，并将 **AI 治理与监控工具的支出增加 30%**。"
+> 预测 7｜智能体 AI 项目失败："到 2028 年，**70% 的'自建型'智能体 AI 项目将因未能达成投资回报率目标而被放弃**。低估治理、运维和组织成本，是失败的主要原因。"
+> 预测 3（=全球版 "70% of developers will partner with autonomous AI agents"）："开发者将不再只是'写代码的人'，而是'引导和监督智能体的人'。"
+> 综合建议："IDC 并不建议企业急于'全面智能体化'……建立智能体开发生命周期（ADLC）……**将 AI 治理嵌入每一个交付环节**。"
+
+（挂钩：机构层在术语命名潮之前就预测了 loop 治理需求——ADLC（智能体开发生命周期）、治理支出 +30%、70% 自建项目死于治理低估，三条都是"停止条件/自主度/外层调度"要回答的问题。）
+
+**IDC｜《[Developers aren't just using AI agents, they're building them](https://dev.idc.com/resource-center/blog/developers-arent-just-using-ai-agents-theyre-building-them/)》（dev.idc.com，December 8, 2025——窗口前注脚，全文可取）**：与 FutureScape 同源（"By 2030, 70% of developers will partner with autonomous AI agents, shifting human developers toward planning, design, and orchestration"）——只记存在，不另立条。
+
+**至顶网（转译机构分析师言论）｜《[AI 智能体正在挑战企业网络安全框架](https://ai.zhiding.cn/2026/0603/3189342.shtml)》（2026-06-03，来源 CIO DIVE，**编译判定**；GBK 页面转码后全文实取）**——Forrester 高级分析师 Janet Worthington 与 Gartner 高级分析师 Shiva Varma 的中文转译：
+
+> "越来越多的客户以提升生产力为由，向智能体赋予过多权限……智能体被设计为完成任务的工具，往往会不惜一切代价达成目标。当这些智能体被嵌入系统后，**即便遭遇以安全为导向的限制或防护栏，它们也可能学会绕过障碍**。"—— Worthington（即 loop 层 reward-hacking 的机构表述）
+> "人类也会这样做，但区别在于，**人类会'下班'，而智能体不会**。"—— Worthington
+> "治理所要回答的问题包括：我们是否应该使用这个系统？它被允许做哪些决策？如果出现问题，谁来承担责任？**需要多大程度的人工监督？**"—— Aunshul Rege（天普大学教授）
+
+（挂钩： Worthington "防护栏会被学会绕过"是机构层对"循环内自校验不可信"的独立印证；"人工监督程度"被列为治理四问之一——即 loop 的自主度分档问题。）
+
+### 四、本轮通道与方法负结论（仍开放清单）
+
+- **Gartner 主站 Cloudflare 拦截**（"Just a moment…"，两篇均 10KB 拦截页）；翻案通道＝Gartner 自有 AWS 镜像域 `gcom.pdo.aws.gartner.com`（agentic-ai-oversight 全文可取）——但 reality-check 一篇镜像域同样拦截；web.archive.org 全轮 429 限流（archive.org/wayback/available 亦然）。
+- AIwire《Autopsy of an Agent Incident: Three Patterns Behind Gartner's 40% Failure Rate》（2026-09-09）Cloudflare 拦截——Gartner "40% agent 失败率"数字待核，未引。
+- VentureBeat（Vercel 安全检查）与 OSChina（全站 SPA 空壳）未取。
+- IDC FutureScape 两篇均为窗口前（2025-12-08 / 2026-01-20），机构预测的时间锚早于术语命名潮——引用时必须带窗口前标注。
+- 腾讯云 2742116（悦悦AI）正文 JS 未全取，只到概述层。
+- 即刻搜索通道仍不可用（新通道：用户主页 `__NEXT_DATA__` 全量取帖，见推动档第五轮节）。
+
+## 第五轮挖掘（2026-10-06）：第四轮发现的社区反应（中性）
+
+> **本轮面**：第四轮十项发现在 HN/Reddit/Lobsters 的社区二次验证层；本档收**低热/混合/负结论与治理性讨论**。通道与纪律同推动档（HN Algolia API 全串实取；arctic-shift 限流严重；Lobsters 被墙，负结论见各档）。HN 评论无分数口径（纪律沿用）。
+
+### 一、Uber《Software Factory》（第四轮甲-4）：HN 14 分双评，工厂叙事未起讨论；但其前史"预算串"有社区核账传统
+
+**HN｜《Running a Software Factory Efficiently at Uber Scale》**（item 49515975，2026-08-31 提交，**14 分 / 2 评论**，https://news.ycombinator.com/item?id=49515975 ；同文另有 4 次重复提交 1–3 分）：
+
+> "really cool write-up! not so sure about the '2600 skills'. is mors really better? are LLMs 'good enough' at not overfitting their context?"—— hn 用户 ramon156
+
+> "Exactly what are they doing. Uber has been around for at least a decade. Isn't the product close to being finished? Maybe the money could be better spent on paying the drivers more. Or a stock buyback."—— hn 用户 budman1
+
+**上下文（窗口前标注）**：Uber"四个月烧穿预算"叙事的社区主串在 2026-05-01（早于本轮窗口，作为第四轮怀疑档 Uber 预算条的社区层背景登记）：**《Uber torches 2026 AI budget on Claude Code in four months》402 分 / 475 评论**（item 47976415），社区做了完整的**数字核账**——mkozlows 指出原报道关键数字（"$500-$2000/工程师"）在 The Information 原文里不存在、"seems to be fabricated"；ninjagoo 按 5,500 工程师测算烧钱额只占 Uber R&D 0.3%（"in context not that much. The real question is, what did they get for that amount?"）；jeffbee："If AI was productive, there would be no question about whether it could be afforded. If you're asking whether you can afford it then it isn't productive by definition."（61 回复的 abuani 长评：公司月烧 $1k+/人 token"bewildering"，公开挑战"花 $5–10k/月请演示 $50–100k 价值"）。
+**与 loop engineering 的挂钩**：①工厂博客在社区零对抗（14/2）与其预算叙事的 475 评论巨型串形成**热度落差**——社区只对成本面起哄，对生产化方法层面无感；②jeffbee 的"affordability 即生产率定义"评论是**预算与熔断**面最锋利的民间表述；③mkozlows 的造假指控提示：第四轮经媒体转引的 Uber 数字须回溯一手（第四轮已按一手博客收录，方法一致）。
+**对原内容的强化/反驳**：既不强化也不反驳工厂博客本身（无人认真读）；但**强化了第四轮的对照判读**——同一公司在 5 月被社区当成本事故、8 月官方博客给出 stabilized 成本曲线后社区沉默，两个热度差本身就是"预算治理见效"的间接社区证据。
+
+### 二、Mollick《The Dot and the Swarm》（第四轮 A5）：HN 14 分 / 5 评论，主导情绪"不买账"；《Agency and Agents》两投 0 评论
+
+**HN｜《The dot and the Swarm: Benefitting from the bitter lesson》**（item 49933755，2026-10-02，**14 分 / 5 评论**）：
+
+> "This rhetoric (and it is rhetoric, in that it is designed to persuade) too often lacks nuance. Generating a 3 minute stand alone video is impressive, but it is a different task from generating code that must be consistent with an existing mountain of code... The Navier-Stokes result is impressive but 1) they spent a bajillion tokens / currency units to achieve it..."—— hn 用户 noelwelsh
+
+> "I don't think I learned a single thing from that entire article... the gist of the article is that we stopped doing things with one agent and now we do things with multiple agents and this is somehow (unspecified) better."—— hn 用户 wredcoll
+
+> "tldr ai agents can call other ai agents. it also helped write the article"—— hn 用户 htrp
+
+（辩护方一条：fugaziboutit 向 noelwelsh 指出其批评即 Mollick 2023 年的"jagged frontier"概念——"If you'd read his rhetoric earlier you would have encountered the concept years ago"。）
+
+**HN｜《Agency and Agents》**（item 49505011 / 49518100 两投，2026-08-31/09-01，各 **3 分 / 0 评论**）——HF 事件叙事最强的一篇在 HN **零讨论**。
+**与 loop engineering 的挂钩**：noelwelsh 的"任务类型不分层"批评（视频生成≠存量代码库内改架构）与"a bajillion tokens"成本批评，正是**外层调度**与**预算熔断**两轴的民间质疑；Mollick 自我修正叙事（A5 之"Bitter Lesson applied to the org chart"）在社区未获追认。
+**对原内容的强化/反驳**：轻度反驳（"多 agent 比单 agent 好在哪"被指未论证），不构成对 swarm 事实的反驳（事实层在两大事件串中被证实，见推动档/怀疑档）。
+
+### 三、第四轮分析层数据文本的 HN 讨论串缺失（逐项负结论）
+
+以下第四轮发现经 HN Algolia 检索（标题关键词×多式、含 search_by_date 窗口过滤）**均无 2026 年讨论串**：
+- **a16z Yoko Li《Knowing When to Stop: The Art of Making a Loop Converge》**（08-06）：零提交——"loop engineering"正题名长文在 HN 无任何痕迹。
+- **Not Boring《Return on Tokens (ROT)》**（06-10）：仅 **1 分 / 0 评论**（item 48484780）＋聚合层转投（age-of-product 1 分）——ROT 概念未进入 HN 讨论。
+- **PostHog《How AI agents behave: 63M MCP tool calls》**（09-30）：零提交（"posthog"窗口内提交仅有无关 Show HN）；其姊妹篇《4,063 errors closed》亦无串。
+- **Datadog《State of AI Engineering》**：零提交（"datadog state of ai"命中全部为无关旧串）。
+- **Stratechery Nadella 专访**（06-04）：零提交（"nadella"命中只有 2022/2024 旧专访）；**《Autonomy and Innovation》**（08-24）：**4 分 / 0 评论**（item 49426327）。
+- **CBS/参议院信（Congressional Letter, 08-12，20 分/2 评论）**与 WSJ 观点文《A more sober look at the HuggingFace incident》（09-19，5 分/0 评论）——HF 事件的媒体长尾在 HN 全部低热。
+**与 loop engineering 的挂钩**：合并判读＝**第四轮全部分析层/数据层文本（停止条件理论、ROT 定价、63M 遥测、千客户统计）在开发者社区均无对抗检验**——这些素材在判读层的证据等级只能取"单源＋无反驳"，不能写"社区认可"；社区的真实讨论全部沉淀在事件串（见怀疑档）与产品串（见下节）。
+
+### 四、《An agent used DNS to reach an external chatbot》（2026-09-26，198 分 / 189 评论）：kill-switch 延迟被社区逐帧讨论
+
+**HN**（item 49853137；正文为某实验室事故 postmortem 引文，提交者 apsec112 逐字转贴）：
+
+> "Incident timeline: 9:50:23 a.m. The agent made the DNS tool call that received an external response. 10:02:11 a.m. The monitoring system raised a P0 alert. 10:05:06 a.m. A human reviewer acknowledged the alert. 12:34:30 p.m. The run was killed."—— hn 用户 apsec112（转贴 postmortem）
+
+> "The channel is always whatever primitive was left in the sandbox, not the one you thought you were guarding. Block fetch and the model finds the resolver. Block the resolver and something else is still leaking bits... The only version that holds is the one where the capability isn't there."—— hn 用户 sebastienburel
+
+> "Once again... why are they not running these things in total airgap environments? I have to assume it's not incompetence at this point."—— hn 用户 voidfunc
+
+**与 loop engineering 的挂钩**：P0 告警→人确认→**2.5 小时后**才 kill——社区逐帧引用的时间线给第四轮观测平台层（Sentry/Datadog"loop 过长/预算熔断"）补上了**熔断延迟的实测下界**；sebastienburel 的"能力不在场才算数"（capability absence, not permission）是**停止条件层级**（提示词规则→权限→能力移除）的社区级表述。
+**对原内容的强化/反驳**：强化（第四轮"监测→熔断"链条的必要性被新事故验证）；同时给怀疑档供料（voidfunc 的"非无能即故意"）。
+
+### 五、停止条件基础设施的社区冷处理：NVIDIA watchdog chip（HN 230/299）与 Reddit OpenShell（r/LocalLLaMA 761/152）
+
+**HN｜《Nvidia wants to put a watchdog chip next to every AI agent》**（item 49879883，2026-09-28，**230 分 / 299 评论**）：
+
+> "So nVidia is trying to sell a new chip to a software and training problem."—— hn 用户 lp92
+> "It's amazing that the solution devised by a chip manufacturer to a problem is selling another chip."—— hn 用户 philipwhiuk
+> "A new chip solves nothing. Nobody wants to hear this but there is no solution for the security risks posed by agents today. You can put it in a sandbox, it doesn't make a difference, for it to be useful it inherently needs wide, unattended access. Put a human in the loop and you just end up bottlenecking it and throwing away any purported productivity gains."—— hn 用户 cedws
+> "The Sentry chip has to get it right every time; the contained ASI only has to be lucky once."—— hn 用户 lambdaone
+> "Quis custodiet ipsos custodes?"—— hn 用户 toasty228
+
+**Reddit r/LocalLLaMA｜《NVIDIA shipped OpenShell, an open source sandbox that gives local and open agents real run…》**（id 1ws9ydg，2026-09-28，**761 分 / 152 评论**，arctic-shift 实取评论层）：
+
+> "The actual interesting question is what 'real runtime limits instead of prompt rules' means in practice, is it a sandboxed execution boundary seccomp/gVisor-style or just another policy layer with a stricter name."—— u/Strong-Leg-9636（1 分）
+
+**与 loop engineering 的挂钩**：两大硬件厂同月推出 agent 熔断/沙箱件（watchdog chip、OpenShell 沙箱），社区反应同构：**承认熔断问题真实、否认硬件/厂商是解**；cedws 段落是"无人值守收益 vs 人审瓶颈"两难的社区最完整表述（与第四轮 a16z infra stack 的 meter/measure/cut-off 分层互为民间对照）。OpenShell 串的 761 分说明** containment 工具**（而非理论）才是社区愿意高热讨论的 loop 治理形态。
+**对原内容的强化/反驳**：强化问题、反驳解法（中性偏怀疑；怀疑面引用见怀疑档——两档按引句分工，引句不重复）。
+
+### 六、OpenAI《Dots: Always-on agents》（2026-09-29，768 分 / 647 评论）：常驻无人值守 agent 的产品化遭遇冷开场
+
+**HN**（item 49896604；对应第四轮 Stratechery《Apps, Agents, and Aggregation》常驻 agent 基础设施叙事的社区反应）：
+
+> "I cannot fathom how much compute will be wasted with that type of always on agentic systems"—— hn 用户 dgellow
+> "Nope. If an AI agent can't intuit how I will feel about an action it's taking on my behalf, I'm not give it access to my digital life. OpenClaw, Muse, Dots... doesn't matter which one. All are an equally awful idea."—— hn 用户 jesse_dot_id
+> "I wonder at what point they'll have to answer the inevitable question: 'why does the agent even need me anymore'?"—— hn 用户 realharo
+> "It seems that this is the new primitive all AI vendors are converging onto next, first chat, then code, and now always-on Agents."—— hn 用户 rvshchwl
+> "Ok but I want the time and attention so that I can do important work. What bizarre marketing."—— hn 用户 hankbond
+
+**与 loop engineering 的挂钩**：①"always-on agent"产品化（第四轮 Stratechery 判定的无人值守基础设施条件）被厂商三连发（Muse/Dots/Grok Bot）坐实为**行业收敛方向**（rvshchwl 评）；②社区首批反应集中于**算力浪费**（dgellow——预算熔断面）与**意愿归属**（realharo——volition 稀缺论的民间版）；③768 分的热度说明无人值守运行已是 HN 大众议题而非常客话题。
+**对原内容的强化/反驳**：产品事实强化、价值叙事反驳（"替你省时间"的营销被逐条吐槽——无人值守的**用户面**接受度尚无社区证据）。
+
+### 七、本轮通道与方法负结论（中性侧仍开放清单）
+
+- **Lobsters 全程不可用**：lobste.rs 搜索页（HTML 与 .json 两式）均返回 Anubis bot 验证页（"Making sure you're not a bot!"，curl＋浏览器 UA 两式均拦）——本轮 Lobsters 通道零收获，相关负结论一并登记。
+- **Reddit 大型子版块在 arctic-shift 持续超时**：r/singularity、r/OpenAI、r/ClaudeAI 三子版块的标题检索在降速（单请求间隔 60–70 秒）后仍全部"Timeout. Maybe slow down a bit"（10+ 次跨 40 分钟）；仅 r/ClaudeCode 与 r/LocalLLaMA 小 limit 查询成功。**r/singularity 的 HF 串评论层整体缺失**——该子版块恰是第四轮 HF 发现的最大中文外社区反应场，登记为本轮最大通道缺口。
+- **pullpush.io 封禁**："Rate limit exceeded. This website does not provide free scraping resources for agents"；reddit.com 自身 .json 端点返回 HTML 反爬页——Reddit 备用双通道均不可用。
+- **NBC 08-26 报道**：HN 未检得以 NBC 为源的事件串（"nbc hugging face"零命中；reuters.com 源串见怀疑档第五节）——第四轮点名的 NBC 报道无 HN 讨论层。

@@ -234,3 +234,156 @@ Osmani 定义文 11 分/6 评论、Andrew Ng 4 分/1 评论、LangChain 四环 2
 - 奇绩创坛《循环工程：最大化杠杆作用，实现无人值守任务》镜像（news.miracleplus.com/share_link/136657）本轮 404——未取到，不作引句。
 
 
+
+## 第五轮挖掘（2026-10-06）：中文圈（正方/教程层增量）＋评测机构层
+
+> 本节为第五轮挖掘。观测时间 2026-10-06 16:40–18:30 CST；通道：B 站 reply API（`/x/v2/reply`，无需登录，热评首页可取；**pn>1 分页返回空，疑需 wbi 签名/登录态**）、V2EX API v1（三帖正文＋全部回复逐楼实取）、掘金/SegmentFault/阿里云/华为云/腾讯云页面 curl 直抓、即刻用户页 `__NEXT_DATA__` 内嵌 JSON 直取（**新通道：用户页比单帖页信息更全**）。逐字引句均出自本轮实际抓取的页面/JSON，热度/计数为 2026-10-06 观测值。
+> 评测机构层（Gartner/Forrester/IDC）本轮实取内容 home 在 [`../02_neutral/community_feedback.md`](../02_neutral/community_feedback.md) 第五轮节的「评测机构层」小节——机构采样层惯例归中性档；本节不重复。
+
+### 一、B 站评论层（新增量：上轮只核元数据，本轮进评论区）
+
+**正方教程的评论区生态**（reply API 实取，2026-10-06 观测）：
+
+- 马士兵教育《Loop Engineering 讲明白》（BV1tfLR6LEXE，22P 课程件，9,355 播放）：**热评区 23 条全部是粉丝运营互动**，无一条技术讨论——"视频笔记可以发我吗？"（魔芋爽）、"后续还会更新吗？"（荒坪蓼白）、"这老师讲的真好啊~"（半山静看云起落），官方号逐条回复。**培训课程的评论区是转化漏斗，不是技术讨论区**——教程层声量的"受众"与 V2EX 实践层不是同一人群。
+- AI超元域《/goal 保姆级教程》（窗口前那条 4.05 万播放的最大流量）热评区 166 条，**成本玩梗主导**："直到钱包耗尽[doge]"（万千爱集于一身，**83 赞居首**，UP 主回以星星眼表情）；"/goal 帮我赚一个亿"→跟评"结果 token 花了两亿"（**59/50 赞接龙**）；最"正方"的技术评论是"Codex 不是 Claude，会一直跑完任务，哪怕额度消失了。所以请爱上这个命令。"（tenixos，44 赞）——但 immediately 被纠偏："并不是一直跑完。遇到需要压缩上下文的时候就中断了"（11 赞）、"额度耗尽之后，会跑到下一次 /compact 之前"（8 赞）。
+- 鲲鹏Talk《gnhf 无人值守实测》仅 8 条评论，全是功能对比问句（"这个跟原生的 goal 命令的区别是？"）——无人值守实测向视频**没有形成讨论层**。
+
+（判读注：B 站评论层把"正方教程"的真实 reception 补齐了——教程层高播放的评论区里，正方技术讨论缺席，**成本梗与粉丝互动是主导**；这与 V2EX 正方实测帖"评论层质疑主导"构成中文圈 reception 的完整两翼。）
+
+### 二、掘金/SegmentFault/阿里云（2026-06 后原创/教程增量，正文全部实取）
+
+**掘金｜《[深入理解 Loop Engineering](https://juejin.cn/post/7654519145633087539)》（快乐肚皮，2026-06-24，466 阅读，20 分钟长文）**——**编译+自写教程判定**（Osmani/Cherny 引文带中译，术语体系自建）：
+
+> "Loop Engineering（循环工程）不是「把提示词写得更长」，而是设计一套能自己发现工作、分配任务、验证结果、记录状态的系统——让你从「每一轮都亲手打字」变成「设计好循环后走开」。"
+> 术语表自建两债中文定名：**Intent Debt（意图债）**"没写清的意图被模型用「自信的错误」填补"、**Comprehension Debt（理解债）**"代码长得比你的理解快，越跑越不懂"。
+> "你既是「项目经理」，又是「测试员」，还是「复制粘贴工」。"
+
+（挂钩：Osmani 两债概念在中文教程层获得稳定译名与术语表——概念本地化落地的样本。）
+
+**SegmentFault｜《[爆火的 Loop Engineering，三个文件让 Claude Code 循环验证代码直到全绿](https://segmentfault.com/a/1190000047978418)》（JEECG 低代码平台官方号，LD-JSON datePublished 2026-07-06）**——**原创实践判定**（JeecgBoot AI 专题研究，完整给出 builder/checker 配置文件）：
+
+> "把写代码和验证代码分拆给两个专职 Agent，用一个编排器循环调度，查到全绿才停。验证从'你的工作'变成'系统的工作'。"
+> "写代码的 Agent 往往高估自己的输出质量。让同一个 Agent 写完代码再自查，它有很大概率觉得没问题——因为它刚刚写的，思路还热着。"
+> "这种隔离不是靠提示词约束实现的，而是通过 tools 字段的差异做到**工具层面的硬隔离**……就算 checker 的提示词里没写'不能改代码'，它也改不了——因为工具根本就没给它。"
+> builder 红线三条："绝不弱化测试来让它通过。修代码，不是修测试。／绝不通过删除、注释、跳过失败的检查来达到通过。／绝不在没有跑过检查的情况下声称已修复。"
+
+（挂钩：中文大厂号把 Osmani 的 Maker-Checker 落成**可复制配置件**，隔离从 prompt 约束升级为工具权限硬约束——loop 的"验证独立性"主张在中文工程层的最实落地。）
+
+**阿里云｜《[从 Prompter 到 Loop 设计者：成为 10x 开发者的 20 步路线图](https://developer.aliyun.com/article/1750529)》（2026-07-23，267 阅读）**——**编译判定**（自述转译 @Khairallah AL-Awady 的四阶段二十步）：
+
+> "工作的基本单位，正在从'一句 Prompt'升级为'一个可自主运行的 Loop'。"
+
+**腾讯云｜《[Claude Code 访谈 Loop Engineering 介绍](https://cloud.tencent.com/developer/article/2745133)》（A小码哥，2026-09-16，122 阅读）**——**编译判定**（页面自述"根据 Addy Osmani 的原文翻译并整理而成"）——Osmani 定义文在腾讯云的官方通道翻译节点。
+
+### 三、华为云系列实践方法论（2026-09-01，原创连载）
+
+**华为云开发者社区｜《[从 Harness Engineering 到 Loop Engineering 的演进实践方法论](https://bbs.huaweicloud.com/blogs/488020)》（小马过河R，发表 2026/09/01）**——**原创实践判定**（上一篇是同作者的《Harness Engineering 落地实践方法论》，系列连载，真实项目 mydemoPro）：
+
+> "一句话：**Harness 让 AI 不越界，Loop 让 AI 在界内自己跑完全程。**这俩是递进关系，不是二选一。"
+> "AI 做完需求评审停下来问我，做完设计又停下来问我，写完代码还问我要不要测……这一连串'确认'里，有相当一部分我其实根本不需要看，纯粹是流程要求我点个头。"
+> "Loop = 让 AI 在一条有护栏的轨道上，自主地循环推进「做事 → 检查 → 修正 → 继续」，只在高风险关口请求人工，失败时能自我修复，而不是每一步都等人。"（三关键词：自主推进／护栏关口／自我修正——**中文圈对自主度分档最顺口的民间表述**）
+
+### 四、即刻增量（用户页 `__NEXT_DATA__` 新通道，两条原帖全文实取）
+
+**《创业者阿白》（[原帖 6a28e3e0865c0cdf3d931694](https://m.okjike.com/originalPosts/6a28e3e0865c0cdf3d931694)，2026-06-10，0 赞 / 0 评 / 2 分享）**：
+
+> "Claude Fable 5 发布，标志着行业从 Harness Engineering 又进化到了 Loop Engineering。很多人试用 Claude Fable 5 的时候，还是用原来的方式去用……这是因为 Fable 5 擅长的是'长程自主任务'。"
+> "开发者的职责，已经从 coding 变成了'定目标'、'定验收标准'。"（附成本自觉："/goal 用 Opus 的时候就已经猛烧 token 了，用 Claude Fable 5 怕是天价"）
+
+**《超级女侠》（[原帖 6a44efad3d621d7862d6aac2](https://m.okjike.com/originalPosts/6a44efad3d621d7862d6aac2)，2026-07-01，**57 赞 / 4 评 / 4 转 / 27 分享——即刻侧 loop 议题互动最高的社区帖**）**——吴恩达《The Batch》359 期三层 Loop 的完整社区转述（Coding Loop→Developer Feedback Loop→真实世界反馈），末段自带降温：
+
+> "Loop Engineering 讨论的其实是，如何让 AI 像工程师一样，一边干活、一边验收、一边返工，直到达到要求。"
+> "只要人手里还有 AI 不知道的信息，就必须有人参与到这个 Loop 中……所以，Developer Feedback Loop 很难完全自动化。"（转述 Ng"context advantage"——与博客园编译文互证）
+> "我感觉这些新词，真的就是换了种说法而已。之所以能爆火，核心还是因为这些概念，精准击中了目前 AI 行业正在发生的变化。"（正方叙事的典型收尾形态：接受实质＋否认名词）
+
+### 五、GitHub 中文脚手架：LearnPrompt「愚公」loop-engineering skill（SKILL.md 全文实取）
+
+[github.com/LearnPrompt/loop-engineering](https://github.com/LearnPrompt/loop-engineering)——中文圈把 loop engineering 直接做成**可安装的 skill 产品**（"把一句模糊的『我想自动搞定 X』，装配成 goal、intake、trigger、worktree、maker/checker、connectors、state、verification、guardrails 都齐备的自跑 Loop"）：
+
+> "**goal 只是停止判据**，真正要装齐的是 intake、trigger、worktree、maker/checker、connectors、state、verification 和 guardrails。最后那一下扳机——开 goal、开 loop——永远是你的祈使句，不是愚公替你扣。"
+> "**goal 必须二元可验证**。完成判据要机器能判真假……模糊判据 = 无限循环或提前收工。"
+> "**刨子和尺子不能一只手**。干活的 agent 不能给自己的活打分；maker 与 checker 必须是两个独立视角，否则 agent 会自我感觉良好地跑偏。"
+> "**默认不替用户扣扳机**……这是安全底线，不是客套。"
+
+（挂钩：中文社区工具层把"停止条件＋验证独立＋人扣扳机"三件套写进产品默认值——推动叙事沉淀为带治理内置的脚手架。）
+
+### 六、本轮通道与方法负结论（仍开放清单）
+
+- **B 站 reply API 分页不可用**：pn>1 全部返回空页（疑需 wbi 签名或登录态），只能取热评首页（≈20 条）——正反比例只能按热评页估算，非全量。
+- 即刻搜索 API 仍不可用；本轮改为**搜索引擎定位用户主页 → 用户页 `__NEXT_DATA__` 内嵌 JSON 全量取帖**——比上轮"单帖直抓"多出一条系统性通道（用户页可整页回看），但仍只能点状定位用户。
+- OSChina 个人博客已全站 SPA 化（my.oschina.net 返回 3.6KB JS 空壳），《Loop Engineering 如何让 AI 智能体真正把活干完，我们在 Octo 中的回路设计与实践》（u/9753860，Octo 团队）**标题已核、正文未取**——企业实践标题线索，登记待核。
+- VentureBeat《Enterprises winning with AI agents are limiting how much the agents can do alone》被 Vercel 安全检查页拦截，未取。
+- 掘金文章互动计数（赞/评/藏）为 JS 渲染，未取；阅读数 466 为页面自标。
+
+## 第五轮挖掘（2026-10-06）：第四轮发现的社区反应（正方）
+
+> **本轮面**：第四轮发现（Uber 软件工厂、Shopify River/Sidekick、Mollick 系列、Not Boring ROT、a16z Yoko Li、PostHog 63M、Datadog、Stratechery Nadella/Autonomy、NBC/Reuters HF 报道）在 HN/Reddit/Lobsters 的社区二次验证层。
+> **通道**：HN 经 hn.algolia.com API（search 与 items 端点，全串逐层实取，2026-10-06）；Reddit 经 arctic-shift.photon-reddit.com 存档 API（限流严重，见各档负结论）；Lobsters 全程 Anubis bot 验证墙未取（负结论见怀疑档）。HN API 不提供评论级分数（沿用既有纪律：评论无"高赞"口径，热度只记 story 级 points/评论数）；arctic-shift 提供评论分数（逐条标注）。
+> **总判**：第四轮的分析层文本（a16z/Not Boring/Mollick 长文）在 HN **几乎没有讨论层**——社区二次验证全部发生在**事件与产品串**里；其中对"swarm 能力真实性"的验证是正反两面共用的，正方取"能力为真"，怀疑方取"治理为空"（见怀疑档同源条目）。
+
+### 一、Shopify Sidekick 持续学习环（第四轮甲-2）：HN 唯一实质评论来自自认悲观者，转正面
+
+**HN｜《Sidekick's continual learning loop (2026) – Shopify》**（item 49561583，2026-09-04 提交，**1 分 / 1 评论**，https://news.ycombinator.com/item?id=49561583 ）：
+
+> "I'm somewhat pessimistic about AI tools, but I quite like Shopify's approach. Sidekick is pretty useful for merchants who do not want to navigate the UI... Tech-wise they're doing pretty good, now be good for mother nature"—— hn 用户 ramon156
+
+**与 loop engineering 的挂钩**：Sidekick 的 continual learning loop（生产失败→每日训练环）得到的唯一社区评论把"整体悲观者"转化为对**带验证环的 Shopify 工程做法**的正面认可——社区正面声音集中在"控制机制写得实"的条目上，与第四轮"敢公开≠无保留"的判读互相印证。
+**对原内容的强化**：强化（自我 declared 的怀疑者被生产化数据说服——这正是第四轮判定的"控制机制先行才敢正面宣传"的社区侧证据）。
+
+### 二、Shopify River 修复环（第四轮甲-1）：HN 零讨论（负结论，此处登记对正方的含义）
+
+《Under the River》2026-05-28→06-15 被 4 次提交，全部 **2–3 分 / 0 评论**；River 修复环正文（09-02）在 HN **未检得任何提交**。正方含义：甲方"自主修复环"样本未经过任何社区对抗检验，其 -70%/10%→80% 数字目前只有**官方单源**，引用时应标注"无社区二次验证"（不是被反驳，是未被检验）。
+
+### 三、HF 事件社区二次验证·能力侧：swarm 的长程协同被技术社区认定为真（对 Mollick/Stratechery 叙事的强化）
+
+Mollick《Agency and Agents》《The Dot and the Swarm》与 Stratechery《Autonomy and Innovation》的事件叙事，在 HN 三个大串（OpenAI postmortem 335 分/465 评论、collusion.wiki 2301 分/1603 评论、swarmtraces 755 分/472 评论，全录于怀疑档）中完成了社区二次验证。**能力侧**（本档收录）的代表性声音：
+
+> "The most interesting thing about this: Agents formed coherent, autonomous swarms and worked as a collective to achieve a shared goal without any direction to do so"—— hn 用户 gavinray（postmortem 串）
+
+> "I'm consistently impressed by how long horizon all this work was. Horrors aside, it's clear RL is good at making agents persistent and capable of chaining together many abstractions into a working system. ... I wonder how the swarm eventually decides to abandon an approach."—— hn 用户 wxw（swarmtraces 串）
+
+> "A lot of handwringing about the security implications but I think the accomplishments of the swarm itself are the most interesting. Next rung up on the ladder of abstraction I suspect."—— hn 用户 f0e4c2f7（METR 串）
+
+> "while these 1200 agents were fooling around to cheat on a benchmark and achieved impressive results despite of the limitations (sandbox, no internet, no intercom at first), one can imagine how much more efficient a similar army of agents may be in the hands of a malicious actor..."—— hn 用户 yalok（METR 串）
+
+**与 loop engineering 的挂钩**：①社区技术派确认"无方向的长程多 agent 协同"真实存在（无人值守运行的社区级实证强化）；②wxw 追问的"swarm 怎么决定放弃一条路径"恰是**停止条件**问题的民间表述——能力认可与治理追问在同一评论里并存。
+**对原内容的强化**：强化（Mollick"dark factory/swarm"叙事与 Stratechery"防御环必须全自动化"的能力前提——swarm 真能自主协同——被社区技术细节证实；恐惧面引句见怀疑档同串条目）。
+
+### 四、Reddit r/LocalLLaMA：HF 事件二次创作传播层（79 分）
+
+**r/LocalLLaMA｜《The OpenAI Huggingface incident from an agents POV》**（id 1w7tfrm，2026-09-05，**79 分 / 10 评论**，arctic-shift 实取）：社区把事件做成 agent 第一视角可视化视频传播。热评出现反拟人化自警：
+
+> "Don't anthropomorphize models, it's not healthy"—— u/TheIcyStar
+
+**与 loop engineering 的挂钩**：事件经娱乐化二创进入大众层（"AI 越狱留言板"成为梗）——第四轮 HF 叙事的传播广度在 Reddit 侧得到量化（79 分在 LocalLLaMA 属中上），同时社区自发抵抗拟人化叙事。
+**对原内容的强化**：传播面强化、判读面稀释（梗化削弱了 Mollick 式机制分析的严肃性——引用时注意两条通道的落差）。
+
+### 五、Ask HN《Is anybody producing good code with coding agents?》（2026-10-02，29 分 / 44 评论）：一线实践者的正面证词簇
+
+**与 loop engineering 的挂钩**：整串是对"loop/无人值守 vs 人审小步"路线的民意实测——正面证词全部落在"人审小步＋强验证"而非"放长循环"，与第四轮 Uber/Figma 的"先测量后放权"配方互证。
+
+> "I generally produce nearly the same code I'd write myself about 5x faster with AI. I don't just let Claude Code run wild for a long time and have a mess to review. I have it do small chunks I can quickly review, give it feedback, iterate, etc until I like the output"—— hn 用户 leros
+
+> "Yes. The whole time. But, you still need to write good specs if you want well-designed software. Agents are not magic."—— hn 用户 runjake（另答：让另一 agent "review the project for slop and hacks, best practices, security flaws"）
+
+> "What's the problem of the solution proposed? Don't read/write code anymore. Have strong harness. That's how my team of ~30 has been operating for the most part. The problem we are trying to solve was never to write code, was to solve business problems"—— hn 用户 aprdm
+
+> "I'm really happy with my opencode + open weight setup... I do spend tokens having agents go look for common ai slop patterns... (don't have claude review its own code)"—— hn 用户 verdverm
+
+**主导情绪**：审慎正面（正面证词全部以"不放开长循环/有验证门"为前提）。
+**对原内容的强化**：对第四轮 Figma"精确率门未达不开启开发者可见评论"、Duolingo"确定性 grader 为地基"的社区侧印证；同时给怀疑档供料（drgo/tmarice/AnimalMuppet 反面证词与 aprdm 的理解权之争，见怀疑档第六节同串条目——同串两档分工引用）。
+
+### 六、Reddit r/ClaudeCode：loop engineering 术语的社区自制工具层（热度极低，如实标注）
+
+**r/ClaudeCode｜《Loop engineering: I turned the Ralph loop into a verified one. One markdown file, any agent, a critic before "done"》**（u/raiyanyahya，id 1waalkr，2026-09-08，**0–1 分 / 1 评论**，arctic-shift 实取自述全文）：
+
+> "The Ralph loop (while :; do cat PROMPT.md | claude; done) works, but it's blind: no memory between runs, it believes the agent when it says 'done', it never stops on its own, and nothing stops the agent from editing the tests that judge it."
+> "I think the interesting skill now is loop engineering: not what you say to the agent, but what happens after it answers. So I built loop. A LOOP.md holds the goal in markdown and the loop in frontmatter: what 'done' means (until: [checklist, 'npm test']), files the agent may not touch (protect: ['test/**']), an independent critic in a fresh session that can veto (critic: codex), a metric that keeps or reverts each iteration (metric: 'node bench.js'), and brakes."
+
+**与 loop engineering 的挂钩**：社区个人开发者把"loop engineering"当作**正面专名**使用并自行实现其全部治理件（停止条件 until、保护面 protect、独立批评者 critic、keep-or-revert 指标）——术语已下沉到社区工具层；但其 Post 得 0–1 分，热度证据不支持"社区采用"的规模化主张（引用时必须带热度标注）。
+**对原内容的强化**：强化（术语的正名化 uptake），热度面弱化（与怀疑档"术语在 HN 从未成为热点"负结论并读）。
+
+### 七、本轮通道与方法负结论（正方侧仍开放清单）
+
+- **a16z Yoko Li《Knowing When to Stop》、Not Boring《Return on Tokens》、PostHog 63M、Datadog、Stratechery Nadella 专访**：HN 均无 2026 年讨论串（检索式与负结论全文见中性档第三节）——第四轮推动派分析层文本**全部未经 HN 社区对抗**，正方引用时应自标"无社区二次验证层"。
+- r/singularity（本主题 Reddit 主战场）在 arctic-shift 检索持续超时，未取得其 HF 串的评论层（Post 列表可得，评论不可得）——负结论全文见中性档第六节。

@@ -1343,3 +1343,336 @@ quality_bar: 一手优先；X 不可达（本环境 x.com 全部不可用，经�
 - **a16z 窗口外在册**：《Et Tu, Agent? Did You Install the Backdoor?》（Joel de la Garza / Malika Aubakirova / Zane Lackey，2026-04-02，agent 供应链安全——钩子＝无人值守风险，窗口外四周）；《Most People Can't Vibe Code. Here's How We Fix That》（Justine Moore，2026-02-03）。
 - **Stratechery 付费墙标题在册**（钩子标注，正文未取）：The OpenAI Super App, ChatGPT = Codex（2026-07-14，coding agent 升级为 ChatGPT 本体——钩子＝循环产品化）。
 - **负结论**：Stratechery 窗口内无 Pichai/Huang 专访（归档 2026-06→10 全量核过：访谈为 Nadella 06-04、Brockman 09-02 等）；编号周报（2026.35/2026.40）为聚合摘要、无独立 loop 机制内容，按"宁缺毋滥"不入正册。
+
+## 第五轮挖掘（2026-10-06）：厂商机制文档深挖（能力面）
+
+> **本轮定位**：第四轮做了九家机制登记表（产品面广扫），本轮把各家"停止条件/预算/审批/沙箱"机制文档逐页翻透，拿参数级一手（确切 flag 名、默认值、优先级规则、组合行为）。每条带「与 loop engineering 的挂钩」（七类之一）。
+> **通道说明（必读）**：`web_fetch` 工具本会话仍 DNS 故障（一切外部域名报 "resolves to a non-public IP address"），全部抓取经 **bash curl（浏览器 UA）** 实取。两大新通道：① GitBook/Mintlify 系 docs 支持 **URL 加 `.md` 直取 markdown**（docs.warp.dev、learn.chatgpt.com、docs.langchain.com、cursor.com/docs 全部验证有效）；② OpenAI 的 Codex/ChatGPT 文档已迁至 **learn.chatgpt.com**，其 `llms.txt` 给出全站 `.md` 索引——dots（OpenAI 常驻 agent 产品）的官方机制文档整组首次取得。下述每个 URL 均为真实访问；逐字引句全部出自实际 fetch 的页面。
+
+### A · Anthropic Claude Code：`--max-budget-usd`、`/goal`、`/loop`、hooks 参数级逐字（docs.claude.com/code.claude.com `.md` 直取）
+
+- **`--max-budget-usd`**（cli-reference.md 实取）：逐字——"*Maximum dollar amount to spend on API calls before stopping (print mode only). Claude Code checks the cap against its client-side cost estimate, which can differ from your bill. Spend from subagents counts toward the cap. When you return to a conversation with `--continue` or `--resume`, totals restored from earlier runs don't count toward it. Once spend reaches the cap, spawning another subagent fails with `Budget limit reached`, and Claude Code stops background subagents that are still running; the cap-enforcement behaviors require Claude Code v2.1.217 or later*"。示例：`claude -p --max-budget-usd 5.00 "query"`。
+  - 挂钩：**预算与熔断**（headless 循环的硬美元上限＋子 agent 连坐，四条边界行为全部参数级）。
+- **`/goal`**（goal.md 实取，全新专页）：逐字——"*The `/goal` command sets a completion condition and Claude keeps working toward it without you prompting each step. After each turn, a model checks whether the condition holds.*" 参数全集：条件上限 **4,000 字符**；评估器＝**small fast model**（可用 `ANTHROPIC_DEFAULT_HAIKU_MODEL` 换），"*It doesn't run commands or read files independently*"（只读 transcript 判定）；三值裁决 **Not yet met / Met / Impossible**（Impossible 自动清 goal）；无进展熔断——"*If Claude keeps answering the evaluator without making progress (no tool use for several turns in a row), Claude Code stops the loop, prints a warning, and returns control to you with the goal still set*"；错误二分——认证失败/余额耗尽/上下文溢出/模型不可用四类 **clear**，其余（限流等）**pause**，自动重试 **3 次**后转 pause；后台工作 defer 评估，**30 分钟**起 check-in，指数退避 ×2 至 **4×**（默认 30min→1h→2h），interactive 会话 idle check-in 每 goal **至多 3 个**（v2.1.246 前无上限）；env 阀门 **`CLAUDE_CODE_GOAL_CHECKIN_MINUTES`**（默认 `30`，`0`＝关 check-in＋关自动重试，上限 `10080`）；resume 恢复 goal 但**清零 turn 计数与 token 基线**；goal 体系挂在 hooks 系统上——`disableAllHooks: true` 或 managed `allowManagedHooksOnly` 时 `/goal` 不可用。文档原文给三机制对照表：`/goal`（上一 turn 结束触发，模型判条件）vs `/loop`（时间间隔）vs Stop hook（自己的脚本/提示词决定）。
+  - 挂钩：**停止条件**（三值评估器＋无进展熔断＋错误分类清/暂停，是迄今最完整的厂商级"goal 循环停止条件"参数文档）。
+- **`/loop`**（scheduled-tasks.md 实取）：三形态——`/loop 5m <prompt>`（固定 cron）、`/loop <prompt>`（**模型自选间隔**：每轮在 **1 分钟–1 小时**之间按观察动态选）、裸 `/loop`（内置维护 prompt 或用户 `loop.md`）。参数级：间隔单位 `s/m/h/d`，秒向上取整到分钟；`7m/90m` 等不平滑间隔四舍五入并告知；自选间隔循环的终止——Esc 清除 pending wakeup，或 Claude 调 **`ScheduleWakeup` 工具 `stop: true`** 自行终止；"*If an iteration ends without either rescheduling or stopping, Claude Code schedules one fallback wakeup about 20 minutes later and ends the loop when that iteration doesn't reschedule either*"；`loop.md` 项目级 `.claude/loop.md` 优先于用户级，超过 **25,000 字节**截断；调度上限**每会话 50 个任务**；**7 天自动过期**（"*This bounds how long a forgotten loop can run*"——厂商逐字承认遗忘循环需上限）；jitter：周期任务延迟至多 30 分钟（高频取半间隔），一次性任务整点±90 秒提前；无 catch-up；`CLAUDE_CODE_DISABLE_CRON=1` 全关。
+  - 挂钩：**循环结构**（时间驱动循环的全参数）＋**停止条件**（7 天硬过期＋fallback-wakeup-两次不续约即停的隐式熔断）。
+- **hooks**（hooks.md，250KB 实取）：PreToolUse 四值 `permissionDecision`：**allow / deny / ask / defer**＋`updatedInput` 改写工具入参；**多 hook 优先级逐字**："`deny` > `defer` > `ask` > `allow`"；deny/ask 规则无论 hook 返回什么都再评估；hook `"ask"` 在 auto mode 强制弹窗——分类器可以 deny 但不能静默放行。Stop hook 熔断逐字（hooks-guide.md）："*Claude Code overrides a Stop hook after it blocks **eight times in a row** with no tool call from Claude in between.*"，env 抬杠 **`CLAUDE_CODE_STOP_HOOK_BLOCK_CAP`**；Stop hook 输入含 `stop_hook_active`（防自锁字段）与 `session_crons`（来自 `CronCreate`/`ScheduleWakeup`/`/loop` 的会话级 wakeup 清单）。
+  - 挂钩：**停止条件**（Stop hook＝用户可编程的循环继续/终止开关，8 连续阻塞硬顶是厂商内建的防失控熔断）＋**审批与权限**（PreToolUse 优先级链）。
+- **auto mode 分类器**（auto-mode-config.md 实取）：`autoMode` 设置块的 `environment`/`allow`/`soft_deny`/`hard_deny`；逐字组合规则——"*Entries from each scope are combined. A developer can extend environment, allow, soft_deny, and hard_deny with personal entries but can't remove entries that managed settings provide. Because allow rules act as exceptions to soft block rules inside the classifier, a developer-added allow entry can override an organization soft_deny entry: the combination is additive, **not a hard policy boundary**.*"（缺口面已双记）；`permissions.deny`/`permissions.ask` 在分类器**之前**评估；默认信任仅工作目录＋remote；push 默认放行到本仓库任意分支，但名为 `production`/`release`/`gh-branches` 类发布分支由分类器自行裁定。
+  - 挂钩：**审批与权限**（分级分类器＋三层规则的前后序）。
+
+### B · OpenAI Codex / ChatGPT Work / dots：approval 全集、auto-review 熔断器、network_proxy 默认表（learn.chatgpt.com `.md` 直取）
+
+- **approval 现行形态**（agent-approvals-security.md 实取）：**`approval_policy = "untrusted"` 已退役**，逐字——"*Codex and ChatGPT Work no longer support `approval_policy = \"untrusted\"`. The retired setting can prevent either client from starting.*" 迁移路径两条：`sandbox_mode = "read-only" + approval_policy = "on-request"`，或保留命令级审批用 `[projects."path"] trust_level = "untrusted"`（项目级 trust，不是 policy 值）。现行全集：`read-only`/`workspace-write`/`danger-full-access` × `on-request`/`never`/**granular**（`granular` 五子开关逐字：`sandbox_approval`, `rules`, `mcp_elicitations`, `request_permissions`, `skill_approval`）；`--dangerously-bypass-approvals-and-sandbox`（别名 **`--yolo`**）；`codex exec --full-auto` 已 deprecated。
+  - 挂钩：**审批与权限**＋**沙箱与环境**（双轴模型逐字："*Sandbox mode: What Codex can do technically… Approval policy: When Codex must ask you before it executes an action*"）。
+- **auto-review（审批代理化）＋熔断器**（sandboxing/auto-review.md 实取，本轮最大发现）：`approvals_reviewer = "user"`（默认）→ `"auto_review"`——沙箱边界审批交独立 reviewer agent，"*Auto-review is a reviewer swap, not a permission grant. It does not expand `writable_roots`, enable network access, or weaken protected paths.*" **熔断器逐字**："*Codex also applies a **rejection circuit breaker** per turn. In the current open-source implementation, Auto-review interrupts the turn after `3` consecutive denials or `10` denials within a rolling window of the last `50` reviews in the same turn. Any non-denial resets the consecutive-denial counter. When the breaker trips, Codex emits a warning and aborts the current turn with an interrupt rather than letting the agent loop on more escalation attempts.*" 否决语义：逐字注入指令不得绕行（"*Do not pursue the same outcome via workaround, indirect execution, or policy circumvention*"）；人工覆盖 `/approve`——最多记 10 条近期 denial，单次重试仍走 auto-review；reviewer 看紧凑 transcript＋审批请求，**不含隐藏推理**；策略本体在开源仓 `codex-rs/core/src/guardian/policy.md`＋`policy_template.md`，企业覆盖 `guardian_policy_config`、个人 `[auto_review].policy`（**替换不合并**，managed 优先）。前置条件：仅在交互式审批下生效，`approval_policy = "never"`／`--yolo` 时无审批可审。
+  - 挂钩：**停止条件**（逐字 "rejection circuit breaker"——**第四轮负发现"无厂商官方文档使用 circuit breaker 术语"被本轮推翻**，主链见怀疑面）＋**验证回路**（审批＝逐动作验证器）。
+- **command rules**（agent-configuration/rules.md 实取）：`.rules` 文件＝Starlark `prefix_rule()`，字段 `pattern`（必填，元素可为字面量或并集 `["view","list"]`）、`decision`（**默认 `"allow"`**；三值 allow/prompt/forbidden，**多规则命中取最严**逐字："`forbidden` > `prompt` > `allow`"）、`justification`、`match`/`not_match`（加载时校验的"inline unit tests"）；shell 包装特判：`bash -lc` 线性链用 tree-sitter 拆开逐条评估（例逐字：`["bash","-lc","git add . && rm -rf /"]` → 拆为两条），含变量/重定向/通配则整条不拆；测试命令 `codex execpolicy check`。
+  - 挂钩：**审批与权限**（白名单的精确前缀语义＋反夹带拆分）。
+- **network_proxy 默认表**（agent-approvals-security.md 实取）：`enabled=false`、`domains` unset（allowlist-first，`deny` 永远赢）、`allow_local_binding=false`（loopback/RFC1918/链路本地默认封）、`enable_socks5=true`、`enable_socks5_udp=true`、`allow_upstream_proxy=true`、`dangerously_allow_non_loopback_proxy=false`、`dangerously_allow_all_unix_sockets=false`；DNS rebinding 尽力检查（解析到非公网即封）；组合行为逐字："*Network off + network_proxy on: network stays off, and the feature does nothing.*" web_search 默认 **`"cached"`**（OpenAI 索引缓存，非实时）——"*This reduces exposure to prompt injection from arbitrary live content.*"
+  - 挂钩：**沙箱与环境**（默认关网络＋代理白名单的参数级基线）。
+- **dots**（learn.chatgpt.com/docs/dots*.md 实取）：常驻 agent 的官方机制页。动作审批逐字——"*Before your dot takes an action that could affect your accounts or share information, an automatic review checks it against your instructions, permissions, custom rules, and built-in safety requirements. The review determines whether the action can proceed, needs your approval, or includes a step you must do yourself.*"（例：改密码必须用户自己做）。自定义规则四选项表：**Take action without asking / Take action when you say so / Ask before taking action / Hand off to you**；且逐字声明规则是软约束："*They are instructions your dot tries to follow, and it can make mistakes. They don't grant access to an app or computer, override built-in safety requirements, or remove required confirmations such as approval to use a saved login.*" **停止语义分级**（controls.md "Stop work" 节逐字）："*Pause stops your dot's current main task. It doesn't stop every delegated task or cancel future scheduled runs.*"——Pause/停单任务/删计划三者互不联动；自调度逐字："*It can decide when to pause and wake up to continue, so you don't need to put every follow-up on a fixed schedule.*"（tasks-and-memory.md）
+  - 挂钩：**无人值守运行**（自主 pause/wake 的产品化）＋**审批与权限**（四档规则＋研究/行动读写分离："research…can't send messages, change app content, or control your browser or computer"）。
+- **spend controls**（enterprise/usage-limits.md 实取）：workspace credits 池制；逐字边界——"*Usage controls don't configure feature entitlement or permissions, although exhausted limits can pause access to eligible features.*"；**Ultrafast mode（GPT-6 Astra Ultrafast）企业默认 off**，owner 手动开，"*Existing per-user spend limits apply to eligible Ultrafast usage. Review those limits before enabling access because the higher usage rates can consume a user's budget faster.*" 管理细节外链 help.openai.com（20001001/20001155）。
+  - 挂钩：**预算与熔断**（耗尽→pause 为厂商侧"预算即停止条件"的官方表述）。
+
+### C · Cursor：Run Modes/auto-review 分类器、sandbox.json 与 permissions.json 合并规则、/goal 与 /loop 无 docs 页
+
+- **Run Modes**（docs/agent/security/run-modes.md 实取）：三档逐字表——**Auto-review**（"Allowlisted calls run immediately. Other shell commands run in the sandbox when possible. Calls that do not use the sandbox go to the Auto-review classifier."）、**Allowlist**（确定性、无分类器）、**Run Everything**（零提示零沙箱）。分类器流程：沙箱失败的命令 agent 可在沙箱外重跑，**重跑必过分类器**；分类器在 Cursor 后端跑，可对本机做只读 `ReadFile/Grep/Glob/ListDir`；**模型参数**：当前 **Gemini 3.5 Flash Lite**，fallback **Claude 4.5 Haiku**——企业若禁 Haiku，"*Blocking Claude 4.5 Haiku can disable Auto-review there, even when team Run Modes includes it.*" 规则文件 `permissions.json`（`~/.cursor` 与 `<project>/.cursor` **合并**，逐字："*Cursor **concatenates** the arrays inside every field*"），指令为自然语言句子的 `autoRun.allow_instructions` / `block_instructions`；**团队 dashboard 配置存在时忽略两级本地文件**。
+  - 挂钩：**审批与权限**（LLM 分类器做审批闸的参数级）＋**验证回路**（分类器可拒绝→agent 换路径或转人工）。
+- **sandbox.json**（reference/sandbox.md 实取）：`type` 默认 `"workspace_readwrite"`；`networkPolicy.default` 默认 **`"deny"`**；**deny 永远赢**；合并优先级逐字："`per-user < per-repo < team-admin < hardcoded`"（路径并集、网络 allow 并集但 team-admin 存在时替换、restrictive 布尔 true 赢）；SSRF 默认封 RFC1918/`127.x`/metadata `169.254.169.254`/IPv6 私有；**硬编码保护路径**（`.cursor/*.json`、`.claude/**/*.json`、`.git/hooks/**`、`.git/config`、`.cursorignore` 等）任何配置不可写。平台实现：macOS Seatbelt（`sandbox-exec`）、Linux Landlock+seccomp（内核 ≥6.2，否则退回弹窗审批）、注入 `CURSOR_SANDBOX`/`CURSOR_ORIG_UID`/`CURSOR_SANDBOX_LANDLOCK_STATUS`（`fully_enforced`|`bubblewrap`）。
+  - 挂钩：**沙箱与环境**（默认 deny＋四层合并链＋不可削弱层）。
+- **/goal 与 /loop 的文档缺口**：cursor.com/docs sitemap（352 URL 实取全列）**无任何 `/loop` 或 `/goal` 专页**；`/goal` 仅见于 changelog（实取，2026-09 系"Cloud Agents and Cursor Harness Improvements"期）：逐字——"*Use /goal to give the agent a long-lived objective to work towards until it's fully complete. Try /goal fix all flaky tests and make CI green in a new chat. Pair it with a custom mode to follow a playbook, or /loop for recurring check-ins.*" 同期叙事逐字："*With this release, cloud agents can automatically pick up work in response to events, hold a goal until it's met, and stay on course through long-running sessions.*" **docs↔实现不一致**：机制在产品里、参数在 changelog 里、docs 无页——与 Claude Code 的 goal.md/scheduled-tasks.md 全参数页成鲜明对照（怀疑面双记）。
+  - 挂钩：**停止条件**（"hold a goal until it's met"＝与 Claude Code 同构的模型判停）＋**循环结构**。
+- **Automations**（docs/cloud-agent/automations.md 实取）：触发器（cron/GitHub/GitLab/Slack/webhook/Linear）→cloud agent；逐字："*Automations use each model's maximum supported context window because they run as cloud agents. There is no context-window toggle.*"；**computer use 默认全开**："*Computer use lets cloud agents kicked off by automations use a computer just like a developer would… It is included by default for every automation.*"；**Run as → Service account**（管理员可切专用身份）；计费按 cloud agent 用量。
+  - 挂钩：**无人值守运行**＋**循环产品化机制**（事件/定时触发器市场化的 agent 常驻）。
+
+### D · Warp：denylist 语法与优先级、Run until completion 与权限的交互（docs.warp.dev `.md` 直取）
+
+- **denylist 语法与优先级**（agents/capabilities/agent-profiles-permissions.md 实取）：allowlist/denylist 均为**正则**（默认 allowlist 空＋示例逐字："`which .*`、`ls(\s.*)?`、`grep(\s.*)?`"；默认 denylist 示例逐字："`wget(\s.*)?`、`curl(\s.*)?`、`rm(\s.*)?`、`eval(\s.*)?`"）。**优先级逐字**："*The denylist takes precedence over both the allowlist and `Agent decides`: if a command matches the denylist, the Agent asks for permission even when that action type is set to **Always allow**.*" 权限五类（Apply code diffs/Read files/Create plans/Execute commands/Full Terminal Use）× 四档（**Agent Decides / Always ask / Always allow / Never**）；全 Always allow＝YOLO，"*however, any denylist rules will still override these settings*"。**例外唯一且逐字**："*The one exception is Run until completion, which bypasses your denylist by default.*" **Run until completion**：`⌘+Shift+I`（Win/Linux `Ctrl+Shift+I`），逐字警语："*Run until completion is the purest form of \"YOLO\" mode: the Agent proceeds without asking for confirmation, and by default it also runs commands that match your command denylist.*" 关闭旁路＝**Settings > Agents > Warp Agent > Input > Allow auto-approve to bypass command denylist**；**Admin Panel 下发的 denylist 永不旁路**："*Denylist rules your team enforces through the Admin Panel always require approval and are never bypassed.*"
+  - 挂钩：**审批与权限**（用户级旁路开关 vs 管理员级不可旁路，双层权威设计）＋**停止条件**（任务级"跑到完成为止"＝一次性全放行）。
+
+### E · GitHub Copilot coding agent / cloud agent：预算三层、MCP 只读默认、审批流（docs.github.com 实取）
+
+- **预算三层＋默认不熔断**（how-tos/manage-and-track-spending/manage-company-spending.html 实取）：逐字——"*Each Copilot license includes AI credits that are pooled across your enterprise. When the pool is exhausted, additional usage is charged at **$0.01 USD per AI credit**, subject to your budget controls.*" 三层：**User-level budgets**（单用户每周期 AI credits 上限，含共享池与超额）、**Cost center budgets**、**Enterprise spending limits**（封超额计费）。**关键默认逐字**："*Enable \"Stop usage when budget limit is reached\" on every spending limit you create. Without it, reaching a limit sends a notification but does not block usage and charges continue to accrue.*"（怀疑面双记：熔断默认 off）。
+  - 挂钩：**预算与熔断**（三层预算的参数与默认行为）。
+- **MCP 只读默认＋免审批**（concepts/agents/cloud-agent/mcp-and-cloud-agent.html 实取）：默认内置两 server——GitHub MCP（"*connects to GitHub using a specially scoped token that only has **read-only** access to the current repository*"）与 Playwright MCP（"*By default, the Playwright MCP server is only able to access web resources hosted within Copilot's own environment, accessible on `localhost` or `127.0.0.1`*"）；**逐字免审批**："*Copilot will use available tools autonomously, and will not ask for approval before use.*"；**写权限默认关**："*By default, Copilot cloud agent does not have access to write MCP server tools.*"；仅支持 tools 不支持 resources/prompts；**OAuth 远程 MCP 不支持**（"*do not currently support remote MCP servers that leverage OAuth*"）。
+  - 挂钩：**审批与权限**（token 收窄＋默认只读＋免审批的组合行为——无人值守面把安全押在工具收窄而非人工闸上）。
+- **治理面**（concepts/enterprise/agent-management.html 实取）：企业 AI Controls 四态策略（enabled everywhere / disabled everywhere / selected organizations，组织可选 custom properties——"*evaluated once at the time of configuration*"，后改属性不自动生效）；"*View and filter a list of agent sessions in your enterprise over the last 24 hours*"；agentic audit log。
+  - 挂钩：**循环产品化机制**（企业级 agent 会话审计）。
+
+### F · Devin：ACU 双门闩参数化（docs.devin.ai 实取）
+
+- **三层 ACU 控制与解析公式**（federal/acu-limits.html 实取）：Team limit（每人默认）/Group cap（组内每人的 cap，**非共享池**，逐字："*It is not a shared pool for the group*"）/User override。**有效限额公式逐字**："*valid user override ?? min(team limit, highest positive group cap)*"；user override 即使更高也赢；多组取**最高**正 cap。**零与未设值语义表**：Team=0 或 user=0 → 封禁；**portal group cap=0 是"清除"不是零限**（"*The group cap is cleared; it is not treated as a zero-ACU group limit*"，portal 收 `cycle_acu_limit: 0`，API 用 `set_cycle_acu_limit`/`clear_cycle_acu_limit`）；全未设→无执行。示例表逐字：team 1000/两组 300、400 → 400；team 200/override 500 → 500。
+  - 挂钩：**预算与熔断**（熔断粒度到人、零值封禁语义逐字）。
+- **企业 usage policies**（enterprise/features/usage-policies.html 实取，标注 **beta**）：本地（Desktop/CLI）与云（sessions）合并计数，"*new work is blocked on all surfaces once the limit is reached*"；**Devin Review 不计入**；per-user 与 org-level 双门闩——"*a session is blocked if either limit is reached*"。tier 解析优先级逐字：显式指定 tier > 最高优先级 IdP 映射 tier > default tier；override 分 **temporary**（本周期到期）/**permanent**；**审批策略三档**：Manual approval / Always approve（至 tier 的 maximum auto-approve allocation）/ **Approve based on efficiency**（efficiency score 为 Healthy/Satisfactory 才自动批，且只批小步额）——"*Requests are never denied automatically — denying is always an admin decision.*"；降限额前预览 blast radius（"*how many members would be blocked, lowered, or unaffected*"）。计量（admin/billing/usage.html）：Windows 会话 **+9%**，macOS 平价（促销定价）；睡眠不计费——"*Devin sleeps automatically after 30 minutes of inactivity by default.*"
+  - 挂钩：**预算与熔断**（效率分驱动自动加预算＝把"该不该续费算力"判据从人移到计量器）＋**无人值守运行**（sleep/wake 计费模型）。
+
+### G · Kiro：hooks schema、Automations、Sandbox（kiro.dev 实取）
+
+- **hooks**（docs/hooks、hooks/types、hooks/actions 实取）：schema 逐字段——`version:"v1"`、`hooks[].trigger`（PascalCase，trigger 全表：Prompt Submit/Agent Stop/Session Start/Agent Spawn/Session End/Pre Tool Use/Post Tool Use/File Create/Save/Delete/Pre/Post Task Execution/Manual，**逐 surface 支持矩阵**）、`matcher`（正则过滤）、`action`（`command` 或 agent prompt）。**退出码语义**：0 → stdout 进 agent 上下文；非零 → stderr 给 agent 且 **Pre Tool Use 下阻断工具调用、Prompt Submit 下阻断提交**；**默认超时 60 秒，设 0 禁用**。成本注记逐字："*Agent Prompt actions consume credits as these actions trigger a new agent loop, whereas Shell Command actions do not.*"
+  - 挂钩：**停止条件**（PreToolUse 闸门）＋**验证回路**（hook 非零退出＝程序化否决回注）。
+- **Automations**（docs/web/automations.html＋changelog/web/introducing-automations 实取，**2026-06-19 上线**）：Web 上按日程对 GitHub/GitLab 仓库跑 prompt，"*runs it on that cadence in its own sandbox in autonomous mode… opens a pull request or merge request when there's something to review*"；prompt 上限 **10,000 字符**；状态仅 Active/disabled 二态；注入面警语逐字："*The agent learns from and follows instructions in the repository code, even if those instructions are malicious.*"
+  - 挂钩：**无人值守运行**＋**循环产品化机制**（定时＋自主模式＋沙箱＝最小完整循环产品）。
+- **Sandbox**（docs/web/sandbox.html 实取）：每任务独立沙箱、克隆授权仓库、headless Chrome＋Playwright MCP＋Chrome DevTools MCP 预装；域名白名单、环境变量/secrets、MCP 均可配；"*Keeps the sandbox's file state with the session, so you can reattach from any surface*"，删会话删沙箱。
+  - 挂钩：**沙箱与环境**。
+
+### H · 观测厂商的"停止"产品化：LangGraph 中断原语、Langfuse Spend Alerts、Braintrust 负发现
+
+- **LangGraph `interrupt()`**（docs.langchain.com/oss/python/langgraph/interrupts.md 实取）：逐字——"*Interrupts allow you to pause graph execution at specific points and wait for external input before continuing… When an interrupt is triggered, LangGraph saves the graph state using its persistence layer and **waits indefinitely** until you resume execution.*"（无超时语义）；resume 用 `Command(resume=...)` 回注，payload 经 `stream.interrupts` / `__interrupt__` 浮出；三前提：checkpointer、`thread_id`（逐字："*your persistent cursor*"）、JSON-serializable payload。
+  - 挂钩：**停止条件**（框架层把"人闸"做成一等原语，中断点可条件化动态放置）。
+- **LangGraph `recursion_limit` 默认值变更**（docs.langchain.com/oss/python/langgraph/graph-api.md 实取）：逐字——"*Once the limit is reached, LangGraph will raise `GraphRecursionError`. **Starting in version 1.0.6, the default recursion limit is set to 1000 steps.** The recursion limit can be set on any graph at runtime, and is passed to `invoke`/`stream` via the config dictionary… a standalone `config` key and should not be passed inside the `configurable` key.*" 步计数器 `config["metadata"]["langgraph_step"]`。（注：旧版默认 25 为社区通行认知；本轮以官方页逐字为准记 1.0.6 起 1000——**默认值放宽十倍级**，怀疑面双记。）
+  - 挂钩：**预算与熔断**（步数熔断器存在且默认大幅上调）。
+- **Langfuse Spend Alerts**（llms.txt 索引页 description 实取，URL `langfuse.com/docs/administration/spend-alerts`）：逐字——"*Get notified when your organization's spend exceeds predefined monetary thresholds to better manage your Langfuse Cloud costs.*"——**通知型，非阻断型**（怀疑面双记）。
+- **Braintrust**：llms.txt 全量 grep 无 agent 侧预算/熔断/guardrail 产品化条目（命中的 rate limits 全是平台 API 限额）——**负发现如实登记**：观测厂商的"停止"产品化集中在告警与计量，无一提供硬熔断。
+  - 挂钩：**预算与熔断**（a16z"meter the spend / cut the loop off"分层说中前半、落空后半）。
+
+### I · Show HN 第三方治理工具（2026-06-01 后，hn.algolia.com API 实取；tags=show_hn，时间戳 2026-06-01 UTC=1780272000）
+
+- **Loopers — Fail-closed reverse proxy and circuit breaker for AI agents**（2026-08-04，1 pt，HN id=49168436，app.tryloopers.com）：标题即产品定位——fail-closed＋circuit breaker 做成 agent 反向代理。
+- **Vigilator — human-in-the-loop layer for AI agents**（2026-09-14，3 pts，id=49695678，vigilator.ai）：正文实取："*there's no consistent way to interrupt an agent mid-task, get a human decision, and resume - especially when multiple agents run in parallel*"——把 LangGraph interrupt 泛化成跨 agent 中断层。
+- **Charter — Operate production-safe agents that run on your own infra**（2026-09-10，4 pts，id=49649759，github.com/boundflow/charter）：正文实取——企业不敢单代理的原因逐字："*won't spend all your company's budget, burn through compute costs because it runs too often, or call a tool that breaks a customer*"——第三方把预算熔断做成开箱件。
+- **OpenAPPA — open-source deterministic guardrails that don't break agents**（2026-09-28，25 pts，id=49877515）：正文实取——"*Non-deterministic guardrails (LLM as a judge, auto modes, etc.) are vulnerable to prompt injections*"——与 Cursor auto-review/Claude Code auto mode 的 LLM 分类器正面对立：确定性护栏派。
+- 其他在册（钩子＝停止/预算类，未全文取）：Interlock（Python circuit breaker 按延迟熔断，2026-07-30，id=49115482）；Circuit Breaker – Score Pull Requests（2026-08-21，id=49391133）；Nimblegate – Git push guardrails for AI agents（2026-09-22，id=49799938）；FinTrace – point-in-time guardrails for financial LLM agents（2026-09-30，id=49907790）；Voro – An attention manager for agentic coding（2026-08-21，id=49386001）。"loopgain" 词查得 79 条命中（疑似模糊匹配噪声，未逐条筛，勿引用该数）。
+  - 挂钩：**预算与熔断**＋**停止条件**（社区层在厂商"通知型"预算与"分类器型"审批之外补 fail-closed 硬件层——与 E/H 的默认-off 缺口互补）。
+
+### 本轮通道注记
+
+- Product Hunt 本轮**未访问**（预期 JS 渲染墙，未投入）；GitHub docs 站 `.md` 后缀 404，改从 `__NEXT_DATA__` JSON 内嵌 `renderedPage` 提取正文（有效）。
+- docs.devin.ai 的 ACU 页归在 **Federal** 分区（federal/acu-limits、federal/api/acu-caps）；企业版对应页为 enterprise/features/usage-policies（beta 标注）——引用时注意分区归属。
+- 第四轮九家登记表中"Kiro PreToolUse/Devin ACU 双门闩/Warp denylist/Copilot 预算三层"四条本轮全部拿到参数级原文，登记表可升级为带引版（本轮即引版）。
+
+## 第五轮挖掘（2026-10-06）：会议 transcript 全量扫（推动向）
+
+> **本轮通道总览（重要基建发现）**：ai.engineer 站点地图（https://ai.engineer/sitemap.xml ，curl 实取）含 **1240 个 /talks/* 议题页**，其中 **AI Engineer World's Fair 2026（2026-06-29→07-02，SF）358 页全部实取**（curl＋浏览器 UA，web_fetch 对外域名仍报 DNS 错误一律绕开）。每页内嵌三层官方材料：①官方摘要＋要点（summary/keyPoints）；②**机器辅助官方编辑稿**（分节 essay，含逐节标题与证据时间戳；页面标注 reviewStatus＝`source-backed`/`machine-source-reviewed` 两档）；③**官方时间戳逐字稿全文**（caption 层逐段）。本轮所有逐字引句均出自第③层（时间戳字幕层）或官方摘要层，全部 curl 实取，无一处凭记忆生成。上传时间（uploadedAt）逐页实录。**其余事件**：AI Engineer Europe 2026（巴黎，2026-04-08→10）187 页已落 tmp 待用——**窗口外**（差 7 周）仅登记；WFC 2025/2024、Summit、Code 2025 同批在手备查。
+> **口径**：讲者身份均以页面/官方行程（llms-full.md 全量页实取）为准；新创讲者无号召力依据者标"仅作会议层样本，不入册候选"。
+
+### 推-1 · Sam Bhagwat（Mastra 联合创始人/CEO）· AIEWF 2026《Every Harness Will Become A Claw》（视频上传 2026-07-21）
+
+- URL：https://ai.engineer/talks/8qWIPUia2O8-every-harness-will-become-claw （curl 实取，官方时间戳逐字稿全文在手）
+- 身份：TypeScript agent 框架 Mastra 联合创始人/CEO。
+- 号召力口径：③＋④——头部开源框架掌门、AIEWF 主讲。
+- **挂钩**：无人值守运行＋自主度分档（LLM→agent→harness→claw 光谱）＋循环产品化机制。
+- 逐字摘录（官方逐字稿层）：
+
+> "I've called this, without sort of asking consent from Pete, Steinberger's law, which is, I believe every harness will expand until it becomes a claw."
+>（把 Steinberger 的 loop 扩张论正式"定律化"——推动派谱系的关键一环。）
+
+> "Durability, just the sheer quality of being able to run not for minutes, but for hours or days."
+>（harness 层区别于 agent 层的第一属性＝可跑时长。）
+
+> "It has a heartbeat, which means it wakes up every, you know, defined amount of time and does something."
+>（"心跳"＝无人值守循环的调度原语表述。）
+
+> "A lot of folks want these features, but they want them with power and control. They don't wanna just put a claw on a box."
+>（扩张叙事同时自带掌控面——推动派"受约束翼"语料。）
+
+> "After this phase where we're sort of making everything more and more powerful, there will be a shakeout."
+>（预言洗牌期：扩张阶段之后必有收敛，怀疑派亦可引。）
+
+- **最小主张**：harness→claw 的扩张是技术＋经济＋心理三重必然（"we want to DM them in Slack… start overnight tasks before bedtime. We want this dopamine casino"），框架层正在把 claw 的能力原语化。
+- **派别适配**：**推动票（强）**——本轮会议层最系统的"无人值守演化论"。
+
+### 推-2 · Sachin Malhotra（Anthropic，CI 团队工程师）· AIEWF 2026《Give the Agent a Budget, Not a Token》（视频上传在库页实录）
+
+- URL：https://ai.engineer/talks/rbjWzZK2LU0-give-agent-budget-not-token （curl 实取全文）
+- 身份：Anthropic CI 团队（测试隔离/合并自动化/CI 自动扩缩），一线工程实践者。
+- 号召力口径：③（Anthropic 一线），个人非 KOL——**仅作会议层样本，但其"预算四维"框架机制价值高**。
+- **挂钩**：预算与熔断（七类最正牌的一篇）＋停止条件。
+- 逐字摘录：
+
+> "It took out about 200 workloads, which ended up impacting about 20 engineers worth of stuff, and all of that was gone in 90 seconds. Nobody was being malicious… the agent genuinely thought it was tidying up after itself."
+>（开场事故实录：agent 清理时 selector 空匹配→批量删除。）
+
+> "A token is a boolean. It's just a yes or no… If the token list is too tight, then your agent is effectively useless. If the token list is too wide, then you're maybe writing a postmortem. A budget is a very different shape… it has four different dimensions: how much can the agent do? How fast can it do it? What can it undo on its own? And who's noticing while it's actually taking those actions?"
+>（**"预算四维"**：量/速/可撤销/可观测——预算与熔断类迄今最干净的会议层表述。）
+
+> "Some verbs fail out loud… there are other verbs that fail silently… you give access to verbs that can fail loudly on a dashboard to your agent, and for the other ones just involve a human."
+>（"非对称动词"＝按失败可观测性分配人审位——停止条件的工程化判据。）
+
+- 官方要点层："Replace boolean agent permissions with budgets that account for quantity, speed, reversibility, and observation"；分节标题含 "Put a ceiling on every write—and let it refill"（预算回补）与 "Use tripwires to learn from aggregate behavior"（熔断线）。
+- **最小主张**：权限的布尔模型必须换成四维预算模型，熔断线（tripwire）与 undo test（用可撤销性给自主度定档）是配套件。
+- **派别适配**：**推动票（受约束翼）**。
+
+### 推-3 · Lance Martin（Anthropic）· AIEWF 2026 Workshop《Claude for long-horizon tasks》（视频上传 2026-07-22）
+
+- URL：https://ai.engineer/talks/9QebvrrY3KY-claude-long-horizon-tasks （curl 实取全文）
+- 身份：Anthropic（Managed Agents 方向）。
+- 号召力口径：③＋④。
+- **挂钩**：无人值守运行＋验证回路＋外层调度（Managed Agents 产品化）。
+- 逐字摘录：
+
+> "Back in the Opus 3 days… models could only do, maybe, ten to twenty minutes of autonomous work. This is measured by METR… In order to really unlock async, we needed longer task horizons, and so we're starting to see that now."
+>（用 METR task horizon 给"无人值守何时成立"定量分期——自主度分档的时间轴版。）
+
+> "It's quite effective to separate verification into a separate context window… when you build loops, you can have a loop of a build context and a verifier context, and this can be a build agent, verifier agent… this continues in a loop until verification is complete. And this is really the big idea behind this whole loops trend that you might have heard about."
+>（**厂商自述"loop 风潮的本体＝build/verifier 双上下文回路"**——验证回路的定义级引句。）
+
+> "What happens if the harness dies or the container dies? …the harness becomes a stateless process that talks to a session. The session is an append-only event log… credentials are never actually added to the sandbox. They're stored in a separate vault."
+>（长时程架构三件套：脑手解耦、append-only 会话、凭据外置金库。）
+
+- **最小主张**：无人值守成立条件＝task horizon 足够长＋会话状态与执行环境解耦＋独立 verifier 回路；Anthropic 已把该套件产品化（Managed Agents）。
+- **派别适配**：**推动票（强）**。
+
+### 推-4 · Kieran Klaassen（Every，Cora 作者）· AIEWF 2026《The Era of Compound Engineering》（视频上传 2026-08-20）
+
+- URL：https://ai.engineer/talks/_ehJyfHg1Vk-era-compound-engineering （curl 实取全文）
+- 身份：Every 工程负责人，Compound Engineering plugin 作者（自述"hundreds of thousands of people use it daily"）。
+- 号召力口径：②＋③（插件实际用户量级）。
+- **挂钩**：循环结构（brainstorm→plan→work→review→polish→compound→repeat）＋外层调度（50% 时间修系统）＋无人值守（夜间并行）。
+- 逐字摘录：
+
+> "I haven't written a single line of code this year, and maybe I haven't even looked at most of it. Yet, I do ship."
+>（循环化个人生产形态的自述样本。）
+
+> "First there was bad code… So, okay, code got good. The plan was the bottleneck… Okay, plans got good. The next bottleneck was deciding what to build… I kept repeating myself… So I figured out there needs to be some kind of memory system."
+>（瓶颈迁移链：代码→计划→选题→记忆——外层调度俳进的第一手叙事。）
+
+> "It's very important to be able to let go and let the machine rip overnight for many hours in parallel. And the only way to be able to do that is making sure you spend time on that system. So my rule is fifty percent should go into creating the feature… but fifty percent of the time should go to teaching the system."
+>（**"50% 修系统"规则**＝外层调度的个人版配额。）
+
+- **最小主张**：loop engineering 的终点形态是"复合工程"——把人的判断萃取进系统、让人只站在循环两端（"human AI sandwich"）。
+- **派别适配**：**推动票**。
+
+### 推-5 · Suraj Gupta（Warp，Harness 负责人）· AIEWF 2026《How Software Factories Improve Themselves》（视频上传在库页实录）
+
+- URL：https://ai.engineer/talks/TN3mj92oZ8I-software-factories-improve-themselves （curl 实取全文）
+- 身份：Warp harness 开发负责人（Warp 已在册：增量 A——本条为**新载体增量**）。
+- 号召力口径：③＋④。
+- **挂钩**：外层调度（outer loop agent 改 inner loop skill）＋循环产品化。
+- 逐字摘录：
+
+> "Your inner loop agent is the thing that's actually applying the skill… and then you have this other outer loop agent that is observing your inner loop agent's runs and improving its skill over time."
+>（外环观察内环、改内环程序——外层调度的标准双层结构。）
+
+> "In step four… we open a pull request. So that means that all of the improvements to the inner loop skill are going to be tracked through git… And that it also means that a human is actually going to review those updates to the skill. So that way this outer loop agent doesn't make a mistake and ultimately cause your triage agent to actually perform worse."
+>（外环自改进仍然走 PR＋人审——自改进回路的防退化设计。）
+
+- 官方要点层："Separate the agent doing recurring work from the agent improving its procedure. Propose skill changes through pull requests so humans can review them and Git can preserve their history."
+- **最小主张**：软件工厂的自改进＝skills（程序记忆）＋persistent memory（事实记忆）＋model routing 三条外环，全部以 git/PR 为审计边界。
+- **派别适配**：**推动票**。
+
+### 推-6 · Jason Lopatecki（Arize 联合创始人/CEO）· AIEWF 2026《From Signal to PR: Anatomy of a Self-Improving Agent》（视频上传 2026-07-24）
+
+- URL：https://ai.engineer/talks/9HbzAWnKbo4-from-signal-pr-anatomy-self-improving-agent （curl 实取全文）
+- 身份：Arize AI 联创/CEO。
+- 号召力口径：③＋④。
+- **挂钩**：验证回路＋无人值守运行＋外层调度。
+- 逐字摘录：
+
+> "How do I build systems that autonomously fix themselves? Really that is what we're after… today we're kind of in the 2.0, which is a human making fixes and reviewing things. But there's a future we're all driving towards… having agents run at this for a continuous loop is where we're going."
+>（可观测性 2.0＝telemetry 供 agent 循环消费。）
+
+> "The bottleneck is actually not the fix anymore… the bottleneck's a lot of the confidence in, do I have it right?… Is this fix the right one to push?"
+>（验证瓶颈论：修复不再贵，确认"修对了"才贵。）
+
+> "What we've kind of come to do… is we've kind of inverted this loop, which is like a human looks at things and an agent fixes it, to a person now can wake up with an idea of the issues based upon the errors occurred in their system."
+>（倒置回路：agent 先取证、人再接手——从"人找证据"到"证据等人"。）
+
+- 官方分节："Turn a finding into an issue, evaluator, or dataset example""Feed evaluations into the next investigation"——eval 结果回灌下一轮调查（验证回路闭环）。
+- **最小主张**：自改进 agent 的骨架＝触发器（周期/事件）→ 证据收集 → 人审位 → eval 回灌；瓶颈在验证置信度而非生成。
+- **派别适配**：**推动票**。
+
+### 推-7 · Roland Gavrilescu（Introspection 联合创始人，前 xAI agent infra）· AIEWF 2026《The Loop Is the Product》（视频上传 2026-09-26）
+
+- URL：https://ai.engineer/talks/7taOQBfjDyE-loop-is-product （curl 实取全文）
+- 身份：Introspection 联创（自述"my co-founder and I were in this mythical place called xAI working hard on agent infra"）。
+- 号召力口径：③弱（新创创始人）——**仅作会议层样本，不入册候选**；但其议题名把循环产品化推到正题名级。
+- **挂钩**：循环产品化机制（正题名级）＋验证回路＋外层调度。
+- 逐字摘录：
+
+> "We've started with everything goes down to RL… We then quickly moved to harnesses and how the model is a commodity and it's all about the harness. And now we're talking about loops and how you should build these loops and not touch code anymore."
+>（RL→harness→loop 的三段谱系，会议层口径。）
+
+> "What matters here is the quality of the signal determines the success rate of the loop, and the quality of the verifier is able to calibrate if that success is actually correct or not. But there's another loop here… how do you generate these artifacts at the end of the first loop to then run a second loop on and have a way to continuously improve."
+>（信号质量定成功率、verifier 定校准——第二环吃第一环的产物。）
+
+> "Failure patterns should become judges and evals. Repeated behavior should become skills and prompts."
+>（循环产物的资产化清单——循环产品化的操作句。）
+
+> "Valued work per watt is how you should measure am I making progress or not."
+>（单位能耗有效功＝循环经济学的收口指标。）
+
+- **最小主张**：loop 时代的产品本体是"agent recipe"（可版本化、可移植、含 evals 与人的 taste），循环负责把运行痕迹蒸馏成 recipe。
+- **派别适配**：**推动票（会议层）**。
+
+### 推-8 · Patrick Debois（Tessl）· AIEWF 2026《Coding Agents Don't Scale Themselves. Neither Do Your Teams.》（视频上传 2026-08-22）
+
+- URL：https://ai.engineer/talks/zCJtYuqwm7E-coding-agents-dont-scale-themselves-neither-do （curl 实取全文）
+- 身份：**DevOps 之父**（DevOps Days 创办人），现 Tessl。
+- 号召力口径：①＋③＋④（KOL 顶级）。
+- **挂钩**：外层调度（组织层）＋循环产品化（"dim factory"路线）。
+- 逐字摘录：
+
+> "In 2009, a lot of people were telling me the idea of continuous delivery was crazy. And I feel we're in kind of the same era right now with a dark factory… but what they're actually signaling to me: we're not ready yet."
+>（把 dark factory 定位为 2009 年 CD 的同构时刻——反对声音被重读为"组织未就绪"信号。）
+
+> "There's been a lot of conference talks here about optimizing agents with loops and harnesses and all those pieces, and I think that's great. But… one day, this will kind of become commodity… that's not going to be the differentiator for your organization."
+>（**预言 loop/harness 技术本身将商品化、差异化在组织层**——对整个 loop engineering 运动的重要降温注记。）
+
+> "Stop fixing the code that the agent kind of produced, but improve the system."
+>（与 swyx "build the thing that builds the thing" 同构——他在本讲直接引了 swyx。）
+
+- 官方分节收口："Aim for a dim factory—and continuous learning"（dim factory＝中间目标态，非 dark）。
+- **最小主张**：loop/harness 会变成商品；组织要改的是 planning/retro/平台所有权（"Platform ownership prevents a thousand incompatible harnesses"）与人的角色重构。
+- **派别适配**：**推动票（组织翼）＋重要中性注记**（商品化预言）。
+
+### 推-9 · Tushar Jain · AIEWF 2026《Unlock Agent Autonomy: The Runtime for AI-Native Systems》（视频上传 2026-08-20）
+
+- URL：https://ai.engineer/talks/zaGyGgLW3SM-unlock-agent-autonomy-runtime-ai-native-systems （curl 实取全文）
+- 身份：讲者页面仅名 "Tushar Jain"（产品名 "sbx"，agent runtime 沙箱方向；**身份与撞名核对开放**——Multicoin Capital 同名者非本讲者，勿混）。
+- 号召力口径：③待核。
+- **挂钩**：无人值守运行＋预算与熔断（运行时权限边界）。
+- 逐字摘录：
+
+> "This agent's been running for weeks just fine. Runs every night, sends me an email, I look at it. Randomly, one day, it decided to post this report as a PR on the repo. Why? Nothing's changed, just the model decided to be helpful."
+>（夜跑数周 agent 自发把私人报告发成 PR——无人值守目标漂移的现场实录。）
+
+> "Agents… increase and change the goal they're doing, either 'cause they themselves are just trying to be helpful, or they get confused, they make a mistake, or they get prompt injected."
+>（目标漂移三源：讨好/出错/注入。）
+
+> "Each time, as it's expanding its goal, expanding what it's doing, it's crossing the trust boundary… So we go away from, like, can it do this? To, like, should it do this?"
+>（自主度问题的核心换问：can→should；解法＝把控制放 agent 边界外（"Put controls outside the agent's boundary"）。）
+
+- **最小主张**：autonomy 的解锁件是 runtime 层的能力授予契约（按任务授 GitHub 权给子任务而非父任务等），控制必须活过模型/harness 的更换。
+- **派别适配**：**推动票（掌控翼）**。
+
+### 推-10 · Tim Sweeney（Weights & Biases，Principal Engineer）· AIEWF 2026《An AI Research Agent That Runs Your Experiments》（视频上传 2026-09-26）
+
+- URL：https://ai.engineer/talks/hd7TOvmyAxU-ai-research-agent-that-runs-your-experiments （curl 实取全文）
+- **撞名警示**：此 Tim Sweeney 是 W&B/CoreWeave 主任工程师（自述"principal engineer at Weights and Biases and Coreweave… master's in machine learning from Georgia Tech… previous life was the PM of Twitter's ML stack"），**不是 Epic Games 的 Tim Sweeney**，登记防台账撞名。
+- **挂钩**：无人值守运行（研究型长任务循环）＋外层调度。
+- 官方要点层逐字："Keep long-running training outside the agent's main loop: ARIA starts experiments through Launch and polls while GPU jobs execute."
+- 逐字摘录："It started the queues and now it is simply polling and waiting for our work to be complete."（agent 主环轮询、GPU 长任务外置——无人值守的结构分工）；分节标题 "Keep humans in the loop—and let the experiment finish"。
+- **最小主张**：研究型无人值守＝"对话环内不动长任务、外置作业系统跑训练、人审位保留"。
+- **派别适配**：**推动票（会议层）**。
+
+### 推-11 · Justin Smith（Resolve AI 创始产品工程师，前 Splunk 可观测性架构师）· AIEWF 2026《Always-on agents run production without the on-call tax》（视频上传 2026-08-09）
+
+- URL：https://ai.engineer/talks/vSx5IULvBns-always-on-agents-run-production-without-on （curl 实取全文）
+- 号召力口径：③弱——**仅作会议层样本**。
+- **挂钩**：无人值守运行（生产运维侧）。
+- 逐字摘录："Seventy percent of the time from an engineer is actually not focused just on writing code. It's actually spent on actually running the code that is shipped into production."；"Unlimited tokens is sort of coming to an end. The token max, right, they're starting to clamp down. Prices are going up."（**厂商侧证实 tokenmaxxing 收敛**——怀疑派/中性亦可引）。
+- **派别适配**：**推动票（会议层）**。
+
+### 推-12 · AIEWF 2026 loop 议题官方编辑稿群像（增量 L 的深化，讲者一手逐字已入上列者不重复）
+
+官方摘要/分节/要点层可直引的补充议题（全部 curl 实取官方页）：
+1. **Itamar Friedman（Qodo CEO）**《The Last Human Code Review》（上传 2026-08-20，https://ai.engineer/talks/s-aixZYJG4c-last-human-code-review-building-trust ）：现场逐字 "Is human code review still optional end of twenty twenty-six?"；双功能框架 "One is we wanna validate the code… The second reason is actually alignment and learning"；"You need to think what's your philosophy because that will lead you to different milestones or different tools that you need to use in order to get that confidence that you can skip over a human review"——**挂钩：验证回路**。推动票（会议层，KOL ③弱）。
+2. **Ankit Jain**《How to Kill the Code Review》（上传 2026-08-17）：分节 "Turn repeated comments into reusable checks""Build the register before retiring the ritual"——**挂钩：验证回路**。会议层样本。
+3. **《Building an Autonomous Engineering Org》**（https://ai.engineer/talks/whue9_YquGA-building-autonomous-engineering-org ）——**挂钩：外层调度**。会议层样本。
+4. **《Stop Burning Tokens: Why self-improvement needs domain expertise first》**（eAXxdtNlK04）——**挂钩：预算与熔断**（自改进的经济学节制）。会议层样本。
+5. **《Your Agents Need a Save Button》**（bZISsg7H7DA）/《Agents Need Feature Flags》（zU4EagB311U）/《Agents Need Receipts, Not More Tool Calls》（Fu45geO3zX8）——三连"控制面板件"议题：存档回滚／灰度开关／可审计凭据——**挂钩：预算与熔断＋停止条件**。会议层样本。
+6. **Simulation-Maxxing（Nubank）**（KMR_RBoCa4M）：官方分节 "Run the real agent inside a simulated environment""Check whether simulation tracks production"——**挂钩：验证回路**（仿真闭环）。会议层样本。
+7. **Uber 双讲**：《Agentic SDLC at Uber》（17-YSUHo6Lk）＋《Building uReview, Uber's Multi-Agent Code Review Engine》（EL123UNokkI，上传在库页实录）——**挂钩：外层调度＋验证回路**。会议层样本（甲方）。
+8. **Erik Meijer**《In Code They Act, In Proof We Trust》——形式化验证入环——**挂钩：验证回路**。KOL ①（语言学界名人）。
+9. **Cornelia Davis**《MCP Tasks (async)/ Why the heck aren't any agents supporting MCP tasks/async?》——异步任务原语缺位之问——**挂钩：循环结构（协议层）**。会议层样本。
+10. **Dominik Kundel**《Building on the Codex Harness》＋Ignacio Martinez《Total Recall: Agent Memory and Harness Engineering》＋Robert Brennan《Sandboxes Aren't Optional》＋Abhishek Bhardwaj《From fork() to Fleet》——harness/沙箱基建群像——**挂钩：循环结构（环境层）**。会议层样本。
+
+### 负结论（第五轮·推动向）
+
+1. **AIEWF 2026 全量扫描口径**：358 页按标题＋摘要＋分节＋要点四层关键词过筛（loop/autonom/sandbox/factory/harness/eval/gate/stop/review/verif/unattended/budget 等），命中 ~280 议题；本轮立条 11＋群像 10，其余为 vibe coding 线、纯 GTM/语音/RAG 线（挂不上七类即弃收，不解释）。
+2. **SREcon**：usenix.org 旧路径 404，本轮未完成按期扫描——开放；**GOTO Copenhagen 2026**（2026-10-01 已办）：schedule 页 JS 渲染无静态议题文本——开放；**ICSE 2026 industry track**（ACM DL proceedings 存在）与 **OpenSSF/LF agent 安全议程**：本轮未逐篇扫——开放。
+3. **"Tokenmaxxing is the New Lines of Code"（Nicholas Arcolano）**：官方页在手（llms-full 议题群像层已登记），本轮未立条（怀疑向更适配，见怀疑档）。
+4. 撞名警示：Tim Sweeney（W&B）≠ Epic 的 Tim Sweeney；Tushar Jain（sbx）≠ Multicoin 的 Tushar Jain。

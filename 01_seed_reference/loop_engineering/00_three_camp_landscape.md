@@ -4,14 +4,14 @@ content_type: analysis
 directory: 01_seed_reference/loop_engineering
 description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批）
 analysis_date: 2026-10-06
-evidence_base: raw_scan_2026-10-06_{skeptics,neutral,advocates}.md ＋ 三派 community_feedback.md（社区情绪层，原 2026-10-06 三路社区扫描档已按派拆入后撤除）＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
+evidence_base: 三派 kol_scan.md（原 raw_scan_2026-10-06_{skeptics,neutral,advocates}.md 已更名）＋ 三派 community_feedback.md（社区情绪层，原 2026-10-06 三路社区扫描档已按派拆入后撤除）＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
 authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复制名单
 ---
 
 # 三派地图与社区实况（2026-10-06 判读）
 
 > **问题**（用户 2026-10-06 提）：loop engineering 比较新、掌握不易、把控性差——社区到底情况怎么样？
-> 本文基于三路深扫（[推动](01_advocates/raw_scan_2026-10-06_advocates.md) / [中性](02_neutral/raw_scan_2026-10-06_neutral.md) / [反对](03_skeptics/raw_scan_2026-10-06_skeptics.md)）＋库内既有回源档案作判读；逐字引句一律在扫描档与 evidence 档，本文只留结论与指针。
+> 本文基于三路深扫（[推动](01_advocates/kol_scan.md) / [中性](02_neutral/kol_scan.md) / [反对](03_skeptics/kol_scan.md)）＋库内既有回源档案作判读；逐字引句一律在扫描档与 evidence 档，本文只留结论与指针。
 
 ## 一、三派地图（一眼版）
 

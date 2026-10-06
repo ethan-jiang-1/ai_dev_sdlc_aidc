@@ -35,12 +35,12 @@ loop_engineering/
 ├── 01_advocates/              # 推动派（发起者＋吹捧者）
 │   ├── README.md              #   KOL 侧素材索引
 │   ├── community_feedback.md  #   社区侧反馈
-│   ├── raw_scan_2026-10-06_advocates.md   # KOL 深扫档案
+│   ├── kol_scan.md   # KOL 深扫档案
 │   └── andrew_ng/             #   四件套卡（历史卡）
 ├── 02_neutral/                # 中性派（边界与审慎）
-│   ├── README.md / community_feedback.md / raw_scan_2026-10-06_neutral.md
+│   ├── README.md / community_feedback.md / kol_scan.md
 └── 03_skeptics/               # 反对与怀疑派
-    ├── README.md / community_feedback.md / raw_scan_2026-10-06_skeptics.md
+    ├── README.md / community_feedback.md / kol_scan.md
 ```
 
 ## 三派入口
