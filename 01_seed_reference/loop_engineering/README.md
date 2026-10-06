@@ -37,20 +37,27 @@ loop_engineering/
 ├── README.md                  # 你在这里：素材索引 + 卡片规则
 ├── 00_three_camp_landscape.md # ★ 三派地图与社区实况判读（2026-10-06 批的结论入口）
 ├── 01_advocates/              # 推动派（发起者＋吹捧者）：把循环放权当默认方向推荐的人
-│   ├── README.md              #   素材索引（人物 → 素材在哪个文件）
+│   ├── README.md              #   素材索引（KOL 侧：人物 → 素材在哪个文件）
+│   ├── community_feedback.md  #   ★ 社区反馈（社区情绪证据，按派可读）
 │   ├── raw_scan_2026-10-06_advocates.md   #   三派深扫·推动派增量回源档案（2026-10-06 批）
 │   └── <slug>/                #   四件套卡（仅 ≥3 份独立一手长者，当前仅 andrew_ng）
 ├── 02_neutral/                # 中性派（边界与审慎）：承认机制但划适用边界/要求约束形态
-│   ├── README.md              #   素材索引（当前无卡，素材在研究层 evidence 档案与 _raw_people）
+│   ├── README.md              #   素材索引（KOL 侧）
+│   ├── community_feedback.md  #   ★ 社区反馈（含机构采样层：SO/JetBrains/DORA）
 │   └── raw_scan_2026-10-06_neutral.md     #   三派深扫·中性派回源档案（2026-10-06 批）
 └── 03_skeptics/               # 反对与怀疑派：反证、失败账本、质量/经济/人的角色批评
-    ├── README.md              #   素材索引（候选回源中）
+    ├── README.md              #   素材索引（KOL 侧）
+    ├── community_feedback.md  #   ★ 社区反馈（热度层＋GitHub 故障清单＋中文圈事故向）
     └── raw_scan_2026-10-06_skeptics.md    #   三派深扫·反对/怀疑派回源档案（2026-10-06 批）
 ```
 
 > **2026-10-06 批的落点约定（用户定）**：本轮三派重组的全部新增素材（三路深扫档案、判读）
 > 落在**本目录内**，不进研究层 evidence 档案、不在 digested 开新文件；
 > 研究层只保留台账 §A2（派别判定权威）与既有指针。
+>
+> **社区意见批（2026-10-06 第二批，用户定）**：技术社区的意见（HN/GitHub/Reddit/调查报告/中文社区）**按支持/中性/反对拆进三个派别目录**，
+> 各派一份 `community_feedback.md`（KOL 侧与社区侧分开读、来源逐条标注）；按仓库纪律这是**社区情绪证据**：
+> 单独标注、不进 KOL 台账、不与 KOL 证据并列引用。根目录不再散列社区扫描文件。
 
 **四件套卡格式不变**（一人一目录，与 [`../field_samples/fable5/run_*/`](../field_samples/fable5/README.md) 同构）：
 

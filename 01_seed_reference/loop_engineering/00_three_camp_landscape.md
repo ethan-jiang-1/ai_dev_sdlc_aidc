@@ -4,7 +4,7 @@ content_type: analysis
 directory: 01_seed_reference/loop_engineering
 description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批）
 analysis_date: 2026-10-06
-evidence_base: raw_scan_2026-10-06_{skeptics,neutral,advocates}.md ＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
+evidence_base: raw_scan_2026-10-06_{skeptics,neutral,advocates}.md ＋ 三派 community_feedback.md（社区情绪层，原 2026-10-06 三路社区扫描档已按派拆入后撤除）＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
 authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复制名单
 ---
 
@@ -76,7 +76,34 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 
 发起者（Osmani/Runkle/Ng/Anthropic）给的是机制与教程；吹捧层（Jensen Huang、Nadella 的转述、"Anthropic 80% 工程师"式中文聚合无名氏声称）**一手全部未取得**——本批一律降级登记、不作派别依据。用户感知的"吹捧"，在这个仓库的证据纪律下大部分是不可引用的泡沫。
 
-## 三、不支持什么（证据边界）
+## 三、社区三层对读（2026-10-06 社区意见批增补）
+
+> KOL 三派之外，同日三路扫描了**技术社区层**，按支持/中性/反对拆入三派目录（[推动](01_advocates/community_feedback.md) · [中性](02_neutral/community_feedback.md) · [反对与怀疑](03_skeptics/community_feedback.md)）。
+> ⚠️ 以下全部为**社区情绪证据**（社区评论者非 KOL、调查报告为机构采样），不与上文 KOL 证据并列引用。
+
+**论坛热层（HN/GitHub）——比 KOL 更偏反对端，事实底座同构**：
+- 热度全在失控/成本侧：DN42 agent 烧穿运营者账单 **1467pts/536c**（06-12）、Willison budget caps **629pts**（10-04）、Ronacher 三连 **558/456/232**；而 "loop engineering" 为题的一切 HN 串无一破 40 分，Orosz 定义文仅 2pts——**术语定调在社区零回响**；
+- 推动派内容全灭：Osmani 11pts、Ng 4pts、LangChain 2pts（唯一评论："This used to be called 'Programming by Coincidence'"）；"Ask HN: What are you using loop engineering for?" **0 回答**——"难掌握"最纯净的社区样本；
+- GitHub 层是**故障清单而非立场表态**：claude-code #98708（20 子代理＋Stop hook 下唯一停法是关 VS Code 窗口）、#93744/#98066（/goal 评估器失效×互锁重触发）、codex #32389（假 stop 信号）；**行动级反证：opencode 内置 /goal 23 天后被维护者整体 revert**；Boris Cherny 官方确认尚无通用 loop-detection 权限门（厂商声音）。
+
+**机构采样层——主流立场是"要更自动，但要可停"**：
+- 使用暴涨、信任没跟上：agent 使用 31%→59%（SO pulse）但 "20.0% less confident in their own problem-solving"；DORA ~30% 开发者 trust AI little/not at all；
+- 《Agents on a leash》（SO）：**63% rarely/never 全自动、60% 锁未授权系统变更、68% 偏好单代理**；JetBrains：90% 周用、平均 47% 代码 agent 全生成，但重度 agentic 派仅 ~31%；
+- DORA tokenmaxxing 洞察：runaway agents 需要 circuit breaker；OWASP 目录 **63 起已确认生产预算超支事故**（Anthropic 6/15 计费拆分当日被暂停——社区怒气与厂商让步的因果对）；
+- 判读：社区主流不拒绝自动化，**要求可停**——与 loop engineering 的 stop-conditions 主张实际同向；社区反对声音集中在**执行故障与计费**，极少范式批判，**不能与 KOL 反对派互换引用**。
+
+**中文圈层——"用其术、弃其名"＋独有的供应链信任层**：
+- 一线实践者（V2EX/掘金）谈的是同样的工程问题（停止条件、独立 reviewer、成本止损），**几乎不用这个词**；概念层 8 月出现反转（"2026 年最扯淡的 AI 名词"帖，未核原文）；
+- 用户痛点的直接对应物："**一些没说的，它做了；一些说了的，它没做；一些说了的，做歪了**"（V2EX 无人值守之问）；"调试一个已经跑了 47 轮的状态机，比修好一个 prompt 难 10 倍"（程序员鱼皮）；
+- 中文独有层：**中转站供应链注入**（窃取 ssh/apikey 脚本，1.1 万阅读）——无人值守风险感知比英文圈更重更具体；
+- 推动侧社区样本全部自带人工边界（"26 分钟 3 轮 28 文件，但不自动 push/PR，第二天人再 review"）。
+
+**三层合读对上文判读的三点修正/加强**：
+1. "反对派是内部失败账本"在社区层得到更强印证且走得更远——KOL 层 8:14 的派别比，到 HN 热度层接近**压倒性偏失控/成本叙事**；
+2. 但**重心不同**：KOL 反对派谈范式与经济（内卷、理解坍塌），社区反对谈**故障与账单**（停不下来、烧钱、权限失控）——同一痛感的两个抽象层级；
+3. 社区主流"要更自动，但要可停"正是中性派纲领（渐进信任、受约束循环）的**群众版**——中性派的边界划定不是精英折中，是社区实践的先声。**"试用后放弃"叙事在社区层弱且未核**（Reddit 整站不可达是本批最大缺口；SO/DORA/Octoverse 三大年度报告压在观测日前后，值得一周内重扫）。
+
+## 四、不支持什么（证据边界）
 
 1. **所有失败账本都是单样本**（Ronacher n=1、Yegge n=1、Gas Town 单 harness）——引用必带 caveat；
 2. **0.59% 不证明"没人用"**——只限定"仓库可见的自主循环"这一观测口径（state files 不进版本控制是论文自己的发现）；
@@ -84,6 +111,7 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 4. **派别规模 ≠ 采用率**：反对派小不等于社区多数支持，中性派大也不等于主流——X（术语层争论主战场）整体不可达，本批只靠一手博客/播客/官方文本补偿；
 5. **"待回源"不作依据**：Searls、Steinberger 07-18 终结宣言、Voss 的 Arize 原文、Farley transcript、Orosz 付费墙 §5–7。
 
-## 四、一句话回答用户的问题
+## 五、一句话回答用户的问题
 
 **社区不是铁板一块，而是"厂商在加码放权、头部实践者在还失败账本、中间一群人在给适用边界"的三层结构；你觉得难掌握、把控性差，恰好是这轮深扫里被最多一手证据印证的两件事——它们不是你的问题，是这场运动当前阶段的结构性成本，而社区里真正值得抄的答案在中性派那边（渐进信任、受约束循环、先测再信）。**
+2026-10-06 社区意见批证实了这一分层：HN 热度层压倒性偏"失控/账单"叙事、机构采样显示"要更自动但要可停"的主流（63% 拒全自动）、中文圈用其术弃其名——你觉得"把控性差"，社区用故障清单和账单说了同一件事。

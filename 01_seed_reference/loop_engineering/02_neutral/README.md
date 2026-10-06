@@ -11,6 +11,8 @@ reorg_date: 2026-10-06
 > **派别判定权威在** [`02_research/.../raw/kol-roster.md` §A2 三派分野](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)——
 > 本 README 只做**素材索引**。本派深扫档案：[`raw_scan_2026-10-06_neutral.md`](raw_scan_2026-10-06_neutral.md)（2026-10-06 批，9 条 Source＋10 条负结论）。
 
+> **本派社区反馈**（非 KOL，社区侧与机构采样层（HN 中性讨论/SO/JetBrains/DORA/V2EX 谨慎派））：[`community_feedback.md`](community_feedback.md)——社区情绪证据，与 KOL 侧分开读。
+
 **判定口径（一句话）**：承认循环机制真实存在且在特定条件下有效，但**划定适用边界**（什么任务、什么约束形态、人站哪里）、
 或以审慎实证立场发声（先测再信、记录两面）——既不把它当默认推荐，也不整体否定。
 

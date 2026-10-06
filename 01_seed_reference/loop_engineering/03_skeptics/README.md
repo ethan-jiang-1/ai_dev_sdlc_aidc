@@ -11,6 +11,8 @@ reorg_date: 2026-10-06
 > **派别判定权威在** [`02_research/.../raw/kol-roster.md` §A2 三派分野](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)——
 > 本 README 只做**素材索引**。本派深扫档案：[`raw_scan_2026-10-06_skeptics.md`](raw_scan_2026-10-06_skeptics.md)（2026-10-06 批，11 条一手 Source＋机构旁证＋社区情绪小节）。
 
+> **本派社区反馈**（非 KOL，社区侧（HN 热度层/GitHub 故障清单/中文圈事故向））：[`community_feedback.md`](community_feedback.md)——社区情绪证据，与 KOL 侧分开读。
+
 **判定口径（一句话）**：对 loop engineering（尤其**宽自主放权循环**）给出**反证**（失败账本、质量退化、工具反常）、
 经济或人的角色批评，或公开反对把放权循环当默认方向。反对的是"放权放大"这一主张，不必然反对 agent 或 AI 本身
 （例：Ronacher 明确说 "I don't think AI is going to usher in an extinction event"——他忧的是机制与人）。
