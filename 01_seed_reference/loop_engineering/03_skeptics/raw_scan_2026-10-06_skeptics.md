@@ -603,3 +603,16 @@ quality_bar: 一手优先；X 不可达；HN/Reddit 评论不作 KOL 证据；�
 - **"/bo" 未定位**：最接近候选为博云 BoClaw（bocloud.com.cn 官方页实取，发布时间 2026/3/9——窗口外，且为个人 AI 助手平台非 coding agent loop 面）；若另有所指仍开放。
 - **窗口外机制在册**（引用须标窗口外）：Jules Planning Critic for Auto-Approved Plans（2026-01-26）、Scheduled Tasks（2025-12-10）、Devin Manage Devins（2026-03-19）、Replit Agent 4 并行任务系统（2026-03-23）、GitHub budget tracking changelog（2025-11-03，见上轮库存）。
 - **Gemini CLI 判读注记**：窗口内官方增量以 nightly release note 为主（"autonomous plan execution in non-interactive mode"，2026-09-30）——载体级别低半档，引用时注明。
+
+
+## 相关性审计（2026-10-06，用户判据回溯：所有历史证据须与 loop engineering 挂钩）
+
+**结论**：本档绝大多数条目钩子明确，无需改动。逐类核对如下——
+- **钩子明确（直接 loop 证据，不动）**：Ronacher×4（循环失控/无人值守/工具退化）、Willison budget caps（循环成本熔断）、Orosz 07-14 专刊（本词专名调查）、Yegge（Gas Town 循环不收敛＋harness 维护常量）、GitHub 故障清单（停止条件失效/假 stop/互锁——全 loop 专属）、opencode /goal revert、bcherny 厂商声音（loop-detection 门）、OWASP C9.1（章节名即 Execution Budgets, Loop Control）、arXiv 2608.21884（本词专名研究）、2606.04056（token 预算事故目录）、Steinberger 07-18（loop→graph 词表）、厂商自认面 12 组（循环机制边界）。
+- **降为"背景旁证"（保留在档，但不作为 loop engineering 的直接证据引用，仅背景对照）**：
+  1. **METR arXiv:2507.09089**——泛"AI 辅助开发"RCT，未把 loop 设计作为自变量（与台账 P-outcome 缺口口径一致）；
+  2. **arXiv:2512.23982**——泛 vibe coding 观感定性研究，非 loop 机制；
+  3. **Beck/Tacho/Yegge 联署宣言（S9）**——组织绩效层怀疑，非 loop 机制；
+  4. **Orosz grief 博客（S7）**——泛 AI 写码的损失感（其 loop 专属票在 07-14 专刊 S8）。
+- **部分钩（保留，引用时带注）**：Hashimoto（S11）——泛采纳历程，但含明确 loop 档位边界句（"did not go as far as...running in loops all night"）。
+- **无钩移出**：无。

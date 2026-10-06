@@ -402,3 +402,167 @@ QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专
 - **博客园找找看**：搜索需人机验证；文章直链可抓。aiwangjianguo 文已 302 至用户中心（正文消失，见推动档）。
 - **B 站搜索 API 仍 412**；view API 正常（BVID 经外部搜索引擎定位）。
 - DuckDuckGo HTML 版 CAPTCHA、Bing 302——外部搜索引擎劣化，本轮 URL 定位依赖 web_search 聚合接口。
+
+## 第四轮挖掘（2026-10-06）：观测平台遥测数据层
+
+> 本轮为第四轮挖掘的**数据层面**：观测/遥测平台手里的真实 agent 循环遥测（失败率、重试、token 成本分布、人在环比例）。观测时间 2026-10-06 16:00–17:30 CST；通道：web_fetch 在本环境仍不可用，全部页面经 curl＋浏览器 UA 实取正文后解析，逐字引句均出自本轮抓取的页面文本（原文件存于临时目录 `.tmp-loopobs/`，收口即清理）。每条注样本口径与页面发布日期（取自页面元数据/正文标注）。
+
+### 一、PostHog《How AI agents behave: lessons from 63M MCP tool calls》——本轮数据层最重样本
+
+**[posthog.com/blog/how-ai-agents-behave](https://posthog.com/blog/how-ai-agents-behave)**（作者 Natalia Amorim，页面标注 Sep 30, 2026）。**样本口径**（文末脚注逐字）："All figures are from PostHog's own MCP server (the $mcp_tool_call event)… Headline counts cover the 90 days to September 16, 2026… PostHog Desktop, CLI, Slack app, and Signals scouts account for about 45% of every call. The other 55% comes from roughly 126,000 people using their own agents. Per-tool error rates and retry behavior use the last 30 days."——自家 MCP 服务器单点观测，非行业普查（作者自注 "read them as 'what we see on one busy server,' not a census of all MCP everywhere"）。
+
+关键数据逐字：
+- 总量："In the 90 days up to to September 16, agents made 63 million tool calls to PostHog's MCP, coming from 130,000 people."（"up to to" 重复系页面原文）
+- **失败率按客户端**："among third-party callers it [Codex] errors on just 2% of calls. Cursor sits at 3.5%, Cowork at 5.3%, and Claude Code at 5.7%. Grouped by vendor, the gap holds: OpenAI clients error about 2% of the time, Anthropic clients about 5.5%."（客户端口径按最近 14 天）
+- **失败按动作类型**："reading the schema errors just 1.5% of the time, about 1 in 66. It's the querying that trips them up. The actual SQL call fails 4.4% of the time, nearly three times as often."
+- **重试自愈率（循环行为遥测）**："when one hits an error and the session keeps going, 39% of the time its very next move is to call the exact same tool again, and 75% of those retries work."
+- **token 成本分布**："In the last 30 days our MCP handed agents 84 billion tokens, roughly thirty out for every one in."；"the median response is 440 tokens. But the tail is long; 5% of calls return more than 7,800 tokens, and 1% return more than 16,000."
+- **长尾错位**："three dashboard tools (get, update, and reorder tiles) are 0.5% of calls and 18% of all tokens returned. A single dashboard-reorder-tiles call returns a median of 14,600 tokens, and at p95, 144,000. That's an entire context window just to move a tile."
+- 入口形态："Only about 7% of calls come from a chat window."；"About 14% of calls come from clients we can't place at all: homegrown scripts, unnamed bots, and agents that don't introduce themselves."
+- 产量对比："agents created 252,000 insights through the MCP. People created 99,000 in the web app."（近 30 天，2.5 倍）
+
+（对位：**"0.5% 的调用烧掉 18% 的 token"是"把控性差"最具体的成本形态实证**——失控不在均值在长尾；但"39% 原样重试、其中 75% 成功"同时给循环派提供了自愈可行性的首个公开比例。数据中性，两面都有。）
+
+### 二、PostHog《4,063 errors closed without a human opening PostHog》——agent 分诊闭环比例
+
+**[posthog.com/blog/agents-closed-4063-errors](https://posthog.com/blog/agents-closed-4063-errors)**（作者 Sara Miteva，页面标注 May 07, 2026）。**样本口径**：客户项目近一个月（即 2026-04）30 天 MCP 驱动的错误分诊动作。逐字：
+
+> "Last month, our customers deployed AI agents to PostHog projects to try and solve 6,124 errors in their products. They resolved 4,063 issues. They suppressed 1,751 more. They routed 310 to the right team. Almost none of those agents opened the PostHog UI to do it."
+
+即：尝试 6,124 → 解决 4,063（约 66%）→ 抑制 1,751 → 转派 310。三动作分型："Resolve a.k.a. 'We fixed it.'… Suppress a.k.a. 'Stop showing me this.'… Route a.k.a. 'Wrong owner.'"（对位：错误分诊的人工外包比例数据；注意"解决"含 agent 自行判定已自愈的情形，文内自注）。同文设计反馈："Smaller, sharper tools win"——合并工具端点拆三后 "Bulk-triage flows got noticeably smoother right after"。
+
+### 三、Datadog《State of AI Engineering》——千级客户 LLM span 遥测（含失败主因）
+
+**[datadoghq.com/state-of-ai-engineering](https://www.datadoghq.com/state-of-ai-engineering/)**（页面元数据 article:published_time=2026-04-21，wayback 首拍 2026-04-22；正文含 2026 年 2/3 月数据并预告 2026-07-30 线上活动——判读为持续更新的活页报告，本轮取 2026-10-06 版本）。**样本口径**（Methodology 逐字）："we compiled usage data from thousands of companies in Datadog's customer base… All the results in this article are biased by the fact that the data comes from our customer base, a large but imperfect sample"；"AI applications"＝生产中发起 LLM 调用的服务，"agents"＝其中有多步控制流/工具执行/多服务调用的子集。
+
+关键数据逐字：
+- **失败率与主因**："In February 2026, our analysis showed that 5% of all LLM call spans reported an error and 60% of those errors were caused by exceeded rate limits. In March 2026, 2% of all LLM spans in our dataset returned an error and rate limit errors accounted for almost a third of them—nearly 8.4 million rate limit errors in total."
+- **失控循环的放大机制**："The issue compounds when long-lived agent loops hit provider rate limits or organization-specific concurrency caps, which can trigger retries that increase the load further and evolve the issue into a sustained system failure."
+- **loop 长度进入平台话语（逐字出现 "loop length"）**："Prompts and application logic need to be designed to avoid spikes in loop length and tool fan-out."；"by implementing budgets to force agent loops to terminate when a maximum number of calls or tokens are expended, teams can prevent runaway loops"。
+- **上下文成本**："69% of all input tokens in customer traces were for system prompts"；"only 28% of LLM call spans show any cached-read input tokens"；"the average number of tokens used in customers' requests more than doubled for median customers and quadrupled for the 90th-percentile power users year over year"。
+- **框架采用翻倍与"agent sprawl"**："framework adoption has nearly doubled year over year in 2026, rising from more than 9% of organizations in early 2025 to almost 18% by the beginning of 2026"；"tool fan-out, retries, and branching are one import away. This can cause cost and latency to drift upward and make failures more difficult to reproduce."
+- **单体形态**："59% of agentic application requests only made a single service call, while only 18% of end-to-end agentic application requests made three or more service calls. This suggests that a significant majority of agents are still monoliths."
+- 引语（Vercel CEO Guillermo Rauch）："The next wave of agent failures won't be about what agents can't do. It'll be about what teams can't observe. Agents need the same production feedback loops we've always expected from great software. Unlike traditional software, agents have control flow driven by the LLM itself, which makes observability not just useful, but essential."
+
+（对位：**生产失败主因是容量不是智能**，且失控路径是"长循环→限流→重试→雪崩"——遥测层给"循环需要预算/停止条件"的直接产业证据；明显偏向控制/治理侧但属一手遥测而非立场文。）
+
+### 四、LangChain（LangSmith）：State of Agent Engineering 调查＋Open SWE 路由 A/B（自家 agent 成本分布）
+
+**调查报告 [langchain.com/state-of-agent-engineering](https://www.langchain.com/state-of-agent-engineering)**（页面标注 12 June, 2026）。**样本口径**（Methodology 逐字）："a public survey that we ran for 2 weeks from Nov 18th-Dec 2nd, 2025. We received 1340 responses."（科技行业 63%、<100 人公司 49%；发布在窗口内，采样在窗口前——按页标注明）。
+
+关键数据逐字：
+- 落地率："More than half of respondents surveyed (57.3%) now have agents running in production environments, with another 30.4% actively developing agents with concrete plans to deploy them."（上年 51%）
+- **质量是第一障碍**："Quality is the production killer, with 32% citing it as a top barrier. Meanwhile, cost concerns dropped from last year."；"Latency has emerged as second biggest challenge (20%)."
+- **观测与评估的落差（把控性差的采纳率表述）**："Nearly 89% of respondents have implemented observability for their agents, outpacing evals adoption at 52%."；"89% of organizations have implemented some form of observability for their agents, and 62% have detailed tracing that allows them to inspect individual agent steps and tool calls."；已生产组织："94% have some form of observability in place, and 71.5% have full tracing capabilities."
+- 评估成熟度："Just over half of organization (52.4%) report running offline evaluations on test sets"；"Adoption of online evals is lower (37.3%)"；生产组织中 "'not evaluating' drops from 29.5% to 22.8%"、在线评估 44.8%。
+- **人在环比例**："human review (59.8%) remains essential for nuanced or high stake situations, while LLM-as-judge approaches (53.3%) are increasingly used to scale assessments."
+- 大企业分层："Among enterprises (2k+ employees), quality remains the top blocker but security emerges as the 2nd largest concern, cited by 24.9% of respondents."
+
+**实验博客《How to Build a Model Router in the Harness》**（[langchain.com/blog/how-to-build-a-model-router-in-the-harness](https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness)，datePublished 2026-10-01，作者 Sydney Runkle、Eugene Yurtsev）——**LangSmith trace 级一手数据**（其自家开源编码 agent Open SWE；任务分布窗口 "Aug 29 to Sep 5"，A/B 成本窗口 "Sep 16 to 22"）：
+
+> "We pulled thread-level data from LangSmith traces: the kinds of requests coming in, plus the cost and turn count of each thread (as approximate measures of complexity)."
+> 任务分布（一周交互线程，LLM 分类）："new features (22%) and bug fixes (17%) were the two largest groups, followed by test or no-op runs (16%)."
+> A/B："half of threads went through the router, and half always used GPT-6 Astra, across 973 threads in total."；质量不降："29.2% of routed threads ended in a merged PR vs. 27.3% of control (p = 0.49). PR open rates were also flat (38.9% vs. 39.6%, p = 0.82)."
+> **成本分布**："The median routed thread cost $0.94 vs. $2.61 on control, 64% less. The mean dropped 42% and the p90 dropped 37%, so the savings weren't just a few cheap outliers."；"Of routed threads, 56% went to balanced, 34% to fast, and only 10% to performance. The cost ladder between tiers is steep: the median thread cost $0.097 on fast, $1.50 on balanced, and $2.88 on performance, a 30× spread."
+> 用户对超支的直接反馈逐字："pretty expensive for this query"／"this request should not have been routed to the performance model."
+> 架构立场："An effective model router belongs in the harness, not a generic gateway. Choosing the right model requires domain and task context that the harness already assembles, and a gateway typically lacks."
+
+（对位：**turn count 被明确当复杂度/失控信号用**（"a high count can mean a harder task or a model that needed follow-ups"）；成本分布 30× 阶梯＋路由省 64% 是"循环可以工程化调优"的正面一手量化。注意该文模型名（GLM-5.3-Flash / GPT-5.6 Sol / GPT-6 Astra）按页面原文照录。）
+
+### 五、New Relic《2026 Observability Forecast》——上轮"正文未得"以博客载体翻案
+
+**[newrelic.com/blog/observability/announcing-the-2026-observability-forecast](https://newrelic.com/blog/observability/announcing-the-2026-observability-forecast)**（Published Sep 22, 2026；副题逐字 "AI made software faster to build. It also made it harder to run."）。**样本口径**："produced with Enterprise Technology Research (ETR), surveyed 2,575 IT and engineering leaders and practitioners worldwide, up from 1,700 last year"（全文报告需下载，博客正文为本轮实取载体）。
+
+> "Only 25 percent of organizations report they haven't deployed or don't plan to monitor agentic AI at all. The problem is what's happening inside that remaining 75 percent. A full quarter of organizations have already put agents into production with no monitoring in place whatsoever. That's a live production system, making decisions and taking actions, that nobody is watching right now."
+> "Two out of three organizations say AI now generates or substantially rewrites more than half of their code each week. Eighty-three percent of leaders agree that this makes reliable observability more critical than ever."
+> "The average organization now loses about $74 million a year to high-impact outages, down slightly from $76 million last year… More than a third of organizations still experience a high-impact outage weekly or more, and the share hitting one multiple times a day has roughly tripled year over year."
+> "The average organization ran ~4 observability tools in 2025, but is trending back up to 5 this year, likely because AI adoption is pulling in a wave of new, narrow, AI-specific point tools."
+
+（对位：**"四分之一组织把 agent 放进生产但零监控"**是机构采样层对"无人看管的循环"的最强表述；"成本曲线在弯、频率曲线没有"（原文明示别把账单下降当问题变小）。机构层偏向治理侧。）
+
+### 六、Arize：自家生产 agent 的隐性重试循环＋可靠性差距框架
+
+**《How Signal found two hidden retry loops in our production agent Alyx》**（[arize.com/blog/how-signal-found-two-hidden-retry-loops-in-alyx](https://arize.com/blog/how-signal-found-two-hidden-retry-loops-in-alyx/)，datePublished 2026-08-27）——**厂商自家生产 agent（Alyx，Arize AX 内置 AI 工程代理）trace 一手案例**：
+
+> "It quickly found one answer in a run that lasted 227 seconds, generated 192 spans, and called the same tool 43 times. The root span still reported OK. Alyx hadn't crashed, but an empty optional field had pushed it into the wrong validation path and the resulting error message kept sending the agent back to the same tool."
+> "Over a 30-day period, Signal surfaced 34 issues in Alyx's production traces, including the two behavioral failures explored in this article."
+> 总纲："In AI systems, bugs rarely show up as errors. They show up as behavior: a loop that looks like progress, a valid tool call that does the wrong thing, a root span that is still OK."
+
+**《The Agent Reliability Gap》框架论文页**（[arize.com/resources/agent-reliability-gap](https://arize.com/resources/agent-reliability-gap/)，datePublished 2026-08-28）：六域失败分类学，其中编排域逐字 "Loops, premature stops, retry storms, compaction loss, or incorrect routing. Trace decisions, state changes, budgets, handoffs, and stop reasons."；中心原则 "A workable output can hide a broken run"；引语（Michael Grinich, WorkOS 创始人）："The agent decided to delete all the tests because then none of them would fail."
+
+**窗口外注脚**：《Why AI Agents Break: A Field Analysis of Production Failures》（datePublished 2026-01-29，早于 6 月窗口）："Your existing observability stack looks at these actions and reports 'Success' because the HTTP status code was 200."；"Polling Tax"：webhook 等待期 "enters a hyperactive loop… In a worst-case scenario, this results in hundreds of API calls for a single task."
+
+（对位：**"root span 仍报 OK 的 43 连调用"是"难掌握"最形象的 trace 形态**——失败不再以异常出现而以行为出现；stop reasons/budgets 进官方分类学，明显偏控制侧。）
+
+### 七、Braintrust：控制逻辑的成本-可靠耦合实验
+
+**《How to test agent cost-efficiency with Braintrust》**（[braintrust.dev/evals/test-agent-cost-efficiency](https://www.braintrust.dev/evals/test-agent-cost-efficiency)，datePublished 17 June 2026）。**样本口径**：自设工具型客服 agent 基准（"Each request includes a customer message, account context, and a set of allowed tools"），各策略跑同一数据集、统一 judge 与质量门：
+
+> "Retry-then-escalate and smart escalation resolve about 93% of tickets at roughly $0.0125–$0.0146 per resolved case, beating always-frontier at ~$0.0190."
+> "Always-cheapest policies cost less in tokens but resolve only about 68–70% of requests under the same quality gates."
+> "At 10,000 tickets per month, smart escalation is about $135 at ~93% resolved versus about $161 at ~85% for always using the frontier model."
+> 口径主张："We measure cost per resolved request, not raw token cost."；"Swapping in a cheaper model rarely solves the problem on its own. Token costs may drop, but failures increase, retries pile up, and human cleanup can erase the savings."
+
+（对位：**失败率×重试×人审清理进成本函数**——"便宜模型省的钱被循环失败吃掉"首次有实验数字；正面支持"循环要当工程对象调"，中性。）
+
+### 八、Sentry：Seer／Agent Tracing 自家用例（含循环过长作为一级监控对象）
+
+- **《Automated agent triage with Agent Tracing and Claude Routines》**（[blog.sentry.io/claude-routines-agent-triage](https://blog.sentry.io/claude-routines-agent-triage/)，datePublished 2026-08-13）：Sentry 自家用 Claude Routine 每晨读 Seer 分诊 agent 的隔夜对话遥测。口径与数据逐字：
+  > "Every morning, before anyone on the team has looked at a dashboard, a Claude Routine has already read around 800 of the previous night's conversations from Seer, Sentry's AI agent for triaging and fixing errors."
+  > 单次运行样例："Analyzed the last 24h of <feature> conversations (~445-551 total, ~11k tool calls)."；**会话级工具错误率**："~21% of conversations (83/400 sampled) hit at least one tool error, mostly self-corrected retries."
+  > **监控对象清单里有 loop 本身**："We were looking for a mix of things. Tool call failures, hallucinated outputs, latency spikes, agent loops that went on longer than they should have, and cost anomalies."
+  > 失败形态："Two conversations showed 30-56s hangs before an opaque 'internal error'"；repo 幻觉重试："The agent had no idea which repo it was looking for."；**零报错≠正确**："A conversation can complete without a single tool error and still reach the wrong conclusion — that only shows up when something (or someone) checks the reasoning against the verdict."
+  > 闭环速度："Running this daily made the feedback loop fast enough that most fixes landed the same day we spotted them."
+- **《Big improvements to Seer Agent》**（datePublished 2026-09-29，上线五个月节点）：Seer Agent 获得写操作能力，**权限默认收窄＋不持久**（人在环内置）："We've made sure to default Seer Agent to the same level of permissions you have as a user, and Seer Agent will explicitly ask for permission before executing a task if it doesn't detect the proper write scope. Those permissions also don't persist beyond a single chat."
+- **窗口外/流程注脚**：Seer 本体博客《Seer: debug with AI at every stage of development》（datePublished 2026-01-27，$40/活跃贡献者/月不限量）；《Debugging our AI search assistant with agent tracing》（2026-09-11）记录其内部"eval 失败→AI Conversation 视图归因→补 eval 场景"的调试工作流，无量化数据。
+- 通道注：blog.sentry.io WP API 403，但文章页与博客首页静态链接可 curl 实取。
+
+### 九、Langfuse：循环厂商对"整个循环能否交给 agent"的官方划线（定性）
+
+**《AI is eating the AI engineering loop》**（[langfuse.com/blog/2026-06-09-ai-is-eating-ai-engineering](https://langfuse.com/blog/2026-06-09-ai-is-eating-ai-engineering)，Jun 9, 2026，作者 Lotte Verheyen）。Langfuse 把 AI 工程循环正式定义为 Trace→Monitor→Build→Experiment→Evaluate 五段并给出人/机分配表；关键逐字：
+
+> "Automate past the point where you can still vouch for the output, and you'll find yourself shipping agent slop."
+> "Agent slop: low-quality AI agents, mass produced by other AI agents. Often the result of agents optimizing against imperfect evals and datasets."
+> "If you only read the traces an agent or previously set up evaluators flagged for you, you only ever see the slice it was already told to look at. To catch what would otherwise slip through, sample your traces regularly and read them yourself."
+
+（对位：**观测平台官方把"人要亲手读 trace"写成循环的必要段**——"vouch（可背书）"为循环可托付性给出平台方判据；偏控制侧。无量化数据，登记为循环厂商自划线。）
+
+### 十、模型厂商公开用量统计：Anthropic Economic Index（OpenAI 无对应公开载体）
+
+**Anthropic《Economic Index report: Learning curves》**（[anthropic.com/research/economic-index-march-2026-report](https://www.anthropic.com/research/economic-index-march-2026-report)，datePublished 2026-03-24）。**样本口径**："We sample 1 million conversations from both Claude.ai… and our first-party API… Our sample covers February 5 to February 12"（隐私保护聚合分型）。
+
+- **官方交互分型里循环是一级类别**："we have classified conversations into one of five interaction types—directive, feedback loop, task iteration, validation, and learning—which we group into two broader categories: automation and augmentation."
+- 走向："augmentation in Claude.ai increased slightly"；"we show that automation decreased sharply in the 1P API data."
+- **熟练度与委托负相关（人在环的遥测证据）**："High tenure users are more likely to use Claude to iterate on their work, and much less likely to delegate greater responsibility through directive use patterns."；"people in this higher-tenure group have a 10% higher success rate in their conversations, an association that is not explained by their task selection, country of origin, or other factors."
+- 编码工作流迁移："coding tasks continue to migrate from augmentative usage in Claude.ai to more automated workflows in our first-party API traffic… Claude Code has grown to represent a large share of sampled traffic."
+
+**OpenAI：负结论**。usage dashboard 无公开统计载体；检索到的公开统计物为 cdn.openai.com 之 signals global report，**PDF 载体本轮未解析**（通道状态，不引数）。Anthropic Economic Index 是两家中唯一成体系滚动发布的公开用量统计。
+
+### 十一、机构快查：Virtana 失败率调查（厂商利益相关，谨慎用）与 Grafana/Statsig/Helicone 负结论
+
+- **Virtana《AI Is Breaking Human-Managed Operations》**（Business Wire 2026-03-10 发布；businesswirenews.com 与 tmcnet 转载页均 403，**经 Wedbush 投资者页转载全文实取**）。样本口径："an independent global survey of 351 senior IT and technology leaders"（100–10,000+ 人组织）。逐字：
+  > "with 75% reporting AI job failure rates exceeding 10% and 33% experiencing failure rates above 25%, meaning one in four AI jobs fail."
+  > "while 59% of executives believe their organizations are prepared for AI-scale operations, 62% of practitioners report fragmented systems and persistent visibility gaps."
+  > "only 48% of practitioners… are confident their current observability tools can handle AI-scale workloads."
+  > CEO 引语（把失败率接到循环后果）："At enterprise scale, these rates translate into thousands of failed executions per day, driving retries, wasted compute capacity, cascading delays, and escalating operational risk."
+  **利益相关警示**：发布主体 Virtana 是可观测性厂商，发布日同步推出自家 Application Observability 产品；n=351 样本偏小——数字按机构采样层降权使用，且"AI job failure rate"口径未细分 agent 循环作业。
+- **Grafana：负结论**。官方载体为 how-to 与 OTel GenAI 语义约定产品文（[grafana.com/blog/ai-observability-llms-in-production](https://grafana.com/blog/ai-observability-llms-in-production/)）；文中 "GPT-5 accounts for 70% of costs but only 20% of queries" 等出现在 Before/After 示例段，**属演示数值非遥测发现，不得引用**。未检索到 2026-06 后带真实数据的报告。
+- **Statsig：负结论**。《Color commentary, Aug 2026》（datePublished 2026-09-10）仅方向性表述（"With MCP use steadily increasing…"），无数字。
+- **Helicone：负结论**。一轮检索未命中 2026-06 后官方公开遥测统计（博客以教程类为主）；按两轮纪律登记，不再恋战。
+
+### 十二、本轮判读与通道记录
+
+- **数据层三派定位（中性为主，两处明确偏侧）**：失败主因（限流/容量）、长尾成本（0.5% 调用烧 18% token）、OK 状态下的隐性重试循环、观测-评估采纳落差（89% vs 52%）——这四组一手遥测均指向"循环本身是难掌握的工程对象"，**偏控制/治理侧**；但重试自愈率（39% 重试、75% 成功）、路由省 64% 质量不降、升级策略 93% vs 85%——这三组给循环派"循环可工程化调优"提供**正面量化**。数据层不是立场战场，是参数表。
+- **跨平台重复出现的三个一级监控对象**（平台厂商不约而同把 loop 相关量列进监控/治理清单）：loop 过长（Sentry "agent loops that went on longer than they should have"＝Datadog "spikes in loop length"＝Arize "loops, premature stops, retry storms"）；预算/停止（Datadog budgets to force loops to terminate＝Arize budgets & stop reasons）；人审采样（Langfuse 手读 trace＝Sentry success-sampling＝LangChain human review 59.8%）。
+- 通道：curl＋Chrome UA 全程主力；Sentry WP API 403（首页链接可取）；Business Wire 403→Wedbush 转载载体全文实取；web.archive.org CDX 可用（Datadog 页首拍 2026-04-22）但其主页间歇 "Temporarily Offline"；PDF 载体（OpenAI signals）未解析。
+
+
+## 相关性审计（2026-10-06，用户判据回溯）
+
+**结论**：本档主体钩子明确——Böckeler TDD-in-loop eval（循环内部实践）、Kent C. Dodds（本词教学）、Kief 渐进信任（放权节律）、marmelab/Walden（循环工程审计与拓扑）、观测平台层（循环长度/预算熔断/重试循环——Datadog 原文 "budgets to force agent loops to terminate"）、LangChain 调查（agent 生产与评估落差）、New Relic State of AI Coding（62% 免逐行验证 ship＝验证面）、GitHub×Yale（agent 决策边界原句）、QCon 专题与 InfoQ（本词专名）、传播观察（术语本身）、Anthropic Economic Index（官方分型即 feedback loop/task iteration）。
+**降为"背景旁证"（不作为 loop engineering 直接证据引用，仅背景对照）**：
+  1. **SO retrospective 使用率数据**（31%→59%）——泛 agent 采用，非 loop 专属（其"assisted rather than autonomous"句为部分钩：委托深度）；
+  2. **JetBrains 采用率**（90%/68%/47%）——同上；其"重度用户仅 46–57% agentic coders"句为直接钩（委托深度）；
+  3. **JumpCloud 成熟度自评 40%→23%**——治理背景，非 loop 机制；
+  4. **Atlassian《The Agentic Pivot》**——治理轴同构（88% vs 19%），但对象是泛 AI 治理而非循环机制。
+**无钩移出**：无（TiDB PDCA 篇已于第三轮勘误移出——窗口外＋产品名巧合）。

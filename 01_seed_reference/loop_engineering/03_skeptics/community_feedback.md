@@ -328,3 +328,10 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 - V2EX API v1 本轮恢复可用（topic/replies 均可取；约 1 秒/请求未触发限流）——上轮依赖 sov2ex 单通道的状态翻案；sov2ex 的 replies 字段不回填（全 0），回复数必须走 V2EX API。
 - 即刻 web 搜索 API 405、博客园找找看人机验证、DDG CAPTCHA、Bing 302、B 站搜索 API 412——点状定位靠 web_search 聚合接口。
 - 奇绩创坛镜像 404；B 站"四笔账"系列稿件不可见——两条质疑向本体不可核，只记存在。
+
+
+## 相关性审计（2026-10-06，用户判据回溯）
+
+**结论**：本档钩子整体明确——HN 热度层（事故/成本/loop 串）、GitHub 故障清单（停止条件失效）、Reddit 计费簇与 #99652（无人值守运行）、OWASP（loop control）、中文圈三帖（无人值守/中转站/auto 失控）与 smzdm/知乎（术语舆论本身）均为直接证据。
+**降为"背景旁证"（不作为 loop engineering 直接证据引用）**：部分票区的组织层项——Beck/Tacho/Yegge 联署宣言（组织绩效层）；Hashimoto（泛采纳限速，非 loop 专属）；Willison 09-24 "make software engineering even harder"（泛 coding agents 门槛，非本词专属——其 10-03 budget caps 句为直接钩）。
+**无钩移出**：无。

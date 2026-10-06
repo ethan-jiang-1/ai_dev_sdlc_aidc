@@ -1014,3 +1014,191 @@ quality_bar: 一手优先；X 不可达（本环境 x.com 全部不可用，经�
 | Gemini CLI | ACP 模式 request_permission 事件（release note 2026-09-22 行）；**官方术语层面未见 "loop detection"/"circuit breaker"** | 增量 C3 | 2026-09  |
 
 - **本轮负发现（如实登记）**：① 无任何一家厂商官方文档使用 "loop detection" 或 "circuit breaker" 术语（最接近的是 Kiro PreToolUse 闸门、Factory safety checks、Devin 双门闩、dots action review）；② Jules 官方 changelog 在 2026-03-09 后静默（增量 C1）；③ Gemini CLI 官方 release note 存在一手"无限循环 bug 修复"记录（"prevent infinite auth loop"，2026-09-29）——失控案例见怀疑面增量 K。
+
+## 第四轮挖掘（2026-10-06）：甲方工程博客（正面生产化）
+
+> **任务**：扫大规模**使用** coding agent 的甲方公司（非厂商）自己写的官方工程博客一手实践复盘，窗口 2026-06-01 后；重点两类最高价值：(a) agent 事故 postmortem、(b) 规模化数据（N 个月/X 仓库/失败率/回滚率/成本）。已知库存：Shopify（经 DORA 转引 circuit breaker）、Uber（经 TechCrunch 转引预算烧光）、OpenAI 内部（经 Orosz 取样）。
+> **拉取通道**：各博客直取（curl＋浏览器 UA）为主；wayback 本轮全程 429 限流（未起作用）；medium 系（netflixtechblog/airbnb-engineering）被 Cloudflare 盾，Airbnb 经其自有工程站 airbnb.tech 与 RSS Parrot 镜像取得、Netflix 经 InfoQ 中文编译转述（见中性档）；eng.uber.com 旧路径 404，经 www.uber.com/blog 直取成功；figma.com 的 web_fetch 域名解析受限，curl 直取成功。逐字引句全部来自实际 fetch 的页面，无一处凭记忆补写。
+> **本档结论速览**：正面生产化一手 8 家 9 篇——Shopify River 自主修复环（09-02，安全积压 11 天 -70%、freshness-gated merge queue 10%→80%）、Shopify Sidekick 持续学习环（08-05，生产失败→权重、服务成本 -96%）、Shopify AppSec harness「Dispatch」（07-29，世界最大 Rails monolith 之一）、Uber「软件工厂」（08-27，70%+ PR 归因 agent、3600+ skills、30K 次/日）、Figma 安全 agent 双篇（07-23/07-29，全量 PR 审查一年、71% 告警闭环提速）、Duolingo agent 平台（08-04，生产就绪成为默认）、Cloudflare ADLC（08-04，半厂商标注）。**两类最高价值的 (a) 类（事故 postmortem）本轮零命中**——见怀疑档负结论；**(b) 类规模化数据大量命中**，多数集中在本档与中性档。
+> **派别适配提醒**：甲方博客的"正面"多以"控制机制写得足够实"为前提——本档条目几乎都自带门禁/审批/降级层，判读时勿把"敢公开"误读成"无保留"。
+> **判据更新（2026-10-06 用户新增硬性判据，本轮已执行）**：每条标注「与 loop engineering 的挂钩」，挂钩不实的素材弃收；本档 8 条均落在循环结构/停止条件/预算与熔断/外层调度/验证回路/无人值守/循环产品化至少一项，无泛采用文。
+
+### 甲-1 · Shopify《How River takes security work from a fix to merge》（2026-09-02）
+
+- 公司/作者：Shopify（甲方，全球最大电商 SaaS 之一）；Kaiyi Li（AppSec）
+- URL/日期：https://shopify.engineering/river-vulnerability-remediation ｜ Published on Sep 2, 2026（页面实取）
+- 来源类型：官方工程博客一手（全文取得，curl＋浏览器 UA）
+- 规模口径：River＝公司级 Slack 常驻 agent（底座 Aquifer）；依赖修复工作流上线首 11 天数据；freshness-gated merge queue 自上线以来 10%→80%；单次运行 4 线程/分钟覆盖 35 findings；单批 8 个依赖 PR。系列上下文（窗口边缘登记）：系列首篇《Under the River》（2026-05-28，早窗口 4 天）给出 30 天 59,918 River sessions、5,170 Slack 频道、3,536 River-coauthored PR merged、"one in eight merged pull requests across Shopify is coauthored by it"——本条判定可引用该基数但须标窗口边缘。
+- **逐字摘录**：
+
+> "In the first 11 days of running the dependency workflow, the backlog of open issues fell by about 70%. Roughly two-thirds were direct merges, and the rest were confirmed by River as obsolete or already fixed elsewhere. Since launch, security merges through our freshness-gated merge queue went from about 10% to 80%."
+
+> "So River treats every ledger entry as a claim to be checked, not a fact."
+
+> "It didn't rebase the eighth PR. A human had taken over that branch with their own commits, and a second engineer had an open review on it. Rebasing would have overwritten someone's work and pre-empted a design question, so it went back to its author untouched."
+
+> "Owners supply product context, accept risk, review, and merge. They don't shuttle state between Git, CI, Slack, and the tracker."
+
+> "when you can't define the outcome you want, or the evidence that would prove it correct, another edit is a bet rather than a fix."
+
+> "Attackers can tolerate repeated failure but defenders, especially organizations, have to preserve production-intended behavior with every fix."
+
+- **该条支持的最小主张**：甲方公开一手确认"自主修复环"已跑在生产上且有量化结果（积压 -70%、合并队列 10%→80%），同时把自主环的边界写得极具体——账本只是主张不是事实、人的分支不碰、不能定义验收证据就停手。这是"循环外层治理"（ledger 对账、freshness 门禁、handoff 分级）的最佳一手样本。
+- 派别适配：**推动·生产化**（正面，但引句时注意其"handoff the decision, not the investigation"是自主度分档表述）。
+**与 loop engineering 的挂钩**：自主修复环的完整外层治理一手——ledger 只是主张须逐项对账（验证回路）、freshness-gated merge queue（合并门禁＝停止条件）、"不能定义验收证据就停手"（停止条件）、人接管的分支不 rebasing（自主度上界）；整体＝生产上的无人值守修复运行。
+
+### 甲-2 · Shopify《Sidekick's continual learning loop》（2026-08-05）
+
+- 公司/作者：Shopify；Andrew McNamara / Cody Mazza-Anthony
+- URL/日期：https://shopify.engineering/sidekicks-continual-learning-loop ｜ Published on Aug 5, 2026（页面实取）
+- 来源类型：官方工程博客一手（全文取得）
+- 规模口径：GraphQL agent 生产 2,000 RPM；前沿模型服务估算 $27M/年 vs 微调后 ~$1M（-96%）；gisting 把 6,000 token 系统提示压到 ~1,500（350 RPM 下 TTFT -19%、端到端 -38%、同 GPU 吞吐 +16%、GPU 省 ~14%）；self-healing 管线**每天**跑。
+- **逐字摘录**：
+
+> "How we compress production failures into model weights every day, beat frontier-model quality, and cut serving costs 96%."（副标题）
+
+> "The flywheel is our answer: a continual learning loop that compresses production experience into the continuous space of the model's weights."
+
+> "The self-healing pipeline runs daily, continually adding new trajectories to the training corpus."
+
+> "If the rubric confuses several product experts who work on this product every day, it will confuse an LLM too. That agreement is the judge's ceiling: even expert annotators do not agree 100% of the time, because some conversations are genuinely ambiguous."
+
+> "Defining quality is the most important step in the loop—and the one that teams most often rush. ... When you get it wrong, everything downstream optimizes the wrong behavior."
+
+- **该条支持的最小主张**：甲方把"生产失败→训练语料→每日微调"做成闭环并给出成本/质量双量化（$27M→$1M、超越前沿基线）——"loop"在这里从推理时循环扩展到"跨天训练环"；同时自认质量定义（rubric＋Cohen's kappa 标定）是全环第一优先级、标 judges 有天花板。
+- 派别适配：**推动·生产化**（经济面＋训练环面的一手规模数据；其"judge's ceiling"句同时可被中性档引用）。
+**与 loop engineering 的挂钩**："continual learning loop" 即跨天训练环：生产失败→轨迹语料→每日 SFT/GRPO（循环产品化机制）；quality rubric＋Cohen's kappa 标定＝奖励信号（验证回路）；"judge's ceiling"＝评分器置信上界（停止判据边界）。
+
+### 甲-3 · Shopify《Building an agentic harness that outlasts the model》（2026-07-29）
+
+- 公司/作者：Shopify AppSec 团队
+- URL/日期：https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model ｜ Published on Jul 29, 2026（页面实取）
+- 来源类型：官方工程博客一手（全文取得）
+- 规模口径：harness 运行"one of the largest Rails monoliths in the world"；评估新安全微调模型"Over the past five months"；单次审计 30+ 候选漏洞；扫描覆盖最重要公开面。
+- **逐字摘录**：
+
+> "We've built an agentic code review and test oracle harness that discovers vulnerabilities in our software, proves them with real tests, and provides Shopify-tuned fixes before presenting them to our developers."
+
+> "In one audit, a model uncovered more than 30 candidate vulnerabilities. After validation, every one was downgraded to low or medium, found to be a false positive, or reclassified as defense in depth."
+
+> "The models are getting better, but the most important piece of the system remains the harness."
+
+- **该条支持的最小主张**：甲方安全团队把"发现→测试证明→修复 PR"agent 环做成平台（内部编排器 Dispatch），并明确"模型在换、harness 是常量"；但同篇自曝 30+ 候选全被验证层降级/判误报——推动叙事与"验证层才是产能"的数据并存。
+- 派别适配：**推动·生产化**（"harness outlasts the model"＝把控性主题的正样本）；其 30+ 全降级句**同时是中性档可用的边界数据**（引用时注明双面性）。
+**与 loop engineering 的挂钩**：发现→test oracle 实测证明→修复 PR 的验证回路闭环；30+ 候选全部被验证层降级/判误报＝验证层才是实际闸门（停止条件）；"harness outlasts the model"＝循环资产化主张。
+- 判读注记：DORA 转引的 "circuit breaker" 一手仍未落点——shopify.engineering 窗口内全部 agent 帖正文（含本篇）grep 均无 "circuit breaker"/"loop detection" 术语；功能性对应物见怀疑档负结论。
+
+### 甲-4 · Uber《Running a Software Factory Efficiently at Uber Scale》（2026-08-27）
+
+- 公司/作者：Uber；Uday Kiran Medisetty（Distinguished Engineer）
+- URL/日期：https://www.uber.com/blog/efficient-software-factory/ ｜ August 27, 2026（页面实取；eng.uber.com 旧路径 404，www.uber.com/blog 直取成功）
+- 来源类型：官方工程博客一手（全文取得；curl＋浏览器 UA）
+- 规模口径：70%+ PR 归因 local/cloud agent；3,600+ agent skills；30K+ skill 执行/日；2-8 月 WAU 7x、周 agent 请求 9.4x；AI 总支出 4 月后趋稳；固定模型口径下每千请求成本较峰值 -34%、每 session 成本较 6 月峰值 -52%；MCP 网关 1,000+ server；AI Context Graph 24M 节点/80M 边。
+- **逐字摘录**：
+
+> "More than 70% of pull requests are attributed to local or cloud agents. Engineers have built over 3,600 agent skills across the software development life cycle, and executed more than 30K agent skill executions per day."
+
+> "a growing share of sessions aren't initiated by humans, but by automated managed agents handling code review, self-healing CI failures, completing E2E PRs with visual validation, triaging on-call alerts, debugging incoming bugs, and handling a variety of code maintenance tasks with human reviews/escalations."
+
+> "weekly active users across all agentic offerings across all our employees (engineers & non-engineers) grew 7x, and weekly agentic requests grew 9.4x. Meanwhile, our total AI spend has relatively stabilized since April due to optimizations across the board."
+
+> "cost per 1,000 model requests is down almost 34% from its peak, and cost per session is down 52% from its June peak."
+
+> Managed agent outcomes（指标表实取）: "Quality signal (revert rate, F1, MTTR)"; "Outcome-denominated cost (cost per merged PR, cost per review, cost per alert, cost per cleanup)"
+
+- **该条支持的最小主张**：甲方给出迄今最完整的"软件工厂"经济账本：非人发起 session 占比上升（code review/CI 自愈/E2E PR/alert 分诊）、以 revert rate/F1/MTTR 做 managed agent 质量信号、成本方程六项连乘逐项优化——"预算烧光"叙事（见怀疑档）之后 8 月的官方一手回应。
+- 派别适配：**推动·生产化**（规模数据 (b) 类最高价值样本；其与媒体"预算耗尽"叙事的关系见怀疑档 Uber 条——两档须对照引用）。
+**与 loop engineering 的挂钩**：非人发起 session（code review/CI 自愈/E2E PR/alert 分诊，human reviews/escalations 兜底）＝无人值守运行＋外层调度；revert rate/F1/MTTR 作 managed agent 质量信号＝验证回路；成本方程逐项优化与 spend stabilized＝预算与熔断面治理。
+
+### 甲-5 · Figma《How Figma stays ahead of vulnerabilities with agents》（2026-07-23）
+
+- 公司/作者：Figma 安全工程；Rohan Sharma / Liam Buchan / Dave Martin
+- URL/日期：https://www.figma.com/blog/how-figma-stays-ahead-of-vulnerabilities-with-agents/ ｜ July 23, 2026（页面实取）
+- 来源类型：官方工程博客一手（全文取得）
+- 规模口径：agent 全量审查每个 PR 已一年＋审计十年老 monorepo；首周精确率 15%（27 中 4）；目标门 70% 精确率（两周回看）；一个月到 80%；双模型冗余（Claude Code + Opus 4.8 xhigh、Codex + GPT-5.6 Sol high）；median $0.50/PR 审查；policy 99 行/2,560 词/68 条 precedents。
+- **逐字摘录**：
+
+> "For the past year, agents at Figma have guarded code as it's written, reviewed every pull request, and audited a decade-old monorepo, all on one policy."
+
+> "However, in week one, only about 15% of findings (4 of 27) were valid. That is the trust problem behind OpenAI's argument that precision matters more than recall: Developers stop trusting any tool that floods them with low-quality findings."
+
+> "We held back developer-facing PR comments until precision stayed above 70% over a two-week lookback, with no embarrassingly bad false positives."
+
+> "We currently run both Claude Code with Opus 4.8 at the xhigh (extra-high) effort setting and Codex with GPT-5.6 Sol at high effort, because they miss different bugs. If either model surfaces a finding, we bubble it up."
+
+> "Ninety-nine lines, 2,560 words, and 68 precedents later, this work had a side effect we did not plan for: We had written a complete threat model, in roughly the form we'd want a new hire to read on day one."
+
+- **该条支持的最小主张**：甲方把 agent code review 推进到**无 PR 免审的 merge 基础设施**，路径是先做精确率门（15%→70%→80%）再开闸——"先测量后放权"的可复制配方；policy 即威胁模型（68 precedents）是上下文工程的一手形态。
+- 派别适配：**推动·生产化**（其 15% 首周数据同时是中性档"信任不能一步给"的边界证据）。
+**与 loop engineering 的挂钩**：agent 审查做成 merge 必经门（"no pull request merges without a completed review pass"）＝验证回路基础设施化；精确率两周回看 70% 门未达不开启开发者可见评论＝渐进放权的停止条件。
+
+### 甲-6 · Figma《How we secure Figma's internal systems with agents》（2026-07-29）
+
+- 公司/作者：Figma 安全工程；Matthew Sullivan / Brad Girardeau
+- URL/日期：https://www.figma.com/blog/how-we-secure-figmas-internal-systems-with-agents/ ｜ July 29, 2026（页面实取）
+- 来源类型：官方工程博客一手（全文取得）
+- 规模口径：告警 time-to-resolution -71%；on-call pages -20%（单靠 RAG 自动降级）；agent 系统＝调查告警→查审计日志→改代码→开 PR→自我记忆。
+- **逐字摘录**：
+
+> "Our security team built an AI agent that triages alerts, conducts forensic investigations, queries our security data lake, writes code to fix issues—and remembers what it learns. Here's how we cut alert time-to-resolution by 71% and fundamentally changed how our on-call engineers work."
+
+> "We saw a 20% drop in on-call pages from this change alone."
+
+> "That project eventually grew into a full agentic system that investigates alerts, queries audit logs, writes code changes, opens PRs, and gets better over time through its own memory."
+
+- **该条支持的最小主张**：甲方安全 on-call 的 agent 化给出正收益双数据（-71%/-20%）；注意其含"LLM 自动降级 high/critical 告警"机制（autoResolutionConfidence ≥ 7 即把 severity 改 medium）——该机制是自主环里少见的"agent 自行改低风险等级"实例，判读时可双向使用。
+- 派别适配：**推动·生产化**（数据面强；自动降级机制一句供中性档交叉引用）。
+**与 loop engineering 的挂钩**：Tines 上以显式工具接口跑 LLM agent loop 做告警分诊（无人值守运行）；LLM 依据 autoResolutionConfidence 自动把 high/critical 告警降级 medium（自主环内改低风险等级＝自主度实例/边界）；"gets better over time through its own memory"＝记忆回路。
+
+### 甲-7 · Duolingo《Making production-ready agents the default: building Duolingo's agent platform》（2026-08-04）
+
+- 公司/作者：Duolingo；Guadalupe Aliseda-Canton
+- URL/日期：https://blog.duolingo.com/production-ready-ai-agent-platform/ ｜ August 4, 2026（页面实取）
+- 来源类型：官方工程博客一手（全文取得）
+- 规模口径：公司级 agent 平台（Temporal AgentWorkflow）；agent 创建从数周→约 10 分钟；agent 承载修 CI、回应 code review、发布经理 Slack bot 等工作流。
+- **逐字摘录**：
+
+> "Once you want to run it in the cloud, the work shifts from prompting to productionizing."
+
+> "It is not enough to ask whether the agent's output sounds reasonable; we need to know whether it made the right change."
+
+> "The LLM-as-judge is useful, but we do not want our only signal to be one model judging another model's work."
+
+> "AI generates code rapidly, but not necessarily high-quality code. It is trivial to have tools like Claude Code or Codex build an agent, but those tools do not automatically consider durability, observability, or evaluation."
+
+> "This platform collapses that tradeoff: the same tools that allow developers and AI to move quickly also ensure what they build is ready for production."
+
+- **该条支持的最小主张**：甲方把"生产就绪"从工程纪律变成**平台默认值**（定义一次、durability/observability/eval 自动继承）；eval 以确定性 grader（diff_assertions/no_op_consistency）为地基、LLM-judge 仅辅助——"评估不信任模型自评"与 Duolingo 自己的"AI 生成快≠质量高"自认并存。
+- 派别适配：**推动·生产化**（平台化正样本；末句自认可作中性档交叉引用）。
+**与 loop engineering 的挂钩**：Temporal AgentWorkflow＝durable 外层调度（持久化状态、安全重试、等待人工输入、失败可调试）；no_op_consistency 等 grader＝"报告结果须与 repo 实际状态一致"的验证回路；"agents can trigger one another while Temporal manages durability"＝外层调度产品化主张。
+
+### 甲-8 · Cloudflare《The Agent Development Lifecycle has arrived on Cloudflare》（2026-08-04，半厂商）
+
+- 公司/作者：Cloudflare；Brendan Irvine-Broque
+- URL/日期：https://blog.cloudflare.com/agent-development-lifecycle/ ｜ 2026-08-04（页面 JSON-LD 实取 datePublished）
+- 来源类型：官方博客一手（全文取得）；**角色标注：Cloudflare 双重身份**——既在大规模用 agent 建自家软件（"keep building our own software factory"），又是 ADLC 基础件的卖方（Agents Week 产品发布），号召力口径按"厂商+自用"降半档
+- 规模口径：ADLC 全表（Plan/Design→Implement→Test→Deploy→Maintain 各阶段的 agent 可用件，含 Preview URLs、Flagship feature flag、Gradual Deployments、Agent Traces）；Agents Week 2026 系列。
+- **逐字摘录**：
+
+> "Right now, the people on the bleeding edge are building the software factories of the future. Eventually software factories will become, just like agents and AI, the normal way people build software."
+
+> "we're ready for you to build your machine that builds the machine, on Cloudflare."
+
+- **该条支持的最小主张**："software factory"从 Uber 内部口径扩散为厂商平台叙事；Cloudflare 把 SDLC 全阶段逐项映射为"agent 可拥有"的基础件清单——ADLC（agent 开发生命周期）作为 SDLC 的 agent 化变体获得平台级命名。
+- 派别适配：**推动·厂商半档**（判读引用时注明卖方利益；"machine that builds the machine"是本轮甲方/厂商面最直白的自动化叙事句）。
+**与 loop engineering 的挂钩**：ADLC 把 SDLC 逐阶段映射为 agent 可拥有件（循环产品化机制）；Workflow 可 spawn agents（夜间评审 Workflow 派发 agent）＝外层调度；Flagship feature flag＋Gradual Deployments＝灰度与回滚（熔断面）；Agent Traces＝验证回路的观测层。
+
+### 本档通道状态与未竟事项（推动派面）
+
+1. **Shopify《Under the River》2026-05-28**：窗口边缘 4 天，已作为甲-1 的基数上下文登记；其 30 天 59,918 sessions 等数字引用时须标"窗口边缘"。
+2. **Shopify 其余 2026 帖**（autoresearch / shopgym / sidekick-curation / fine-tuning-agent-shopify-flow / magic-mirror）：标题级在册（sitemap 实取），未深取——均为 2026 标注，窗口归属未核，留给下轮。
+3. **Uber CTO 帖与预算叙事**：官方博客之外的 CTO 数据（1,800 changes/week 全 agent、$1,500 月 cap）经媒体转引取得，登记在**怀疑档**（与官方博客口径对照引用）。
+4. **Netflix 甲方面**：正文被 medium Cloudflare 盾＋wayback 限流，本轮只取得 InfoQ 中文编译层——登记在中性档，英文一手仍开放。
+5. **Pinterest / Discord**：窗口内官方工程博客未检出 agent 实践主帖（Pinterest 的 MCP 生态主稿为 2026-04，窗口外）——负结论登记在怀疑档。
+
+
+## 相关性审计（2026-10-06，用户判据回溯）
+
+**结论**：本档条目钩子明确——九家厂商循环产品化（loop 定义/分档/预算机制——直接）、Osmani/Ng/Runkle/Anthropic（定义与体系化——直接）、AIEWF 议题群像（loop 专场——直接）、Voss（循环分类学——直接）、Jensen（"write and handle loops"——直接钩）、Nadella（"This loop will become the new intellectual property"——直接钩）。
+**部分钩（保留，引用时带注）**：Karpathy——"interns/oversight" 为 agent 管理表述（直接钩在 bottleneck 句，而该句仍仅存转引）。
+**无钩移出**：无。
