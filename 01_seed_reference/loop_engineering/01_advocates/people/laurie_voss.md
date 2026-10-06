@@ -1,6 +1,7 @@
 # laurie_voss — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
+> 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
 ## Source 3 · Laurie Voss（Arize Head of DevRel / npm 联合创始人）·《What is a loop in AI engineering, anyway?》＋《We are all Product Engineers now》（2026 / 2026-09-14）
 

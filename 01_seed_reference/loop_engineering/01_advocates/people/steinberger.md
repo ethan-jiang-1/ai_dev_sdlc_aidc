@@ -1,6 +1,7 @@
 # steinberger — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
+> 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
 ## 增量 D · Peter Steinberger 07-18 推文 —— 部分解决（两个独立全文转载锚定文本/日期/浏览量；X 原文仍不可达）
 

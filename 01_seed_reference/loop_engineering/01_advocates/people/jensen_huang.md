@@ -1,6 +1,7 @@
 # jensen_huang — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
+> 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）
 
 ## Source 9 · Jensen Huang · "Nobody writes prompts anymore"（2026-06 下旬，一手未取得）
 
