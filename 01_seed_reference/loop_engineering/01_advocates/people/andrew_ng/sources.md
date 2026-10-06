@@ -25,7 +25,7 @@
 
 ## 当前缺口（下一轮补）
 
-1. **Boris Cherny / Peter Steinberger 的原帖英文原句**——吴恩达点名了两人但没有给链接。**A 路已定性（2026-09-26）**：词源是碎片级的（Cherny 访谈句三版本不一致、Steinberger 两句话推文），两人**不建 loop 专项卡**；Cherny 的全景卡片在 `../../voices/_raw_people/08_boris_cherny.md`（Claude Code/Fable 视角），**Steinberger 无任何卡片**——结论与逐字材料见 [evidence-a](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md)。
+1. **Boris Cherny / Peter Steinberger 的原帖英文原句**——吴恩达点名了两人但没有给链接。**A 路已定性（2026-09-26）**：词源是碎片级的（Cherny 访谈句三版本不一致、Steinberger 两句话推文），两人**不建 loop 专项卡**；Cherny 的全景卡片在 `../../voices/_raw_people/08_boris_cherny.md`（Claude Code/Fable 视角），**Steinberger 无任何卡片**——结论与逐字材料见 [evidence-a](../../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md)。
 2. **The Batch 官网期号**——确认 X 版是否删节。
 3. **吴恩达承诺的后续文章**——原文 "I will write more about how to do this in future posts"，截至 2026-09-26 未见；若已发布须补卡。
 4. **中文圈的二次扩散样本**——Loop Engineering 橙皮书（alchaincyf, 2026-06）已定性为中文编译（C 路），登记在主题 `raw/00-timeline.md` §一，不重复收在本卡。

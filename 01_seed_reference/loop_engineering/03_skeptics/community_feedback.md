@@ -567,3 +567,6 @@ BV1Xg7v6PEr9（aid 116811416734571），**评论总数 571 条**（reply API pag
 - **腾讯云**：《对 Loop Engineering 的思考》（腾讯云开发者官方号，2026-09-10 16:39 发布，https://cloud.tencent.com.cn/developer/article/2740983 ，实取）早于 9-15 窗口线——不入增量；其五代演进叙述（"Loop Engineering（2026 6月）解决了'靠人盯'……但仍面临着成本失控的问题"）可作社区二手综述的交叉验证件。《Claude Code 访谈 Loop Engineering 介绍》（A小码哥，2026-09-16，实取）为 Addy Osmani 原文翻译整理（页面自述"根据 Addy Osmani 的原文翻译并整理而成"），编译件不作证据票。
 - **阿里云开发者社区**：检索命中的 Loop 文章（1750529〔2026-07-23〕、1747820〔2026-07-15〕）均早于 9-15 窗口——负结论。
 - **sov2ex**：`from` 参数触发"too deep paging"错误，改用未公开的 `gte` 参数完成窗口过滤（9 条"熔断"命中中 8 条为量化交易帖，与 loop 无关弃收）。
+## 社区情绪小节（非 KOL，不与上并列）
+
+- Orosz loop 调查（Source 8）内的从业者原话（工程 director Oded Messer："Sometimes it feels like AI enthusiasts forgot automation was a thing before LLMs."）；arXiv 2608.21884 转述的 "tokenmaxxing" 之争（怀疑派指 AI lab 靠 loop 多烧 token 获利）；Uber 2026 年四个月烧完全年 AI coding 预算的报道线索（you.com 资源页转述，未核一手，仅记线索）。

@@ -11,7 +11,7 @@ authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复
 # 三派地图与社区实况（2026-10-06 判读）
 
 > **问题**（用户 2026-10-06 提）：loop engineering 比较新、掌握不易、把控性差——社区到底情况怎么样？
-> 本文基于三路深扫（[推动](01_advocates/kol_scan.md) / [中性](02_neutral/kol_scan.md) / [反对](03_skeptics/kol_scan.md)）＋库内既有回源档案作判读；逐字引句一律在扫描档与 evidence 档，本文只留结论与指针。
+> 本文基于三路深扫（[推动](01_advocates/README.md) / [中性](02_neutral/README.md) / [反对](03_skeptics/README.md)）＋库内既有回源档案作判读；逐字引句一律在扫描档与 evidence 档，本文只留结论与指针。
 
 ## 一、三派地图（一眼版）
 

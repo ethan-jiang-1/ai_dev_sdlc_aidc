@@ -9,7 +9,7 @@ reorg_date: 2026-10-06
 # 03_skeptics — 反对与怀疑派（反证与批评）
 
 > **派别判定权威在** [`02_research/.../raw/kol-roster.md` §A2 三派分野](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)——
-> 本 README 只做**素材索引**。本派深扫档案：[`kol_scan.md`](kol_scan.md)（2026-10-06 批，11 条一手 Source＋机构旁证＋社区情绪小节）。
+> 本 README 只做**素材索引**。素材已按**人/组织拆档**：[`people/`](people/)（ronacher、willison、orosz、hashimoto、zechner…）＋[`orgs/`](orgs/)（amazon、microsoft）。
 
 > **本派社区反馈**（非 KOL，社区侧（HN 热度层/GitHub 故障清单/中文圈事故向））：[`community_feedback.md`](community_feedback.md)——社区情绪证据，与 KOL 侧分开读。
 
@@ -25,7 +25,7 @@ reorg_date: 2026-10-06
 
 | 人物 | 派内角色 | 台账位置 | 素材在哪 |
 |---|---|---|---|
-| **Armin Ronacher** | **锚点·质量反证代表**（四篇一手链，见下表） | §A | 人物卡 [`_raw_people/17`](../../voices/_raw_people/17_armin_ronacher.md) ＋ [evidence-u Source 1](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-30-u-post-june-kols.md) ＋ [本派扫描档 S1–S4](kol_scan.md) |
+| **Armin Ronacher** | **锚点·质量反证代表**（四篇一手链，见下表） | §A | 人物卡 [`_raw_people/17`](../../voices/_raw_people/17_armin_ronacher.md) ＋ [evidence-u Source 1](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-30-u-post-june-kols.md) ＋ [本派扫描档 S1–S4](people/ronacher.md) |
 
 **Ronacher 四篇一手链（2026-06→09，全部逐字取得）**：
 
@@ -40,9 +40,9 @@ reorg_date: 2026-10-06
 
 | 人物 | 部分票方向 | 素材 |
 |---|---|---|
-| **Simon Willison**（中性偏怀疑） | 门槛："make software engineering **even harder**… requires extraordinary discipline and knowledge"（09-24）；成本："hard budget caps need to be the default"（10-03） | [扫描档 S5/S6](kol_scan.md) |
-| **Gergely Orosz**（中性偏怀疑） | 价值/新瓶旧酒：07-14 调查（cron 旧物、tokenmaxxing、"Was looping a hack?"） | [扫描档 S7/S8](kol_scan.md) |
-| **Mitchell Hashimoto**（中性·限速） | "excruciating" 采纳代价；明确不跑通宵循环/多 agent | [扫描档 S11](kol_scan.md) |
+| **Simon Willison**（中性偏怀疑） | 门槛："make software engineering **even harder**… requires extraordinary discipline and knowledge"（09-24）；成本："hard budget caps need to be the default"（10-03） | [`people/willison.md`](../02_neutral/people/willison.md) |
+| **Gergely Orosz**（中性偏怀疑） | 价值/新瓶旧酒：07-14 调查（cron 旧物、tokenmaxxing、"Was looping a hack?"） | [`../02_neutral/people/orosz.md`](../02_neutral/people/orosz.md) |
+| **Mitchell Hashimoto**（中性·限速） | "excruciating" 采纳代价；明确不跑通宵循环/多 agent | [`../02_neutral/people/hashimoto.md`](../02_neutral/people/hashimoto.md) |
 
 ### 候选与轨迹
 
