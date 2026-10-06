@@ -9,6 +9,9 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**状态**：单点观察——待补挖。
 ### Source G · .NET 线（David Fowler）· 经转引链（2026-09-05）
 
 - 原始载体：Fowler X 帖（X 不可达）；一级转引：Windows Latest《Microsoft engineer says "typing code is absolutely over," and Windows 11 is already being built that way》（2026-09-05，https://www.windowslatest.com/2026/09/05/microsoft-distinguished-engineer-says-typing-code-is-absolutely-over-and-windows-11-is-already-being-built-that-way/ ，curl 实取全文）；二级转引：mynavi（2026-09-08，实取）。

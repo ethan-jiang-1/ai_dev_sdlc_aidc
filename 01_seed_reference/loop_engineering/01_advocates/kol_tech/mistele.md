@@ -9,6 +9,9 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**状态**：单点观察——待补挖。
 ### Kyle Mistele（HumanLayer 联合创始人）· AIEWF 2026《Loop Engineering from First Principles》官方逐字稿（视频上传 2026-07-25）
 
 - URL：https://ai.engineer/talks/xIt_mTQp6mY-loop-engineering-from-first-principles （curl 实取：官方页含 12 章节目录＋**官方编辑稿全文**＋VideoObject JSON-LD：uploadDate 2026-07-25，时长 17:57）

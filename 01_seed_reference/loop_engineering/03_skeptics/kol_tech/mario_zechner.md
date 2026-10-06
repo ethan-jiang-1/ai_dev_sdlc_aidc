@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：稳定怀疑·实践反证
+**起点**：实践者＋怀疑（每天用但否定免审）
+**终点**：同上（单点强观察）
+**弧线**：06-12 WDS Ep19（50 万行/周＋'spec-driven＝hyper-waterfall'＋Ralph loop 失败实录＋'Codex/Claude Code 的审批 mostly security theater'）
+**关键转折**：每天跑受限环但否定免审循环——从实践中来，非纸上谈兵
 ### Mario Zechner（Pi 创作者，Earendil；与在册 Armin Ronacher 同团队）· The Weekly Dev's Brew Ep19《Code Isn't Free》（2026-06-12）
 
 - URL：https://www.wordman.dev/podcast/mario-zechner-pi-coding-agent/ （curl 实取；页内自带 Key Takeaways＋Pull Quotes＋**全 transcript**，主持人整理档＋逐字稿双载体；podigee feed 证实发布日 Fri, 12 Jun 2026）

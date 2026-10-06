@@ -9,6 +9,9 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**状态**：单点观察——待补挖。
 ### Felix Rieseberg（Anthropic，Claude Cowork 工程负责人）· 经 Willison 转引的产品架构声明（2026-10-05）
 
 - URL：https://simonwillison.net/2026/Oct/5/felix-rieseberg/ （curl 实取；Willison 引句采集页，标注 "This is a quotation collected by Simon Willison, posted on 5th October 2026"，并指向 Anthropic 帮助页）

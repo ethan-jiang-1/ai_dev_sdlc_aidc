@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：实践反思（过程叙事）
+**起点**：实践者（Conway 猜想 vibe 证明）
+**终点**：过程反思者（process theater 命名）
+**弧线**：09-18《How I Vibed a Proof of Conway's Conjecture》——harness running for days、'process theater'、'nontechnical engineering manager rallying a talented but terribly distractable team'
+**关键转折**：单点深观察——把 agent 协作比作非技术经理带天才团队，角色可被项目管理 agent 替代
 ### Source B · Dan Abramov ·《How I Vibed a Proof of Conway's Conjecture》（overreacted.io，2026-09-18）
 
 - URL：https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture/ （curl 实取，全文 117 段；页内日期 September 18, 2026）

@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：稳定推动·公司级愿景
+**起点**：推动·技术层
+**终点**：推动·组织层（core loop 成正式架构词）
+**弧线**：06-23 评测循环 → 07-16《The Self-Driving Company》（环的公司级定义）→ 09-29《Free the models》（core loop 正式架构词）
+**关键转折**：07-16 从技术层（评测循环）升至组织层（Self-Driving Company）
 ### Amjad Masad（Replit CEO）· 窗口内个人署名内容三路（含分档标注）
 
 - **J1（半一手：经主持人转述）**：SaaStr AI 2026 现场（页内日期 2026-06-22/25；https://www.saastr.com/amjad-masad-and-me-at-saastr-ai-2026-the-agents-we-actually-built-and-what-replits-founder-thinks-comes-next/ ，Jason Lemkin 执笔，curl 实取全文）：

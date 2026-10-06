@@ -11,6 +11,13 @@ observation_date: 2026-10-06
 
 **对抗轴**：Steinberger's law vs swyx Zawinski's Law（[swyx](swyx.md)）——两定律同期互为镜像。
 
+## 态度轨迹
+
+**方向**：稳定推动·激进预言
+**起点**：推动·Mastra CEO
+**终点**：同上（单点）
+**弧线**：AIEWF《Every Harness Will Become A Claw》（'Steinberger's law: every harness will expand until it becomes a claw'＋always-on 心跳＋洗牌期预言）
+**关键转折**：单点观察——以 Steinberger 定律命名扩张趋势
 ### Sam Bhagwat（Mastra 联合创始人/CEO）· AIEWF 2026《Every Harness Will Become A Claw》（视频上传 2026-07-21）
 
 - URL：https://ai.engineer/talks/8qWIPUia2O8-every-harness-will-become-claw （curl 实取，官方时间戳逐字稿全文在手）

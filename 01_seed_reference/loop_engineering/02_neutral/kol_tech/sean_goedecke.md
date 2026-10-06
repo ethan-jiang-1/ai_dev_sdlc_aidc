@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：稳定审慎（工程方法论持续）
+**起点**：审慎（alignment not capability）
+**终点**：审慎＋方法论深化（tell agents the why）
+**弧线**：五篇窗口内全文：06-01 alignment not capability → 06-08 tightly optimize the dev loop → 07-14 weird projects → 08-XX 测量主义 → 09-27 tell agents the why
+**关键转折**：无翻转——持续'人管对齐、agent 管能力'立场，方法论逐步深化
 ### Source A · Sean Goedecke（Google SWE，seangoedecke.com）· 窗口内五篇一手全文（2026-06-01 → 09-27）
 
 - 通道：curl 直取 atom feed（30 条清单）＋博客分页 6 页逐页核日期；正文 5 篇逐字实取（另有 5-31 篇窗口前相邻票）。

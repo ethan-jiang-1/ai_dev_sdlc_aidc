@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）
 
+## 态度轨迹
+
+**方向**：审慎加深（教学正向→事件驱动警觉）
+**起点**：审慎教学（adversarial agent 互检）
+**终点**：审慎＋警示（dark factory＋swarm 后果）
+**弧线**：06-09 Mythos 工作流 → 06-30'quarter of OpenAI workers have at least four agents running' → 07-23 指南（'keep approval settings on for anything that sends, spends, or deletes'）→ 08-31《Agency and Agents》dark factory/Twilight Factory → 10-01《The Dot and the Swarm》swarm 报告
+**关键转折**：08-31 从教学正向转为 dark factory 叙事（HF 事件影响）
 ### Source A · Ethan Mollick（One Useful Thing）· 窗口内五篇一手全文（2026-06-09 → 10-01）
 
 - 通道：oneusefulthing.org `/feed`（Substack RSS）curl 直取，20 条全带 `content:encoded` 全文；窗口内 7 篇，其中 5 篇与 agent/loop 强相关，全部正文实取。

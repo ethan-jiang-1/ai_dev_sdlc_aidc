@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：稳定推动·激进化
+**起点**：推动·布道（self-improvement loop）
+**终点**：推动·实证（七段自动化＋合并率爬坡）
+**弧线**：06-16 自改进循环博客 → 07-01 Latent Space 访谈 → 08-06 SED 访谈（SE 主环七段自动化＋自动合并率 20%→60% 爬坡）
+**关键转折**：08-06 从'倡导循环'转为'实测爬坡数据'——自动合并率从 20% 升到 60%
 ### Zach Lloyd（Warp 创始人/CEO）· Latent Space 访谈《why software factories are the next phase of coding》（2026-07-01，Richard MacManus）
 
 - URL：https://www.latent.space/p/software-factories （curl 实取全文）

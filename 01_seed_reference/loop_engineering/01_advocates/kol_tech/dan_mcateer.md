@@ -4,8 +4,9 @@ directory: 01_advocates/kol_tech
 observation_date: 2026-10-06
 ---
 
+## 态度轨迹
 
-
+**状态**：单点观察——待补挖。
 ### Dan McAteer（Attention Heads 作者，Latent Space 客座）《The Evolution of the Agent Harness》（2026-08-22）
 
 - URL：https://www.latent.space/p/attention-interface （curl 实取全文）

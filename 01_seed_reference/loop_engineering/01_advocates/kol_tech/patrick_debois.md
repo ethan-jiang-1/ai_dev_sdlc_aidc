@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：推动·降温注记
+**起点**：推动·DevOps 元老
+**终点**：推动＋降温注记（商品化预言）
+**弧线**：AIEWF《Coding Agents Don't Scale Themselves》（loop/harness 将商品化、差异化在组织层）＋'dim factory'
+**关键转折**：仍在推动阵营内但给出商品化警告——loop 本身不会是竞争力
 ### Patrick Debois（Tessl）· AIEWF 2026《Coding Agents Don't Scale Themselves. Neither Do Your Teams.》（视频上传 2026-08-22）
 
 - URL：https://ai.engineer/talks/zCJtYuqwm7E-coding-agents-dont-scale-themselves-neither-do （curl 实取全文）

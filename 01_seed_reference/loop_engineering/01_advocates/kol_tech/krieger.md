@@ -9,6 +9,9 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**状态**：单点观察——待补挖。
 ### Mike Krieger（Anthropic 产品/实验室负责人）· AIEWF 与 swyx 对谈（同上 dispatch，2026-07-03 发）
 
 - 身份：Instagram 联合创始人，时任 Anthropic 产品负责人（现场稿称 Head of Labs）。
