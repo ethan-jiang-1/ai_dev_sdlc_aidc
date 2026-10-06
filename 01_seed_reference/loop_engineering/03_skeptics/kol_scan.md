@@ -312,7 +312,7 @@ quality_bar: 一手优先；X 不可达；HN/Reddit 评论不作 KOL 证据；�
 
 ## 第五轮挖掘（2026-10-06）：会议 transcript 全量扫（怀疑向）
 
-> **通道与口径**：与推动/中性两档同源——AIEWF 2026 全部 358 个官方议题页（ai.engineer/talks/*）curl 实取，每页含官方摘要＋机器辅助官方编辑稿＋官方时间戳逐字稿（caption 层）三层。本档逐字引句全部出自官方时间戳字幕层或官方摘要层，实取于本轮 curl，无一处凭记忆生成。**文件名口径**：本文件已按用户 2026-10-06 指示更名为 kol_scan.md（原 raw_scan_2026-10-06_skeptics.md 全量平移，本节为追加）。
+> **通道与口径**：与推动/中性两档同源——AIEWF 2026 全部 358 个官方议题页（ai.engineer/talks/*）curl 实取，每页含官方摘要＋机器辅助官方编辑稿＋官方时间戳逐字稿（caption 层）三层。本档逐字引句全部出自官方时间戳字幕层或官方摘要层，实取于本轮 curl，无一处凭记忆生成。
 
 ### 疑-1 · Steve Yegge · AIEWF 2026《Agentic Security: Permissions, Provenance, and the Agent Supply Chain》（视频上传在库页实录）
 

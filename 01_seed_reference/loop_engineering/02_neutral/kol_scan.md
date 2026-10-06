@@ -1320,7 +1320,7 @@ URL：https://ghuntley.com/lisp/
 
 ## 第五轮挖掘（2026-10-06）：会议 transcript 全量扫（中性/边界向）
 
-> **通道与口径**：与推动档同源——ai.engineer 站点地图 1240 个 /talks/* 议题页中 **AIEWF 2026 的 358 页全部 curl 实取**（每页含官方摘要＋机器辅助官方编辑稿＋官方时间戳逐字稿三层；reviewStatus＝source-backed/machine-source-reviewed 两档如实标注）。本档逐字引句出自官方时间戳字幕层或官方摘要层，无一处凭记忆生成。**文件名口径**：本文件已按用户 2026-10-06 指示更名为 kol_scan.md（原 raw_scan_2026-10-06_neutral.md 全量平移，本节为追加）。
+> **通道与口径**：与推动档同源——ai.engineer 站点地图 1240 个 /talks/* 议题页中 **AIEWF 2026 的 358 页全部 curl 实取**（每页含官方摘要＋机器辅助官方编辑稿＋官方时间戳逐字稿三层；reviewStatus＝source-backed/machine-source-reviewed 两档如实标注）。本档逐字引句出自官方时间戳字幕层或官方摘要层，无一处凭记忆生成。
 
 ### 中-1 · Charlie Holtz（Conductor 联合创始人）· AIEWF 2026《Orchestras, Not Factories: How the Fastest Builders Work》（视频上传在库页实录）
 

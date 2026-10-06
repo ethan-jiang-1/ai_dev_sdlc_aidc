@@ -4,7 +4,7 @@ content_type: analysis
 directory: 01_seed_reference/loop_engineering
 description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批）
 analysis_date: 2026-10-06
-evidence_base: 三派 kol_scan.md（原 raw_scan_2026-10-06_{skeptics,neutral,advocates}.md 已更名）＋ 三派 community_feedback.md（社区情绪层，原 2026-10-06 三路社区扫描档已按派拆入后撤除）＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
+evidence_base: 三派 kol_scan.md ＋ 三派 community_feedback.md ＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
 authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复制名单
 ---
 
