@@ -229,3 +229,10 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 - mp.weixin.qq.com 鱼皮文原始页：**未定位到原始 URL**（搜狗微信搜索两次均"没有找到相关的微信公众号文章"；鱼皮 AI 导航转贴页静态 HTML 无微信链接）——仍开放，腾讯云同步页仍是可得来源。
 - 小红书：搜索页仅返回 JS 空壳（标题 "loop engineering - 小红书搜索"，无结果数据）——仍开放（smzdm 转述的"1200+ 赞/1800+ 收藏"仍为一手热度唯一来源）。
 - B 站搜索 API（`/x/web-interface/search/type`）返回风控 HTML 页——不可用；但视频元数据 view API 无需登录即可取（本轮 5 条视频全部经此核到）。
+
+
+## 拉取纪律执行（2026-10-06 用户定：两轮拉不到就放弃）
+
+- **放弃**：Doc Searls 两句（两轮零命中、线索存疑）——出候选、不再挂账；Kelsey Hightower 逐字（两轮 403，一手载体不存在）；Reddit 死通道（old.json / pullpush / redlib / r.jina.ai）——keeper 通道为 arctic-shift＋wayback；Lobsters 搜索路径（标签页通道为 keeper）。
+- **保留**：无（本派无"未发布"类项）。
+- 本节之上的"仍开放"表述凡与本节冲突，以本节为准。

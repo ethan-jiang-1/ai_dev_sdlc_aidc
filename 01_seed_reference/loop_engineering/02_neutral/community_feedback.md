@@ -237,3 +237,10 @@ collected_at: 2026-10-06
 - B 站搜索 API（`/x/web-interface/search/type`）返回风控 HTML；视频元数据 view API 可用——检索靠外部搜索引擎定位 BVID 后回查 API。
 - mp.weixin.qq.com 鱼皮文原始页未定位（搜狗微信搜索两查"没有找到"）；小红书搜索页仅 JS 空壳——两者维持开放。
 - arctic-shift API 有速率限制（连查返 422 "Timeout. Maybe slow down a bit"），批查需间隔数秒；pullpush.io 仍 429 且明示反爬。
+
+
+## 拉取纪律执行（2026-10-06 用户定：两轮拉不到就放弃）
+
+- **放弃**：知乎两 URL（《最扯淡 AI 名词》＋1700 赞问答——需人工登录态，agent 两轮 403；smzdm 转述链维持"仅传播证据"，不再当关键节点挂账）；小红书（JS 空壳）；mp.weixin 原始页（腾讯云同步页为可得来源，足够）。
+- **保留重扫**（未发布 ≠ 拉不下来）：Stack Overflow 2026 年度调查（官方已逾期，下轮最高优先）、DORA 2026、Octoverse 2026（参照去年 10-28 节奏）。
+- 本节之上的"仍开放"表述凡与本节冲突，以本节为准。

@@ -109,7 +109,7 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **B 站**：质疑向头部【闪客】《你管这破玩意叫 Loop Engineering？》**10.9 万播放**（中文圈最大单条流量）vs 正方教程 9.4 千——**热度对照 ≈ 1:12**。
 - **InfoQ 两篇全文解决**：QQ 飞车 Agentic 转型（"最近一个月我大概消耗了三百亿 token"）、《龙虾之父一条推文，Loop 时代终结？》。
 - **机构层两项解决**：New Relic 2026——**62% 团队免逐行验证直接 ship vs 生产侧 78% 事故上升、AI 代码关键运行时问题 1.7×**（"委托越过人工核验线而质量反向坍塌"的首个机构级配对数字；95% 组织已授权机器生成代码进核心生产）；TechCrunch 全文核销（人均 token 9 个月 **18.6×**，归因 agentic；FinOps 圈 "from tokenmaxxing to guardrails"）。JumpCloud：AI 成熟度自评 **40%→23% 反降**（治理滞后首个量化缺口）。
-- **仍开放**：SO 2026（逾期 5 天未发，下轮最高优先）、DORA 2026、Octoverse 2026、知乎两 URL（403 需登录态）、Searls 两句一手、Hightower、Jensen NVIDIA 一手、Orosz 付费墙。
+- **拉取纪律执行（用户定：两轮拉不到就放弃）**：Searls 两句、Hightower 逐字、Jensen/Nadella 一手、Karpathy 原句、Orosz 付费墙、知乎两 URL——**全部放弃出档**（登记防反复）；**保留重扫位的只有三份未发布的年度报告**（SO 2026 逾期、DORA、Octoverse——未发布 ≠ 拉不下来）。
 
 ## 四、不支持什么（证据边界）
 

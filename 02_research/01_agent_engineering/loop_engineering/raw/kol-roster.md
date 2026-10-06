@@ -73,7 +73,7 @@
 | swyx | 吹捧者·概念造词（loopcraft） | "entire game of the next century"＋"Salty Lesson"＋AIEWF 主台演讲（经镜像，见 §A 行） |
 | Steve Yegge | 吹捧者·激进多派（**含一手成本证词**） | Gas Town 舰队实践；同时公开 Gas Town 烧毁、69B token/月、harness 维护 20–25% 常量（见 §A 行） |
 
-**吹捧层降级登记（2026-10-06 第二轮补抓后状态）**：**Karpathy**——升格：bearblog（04-30 讲座文本）＋autoresearch README 两个本人一手载体全文取得（"agents are like interns. You still have to be in charge of aesthetics, judgment, taste, and oversight"）；"remove yourself as the bottleneck" 原句仍仅存 swyx 转录。**Nadella**——部分解决：X 长文（06-14，28M 阅读）标题/日期坐实，全文经两条转译链取得（"This loop will become the new intellectual property of the enterprise"）——引句须标"经转译"。**Jensen Huang**——四路转引一致＋美联社专访线索，NVIDIA 一手仍开放。中文聚合的无名氏声称（"Anthropic 80% 工程师"）维持**不引用**。
+**吹捧层降级登记（2026-10-06 第二轮补抓后状态）**：**Karpathy**——升格：bearblog（04-30 讲座文本）＋autoresearch README 两个本人一手载体全文取得（"agents are like interns. You still have to be in charge of aesthetics, judgment, taste, and oversight"）；"remove yourself as the bottleneck" 原句仍仅存 swyx 转录。**Nadella**——部分解决：X 长文（06-14，28M 阅读）标题/日期坐实，全文经两条转译链取得（"This loop will become the new intellectual property of the enterprise"）——引句须标"经转译"。**Jensen Huang**——四路转引一致；**按拉取纪律以转引为终点，不再追一手**。**Nadella** 以经转译全文为终点；Karpathy "remove yourself as the bottleneck" 原句**放弃**（已有两个本人一手载体，足够）。中文聚合的无名氏声称（"Anthropic 80% 工程师"）维持**不引用**。
 
 **相邻位（不对本词发声）**：**DHH**——"agent-accelerated development"、37signals "pencils down"（2026-09-23，`_raw_people/15`），同时拒绝 "agentic engineering" 词汇；**Harrison Chase**（LangChain CEO）——"LLMs running in a loop calling tools… the core primitive"（专栏三篇一手），但词表为 harness/managed agents/learning loop，不用本词。
 
@@ -97,7 +97,7 @@
 | 人物 | 派内角色 | 判定依据 | 台账位置 |
 |---|---|---|---|
 | Armin Ronacher | **锚点·质量反证代表** | 四篇一手链（扫描档 S1–S4）：《Tower Keeps Rising》07-13（摩擦＝同步理解载体、"a useful signal is gone"、**塔不倒只是继续长高——理解坍塌无即时失败信号**）；《Astra》09-07（内卷论＋35h/$1200/79 commits 白卷＋"when left unattended, it *will* keep going… even if it burns through an entire subscription"）；《Better Models: Worse Tools》07-04（SOTA 工具调用退化＋harness 锁定）；《Anger》08-24（失向/焦虑情绪证词） | §A |
-| David Searls（**身份坐实＝Doc Searls**，Linux Journal 资深编辑） | 候选 | "dark factory"＋"nowhere close… without supervision"——第二轮补抓：doc.searls.com 全文检索 0 命中、02-26/10-02 帖实读排除、**连 10-02 播客是哪个节目都未确认**——线索本身存疑，**维持待回源** | 候选（倾向降级） |
+| ~~David Searls~~ | **放弃（2026-10-06 用户拉取纪律）** | 两轮零命中、线索本身存疑（连"10-02 播客"节目源都未确认），按纪律降级出候选、不再挂账；登记防反复 | ~~候选~~ → 放弃 |
 | Peter Steinberger（旧立场） | 轨迹注记 | 2025-12-28 反自动编排——本体在推动派，此行保留反转轨迹 | §A |
 
 **部分票（交叉引用，本体在别派）**：Willison（门槛/成本方向）、Orosz（价值/新瓶旧酒方向）、Kent Beck＋Laura Tacho＋Steve Yegge 联署宣言（组织绩效层，2026-02）、Hashimoto（限速证词，支持"难掌握"不支持"反对"）——上述均见 [反对派扫描档](../../../../01_seed_reference/loop_engineering/03_skeptics/raw_scan_2026-10-06_skeptics.md)。
