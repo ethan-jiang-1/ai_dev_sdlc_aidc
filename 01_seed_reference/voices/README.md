@@ -86,9 +86,9 @@ voices/
 
 ## 各目录定位与源头特征
 
-### `_raw_people/` — 影响力人物深度拆解（组织卡在 [`../_raw_orgs/`](../_raw_orgs/README.md)）
+### `_raw_people/` — 影响力人物深度拆解（组织卡在 [`../_raw_orgs/`](_raw_orgs/README.md)）
 
-**是什么**：17 位历史上塑造了 SDLC 话语权的人在 AI 时代的言论（人物卡 17 张；组织的声音在 [`../_raw_orgs/`](../_raw_orgs/README.md)——6 张 top 组织卡；峰会专题在 [`_raw_event_pragmatic_summit_2026/`](_raw_event_pragmatic_summit_2026/README.md)）。从 Martin Fowler 到 Kent Beck，从 Karpathy 到前 GitHub CEO。
+**是什么**：17 位历史上塑造了 SDLC 话语权的人在 AI 时代的言论（人物卡 17 张；组织的声音在 [`../_raw_orgs/`](_raw_orgs/README.md)——6 张 top 组织卡；峰会专题在 [`_raw_event_pragmatic_summit_2026/`](_raw_event_pragmatic_summit_2026/README.md)）。从 Martin Fowler 到 Kent Beck，从 Karpathy 到前 GitHub CEO。
 
 **源头特征**：人物/组织的公开言论（博客、演讲、访谈、社交媒体）。每人有独立立场——先看 README 的共识/分歧矩阵再读个人。
 
@@ -212,6 +212,8 @@ voices/
 ---
 
 ## 最后更新
+
+- 2026-10-06：**`loop_engineering/` 集合重组为三派结构**（用户定）——推动派（发起者＋吹捧者，`01_advocates/`）／中性派（`02_neutral/`）／反对与怀疑派（`03_skeptics/`）；`andrew_ng/` 四件套随派迁入 `01_advocates/`。**派别判定权威在研究层台账** [`02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md) §三派分野（2026-10-06 新增）；派别目录只做素材索引。本库人物卡（`04`/`12`/`15`/`16`/`17`/`19`/`20` 等）被三派素材索引引用，卡片本身不动、不复制。
 
 - 2026-10-04：**corp 边界判据全层统一 + AWS 双卡位定案**——「主张什么进 voices，怎么做 / 卖什么进 corp」一句话判据上门面（本 README、`_raw_orgs/README.md`、`corp/README.md`、种子层 README 四处对齐，入座判据总表见 [`../README.md`](../README.md)）；AWS 悬案定案：**允许双卡位**（AI-DLC 方法论留 `corp/_raw_aws/`，Vogels 修订 Working Backwards / Swami frontier 文等立场性主张可在 `_raw_orgs/` 开卡，开卡时遵循其入册判据）。同日种子层 `weixin/` → `zh_discourse/` 更名（中文圈话语快照，本库一手源铁律的例外收容区；详情见种子层 README 迁移记录）。
 
