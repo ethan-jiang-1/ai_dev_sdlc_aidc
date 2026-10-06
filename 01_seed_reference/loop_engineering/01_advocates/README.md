@@ -12,7 +12,7 @@ reorg_date: 2026-10-06
 > 谁属于哪派、依据是什么，以台账为准；本 README 只做**素材索引**（这派的人，素材在哪个文件）。
 > 素材已按**人/组织拆档**：[`kol_tech/`](kol_tech/)＋[`kol_product/`](kol_product/)（KOL 按技术深度分）＋[`orgs/`](orgs/)＋[`events/aiewf_2026.md`](events/aiewf_2026.md)（一人/一组织一文件，时间正序看轨迹）。
 
-> **本派社区反馈**（非 KOL，社区侧（HN/dev.to/V2EX/掘金/公众号正方与教程层））：[`community_feedback.md`](community_feedback.md)——社区情绪证据，与 KOL 侧分开读。
+> **本派社区反馈**（非 KOL，社区侧（HN/dev.to/V2EX/掘金/公众号正方与教程层））：[`community_tech/`](community_tech/)＋[`community_product/`](community_product/)——社区情绪证据，与 KOL 侧分开读。
 
 **判定口径（一句话）**：把"设计循环让 agent 自动推进"当**默认方向**公开推荐——下定义、出教程、做产品、写布道文。
 派内分两类：**发起者**（词源 / 定义 / 体系化 / 厂商落地）与**吹捧者**（概念造词、实践激进极、转述放大、厂商营销）。

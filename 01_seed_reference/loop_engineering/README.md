@@ -52,13 +52,12 @@ loop_engineering/
 ├── 00_three_camp_landscape.md # ★ 三派地图与社区实况判读（结论入口）
 ├── 01_advocates/              # 推动派（发起者＋吹捧者）
 │   ├── README.md              #   KOL 侧素材索引
-│   ├── community_feedback.md  #   社区侧反馈
 │   ├── kol_scan.md   # KOL 深扫档案
 │   └── andrew_ng/             #   四件套卡（历史卡）
 ├── 02_neutral/                # 中性派（边界与审慎）
-│   ├── README.md / community_feedback.md / kol_scan.md
+│   ├── README.md（索引）＋四象限目录＋orgs/＋events/
 └── 03_skeptics/               # 反对与怀疑派
-    ├── README.md / community_feedback.md / kol_scan.md
+    └── README.md（索引）＋四象限目录＋orgs/
 ```
 
 ## 三派入口
@@ -70,7 +69,7 @@ loop_engineering/
 | **中性派**（边界与审慎） | 承认机制有条件成立，划边界、要求约束、先测再信 | [`02_neutral/`](02_neutral/README.md) |
 | **反对与怀疑派** | 给反证与批评（失败账本/质量退化/经济/人的角色） | [`03_skeptics/`](03_skeptics/README.md) |
 
-每派目录两个入口：`README.md`（KOL 侧素材索引）＋ `community_feedback.md`（社区侧反馈）。KOL 与社区证据分开标注，不并列引用。
+每派目录入口：`README.md`（索引）＋四象限目录（kol_tech/kol_product/community_tech/community_product）＋orgs/events。KOL 与群众证据分开标注，不并列引用。
 
 ## 与其他集合的关系
 
