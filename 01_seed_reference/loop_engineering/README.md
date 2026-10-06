@@ -30,8 +30,8 @@ reorg_date: 2026-10-06
 
 | 维度 | 取值 | 落在结构哪里 |
 |---|---|---|
-| **① 影响力** | KOL ↔ 群众 | KOL＝`kol_tech/`、`kol_product/`（目录名即两维：kol_=影响力层，tech/product=技术深度）、`orgs/`（组织）；群众＝`community/`（按人群聚合） |
-| **② 技术深度** | 专业程序员 ↔ 非专业（产品经理/创业者/分析师） | **两层里都有**：每个 KOL 文件头部标「人群类型」；community/ 按人群分文件（`tech_crowd.md` 专业程序员群众 / `crowd_product.md` 非专业群众） |
+| **① 影响力** | KOL ↔ 群众 | KOL＝`kol_tech/`、`kol_product/`（目录名即两维：kol_=影响力层，tech/product=技术深度）、`orgs/`（组织）；群众＝`community_tech/`（专业程序员群众）、`community_product/`（非专业群众）——与 kol_* 命名对称 |
+| **② 技术深度** | 专业程序员 ↔ 非专业（产品经理/创业者/分析师） | **两层里都有**：每个 KOL 文件头部标「人群类型」；`community_tech/`＋`community_product/` 两个子目录（目录名即两维） |
 
 四个象限都要有声音，缺哪个象限就是证据盲区：
 
