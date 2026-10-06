@@ -40,7 +40,7 @@ observation_date: 2026-10-06
 
 ---
 
-## Birgitta Böckeler《TDD inside the agent loop - theater or actual value?》（2026-08-10）
+## 《TDD inside the agent loop - theater or actual value?》（2026-08-10）
 
 - URL：https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html ｜ 作者身份：Thoughtworks Distinguished Engineer，AI-assisted delivery 专职角色（2023 起全职投入该领域）
 - 来源类型：个人一手博客（Thoughtworks "Exploring Gen AI" 系列；全文取得；发布日期 10 August 2026 经系列索引页核对）

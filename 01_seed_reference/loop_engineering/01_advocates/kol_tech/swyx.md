@@ -11,7 +11,7 @@ observation_date: 2026-10-06
 
 **对抗轴**：Zawinski's Law vs Bhagwat Steinberger's law（[sam_bhagwat](sam_bhagwat.md)）；与 Dwarkesh 沙箱逃逸结构论（[dwarkesh](../../03_skeptics/kol_product/dwarkesh.md)）同一事实正反两翼。
 
-## swyx（Latent.Space）·《[AINews] Loopcraft: The Art of Stacking Loops》＋ AIEWF 开幕演讲（2026-06-12 / 2026-06-30）
+## 《[AINews] Loopcraft: The Art of Stacking Loops》＋ AIEWF 开幕演讲（2026-06-12 / 2026-06-30）
 
 - URL：原帖 https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking （本环境两次 fetch 均 404，疑改名或下架）；镜像全文 https://plantis.ai/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d （取得，标注"Original: Swyx · 12/06/2026"）；AIEWF 现场报道 https://www.latent.space/p/aiewf-daily-dispatch-loops （Latent.Space 本刊，全文取得）｜ 作者身份：swyx，Latent.Space 主理人、AI Engineer World's Fair 联合创始人
 - 来源类型：个人一手 newsletter（**经镜像取得**，正文经 plantis.ai 知识库逐字复刻，含 AINews 导语全文；原帖 404）＋本人会议开幕演讲（经 Latent.Space 本刊现场报道转述——本刊即 swyx 自己的刊物，半一手）
@@ -55,7 +55,7 @@ observation_date: 2026-10-06
 - **最小主张**：与 Steinberger's law（推-1）并列的 loop 派第二定律：agent 的扩张终点是 agent 间通信；dark factory 的实际运行形态即多 agent 消息网。
 - **派别适配**：**推动票**（怀疑派可引 HF 事件作同构反例）。
 
-## swyx《[AINews] Loopcraft: The Art of Stacking Loops》＋同名 X thread（2026-06-12）
+## 《[AINews] Loopcraft: The Art of Stacking Loops》＋同名 X thread（2026-06-12）
 
 - 原始 URL：https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking （**本环境两次实测 404**）；X 原推：https://x.com/swyx/status/2065307558198567206（X 不可达）
 - 实际取证途径：plantis.ai 知识库镜像（https://plantis.ai/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d，全文镜像取得，标注 Original: Swyx · 12/06/2026，正文含 "AI News for 6/10/2026-6/11/2026"）；AIHOT 中文镜像（https://aihot.news/items/cmqaifadr0lrkslldffycxcyd，X thread 逐字转引，时间戳 2026-06-12 13:37）。**两处均为镜像，原站不可达——引用须标"经镜像"。**
