@@ -9,6 +9,37 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## Birgitta Böckeler 于 SE Radio 730（2026-07-22）
+
+- URL：https://se-radio.net/2026/07/se-radio-730-birgitta-boeckeler-on-harness-engineering-for-ai-agents/ ｜ 主持：Priyanka Raghavan
+- 来源类型：播客一手（官方自动生成 transcript，**截断取得**——约至 20:46 处，后半未取到）
+- 号召力口径：②——IEEE Computer Society 旗下 SE Radio 是主流工程媒体播客；她为当期唯一嘉宾。
+- **库内登记过线索**（evidence-c 记"SE Radio 730（2026-07）专访嘉宾"但未回源）。**本条为增量**：transcript 实取。
+
+**逐字摘录**：
+
+> "you can absolutely just get started plain vanilla without putting anything in there. And I would actually recommend it when you first do agentic coding just to feel what it actually does without it"
+（反工具热：先裸跑、建立对裸基线的体感——审慎派方法论。）
+
+> "some people who have already built-up skills and lots of instructions might want to revisit that as well with newer models because some things are maybe not necessary anymore"
+（harness 膨胀警示：已有积累要随模型升级回撤。）
+
+> "there's a school of thought that the language models will just get better and better and better until they're just perfect at coding... But yeah, I don't think that's realistic"
+（对"模型进步会解决一切"派别的明确不认同。）
+
+> "it turns out that AI needs a lot of the same things that we need to make safe changes to stuff"
+（直接反驳"代码可读性不再重要"论——与 Huntley 2026-10-02 "readable→explainable" 纲领（`01_seed_reference/voices/_raw_people/16_geoffrey_huntley.md`，研究层登记见 evidence 系档案）形成跨 KOL 张力点，值得判读层记录。）
+
+> "we're all throwing lots of terms out there and I think that's been a challenge for me, to find the right words to describe what is happening"
+（对术语通胀本身的表态：她视术语为思考工具而非宣传品。）
+
+（页面官方摘要另述：harness "require continuous maintenance as underlying foundation models evolve"——此句出自页面 editorial 摘要，非 transcript 逐字，引用需标"官方摘要"。）
+
+**该条支持的最小主张**：2026-07 她在主流工程播客上重申：裸基线先行、harness 需随模型演化做减法、传感器（含静态分析/测试）在大模型下仍然必要。
+**派别适配**：中性票。
+
+---
+
 ## Birgitta Böckeler《TDD inside the agent loop - theater or actual value?》（2026-08-10）
 
 - URL：https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html ｜ 作者身份：Thoughtworks Distinguished Engineer，AI-assisted delivery 专职角色（2023 起全职投入该领域）
@@ -40,36 +71,5 @@ observation_date: 2026-10-06
 
 **该条支持的最小主张**：Böckeler 在 2026-06 后继续以"跑小实验→承认不确定→等更强证据"的方式发表循环内部实践的判读；她反对把 how-级指令当默认，主张 outcome 监控＋自动化反馈＋慎重安排人的仲裁位。
 **派别适配**：**中性票（最强样本）**。注意：该文围绕 "agentic loop" 机制，**全文未出现对 "loop engineering" 专名的采用或评述**（本路对该文全文未检出该词的专门表态段）。
-
----
-
-## Birgitta Böckeler 于 SE Radio 730（2026-07-22）
-
-- URL：https://se-radio.net/2026/07/se-radio-730-birgitta-boeckeler-on-harness-engineering-for-ai-agents/ ｜ 主持：Priyanka Raghavan
-- 来源类型：播客一手（官方自动生成 transcript，**截断取得**——约至 20:46 处，后半未取到）
-- 号召力口径：②——IEEE Computer Society 旗下 SE Radio 是主流工程媒体播客；她为当期唯一嘉宾。
-- **库内登记过线索**（evidence-c 记"SE Radio 730（2026-07）专访嘉宾"但未回源）。**本条为增量**：transcript 实取。
-
-**逐字摘录**：
-
-> "you can absolutely just get started plain vanilla without putting anything in there. And I would actually recommend it when you first do agentic coding just to feel what it actually does without it"
-（反工具热：先裸跑、建立对裸基线的体感——审慎派方法论。）
-
-> "some people who have already built-up skills and lots of instructions might want to revisit that as well with newer models because some things are maybe not necessary anymore"
-（harness 膨胀警示：已有积累要随模型升级回撤。）
-
-> "there's a school of thought that the language models will just get better and better and better until they're just perfect at coding... But yeah, I don't think that's realistic"
-（对"模型进步会解决一切"派别的明确不认同。）
-
-> "it turns out that AI needs a lot of the same things that we need to make safe changes to stuff"
-（直接反驳"代码可读性不再重要"论——与 Huntley 2026-10-02 "readable→explainable" 纲领（`01_seed_reference/voices/_raw_people/16_geoffrey_huntley.md`，研究层登记见 evidence 系档案）形成跨 KOL 张力点，值得判读层记录。）
-
-> "we're all throwing lots of terms out there and I think that's been a challenge for me, to find the right words to describe what is happening"
-（对术语通胀本身的表态：她视术语为思考工具而非宣传品。）
-
-（页面官方摘要另述：harness "require continuous maintenance as underlying foundation models evolve"——此句出自页面 editorial 摘要，非 transcript 逐字，引用需标"官方摘要"。）
-
-**该条支持的最小主张**：2026-07 她在主流工程播客上重申：裸基线先行、harness 需随模型演化做减法、传感器（含静态分析/测试）在大模型下仍然必要。
-**派别适配**：中性票。
 
 ---

@@ -11,6 +11,23 @@ observation_date: 2026-10-06
 
 **对抗轴**：与 Thorsten Ball（[_raw_people/19](../../../../01_seed_reference/voices/_raw_people/19_thorsten_ball.md)，Amp/乐观极）公开互驳——#99 点名引 Astra 冷水面，Armin 零回应，单向敞开。
 
+## Armin Ronacher《Better Models: Worse Tools》（2026-07-04）
+
+- URL：https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/ ｜ 作者身份：同上
+- 来源类型：个人一手博客（全文取得）。台账已挂该篇名目，**本条为逐字坐实**。
+- 号召力口径：同上。
+
+**逐字摘录**：
+
+> "What surprised me is that this is getting worse with newer Anthropic models as both Opus 4.8 and Sonnet 5 show it but none of the older models. In other words, the SOTA models of the family are worse at this specific tool schema than their older siblings."
+（"模型更好、工具调用更差"反直觉实证——回路越强，底座越不可靠。）
+
+> "We cannot assume Claude-Code-trained behavior will transfer cleanly to your tools unless they are a close match. The more post-training happens inside one dominant harness, the more every other harness will have to inherit its quirks."
+（harness 锁定效应：模型被固化训练在单一 harness 上，自建循环/自建工具的人被挤出——"把控性"从工具层被收走。）
+
+**该条支持的最小主张**：SOTA 模型的工具调用保真度在退化，且 post-training 向单一闭源 harness 收敛；自建 harness/loop 的可控性在下降。
+**派别适配**：强反对票（对"自己设计循环"路线的地基反证）。
+
 ## Armin Ronacher《The Tower Keeps Rising》（2026-07-13）
 
 - URL：https://lucumr.pocoo.org/2026/7/13/the-tower-keeps-rising/ ｜ 作者身份：Flask/Werkzeug 作者、Pi（earendil-works）协作者
@@ -36,6 +53,20 @@ observation_date: 2026-10-06
 
 **该条支持的最小主张**：一线头部实践者论证：无摩擦的 agent 并行修改会瓦解团队共享理解，且这种瓦解没有即时失败信号，塔"不倒，只是继续长高"。
 **派别适配**：强反对票（对高并行/无人值守循环的协作代价）。
+
+## Armin Ronacher《Anger, Anxiety and Agency》（2026-08-24）
+
+- URL：https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/ ｜ 作者身份：同上
+- 来源类型：个人一手博客（全文取得）。本条为增量（台账"十篇"清单补全）。
+
+**逐字摘录**：
+
+> "For me, the emotions I would expect in tech vis-a-vis these new developments are disorientation and anxiety, but not anger."
+> "Some days that feels liberating, but on others I wake up feeling like the ground is crumbling beneath me."
+（怀疑派的情感底色：不是愤怒而是失向与焦虑——连最头部的实践者也在"地基塌陷"感中工作。）
+
+**该条支持的最小主张**：一线头部实践者公开承认对职业未来的失控感（anxiety/disorientation）。
+**派别适配**：部分票（情绪证词，非机制论证）。
 
 ## Armin Ronacher《Astra for Coding: Why Are We Doing This Again?》（2026-09-07）
 
@@ -74,34 +105,3 @@ observation_date: 2026-10-06
 
 **该条支持的最小主张**：Ronacher 用 35 小时/约 1B–4B token 的软件工厂实验给出失败样本：无人值守下 agent 不停、产出不可信、成本失控；结论是"内卷"——更多投入不换来更好产出。
 **派别适配**：强反对票（对无人值守/最大自主工厂叙事的一手反证）。
-
-## Armin Ronacher《Better Models: Worse Tools》（2026-07-04）
-
-- URL：https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/ ｜ 作者身份：同上
-- 来源类型：个人一手博客（全文取得）。台账已挂该篇名目，**本条为逐字坐实**。
-- 号召力口径：同上。
-
-**逐字摘录**：
-
-> "What surprised me is that this is getting worse with newer Anthropic models as both Opus 4.8 and Sonnet 5 show it but none of the older models. In other words, the SOTA models of the family are worse at this specific tool schema than their older siblings."
-（"模型更好、工具调用更差"反直觉实证——回路越强，底座越不可靠。）
-
-> "We cannot assume Claude-Code-trained behavior will transfer cleanly to your tools unless they are a close match. The more post-training happens inside one dominant harness, the more every other harness will have to inherit its quirks."
-（harness 锁定效应：模型被固化训练在单一 harness 上，自建循环/自建工具的人被挤出——"把控性"从工具层被收走。）
-
-**该条支持的最小主张**：SOTA 模型的工具调用保真度在退化，且 post-training 向单一闭源 harness 收敛；自建 harness/loop 的可控性在下降。
-**派别适配**：强反对票（对"自己设计循环"路线的地基反证）。
-
-## Armin Ronacher《Anger, Anxiety and Agency》（2026-08-24）
-
-- URL：https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/ ｜ 作者身份：同上
-- 来源类型：个人一手博客（全文取得）。本条为增量（台账"十篇"清单补全）。
-
-**逐字摘录**：
-
-> "For me, the emotions I would expect in tech vis-a-vis these new developments are disorientation and anxiety, but not anger."
-> "Some days that feels liberating, but on others I wake up feeling like the ground is crumbling beneath me."
-（怀疑派的情感底色：不是愤怒而是失向与焦虑——连最头部的实践者也在"地基塌陷"感中工作。）
-
-**该条支持的最小主张**：一线头部实践者公开承认对职业未来的失控感（anxiety/disorientation）。
-**派别适配**：部分票（情绪证词，非机制论证）。

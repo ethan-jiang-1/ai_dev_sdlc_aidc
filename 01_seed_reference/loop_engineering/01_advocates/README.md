@@ -23,11 +23,11 @@ Yegge 公开自己的失败账本（Gas Town 烧毁、69B token/月、harness �
 Cherny 经 Willison 转引的 "Production code written by Claude should have a higher bar than if it was written by a human"。
 吹捧与自认边界并存时，以一手原文为准，不替人物洗白也不替人物加戏。
 
-## 素材索引（自动对齐，推动派）
+## 素材索引
 
 ### KOL·专业技术
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`akshay_nathan`](kol_tech/akshay_nathan.md) |  |
 | [`dan_mcateer`](kol_tech/dan_mcateer.md) |  |
@@ -62,14 +62,14 @@ Cherny 经 Willison 转引的 "Production code written by Claude should have a h
 
 ### KOL·产品背景
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`jensen_huang`](kol_product/jensen_huang.md) | Jensen Huang · "Nobody writes prompts anymore"（2026-06 下旬，一手 |
 | [`nadella`](kol_product/nadella.md) | Satya Nadella · "learning loops" 组织利害论（经 X 转引） |
 
 ### 组织
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`a16z`](orgs/a16z.md) |  |
 | [`aider`](orgs/aider.md) |  |
@@ -107,13 +107,13 @@ Cherny 经 Willison 转引的 "Production code written by Claude should have a h
 
 ### 会议/事件
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`aiewf_2026`](events/aiewf_2026.md) | AIEWF 2026 厂商群像——Warp / Factory / OpenAI / Cursor / Sierra（2 |
 
 ### 群众·专业程序员
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`bilibili`](community_tech/bilibili.md) |  |
 | [`github`](community_tech/github.md) |  |
@@ -124,7 +124,7 @@ Cherny 经 Willison 转引的 "Production code written by Claude should have a h
 
 ### 群众·非专业
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`hn`](community_product/hn.md) |  |
 | [`jike`](community_product/jike.md) |  |

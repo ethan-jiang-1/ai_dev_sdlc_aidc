@@ -44,7 +44,6 @@ observation_date: 2026-10-06
 - 状态：**部分解决**（上轮"经 LangChain 转述、非逐字"→本轮：长文存在性/标题/日期/28M 阅读坐实＋两条独立全文转译；X article 原文仍登录墙）。
 - **派别适配**：**证据升级但派别判定仍克制**——"learning loop＝企业新知识产权/复利护城河"的完整论述是真实的（长文级而非碎片级），足以入时间线与"被引用"层；但全部经转译链，无本人一手页面，继续不单独立票、判派观察位维持。
 
-
 ### Satya Nadella（Microsoft CEO）· X 长文经 Latent Space AINews 实转（2026-06-16）
 
 - URL：https://www.latent.space/p/ainews-satya-on-loopcraft-building （curl 实取全文；本期为 AINews 付费档，正文 Satya 引文段落完整在页）

@@ -54,6 +54,7 @@ observation_date: 2026-10-06
   - 同期证据链（页内实录）："New in Claude Code: your sessions can now message each other. Instead of having to re-explain yourself in another session, you can now tell Claude to do it."（Claude Code 官方账号 08-07，554K views；与 OpenAI Artifactory 事件同周——扩张律的厂商实现与失控样本同时到位。）
 - **最小主张**：与 Steinberger's law（推-1）并列的 loop 派第二定律：agent 的扩张终点是 agent 间通信；dark factory 的实际运行形态即多 agent 消息网。
 - **派别适配**：**推动票**（怀疑派可引 HF 事件作同构反例）。
+
 ## swyx《[AINews] Loopcraft: The Art of Stacking Loops》＋同名 X thread（2026-06-12）
 
 - 原始 URL：https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking （**本环境两次实测 404**）；X 原推：https://x.com/swyx/status/2065307558198567206（X 不可达）

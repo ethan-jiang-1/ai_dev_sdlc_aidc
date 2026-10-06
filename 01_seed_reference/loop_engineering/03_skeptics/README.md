@@ -19,11 +19,11 @@ reorg_date: 2026-10-06
 
 **派内最强证据形态**：一手失败账本（比观点性批评更硬）；引用时必须带单样本 caveat。
 
-## 素材索引（自动对齐，怀疑派）
+## 素材索引
 
 ### KOL·专业技术
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`auriel_wright`](kol_tech/auriel_wright.md) |  |
 | [`chawla_koul`](kol_tech/chawla_koul.md) |  |
@@ -33,24 +33,24 @@ reorg_date: 2026-10-06
 | [`nick_heiner`](kol_tech/nick_heiner.md) |  |
 | [`noam_brown`](kol_tech/noam_brown.md) |  |
 | [`paul_bakaus`](kol_tech/paul_bakaus.md) |  |
-| [`ronacher`](kol_tech/ronacher.md) | Armin Ronacher《The Tower Keeps Rising》（2026-07-13） |
+| [`ronacher`](kol_tech/ronacher.md) | Armin Ronacher《Better Models: Worse Tools》（2026-07-04） |
 
 ### KOL·产品背景
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`dwarkesh`](kol_product/dwarkesh.md) |  |
 
 ### 组织
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`amazon`](orgs/amazon.md) |  |
 | [`microsoft`](orgs/microsoft.md) |  |
 
 ### 群众·专业程序员
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`bilibili`](community_tech/bilibili.md) |  |
 | [`github`](community_tech/github.md) | 二、GitHub：故障清单（官方仓库社区反馈） |
@@ -61,7 +61,7 @@ reorg_date: 2026-10-06
 
 ### 群众·非专业
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`hn`](community_product/hn.md) |  |
 | [`producthunt`](community_product/producthunt.md) |  |

@@ -19,15 +19,15 @@ reorg_date: 2026-10-06
 **与另外两派的分界**：中性派说"**有条件成立**"；推动派说"**默认方向**"；反对派说"**反证在此**"。
 同一人可能随时间移派（如 Steinberger 2025-12 反对 → 2026-06 词源；swyx 2026-10-06 实测后移入推动派）——派别记录以当前一手表态为准，轨迹在台账不抹平。
 
-## 素材索引（自动对齐，中性派）
+## 素材索引
 
 ### KOL·专业技术
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`alex_zhang`](kol_tech/alex_zhang.md) |  |
 | [`andrew_qu`](kol_tech/andrew_qu.md) |  |
-| [`boeckeler`](kol_tech/boeckeler.md) | Birgitta Böckeler《TDD inside the agent loop - theater or act |
+| [`boeckeler`](kol_tech/boeckeler.md) | Birgitta Böckeler 于 SE Radio 730（2026-07-22） |
 | [`charlie_holtz`](kol_tech/charlie_holtz.md) |  |
 | [`dan_abramov`](kol_tech/dan_abramov.md) |  |
 | [`darren_shepherd`](kol_tech/darren_shepherd.md) |  |
@@ -48,13 +48,13 @@ reorg_date: 2026-10-06
 
 ### KOL·产品背景
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`ethan_mollick`](kol_product/ethan_mollick.md) |  |
 
 ### 组织
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`airbnb`](orgs/airbnb.md) |  |
 | [`alibaba`](orgs/alibaba.md) |  |
@@ -70,13 +70,13 @@ reorg_date: 2026-10-06
 
 ### 会议/事件
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`qcon_shanghai_2026`](events/qcon_shanghai_2026.md) |  |
 
 ### 群众·专业程序员
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`devto`](community_tech/devto.md) |  |
 | [`github`](community_tech/github.md) |  |
@@ -88,7 +88,7 @@ reorg_date: 2026-10-06
 
 ### 群众·非专业
 
-| 文件 | 首条内容 |
+| 文件 | 首条 |
 |---|---|
 | [`hn`](community_product/hn.md) |  |
 | [`producthunt`](community_product/producthunt.md) |  |

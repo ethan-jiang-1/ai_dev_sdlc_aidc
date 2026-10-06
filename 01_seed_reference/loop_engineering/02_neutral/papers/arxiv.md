@@ -546,6 +546,7 @@ observation_date: 2026-10-06
 4. **正报告的普遍弱点**：绝大多数正报告（A4/A5/B1/B3/F2/G4）为自建评测或单样本；G4（n=1 大重构）与库内 Dan Abramov Conway 猜想案例（第三轮 Source B）同构——"存在性证明"档，不是"效应量"档。
 5. **对 02_research 判读层的接口建议**：A1/A2/A6/A7 → 运动谱系与"可测量化"节点；A3/B5/F2 → stop_conditions 三小节的学术锚（hard caps／verdict split／机器门）；C1/C5/C4 → reward hacking 与审批链治理；D1/D2 → "spectrum of autonomy" 的定量语境（scaffold 效应 29.8pp vs 排名差 8.8pp）；E2/E3 → graph_engineering 拓扑判读；G1/G2 → harness/loop 治理实践层的分层成熟度参照。
 6. **本轮取证完整性**：所有主条目摘要为 export.arxiv.org API 逐字实取（TeX 转义原样保留）；全部数据在会话临时目录 `.tmp-arxiv-r4/`（`.gitignore` 已覆盖 `.tmp-*/`，不入库）；如需复核，重跑同 URL 即可复现。
+
 ## 机构研究旁证（不入 KOL 册，供判读引用）
 
 - **arXiv:2608.21884《Loop Engineering: Building Blocks, Adoption, and Impact》**（JAWs@ASE 2026 在审 workshop 论文，2026-08-22，实际 fetch HTML 全文）：对本主题直接相关的学术整理。逐字（论文原文，其中引号内为论文转述社区言论）：
