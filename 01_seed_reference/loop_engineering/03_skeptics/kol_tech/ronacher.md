@@ -9,7 +9,7 @@ observation_date: 2026-10-06
 > **身份**：Flask/Werkzeug 作者；Pi（earendil-works）协作者
 > **号召力**：③ 一线规模＋质量反证代表
 > **人物全景**：[_raw_people/17_armin_ronacher.md](../../../voices/_raw_people/17_armin_ronacher.md)
-> 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
+> **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
 **对抗轴**：与 Thorsten Ball（[_raw_people/19](../../../../01_seed_reference/voices/_raw_people/19_thorsten_ball.md)，Amp/乐观极）公开互驳——#99 点名引 Astra 冷水面，Armin 零回应，单向敞开。

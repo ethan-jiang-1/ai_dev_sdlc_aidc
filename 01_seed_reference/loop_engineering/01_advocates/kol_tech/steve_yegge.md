@@ -8,7 +8,7 @@ observation_date: 2026-10-06
 
 > **身份**：40 年一线（Google/Sourcegraph）；Gas Town / Beads / Wyvern 作者
 > **号召力**：① 实践定义者＋③ 舰队规模
-> 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
+> **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
 **对抗轴**：Ronacher 经济-质量极（[ronacher](../../03_skeptics/kol_tech/ronacher.md)）——同题正反。

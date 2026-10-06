@@ -8,7 +8,7 @@ observation_date: 2026-10-06
 
 > **身份**：Latent Space 主理人
 > **号召力**：① 造词者（loopcraft）＋② 被 LangChain 引用
-> 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
+> **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
 **对抗轴**：Zawinski's Law vs Bhagwat Steinberger's law（[sam_bhagwat](sam_bhagwat.md)）；与 Dwarkesh 沙箱逃逸结构论（[dwarkesh](../../03_skeptics/kol_product/dwarkesh.md)）同一事实正反两翼。

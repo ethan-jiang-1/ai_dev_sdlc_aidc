@@ -9,7 +9,7 @@ observation_date: 2026-10-07
 > **身份**：37signals/Rails 创造者
 > **号召力**：④ 全球影响力＋① 框架创造者
 > **人物全景**：[_raw_people/15_dhh.md]()
-> 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景：[_raw_people/15_dhh.md](../../../voices/_raw_people/15_dhh.md)（2026-10-03 建卡，覆盖 pencils down 反转全程）。
+> **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景：[_raw_people/15_dhh.md](../../../voices/_raw_people/15_dhh.md)（2026-10-03 建卡，覆盖 pencils down 反转全程）。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
 ## 态度轨迹
