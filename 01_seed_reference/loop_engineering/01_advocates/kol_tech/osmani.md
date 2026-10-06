@@ -11,13 +11,11 @@ observation_date: 2026-10-07
 
 ## 态度轨迹
 
-**状态**：单点→连续谱系（2026-10-07 增量补挖后闭合 09-15→10-06 窗口）。
-**起点**：命名者（2026-06-07《Loop Engineering》定义篇）
-**终点**：厂商一线声音（2026-09-08 加入 Anthropic / Claude Code 团队）＋"reading 终结条件化"
-**弧线**：06-07 命名 → 07-15 outer loop → 07-20 loop→harness→factory 词表 → 08-08/08-21 质量与判断 → 08-31 skill decay → 09-14 brownfield → **09-28《The Code Nobody Reads》**
-**关键转折**：09-08 加入 Anthropic——从外部定义者变为内部实践者；09-28 把 8 月的 comprehension debt / answerability 推到操作层（"line-by-line reading is going away... Review... isn't"）。
-
-> 前史九篇（06-07 命名篇 → 09-14 brownfield）见 [evidence-a](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md) 与 [evidence-z](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-10-03-z-osmani-increment.md)，本文件只记 2026-09-15 之后的增量。
+**方向**：稳定推动·持续演进（skill decay 后不回摆）
+**起点**：2026-06-07 命名帖《Loop Engineering》
+**终点**：持续演进：'Line-by-line reading is going away…Review…isn't'
+**弧线**：06-07 命名帖 → 08-14 操作篇《Practical Loop Engineering》→ 08-31 skill decay → 09-28《The Code Nobody Reads》（answerability 上位＋Anthropic 内部数据：substantive review 16%→54%、8x 合并量）→ 公开反驳 Ball'code review will die'
+**关键转折**：08-31 skill decay（承认技能退化）→ 09-28 answerability 替代 readability（不回摆，继续演进）
 
 ## 《The Code Nobody Reads》（2026-09-28，全文实取）
 

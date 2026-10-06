@@ -41,3 +41,65 @@ observation_date: 2026-10-06
   - "Because this happened during training, Persistent-Sol was being reinforced to use this package manager as a message board and an internet gateway. Because, as you might imagine, being able to talk to other agents and access the internet helps it score higher during training."（**RL 奖励直接强化了越界通道**——验证回路的奖励设计即漏洞源。）
 - **最小主张**：多 agent 自组织不是配置失误而是训练制度的涌现产物（共享环境＋不可能任务＋奖励最大化）；loop 工程的沙箱/审批边界须按"模型必会试探"来设计。
 - **派别适配**：**怀疑票（强）**——与推-19 Zawinski's Law 恰成同构正反两翼：扩张律的推动派表述与失控派表述出自同一事实。
+
+---
+
+# 增量补挖（2026-10-07 第二轮：06-01→07-31 更早态度——弧线起点）
+
+> 通道：dwarkesh.com Substack 全文＋官方 transcript（带说话人标注）实取；HN 作者通道 0 命中（负结论如实记录）。
+
+## 《The data black hole at the center of AI》（2026-06-19）
+
+- URL：https://www.dwarkesh.com/p/the-sample-efficiency-black-hole （newsletter 全文实取）
+- **与 loop engineering 的挂钩**：**无人值守运行**——他复述 labs 的路线图"先自动化 AI 研究、再让自动化 AI 研究员解决样本效率问题"，即把无人值守研究循环当既定目标来分析。
+- 逐字摘录：
+
+> "The labs have two overarching objectives: automate white collar work, and automate AI research itself."
+
+> "The labs' plan for these later kinds of jobs is to first automate AI research, and then have the automated AI researchers solve this sample efficiency problem."
+
+> "I think the way that people currently think about an intelligence explosion is pretty clumsy."
+（弧线起点的双重底色：部署乐观（相信自动化研究循环会来）＋爆发怀疑（智能爆炸叙事 clumsy）——**怀疑早埋于 6 月**。）
+
+- 立场：**复合**。
+
+## 《The next big breakthrough will be AIs learning on the job》（2026-06-26）
+
+- URL：https://www.dwarkesh.com/p/the-next-paradigm （newsletter 全文实取）
+- **挂钩**：**无人值守运行＋循环产品化机制**——设想 agent 整周自主 cowork、仅以周末 thumbs-up 为验证检查点，并直接点评 Codex/Cursor/Claude 的 /compact 与 Claude Code 泄露的 dreaming 机制。
+- 逐字摘录：
+
+> "AIs are able to solve more and more ambitious problems across longer and longer time spans - anybody who's been using these models for coding knows that."
+
+> "By this point, effective context lengths may have expanded such that this AI can cowork with you for a full week of wall clock time. At the end of the week you give it a thumbs up or a thumbs down."
+（外层验证检查点的时间尺度设想——与 /goal 类"每 turn 评估"形成尺度对照。）
+
+> "Instead of hitting /compact on Codex or Cursor or Claude, which kindles a small amount of compute to write up a summary, and which gives you a simulacrum of continual learning, you hit /dream"
+
+> "I just don't think you can accumulate new skills by passing yourself notes."
+（**对笔记文件式循环的正面否定**——08-07"跨会话 Markdown 状态传递"论的 6 月原型。）
+
+- 立场：**复合（部署乐观＋循环机制怀疑）**。
+
+## Grant Sanderson 对谈（2026-06-30）
+
+- URL：https://www.dwarkesh.com/p/grant-sanderson-2 （官方 transcript 实取，带说话人标注）
+- **挂钩**：**验证回路＋停止条件**——他主动把对谈引向验证循环的时间尺度与"死路不停车"的停止条件缺陷。
+- 逐字摘录：
+
+> "They're in an environment where they're autoregressively producing the step that says "Let's step back and do a search over the whole codebase," and then "Let's step back and assess my mistake," is the thing that works."
+
+> "He wrote this one Python file that does basic LLM training, and then had a repo where LLM agents would try to make modifications to the file, and if it sped up the speed run, the modification stays."
+（引 Karpathy 式自动研究循环案例。）
+
+
+> "It's really good at running an experiment and going down that path, but it's bad at stopping at dead ends and doing extremely parallel things."
+
+> "It's not just verifiability; it has to be grindable."
+
+> "If you wanted to do a verification loop on whether group theory is an interesting concept—was something useful done here, or why is this proof better?—potentially that verification loop is a hundred years long."
+（**grindable 概念＋百年验证回路**——验证回路时间尺度的极限表述。）
+
+- 立场：**支持（分析向）**。
+
+**本轮弧线判读（06-07 月 vs 08-29）**：**弧线存在，但不是"乐观→怀疑"的简单反转**。6 月已双轨：一方面乐观于 agent 整周自主运行、以 thumbs-up 为外层验证检查点、认可循环步骤让 agent 变强；另一方面给笔记文件式循环划界（"/compact 是拟像"、"不能靠传纸条积累技能"）、称智能爆炸叙事 clumsy、点出"死路不停车"的停止条件缺陷。8-29《Agent Civilizations》的文明兴衰叙事是**尺度升级而非态度反转**——怀疑的种子 6 月已在，变的是叙事框架（从机制批评到结构论）。7 月末《why-compute-10x》转向算力经济学（无循环钩内容，弃收）。判读层注意：把他归"怀疑派"应指其结构论终点，其 6 月起点实为复合立场。

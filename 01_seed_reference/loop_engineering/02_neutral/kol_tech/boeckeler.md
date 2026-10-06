@@ -80,3 +80,30 @@ observation_date: 2026-10-06
 **派别适配**：**中性票（最强样本）**。注意：该文围绕 "agentic loop" 机制，**全文未出现对 "loop engineering" 专名的采用或评述**（本路对该文全文未检出该词的专门表态段）。
 
 ---
+
+---
+
+# 增量补挖（2026-10-07 第二轮：09-01→10-06 增量）
+
+> 通道：martinfowler.com master feed（抓至 2026-10-04，确认她窗口内无新文——作者页与 genai 系列页 404/403，缺口由 master feed 补判）；LinkedIn 免登录渲染页实取（登录墙下正文与部分评论可见，"See more comments" 以下不可达，如实标注）。
+
+## LinkedIn 后续贴：回应 Emily Bache，重申暂不让 agent 做 TDD（2026-09-30）
+
+- URL：https://www.linkedin.com/posts/birgittaboeckeler_the-last-year-has-changed-everything-i-knew-activity-7511156369211973634-NBTC （免登录渲染页实取全文；缓存 boeckeler-linkedin-post-tdd-followup.txt）
+- **与 loop engineering 的挂钩**：**验证回路**——TDD 是"放进 agent loop 的经典验证实践"，此条是她 08-10《TDD inside the agent loop》之后的最新表态：loop 内验证该装什么仍未解决。
+- 逐字摘录：
+
+> "I personally do not ask my agents to do TDD for now, because of two things:"
+
+> "it did create some hypotheses why it might make quality worse or not make much of a difference, at high token cost."
+
+> "most of the benefits of TDD are for the human, in a way that definitely goes away when the agent does it by itself, so we have a huge gap to fill there with other practices."
+
+> "many people seem to take it for granted that agents get the same benefit from TDD as we do"
+
+> "To get agents to refactor more, we need to use much more than TDD to get them to do that"
+（08-10 文的实证结论被她本人确认沿用：TDD 收益属人类、token 成本高——对"把人类验证实践原样搬进循环"持续保留，需 sensors/habit hooks 与严格 eval 补位。）
+
+- 立场：**复合（loop 内验证实践暂缓＋替代机制探索）**。
+
+**本轮最小主张**：Böckeler 09-10 月唯一增量＝09-30 LinkedIn 贴：重申暂不让 agent 做 TDD（收益属人类、成本高、需严格 eval 与 sensors 补位）——验证回路内容物仍在探索，审慎立场未变。10-01 职业贴（宣布转投 Unblocked 做上下文工程）不挂七类钩，按底线弃收——轨迹注记：她的关注点从 loop 内验证转向 loop 外上下文设施。其余通道（martinfowler.com、个人 newsletter、bsky/mastodon）窗口内无新发声。

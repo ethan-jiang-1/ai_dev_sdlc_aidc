@@ -83,3 +83,81 @@ URL：https://ghuntley.com/lisp/
 **派别适配**：**不是简单中性票**——目的地方向激进（不可读代码、产品自建产品、消灭编译循环），路径判断审慎（验证是瓶颈、Eternal September、maybe I'm right maybe I'm wrong）。建议三派重组时单列为"重构派/超越派"或归中性票但注明双向张力，由 `02_research/01_agent_engineering/loop_engineering/` 的判读层裁定。
 
 ---
+
+---
+
+# 增量补挖（2026-10-07 第二轮：命名周态度＋09-10 月机制产品化）
+
+> 本轮通道：Bluesky 公开 API getAuthorFeed 完整分页（回溯至 2025-03）＋GitHub repos API＋raw README＋ghuntley.com RSS/sitemap；X 登录墙不可回溯（命名周最大盲区，如实记录）。**命名周（06-07/08）结论：Huntley 在所有可考通道静默且未直接评论 loop engineering 专名**——博客上一篇为 03-16 cogsec、下一篇即 06-26 miami；HN 六月零评论；Bluesky 当周无帖。当月仅有的两声见下 1a/1b。
+
+## Bluesky 回复："only surpassed with a simple bash loop"（2026-06-11）
+
+- URL：https://bsky.app/profile/ghuntley.com/post/3mnyua7wso22y （Bluesky 公开 API 实取＋父帖上下文；缓存 huntley-bsky-june-2026.txt）
+- **与 loop engineering 的挂钩**：循环结构——Ralph 原语（bash loop）本身的自我指涉；命名篇（06-07）与词源推文（06-08）当周，原语作者唯一可考发声。
+- 逐字摘录：
+
+> "only surpassed with a simple bash loop"
+（在一条怀念 nftbay 事件的回复串里，他把外界反响的巅峰归给自己的 bash loop 原语——姿态停留在原语层，未接 "loop engineering" 新词。）
+
+- 立场：**中性**（对运动命名本身不表态，仅以原语作者自况）。
+
+## Bluesky 回复："that's what i define as engineering now :)"（2026-06-29）
+
+- URL：https://bsky.app/profile/ghuntley.com/post/3mphft35tyk2p （同上通道）
+- **与 loop engineering 的挂钩**：验证回路——在 miami 预测争议串中，他人指出 "writing code went to ~zero; understanding and trusting it didn't move. that gap is the whole story"（父帖原句），他回应这就是自己现在对 engineering 的定义。
+- 逐字摘录：
+
+> "that's what i define as engineering now :)"
+（代码生成被 loop 商品化后，工程本体转为验证/信任侧收口——比 07-24《engineer away the slop》早近一个月出现同一立场，说明该定位在命名月已定型。）
+
+- 立场：**支持（验证侧定义）**。
+
+## underclass：OpenAI 兼容订阅池化代理（2026-09-20，GitHub＋Show HN）
+
+- URL：https://github.com/ghuntley/underclass （GitHub API 定日期 created_at 2026-09-20＋raw README 全文实取；同日 Show HN item 49774704）
+- **与 loop engineering 的挂钩**：**预算与熔断**——为跑 coding agent 的 harness（opencode 等 OpenAI 兼容端）提供耐用模型端点：订阅配额池化、耗尽即冷却出轮换、窗口重置自动回池、全池耗尽 fail-fast 返回最早重置时间而非挂起。
+- 逐字摘录：
+
+> "One subscription runs out of quota? It leaves rotation until its window resets — and comes back on its own."
+
+> "When *everything* is exhausted, the proxy fails fast with the earliest reset time instead of hanging."
+
+> "underclass turns a pile of personal subscriptions into a single durable endpoint that behaves like one well-provisioned provider"
+（把"预算与熔断"从论述做成可安装机制——面向无人值守长跑 loop 的模型供给层。）
+
+- 立场：**支持（机制产品化）**——命名运动后其角色从布道者转向机制供给（已入 Antithesis）。
+
+## preflight：LLM 请求出站密钥扫描代理（2026-09-20，GitHub＋HN）
+
+- URL：https://github.com/ghuntley/preflight （同上通道；同日 HN item 49776416）
+- **与 loop engineering 的挂钩**：**验证回路**——架在 coding harness 与模型之间的每次 inference 前强制出站检查：解码图片/PDF、本地 OCR、命中凭据改写为占位符后放行；与 underclass 同日发布且显式串联（preflight → underclass → 模型）。
+- 逐字摘录：
+
+> "A local proxy that scans LLM requests and attachments for secrets before they reach the model."
+
+> "Coding agents read source files, shell output, screenshots, and documents. Secrets can arrive through any of them."
+
+> "replace detected secrets with `[REDACTED:rule-id]` so ordinary pasted-key incidents do not stop the agent."
+（"do not stop the agent"——验证闸的设计目标是**不中断**无人值守循环：loop 治理机制落为产品件，与 10-02 access 帖的 "safety controls" 论述互为实证。）
+
+- 立场：**支持（循环治理产品化）**。
+
+## 《the craft has been commoditized, but access has not》（2026-10-02）
+
+- URL：https://ghuntley.com/access/ （RSS 定位＋文章页 curl 全文；缓存 huntley-access.txt）
+- **与 loop engineering 的挂钩**：**循环产品化机制**——loop 把 craft 商品化（"a couple of loops later, they have outcomes"），Agile 被重述为"围绕少数人类作者优化的 loop"，工程师残留职责＝搭系统＋安全控制让组织内人人安全上生产。
+- 逐字摘录：
+
+> "With AI, everyone is a game developer. It doesn't matter whether someone has the skills of a software developer or a game developer; they can express what they want, and a couple of loops later, they have outcomes."
+
+> "Agile assumed writing software was the costly, scarce activity, so it optimized the loop around human authorship by a select few."
+
+> "Our job as software engineers now is to engineer systems, including safety controls, that let everyone ship to production — safely."
+
+> "One of my hottest takes right now is that 2026 and 2027 are all about enabling others in your organization to contribute to and develop software, and if your corporate roadmap doesn't have this on the agenda, you're missing the mark."
+（把六月的"人人都是开发者"论推进到组织机制层——工程角色从写码者转为 loop 生产线的搭建者与安全控制者；与同日 readable→explainable（库内已有）互证双线收口。）
+
+- 立场：**支持（组织级循环产品化）**。
+
+**本轮轨迹小结**：六月＝原语自况＋"engineering＝验证侧"重定义（中性偏支持）→ 九月＝预算/验证机制产品化（underclass/preflight）→ 十月＝组织级循环产品化（access）。全程无反对或边界化迹象；专名层面持续沉默（四篇＋两帖均未用 "loop engineering" 一词）。
+**通道失败如实记录**：X 登录墙（命名周推文无法取证）；The Register 2026-06-24 loop engineering 报道被 PoW 反爬拦截（含 Wayback 429/404，五次尝试失败）；lobste.rs Anubis PoW；Bluesky searchPosts 403（已用 getAuthorFeed 绕过，未构成缺口）。

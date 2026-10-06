@@ -11,11 +11,12 @@ observation_date: 2026-10-06
 
 ## 态度轨迹
 
-**方向**：稳定限速（皈依但设上限）
-**起点**：怀疑→皈依（经'excruciating'代价）
-**终点**：皈依＋限速（窗口前谱系，窗口内沉默）
-**弧线**：02-05《My AI Adoption Journey》（'excruciating' 双轨训练→皈依）＋'did not go as far as...running in loops all night'＋'not running multiple agents, and currently don't really want to'
-**关键转折**：无翻转——皈依后立刻设限（不通宵、不多 agent）
+**方向**：升温·越线（皈依→限速→越过自己划的线）
+**起点**：02-05'excruciating'双轨训练后皈依＋'不通宵/不多 agent'划线
+**终点**：08-11'600 review nightly agents, start new'——越过自己 2 月的划线
+**弧线**：02-05 划线（'not running multiple agents, don't really want to'）→ 07-29 创办 Superlogical（durable session 层）→ 08-11 越线（600 review nightly agents）→ 10-05 Rex 公测
+**关键转折**：08-11 越线——从'刻意不通宵'到'600 个夜间 review agent'，六个月内立场实质升级
+
 ## 《My AI Adoption Journey》（2026-02-05）
 
 - URL：https://mitchellh.com/writing/my-ai-adoption-journey ｜ 作者身份：Vagrant/HashiCorp 创始人、Ghostty 作者
@@ -42,3 +43,49 @@ observation_date: 2026-10-06
 
 **该条支持的最小主张**：顶级 OSS 作者从怀疑到皈依的全过程证词：有效采纳的代价是"excruciating"的双轨训练；即便皈依后仍主动停留在单 agent、不通宵循环的档位，并公开担忧 junior 技能塌陷。
 **派别适配**：部分票（皈依派内的"限速"证词——支持"难掌握"，不支持"反对 loop"）。
+
+---
+
+# 增量补挖（2026-10-07 第二轮：06 月后立场更新——实践者兼基础设施供给方）
+
+> 通道：mitchellh.com feed.xml（窗口内无新博文——最后核对确认）、superlogical.com 首页与 updates 页、三条推文双通道缓存（x.com status 页 og:description ＋ cdn.syndication.twimg.com tweet-result JSON）。**结论：窗口内他未直接使用 loop engineering 术语，但立场沿实践/产品两条线实质强化**——相比 02-05《My AI Adoption Journey》的个人使用叙事，已升级为实践者兼基础设施供给方。
+
+## Superlogical 公司公告：为「所有工作」建多路复用器（2026-07-29）
+
+- URL：https://www.superlogical.com/ （首页实取；"I authored the announcement post on the Superlogical homepage" 出自其 2026-07-29 博文缓存 hashimoto-superlogical.txt——本人执笔确认）
+- **与 loop engineering 的挂钩**：**循环产品化机制**——把 agent 并行工作、后台作业所需的持久会话层（durable session、人可见可控）做成产品基础设施。
+- 逐字摘录：
+
+> "local development. remote access. coding agents. background jobs. production applications. live debugging. sandboxes. shared terminals. incident response. humans and machines."
+
+> "It has many modes of operation: interactively with a human developer, automatically through CI and background processes, and increasingly through agents working in parallel."
+
+> "We believe the missing layer is a durable session around the work itself: one that can span applications and environments, provide relevant context by default, expose structured data and actions, preserve history, and be driven by software while remaining visible and controllable by people."
+（「无人值守工作＋人可见可控」愿景与 loop engineering 的治理命题同构——注意他 02-05 自述"刻意不通宵跑 loop"，此处已越过该线。）
+
+- 立场：**支持（agent 运行基础设施供给）**。
+
+## 推文：更新版日程表——清晨 review 通宵 agent 并启动新一轮（2026-08-11）
+
+- URL：https://x.com/mitchellh/status/2087227139154448436 （**双通道实取**：x.com status 页 og:description ＋ cdn.syndication.twimg.com/tweet-result JSON；长推文在 ~280 字符处截断——两个通道同断，如实记录，日程后半段不可见）
+- **挂钩**：**无人值守运行**——agent 通宵无人值守执行，晨间 6:00 人工 review 并启动新一轮，人作为外层调度节拍。
+- 逐字摘录：
+
+> "I've been asked for an updated daily schedule given Superlogical, second kid, and AI usage. Here you go:"
+
+> "- 600 review nightly agents, start new"
+（对比其 2025-09 旧日程（同缓存内 quoted_tweet），新增「review nightly agents」一项：通宵 agent 循环已成日常固定节拍。）
+
+- 立场：**支持（通宵循环日常化）**——窗口内最直接的实践证据，且与他 02-05"明确与通宵 loop 划界"形成显式态度变化。
+
+## Superlogical 公测开始：Rex 终端落地持久会话层（2026-10-05）
+
+- URL：https://www.superlogical.com/updates/public-testing-beginning （updates 页实取；Superlogical Team 署名——公司层，非个人署名，如实标注）
+- **挂钩**：**循环产品化机制**——首页愿景的首个可用产品形态，persistent sessions 与 program activity status 面向无人值守工作监控。
+- 逐字摘录：
+
+> "capabilities such as persistent sessions, performant and responsive remote connections, program activity status, and more."
+
+- 立场：**支持（产品化推进）**。
+
+**本轮最小主张**：Hashimoto 06 月后的立场更新＝从"皈依＋限速"（02-05：不通宵、单 agent）升级为"通宵循环日常化＋建公司供给 agent 运行基础设施"——弧线越过自己 2 月划的线，全程未用专名。

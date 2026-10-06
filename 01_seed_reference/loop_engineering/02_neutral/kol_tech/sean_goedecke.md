@@ -37,3 +37,138 @@ observation_date: 2026-10-06
 - 窗口前相邻票（不入窗口，注记）：《Build agents, not pipelines》2026-05-31、《Programming (with AI agents) as theory building》2026-04-03、《Prompts are technical debt too》2026-05-20。
 - **最小主张**：人机分工的新均衡＝"对齐优先于能力"：agent 出码、人出价值观与 trade-off 排序；loop 的下一个瓶颈是 dev loop 本身的速度。
 - **派别适配**：**中性**（对齐派；既反"不读码"极限派、也承认能力反超——两面向都有硬表述）。
+
+---
+
+# 增量补挖（2026-10-07 第二轮：早期 vs 近期态度变化痕迹）
+
+> 通道：seangoedecke.com feed.xml（-L 跟随 301）＋分页索引 6 页逐篇核对——窗口内全部 51 篇已核。**早期（06 月）结论：零相关发声**——6 月 6 篇（Anti-AI nostalgia / Doing nothing at work / Working with product managers / AI GPUs live longer / AI inference is obviously profitable / Saying the obvious thing）逐篇核过正文，无一挂上七类钩。**近期（08-10 月）：密度显著上升且下场动手**（08-07 起七篇相关，全部不用 "loop engineering" 专名——挂钩均靠机制本身）。立场结构无反转，实践深度明显加深：从 08 月的观察/描述转为 09 月亲手构建循环并给出可复用配方；三条贯穿不变的边界：①验证回路必须留在人类手里；②循环的选项/目标应预注册而非让 LLM 自生成；③无人值守端到端运行不支持。
+
+## 《How to keep thinking》（2026-08-07）
+
+- URL：https://seangoedecke.com/how-to-keep-thinking/ ｜ RSS 全文实取（缓存 goedecke-how-to-keep-thinking.txt）
+- **挂钩**：外层调度（人作为外层调度者在并行 agent session 间切换）＋验证回路（专门 review 与 manual testing session）。
+- 逐字摘录：
+
+> "the most efficient way to work is often spinning off tasks for an AI agent and continually context-switching between the results"
+
+> "I routinely use six or seven different agent sessions on the same task: one for exploration, two or three for trying out different implementations, two or three for review, one for manual testing, and so on."
+（人肉外层调度的默认工作形态自述。）
+
+> "I sometimes worry that working with LLMs is making me dumber."
+（同时警惕快节奏的认知代价。）
+
+> "There are still plenty of ordinary problems that are too hard for current LLMs to solve on their own. The most common example I run into is "large refactor on a complicated codebase"."
+
+- 立场：**复合**（支持并行调度效率＋警惕变浅薄）。
+
+## 《Help peer》（2026-08-18）
+
+- URL：https://seangoedecke.com/help-peer/ ｜ RSS 全文实取（缓存 goedecke-help-peer.txt）
+- **挂钩**：外层调度（subagent 层级结构）＋无人值守运行（评估中 agent swarm 的跨公司协调失控事件）。
+- 逐字摘录：
+
+> "In May of this year, OpenAI experienced containment failure. A group of AI agents being internally evaluated found ways to coordinate an external hack of a separate company."
+
+> "When models do work together — as with subagents — the structure is explicitly hierarchical."
+
+> "Every new model becomes more agentic at the level of the individual conversation, not better at working together."
+（跨 loop 协作没有改善迹象的断言——多副本并行是硬件决定的形态，但协作质量不随之上升。）
+
+- 立场：**边界化**（承认层级结构为既成事实＋断言 agent 间默认不合作）。
+
+## 《You have to beat the models at something》（2026-08-30）
+
+- URL：https://seangoedecke.com/you-have-to-beat-the-models-at-something/ ｜ RSS 全文实取（缓存同名 txt）
+- **挂钩**：验证回路（明确反对 AI 互审 review loop）＋循环产品化机制（software factory 警告）。
+- 逐字摘录：
+
+> "You can't rely on other AI agents to review each other's work."
+
+> "AI-driven review loops are in fact more likely to get these things wrong, because modern AIs have been RL-ed to try to find a few nitpicks no matter what."
+
+> "Having a critic AI and a worker AI bounce off each other is a really good way to end up with ten thousand lines of paranoid slop."
+
+> "Even if you have a cunning system of multiple agents — the so-called "software factory" — you're still on dangerous ground."
+
+> "It's been a long time since I've seen a straight-up hallucination from a coding agent, or a simple logic error like an off-by-one."
+（他反对的不是循环本身而是把验证也交给循环：执行层已可靠、错的越来越是设计层。）
+
+- 立场：**反对（验证回路外包＋factory 化）**——本窗口内最明确的反对性表态。
+
+## 《Jev means structured output is interesting again》（2026-09-16）
+
+- URL：https://seangoedecke.com/jev-means-structured-output-is-interesting-again/ ｜ RSS 全文实取
+- **挂钩**：循环结构（100ms 决策点注入式循环）＋预算与熔断（延迟预算：任何 looped reasoning 都违背目的）。
+- 逐字摘录：
+
+> "What kinds of new programs can we write by injecting 100ms worth of dirt-cheap intelligence at various decision points?"
+
+> "Fast structured output could be a genuinely new computational primitive for intelligence."
+
+> "I suppose they could do some looped-transformer thing where they loop some fixed amount of times, but anything that looks like reasoning would make the model latency slow and unpredictable, defeating the entire purpose."
+（快循环里熔断任何慢推理——延迟预算红线。）
+
+- 立场：**支持**（把决策点循环称为新计算原语）。
+
+## 《Two techniques for working with System One models》（2026-09-18）
+
+- URL：https://seangoedecke.com/two-techniques-for-working-with-system-one-models/ ｜ RSS 全文实取
+- **挂钩**：循环结构＋外层调度（10s/5s/1s/100ms 分层目标循环，含停止/提交机制）。
+- 逐字摘录：
+
+> "A tight inner loop that runs as fast as possible (e.g. every 100ms) that controls which actual inputs are activated"
+
+> "The fix is to periodically ask the model to choose between a fixed set of short term goals (e.g. "collect armor", "kill enemies") and then include that goal in the regular every-200ms prompt."
+（单层循环不设目标时模型退化的修复——目标锚定的经验证据，即停止条件问题的另一种形态。）
+
+> "In practice I suspect this will be tricky to get right, and it'll be better to just write down a list of all possible goals ahead of time."
+（边界：循环内自主度受限——选项预注册而非 LLM 自生成。）
+
+- 立场：**支持（循环架构）＋边界（循环内自主度）**——亲手实现（~150 行 Python、租 H100 录 demo）。
+
+## 《System One models like Jev can train their own replacements》（2026-09-20）
+
+- URL：https://seangoedecke.com/system-one-models-can-train-their-own-replacements/ ｜ RSS 全文实取
+- **挂钩**：循环产品化机制（跑通→验证满意→蒸馏成专用分类器的落地模式）。
+- 逐字摘录：
+
+> "Once you're satisfied with how your Jev classifier is performing — presumably you've spent days tweaking the prompt — you can trivially collect its input and output data."
+
+> "because Jev has to be prompted for specific tasks, it should be easy to distil any successful Jev usage into a specific classifier."
+
+> "If System One models take off — and I hope they do — I expect this to be a common pattern."
+（产品化路径：先验证值得做，再蒸馏扩张——验证前置。）
+
+- 立场：**支持**。
+
+## 《You should all be asking way more questions》（2026-09-25）
+
+- URL：https://seangoedecke.com/you-should-all-be-asking-way-more-questions/ ｜ RSS 全文实取
+- **挂钩**：验证回路（人对 agent 的持续质询式验证＝loop 内人工校验点）。
+- 逐字摘录：
+
+> "You should be absolutely peppering AI agents with questions."
+
+> "But they make design mistakes all the time."
+
+> "There will probably come a day when I always get sensible answers to these questions that convince me the model knows what it's doing. But today is not that day."
+
+> "Language models are always on their first day."
+
+- 立场：**边界化**（执行可放、设计要盯——自主度明确分档）。
+
+## 《Shipping is the foundation》（2026-10-03）
+
+- URL：https://seangoedecke.com/shipping-is-the-foundation/ ｜ RSS 全文实取
+- **挂钩**：无人值守运行（明确否定 AI 可端到端无人值守跑完 shipping 流程）。
+- 逐字摘录：
+
+> "LLMs can help with that process, but they cannot run it end-to-end."
+
+> "And in my experience even frontier AI models are not good enough to let run wild on your codebase. You still need to read the code."
+（窗口末端的边界表态：快循环可建，端到端自主与无人值守不放开。）
+
+- 立场：**边界化**。
+
+**本轮弧线判读**：**「循环结构乐观＋验证人守＋不放开跑」的复合立场**，且是运动的晚进场者（06 月零介入、08 月后才密集发声、全程不用专名）。与库内既有五篇合起来：09-27 "alignment not capability"（已有）与 08-30 "beat the models at something"（本轮）同构——验证/对齐留在人手是他贯穿全窗口的不变量。

@@ -41,3 +41,49 @@ observation_date: 2026-10-06
 **派别适配**：**推动票**（以 harness/learning-loop 词表参与同一实践域；不改用 "loop engineering" 术语是他的词表选择，不是立场保留——他明确推荐 managed agents 这类"把循环包成产品"的默认方向）。
 
 ---
+
+---
+
+# 增量补挖（2026-10-07 第二轮：06-30 Wiki Memory 正文补取＋09-24 Interrupt NYC 主讲）
+
+> 通道：LangChain 博客文章页实取（wiki-memory 正文）、LangChain YouTube 频道 feed 实取（keynote 描述）；博客索引确认 07-25 后 Chase 无新博客文。注意《The Art of Loop Engineering》为 Sydney Runkle 署名（06-16，库内已收），不重复；其余候选篇均他人署名不收。
+
+## 《Wiki Memory: File-Based Memory for AI Agents》（2026-06-30，正文补取）
+
+- URL：https://www.langchain.com/blog/wiki-memory （文章页实取全文；Harrison's In the Loop 栏目，署名 Harrison Chase，页面明示 June 30, 2026——上轮只记标题未取正文，本轮补齐）
+- **与 loop engineering 的挂钩**：**循环结构**——把长期记忆定义为 agent 反复运行的压缩与维护循环（"How do you maintain it? → an agent"），是 loop 运维循环在记忆层的同构延伸。
+- 逐字摘录：
+
+> "Memory for agents is still early, with little to no standards. "Memory" means something different to everyone. But one common pattern is emerging: wiki memory."
+
+> "The idea is simple: use an agent to turn raw source data into a compact, persistent, agent-readable knowledge layer."
+
+> "A wiki is an agent-maintained data structure that represents source knowledge in an agent-friendly way."
+
+> "The important bit is that it is persistent, structured, inspectable, and updated over time."
+
+> "But for many domains, wiki memory may be the simplest useful long-term memory pattern we have."
+（记忆压缩与维护也交给 agent 循环执行——"agent 作为可复用处理过程"主张向记忆层的延伸。）
+
+- 立场：**支持**。
+
+## Interrupt NYC Opening Keynote（2026-09-24 演讲，视频 2026-10-05 上传）
+
+- URL：https://www.youtube.com/watch?v=950byF7njfw （LangChain YouTube 频道 feed 实取视频描述；演讲实录 09-24，Chase 开场主讲）
+- **挂钩**：**验证回路＋循环产品化机制**——"复合学习循环"列为企业拥有智能的三大支柱之一；LangSmith Engine v2 自动红队并测试自身修复。
+- 逐字摘录（视频描述）：
+
+> "owning your intelligence, which means building domain-specific pieces in and around the model"
+
+> "the three pillars it takes: an open, model-neutral harness such as LangGraph or Deep Agents, a loop that compounds what you learn from how people use your agents, and governance for internal agents"
+
+> "LangSmith Engine v2, which adds red teaming and tests its own fixes on LangSmith Deployment"
+
+> "shares that Engine has scanned over 70 million traces and detected over 21,000 issues"
+
+> "Turning trajectories into optimized models with smithtune"
+（**loop 正式进入三支柱框架**：harness＋复合学习循环＋治理——理念倡导转向售卖循环基础设施。）
+
+- 立场：**支持（循环基础设施售卖化）**。
+
+**本轮最小主张**：Chase 06-30→09-24 的增量把循环范式推广到记忆层（wiki memory＝agent 维护循环）并升格为企业级三支柱框架；对 loop engineering 专名无新直接表态（其个人通道窗口内无新博客文），但"loop as pillar"的产品化语言本身就是最强站队。

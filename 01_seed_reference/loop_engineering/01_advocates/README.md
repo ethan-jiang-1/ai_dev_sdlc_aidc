@@ -31,6 +31,7 @@ Cherny 经 Willison 转引的 "Production code written by Claude should have a h
 |---|---|
 | [`akshay_nathan`](kol_tech/akshay_nathan.md) | Akshay Nathan（OpenAI，ChatGPT Work 核心产品工程负责人）· Latent Space《C |
 | [`dan_mcateer`](kol_tech/dan_mcateer.md) | Dan McAteer（Attention Heads 作者，Latent Space 客座）《The Evolutio |
+| [`dhh`](kol_tech/dhh.md) | DHH（37signals）· 06-10 月对 loop engineering 专名的边界表态＋循环机制全采纳（Lex #501/TE/X，2026-10-07 增量建档） |
 | [`eiso_kant`](kol_tech/eiso_kant.md) | Eiso Kant（Poolside 联合 CEO）· Latent Space《Inside the Model Fa |
 | [`geoffrey_huntley`](kol_tech/geoffrey_huntley.md) | Geoffrey Huntley：2026-06 后四篇（三条全文＋一条付费墙截断） |
 | [`harrison_chase`](kol_tech/harrison_chase.md) | Harrison Chase（LangChain CEO）· "Harrison's In the Loop" 博客系列 |
@@ -45,6 +46,7 @@ Cherny 经 Willison 转引的 "Production code written by Claude should have a h
 | [`livingstone`](kol_tech/livingstone.md) | Ian Livingstone（Keycard CEO）· AIEWF "great loops debate" 正方（ |
 | [`masad`](kol_tech/masad.md) | Amjad Masad（Replit CEO）· 窗口内个人署名内容三路（含分档标注） |
 | [`mistele`](kol_tech/mistele.md) | Kyle Mistele（HumanLayer 联合创始人）· AIEWF 2026《Loop Engineering  |
+| [`osmani`](kol_tech/osmani.md) | Addy Osmani（命名者；2026-09-08 加入 Anthropic/Claude Code）· 09-28《The Code Nobody Reads》增量（answerability 词系＋Anthropic 内部循环数据） |
 | [`patrick_debois`](kol_tech/patrick_debois.md) | Patrick Debois（Tessl）· AIEWF 2026《Coding Agents Don't Scale  |
 | [`rauch`](kol_tech/rauch.md) | Guillermo Rauch（Vercel CEO）· TechCrunch 专访全文（2026-07-06） |
 | [`rieseberg`](kol_tech/rieseberg.md) | Felix Rieseberg（Anthropic，Claude Cowork 工程负责人）· 经 Willison 转 |
@@ -56,6 +58,7 @@ Cherny 经 Willison 转引的 "Production code written by Claude should have a h
 | [`suraj_gupta`](kol_tech/suraj_gupta.md) | Suraj Gupta（Warp，Harness 负责人）· AIEWF 2026《How Software Facto |
 | [`swyx`](kol_tech/swyx.md) | 《[AINews] Loopcraft: The Art of Stacking Loops》＋ AIEWF 开幕演讲（ |
 | [`thariq_shihipar`](kol_tech/thariq_shihipar.md) | Thariq Shihipar（Anthropic，Claude Code 团队）· Latent Space《Clau |
+| [`thorsten_ball`](kol_tech/thorsten_ball.md) | Thorsten Ball（Sourcegraph/Amp）· 06-02→10-04 全窗口轨迹（orbs/dial/durable agent loop/code review will die；人物卡 _raw_people/19） |
 | [`tim_sweeney`](kol_tech/tim_sweeney.md) | Tim Sweeney（Weights & Biases，Principal Engineer）· AIEWF 2026 |
 | [`tushar_jain`](kol_tech/tushar_jain.md) | Tushar Jain · AIEWF 2026《Unlock Agent Autonomy: The Runtime  |
 | [`zach_lloyd`](kol_tech/zach_lloyd.md) | Zach Lloyd（Warp 创始人/CEO）· Latent Space 访谈《why software facto |

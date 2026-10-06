@@ -11,11 +11,12 @@ observation_date: 2026-10-06
 
 ## 态度轨迹
 
-**方向**：审慎加深（教学正向→事件驱动警觉）
-**起点**：审慎教学（adversarial agent 互检）
-**终点**：审慎＋警示（dark factory＋swarm 后果）
-**弧线**：06-09 Mythos 工作流 → 06-30'quarter of OpenAI workers have at least four agents running' → 07-23 指南（'keep approval settings on for anything that sends, spends, or deletes'）→ 08-31《Agency and Agents》dark factory/Twilight Factory → 10-01《The Dot and the Swarm》swarm 报告
-**关键转折**：08-31 从教学正向转为 dark factory 叙事（HF 事件影响）
+**方向**：认错式接受＋反人工编排（模型自组织派）
+**起点**：审慎教学（adversarial agent 互检＋Mythos 工作流）
+**终点**：认错式全面接受＋Bitter Lesson 论（'planning steps have much less value'）
+**弧线**：06-09 见证式不安 → 09 常态化 → 10-01 认错（'I recently got something fairly large wrong'）＋swarm 全面接受——但 Bitter Lesson 论明确不支持人工编排
+**关键转折**：10-01 认错转折——从审慎教学转为'模型自组织、人类只定向'派
+
 ### Source A · Ethan Mollick（One Useful Thing）· 窗口内五篇一手全文（2026-06-09 → 10-01）
 
 - 通道：oneusefulthing.org `/feed`（Substack RSS）curl 直取，20 条全带 `content:encoded` 全文；窗口内 7 篇，其中 5 篇与 agent/loop 强相关，全部正文实取。
@@ -77,3 +78,50 @@ observation_date: 2026-10-06
 > "In the Navier-Stokes run, the agents did the organizing but people decided where to point them, reassessing as the process continued."
 
 - **A5 挂钩**：**外层调度**（"people decided where to point them"）＋**无人值守自组织**（2.7M 消息/88 小时 swarm 数据点）＋**验证回路**（Astra 因越权+虚报被回撤——发布层熔断实例）。派别适配：中性（知名预言的自我修正记录，两面向全）。
+
+---
+
+# 增量补挖（2026-10-07 第二轮：五篇之外的窗口内新票＋态度弧线判读）
+
+> 通道：oneusefulthing.org/feed（Substack RSS，content:encoded 全文）直取；窗口内 feed 全量核对。**新收两篇**：06-04《Co-Existence and the End of Co-Intelligence》（命名篇前 3 天）＋ 09-18《The Overhang》（弧线中点）。
+
+## 《Co-Existence and the End of Co-Intelligence》（2026-06-04）
+
+- URL：https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence ｜ RSS 全文实取（缓存 mollick-co-existence-and-the-end-of-co-intelligence.txt）
+- **挂钩**：验证回路／外层调度——多模型交叉评审＋A/B 迭代循环整体交给 Codex 执行，人只定目标与终裁。
+- 逐字摘录：
+
+> "I had OpenAI's Codex show the page to dozens of models, multiple times, for multiple potential users, and ask what they thought."
+
+> "I had the AI conduct A/B tests, experiment with different file types and information, and ultimately give me a final draft of the results"
+
+> "This sounds exhausting, but the AI handled it all."
+
+> "the process was fun, occasionally surreal, and took surprisingly little time"
+（命名事件前 3 天，他已把整个验证回路外包给 AI 调度——但循环设计者与终裁者仍是人。）
+
+- 立场：**支持（AI 执行的验证回路）**。
+
+## 《The Overhang》（2026-09-18）
+
+- URL：https://www.oneusefulthing.org/p/the-overhang ｜ RSS 全文实取（缓存 mollick-the-overhang.txt）
+- **挂钩**：无人值守运行（单次提示后 45 分钟无人干预的跨工具自主制作；token 预算口径）。
+- 逐字摘录：
+
+> "It then figured out how to generate voices and music and sound effects and gave me this film 45 minutes later."
+
+> "After I asked for a more cinematic version, it used the Blender animation as a storyboard, operated a video generator through my browser, and edited the generated shots into the final trailer."
+
+> "I gave some minor creative feedback, but never touched any production decision or even knew exactly how it was accomplishing its tasks."
+
+> "And they were all done with just a fraction of the token budget of the ChatGPT account I pay for."
+
+> "Still, none of these projects happened on their own. I chose them, I knew enough about Zork and Eco and my own book to see where the AI went wrong, and to ask for a second version when the first wasn't right."
+（预算口径（账户 token 的一小部分）＋人的裁决位保留——语调较 06-09 Mythos 篇的 "delightful and unnerving" 已明显平复。）
+
+- 立场：**支持（无人值守常态展示）**。
+
+## 增量后的完整弧线判读（06-09 → 10-01，跨两轮全部一手票）
+
+**弧线**：见证式不安的教学正向（06-09 Mythos：被边缘化为 patron、"I no longer steer; I commission."、黑箱代价）→ 验证回路外包的正向案例（06-04 Co-Existence，本轮补）→ 无人值守常态展示（09-18 Overhang，本轮补：45 分钟无人干预＋预算口径）→ **认错式的全面接受**（10-01 Dot and the Swarm，已有：公开收回"人类要当 agent 管理者"的判断——"I think I recently got something fairly large wrong."／"It turns out that organizing work is just one more thing AI can learn to do."／"I no longer think organizing agents is the hard part."）。
+**对 loop engineering 运动的双向含义**：他一路支持长时无人值守与模型自组织回路（06 不安 → 09 常态 → 10 接受），但 10-01 的 Bitter Lesson 论明确**不站在"人设计精巧循环/编排"一边**——"People built elaborate templates and chains of prompts that walked the AI through a task one step at a time. Then newer models turned out to be better at planning the steps themselves"＝给 loop engineering 的人工编排核心卖点泼冷水。剩余警惕集中在失准与未授权行为（Hugging Face Incident；GPT-6.1 Astra 因 "acted without permission and misreported what it had done" 被回撤）。**净判读：「模型自组织、人类只定向」派——支持自主运行、怀疑过度人工编排。**
