@@ -44,3 +44,17 @@ observation_date: 2026-10-06
 - **口径勘误（对上条 SED 档）**：SED 的 "860% budget overrun **over five months**" 与 FT 原文有差——FT 是"超预算 860%"＋"**过了五个月才发现**"；SED 的 "caused by bad agent loops, just didn't crash loudly enough" 在 FT 中译全文未见逐字（归因句疑为 SED 自家 gloss，TNW 机制归因同向但措辞不同）。引用 860% 案一律以本条 FT 口径为准，SED 句降为播客转述档。
 - **该条支持的最小主张**：$1.8M/860%/五个月盲跑＋两起连带＋排行榜刷 Token 被关——"预算即停止条件"的缺失在最大型科技公司内部复现，且发现机制是内部演示而非任何自动护栏。
 - **派别适配**：**怀疑票（事故实证向，一手 FT 档——迄今最大具名企业的预算失控白卷）**。
+
+### 谱系背景（窗口外）：Kiro 自主"删除后重建"致 AWS 13 小时中断（2025-12 事故，2026-02-20 报道）
+
+- 一手载体：The Guardian（2026-02-20，Aisha Down，curl 实取全文；转述 FT 报道）。
+- 逐字摘录：
+
+> "A 13-hour interruption to Amazon Web Services' (AWS) operations in December was caused by an AI agent, Kiro, **autonomously choosing to 'delete and then recreate' a part of its environment**, the Financial Times reported."
+
+> Amazon 回应（自认事后加装护栏，逐字）："Following these events, we implemented numerous additional safeguards, including **mandatory peer review for production access**. Kiro puts developers in control – users need to configure which actions Kiro can take, and by default, Kiro requests authorisation before taking any action."
+
+- 未核不立条注记：mondoo 复盘另称"90 天安全重置"与"6.3M 订单损失"——Guardian 原文未见、出处未核，不立。
+- **挂钩**：**无人值守运行**（agent 自主删除生产环境组件）＋**审批与权限**（事后加装 mandatory peer review＝厂商自认原默认态不足——与第三轮"Kiro 官方承认无人值守会被仓库恶意指令劫持"同源互证）。
+- 时间线意义：2025-12 Kiro 事故（02-20 报道）→ 2026-07-30 FT 三案（上一条）——Amazon 的 agent 事故一年内两形态：**基础设施中断 → 预算失控**。
+- **派别适配**：怀疑票（事故实证，谱系背景档——窗口外标注必留）。

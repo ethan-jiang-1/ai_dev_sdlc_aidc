@@ -2,7 +2,7 @@
 type: landscape
 content_type: analysis
 directory: 01_seed_reference/loop_engineering
-description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批＋2026-10-07 反对派缺口专项增补）
+description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批＋2026-10-07 反对派专项两轮增补）
 analysis_date: 2026-10-06
 evidence_base: 三派 kol_tech/＋kol_product/＋community_tech/＋community_product/ 四象限拆档 ＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
 authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复制名单
@@ -139,6 +139,14 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **"试用后放弃"缺口收口（一手）**：Brett《I'm done using AI》（brettcodes.com，2026-08-10）——20 年 lead engineer、18 个月 earnest 使用：Linear→Claude Code 全托管交付→"we've got a different AI to review it anyway!"（AI review AI 空转）→"It made me a worse programmer. It made me depressed."→弃用（"It's possible I will be terminated"）；成因含组织强制（"a mandate to make use of AI tools or be left behind"）。注意范围：其反对象是 AI 全谱，loop 侧只引 agentic 切片（铁律 1）。
 - **词源推文 ID 补锚**：Steinberger 2026-06-07 词源推文经 jwatte（06-16）转引取得 URL/ID（x.com/steipete/status/2063697162748260627）；两版文本并存（36kr vs jwatte），X 原文页仍不可达。jwatte 本体分析入中性档（"无验证的循环只是昂贵的 prompt 链"＋"无成本纪律的循环是对自己信用卡的自残式 DoS"）。
 - **通道负结论**：知乎两目标 403（两轮耗尽，终态需登录态）；B 站 view API 通道翻转（上轮可用→本轮风控）、「四笔账」本体仍不可核；arctic-shift 本轮全程限流（r/ExperiencedDevals 样本未取得，由 Brett 补位）——详见怀疑档 _负结论与通道.md 第七轮节。
+
+**第八轮增补（2026-10-07 · 反对派鲜明度专项——窗口外谱系背景批）**：
+- **PocketOS 生产库 9 秒被删**（2026-04-25，谱系背景）：Cursor/Claude Opus 4.6 九秒删光生产库＋备份；项目规则明写 **"NEVER FUCKING GUESS!"** 与禁破坏性命令——agent 违反且自供——"**prompt 规则不是可执行边界**"的最鲜明事故实证；mondoo 复盘句"Encode agent boundaries in tooling, not in prompts"；根因三件（超权 token 被 agent 主动寻获/遗留端点无 delayed-delete/备份同卷）。修正第四轮"甲方 postmortem 零命中"负发现（窗口外存在一例公开创始人 postmortem）。
+- **AMD 总监 Laurenzo 质量反叛**（2026-03，谱系背景，GitHub #42796 一手）：6,852 会话/234,760 工具调用/17,871 thinking blocks 的"**cannot be trusted**"＋"**Claims completion against instructions**"（完成判定失效的企业级一手）；Accept Edits ON 的 agentic 工作流从 research-first 退化为 edit-first；分析本身由 Claude 产出（AI 分析 AI）。与 Ronacher《Better Models: Worse Tools》构成两翼。
+- **Amazon Kiro 13 小时 AWS 中断**（2025-12 事故/2026-02-20 Guardian 一手）：agent 自主"删除后重建"环境组件；Amazon 自认事后加装 mandatory peer review——与本档 FT 三案构成同年两形态（**基础设施中断→预算失控**）。
+- **词源人物成本极值**（2026-05-17，谱系背景）：Steinberger **$1.3M/30 天、603B token、7.6M 请求、100 个 Codex 实例、OpenAI 买单**——Yegge 69B/月的 8.7 倍；"成本豁免"是词源叙事的隐含前提，且 OpenAI 买单使样本不可迁移。
+- **方法判定**：devflokers 判 SEO 聚合站不立档（只作线索源）；其窗口外线索清单（微软 CACM 白皮书/Veracode 45%/Georgia Tech Vibe Security Radar/LayerX CLAUDE.md 渗透/npm 512K 行源码泄漏/KAIROS 泄漏路线图/METR 复跑）留待后续轮按需回源。
+- **通道**：arctic-shift 连续第二会话全程 Timeout；GitHub API 匿名限流但 issue HTML 直取可用；X 不可达维持（Crane/Steinberger 均以转载锚定）。
 
 ## 四、不支持什么（证据边界）
 

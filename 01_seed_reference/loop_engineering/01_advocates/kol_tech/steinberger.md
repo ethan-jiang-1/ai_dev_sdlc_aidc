@@ -34,3 +34,11 @@ observation_date: 2026-10-06
 - 版本对照（如实并录，不作调和）：36kr 转载版为 "Monthly reminder: you should no longer prompt programming agents yourself. You should design loops that prompt agents."（8.4M views）——两版措辞有差（"Here's your"／"coding agents" vs "programming agents"），X 原文页仍不可达，以**多转载锚并存**为准。
 - 状态升级：上轮"推文 ID 与 X 原文页仍未取得"→ **推文 ID 已取得（经 jwatte 转引）**；X 原文页维持不可达。
 - 交叉注记：jwatte 本体分析（"OpenClaw 一小时建成"系 2025-11 Clawdbot 原型与生产版混淆的 debunk、Cherny "My job is to write loops" 访谈引句）判读为中性票，登记在 [02_neutral/_misc.md](../../02_neutral/_misc.md)——单一事实源，不重复。
+
+## 成本轴数据（窗口外 · 2026-05-17）：$1.3M/30 天、603B token、100 个 Codex 实例、OpenAI 买单
+
+- 载体：Steinberger 本人 X 截图（**x.com/steipete/status/2055346265869721905**，X 不可达）；本轮实取转载＝36kr/新智元（2026-05-17，德文版 curl 全文，中文原发新智元）；同题英文报道 the-decoder.com（登记未深取）。
+- 数字逐字（36kr 德文版原句）："Ausgaben in 30 Tagen: **1.305.088,81 US-Dollar. 603 Milliarden Tokens verbraucht. 7,6 Millionen Anfragen gestellt.**"——3 人团队常驻约 **100 个 Codex 实例**（review PR、找漏洞、清重复 issue、修 bug、监控 benchmark、Discord 值守，"会议开完直接开 PR"）；**OpenAI 报销全部成本**（其 2026-02 已入职 OpenAI）。
+- 他本人的口径（转贴原句）："Nachdem ich den Schnellmodus ausgeschaltet habe, sind meine Kosten niedriger als die eines Ingenieurs, und es hilft tatsächlich viel mehr."（关掉 fast mode 后，成本低于一名工程师）——以及定位句："我探索的是**如果 token 成本不是问题**，软件开发会是什么样。"
+- **挂钩**：**预算与熔断**——词源人物自身的极端成本数据（603B token/月≈怀疑档 Yegge 69B/月的 **8.7 倍**）；"成本豁免"是词源叙事的隐含前提（怀疑档成本轴可直接引此条作对极）。窗口外标注必留（2026-05-17）。
+- 判读注：词源人物"成本不是约束"的实验姿态 vs 怀疑派"预算即停止条件"（Willison "hard budget caps need to be the default"）——同一事实的推动/怀疑两翼；且 OpenAI 买单这一点使其样本**不可迁移**（普通从业者没有成本豁免）。

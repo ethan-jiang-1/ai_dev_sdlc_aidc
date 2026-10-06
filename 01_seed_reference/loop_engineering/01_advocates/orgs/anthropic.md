@@ -20,3 +20,5 @@ observation_date: 2026-10-06
   - 挂钩：**停止条件**（Stop hook＝用户可编程的循环继续/终止开关，8 连续阻塞硬顶是厂商内建的防失控熔断）＋**审批与权限**（PreToolUse 优先级链）。
 - **auto mode 分类器**（auto-mode-config.md 实取）：`autoMode` 设置块的 `environment`/`allow`/`soft_deny`/`hard_deny`；逐字组合规则——"*Entries from each scope are combined. A developer can extend environment, allow, soft_deny, and hard_deny with personal entries but can't remove entries that managed settings provide. Because allow rules act as exceptions to soft block rules inside the classifier, a developer-added allow entry can override an organization soft_deny entry: the combination is additive, **not a hard policy boundary**.*"（缺口面已双记）；`permissions.deny`/`permissions.ask` 在分类器**之前**评估；默认信任仅工作目录＋remote；push 默认放行到本仓库任意分支，但名为 `production`/`release`/`gh-branches` 类发布分支由分类器自行裁定。
   - 挂钩：**审批与权限**（分级分类器＋三层规则的前后序）。
+
+- **指针（2026-10-07）**：Addy Osmani（2026-09-08 加入 Anthropic / Claude Code 团队）2026-09-28 newsletter《The Code Nobody Reads》含 Anthropic 内部循环实践一手数据（自动 Claude reviewer 上线后 substantive review 评论占比 16%→54%、<1% 误报率；2026 Q2 工程师日均合并量为 2024 的 8x；"directing and reviewing, rather than typing"）——人物条目与逐字引文见 [`../kol_tech/osmani.md`](../kol_tech/osmani.md)，此处不复制正文。
