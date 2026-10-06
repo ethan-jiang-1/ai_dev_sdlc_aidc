@@ -365,3 +365,241 @@ quality_bar: 一手优先；X 不可达；HN/Reddit 评论不作 KOL 证据；�
   3. 韩文转载候选 wikidocs.net（curl）：403；其余搜索命中的韩文/中评论帖均为评论文章非原文节选。
 - 状态：**仍开放**（维持上轮截断记录；六预测本体与 §5–7 正文继续**不可引用**）。
 - **派别含义一句话**：Orosz 的"中性偏怀疑"判定不受影响——付费墙内内容继续缺席判定依据。
+
+## 第三轮挖掘（2026-10-06）：新 KOL（怀疑向）
+
+> **本轮通道状态总览**：web_fetch 对多数域名报解析异常，全部改 curl＋浏览器 UA 实取；x.com 不可达维持已知事实。本轮怀疑向最大新增载体是 **The Weekly Dev's Brew Ep20（David Cramer，2026-06-30）**——主持人页内自备 Pull Quotes 与全 transcript，逐字层级高于媒体转述、低于本人署名博客。
+
+### 增量 F · David Cramer（Sentry 联合创始人/CTO）· The Weekly Dev's Brew Ep20（2026-06-30）
+
+- 主票 URL：https://www.wordman.dev/podcast/david-cramer-ship-real-production-code-with-ai/ （curl 实取：官方 Key Takeaways＋Pull Quotes＋页内全 transcript；页标 30 Jun 2026，Episode 20）
+- 身份：Sentry 联合创始人（主持人 bio：co-founder and CTO；另档 Insecure Agents 标 CPO——两说并存如实登记）；bio 自述 "one of the few people on a C-level who's actually using AI to ship production software at Sentry"。
+- 号召力口径：③＋④（近 10 万家公司使用的监控平台创始人；开发者社区高可见度）。
+- 逐字摘录（Pull Quotes，页面实取）：
+
+> "So this 100X thing is BS. The only way you get more done is when you generate junk that you don't need."
+
+> "LLMs are not making it faster for me to build software. Despite what the internet would like to say, I'll sit here all day long on a single patch."
+
+> "If I ship something that has massive vulnerabilities in Sentry, that could cause the company to disappear."
+
+> "There is nobody that is credible that says software engineering as a craft is completely changing."
+>（直接否认"软件工程手艺剧变"论——对整个 loop engineering 运动的元层面降温。）
+
+- transcript 开场段（页面实取）："Because we went from like tab complete to instantly we just don't write code anymore. And it's like, maybe we should have stopped somewhere in between."
+- 官方 Key Takeaways（host 撰）："The 100x developer narrative breaks down once you optimize for quality, security, and maintainability instead of raw output."＋"David built Warden inside Sentry and used it to find more than 100 previously unknown vulnerabilities in production code, including auth bypasses."＋"Search and internal knowledge tools may be the highest-leverage LLM use case inside a company today, **not autonomous code generation**."
+- 章节锚点："7:00 · No 100X developers"、"35:29 · Vibe coding limits"。
+- 辅票 1（存在性已核、正文未取——iHeart 406）：Insecure Agents（Socket 出品，host Allie Howe）单集《It's the Harness, Not the Model: David Cramer, CPO of Sentry, on Agents, Expectations vs Reality》。
+- 辅票 2（**窗口前**，2026-03-17，经快讯转述）：KuCoin/BlockBeats 快讯（KuCoin 页实取）："Sentry co-founder David Cramer warned that large language models (LLMs) may harm long-term…He criticized 'agentic engineering' and cited OpenClaw as an example of unsustainable code generation."——窗口前发声，佐证其立场连贯性，不计窗口票。
+- **最小主张**：100x 是 BS；LLM 未让他更快造软件；自主代码生成不是企业最高杠杆用例；质量/安全/可维护性优先时"产能叙事"崩塌。
+- **派别适配**：**怀疑票（强）**——质量与安全轴上对 loop engineering 前提（更多代码=更多进展）的正面否定，同时保留"自己用 AI 发生产软件"的采纳面（判读时两面分开）。
+
+### 增量 G · Greg Pstrucha（Subroutine）· AIEWF "great loops debate" 反方经济学质疑（2026-07-02 场）
+
+- URL：https://www.latent.space/p/aiewf-daily-dispatch-locomotives （Richard MacManus 现场稿，07-03 发，curl 实取全文）
+- 身份：Subroutine（agent 基础设施公司）代表；AIEWF 收官辩论反方席（与 Dex Horthy 同侧）。
+- 号召力口径：②（AIEWF 主舞台辩手）；①③④均弱——新名，个人一手未取。
+- 逐字（经现场稿转述）：
+
+> "orchestrate your problems away by buying more tokens"
+>（现场稿记其立场：agentic loops 的**经济可持续性**不成立，"was mainly concerned about the economic viability of agentic loops, which he said wasn't sustainable"。）
+
+- **最小主张**：loop 不解决的恰恰是成本结构——"买更多 token"不能把问题编排掉。
+- **派别适配**：**怀疑票（会议层票）**——怀疑派此轮唯一的经济轴正面发言；其余一手开放。
+
+### 增量 H · Dillon Mulroy（Cloudflare 首席工程师）· The Weekly Dev's Brew Ep22（2026-09-10）
+
+- URL：https://www.wordman.dev/podcast/dillon-mulroy-i-enjoy-coding-less-than-ever/ （curl 实取：Key Takeaways＋章节＋页内全 transcript；页标 10 Sep 2026，Episode 22；@dillon_mulroy / @dmmulroy）
+- 身份：Cloudflare principal engineer。
+- 号召力口径：③。
+- 逐字/半逐字（官方 Key Takeaways，host 撰、页面实取）：
+
+> "Lab-style agent loops are impractical for a median developer at today's prices. He wants receipts before treating them as the default."
+
+> "Anthropic Fable is a non-starter for a company like Cloudflare, he says, because it does not ship with zero data retention and can drop a session onto Opus 4.8."
+
+> "A single human still owns the output. Greater reach in less time means more review, not less."
+
+> "He is more productive and less happy because the small implementation hits that created flow are gone. The day is one hard design problem after another."
+
+- 页面定位句（host）："…why **lab-style agent loops are a poor default for most teams**, and how he keeps a model on a short leash with Ghostty, Herdr, Pi, and Plannotator."
+- 章节锚点："1:18 · From bearish to all-in"、"10:02 · I enjoy this work less"。
+- **最小主张**：对"无人值守 lab 式 loop 默认化"要收据（receipts）；一条人命仍对产出负责→更多产出=更多 review；个人产出上升与职业幸福感下降并存（一手实证的"产能-幸福感背离"）。
+- **派别适配**：**怀疑票（对 loop 默认化）**——注意拆分：对 AI 采纳本身是推动（"from bearish to all-in"、已数月不亲写代码），怀疑的靶心是"把 lab 式 loop 当默认工程实践"；判读层引用时两半都要写。
+
+### 负结论（第三轮·怀疑向）
+
+1. **Cramer 的 X 原文**不可达（环境已知事实）；2026-03-17 快讯为两级转述链（X→KuCoin/BlockBeats→本档），只作立场连贯性旁证。
+2. **Insecure Agents Cramer 单集**日期未核（iHeart 406）——开放。
+3. **Greg Pstrucha** 除现场稿外无任何一手（Subroutine 公司博客未扫）——开放。
+4. **撞名与身份核查**：sindre-ai（GitHub API 实核 2026-03-25 注册、0 followers）≠ Sindre Sorhus，maskin 仓库不入册；Kent Beck ≠ Kent C. Dodds 已在库。
+5. 本轮新怀疑票均非"loop 时代终结"式宣言（那条仍在册的 Steinberger 头上）——本轮怀疑派的声音集中在**质量轴（Cramer）、经济轴（Pstrucha）、默认化轴（Mulroy）**三轴，恰好补齐怀疑派对 loop engineering 三类反对理由的样本。
+
+## 第三轮挖掘（2026-10-06）：厂商自认边界与限制
+
+> 本轮面：coding agent 厂商官方一手内容中"承认限制/回撤/风险"的条目（2026-06-01 之后；无日期 docs 页标注"living docs，实取 2026-10-06"）。与推动面文件（01_advocates/raw_scan_2026-10-06_advocates.md 第三轮节）同源同通道：curl＋浏览器 UA 直取，`.md`/API 官方载体优先；全部引句实取，未编造。厂商推送面（产品卖点）证据在推动面文件，本文件只收自认面。
+
+### 增量 A · OpenAI —— 官方回撤：`untrusted` approval policy 废止
+
+- 厂商/产品：OpenAI / Codex CLI & ChatGPT Work
+- URL：https://learn.chatgpt.com/docs/agent-approvals-security.md （官方 `.md` 直取，living docs，实取 2026-10-06；页面自述 "Markdown versions of documentation pages are available by appending `.md`"）
+- 逐字摘录：
+
+> "Codex and ChatGPT Work no longer support `approval_policy = "untrusted"`. The retired setting can prevent either client from starting. Remove it from user or project configuration, profile files, startup scripts, and managed defaults."
+
+> "With `on-request`, commands allowed by the sandbox can run without approval, read accessible files, and use network access if enabled."
+
+- 该条支持的最小主张：OpenAI 官方**废止了一个审批档位**（untrusted→retired），且替代路径 `on-request` 允许沙箱内命令免审批直接跑（含网络）——审批门的最新演进方向是收窄而非收紧，属于厂商对自身安全档位的主动回撤（用户侧须自行改配置，改不动会"prevent either client from starting"）。
+- 派别适配：**怀疑·厂商自认**（机制回撤；与推动面增量 E 的"must stop and ask"并存——官方一手同时呈现"有门"与"门在变窄"）。
+
+### 增量 B · OpenAI dots —— 自主规则"尽力遵循、会出错"＋停止语义三层切割
+
+- 厂商/产品：OpenAI / dots（常驻自主 agent）
+- URL：https://learn.chatgpt.com/docs/dots/controls.md ＋ https://learn.chatgpt.com/docs/dots/tasks-and-memory.md （官方 `.md` 直取，living docs，实取 2026-10-06）
+- 逐字摘录：
+
+> "They are instructions your dot tries to follow, and it can make mistakes. They don't grant access to an app or computer, override built-in safety requirements, or remove required confirmations such as approval to use a saved login."
+
+> "**Pause** stops your dot's current main task. It doesn't stop every delegated task or cancel future scheduled runs."＋"Open a delegated task in **Activity** to inspect and stop that task."＋"Stopping work doesn't undo completed actions. Review active tasks and schedules separately."
+
+> "Deleting your dot doesn't undo changes already made in connected apps or recall messages already delivered to other people."
+
+- 该条支持的最小主张：常驻自主 agent 的"停止"在官方文档里不是单一开关，而是**三层各自为政**（pause 主任务≠停委派任务≠停计划任务），且规则层明示"尽力遵循、会出错"、外溢后果不可撤——厂商自认"停下"与"收回"是两个问题（停止≠回滚）。
+- 派别适配：**怀疑·厂商自认**（把控性主题一手：常驻 agent 的停止语义缺口由官方亲手写出）。
+
+### 增量 C · Warp —— "Run until completion" 默认击穿自家 denylist
+
+- 厂商/产品：Warp / Agent（Run until completion）
+- URL：https://docs.warp.dev/agents/capabilities/agent-profiles-permissions （官方 `.md` 直取，页面页脚 "Last updated Oct 6, 2026"）
+- 逐字摘录：
+
+> "Caution: *Run until completion* is the purest form of "YOLO" mode: the Agent proceeds without asking for confirmation, and by default it also runs commands that match your command denylist."
+
+> "To keep your denylist in force during *Run until completion*, turn off **Allow auto-approve to bypass command denylist** in **Settings** > **Agents** > **Warp Agent** > **Input**. Denylist rules your team enforces through the Admin Panel always require approval and are never bypassed."
+
+- 该条支持的最小主张：Warp 官方文档以 Caution 自认：任务级全自主模式**默认绕过用户自设的黑名单**（企业 Admin 层除外）——安全层是否生效取决于用户是否找到并关闭一个默认开启的设置项。
+- 派别适配：**怀疑·厂商自认**（"把控性"最锋利的一手：厂商把"最纯粹 YOLO"做成默认击穿安全层的开关并自己标警）。
+
+### 增量 D · Factory —— 官方自认"命令规则不是操作系统级隔离"
+
+- 厂商/产品：Factory / Droid（Autonomy Level & permission rules）
+- URL：https://docs.factory.ai/cli/user-guides/auto-run （living docs，实取 2026-10-06）
+- 逐字摘录：
+
+> "Warning: Command rules are not operating-system isolation. Prefixes do not cover every equivalent command spelling or inspect arbitrary script behavior. Use sandboxing, managed hooks, and least-privilege credentials for additional protection."
+
+> "An allow rule grants permission; it does not prove a command is read-only."
+
+> "`--skip-permissions-unsafe` skips all permission prompts, but command blocks still apply."
+
+- 该条支持的最小主张：权限闸（allowlist/denylist/autonomy 分档）的**语义边界**由厂商亲口承认——规则匹配挡不住等价拼写与脚本内行为，allow 也不蕴含只读；自主度分档之上还需要沙箱/凭证层，否则闸门是"匹配级"而非"隔离级"。
+- 派别适配：**怀疑·厂商自认**。
+
+### 增量 E · Replit —— 并行委派的官方边界（"Parallel building is a tool, not a rule"）
+
+- 厂商/产品：Replit / Agent tasks（Build in parallel docs）
+- URL：https://docs.replit.com/learn/build-in-parallel （living docs，实取 2026-10-06）
+- 逐字摘录（"When to stay sequential"整节）：
+
+> "Parallel building is a tool, not a rule. Stay in the main conversation, one thing at a time, when: Two ideas touch the same screen. "Redesign the home page" and "change the navigation" will collide. Do them in order."
+
+> "You're exploring. In design work, the result of one attempt changes what you want next. Exploration is a conversation, not a work order."
+
+> "You can't describe the task in one sentence. If you can't state it simply, you're not ready to delegate it."
+
+> "Your attention is a limit, too. Start with two tasks. If reviewing them feels comfortable, try three. You don't need to supervise every step, but you still need to test each result before applying it."
+
+- 该条支持的最小主张：把并行无人值守做成卖点的同一家厂商，在官方文档里承认委派有三个硬前提（互不碰撞、非探索、一句话可说清），且**人的注意力是并发上限的一部分**（官方建议并发从 2 开始）——"review 是新瓶颈"的厂商侧一手表述。
+- 派别适配：**怀疑·厂商自认**（与推动面增量 B4 同页两面并存）。
+
+### 增量 F · Replit —— 单分数评测被官方判不可靠（评测被迫移入 improvement loop）
+
+- 厂商/产品：Replit / Agent 评测体系
+- URL：https://replit.com/blog/evaluating-and-improving-agent-at-scale （2026-06-23/24 实取）
+- 逐字摘录：
+
+> "The old loop made evaluation feel bounded. But Replit Agent changes too quickly for a single score to carry the whole decision. A score can compare two candidates on one slice of tasks. It cannot explain what users care about, where production is breaking, or what to improve next."
+
+> "The shape is analogous to the Swiss cheese model in safety engineering: each layer has holes, but together they catch more than any one layer can."
+
+> "No layer is enough on its own."
+
+- 该条支持的最小主张：厂商官方承认单点 eval 分数不足以支撑发布决策（模型/提示词/工具/产品面变得太快），被迫把评测改造成多层冗余的连续环——**"评测不可靠"是改进环的成因**，不是其优点。
+- 派别适配：**怀疑·厂商自认**（对 goal/eval 主题：厂商自己论证了"单一 goal 分数会失效"）。
+
+### 增量 G · Devin/Cognition —— 生产力测量方法论自认（LLM 时间估计不可靠、个体预测不完美）
+
+- 厂商/产品：Cognition / Devin（AI Productivity Guarantee & estimator）
+- URL/日期：① https://cognition.com/blog/ai-guarantee ② https://cognition.com/blog/ai-productivity （均 datePublished 2026-06-04，JSON-LD 实取）
+- 逐字摘录（②方法学）：
+
+> "LLMs are notoriously bad at time estimates — so we expected this to be a struggle."
+
+> "Individual predictions aren't perfect, but the model is good enough to be used for estimating aggregated totals."
+
+> "Ideally, we'd measure dollar impact directly, such as revenue attributable to features shipped or costs avoided by bugs fixed. In practice, this is still an unsolved problem in our field. It's incredibly hard for an engineer to know how many dollars of business value they created through the PRs shipped last week."
+
+（①边界节）：
+
+> "No single estimate is perfect, but across many tasks with varying complexity, the highs and lows average out. This produces an estimate of engineering productivity from agents — hours of useful output. It does not replace measuring ROI, which requires deeper context on the business value of each task."
+
+（②浪费面）：
+
+> "not every token delivers real value. Some save engineering hours and accelerate projects; others are wasted on useless sessions and bad prompting."
+
+- 该条支持的最小主张：厂商在为自主 agent 生产力做 $10M 担保的同一篇套文里自认： Dollars 级 ROI "仍是本领域未解问题"、LLM 时间估计"出了名地差"、单会话预测不完美只宜聚合使用、且"不是每个 token 都有真实价值"——**担保的置信基础是聚合统计而非单次可靠性**（数据集仅 258 sessions / 126 users，页面实取）。
+- 派别适配：**怀疑·厂商自认**（一手承认自主环产出的度量基础薄弱；判定时与推动面增量 F1 的对赌主张配对使用）。
+
+### 增量 H · Devin —— ACU 双门闩控制机制整体处于 beta
+
+- 厂商/产品：Cognition / Devin Enterprise（Usage policies）
+- URL：https://docs.devin.ai/enterprise/features/usage-policies （living docs，实取 2026-10-06）
+- 逐字摘录：
+
+> "Per-user ACU limits are in beta and require enablement for your enterprise. Reach out to your account team to turn them on."
+
+> "and new work is blocked on all surfaces once the limit is reached."
+
+- 该条支持的最小主张：预算硬阻断机制（任一上限触顶即全表面阻断）官方标注 **beta 且需联系客户团队才能开**——把"烧钱环"关掉的能力尚未默认在所有企业客户手中。
+- 派别适配：**怀疑·厂商自认**（把控机制的成熟度自认；机制本体见推动面增量 F4）。
+
+### 增量 I · Kiro —— Automations 官方承认无人值守模式会被仓库内恶意指令劫持
+
+- 厂商/产品：AWS / Kiro Web（Automations＝定时自主运行）
+- URL：https://kiro.dev/docs/web/automations/ （living docs，实取 2026-10-06）
+- 逐字摘录（官方 Warning 原文）：
+
+> "Warning: Only select repositories you trust, especially when mixing public and private repos. The agent learns from and follows instructions in the repository code, even if those instructions are malicious."
+
+- 该条支持的最小主张：AWS 系厂商在"无人在场的定时自主环"产品文档里以 Warning 形式自认：agent 会遵循仓库内的恶意指令——无人值守环的 prompt-injection 风险被官方写成使用前提（用户须以"信任仓库"自担）。
+- 派别适配：**怀疑·厂商自认**（loop 治理"环境轴"的一手风险表述）。
+
+### 增量 J · GitHub Copilot —— 官方文档自认"日志不能替代你的审查与测试"
+
+- 厂商/产品：GitHub / Copilot cloud agent（coding agent）
+- URL：https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent （living docs，实取 2026-10-06；现行页面用词 "Copilot cloud agent"，与 changelog 的 "coding agent" 并存）
+- 逐字摘录：
+
+> "Logs do not replace your own review and testing. See Managing agent sessions."
+
+- 该条支持的最小主张：官方在 agent 会话可观测性文档中自认：会话日志只是证据面，审查与测试义务仍在人——自主任务的"透明度"不等于"通过验收"。
+- 派别适配：**怀疑·厂商自认**（一句话级，但位置在 agent 主文档正文）。
+
+### 增量 K · Gemini CLI —— 官方 release note 自证"auth 无限循环"失控 bug
+
+- 厂商/产品：Google / Gemini CLI（官方仓库 google-gemini/gemini-cli）
+- 通道：https://api.github.com/repos/google-gemini/gemini-cli/releases （官方仓库 release note，2026-09-29，v0.63.0-nightly.20260929.gfe6350238 实取）
+- 逐字摘录：
+
+> "fix(auth): prevent infinite auth loop from file contention, headless keyring, and supervisor state drops (#28341)"
+
+- 该条支持的最小主张：官方一手修复记录承认该 agent CLI 曾出现**无限循环**（auth loop，由文件争用/无头钥匙串/监督态掉落触发）——"环不终止"在工具自身基础设施层的实证案例（与模型行为无关，是 harness 层失稳）。
+- 派别适配：**怀疑·官方一手**（非 CEO 姿态表达，而是 changelog 级自证；引用时注明 nightly release 载体）。
+
+### 增量 L · 本轮负发现与缺口（逐条列通道，供第四轮）
+
+- **术语缺口**：本轮全部官方载体中，无一家厂商文档使用 "loop detection" 或 "circuit breaker" 术语；最接近的官方机制为 Kiro PreToolUse 阻断（docs）、Factory safety checks（docs）、Devin 双门闩（docs）、OpenAI dots action review（docs）、Sierra merge approval＋split traffic（2026-08-20 博客）。"把控性"主题若要引"循环检测/熔断"，目前只能落在机制层而非术语层——如实登记。
+- **openai.com/index/dots/**：直取被 JS 盾拦截（9969 字节空壳，浏览器 UA 两式同）；wayback 查询 429 限流——dots 发布日期未在一手核实（docs 状态 "rolling out gradually"，实取 2026-10-06）。第四轮可走 wayback 退避重试或 help.openai.com 通道。
+- **"/bo" 未定位**：最接近候选为博云 BoClaw（bocloud.com.cn 官方页实取，发布时间 2026/3/9——窗口外，且为个人 AI 助手平台非 coding agent loop 面）；若另有所指仍开放。
+- **窗口外机制在册**（引用须标窗口外）：Jules Planning Critic for Auto-Approved Plans（2026-01-26）、Scheduled Tasks（2025-12-10）、Devin Manage Devins（2026-03-19）、Replit Agent 4 并行任务系统（2026-03-23）、GitHub budget tracking changelog（2025-11-03，见上轮库存）。
+- **Gemini CLI 判读注记**：窗口内官方增量以 nightly release note 为主（"autonomous plan execution in non-interactive mode"，2026-09-30）——载体级别低半档，引用时注明。

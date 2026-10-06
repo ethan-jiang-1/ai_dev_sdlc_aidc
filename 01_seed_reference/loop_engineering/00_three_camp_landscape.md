@@ -111,6 +111,11 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **机构层两项解决**：New Relic 2026——**62% 团队免逐行验证直接 ship vs 生产侧 78% 事故上升、AI 代码关键运行时问题 1.7×**（"委托越过人工核验线而质量反向坍塌"的首个机构级配对数字；95% 组织已授权机器生成代码进核心生产）；TechCrunch 全文核销（人均 token 9 个月 **18.6×**，归因 agentic；FinOps 圈 "from tokenmaxxing to guardrails"）。JumpCloud：AI 成熟度自评 **40%→23% 反降**（治理滞后首个量化缺口）。
 - **拉取纪律执行（用户定：两轮拉不到就放弃）**：Searls 两句、Hightower 逐字、Jensen/Nadella 一手、Karpathy 原句、Orosz 付费墙、知乎两 URL——**全部放弃出档**（登记防反复）；**保留重扫位的只有三份未发布的年度报告**（SO 2026 逾期、DORA、Octoverse——未发布 ≠ 拉不下来）。
 
+**第三轮挖掘增补（同日，细节在三派目录各档"第三轮挖掘"节）**：
+- **厂商面（最大增量）**：九家厂商 2026-06 后的循环产品化全登记（Warp inner/outer loop＋软件工厂、Replit "core loop" 正式架构词、OpenAI dots 常驻自主 agent、Kiro "loops, waits, and completion conditions" 正式词表、Devin $10M 对赌、Factory "continuous feedback loop"）；机制登记表负发现：**没有任何厂商官方文档使用 "loop detection" / "circuit breaker" 术语**——DORA/Willison 呼吁的断路器，厂商全都没做成官方机制。厂商自认面 12 组：OpenAI 回撤 `untrusted` approval policy、Warp "Run until completion" 默认击穿自家 denylist（官方 Caution）、Kiro 官方承认无人值守会被仓库恶意指令劫持、Gemini CLI release note 自证 auth 无限循环 bug。
+- **新 KOL 三派**：推动＝Mistele（AIEWF 官方编辑稿全文，loop engineering 的控制论教学化）、Rauch（"a little cage"）、Krieger（自认 bottlenecked on reviews）；中性＝**Sean Goedecke 五篇全文**（"alignment, not capability"）、**Dan Abramov**（"process theater"）、Horthy（"hype is outrunning the discipline"）、Shepherd（"Sandbox the agent loop, not only the tool calls"）；怀疑＝**David Cramer**（"So this 100X thing is BS"）、Mulroy（"wants receipts"）。撞名拦截：`sindre-ai/maskin` 非 Sindre Sorhus。
+- **中文圈修正与增量**：V2EX 术语正方高回复帖**存在**（术语三连、/goal 实测帖群、"24 小时自动化开发" 63 回复）——但**评论层以质疑/嘲讽为主导**，选择性偏差应改写为"评论层立场偏差"；/goal 在 V2EX 已成日常动词；t/1224558《公司 vibe coding 的项目，团队已经无法掌控了》**197 回复**＝中文圈最高回复事故串（"越修越乱"循环＋组织激励轴）；B 站窗口内正方 vs 质疑热度维持 ≈1:12，质疑系列《循环工程的四笔账》已整体撤下（只记存在）；最佳中文原创＝《从 Harness 到 Operating Loop》（"可靠性的单位已经从 answer 变成 trajectory"——直接回应"新瓶装旧酒"）；企业接收第三采样点＝国企数科公司 JD 写入 harness/loop engineering。
+
 ## 四、不支持什么（证据边界）
 
 1. **所有失败账本都是单样本**（Ronacher n=1、Yegge n=1、Gas Town 单 harness）——引用必带 caveat；

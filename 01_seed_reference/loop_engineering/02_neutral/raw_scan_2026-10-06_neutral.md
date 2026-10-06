@@ -322,3 +322,123 @@ URL：https://ghuntley.com/lisp/
 3. **最大的覆盖缺口：专名层面的中立表态几乎全部在 X 上。** Steinberger 的"终结宣言"（2026-07-18）、Cherny 的后续表态、swyx 的 thread——这场"这个词该不该存在"的争论主战场 X 不可达，本档只能靠媒体转述与镜像。因此**中性派在"术语层"的证据显著弱于其在"实践层"的证据**。中文媒体（InfoQ/36kr）的转述链本身未核原文，作背景线索用。
 4. **边缘件**：arXiv:2607.00038（S7）的 "spectrum of autonomy"／"cognitive surrender" 是很好的判读工具，但作者不满足 KOL 门槛，只作灰色文献票；《An Accidental Blackboard》同理。若判读层引用它们，须与 KOL 票分层标注。
 5. **名字陷阱提醒**：本档最重要的流程纠错是 Kent Beck ≠ Kent C. Dodds（Source 6）。三派重组落表时两行都要写清，避免"Kent"撞名污染台账。
+
+## 第三轮挖掘（2026-10-06）：新 KOL（中性与播客会议层）
+
+> **本轮通道状态总览**：web_fetch 对多数域名报解析异常（non-public IP），全部改 curl＋浏览器 UA 实取；逐字引句均来自实取页面。播客层两个重要新载体：**The Weekly Dev's Brew**（Jan-Niklas Wortmann，wordman.dev，页面自带 Key Takeaways＋Pull Quotes＋页内全 transcript）与 **AIEWF 2026 官方 llms-full.md**（会议层全量议题页，2.8MB 实取）。
+
+### Source A · Sean Goedecke（Google SWE，seangoedecke.com）· 窗口内五篇一手全文（2026-06-01 → 09-27）
+
+- 通道：curl 直取 atom feed（30 条清单）＋博客分页 6 页逐页核日期；正文 5 篇逐字实取（另有 5-31 篇窗口前相邻票）。
+- 身份：Google 软件工程师，个人博客为 AI 工程圈高引用源（本窗口内每月 5-8 篇的稳定发声）。
+- 号召力口径：②＋③＋④（被 daily.dev 教程、泰语技术媒体等转译引用；HN 高分发）。
+- 逐字摘录（全部实取）：
+
+> "my primary value is not that I help the AI write better code, it's that I align the AI with the values of my organization. Human-AI partnerships are for alignment, not capability."（《Human-AI partnerships are for alignment, not capability》，2026-09-27）
+>（同文承认 agent 能力已越过自己："When I ask agents to write code, they make fewer mistakes than I do and are orders of magnitude faster."，同时否定无人值守："Purely vibe-coding at work produces awful outputs. But they're not awful because they're bad code, they're awful because they're in bad taste"，并点名回击 "Vibecoding maximalists like DHH argue that…we ought to stop reading the code…If it were just about capability, they might be right."）
+
+> "There is thus going to be enormous pressure to do agentic coding in languages with fast compilers and tests, like Golang, and to tightly optimize the dev loop in agentic codebases."（《Slow developer experience will bottleneck fast models》，2026-09-14——**把"优化 dev loop"立为下一阶段工程科目**；同文："we may see a return of DevEx in the late 2020s, focused on speeding up the experience for AI agents."）
+
+> "There are lots of just-so stories floating around (like that AI agents prefer statically-typed languages because the feedback loop is tighter), but when you actually measure it seems really unclear which tools agents use better."（《Don't build tools for AI agents》，2026-09-12——对 "X for AI agents" 浪潮的测量主义怀疑，直接点到 feedback loop 叙事）
+
+> "give the agent context on your priorities, not just on the specific task you want them to do."（《Tell agents the why, not just the how》，2026-09-15）
+
+> "This list is a kind of existence proof: a bunch of weird projects, useful to at least some people, that would not have existed without AI assistance."（《Weird projects I shipped with AI》，2026-06-01）
+
+- 窗口前相邻票（不入窗口，注记）：《Build agents, not pipelines》2026-05-31、《Programming (with AI agents) as theory building》2026-04-03、《Prompts are technical debt too》2026-05-20。
+- **最小主张**：人机分工的新均衡＝"对齐优先于能力"：agent 出码、人出价值观与 trade-off 排序；loop 的下一个瓶颈是 dev loop 本身的速度。
+- **派别适配**：**中性**（对齐派；既反"不读码"极限派、也承认能力反超——两面向都有硬表述）。
+
+### Source B · Dan Abramov ·《How I Vibed a Proof of Conway's Conjecture》（overreacted.io，2026-09-18）
+
+- URL：https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture/ （curl 实取，全文 117 段；页内日期 September 18, 2026）
+- 身份：React 核心前成员，前端圈最高分发技术博客之一。
+- 号召力口径：④。
+- 逐字摘录（全部实取）：
+
+> "It took me an entire month of my free time and a boatload of tokens, but I believe I've obtained a Lean proof of this conjecture posed by John Conway 50 years ago"
+>（外行用 agent 一个月拿下 Conway 猜想 Lean 证明——"无人值守"叙事的极限案例；同文自我设限："My proof has not been independently verified by mathematicians."）
+
+> "This let me keep the harness running for days. I didn't understand the math so I limited my involvement to poking the agents, asking what they were doing, and experimenting with their workflows."
+
+> "I set up a 'cafeteria' agent that relayed every message it received to every other agent (emulating a group chat)."
+
+> "I also kept an eye so they don't introduce 'process theater' with audits, as they liked to replace work with bureaucracy."
+>（对多 agent 自组织的一手负样本：审计倾向滑向官僚化。）
+
+> "In a sense, I felt like I'm a nontechnical engineering manager rallying a talented but terribly distractable team around a plan that they've promised me would work."
+
+> "However, the models would repeatedly drift and fail to structure the engineering work, so in that sense the answer is no. That said, I believe my role could have been (better?) fulfilled by a dedicated agent that is taught to project-manage other agents, watch out for when they're spiraling or need to be poked."
+>（对"人该不该在环上"的双向答案：既证明人可被替代，又实录 drift 失控——本项目"停止条件/外层调度"议题的一手民间数据点。）
+
+- **最小主张**：无人值守多 agent 实验的完整一手复盘——可行性（存在性证明）与失控面（drift/官僚化/需人当"非技术工程经理"）同时入档。
+- **派别适配**：**中性**（两面向全；"角色可被项目管理 agent 替代"半句同时是推动派引句）。
+
+### Source C · Dex Horthy（HumanLayer CEO）· AIEWF "great loops debate" 反方＋播客长访谈（2026-07-02 / 08-13）
+
+- C1（经现场稿转述）：https://www.latent.space/p/aiewf-daily-dispatch-locomotives （Richard MacManus，07-03，curl 实取）：
+  > "The basic take here is not whether loops are good or bad…Kubernetes is actually built on loops — built on control loops. But they're deterministic loops."
+  > "the hype is outrunning the discipline."
+  > "I haven't seen proof that we are at a point where we can just step up an abstraction level…I actually think we need to step down an abstraction level, if anything."
+  > （软件工厂段落）"you never touch the problem"——建议"build up intuition"、从小 loop 迭代起步而非端到端自动化。
+- C2（主持人页内 pull quotes＋全 transcript 在页）：The Weekly Dev's Brew Ep21《What Actually Gets You 2-3x With AI Coding》（2026-08-13，https://www.wordman.dev/podcast/dex-horthy-what-actually-gets-you-2-3x-with-ai-coding/ ，curl 实取）：
+  > "You can get 99% of human-quality code, like very good code as if you had written every character by hand, but two to three times faster. You can't get 10x. It can't be done. Not today."
+  > "I don't give two damns how your spec is shaped. It should give you leverage."
+  > "I think abandoning code quality and system quality, giving engineers permission to ship slop, I don't think that's correct. I think that's going to collapse your codebase into ash much faster than you think."
+  > "If you're a manager and you are not trying to help your people adopt AI, you are failing them."
+  - 章节含 **"1:14:01 · Vibe coding vs production loops"**；官方 Key Takeaways 含 "Kill a session when the model starts flailing on tests."；Mentioned 清单含 **"Addy Osmani on Loop Engineering"**（其单集官方页面即在引用在册 KOL 的 loop engineering 内容——传播链证据）。
+- 身份：HumanLayer CEO/联创；页面 bio 称其 "coined 'context engineering'"，12-Factor Agents 作者。
+- 号召力口径：②＋③＋④（AIEWF 主舞台辩手＋头部 newsletter 生态人物）。
+- **最小主张**：反的是"无纪律 loop 的 hyper"，不是 loop 本身；生产语境天花板 2-3x；review 是瓶颈、人的时间应花在设计与拆解上。
+- **派别适配**：**中性**（辩论反方席但自述 "not anti-loops"——教科书式中性席位）。
+
+### Source D · Darren Shepherd（Obot AI 创始人，Rancher 联创）· The Weekly Dev's Brew Ep23（2026-09-24）
+
+- URL：https://www.wordman.dev/podcast/darren-shepherd-ai-agent-sandboxes/ （curl 实取；@ibuildthecloud）
+- 号召力口径：③（Rancher/Kubernetes 生态知名人物）。
+- 逐字（页内 transcript 实取）：
+
+> "you have kind of like the internet hosted agentic loop. But then you also have the Codex CLI and Claude Code that agentic loop, which is client-side and the better architecture is the client-side one. It's not the centralized one. Because the centralized one just has…"
+
+- 官方 Key Takeaways（host 撰，页面实取）："**Sandbox the agent loop, not only the tool calls.** The loop directs code that holds secrets and talks to external systems, so the agent and its tools belong in one sandbox with one policy."＋"Egress is the policy surface, not ingress."＋"Output is not progress. Letting a model barf out thousands of lines feels productive until the regressions pile up, and one estimate raised in the conversation puts a skilled engineer's real gain at around 5 to 10 percent."
+- **最小主张**：把 loop 治理落到基础设施层——沙箱边界应包住整个 agent loop（agent＋tools 一个沙箱、一个 egress 策略），而非只包工具调用。
+- **派别适配**：**中性**（架构派；"output is not progress" 与 5-10% 实际增益估计带清醒怀疑色彩）。
+
+### Source E · 播客层群像（2026-06 后，按证据强度分档）
+
+1. **Latent Space 2026-07-08**：Akshat Bubna（Modal CTO）《Why AI Infrastructure must evolve for Agent Experience》（58min）——经 SignalCast 周报页实取摘要（https://www.signalcast.app/this-week/latent-space/2026-07-06 ）："as AI moves from static model serving toward autonomous decision-making, the underlying platforms must fundamentally rethink how they allocate resources and handle unpredictable execution patterns."（**经摘要转述档**；latent.space 站内正文未取——sitemap/分页均 404）
+2. **SE Radio 740**：Raju Dandigam《Building Production AI Agents》（2026-09，https://se-radio.net/2026/09/se-radio-740-raju-dandigam-on-building-production-ai-agents/ ，curl 实取官方简介）："The episode covers behavioral testing against contracts, golden scenarios, and observability that captures the full execution path rather than flat logs, which is the gap behind agent-inspect and its readable execution trees."（官方简介档；SE Radio 不附 transcript）
+3. **SE Radio 732**：Jason Gorman《The Effective Use of AI For Software Development》（2026-08，条目级；正文未取）。
+4. **Insecure Agents**（Socket 出品，host Allie Howe）：单集《A Reference Architecture for Securing "Software Factories"》（Aaron Stanley / Ahmad Nassri）与 David Cramer 单集（见怀疑档）——iHeart 406，日期未核。
+5. **The Weekly Dev's Brew**（Jan-Niklas Wortmann，wordman.dev）：本轮播客层最大发现源——单集页自带 Key Takeaways＋Pull Quotes＋**页内全 transcript**；窗口内 loop 相关四集：Cramer（06-30）、Horthy（08-13）、Mulroy（09-10）、Shepherd（09-24）。主持人摘要语体审慎，可作"经主持人整理档"引用。
+
+### Source F · 会议层数据点（AIEWF 2026 官方全量页＋现场稿）
+
+- **Barr Yaron（Amplify）年度调查**（经 MacManus 现场稿转述）："According to Amplify's data, 95% of respondents now use agents — roughly double last year's share. Among teams using agents, 89% said those agents could write data, up from 52% the previous year."＋"The controls, however, remain comparatively primitive. Human approvals and permissions were the two leading safeguards…"
+- **Allie Howe（Keycard）主持设问**（现场稿直录）："is there or is there not a delta between the hype behind loops and what actually works in practice?"
+- **Ameya Bhatawdekar**《Your Agent Evolved. Your Evals Didn't.》（llms-full.md 官方摘要实取）："Agent architectures have evolved through six generations; prompt, chain, ReAct loop, workflow graph, modern agent loop, AI harness. And each one quietly breaks the eval strategy of the generation before it."（六代架构谱系句——判读层可用的官方分期表述）
+- **Sonar AC/DC**（Anirban Chatterjee）官方摘要（同页实取）："the critical challenge has shifted from generation to verification…making cognitive surrender among human reviewers an acute risk."（"cognitive surrender" 在会议层官方摘要中出现）
+- **派别适配**：中性（数据与设问层，非个人 KOL 票）。
+
+### Source G · .NET 线（David Fowler）· 经转引链（2026-09-05）
+
+- 原始载体：Fowler X 帖（X 不可达）；一级转引：Windows Latest《Microsoft engineer says "typing code is absolutely over," and Windows 11 is already being built that way》（2026-09-05，https://www.windowslatest.com/2026/09/05/microsoft-distinguished-engineer-says-typing-code-is-absolutely-over-and-windows-11-is-already-being-built-that-way/ ，curl 实取全文）；二级转引：mynavi（2026-09-08，实取）。
+- 身份：Microsoft Distinguished Engineer（SignalR/NuGet/ASP.NET Core 核心，现负责 .NET Aspire）。
+- 可引用层级：标题句 **"Typing code is absolutely over"**（经 Windows Latest 转引）；WL 的定性段落（**WL 作者语，非 Fowler 逐字**）："The tools for software development are being redesigned so AI can operate inside the loop."；WL 转述其团队 2026-04 文：AI agents "really good at writing code" 但 "generating code and shipping a full working app" are "very different things"，Aspire 方案＝"letting agents start services, read logs, inspect telemetry, restart what's broken, and test again, without a human copy-pasting error messages back into a chat window."（**这正是"服务起停-观测-重启-再测"的 loop 结构描述，经转述档**）
+- 官方博客旁证（devblogs.microsoft.com/aspire feed 实取）：窗口内 Aspire 13.4（2026-06-01）/13.5（08-18）/13.6（09-29，"point your coding agent at them to compare and contrast between runs"——dashboard 记忆化 run 库）。
+- Steve Sanderson：**负结论**——窗口内未检出 agent loop 一手。
+- 号召力口径：③＋④。**派别适配**：中性偏推动（全部经转引链，票弱，判读引用须降档）。
+
+### Source H · QCon 上海 2026（中文议题——非英语层，边界登记不入英语 KOL 册）
+
+- 官方议题页（搜索命中，未 fetch 正文）：《Code Agent 的 Loop 工程实践：网易智企 CodeWave 的探索与落地》（https://qcon.infoq.cn/2026/shanghai/presentation/7340 ）；另《从 Harness 到 Loop：阿福 Agent 小队如何处理持续涌入的线上 Badcase》（头条转述）。
+- **登记含义**："loop 工程/从 Harness 到 Loop" 专名已在中文会议层流通——传播层证据，不计 KOL 票。
+
+### 负结论（第三轮·中性）
+
+1. **Software Engineering Daily**：窗口内相关单集存在（《Docker and Sandboxing AI Agents》《The Terminal as an Agentic Interface》《SED News: OpenClaw Goes Viral…》）但 listennotes/podcastaddict 反爬 403，日期、嘉宾与逐字均未核——开放。
+2. **Pragmatic Engineer Podcast**：窗口内 loop 专题单集未定位（仅 2026-02-03 Steinberger《Closing the Loop》窗口前票，cast42 笔记层）。
+3. **TWIML**：本轮未及专项核查（通道未开）。
+4. **GOTO Copenhagen 2026**（gotocph.com/2026/schedule，10-01 场）：未及扫描——开放。
+5. **Goedecke "AI engineers" 一篇**：任务提示中的篇名未在其站内清单检出（atom feed＋6 页分页均核），疑似记忆偏差或改题；已有五篇窗口内一手足以立票。
+6. **撞名警示**：sindre-ai（GitHub API 实核：2026-03-25 注册、"Sindre AI"、0 followers）≠ Sindre Sorhus；maskin 仓库不入册。

@@ -478,3 +478,539 @@ quality_bar: 一手优先；X 不可达（本环境 x.com 全部不可用，经�
   2. 企业家杂志（经新浪财经 https://www.sohu.com/a/1046788049_122014422 ，2026-07-07，中文全文转译）：如"每家公司都要同时建设两种资本，人力资本和 Token 资本""你可以把一个任务交出去，甚至把一个岗位交出去，但你永远不能把学习交出去"。
 - 状态：**部分解决**（上轮"经 LangChain 转述、非逐字"→本轮：长文存在性/标题/日期/28M 阅读坐实＋两条独立全文转译；X article 原文仍登录墙）。
 - **派别适配**：**证据升级但派别判定仍克制**——"learning loop＝企业新知识产权/复利护城河"的完整论述是真实的（长文级而非碎片级），足以入时间线与"被引用"层；但全部经转译链，无本人一手页面，继续不单独立票、判派观察位维持。
+
+## 第三轮挖掘（2026-10-06）：新 KOL（推动向）
+
+> **本轮通道状态总览**：web_fetch 工具对多数目标域名报 "resolves to a non-public IP"（代理层 DNS 异常），全部改 **curl＋浏览器 UA** 实取（HTTP 200 为主）；x.com 不可达维持已知环境事实，经转引一律标注；podscan.fm／iHeart／listennotes／podcastaddict 有反爬（403/406），相关单集正文开放。所有逐字引句均来自本轮实际 fetch 的页面，无一处凭记忆或搜索摘要生成。
+
+### 增量 F · Guillermo Rauch（Vercel CEO）· TechCrunch 专访全文（2026-07-06）
+
+- URL：https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/ （curl 实取，正文 32 段逐字完整；页内 datetime 2026-07-06T12:49:10-07:00）｜记者 Russell Brandom，"lightly edited transcript"
+- 身份：Vercel 联合创始人/CEO，v0 作者，Next.js 创建者。
+- 号召力口径：③＋④——头部前端基础设施厂商掌门；TechCrunch 全文专访（大分发载体）。
+- 逐字摘录（全部实取）：
+
+> "Last year was about prototyping. The sky's the limit, unleash the agents, everyone can build, and so on. We did that, and we learned a lot because we had hundreds of agents organically developed and deployed within the company, and then you started getting into the realities of agents in production, and some of the challenges."
+>（把行业节奏定性为"去年放羊式 prototype → 今年进 production 现实期"——与 loop engineering 运动的窗口节奏完全同拍。）
+
+> "One is the coding agent, of course. That's driving a lot of the token utilization in the world, but when you produce so much software, you need somewhere to put it. The second killer app of agents is the internal agent that helps you run the company."
+
+> "And another tool is Vercel Sandbox, where you put the agent in a little cage. It can have the freedom still to express its intelligence, but then you can apply policy on what data it can access and what data can leave the sandbox."
+>（"a little cage"——推动派话语里最直白的"自主度要装笼"表述，掌控面与推动面同句出现。）
+
+> "Agents are forcing companies to open up, and that will have dramatic long-term implications. So many of these SaaS giants build their entire kingdoms on trapping your data, and that's incompatible with agents."
+
+> "I really think at this point we're deciding on whether the model and the agent are going to be coupled."
+>（把"模型与 agent 解耦"抬成行业路线之争。）
+
+- **最小主张**：2026 年中厂商一线的自述是"数以百计内部 agent 已进 production、正在补审计/数据边界课"——loop 工程化的厂商面直接证词。
+- **派别适配**：**推动票（强）**，带完整掌控面表述（可入推动派"掌控翼"）。
+
+### 增量 G · Kyle Mistele（HumanLayer 联合创始人）· AIEWF 2026《Loop Engineering from First Principles》官方逐字稿（视频上传 2026-07-25）
+
+- URL：https://ai.engineer/talks/xIt_mTQp6mY-loop-engineering-from-first-principles （curl 实取：官方页含 12 章节目录＋**官方编辑稿全文**＋VideoObject JSON-LD：uploadDate 2026-07-25，时长 17:57）
+- 身份：HumanLayer 联合创始人（与 Dex Horthy 同公司）。
+- 号召力口径：①＋②＋③——议题名直接以 "Loop Engineering" 命名并被 AI Engineer 官方库收录为可引 talk；官方描述即定义行为。
+- 官方描述逐字：
+
+> "HumanLayer co-founder Kyle Mistele argues that autonomous coding agents should operate as measurable control systems rather than unbounded generation loops that produce enormous, unreviewable pull requests."
+
+- 官方编辑稿逐字（§2 "Loops should make code easier to read"）：
+
+> "Design loops that improve the code while humans continue reading it. A loop can remove bad patterns, make changes easier to review and solve difficult problems in a complex repository. The software factory can emerge incrementally, with engineering discipline applied to the loop itself."
+
+> "six review agents surrounding a 40,000-line PR. More automated scrutiny does not, by itself, make that change understandable to the team responsible for shipping it."
+>（开场失败案例：六个 review agent 围着一个 4 万行 PR。）
+
+- 官方编辑稿对其对手观点的记录（§2）：Mistele 把 10x 说法当作 "an unsettled promise, not an established result"；并引用 Ralph（ghuntley.com/ralph）、Steinberger 的 loop 设计主张与 Boris Cherny 的 "writing loops to prompt Claude" 作为被综述对象（**口径②的直接证据：他的 talk 就是 loop engineering 谱系的综述＋修正**）。
+- 章节目录即主张清单：§11 "Stop producing changes when review is blocked"、§12 "Increase throughput as confidence and review capacity grow"、§3-4 用控制论四件套（sensor / set point / controller / actuator）定义 coding loop。
+- **最小主张**：loop engineering 在 2026 年中已被会议层正式教学化，其教学版定义＝控制论＋可读性约束＋review 背压（review 堵塞就停止产出）。
+- **派别适配**：**推动票（受约束翼）**——与 Steinberger/Huntley 的 loopmaxxing 保持距离，但本体是把 loop engineering 正式化的定义者之一。
+
+### 增量 H · Ian Livingstone（Keycard CEO）· AIEWF "great loops debate" 正方（2026-07-02 场，稿发 07-03）
+
+- URL：https://www.latent.space/p/aiewf-daily-dispatch-locomotives （curl 实取全文；Richard MacManus 现场报道）
+- 身份：Keycard CEO；英国游戏产业标志性人物（Games Workshop/与 Eidos 渊源），AIEWF 辩论正方与该辩论主持人 Allie Howe 同公司。
+- 号召力口径：②＋③＋④（AIEWF 主舞台辩手；跨行业名人效应）。
+- 逐字（经现场稿转述，非本人博客）：
+
+> "A loop is at the core of 'I try something, I learn something, I apply something.' And all we're really talking about is how quickly we can expedite that process."
+
+- 现场稿另记其立场："verifiability is ultimately what it's about — and you can achieve that with any code, regardless of how it was produced"，以及"loops have always been a core aspect of software development"。
+- **最小主张**：把 loop 正名为"试-学-用的加速器"，可验证性是唯一关键——正方阵营的理论化发言。
+- **派别适配**：**推动票**（辩论正方；一手只有现场稿层，引用须标"经 MacManus 现场稿"）。
+
+### 增量 I · Mike Krieger（Anthropic 产品/实验室负责人）· AIEWF 与 swyx 对谈（同上 dispatch，2026-07-03 发）
+
+- 身份：Instagram 联合创始人，时任 Anthropic 产品负责人（现场稿称 Head of Labs）。
+- 号召力口径：③＋④。
+- 逐字（经现场稿转述）：
+
+> "Don't just fix this bug. Now you are responsible for this part of the codebase, and I want you to monitor this feedback channel and proactively take on tasks."
+
+> "That's really changed how we operate currently. It's much more this multiplayer, async, proactive way."
+>（对 Claude Tag（其新内部模型）的使用画像：从单点修 bug 到"领养代码块＋监视反馈频道主动领活"——无人值守循环的组织化形态。）
+
+- **难点自认**（同稿）："Most usage is actually much more delegated"，但团队 "bottlenecked on reviews" 且受限于 "human ability to fully conceptualize what we're doing."
+- **最小主张**：Anthropic 内部实践即"多人向 agent 系统分派所有权"的早期软件工厂；同时自认 review 与概念化是瓶颈。
+- **派别适配**：**推动票（带难点自认）**——自认句同时是怀疑派可引用的材料，判读时两面都要收。
+
+### 增量 J · Amjad Masad（Replit CEO）· 窗口内个人署名内容三路（含分档标注）
+
+- **J1（半一手：经主持人转述）**：SaaStr AI 2026 现场（页内日期 2026-06-22/25；https://www.saastr.com/amjad-masad-and-me-at-saastr-ai-2026-the-agents-we-actually-built-and-what-replits-founder-thinks-comes-next/ ，Jason Lemkin 执笔，curl 实取全文）：
+  - "Amjad put it"（Lemkin 转述其 nightly 自改进 agent）：**"it's not improving its weights, it's improving its context, which matters just as much."**——"每夜读全量 trace → 生成 prompt 修改 PR → A/B 上线 → 回环"的自改进外环叙事。
+  - agent 可运行时长：**"practically indefinitely"**（Lemkin 引号直录，指配合 compaction）。
+  - 预言句（Lemkin 转述）：每家公司将运行内部 "Oracle"——持有一切 commit/Slack/文档、CEO 向它问策。
+- **J2（经中文转译，原始英文载体未定位——开放）**：品玩深度对话（https://www.pingwest.com/a/313307 ，页标"发布于 7月30日"，对话人 Amjad Masad＋YC 合伙人 Andrew Miklas，curl 实取全译文）：核心主张两条——"我们正在走向'后提示词时代'"（对 AI 说"帮我创建一个SaaS公司，想办法让它盈利"，系统自己推进）；"未来公司里只剩两种人——建造者和销售者"。
+- **J3（窗口前谱系，不计窗口票）**：YC《The Breakdown》全 transcript（https://www.ycombinator.com/library/Mi-replit-ceo-amjad-masad-coding-agents-autonomy-and-the-future-of-work ，页面 created_at **2025-07-17**，curl 实取全 transcript）：autonomy 阶梯（"maybe 3.5 was like 5 to 10 minutes…they said they made it work for seven hours"）、transactional/可回滚基础设施、sampling 分支选优、"if you give us $1,000, we'll spend them"（compute budget）——2019-2026 无人值守循环路线图的早期完整版。
+- 号召力口径：③＋④。
+- **派别适配**：**推动票**（厂商身份重；J1 须标"经 Lemkin 转述"、J2 须标"经中文转译"）。
+
+### 增量 K · Felix Rieseberg（Anthropic，Claude Cowork 工程负责人）· 经 Willison 转引的产品架构声明（2026-10-05）
+
+- URL：https://simonwillison.net/2026/Oct/5/felix-rieseberg/ （curl 实取；Willison 引句采集页，标注 "This is a quotation collected by Simon Willison, posted on 5th October 2026"，并指向 Anthropic 帮助页）
+- 身份：Slack 桌面端/Electron 维护者出身的 Anthropic 工程负责人，现负责 Claude Cowork（与 Claude Code Desktop）。
+- 号召力口径：③＋④。
+- 逐字（经 Willison 转引，X 不可达不适用——本体为产品说明文本）：
+
+> "The 'new' version of Cowork runs model inference and the VM in the cloud. Each session gets its own sandbox, not sharing state with other sessions."
+
+> "Also, people didn't love that closing your laptop means the work stops."
+>（产品演进的第一性动机：把循环从"开机才有"搬到云端常驻——**无人值守循环的消费级产品化**直接证词。）
+
+- 相邻单集（存在性已核、正文未取——podscan 403）：Latent Space《Why Anthropic Thinks AI Should Have Its Own Computer — Felix Rieseberg of Claude Cowork & Claude Code Desktop》；The MAD Podcast《Anthropic's Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction》。
+- **派别适配**：**推动票（弱）**——目前仅单点转引＋两档未核单集，待补档后可升级。
+
+### 增量 L · AIEWF 2026 官方议题群像（llms-full.md 全量页实取，https://ai.engineer/worldsfair/2026/llms-full.md）
+
+- 官方摘要逐字可引的 loop 议题（讲者均为**非在册新名**）：
+  1. **Joel Hooks**《The Art and Science of Loopcraft with Pi (and friends)》（Workshop，4:30pm-5:30pm）："This workshop helps agentic coding practitioners stop treating agents like pretend coworkers and start designing reliable, compounding loops. Using Pi as the concrete demo surface, Joel Hooks will show how loop state, handoffs, review, memory, and operator control become visible…"
+  2. **Fuad Ali**《Building self-learning loops for your agent》（Workshop，11:05am-12:05pm）。
+  3. **John Craft（Docker）＋Dan Ndombe**《From approval loops to autonomous agents with Docker》（Workshop＋Session Day 共 6 段连讲）："unlocking autonomous development without creating security headaches, governance gaps, or endless approval loops."
+  4. **Andrew Orobator**《Spin at the Gate Until Green: The Engineering Primitives Behind Self-Driving Codebases》："If you can express correctness as a binary — does it compile, do the tests pass, does the lint check clear — you can remove the human from that loop entirely. The AI submits. The gate checks. If red, it adjusts and resubmits. Spin at the gate until green."＋"The culmination is a flag lifecycle agent — triggered by a cron job…verified by compile + test + lint, no human in the loop."
+  5. **Anirban Chatterjee（Sonar）**《Guide, Verify, Solve: The Engineering Discipline Agentic Development Demands》："Sonar's Agent Centric Development Cycle (AC/DC), a three-stage continuous loop of Guide, Verify, and Solve."
+- **最小主张**：AIEWF 2026 上 loop engineering 已是"Workshop＋Session"双层的正式教学科目——以 loop 专名或 loop 原语组织的议题至少 6 个（不含已在册的 swyx《The Highest Loop》）。
+- **派别适配**：**推动向会议层群票**（官方摘要级，讲者个人一手未取者不入个人条目）。
+
+### 负结论（第三轮·推动向）
+
+1. **Steve Sanderson（.NET）**：未检出 2026-06 后 agent loop 主题一手（多路搜索仅命中间接报道与他人转述）——负结论登记，不入册。
+2. **Sindre Sorhus**：未检出本人窗口内一手；**撞名警示**——GitHub 账号 sindre-ai/maskin（README："AI run the shop. Humans set direction, agents execute."）经 GitHub API 实核为**同名他人**（账号 2026-03-25 注册、0 followers、5 stars，名字 "Sindre AI"），**不是 sindresorhus 本人**，不入册，防止台账撞名污染（同 Kent Beck ≠ Kent C. Dodds 教训）。
+3. **Latent Space 站内窗口内 loop 专题单集**：sitemap 404、分页 404，仅经 SignalCast 周报核得 Akshat Bubna（Modal CTO，2026-07-08）一集（经摘要转述档，见中性档 Source E）。
+4. **Dan Ndombe / Fuad Ali / Joel Hooks / Andrew Orobator / Anirban Chatterjee**：官方摘要层已收，个人博客/访谈一手未取——开放。
+
+## 第三轮挖掘（2026-10-06）：厂商产品面
+
+> 本轮面：coding agent 厂商 2026-06-01 之后把"循环/无人值守/自主性"做成产品的官方一手内容。通道纪律：curl＋浏览器 UA 直取为主，优先 `.md`/API/raw 官方载体（docs.warp.dev 官方 `.md` 后缀、learn.chatgpt.com 官方 `.md` 后缀、api.github.com releases）；每条引句均为实取（HTML 标签剥离取词，词序逐字），未编造。无发布日期的 docs 页标注"living docs，实取 2026-10-06"。除标注"窗口外仅备注"者外，条目均在 2026-06-01 之后。
+
+### 增量 A · Warp —— 解决·强（三载体到手：CEO 署名博客 06-16＋工厂博客 08-27＋Profiles/Permissions 文档）
+
+- **A1. 官方博客《How to build a self-improvement loop for your Skills》**
+  - URL/日期：https://www.warp.dev/blog/self-improvement-loop-for-skills ；datePublished **2026-06-16T12:00:00Z**（页面 JSON-LD 实取），dateModified 2026-06-23；author JSON-LD：**Zach Lloyd**（Warp CEO，署名一手）。通道：curl＋浏览器 UA 直取全文（343KB）。
+  - 性质（逐字）：**"There's been a lot of chatter about using "loops" lately to drive agents, and I think this has been accompanied by a bit of "what actually is a loop"? I can't speak for everyone else using the term, but I wanted to show a practical approach using Skills and cloud agents for a particularly powerful kind of loop: a self-improvement loop."**——厂商 CEO 亲自给 loop 术语下产品定义，且自认"人人都在用这个词但没说清是什么"。
+  - 逐字摘录：
+
+> "This is the idea that an agent can improve the quality of its own Skills over time from external feedback."
+
+> "An inner agent loop: this is where you actually apply the Skill. For issue triage, you could be running it manually, or, more likely, you have an integration with your task tracker that runs the Skill whenever a new issue is filed."
+
+> "An outer agent loop: this is an agent that runs on a schedule and observes the inner loop use of the Skill."＋"Since Skills are just files, this means it should make a diff to improve Skill based on user feedback from past runs."
+
+> "We use self improvement loops to manage the Warp open-source repository, and we extracted the framework behind it for others to adopt."
+
+  - **该条支持的最小主张**：loop engineering 运动进入厂商产品层的一手证据——Warp CEO 在 2026-06-16（运动词源爆发同月）以"inner/outer agent loop"双层结构发布可复制的自改进环产品教程，并自证 Warp 自家仓库就在用。
+  - 派别适配：**推动·厂商**（把循环当卖点——inner/outer 双层 loop＋self-improvement 作为产品能力出售）。
+
+- **A2. 官方博客《Closing the loop with self-improving cloud software factories》（slug: agent-self-improving-software-factories）**
+  - URL/日期：https://www.warp.dev/blog/agent-self-improving-software-factories ；页面日期 **2026-08-27**（HTML 实取 "2026-08-27"×6 处；站内博客列表同日标注）。作者字段未在页面 JSON 中暴露（如实记录）。
+  - 逐字摘录：
+
+> "It's time to apply a true engineering mindset to deploying coding agents. There's too much hand-waving around what agents are best, which models to use, and how to optimize ROI from coding agents over time."
+
+> "The solution is to set up a closed-loop system in the cloud where all of your agents are tracked and measured against your own data and workflows, so you can adjust your setup based on actual data and not vibes."
+
+> "Software factories are automation loops around the SDLC, comprised of agents that triage, spec, implement, verify, review, monitor, etc."
+
+> "Factories should come with built-in evals, improvement loops and benchmarks so you can ensure improvement over time"＋"Your goal as an organization is getting to a "closed-loop" factory"
+
+> "This is the basis of self-improvement: agents that observe how your factory is working and suggest changes to the underlying models, skills, etc."
+
+> "If someone describes a factory product that is local-first, it's not really a factory."＋"First, the goal is agent automation and automatic improvement, and that's simply not possible if your agents are running on developer laptops that might be asleep or off the grid."
+
+  - 同站同系列（站内博客列表实取标题级）：《The Cloud Software Factory Build Guide》Jul 23, 2026；《The missing feedback loop for software factories》Aug 26, 2026；《Adopting the software factory model: crawl, walk, run》Sep 15, 2026——**Warp 已形成"loop→factory"博客产品线**（4 篇窗口内，标题级登记待深挖）。
+  - **该条支持的最小主张**：Warp 把"闭环"上升为品类定义（cloud software factory＝SDLC 自动化环），并以"local-first 不配叫 factory"划产品边界；无人值守的前置条件被官方明确为"云端常驻、笔记本会睡着"。
+  - 派别适配：**推动·厂商**（loop＝品类卖点）。
+
+- **A3. 官方文档《Profiles & Permissions》（docs.warp.dev）**
+  - URL/日期：https://docs.warp.dev/agents/capabilities/agent-profiles-permissions ；页面页脚实取 **"Last updated Oct 6, 2026"**（=实取当日）；通道：官方 `.md` 后缀直取（页面自述 "Markdown versions of each page are available by appending .md to any URL"，9.9KB markdown 实取）。
+  - 逐字摘录：
+
+> "Agent Profiles let you configure how agents behave in different situations, including autonomy level, base model, tool access, and command permissions."
+
+> "Set up different profiles for different workflows (e.g., "Safe & cautious", "YOLO mode", etc.)."
+
+> "The denylist takes precedence over your other permission settings."＋"When all Agent permissions are set to **Always allow**, the Agent gains full autonomy ("YOLO mode"); however, any denylist rules will still override these settings."
+
+> "During an Agent interaction, you can give the Agent full autonomy for the current task. When auto-approve is on, every suggested command runs immediately until the task finishes, or you stop it with `Ctrl+C`."（§ Run until completion）
+
+> "Denylist rules your team enforces through the Admin Panel always require approval and are never bypassed."
+
+  - 上轮缺口解除情况：上轮仅有 CEO"选人从哪里进环"一句——本轮补齐**官方文档层的自主度分档（permission 分级 allow/ask/decide）、命令 allowlist/denylist 优先级、Run until completion 任务级全自主、企业 Admin 层不可绕过底线**四件套（最后一句的边界含义进怀疑面文件增量 C）。
+  - **该条支持的最小主张**：Warp 的 agent 自主性是"分档可配"的产品机制（profile×permission×denylist 三层），且存在"企业层永久审批"的把控底线。
+  - 派别适配：**推动·厂商**（自主度分档做成产品），同时其 YOLO 默认面是"把控性"主题的直接一手材料。
+
+### 增量 B · Replit —— 解决·强（Masad CEO 署名 07-16＋core loop 工程文 09-29＋评测 loop 文 06-23＋官方 docs）
+
+- **B1. Amjad Masad（CEO）署名《The Self-Driving Company》**
+  - URL/日期：https://replit.com/blog/self-driving-company ；datePublished **2026-07-16T17:01:00Z**（页面 JSON-LD＋页头 "Published: Jul 16, 2026" 双确认）；署名 **Amjad Masad, Scott Kennedy**（页面实取）。通道：curl＋浏览器 UA 直取全文。
+  - 逐字摘录：
+
+> "In the past six months, engineers at Replit have nearly tripled code output. Review times held steady. Reversions and product incidents have stayed flat. Quality metrics improved, and releases have accelerated."
+
+> "Agents now investigate production incidents, review pull requests, answer questions, analyze business data, triage support tickets, research sales accounts, and improve the systems that power Replit Agent itself."
+
+> "It is an expanding system of agents operating across the company: taking goals from people, gathering context, performing work, checking the results, and escalating when human judgment is needed. We think this represents the beginning of a new kind of organization: the self-driving company."
+
+> "A self-driving company is not one without people. People still choose the destination. They decide which problems matter, make difficult tradeoffs, exercise taste, and take responsibility for the outcome. But increasingly, they do not perform every step required to get there."
+
+> "We leveraged our agent harness, microVMs, and remote filesystem infrastructure so any engineer could orchestrate swarms of agents in parallel. Then we locked the whole thing behind access policies, token proxies, audit logging, and our ZeroTrust network."
+
+> "People don't feel like they've been automated. They feel like they've been promoted."
+
+  - **该条支持的最小主张**：任务 2 的核心交付——Masad 本人在 2026-06 后对 agentic loops 的署名定义是"目标→取上下文→执行→查结果→需要人判断时上报"的公司级 agent 环系统（"self-driving company"），并把"escalating when human judgment is needed"写进定义本身。
+  - 派别适配：**推动·厂商**（公司级 loop 组织论；"人保留 destination/taste"的 nuance 与推动派"人做 spec/审查"谱系一致）。
+
+- **B2. 官方工程博客《Free the models: Harness design at the frontier》**
+  - URL/日期：https://replit.com/blog/free-the-models ；**2026-09-29**（datePublished＋页头双确认）；署名 Daniel Furman, Jacky Zhao, Vaibhav Kumar, Ed Sioufi, **Michele Catasta**（Replit 总裁，页面实取）。
+  - 逐字摘录：
+
+> "The main agent, or core loop, chooses its subagents' tier and effort, and adjusts its own as the task unfolds."
+
+> "Model routers are everywhere right now, but they have a fundamental limitation. … a router will always be less capable than the model it's choosing for. Replit Agent lets the model decide instead."
+
+> "The harness offers the options and keeps the guardrails; at every step, the core loop decides."（Figure 1 小标题："the three decisions the core loop makes at every step"——how hard to think / when to hand work off / who to hand it to）
+
+> "As models become stronger at long-horizon tasks, they don't need as much scaffolding at the harness layer. In practice, we've observed them lean more towards delegation on their own: using subagents for context management and parallelism."
+
+> "It also beats a sidekick architecture, the same setup with one long-lived worker, by 11 and 16 points."
+
+  - **该条支持的最小主张**："core loop"已被厂商用作正式产品/架构词（主 agent 即"环"，环自己在每步做三个决定）；harness 哲学是"环做决定、harness 供选项与护栏"。
+  - 派别适配：**推动·厂商**（且与 Steinberger "design loops that prompt agents" 词族直接同构）。
+
+- **B3. 官方工程博客《Evaluating and improving agent at scale》**
+  - URL/日期：https://replit.com/blog/evaluating-and-improving-agent-at-scale ；**2026-06-23**（Published Jun 23, Updated Jun 24，页面实取）；署名 Daniel Furman, Peter Zhong, Zhen Li, Michele Catasta。
+  - 逐字摘录：
+
+> "To answer that question, evaluation must become part of the improvement loop."
+
+> "The old evaluation job ends at a human shipping decision; the new one feeds a continuous system that learns from production and ships improved agents."
+
+> "The system has two measurement pillars and one optimization loop."＋"Human judgment keeps the improvement loop pointed at the right product and engineering outcomes."
+
+  - **该条支持的最小主张**：厂商把 eval 本身重构成"改进环"的一环（评测→生产信号→回流）——loop 话语从"写码环"扩张到"评测/运维环"。
+  - 派别适配：**推动·厂商**（对 goal/eval 主题的厂商面佐证）。
+
+- **B4. 官方文档《Build in parallel》（docs.replit.com，living docs，实取 2026-10-06）**
+  - URL：https://docs.replit.com/learn/build-in-parallel
+  - 逐字摘录：
+
+> "Building in parallel is a different relationship. You hand a feature to Agent as a task, and it goes off and builds it in the background while you do something else."
+
+> "This changes your role. You stop being a passenger watching one build and become the director of several."
+
+> "Your plan controls how many background tasks can run at once. Additional tasks queue and start as slots become available."
+
+  - 边界面引句（"When to stay sequential"整节）见怀疑面文件增量 E。另：Replit Agent 4 发布（2026-03-23，官方博客实取）在窗口外，仅备注其并行任务系统为 B4 的产品底座。
+  - **该条支持的最小主张**：并行无人值守任务（后台任务＋并发上限排队）是 Replit 官方文档化的工作方式，且官方同时文档化"何时不该并行"。
+  - 派别适配：**推动·厂商**＋自认边界（分列）。
+
+### 增量 C · Google Jules / Gemini CLI —— 部分解决（Jules 窗口内官方静默＝负发现；机制在册走 living docs；Gemini CLI 一手 release note 行）
+
+- **C1. Jules 官方 changelog——窗口内静默（负发现）**
+  - URL/日期：https://jules.google/docs/changelog ；实取 2026-10-06（curl 直取 129KB）。**最新条目为 "Gemini 3.1 Pro is now available in Jules｜Mar 09, 2026"，其后（2026-06-01 至实取日）无任何官方 changelog 条目**——全列表 Mar 2026→May 2025 逐条实取核对。
+  - 通道状态：官方一手、直取成功；负发现本身可信度强（不是抓取失败）。
+  - 窗口外机制在册（供"把控性"主题引用，标注窗口外）："Introducing the Planning Critic for Auto-Approved Plans"（Jan 26, 2026）、"Put routine maintenance on autopilot with Scheduled Tasks"（Dec 10, 2025）——标题级。
+  - **该条支持的最小主张**：Jules 的异步 agent 面在 2026-06 后没有官方产品增量；运动窗口内该产品无新话语（与 Anthropic/Cursor/Warp 的密集发牌形成反差，可供判读引用）。
+  - 派别适配：负发现，不定票；作厂商面节奏差证据。
+
+- **C2. Jules《Limits and Plans》官方文档（living docs，实取 2026-10-06）**
+  - URL：https://jules.google/docs/usage-limits
+  - 逐字（计划表数据实取）：Daily Tasks (rolling 24 hours)＝**15 / 100 / 300**（Jules/Pro/Ultra）；Concurrent Tasks＝**3 / 15 / 60**。
+  - 逐字摘录："Will the features and limits in these plans change over time? We may adjust limits and features as we learn how people are using the product."
+  - **该条支持的最小主张**：异步环的并发/日任务量被厂商做成**硬配额分层**——这是 target 9（预算上限机制）Jules 行的官方一手。
+  - 派别适配：机制登记（把控面）。
+
+- **C3. Gemini CLI 官方仓库 release notes（api.github.com 实取）**
+  - 通道：https://api.github.com/repos/google-gemini/gemini-cli/releases （Google 维护官方仓库，release note 即官方一手载体）。
+  - 逐字（2026-09-30，v0.64.0-nightly.20260930.g38700b4b3）：
+
+> "fix(core): enable autonomous plan execution in non-interactive mode"
+
+  - 另取（2026-09-16，v0.62.0-nightly.20260916）："fix(core): ensure AgentLoopContext properties are preserved across object spread"——**"AgentLoopContext" 为官方代码/提交词表中的正式构件名**。
+  - **该条支持的最小主张**：Gemini CLI 在窗口内官方点亮了"非交互模式下的自主计划执行"（headless 自主环），载体为官方 release note。
+  - 派别适配：**推动·厂商**（carrier 为 nightly release note，引用时注明）。
+
+### 增量 D · GitHub Copilot —— 解决·中（窗口内 changelog 两条＋预算/自动化官方文档；命名漂移如实记录）
+
+- **D1. Changelog 2026-07-29《Copilot code review: Agent skills and MCP now generally available》**
+  - URL/日期：https://github.blog/changelog/2026-07-29-copilot-code-review-agent-skills-and-mcp-now-generally-available/ ；datePublished **2026-07-29T14:26:19-07:00**（页面 JSON-LD 实取）。
+  - 逐字摘录：
+
+> "Copilot code review support for agent skills and MCP servers is now generally available for all Copilot Pro, Pro+, Business, and Enterprise users."
+
+> "All MCP tool calls performed by Copilot code review will be limited to read-only."
+
+  - **该条支持的最小主张**：agent 审查环接入团队工具/上下文成 GA；同时官方把该环的 MCP 调用硬限为只读（把控面的官方一手，target 9）。
+  - 派别适配：**推动·厂商**＋机制登记。
+
+- **D2. Changelog 2026-07-31《Enterprise teams model policy targeting in public preview》**
+  - URL/日期：https://github.blog/changelog/2026-07-31-enterprise-teams-model-policy-targeting-in-public-preview/ ；datePublished **2026-07-31T11:11:50-07:00**（实取）。
+  - 逐字摘录：
+
+> "This feature empowers AI administrators to set a baseline of models for the entire enterprise and then grant additional models to specific enterprise teams."
+
+> "This public preview is the first step in a broader shift toward team-level governance."
+
+  - **该条支持的最小主张**：模型访问的治理粒度从 org 层下探到 team/user 层——厂商把"给 agent 什么能力"本身做成逐级治理产品。
+  - 派别适配：**推动·厂商**（治理即卖点）。
+
+- **D3. 官方文档：预算与自动化（living docs，实取 2026-10-06）**
+  - URL：https://docs.github.com/en/enterprise-cloud@latest/copilot/rolling-out-github-copilot-at-scale/assigning-licenses/managing-your-companys-spending-on-github-copilot
+  - 逐字摘录：
+
+> "GitHub offers billing tools to help you visualize your spending patterns, control AI credits consumption with budget controls, receive alerts when you reach budget thresholds, and optimize your license usage."
+
+> "You can set budgets at the user, cost center, and enterprise level to control how AI credits are consumed."
+
+  - URL：https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent （实取重定向至 "Copilot on GitHub.com" 总览页，如实记录）
+  - 逐字摘录：
+
+> "Agentic experiences can research a repository, plan changes, and complete multi-step tasks by reading files, editing code, and running tests in a cloud development environment."
+
+> "Automations run repository tasks on a schedule or in response to events, rather than requiring a new prompt each time."
+
+> "Copilot cloud agent can research a repository, plan changes, and implement them in the background."
+
+  - 上轮缺口处理：上轮 Copilot 正文截断——本轮以 docs.github.com 直取（617KB/610KB HTML 实取）补上；上轮要求的 api/raw 载体补抓为 changelog JSON-LD 日期字段实取（D1/D2 的 datePublished 即 API 级元数据）。
+  - 通道注记：docs 现行用词是 **"Copilot cloud agent"**，而 blog/changelog 仍用 "coding agent"（2026-07-29 条目原题即 coding agent）——命名漂移如实记录，条目按官方两种用词并存登记。
+  - **该条支持的最小主张**：Copilot 的自主任务面（后台多步任务＋定时自动化）与预算上限（user/cost center/enterprise 三层 budget）均为官方文档化机制。
+  - 派别适配：**推动·厂商**＋机制登记（target 9 Copilot 行）。
+
+### 增量 E · OpenAI Codex / dots —— 解决·强（learn.chatgpt.com 官方 `.md` 直取四件；openai.com 博客通道被拦如实记录）
+
+- **E1. 官方文档《Meet dots》＋《Tasks and memory》（learn.chatgpt.com，living docs，实取 2026-10-06）**
+  - 通道：https://learn.chatgpt.com/llms.txt 实取（官方自述 "Each page has a Markdown twin at `/docs/<slug>.md` for direct ingestion"）→ `.md` 直取（16KB/8KB）。openai.com/index/dots/ 直取被 JS 盾拦截（9.9KB 空壳，通道状态如实记录）；dots 发布日未在官方一手载体核到日期，官方状态为 "rolling out gradually"。
+  - 逐字摘录：
+
+> "Your dot is an always-on agent that keeps work moving across your tools and projects. You can keep talking to it while it works, and it reaches out with results or decisions that need you."
+
+> "Powered by GPT-6 Astra, your dot lives in the cloud and has its own computer and browser. … It can research, analyze data, prepare documents, and build software, using relevant context from past conversations and your preferences."
+
+> "Your dot keeps working between conversations and follows through as things change. It can decide when to pause and wake up to continue, so you don't need to put every follow-up on a fixed schedule."
+
+> "Your dot can divide work among background agents that run in parallel and report back to it."
+
+  - **该条支持的最小主张**：OpenAI 在窗口内把"常驻自主 agent"做成产品面（云端常驻＋自主决定何时暂停/唤醒＋并行后台 agent 分工）——库内已有 Codex 线索之外的最大新产品面。
+  - 派别适配：**推动·厂商**（自主性即产品）。停止语义的官方自限见怀疑面增量 B。
+
+- **E2. 官方文档《Codex Cloud》《Agent approvals & security》《ChatGPT usage limits and spend controls》（同通道 `.md` 实取）**
+  - 逐字摘录：
+
+> "Each task has its own workspace and can keep working while your computer is asleep."（cloud.md）
+
+> "By default, the agent runs with network access turned off. Locally, Codex uses an OS-enforced sandbox that limits what it can touch (typically to the current workspace), plus an approval policy that controls when it must stop and ask you before acting."（agent-approvals-security.md）
+
+> "Administrators need user guardrails, workspace-level spend controls, or usage notifications supported by the current plan."＋"GPT-6 Astra Ultrafast is off by default in eligible Enterprise workspaces. … the higher usage rates can consume a user's budget faster."（enterprise/usage-limits.md）
+
+  - **该条支持的最小主张**：Codex 线的把控机制三件套——沙箱/审批门（must stop and ask）、企业级 spend controls、高风险模式默认关闭——全部官方文档化（target 9 OpenAI 行）。
+  - 派别适配：**推动·厂商**＋机制登记；`untrusted` approval policy 回撤进怀疑面增量 A。
+
+- **E3. 官方《Codex Security plugin changelog》（带日期的一手 changelog）**
+  - URL：https://learn.chatgpt.com/docs/security/plugin/changelog.md （`.md` 实取 22.9KB）
+  - 逐字摘录（0.1.25，**September 23, 2026**）：
+
+> "See standard scan progress advance through threat modeling, discovery, validation, attack-path analysis, and reporting as each phase begins."
+
+  - **该条支持的最小主张**：Codex 安全审查环（威胁建模→发现→验证→攻击路径→报告）在窗口内有带日期的官方增量（0.1.24 Sep 9 / 0.1.25 Sep 23 / 0.1.30 Sep 24），即"审查环"产品化的官方一手。
+  - 派别适配：**推动·厂商**（安全审查做成多阶段环产品）。
+
+### 增量 F · Devin / Cognition —— 解决·强（06-04 双篇＋Fusion 06-29＋ACU usage policies 文档）
+
+- **F1. Scott Wu（CEO）署名《AI should earn its keep: Introducing the AI Productivity Guarantee》**
+  - URL/日期：https://cognition.com/blog/ai-guarantee ；datePublished **2026-06-04**（页面 JSON-LD＋页头 "06.04.26" 双确认）；署名 **By Scott Wu**。
+  - 逐字摘录：
+
+> "The industry needs to move from maximizing usage metrics to maximizing outcomes — and right now, there's no good standard for measuring that. AI vendors should be the ones to provide it."
+
+> "We built an AI estimator that measures the productive engineering output Devin is providing to enterprise customers. … if Devin delivers less engineering value than you're paying for, Cognition will fund your usage up to $10M until it does. We're calling it the AI Productivity Guarantee."
+
+> "We measure in hours of productive output because lines of code don't correspond to effort: a critical bug that takes hours to investigate might be a two-line fix."
+
+> "If the session resulted in unmerged PRs or was classified as otherwise unproductive, the output is considered not useful."
+
+> "Devin has fine-grained controls to manage spend and steer users towards more productive prompts already."
+
+  - **该条支持的最小主张**：Cognition 把"环产出有没有用"的判定（unmerged PR／unproductive session 分类）做成产品承诺机制——loop 输出质量本身被厂商金融化担保（$10M 上限）。
+  - 派别适配：**推动·厂商**（对赌式卖点）；其方法论自认（估计不可靠等）见怀疑面增量 G。
+
+- **F2. 技术博客《Estimating the Productivity of an Autonomous AI Software Engineer》**
+  - URL/日期：https://cognition.com/blog/ai-productivity ；**2026-06-04**（同上双确认）；署名 The Cognition Team。逐字与自认部分见怀疑面增量 G（本体一手：数据集 258 sessions / 126 users、r_log 0.74、LLM 时间估计不可靠的官方表述）。
+  - **该条支持的最小主张**：自主 agent 生产力可被自动估计并已在生产运行（厂商自述 "the first automated system measuring AI engineering productivity in production"）。
+  - 派别适配：**推动·厂商**（能力主张）＋方法学自认（分列）。
+
+- **F3. 官方博客《Devin Fusion》（06-29）**
+  - URL/日期：https://cognition.com/blog/devin-fusion ；datePublished **2026-06-29T10:00:00-08:00**（JSON-LD 实取）。
+  - 逐字摘录：
+
+> "Engineering teams are lighting money on fire. It's no longer sustainable to use the most expensive models on every task. But existing tools for mixing models suck."
+
+> "The key idea behind our architecture is to run two parallel agents: one with a frontier model, the other with a more cost-effective "sidekick" model."
+
+> "By default it should delegate and monitor, while making the significant decisions: the plan, the interpretation of ambiguity, the final review."
+
+> "We initially reported a 35% cost reduction at publication. On the latest FrontierCode 1.1 Extended data (updated 8/7/2026), Fusion is up to 60% cheaper, as shown in the updated charts."
+
+  - **该条支持的最小主张**：Cognition 的并行产品表达（Fusion）=主环"delegate and monitor"、sidekick 并行执行、决策（plan/歧义解释/终审）留给 frontier 主环；**初报 35%→8/7 修正 60%** 是官方自我数据修正（证据链注记）。
+  - 派别适配：**推动·厂商**。窗口外备注："Devin can now Manage Devins"（并行编排 manager-devin，2026-03-19 实取）为本产品面底座。
+
+- **F4. 官方文档《Usage policies: per-user ACU limits》（docs.devin.ai，living docs，实取 2026-10-06）**
+  - 逐字摘录：
+
+> "Usage policies let enterprise administrators cap each member's monthly ACU consumption. A member's local usage (Devin Desktop, Devin CLI) and cloud usage (Devin sessions) count against a single per-user limit, and new work is blocked on all surfaces once the limit is reached."
+
+> "Per-user limits are independent of organization-level ACU limits — a session is blocked if either limit is reached."
+
+  - beta 状态句进怀疑面增量 H。**该条支持的最小主张**：Devin 的预算上限是"双门闩"（per-user 与 org-level 任一触顶即阻断所有表面）——target 9 Devin 行官方一手。
+
+### 增量 G · Amazon Kiro —— 解决·强（Autonomous mode/Workflows/Automations/Crew/Hooks 五面全文档化）
+
+- **G1. 官方文档《Autonomous mode》（Kiro Web，living docs，实取 2026-10-06）**
+  - URL：https://kiro.dev/docs/web/autonomous-mode/
+  - 逐字摘录：
+
+> "Autonomous mode lets the agent own the outcome of a task from start to finish. Instead of iterating with you step by step, the agent builds a plan, delegates work to specialized sub-agents, and opens a pull request or merge request automatically when the work is complete."
+
+> "Autonomous mode is off by default — when it's off, you work with the agent collaboratively in the default mode."
+
+> "A workflow gives the runtime a reusable graph with explicit steps, agents, handoffs, loops, waits, and completion conditions; it can run in the background while you continue the parent conversation."
+
+> "In autonomous mode, the agent selects the model automatically — you cannot choose the model yourself."＋"If the agent needs clarification during execution, the task moves to a Needs attention state and waits for your input."
+
+  - **该条支持的最小主张**：Kiro 官方区分"agent 自主决定内部过程的单任务环"与"显式图工作流（含 loops、waits、completion conditions）"——**"loop"与"completion conditions"作为运行时正式词表出现在 AWS 系厂商文档**。
+  - 派别适配：**推动·厂商**（上轮"only 标题"解除）。
+
+- **G2. Changelog 2026-09-30《Introducing Workflows in Kiro Web》＋同日 IDE 1.2＋10-01 CLI 2.27.0**
+  - URL/日期：https://kiro.dev/changelog/ （索引页直取；条目日期 Oct 1, 2026 / Sep 30, 2026 实取）
+  - 逐字摘录：
+
+> "Workflows are now available as an opt-in feature in Kiro Web cloud sessions. They run reusable, multi-step agent plans in the background while you continue working in the parent conversation."
+
+> "Each step runs in its own agent session, which you open from the Workflows panel; it sees only what earlier steps hand it, and the run pauses when a step needs your input."＋"After a failure, you can retry the failed steps."
+
+> "IDE 1.2 introduces Workflows, strengthens safeguards for untrusted workspaces, and adds enterprise controls for sign-in methods."（IDE 1.2，Sep 30, 2026）
+
+> "Kiro CLI 2.27.0 adds control over how V3 delegates when Workflows are enabled … When Workflows are enabled, the new Workflows: sub-agent tool setting is on by default, so the main chat can delegate directly to sub-agents or through Workflows. Turn it off under /settings features to limit main-chat delegation to Workflows"（CLI 2.27.0，Oct 1, 2026）
+
+  - **该条支持的最小主张**：后台多 agent 工作流（步骤级可查/可答/可暂停/可重试）在 2026-09-30/10-01 三面齐发，且 CLI 侧把"主 chat 能否直接委派 sub-agent"做成默认开、可关的治理开关。
+  - 派别适配：**推动·厂商**＋机制登记。
+
+- **G3. 官方文档《Automations》《Running 24/7》《Hooks》《What's new in CLI V3》（living docs，实取 2026-10-06）**
+  - 逐字摘录：
+
+> "Automations let Kiro Web run a prompt against your GitHub or GitLab repositories on a schedule, without you starting a session. … Kiro carries it out in autonomous mode."（automations；其官方恶意指令警告进怀疑面增量 I）
+
+> "Crew is designed to run continuously so its Slack bot, cron jobs, and task runner keep working while you're away from your desk."（crew/running-24-7）
+
+> "Hooks run shell commands or agent prompts automatically when specific events happen in your session - the agent modifies a file, invokes a tool, or completes a task."＋"Gate dangerous operations - block tool execution unless preconditions are met (PreToolUse)"（hooks；target 9 Kiro 行）
+
+> "CLI V3 is built on the same unified agent harness that powers the Kiro IDE and Kiro Web."＋"Capability-based permissions — declare structured policies in permissions.yaml for fine-grained, auditable control."（CLI V3；V3 为 early release，发布日未单列，以 10-01 changelog 佐证）
+
+  - **该条支持的最小主张**：Kiro 的无人值守面=定时自主模式（Automations）＋常驻网关（Crew 24/7）＋事件钩子闸门（PreToolUse 阻断）＋统一 harness；controls 与产品同面铺开。
+
+### 增量 H · Factory —— 解决·强（创始人署名 06-15＋Autonomy Level 四档文档）
+
+- **H1. 官方新闻《Factory 2.0: From coding agents to software factories》**
+  - URL/日期：https://factory.com/news/software-factory ；datePublished **2026-06-15T00:00:00Z**（JSON-LD 实取）；署名 **Matan Grinberg, Eno Reyes**（创始人，页面实取）。
+  - 逐字摘录：
+
+> "This system must improve over time by observing itself."
+
+> "The entire system is a continuous feedback loop. Almost no one has meaningfully instrumented this loop to be fully AI-driven."
+
+> "Sovereignty means more than choosing where the system runs. It means owning a system that learns from itself, feeding every agent session, code review, and resolved incident back into the loop."
+
+> "Continual Learning and Self-Improvement. Every stage of the software development lifecycle must be instrumented."
+
+  - **该条支持的最小主张**：Factory 把"自观察的连续反馈环"定义为公司级纲领（software factory＝instrumented loop），与 Warp 的 factory 品类定义同月（06-15 vs Warp 06-16/08-27）——"loop→factory"是窗口内厂商侧的共同命名运动。
+  - 派别适配：**推动·厂商**。
+
+- **H2. 官方文档《Autonomy Level》（docs.factory.ai，living docs，实取 2026-10-06）**
+  - URL：https://docs.factory.ai/cli/user-guides/auto-run
+  - 逐字摘录：
+
+> "Autonomy Level sets the highest-risk work Droid can run without pausing for approval."
+
+> "Choose Off, Low, Medium, or High to control what Droid can do without repeated confirmations."
+
+> "Organization Maximum Autonomy Level can hide higher options."＋"`--skip-permissions-unsafe` skips all permission prompts, but command blocks still apply."
+
+  - 非隔离性自认句进怀疑面增量 D。**该条支持的最小主张**：Factory 把自主度做成四级风险闸（Off/Low/Medium/High）＋组织上限封顶＋"unsafe"旗需显式命名——target 9 Factory 行官方一手。
+
+### 增量 I · Sierra —— 解决·强（guardrails 博客 08-20 全文）
+
+- **I1. 官方博客《Release governance: guardrails for agents at scale》**
+  - URL/日期：https://sierra.ai/blog/release-governance-guardrails-for-agents-at-scale ；datePublished **2026-08-20T16:06:36Z**（JSON-LD 实取）＋页头 "August 20, 2026"；署名 **Sachi Shah**。
+  - 逐字摘录：
+
+> "Some of the world's largest companies build their agents on Sierra: hundreds of people working inside a single agent, across hundreds of journeys, serving millions of customers."
+
+> "That's why we built release governance directly into the Sierra platform: the checks, approvals, and rollout strategies that move a change safely from a builder's Workspace to a live customer conversation."
+
+> "Agent Checks is a linter for your agent, surfacing warnings as you build based on your journeys and the conversations they generate."
+
+> "Not every decision can be automated … That's why we introduced merge approval workflows. Organizations can now require peer review before any change releases, just as software teams require approval before a pull request lands."
+
+> "And because every release is an immutable snapshot, rolling back is just as fast if something unexpected appears."
+
+  - 归属澄清：搜索结果的 docs.agentos.sh（Guardrails Architecture）是**同名开源 TypeScript agent runtime（agentos.sh）而非 Sierra**——Sierra 的一手以 sierra.ai 为准，本轮未采 agentos.sh 内容。
+  - **该条支持的最小主张**：Sierra 把 SDLC 治理机制（linter、人工 merge 审批、金丝雀发布、不可变快照回滚）整体移植进 agent 环的发布流程——"hundreds of people working inside a single agent"是 loop 组织论在企业侧的一手表述。
+  - 派别适配：**推动·厂商**（把控性=卖点，直供"把控性"主题）。
+
+### 增量 J · IBM Bob（其他平台）—— 解决·中（官方 newsroom 10-01）
+
+- **J1. IBM 官方新闻稿《IBM Introduces Self-Hosted Deployment for IBM Bob…》**
+  - URL/日期：https://newsroom.ibm.com/2026-10-01-ibm-introduces-self-hosted-deployment-for-ibm-bob-to-help-enterprises-advance-ai-sovereignty-and-governance ；正文日期行实取 **"ARMONK, N.Y., October 1, 2026"**。
+  - 逐字摘录：
+
+> "Bob is IBM's agentic software development platform that helps teams move beyond code generation to apply AI to the work of software delivery and modernization."
+
+> ""The future of enterprise AI will depend on security, governance and sovereignty," said Neel Sundaresan, GM of AI and Automation, IBM."
+
+> "the self-hosted version of IBM Bob allows enterprises to deploy AI software development and modernization capabilities in environments where their code, application context, and data already reside."
+
+  - **该条支持的最小主张**：IBM 以"agentic software development platform"定位 Bob，并把"自托管/气隙"作为自主 agent 进入受控环境的产品解——sovereignty 即把控性的厂商表达（target 8 其他平台）。
+  - 派别适配：**推动·厂商**（治理即卖点）。
+
+### 增量 K · 其他平台与"/bo"通道状态 —— 仍开放（负结论加固）
+
+- **"/bo" 候选定位**：最接近的官方一手命中为**博云 BoClaw**（https://www.bocloud.com.cn/dynamic/show-2635.html ，"AI原生智能体平台BoClaw"，页面实取"发布时间：2026/3/9 10:00:00"）——**窗口外**（2026-03-09），且定位为个人 AI 助手平台（"数据不出域、权限精细化、技能可定制"＋IM 远程控制/定时任务），非 coding agent loop 产品面。若"/bo"另有所指，本轮未定位到官方一手，**仍开放**。
+- **归置**：搜索结果中的 docs.agentos.sh 系同名开源 runtime（非 Sierra、非商业 coding agent 平台），本轮未采其内容（避免误归属）。
+- **Warp 系列余量**：warp.dev/blog 站内列表实取的另三篇窗口内文章（Jul 23 Build Guide / Aug 26 missing feedback loop / Sep 15 crawl-walk-run）为标题级在册，供第四轮深挖。
+
+### 附 · Target 9 机制登记表（停止条件/预算上限/失控防护，逐家；窗口内为主，窗口外明确标注）
+
+| 厂商 | 机制（官方一手载体） | 本轮证据 | 日期 |
+|---|---|---|---|
+| Warp | 权限分档（allow/ask/decide）＋denylist 优先级＋企业 Admin denylist 不可绕过 | 增量 A3 | living docs，"Last updated Oct 6, 2026" |
+| Replit | plan 并发上限＋任务排队（"Additional tasks queue and start as slots become available"）＋checkpoints/rollback（docs 在册未深取） | 增量 B4 | living docs，实取 2026-10-06 |
+| Jules | 并发任务硬配额 3/15/60＋日任务 15/100/300；窗口外在册：Planning Critic for Auto-Approved Plans（2026-01-26） | 增量 C1/C2 | living docs＋changelog 2026-03-09 止 |
+| Copilot | budgets 三层（user/cost center/enterprise）＋预算阈值告警；code review 环 MCP 只读硬限；model policy 逐级治理 | 增量 D1/D2/D3 | living docs＋2026-07-29/07-31 |
+| OpenAI | dots action review（proceed/approval/必须自己做）；approval policy（must stop and ask）；workspace spend controls；Ultrafast 默认关；**回撤项：`untrusted` approval policy 废止（怀疑面）** | 增量 E1/E2 | living docs，实取 2026-10-06 |
+| Devin | per-user＋org ACU 双门闩（任一触顶全表面阻断）；session 生产力分类（unmerged PR＝无用输出）；窗口外在册：Manage Devins 的 ACU 监控/休眠/终止子会话（2026-03-19） | 增量 F1/F4 | living docs＋2026-06-04 |
+| Kiro | hooks PreToolUse 危险操作阻断；Workflows 步骤级暂停/重试；untrusted workspace 安全加固；delegation 治理开关 | 增量 G1–G3 | 2026-09-30/10-01＋living docs |
+| Factory | Autonomy Level 四档（Off/Low/Medium/High）＋组织上限封顶＋permissionRules（block 优先于 ask 优先于 allow）＋safety checks | 增量 H2 | living docs，实取 2026-10-06 |
+| Sierra | Agent Checks linter＋merge approval（人审门）＋split traffic 金丝雀＋immutable snapshot 回滚 | 增量 I1 | 2026-08-20 |
+| IBM Bob | 自托管/气隙部署（sovereignty 控制面） | 增量 J1 | 2026-10-01 |
+| Gemini CLI | ACP 模式 request_permission 事件（release note 2026-09-22 行）；**官方术语层面未见 "loop detection"/"circuit breaker"** | 增量 C3 | 2026-09  |
+
+- **本轮负发现（如实登记）**：① 无任何一家厂商官方文档使用 "loop detection" 或 "circuit breaker" 术语（最接近的是 Kiro PreToolUse 闸门、Factory safety checks、Devin 双门闩、dots action review）；② Jules 官方 changelog 在 2026-03-09 后静默（增量 C1）；③ Gemini CLI 官方 release note 存在一手"无限循环 bug 修复"记录（"prevent infinite auth loop"，2026-09-29）——失控案例见怀疑面增量 K。

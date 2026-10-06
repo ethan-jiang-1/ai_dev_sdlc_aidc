@@ -244,3 +244,161 @@ collected_at: 2026-10-06
 - **放弃**：知乎两 URL（《最扯淡 AI 名词》＋1700 赞问答——需人工登录态，agent 两轮 403；smzdm 转述链维持"仅传播证据"，不再当关键节点挂账）；小红书（JS 空壳）；mp.weixin 原始页（腾讯云同步页为可得来源，足够）。
 - **保留重扫**（未发布 ≠ 拉不下来）：Stack Overflow 2026 年度调查（官方已逾期，下轮最高优先）、DORA 2026、Octoverse 2026（参照去年 10-28 节奏）。
 - 本节之上的"仍开放"表述凡与本节冲突，以本节为准。
+
+## 第三轮挖掘（2026-10-06）：机构采样快查与 GitHub 千人研究
+
+### 一、三份年度报告快查（各一 curl，2026-10-06 15:31 CST）
+
+- **Stack Overflow 2026 年度调查：仍未发布**——`https://survey.stackoverflow.co/2026/` HTTP 404。官方 10-01 "next few days" 已逾期 5 天，维持下轮最高优先。
+- **DORA 2026 年度报告：仍未发布**——`https://dora.dev/research/2026/` HTTP 404。
+- **Octoverse 2026：仍未发布**——github.blog WP API（`search=octoverse`）最新相关文为 2026-02-03《What the fastest-growing tools reveal about how software is being built》（数据侧篇，非年报）；2025 年报发布节奏为 10-28。
+- 拉取纪律账目更新：上节"保留重扫"三项目本轮已重扫，三份均未发布；保留重扫不变。
+
+### 二、GitHub × Yale 千人研究（全文实取：WP API ＋ Yale 报告页）
+
+**《Developers want more efficient software. Here's what over 1,000 GitHub users told us they need.》**（github.blog，2026-09-23）——上轮仅标题级，本轮原文与 Yale 报告主页全部实取。
+
+- **机构采样口径**：n=1,039 GitHub 用户（18+，全美 50 州＋华盛顿特区），GitHub 与 Yale Program on Climate Change Communication 联合调查；**采样期 2026-06-30 – 2026-08-09**（Yale 页逐字："Interview dates: June 30 – August 9, 2026. Interviews: 1,039 GitHub users (18+) in the 50 U.S. states and Washington, D.C."）；在线英文、Alchemer 平台（2026-09-25 官方勘误：先前误写 Qualtrics）；**非概率样本**——从勾选接收 GitHub 营销邮件的用户中抽取，自述"the findings describe survey respondents rather than developers generally"。完整报告 PDF：climatecommunication.yale.edu/app/uploads/2026/09/GitHub-Report-2026.pdf。
+- **主题限定**：软件能效与气候，非 loop 直接测量；最高价值在机构层对 agent 委托边界的正式表态，逐字：
+  - 小标题即立场："Use an agent to find opportunities, not to make the final decision"。
+  - "GitHub Agentic Workflows can help automate the search while keeping maintainers in control."（配开源 Daily Efficiency Improver 工作流）
+  - "It does not merge changes itself." / "Treat every recommendation as a hypothesis until the benchmark and tests support it."
+  - "AI can help developers search, test, and document possible improvements. Humans still decide whether the evidence is sound and whether the change belongs in the codebase."
+  - 末节标题直接用 loop："Make efficiency part of the engineering loop"；"Maintainers can then accept, revise, or reject the change."——机构产品文把"人审接受/修改/拒绝"正式定义为其 loop 的一段。
+- **数据**（同上采样口径）：80% 想要写更节能代码的工具、78% 想要减排最佳实践、74% 想要度量自身软件/开发过程影响、70% 想参与可持续方向开源；71% 担心 AI 系统的环境影响（能耗/水/碳）；仅 10% 认为自己写代码的方式对个人环境影响"大"（28% 中等、63% 小）。
+- 同刊顺带（非采样，不引数）：2026-10-02《AI is changing developer work. Here are three skills to strengthen.》为技巧文，多 agent 并行叙事逐字 "You're still responsible for the outcome, but you're spending less time implementing every piece yourself."
+
+### 三、JetBrains 挂账核销（两篇原图实取，二手转述升一手）
+
+前轮负结论"JetBrains 原帖两篇截断，数据经 Gigazine/daily.dev 二手转述（未核原图）"——本轮带浏览器 UA 全文实取，**二手转述数字全部核实为真**，采样口径同步补全：
+
+- **《AI Coding Agents: Adoption Trends》（2026-08-18）**：逐字 "As of May–July 2026, 90% of professional developers were using AI coding agents at work at least weekly in one form or another (local agents or remote cloud agents), with 68% using them daily."——90%/68% 核实（口径：工作场景、本地＋云端 agent）。新细节：Claude Code 工作采用率 "around 39% of professional developers worldwide... up from 18% in January 2026. In the United States, its adoption is even higher at 47%"；"It is used twice as often as GitHub Copilot, a former long-standing leader of the market"。
+- **《How Much Code Do Developers Really Let Agents Write?》（2026-08-26）**：采样 = Developer Ecosystem Survey 2026，**2026 年 5–7 月，15,000+ 全球专业开发者**（8 语种、按地区配额、自报告）。逐字 "On average, professional developers report that: ~47% of their code is fully written by agents. ~38% is written with some AI assistance. ~27% is written fully manually."（作者自注：桶中值平均，三项和可超 100%）。三层分型核实："Agentic coders (~31% of developers)"（其代码 84% 全 agent 生成）、"AI-assisted coders (~47%)"（均值 40% agent 生成）、"Manual coders (~23%)"（~10% agent 生成）。**二手层未提的关键细节**："only 46%–57% of heavy users of Claude Code and Codex are agentic coders"（连最激进工具的重度用户也未多数全委托）；"Over half of all developers now write less than 20% of their code manually, and one in five writes literally zero code without AI help."
+- **AIDEs 后续**：JetBrains Research RSS 核对，《The AIDEs Framework》（2026-09-18）之后至 2026-10-06 无新研究帖。
+
+### 四、Atlassian 补漏与 Google Cloud 负结论
+
+- **Atlassian《The Agentic Pivot》**（博文 2026-09-03，早于本轮 09-15 窗口 12 天；前两轮均未收录，属补漏，按窗口边缘标注）：报告覆盖 1,100+ 工程师与工程负责人（采样期博文未给，whitepaper 未核）。逐字：
+  - "Across more than 1,100 engineers and engineering leaders, 94% of engineering leaders say their organizations use AI in some capacity, but most of that usage is still supporting individual tasks such as coding, debugging, and documentation."
+  - "88% say they need a governed engineering system of work for AI, while only 19% say they have built one."——与 loop 治理轴（停止条件/治理体系）直接同构，机构侧最强同类表述。
+  - "only 15% of engineers and 25% of leaders are very confident they could reconstruct the reasoning behind an AI-assisted decision six months later."——AI 辅助决策六个月后不可复原：决策可追溯性缺口。
+- Atlassian 内部样本《The AI-native SDLC is paying off》（2026-06-01）："we surveyed more than 6,200 Atlassian developers"（96% 为 Rovo Dev 用户）——**内部员工样本**，非行业采样；文中 "93% of developers use AI tools and nearly 30% of code is AI-authored" 系其转引外部数据。
+- **Google Cloud：负结论**。两轮搜索未发现 2026-10 发布的开发者 AI 现状新采样；可见最新机构报告仍是 2025 年末《AI agent trends 2026》（52% 企业已部署 agent、88% 早期采用者正 ROI，均为转述层数字，本轮未核原图、不引用）——不在窗口内，未收录。不排除存在未被索引的新文。
+
+### 五、通道与方法（本轮）
+
+- github.blog WP API（`/wp-json/wp/v2/posts?slug=…`）畅通，为该站全文主力通道；Yale 报告主页静态可取且含采样期逐字段与勘误记录——调查类来源优先找报告主页而不止新闻稿。
+- JetBrains research 原帖带浏览器 UA（Chrome/macOS）可直取全文，上轮"截断"疑为通道问题；research RSS 用于核对后续帖。
+- Atlassian `/blog/feed` 返回 358KB 但解析 0 items（feed 异常）；博文页静态可取（datePublished 可用）。
+- SO/DORA/Octoverse 三快查各一 curl 记状态码（15:31 CST），未恋战。
+
+## 第三轮挖掘（2026-10-06）：中文圈（工程派/企业接收层）
+
+> 本节为第三轮挖掘（中文圈线，与上文机构采样线并行）。观测时间 2026-10-06 15:00–18:00 CST；通道：QCon/infoq.cn/华为云/腾讯云/阿里云页面 curl 直抓（**QCon 议题正文在 NUXT 数据内实取成功——上轮"JS 渲染未取"翻案**）、sov2ex＋V2EX API v1（本轮恢复可用）、modb.pro 镜像、pingkai.cn Discourse JSON。逐字引句均出自本轮实际抓取的页面/JSON。
+
+### 一、InfoQ 企业层：QCon 上海 2026 设立「Loop Engineering」完整专题（上轮"仅标题级"升级为已解决）
+
+QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专题下 7 个议题（议题页逐条实取标题＋讲师）：
+
+| 议题（页面标题逐字） | 讲师（页面实取） | 链接 |
+|---|---|---|
+| Code Agent 的 Loop 工程实践：网易智企 CodeWave 的探索与落地 | 赵雨森｜网易智企技术专家、CodeWave 智能开发平台架构师（12 年经验，NASL 可视化编程语言设计者） | [presentation/7340](https://qcon.infoq.cn/2026/shanghai/presentation/7340) |
+| 把 Loop 接进团队：游戏研发实践中的 Loop Engineering | 任磊达｜腾讯高级后台开发工程师（QQ 飞车分享同一人；页面自述"日消耗 30 亿、月消耗 360 亿 token 的 AI Builder，目前正将个人 loop 推向团队 Graph，负责百人规模游戏研发项目组……从 Token Maxing 向 Token Apocalypse 转型"） | [presentation/7309](https://qcon.infoq.cn/2026/shanghai/presentation/7309) |
+| 从 Harness 到 Loop：阿福 Agent 小队如何处理持续涌入的线上 Badcase | 肖汉松｜蚂蚁集团阿福 Harness 架构组负责人 | [presentation/7232](https://qcon.infoq.cn/2026/shanghai/presentation/7232) |
+| 复杂业务 Agent 的持续进化：快手电商导购的 Harness Loop 实践 | 包磊｜快手资深技术专家、快手电商 AI 基座工程团队负责人（上轮标题级条目升级为已核讲师） | [presentation/7231](https://qcon.infoq.cn/2026/shanghai/presentation/7231) |
+| RCA Agent 的 Harness 设计：小红书 DeepSwarm 在容量根因分析场景的实践 | 小红书（讲师名页面在案） | [presentation/7290](https://qcon.infoq.cn/2026/shanghai/presentation/7290) |
+| 飞猪 AI Native 交付大脑：用超级流程重构需求交付 | 飞猪（讲师名页面在案） | [presentation/7263](https://qcon.infoq.cn/2026/shanghai/presentation/7263) |
+| 业务前端 AI Agent 从生成到交付的三次工程化拐点 | （讲师名页面在案） | [presentation/7310](https://qcon.infoq.cn/2026/shanghai/presentation/7310) |
+
+**网易智企 7340 议题全文实取**（NUXT 数据逐字）：
+
+> "随着 Code Agent 开始承担越来越复杂、越来越长程的软件开发任务，仅靠 Harness 提供上下文、工具和执行环境，已经难以保证 Agent 持续稳定地产出结果。如何让 Agent 不仅'完成任务'，还能判断结果、发现问题、自动修正，并通过持续迭代不断提升效果，成为 Agent 工程化落地的新挑战。"
+> 大纲六节含："Benchmark 与评估体系建设（LLM-as-Judge、Rule-based、SWE Style、Hybrid 等评估方式）""执行—评估—修正—重跑的闭环""分数驱动的 Agent 策略迭代与成本控制""实践总结：Loop 工程的落地取舍（适用场景与前置条件／自动化收益与 Token、算力等成本的权衡）"。
+> 前沿亮点自述："区别于把 Loop 讲成'定时触发、worktrees、连接器'等工具组合的解读，本议题给出'环工程的核心思想 + 环分析法 + 多视角诊断'的可复用框架"；听众收益第一条："一套判断闭环是否真正成型的检查方法"。
+
+（判读注：一线平台厂商把 loop engineering 议题化时全部自带三件套——评测体系、成本权衡、适用边界；与 QQ 飞车"非工作时间还没真正 loop 起来"同构：**企业接收的术语层是工程问题，不是意识形态**。术语史注：继 AICon 深圳 7191 之后，主流技术大会第二次以该词命名专题单元。）
+
+### 二、InfoQ 写作社区三篇通道（上轮"正文 JS 未取"部分翻案——经镜像实取）
+
+**容智信息《告别"面向玄学编程"：深度拆解 Loop Engineering 架构与企业级 Agent 避坑指南》**——xie.infoq.cn 原文仍 JS 未取，但**墨天轮镜像全文实取**（[modb.pro/db/2082381326393634816](https://www.modb.pro/db/2082381326393634816)）。**企业号编译+评论判定**（引用 Steinberger/Osmani/Anthropic 并给落地视角；正文残留 `[cite: 1]` 标记——AI 辅助写作痕迹）：
+
+> "光说不练假把式……'干活的 Agent 不能自己当裁判。'这避免了 Agent 生成一堆看起来完美无暇、一跑却全报错的'垃圾代码'。"
+> 三大"隐形认知债"：**Token 烧毁**（"一旦遇到死循环或递归报错，跑一晚上耗费的 API 费用足够你去楼下咖啡厅请全组喝一个月咖啡了。必须强制配合类似 loop-cost 的预算熔断机制"）、**认知债**（"一晚上自动提交并合并了 30 个 PR，第二天早上起来，团队里没有一个工程师知道这些代码到底是怎么写出来的。代码存在，但没人懂了"）、**认知投降**（"当自动化 Loop 连续一周完美运行，人类就会产生极其危险的惰性。测试绿色一亮，连看都不看就直接点一键 Approve"）。
+
+（对位注：Osmani 的 comprehension debt / cognitive surrender 概念经中文企业号口径系统转述的落地样本——概念传播链"KOL→企业号→社区"在此可证。）
+
+**TiDB 社区《亲测好用的 PDCA 组队法》勘误（上轮归类修正）**：经 TiDB 官方论坛 Discourse JSON 实取（[pingkai.cn/tidbcommunity/forum/t/1054013](https://pingkai.cn/tidbcommunity/forum/t/topic/1054013/3)，发布 **2026-05-18**，作者 Billmay表妹＝TiDB 社区运营），主体是名为 "Loop" 的**团队协作产品**教程（"3-4 个 Agent 黄金搭档"），并非 loop engineering 范式——**上轮将其计入"实践正方向"样本不确，应改记为：窗口外（5-18）＋对象错位（产品名巧合）**；xie.infoq.cn 版系转发。
+
+**阿里技术《Loop Engineering 概念解析、思考与实践》**：三篇中唯一仍无全文通道者（xie.infoq.cn 直取与镜像检索均未命中正文）——维持"标题＋账号已核"状态。
+
+### 三、V2EX 工程派层（sov2ex＋V2EX API 实取，2026-06 后）
+
+**《[AI 变化太快，概念层出不穷？prompt engineering 到 context engineering 到 harness engineering 到 loop engineering 到 ... ...? 会到哪里？](https://www.v2ex.com/t/1223448)》（OP starlion，2026-06-28，**25 回复**——术语谱系讨论，混合立场）**：
+
+> "这么多个概念就是因现有的没法完整描述，以及有他的历史阶段性。prompt 试图解释的是如何有效的使用提示词驱动大模型，对应的是 2022-2023 最早期阶段 context 只有几 k,对话只能对个几段就必须截断的阶段……context 对应的是第二阶段的 2024-2025,这个阶段里模型的上下文空间快速增长，让多轮的长任务成为可能，然后一个现象就被观察到了，就是 context rot, 上下文腐化"—— maolon（认真拆解派）
+> "context engineering, harness engineering, loop engineering 感觉本质都是说的一个事情😂"—— Ironpan；"下一个就是 while loop engineering 了"—— charlie21（嘲讽侧逐字另见 skeptics 档补抓节）
+
+**《[/goal 已经跑了 1d3h…道心破碎](https://www.v2ex.com/t/1227533)》评论区工程派守则**（OP 正方侧逐字见 [`../01_advocates/community_feedback.md`](../01_advocates/community_feedback.md) 补抓节同帖条目，此处不重复）：
+> "太大的任务不要让它一次性做完，划分阶段，每个阶段开始前结束后人工审核验证。"—— winglight2016
+> "reddit 上我看很多人也在讨论这个，特别是 5.6 的 over engineering 倾向，好处就是你说的基本不需要交互了……坏处就是他会不断的叠加任务，你会看到 12 个小时前是 1/5 任务，12 个小时后依然是 1/5 ，但是任务目标实际已经变了"—— maolon（模型行为漂移的一手观察）
+
+**《[24 小时自动化开发](https://www.v2ex.com/t/1243154)》方案谱系（63 回复，2026-09-19）**：社区收敛答案是**分角色编排而非放手**——"让一个 subagent 干活，另一个 subagent 监督与调度"（zls3201，并引 omo 仓库"被 agent 接管"先例）；保留条款——"24 小时全让 ai 自己搞基本上离最初的要求离很远了"（orion1）。
+
+**企业接收层一手证据｜《[「广州·珠江新城」省属国企数科公司招聘](https://www.v2ex.com/t/1231333)》（OP enchigo，2026-07-31，4 回复）**——**"harness、loop engineering" 写进国企 AI 部门招聘 JD**（逐字）：
+
+> "现在主要在做通用办公、审计、法务、财务、投资经营分析等办公场景 Agent,会研究和实践前沿热门技术(harness 、loop engineering)。"（AI 部门 20 人；测开岗职责含"AI Coding 工程质量提升"）
+
+（判读注：术语进入招聘语言的信号点——此前仅见媒体/大会层。国企数科 JD、InfoQ QQ 飞车、QCon 专题构成"中国企业接收曲线"三个采样点。）
+
+**《[开源一个自己写的项目: UFO, Unified Fleet Orchestrator / 统一舰队编排引擎](https://www.v2ex.com/t/1225331)》（OP metaclass，2026-07-06，10 回复）**——自述"愿景是打造零人工参与的 AI 编排平台（循环工程）"；楼内架构问答（"不是 agent 之间直接交互，是 hub 负责编排逻辑……省去各种沟通成本"）——**中文独立开发者已在把"循环工程"当产品类别词使用**。
+
+**窗口前注脚**：SegmentFault《[从 ReAct 到 Ralph Loop：AI Agent 的持续迭代范式](https://segmentfault.com/a/1190000047575861)》（阿里巴巴云原生团队账号，作者署名丹坤，LD-JSON 实取 datePublished **2026-01-27**——术语命名潮前 5 个月）：
+
+> "LLM 的自我评估机制不可靠——它会在主观认为'完成'时退出，而非达到客观可验证的标准。"
+> "核心三要素：明确任务＋完成条件 / Stop Hook 阻止提前退出 / max-iterations 安全阀。"
+
+——**术语走红前中文大厂工程账号已发布同构实践文**（"用其术早于闻其名"的又一事证）。
+
+### 四、腾讯云/华为云工程派原创（正文全部实取）
+
+**腾讯云｜《[从 Harness 到 Operating Loop：Coding Agent 可托付性的控制层](https://cloud.tencent.com/developer/article/2704604)》（小陡坡香菜，社区 2026-07-07，页面自标"本文参与腾讯云自媒体同步曝光计划，分享自微信公众号。原始发表：2026-07-06"，430 阅读，专栏"星河细雨"）**——**本轮最佳中文原创工程论述（非编译判定：结构化原创，文末引 Agent Harness Engineering survey 与 arXiv 2603.28052）**：
+
+> "loop engineering 不是 prompt 的替代品，而是 harness 之上又长出的一个工程化方向。"
+> "可靠性的单位，已经从 answer 变成 trajectory。……交付单位没有变，受控单位和验收单位变了。……验收一个 agent 的工作，验收的是 outcome 加 evidence 的组合，而不只是孤立的交付物。"
+> "弱模型经常停在'不会做'；强模型的问题更像'它做了很多事，但系统不知道哪些应该被允许、哪些已经完成、哪些需要回滚'。"
+> 对"新瓶装旧酒"质疑的正面回应："差别不在有没有循环，而在循环之外靠什么保证它可托付。"判据三问："contract 在哪里，证据写到哪里，谁在 agent 之外做验证。"（并承认反例："如果一个 loop 只是 cron 定时把同一段 prompt 喂给 agent，不写 task contract，不留 ledger，验证只靠 agent 自己宣布'已完成'，那它确实不值得冠以新名词。"）
+> 数据引证："Google 报告近 16% 的测试带有某种程度的 flakiness，而在 CI 里，一个测试从通过转为失败时，约 84% 的情况是 flaky 而非真实回归。"
+
+（判读注：**公众号原创深度复盘缺口由本文补上**——中文圈出现了与 Ronacher/LoopGain 同层的"可托付性控制层"论述；"内层问题不交给外层重试、外层问题不塞给内层 agent"的分工表述与 harness/loop 两层治理框架互证。）
+
+**腾讯云｜《[Claude Code 的 /loop 与 /goal 到底区别在哪里？](https://cloud.tencent.com/developer/article/2697483)》（乐小野，2026-06-24，正文实取）**——**原创技术拆解判定**（带编号引用）：
+
+> "选错命令，轻则浪费 token，重则烧光预算——已有开发者报告 14 小时跑掉 $200 的案例[3]。"
+> "/goal 的底层是一个会话级（session-scoped）基于 prompt 的 Stop Hook……核心创新在于工作模型与评判模型分离……独立的快速模型（默认 Claude Haiku）读取完整对话记录，返回 yes/no + 理由""评判模型不调用工具、不读文件、不执行命令，仅根据对话中已出现的内容做判断。"
+> 版本锚："/loop（2026 年 3 月随 v2.1.72 发布）和 /goal（2026 年 5 月 11 日随 v2.1.139 发布）"。
+
+**华为云｜《[Loop Engineering 与 Spec-Driven Development 结合下的 token 收敛](https://bbs.huaweicloud.com/blogs/480063)》（1_bit，发表 2026/06/24，正文实取）**——**个人原创实践判定**：
+
+> "它给我的第一印象是：将 AI 烧钱这件事更深的刻到了每个开发者心里，会导致 Token 爆炸起飞；但它在复杂任务上的最终完成度却出奇的高。"
+> "结果查看了几篇文章之后，我猛然发现：Loop Engineering 不就是我一直在用的开发模式吗？……只是我之前日用而不知。"
+> "工程界从来没有银弹，Loop Engineering 与 SDD 等范式绝不是非此即彼的替代关系，而是互补共存的。"
+
+**阿里云｜《[Loop Engineering：从 Prompt Engineering 到迭代式智能体工程](https://developer.aliyun.com/article/1747820)》（浅浅33，2026-07-15，391 阅读）**——正文 JS 未取，简介含"Loop Engineering 是2023年起"时间线硬伤（疑低质改写）——传播层登记，不作工程证据。
+
+### 五、媒体聚合层补点
+
+**钛媒体专栏｜《[你还在手写 Prompt？聪明的人早就用上了循环工程，AI 的自动驾驶时代来了](https://www.tmtpost.com/8066456.html)》（"AI不是AI吧"，2026-07-16 08:10，自标全文 7303 字，正文实取）**——**编译+自写判定**（系统转述 Steinberger/Cherny/Osmani 与三阶段论）：
+
+> "整个过程可以在无人值守的状态下持续运转，直到满足预设的退出条件，我愿称之为 AI 界的永动机。"（"永动机"用词自带反讽——标题正方、行文留刺）
+> "三个阶段之间并非替代关系。好的提示词和充足的上下文依然有用，但它们已经从主要工程挑战变成了循环内部的子模块。真正决定产出质量的，是循环本身的设计。"
+> Prompt Drift 中文化转述："很多团队甚至为提示词写了回归测试，像测试函数一样测试措辞，然后看着它们在每次模型升级后批量过期。"
+
+（奇绩创坛同题镜像 news.miracleplus.com/share_link/136657 本轮 404 未取，维持开放。）
+
+### 六、本轮通道与方法负结论（仍开放清单）
+
+- **QCon/AICon 议题正文通道已解决**：geekbang NUXT 站点把议题全文（含大纲/亮点/收益）嵌在静态 HTML 内，curl 可取——上轮"JS 渲染未取"不再成立；xie.infoq.cn 文章页仍 JS 未取（改走镜像通道解决）。
+- **即刻**：web 搜索 API 405、搜索页 JS 空壳——经外部搜索引擎定位 m.okjike.com 原帖 ID 后直抓成功（两条见推动档补抓节第五节）；系统化检索不可行，只能点状定位。
+- **博客园找找看**：搜索需人机验证；文章直链可抓。aiwangjianguo 文已 302 至用户中心（正文消失，见推动档）。
+- **B 站搜索 API 仍 412**；view API 正常（BVID 经外部搜索引擎定位）。
+- DuckDuckGo HTML 版 CAPTCHA、Bing 302——外部搜索引擎劣化，本轮 URL 定位依赖 web_search 聚合接口。
