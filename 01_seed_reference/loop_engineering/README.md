@@ -51,6 +51,8 @@ loop_engineering/
 ├── README.md                  # 你在这里：铁律 + 素材索引
 ├── 00_debates_2026.md       # 跨人对峙层——10 条交锋轴完整链
 ├── 00_three_camp_landscape.md # ★ 三派地图与社区实况判读（结论入口）
+├── 00_kol_stance_map.md      # ★ KOL 立场光谱与滑动图（位置/轨迹/普查＋定档表）
+├── figures/                   # 立场图三张 SVG（stance-a/b/c，属 00_kol_stance_map）
 ├── 01_advocates/              # 推动派（发起者＋吹捧者）
 │   ├── README.md（索引）＋四象限目录＋orgs/＋events/
 │   └── kol_tech/andrew_ng/    #   四件套卡（历史卡；原 kol_scan.md 已拆为一人一档）
@@ -66,6 +68,7 @@ loop_engineering/
 |---|---|---|
 | **三派总览与社区实况判读** | 三派地图＋痛点对位＋词的状态＋证据边界 | [`00_three_camp_landscape.md`](00_three_camp_landscape.md) |
 | **跨人对峙层** | 10 条交锋轴完整链 | [`00_debates_2026.md`](00_debates_2026.md) |
+| **KOL 立场光谱与滑动图** | 67 档位置总览＋23 档时间轨迹＋四象限普查（可视化＋可审计定档表） | [`00_kol_stance_map.md`](00_kol_stance_map.md) |
 | **推动派**（发起者＋吹捧者） | 把"设计循环让 agent 自动推进"当默认方向推荐 | [`01_advocates/`](01_advocates/README.md) |
 | **中性派**（边界与审慎） | 承认机制有条件成立，划边界、要求约束、先测再信 | [`02_neutral/`](02_neutral/README.md) |
 | **反对与怀疑派** | 给反证与批评（失败账本/质量退化/经济/人的角色） | [`03_skeptics/`](03_skeptics/README.md) |

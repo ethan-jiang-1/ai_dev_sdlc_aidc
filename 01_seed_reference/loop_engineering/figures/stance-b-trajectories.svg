@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1330 1180" font-family='-apple-system, "PingFang SC", "Microsoft YaHei", sans-serif'>
+<rect width="1330" height="1180" fill="#ffffff"/>
+<text x="665.0" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">KOL 立场滑动轨迹（23 档 · 2026-06 → 10）</text>
+<text x="665.0" y="56" text-anchor="middle" font-size="12.5" fill="#666">横轴＝立场光谱（左推动 / 右反对，与目录序一致）；纵轴＝时间。上缘虚影带＝窗口前谱系起点。★＝档内标注的关键转折</text>
+<rect x="96" y="130" width="330" height="75" fill="#f5f5f5" stroke="#e0e0e0" stroke-dasharray="4,3"/>
+<rect x="96" y="210" width="330" height="880" fill="#e8f5e9" opacity="0.30" stroke="#e0e0e0"/>
+<text x="261" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#2e7d32">推动派</text>
+<line x1="120" y1="130" x2="120" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="120" y="1108" text-anchor="middle" font-size="9.5" fill="#777">强推动</text>
+<line x1="167" y1="130" x2="167" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="167" y="1108" text-anchor="middle" font-size="9.5" fill="#777">推动</text>
+<line x1="214" y1="130" x2="214" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="214" y="1108" text-anchor="middle" font-size="9.5" fill="#777">偏推动</text>
+<line x1="261" y1="130" x2="261" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="261" y="1108" text-anchor="middle" font-size="9.5" fill="#777">中性</text>
+<line x1="308" y1="130" x2="308" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="308" y="1108" text-anchor="middle" font-size="9.5" fill="#777">偏怀疑</text>
+<line x1="355" y1="130" x2="355" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="355" y="1108" text-anchor="middle" font-size="9.5" fill="#777">怀疑</text>
+<line x1="402" y1="130" x2="402" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="402" y="1108" text-anchor="middle" font-size="9.5" fill="#777">强反对</text>
+<rect x="440" y="130" width="330" height="75" fill="#f5f5f5" stroke="#e0e0e0" stroke-dasharray="4,3"/>
+<rect x="440" y="210" width="330" height="880" fill="#e3f2fd" opacity="0.30" stroke="#e0e0e0"/>
+<text x="605" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#1565c0">中性派</text>
+<line x1="464" y1="130" x2="464" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="464" y="1108" text-anchor="middle" font-size="9.5" fill="#777">强推动</text>
+<line x1="511" y1="130" x2="511" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="511" y="1108" text-anchor="middle" font-size="9.5" fill="#777">推动</text>
+<line x1="558" y1="130" x2="558" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="558" y="1108" text-anchor="middle" font-size="9.5" fill="#777">偏推动</text>
+<line x1="605" y1="130" x2="605" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="605" y="1108" text-anchor="middle" font-size="9.5" fill="#777">中性</text>
+<line x1="652" y1="130" x2="652" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="652" y="1108" text-anchor="middle" font-size="9.5" fill="#777">偏怀疑</text>
+<line x1="699" y1="130" x2="699" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="699" y="1108" text-anchor="middle" font-size="9.5" fill="#777">怀疑</text>
+<line x1="746" y1="130" x2="746" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="746" y="1108" text-anchor="middle" font-size="9.5" fill="#777">强反对</text>
+<rect x="784" y="130" width="330" height="75" fill="#f5f5f5" stroke="#e0e0e0" stroke-dasharray="4,3"/>
+<rect x="784" y="210" width="330" height="880" fill="#fff3e0" opacity="0.30" stroke="#e0e0e0"/>
+<text x="949" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#e65100">反对与怀疑派</text>
+<line x1="808" y1="130" x2="808" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="808" y="1108" text-anchor="middle" font-size="9.5" fill="#777">强推动</text>
+<line x1="855" y1="130" x2="855" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="855" y="1108" text-anchor="middle" font-size="9.5" fill="#777">推动</text>
+<line x1="902" y1="130" x2="902" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="902" y="1108" text-anchor="middle" font-size="9.5" fill="#777">偏推动</text>
+<line x1="949" y1="130" x2="949" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="949" y="1108" text-anchor="middle" font-size="9.5" fill="#777">中性</text>
+<line x1="996" y1="130" x2="996" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="996" y="1108" text-anchor="middle" font-size="9.5" fill="#777">偏怀疑</text>
+<line x1="1043" y1="130" x2="1043" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="1043" y="1108" text-anchor="middle" font-size="9.5" fill="#777">怀疑</text>
+<line x1="1090" y1="130" x2="1090" y2="1090" stroke="#ececec" stroke-width="1"/>
+<text x="1090" y="1108" text-anchor="middle" font-size="9.5" fill="#777">强反对</text>
+<text x="88" y="168" text-anchor="end" font-size="10" fill="#999">谱系带</text>
+<text x="88" y="182" text-anchor="end" font-size="10" fill="#999">（06 前）</text>
+<line x1="90" y1="210" x2="1195" y2="210" stroke="#00000012" stroke-width="1"/>
+<text x="86" y="214" text-anchor="end" font-size="10" fill="#666">06-01</text>
+<line x1="90" y1="416" x2="1195" y2="416" stroke="#00000012" stroke-width="1"/>
+<text x="86" y="420" text-anchor="end" font-size="10" fill="#666">07-01</text>
+<line x1="90" y1="629" x2="1195" y2="629" stroke="#00000012" stroke-width="1"/>
+<text x="86" y="633" text-anchor="end" font-size="10" fill="#666">08-01</text>
+<line x1="90" y1="842" x2="1195" y2="842" stroke="#00000012" stroke-width="1"/>
+<text x="86" y="846" text-anchor="end" font-size="10" fill="#666">09-01</text>
+<line x1="90" y1="1049" x2="1195" y2="1049" stroke="#00000012" stroke-width="1"/>
+<text x="86" y="1053" text-anchor="end" font-size="10" fill="#666">10-01</text>
+<line x1="96" y1="251" x2="1192" y2="251" stroke="#b0bec5" stroke-width="1" stroke-dasharray="3,4" opacity="0.8"/>
+<text x="1200" y="254" font-size="9" fill="#78909c">Osmani 命名帖</text>
+<line x1="96" y1="409" x2="1192" y2="409" stroke="#b0bec5" stroke-width="1" stroke-dasharray="3,4" opacity="0.8"/>
+<text x="1200" y="412" font-size="9" fill="#78909c">AIEWF 开幕</text>
+<line x1="96" y1="506" x2="1192" y2="506" stroke="#b0bec5" stroke-width="1" stroke-dasharray="3,4" opacity="0.8"/>
+<text x="1200" y="509" font-size="9" fill="#78909c">Orosz 调查</text>
+<line x1="96" y1="808" x2="1192" y2="808" stroke="#b0bec5" stroke-width="1" stroke-dasharray="3,4" opacity="0.8"/>
+<text x="1200" y="811" font-size="9" fill="#78909c">auto mode 被指攻破</text>
+<line x1="96" y1="822" x2="1192" y2="822" stroke="#b0bec5" stroke-width="1" stroke-dasharray="3,4" opacity="0.8"/>
+<text x="1200" y="825" font-size="9" fill="#78909c">Agent Civilizations</text>
+<line x1="96" y1="1001" x2="1192" y2="1001" stroke="#b0bec5" stroke-width="1" stroke-dasharray="3,4" opacity="0.8"/>
+<text x="1200" y="1004" font-size="9" fill="#78909c">Willison：even harder</text>
+<line x1="605" y1="160" x2="652" y2="506" stroke="#1565c0" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<circle cx="605" cy="160" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<circle cx="652" cy="506" r="5" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="661" y="500" font-size="9.5" font-weight="700" fill="#1565c0">专刊调查：cron 旧物重贴标签</text>
+<text x="660" y="510" font-size="10.5" font-weight="700" fill="#1565c0">Gergely Orosz</text>
+<line x1="355" y1="157" x2="120" y2="258" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<line x1="120" y1="258" x2="167" y2="533" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="355" cy="157" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<circle cx="120" cy="258" r="5" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="129" y="252" font-size="9.5" font-weight="700" fill="#2e7d32">词源推文（纲领句）</text>
+<circle cx="167" cy="533" r="5" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="176" y="527" font-size="9.5" font-weight="700" fill="#2e7d32">'Loop 已死，graph 永生'</text>
+<text x="175" y="537" font-size="10.5" font-weight="700" fill="#2e7d32">Peter Steinberger</text>
+<line x1="120" y1="416" x2="120" y2="629" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="120" cy="416" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="120" cy="629" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="128" y="633" font-size="10.5" font-weight="700" fill="#2e7d32">Steve Yegge</text>
+<line x1="167" y1="313" x2="167" y2="416" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="167" y1="416" x2="167" y2="664" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="167" cy="313" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="416" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="664" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="175" y="668" font-size="10.5" font-weight="700" fill="#2e7d32">Zach Lloyd</text>
+<line x1="120" y1="286" x2="120" y2="409" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="120" y1="409" x2="120" y2="678" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="120" cy="286" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="120" cy="409" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="120" cy="678" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="128" y="682" font-size="10.5" font-weight="700" fill="#2e7d32">swyx</text>
+<line x1="605" y1="561" x2="605" y2="691" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<circle cx="605" cy="561" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="605" cy="691" r="5" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="614" y="685" font-size="9.5" font-weight="700" fill="#1565c0">自跑 eval 证伪循环内 TDD</text>
+<text x="613" y="695" font-size="10.5" font-weight="700" fill="#1565c0">Birgitta Böckeler</text>
+<circle cx="167" cy="774" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="175" y="778" font-size="10.5" font-weight="700" fill="#2e7d32">Patrick Debois</text>
+<line x1="902" y1="361" x2="996" y2="437" stroke="#e65100" stroke-width="2" opacity="0.75"/>
+<line x1="996" y1="437" x2="1043" y2="499" stroke="#e65100" stroke-width="2" opacity="0.75"/>
+<line x1="1043" y1="499" x2="1043" y2="884" stroke="#e65100" stroke-width="2" opacity="0.75"/>
+<circle cx="902" cy="361" r="3.4" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="996" cy="437" r="5" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="1005" y="431" font-size="9.5" font-weight="700" fill="#e65100">SOTA 工具反证</text>
+<circle cx="1043" cy="499" r="3.4" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="1043" cy="884" r="3.4" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="1034" y="888" text-anchor="end" font-size="10.5" font-weight="700" fill="#e65100">Armin Ronacher</text>
+<line x1="167" y1="210" x2="167" y2="609" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="167" y1="609" x2="167" y2="932" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="167" cy="210" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="609" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="932" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="175" y="936" font-size="10.5" font-weight="700" fill="#2e7d32">Laurie Voss</text>
+<line x1="949" y1="306" x2="1043" y2="822" stroke="#e65100" stroke-width="2" opacity="0.75"/>
+<line x1="1043" y1="822" x2="1043" y2="952" stroke="#e65100" stroke-width="2" opacity="0.75"/>
+<circle cx="949" cy="306" r="3.4" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="1043" cy="822" r="5" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="1052" y="816" font-size="9.5" font-weight="700" fill="#e65100">Agent Civilization</text>
+<circle cx="1043" cy="952" r="3.4" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="1034" y="956" text-anchor="end" font-size="10.5" font-weight="700" fill="#e65100">Dwarkesh Patel</text>
+<circle cx="605" cy="959" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="613" y="963" font-size="10.5" font-weight="700" fill="#1565c0">Dan Abramov</text>
+<line x1="308" y1="147" x2="167" y2="186" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<line x1="167" y1="186" x2="167" y2="994" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<circle cx="308" cy="147" r="5" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<text x="317" y="141" font-size="9.5" font-weight="700" fill="#2e7d32">Opus 4.5 拐点</text>
+<circle cx="167" cy="186" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<circle cx="167" cy="994" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="175" y="998" font-size="10.5" font-weight="700" fill="#2e7d32">DHH</text>
+<line x1="605" y1="361" x2="558" y2="464" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="558" y1="464" x2="558" y2="891" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="558" y1="891" x2="558" y2="1001" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<circle cx="605" cy="361" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="558" cy="464" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="558" cy="891" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="558" cy="1001" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="566" y="1005" font-size="10.5" font-weight="700" fill="#1565c0">Kent C. Dodds</text>
+<line x1="605" y1="210" x2="652" y2="829" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="652" y1="829" x2="605" y2="1021" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<circle cx="605" cy="210" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="652" cy="829" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="605" cy="1021" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="613" y="1025" font-size="10.5" font-weight="700" fill="#1565c0">Sean Goedecke</text>
+<line x1="167" y1="251" x2="167" y2="719" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="167" y1="719" x2="167" y2="836" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="167" y1="836" x2="167" y2="1028" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="167" cy="251" r="5" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="176" y="245" font-size="9.5" font-weight="700" fill="#2e7d32">命名帖《Loop Engineeri</text>
+<circle cx="167" cy="719" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="836" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="1028" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="175" y="1032" font-size="10.5" font-weight="700" fill="#2e7d32">Addy Osmani</text>
+<line x1="167" y1="361" x2="167" y2="519" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="167" y1="519" x2="167" y2="1035" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="167" cy="361" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="519" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="1035" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="175" y="1050" font-size="10.5" font-weight="700" fill="#2e7d32">Amjad Masad</text>
+<line x1="167" y1="195" x2="167" y2="842" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<circle cx="167" cy="195" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<circle cx="167" cy="842" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="175" y="846" font-size="10.5" font-weight="700" fill="#2e7d32">Andrej Karpathy</text>
+<line x1="605" y1="265" x2="558" y2="939" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="558" y1="939" x2="511" y2="1049" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<circle cx="605" cy="265" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="558" cy="939" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="511" cy="1049" r="5" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="520" y="1043" font-size="9.5" font-weight="700" fill="#1565c0">认错转折＋Bitter Lesson</text>
+<text x="519" y="1053" font-size="10.5" font-weight="700" fill="#1565c0">Ethan Mollick</text>
+<line x1="1043" y1="286" x2="1043" y2="561" stroke="#e65100" stroke-width="2" opacity="0.75"/>
+<line x1="1043" y1="561" x2="1043" y2="904" stroke="#e65100" stroke-width="2" opacity="0.75"/>
+<line x1="1043" y1="904" x2="996" y2="1049" stroke="#e65100" stroke-width="2" opacity="0.75"/>
+<circle cx="1043" cy="286" r="3.4" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="1043" cy="561" r="3.4" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="1043" cy="904" r="3.4" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="996" cy="1049" r="5" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="1005" y="1043" font-size="9.5" font-weight="700" fill="#e65100">Pi Durable（建设面）</text>
+<text x="1004" y="1053" font-size="10.5" font-weight="700" fill="#e65100">Mario Zechner</text>
+<line x1="605" y1="224" x2="558" y2="430" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="558" y1="430" x2="605" y2="554" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="605" y1="554" x2="652" y2="808" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="652" y1="808" x2="652" y2="863" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="652" y1="863" x2="652" y2="1001" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="652" y1="1001" x2="652" y2="1062" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<circle cx="605" cy="224" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="558" cy="430" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="605" cy="554" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="652" cy="808" r="5" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="661" y="802" font-size="9.5" font-weight="700" fill="#1565c0">auto mode 被指 80% 攻</text>
+<circle cx="652" cy="863" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="652" cy="1001" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="652" cy="1062" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="660" y="1066" font-size="10.5" font-weight="700" fill="#1565c0">Simon Willison</text>
+<line x1="167" y1="251" x2="167" y2="471" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="167" y1="471" x2="120" y2="966" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="120" y1="966" x2="120" y2="1069" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="167" cy="251" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="167" cy="471" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="120" cy="966" r="5" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="129" y="960" font-size="9.5" font-weight="700" fill="#2e7d32">'code review will </text>
+<circle cx="120" cy="1069" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="128" y="1073" font-size="10.5" font-weight="700" fill="#2e7d32">Thorsten Ball</text>
+<line x1="120" y1="162" x2="120" y2="389" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<line x1="120" y1="389" x2="214" y2="574" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="214" y1="574" x2="214" y2="1021" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<line x1="214" y1="1021" x2="214" y2="1076" stroke="#2e7d32" stroke-width="2" opacity="0.75"/>
+<circle cx="120" cy="162" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<circle cx="120" cy="389" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="214" cy="574" r="5" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="223" y="568" font-size="9.5" font-weight="700" fill="#2e7d32">加入 Antithesis·验证转向</text>
+<circle cx="214" cy="1021" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="214" cy="1076" r="3.4" fill="#2e7d32" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="222" y="1091" font-size="10.5" font-weight="700" fill="#2e7d32">Geoffrey Huntley</text>
+<line x1="558" y1="169" x2="558" y2="609" stroke="#1565c0" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<line x1="558" y1="609" x2="464" y2="698" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<line x1="464" y1="698" x2="464" y2="1076" stroke="#1565c0" stroke-width="2" opacity="0.75"/>
+<circle cx="558" cy="169" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<circle cx="558" cy="609" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<circle cx="464" cy="698" r="5" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="473" y="692" font-size="9.5" font-weight="700" fill="#1565c0">'600 nightly agent</text>
+<circle cx="464" cy="1076" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="472" y="1080" font-size="10.5" font-weight="700" fill="#1565c0">Mitchell Hashimoto</text>
+<text x="96" y="1162" font-size="10" fill="#888">图例：实线＝窗口内（2026-06-01→10-07）轨迹；虚线＝谱系起点（窗口前）；大点★＝关键转折；灰虚线＝运动大事参考线。档位细分依据各档「态度轨迹」节；派别判定唯一权威在 kol-roster §A2</text>
+</svg>

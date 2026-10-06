@@ -21,7 +21,7 @@ authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复
 | **中性**（边界与审慎） | **实践细节最丰富**：记录 2＋实证 3＋受约束 2＋限速 1＋新入册 1 | Orosz、Willison、Böckeler、Kief、Kent C. Dodds、marmelab、Hashimoto | 机制有条件成立——划边界、给约束、先测再信 |
 | **反对与怀疑** | **最小但证据最硬**：强票 1＋部分票 4＋候选 1 | Ronacher（锚）＋Willison/Orosz/Beck-Tacho-Yegge 宣言/Hashimoto（部分票） | 反证在此：失败账本、质量退化、无人值守失控 |
 
-名单、派内角色与判定依据：[`kol-roster.md` §A2`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。
+名单、派内角色与判定依据：[`kol-roster.md` §A2`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。档位细分（7 档光谱）与每人滑动轨迹的可视化：[`00_kol_stance_map.md`](00_kol_stance_map.md)。
 
 ## 二、核心判读
 
