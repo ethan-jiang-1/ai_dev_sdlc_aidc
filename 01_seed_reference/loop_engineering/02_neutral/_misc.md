@@ -124,3 +124,22 @@ observation_date: 2026-10-06
 - Lovable 官方博客《Inside Chats: How Lovable's Agents Work Together》（https://lovable.dev/blog/how-lovable-agents-work-together ，2026-09-24，curl 实取）要点逐字："Chats builds on infrastructure we originally developed for agents and subagents to work together."；"our Trajectory System appends roughly half a billion events, covering about 2.6 million user turns"；"activations arrange for them to run and pick up new work"；"Suspend and resume: agents that survive deploys"。
 - **与 loop engineering 的挂钩**：反面钩（厂商锚）——no-code 产品把循环工程内容（多 agent 协同、迭代、暂停恢复、自主度控制）**全部以产品词发行**（autonomy 开关、generation loop、activations、Chats），其用户因此只接触产品面；Replit Agent 3 的"Max Autonomy"开关（2025-09-10 官方博客，早于窗口，仅作机制登记注记：`https://replit.com/blog/introducing-agent-3-our-most-autonomous-agent-yet`）是同一翻译策略的先例。
 - **对原内容的强化/削弱**：中性（机制/词汇扩散证据；官方机构源不计 KOL 票，不与本档人群条目并列立票）。
+
+### 九、分析层补点（第七轮 · 2026-10-07）：jwatte.com《Stop Prompting, Start Designing Loops》——词源推文的"诚实版"拆解（2026-06-16）
+
+- URL：https://jwatte.com/blog/design-loops-not-prompts/ （curl 实取全文）
+- 身份：J.A. Watte，独立技术写作者（SMB 受众、自家书推广站；页面自述"编辑日历定时发布"机制——**独立性打折标注**，③弱）。
+- **挂钩**：**停止条件**＋**预算与熔断**＋**验证回路**（三段"去炒作"边界划定）；另涉**循环产品化机制**（Osmani 六原语的二手摘要失真校正）。
+- 逐字摘录：
+
+> "Loops without verification are just expensive prompt chains... If your loop has no verifier (no test suite, no lint pass, no diff review, no human checkpoint), it is not a loop. It is a fire hose."
+
+> "A loop is not bounded. The whole point is that it runs on a schedule, fires off subagents, calls tools, retries on failure, escalates to bigger models when the small model gets stuck. Every one of those is a token-cost multiplier."＋结论句："**A loop without cost discipline is a self-inflicted denial-of-service attack on your own credit card.**"
+
+> "The architecture has shipped, the security model has not."（供应链谱系注记〔窗口外〕：CVE-2026-25253〔2026-01〕与 ClawHub 341/2,857 恶意 skill 审计〔2026-02〕——窗口内机构层升级见怀疑档 [csa.md](../../03_skeptics/orgs/csa.md)。）
+
+> **debunk 层（判读用）**："The 'OpenClaw was built in a single hour' story is wrong... The one-hour figure refers to Steinberger's original Clawdbot prototype in November 2025, not the production OpenClaw codebase"；Osmani 六原语中被二手摘要丢掉的恰是干活最多的两个："the scheduler that fires the loop without you sitting there, and the worktree"。
+> （推动侧素材指针：Cherny 经 The New Stack/Office Chai 访谈——"I don't prompt Claude anymore... My job is to write loops."——推动档 Cherny 相关条目可引，本档只记指针。）
+
+- **该条支持的最小主张**：对词源叙事的无条件背书有三处失真（一小时神话、无验证循环、安全模型缺位），被逐一划界；结论是教科书式中性口径——"Build the loop. Bound the cost. Verify the output. The rest is engineering."
+- **派别适配**：**中性票（边界向，独立性打折）**。

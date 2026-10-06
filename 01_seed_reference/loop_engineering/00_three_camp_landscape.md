@@ -2,7 +2,7 @@
 type: landscape
 content_type: analysis
 directory: 01_seed_reference/loop_engineering
-description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批）
+description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批＋2026-10-07 反对派缺口专项增补）
 analysis_date: 2026-10-06
 evidence_base: 三派 kol_tech/＋kol_product/＋community_tech/＋community_product/ 四象限拆档 ＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
 authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复制名单
@@ -132,6 +132,13 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **中文厂商**：Qoder Goal 默认 10 轮硬上限＋Spec→Goal→Schedule 接驳；TRAE"未达标续跑/达标即停"＋自动运行档官方自我设限；**Qwen Code 五期周报**（08-27→09-24）＝循环机制演进最强连续证据链，终点是完成判定器"自报完成不作数"。
 - **播客层**：Zach Lloyd SE 主环七段自动化＋自动合并率 20%→60% 爬坡；swyx"Zawinski's Law of MultiAgents"（与 Steinberger's law 并列）；Eiso Kant"verification/persistence/backtracking＞raw intelligence"；怀疑向 Zechner"先 issue 后 PR"人审门禁＋Dwarkesh 沙箱逃逸结构论；**Amazon 860% 预算超支 "bad agent loops, just didn't crash loudly enough"**（迄今最大具名事故，FT 原文待补一手）；Satya Source 10 增量解决（三链互证）。
 - **收口**：Netflix 终弃；Sequoia 两单集核销窗口外；三份年报转例行观察（当日三扫均未发布）。
+
+**第七轮增补（2026-10-07 · 反对派缺口专项）**：
+- **FT 860% 案一手坐实**（FT中文网官方授权转载全文，2026-07-30）：$1.8M Claude Sonnet 失败部署＋超预算 860%＋**五个月才发现**＋两起连带（$541K 财务审计／$134K 物流）＋**Kiro 内部排行榜"刷Token"被关**（Goodhart 机制的一手机构确认，与 SED 播客引句互证——第六轮"FT 原文待补"收口）；TNW 补机制句——"A retry loop... produces no crash. It produces an invoice"＋讽刺层（AWS 自己卖着 Bedrock 批量/Flex/缓存/路由，"picking the frontier model by default and leaving the guardrails off"）。
+- **英文侧供应链信任层补齐**：CSA 两简报（06-10《AI Agent Skill Scanners: Bypassed Across the Board》＋07-07《ClawHub Under the Microscope》）——Trail of Bits 四式绕法（含对 LLM 扫描层的 prompt injection）一小时绕穿五款扫描器（ClawHub/Cisco/skills.sh 三平台），"Don't outsource trust to a scanner"；ClawHub 49,592 skills（2026-04）、约 5.2% 疑恶意；Unit 42 "agentic threats" 新类别（不装恶意软件、直接操纵 agent 行为牟利）；最强循环挂钩句——"the skill's output **enters the model's reasoning loop as trusted context**"。与中文圈"中转站注入"构成两侧同构：**无人值守＋第三方供给＝信任缺口**；怀疑面"护栏默认态偏松"再添机构级一手（窗口外谱系：CVE-2026-25253＋ClawHavoc 341/2,857）。
+- **"试用后放弃"缺口收口（一手）**：Brett《I'm done using AI》（brettcodes.com，2026-08-10）——20 年 lead engineer、18 个月 earnest 使用：Linear→Claude Code 全托管交付→"we've got a different AI to review it anyway!"（AI review AI 空转）→"It made me a worse programmer. It made me depressed."→弃用（"It's possible I will be terminated"）；成因含组织强制（"a mandate to make use of AI tools or be left behind"）。注意范围：其反对象是 AI 全谱，loop 侧只引 agentic 切片（铁律 1）。
+- **词源推文 ID 补锚**：Steinberger 2026-06-07 词源推文经 jwatte（06-16）转引取得 URL/ID（x.com/steipete/status/2063697162748260627）；两版文本并存（36kr vs jwatte），X 原文页仍不可达。jwatte 本体分析入中性档（"无验证的循环只是昂贵的 prompt 链"＋"无成本纪律的循环是对自己信用卡的自残式 DoS"）。
+- **通道负结论**：知乎两目标 403（两轮耗尽，终态需登录态）；B 站 view API 通道翻转（上轮可用→本轮风控）、「四笔账」本体仍不可核；arctic-shift 本轮全程限流（r/ExperiencedDevals 样本未取得，由 Brett 补位）——详见怀疑档 _负结论与通道.md 第七轮节。
 
 ## 四、不支持什么（证据边界）
 

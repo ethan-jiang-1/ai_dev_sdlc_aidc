@@ -9,7 +9,7 @@ reorg_date: 2026-10-06
 # 03_skeptics — 反对与怀疑派（反证与批评）
 
 > **派别判定权威在** [`02_research/.../raw/kol-roster.md` §A2 三派分野](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)——
-> 本 README 只做**素材索引**。素材已按**人/组织拆档**：[`kol_tech/`](kol_tech/)＋[`kol_product/`](kol_product/)（KOL 按技术深度分）（ronacher、willison、orosz、hashimoto、zechner…）＋[`orgs/`](orgs/)（amazon、microsoft）。
+> 本 README 只做**素材索引**。素材已按**人/组织拆档**：[`kol_tech/`](kol_tech/)＋[`kol_product/`](kol_product/)（KOL 按技术深度分）（ronacher、willison、orosz、hashimoto、zechner…）＋[`orgs/`](orgs/)（amazon、microsoft、csa）。
 
 > **本派社区反馈**（非 KOL，社区侧（HN 热度层/GitHub 故障清单/中文圈事故向））：[`community_tech/`](community_tech/)＋[`community_product/`](community_product/)——社区情绪证据，与 KOL 侧分开读。
 
@@ -46,6 +46,7 @@ reorg_date: 2026-10-06
 | 文件 | 首条内容 |
 |---|---|
 | [`amazon`](orgs/amazon.md) | Gregor Vand & Sean Falconer · Software Engineering Daily #SE |
+| [`csa`](orgs/csa.md) | CSA AI Safety Initiative 两简报：《AI Agent Skill Scanners: By |
 | [`microsoft`](orgs/microsoft.md) | Ornella Bahidika & Joel Allou（Microsoft）· AIEWF 2026《Don't L |
 
 ### 群众·专业程序员

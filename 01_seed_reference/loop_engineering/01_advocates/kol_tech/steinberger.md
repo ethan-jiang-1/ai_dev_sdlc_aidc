@@ -25,3 +25,12 @@ observation_date: 2026-10-06
 - 排除通道：aibuilderclub.com（curl 实取但正文 JS 渲染无可提取文本）；cnblogs（实取：仅中文转译"我们还在讨论循环结构的问题吗？还是已经转向了图论领域了呢？"）；unrollnow（503 两试）；X 本体不可达。
 - 状态：**部分解决**（上轮"仅 InfoQ/36kr 转述"→本轮双独立全文转载、日期/浏览量一致；推文 ID 与 X 原文页仍未取得）。
 - **派别含义一句话**：词源人物的"Loop 时代终结"宣言有双转载锚点，但其性质是**推动派内部换词表（loop→graph）**，不是转向反对——判派维持本体在推动派，轨迹注记加这一条。
+
+## 补锚（第七轮 · 2026-10-07）：词源推文（2026-06-07）取得推文 ID 与第三方逐字
+
+- 载体：jwatte.com《Stop Prompting, Start Designing Loops. The Honest Version Of A Tweet That Set Off Coding Twitter.》（2026-06-16，curl 实取全文）——其事实核查节给出 06-07 词源推文的逐字＋**推文 URL/ID**：
+  - **x.com/steipete/status/2063697162748260627**
+  - 文本："Here's your monthly reminder that you shouldn't be prompting coding agents anymore. You should be designing loops that prompt your agents."
+- 版本对照（如实并录，不作调和）：36kr 转载版为 "Monthly reminder: you should no longer prompt programming agents yourself. You should design loops that prompt agents."（8.4M views）——两版措辞有差（"Here's your"／"coding agents" vs "programming agents"），X 原文页仍不可达，以**多转载锚并存**为准。
+- 状态升级：上轮"推文 ID 与 X 原文页仍未取得"→ **推文 ID 已取得（经 jwatte 转引）**；X 原文页维持不可达。
+- 交叉注记：jwatte 本体分析（"OpenClaw 一小时建成"系 2025-11 Clawdbot 原型与生产版混淆的 debunk、Cherny "My job is to write loops" 访谈引句）判读为中性票，登记在 [02_neutral/_misc.md](../../02_neutral/_misc.md)——单一事实源，不重复。

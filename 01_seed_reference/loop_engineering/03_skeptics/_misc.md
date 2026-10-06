@@ -228,3 +228,26 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 
 **与 loop engineering 的挂钩**：普通人的成本恐惧不是 $6k/$40k 极端案，而是 $28 / $340 / 2% 周额度量级——预算上限是「人人需要」而非「重度用户需要」；goodmythical 句把「谁判定完成」指认为事故根源，与 budget caps 629 分串的「产品缺陷论」同构且更口语。
 **对原内容的强化**：强化（budget caps 串的群众颗粒度补全）。
+
+### 七、试用后放弃的一手账本：Brett《I'm done using AI》（2026-08-10）——第七轮新增，补第三轮登记缺口
+
+- URL：https://brettcodes.com/im-done-using-ai/ （**2026-08-10 发表**；原站经 wayback 快照 web/20260812173432 实取全文）。转述链：CSDN 2026-08-17 → 36kr 中英文版（eu.36kr.com/en/p/3943281851939976，curl 实取）；后续报道《那个「宁愿失业也不用AI」的20年程序员再开炮：电钻、Vim都是工具，但AI不是》（csdnnews.blog.csdn.net，标题级，未核）。
+- 判断依据：无名 lead engineer 个人博客（Bear 博客；20 年经历、<10 人团队）＝群众·专业程序员。
+- **挂钩**：**无人值守运行**（Linear→Claude Code 全托管交付）＋**验证回路**（AI review AI 的空转）＋组织激励轴（成因层，与 V2EX「AI 代码率不达标 fire」、HN「AI killing my brain」同轴）。
+- **范围注记（铁律 1）**：作者反对象是 **AI 全谱**——AI 聊天医疗误判、环境成本等段落挂不上七类，**不收**；本条只引 agentic coding/harness 切片。
+
+**逐字摘录（loop 切片）**：
+
+> "In the lead up to my decision to stop using AI, I was able to essentially connect Linear to Claude Code and have it build out a non-trivial project from start to finish without me editing a line of code. The work got done faster than I could have done on my own. And I barely had to think."
+（全托管循环顶点形态：外层调度（Linear 接 Claude Code）＋无人值守交付；作者特意自证"我懂这些工具能干什么"——弃用不是不会用。）
+
+> "I was just a code reviewer and a quality assurance tester for the features the coding harness would spit out... It's impossible to review the quantity of code the AI writes, and we've got a different AI to review it anyway!"
+（**AI review AI＝验证回路空转的群众版逐字**——与 Dotta "verification theater"、Airbnb「AI 评 AI 自带失效模式」三源同构。）
+
+> "It made me lazy. It made me stop caring. It made me a worse programmer. It made me depressed. Because I stopped doing the hard work, I stopped learning, I stopped growing, I stopped being the one making the software."
+
+> 组织强制（成因层逐字）："This then led to a mandate to make use of AI tools or be left behind."（2025 年初管理层参会后被"洗脑"后下达）；弃用决定："It's possible I will be terminated... as it was in no uncertain terms ruining my life."
+
+- **该条支持的最小主张**：一名 earnest 使用 18 个月的 lead engineer 给出「试用后放弃」完整一手轨迹：全托管循环的效率惊叹 → 验证空转＋技能退化＋意义崩塌 → 弃用（自担被解雇风险）；弃用成因中组织强制与循环自身机制各占一半。
+- **对 00 判读的意义**：补上第三轮登记的缺口「"试用后放弃"叙事在社区层弱且未核」——现在有一手（博客原文）＋中文转述链（CSDN/36kr）双载体。
+- **派别适配**：**怀疑票（强，一手弃用账本）**。
