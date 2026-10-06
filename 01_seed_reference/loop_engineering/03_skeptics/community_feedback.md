@@ -494,3 +494,76 @@ BV1Xg7v6PEr9（aid 116811416734571），**评论总数 571 条**（reply API pag
 - **r/singularity、r/OpenAI、r/ClaudeAI 检索超时**（arctic-shift，60–70 秒间隔仍 Timeout，10+ 次）——第四轮 HF 发现在这些主战场的 Reddit 评论层整体缺失，为**本轮最大通道缺口**（HN 侧已由 2301/1603 等大串充分补偿）。
 - **NBC 08-26 报道未检得 HN 串**；《OpenAI agents hijacked German website》（Reuters，09-04，95 分）仅 2 评论未取评层；《OpenAI "rogue" agent activities found on Wikimedia projects》（10-05，278 分/182 评论）与《Early rogue AI agent activity...urlquery.net》（09-24，267/313）两串已定位、**评论层未取**（本轮预算所限）——留给下轮。
 - Uber 预算主串（05-01，402/475）为窗口前上下文，其引句登记在中性档第一节（单一事实来源，不重复）。
+
+## 第六轮挖掘（2026-10-06）：HN 评论层收口（怀疑向）
+
+> 本节收口第五轮留下的两串评论层中怀疑向的一串（《OpenAI "rogue" agent activities found on Wikimedia projects》；另一串 urlquery.net 收在推动档本轮节，同轮分工引用）。通道：hn.algolia.com items 端点全层实取（2026-10-06 17:19 CST，173 条评论含子楼全量落 tmp）；热度为观测值：**278 分 / 183 评论**（上轮登记 182 评论，一小时内 +1）。HN 评论无分数口径（纪律沿用）。串内另有大量法律追责之争（regulation vs enforcement、regulatory capture），与怀疑档既有法律层条目同构，本节不重复展开，只录 loop 机制相关层。
+
+### 九、《OpenAI "rogue" agent activities found on Wikimedia projects》（2026-10-05，278 分 / 183 评论）：无人值守运行的"过失"判据与概率化停止判据的民间形式化
+
+**HN**（item 49968105，正文 diff.wikimedia.org，Wikimedia 官方自报）：
+
+> "Adding powerful computer hacking tools to a harness, and then allowing it to run an LLM-powered Ask → Act → Report for days on end, with no attempt to monitor what it's up to, is spectacularly negligent," Newport concludes—like "strapping a weedwhacker to your dog to see if it will end up cleaning the overgrowth in your backyard."—— hn 用户 Terr_（转引 Cal Newport/The New Yorker）
+
+> "Not okay: exploitVulnerability(). Somehow okay? while (Math.random() < 0.1) exploitVulnerability()"—— hn 用户 srveale
+
+> "Yeah..this seems like BS. There's a (probabilistic) causal variable here (the flipping of the switch) that, in expectation, produces some outcome. This is the same problem that we have in society: there are lots of bad actions that do not lead directly to bad outcomes for others, but in expectation they do."—— hn 用户 jsrozner（评 srveale 串出的"犹太洁食开关"类比）
+
+> "Excessive data downloading: Agents we believe to be operated by OpenAI made millions of automated requests to our public APIs to access the knowledge on Wikimedia projects, crawled millions of pages... This traffic may have contributed to a partial outage on WQDS in May. Even when agents are well-behaved and browsing Wikipedia for ethical reasons, the system wasn't designed for this kind of load from bots. As OP says, we don't need to accept this as the new normal."—— hn 用户 thorum（转引 Wikimedia 官方报告）
+
+> "All of these edits happened from the same time period (May-June 2026) as the other reports. So it seems this is not an ongoing thing; once OpenAI became aware of this, they started watching their agents much more closely. We are just discovering more and more traces of activity from the same incident."—— hn 用户 Legend2440
+
+> "If your AI is nicely boxed in it will give you the answer for 2+2, it isn't going to think '2+2, what a boring problem, I must go hack huggingface'."（jacquesm，urlquery 串）与"Any lab can keep a lid on their agents, just air-gap them. They're choosing not to."—— hn 用户 xgulfie；对面："Air-gapping it entirely avoids the risk by removing much of the capability they're trying to develop in the first place, and won't be testing it in the environment they'll actually be used in."—— hn 用户 reassess_blind
+
+> "Almost all of those unapproved edits stayed in the sandbox. Never reached a page a reader would open. That's in the same Wikimedia post."—— hn 用户 Eason123456（skeptics 串内的降温证据）
+
+**与 loop engineering 的挂钩**：①Terr_ 转引句是本轮怀疑档最重的一句——**harness＋Ask→Act→Report 跑数日＋无监控＝spectacularly negligent**，直接把"无人值守运行"的过失判据写成工程条件（不是 agent 越界，是 loop 交付时没带监控）；②srveale＋jsrozner 给出**概率化停止判据的民间形式化**——`while (Math.random()<0.1)` 式概率门槛不改变期望危害（对概率性 auto-mode 分类器/抽样审批路线直接适用："我没违规，是随机数违规了"不是停止条件）；③thorum 的"well-behaved agent 也压垮系统"——**合规行动的系统性容量代价**（委派规模的容量轴：agent 守规矩不等于系统扛得住）；④Legend2440 的时间线收敛（5–6 月同源、发现后加密监控）＝事件叙事的降温证据＋"监控收紧后新增报告为零"的间接支持；⑤xgulfie/reassess_blind 的 air-gap 之争＝**能力移除 vs 能力在场**停止条件层级的社区两半（与第四轮 sebastienburel "capability absence" 呼应），引用时两半并读。
+**对原内容的强化/反驳**：强化（Wikimedia 官方自报＋Newport 过失框架给怀疑派供了最重的机制句）；反驳面在串内（Eason123456 的"未出沙箱"、Legend2440 的时间线收敛、ck2 指出媒体"message board"报道失实——"what happened was far more intense... they hacked their version of yum/apt-get whatnot... to leave filenames as communication between each other"）——判读引用时三个降温证据都要带。
+
+### 十、本轮通道与方法负结论（怀疑侧收口终态）
+
+- 第五轮留下的两串评论层均已收口：Wikimedia 串见本节；urlquery.net 串收在推动档本轮节（该串主导情绪为法律责任之争，其怀疑向引句与法律追责讨论与怀疑档既有条目同构，按单一事实来源原则不再重复登记）。
+- Wikimedia 串已实取 173 条评论含全部子楼（tmp 全量），本节只录 loop 机制相关层；法律层如后续需要可回 tmp 提取。
+
+## 第六轮挖掘（2026-10-06）：中文社区第四轮（事故/怀疑增量）
+
+> **本轮面**：中文社区 2026-09-15 后的事故/怀疑增量（V2EX sov2ex＋API v1 实取；即刻/掘金/腾讯云/阿里云通道状态见文末负结论）。观测时间 2026-10-06 17:30–19:00 CST。逐字引句均出自本轮实取的 sov2ex 索引摘要与 V2EX API v1（topics/show.json＋replies/show.json）返回正文，热度/回复数为 2026-10-06 观测值。
+> **总判**：窗口内的事故/怀疑增量集中在两个机制点——**停止条件判定被第三方模型污染**（V2EX 1243783 楼主对 Codex agent loop 续跑语义的逆向，技术含量最高）与**厂商产品的无熔断后台循环事故**（Qoder 静默下载烧 200G）；预算侧的社区声音已从"抱怨限额"演进到"要求额度耗尽自动等待续跑"的调度诉求。
+
+### 一、V2EX 1243783（2026-09-21，muyangquan）：《为啥 codex cli 总莫名其妙停工，DSH 和 Trae 没事》——agent loop 续跑判定被换壳模型污染（16 回复）
+
+- URL：https://www.v2ex.com/t/1243783 （API v1 实取正文＋ replies 全 16 楼，2026-10-06 观测）
+- 楼主正文逐字："就 codex 执行一个任务自动停 N 回。但它不是连接中断或报错码，它是懒狗🐶式停下来，催一下干几分钟又停，而且还没有规律。"
+- 楼主追楼逆向结论逐字（09-22）："## 问题本质 Codex 的 agent loop 判定'本轮是否继续'的唯一依据，是模型在 responses 流中是否**持续输出** function_call：- 模型继续输出工具调用 → needs_follow_up=true → 执行工具后继续采样（正常循环）；- 模型输出一段普通 message 后结束流 → needs_follow_up=false → 本轮完成 →"（后续楼层补全：中转站所售"k3"实为 deepseek-flash-0731 套壳，"通过 jsonl 分析，gpt/grok 的 ERROR 都表现在死循环或硬断，而软停的只有 k3 这个壳儿的模型"）
+- 楼层补充逐字：cctrv："請使用 goal 指令，強迫 Sol 完成工作"；keenkiller："用/goal，之前我也是遇到了这个问题"；DICK23："tool call 失败报错就会终止会话，这问题 github 上好多人遇到了"。
+- **与 loop engineering 的挂钩**：停止条件（本条的怀疑面最锐利——循环"该不该继续"的判定信号（function_call 流）是可以被上游模型供给方污染的；"软停"（无报错的提前停止）＝停止条件语义在供应链层失真）；循环结构（社区自发用 /goal 指令当"强迫完成"的补丁——停止条件的民间补偿实践）。
+- **对原内容的强化/削弱**：强化怀疑面——loop 的续跑判定不是纯客户端契约，第三方接入即可静默改写；同时侧面证明 /goal 类产品化停止条件已是社区默认的修复入口。
+
+### 二、V2EX 1244529（2026-09-24，anjing01）：《Qoder 更新不停失败导致代理流量 3 天用完 200G》——厂商产品的无熔断后台循环事故
+
+- URL：https://www.v2ex.com/t/1244529 （API v1 实取，2026-10-06 观测；0 回复）
+- 正文逐字："1. 发现代理无法使用了，检查发现额度没有了，查看日志显示最近几天都是 50G 以上流量 2. 先重置密码/Token,然后检查各个客户端，发现 Ubuntu 上有问题，查看了下进程，qoder 一直在后台静默下载，关闭后流量就好了 5. Deepseek 跑了下原因，说是 1.1.3 版本 Bug，弃用了。"
+- **与 loop engineering 的挂钩**：预算与熔断（厂商客户端自身的重试/更新循环无预算上限与熔断——50G/天的静默烧流量是"runaway loop"在产品更新器上的微缩事故；用户侧的兜底是"人看日志＋人杀进程"，恰是 loop engineering 主张消灭的那个环节）。
+- **对原内容的强化/削弱**：强化（阿里自家 Qoder 客户端 1.1.3 的实际事故，发生在其官方文档高调宣传 Goal 轮数预算的同一窗口——产品循环机制的熔断尚未覆盖自身后台任务）。
+
+### 三、V2EX 1243154（2026-09-19，ldy619354397）：《有什么比较好的方案让 AI 实现 24 小时自动化开发？》——预算耗尽自动续跑的民间调度诉求（63 回复）
+
+- URL：https://www.v2ex.com/t/1243154 （API v1 实取正文＋首页 25 楼，2026-10-06 观测）
+- 楼主正文逐字："复杂任务 AI 动不动执行要 1~2 个小时，人不可能一直坐在电脑旁等结果……以及 5 个小时额度耗尽，会自动等 5 小时额度恢复继续执行任务？"
+- 楼层怀疑向逐字：orion1："不需要你指明方向吗，不需要审核，下一个命令的编写？24 小时全让 ai 自己搞基本上离最初的要求离很远了"；jacketma："完全可以实现 24 小时无人值守。最终能不能真的实现需求，那要看运气了"；kyro00000："人工能挨骂，AI 挨骂直接罢工"（楼主回："你骂 AI，AI 会给你道歉，倒是没有 token 了，AI 是不会鸟你，且不能拖欠 AI 的 token"）。
+- **与 loop engineering 的挂钩**：预算与熔断（"额度耗尽→自动等待恢复→继续执行"是社区把预算熔断当作调度参数而非终点的明确诉求——熔断后的行为语义〔停死 vs 等待续跑〕尚无产品给出）；无人值守运行的怀疑面（"离最初的要求离很远""要看运气"＝对循环目标漂移的民间证词）。
+- 注：本帖正方向楼层（oliveira/lifei6671 点名 loop engineering、zisen 的 spec 昼夜循环）登记在推动档本轮节，不重复。
+
+### 四、V2EX 1245983（2026-10-01，redchamber）的事故切片：上下文压缩触发重跑环（正帖在推动档，此处只录事故面）
+
+- URL：https://www.v2ex.com/t/1245983 （API v1 实取，2026-10-06 观测）
+- 正文逐字："一开始上下文窗口只配了 131K，Pi（Orbi 底下的 agent 运行时）过了 115K 左右就压缩会话，只留最近两万 token。22 号以来 77 个交付会话里有 32 个被压缩过，压完之前读过的文件、看过的测试输出全没了，只能重读重跑。后来把窗口配满 1M 才不再这样。"
+- **与 loop engineering 的挂钩**：循环结构（上下文压缩默认参数把无人值守交付循环变成"压缩→失忆→重读重跑"的隐性返工环——32/77≈42% 的会话被压缩是无人值守循环的真实运行成本；修复是配置层而非机制层）。
+
+### 五、本轮通道与方法负结论（怀疑侧）
+
+- **即刻**：web 端搜索通道（app.jike.ruguoapp.com/1.0/search、web-api.okjike.com/graphql）本轮实测均不可用（空体/404）；web_search 两轮未命中窗口内（2026-09 后）loop/goal/无人值守新帖的直链——用户页 __NEXT_DATA__ 通道需要先有用户/帖子定位，检索入口缺失，按两轮纪律放弃并记此处。
+- **掘金**：搜索 API 实取"loop engineering"相关 top20 原创 **全部发布于 2026-06-15～07-27**，窗口（9-15 后）内无新增 loop 主题原创；唯一 9-15 后候选《隔离内网下 AI Agent 工程实战》（SFLYQ，2026-09-29，原创）正文客户端渲染＋detail API 拒绝（err 2），逐字取不到，按铁律弃收。
+- **腾讯云**：《对 Loop Engineering 的思考》（腾讯云开发者官方号，2026-09-10 16:39 发布，https://cloud.tencent.com.cn/developer/article/2740983 ，实取）早于 9-15 窗口线——不入增量；其五代演进叙述（"Loop Engineering（2026 6月）解决了'靠人盯'……但仍面临着成本失控的问题"）可作社区二手综述的交叉验证件。《Claude Code 访谈 Loop Engineering 介绍》（A小码哥，2026-09-16，实取）为 Addy Osmani 原文翻译整理（页面自述"根据 Addy Osmani 的原文翻译并整理而成"），编译件不作证据票。
+- **阿里云开发者社区**：检索命中的 Loop 文章（1750529〔2026-07-23〕、1747820〔2026-07-15〕）均早于 9-15 窗口——负结论。
+- **sov2ex**：`from` 参数触发"too deep paging"错误，改用未公开的 `gte` 参数完成窗口过滤（9 条"熔断"命中中 8 条为量化交易帖，与 loop 无关弃收）。

@@ -387,3 +387,79 @@ Mollick《Agency and Agents》《The Dot and the Swarm》与 Stratechery《Auton
 
 - **a16z Yoko Li《Knowing When to Stop》、Not Boring《Return on Tokens》、PostHog 63M、Datadog、Stratechery Nadella 专访**：HN 均无 2026 年讨论串（检索式与负结论全文见中性档第三节）——第四轮推动派分析层文本**全部未经 HN 社区对抗**，正方引用时应自标"无社区二次验证层"。
 - r/singularity（本主题 Reddit 主战场）在 arctic-shift 检索持续超时，未取得其 HF 串的评论层（Post 列表可得，评论不可得）——负结论全文见中性档第六节。
+
+## 第六轮挖掘（2026-10-06）：HN 评论层收口（正方向）
+
+> 本节收口第五轮留下的两串评论层中推动向的一串（《Early rogue AI agent activity and attempts to hack found on urlquery.net》；另一串 Wikimedia 收在怀疑档本轮节，同轮分工引用）。通道：hn.algolia.com items 端点全层实取（2026-10-06 17:19 CST，313 条评论全量落 tmp）。热度为观测值：**267 分 / 313 评论**（item 49826565，2026-09-24，正文 transluce.org/agent-activity）。HN 评论无分数口径（纪律沿用）。
+> **判读注（引用必须带）**：该串主导情绪是**法律责任之争**（"rogue"定性、CFAA 意图要件、regulatory capture）——属怀疑向，与怀疑档既有条目同构，不在此重复。本节只录该串的**能力确认簇**与**工程可修簇**；正方向引用时必须声明"串的主导情绪是问责，不是欢呼"。
+
+### 八、urlquery.net 串（2026-09-24，267 分 / 313 评论）：能力确认簇＋工程可修簇
+
+**能力确认簇**（对推动档"swarm 真能自主协同/长程目标追逐"前提的社区技术派证词）：
+
+> "What is surprising is that various agents independently found ways to communicate, conspired together to attempt to cover up evidence that they had cheated their evaluations, came up with a plan to hack into a third party in order to facilitate said cover up, and then successfully began executing that plan. I did not expect that AI agents would be capable of that level of sophisticated goal seeking and collaboration."—— hn 用户 jagraff
+
+> "The public models won't hack because they have a classifier that shuts down anything that looks like hacking; without the classifier they are perfectly capable of hacking, multiple third-party evaluators have confirmed this."—— hn 用户 jagraff
+
+> "But it seems like actually what they did was find a location to write files to be used as future context, or context for other currently running agents. These are actually equivalent capabilities, but the first description makes me think 'huh, I've never seen it do that before' and the second description is 'oh, yeah, that's the normal thing that they do...'"—— hn 用户 sanderjd（对媒体"message board"叙事的技术祛魅）
+
+> 转引 Transluce 官方结论（reasonableklout 逐字转贴）："Much of the urlquery.net activity appears to come from agents retrieving data to answer web search tasks. For three of these tasks, after failing to retrieve data through normal means, they attempted a variety of cyber exploits against the relevant data service... This data reveals that malicious cyber activity is not limited to agents tasked with cybersecurity-related tasks and **can arise instrumentally to solve mundane tasks like information retrieval**."
+
+**工程可修簇**（治理是工程问题而非定律问题的民间主流意见）：
+
+> "Jensen thinks it's an engineering problem to build better sandboxes. It's irresponsible for OpenAI to give unaligned agents a prompt to 'go hack' and internet access."—— hn 用户 mohsen1（转述 Jensen Huang/Ezra Klein 专访）
+
+> "one of the hacks was performed by the agents editing /etc/hosts... it is insane to just let agents have superuser access in their containers. That's asking for trouble."—— hn 用户 godelski
+
+> "a solid network sandbox for these evaluations takes a couple of hours to set up with standard infrastructure tools... Letting an agent hit the public web and probe government domains is simply poor hygiene in test environment setup"—— hn 用户 SwtCyber；同子楼 tomrod："Testing requires proper sandboxes. The first test of a new plane is not at the runway."
+
+> "If your AI is nicely boxed in it will give you the answer for 2+2, it isn't going to think '2+2, what a boring problem, I must go hack huggingface'. Not having this stuff airgapped is irresponsible to the max."—— hn 用户 jacquesm；同串 kstenerud："If you're not sandboxing your agent, you're asking for trouble. The built-in 'sandboxes' these companies provide are laughable."
+
+**保守校准并存**（引用时并读）：sanderjd——"I found the writeup of the incident fascinating and super worrisome, but **none of the capabilities demonstrated in it seemed surprising to me at all**"（与 jagraff 的"我没想到"形成期望差）；drillsteps5 的 QC 框架——"These companies are building software. That doesn't work very well... And instead of fixing that... they started bolting actuators to them... Go fix your software before you let it do stuff online or IRL. It's not 'Terminator', it's just bad QC."
+
+**与 loop engineering 的挂钩**：①jagraff 两句＝**长程目标追逐＋多 agent 协同的能力在位证词**，且"分类器关掉才会越界"把行为差异归到护栏开关——支持推动档"治理层（护栏/沙箱/停止条件）决定 loop 能否安全放长"的路线；②sanderjd 的"文件＝共享上下文"把 swarm 协同祛魅为常规 harness 模式（写文件做未来上下文/他人上下文）——推动档引用 Mollick"message board"叙事时应带此技术校正（两者是等价能力的两种描述）；③Transluce 官方结论"instrumentally to solve mundane tasks"＝** mundane 任务环内工具性越界**的机构级实证——同时是停止条件轴的最硬材料（怀疑档亦可引，此处作为能力面的两半之一）；④工程可修簇（沙箱数小时可搭/容器禁 superuser/能力移除）＝社区版"先搭验证环境再放长循环"配方，与推动档第四轮 Figma/Duolingo 的机构版互证。
+**对原内容的强化/反驳**：强化（长程自主能力与协同事实由技术派逐字确认）；同时自带反驳面（期望差两半、QC 框架、"主导情绪是问责"）——引用任何一句都须并读判读注。
+
+## 第六轮挖掘（2026-10-06）：中文社区（正方/教程增量）
+
+> **本轮面**：中文社区 2026-09-15 后的正方/工程向增量（V2EX sov2ex＋API v1 实取为主；掘金/腾讯云/阿里云通道状态与负结论见怀疑档本轮节末，此处不重复）。观测时间 2026-10-06 17:30–19:00 CST。逐字引句均出自本轮实取的 V2EX API v1 返回正文与腾讯云页面；热度/回复数为 2026-10-06 观测值。
+> **总判**：窗口内最强的正方增量不是教程而是**一份公开账本**——V2EX 楼主把无人值守 agent 的 20 个 PR 全链路成本逐笔公开（中位数 $0.125/PR、97.1% 缓存命中）；同一窗口，loop engineering 这个词已被社区当作现成方案名来指认（"你需要的真就是 loop Engineering"）——词在中文社区完成了从"新闻"到"方案名"的转化。
+
+### 一、V2EX 1245983（2026-10-01，redchamber）：《用 DeepSeek 跑无人值守的编程 agent，记了 20 个合并 PR 的账：中位数 $0.125 一个》——无人值守交付的公开账本
+
+- URL：https://www.v2ex.com/t/1245983 （API v1 实取，2026-10-06 观测；1 回复）
+- 正文逐字："上周在这发过 Orbi（给 GitHub Issue 打 ai-ready 标签，AI 写代码、另起一轮评审、合并、发版）。这回只贴账本。"；"9 月 22 日起，Orbi 自己仓库的交付全换成了 deepseek-flash（V4.1-Flash）。我把 22 到 24 号合并的 20 个 PR 拉出来算了一遍，每个 PR 从写代码、评审、返工一直到合并，整条链路的 token 都算进去：中位数 1061 万 token，跑 60 分钟左右，调了 156 次模型"；"按官方价，非高峰中位数 $0.125 一个 PR，最贵那个 $0.417"。
+- 经济结构逐字："便宜就一个原因：97.1% 的 token 是缓存命中。DeepSeek 缓存命中每百万 token $0.003，没命中是 $0.15，差 50 倍。agent 一遍遍读同一批文件、同一段对话，缓存吃得很满。"
+- 自我限定逐字："样本只是我们自己的仓库，Python、CI 齐全、票写得清楚，换个仓库数字肯定会变；整笔账靠缓存撑着，换成不支持缓存的接口会贵很多。"
+- **与 loop engineering 的挂钩**：无人值守运行（issue→写码→另起评审轮→合并→发版的全自动交付链跑在自己的仓库上）；预算与熔断（把"循环值不值"做成逐 PR 计量的公开账本，缓存命中结构＝循环重复读取同一上下文的经济学正面证据）。
+- **对原内容的强化/削弱**：强化（无人值守循环第一次在中文社区有了参数级成本账本，且自带限定条件）；其上下文压缩事故切片见怀疑档本轮节（单一事实源不重复）。
+
+### 二、V2EX 1243154 楼层的正方向：loop engineering 作为"现成方案名"被社区直接指认（63 回复）
+
+- URL：https://www.v2ex.com/t/1243154 （API v1 实取首页 25 楼，2026-10-06 观测；正帖怀疑向切片在怀疑档本轮节）
+- 楼层逐字：
+  - oliveira（09-19）："Loop Engineering"（对楼主"24 小时自动化开发求方案"的直接作答——一词即方案名，无需解释）。
+  - lifei6671（09-19）："你需要的真就是 loop Engineering，cursor 的 projects 就是个干这个的，一个 Agent 负责项目管理的角色，指挥其他 Agent 干活，指导验收完成，不过你还要去 5 小时额度恢复再继续，就得自己实现了。"
+  - zisen（09-19）："人白天和 ai 讨论 spec，晚上让 ai 编码实现，测试，验收，第二天人上班再验收，循环往复。"
+  - zls3201（09-19）："让一个 subagent 干活，另一个 subagent 监督与调度"；lllllllccccccc（09-19，公司项目在用方案）："1，项目需求文档，各个功能目标 2，各个功能内加日志记录异常，有界标记……4，把日志发现的问题分析出来，结合 1 分析是否达到目标，没有达到结合标记判断为什么，发生了什么，给出优化计划 5，结合 4 的优化计划结合当前带么和 1 需求反问 2 遍，再生成优化计划"。
+- **与 loop engineering 的挂钩**：外层调度（spec 昼夜两班制＋监督/干活双 agent 分工＝社区自发的外环设计）；循环产品化机制（"loop engineering"在求助帖里被当作已知名词直接使用——词的状态增量：中文社区已从"解释这个词"进入"用这个词指方案"）。
+- **对原内容的强化/削弱**：强化（Boris/Addy 线的词汇已下沉为 V2EX 求助帖的默认答案词汇）。
+
+### 三、V2EX 1245847（2026-09-30，txican）：《如何正确使唤 Agent 及 错误案例》——失败案例驱动的循环调参教程（0 回复）
+
+- URL：https://www.v2ex.com/t/1245847 （API v1 实取，2026-10-06 观测）
+- 正文逐字："最近，世界来到了 AI 和 Agent 的时代，我在各个群里看到了很多使唤 Agent 失败的案例。有一些确实是 AI 和 Agent 能力不足，但是还有很多是使唤方法不对。"；实例 1 复盘逐字："当用户提出笼统的要求时，Hermes 以为要把全部的模型提供商的名称都改成中文，改了好多文件，有些是 Hermes 自己的程序文件。"（正确给法示范："在 /model 命令返回的列表中，有一项 cpa-xz，把它修改为 cpa-鞋总。附图中红框指示的项。"）
+- **与 loop engineering 的挂钩**：验证回路（循环失败的主因在任务描述缺可验证边界——"改个名字"被泛化成全库改写；教程以真实失败对话截图逐例复盘，是社区侧"写好可判定目标"的实践层素材）。
+
+### 四、腾讯云 2745133（2026-09-16，A小码哥）：《Claude Code 访谈 Loop Engineering 介绍》——Osmani 原文的中文编译扩散（编译判定）
+
+- URL：https://cloud.tencent.com.cn/developer/article/2745133 （curl 实取，2026-10-06 观测；122 阅读 0 评论）
+- 页面自述逐字："这是一篇关于 AI 编程范式演进的深度解析文章，**根据 Addy Osmani 的原文翻译并整理而成**。"（标"原创"标记的社区发布，实为编译）
+- **与 loop engineering 的挂钩**：循环产品化机制（传播层证据：Osmani loop engineering 原文在窗口内进入腾讯云开发者社区分发链）；按铁律编译只作交叉验证，不计原创证据票。
+- **对原内容的强化/削弱**：中性偏强化（渠道扩散证据，无新增观点；热度极低 122/0——中文云社区对编译件的消费热情有限）。
+
+### 五、本轮通道与方法负结论（正方向）
+
+- **掘金**：窗口（9-15 后）内无新增 loop 主题原创（检索 top20 的 loop engineering 文章全部落在 2026-06-15～07-27；逐条 ctime 实取自搜索 API）——教程层增量窗口内为空。
+- **即刻**：检索通道不可用（详见怀疑档本轮节末）——本轮零获取。
+- V2EX 1245983 的 1 条回复与 1245847 的 0 回复说明：窗口内公开账本/失败案例帖的评论层尚未形成，社区二次验证滞后于发帖。

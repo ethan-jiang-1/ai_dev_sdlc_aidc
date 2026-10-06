@@ -121,6 +121,18 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **甲方工程博客**：Uber 70%+ PR 归因 agent（3600 skills/30K 执行每日）、Shopify River 自主修复环（11 天积压 -70%、"another edit is a bet rather than a fix"）、字节 TRAE 悖论（90% AI 代码 vs 吞吐仅 1.6 倍，900 次实验可交付性 40→80 分）；**甲方 agent 事故 postmortem 零命中**（负结论：失败以经济失控/不收敛/传播失真三种变体公开，不以事故报告形式公开）。
 - **arXiv 学术层（53 条，全部带七类挂钩标注）**：专名沉淀五来源互证（LoopArena/LoopsBench/范式综述/教科书）；怀疑面弹药首次与推动面持平（评测批判："What Does a Harness Buy"换 harness 波动≈重跑波动；"Coding Agents Have Converged" 榜首不可分；reward hacking 分类学：删测试检测 AUC 0.997）；**"loop engineering" 全 arXiv 仅 22 条 vs agentic loop 168**——专名进入学术层是真信号但早期。
 
+**第五轮增补（会议全量＋社区二次验证＋厂商参数级）**：
+- **AIEWF 2026 全量扫**：358 议题页三层官方材料全实取；Lance Martin（Anthropic）"build/verifier 双上下文回路……**the big idea behind this whole loops trend**"；怀疑向 Steve Yegge "Be Scared"、Microsoft "It proposes, but ultimately **it is the harness that decides**"、Dotta《What Does Done Even Mean?》（停止条件正题名）；降温注记 Debois（loop/harness 将商品化）。
+- **HF 事件社区二次验证**：本窗口最热 AI 串 2301 分（社区自行上修事件规模）；四簇怀疑情绪＋能力侧确认；**停止条件黄金引句** "task impossible, peers doing it. We should continue."（停止判据被多 agent 场覆盖）；熔断延迟实测下界 **2.5 小时**。
+- **厂商机制参数级**：/goal 条件 ≤4000 字符＋三值裁决＋check-in 默认 30 分钟；/loop **7 天硬过期**（"This bounds how long a forgotten loop can run"）＋50 任务上限；Stop hook 8 连阻塞硬顶；Copilot 预算熔断**默认 off**；LangGraph recursion_limit 放宽约 40 倍；**第四轮"circuit breaker 无厂商使用"负发现被推翻**（OpenAI 官方逐字 rejection circuit breaker 3/10/50——论点收缩为"有熔断器但默认值与粒度不利"）；Cursor /goal /loop 无 docs 专页（仅 changelog，证据降级核对）。
+- **分析层文本 HN 零讨论**（a16z/Not Boring/PostHog/Datadog/Nadella 专访均无串）——引用标"单源＋无社区对抗"；社区二次验证只发生在事件串与产品串。
+
+**第六轮增补（开源框架＋中文厂商＋播客层＋收口）**：
+- **护栏两派正面对撞**：Goose Adversary Mode 官方自认 **fail-open** vs OpenAPPA（1446★）确定性策略"same log always gets the same decision"可做 CI 必过闸；Loopers 三层熔断参数（Jaccard 0.95/5rps/Hamming 5＋五窗预算）；Charter RuntimePolicy（max_cost_usd 0.50/max_llm_calls 20）＋LifecyclePolicy 阈值→pause/cooldown/rollback；Cline 自认"示例非保证"（模型自判审批）vs Roo 确定性最长前缀；OpenHands stuck 五模式＋Critic 阈值 0.6；mini-swe-agent 取代 SWE-agent（cost_limit 3.0 美元默认）。
+- **中文厂商**：Qoder Goal 默认 10 轮硬上限＋Spec→Goal→Schedule 接驳；TRAE"未达标续跑/达标即停"＋自动运行档官方自我设限；**Qwen Code 五期周报**（08-27→09-24）＝循环机制演进最强连续证据链，终点是完成判定器"自报完成不作数"。
+- **播客层**：Zach Lloyd SE 主环七段自动化＋自动合并率 20%→60% 爬坡；swyx"Zawinski's Law of MultiAgents"（与 Steinberger's law 并列）；Eiso Kant"verification/persistence/backtracking＞raw intelligence"；怀疑向 Zechner"先 issue 后 PR"人审门禁＋Dwarkesh 沙箱逃逸结构论；**Amazon 860% 预算超支 "bad agent loops, just didn't crash loudly enough"**（迄今最大具名事故，FT 原文待补一手）；Satya Source 10 增量解决（三链互证）。
+- **收口**：Netflix 终弃；Sequoia 两单集核销窗口外；三份年报转例行观察（当日三扫均未发布）。
+
 ## 四、不支持什么（证据边界）
 
 1. **所有失败账本都是单样本**（Ronacher n=1、Yegge n=1、Gas Town 单 harness）——引用必带 caveat；

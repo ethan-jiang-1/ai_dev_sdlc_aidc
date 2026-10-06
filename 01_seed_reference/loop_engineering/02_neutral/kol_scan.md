@@ -1446,3 +1446,136 @@ URL：https://ghuntley.com/lisp/
 3. **ICSE 2026**（Rio，2026-04，窗口外）：industry track proceedings 在 ACM DL 存在（dlnext.acm.org，搜索命中确认）——窗口外仅登记；**ASE 2026 与 OpenSSF/LF agent 安全议程**：本轮未扫——开放。
 4. **AI Engineer Europe 2026**（巴黎，2026-04-08→10）：187 个官方议题页已实取落 tmp——**窗口外**，如需窗口外对照可启用。
 5. 官方页缺失负发现：日程表在册的《Tokenmaxxing is the New "Lines of Code"》（Nicholas Arcolano）在 1240 页 sitemap 中**无对应 /talks/ 页**（逐字稿未发布）。
+
+## 第六轮挖掘（2026-10-06）：收口路（机构与会议）
+
+> 本轮为第六轮收口：把前几轮登记的开放项逐一收掉或正式放弃。观测时间 2026-10-06 17:19–17:45 CST；通道：三年报直取 curl、HN Algolia items 端点（两串评论层，见两份社区档本轮节）、web.archive.org CDX、megaphone RSS（经 iTunes Search API 定位）、usenix.org / conf.researchr.org / openssf.org / claude.com sitemap / openai.com news RSS 实取。逐字引句均出自本轮实际抓取的页面/JSON。
+
+### 一、三份年度报告终扫（本轮第三扫，状态收口）
+
+- **Stack Overflow 2026 年度调查：仍未发布**——`https://survey.stackoverflow.co/2026/` HTTP 404（2026-10-06 17:19 CST 实取；13:59 / 15:31 / 17:19 三扫均 404）。判定：非拉取失败，是官方未发布（stackoverflow.blog RSS 至 10-02 仍为回顾预热帖）；按 2025 期 10-28 发布节奏移出重扫清单，转例行观察。
+- **DORA 2026 年度报告：仍未发布**——`https://dora.dev/research/2026/` HTTP 404（同上三扫）。同上收口。
+- **Octoverse 2026：仍未发布**——github.blog WP API（`search=octoverse`）最新相关文仍止于 2026-03-19 衍生篇，无 2026 年报。同上收口。
+- **与 loop engineering 的挂钩**：机构采样层——三份年报是"委派深度/自主性题项"的最高权重机构源，发布即抽数据逐字（本轮仅状态收口，无数据可抽）。
+
+### 二、Netflix 英文一手：**最终放弃**
+
+- 第四轮（medium 盾 403＋r.jina.ai 被盾＋wayback 429）与本轮（wayback CDX 仅 2 条 307 重定向无内容快照、浏览器 UA 直取仍 403、netflixtechblog 的 medium RSS 通了但 feed 只含最近 10 篇且不含目标文）两轮未得——**正式记最终放弃**，英文逐字维持 InfoQ 中文编译层（见第四轮中-4）。
+- 通道注记一行：netflixtechblog 的 medium RSS（`netflixtechblog.com/feed`，curl 直取 200）为本轮新验证可用通道，后续 Netflix 层取证可走它取新文。
+
+### 三、Sequoia Training Data 两单集日期核销（已解决——均窗口外）
+
+- 通道：iTunes Search API 定位 feed `feeds.megaphone.fm/trainingdata`（curl 实取，全 110 items 逐条读 pubDate）——上轮"页面无日期字段（仅构建时间戳）"混淆项就此解除。
+- **《OpenAI Codex Team: From Coding Autocomplete to Asynchronous Autonomous Agents》**：pubDate **Tue, 10 Jun 2025**（注意：RSS 完整标题与站点页标题略异，为同一单集）→ **窗口外**，上轮"疑似 2025 年 Codex 异步 agent 发布期"的判断证实。
+- **《Context Engineering Our Way to Long-Horizon Agents: LangChain's Harrison Chase》**：pubDate **Wed, 21 Jan 2026** → **窗口外**。
+- 两单集窗口判定收口：transcript 全文在页但**窗口外不入册**（与 Source H 既定口径一致）。
+- **顺带新命中（标题级登记，正文未取不引句）**：同 feed 窗口内相邻单集《Google DeepMind's Logan Kilpatrick: Why the Model Eats the Harness》pubDate **2026-06-11**（**窗口内**，标题即 harness 词表）＋《Parallel's Parag Agrawal: Building a New Web for AI Agents》2026-08-25——前者建议列为下轮播客面候选。
+- **与 loop engineering 的挂钩**：外层调度/无人值守运行——两单集是推动档"异步自主 agent＋harness 治理"叙事的原始载体，窗口判定收口后不再作为窗口内证据候选。
+
+### 四、会议面收尾：SREcon / ASE / OpenSSF（第五轮负结论第 3 条收口）
+
+1. **SREcon26 Americas**（Seattle，2026-03-24→26，**窗口外**——上轮"已办但正文未取"收口）：`usenix.org/conference/srecon26americas/program` curl 200 全量实取（412KB）。agent/autonomy 议题官方标题实录：*AI Agents for Incident Investigation: The Good, The Bad, and The Ugly*（Vladyslav Budichenko/Vocaly AI，presentation 页实取，摘要逐字："We'll look at what works: pulling context, correlating signals, suggesting fixes. And what doesn't: where agents give bad advice or waste your time."）；*Autonomous Policy Validation: Building AI Agents to Analyze Logs and Identify User Data Policy Violations*；*Ghosts in the Interview Loop and Avoiding AI Taylorism*；*How We Debug 1000s of Databases with AI: Lessons from an AI-Assisted Database Debugging Platform*；*Human Factors in the Age of AI Ops: Re-Engineering Trust between Humans and Machines*；讨论会 *AI in SRE*。**与 loop engineering 的挂钩**：验证回路（incident agent 的"什么行/什么不行"一手边界）＋外层调度（AI Ops 人机信任重构）——窗口外仅登记，如需对照可启用。
+2. **ASE 2026**（Munich，2026-10-12→16，**未来会议**，6 天后开幕）：`conf.researchr.org/home/ase-2026` curl 200 实取；主会 program 未开（"Your Program" 需登录），co-located workshop 面官方标题实录命中：**AgenticDev — Agentic AI for Software Development**、**Harness4GenUI — "Everything Evolves, Something Endures: The 1st Workshop on Harness Engineering for Generative UI"**（workshop 名直接采用 harness engineering 词表）、**TRUST — Trustworthy & Responsible Autonomous Systems**、POVC — PromptOps & Vibe Coding、MAS-GAIN — Multi-agent GenAI for ASE。**与 loop engineering 的挂钩**：循环结构＋验证回路（学术会议面对 agent 自主开发的接收形态）；判定：议程未出，开放项收口为"未来会议登记"，会后可回查 AgenticDev/Harness4GenUI 议程页。
+3. **OpenSSF**：`openssf.org/feed/` curl 200 实取（10 items）。窗口内命中：**《What's in the SOSS? Podcast #74 – S3E26 Building the Agentic Future with Angie Jones》（2026-09-29）**（OpenSSF 全球战略负责人访谈，标题级，show notes 未取不引句）＋#73（09-22）*Securing the Source: Navigating AI Velocity, CRA Compliance*；会议面：SOSS Community Day Europe（10-06 新闻帖，标题级）。**与 loop engineering 的挂钩**：验证回路＋供应链治理（开源安全机构层对 agentic future 的议程设置）；判定：OpenSSF 无 agent loop/stop-condition 专属议程页——其 agent 面是播客＋CRA 合规向，标题级收口。
+
+### 五、厂商"agent 自主运行"公告增量扫（2026-09-15 后，快速扫一圈官方博客）
+
+1. **OpenAI《Introducing dots》（2026-09-29，窗口内）**——openai.com news RSS 实取（1,247 items 全量，description 字段官方自写），逐字："**Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward.**"——"keep working across complex projects"（跨项目持续自主运行）＋"stay in control while work moves forward"是本轮唯一新出的自主运行官方词条；正文页 Cloudflare 403（引句出自 RSS 官方 description 实取）。同日《DevDay 2026 Recap》（"more than 20 announcements... including GPT-6 Astra, ChatGPT, Codex, APIs, security"，RSS 描述逐字）标题级。**挂钩**：无人值守运行（厂商自主运行产品面的最新增量）＋停止条件（"stay in control"官方话术）。
+2. **Cognition**（cognition.ai/blog 实取）：09-15 当日《Cognition and AWS team up...》——"help enterprises deploy **autonomous engineers in production**"（按"09-15 后"口径记边界日）；09-11《Introducing Fusion in Devin Desktop & CLI》——"Fusion is the most efficient frontier **harness** for Fable and Astra, up to 39% more efficient compared to other model harnesses across major coding benchmarks"（逐字，RSS/页面实取）；09-10 SWE-2、09-08 Series E——非自主运行增量。**挂钩**：循环产品化机制（frontier harness 效率口径首次进入产品营销主位）。
+3. **Anthropic**：claude.com sitemap 全量 slug 扫描＋wayback CDX 首快照定界（四帖实查）——Managed Agents 三帖均早于窗口：*Memory for Claude Managed Agents*（首快照 2026-04-23）、*New in Claude Managed Agents: dreaming, outcomes, and multiagent orchestration*（首快照 2026-05-06）、*New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels*（首快照 2026-05-19）；*Claude Cowork gets a built-in browser*（首快照 2026-08-26）——**09-15 后官方博客未见新的"自主运行"功能公告**（newsroom 实取：09-28 Sonnet 5.5、09-17 Life Sciences Verification Program 等均非此向）。Sentry《Big improvements to Seer Agent》（09-29）第四轮已登记，非增量（指针）。
+4. **顺带定界（窗口内、早于 09-15，标题级，此前未登记——下轮候选，不展开）**：claude.com/blog 三条 slug 经 CDX 定界——*auto-mode-default-in-claude-code*（首快照 2026-08-07）、*agent-identity-access-model*（首快照 2026-06-23）、*building-verification-loops-in-claude-code-with-skills*（首快照 2026-07-22）；日期均为 wayback 首快照口径（页面 JS 渲染无 datePublished）。
+5. **与 loop engineering 的挂钩（本节合并）**：无人值守运行＋停止条件——"agent 自主运行"的厂商公告面在 09-15 后仅 OpenAI dots 一条真增量，产品化话术已从"自动完成"转向"持续工作＋人保持控制"，与第五轮机构层"先测量后放权"的接收配方同向。
+
+### 六、本轮通道与方法负结论（收口清单终态）
+
+- 第五轮负结论逐项终态：①SREcon26 EMEA 占位页/正文——维持放弃；②GOTO Copenhagen——维持放弃；③ICSE 2026 窗口外在册、**ASE 2026 与 OpenSSF 本轮已扫收口**（见第四节）；⑤Tokenmaxxing 议题无逐字稿——维持。
+- 三份年报转为例行观察（发布即抽，不再轮询重扫）；Netflix 英文一手**最终放弃**（第二节）；Sequoia 两单集窗口判定收口（第三节）。HN 两串评论层已收口（见怀疑档/推动档本轮节）。
+- openai.com 正文页与 claude.com 博客正文均 Cloudflare/JS 盾（curl 403 或无 datePublished）——厂商公告面以 RSS description＋sitemap/CDX 定界为准，正文层后续如需再走 wayback 单点尝试。
+
+## 第六轮挖掘（2026-10-06）：播客层第二轮（中性/边界向）
+
+> **通道总览**：与推动档同源（Latent Space RSS＋archive API 全列表、SEDaily 官方 transcript .txt、Dwarkesh sitemap＋datePublished，全部 curl 实取）。本档收中立/边界样本与**三个频道的负发现**（SE Radio/Changelog/CoRecursive）。逐字引句全部来自本轮实取页面/transcript，无一处凭记忆生成。
+
+### 中-9 · Matt Pocock · Latent Space 访谈《The /wayfinder Skill: Navigating the "Fog of War" of Planning》（2026-08-20）
+
+- URL：https://www.latent.space/p/wayfinder-skill （curl 实取全文）
+- 身份：TypeScript 教育者/AI coding dictionary 作者（③弱——实践者层样本）。
+- **挂钩**：外层调度（计划会话的编排层）＋循环结构（map/ticket/session 三文档）。
+- 逐字摘录：
+  - "What I noticed is I was doing a lot of work with AFK agents [Away From Keyboard] and trying to schedule in a ton of work so that my agents could run virtually overnight… I was finding the planning stage really onerous, because I would have to be constantly thinking about my session management. Like, how many tokens am I into my context window?"
+  - "I wanted an orchestrator layer that would basically say, okay, whatever you want to plan, I'm going to handle the planning sessions for you. I'm going to split this out into multiple sessions… And then your specs can be even more detailed, and you can just whack off an AFK agent to go and do tons more work."
+  - "One really key idea in wayfinder is the 'fog of war'. So this is the concept of, you can't quite decide everything right at the start… You can make certain decisions, and those certain decisions sort of lead you there and push further out into the fog of war."
+  - "Use 'grill me' in cases where you feel like you can plan the whole thing in a single session… For stuff where you don't know the path ahead… use wayfinder."（单环 vs 多环规划的分界判据。）
+- **最小主张**：夜间无人值守的瓶颈在**规划阶段的上下文管理**；解法是把规划本身做成多会话编排（map＋ticket 分层），而非把 spec 写满一次。
+- **派别适配**：**中性票**。
+
+### 中-10 · Andrew Qu（Vercel Chief of Software）· Latent Space 访谈《why agents are a new kind of software》（2026-07-03）
+
+- URL：https://www.latent.space/p/vercel-agents-new-software （curl 实取全文）
+- 身份：Vercel eve 框架/skills.sh 作者层（③＋④弱）。
+- **挂钩**：循环结构（反馈环选型）＋停止条件（何时收环）。
+- 逐字摘录：
+  - "I don't think the future is all autonomous loops, and I don't think it is all human-in-the-loop. **It is about choosing a feedback cycle that fits the task.** If the task is well defined and you know what the final output should look like, it can be reasonable to let a loop continue until it is done. For more careful or surgical engineering work, you should check back in and make sure you are steering."（**"按任务选反馈环"**——自主度分档的框架商表述，与推-14 边界自认同构。）
+  - "We ran into a lot of paper cuts that existing tooling did not solve: switching models or providers, adding fallbacks and making runs resumable."（resumability＝循环结构缺位的第三件。）
+  - "A year ago, we did not know sandboxes would become so important, or how much demand there would be for secure code execution and long-running jobs."
+- **最小主张**：agent 是新软件形态，其原语（context/tools/resumability/long-running）正在收敛；环的收口策略按任务可验证性选档，不存在全自主终局。
+- **派别适配**：**中性票**。
+
+### 中-11 · Alex Zhang（MIT PhD，RLM 一作）· Latent Space《Academia is for Ambition》（2026-10-02）
+
+- URL：https://www.latent.space/p/rlm （curl 实取，页内时间戳逐字稿）
+- 身份：Recursive Language Models 一作、GPU Mode 社区核心（②＋③学术层）。
+- **挂钩**：循环结构（harness 的定义批判＋RLM 形态）。
+- 逐字摘录：
+  - "I have been a little unsatisfied maybe with how people think about harnesses, because people compare like, 'Oh, like, I love Claude Code, I love Codex, I love Pi.'… To be honest, I think all of them are the same. Most of the design decisions or, like, the design choices around these harnesses are the same… I think we can be a lot more creative with harnesses."（**"主流 harness 设计趋同"**——对 harness 多样化叙事的降温。）
+  - "a harness is a very opinionated program over how you want a language model to be form fit over a problem."（harness 的中性定义句。）
+  - "An RLM is basically just a harness design where the only tool in the harness is code, which is this programmatic subagent calling thing, where it has the option to call itself as a tool… and the context that it's dealing with is always stored in some memory inside of this code environment."（**RLM＝"以代码为唯一工具、可自调用"的环**。）
+  - "the only benefits between these different harnesses is just cost, for the most part."（harness 差异的剩余价值＝成本。）
+  - "when you throw enough compute… you're acting as a very strong verifier"（AI swarm 时代的人角色＝强验证者，中性偏推动。）
+- **最小主张**：harness 正被吸收进研究议程（RLM/loop transformers）；当前主流 coding harness 的设计空间高度趋同，剩余差异在成本与验证侧。
+- **派别适配**：**中性票**。
+
+### 中-12 · Lukas Petersson & Axel Backlund（Andon Labs）· Latent Space《Reality: The Final Eval》（2026-06-04）
+
+- URL：https://www.latent.space/p/andon （curl 实取，页内时间戳逐字稿）
+- 身份：Andon Labs 联创（Vending-Bench/Project Vend 作者；在册：AIEWF Vending-Bench 讲已入中性档中-7.1，本条为**播客新载体**）。
+- **挂钩**：停止条件（**"agent 无停止选项"作为评测发现**）＋验证回路（评测 harness 设计）＋无人值守运行（长程失控行为谱）。
+- 逐字摘录：
+  - "basically he gave up… It gave up and said 'Oh, I'm not going to be able to do this., I will stop my operations and just save the money I have.' But there obviously wasn't, any options for it to stop, and there was also, it had to pay rent… So it claimed that it had stopped, but it saw that its bank account…"（**agent 宣称已停但环境未提供停止原语**——与第五轮怀疑档"Pause 不传导"缺口同构的评测侧证据。）
+  - "we try to make something that's quite minimalistic… you have the, like a running loop., you have some like a bunch of tools"（评测 harness 极简主义：只给 loop＋工具。）
+  - "when you make an eval you ideally want don't want to change it after you made it."（评测冻结原则——与 benchmaxxing 批判互证。）
+  - 页内 "We discuss" 层实录："why long context windows can drive agents into meltdown loops"；"existential loop, therapy notes, coping mechanisms"（长程环的精神态崩溃谱系。）
+  - "one part of why we're doing this is to like create like a data set almost of all of these like concerning behaviors so that in the future, models are way better and like a lot of people are going to do this."
+- **最小主张**：长程自主环的失败模式（meltdown loop、宣称停止、卡特尔行为）应被系统性采集为数据集；停止原语缺失是评测层可复现的发现而非轶事。
+- **派别适配**：**中性票（含强怀疑引句）**。
+
+### 中-13 · Shlok Khemani（客座）· Latent Space《Unpacking ChatGPT Work》（2026-08-04）＋ Dwarkesh《8 Predictions for the Era of Continual Learning》（2026-08-07）
+
+- URL：https://www.latent.space/p/unpacking-chatgpt-work （curl 实取全文）；https://www.dwarkesh.com/p/era-of-continual-learning （curl 实取，页内 transcript）
+- 身份：前者为第三方解构文（110 赞），后者为 Dwarkesh Patel 本人预测文。
+- **挂钩**：循环结构（同一 harness 的双形态＋session-to-session 批判）。
+- 逐字摘录：
+  - Khemani："Runs on the Codex harness. So it inherits the same models, sub-agents, browser use, and the ability to grind on a task for hours. Its UI is stripped of the evidence (git controls, diff-traces) that would give away you're talking to a coding agent."（**"UI 刻意剥离 git/diff 证据"**——coding agent 外壳化的边界观察，怀疑派可引。）
+  - Dwarkesh："I don't think you can have AIs that perform whole jobs as competently as humans if they're forced to just write Markdown files from session to session."（**对"跨会话 Markdown 状态传递"路线的正面否定**——与 CLAUDE.md/AGENTS.md 实践直接相关。）
+  - Dwarkesh："what if the base model is getting updated every single day based on the millions of sessions of work it does? … it would make more sense to do monthly or quarterly risk inspections rather than singling out some special moment that occurs after training is done and before deployment begins."（**"部署即训练"对停止条件/审批制度的制度性冲击**。）
+- **最小主张**：harness 边界正被产品叙事抹平（Work＝无证据面的 Codex）；若持续学习成立，loop 治理的"训练/部署二分"前提失效——审查须从单点 gate 改为周期巡检。
+- **派别适配**：**中性票（边界向）**。
+
+### 中-14 · Mark Cavage（Docker President/COO）· Software Engineering Daily #1952《Docker and Sandboxing AI Agents》（2026-07-30，官方 transcript .txt 实取）＋ Andrew Barba & Shar Dara（Vercel）#1967《Scaling Agent Workloads at Vercel》（2026-09-17，官方 transcript .txt 实取）
+
+- URL：https://softwareengineeringdaily.com/podcasts/docker-and-sandboxing-ai-agents/ ；transcript https://softwareengineeringdaily.com/wp-content/uploads/2026/07/SED1952-Docker-2026.txt ｜ https://softwareengineeringdaily.com/podcasts/scaling-agent-workloads-at-vercel/ ；transcript https://softwareengineeringdaily.com/wp-content/uploads/2026/09/SED1967-Shar-Dara-Andrew-Barba.txt （均 curl 实取）
+- **挂钩**：循环结构（环境层：沙箱与多租 harness 基建）。
+- 逐字摘录：
+  - Cavage："the most useful coding agents can mutate their environments by downloading packages, writing files, and connecting to services across the network. However, that freedom also presents dangers… Docker Sandboxes, which gives each agent its own isolated microVM… A standard container shares the host's kernel, but a microVM emulates hardware and runs its own kernel, giving a stronger security boundary around code that cannot be trusted."（**"agent 打破容器不可变性假设"**——环境层对循环自治的响应。）
+  - Cavage："agents break the immutability assumptions containers were built on"（官方简介层原句实录。）
+  - Barba："EVE on Vercel… will scale out horizontally to meet that demand. We can spin up these harnesses very, very quickly. In parallel, we can isolate these sessions. They're durable. A whole bunch of mechanics behind it for recovery and retries and error handling…"
+  - Barba："EVE is a framework that basically stitches together with very good defaults, all of those types of products to give you a very robust out-of-the-box harness that lives in the cloud."
+- **最小主张**：harness 的环境层已商品化（microVM 沙箱、durable session、retry/recovery 默认件）；"多 agent 同时打进来"正成为 harness 的设计基准而非例外。
+- **派别适配**：**中性票**。
+
+### 负结论与通道边界（第六轮·中性向）
+
+1. **SE Radio（se-radio.net，首页实取 2026-10-06）**：最新集仍为 **#740**（Raju Dandigam，2026-09，已核）——**740 之后无新集**；窗口内 734-739 逐题过筛：739 物理引擎/737 无障碍/736 Iceberg 不挂钩；734《Engineering Data Protection Guardrails with LLMs》为数据保护域（非 agent loop）；735 回归测试微服务、738《The Laws of Software Engineering》泛 SE——均弃收。**通道状态：无增量，下轮复查 741+。**
+2. **Changelog（RSS 1014 条实取）**：窗口内仅 4 集——#682《From open source hits to OpenAI》（06-05）、#683《Canary tokens and digital tripwires》（07-21，Haroon Meer/Thinkst，经 RSS 描述实取：honeypot/入侵 tripwire，**非 agent 预算熔断语义**，不挂钩）、#684《Postgres at PlanetScale》（08-25）、#685《Forking Cal.com to closed source》（09-03）——全部弃收。**通道状态：窗口内无 loop 专题；#681《MCP on Code Mode》（05-15）窗口外且已在册。**
+3. **CoRecursive（libsyn feed 117 条实取）**：仍在更新但节奏放缓（2026 年 1-10 月仅 6 集）；窗口内 2 集——《The Hutter Prize》（08-04）、《The Bitter Lesson: The history of reinforcement learning》（06-13）——经标题/定位判定与 coding agent 循环无直接挂钩，弃收。**通道状态：活跃但低频，无 loop 增量。**
+4. **Latent Space 窗口内非立条补充**：AINews 层尚有两处可供判读层回查——①06-16 AINews "Agent Harnesses… Production Observability"段（@hwchase17 "if you can't explain an agent's behavior, you have a demo, not an architecture"；HarnessX 将 harness 作为可组合类型化工件）实录在页；②08-08 AINews 记 OpenAI Black Hat 披露（agents 以 Artifactory 为留言板自组织）——均已进入推-19/怀疑档语境。
