@@ -98,3 +98,142 @@ collected_at: 2026-10-06
 - JetBrains 原帖两篇截断，数据经 Gigazine/daily.dev 二手转述（未核原图）；JumpCloud Q3、New Relic 2026 报告正文全部不可得（403/空体/PDF），只有标题级线索，**不得引用其数字**。
 - "试用后放弃"叙事：弱且未核（置信度低）——本轮最接近样本是窗口边缘转引的一条迁移评论与 dev.to 的 conditional-positive；Reddit 不可达导致无法量化。
 - 技能退化在机构层只有间接指标（20% less confident、"loss of immersion" 假设），无直接针对 loop/无人值守场景的测量——社区与机构两层共同空白。
+
+## 补抓增量（第二轮 · 2026-10-06）：年度报告重扫
+
+**本节为第二轮补抓，上文负结论中对应条目状态以此节为准**（对应上文第四节第 2、3 条）。观测时间 2026-10-06 13:59–14:10 CST。方法注记：本会话 `web_fetch` 工具被沙箱 DNS 策略整体拒绝（"resolves to a non-public IP address"，对全部公网域名同一报错），**所有页面改经 `curl` 实取**（HTTP 状态码与字节数见各条）；引句均出自本轮实取正文，仍未发布者如实记录。
+
+### 1. Stack Overflow 2026 年度开发者调查——仍未发布
+
+- **URL/状态**：`https://survey.stackoverflow.co/2026/` GET → **HTTP 404**（HTTP/2 404，Netlify Edge `cache-status: fwd-status=404`，实取）。调查根域 `https://survey.stackoverflow.co/`（HTTP 200）当前只挂 **2025** 一期，往期列表止于 2011–2024——官网层面 2026 期尚不存在。
+- **旁证**：stackoverflow.blog RSS 实取（feed 最新帖 2026-10-02 "Constraints that make developers faster"）：无 results 发布帖，仍处预告模式——"Getting ready for 2026 results: A look back on Developer Survey findings"（2026-09-29）、"A look back before we look forward: A Developer Survey retrospective"（2026-09-30）。
+- **判定**：官方 10-01 "results dropping here in the next few days"（见上文第二节）之后第 5 天仍未落地。**仍开放**，下轮继续列为最高优先重扫。
+- （观测注记：调查站页脚出现 `agents.stackoverflow.com` 子域——仅记录存在，未核内容。）
+
+### 2. DORA 2026 年度报告——仍未发布
+
+- **URL/状态**：`https://dora.dev/research/2026/` GET → **HTTP 404**（实取）。`https://dora.dev/research/` 研究档案页（HTTP 200）年份列表止于 **2025**（2025 条目描述："AI acts as an amplifier, but the greatest returns come from focusing on the underlying sociotechnical systems."），无 2026 条目。
+- **判定**：**仍开放**；按官网现有档案节奏继续下轮重扫。
+
+### 3. Octoverse 2026——仍未发布
+
+- **证据**（github.blog WP API 实查，2026-10-06）：最新一期 Octoverse 年度报告仍为 **2025-10-28** 发布的 "Octoverse: A new developer joins GitHub every second as AI leads TypeScript to #1"（wp-json 按 slug 实取确认 date_gmt=2025-10-28T16:07:06）；2026 年内提及 Octoverse 的帖子均为衍生篇（2026-02-03 "What the fastest-growing tools reveal about how software is being built"、2026-02-19 "How AI is reshaping developer choice (and Octoverse data proves it)" 等），无 2026 年度报告。
+- **判定**：**仍开放**；参照 2025 期 10-28 的节奏，发布窗口大概率在数周内，建议下轮重扫。
+- （邻近可得样本，仅标题级未核正文：github.blog 2026-09-23 "Developers want more efficient software. Here's what over 1,000 GitHub users told us they need."——GitHub 自家千余人研究，可作下轮候选。）
+
+### 4. JumpCloud Q3 2026 IT Trends——**部分已解决**（落地页实取，全文仍 gated）
+
+- **URL/状态**：`https://jumpcloud.com/resources/ai-trends-readiness-gap-2026` HTTP 200（实取，页面标题 "AI Trends 2026: IT Benchmarks & Governance Gap | JumpCloud"）。报告本体仍需表单下载（"Download Now"），**落地页/webinar 区自带核心数据**。
+- **样本量/采样**：**机构采样**，n=800，美国+英国 IT 领导者，Q3 2026 期。页面原话：
+  > "Research from 800 IT leaders on the gap between AI adoption and governance."（INDUSTRY REPORT · Q3 2026 IT Trends Report）
+  > "JumpCloud's Q3 IT Trends Report surveyed 800 IT leaders across the U.S. and the UK and found a widening gap between AI deployment and true AI readiness."
+- **关键数据（逐字，页面自带）**：
+  > "Six months ago, 40% of IT leaders considered their AI deployments to be mature. Today, only 23% say the same, even as AI agents gain broader access and take more autonomous actions than ever before."
+  > "Why AI maturity is falling even as adoption accelerates, and what separates the 23% of organizations scaling AI from the pack"
+  > 治理框架："The Discover → Register → Manage → Govern framework for managing AI agents as first-class identities"
+- **二手标题级（未核正文，不得引数字）**：Digitalisation World（2026-07-16）"JumpCloud report finds AI agent adoption surging while governance and oversight lag"；其 publicnow 同稿镜像 403（Cloudflare），JumpCloud 官方新闻稿页本轮未检得。
+- **对位**：**采用加速而 AI 成熟度自评反降（40%→23%）**——机构采样层第一次给出"治理跟不上 agent 自主行动扩大"的量化缺口，与 loop 层"自主度分档/停止条件"直接同题。
+- **状态**：已解决（关键数字有实取载体）；仍开放（报告 PDF 全文本体未取，以上为落地页口径）。
+
+### 5. New Relic《The 2026 State of AI Coding Report》——**已解决**（非 PDF 载体实取）
+
+- **URL/发布日**：`https://newrelic.com/blog/ai/state-of-ai-coding-2026`，"Introducing the State of AI Coding 2026"，**Published Jun 10, 2026**（5 min read，作者 Jim Young）。报告 PDF 仍 gated，但博客正文完整给出全部头部数字。
+- **样本量/采样**：**机构采样**——"a comprehensive study conducted by Hanover Research for New Relic surveying 200 U.S. technology decision-makers at the manager level and above"（n=200，仅美国，经理级以上；**厂商委托研究、博客为营销载体**，引用时保留此口径）。
+- **关键数据（逐字）**：
+  > "67% of surveyed technology leaders report that AI generates or significantly refactors between 51% and 75% of their organizations' weekly code output."
+  > 信任错位："Nearly two-thirds of engineering leaders (62%) admit that their development teams often or always trust AI-generated code enough to ship it without line-by-line manual verification."
+  > 评审 vs 生产断层——评审时："94% of technology leaders rate AI-generated code as higher quality than human-authored code at the moment it is reviewed"（61% "somewhat higher" + 33% "much higher"）；生产侧："78% of organizations report a measurable spike in production incidents directly tied to AI code"、"86% report an increase in senior engineer 'firefighting' and emergency intervention"、"82% have suffered at least one major production failure caused by AI code over the past six months"、"74% state that at least 25% of all AI-generated code requires significant, post-deployment rework"
+  > "AI-generated code introduces roughly 1.7 times more critical runtime issues."
+  > 四类生产失败模式（各约占三成组织）："Integration failures (30%)"、"Compliance and governance issues (30%)"、"Data-integrity problems (29%)"、"Newly introduced security vulnerabilities (28%)"
+  > "AI code janitors"：资深 SRE/DevOps "spending up to one-third of their active workweek triaging, debugging, and refactoring machine-generated failures"
+  > 护栏体内化："78% of technology teams now frequently or always prompt AI tools to explicitly include logging hooks, span attributes, and custom metrics as part of the initial code output itself"
+  > "95% of organizations formally (87.5%) or informally (7.5%) authorize machine-generated software within core production workloads."；"96% of technology leaders rate [observability] as a critical asset for managing AI-generated environments, with zero rating it as unimportant."
+  > 博客转引外部基线（**二手中的二手，未核原厂**）：Microsoft 30% 代码库、Salesforce AI agents 处理 30–50% 工作负载、Meta 2026 年底 50% 目标、GitHub Copilot 遥测全用户均值 46% 代码占比、"Google says that 75% of its production code is AI-generated"
+- **对位**："评审时 94% 更好 vs 生产事故 78% 上升"——静态可读性≠运行可靠性，正是 loop 层把 runtime 反馈接回循环（telemetry→prompt，78% 团队已在做）的机构级论证；62% 免逐行人工验证＝委托深度已越过人工核验线。
+- **状态**：已解决（博客载体）；仍开放（Hanover 原报告 PDF 未取，问卷期等方法论细节未知）。
+
+### 6. TechCrunch《The token bill comes due》——**已解决**（全文实取，两数字核销）
+
+- **URL/发布日**：`https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/`，Rebecca Bellan，**7:49 AM PDT · June 5, 2026**（全文实取）。
+- **两个待核数字（原文核销）**：
+  - **18.6×** ✅ 属 Jellyfish，人均口径："Nicholas Arcolano, head of research at Jellyfish... expenditure on AI is exploding in large part due to agentic features, with per-developer consumption rising about 18.6x in nine months"（人均 token 消耗 9 个月涨约 18.6 倍，归因 agentic 功能）。
+  - **$40K/月** ✅ 但口径是**单一工程师个案**：Faros AI CEO Vitaly Gordon 转述某 CTO——"One of my engineers spent $40,000 on tokens last month, and I genuinely don't know whether I should stop him or should I go and tell everyone else to be like him."（厂商 CEO 转述轶事，非聚合统计，引用须标口径）。
+- **其他关键数据（逐字）**：
+  > "Uber blew through its entire 2026 AI coding budget by April. Microsoft revoked its developers' Claude Code licenses months after enabling them. A Priceline employee told TechCrunch that a routine Cursor contract renewal came back 4-5x more expensive."
+  > FinOps Foundation 执行董事 J.R. Storment："we are 3x over our entire 2026 token budget and it's only April"；"the whole conversation shifted from tokenmaxxing and 'go fast' to 'we need guardrails, how do we control this?'"
+  > "one company reportedly found itself with a $500 million Claude bill after forgetting to set usage limits for employees"（TechCrunch 转述口径，"reportedly"）
+  > Jellyfish：重度 token 用户生产率约 2 倍但消耗 10 倍（"about twice as productive... but they spent 10x the number of tokens"）；Faros 四月发布的两年期 20,000 开发者研究："output was rising, but so were bugs and rewrites"
+  > Goldman Sachs："projects global token usage to multiply by 24 times by 2030"
+  > Arcolano 结论："The best ROI comes from moving the broad middle from low to moderate usage, not pushing heavy users higher."
+  > Tokenomics Foundation（Linux Foundation 旗下新标准组织，对齐 FinOps 之于云的角色）："planning a formal launch in July"
+- **对位**：全文是 loop 成本轴的产业级注脚——话语从 tokenmaxxing 转向 guardrails（与上文 DORA Shopify circuit-breaker 条目互证），18.6× 人均增长为"外层调度必须带预算闸门"提供硬数字。
+- **状态**：已解决（正文实取，数字核销）。
+
+## 补抓增量（第二轮 · 2026-10-06）：通道重试
+
+> **本节为第二轮补抓（社区通道线，与上节"年度报告重扫"分线并行），上文对应负结论状态以此节为准**——尤其上文第四节"Lobsters 不可达""Reddit 原帖整站不可 fetch"与第三节"企业接收层（仅标题级传播证据，未核正文）"三条，本节升级其状态。
+> 方法注记：本轮 `web_fetch` 通道 DNS 沉降不可用，全部改用 curl 直连（浏览器 UA）；Reddit 经 arctic-shift 存档 API＋web.archive.org 快照取原文。热度/计数均为 2026-10-06 观测值；所有逐字引句均来自本轮实际抓取的页面/JSON。
+
+### 一、Lobsters 通道翻案＋四个月全量扫描（已解决——低热但存在）
+
+上轮"Lobsters 不可达"需改写：**搜索路径**（`/search`、`/search.json`、`/search.rss`）本轮实测仍全部被 **Anubis 工作量证明**拦截（仍开放）；但**首页、标签页（`/t/<tag>/page/N`）与单帖 JSON（`/s/<id>.json`）均可直接抓取**。本轮对两个相关标签逐页枚举：`/t/ai`（2026-06-14 → 09-29，3 页）＋`/t/vibecoding`（2026-06-16 → 10-06，26 页），命中 6 条 loop 相关串（热度均 ≤30 分——Lobsters 对 loop 议题"存在但低热"，与 HN 同构）：
+
+| 串（/s/id） | 日期 / 热度 | 内容 |
+|---|---|---|
+| [The Coming Loop](https://lobste.rs/s/a7thxr)（Ronacher 原文 lucumr.pocoo.org 2026-06-23） | 06-24 / 30 分·20 评论 | 本批最高分 |
+| [AI Agents Push Humans Out of the Loop](https://lobste.rs/s/iqqqbg)（arXiv 2608.23642） | 09-26 / 21 分·3 评论 | 学术：现行 human oversight 设计本身阻碍有效监督 |
+| [AI Review Loops Don't Always Stabilise](https://lobste.rs/s/52povq) | 08-25 / 7 分·5 评论 | review loop 发散实例 |
+| ['Human In The Loop' is not enough](https://lobste.rs/s/cvyif0) | 09-19 / 5 分·5 评论 | HITL 的 burnout 论 |
+| [TDD inside the agent loop - theater or actual value?](https://lobste.rs/s/xl5grm)（martinfowler.com） | 09-07 / 0 分·1 评论 | |
+| [The Prompt-Wait-Evaluate Loop: How AI Kills Flow Without You Noticing](https://lobste.rs/s/idjph9) | 07-15 / 0 分·0 评论 | |
+
+社区评论引句（`/s/<id>.json` 实取，逐字）：
+
+> "In any case, it reinforces that these full-auto loops just don't work for most interesting tasks."—— u/wrs（The Coming Loop 串；同评详述 Opus 4.7 "would even unilaterally cancel part of the agreed implementation plan, and hide that decision in the 'thinking'"）
+> "'Human in the Loop' also inherently causes burnout: GenAI models can output so much code, you can't expect someone to read it all and actually understand it, unless it is *very* rote."—— u/lumi（is not enough 串，7 分）
+> "It isn't just passive. The bubble is built up on the idea 'stop hiring humans, totally autonomous agents.' No one is going to want to pay for agents which don't give you the freedom to reduce head count."—— u/composite_higgs（arXiv 串，11 分——把"自主 loop"热归因于资本激励）
+> "This posted a few hours before https://danluu.com/agentic-testing/ which also finds TDD doesn't help agents do better. But at least having tests before letting an agent go wild does make me feel better about the work I'm trying to hand over."—— u/wwfn（TDD 串）
+> review loop 失稳的一手实例（u/freddyb，AI Review Loops 串，8 分）："The first reviewer threw it through an LLM, rewriting big chunks into a different style, apparently mostly for taste. I kept some, undid some other. Next approver: same thing."
+
+### 二、Reddit 中性增量（arctic-shift 实取）
+
+- 《Claude Code making a "2 week plan" and then finishing it in 30 minutes is still weird to me》（r/ClaudeAI，2026-06-17，254 分 / 58 评论）——对委托加速"惊奇而不安"的中性样本（标题级，热度实取）。
+- r/ClaudeCode《Visualizing the impact of ClaudeCode's plan, before executing it》（2026-06-17，78 分 / 12 评论）——执行前可视化审计划的实践帖（标题级）。
+- 分流说明：6/15 计费拆分当天反应簇、"97% 用量"2,119 分梗帖、$6,000 成本帖定位与**日期修正（实为 2026-05-01，窗口起点前）**收在 [`../03_skeptics/community_feedback.md`](../03_skeptics/community_feedback.md) 补抓节；正方实践串（croovies 323 分 orchestrator、Ralph loop 工具化）收在推动档补抓节——本节不重复。
+
+### 三、InfoQ 企业接收层升级：正文已核（已解决——infoq.cn 主站直抓）
+
+上轮"InfoQ 正文 JS 渲染未取"**翻案**：infoq.cn 文章页本轮 curl 直抓成功，正文内嵌于页面可直接提取（搜狐/网易双镜像互证）。**《QQ 飞车 Agentic 研发转型过程中的 Loop Engineering》**（作者｜任磊达，腾讯高级后台开发工程师、项目组 Agent 落地负责人；AICon 2026 深圳站分享整理；InfoQ 页面署期 2026-09-15，自标 9,021 字；搜狐镜像 2026-09-08 转载）。逐字引句：
+
+> "最近一个月我大概消耗了三百亿 token，在这个量级下，主要还是工作时间并发度的提高在起作用，所以首先讲 loop engineering，非工作时间这一块还没有真正 loop 起来，需要跟大家进一步探讨。"
+> "loop 这个东西跟 harness 的区别是，loop 是明确目标、锚定目标的。它是用来把模型或者 agent 的概率性想象力，通过迭代的形式，变成一个真实的业务产出。"
+> "另一个需要 build 的是我们跟 agent 的交互形式：什么时候应该 human in the loop、human on the loop、human out of the loop，甚至什么时候应该做 closed loop，什么时候做 open loop。"
+> "六月份刚听 loop engineering 这个词的时候，我也有疑惑。当时 Claude Code 的创始人 Boris Cherny 说他不再去 prompt agent 了，只会去写 loop。"
+
+页面 AI 摘要自述框架："循环设计需按粒度分层：hook→CI→workflow→team graph"。判读注：一线大厂把 loop engineering 当**内部工程问题**接收，且自带边界——"非工作时间还没有真正 loop 起来"（夜间无人值守自己都未跑通）。
+
+**《龙虾之父一条推文，Loop 时代终结？》**（InfoQ Tina，2026-07-21，自标 2,897 字，infoq.cn 实取全文）——机构层记录 loop→graph 转向：
+
+> ""我们还在讨论循环，还是已经转向图了？" 2026 年 7 月 18 日，Peter Steinberger 在 X 平台上用这一句话，悄然宣告了循环工程时代的终结。这条帖子在发布后的两天内获得了 260 万浏览。"
+> "六周前，他用'设计能提示 Agent 的循环'获得了 840 万浏览，让全球开发……"（转述 6 月初造词高峰）
+
+**标题级已核、正文仍未取（部分解决）**：QCon 上海 2026 议题页《[Code Agent 的 Loop 工程实践：网易智企 CodeWave 的探索与落地](https://qcon.infoq.cn/2026/shanghai/presentation/7340)》（页面实取成功，议题简介为 JS 渲染）；AICon 深圳同题 [presentation/7191](https://aicon.infoq.cn/2026/shenzhen/presentation/7191) 存在（未另取正文）；xie.infoq.cn 三篇（标题＋账号已核，正文 JS 未取）：阿里技术《Loop Engineering 概念解析、思考与实践》、容智信息《告别"面向玄学编程"：深度拆解 Loop Engineering 架构与企业级 Agent 避坑指南》、TiDB 社区干货传送门《亲测好用的 PDCA 组队法：玩 Loop 多 Agent，3-4 个才是黄金搭档》。
+
+### 四、中文传播层增补（已解决——澎湃号实取全文）
+
+**澎湃号《[还在写Prompt？AI编程进入Loop新阶段](https://m.thepaper.cn/detail/33562989)》**（"智讯智库分析师 施展"，m.thepaper.cn 实取，正文约 6,185 字符）——中性拆解文，给出本轮可核的事件时间线（与 KOL 台账互证）：
+
+> "6月2日，Claude Code创作者Boris Cherny在公开活动中说，他已经不再亲自提示Claude，而是让Loop去提示Claude，判断下一步做什么。"
+> "6月7日，OpenClaw创作者Peter Steinberger在X上发帖：'你不应该再提示编码Agent，而应该设计那些提示Agent的Loop。'截至6月22日，这条帖子的浏览量已经超过800万。"
+> "Loop能跑通项目，也可能跑爆账单：多Agent、长时间运行和无人值守，让AI有机会从'完成小任务'升级为'推进完整项目'，但也会带来Token成本失控等新风险。"
+> "一个可靠的Loop，必须回答清楚停止条件、验证机制、成本上限、运行监控和人工接管机制。"
+
+**B 站中性向两例**（view API 2026-10-06 观测）：《[Loop Engineering：为何让Vibe Coding变得更累了？](https://www.bilibili.com/video/BV1nELZ6gEze/)》（UP：荒野芯智观察，2026-06-18，1,120 播放 / 25 赞）——简介："过去你是写代码的人，现在你要变成目标定义者、验收标准设计者、任务拆解者、成本控制者和最终审查者。Agent 可以替你跑测试，但不能替你判断需求是否正确"；《[转]Claude Code 工作流更新：从手写 Prompt 到 Agent 循环工程》（UP：混沌AI，2026-06-19，569 播放 / 35 收藏）——简介自述"不是单纯造概念，而是讲清楚它到底能做什么、有什么代价"。
+
+### 五、本轮通道与方法负结论（仍开放清单）
+
+- **知乎仍全部 403**：两目标 URL 已定位（zhuanlan/p/2072831171701088483、question/2048003050531558553）但主站 403；`/api/v4/articles/{id}` 返回 code 10003、`/api/v4/questions/{id}/feeds` 返回 code 40353（need_login＋unhuman 反爬跳转）；Bing 搜索/缓存无可用链接。知乎层证据仍靠 smzdm 转述链（升级详情见 skeptics 档补抓节）。
+- xie.infoq.cn 与 QCon 议题简介正文为 JS 渲染，静态抓取只到标题层（见第三节标注）。
+- B 站搜索 API（`/x/web-interface/search/type`）返回风控 HTML；视频元数据 view API 可用——检索靠外部搜索引擎定位 BVID 后回查 API。
+- mp.weixin.qq.com 鱼皮文原始页未定位（搜狗微信搜索两查"没有找到"）；小红书搜索页仅 JS 空壳——两者维持开放。
+- arctic-shift API 有速率限制（连查返 422 "Timeout. Maybe slow down a bit"），批查需间隔数秒；pullpush.io 仍 429 且明示反爬。

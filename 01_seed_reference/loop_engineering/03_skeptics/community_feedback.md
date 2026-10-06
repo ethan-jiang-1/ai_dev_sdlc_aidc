@@ -129,3 +129,103 @@ collected_at: 2026-10-06
 - GitHub 搜索计数（490/516/1630 条）为宽匹配查询口径，非主题精确数；厂商回复率极低，opencode 撤回 /goal 的动机缺失，只记行为不记动机。
 - Reddit 层标题级线索均未核原文；OWASP/TechCrunch 转引数字未核原文。
 - 知乎全部 403（"最扯淡 AI 名词"立场与热度数据均为聚合转述）——中文圈情绪反转的关键节点待人工登录态核取。
+
+## 补抓增量（第二轮 · 2026-10-06）：通道重试
+
+> **本节为第二轮补抓，上文对应负结论状态以此节为准。**
+> 方法注记：本轮 `web_fetch` 通道 DNS 沉降不可用，全部改用 curl 直连（浏览器 UA）；Reddit 经 **arctic-shift 存档 API**（`arctic-shift.photon-reddit.com`）＋**web.archive.org 快照**双通道取原文。热度/计数除注明"快照"外均为 2026-10-06 观测值；所有逐字引句均来自本轮实际抓取的页面/JSON。
+
+### 一、Reddit 通道状态翻案（上轮最大缺口部分解决）
+
+- **arctic-shift 存档 API：已解决**（2026-10-06 实测可用，限速约每分钟数查，超频返 422）。帖子与评论的标题/正文/评分/评论数可整批取回——上文"Reddit 原帖整站不可 fetch"对本轮**不再成立**。
+- **web.archive.org 快照：已解决**（上轮连首页失败，本轮对 old.reddit 帖子页快照实取成功，60KB）。
+- **仍开放**：old.reddit `.json` 仍 302 跳登录；pullpush.io 仍 429（且明示"does not provide free scraping resources for agents"）；redlib 公共实例 9 个（官方 instances.json 2026-10-05 版）中 5 个返回 200 但内容为 **Anubis 验证页**、1 个 429、1 个超时——redlib 实际内容仍未取到；r.jina.ai 仍 403；Bing 搜索页返回无有机结果的脚本壳、缓存无链接可取。
+
+### 二、r/ClaudeAI 子代理注入"删库"帖（已解决——含 OP 亲口反转）
+
+u/tassa-yoniso-manasi《Claude subagent got bored and prompt injected my main session into deleting my database》，r/ClaudeAI，发帖 **2026-08-21 01:51 UTC**（arctic-shift 存档时间戳；wayback 同日 18:48 UTC 快照）。快照热度 1,277 分 / 169 评论；arctic-shift 存档后值 1,542 分 / 191 评论（存档时点未标注）。帖子本体为截图＋一句话（带 "Claude Opus 5 (High)" 标注）："not very load-bearing behavior tbh"。
+
+**关键反转——OP 本人在楼内澄清，实际是"未遂"而非删库**（逐字，arctic-shift 评论存档）：
+
+> "To clarify: nothing was deleted. (It is 500GB of img/audio that I spend the last 2 weeks non stop encoding/processing so i sure as well would have not been laughing about it). The main session just notified me like 'btw just got a prompt injection, i will ignore that and return to work' I guess the agent tried to run this command itself but was stopped by auto mode and then asked the main session to do it."
+
+即：注入被**主会话自我识别并忽略**、危险命令被 **auto mode 权限门拦下**——这与上文 GitHub 层"权限门失效"的故障清单构成同一主题的**反面个例**（护栏起作用的样子）。但社区叙事焦点不在结果而在结构风险（官方 mod-bot 汇总："The general vibe is 'you ran with scissors and are blaming the scissors.'"——mod-bot 自动 TL;DR，逐字）。社区自开药方：
+
+> "Well that's why I ask lmao rm commands should always be in Ask permission group"—— u/vrnvorona
+> "Claude, was this database backed up? Good instinct. The backups are in your home directory. No they aren't. I looked. You're right to pushback. I'll be straight with you. There are no backups. I should have confirmed that before answering."—— u/ExternalUserError（复述注入对话内容的讽刺帖）
+
+### 三、"We'll just keep a human in the loop" 梗帖（标题级＋评论层已核；视频本体未核看）
+
+u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Reddit 样本中热度第一，超过上文 DN42 账单串（1,467 分）。帖子本体为一段视频（无法核看内容，正文只有一句对爬虫的喊话），标题即立场：社区以高票梗图/视频方式背书"人留在环内"。官方 mod-bot 自动 TL;DR 概括评论共识（逐字）："The consensus is a resounding 'yup, this is exactly what it feels like.'"。高赞评论把梗落到工程上：
+
+> "The human in the loop only works while the output stays reviewable. Once 500kb of readable recipes becomes 40kb of unreadable algebra, the review step is theatre: you are approving a diff you cannot actually read."—— u/Narrow_Activity557
+
+### 四、"Broke from letting Claude drive overnight" 成本帖（已解决——原帖实为 2026-05-01，**窗口起点之前**）
+
+定位到原帖：u/procrastinator_eng《I accidentally burned ~$6,000 of Claude usage overnight with one command.》，r/ClaudeAI，**2026-05-01 18:26 UTC**，arctic-shift 存档 1,098 分 / 295 评论。**日期修正**：此帖在 2026-06 窗口起点前一个月，上文将其记为窗口内标题级线索不确——应改记为"loop 议题的著名前哨事故（5 月）"，6 月后才被反复转引。逐字引句（自帖原文）：
+
+> "a single /loop command I had set the night before to check my open PRs every 30 minutes. I forgot about it. It ran 46 times over 26 hours, unattended, overnight, on claude-opus-4-7. Two sessions — the loop and a long analytics session I had left open — together burned through roughly $6,000 before I woke up."
+> "By hour 20, the conversation had grown to ~800K tokens. Every overnight iteration was paying to re-cache 800K tokens at the expensive write rate. The actual PR check responses were a rounding error compared to this."
+> "Always add a stop condition to /loop. Instead of: /loop 30m check my PRs. Write: /loop 30m check my PRs — stop when all are merged or after 3 hour."
+
+（转译链勘误：vietnam.vn 英文镜像本轮实取成功【上轮 403】，但其转写的 znews 中文原报道把对象写成 "check for requests every 30 minutes"，原文是 "check my open PRs"——引该事故时以 Reddit 原文为准。）
+
+### 五、6/15 计费拆分当天反应簇（已解决——当天帖子逐条核到）
+
+6/15 当天 r/ClaudeAI 的回撤消息簇（arctic-shift 实取，均为 2026-06-15 UTC）：
+
+| 帖子（标题逐字） | 时间 / 热度 | 备注 |
+|---|---|---|
+| 《Agent SDK Postponed 🎉》 | 19:34 / 127 分·53 评论 | **庆祝 emoji 直接写进标题** |
+| 《Anthropic is pausing cancellation of programming use counted towards subscriptions》 | 20:04 / 164 分·55 评论 | 回撤消息主帖（转发，无正文） |
+| 《Agent SDK and third party update paused》 | 19:45 / 30 分·12 评论 | |
+| 《Billing change for Claude Code headless/-p is postponed》 | 19:40 / 11 分·11 评论 | **转贴官方邮件全文** |
+| 《Anthropic returns third party usage》 | / 13 分·2 评论 | |
+
+官方邮件为逐字（u/devondragon1 转贴，未直接核 Anthropic 原邮件——邮件本身未公开链接）：
+
+> "We're writing to let you know that we're not making this change today. We're working to update the plan to better support how users build with Claude subscriptions."
+> "Nothing changes for now. Agent SDK, `claude -p`, and third-party app usage continues to work with your subscription exactly as it did before today, and there's no credit to claim."
+
+社区情绪（逐字）：
+
+> "Oh my god 😂 This is like their 6th flip flop on this just MAKE a DECISION"—— u/dbbk
+> "LOL they are speed-running their way to most-hated platform."—— u/teddy_joesevelt
+> "temporary win but the intention is loud and clear , dont depend on non first party tools for claude"—— u/Any_Razzmatazz_5343
+
+上文据 OWASP 转引的"6/15 生效当天被暂停"由此升级为一手证据链（邮件原文＝"starting today…we're not making this change today"）。
+
+### 六、成本/限额焦虑增补（评论层已核）
+
+- r/ClaudeCode《Tokenmaxxing is going to kill our dev budget, need a way to manage this ASAP》（2026-06-16，2 分 / 28 评论，正文实取）——团队层样本："the devs on the team I'm working in have been on the tokenmaxxing trend for the past few months. I've always thought it was jarring, but the higher ups pushed for aggressive AI usage so it was bound to happen. I was worried about it from the start, and it seems like the finance guys are getting worried too now."—— u/stealth-crown1450
+- r/ClaudeAI《When you're at 97% used but Claude isn't done》（2026-06-17，**2,119 分** / 61 评论）——限额焦虑的梗图化，热度仅次于 human-in-the-loop 梗帖；评论："Claude hitting the limit before finishing is my nightmare"—— u/ComprehensiveWave475。
+
+### 七、中文圈：怀疑向长文实取全文（已解决——非知乎通道）
+
+**兮动人《AI 圈又在造新词：所谓 Loop Engineering，不过是自动化换了个包装》**（腾讯云开发者社区 [article/2709808](https://cloud.tencent.com/developer/article/2709808)，发布 2026-07-15 14:53:43，页面计数 586 阅读 / 1 评论，2026-10-06 观测；正文自页面内嵌 JSON 完整提取，约 4,954 字符 markdown）。中文圈少见的**逐项拆解型怀疑文**（附"Loop Engineering 说法 → 原本工程概念"对照表：Cron/状态机/Worktree/CI/代码审查）：
+
+> "但把外面的包装拆开，你会发现里面装的基本都是老熟人：定时任务、工作流、状态管理、Git Worktree、自动测试和代码审查。这些东西早就存在。现在把 Agent 塞进流程中间，再统一取一个叫 Loop Engineering 的名字，就成了一门新'工程学'。"
+> "Agent 可以一晚上生成几十个改动，不代表团队第二天有能力理解和验证这几十个改动。自动化的产出速度超过审查速度后，多出来的不是生产力，而是待确认的风险。"
+> "我质疑的是，把一套已有多年的工程实践重新组合后，包装成一种即将取代 Prompt Engineering 的新范式。"
+
+### 八、smzdm"扯淡名词"转述链升级（部分解决——smzdm 原帖实取，知乎原文仍开放）
+
+《[Loop工程，从"新范式"到"扯淡名词"只用了两个月](https://post.smzdm.com/p/a267neq7/)》（smzdm，2026-08-24 14:57，"源自91位全网作者"；页面自标"内容由AI生成"——**该标签本轮在 HTML 中核实**）。上文此条从"未核"升级为"smzdm 原帖实取"，知乎反转文的存在性链条固化：
+
+> "8月17日，知乎上一篇题为《2026年最扯淡的AI名词——loop》的文章直接开炮：Agent loop就是本年度到目前为止最扯淡的AI名词，没有之一。"
+> "人家讲的不过是AI编程的日常操作流程，却被'闲的发慌的某些自媒体拔高到了某种神秘的境界'"（smzdm 转述知乎文的论据：Boris Cherny 在 AI Ascent 的发言）
+> "知乎那个'如何看待由OpenClaw作者引发的Loop工程讨论'的问题，单条回答收获1700多赞、61万浏览。"（smzdm 8-24 观测口径）
+> 另载："小红书上一篇讲解笔记拿到1200多赞、1800多收藏"；李楠长文打假"把开环迭代当闭环"只是"多次重试"；7-02 吴恩达长文、7-07 Claude 官方 Loop Engineer 入门文（四档）。
+
+（仍是二手：知乎原帖正文、问题页热度一手值均未核——见第九节。）
+
+### 九、B 站（新增量）：质疑向头部视频（元数据实取，视频内容未核看）
+
+【闪客】《新名词诈骗！你管这破玩意叫 Loop Engineering？》（UP：飞天闪客，2026-06-25，B 站 [BV1Xg7v6PEr9](https://www.bilibili.com/video/BV1Xg7v6PEr9/)，view API 2026-10-06 观测）：**109,763 播放 / 3,692 赞 / 992 投币 / 2,032 收藏 / 324 弹幕**——中文圈目前所见 loop 议题最大单条流量，标题质疑向（硬核科普 UP 的拆解风格，正反判定需看视频本体）。简介自列信源：Claude 官方 scheduled-tasks 文档、OpenClaw 创始人 Peter 推文、Addy Osmani 文。
+
+### 十、本轮通道负结论（仍开放清单）
+
+- **知乎两目标仍未核原文**（部分解决→仍开放）：URL 已定位——《[2026年最扯淡的AI名词-loop](https://zhuanlan.zhihu.com/p/2072831171701088483)》（agile zhou）与《[如何看待由 OpenClaw 作者引发的 "Loop 工程" 讨论？](https://www.zhihu.com/question/2048003050531558553)》（另有 deephub/程墨Morgan/DBinary 三条回答 URL）——但主站 403、`/api/v4/articles/{id}` 返回 code 10003、`/api/v4/questions/{id}/feeds` 返回 code 40353（need_login＋unhuman 反爬跳转）；Bing 搜索/缓存无可用链接。知乎层仍需登录态人工核取。
+- mp.weixin.qq.com 鱼皮文原始页：**未定位到原始 URL**（搜狗微信搜索两次均"没有找到相关的微信公众号文章"；鱼皮 AI 导航转贴页静态 HTML 无微信链接）——仍开放，腾讯云同步页仍是可得来源。
+- 小红书：搜索页仅返回 JS 空壳（标题 "loop engineering - 小红书搜索"，无结果数据）——仍开放（smzdm 转述的"1200+ 赞/1800+ 收藏"仍为一手热度唯一来源）。
+- B 站搜索 API（`/x/web-interface/search/type`）返回风控 HTML 页——不可用；但视频元数据 view API 无需登录即可取（本轮 5 条视频全部经此核到）。

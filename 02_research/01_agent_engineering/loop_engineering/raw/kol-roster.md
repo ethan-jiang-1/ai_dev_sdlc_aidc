@@ -4,7 +4,7 @@
 > 一手素材统一在 [`01_seed_reference/loop_engineering/`](../../../../01_seed_reference/loop_engineering/README.md)
 > （本文件**只放台账与指针，不放人物卡片**）。
 
-**观测日期**：2026-09-26；**2026-09-27 I 路**追加谱系与候选注记；**2026-10-06 三派分野批**（用户定）：§A 9→14（+Orosz / swyx / Yegge / Kent C. Dodds / Cursor），三派判定权威见 §A2，三路深扫档案按用户指示落种子层 [`01_seed_reference/loop_engineering/`](../../../../01_seed_reference/loop_engineering/README.md)。三路回源见 [evidence-a](evidence-2026-09-26-a-originators.md) / [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) / [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)。簇外高影响面见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)；I2 档案混合主验与侦察回源，侦察条目不计票。**「待回源」= 不可作主张依据。**
+**观测日期**：2026-09-26；**2026-09-27 I 路**追加谱系与候选注记；**2026-10-06 三派分野批**（用户定）：§A 9→14（+Orosz / swyx / Yegge / Kent C. Dodds / Cursor），三派判定权威见 §A2，三路深扫档案按用户指示落种子层 [`01_seed_reference/loop_engineering/`](../../../../01_seed_reference/loop_engineering/README.md)；**2026-10-06 第二轮补抓**：§A +1（**Laurie Voss**，两个一手载体齐）、Farley 入 §C1（转写级）、Searls 身份坐实（Doc Searls）但两句仍零命中——补抓档案见种子层三派目录 raw_scan 文末增量节。三路回源见 [evidence-a](evidence-2026-09-26-a-originators.md) / [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) / [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)。簇外高影响面见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)；I2 档案混合主验与侦察回源，侦察条目不计票。**「待回源」= 不可作主张依据。**
 
 > ⚠️ **质量门槛（2026-09-26 用户定，先于本表的一切口径）**：只收真正有影响力的 KOL，
 > 且内容必须有深度（操作性洞察）。**论坛评论者不算 KOL、聚合媒体与标题党不入册、碎片推文不作深度证据**——
@@ -30,6 +30,7 @@
 | `steve_yegge` | **Steve Yegge** | 40 年一线（Google/Sourcegraph）；Gas Town / Beads / Wyvern 作者 | ① 实践定义者（Gas Town/Beads 被 arXiv 2608.21884 引用）＋③ 一线规模（数十 agent 舰队、日均 175+ commits） | 2026-08《The Shape of Things to Come》：**极端多派内部证词**——Gas Town 被 Opus 4.7 "just two more things" tic 烧毁（循环不收敛）；Wyvern 月烧 ~69B token（等价 ~$87k）；"working on Wheelhouse itself occupies about **20-25% of all my Wyvern work**… roughly constant"；"Building large software remains hard. And it always will be."（[种子层扫描档 S10](../../../../01_seed_reference/loop_engineering/03_skeptics/raw_scan_2026-10-06_skeptics.md)） | **一手**（全文） | §B 升 §A（窗口内新发声，2026-10-06）；派别：**推动·激进多派**（含一手成本证词，§A2） |
 | `kent_c_dodds` | **Kent C. Dodds**（⚠️ **不是 Kent Beck**，名字撞车） | 前端教育者（Epic React / Testing JavaScript 作者） | ③ 实践规模（自述 "hundreds of instances"）＋④ 大分发 | 2026-06-23 播客《Pragmatic Loop Engineering》：受约束循环画像——"the human does still need to be in the loop"、"**trading compute for attention**"、"use loop engineering **judiciously**"、"Good agents make code cheaper to generate and good loops make work cheaper to verify"；自认 "I was doing loop engineering before it had a name"（castro.fm transcript，[种子层扫描档 S6](../../../../01_seed_reference/loop_engineering/02_neutral/raw_scan_2026-10-06_neutral.md)） | **一手**（第三方转写） | 新入册（2026-10-06）；派别：**中性**（强票） |
 | `cursor_org` | **Cursor**（厂商官方） | AI 代码编辑器厂商 | ① 厂商定义＋③ 一线规模 | 循环产品化第二家：2026-05-20 /loop skill（三种子条件）→ **2026-08-19 /goal 正式发布**＋官方教 /goal+/loop 组合＋愿景句 "without the need for intervention at each loop"（[种子层扫描档·厂商面](../../../../01_seed_reference/loop_engineering/01_advocates/raw_scan_2026-10-06_advocates.md)；evidence-u S4b 已有 /loop 前身） | **一手**（changelog 全文） | ✅ 已回源；派别：**推动·厂商**（§A2） |
+| `laurie_voss` | **Laurie Voss** | npm 联合创始人；Arize Head of DevRel | ① 4+1 循环分类学提出者（被 ATO 官方教程文等独立复述）＋③ 一线规模 | **两个一手载体齐（2026-10-06 第二轮补抓）**：Arize《What is a loop in AI engineering, anyway?》（与 Aparna Dhinakaran 合署，全文）＋O'Reilly《What the Hell Is a Loop, Anyway?》（Wayback 全文，07-29）；分类学 execution / task / product / system ＋ **oversight loop——"where the human should live"**（治理翼：把人的监督位内置进循环分类学）；seldo.com《We are all Product Engineers now》（[种子层扫描档＋补抓增量 A/B](../../../../01_seed_reference/loop_engineering/01_advocates/raw_scan_2026-10-06_advocates.md)） | **一手**（全文×2） | ✅ §C1 升 §A（2026-10-06 第二轮）；派别：**推动·治理翼**（§A2） |
 
 **降级出册（2026-09-26 C 路定性）**：
 
@@ -66,13 +67,13 @@
 | Anthropic（Claude Code 团队） | 发起者·厂商落地 | /goal /loop auto mode＋AI-Native SDLC playbook（evidence-b/c） |
 | Cursor（厂商） | 发起者·厂商产品化第二家 | 2026-05-20 /loop skill → **2026-08-19 /goal 正式发布**＋官方教 /goal+/loop 组合＋"without the need for intervention at each loop"（changelog 一手） |
 | Boris Cherny | 发起者·词源（碎片级） | 词源身份成立（AIEWF 06-30 台上版见扫描档，可增补 evidence-a 对照表）；**nuance**：经 Willison 09-11 转引——"Production code written by Claude should have a higher bar than if it was written by a human" |
-| Peter Steinberger | 发起者·词源（碎片级，**反转样本**） | 2026-06-08 词源推文；2025-12-28 曾明确反对自动编排；**2026-06 已入职 OpenAI**（AIEWF）＋六月后 "注意力是主挑战" 发言；07-18 "Loop 时代终结"推文仅媒体转述（待回源） |
+| Peter Steinberger | 发起者·词源（碎片级，**反转样本**） | 2026-06-08 词源推文；2025-12-28 曾明确反对自动编排；**2026-06 已入职 OpenAI**（AIEWF）＋六月后 "注意力是主挑战" 发言；07-18 "Are we still talking about loops, or have we moved on to graphs?"（2.6M views）文本经 36kr EN＋KuCoin 双独立转载锚定——**性质＝推动派内部换词表（loop→graph），非转反对**；X 原文仍缺（种子层 skeptics 档·补抓增量） |
 | Thorsten Ball | 吹捧者·宽自主乐观极（实践者） | #98–100 "aim higher"、验证外包机器证明（`_raw_people/19`） |
 | Geoffrey Huntley | 吹捧者·激进实干极（谱系源头） | "on the loop, not in the loop"（`_raw_people/16`）。**nuance（2026-07-24 起）**：加入 Antithesis 转向验证（"Creation is now near-free. Verification/understanding is not, yet"）；对 Ralph 自我祛魅（"it's just a loop"）；对 software-factory discourse 疏离（"strange"/"too fixated"）——目的激进＋路径审慎，判读层注意勿简单归档 |
 | swyx | 吹捧者·概念造词（loopcraft） | "entire game of the next century"＋"Salty Lesson"＋AIEWF 主台演讲（经镜像，见 §A 行） |
 | Steve Yegge | 吹捧者·激进多派（**含一手成本证词**） | Gas Town 舰队实践；同时公开 Gas Town 烧毁、69B token/月、harness 维护 20–25% 常量（见 §A 行） |
 
-**吹捧层降级登记（一手未取得，不作定派依据，登记防反复）**：Jensen Huang（"Nobody writes prompts anymore. The new job is to write and handle loops."——仅中文媒体转述）、Satya Nadella（经 LangChain 转述、非逐字）、Karpathy "remove yourself as the bottleneck"（经 swyx 转录＋ATO 转述，bearblog 403）、中文聚合媒体的无名氏声称（"Anthropic 80% 工程师"——**吹捧泡沫反面教材，不引用**）。
+**吹捧层降级登记（2026-10-06 第二轮补抓后状态）**：**Karpathy**——升格：bearblog（04-30 讲座文本）＋autoresearch README 两个本人一手载体全文取得（"agents are like interns. You still have to be in charge of aesthetics, judgment, taste, and oversight"）；"remove yourself as the bottleneck" 原句仍仅存 swyx 转录。**Nadella**——部分解决：X 长文（06-14，28M 阅读）标题/日期坐实，全文经两条转译链取得（"This loop will become the new intellectual property of the enterprise"）——引句须标"经转译"。**Jensen Huang**——四路转引一致＋美联社专访线索，NVIDIA 一手仍开放。中文聚合的无名氏声称（"Anthropic 80% 工程师"）维持**不引用**。
 
 **相邻位（不对本词发声）**：**DHH**——"agent-accelerated development"、37signals "pencils down"（2026-09-23，`_raw_people/15`），同时拒绝 "agentic engineering" 词汇；**Harrison Chase**（LangChain CEO）——"LLMs running in a loop calling tools… the core primitive"（专栏三篇一手），但词表为 harness/managed agents/learning loop，不用本词。
 
@@ -96,7 +97,7 @@
 | 人物 | 派内角色 | 判定依据 | 台账位置 |
 |---|---|---|---|
 | Armin Ronacher | **锚点·质量反证代表** | 四篇一手链（扫描档 S1–S4）：《Tower Keeps Rising》07-13（摩擦＝同步理解载体、"a useful signal is gone"、**塔不倒只是继续长高——理解坍塌无即时失败信号**）；《Astra》09-07（内卷论＋35h/$1200/79 commits 白卷＋"when left unattended, it *will* keep going… even if it burns through an entire subscription"）；《Better Models: Worse Tools》07-04（SOTA 工具调用退化＋harness 锁定）；《Anger》08-24（失向/焦虑情绪证词） | §A |
-| David Searls | 候选 | "dark factory"＋"nowhere close… without supervision"——两路快搜均未定位一手（扫描档负结论 #5），**维持待回源** | 候选 |
+| David Searls（**身份坐实＝Doc Searls**，Linux Journal 资深编辑） | 候选 | "dark factory"＋"nowhere close… without supervision"——第二轮补抓：doc.searls.com 全文检索 0 命中、02-26/10-02 帖实读排除、**连 10-02 播客是哪个节目都未确认**——线索本身存疑，**维持待回源** | 候选（倾向降级） |
 | Peter Steinberger（旧立场） | 轨迹注记 | 2025-12-28 反自动编排——本体在推动派，此行保留反转轨迹 | §A |
 
 **部分票（交叉引用，本体在别派）**：Willison（门槛/成本方向）、Orosz（价值/新瓶旧酒方向）、Kent Beck＋Laura Tacho＋Steve Yegge 联署宣言（组织绩效层，2026-02）、Hashimoto（限速证词，支持"难掌握"不支持"反对"）——上述均见 [反对派扫描档](../../../../01_seed_reference/loop_engineering/03_skeptics/raw_scan_2026-10-06_skeptics.md)。
@@ -139,7 +140,8 @@
 | **Simon Willison** | 2025-09-30《Designing agentic loops》已回源：他是循环实践者（工具环 + 成功标准 + 测试套件），同时指出 YOLO 的破坏/外泄风险。这不是对本词的反方论文，也不是语义纠偏 alone。**2026-06 后对本词专门发声——负结论复证（2026-10-06，遍查其 tag 页 254 帖），不升 §A**；但其 2026-09-24 note（"they make software engineering **even harder**… requires extraordinary discipline and knowledge"）＋10-03（"hard budget caps need to be the default"）构成**门槛/成本方向的部分票**（种子层扫描档 S5/S6） | 人物全景已在 [`_raw_people/04`](../../../../01_seed_reference/voices/_raw_people/04_simon_willison.md)；本主题引句在 [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 4；派别：中性偏怀疑（§A2） |
 | **Gergely Orosz** | ~~六预测；"Something precious is being taken away"~~ → **升 §A（2026-10-06）**：07-14《What is "loop engineering?"》为本词专门发声（§1–4 一手＋大纲句逐字）；引文纠偏 "something **valuable**"。派别：中性偏怀疑（§A2） | 人物全景已在 [`_raw_people/12`](../../../../01_seed_reference/voices/_raw_people/12_gergely_orosz.md)；§A 行见上 |
 | **swyx**（latent.space） | ~~loopcraft 原帖 404~~ → **升 §A（2026-10-06）**：经双镜像取得全文＋LangChain 官方引用逐字核销＋AIEWF 主台演讲；实测立场**推动**（"entire game of the next century"） | §A 行见上；种子层扫描档 S5 |
-| **Laurie Voss**（npm 联合创始人；Arize DevRel 负责人） | 4+1 循环分类学（execution / task / product / system ＋ oversight——"the oversight loop never ends"）提出者，被两路独立来源引用；seldo.com 2026-09-14《We are all Product Engineers now》一手全文已取得。⚠️ Arize 原文正文三次 fetch 截断——**入册前须补一手**（种子层扫描档·推动派） | 候选：推动（分类学若坐实可满足①；暂记 §C1 不升 §A） |
+| **Dave Farley**（Continuous Delivery 作者/YouTube 教育者） | 2026 年批评 vibe coding 工程质量——AIDEvCon London 2026＋GOTO G^K25 两场逐字到手（**经转写，降半级**；GitHub 镜像 jscraik/Agent-Skills＋lilys.ai）。**派别提示：正面纲领是 executable specification / ATDD（spec-driven 词表），反对对象是 vibe coding 质量 ≠ 反 agent loop 机制**（种子层 skeptics 档·补抓增量） | 候选：中性偏怀疑（转写级；是否满足①待被引用情况核实） |
+| **Laurie Voss**（npm 联合创始人；Arize DevRel 负责人） | ~~Arize 原文截断，入册前须补一手~~ → **升 §A（2026-10-06 第二轮）**：Arize 原文＋O'Reilly 文两个一手载体齐 | §A 行见上；种子层扫描档·补抓增量 A/B |
 | **Jesse Vincent**（obra / Superpowers 作者） | Superpowers（289k★，口径④＋③一线规模）；其 Fable 5 时代的 `/goal` 实验（过夜 25 实验＋失败日志）是实践层 backbone §1 的例证来源；素材在 [`field_samples/fable5/run_superpowers_jesse_vincent/`](../../../../01_seed_reference/field_samples/fable5/run_superpowers_jesse_vincent/profile.md)（既有，只引用） | **待判更新（2026-10-06）**：blog.fsck.com 2026-07-05《Some new agentic patterns》一手全文已取得（过夜双 agent 协作实录＋未解难题自认："凭据缺口我还没解决"、Lethal Trifecta 无人解决）；独立性待深读后定（种子层扫描档·推动派）。另："shack 刊物"系负结论——博客无此子栏目 |
 
 ---

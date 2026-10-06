@@ -103,6 +103,14 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 2. 但**重心不同**：KOL 反对派谈范式与经济（内卷、理解坍塌），社区反对谈**故障与账单**（停不下来、烧钱、权限失控）——同一痛感的两个抽象层级；
 3. 社区主流"要更自动，但要可停"正是中性派纲领（渐进信任、受约束循环）的**群众版**——中性派的边界划定不是精英折中，是社区实践的先声。**"试用后放弃"叙事在社区层弱且未核**（Reddit 整站不可达是本批最大缺口；SO/DORA/Octoverse 三大年度报告压在观测日前后，值得一周内重扫）。
 
+**第二轮通道补抓增补（同日晚，细节在各派 community_feedback.md 补抓增量节）**：
+- **Reddit 通道部分翻案**（arctic-shift 存档 API＋wayback 快照）：本轮社区热度第一是 r/ClaudeAI《We'll just keep a human in the loop》（2026-09-03，**4,263 分**）——标题即立场；上轮"子代理注入删库帖"经原文核实**实为未遂**（OP 澄清 "nothing was deleted"，注入被主会话识别、危险命令被 auto mode 拦下——**护栏起作用的反面个例**）；"Broke from letting Claude drive overnight" 账单帖实为 **2026-05-01（窗口前一个月，前哨事故）**，原文自开药方 "Always add a stop condition to /loop"；6/15 计费回撤的官方邮件全文到手——回撤证据链升为一手。
+- **Lobsters 翻案**：标签页可抓，四个月两标签全量扫出 6 条 loop 串、全部 ≤30 分——与 HN 同构（该词在资深开源社区同样低热）。
+- **B 站**：质疑向头部【闪客】《你管这破玩意叫 Loop Engineering？》**10.9 万播放**（中文圈最大单条流量）vs 正方教程 9.4 千——**热度对照 ≈ 1:12**。
+- **InfoQ 两篇全文解决**：QQ 飞车 Agentic 转型（"最近一个月我大概消耗了三百亿 token"）、《龙虾之父一条推文，Loop 时代终结？》。
+- **机构层两项解决**：New Relic 2026——**62% 团队免逐行验证直接 ship vs 生产侧 78% 事故上升、AI 代码关键运行时问题 1.7×**（"委托越过人工核验线而质量反向坍塌"的首个机构级配对数字；95% 组织已授权机器生成代码进核心生产）；TechCrunch 全文核销（人均 token 9 个月 **18.6×**，归因 agentic；FinOps 圈 "from tokenmaxxing to guardrails"）。JumpCloud：AI 成熟度自评 **40%→23% 反降**（治理滞后首个量化缺口）。
+- **仍开放**：SO 2026（逾期 5 天未发，下轮最高优先）、DORA 2026、Octoverse 2026、知乎两 URL（403 需登录态）、Searls 两句一手、Hightower、Jensen NVIDIA 一手、Orosz 付费墙。
+
 ## 四、不支持什么（证据边界）
 
 1. **所有失败账本都是单样本**（Ronacher n=1、Yegge n=1、Gas Town 单 harness）——引用必带 caveat；

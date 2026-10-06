@@ -283,3 +283,85 @@ quality_bar: 一手优先；X 不可达；HN/Reddit 评论不作 KOL 证据；�
 
 **这派证据是强还是弱**：机制层证据**强**——Ronacher 三篇 2026-07→09 长文构成反对派最完整的一手链（协作理解瓦解 → 无人值守失控实验 → 工具调用退化/harness 锁定），全部逐字取得；"难掌握"主题有 Willison 2026-09-24 两句净结论 + Hashimoto "excruciating" 双轨训练 + Yegge 20–25% 维护常量三源汇合；成本主题有 Ronacher 35h/$1200/79 commits、Yegge 69B token/月、Willison 预算上限主张、arXiv 论文 8M token/48h 案例四源汇合。**弱的是**：没有一个 KOL 给出"loop engineering 一词"的正面点名长文式反对——最强的词级反对恰是 Orosz（调查式怀疑："cron 旧物/here today gone tomorrow"）和社区反应（经 arXiv 论文转述）；反对派更像"机制/代价怀疑者联盟"而非成形阵营。
 **覆盖缺口**：① Kelsey Hightower 的警告只有不可达的二手转述；② Dave Farley 逐字未得（需 transcript 回源）；③ Orosz 六预测付费墙内本体与 §5–7 全文未读；④ David Searls 两句线索未核到一手（README 候选位继续挂"待回源"）；⑤ x.com 上的大量怀疑派发声（Cherny 之外的 X 战场）整体不可达，本档只能经 Willison/Orosz 的一手文内转引补偿；⑥ 非英语圈（中文/日文社区）KOL 未扫——gigazine/ic.work 均为转述媒体，按纪律排除。**对三派判读的提示**：DHH 与 Uncle Bob 在 2026 年都是激进多派，若旧台账把他们当"批评声音"引用，需要改挂（DHH 已与本目录 README"易误归者"口径一致）；反对派核心名单应聚焦 Ronacher（强票）＋Willison（门槛/安全部分票）＋Orosz（价值怀疑部分票）＋Beck/Tacho/Yegge 宣言（组织层部分票）。
+
+---
+
+# 补抓增量（第二轮 · 2026-10-06）
+
+> **本节为第二轮补抓，前置负结论中对应条目状态以此节为准**：上轮"负结论与边界登记" #2（Hightower）、#3（Farley）、#5（Searls）与 Source 8/9 的 Orosz 付费墙截断，状态一律以本节各小节的最新判定覆盖。
+> **通道说明（必读）**：本轮会话内 `web_fetch` 工具发生 DNS 级故障（一切外部域名报 "resolves to a non-public IP address"，含上轮可用的 lucumr.pocoo.org / simonwillison.net / eu.36kr.com / web.archive.org），全部抓取改经 **bash curl（浏览器 UA）** 实取。下述每个 URL 均为真实访问（含失败尝试，如实记录状态码）；逐字引句全部出自实际 fetch 的页面/文件，无一凭搜索摘要转写。
+
+## 增量 A · David "Doc" Searls —— 仍开放（身份已坐实；两句一手仍未定位）
+
+- 人物：**Doc Searls ＝ David Searls**——上轮"很可能是 Doc Searls"的猜测**坐实**：Wikipedia 词条 https://en.wikipedia.org/wiki/Doc_Searls （curl 实取）载 "David (born July 29, 1947) is an American journalist, author, and blogger"，Linux Journal 长期编辑、Project VRM 创立者、Cluetrain Manifesto 合著者（后三项亦见 The AI & I Show 官方 guest bio，zeno.fm 实取）。
+- 待核线索（来源：Ronacher 人物卡 01_seed_reference/voices/_raw_people/17_armin_ronacher.md）：**"dark factory"（2026-10-02 播客自嘲："how I've accidentally constructed a dark factory with agents building and maintaining my iOS apps"）**；**"today's agents are nowhere close to being able to write software that won't fall over without supervision"（2026-02-26）**。
+- 已尝试通道（全部实际 fetch，未命中目标句）：
+  1. **doc.searls.com WordPress 全文检索 API**（curl 实取）：`/wp-json/wp/v2/search?search="dark factory"` → **0 命中**——该词在其博客全文中不存在；`search=nowhere close` → 唯一命中《The Kids Take Over》（https://doc.searls.com/2026/04/13/the-kids-take-over-2/ ，实取全文核读：讲高中生构建 app 的纪实，**无该句**，系无关词碰撞）。
+  2. **2026-02-26 当日归档与其唯一帖《Back and (Go) Forth》**（https://doc.searls.com/2026/02/26/back-and-go-forth/ ，实取全文）：内容为 MyTerms/隐私主张、白内障手术恢复自述、Summit on Human Agency 上与 Sheila Warren 的 15 分钟访谈要点——**无 agents 句**。（上下文收获：02-26 前后他正忙于隐私议题与人身恢复，与"02-26 发表 agent 定调句"的场景难吻合，卡内日期存疑。）
+  3. **2026-10-02 帖《Lintlinks》**（https://doc.searls.com/2026/10/02/lintlinks/ ，实取全文）：Zoom"workspace"吐槽＋债市＋Meta 广告杂拌——**无播客预告、无 dark factory**。
+  4. **category/ai 页第 1–2 页**（实取）：无 iOS app/agent 自述帖（仅链接他人文《The Week AI Agents Got Hands》）。
+  5. **播客侧三路排查**：Reality 2.0 官网 reality2cast.com（实取：最新 Ep159 = 2025-10-08，2026 年休眠，无 10-02 集）；The AI & I Show 的 Doc 单集（zeno.fm 实取：2025-11-02 首集，主题 Personal AI/隐私，日期与主题均不符，排除）；podnews《Podcasts with Doc Searls》（实取：仅列 2023 年条目）。
+  6. **精确短语 web_search**（"accidentally constructed a dark factory" / "agents building and maintaining my iOS apps" / "nowhere close to being able to write software" / "won't fall over without supervision" 四组）：**全部零命中**。
+- 状态：**仍开放**。两句逐字的一手载体（播客音频页/转写页/博客帖）均未定位，且"10-02 播客"究竟是哪个节目未能确认（两条最像的线 Reality 2.0 与 AI & I Show 均排除）。维持"待回源"，**不入册**。
+- **派别含义一句话**：候选资格与怀疑倾向继续挂起——没有一手，此人仍不产生任何票。
+
+## 增量 B · Dave Farley —— 部分解决（两场演讲逐字到手；载体为第三方转写，引用须降半级标注）
+
+- 人物：Dave Farley（Continuous Delivery 先驱、YouTube 频道作者）｜ 日期：GOTO G^K25（转写页 slug `vibe-coding-20251026`，即 2025-10-26）与 AI DevCon London 2026（会期第 5 天末场）。
+- **通道突破①（AIDEvCon London 2026《Vibe Coding: Is this really the best we can do?》）**：tessl.io registry 本体是 JS 应用壳（直接 quote.md 路径、`?raw=true`、`/api/` 端点三种姿势 curl 实取均只回壳页）——但经 api.github.com 树检索定位其 **GitHub 镜像仓库 jscraik/Agent-Skills**，`raw.githubusercontent.com` 实取三件套（`quote.md` 5.1KB / `outline.md` 9.8KB / `transcript.md` 31.9KB，路径 `Plugins/aidevcon/skills/talk-farley-vibe-coding-best-we-can-do/`）。逐字（quote.md 自注"All quotes are verbatim from transcript.md"）：
+
+> "I would argue that vibe coding programming with natural languages. While having a place. Are also kind of bad ideas."（§3）
+
+> "Vibe coding alone is simply not good enough if we're just chatting with the computer to express our needs. That's not enough."（§8）
+
+> "AI generated tests. If the code is the only input, we can only verify that the code remains the same. … So they're mostly a dumb idea. They have a, they have a place, but mostly a dumb idea. They tend to be a copper [cop-out] for people who don't, can't be bothered to state their goals."（§4；转写自注 "copper" 为 "cop-out" 误转）
+
+> "He reckons he may, he writes 12,000 lines of code per day. No human being can review 12,000 lines of code per day. No human being can test, manually test the output of 12,000 lines a day behaviorally to figure out whether it's doing the right things."（§10）
+
+> "We sped up the coding bit. That was the easy part of software development … But it also moves the bottleneck. If you've ever read The Goal, the theory of constraints, that's what we've done."（§9）
+
+- **通道突破②（GOTO G^K25）**：lilys.ai 转写页（https://lilys.ai/es/notes/vibe-coding-20251026/dave-farley-vibe-coding-future-programming ，curl 实取 329KB）逐字：
+
+> "I think vibe coding, programming with natural languages, all of these, this is essentially my agenda … I am going to explain why I think these are bad ideas, but I do think that they're bad ideas."
+
+> "Everybody's talking about vibe coding a lot at the moment, and that's kind of instructing a computer via natural language and having a conversation with it until it comes up with with with a solution that we like … does it help us to organize our thinking about a problem? No, because natural language is too vague."
+
+> "There are some of the agentic tools that are a little bit more predictable than most of the LLMs, but most of the LLMs, if you diff the code that was generated between even a small change, it's basically all of it, it changes."
+
+- 正面纲领（同一 transcript，§11–12）：**"A program will be a precise description of what it is that we want, I think, and coded as specifications translated into execute or [executable] instructions by the AI that will verify that we got what we wanted."**＋"We can verify that the AI is doing the right thing by giving test test values that it hasn't seen before, so it can't cheat the tests."
+- 排除通道：davefarley.net（实取：2022 年后停更的旧 weblog，无 2026 内容）。
+- ⚠️ 引用纪律：transcript 自带 attribution 警告（无逐说话人标注、含语音转写伪影；MC 场务话术不得归 Farley）。两场转写均为第三方转写级，入册按"本人演讲·经转写"降半级标注。
+- 状态：**部分解决**（上轮"逐字未得"→本轮两场逐字到手；YouTube 原片仍不可达）。
+- **派别含义一句话**：Farley 的反对票坐实为"对 vibe coding 工程质量的反对"——其正面纲领是 executable specification / ATDD（spec-driven 词表），与"反对 agent loop 机制"不是同一命题，判派时须分列。
+
+## 增量 C · Kelsey Hightower —— 仍开放（通道穷尽式失败，负结论加固）
+
+- 待核线索（同上轮）：2026-06-12 两条警告——AWS Console 权限"你连它搞了什么都不知道"；拿 Claude 取代 Terraform"准备收拾烂摊子"（载体疑为其 28 秒短视频）。
+- 已尝试通道（全部实际 fetch/attempt）：
+  1. ain3xt.com 两篇原文直取（curl 实取）：**403（Cloudflare）**；换 Googlebot UA 重试：仍 403。
+  2. web.archive.org 快照查询两篇 URL：**404 无快照**。
+  3. r.jina.ai 阅读代理：**403**（源站 Cloudflare 连代理一并拦截）。
+  4. 其他转载排查：腾讯云《DevOps重构：从Vibe Coding到VibeOps》（cloud.tencent.cn，实取全文）只有他另一句 "如果20年后我们还在谈论Kubernetes，那是技术界的悲哀"——非目标句；threadreaderapp/unrollnow 无其 thread 命中（unrollnow 本身 503 两试）；kelseyhightower.com 域名解析失败（curl 000，无站点）。
+- 新线索（仅搜索层，未 fetch 到正文）：ain3xt 另有第三篇《28 秒讲完一个道理》（证实原始载体为 28 秒短视频）及其 tag 页 `ain3xt.com/tags/kelsey-hightower/`。
+- 状态：**仍开放**。两条警告的逐字与一手 URL 均未核得，**不入册**；ain3xt 三篇的标题级信息继续只作检索线索。
+- **派别含义一句话**：云运维侧的"失控警告"候选继续挂起，无票。
+
+## 增量 D · Peter Steinberger 07-18 推文 —— 部分解决（两个独立全文转载锚定文本/日期/浏览量；X 原文仍不可达）
+
+- 人物：Peter Steinberger（OpenClaw 创作者、词源人物，已入职 OpenAI）｜ 日期：2026-07-18 ｜ 原载体：X（本环境不可达）。
+- 已取全文的独立转载两路：
+  1. **36氪英文版**《Father of Lobster's Viral Tweet: Has the Loop Era Officially Ended?》（https://eu.36kr.com/en/p/3904771418867330 ，curl 实取全文）——推文文本：**"Are we still talking about loops, or have we moved on to graphs?"**；事实参数（该转载原句）："On July 18, 2026, Peter Steinberger quietly declared the end of the loop engineering era with this single sentence on X. The post garnered 2.6 million views within two days of its publication."；并上溯其前帖：'Six weeks earlier, he earned 8.4 million views with the phrase "design loops that prompt agents."'（该文另载 Steinberger 六月推文完整版："Monthly reminder: you should no longer prompt programming agents yourself. You should design loops that prompt agents."——可补 evidence-a 词源推文的多版本对照表）。
+  2. **KuCoin News Flash**（https://www.kucoin.com/news/flash/peter-steinberger-announces-end-of-loop-engineering-era-shift-to-graph-engineering ，curl 实取全文）——同一推文、同一日期与 2.6M views；文本微差版："Are we still discussing loops, or have we already moved on to graphs?"（两版并存如实记录）；承接叙事："the static Org Graph and the dynamic Work Graph"。
+- 排除通道：aibuilderclub.com（curl 实取但正文 JS 渲染无可提取文本）；cnblogs（实取：仅中文转译"我们还在讨论循环结构的问题吗？还是已经转向了图论领域了呢？"）；unrollnow（503 两试）；X 本体不可达。
+- 状态：**部分解决**（上轮"仅 InfoQ/36kr 转述"→本轮双独立全文转载、日期/浏览量一致；推文 ID 与 X 原文页仍未取得）。
+- **派别含义一句话**：词源人物的"Loop 时代终结"宣言有双转载锚点，但其性质是**推动派内部换词表（loop→graph）**，不是转向反对——判派维持本体在推动派，轨迹注记加这一条。
+
+## 增量 E · Orosz 付费墙 —— 仍开放（边界双通道复证；无新的公开节选）
+
+- 人物：Gergely Orosz（The Pragmatic Engineer）｜ 对象：07-14《What is "loop engineering?"》§5–7 与 02-24《The Future of Software Engineering with AI: Six Predictions》本体。
+- 已尝试通道（全部实际 fetch）：
+  1. https://newsletter.pragmaticengineer.com/p/what-is-loop-engineering （curl 直取全文 HTML）：公开部分仍止于 §5–7 大纲句（"Disappointment and 'tokenmaxxing'"／Max Kanat-Alexander "temporary hack"／"Does 'context engineering' matter more for devs?"——与上轮逐字一致），正文止于 **"This post is for paid subscribers"**。
+  2. 六预测文的 `isFreemail=true` 邮件变体 URL（curl 实取全文 HTML）：免费部分（Fowler 峰会、"Mid-level engineers' quiet crisis"、Beck/Tacho/Yegge 宣言）同上轮；**付费墙位置不变**。
+  3. 韩文转载候选 wikidocs.net（curl）：403；其余搜索命中的韩文/中评论帖均为评论文章非原文节选。
+- 状态：**仍开放**（维持上轮截断记录；六预测本体与 §5–7 正文继续**不可引用**）。
+- **派别含义一句话**：Orosz 的"中性偏怀疑"判定不受影响——付费墙内内容继续缺席判定依据。

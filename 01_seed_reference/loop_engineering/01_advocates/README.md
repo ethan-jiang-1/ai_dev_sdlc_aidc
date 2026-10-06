@@ -39,9 +39,9 @@ Cherny 经 Willison 转引的 "Production code written by Claude should have a h
 | **swyx**（Latent Space） | 吹捧者·概念造词（loopcraft，2026-06-12；AIEWF 06-30 主台演讲） | [中性派扫描档 S5](../02_neutral/raw_scan_2026-10-06_neutral.md)（镜像全文收口）＋本派扫描档 |
 | **Steve Yegge** | 吹捧者·激进多派（**含一手成本证词**） | [反对派扫描档 S10](../03_skeptics/raw_scan_2026-10-06_skeptics.md)《The Shape of Things to Come》 |
 | **Jesse Vincent**（obra，候选） | 吹捧者·实践极（过夜双 agent 协作实录＋未解难题自认）——§C1 待判独立性 | [本派扫描档](raw_scan_2026-10-06_advocates.md)（2026-07-05 博客全文；"shack 刊物"系负结论） |
-| **Laurie Voss**（候选） | 吹捧者·分类学（4+1 循环：execution/task/product/system＋oversight）——Arize 原文未取得，暂不升册 | [本派扫描档](raw_scan_2026-10-06_advocates.md)（seldo.com 一手已得） |
+| **Laurie Voss** | 吹捧者·分类学治理翼（4+1 循环：execution/task/product/system＋**oversight——"where the human should live"**）；两个一手载体齐（Arize 原文＋O'Reilly 文），已升 §A | [本派扫描档＋补抓增量 A/B](raw_scan_2026-10-06_advocates.md) |
 
-**吹捧层降级登记（一手未取得，不作派别依据）**：Jensen Huang（"Nobody writes prompts anymore…"仅中文媒体转述）、Satya Nadella（转述、非逐字）、Karpathy "remove yourself as the bottleneck"（bearblog 403）、中文聚合的 "Anthropic 80% 工程师" 无名氏声称——**吹捧泡沫反面教材，不引用**（详见扫描档）。
+**吹捧层登记（2026-10-06 第二轮补抓后）**：Karpathy——升格（bearblog＋autoresearch README 两个一手载体全文取得，"agents are like interns… aesthetics, judgment, taste, and oversight"）；Nadella——X 长文坐实、全文经转译链取得（引句标"经转译"）；Jensen Huang——仍开放（NVIDIA 一手缺）。中文聚合的 "Anthropic 80% 工程师" 无名氏声称维持**不引用**（详见扫描档·补抓增量）。
 
 ## 相邻位（不对本词发声、但对同一实践域持强推动立场）
 

@@ -80,3 +80,39 @@ Osmani 定义文 11 分/6 评论、Andrew Ng 4 分/1 评论、LangChain 四环 2
 
 - 推动派内容在 HN 的低热是**观测事实**，但不能据此断言"社区反对 loop 实践"——HN 热度与内容质量关联弱（Astra 文四次提交才起飞），且术语层与机制层要分开读。
 - 中文教程层（公众号）热度数据只有单篇页面计数（4101），无评论样本；评论区情绪未知。
+
+## 补抓增量（第二轮 · 2026-10-06）：通道重试
+
+> **本节为第二轮补抓，上文对应负结论状态以此节为准**（"社区层没有推动派的热度"的判断需按本节作精细化：实操向正方内容在 Reddit 可获得中等热度，但伴随自推广争议；中文教程层声量仍显著低于质疑向）。
+> 方法注记：本轮 `web_fetch` 通道 DNS 沉降不可用，全部改用 curl 直连（浏览器 UA）；Reddit 经 arctic-shift 存档 API 取原文。热度/计数均为 2026-10-06 观测值；所有逐字引句均来自本轮实际抓取的页面/JSON。
+
+### 一、Reddit 正方实践样本（arctic-shift 实取全文）
+
+**《[Senior engineer, loop orchestrator sample setup](https://www.reddit.com/r/ClaudeAI/comments/1wd44vj/)》**（u/croovies，r/ClaudeAI，2026-09-11，**323 分 / 55 评论**——本批 Reddit 正方向热度最高帖）：
+
+> "The reason to use an orchestrator, is you have found yourself waiting too much for a single agent, or you're bouncing between too many. In both cases an orchestrator can help you scale your process as you evolve from directing code, to reviewing outcomes (and tossing out bad code and having it start over instead of worrying about driving every PR). Like a real manager."
+
+方法论构件（正文自列）：agent 互发消息、按 loop 定时唤起 agent（"I usually set it to 90 minutes" ping 一次 orchestrator）、本地 SQLite 记录；mission note 按 Who/任务/验收分段。**社区摩擦注记**：评论区有人质疑自推广——"What is this entitled attitude you are bringing where you essentially shill your product on the Claude sub and then bristle at criticism?"（u/JayArrCoffee，并指出 Orca 等开源替代）——正方实操内容可获中等热度，但"带产品讲方法"会立刻被点破。
+
+**《[Loop engineering: I turned the Ralph loop into a verified one. One markdown file, any agent, a critic before "done".](https://www.reddit.com/r/ClaudeAI/comments/1wa8e8g/)》**（u/raiyanyahya，2026-09-07，0 分 / 3 评论——低热工具帖，正文完整）：
+
+> "The Ralph loop (while :; do cat PROMPT.md | claude; done) works, but it's blind: no memory between runs, it believes the agent when it says 'done', it never stops on its own, and nothing stops the agent from editing the tests that judge it."
+> "I think the interesting skill now is loop engineering: not what you say to the agent, but what happens after it answers."
+
+（附实测："Real run with Claude Haiku: three iterations, the loop rejected a premature 'done' in iteration 1 because two checklist items were still open, iteration 3 finished, the critic read the diff and approved. 2m13s."——开源 [github.com/raiyanyahya/loop](https://github.com/raiyanyahya/loop)。其设计要素 protect/critic/metric/brakes 与 skeptics 档的失控清单逐项对位——正方也在修同一张故障表。）
+
+**散见正方声音**：《Claude Code making a "2 week plan" and then finishing it in 30 minutes is still weird to me》（r/ClaudeAI，2026-06-17，254 分 / 58 评论）——对委托加速的惊叹向标题热帖（标题级）。
+
+### 二、B 站正方教程层（新增量，view API 元数据实取，2026-10-06 观测）
+
+- 《[终于有人用一个视频把火遍全网的AI智能体新范式-Loop Engineering给大家一次性讲明白了！【码士集团】](https://www.bilibili.com/video/BV1tfLR6LEXE)》（UP：马士兵教育，2026-06-17）：**9,355 播放 / 608 赞 / 404 投币 / 1,126 收藏 / 95 弹幕**。教程化大纲（简介自列）："1.Agent Loop & Loop Engineering到底是个啥 2.从ReAct到Claude Code，Agent这4年经历了什么 …… 5.设计Loop 的11条军规 6.这7个坑，能让你的Loop原地爆炸 …… 8.手把手带你实现 Loop Engineering 案例"——培训产业已把 loop engineering 做成完整课程件。
+- 《[循环工程：让AI自主完成编码 | Matthew Berman](https://www.bilibili.com/video/BV1RpES6LEFn/)》（UP：7k的每日搬运，2026-06-10，66 播放）——海外 KOL 内容的中文搬运层（简介概述"循环由'触发器'和'可验证目标'两部分组成。触发器可以是PR打开、定时任务或人工启动"）。
+- **热度对照判读**（更新上文"社区层没有推动派的热度"）：中文圈正方教程（≈0.94 万播放）对质疑向头部【闪客】《新名词诈骗！你管这破玩意叫 Loop Engineering？》（10.98 万播放，见 skeptics 档补抓节）约 **1:12**——正方教程层在传播量级上仍被质疑向压制；但"培训课程化"本身是推动叙事产业化的信号。
+- xie.infoq.cn 写作社区三篇推动/工程化向文章（标题＋账号已核，正文 JS 未取，部分解决）：阿里技术《Loop Engineering 概念解析、思考与实践》、容智信息《告别"面向玄学编程"：深度拆解 Loop Engineering 架构与企业级 Agent 避坑指南》、TiDB 社区干货传送门《亲测好用的 PDCA 组队法：玩 Loop 多 Agent，3-4 个才是黄金搭档》（"亲测好用"＝实践正方向）。
+- 机构层正方向（InfoQ《QQ 飞车》全文，腾讯 300 亿 token/月的 loop 实操）已核，home 在中性档企业接收层（见 [`../02_neutral/community_feedback.md`](../02_neutral/community_feedback.md) 补抓节）——本档不重复。
+
+### 三、本轮通道与方法负结论（仍开放清单）
+
+- **mp.weixin.qq.com 鱼皮文原始页仍未定位**：搜狗微信搜索两次（全称＋短题）均"没有找到相关的微信公众号文章"；鱼皮 AI 导航转贴页（ai.codefather.cn/post/2066793761979092994，标题《提示词工程已死，Loop Engineering 称王！保姆级教程 + 项目实战》）静态 HTML 无微信原文链接——鱼皮文依据维持"腾讯云同步页"口径。
+- B 站搜索 API 被风控（返回 HTML 而非 JSON）——本轮 5 条视频系经外部搜索引擎定位 BVID 后以 view API（无需登录）核到元数据；播放数之外的视频内容本体未核看。
+- Reddit 层正方内容的评论样本有限（Ralph loop 帖 0 分 3 评、croovies 帖评论含自推广争议），"社区正方声音"仍以散见为主，无独立正方热帖。

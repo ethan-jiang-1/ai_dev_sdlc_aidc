@@ -81,7 +81,7 @@ quality_bar: 一手优先；X 不可达（本环境 x.com 全部不可用，经�
 
 - URL：https://arize.com/blog/what-is-a-loop-in-ai-engineering-anyway/ （Arize 厂商博客，三次 fetch 均在导航区截断、**正文未取得**；文章存在性与作者归属经两路独立二手确认，见下）；https://seldo.com/posts/we-are-all-product-engineers-now/ （个人一手博客，2026-09-14，全文取得）｜ 作者身份：Laurie Voss，npm 联合创始人、Arize Head of Developer Relations（AIEWF 2026 官方议程 PDF 载明其职位；seldo.com 页脚自述 "developer, writer, and recovering npm co-founder"）
 - 来源类型：厂商博客（正文未取得，**仅两路独立二手转述其分类学**）＋个人一手博客（全文取得）
-- 号召力口径：①——**四层循环分类学（execution / task / product / system ＋ oversight）的提出者**，被两路独立来源引用复述：All Things Open 官方教程文（Nihal Kaul，2026-07-28）与第三方知识库（luminhkhuong.dev）。另有 O'Reilly Radar《What the Hell Is a Loop, Anyway?》一文（URL https://www.oreilly.com/radar/what-the-hell-is-a-loop-anyway/ ，本环境 403 不可达），第三方知识库将同标题文章归于 Voss——**作者归属未能在 O'Reilly 一手页面核实**，只记线索不记结论。
+- 号召力口径：①——**四层循环分类学（execution / task / product / system ＋ oversight）的提出者**，被两路独立来源引用复述：All Things Open 官方教程文（Nihal Kaul，2026-07-28）与第三方知识库（luminhkhuong.dev）。另有 O'Reilly Radar《What the Hell Is a Loop, Anyway?》一文（URL https://www.oreilly.com/radar/what-the-hell-is-a-loop-anyway/ ，本环境 403 不可达），第三方知识库将同标题文章归于 Voss——~~作者归属未能在 O'Reilly 一手页面核实，只记线索不记结论~~（**2026-10-06 第二轮已解决**：Wayback 全文取得、作者＝Voss 坐实、正文含 Osmani 归属注——见文末「补抓增量 · 增量 A」）。
 
 **逐字摘录**（二手转述层，标注来源；Arize 原文正文未取得）：
 
@@ -89,7 +89,8 @@ quality_bar: 一手优先；X 不可达（本环境 x.com 全部不可用，经�
 >（All Things Open 官方文章的转述：Voss 的 4+1 分类学，且把 oversight loop 定义为"人应该待的地方"——**分类学里内置了人的监督位**，这是他与其他推动者的关键差异。）
 
 > "That inner loop is capability. The outer loop is agency."
->（第三方知识库逐字引用的 Voss 名句——内环是能力、外环是能动性。⚠️ 此句出自知识库转引，Arize 原文未核，暂以"经转引"计。）
+>（第三方知识库逐字引用的 Voss 名句——内环是能力、外环是能动性。⚠️ 此句出自知识库转引，Arize 原文未核，暂以"经转引"计。
+> **⚠️ 归属纠偏（2026-10-06 第二轮补抓，状态以此为准）**：此句经 Voss 本人一手文（O'Reilly 文，Wayback 全文取得）注明是 **Addy Osmani 在 AIEWF 台上所说**，不是 Voss 名句——归属改挂 Osmani，详见文末「补抓增量 · 增量 A」。）
 
 **逐字摘录**（seldo.com 一手全文）：
 
@@ -373,3 +374,107 @@ quality_bar: 一手优先；X 不可达（本环境 x.com 全部不可用，经�
 3. **AIEWF 单场录像/transcript 未抓**：S7 的厂商引语全部经记者笔录，派别定票可以，逐字引用需谨慎。
 4. **窗口边缘**：Harrison Chase 的关键一手虽在 6 月后，但其最系统的 loop 论述（红杉 2026-01 播客"Run LLM in a loop 是核心算法"）在六月前——判派时要写清"立场连续、词表不换、六月后只是延续"，避免夸大增量。
 5. **Steinberger 已入职 OpenAI**（AIEWF 报道）＋其 AIEWF "注意力是主挑战"发言——这两个事实对库内既有条目（立场反转样本，02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md）是实质更新，本档只记事实，改册归主代理。
+
+---
+
+# 补抓增量（第二轮 · 2026-10-06）
+
+> **本节为第二轮补抓，前置负结论中对应条目状态以此节为准**：上轮"负结论" #2（O'Reilly 全站 403）、#3（Arize 正文截断）、#6（Jensen 一手出处）、#7（Karpathy bearblog/GitHub 未取得），以及 Source 3（Voss）、Source 8（Karpathy）、Source 10（Nadella）的状态，一律以本节各小节最新判定覆盖。
+> **通道说明（必读）**：本轮会话内 `web_fetch` 工具发生 DNS 级故障（一切外部域名报 "resolves to a non-public IP address"，含上轮可用的 arize.com / eu.36kr.com / web.archive.org），全部抓取改经 **bash curl（浏览器 UA）** 实取——上轮多处"截断/403"实为 fetch 代理层问题而非站点问题。下述每个 URL 均为真实访问（失败尝试如实记录）；逐字引句全部出自实际 fetch 的页面/文件。
+
+## 增量 A · O'Reilly《What the Hell Is a Loop, Anyway?》—— 已解决（Wayback 全文取得；作者归属坐实＝Laurie Voss）
+
+- URL：原站 https://www.oreilly.com/radar/what-the-hell-is-a-loop-anyway/ （curl 重试仍 403）→ **经 Wayback 快照全文取得**：https://web.archive.org/web/20260815082135/https://www.oreilly.com/radar/what-the-hell-is-a-loop-anyway/ （curl 实取，快照 2026-08-15）｜ 作者：**Laurie Voss**（上轮"作者归属未核"就此坐实）｜ 日期：**2026-07-29**（"10 minute read"）｜ 文首声明（逐字）："The following article originally appeared on LinkedIn and is being republished here with the author's permission."
+- 号召力口径：O'Reilly Radar 主站分发面＋Voss 分类学的正式出版载体——S3（Voss）的入册依据由此补齐一手。
+- 逐字摘录（O'Reilly 页全文）：
+
+> "We're currently at the peak of the hype cycle."
+
+> "The problem is that the people talking about loops aren't all discussing the same thing. I counted at least four distinct architectures hiding behind that one word."
+
+> "I'm calling it the oversight loop: It's where goals get set, budgets get allocated, and work gets culled, and it's the one ring where a human should live."
+
+> （对 swyx 循环图顶环的描述："Its verbs are 'set goals, allocate, cull.' Its exit condition is listed as none."）
+
+> （AIEWF 闭幕辩论的人物引句，经 Voss 一手转述：Dex Horthy "took pains to say he isn't anti-loop, pointing out that Kubernetes is built on control loops, but deterministic ones. His worry is that enthusiasm has gotten ahead of the engineering, and his advice was to step down an abstraction level rather than up."；Paul Bakaus："There is no auto, and there will be no auto."；Geoffrey Litt of Notion "called factories a depressing vision on X"。）
+
+> （数据点，经 Voss 一手转述：Warp 把自家开源仓库交给 Oz 工厂平台，"starting with low-risk repos and ratcheting the automatic PR merge rate upward from 20 percent toward 60"；"the company says 65% of its product team's code is now created by its internal version of Claude Tag, and Mike Krieger described his team's use of it at the World's Fair as delegated and proactive"；Meta Brain2Qwerty v2 的系统环案例及其自认 "Final training configurations were still selected by hand. Even the flagship system loop keeps a human at the last checkpoint."）
+
+- ⚠️ **归属纠偏（对上轮 S3）**："That inner loop is capability. The outer loop is agency." 经 Voss 本人一手文注明是 **Addy Osmani 在 AIEWF 台上所说**（"Addy said on the AIEWF stage"），**不是 Voss 名句**——上轮 S3 中"第三方知识库逐字引用的 Voss 名句"的归属必须改挂。
+- **该条支持的最小主张**：Voss 的 4+1 分类学在 O'Reilly Radar 有全文正式出版载体（LinkedIn 原文授权转载），分类学、命名行为（oversight loop）与 AIEWF 闭幕辩论的多方立场均有了一手文本。
+- **派别适配**：Voss 推动票的一手坐实＋分发面升级；其"oversight loop 是人应居住的一环"表述是推动派治理翼最成文的一手。
+
+## 增量 B · Laurie Voss Arize 原文 —— 已解决（正文全文取得；上轮"三次截断"系 fetch 代理层问题）
+
+- URL：https://arize.com/blog/what-is-a-loop-in-ai-engineering-anyway/ （curl 实取全文，307KB HTML）｜ 作者：**Aparna Dhinakaran ＋ Laurie Voss**（页面署名）｜ 日期：**July 2026**（"10 min read"）。
+- 与增量 A 的关系：同一 4+1 分类学的 Arize 版（O'Reilly 版注明 LinkedIn 原文授权转载；两版文本基本同构，Arize 版为厂商博客正式版）——**4+1 分类学从此有两个可引一手载体**。
+- 逐字摘录（Arize 正文）：
+
+> "The AI engineering world is using 'loop' to describe several different agent architectures. This post maps execution loops, task loops, product loops, system loops, and the human oversight loop that controls them."（副题）
+
+> "I think that loop has a name. I'm calling it the oversight loop: it's where goals get set, budgets get allocated, and work gets culled, and it's the one ring where a human should live."
+
+> "Autonomy is a dial that exists separately on every one of the four loops. You can run a fully autonomous execution loop inside a heavily supervised product loop. You can hand the system loop to agents while keeping goal-setting entirely human. The interesting engineering question isn't which camp wins, it's what information you'd need to set each dial correctly."
+
+> "The apparent waste is the point: re-feeding the full spec each time prevents the context rot and compaction events that quietly degrade long-running sessions."（Ralph loop 段）
+
+> "The minimal case is Andrej Karpathy's autoresearch from March 2026, roughly 630 lines of Python that ran 50 hypothesis-edit-evaluate experiments overnight on one GPU."（对 Karpathy system loop 的一手定位）
+
+- **该条支持的最小主张**：S3 的"正文未取得、仅两路二手转述分类学"状态解除——分类学全文本到手，且"任务=culling、监督环不终止"的治理翼立场有一手逐字。
+- **派别适配**：**推动票坐实**（①分类学/术语定义者＋Arize Head of DevRel 厂商位＋④分发）；kol-roster §C1 Voss 行"入册前须补一手"的前置条件**已满足**，建议升正式 §A 条目。
+
+## 增量 C · Andrej Karpathy —— 部分解决·强（bearblog＋autoresearch README 两个本人一手载体全文取得）
+
+- URL/日期：① https://karpathy.bearblog.dev/sequoia-ascent-2026/ 《Sequoia Ascent 2026 summary》（curl＋浏览器 UA 实取全文——上轮 403 系 fetch 代理层问题），帖子日期 **2026-04-30**；② https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/README.md （curl 实取，8KB；github.com/karpathy/autoresearch 的固定 commit）。
+- ①的性质（本人声明，逐字）："I fed an LLM all of my recent blog posts and tweets, then I had it read this video's transcript and produce 1) a summary and 2) a cleaned up transcript… AI generated content below for this talk follows."——**本人发布、LLM 清理的本人讲座文本**（Sequoia Ascent 2026 对谈 Stephanie Zhan；按"本人一手·AI 清理转写"计，引用注明）。
+- 逐字摘录（①，Edited transcript 部分为其讲话）：
+
+> "Right now the agents are like interns. You still have to be in charge of aesthetics, judgment, taste, and oversight."
+
+> "People have to be in charge of the spec and plan. … You are in charge of oversight and the top-level categories. The agents do much of the work underneath."
+
+> "Vibe coding raises the floor. Agentic engineering is about extrapolating the ceiling."（summary 部分同义展开："Agentic engineering raises the ceiling. It is the professional discipline of coordinating fallible agents while preserving correctness, security, taste, and maintainability."）
+
+> "I am becoming the bottleneck of even knowing what we are trying to build, why it is worth doing, and how to direct my agents."＋"Understanding is still the bottleneck because you cannot be a good director if you do not understand."
+
+- 逐字摘录（②README，autoresearch 本体）：
+
+> "give an AI agent a small but real LLM training setup and let it experiment autonomously overnight. It modifies the code, trains for 5 minutes, checks if the result improved, keeps or discards, and repeats. You wake up in the morning to a log of experiments and (hopefully) a better model."
+
+> "you're not touching any of the Python files like you normally would as a researcher. Instead, you are programming the `program.md` Markdown files that provide context to the AI agents and set up your autonomous research org."
+
+> "you can expect approx 12 experiments/hour and approx 100 experiments while you sleep."
+
+- 附带：README 文内挂本人两条 X 帖 ID（`x.com/karpathy/status/2029701092347630069` 与 `…/2031135152349524125`，X 本体不可达，ID 已登记供后续回源）。
+- 边界如实记录：**"remove yourself as the bottleneck" 逐字句本身仍未在本人一手载体中出现**——它仍只存在于 swyx loopcraft 的视频转录（S1，经转录标注不变）；本轮到手的是语义同构但措辞不同的一手表述（"I am becoming the bottleneck…"/"arrange it once and hit go" 语族的近邻）。
+- 状态：**部分解决·强**（上轮 bearblog 403＋GitHub 未取得 → 本轮两个一手载体全文到手）。
+- **派别适配**：**推动票（实践者）升格**——不再纯"降级候选"；其一手文本同时把"spec/oversight/品味不可外包"写入，判派按推动派＋理解/品味 nuance 照记。
+
+## 增量 D · Jensen Huang —— 部分解决（四路转引一致＋AP 专访线索；NVIDIA 一手仍开放）
+
+- 人物：NVIDIA CEO ｜ 引句："Nobody writes prompts anymore. The new job is to write and handle loops." ｜ 传播窗口：2026-06 下旬。
+- 本轮新增两条已取全文的独立转载（curl 实取）：
+  1. c114.net.cn《黄仁勋：Prompt正在过时，Loop才是新范式》（http://www.c114.net.cn/industry/93975.html ，2026-06-25，来源：36kr）——英文句与量子位/新智元两路逐字一致；同句再确认于 thepaper.cn 澎湃号（https://www.thepaper.cn/newsDetail_forward_33453096 ，2026-06-26）。两篇均明言该句是"网上热传热议"，**未给出场合**。
+  2. 104 职场力（台湾）https://blog.104.com.tw/loop-engineering/ （实取全文）："根據X網友引述，黃仁勳說「現在沒人在寫提示詞，都在編寫、管理迴圈」"；**重要线索**：同文另记 "黃仁勳不久前接受美聯社專訪也反覆提到，未來AI將超越簡單的單次提示詞，成為能夠自主搜尋、評估、推理、使用工具、透過重複循環自我改進的系統"——**美联社专访是最可能的一手载体**（apnews 检索未定位到具体页，线索挂起）。
+- 排除通道：NVIDIA 官网/新闻稿检索无此句；ndtvprofit 403；tmcnet/lyzr 等英文评论文均转引同一句（kocpc GTC Taipei 主题演讲回顾实取：有 "agentic loop" 表述但无此句）。
+- 状态：**部分解决**（转引从两路升至四路一致＋日期收敛到 06-25/26 传播窗＋AP 专访线索；原话场合/原片仍未核）。
+- **派别适配**：维持**吹捧票·降级候选**（经媒体转引，观察位）；12 词级宣言无展开，不作派别定票依据。
+
+## 增量 E · Satya Nadella —— 部分解决（X 长文标题/日期/热度坐实；全文经两条独立转译链取得；X 原文仍不可达）
+
+- 人物：Microsoft 董事长/CEO ｜ 载体：X 长文（article），id 2065582894790365184，随帖 https://x.com/satyanadella/status/2066182223213293753 ｜ 日期：2026-06-14（ThreadReader 页 "Jun 14"；机器之心 06-15 文称 "Last night"）。
+- 一手近邻（ThreadReader 实取全文）：帖子开头逐字 **"A frontier without an ecosystem is not stable"**＋"I've been thinking a lot about the future of the firm in an AI-driven economy. This transition is different than any previous platform shift. In the past, we used digital systems to enhance human…"（正文转入 X article，ThreadReader 不载）。
+- 全文转译链两条（均 curl 实取全文；**X 原文逐字仍不可得，引句一律标"经机器之心转译/经企业家杂志转译"**）：
+  1. 机器之心（经 36氪英文版 https://eu.36kr.com/en/p/3853872162165763 ，2026-06-15；文载 "its views have exceeded 28 million"）关键句：
+
+> "We should build a learning loop on top of the model, where human capital and token capital generate compound interest."
+
+> "You can outsource a task or even a job, but you can never outsource your learning process."
+
+> "This loop will become the new intellectual property of the enterprise."
+
+> "Companies that build this system early will have an advantage that is difficult to replicate, no matter what new capabilities individual models may have."（LangChain 06-16 博客转述的对应本体句——上轮 Source 10 的"LangChain 转述"现在可指认其出处为此长文）
+
+  2. 企业家杂志（经新浪财经 https://www.sohu.com/a/1046788049_122014422 ，2026-07-07，中文全文转译）：如"每家公司都要同时建设两种资本，人力资本和 Token 资本""你可以把一个任务交出去，甚至把一个岗位交出去，但你永远不能把学习交出去"。
+- 状态：**部分解决**（上轮"经 LangChain 转述、非逐字"→本轮：长文存在性/标题/日期/28M 阅读坐实＋两条独立全文转译；X article 原文仍登录墙）。
+- **派别适配**：**证据升级但派别判定仍克制**——"learning loop＝企业新知识产权/复利护城河"的完整论述是真实的（长文级而非碎片级），足以入时间线与"被引用"层；但全部经转译链，无本人一手页面，继续不单独立票、判派观察位维持。
