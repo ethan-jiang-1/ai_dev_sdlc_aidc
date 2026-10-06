@@ -49,11 +49,6 @@ collected_at: 2026-10-06
 
 ## 二、行业调查（机构采样层——"用脚投票的中间态"）
 
-**Stack Overflow 2026-10-01 回顾博客（窗口内，实取全文；2026 年度调查尚未发布——负结论见文末）**：
-
-> "we see agent use as almost doubled (59%) and Claude Code increasing in usage (from 41% to 55%)."
-> "20.0% reported becoming less confident in their own problem-solving, and 16.3% said it was hard to understand how or why the code worked."
-> "actual software engineering remains predominantly assisted rather than autonomous."
 
 **Stack Overflow《Agents on a leash》（2026-05-27，窗口边缘 5 天，实取全文，n=1,100）**：
 
@@ -95,7 +90,7 @@ collected_at: 2026-10-06
 
 - **Reddit 原帖整站不可 fetch**（本轮最重要负结论）——本档 Reddit 层证据由 GitHub issue/dev.to 一手通道与一条窗口边缘二手汇编补位。
 - **Stack Overflow 2026 年度调查、DORA 2026 年度报告、Octoverse 2026 均未发布**（SO 官方 10-01 原话 "results dropping here in the next few days"）——**建议一周内重扫**，SO 2026 已把"agent 采用是否带来更大委托"列为核心问题。
-- JetBrains 原帖两篇截断，数据经 Gigazine/daily.dev 二手转述（未核原图）；JumpCloud Q3、New Relic 2026 报告正文全部不可得（403/空体/PDF），只有标题级线索，**不得引用其数字**。
+- JetBrains 原帖两篇截断，数据经 Gigazine/daily.dev 二手转述（未核原图）；New Relic 2026 报告正文当时不可得（后已解决）；JumpCloud 已按相关性纪律移除（无 loop 钩子）。
 - "试用后放弃"叙事：弱且未核（置信度低）——本轮最接近样本是窗口边缘转引的一条迁移评论与 dev.to 的 conditional-positive；Reddit 不可达导致无法量化。
 - 技能退化在机构层只有间接指标（20% less confident、"loss of immersion" 假设），无直接针对 loop/无人值守场景的测量——社区与机构两层共同空白。
 
@@ -120,20 +115,6 @@ collected_at: 2026-10-06
 - **证据**（github.blog WP API 实查，2026-10-06）：最新一期 Octoverse 年度报告仍为 **2025-10-28** 发布的 "Octoverse: A new developer joins GitHub every second as AI leads TypeScript to #1"（wp-json 按 slug 实取确认 date_gmt=2025-10-28T16:07:06）；2026 年内提及 Octoverse 的帖子均为衍生篇（2026-02-03 "What the fastest-growing tools reveal about how software is being built"、2026-02-19 "How AI is reshaping developer choice (and Octoverse data proves it)" 等），无 2026 年度报告。
 - **判定**：**仍开放**；参照 2025 期 10-28 的节奏，发布窗口大概率在数周内，建议下轮重扫。
 - （邻近可得样本，仅标题级未核正文：github.blog 2026-09-23 "Developers want more efficient software. Here's what over 1,000 GitHub users told us they need."——GitHub 自家千余人研究，可作下轮候选。）
-
-### 4. JumpCloud Q3 2026 IT Trends——**部分已解决**（落地页实取，全文仍 gated）
-
-- **URL/状态**：`https://jumpcloud.com/resources/ai-trends-readiness-gap-2026` HTTP 200（实取，页面标题 "AI Trends 2026: IT Benchmarks & Governance Gap | JumpCloud"）。报告本体仍需表单下载（"Download Now"），**落地页/webinar 区自带核心数据**。
-- **样本量/采样**：**机构采样**，n=800，美国+英国 IT 领导者，Q3 2026 期。页面原话：
-  > "Research from 800 IT leaders on the gap between AI adoption and governance."（INDUSTRY REPORT · Q3 2026 IT Trends Report）
-  > "JumpCloud's Q3 IT Trends Report surveyed 800 IT leaders across the U.S. and the UK and found a widening gap between AI deployment and true AI readiness."
-- **关键数据（逐字，页面自带）**：
-  > "Six months ago, 40% of IT leaders considered their AI deployments to be mature. Today, only 23% say the same, even as AI agents gain broader access and take more autonomous actions than ever before."
-  > "Why AI maturity is falling even as adoption accelerates, and what separates the 23% of organizations scaling AI from the pack"
-  > 治理框架："The Discover → Register → Manage → Govern framework for managing AI agents as first-class identities"
-- **二手标题级（未核正文，不得引数字）**：Digitalisation World（2026-07-16）"JumpCloud report finds AI agent adoption surging while governance and oversight lag"；其 publicnow 同稿镜像 403（Cloudflare），JumpCloud 官方新闻稿页本轮未检得。
-- **对位**：**采用加速而 AI 成熟度自评反降（40%→23%）**——机构采样层第一次给出"治理跟不上 agent 自主行动扩大"的量化缺口，与 loop 层"自主度分档/停止条件"直接同题。
-- **状态**：已解决（关键数字有实取载体）；仍开放（报告 PDF 全文本体未取，以上为落地页口径）。
 
 ### 5. New Relic《The 2026 State of AI Coding Report》——**已解决**（非 PDF 载体实取）
 
@@ -275,15 +256,6 @@ collected_at: 2026-10-06
 - **《AI Coding Agents: Adoption Trends》（2026-08-18）**：逐字 "As of May–July 2026, 90% of professional developers were using AI coding agents at work at least weekly in one form or another (local agents or remote cloud agents), with 68% using them daily."——90%/68% 核实（口径：工作场景、本地＋云端 agent）。新细节：Claude Code 工作采用率 "around 39% of professional developers worldwide... up from 18% in January 2026. In the United States, its adoption is even higher at 47%"；"It is used twice as often as GitHub Copilot, a former long-standing leader of the market"。
 - **《How Much Code Do Developers Really Let Agents Write?》（2026-08-26）**：采样 = Developer Ecosystem Survey 2026，**2026 年 5–7 月，15,000+ 全球专业开发者**（8 语种、按地区配额、自报告）。逐字 "On average, professional developers report that: ~47% of their code is fully written by agents. ~38% is written with some AI assistance. ~27% is written fully manually."（作者自注：桶中值平均，三项和可超 100%）。三层分型核实："Agentic coders (~31% of developers)"（其代码 84% 全 agent 生成）、"AI-assisted coders (~47%)"（均值 40% agent 生成）、"Manual coders (~23%)"（~10% agent 生成）。**二手层未提的关键细节**："only 46%–57% of heavy users of Claude Code and Codex are agentic coders"（连最激进工具的重度用户也未多数全委托）；"Over half of all developers now write less than 20% of their code manually, and one in five writes literally zero code without AI help."
 - **AIDEs 后续**：JetBrains Research RSS 核对，《The AIDEs Framework》（2026-09-18）之后至 2026-10-06 无新研究帖。
-
-### 四、Atlassian 补漏与 Google Cloud 负结论
-
-- **Atlassian《The Agentic Pivot》**（博文 2026-09-03，早于本轮 09-15 窗口 12 天；前两轮均未收录，属补漏，按窗口边缘标注）：报告覆盖 1,100+ 工程师与工程负责人（采样期博文未给，whitepaper 未核）。逐字：
-  - "Across more than 1,100 engineers and engineering leaders, 94% of engineering leaders say their organizations use AI in some capacity, but most of that usage is still supporting individual tasks such as coding, debugging, and documentation."
-  - "88% say they need a governed engineering system of work for AI, while only 19% say they have built one."——与 loop 治理轴（停止条件/治理体系）直接同构，机构侧最强同类表述。
-  - "only 15% of engineers and 25% of leaders are very confident they could reconstruct the reasoning behind an AI-assisted decision six months later."——AI 辅助决策六个月后不可复原：决策可追溯性缺口。
-- Atlassian 内部样本《The AI-native SDLC is paying off》（2026-06-01）："we surveyed more than 6,200 Atlassian developers"（96% 为 Rovo Dev 用户）——**内部员工样本**，非行业采样；文中 "93% of developers use AI tools and nearly 30% of code is AI-authored" 系其转引外部数据。
-- **Google Cloud：负结论**。两轮搜索未发现 2026-10 发布的开发者 AI 现状新采样；可见最新机构报告仍是 2025 年末《AI agent trends 2026》（52% 企业已部署 agent、88% 早期采用者正 ROI，均为转述层数字，本轮未核原图、不引用）——不在窗口内，未收录。不排除存在未被索引的新文。
 
 ### 五、通道与方法（本轮）
 
@@ -560,9 +532,9 @@ QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专
 ## 相关性审计（2026-10-06，用户判据回溯）
 
 **结论**：本档主体钩子明确——Böckeler TDD-in-loop eval（循环内部实践）、Kent C. Dodds（本词教学）、Kief 渐进信任（放权节律）、marmelab/Walden（循环工程审计与拓扑）、观测平台层（循环长度/预算熔断/重试循环——Datadog 原文 "budgets to force agent loops to terminate"）、LangChain 调查（agent 生产与评估落差）、New Relic State of AI Coding（62% 免逐行验证 ship＝验证面）、GitHub×Yale（agent 决策边界原句）、QCon 专题与 InfoQ（本词专名）、传播观察（术语本身）、Anthropic Economic Index（官方分型即 feedback loop/task iteration）。
-**降为"背景旁证"（不作为 loop engineering 直接证据引用，仅背景对照）**：
-  1. **SO retrospective 使用率数据**（31%→59%）——泛 agent 采用，非 loop 专属（其"assisted rather than autonomous"句为部分钩：委托深度）；
-  2. **JetBrains 采用率**（90%/68%/47%）——同上；其"重度用户仅 46–57% agentic coders"句为直接钩（委托深度）；
-  3. **JumpCloud 成熟度自评 40%→23%**——治理背景，非 loop 机制；
-  4. **Atlassian《The Agentic Pivot》**——治理轴同构（88% vs 19%），但对象是泛 AI 治理而非循环机制。
-**无钩移出**：无（TiDB PDCA 篇已于第三轮勘误移出——窗口外＋产品名巧合）。
+**已丢弃（2026-10-06 用户第二版纪律：没挂钩就丢弃）**：
+  1. **SO retrospective 使用率数据**（31%→59%、20% less confident）——泛 agent 采用，无 loop 钩子；
+  2. **JumpCloud 成熟度自评 40%→23%**——泛 AI 治理，无 loop 钩子；
+  3. **Atlassian《The Agentic Pivot》**——泛 AI 治理（88% vs 19%），无循环机制钩子。
+**保留并注明**：JetBrains（"重度用户仅 46–57% agentic coders"＝委托深度直接钩）；New Relic Forecast（"harder to run"＝运维回路部分钩）；GitHub×Yale（agent 决策边界原句——直接钩）；S-2 leash（63% 拒全自动＝loop 化程度）。
+**无钩移出**：另 TiDB PDCA 篇已于第三轮勘误移出（窗口外＋产品名巧合）。

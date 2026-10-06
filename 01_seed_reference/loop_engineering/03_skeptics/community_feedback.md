@@ -333,5 +333,5 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 ## 相关性审计（2026-10-06，用户判据回溯）
 
 **结论**：本档钩子整体明确——HN 热度层（事故/成本/loop 串）、GitHub 故障清单（停止条件失效）、Reddit 计费簇与 #99652（无人值守运行）、OWASP（loop control）、中文圈三帖（无人值守/中转站/auto 失控）与 smzdm/知乎（术语舆论本身）均为直接证据。
-**降为"背景旁证"（不作为 loop engineering 直接证据引用）**：部分票区的组织层项——Beck/Tacho/Yegge 联署宣言（组织绩效层）；Hashimoto（泛采纳限速，非 loop 专属）；Willison 09-24 "make software engineering even harder"（泛 coding agents 门槛，非本词专属——其 10-03 budget caps 句为直接钩）。
-**无钩移出**：无。
+**已丢弃（2026-10-06 用户第二版纪律：没挂钩就丢弃）**：Beck/Tacho/Yegge 联署宣言（组织绩效层，无 loop 钩子；README 部分票行与 raw_scan S9 同步移除）、METR（无 loop 钩子）。**保留并注明**：Willison 行（10-03 budget caps 为直接钩；09-24 门槛句为泛 coding agents 表述，引用带注）；Hashimoto（有 loop 档位边界句——直接钩）。
+**无钩移出**：无（本文件内）。

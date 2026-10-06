@@ -42,7 +42,6 @@ reorg_date: 2026-10-06
 |---|---|---|
 | **Simon Willison**（中性偏怀疑） | 门槛："make software engineering **even harder**… requires extraordinary discipline and knowledge"（09-24）；成本："hard budget caps need to be the default"（10-03） | [扫描档 S5/S6](raw_scan_2026-10-06_skeptics.md) |
 | **Gergely Orosz**（中性偏怀疑） | 价值/新瓶旧酒：07-14 调查（cron 旧物、tokenmaxxing、"Was looping a hack?"） | [扫描档 S7/S8](raw_scan_2026-10-06_skeptics.md) |
-| **Kent Beck ＋ Laura Tacho ＋ Steve Yegge** | 组织层：2026-02 峰会联署宣言 "We remain skeptical… and we remain human"（经 Orosz 一手报道） | [扫描档 S9](raw_scan_2026-10-06_skeptics.md) |
 | **Mitchell Hashimoto**（中性·限速） | "excruciating" 采纳代价；明确不跑通宵循环/多 agent | [扫描档 S11](raw_scan_2026-10-06_skeptics.md) |
 
 ### 候选与轨迹
@@ -51,8 +50,8 @@ reorg_date: 2026-10-06
 |---|---|---|
 | **David Searls**（身份坐实＝Doc Searls） | 候选——第二轮补抓：本人博客全文检索 0 命中、"10-02 播客"节目源未确认，**线索本身存疑，倾向降级** | 扫描档·补抓增量 |
 | **Peter Steinberger**（旧立场，2025-12-28 反自动编排） | 轨迹注记——本体在推动派；其 2026-07-18 "Loop 时代终结"推文仅媒体转述（InfoQ/36kr，未核原文） | 扫描档负结论节＋中性派档负结论 #2 |
-| **机构旁证（不入册）** | METR RCT（arXiv:2507.09089）：AI 使资深 OSS 开发者**慢 19%**、事前预测快 24%——感知与实际背离；arXiv:2608.21884：36,645 仓库仅 **0.59%** 确认跑自主循环、8M token/48h 失控案例、"comprehension debt / cognitive surrender" | 扫描档·机构研究旁证节 |
+| **机构旁证（不入册）** | arXiv:2608.21884：36,645 仓库仅 **0.59%** 确认跑自主循环、8M token/48h 失控案例、"comprehension debt / cognitive surrender"（METR 已按相关性纪律移除——无 loop 钩子） | 扫描档·机构研究旁证节 |
 
 > ⚠️ **易误归者**：**DHH**（2023–2025 头号抵制者）2026 已翻多（"pencils down"，归 [推动派相邻位](../01_advocates/README.md)）；
-> **Uncle Bob**（"机器纪律替代人工 review"）是激进多派，非反对派；**Dave Farley** 两场 transcript 逐字已取得（经转写降半级）——确认批评对象是 vibe coding 工程质量、正面纲领 executable spec/ATDD，**非反 loop 机制**（§C1 转写级候选）。
+> **Uncle Bob**（"机器纪律替代人工 review"）是激进多派，非反对派；**Dave Farley** 已按用户口径移出（2026-10-06：其批评对象是 vibe coding 工程质量，vibe coding 属非专业层讨论、非本主题证据面）——转写材料弃用，出 §C1。
 > 判派依据是**当前一手表态**，不是历史印象。

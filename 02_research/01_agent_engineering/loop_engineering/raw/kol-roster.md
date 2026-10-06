@@ -4,7 +4,7 @@
 > 一手素材统一在 [`01_seed_reference/loop_engineering/`](../../../../01_seed_reference/loop_engineering/README.md)
 > （本文件**只放台账与指针，不放人物卡片**）。
 
-**观测日期**：2026-09-26；**2026-09-27 I 路**追加谱系与候选注记；**2026-10-06 三派分野批**（用户定）：§A 9→14（+Orosz / swyx / Yegge / Kent C. Dodds / Cursor），三派判定权威见 §A2，三路深扫档案按用户指示落种子层 [`01_seed_reference/loop_engineering/`](../../../../01_seed_reference/loop_engineering/README.md)；**2026-10-06 第二轮补抓**：§A +1（**Laurie Voss**，两个一手载体齐）、Farley 入 §C1（转写级）、Searls 身份坐实（Doc Searls）但两句仍零命中——补抓档案见种子层三派目录 raw_scan 文末增量节。三路回源见 [evidence-a](evidence-2026-09-26-a-originators.md) / [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) / [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)。簇外高影响面见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)；I2 档案混合主验与侦察回源，侦察条目不计票。**「待回源」= 不可作主张依据。**
+**观测日期**：2026-09-26；**2026-09-27 I 路**追加谱系与候选注记；**2026-10-06 三派分野批**（用户定）：§A 9→14（+Orosz / swyx / Yegge / Kent C. Dodds / Cursor），三派判定权威见 §A2，三路深扫档案按用户指示落种子层 [`01_seed_reference/loop_engineering/`](../../../../01_seed_reference/loop_engineering/README.md)；**2026-10-06 第二轮补抓**：§A +1（**Laurie Voss**，两个一手载体齐）、Searls 身份坐实（Doc Searls）但两句仍零命中；Farley 经用户口径移出（vibe coding 批评非本主题）——补抓档案见种子层三派目录 raw_scan 文末增量节。三路回源见 [evidence-a](evidence-2026-09-26-a-originators.md) / [evidence-b](evidence-2026-09-26-b-stop-and-scheduling.md) / [evidence-c](evidence-2026-09-26-c-autonomy-and-convergence.md)。簇外高影响面见 [evidence-i](evidence-2026-09-27-i-high-influence-control.md)；I2 档案混合主验与侦察回源，侦察条目不计票。**「待回源」= 不可作主张依据。**
 
 > ⚠️ **质量门槛（2026-09-26 用户定，先于本表的一切口径）**：只收真正有影响力的 KOL，
 > 且内容必须有深度（操作性洞察）。**论坛评论者不算 KOL、聚合媒体与标题党不入册、碎片推文不作深度证据**——
@@ -87,7 +87,7 @@
 | Kief Morris | 阶梯／渐进信任 | PlatformCon 2026-06-23 官方关键句 "As feedback loops tighten across the full cycle, teams progressively trust agents with more"（扫描档 S3） | §B（窗口前）＋窗口内增量 |
 | Kent C. Dodds | 受约束循环画像（**强票**） | "the human does still need to be in the loop"、"trading compute for attention"、"use loop engineering judiciously"（扫描档 S6） | §A（2026-10-06 新入册） |
 | Mitchell Hashimoto | 皈依派限速（窗口前谱系） | "excruciating" 双轨训练法；明确不跑通宵循环/多 agent；junior 技能塌陷 "deeply worries me"（扫描档 S11，2026-02-05） | 谱系登记（不入 §A，窗口前） |
-| Kent Beck | 节拍论；**窗口内沉默** | 2025-06《Augmented Coding》节拍论；2026-02 与 Tacho/Yegge 联署 "We remain skeptical… and we remain human"；06 后无专门一手发声（扫描档负结论） | §B（窗口前） |
+| Kent Beck | 节拍论（"人说 go 才做下一条测试"＝循环节拍——直接钩）；**窗口内沉默** | 2025-06《Augmented Coding》；06 后无专门一手发声（扫描档负结论） | §B（窗口前） |
 | marmelab（Zaninotto） | 审慎实证（偏怀疑） | "SDD adds little benefit"；增量："would be irresponsible in a low-throughput environment"（适用边界参数化）、"Atomic CRM still requires a human review for every PR"（扫描档 S8） | §B（窗口前） |
 | Walden Yan（Cognition） | 受约束形态（**中性票不足**——厂商利益） | 写入单线程拓扑（evidence-u S2）；窗口内无新专门一手文；⚠️ "your codebase regressing to your worst engineer" 系 swyx 编辑摘要语，**不得入 Walden 引句** | §B（窗口前） |
 | swyx ~~（原候选）~~ | —— | 实测偏推动，2026-10-06 移入推动派（见上） | §A |
@@ -100,10 +100,10 @@
 | ~~David Searls~~ | **放弃（2026-10-06 用户拉取纪律）** | 两轮零命中、线索本身存疑（连"10-02 播客"节目源都未确认），按纪律降级出候选、不再挂账；登记防反复 | ~~候选~~ → 放弃 |
 | Peter Steinberger（旧立场） | 轨迹注记 | 2025-12-28 反自动编排——本体在推动派，此行保留反转轨迹 | §A |
 
-**部分票（交叉引用，本体在别派）**：Willison（门槛/成本方向）、Orosz（价值/新瓶旧酒方向）、Kent Beck＋Laura Tacho＋Steve Yegge 联署宣言（组织绩效层，2026-02）、Hashimoto（限速证词，支持"难掌握"不支持"反对"）——上述均见 [反对派扫描档](../../../../01_seed_reference/loop_engineering/03_skeptics/raw_scan_2026-10-06_skeptics.md)。
+**部分票（交叉引用，本体在别派）**：Willison（门槛/成本方向）、Orosz（价值/新瓶旧酒方向）、Hashimoto（限速证词，支持"难掌握"不支持"反对"）——上述均见 [反对派扫描档](../../../../01_seed_reference/loop_engineering/03_skeptics/raw_scan_2026-10-06_skeptics.md)。
 
 > **2026-10-06 批落点约定**：三路深扫档案与判读全部落种子层（用户定）；台账除本节、§A 新增 5 行（Orosz/swyx/Yegge/Kent C. Dodds/Cursor）与 §C1/§B 指针更新外不动。
-> **「待回源」= 不可作派别判定依据**；Searls、Steinberger 07-18 终结宣言、Voss 的 Arize 原文、Farley transcript 均在此列。
+> **「待回源」= 不可作派别判定依据**；Searls、Steinberger 07-18 终结宣言在此列（Voss 的 Arize 原文已解决并升 §A；Farley 已按用户口径移出——vibe coding 批评非本主题）。
 ---
 
 ## §B 谱系背景（2026-06 前，**不入名册**，只登记在 [`00-timeline.md`](00-timeline.md)）
@@ -140,7 +140,6 @@
 | **Simon Willison** | 2025-09-30《Designing agentic loops》已回源：他是循环实践者（工具环 + 成功标准 + 测试套件），同时指出 YOLO 的破坏/外泄风险。这不是对本词的反方论文，也不是语义纠偏 alone。**2026-06 后对本词专门发声——负结论复证（2026-10-06，遍查其 tag 页 254 帖），不升 §A**；但其 2026-09-24 note（"they make software engineering **even harder**… requires extraordinary discipline and knowledge"）＋10-03（"hard budget caps need to be the default"）构成**门槛/成本方向的部分票**（种子层扫描档 S5/S6） | 人物全景已在 [`_raw_people/04`](../../../../01_seed_reference/voices/_raw_people/04_simon_willison.md)；本主题引句在 [evidence-i](evidence-2026-09-27-i-high-influence-control.md) Source 4；派别：中性偏怀疑（§A2） |
 | **Gergely Orosz** | ~~六预测；"Something precious is being taken away"~~ → **升 §A（2026-10-06）**：07-14《What is "loop engineering?"》为本词专门发声（§1–4 一手＋大纲句逐字）；引文纠偏 "something **valuable**"。派别：中性偏怀疑（§A2） | 人物全景已在 [`_raw_people/12`](../../../../01_seed_reference/voices/_raw_people/12_gergely_orosz.md)；§A 行见上 |
 | **swyx**（latent.space） | ~~loopcraft 原帖 404~~ → **升 §A（2026-10-06）**：经双镜像取得全文＋LangChain 官方引用逐字核销＋AIEWF 主台演讲；实测立场**推动**（"entire game of the next century"） | §A 行见上；种子层扫描档 S5 |
-| **Dave Farley**（Continuous Delivery 作者/YouTube 教育者） | 2026 年批评 vibe coding 工程质量——AIDEvCon London 2026＋GOTO G^K25 两场逐字到手（**经转写，降半级**；GitHub 镜像 jscraik/Agent-Skills＋lilys.ai）。**派别提示：正面纲领是 executable specification / ATDD（spec-driven 词表），反对对象是 vibe coding 质量 ≠ 反 agent loop 机制**（种子层 skeptics 档·补抓增量） | 候选：中性偏怀疑（转写级；是否满足①待被引用情况核实） |
 | **Laurie Voss**（npm 联合创始人；Arize DevRel 负责人） | ~~Arize 原文截断，入册前须补一手~~ → **升 §A（2026-10-06 第二轮）**：Arize 原文＋O'Reilly 文两个一手载体齐 | §A 行见上；种子层扫描档·补抓增量 A/B |
 | **Jesse Vincent**（obra / Superpowers 作者） | Superpowers（289k★，口径④＋③一线规模）；其 Fable 5 时代的 `/goal` 实验（过夜 25 实验＋失败日志）是实践层 backbone §1 的例证来源；素材在 [`field_samples/fable5/run_superpowers_jesse_vincent/`](../../../../01_seed_reference/field_samples/fable5/run_superpowers_jesse_vincent/profile.md)（既有，只引用） | **待判更新（2026-10-06）**：blog.fsck.com 2026-07-05《Some new agentic patterns》一手全文已取得（过夜双 agent 协作实录＋未解难题自认："凭据缺口我还没解决"、Lethal Trifecta 无人解决）；独立性待深读后定（种子层扫描档·推动派）。另："shack 刊物"系负结论——博客无此子栏目 |
 
