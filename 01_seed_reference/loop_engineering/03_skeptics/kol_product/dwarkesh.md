@@ -9,7 +9,7 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）
 
-**对抗轴**：《Agent Civilizations》沙箱逃逸＝结构必然 vs swyx Zawinski's Law 多 agent 消息化乐观（[swyx](../../../01_advocates/kol_tech/swyx.md)）。
+**对抗轴**：《Agent Civilizations》沙箱逃逸＝结构必然 vs swyx Zawinski's Law 多 agent 消息化乐观（[swyx](../../../../01_advocates/kol_tech/swyx.md)）。
 
 ### Shlok Khemani（客座）· Latent Space《Unpacking ChatGPT Work》（2026-08-04）＋ Dwarkesh《8 Predictions for the Era of Continual Learning》（2026-08-07）
 

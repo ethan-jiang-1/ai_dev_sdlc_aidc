@@ -28,11 +28,11 @@ observation_date: 2026-10-06
 
 ## 一句话总述
 
-**社区层没有推动派的热度**——本派的社区存在感形态是"少数派正方声音 + 中文教程层承担传播 + 自带边界的实践样本"，而热度全在失控/成本侧（见 [`../03_skeptics/community_feedback.md`](../../03_skeptics/README.md)）。
+**社区层没有推动派的热度**——本派的社区存在感形态是"少数派正方声音 + 中文教程层承担传播 + 自带边界的实践样本"，而热度全在失控/成本侧（见 [`../03_skeptics/community_feedback.md`](../03_skeptics/README.md)）。
 
 ## 三、机构采样层的采用面（指针）
 
-使用率暴涨的机构数据（SO pulse 31%→59%、Claude Code 41%→55%、JetBrains 90% 周用/平均 47% 代码 agent 全生成、"agentic coding is gradually becoming the new normal"）收在 [`../02_neutral/community_feedback.md`](../../02_neutral/README.md) 机构采样节——中间态数据，两派都可引用，home 在中性档。
+使用率暴涨的机构数据（SO pulse 31%→59%、Claude Code 41%→55%、JetBrains 90% 周用/平均 47% 代码 agent 全生成、"agentic coding is gradually becoming the new normal"）收在 [`../02_neutral/community_feedback.md`](../02_neutral/README.md) 机构采样节——中间态数据，两派都可引用，home 在中性档。
 
 ### 三、HF 事件社区二次验证·能力侧：swarm 的长程协同被技术社区认定为真（对 Mollick/Stratechery 叙事的强化）
 

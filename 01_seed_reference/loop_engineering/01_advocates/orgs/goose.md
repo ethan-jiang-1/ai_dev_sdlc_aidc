@@ -8,7 +8,7 @@ observation_date: 2026-10-06
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**对抗轴**：Adversary Mode fail-open 自认 vs OpenAPPA fail-closed（[_治理工具](_治理工具.md)）——护栏两派正面对撞。
+**对抗轴**：Adversary Mode fail-open 自认 vs OpenAPPA fail-closed（[_治理工具](../_治理工具.md)）——护栏两派正面对撞。
 
 ### Goose（Block → AAIF）——recipe 重试回路、hooks 事件面、对抗审查器
 
