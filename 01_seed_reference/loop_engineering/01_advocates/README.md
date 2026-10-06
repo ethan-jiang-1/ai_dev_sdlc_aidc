@@ -35,7 +35,7 @@ Cherny 经 Willison 转引的 "Production code written by Claude should have a h
 | **Boris Cherny** | 发起者·词源（碎片级） | [evidence-a](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md)（AIEWF 06-30 台上版见扫描档，可增补对照表） |
 | **Peter Steinberger** | 发起者·词源（碎片级；2026-06 已入职 OpenAI；2025-12 旧反对立场为反转轨迹） | 同上 ＋ [拆档](people/steinberger.md) |
 | **Thorsten Ball**（Sourcegraph/Amp） | 吹捧者·宽自主乐观极（实践者） | 人物卡 [`_raw_people/19`](../../voices/_raw_people/19_thorsten_ball.md) |
-| **Geoffrey Huntley** | 吹捧者·激进实干极（谱系源头；2026-07-24 起验证转向） | 人物卡 [`_raw_people/16`](../../voices/_raw_people/16_geoffrey_huntley.md) ＋ [evidence-b §1](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md) ＋ [中性派扫描档 S4](../02_neutral/kol_scan.md)（四篇增量） |
+| **Geoffrey Huntley** | 吹捧者·激进实干极（谱系源头；2026-07-24 起验证转向） | 人物卡 [`_raw_people/16`](../../voices/_raw_people/16_geoffrey_huntley.md) ＋ [evidence-b §1](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md) ＋ [`people/geoffrey_huntley.md`](people/geoffrey_huntley.md)（四篇增量） |
 | **swyx**（Latent Space） | 吹捧者·概念造词（loopcraft，2026-06-12；AIEWF 06-30 主台演讲） | [中性派拆档 S5](people/swyx.md)（镜像全文收口）＋拆档 |
 | **Steve Yegge** | 吹捧者·激进多派（**含一手成本证词**） | [反对派拆档 S10](people/steve_yegge.md)《The Shape of Things to Come》 |
 | **Jesse Vincent**（obra，候选） | 吹捧者·实践极（过夜双 agent 协作实录＋未解难题自认）——§C1 待判独立性 | [拆档](people/jesse_vincent.md)（2026-07-05 博客全文；"shack 刊物"系负结论） |
