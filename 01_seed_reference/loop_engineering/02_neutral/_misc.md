@@ -136,7 +136,7 @@ observation_date: 2026-10-06
 
 > "A loop is not bounded. The whole point is that it runs on a schedule, fires off subagents, calls tools, retries on failure, escalates to bigger models when the small model gets stuck. Every one of those is a token-cost multiplier."＋结论句："**A loop without cost discipline is a self-inflicted denial-of-service attack on your own credit card.**"
 
-> "The architecture has shipped, the security model has not."（供应链谱系注记〔窗口外〕：CVE-2026-25253〔2026-01〕与 ClawHub 341/2,857 恶意 skill 审计〔2026-02〕——窗口内机构层升级见怀疑档 [csa.md](../../03_skeptics/orgs/csa.md)。）
+> "The architecture has shipped, the security model has not."（供应链谱系注记〔窗口外〕：CVE-2026-25253〔2026-01〕与 ClawHub 341/2,857 恶意 skill 审计〔2026-02〕——窗口内机构层升级见怀疑档 [csa.md](../03_skeptics/orgs/csa.md)。）
 
 > **debunk 层（判读用）**："The 'OpenClaw was built in a single hour' story is wrong... The one-hour figure refers to Steinberger's original Clawdbot prototype in November 2025, not the production OpenClaw codebase"；Osmani 六原语中被二手摘要丢掉的恰是干活最多的两个："the scheduler that fires the loop without you sitting there, and the worktree"。
 > （推动侧素材指针：Cherny 经 The New Stack/Office Chai 访谈——"I don't prompt Claude anymore... My job is to write loops."——推动档 Cherny 相关条目可引，本档只记指针。）
