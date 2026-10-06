@@ -11,6 +11,13 @@ observation_date: 2026-10-06
 
 **对抗轴**：Zawinski's Law vs Bhagwat Steinberger's law（[sam_bhagwat](sam_bhagwat.md)）；与 Dwarkesh 沙箱逃逸结构论（[dwarkesh](../../03_skeptics/kol_product/dwarkesh.md)）同一事实正反两翼。
 
+## 态度轨迹
+
+**方向**：稳定推动（概念造词者持续布道）
+**起点**：强推动（loopcraft 造词）
+**终点**：强推动（但承认多 agent 扩张的双刃性）
+**弧线**：06-12 loopcraft 命名（'entire game of the next century'）→ 06-30 AIEWF 主台演讲 → 08-08 Zawinski's Law of MultiAgents（'Every agent attempts to expand until it can message other agents'）
+**关键转折**：无转折——持续推动，但 08-08 Zawinski 定律把乐观与风险辩证化（与 HF 事件互为正反两翼）
 ## 《[AINews] Loopcraft: The Art of Stacking Loops》＋ AIEWF 开幕演讲（2026-06-12 / 2026-06-30）
 
 - URL：原帖 https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking （本环境两次 fetch 均 404，疑改名或下架）；镜像全文 https://plantis.ai/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d （取得，标注"Original: Swyx · 12/06/2026"）；AIEWF 现场报道 https://www.latent.space/p/aiewf-daily-dispatch-loops （Latent.Space 本刊，全文取得）｜ 作者身份：swyx，Latent.Space 主理人、AI Engineer World's Fair 联合创始人

@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：稳定推动（agent 管理视角持续）
+**起点**：推动·管理层（interns 隐喻）
+**终点**：推动·管理层（remove yourself as the bottleneck，但该句仍仅存转引）
+**弧线**：04-30 bearblog（'agents are like interns. You still have to be in charge of aesthetics, judgment, taste, and oversight'）→ autoresearch README（bottleneck 自我定位）
+**关键转折**：无转折——一致认为人应管判断/品味，agent 管执行
 ## Andrej Karpathy · autoresearch / "remove yourself as the bottleneck"（2026，一手未取得）
 
 - URL：GitHub https://github.com/karpathy/autoresearch（未直接取得）；演讲稿 https://karpathy.bearblog.dev/sequoia-ascent-2026/ （Cloudflare 拦截，403 未取得）；其言论经两路转引：swyx loopcraft 原文（S1 镜像，逐字转录其 Autoresearch 视频言论）与 All Things Open 文（转述 autoresearch 规模：约 630 行 Python、单 GPU 过夜跑 50 个实验、"数周内积累 59,000 stars"）｜ 作者身份：Andrej Karpathy，Eureka Labs 创始人、前 OpenAI/Tesla AI 总监

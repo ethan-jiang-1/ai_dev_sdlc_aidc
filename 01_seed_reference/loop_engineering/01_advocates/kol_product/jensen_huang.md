@@ -9,6 +9,9 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）
 
+## 态度轨迹
+
+**状态**：单点观察——当前库存不足以判弧线，待补挖（补挖 agent 在跑，新发声到位后本节升级为完整轨迹）。
 ## Jensen Huang · "Nobody writes prompts anymore"（2026-06 下旬，一手未取得）
 
 - URL：中文媒体两路：量子位（经智源社区缓存 https://hub-assets-cache.baai.ac.cn/view/55860 ，2026-06-26，全文取得）＋新智元（经 36氪英文版 https://eu.36kr.com/en/p/3873913078732036 ，2026-06-29，全文取得）｜ 作者身份：NVIDIA CEO

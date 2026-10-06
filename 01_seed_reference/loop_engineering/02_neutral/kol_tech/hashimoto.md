@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：稳定限速（皈依但设上限）
+**起点**：怀疑→皈依（经'excruciating'代价）
+**终点**：皈依＋限速（窗口前谱系，窗口内沉默）
+**弧线**：02-05《My AI Adoption Journey》（'excruciating' 双轨训练→皈依）＋'did not go as far as...running in loops all night'＋'not running multiple agents, and currently don't really want to'
+**关键转折**：无翻转——皈依后立刻设限（不通宵、不多 agent）
 ## 《My AI Adoption Journey》（2026-02-05）
 
 - URL：https://mitchellh.com/writing/my-ai-adoption-journey ｜ 作者身份：Vagrant/HashiCorp 创始人、Ghostty 作者

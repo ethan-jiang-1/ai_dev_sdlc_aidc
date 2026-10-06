@@ -11,6 +11,13 @@ observation_date: 2026-10-06
 
 **对抗轴**：Ronacher 经济-质量极（[ronacher](../../03_skeptics/kol_tech/ronacher.md)）——同题正反。
 
+## 态度轨迹
+
+**方向**：稳定多派但风险意识升级
+**起点**：多派激进（数十 agent 舰队）
+**终点**：多派＋安全警示（'Be Scared'）
+**弧线**：2026-08《Shape of Things to Come》公开自家 Gas Town 烧毁＋69B token/月＋harness 维护 20-25% 常量 → AIEWF《Agentic Security》'the real title is Be Scared'＋'Who watches an agent that can take action?'
+**关键转折**：AIEWF 演讲从'多派实践者'转为'安全警示者'——但仍是多派（Gas Town 仍在跑）
 ## Steve Yegge《The Shape of Things to Come, Part 1: The Continuous Thunderdome》（2026-08）
 
 - URL：https://yegge.ai/essays/the-shape-of-things-to-come/ ｜ 作者身份：40 年一线（Google/Sourcegraph 背景）、Gas Town/Beads 作者、Wyvern MMO 开发者

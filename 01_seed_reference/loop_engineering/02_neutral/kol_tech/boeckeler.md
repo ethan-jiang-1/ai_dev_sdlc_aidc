@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：审慎实证持续（方法一致、结论未定）
+**起点**：审慎实证（harness engineering 系列延续）
+**终点**：审慎实证（'even best practices need evals'）
+**弧线**：07-22 SE Radio 裸基线先行 → 08-10 TDD-in-loop eval 证伪默认信条（'until I see evals'）
+**关键转折**：08-10 自跑 eval 证伪循环内 TDD 有益——方法论驱动，非立场翻转
 ## Birgitta Böckeler 于 SE Radio 730（2026-07-22）
 
 - URL：https://se-radio.net/2026/07/se-radio-730-birgitta-boeckeler-on-harness-engineering-for-ai-agents/ ｜ 主持：Priyanka Raghavan

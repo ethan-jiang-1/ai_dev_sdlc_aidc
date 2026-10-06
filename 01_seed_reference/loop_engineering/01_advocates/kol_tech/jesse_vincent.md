@@ -9,6 +9,9 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**状态**：单点观察——当前库存不足以判弧线，待补挖（补挖 agent 在跑，新发声到位后本节升级为完整轨迹）。
 ## Jesse Vincent（obra，Superpowers 作者）·《Some new agentic patterns》（2026-07-05）＋博客群
 
 - URL：https://blog.fsck.com/2026/07/05/new-patterns/ （个人一手博客，全文取得；同文也发于其公司 Prime Radiant 官方博客）；博客首页 https://blog.fsck.com/ （全文取得，含 2026 全年索引）；Agent Blog 索引 https://blog.fsck.com/agent-blog/ （28 条 agent 写的日志，全文取得）｜ 作者身份：Jesse Vincent（obra），Best Practical（RT）创始人、Keyboardio 创始人、Prime Radiant 创始人；Claude Code 插件 Superpowers 作者（库内记 289k★——本档核实到其 2026 年持续发版：Superpowers 5.1（05-04）→ 6（06-15）→ 6.4（09-21，新支持 Meta Muse、OpenCode 2.0、Qwen Code））

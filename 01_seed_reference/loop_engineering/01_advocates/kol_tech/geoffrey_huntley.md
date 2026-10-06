@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：内部转向（激进实践→验证瓶颈）
+**起点**：激进实干（Ralph loop 之父，'software development is dead'）
+**终点**：验证优先＋对运动话语疏离（'too fixated'）
+**弧线**：01-13'everything is a ralph loop'＋'software development is dead' → 06-27 Miami'learn where AI is good and where it fails' → 07-24 加入 Antithesis（'Creation is now near-free. Verification/understanding is not, yet'）→ 09-27 十八个月复盘（'it's just a loop' 自我祛魅）→ 10-05 lisp 文（对 factory discourse 'strange'）
+**关键转折**：07-24 验证转向——从'推循环跑起来'转为'瓶颈在验证'；09-27 对自身原语祛魅
 ## Geoffrey Huntley：2026-06 后四篇（三条全文＋一条付费墙截断）
 
 - 作者身份：独立研究者，Ralph Wiggum loop 原语作者（2025-07）；**注意 2026-07-24 宣布加入 Antithesis**（确定性测试/形式化验证公司）。人物卡：`01_seed_reference/voices/_raw_people/16_geoffrey_huntley.md`。

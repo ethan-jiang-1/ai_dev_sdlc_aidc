@@ -9,6 +9,9 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**状态**：单点观察——当前库存不足以判弧线，待补挖（补挖 agent 在跑，新发声到位后本节升级为完整轨迹）。
 ## Harrison Chase（LangChain CEO）· "Harrison's In the Loop" 博客系列（2026-06-30 → 08-12）
 
 - URL：https://www.langchain.com/blog/own-your-intelligence （2026-07-25，全文取得）；https://www.langchain.com/blog/why-managed-agents-are-the-next-big-thing-in-agent-building （2026-08-12，全文取得）；系列另有 "Wiki Memory"（2026-06-30，未取正文）；红杉播客 "Owning Your Intelligence Starts With the Harness"（sequoiacap.com，页面截断未取得正文）｜ 作者身份：LangChain 创始人兼 CEO

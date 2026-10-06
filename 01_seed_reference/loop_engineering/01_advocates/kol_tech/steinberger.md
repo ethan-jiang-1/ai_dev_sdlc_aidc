@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：翻转＋换词（反对→词源→Loop 已死→graph）
+**起点**：反对（反对自动编排）
+**终点**：翻转→词源→再翻转（Loop 已死，graph 永生）
+**弧线**：2025-12-28 反自动编排 → 2026-06-08 词源推文（'You shouldn't be prompting coding agents anymore'）→ 06 月入职 OpenAI → 07-18'Are we still talking about loops, or have we moved on to graphs?'（2.6M 浏览）
+**关键转折**：07-18 宣告 Loop 时代终结、转向 graph——词源者自己宣布词已过时
 ## Peter Steinberger 07-18 推文 —— 部分解决（两个独立全文转载锚定文本/日期/浏览量；X 原文仍不可达）
 
 - 人物：Peter Steinberger（OpenClaw 创作者、词源人物，已入职 OpenAI）｜ 日期：2026-07-18 ｜ 原载体：X（本环境不可达）。

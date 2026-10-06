@@ -11,6 +11,13 @@ observation_date: 2026-10-06
 
 **对抗轴**：verify-everything 审慎 vs Thorsten Ball 验证外包机器证明（_raw_people/19）——验证由谁执行给出相反答案。
 
+## 态度轨迹
+
+**方向**：审慎加深（实践者→风险警告升级）
+**起点**：实践者＋审慎（工具环＋成功标准）
+**终点**：风险警告者（门槛升级＋成本失控防护主张）
+**弧线**：2025-09《Designing agentic loops》实践定义 → 2026-09-24'coding agents make software engineering even harder'→ 10-03'hard budget caps need to be the default'
+**关键转折**：09-24 从'工具好用'转为'更难了'（requires extraordinary discipline and knowledge）
 ## 《Note — coding agents make software engineering even harder》（2026-09-24）
 
 - URL：https://simonwillison.net/2026/Sep/24/harder/ ｜ 作者身份：Datasette 作者、LLM 库作者、agentic loops 定义词（2025-09-30《Designing agentic loops》）

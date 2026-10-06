@@ -9,6 +9,9 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）
 
+## 态度轨迹
+
+**状态**：单点观察——当前库存不足以判弧线，待补挖（补挖 agent 在跑，新发声到位后本节升级为完整轨迹）。
 ## Satya Nadella · "learning loops" 组织利害论（经 X 转引）
 
 - URL：原始 X 帖（x.com/satyanadella/status/2066182223213293753，本环境不可达）；经 LangChain 官方博客逐字转引（《The Art of Loop Engineering》结尾，全文取得）

@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：审慎加深（观察者→调查式怀疑）
+**起点**：观察者·损失感（grief）
+**终点**：调查者·怀疑（'here today, gone tomorrow?'）
+**弧线**：01-07 grief（'something valuable is being taken away'）→ 07-14《What is loop engineering?》调查（cron 旧物、tokenmaxxing、'Was looping a hack?'）
+**关键转折**：07-14 从个人情绪表达转为系统性调查——发现多数用例是旧物重贴标签
 ## 《What is "loop engineering?"》（2026-07-14）
 
 - URL：https://newsletter.pragmaticengineer.com/p/what-is-loop-engineering ｜ 作者身份：同上

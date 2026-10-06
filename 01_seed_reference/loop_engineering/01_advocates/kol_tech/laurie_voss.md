@@ -9,6 +9,13 @@ observation_date: 2026-10-06
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
+## 态度轨迹
+
+**方向**：稳定推动（分类学持续深化）
+**起点**：推动·分类学（4+1 循环）
+**终点**：推动·治理翼深化（oversight is where the human should live）
+**弧线**：06 月 loop 分类学提出 → 09-14 We are all Product Engineers now（'agents suck at everything after writing code'）→ O'Reilly 文（oversight loop 内置于分类学）
+**关键转折**：无翻转——但从'分类学'走向'产品工程师身份重构'
 ## Laurie Voss（Arize Head of DevRel / npm 联合创始人）·《What is a loop in AI engineering, anyway?》＋《We are all Product Engineers now》（2026 / 2026-09-14）
 
 - URL：https://arize.com/blog/what-is-a-loop-in-ai-engineering-anyway/ （Arize 厂商博客，三次 fetch 均在导航区截断、**正文未取得**；文章存在性与作者归属经两路独立二手确认，见下）；https://seldo.com/posts/we-are-all-product-engineers-now/ （个人一手博客，2026-09-14，全文取得）｜ 作者身份：Laurie Voss，npm 联合创始人、Arize Head of Developer Relations（AIEWF 2026 官方议程 PDF 载明其职位；seldo.com 页脚自述 "developer, writer, and recovering npm co-founder"）

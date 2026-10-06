@@ -11,6 +11,13 @@ observation_date: 2026-10-06
 
 **对抗轴**：与 Thorsten Ball（[_raw_people/19](../../../../01_seed_reference/voices/_raw_people/19_thorsten_ball.md)，Amp/乐观极）公开互驳——#99 点名引 Astra 冷水面，Armin 零回应，单向敞开。
 
+## 态度轨迹
+
+**方向**：降温（重度信徒→内卷判词）
+**起点**：审慎接受（'the question is not whether we will loop'）
+**终点**：元批评（'all of AI engineering is Neijuan'＋'why we are doing this'）
+**弧线**：06-23《The Coming Loop》承认趋势不可逆但三条界限 → 07-04《Better Models: Worse Tools》SOTA 工具反证 → 07-13《Tower Keeps Rising》理解坍塌无即时失败信号 → 09-07《Astra》内卷论＋35h/$1200 白卷
+**关键转折**：07-04 工具退化反证（模型更强、工具调用更差）——从'趋势不可逆但有边界'转为'机制跟不上能力曲线'
 ## 《Better Models: Worse Tools》（2026-07-04）
 
 - URL：https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/ ｜ 作者身份：同上
