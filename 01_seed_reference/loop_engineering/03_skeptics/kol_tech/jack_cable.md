@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # jack_cable — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Jack Cable——安全研究者：2017 五角大楼 Hack the Air Force 冠军（累计报告 350+ 漏洞）→ Stanford CS → 国防部 Defense Digital Service → CISA（选举安全、Crossfeed、Ransomwhere、Secure by Design 联合领导）→ Krebs Stamos Group 安全架构师；现 Corridor（保护 AI coding agent 产出代码的安全公司）联合创始人/CEO（与 Ashwin Ramaswami 联创，Alex Stamos 任 CSO）。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

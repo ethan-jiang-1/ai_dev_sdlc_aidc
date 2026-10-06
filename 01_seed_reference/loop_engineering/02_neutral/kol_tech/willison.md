@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # willison — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Datasette 作者、LLM 库作者、agentic loops 定义词（2025-09-30《Designing agentic loops》）
+> **背景**：Simon Willison——英国；Django 联合创造者（2005，Lawrence Journal-World 时期）；Lanyrd 联合创始人（后被 Eventbrite 收购）；Datasette 与 llm CLI 作者；2022 年末起独立写作，成为 LLM/agent 领域头部独立作者；“vibe coding” 边界厘清者、agentic loops 定义词（2025-09-30《Designing agentic loops》）。
 > **号召力**：①＋②＋③＋④ coding agents 定义者
 > **人物全景**：[_raw_people/04_simon_willison.md](../../../voices/_raw_people/04_simon_willison.md)
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。

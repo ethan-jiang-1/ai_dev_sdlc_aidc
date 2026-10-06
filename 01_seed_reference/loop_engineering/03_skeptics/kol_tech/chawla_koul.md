@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # chawla_koul — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Tisha Chawla & Susheem Koul——微软工程师组合（Chawla：Commerce and Ecosystem Data Platform 软件工程师，VIT 2024；Koul：高级软件工程师，BITS Pilani 2019）；两人共同创建 AgentPlane（Chronicle agent 执行录制/回放＋TokenOps run 级 token 成本治理）；AIEWF 2026 合讲两场（故障复现＋AI FinOps）。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

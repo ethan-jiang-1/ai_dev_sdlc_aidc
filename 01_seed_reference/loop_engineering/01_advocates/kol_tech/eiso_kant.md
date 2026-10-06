@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # eiso_kant — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Eiso Kant——Poolside 联合创始人、与 Jason Warner 同任 co-CEO（2023，巴黎创立的 AI 代码大模型公司）；此前创办 source{d}（2015–2019，“AI for code”公司）、招聘平台 Tyba（2011–2016）、工程度量平台 Athenian（2022 获投后悄然关停）；与 Warner 共同主持 Developing Leadership 播客。（履历核：poolside.ai＋多方，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

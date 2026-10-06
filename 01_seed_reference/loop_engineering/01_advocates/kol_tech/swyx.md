@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # swyx — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Latent Space 主理人
+> **背景**：swyx（Shawn Wang）——新加坡长大，货币期权交易/对冲基金分析转行、自学编程；Two Sigma 前端 → Netlify 首个 DevRel 岗（2018–2020）→ AWS Developer Advocate（2020–21）→ Temporal 首任 Head of DX（2021）；2022 年起创办 Latent Space（2023 与 Alessio Fanelli 开播客）、2023-06《The Rise of the AI Engineer》＋与 Benjamin Dunphy 创办 AI Engineer 大会（AIEWF）；2025 年加入 Cognition（smol.ai 并入，现 advisor）；《Learn In Public》《The Coding Career Handbook》作者。（履历核：swyx.io/decade＋ai.engineer，2026-10-07）
 > **号召力**：① 造词者（loopcraft）＋② 被 LangChain 引用
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

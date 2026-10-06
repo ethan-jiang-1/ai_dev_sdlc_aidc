@@ -7,6 +7,7 @@ observation_date: 2026-10-07
 # dhh — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：37signals/Rails 创造者
+> **背景**：David Heinemeier Hansson（DHH）——丹麦程序员；Ruby on Rails 创造者（2004，从 37signals 的 Basecamp 项目中抽出）、37signals 联合创始人/CTO；与 Jason Fried 合著《Rework》《It Doesn't Have to Be Crazy at Work》；近年推出 Omarchy（Linux 桌面）与 Once 系单机软件。Web 框架时代最具影响力的开发者之一。
 > **号召力**：④ 全球影响力＋① 框架创造者
 > **人物全景**：[_raw_people/15_dhh.md]()
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景：[_raw_people/15_dhh.md](../../../voices/_raw_people/15_dhh.md)（2026-10-03 建卡，覆盖 pencils down 反转全程）。

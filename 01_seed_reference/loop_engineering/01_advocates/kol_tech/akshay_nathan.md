@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # akshay_nathan — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Akshay Nathan——Yale 本科；Wealthfront（券商/银行技术栈）技术负责人起家；联合创办自动化测试公司 walrus.ai（2021-12 被 Airtable acqui-hire），后任 Airtable 企业方向工程负责人；2023 加入 OpenAI（早期 ChatGPT Enterprise），现领导 Core Product Engineering、负责 ChatGPT Work（2026-07 发布，与 Codex 共享 harness，合计 10M 用户）。（履历核：Latent Space 访谈＋ACP bio＋TechCrunch，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

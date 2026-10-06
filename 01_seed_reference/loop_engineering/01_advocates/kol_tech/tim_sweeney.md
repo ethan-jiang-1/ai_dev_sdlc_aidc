@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # tim_sweeney — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Tim Sweeney（⚠️ 非 Epic Games 同名者）——Workday 搜索/ML 产品经理（2015–18）→ Twitter ML 平台（2018）→ Georgia Tech CS 硕士（2020）；现 Weights & Biases（已被 CoreWeave 收购）Principal Engineer，开源可观测/评估工具 Weave 主维护人，参与研究 agent ARIA。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

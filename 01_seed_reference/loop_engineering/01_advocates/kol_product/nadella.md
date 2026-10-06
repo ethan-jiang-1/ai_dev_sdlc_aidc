@@ -8,6 +8,7 @@ observation_date: 2026-10-06
 
 
 > **身份**：Microsoft CEO
+> **背景**：Satya Nadella——微软董事长/CEO（2014 任 CEO）；1992 年入职微软，历任在线服务、服务器与工具、云与企业工程负责人——主导微软向 Azure 云与 AI 的转型；全球最大软件公司掌门人。
 > **号召力**：④ 全球最大软件公司 CEO
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）

@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # matt_pocock — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Matt Pocock——转码前做过 6 年声乐教师；Stately XState core 团队（XState Codegen 作者）→ 2022 Vercel DevRel（参与 Turbopack 发布）；2022-12 起以 Total TypeScript 全职独立教育者，2026 年任 AI Hero Director——产出 AI coding 词典、wayfinder 等 agent skills、Evalite、Sandcastle。（履历核：ai.engineer 讲者页＋Reactiflux 访谈，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

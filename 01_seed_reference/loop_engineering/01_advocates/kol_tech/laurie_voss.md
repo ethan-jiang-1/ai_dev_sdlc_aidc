@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # laurie_voss — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：npm 联合创始人；Arize Head of DevRel
+> **背景**：Laurie Voss——npm 联合创始人（2014：创始 CTO→COO→Chief Data Officer，2019 年中离开）；此后 Netlify 数据岗（2020–2023）→ LlamaIndex VP of DevRel（2023–2025）→ 现 Arize Head of DevRel（2025.10 起）；更早创办 awe.sm（2010）；Warwick 计算机本科；4+1 循环分类学提出者（2026）。（履历核：seldo.com/about＋多方，2026-10-07）
 > **号召力**：① 4+1 循环分类学提出者＋③ 一线规模
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # sean_goedecke — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Google SWE
+> **背景**：Sean Goedecke——墨尔本大学哲学 BA/MA（非 CS 科班、自学编程）；Zendesk 墨尔本（2016–2021，实习生一路到 Staff Engineer）→ 2021-09 加入 GitHub 至今（2023-03 起 Staff Software Engineer：Copilot 计费/反滥用、主导 GitHub Models 发布）；以 GitHub 时期工程长文（git 内部原理等）闻名。⚠️ 本档头排「Google SWE」与本人公开简历（2026-10 仍在更新）不符——冲突未裁决，按一手简历记。（履历核：seangoedecke.com/about＋公开简历，2026-10-07）
 > **号召力**：③ 一线规模
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

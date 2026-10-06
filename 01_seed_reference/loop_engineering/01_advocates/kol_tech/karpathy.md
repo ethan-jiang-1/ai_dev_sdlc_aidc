@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # karpathy — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：前 OpenAI/Tesla AI 总监
+> **背景**：Andrej Karpathy——OpenAI 创始成员（2015–2017）、Tesla AI 总监（2017–2022，Autopilot 视觉）、Eureka Labs 创始人（2024，AI 教育）；斯坦福 CS231n 共同创办人；“Vibe Coding” 造词者（2025-02，2026-02 公开弃用）；2026-05 加入 Anthropic 重建预训练研究团队（人物卡 07）。
 > **号召力**：④＋① 教育领袖
 > **人物全景**：[_raw_people/07_andrej_karpathy.md]()
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。

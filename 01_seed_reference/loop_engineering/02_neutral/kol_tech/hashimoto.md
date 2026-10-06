@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # hashimoto — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Vagrant/HashiCorp 创始人、Ghostty 作者
+> **背景**：Mitchell Hashimoto——Vagrant 创造者（2010）、HashiCorp 联合创始人/联合 CTO（Terraform/Consul/Vault——基础设施即代码时代巨头）；2023 年卸任运营角色后创造 Ghostty 终端；博客 mitchellh.com。
 > **号召力**：③＋② OSS 基础设施领袖
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

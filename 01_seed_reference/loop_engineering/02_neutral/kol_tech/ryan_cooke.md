@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # ryan_cooke — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Ryan Cooke——WorkOS 工程师（WorkOS Vault 负责人）；连续创业者：Docurated 联创、Orum（支付基础设施）联创/CTO、N26 美国技术负责人、JumpWire（YC W22，数据安全）联创；fintech/数据安全/企业信息系统背景。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

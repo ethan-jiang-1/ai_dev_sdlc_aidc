@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # sam_bhagwat — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Mastra 联合创始人/CEO
+> **背景**：Sam Bhagwat——Mastra（TypeScript agent 框架，YC W25）创始人/CEO（2024）；此前联合创立 Gatsby（2018–2023，融资 5000 万美元、售予 Netlify），更早任 Boingo/Zenefits/PlanGrid 工程师；Stanford 经济学本科；《Principles of Building AI Agents》作者。（履历核：多方，2026-10-07）
 > **号召力**：③
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

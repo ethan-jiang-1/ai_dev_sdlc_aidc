@@ -8,6 +8,7 @@ observation_date: 2026-10-06
 
 
 > **身份**：Dwarkesh Podcast 主理人
+> **背景**：Dwarkesh Patel——The Dwarkesh Podcast 主理人（2020 年起步于 UT Austin 宿舍，原名 The Lunar Society；UT Austin CS）；印度出生、8 岁赴美；从冷邮件邀约经济学家（Bryan Caplan）起步，转向 AI 研究者/CEO 的深度长访谈（Altman、Hassabis 等）；2024 年 TIME100 AI；2025 与 Gavin Leech 合著《The Scaling Era: An Oral History of AI, 2019–2025》。（履历核：Wikipedia＋多方，2026-10-07）
 > **号召力**：④ 大分发＋深度访谈
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）

@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # jesse_vincent — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Superpowers 作者（289k★）；blog.fsck.com
+> **背景**：Jesse Vincent（obra）——Request Tracker（RT，企业级工单系统）作者、Best Practical 创始人；Keyboardio 人体工学键盘创始人；blog.fsck.com 二十年博主；2025 年起以 Claude Code 技能框架 Superpowers 回到 agent 实践一线（台账 §C1：独立性待深读）。
 > **号召力**：③＋④
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

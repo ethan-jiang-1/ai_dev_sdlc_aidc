@@ -6,6 +6,7 @@ observation_date: 2026-10-06
 
 # krieger — loop engineering 证据轨迹（2026-06 后，时间正序）
 
+> **背景**：Mike Krieger——圣保罗出生，Stanford 符号系统 BS/MS；Instagram 联合创始人/CTO（2010–2018，与 Kevin Systrom）；后与 Systrom 合作 Rt.live（2020）与 Artifact（2023，售予 Yahoo）；2024-05 加入 Anthropic 任 CPO，2026-01 卸任转入 Labs（与 Ben Mann 共建——AIEWF 现场稿称 Head of Labs）。（履历核：Anthropic 官方公告＋Wikipedia，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

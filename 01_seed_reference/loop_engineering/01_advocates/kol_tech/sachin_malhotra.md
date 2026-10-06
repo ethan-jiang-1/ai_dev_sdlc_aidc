@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # sachin_malhotra — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Anthropic CI 团队工程师
+> **背景**：Sachin Malhotra——硕士期间任 Information Sciences Institute（ISI）research assistant；Microsoft Azure authoritative DNS 团队（2019–2022）→ Etsy Personalization staff ML 工程师（计算机视觉）→ 现 Anthropic CI 团队：测试隔离、merge 自动化、CI autoscaling，主导 Claude Tag CI 事件响应器与 ci-weather；AIEWF 2026 讲《Give the Agent a Budget, Not a Token》。（履历核：ai.engineer 讲者页＋claude.com 博客署名，2026-10-07）
 > **号召力**：③
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

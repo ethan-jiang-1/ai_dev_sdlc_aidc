@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # andrew_qu — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Andrew Qu——2020 联合创办 Nooks（远程协作空间）→ 2021–2023 Meta 软件工程师 → 2023–2025 独立探索 → 2025 加入 Vercel，现 Office of the CTO 的 Chief of Software；打造 npx skills / skills.sh（skills 目录与排行榜）、内部数据 agent d0，工作延伸至 Eve（Vercel agent 框架）。（履历核：ai.engineer 讲者页＋andrewqu.com，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

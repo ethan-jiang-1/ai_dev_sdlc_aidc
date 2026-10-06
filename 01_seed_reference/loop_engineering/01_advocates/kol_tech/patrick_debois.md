@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # patrick_debois — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：DevOps 运动发起人
+> **背景**：Patrick Debois——比利时工程师，“DevOps 之父”：2009 年在根特发起 DevOpsDays，“DevOps” 一词由此诞生；职业横跨 DBA/系统管理/敏捷基础设施/云原生；近年转向 LLM 与 agent 工程布道，现 Tessl。
 > **号召力**：①＋④ 运动发起者
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

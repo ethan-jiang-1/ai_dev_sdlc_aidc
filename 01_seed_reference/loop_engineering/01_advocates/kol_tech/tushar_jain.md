@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # tushar_jain — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Tushar Jain——Docker EVP of Engineering（2024-08 加入；AIEWF 页另称 CTO，单一来源存疑）；sbx 即 Docker Sandboxes 的 CLI（microVM 隔离沙箱，面向 coding agents）——**本档「撞名核对开放」问题就此收口：Multicoin Capital 同名者确非本人**；此前 Amazon/AWS 初期成员（2005–2012）→ Nextbit/Dropbox → Oracle VP of Engineering → Stripe 工程负责人（Accounts/Risk/Radar），与 Mark Cavage 推出 Docker MCP Catalog & Toolkit。（履历核：ai.engineer 讲者页＋Docker docs＋LinkedIn 镜像，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
@@ -16,7 +17,7 @@ observation_date: 2026-10-06
 ### Tushar Jain · AIEWF 2026《Unlock Agent Autonomy: The Runtime for AI-Native Systems》（视频上传 2026-08-20）
 
 - URL：https://ai.engineer/talks/zaGyGgLW3SM-unlock-agent-autonomy-runtime-ai-native-systems （curl 实取全文）
-- 身份：讲者页面仅名 "Tushar Jain"（产品名 "sbx"，agent runtime 沙箱方向；**身份与撞名核对开放**——Multicoin Capital 同名者非本讲者，勿混）。
+- 身份：讲者页面仅名 "Tushar Jain"（产品名 "sbx"，agent runtime 沙箱方向；~~身份与撞名核对开放~~——Multicoin Capital 同名者非本讲者，勿混。**2026-10-07 核销**：讲者即 Docker EVP of Engineering，sbx＝Docker Sandboxes CLI——见头部背景行，ai.engineer 讲者页＋Docker docs）。
 - 号召力口径：③待核。
 - **挂钩**：无人值守运行＋预算与熔断（运行时权限边界）。
 - 逐字摘录：

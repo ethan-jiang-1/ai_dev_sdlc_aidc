@@ -7,6 +7,7 @@ observation_date: 2026-10-07
 # osmani — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：loop engineering 命名者（2026-06-07）；**2026-09-08 公布加入 Anthropic 任 MTS、Claude Code 团
+> **背景**：Addy Osmani——Google 14 年（Chrome 团队工程负责人，最高任 Google Cloud AI Director——台账 §A 一手 bio）；《Learning JavaScript Design Patterns》与 O'Reilly《Agentic Engineering》作者；loop engineering 命名者（2026-06-07）；2026-09-08 公布加入 Anthropic 任 MTS（Claude Code 团队）。
 > **号召力**：① 术语定义者·命名者
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

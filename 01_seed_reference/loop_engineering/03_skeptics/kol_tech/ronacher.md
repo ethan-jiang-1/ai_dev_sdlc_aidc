@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # ronacher — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Flask/Werkzeug 作者；Pi（earendil-works）协作者
+> **背景**：Armin Ronacher（mitsuhiko）——奥地利；Flask/Jinja2/Pygments/Sphinx 等 Pocoo→Pallets 生态缔造者（Python Web 时代奠基人之一，PSF Fellow 2012）；曾任职 Plurk、Fireteam（Splash Damage）、Sentry；现与 Mario Zechner 同在 earendil-works 协作 Pi（coding agent harness）。（履历核：Wikipedia，2026-10-07）
 > **号召力**：③ 一线规模＋质量反证代表
 > **人物全景**：[_raw_people/17_armin_ronacher.md](../../../voices/_raw_people/17_armin_ronacher.md)
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。

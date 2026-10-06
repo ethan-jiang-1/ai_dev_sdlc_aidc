@@ -4,6 +4,12 @@ directory: 01_advocates/kol_tech
 observation_date: 2026-10-06
 ---
 
+# dan_mcateer — loop engineering 证据轨迹（2026-06 后，时间正序）
+
+> **背景**：Dan McAteer（Daniel McAteer）——心理学出身、认知科学方向的 agentic engineer；曾在 Amp 与 Moveworks 任职（AI 工具一线）；现为 Substack 刊物《Attention Heads》作者（AI × 注意力/心智的周更写作）。（履历核：attentionheads.blog/about，2026-10-07）
+> **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
+> 人群类型：**专业技术 KOL**（程序员/工程师出身）
+
 ## 态度轨迹
 
 **状态**：单点观察——待补挖。

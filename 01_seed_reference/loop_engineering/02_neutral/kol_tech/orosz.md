@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # orosz — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：The Pragmatic Engineer 作者
+> **背景**：Gergely Orosz——匈牙利裔；《The Pragmatic Engineer》主理人（软件工程 Substack 头部）；前 Uber 工程经理、Pinterest/Skype（微软）/Ustream 工程师；以一手工程行业调查著称（loop 从业者调查约 210 条回复——台账 §A）。
 > **号召力**：④ 大分发＋② 被引用＋③ 访谈规模
 > **人物全景**：[_raw_people/12_gergely_orosz.md](../../../voices/_raw_people/12_gergely_orosz.md)
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。

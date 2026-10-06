@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # david_fowler — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：David Fowler——微软 Distinguished Engineer；ASP.NET Core 架构师、SignalR 创造者、NuGet 早期核心贡献者；现负责 .NET Aspire（.NET 云原生编排）。
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

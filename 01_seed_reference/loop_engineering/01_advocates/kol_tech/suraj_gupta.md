@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # suraj_gupta — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Suraj Gupta——滑铁卢大学 CS（加密数据库方向研究，arXiv:2103.05792）；任职 OpsLevel、Wish 后于约 2022-23 加入 Warp，现领导 Warp harness 开发（agentic 开发体验）。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

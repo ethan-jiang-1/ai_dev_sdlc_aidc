@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # roland_gavrilescu — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Roland Gavrilescu——伦敦电气工程出身、PyTorch 奖学金入门深度学习；Stable-Baselines3 贡献者（2020）、GSoC 开发 flaxvision；先后任职 Superhuman（AI agents）与 xAI（agent infra/云 agent）；2025-11 与 Julian Bright（xAI 同事）共同创办 Introspection，现任 CEO。（履历核：ai.engineer 讲者页＋introspection.dev，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # jason_lopatecki — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Jason Lopatecki——Arize AI（LLM 可观测/评估平台）联合创始人/CEO（与 Aparna Dhinakaran 共创；2026-08 Dynatrace 宣布以 9.15 亿美元收购）；UC Berkeley EECS 本科；此前联合创立 TubeMogul（视频广告技术：2014 IPO、2016 被 Adobe 收购，收购后领导 Adobe 机器学习团队）、更早 Illumenix/Calix Networks。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

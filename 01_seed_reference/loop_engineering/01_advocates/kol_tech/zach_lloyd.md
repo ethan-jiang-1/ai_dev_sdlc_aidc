@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # zach_lloyd — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Warp 创始人/CEO
+> **背景**：Zach Lloyd——Warp（AI 原生终端）创始人/CEO（2020–）；此前 Google Principal Engineer（2007–2014，纽约：Google Sheets 与 Docs 套件总工程负责人）→ SelfMade 联创/CTO（2015–2019）→ TIME 临时 CTO（2019–2020）；Stanford 符号系统 BS、LSE 科学哲学 MSc。（履历核：多方，2026-10-07）
 > **号召力**：③＋④ 终端平台
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # kieran_klaassen — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Every（Cora 作者）
+> **背景**：Kieran Klaassen——Every 旗下 Cora（AI 邮件助手）General Manager 兼 entrepreneur-in-residence；2024 年起以 agent 一人端到端构建 Cora（Rails＋React，2026 年重写 agent-native v2）；“compound engineering” 方法论提出者；此前联合创办 Vinebase 与 Occasion 并任 VP of Engineering。（履历核：ai.engineer 讲者页＋Render 博客，2026-10-07）
 > **号召力**：③
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

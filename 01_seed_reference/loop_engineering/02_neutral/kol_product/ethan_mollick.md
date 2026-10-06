@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # ethan_mollick — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：沃顿商学院教授（One Useful Thing）
+> **背景**：Ethan Mollick——宾夕法尼亚大学沃顿商学院管理学教授（创业与 AI 教育）；《Co-Intelligence》（2024 畅销书）作者；newsletter《One Useful Thing》主理人；最早系统研究 LLM 对工作与教育影响的学者之一。
 > **号召力**：④ 大分发＋学术影响力
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）

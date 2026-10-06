@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # justin_smith — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Justin Smith——Resolve AI 创始产品工程师（本人一手口径 “founding product engineer”，非 co-founder）；15 年以上监控/可观测性经验：Splunk Observability Suite 架构师之一、更早任职 VMware。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

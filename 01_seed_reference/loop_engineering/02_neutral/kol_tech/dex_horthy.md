@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # dex_horthy — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：HumanLayer CEO；12-factor agents 作者
+> **背景**：Dex Horthy——物理本科出身；Sprout Social 早期工程师 → Replicated 约 7 年（容器编排/产品/GTM）→ Metalytics（SQL 数仓 agent 实验，HumanLayer 前身）→ 创办 HumanLayer（YC）；《12-factor agents》作者（2025，agent 工程方法论）；bio 自称 “context engineering” 造词人；以“反对自由 loop until goal、在工具选定与执行之间打断”著称（evidence-i Source 2）。（履历核：YC 页＋humanlayer GitHub，2026-10-07）
 > **号召力**：①＋②
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

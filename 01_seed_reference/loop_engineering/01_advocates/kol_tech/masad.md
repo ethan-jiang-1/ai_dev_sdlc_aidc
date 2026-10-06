@@ -8,6 +8,7 @@ observation_date: 2026-10-06
 
 
 > **身份**：Replit CEO
+> **背景**：Amjad Masad——Replit 创始人/CEO（2016 与妻子 Haya Odeh、兄弟 Faris 共创）；安曼出身，Princess Sumaya 大学 CS；Codecademy 第 1 号员工（2011–2013）→ Facebook 软件工程师、JavaScript 基础设施 tech lead（2013–2016，维护 Babel/Jest/React Native 打包器）；把 Replit 从在线 IDE 带进 agent 云开发时代（Replit Agent）。（履历核：Wikipedia＋amasad.me/about，2026-10-07）
 > **号召力**：③＋④ 平台规模
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

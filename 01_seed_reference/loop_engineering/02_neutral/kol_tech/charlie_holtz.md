@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # charlie_holtz — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Charlie Holtz——Brown 认知神经科学出身；Point72 量化 → Replicate Hacker in Residence；2023-11 以 AI 合成 David Attenborough 解说视频病毒出圈（另有 Shlinkedin/CHARL-E/StickerBaker）；2024 夏与 Jackson de Campos 创办公司（YC S24，首品 Melty 编辑器），演化为多 agent 管理应用 Conductor，任 CEO——2026-03 获 2200 万美元 A 轮（Spark/Matrix）。（履历核：ai.engineer 讲者页＋conductor.build，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

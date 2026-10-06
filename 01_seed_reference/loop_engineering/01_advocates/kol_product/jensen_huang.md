@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # jensen_huang — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：NVIDIA CEO
+> **背景**：Jensen Huang——NVIDIA 联合创始人/CEO（1993 至今）；GPU 通用计算（CUDA）生态与 “AI 工厂”（AI factory）叙事的核心缔造者；2026 年以 “Nobody writes prompts anymore”（经媒体转引）成为本运动最高分发级吹捧者。
 > **号召力**：④ 全球最大芯片公司 CEO
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）

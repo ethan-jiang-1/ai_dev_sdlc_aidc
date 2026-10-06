@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # moritz_johner — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Moritz Johner——媒体技术出身（历经 Web 代理商/创业公司/咨询）；External Secrets Operator 创建者/维护者（2018 起）与 Linux Foundation Kubernetes 讲师；现英国支付基础设施公司 Form3 Staff Engineer，做 PatchPilot（跨数千仓库自动修漏洞——即其 AIEWF 演讲主题）。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

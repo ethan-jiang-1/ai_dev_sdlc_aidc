@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # geoffrey_huntley — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：独立开发者；Ralph Wiggum loop / repo-per-task 原语作者
+> **背景**：Geoffrey Huntley——澳洲开源老兵、独立开发者/顾问（以长期高强度开源贡献闻名）；“Ralph Wiggum loop”（无限 bash 循环）与 repo-per-task 原语作者——本主题公认谱系起点文献（evidence-b §1）；2026-07-24 起转向 Antithesis 验证方向（“Creation is now near-free. Verification/understanding is not, yet”——台账 §A2 nuance）。
 > **号召力**：① 谱系源头＋③ 一线规模
 > **人物全景**：[_raw_people/16_geoffrey_huntley.md]()
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。

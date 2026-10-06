@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # kief_morris — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：Thoughtworks（Infrastructure as Code 作者）
+> **背景**：Kief Morris——Thoughtworks（英国）技术负责人；《Infrastructure as Code》（O'Reilly）作者，IaC 理念主要奠基人；loop 梯级（outside/in/on the loop → agentic flywheel）提出者（2026-03，evidence-c）。
 > **号召力**：①＋② 阶梯模型定义者
 > **人物全景**：[_raw_people/10_kief_morris.md]()
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。

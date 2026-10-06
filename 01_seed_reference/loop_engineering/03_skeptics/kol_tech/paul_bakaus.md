@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # paul_bakaus — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Paul Bakaus——jQuery UI 创建者（2007，后成 jQuery 核心团队）；Aves 游戏引擎（公司被 Zynga 收购）；Google 2013–2021（Chrome DevTools → AMP/Web Stories DevRel 负责人——非 AMP 创造者；创办 Google for Creators）；后 Koji → Spotter EVP → 独立顾问；2026-07 创办 Renaissance Geek（a16z 领投；Impeccable 即其开源设计 skills 系统）。（履历核：paulbakaus.com/about＋ai.engineer，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

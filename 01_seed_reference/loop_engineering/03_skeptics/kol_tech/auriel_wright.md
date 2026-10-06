@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # auriel_wright — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Auriel Wright——Harvard CS、YC W20 创始人；Google Brain（为 Search/Pixel/Waymo 供数的 ML 系统，NeurIPS 发表）→ Google DeepMind（Gemini RL/self-evolving systems 与后训练研究）；现为独立 AI builder／天使投资人／高管教练（旧金山＆亚特兰大，个人站自述）。（履历核：aurielws.github.io＋Latent Space，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # steve_yegge — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：40 年一线（Google/Sourcegraph）；Gas Town / Beads / Wyvern 作者
+> **背景**：Steve Yegge——40 年一线程序员：Amazon（90s）→ Google（“Platforms” rant 作者）→ Sourcegraph → 独立；Wyvern MMO 开发者、Beads 语言与 Gas Town agent 舰队作者（数十 agent 并行、日均 175+ commits——台账 §A）；博客 steve-yegge.blogspot.com。
 > **号召力**：① 实践定义者＋③ 舰队规模
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）

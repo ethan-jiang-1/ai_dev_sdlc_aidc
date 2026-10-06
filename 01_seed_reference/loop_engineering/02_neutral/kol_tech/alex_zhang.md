@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # alex_zhang — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Alex Zhang——MIT CSAIL 博士生（导师 Omar Khattab、Tim Kraska；NSF GRFP），Princeton CS 2024 届系第一名；《Recursive Language Models》（RLM）一作（arXiv 2512.24601，2025-12 挂出、NeurIPS 2026 接收、2026-01 刷屏）；GPU Mode 社区核心团队（KernelBench/KernelBot 等比赛组织者兼版主）；曾实习 Apple/Snap，2024-11 起 VantAI 研究员。（履历核：alexzhang13.github.io＋Latent Space，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

@@ -52,9 +52,8 @@ loop_engineering/
 ├── 00_debates_2026.md       # 跨人对峙层——10 条交锋轴完整链
 ├── 00_three_camp_landscape.md # ★ 三派地图与社区实况判读（结论入口）
 ├── 01_advocates/              # 推动派（发起者＋吹捧者）
-│   ├── README.md              #   KOL 侧素材索引
-│   ├── kol_scan.md   # KOL 深扫档案
-│   └── andrew_ng/             #   四件套卡（历史卡）
+│   ├── README.md（索引）＋四象限目录＋orgs/＋events/
+│   └── kol_tech/andrew_ng/    #   四件套卡（历史卡；原 kol_scan.md 已拆为一人一档）
 ├── 02_neutral/                # 中性派（边界与审慎）
 │   ├── README.md（索引）＋四象限目录＋orgs/＋events/
 └── 03_skeptics/               # 反对与怀疑派
@@ -72,6 +71,8 @@ loop_engineering/
 | **反对与怀疑派** | 给反证与批评（失败账本/质量退化/经济/人的角色） | [`03_skeptics/`](03_skeptics/README.md) |
 
 每派目录入口：`README.md`（索引）＋四象限目录（kol_tech/kol_product/community_tech/community_product）＋orgs/events。KOL 与群众证据分开标注，不并列引用。
+
+**KOL 独立档头部格式（2026-10-07 背景补齐批）**：身份（若有）→ **背景**（一人一段职业履历速写；来源随行括注「履历核」；两处与档内旧口径冲突的——sean_goedecke「Google SWE」、kyle_lee「个人实践者」——已在行内标注修正而非静默改写）→ 号召力（若有）→ 派别权威 → 人群类型。
 
 ## 与其他集合的关系
 

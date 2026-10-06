@@ -7,6 +7,7 @@ observation_date: 2026-10-06
 # thariq_shihipar — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 
+> **背景**：Thariq Shihipar——多伦多大学期间联合创办 Chime（2013 被 HubSpot 收购）→ HubSpot 工程师 → MIT Media Lab 研究生（共同创建开源学术出版平台 PubPub）→ 联合创办 YC 投资的 One More Multiverse；现 Anthropic Claude Code 团队 MTS，Claude Code 的 Ask User Question 工具引入者。（履历核：ai.engineer 讲者页，2026-10-07）
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 

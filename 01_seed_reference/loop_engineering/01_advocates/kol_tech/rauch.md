@@ -8,6 +8,7 @@ observation_date: 2026-10-06
 
 
 > **身份**：Vercel CEO
+> **背景**：Guillermo Rauch——智利裔；Socket.io 与 Mongoose 作者；2015 年创立 Vercel（原名 ZEIT），缔造 Next.js 与 Vercel AI SDK 生态——前端部署与全栈框架时代的平台级人物。
 > **号召力**：③＋④ 平台规模
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
