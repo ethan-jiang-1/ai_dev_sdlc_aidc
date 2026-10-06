@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 02_neutral/community_tech
+observation_date: 2026-10-06
+---
+
 # github — community_tech（专业程序员群众）·中性向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第三轮挖掘（2026-10-06）：机构采样快查与 GitHub 千人研究）**
 
 ### 二、GitHub × Yale 千人研究（全文实取：WP API ＋ Yale 报告页）
 

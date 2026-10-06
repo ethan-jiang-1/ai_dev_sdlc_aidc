@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # geoffrey_huntley — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 4 · Geoffrey Huntley：2026-06 后四篇（三条全文＋一条付费墙截断）
+## Geoffrey Huntley：2026-06 后四篇（三条全文＋一条付费墙截断）
 
 - 作者身份：独立研究者，Ralph Wiggum loop 原语作者（2025-07）；**注意 2026-07-24 宣布加入 Antithesis**（确定性测试/形式化验证公司）。人物卡：`01_seed_reference/voices/_raw_people/16_geoffrey_huntley.md`。
 - 号召力口径：①＋②＋③——Ralph 原语作者且被 LangChain/marmelab/OpenAI 引用；marmelab 审计把 Ralph 收录为 "back pressure engineering"；库内已升 §A。

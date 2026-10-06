@@ -1,6 +1,12 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
 
 
-### 推-18 · Dan McAteer（Attention Heads 作者，Latent Space 客座）《The Evolution of the Agent Harness》（2026-08-22）
+
+### Dan McAteer（Attention Heads 作者，Latent Space 客座）《The Evolution of the Agent Harness》（2026-08-22）
 
 - URL：https://www.latent.space/p/attention-interface （curl 实取全文）
 - 身份：AI 写作者/agentic engineer（③弱——**仅作专栏层样本，但机制综合价值高**）。
@@ -15,4 +21,3 @@
 - **最小主张**：模型/harness 双曲线从 bolt-on 到 co-training 到吸收-删除；harness 的终局是"人注意力策略面"——可中断性、可独自决策域须显式声明。
 - **派别适配**：**推动票（结构综合）**。
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**

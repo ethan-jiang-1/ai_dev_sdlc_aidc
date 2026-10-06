@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 03_skeptics/kol_tech
+observation_date: 2026-10-06
+---
+
 # paul_bakaus — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 疑-10 · Paul Bakaus（Impeccable 作者，前 Google DevRel）· Latent Space 访谈《Skill engineering and the case against one-shot AI design》（2026-07-02）
+### Paul Bakaus（Impeccable 作者，前 Google DevRel）· Latent Space 访谈《Skill engineering and the case against one-shot AI design》（2026-07-02）
 
 - URL：https://www.latent.space/p/skill-engineering-design （curl 实取全文；同日 AIEWF 现场报道 aiewf-daily-dispatch-agency 互证，https://www.latent.space/p/aiewf-daily-dispatch-agency 全文实取）
 - 身份：Impeccable（开源设计 skills 系统）作者（③＋④弱中）。

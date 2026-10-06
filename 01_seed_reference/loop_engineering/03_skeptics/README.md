@@ -19,38 +19,50 @@ reorg_date: 2026-10-06
 
 **派内最强证据形态**：一手失败账本（比观点性批评更硬）；引用时必须带单样本 caveat。
 
-## 素材索引
+## 素材索引（自动对齐，怀疑派）
 
-### 锚点
+### KOL·专业技术
 
-| 人物 | 派内角色 | 台账位置 | 素材在哪 |
-|---|---|---|---|
-| **Armin Ronacher** | **锚点·质量反证代表**（四篇一手链，见下表） | §A | 人物卡 [`_raw_people/17`](../../voices/_raw_people/17_armin_ronacher.md) ＋ [evidence-u Source 1](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-30-u-post-june-kols.md) ＋ [本派扫描档 S1–S4](kol_tech/ronacher.md |
+| 文件 | 首条内容 |
+|---|---|
+| [`auriel_wright`](kol_tech/auriel_wright.md) |  |
+| [`chawla_koul`](kol_tech/chawla_koul.md) |  |
+| [`dotta`](kol_tech/dotta.md) |  |
+| [`jack_cable`](kol_tech/jack_cable.md) |  |
+| [`mario_zechner`](kol_tech/mario_zechner.md) |  |
+| [`nick_heiner`](kol_tech/nick_heiner.md) |  |
+| [`noam_brown`](kol_tech/noam_brown.md) |  |
+| [`paul_bakaus`](kol_tech/paul_bakaus.md) |  |
+| [`ronacher`](kol_tech/ronacher.md) | Armin Ronacher《The Tower Keeps Rising》（2026-07-13） |
 
-**Ronacher 四篇一手链（2026-06→09，全部逐字取得）**：
+### KOL·产品背景
 
-| 篇 | 日期 | 反证要点 |
-|---|---|---|
-| 《The Coming Loop》 | 2026-06-23 | 三条界限：长寿命/品味密集任务不宜全放权；判据只需"足以驱动下一轮"不必二值；人的角色被压缩是真实成本 |
-| 《Better Models: Worse Tools》 | 2026-07-04 | SOTA 模型工具调用反而更差＋harness 锁定（"the more every other harness will have to inherit its quirks"）——自建循环路线的地基反证 |
-| 《The Tower Keeps Rising》 | 2026-07-13 | 摩擦＝同步理解的载体（"a useful signal is gone"）；**理解坍塌后系统不会立即失败**——"The tower does not fall, it just keeps rising"（"把控性差且难察觉"的机制命名） |
-| 《Astra for Coding》 | 2026-09-07 | 内卷论原句＋35h/~$1200/79 commits 白卷账本＋**无人值守失控机制**："when left unattended, it *will* keep going… even if it burns through an entire subscription" |
+| 文件 | 首条内容 |
+|---|---|
+| [`dwarkesh`](kol_product/dwarkesh.md) |  |
 
-### 部分票（本体在别派，反对方向的一手证据在此）
+### 组织
 
-| 人物 | 部分票方向 | 素材 |
-|---|---|---|
-| **Simon Willison**（中性偏怀疑） | 门槛："make software engineering **even harder**… requires extraordinary discipline and knowledge"（09-24）；成本："hard budget caps need to be the default"（10-03） | [`people/willison.md`](../02_neutral/kol_tech/willison.md |
-| **Gergely Orosz**（中性偏怀疑） | 价值/新瓶旧酒：07-14 调查（cron 旧物、tokenmaxxing、"Was looping a hack?"） | [`../02_neutral/people/orosz.md`](../02_neutral/kol_tech/orosz.md |
-| **Mitchell Hashimoto**（中性·限速） | "excruciating" 采纳代价；明确不跑通宵循环/多 agent | [`../02_neutral/people/hashimoto.md`](../02_neutral/kol_tech/hashimoto.md |
+| 文件 | 首条内容 |
+|---|---|
+| [`amazon`](orgs/amazon.md) |  |
+| [`microsoft`](orgs/microsoft.md) |  |
 
-### 候选与轨迹
+### 群众·专业程序员
 
-| 条目 | 状态 | 素材 |
-|---|---|---|
-| **Peter Steinberger**（旧立场，2025-12-28 反自动编排） | 轨迹注记——本体在推动派；其 2026-07-18 "Loop 时代终结"推文仅媒体转述（InfoQ/36kr，未核原文） | 扫描档负结论节＋中性派档负结论 #2 |
-| **机构旁证（不入册）** | arXiv:2608.21884：36,645 仓库仅 **0.59%** 确认跑自主循环、8M token/48h 失控案例、"comprehension debt / cognitive surrender" | 扫描档·机构研究旁证节 |
+| 文件 | 首条内容 |
+|---|---|
+| [`bilibili`](community_tech/bilibili.md) |  |
+| [`github`](community_tech/github.md) | 二、GitHub：故障清单（官方仓库社区反馈） |
+| [`hn`](community_tech/hn.md) | 一、HN 热度全在失控/成本侧 |
+| [`reddit`](community_tech/reddit.md) | 三、Reddit / 补位通道 / 机构层 |
+| [`v2ex`](community_tech/v2ex.md) |  |
+| [`zh_dev`](community_tech/zh_dev.md) | 四、中文圈 |
 
-> ⚠️ **易误归者**：**DHH**（2023–2025 头号抵制者）2026 已翻多（"pencils down"，归 [推动派相邻位](../01_advocates/README.md)）；
-> **Uncle Bob**（"机器纪律替代人工 review"）是激进多派，非反对派；
-> 判派依据是**当前一手表态**，不是历史印象。
+### 群众·非专业
+
+| 文件 | 首条内容 |
+|---|---|
+| [`hn`](community_product/hn.md) |  |
+| [`producthunt`](community_product/producthunt.md) |  |
+| [`reddit`](community_product/reddit.md) |  |

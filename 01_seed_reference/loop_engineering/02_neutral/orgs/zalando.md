@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # zalando — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 中-1 · Zalando《Agentic Engineering at Zalando: a snapshot》（2026-08-14）
+### Zalando《Agentic Engineering at Zalando: a snapshot》（2026-08-14）
 
 - 公司/作者：Zalando（欧洲时尚电商，甲方）；Bartosz Ocytko（Executive Principal Engineer）
 - URL/日期：https://engineering.zalando.com/posts/2026/08/agentic-engineering-at-zalando-a-snapshot.html ｜ Posted on Aug 14, 2026（页面实取）

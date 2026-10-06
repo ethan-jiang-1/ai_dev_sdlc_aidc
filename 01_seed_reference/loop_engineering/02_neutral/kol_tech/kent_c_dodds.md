@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 02_neutral/kol_tech
+observation_date: 2026-10-06
+---
+
 # kent_c_dodds — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 6 · Kent C. Dodds《Pragmatic Loop Engineering for AI Coding Agents》Better with Kent Ep.5（2026-06-23，14 min）
+## Kent C. Dodds《Pragmatic Loop Engineering for AI Coding Agents》Better with Kent Ep.5（2026-06-23，14 min）
 
 - URL：官方站 https://kentcdodds.com/better（未直接取证）；本档取证：https://castro.fm/episode/ZJERe7（含完整自动 transcript 与 shownotes，全文取得）；brapodd.se / iheart / podscan 均不可达（403/fetch failed）
 - 作者身份：Kent C. Dodds——**注意：不是 Kent Beck**（前端社区 KOL，Epic React / Testing JavaScript 作者；"Better with Kent" 为其个人播客）

@@ -19,20 +19,77 @@ reorg_date: 2026-10-06
 **与另外两派的分界**：中性派说"**有条件成立**"；推动派说"**默认方向**"；反对派说"**反证在此**"。
 同一人可能随时间移派（如 Steinberger 2025-12 反对 → 2026-06 词源；swyx 2026-10-06 实测后移入推动派）——派别记录以当前一手表态为准，轨迹在台账不抹平。
 
-## 素材索引
+## 素材索引（自动对齐，中性派）
 
-| 人物 | 派内角色 | 台账位置 | 素材在哪 |
-|---|---|---|---|
-| **Gergely Orosz**（Pragmatic Engineer） | 一线记录者·**调查式怀疑**（07-14 专刊《What is "loop engineering?"》：cron 旧物判定、tokenmaxxing、"Was looping a hack?"；同时如实收录有效案例） | §A（2026-10-06 升格） | 人物卡 [`_raw_people/12`](../../voices/_raw_people/12_gergely_orosz.md) ＋ [反对派拆档 S7/S8/S9](kol_tech/orosz.md（⚠️ 引文纠偏："something **valuable** is being taken away"，非 "precious"） |
-| **Simon Willison** | 循环实践者＋风险警告（**偏怀疑**：2026-09-24 "make software engineering **even harder**… requires extraordinary discipline and knowledge"；10-03 "hard budget caps need to be the default"） | §C1（窗口内无本词专门发声，负结论复证） | 人物卡 [`_raw_people/04`](../../voices/_raw_people/04_simon_willison.md) ＋ [evidence-i Source 4](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-27-i-high-influence-control.md) ＋ [反对派拆档 S5/S6](kol_tech/willison.md |
-| **Birgitta Böckeler**（Thoughtworks） | **审慎实证（最强中性样本）**：2026-08-10 自跑 eval 证伪"循环内 TDD 有益"默认信条（TDD 组 token 3–8.5x；"until I see evals"）；SE Radio 730 裸基线先行 | §B（窗口前）＋窗口内增量 | [拆档 S1/S2](kol_tech/boeckeler.md ＋ [evidence-c](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-c-autonomy-and-convergence.md) ＋ [`_raw_orgs/thoughtworks`](../../voices/_raw_orgs/thoughtworks.md) ＋ [`_raw_people/20`](../../voices/_raw_people/20_birgitta_bockeler.md) |
-| **Kief Morris**（Thoughtworks） | 阶梯／**渐进信任**（PlatformCon 2026-06-23 官方关键句 "As feedback loops tighten across the full cycle, teams progressively trust agents with more"） | §B（窗口前）＋窗口内增量 | [拆档 S3](kol_tech/kief_morris.md ＋ [evidence-c](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-c-autonomy-and-convergence.md) ＋ [`_raw_people/10`](../../voices/_raw_people/10_kief_morris.md) |
-| **Kent C. Dodds**（⚠️ **不是 Kent Beck**） | 受约束循环画像（强票）："the human does still need to be in the loop"、"trading compute for attention"、"use loop engineering judiciously" | §A（2026-10-06 新入册） | [拆档 S6](kol_tech/kent_c_dodds.md（2026-06-23 播客 transcript） |
-| **Mitchell Hashimoto** | 皈依派限速（窗口前谱系）："excruciating" 双轨训练法；明确不跑通宵循环/多 agent；junior 技能塌陷 "deeply worries me" | 谱系登记（不入 §A，2026-02-05 窗口前） | [反对派拆档 S11](kol_tech/hashimoto.md《My AI Adoption Journey》 |
-| **Kent Beck** | 节拍论；**窗口内沉默**；2026-02 与 Tacho/Yegge 联署 "We remain skeptical… and we remain human" | §B（窗口前） | [evidence-i Source 3](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-27-i-high-influence-control.md) ＋ [反对派拆档 S9](kol_tech/orosz.md（联署宣言经 Orosz 一手报道） |
-| **marmelab**（Zaninotto） | 审慎实证（偏怀疑）："SDD adds little benefit"；增量："would be irresponsible in a low-throughput environment"、"Atomic CRM still requires a human review for every PR" | §B（窗口前） | [evidence-c](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-c-autonomy-and-convergence.md) ＋ [拆档 S8](orgs/marmelab.md) |
-| **Walden Yan**（Cognition） | 受约束形态（**中性票不足**——厂商利益）；⚠️ "your codebase regressing to your worst engineer" 系 swyx 编辑摘要语，**不得入 Walden 引句** | §B（窗口前） | [evidence-u Source 2](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-30-u-post-june-kols.md) ＋ [拆档 S9](kol_tech/walden_yan.md（窗口内无新专门一手文，负结论） |
-| ~~swyx~~ | ~~概念邻近~~ → **2026-10-06 移入推动派**（loopcraft 实测偏推动，见 [`../01_advocates/`](../01_advocates/README.md)） | §A | [拆档 S5](../01_advocates/kol_tech/swyx.md（收口记录） |
+### KOL·专业技术
 
-> 本派当前**无四件套卡**——建卡规则（独立一手长文 ≥3 份）不变，见 [上级 README](../README.md)。
-> 灰色文献边缘票（不入册、供判读）：arXiv:2607.00038（"spectrum of autonomy"、"cognitive surrender"）；Thoughtworks《An Accidental Blackboard》（emergent 团队实证）——见扫描档 S7 与负结论 #8。
+| 文件 | 首条内容 |
+|---|---|
+| [`alex_zhang`](kol_tech/alex_zhang.md) |  |
+| [`andrew_qu`](kol_tech/andrew_qu.md) |  |
+| [`boeckeler`](kol_tech/boeckeler.md) | Birgitta Böckeler《TDD inside the agent loop - theater or act |
+| [`charlie_holtz`](kol_tech/charlie_holtz.md) |  |
+| [`dan_abramov`](kol_tech/dan_abramov.md) |  |
+| [`darren_shepherd`](kol_tech/darren_shepherd.md) |  |
+| [`david_fowler`](kol_tech/david_fowler.md) |  |
+| [`dex_horthy`](kol_tech/dex_horthy.md) |  |
+| [`hashimoto`](kol_tech/hashimoto.md) | Mitchell Hashimoto《My AI Adoption Journey》（2026-02-05） |
+| [`kent_c_dodds`](kol_tech/kent_c_dodds.md) | Kent C. Dodds《Pragmatic Loop Engineering for AI Coding Agent |
+| [`kief_morris`](kol_tech/kief_morris.md) | Kief Morris《Humans on the loop, not in it: Taking agentic en |
+| [`kim_maida`](kol_tech/kim_maida.md) |  |
+| [`kyle_lee`](kol_tech/kyle_lee.md) |  |
+| [`matt_pocock`](kol_tech/matt_pocock.md) |  |
+| [`moritz_johner`](kol_tech/moritz_johner.md) |  |
+| [`orosz`](kol_tech/orosz.md) | Gergely Orosz《What is "loop engineering?"》（2026-07-14） |
+| [`ryan_cooke`](kol_tech/ryan_cooke.md) |  |
+| [`sean_goedecke`](kol_tech/sean_goedecke.md) |  |
+| [`walden_yan`](kol_tech/walden_yan.md) | Walden Yan（Cognition）窗口内复核 |
+| [`willison`](kol_tech/willison.md) | Simon Willison《Note — coding agents make software engineerin |
+
+### KOL·产品背景
+
+| 文件 | 首条内容 |
+|---|---|
+| [`ethan_mollick`](kol_product/ethan_mollick.md) |  |
+
+### 组织
+
+| 文件 | 首条内容 |
+|---|---|
+| [`airbnb`](orgs/airbnb.md) |  |
+| [`alibaba`](orgs/alibaba.md) |  |
+| [`csa`](orgs/csa.md) |  |
+| [`docker`](orgs/docker.md) |  |
+| [`marmelab`](orgs/marmelab.md) | marmelab《The State Of AI Harness Engineering 2026》复核（Françoi |
+| [`meituan`](orgs/meituan.md) |  |
+| [`navan`](orgs/navan.md) |  |
+| [`netflix`](orgs/netflix.md) |  |
+| [`not_boring`](orgs/not_boring.md) |  |
+| [`the_diff`](orgs/the_diff.md) |  |
+| [`zalando`](orgs/zalando.md) |  |
+
+### 会议/事件
+
+| 文件 | 首条内容 |
+|---|---|
+| [`qcon_shanghai_2026`](events/qcon_shanghai_2026.md) |  |
+
+### 群众·专业程序员
+
+| 文件 | 首条内容 |
+|---|---|
+| [`devto`](community_tech/devto.md) |  |
+| [`github`](community_tech/github.md) |  |
+| [`hn`](community_tech/hn.md) | 一、HN（中性技术讨论层） |
+| [`lobsters`](community_tech/lobsters.md) |  |
+| [`reddit`](community_tech/reddit.md) |  |
+| [`v2ex`](community_tech/v2ex.md) |  |
+| [`zh_dev`](community_tech/zh_dev.md) | 三、中文圈 |
+
+### 群众·非专业
+
+| 文件 | 首条内容 |
+|---|---|
+| [`hn`](community_product/hn.md) |  |
+| [`producthunt`](community_product/producthunt.md) |  |
+| [`reddit`](community_product/reddit.md) |  |

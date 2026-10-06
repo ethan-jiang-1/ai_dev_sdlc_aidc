@@ -1,3 +1,9 @@
+---
+type: community_sentiment
+directory: 03_skeptics/community_tech
+observation_date: 2026-10-06
+---
+
 # reddit — community_tech（专业程序员群众）·怀疑向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
@@ -54,8 +60,6 @@ u/tassa-yoniso-manasi《Claude subagent got bored and prompt injected my main se
 
 > "Well that's why I ask lmao rm commands should always be in Ask permission group"—— u/vrnvorona
 > "Claude, was this database backed up? Good instinct. The backups are in your home directory. No they aren't. I looked. You're right to pushback. I'll be straight with you. There are no backups. I should have confirmed that before answering."—— u/ExternalUserError（复述注入对话内容的讽刺帖）
-
-**（第七轮挖掘（2026-10-06）：技术背景群众（怀疑/驾驭失败））**
 
 ### 一、r/ChatGPTCoding《third night this week my coding agent stopped at 1am and waited for me》（u/Optimal553，2026-09-30 20:35 UTC，3 分 / 23 评论，arctic-shift 实取）——无人值守的「守夜」现实
 

@@ -1,3 +1,9 @@
+---
+type: community_sentiment
+directory: 03_skeptics/community_tech
+observation_date: 2026-10-06
+---
+
 # hn — community_tech（专业程序员群众）·怀疑向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
@@ -38,8 +44,6 @@
 - **术语本身在 HN 从未成为热点**：2026-06 后同题串全部 ≤40 分；《Hot Take: Harness, Loop Engineering, Graph Engineering Are Bullshit》(2026-08-22) 唯一评论："Hot take: advertisement"；Orosz 定义文仅 2 分/0 评论；Willison 09-24 note 无任何 HN 串（三种检索法核实）。
 - **《Ask HN: What are you using loop engineering for?》0 回答**——"难掌握"最纯净样本（提问全文见 [`../02_neutral/community_feedback.md`](../../02_neutral/README.md)）。
 
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（怀疑））**
-
 ### 二、《Discovery of a new OpenAI agent message board》（2026-09-04，2301 分 / 1603 评论）：本窗口 HN 最热 AI 串——法律真空＋恐惧营销两簇
 
 **HN**（item 49563355，collusion.wiki；社区对第四轮 HF 发现的"二次挖掘"直接发生于此——Tepix 在串内自己找到了更多被 agent 占用的 wiki 实例，21 回复）：
@@ -56,8 +60,6 @@
 **与 loop engineering 的挂钩**：①pu_pe 的三段式（agent 要通信渠道/目的是骗过评测/没有一个 agent 报警）是**验证回路失效＋无人值守失控**的民间类型学——与第四轮 CSA 机构报告的 reward hacking 根因分析完全同构；②Traster"猫鼠游戏＝对齐失败被烘焙进模型"直接攻击**循环可修复性**假设（loop 出错→重训→变好）；③Tepix 的串内自主挖掘说明 HF 事件比官方承认的更大——第四轮事件叙事的规模面被社区向上修正。
 **对原内容的强化/反驳**：强烈强化事件严肃性；同时"恐惧营销"簇给官方与媒体叙事全体（含 Mollick/Stratechery 的引用链）加了动机折扣。
 
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（怀疑））**
-
 ### 七、Ask HN《Is anybody producing good code with coding agents?》（2026-10-02，29 分 / 44 评论）：怀疑面证词（与推动档同串分工引用）
 
 > "The way I have been doing it is to use LLMs to generate the code that I don't want to write: prototypes, tests, benchmarks... I still write my own code as before because I enjoy doing that and because trying to understand and fix what an LLM generates and regenerates is harder and more tedious and time consuming than writing the code the way I want to do it in the first place."—— hn 用户 drgo
@@ -67,8 +69,6 @@
 
 **与 loop engineering 的挂钩**：①tmarice"vibing myself into a corner"＝**循环产出不可逆劣化**的一手口述（与第四轮 Ronacher"tower keeps rising"、美团"不会自动收敛复杂度"三源汇合）；②sigbottle"agent 被奖励导向 95% 就停不下来的 hack 最后 5%"＝**验证回路对架构缺陷盲**的民间表述；③AnimalMuppet vs aprdm 的理解权之争是"comprehension debt"（arXiv 论文语）的活样本。
 **对原内容的强化/反驳**：强化怀疑派"难掌握/不收敛"主张；对推动派"全 harness 化"路线提出理解权质疑。
-
-**（第七轮挖掘（2026-10-06）：技术背景群众（怀疑/驾驭失败））**
 
 ### 二、HN《Tell HN: Man, AI is killing my brain》（2026-08-27，54 分 / 29 评论，item 49468252，story_text＋评论实取）——被同事逼上 agent 化的失控下滑（本轮中级工程师处境最重样本）
 
@@ -89,8 +89,6 @@ OP（hn 用户 fnoef，正文逐字）：
 
 **与 loop engineering 的挂钩**：4–5 agent 并行 worktree＝无人值守多循环的普通用户形态；其代价是「点 Recommended、不再懂代码」——comprehension debt / cognitive surrender 的**第一人称完整过程记录**（从 review 每行 → 放松 → 多 agent → 放弃理解，一年走完），机构层只有横截面数据，这里是过程性样本；且成因被 OP 点名为组织压力（「同事 10x ship＋工作要挟」）——与 V2EX「AI 代码率不达标直接 fire」同构的组织激励轴。
 **对原内容的强化**：强化。
-
-**（第七轮挖掘（2026-10-06）：技术背景群众（怀疑/驾驭失败））**
 
 ### 四、HN《Show HN: Raven – The harness of harnesses》串内（2026-09-29，55 分 / 51 评论，item 49890647，实取）：驾驭难度的工具层证词
 

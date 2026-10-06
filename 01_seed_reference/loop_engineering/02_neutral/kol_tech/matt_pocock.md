@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 02_neutral/kol_tech
+observation_date: 2026-10-06
+---
+
 # matt_pocock — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 中-9 · Matt Pocock · Latent Space 访谈《The /wayfinder Skill: Navigating the "Fog of War" of Planning》（2026-08-20）
+### Matt Pocock · Latent Space 访谈《The /wayfinder Skill: Navigating the "Fog of War" of Planning》（2026-08-20）
 
 - URL：https://www.latent.space/p/wayfinder-skill （curl 实取全文）
 - 身份：TypeScript 教育者/AI coding dictionary 作者（③弱——实践者层样本）。

@@ -1,3 +1,9 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech/andrew_ng
+observation_date: 2026-10-06
+---
+
 # Andrew Ng：逐字引句
 
 > 全部引句取自 `raw_ng_x_post_en.md`（英文原文，2026-06-30，The Batch 交叉发布到 X）。

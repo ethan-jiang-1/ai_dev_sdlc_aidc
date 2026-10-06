@@ -1,8 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # tessl — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-## Source 4 · Tessl（Dru Knox / Simon Maple）· 软件工厂叙事——播客两期＋QCon 摘要（2026-06-30 / 09-02 / 12 月）
+## Tessl（Dru Knox / Simon Maple）· 软件工厂叙事——播客两期＋QCon 摘要（2026-06-30 / 09-02 / 12 月）
 
 - URL：https://tessl.io/podcast/112 （"The Tessl Agent: Build Your Software Factory on Autopilot"，Dru Knox，2026-06-30，页面摘要取得）；https://tessl.io/podcast/121 （"850 PRs a Week: How Tessl Runs a Software Factory"，Dru Knox，2026-09-02，页面摘要取得，transcript 经 podwise 两试均失败）；QCon AI New York 2026 官方议程摘要 https://newyork.qcon.ai/presentation/newyork2026/software-factory-build-report-what-worked-what-broke-what-id-do-again （Simon Maple，会议 2026-12-15/16，**摘要全文取得**）｜ 作者身份：Dru Knox，Tessl Head of Product；Simon Maple，Tessl Head of DevRel、Java Champion
 - 来源类型：厂商一手播客（页面级摘要，正文未取得）＋主流工程会议官方议程摘要（一手，本人署名，全文取得）

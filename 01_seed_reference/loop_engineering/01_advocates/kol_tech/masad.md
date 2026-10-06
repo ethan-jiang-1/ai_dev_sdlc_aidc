@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # masad — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第三轮挖掘（2026-10-06）：新 KOL）**
-
-### 增量 J · Amjad Masad（Replit CEO）· 窗口内个人署名内容三路（含分档标注）
+### Amjad Masad（Replit CEO）· 窗口内个人署名内容三路（含分档标注）
 
 - **J1（半一手：经主持人转述）**：SaaStr AI 2026 现场（页内日期 2026-06-22/25；https://www.saastr.com/amjad-masad-and-me-at-saastr-ai-2026-the-agents-we-actually-built-and-what-replits-founder-thinks-comes-next/ ，Jason Lemkin 执笔，curl 实取全文）：
   - "Amjad put it"（Lemkin 转述其 nightly 自改进 agent）：**"it's not improving its weights, it's improving its context, which matters just as much."**——"每夜读全量 trace → 生成 prompt 修改 PR → A/B 上线 → 回环"的自改进外环叙事。

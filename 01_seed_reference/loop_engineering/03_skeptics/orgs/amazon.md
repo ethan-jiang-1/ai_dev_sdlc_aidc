@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 03_skeptics/orgs
+observation_date: 2026-10-06
+---
+
 # amazon — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 疑-11 · Gregor Vand & Sean Falconer · Software Engineering Daily #SED News《The Kimi Moment, Runaway AI, and Tokenmaxxing》（2026-08-11，官方 transcript .txt 实取）
+### Gregor Vand & Sean Falconer · Software Engineering Daily #SED News《The Kimi Moment, Runaway AI, and Tokenmaxxing》（2026-08-11，官方 transcript .txt 实取）
 
 - URL：https://softwareengineeringdaily.com/podcasts/sed-news-the-kimi-moment-runaway-ai-and-tokenmaxxing/ ；transcript：https://softwareengineeringdaily.com/wp-content/uploads/2026/08/SED1953-Transcript.txt （curl 实取）
 - 身份：SED 常驻主持人档（②——媒体层，非 KOL；价值在事实链而非观点）。

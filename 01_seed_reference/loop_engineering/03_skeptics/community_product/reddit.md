@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 03_skeptics/community_product
+observation_date: 2026-10-06
+---
+
 # reddit — community_product（非专业群众）·怀疑向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（翻车/失控面））**
 
 ### 一、r/Entrepreneur 1wp01iz（2026-09-24，u/kueowirnzcd）怀疑簇：《Are you using one LLM or an army of agents?》——多 agent 交接翻车的民间白描
 
@@ -20,8 +24,6 @@
 - **与 loop engineering 的挂钩**：怀疑面主证词——小企业主用**"电话游戏/交接调试/第二份工作"**描述多 agent 循环的失稳，与 graph/loop 治理的"交接契约"命题同构；"routines on a schedule"是他们自发收敛出的**最小循环形态**（单 agent＋定时任务），等于民间版"缩短循环、减少交接"。反面钩：失效归因落在 handoff 不落在 loop design。
 - **对原内容的强化/削弱**：强化（多 agent 协同的失稳证词首次来自纯商业人群而非工程师；与正方向楼层〔数字工头、gate my agents〕并读构成该人群完整态度场）。
 
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（翻车/失控面））**
-
 ### 二、r/ProductManagement 1wtwmx1 串（2026-09-30）怀疑面：非技术 CEO 的 vibe coding 越权与"PM 唯一在环"的反驳
 
 - URL：https://www.reddit.com/r/ProductManagement/comments/1wtwmx1/ （arctic-shift 实取评论）
@@ -32,8 +34,6 @@
 - 非 KOL 判断依据：r/ProductManagement 常规评论者，无分发。
 - **与 loop engineering 的挂钩**：失控面——agent＋非技术权力者的组合**绕过工程验证直接进 PR 流**（"It works on my machine"）；poodleface 的反驳把"PM 是唯一 human-in-the-loop"定性为 toxic belief，即产品人把自身当环上唯一节点本身就是失控构型。正面钩（治理面）：验证权不可从工程侧整体移除——这是停止条件轴的民间表述。
 - **对原内容的强化/削弱**：削弱（与推动档第二节同串的质量乐观并读：同一家公司语境，PM 看到质量变好、工程师看到验证被绕过——期望差样本）。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（翻车/失控面））**
 
 ### 五、r/ProductManagement 1wgfin0 串（2026-09-14，u/KookyOky）怀疑面：《How has AI (Claude Code, Cursor, etc.) completely rewritten your software delivery workflow?》——PM 侧对 AI 驱动交付的集体反噬
 

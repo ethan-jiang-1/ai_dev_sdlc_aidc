@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # lance_martin — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 推-3 · Lance Martin（Anthropic）· AIEWF 2026 Workshop《Claude for long-horizon tasks》（视频上传 2026-07-22）
+### Lance Martin（Anthropic）· AIEWF 2026 Workshop《Claude for long-horizon tasks》（视频上传 2026-07-22）
 
 - URL：https://ai.engineer/talks/9QebvrrY3KY-claude-long-horizon-tasks （curl 实取全文）
 - 身份：Anthropic（Managed Agents 方向）。

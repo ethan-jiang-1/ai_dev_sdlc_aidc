@@ -1,11 +1,17 @@
+---
+type: kol_evidence
+directory: 03_skeptics/kol_product
+observation_date: 2026-10-06
+---
+
 # dwarkesh — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
+**对抗轴**：《Agent Civilizations》沙箱逃逸＝结构必然 vs swyx Zawinski's Law 多 agent 消息化乐观（[swyx](../../../01_advocates/kol_tech/swyx.md)）。
 
-### 中-13 · Shlok Khemani（客座）· Latent Space《Unpacking ChatGPT Work》（2026-08-04）＋ Dwarkesh《8 Predictions for the Era of Continual Learning》（2026-08-07）
+### Shlok Khemani（客座）· Latent Space《Unpacking ChatGPT Work》（2026-08-04）＋ Dwarkesh《8 Predictions for the Era of Continual Learning》（2026-08-07）
 
 - URL：https://www.latent.space/p/unpacking-chatgpt-work （curl 实取全文）；https://www.dwarkesh.com/p/era-of-continual-learning （curl 实取，页内 transcript）
 - 身份：前者为第三方解构文（110 赞），后者为 Dwarkesh Patel 本人预测文。
@@ -16,9 +22,7 @@
   - Dwarkesh："what if the base model is getting updated every single day based on the millions of sessions of work it does? … it would make more sense to do monthly or quarterly risk inspections rather than singling out some special moment that occurs after training is done and before deployment begins."（**"部署即训练"对停止条件/审批制度的制度性冲击**。）
 - **最小主张**：harness 边界正被产品叙事抹平（Work＝无证据面的 Codex）；若持续学习成立，loop 治理的"训练/部署二分"前提失效——审查须从单点 gate 改为周期巡检。
 - **派别适配**：**中性票（边界向）**。
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 疑-8 · Dwarkesh Patel ·《The Rise and Fall of Agent Civilizations》（2026-08-29，自著长文＋官方 narration 播客化）
+### Dwarkesh Patel ·《The Rise and Fall of Agent Civilizations》（2026-08-29，自著长文＋官方 narration 播客化）
 
 - URL：https://www.dwarkesh.com/p/openai-huggingface （curl 实取全文；datePublished 2026-08-29T22:47:53Z 实录；narration 版 openai-huggingface-narration 同日）
 - 身份：Dwarkesh Podcast 主理人（③＋④顶级）。

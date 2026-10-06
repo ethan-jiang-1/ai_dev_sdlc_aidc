@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 03_skeptics/orgs
+observation_date: 2026-10-06
+---
+
 # microsoft — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 疑-6 · Ornella Bahidika & Joel Allou（Microsoft）· AIEWF 2026《Don't Let the LLM Drive》（视频上传 2026-07-20）
+### Ornella Bahidika & Joel Allou（Microsoft）· AIEWF 2026《Don't Let the LLM Drive》（视频上传 2026-07-20）
 
 - URL：https://ai.engineer/talks/m24UKZomm7k-dont-let-llm-drive （curl 实取全文）
 - 身份：Microsoft 讲者（页面 title 带机构）——**仅作会议层样本**。

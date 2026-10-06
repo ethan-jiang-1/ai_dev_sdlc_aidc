@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_product
+observation_date: 2026-10-06
+---
+
 # nadella — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）
 
-## Source 10 · Satya Nadella · "learning loops" 组织利害论（经 X 转引）
+## Satya Nadella · "learning loops" 组织利害论（经 X 转引）
 
 - URL：原始 X 帖（x.com/satyanadella/status/2066182223213293753，本环境不可达）；经 LangChain 官方博客逐字转引（《The Art of Loop Engineering》结尾，全文取得）
 - 来源类型：X 内容经厂商官方博客转引（**经 X 转引**）
@@ -19,7 +25,7 @@
 
 ---
 
-## 增量 E · Satya Nadella —— 部分解决（X 长文标题/日期/热度坐实；全文经两条独立转译链取得；X 原文仍不可达）
+## Satya Nadella —— 部分解决（X 长文标题/日期/热度坐实；全文经两条独立转译链取得；X 原文仍不可达）
 
 - 人物：Microsoft 董事长/CEO ｜ 载体：X 长文（article），id 2065582894790365184，随帖 https://x.com/satyanadella/status/2066182223213293753 ｜ 日期：2026-06-14（ThreadReader 页 "Jun 14"；机器之心 06-15 文称 "Last night"）。
 - 一手近邻（ThreadReader 实取全文）：帖子开头逐字 **"A frontier without an ecosystem is not stable"**＋"I've been thinking a lot about the future of the firm in an AI-driven economy. This transition is different than any previous platform shift. In the past, we used digital systems to enhance human…"（正文转入 X article，ThreadReader 不载）。
@@ -39,7 +45,7 @@
 - **派别适配**：**证据升级但派别判定仍克制**——"learning loop＝企业新知识产权/复利护城河"的完整论述是真实的（长文级而非碎片级），足以入时间线与"被引用"层；但全部经转译链，无本人一手页面，继续不单独立票、判派观察位维持。
 
 
-### 推-20 · Satya Nadella（Microsoft CEO）· X 长文经 Latent Space AINews 实转（2026-06-16）
+### Satya Nadella（Microsoft CEO）· X 长文经 Latent Space AINews 实转（2026-06-16）
 
 - URL：https://www.latent.space/p/ainews-satya-on-loopcraft-building （curl 实取全文；本期为 AINews 付费档，正文 Satya 引文段落完整在页）
 - 身份：在册 Source 10（"部分解决"）；**本条为该来源的增量解决**：Satya 长文的英文引文现经 swyx AINews 实转取得（第三条独立转译链，且与 Source 1 loopcraft 直接同刊）。

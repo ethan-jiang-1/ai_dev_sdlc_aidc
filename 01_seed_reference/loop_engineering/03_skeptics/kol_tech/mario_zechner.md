@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 03_skeptics/kol_tech
+observation_date: 2026-10-06
+---
+
 # mario_zechner — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 疑-7 · Mario Zechner（Pi 创作者，Earendil；与在册 Armin Ronacher 同团队）· The Weekly Dev's Brew Ep19《Code Isn't Free》（2026-06-12）
+### Mario Zechner（Pi 创作者，Earendil；与在册 Armin Ronacher 同团队）· The Weekly Dev's Brew Ep19《Code Isn't Free》（2026-06-12）
 
 - URL：https://www.wordman.dev/podcast/mario-zechner-pi-coding-agent/ （curl 实取；页内自带 Key Takeaways＋Pull Quotes＋**全 transcript**，主持人整理档＋逐字稿双载体；podigee feed 证实发布日 Fri, 12 Jun 2026）
 - 身份：Pi（极简可自改 coding agent）创作者、libGDX 作者——**运动核心工具的作者本人在推派主场词汇上的系统性反驳**；上轮四集清单（Cramer/Horthy/Mulroy/Shepherd）漏收本集，本轮补齐。

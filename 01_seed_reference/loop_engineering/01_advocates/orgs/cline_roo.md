@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # cline_roo — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第六轮挖掘（2026-10-06）：开源框架与治理工具）**
-
-### 4. Cline / Roo Code——auto-approve 分档与 checkpoint 双版本
+### Cline / Roo Code——auto-approve 分档与 checkpoint 双版本
 
 - **Cline auto-approve（docs.cline.bot/features/auto-approve 实取）**。分档表逐字：Read project files／Read all files／Edit project files／Edit all files／Execute safe commands／Execute all commands／Use the browser／Use MCP servers／Enable notifications；约束逐字："'Read all files' and 'Edit all files' only extend the base toggle. If the base toggle is off, the 'all files' option does nothing." 长任务哨兵逐字："when an auto-approved terminal command has been running for **30 seconds**"（OS 通知）。YOLO 档逐字："YOLO mode is Auto Approve on steroids. Check the box and Cline auto-approves everything: file changes, terminal commands, browser actions, MCP tools, **and mode transitions (Plan to Act)**."
   **挂钩：预算与熔断**（自主度分档的产品化：8 档权限 × 全开终档）。

@@ -1,8 +1,12 @@
+---
+type: event_evidence
+directory: 02_neutral/events
+observation_date: 2026-10-06
+---
+
 # qcon_shanghai_2026 — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
-
-**（第三轮挖掘（2026-10-06）：新 KOL）**
 
 ### Source H · QCon 上海 2026（中文议题——非英语层，边界登记不入英语 KOL 册）
 

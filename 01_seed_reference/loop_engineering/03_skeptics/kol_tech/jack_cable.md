@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 03_skeptics/kol_tech
+observation_date: 2026-10-06
+---
+
 # jack_cable — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 疑-2 · Jack Cable（AI 安全研究者；讲中自述 "the work that I was doing in government around the Secure by Design initiative"；曾报告数百个漏洞）· AIEWF 2026《The AI bugpocalypse is here. Now what?》（视频上传 2026-07-12）
+### Jack Cable（AI 安全研究者；讲中自述 "the work that I was doing in government around the Secure by Design initiative"；曾报告数百个漏洞）· AIEWF 2026《The AI bugpocalypse is here. Now what?》（视频上传 2026-07-12）
 
 - URL：https://ai.engineer/talks/7JgIS42mz7U-ai-bugpocalypse-is-here-now-what （curl 实取全文）
 - 号召力口径：③（安全政策/漏洞研究圈号召力；非 dev-tool KOL——按口径标注为安全域 KOL）。

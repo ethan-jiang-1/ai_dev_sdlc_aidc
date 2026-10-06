@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 02_neutral/kol_tech
+observation_date: 2026-10-06
+---
+
 # boeckeler — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 1 · Birgitta Böckeler《TDD inside the agent loop - theater or actual value?》（2026-08-10）
+## Birgitta Böckeler《TDD inside the agent loop - theater or actual value?》（2026-08-10）
 
 - URL：https://martinfowler.com/articles/exploring-gen-ai/tdd-in-the-agent-loop.html ｜ 作者身份：Thoughtworks Distinguished Engineer，AI-assisted delivery 专职角色（2023 起全职投入该领域）
 - 来源类型：个人一手博客（Thoughtworks "Exploring Gen AI" 系列；全文取得；发布日期 10 August 2026 经系列索引页核对）
@@ -37,7 +43,7 @@
 
 ---
 
-## Source 2 · Birgitta Böckeler 于 SE Radio 730（2026-07-22）
+## Birgitta Böckeler 于 SE Radio 730（2026-07-22）
 
 - URL：https://se-radio.net/2026/07/se-radio-730-birgitta-boeckeler-on-harness-engineering-for-ai-agents/ ｜ 主持：Priyanka Raghavan
 - 来源类型：播客一手（官方自动生成 transcript，**截断取得**——约至 20:46 处，后半未取到）

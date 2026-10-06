@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # latent_space — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 推-21 · Latent Space《GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour》（2026-09-03，编辑部实测文）
+### Latent Space《GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour》（2026-09-03，编辑部实测文）
 
 - URL：https://www.latent.space/p/astra （curl 实取全文）
 - 身份：Latent Space 编辑部（③弱——实测报告层）。

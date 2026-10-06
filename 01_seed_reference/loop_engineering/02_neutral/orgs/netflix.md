@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # netflix — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 中-4 · Netflix《A Human-Augmenting Agentic Workflow for Causal Inference》（2026-08，netflixtechblog；本轮仅得编译层）
+### Netflix《A Human-Augmenting Agentic Workflow for Causal Inference》（2026-08，netflixtechblog；本轮仅得编译层）
 
 - 公司/作者：Netflix；netflixtechblog 官方发布
 - URL/日期：原文 https://netflixtechblog.com/a-human-augmenting-agentic-workflow-for-causal-inference-4623f0a9c5af （medium Cloudflare 盾 403，r.jina.ai 亦被盾，wayback 429——原文正文未取，**英文逐字仍开放**）；本轮内容层经 InfoQ 中文编译取得：https://www.infoq.cn/article/4h2jb2eOcBrP5AG5hLYt （Anthony Alford 原作/平川译，2026-08-24，实取）；InfoQ 英文版 CAPTCHA 未取

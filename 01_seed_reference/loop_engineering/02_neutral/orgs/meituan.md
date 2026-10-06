@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # meituan — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 中-5 · 美团技术团队《用Agent评测思路管理AI Coding —— 31万行代码AI重构的实践》（2026-05-07，窗口外标注）
+### 美团技术团队《用Agent评测思路管理AI Coding —— 31万行代码AI重构的实践》（2026-05-07，窗口外标注）
 
 - 公司/作者：美团 业务研发平台（Agent 评测团队）
 - URL/日期：https://tech.meituan.com/2026/05/07/Agent-AI-Coding.html ｜ 2026-05-07（页面实取）——**窗口外 25 天**：早于 2026-06-01，因任务点名美团博客层且为甲方面最高相关一手，登记收录；引用须标窗口外
@@ -26,9 +30,7 @@
 - **该条支持的最小主张**：甲方在 90% AI 代码的现实下承认"不设约束的循环加速腐化"，解法是把评测方法论（人人对齐→人机对齐）移植为编码治理——自动化的边界由人先对齐共识再固化给 AI。
 - 派别适配：**中性**（含明确的内部失败复盘成分，路线 A 段落可被怀疑档交叉引用）。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 中-6 · 美团图灵 Agent 评测团队《〈Agent 评测白皮书〉系列01：Agent 评测全览》（2026-09-10）
+### 美团图灵 Agent 评测团队《〈Agent 评测白皮书〉系列01：Agent 评测全览》（2026-09-10）
 
 - 公司/作者：美团 图灵 Agent 评测团队
 - URL/日期：https://tech.meituan.com/2026/09/10/Agent-Evaluation-White-Paper-01.html ｜ 2026-09-10（页面实取；窗口内）

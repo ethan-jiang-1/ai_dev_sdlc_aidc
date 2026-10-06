@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # alibaba — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 中-8 · 阿里妈妈技术《让 AI 写出生产级代码：阿里妈妈效果广告引擎AI Coding实践》（2026-01-28，窗口外标注）
+### 阿里妈妈技术《让 AI 写出生产级代码：阿里妈妈效果广告引擎AI Coding实践》（2026-01-28，窗口外标注）
 
 - 公司/作者：阿里妈妈（阿里集团广告业务，甲方）效果广告引擎团队；公众号"阿里妈妈技术"（加比/零言/山衍/应灵/潇劼）
 - URL/日期：原文微信公众号 mp.weixin.qq.com（2026-01 上下文）；本轮经智源社区镜像全文取得 https://hub.baai.ac.cn/view/52203 （镜像页标注 2026-01-28 19:00）——**窗口外约 5 个月**：为任务点名的"阿里系博客层增量"登记，引用须标窗口外

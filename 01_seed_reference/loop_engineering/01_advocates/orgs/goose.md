@@ -1,10 +1,16 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # goose — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第六轮挖掘（2026-10-06）：开源框架与治理工具）**
+**对抗轴**：Adversary Mode fail-open 自认 vs OpenAPPA fail-closed（[_治理工具](_治理工具.md)）——护栏两派正面对撞。
 
-### 3. Goose（Block → AAIF）——recipe 重试回路、hooks 事件面、对抗审查器
+### Goose（Block → AAIF）——recipe 重试回路、hooks 事件面、对抗审查器
 
 来源：goose-docs.ai（2026-04-07 起官方新 docs，llms.txt 实取）＋ GitHub API。组织变更实锤（官方博客 2026-04-07 逐字）："Block has donated goose to the Agentic AI Foundation (AAIF) at the Linux Foundation, alongside Anthropic's Model Context Protocol (MCP) and OpenAI's AGENTS.md."；仓库迁 `github.com/aaif-goose/goose`。甲方大厂捐赠证据（双料证据升级：Block 出品＋基金会治理）。
 

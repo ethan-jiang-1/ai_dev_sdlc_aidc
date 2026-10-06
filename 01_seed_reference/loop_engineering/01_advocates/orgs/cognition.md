@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # cognition — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 F · Devin / Cognition —— 解决·强（06-04 双篇＋Fusion 06-29＋ACU usage policies 文档）
+### Devin / Cognition —— 解决·强（06-04 双篇＋Fusion 06-29＋ACU usage policies 文档）
 
 - **F1. Scott Wu（CEO）署名《AI should earn its keep: Introducing the AI Productivity Guarantee》**
   - URL/日期：https://cognition.com/blog/ai-guarantee ；datePublished **2026-06-04**（页面 JSON-LD＋页头 "06.04.26" 双确认）；署名 **By Scott Wu**。
@@ -51,8 +55,6 @@
 > "Per-user limits are independent of organization-level ACU limits — a session is blocked if either limit is reached."
 
   - beta 状态句进怀疑面增量 H。**该条支持的最小主张**：Devin 的预算上限是"双门闩"（per-user 与 org-level 任一触顶即阻断所有表面）——target 9 Devin 行官方一手。
-
-**（第五轮挖掘（2026-10-06）：厂商机制文档深挖）**
 
 ### F · Devin：ACU 双门闩参数化（docs.devin.ai 实取）
 

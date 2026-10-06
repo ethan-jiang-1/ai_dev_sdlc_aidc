@@ -1,3 +1,9 @@
+---
+type: community_sentiment
+directory: 01_advocates/community_tech
+observation_date: 2026-10-06
+---
+
 # hn — community_tech（专业程序员群众）·推动向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
@@ -30,8 +36,6 @@ Osmani 定义文 11 分/6 评论、Andrew Ng 4 分/1 评论、LangChain 四环 2
 
 （判读注：这是"试用后继续用"的 conditional-positive 正样本；但其纪律——行为化目标、人守检查点——恰是中性派纲领。）
 
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（正方））**
-
 ### 一、Shopify Sidekick 持续学习环（第四轮甲-2）：HN 唯一实质评论来自自认悲观者，转正面
 
 **HN｜《Sidekick's continual learning loop (2026) – Shopify》**（item 49561583，2026-09-04 提交，**1 分 / 1 评论**，https://news.ycombinator.com/item?id=49561583 ）：
@@ -41,13 +45,9 @@ Osmani 定义文 11 分/6 评论、Andrew Ng 4 分/1 评论、LangChain 四环 2
 **与 loop engineering 的挂钩**：Sidekick 的 continual learning loop（生产失败→每日训练环）得到的唯一社区评论把"整体悲观者"转化为对**带验证环的 Shopify 工程做法**的正面认可——社区正面声音集中在"控制机制写得实"的条目上，与第四轮"敢公开≠无保留"的判读互相印证。
 **对原内容的强化**：强化（自我 declared 的怀疑者被生产化数据说服——这正是第四轮判定的"控制机制先行才敢正面宣传"的社区侧证据）。
 
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（正方））**
-
 ### 二、Shopify River 修复环（第四轮甲-1）：HN 零讨论（负结论，此处登记对正方的含义）
 
 《Under the River》2026-05-28→06-15 被 4 次提交，全部 **2–3 分 / 0 评论**；River 修复环正文（09-02）在 HN **未检得任何提交**。正方含义：甲方"自主修复环"样本未经过任何社区对抗检验，其 -70%/10%→80% 数字目前只有**官方单源**，引用时应标注"无社区二次验证"（不是被反驳，是未被检验）。
-
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（正方））**
 
 ### 五、Ask HN《Is anybody producing good code with coding agents?》（2026-10-02，29 分 / 44 评论）：一线实践者的正面证词簇
 
@@ -64,8 +64,6 @@ Osmani 定义文 11 分/6 评论、Andrew Ng 4 分/1 评论、LangChain 四环 2
 **主导情绪**：审慎正面（正面证词全部以"不放开长循环/有验证门"为前提）。
 **对原内容的强化**：对第四轮 Figma"精确率门未达不开启开发者可见评论"、Duolingo"确定性 grader 为地基"的社区侧印证；同时给怀疑档供料（drgo/tmarice/AnimalMuppet 反面证词与 aprdm 的理解权之争，见怀疑档第六节同串条目——同串两档分工引用）。
 
-**（第七轮挖掘（2026-10-06）：技术背景群众（正方体验））**
-
 ### 二、HN《Ask HN: What's your AI coding set up?》（2026-09-09，6 分 / 5 评论，item 49636239，实取全文）：群众级「跑通者」的全套自建件
 
 > "I supplement this with my own vibe-coded tools that help agents plan, perform sagas/steps, stay on track, tools that check the code produced, tools that check the produced documentation, tools/process to limit AI coding agent write access to files outside their assigned project... I have written test frameworks that my AI agents use to detect functional regressions."—— hn 用户 softwarewright
@@ -73,8 +71,6 @@ Osmani 定义文 11 分/6 评论、Andrew Ng 4 分/1 评论、LangChain 四环 2
 （判断依据：低分 Ask 串普通答主＝群众。）
 **与 loop engineering 的挂钩**：成功者条件——能持续跑 agent 的普通人全部自带规划/校验/权限围栏/测试框架四类自建件，无一件是「单靠 prompt」。
 **对原内容的强化**：强化（与 LearnPrompt「愚公」skill、SegmentFault maker/checker 配置件互证：治理件是跑通前提，不是可选项）。
-
-**（第七轮挖掘（2026-10-06）：技术背景群众（正方体验））**
 
 ### 三、HN《Ask HN: How are you preserving your skills while using AI?》（2026-06-09，9 分 / 8 评论，item 48463576，实取全文）：技能保持的条件
 

@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # factory — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 H · Factory —— 解决·强（创始人署名 06-15＋Autonomy Level 四档文档）
+### Factory —— 解决·强（创始人署名 06-15＋Autonomy Level 四档文档）
 
 - **H1. 官方新闻《Factory 2.0: From coding agents to software factories》**
   - URL/日期：https://factory.com/news/software-factory ；datePublished **2026-06-15T00:00:00Z**（JSON-LD 实取）；署名 **Matan Grinberg, Eno Reyes**（创始人，页面实取）。

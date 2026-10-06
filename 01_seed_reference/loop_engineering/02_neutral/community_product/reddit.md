@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 02_neutral/community_product
+observation_date: 2026-10-06
+---
+
 # reddit — community_product（非专业群众）·中性向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（中性/未接触面））**
 
 ### 一、r/ProductManagement 1wue6l1（2026-09-30，u/Icey_Girl）：《Does anyone have any use cases on how they actually used ai to help them in their role?》——"我从零开始，这些词我都不懂"
 
@@ -17,8 +21,6 @@
 - **与 loop engineering 的挂钩**：未接触面的直接证词——产品人的 agent 用法清单全部是**任务级工具用法**（写/读/总结/做幻灯），楼主对社区术语完全不解；"grill me"（Claude 技能名）是她离"目标构造"最近的一次接触，仍以产品技能面目出现。反面钩：未接触循环层，连"自主运行"都不在其用例清单内。
 - **对原内容的强化/削弱**：中性偏强化（"the deciding doesn't compress"＝PM 对循环中不可让渡环节的朴素判词，可作中性档引用锚）。
 
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（中性/未接触面））**
-
 ### 二、r/ProductManagement 1ww2s3z（2026-10-02，u/Extension_Potato_125）：《building an agent - writing the spec》——PM 从零重造 agent spec 该写什么
 
 - URL：https://www.reddit.com/r/ProductManagement/comments/1ww2s3z/ （arctic-shift 实取主帖＋7 评论）
@@ -29,8 +31,6 @@
 - **与 loop engineering 的挂钩**：**朴素重造的最强样本**——"goals、decision logic、permissions、failure/recovery states"正是 goal/eval engineering 与停止条件轴的内容，由不知其名的 PM 用产品语独立列出；评论回复方向也是"从用户目标出发"。反面钩：词未接触、概念已自发重造。
 - **对原内容的强化/削弱**：强化（支持"循环工程概念可由产品直觉自发逼近、缺的是词汇与集成"的判读）。
 
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（中性/未接触面））**
-
 ### 三、u/DuskLab（r/ProductManagement 1wtwmx1 串评论，2026-09-30）："loop engineers"作为职位名进入 PM 词汇——渗透分层证据
 
 - URL：https://www.reddit.com/r/ProductManagement/comments/1wtwmx1/ （arctic-shift 实取评论）
@@ -39,8 +39,6 @@
 - **与 loop engineering 的挂钩**：正钩（词汇层）——"loop engineers"在 PM 论坛被当作**与 SRE/QA 并列的招聘词**自然使用：词以 HR 名词形态漏入产品人群，但不携带任何工程内涵（同评论把"loop engineer"与 forward deployed engineer 并置成职业清单）。判读 (a) 的关键分层：**词已到达、实践未到达**。
 - **对原内容的强化/削弱**：中性（词渗透证据，不作观点票）。
 
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（中性/未接触面））**
-
 ### 四、u/fierysmart（r/ProductManagement 1wgfin0 串评论，2026-09-14）：PM 自发产出"事件驱动检查点＋人工门禁"的治理直觉
 
 - URL：https://www.reddit.com/r/ProductManagement/comments/1wgfin0/ （arctic-shift 实取评论）
@@ -48,8 +46,6 @@
 - 非 KOL 判断依据：r/ProductManagement 常规评论者（s1），无分发。
 - **与 loop engineering 的挂钩**：朴素重造——"judgment and verification 前移、短检查点替代仪式、显式人工门禁"＝社区版**停止条件＋人工介入点**设计，词汇为产品/管理语；与推动档治理话语同构但互不知晓。反面钩：概念自发重造，词未接触。
 - **对原内容的强化/削弱**：强化（loop_governance 的"自主度分档＋人工门禁"在 PM 群众侧有自发对应物）。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（中性/未接触面））**
 
 ### 五、r/ProductManagement 1w4ayjr（2026-09-01，u/TuesdayTrex）：《Dependency on Claude revealing hard skills gaps hidden in Long-format docs?》——组织内 AI↔AI 文档循环已现形，参与者不识其为循环
 

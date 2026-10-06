@@ -1,3 +1,9 @@
+---
+type: community_sentiment
+directory: 03_skeptics/community_tech
+observation_date: 2026-10-06
+---
+
 # bilibili — community_tech（专业程序员群众）·怀疑向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
@@ -8,13 +14,9 @@
 
 【闪客】《新名词诈骗！你管这破玩意叫 Loop Engineering？》（UP：飞天闪客，2026-06-25，B 站 [BV1Xg7v6PEr9](https://www.bilibili.com/video/BV1Xg7v6PEr9/)，view API 2026-10-06 观测）：**109,763 播放 / 3,692 赞 / 992 投币 / 2,032 收藏 / 324 弹幕**——中文圈目前所见 loop 议题最大单条流量，标题质疑向（硬核科普 UP 的拆解风格，正反判定需看视频本体）。简介自列信源：Claude 官方 scheduled-tasks 文档、OpenClaw 创始人 Peter 推文、Addy Osmani 文。
 
-**（第三轮挖掘（2026-10-06）：中文圈（事故/质疑层））**
-
 ### 四、B 站冷水向系列消失目击
 
 《loop engineering07-循环工程的四笔账——验证债·理解腐烂·认知投降·token 失控，不会当下报警》（B 站 [BV1L23z6eEnN](https://www.bilibili.com/video/BV1L23z6eEnN/)）——搜索索引在（标题逐字如上），B 站 view API 返回 **code 62002 稿件不可见**（2026-10-06 观测）。番号"07"证明存在至少 7 集的质疑向系列；其标题四词与容智信息文"三大认知债"、Osmani 原文概念一一对位——**质疑概念链在中文视频层曾成建制存在，本体已撤下**。不能核看内容、不作引句，只记存在与消失。
-
-**（第五轮挖掘（2026-10-06）：中文圈（事故/怀疑层增量）＋评测机构层）**
 
 ### 一、B 站【闪客】《新名词诈骗！你管这破玩意叫 Loop Engineering？》评论区（本轮最重新增量）
 

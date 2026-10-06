@@ -1,9 +1,17 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # swyx — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 1 · swyx（Latent.Space）·《[AINews] Loopcraft: The Art of Stacking Loops》＋ AIEWF 开幕演讲（2026-06-12 / 2026-06-30）
+**对抗轴**：Zawinski's Law vs Bhagwat Steinberger's law（[sam_bhagwat](sam_bhagwat.md)）；与 Dwarkesh 沙箱逃逸结构论（[dwarkesh](../../../03_skeptics/kol_product/dwarkesh.md)）同一事实正反两翼。
+
+## swyx（Latent.Space）·《[AINews] Loopcraft: The Art of Stacking Loops》＋ AIEWF 开幕演讲（2026-06-12 / 2026-06-30）
 
 - URL：原帖 https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking （本环境两次 fetch 均 404，疑改名或下架）；镜像全文 https://plantis.ai/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d （取得，标注"Original: Swyx · 12/06/2026"）；AIEWF 现场报道 https://www.latent.space/p/aiewf-daily-dispatch-loops （Latent.Space 本刊，全文取得）｜ 作者身份：swyx，Latent.Space 主理人、AI Engineer World's Fair 联合创始人
 - 来源类型：个人一手 newsletter（**经镜像取得**，正文经 plantis.ai 知识库逐字复刻，含 AINews 导语全文；原帖 404）＋本人会议开幕演讲（经 Latent.Space 本刊现场报道转述——本刊即 swyx 自己的刊物，半一手）
@@ -35,9 +43,7 @@
 
 ---
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 推-19 · swyx · AINews《Zawinski's Law of MultiAgents》（2026-08-08）
+### swyx · AINews《Zawinski's Law of MultiAgents》（2026-08-08）
 
 - URL：https://www.latent.space/p/ainews-zawinskis-law-of-multiagents （curl 实取全文；标题页另见 08-08 当日推送）
 - 身份：在册（Source 1/Source 5）。
@@ -48,7 +54,7 @@
   - 同期证据链（页内实录）："New in Claude Code: your sessions can now message each other. Instead of having to re-explain yourself in another session, you can now tell Claude to do it."（Claude Code 官方账号 08-07，554K views；与 OpenAI Artifactory 事件同周——扩张律的厂商实现与失控样本同时到位。）
 - **最小主张**：与 Steinberger's law（推-1）并列的 loop 派第二定律：agent 的扩张终点是 agent 间通信；dark factory 的实际运行形态即多 agent 消息网。
 - **派别适配**：**推动票**（怀疑派可引 HF 事件作同构反例）。
-## Source 5 · swyx《[AINews] Loopcraft: The Art of Stacking Loops》＋同名 X thread（2026-06-12）
+## swyx《[AINews] Loopcraft: The Art of Stacking Loops》＋同名 X thread（2026-06-12）
 
 - 原始 URL：https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking （**本环境两次实测 404**）；X 原推：https://x.com/swyx/status/2065307558198567206（X 不可达）
 - 实际取证途径：plantis.ai 知识库镜像（https://plantis.ai/kb/articles/ainews-loopcraft-the-art-of-stacking-loops-99de1e7d，全文镜像取得，标注 Original: Swyx · 12/06/2026，正文含 "AI News for 6/10/2026-6/11/2026"）；AIHOT 中文镜像（https://aihot.news/items/cmqaifadr0lrkslldffycxcyd，X thread 逐字转引，时间戳 2026-06-12 13:37）。**两处均为镜像，原站不可达——引用须标"经镜像"。**

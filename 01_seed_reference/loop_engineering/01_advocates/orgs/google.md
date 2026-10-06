@@ -1,8 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # google — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-## Source 11 · Google/GCP 面 ·《The Outer Loop》官方论坛长文＋ Agent Quality Flywheel（2026-07-20）
+## Google/GCP 面 ·《The Outer Loop》官方论坛长文＋ Agent Quality Flywheel（2026-07-20）
 
 - URL：https://discuss.google.dev/t/the-outer-loop-how-google-cloud-and-alphaevolve-are-defining-agentic-governance-and-self-evolution/383304 （Google Developer Forums 官方 Google Cloud 版块，2026-07-20，全文取得，作者 Enrique_Chan——**作者雇员身份未在页面标明**）；官方博文 "Driving the Agent Quality Flywheel from your coding agent"（developers.googleblog.com，Cloud Next '26 发布，经上文引用；两次 fetch 均超时/失败，**未取得**）
 - 来源类型：官方开发者论坛署名长文（渠道半官方、作者身份待核）＋官方博文（存在性经引用确认、正文未取得）
@@ -27,9 +33,7 @@
 
 ---
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 C · Google Jules / Gemini CLI —— 部分解决（Jules 窗口内官方静默＝负发现；机制在册走 living docs；Gemini CLI 一手 release note 行）
+### Google Jules / Gemini CLI —— 部分解决（Jules 窗口内官方静默＝负发现；机制在册走 living docs；Gemini CLI 一手 release note 行）
 
 - **C1. Jules 官方 changelog——窗口内静默（负发现）**
   - URL/日期：https://jules.google/docs/changelog ；实取 2026-10-06（curl 直取 129KB）。**最新条目为 "Gemini 3.1 Pro is now available in Jules｜Mar 09, 2026"，其后（2026-06-01 至实取日）无任何官方 changelog 条目**——全列表 Mar 2026→May 2025 逐条实取核对。

@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # kiro — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 G · Amazon Kiro —— 解决·强（Autonomous mode/Workflows/Automations/Crew/Hooks 五面全文档化）
+### Amazon Kiro —— 解决·强（Autonomous mode/Workflows/Automations/Crew/Hooks 五面全文档化）
 
 - **G1. 官方文档《Autonomous mode》（Kiro Web，living docs，实取 2026-10-06）**
   - URL：https://kiro.dev/docs/web/autonomous-mode/
@@ -48,8 +52,6 @@
 > "CLI V3 is built on the same unified agent harness that powers the Kiro IDE and Kiro Web."＋"Capability-based permissions — declare structured policies in permissions.yaml for fine-grained, auditable control."（CLI V3；V3 为 early release，发布日未单列，以 10-01 changelog 佐证）
 
   - **该条支持的最小主张**：Kiro 的无人值守面=定时自主模式（Automations）＋常驻网关（Crew 24/7）＋事件钩子闸门（PreToolUse 阻断）＋统一 harness；controls 与产品同面铺开。
-
-**（第五轮挖掘（2026-10-06）：厂商机制文档深挖）**
 
 ### G · Kiro：hooks schema、Automations、Sandbox（kiro.dev 实取）
 

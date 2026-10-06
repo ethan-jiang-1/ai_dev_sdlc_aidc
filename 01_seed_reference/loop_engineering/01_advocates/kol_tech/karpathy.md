@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # karpathy — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 8 · Andrej Karpathy · autoresearch / "remove yourself as the bottleneck"（2026，一手未取得）
+## Andrej Karpathy · autoresearch / "remove yourself as the bottleneck"（2026，一手未取得）
 
 - URL：GitHub https://github.com/karpathy/autoresearch（未直接取得）；演讲稿 https://karpathy.bearblog.dev/sequoia-ascent-2026/ （Cloudflare 拦截，403 未取得）；其言论经两路转引：swyx loopcraft 原文（S1 镜像，逐字转录其 Autoresearch 视频言论）与 All Things Open 文（转述 autoresearch 规模：约 630 行 Python、单 GPU 过夜跑 50 个实验、"数周内积累 59,000 stars"）｜ 作者身份：Andrej Karpathy，Eureka Labs 创始人、前 OpenAI/Tesla AI 总监
 - 来源类型：**一手未取得**；两条独立二手（swyx 逐字转录＋ATO 转述）
@@ -21,7 +27,7 @@
 
 ---
 
-## 增量 C · Andrej Karpathy —— 部分解决·强（bearblog＋autoresearch README 两个本人一手载体全文取得）
+## Andrej Karpathy —— 部分解决·强（bearblog＋autoresearch README 两个本人一手载体全文取得）
 
 - URL/日期：① https://karpathy.bearblog.dev/sequoia-ascent-2026/ 《Sequoia Ascent 2026 summary》（curl＋浏览器 UA 实取全文——上轮 403 系 fetch 代理层问题），帖子日期 **2026-04-30**；② https://raw.githubusercontent.com/karpathy/autoresearch/228791fb499afffb54b46200aca536f79142f117/README.md （curl 实取，8KB；github.com/karpathy/autoresearch 的固定 commit）。
 - ①的性质（本人声明，逐字）："I fed an LLM all of my recent blog posts and tweets, then I had it read this video's transcript and produce 1) a summary and 2) a cleaned up transcript… AI generated content below for this talk follows."——**本人发布、LLM 清理的本人讲座文本**（Sequoia Ascent 2026 对谈 Stephanie Zhan；按"本人一手·AI 清理转写"计，引用注明）。

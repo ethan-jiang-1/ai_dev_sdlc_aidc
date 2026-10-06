@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 01_advocates/community_product
+observation_date: 2026-10-06
+---
+
 # jike — community_product（非专业群众）·推动向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（正方/兴奋面））**
 
 ### 七、即刻 6aa7c9f6141b85b292dff065（2026-09-14，Gavin_C.）：《Personal Agent 线上 panel 纪要》——产品圈把 agent 自主性体验为"信任递增＋交接面"
 

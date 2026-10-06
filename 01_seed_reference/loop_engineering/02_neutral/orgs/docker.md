@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # docker — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 中-14 · Mark Cavage（Docker President/COO）· Software Engineering Daily #1952《Docker and Sandboxing AI Agents》（2026-07-30，官方 transcript .txt 实取）＋ Andrew Barba & Shar Dara（Vercel）#1967《Scaling Agent Workloads at Vercel》（2026-09-17，官方 transcript .txt 实取）
+### Mark Cavage（Docker President/COO）· Software Engineering Daily #1952《Docker and Sandboxing AI Agents》（2026-07-30，官方 transcript .txt 实取）＋ Andrew Barba & Shar Dara（Vercel）#1967《Scaling Agent Workloads at Vercel》（2026-09-17，官方 transcript .txt 实取）
 
 - URL：https://softwareengineeringdaily.com/podcasts/docker-and-sandboxing-ai-agents/ ；transcript https://softwareengineeringdaily.com/wp-content/uploads/2026/07/SED1952-Docker-2026.txt ｜ https://softwareengineeringdaily.com/podcasts/scaling-agent-workloads-at-vercel/ ；transcript https://softwareengineeringdaily.com/wp-content/uploads/2026/09/SED1967-Shar-Dara-Andrew-Barba.txt （均 curl 实取）
 - **挂钩**：循环结构（环境层：沙箱与多租 harness 基建）。

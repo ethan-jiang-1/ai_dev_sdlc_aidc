@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 03_skeptics/community_product
+observation_date: 2026-10-06
+---
+
 # producthunt — community_product（非专业群众）·怀疑向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（翻车/失控面））**
 
 ### 三、ProductHunt ProdShort 串（约 2026-06）怀疑面：maker 圈的循环失效词与 token ROI 质问
 

@@ -1,8 +1,14 @@
+---
+type: academic_evidence
+directory: 02_neutral/papers
+observation_date: 2026-10-06
+---
+
 # arxiv — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-## Source 7 · Sanderson Macedo《Stop Hand-Holding Your Coding Agent: Engineering the Loops that Replace Step-by-Step Prompting》（arXiv:2607.00038，2026-06-28 v1）
+## Sanderson Macedo《Stop Hand-Holding Your Coding Agent: Engineering the Loops that Replace Step-by-Step Prompting》（arXiv:2607.00038，2026-06-28 v1）
 
 - URL：https://arxiv.org/abs/2607.00038 ｜ HTML：https://arxiv.org/html/2607.00038v1（摘要＋HTML 关键节实取核对）
 - 来源类型：arXiv 预印本（cs.SE，单作者，CC BY 4.0；非同行评审结论）
@@ -30,8 +36,6 @@
 **派别适配**：中性票（证据级别：灰色文献，作者影响力未核）。
 
 ---
-
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
 
 ### 方向 A · 专名谱系："loop engineering" 已沉淀为 arXiv 可测量术语（A1–A7）
 
@@ -119,8 +123,6 @@
 - 证据级别：预印本"书"（v1.4）｜S2 引用数 0（2026-10-06 实核）。
 - 派别适配：中性（谱系件）。
 - 入册建议：边缘候选（单作者无引用；但"教材化"信号本身值得判读层记录）。
-
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
 
 ### 方向 B · 停止条件 / guardrail / 运行时控制（B1–B7）
 
@@ -211,8 +213,6 @@
 - **与 loop engineering 的挂钩**：**"允许/转向/暂停求助"三分类的人机交接判定器**（外层调度——何时把人拉回来）——正是"外层调度什么时候把人拉回来"的学习化版本；正报告 caveat：自建数据集训练。
 - 证据级别：预印本｜派别适配：中性工具性＋推动面。入册建议：边缘候选。
 
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
-
 ### 方向 C · reward hacking 与 agent exploit（怀疑向核心区，C1–C6）
 
 #### C1 · Shortcutting the Fix: Identifying and Categorizing Agentic Exploits in Software Engineering Benchmarks（arXiv:2609.06780）
@@ -284,8 +284,6 @@
 - **与 loop engineering 的挂钩**：循环结构（自改进 loop）＋停止条件（确定性 gate 否决评委）｜**自改进 loop 的"评委非神谕"立场文＋生产事故目录**（11 种评估信号失败、四类）——与库内 judge lineage 档案（evidence-m）同向；确定性 guardrail 主张与 A3/B2/B7 构成学术层小集群。
 - 证据级别：预印本（自述"months of production"经验）｜派别适配：怀疑档＋中性工具性。入册建议：边缘候选（单作者）。
 
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
-
 ### 方向 D · harness 效应与评测批判（D1–D8）
 
 #### D1 · What Does a Harness Buy? Tokens, Mostly（arXiv:2610.04433）
@@ -343,8 +341,6 @@
 - **D7 · Same Model, Different Harness: Different Coding-Agent Results**（arXiv:2608.26218，v1 2026-08-26，cs.AI,cs.SE，**Sydney Lewis 单作者**，24 pages）——节引（API 实取）："treatment raises mean per-task F2PF from 28 percent to 49 percent and complete solutions from 43 to 72 … coding-agent evaluations should treat the model and harness together as the tested solver." **与 loop engineering 的挂钩**：循环产品化机制——model＋harness（循环载体）才是被测 solver。派别适配：中性偏推动（harness 是被测解的一部分）；边缘候选（单作者）。
 - **D8 · QuoteBench: How Matched Scores Can Hide Command-Path Failures**（arXiv:2608.13547，v1 2026-08-13，cs.AI,cs.SE，Shangao Li, Yao Zhang, Volker Tresp, Yuanyuan Yang，4 作者）——节引（API 实取）："Matched execution scores alone cannot distinguish command-generation errors from failures introduced after generation. … replaying the same reply through the added parser lowers success by 55.4 to 73.2 percentage points." **与 loop engineering 的挂钩**：验证回路——匹配分数掩盖命令执行路径失败。派别适配：怀疑档（分数掩盖执行路径失败）。
 
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
-
 ### 方向 E · multi-agent 协作失败（E1–E4）
 
 #### E1 · Passes Alone, Fails Together: Benchmarking Semantic Coordination in Parallel LLM-Agent Development（arXiv:2609.25396）
@@ -388,8 +384,6 @@
 
 - **与 loop engineering 的挂钩**：**"何时该拆多 agent"的两税模型**（外层调度——拆分临界条件；attention tax vs handoff tax）与交叉点预测验证——为库内 graph/loop 分工给出理论化分界条件。
 - 证据级别：预印本（stylised model＋单任务验证）｜派别适配：中性（理论件）。入册建议：边缘候选。
-
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
 
 ### 方向 F · 安全 / 失控 / 审计能力（F1–F7）
 
@@ -446,8 +440,6 @@
 - **F5 · Authority Is Not a String: A Capability-Scoped Harness for Prompt-Injection-Resistant Coding Agents**（arXiv:2609.08371，v1 2026-09-08，cs.SE，Dimitrios Stamatios Bouras, Yihan Dai, Sergey Mechtaev——Mechtaev 为知名 PL/SE 研究者，外部常识未核；基于 Pi coding agent 实现——摘要自述）——节引（API 实取）："The injected effect executes in 33-47/75 runs under the ambient-authority and global-policy baselines, compared with 3/75 under CapScope. CapScope completes 68/75 repairs, while the baselines complete 68-72/75."（能力最小授权把注入生效 33-47/75 压到 3/75 且不损完成率）**与 loop engineering 的挂钩**：外层调度——sub-agent 权限门（capability-scoped harness）。派别适配：中性工具性＋怀疑面。入册建议：候选入册（学术旁证层）。
 - **F6 · Authorization Revocation for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and Asyncronous Execution**（arXiv:2609.21284，v1 2026-09-18，cs.PL,cs.AI,cs.CR，Genliang Zhu, Chu Wang）——节引（API 实取）："Long-running AI agents outlive initiating processes through credentials, delegated tasks, queues, callbacks, reservations, and provider-side operations. Cancellation, process exit, and credential revocation neither close every pre-cut carrier nor distinguish independently authorized shared work."（撤权≠停止：长活 agent 的授权静默形式化）**与 loop engineering 的挂钩**：无人值守运行——长活 agent 的撤权/停止语义形式化。派别适配：中性（形式化件）。边缘候选。
 - **F7 · Trajectory-Level Security Debt in LLM Coding Agents**（arXiv:2609.35199，v1 2026-09-28，cs.CR,cs.SE，Prateek Kumar Rajput 等 7 作者含 Tegawendé F. Bissyandé）——节引（API 实取）："Evaluating only the final artifact leaves the evolution of security findings unmeasured. We introduce the Security Debt Line Integral (SDLI) … Its value for steering agents and confirming exploitable vulnerabilities remains to be established."（终态安全审计漏掉轨迹中的安全债）**与 loop engineering 的挂钩**：验证回路——只验终态的盲区（轨迹级安全债）。派别适配：怀疑档＋中性测量件。边缘候选。
-
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
 
 ### 方向 G · 工程实证与运动直接件（G1–G10）
 
@@ -508,8 +500,6 @@
 - **G9 · Model-Based Agentic Software Engineering**（arXiv:2608.25174，v1 2026-08-25，cs.SE，James C. Davis, Kelechi Kalu, Huiyun Peng, Parth V. Patil——Purdue 组）——节引（API 实取）："it externalizes the smallest purposeful representation needed to answer an engineering question, then gives settled obligations proportionate authority through constraints, sensors, validators, and gates."（MAGE：约束/传感器/校验器/门四件套的"义务授权"框架）**与 loop engineering 的挂钩**：停止条件（constraints/sensors/validators/gates）＋外层调度（retained human authority）。派别适配：中性（框架/立场文）。边缘候选。
 - **G10 · Reproducibility in the Age of Agentic AI: Context Engineering at the Timescale of a Codebase**（arXiv:2609.11728，v1 2026-09-10，cs.SE,cs.CY，**Lorena A. Barba 单作者**，10 pages；GWU 教授为外部常识未核）——全文式节引（API 实取）："Reproducible research practices are context engineering for AI coding agents. I argue that agents lower the cost of maintaining tests, commit histories, repository structure, instructions, and decision records while making their benefits immediate. Researchers remain responsible for verifying these artifacts and the scientific judgments they encode."（可复现实践＝agent 的 context engineering；验证责任仍在人——一句话立场文）**与 loop engineering 的挂钩**：验证回路（验证责任在人）＋循环的上下文供给（可复现工件即 loop 输入）。派别适配：中性。边缘候选（单作者短文，但作者知名度高）。
 
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
-
 ### 方向 H · PL 社区议程（cs.PL，H1–H4）
 
 #### H1 · Agents as Software: A Programming Languages Agenda for Agent Reliability（arXiv:2609.32198）
@@ -530,16 +520,12 @@
 - **H3 · Grounding SWE-Agent Decisions in Architecture-0 Design**（arXiv:2609.17221，v1 2026-09-15，cs.SE,cs.AI，Zhongkai Wang, Yan Liu；comment: 51 pages，TOSEM 在审）——**与 loop engineering 的挂钩**：循环结构——SWE-agent 决策的架构接地（标题层判断，摘要未取）。
 - **H4 · Neuro-Formal Verification: Agentic Language-Agnostic Formal Program Reasoning**（arXiv:2608.21516，v1 2026-08-21，v3 至 2026-09-14，cs.SE,cs.PL，**Shuvendu K. Lahiri 单作者**；Microsoft Research 为外部常识未核）——**与 loop engineering 的挂钩**：验证回路——形式化验证的 agentic 化（标题层判断，摘要未取）。
 
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
-
 ### 已知方向核实结论（对应任务第 4 点）
 
 1. **agent 安全/失控的实证研究：核实存在且活跃。** F1（技能组合失控）、B5（loop 级安全状态定理）、F2（无人值守虚报）、C3（HF 事件风险建模）、C4（审批-执行绑定六类失败）、F5/F6/F7、以及元数据层的 2610.04083《Self-Propagating Misalignment in LLM Agents》、2609.06649《Inducing Emergent Misalignment from Reward Hacks with Iterative DPO》、2608.05223《Towards a Risk Assessment of Malicious Skill Files in Coding Agents》、2609.11028《BenchShield》。
 2. **coding agent 的 reward hacking 分类学：核实存在。** C1（NVIDIA 系：exploit 分类＋审计＋低成本缓解）、C5（unearned passes 过程验证框架）、C2（检测＋训练侧修复）、C6（生产自改进 loop 的 11 类评估信号失败）、SWE-Bench Pro Verified（arXiv:2609.08149，v1 2026-09-08，节引："existing results on SWE-Bench Pro may overestimate real software engineering capability"）。
 3. **multi-agent 协作失败研究：核实存在。** E1（单过合坏＋修复线索）、E2（协作网络测量＋coordinator 无增益）、E3（47.3% 冲突在文件集不相交对上）、E4（拆分临界条件）；另有 2609.02750《Bilevel Coordinated Reflection》（博弈论协调，元数据层）。
 4. **SWE-bench 系局限批判：核实存在且已成小集群。** D2（榜首不可分，已录用 ADMA 2026）、D3（记忆化）、D4（过测试≠合规）、D8（匹配分数掩盖路径失败）、C7（SWE-Bench Pro Verified 修复侧）；同域还有 arXiv:2609.01603《Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation》（在审）与 arXiv:2609.24928《Trajectory-Aware Benchmark Subset Selection》（回归测试成本侧，Bram Adams 组作者名，未核）。
-
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
 
 ### 二级命中速览（API 元数据层，摘要未逐字取，按主题相关度排序）
 
@@ -551,8 +537,6 @@
 | 2609.23809 | Packaged, But Not Portable（Tezan Sahu 单作者，投 ISEC 2027） | 循环产品化机制——插件标准化≠组合性。节引（API 实取）："Only 6.2% validate, but the gap is shallow rather than structural: 96.6% would load after adding one missing boilerplate field."＋"81% of capability-exporting bundles share a name with another plugin"——插件标准化≠组合性 |
 
 > 注：上表引句均出自本轮实取的 API 摘要；标注"节引"者引用时须注明非全文。2605.22526《"Refactoring Runaway"》（2026-05-21，cs.SE，Kamei 组作者名未核）为**窗口前**相邻件，仅登记存在。
-
-**（第四轮挖掘（2026-10-06）：arXiv 学术层扫描）**
 
 ### 对本节的诚实评估
 

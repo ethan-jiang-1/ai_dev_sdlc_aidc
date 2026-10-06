@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # uber — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 甲-4 · Uber《Running a Software Factory Efficiently at Uber Scale》（2026-08-27）
+### 《Running a Software Factory Efficiently at Uber Scale》（2026-08-27）
 
 - 公司/作者：Uber；Uday Kiran Medisetty（Distinguished Engineer）
 - URL/日期：https://www.uber.com/blog/efficient-software-factory/ ｜ August 27, 2026（页面实取；eng.uber.com 旧路径 404，www.uber.com/blog 直取成功）

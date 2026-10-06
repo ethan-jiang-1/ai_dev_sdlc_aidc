@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 02_neutral/kol_tech
+observation_date: 2026-10-06
+---
+
 # andrew_qu — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 中-10 · Andrew Qu（Vercel Chief of Software）· Latent Space 访谈《why agents are a new kind of software》（2026-07-03）
+### Andrew Qu（Vercel Chief of Software）· Latent Space 访谈《why agents are a new kind of software》（2026-07-03）
 
 - URL：https://www.latent.space/p/vercel-agents-new-software （curl 实取全文）
 - 身份：Vercel eve 框架/skills.sh 作者层（③＋④弱）。

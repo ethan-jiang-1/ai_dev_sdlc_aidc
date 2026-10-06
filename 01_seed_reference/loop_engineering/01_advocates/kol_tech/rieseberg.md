@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # rieseberg — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第三轮挖掘（2026-10-06）：新 KOL）**
-
-### 增量 K · Felix Rieseberg（Anthropic，Claude Cowork 工程负责人）· 经 Willison 转引的产品架构声明（2026-10-05）
+### Felix Rieseberg（Anthropic，Claude Cowork 工程负责人）· 经 Willison 转引的产品架构声明（2026-10-05）
 
 - URL：https://simonwillison.net/2026/Oct/5/felix-rieseberg/ （curl 实取；Willison 引句采集页，标注 "This is a quotation collected by Simon Willison, posted on 5th October 2026"，并指向 Anthropic 帮助页）
 - 身份：Slack 桌面端/Electron 维护者出身的 Anthropic 工程负责人，现负责 Claude Cowork（与 Claude Code Desktop）。

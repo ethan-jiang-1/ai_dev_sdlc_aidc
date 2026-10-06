@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 02_neutral/kol_tech
+observation_date: 2026-10-06
+---
+
 # orosz — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 8 · Gergely Orosz《What is "loop engineering?"》（2026-07-14）
+## Gergely Orosz《What is "loop engineering?"》（2026-07-14）
 
 - URL：https://newsletter.pragmaticengineer.com/p/what-is-loop-engineering ｜ 作者身份：同上
 - 来源类型：newsletter 一手（**截断**：§1–4 全文取得；§5–7 在付费墙后未取得，但其大纲句在公开目录中逐字可见）。副标题即怀疑定调："Is it a 'here today, gone tomorrow' trend?"

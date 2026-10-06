@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 02_neutral/kol_tech
+observation_date: 2026-10-06
+---
+
 # kief_morris — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 3 · Kief Morris《Humans on the loop, not in it: Taking agentic engineering end to end》PlatformCon Live Day London（2026-06-23 16:00 BST，30 min，Main stage）
+## Kief Morris《Humans on the loop, not in it: Taking agentic engineering end to end》PlatformCon Live Day London（2026-06-23 16:00 BST，30 min，Main stage）
 
 - URL（官方 session 页）：https://2026.platformcon.com/sessions/humans-on-the-loop-not-in-it-taking-agentic-engineering-end-to-end-ldn ｜ 二手现场记录：https://lucaberton.com/blog/kief-morris-human-on-the-loop-platformcon-london-2026/（Luca Berton，2026-07-04）
 - 来源类型：演讲——**官方摘要＋关键点全文取得（curl 实取 session 页）**；演讲视频本体未取得（Podwise 摘要页 fetch 失败）；Luca Berton 记录为二手转述。

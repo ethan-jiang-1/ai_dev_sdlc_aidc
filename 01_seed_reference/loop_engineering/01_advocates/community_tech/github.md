@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 01_advocates/community_tech
+observation_date: 2026-10-06
+---
+
 # github — community_tech（专业程序员群众）·推动向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第五轮挖掘（2026-10-06）：中文圈（正方/教程层增量）＋评测机构层）**
 
 ### 五、GitHub 中文脚手架：LearnPrompt「愚公」loop-engineering skill（SKILL.md 全文实取）
 

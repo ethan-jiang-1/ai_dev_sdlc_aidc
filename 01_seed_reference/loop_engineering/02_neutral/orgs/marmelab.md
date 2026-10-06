@@ -1,8 +1,14 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # marmelab — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-## Source 8 · marmelab《The State Of AI Harness Engineering 2026》复核（François Zaninotto，2026-09-24）
+## marmelab《The State Of AI Harness Engineering 2026》复核（François Zaninotto，2026-09-24）
 
 - URL：https://marmelab.com/blog/2026/09/24/the-state-of-ai-harness-engineering-2026.html（curl 全文实取复核）
 - **库内状态**：已在库（evidence-c 4a，"Looping works…fresh-context…written down in files" 与 back pressure 收录条均已核）。**本路为复核＋两条增量段**，不重复抄全文。

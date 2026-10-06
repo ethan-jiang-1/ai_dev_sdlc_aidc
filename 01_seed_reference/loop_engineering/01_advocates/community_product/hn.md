@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 01_advocates/community_product
+observation_date: 2026-10-06
+---
+
 # hn — community_product（非专业群众）·推动向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（正方/兴奋面））**
 
 ### 六、HN 49826029（2026-09-24）：《Ask HN: I just talked to an AI-obsessed client, and I need a shower afterwards》——Lovable 产品用户的"第一次有创造力"（二手转述）
 

@@ -1,3 +1,9 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech/andrew_ng
+observation_date: 2026-10-06
+---
+
 # 吴恩达谈火起来的「Loop Engineering」：AI 编程真正的变化，不是写代码更快
 
 [ThinkInAI社区](javascript:void(0);)

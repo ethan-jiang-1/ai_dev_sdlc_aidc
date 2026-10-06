@@ -1,9 +1,17 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # steve_yegge — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 10 · Steve Yegge《The Shape of Things to Come, Part 1: The Continuous Thunderdome》（2026-08）
+**对抗轴**：Ronacher 经济-质量极（[ronacher](../../../03_skeptics/kol_tech/ronacher.md)）——同题正反。
+
+## Steve Yegge《The Shape of Things to Come, Part 1: The Continuous Thunderdome》（2026-08）
 
 - URL：https://yegge.ai/essays/the-shape-of-things-to-come/ ｜ 作者身份：40 年一线（Google/Sourcegraph 背景）、Gas Town/Beads 作者、Wyvern MMO 开发者
 - 来源类型：个人一手长文（全文取得）。
@@ -30,9 +38,7 @@
 **该条支持的最小主张**：即使是最激进的舰队实践者，也在 2026-08 公开了 loop 崩坏史（Gas Town 烧毁）、token 烧钱速度（69B/月）、harness 维护常量（20–25%）三组一手数据。
 **派别适配**：不入反对派；作"多派阵营内部证实的痛点"登记，供三派判读交叉引用。
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 疑-1 · Steve Yegge · AIEWF 2026《Agentic Security: Permissions, Provenance, and the Agent Supply Chain》（视频上传在库页实录）
+### Steve Yegge · AIEWF 2026《Agentic Security: Permissions, Provenance, and the Agent Supply Chain》（视频上传在库页实录）
 
 - URL：https://ai.engineer/talks/yWS0udrIOc8-agentic-security-permissions-provenance-agent （curl 实取全文）
 - 身份：在册 KOL（Source 10；本条为**窗口内新讲**增量）。

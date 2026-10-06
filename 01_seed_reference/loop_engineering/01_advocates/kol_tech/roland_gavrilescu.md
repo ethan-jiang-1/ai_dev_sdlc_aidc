@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # roland_gavrilescu — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 推-7 · Roland Gavrilescu（Introspection 联合创始人，前 xAI agent infra）· AIEWF 2026《The Loop Is the Product》（视频上传 2026-09-26）
+### Roland Gavrilescu（Introspection 联合创始人，前 xAI agent infra）· AIEWF 2026《The Loop Is the Product》（视频上传 2026-09-26）
 
 - URL：https://ai.engineer/talks/7taOQBfjDyE-loop-is-product （curl 实取全文）
 - 身份：Introspection 联创（自述"my co-founder and I were in this mythical place called xAI working hard on agent infra"）。
@@ -28,9 +32,7 @@
 - **最小主张**：loop 时代的产品本体是"agent recipe"（可版本化、可移植、含 evals 与人的 taste），循环负责把运行痕迹蒸馏成 recipe。
 - **派别适配**：**推动票（会议层）**。
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 推-17 · Roland Gavrilescu（Introspection 联创/CEO，前 xAI）· Latent Space 访谈《Autoresearch: The feedback loop behind self-improving agents》（2026-07-01）
+### Roland Gavrilescu（Introspection 联创/CEO，前 xAI）· Latent Space 访谈《Autoresearch: The feedback loop behind self-improving agents》（2026-07-01）
 
 - URL：https://www.latent.space/p/autoresearch-introspection （curl 实取全文）
 - 身份：在册（推-7，AIEWF《The Loop Is the Product》）；本条为**同一人的长访谈新载体**，机制表述比会议talk更完整。

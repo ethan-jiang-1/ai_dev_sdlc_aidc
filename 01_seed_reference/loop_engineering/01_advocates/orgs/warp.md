@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # warp — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 A · Warp —— 解决·强（三载体到手：CEO 署名博客 06-16＋工厂博客 08-27＋Profiles/Permissions 文档）
+### Warp —— 解决·强（三载体到手：CEO 署名博客 06-16＋工厂博客 08-27＋Profiles/Permissions 文档）
 
 - **A1. 官方博客《How to build a self-improvement loop for your Skills》**
   - URL/日期：https://www.warp.dev/blog/self-improvement-loop-for-skills ；datePublished **2026-06-16T12:00:00Z**（页面 JSON-LD 实取），dateModified 2026-06-23；author JSON-LD：**Zach Lloyd**（Warp CEO，署名一手）。通道：curl＋浏览器 UA 直取全文（343KB）。
@@ -59,8 +63,6 @@
   - 上轮缺口解除情况：上轮仅有 CEO"选人从哪里进环"一句——本轮补齐**官方文档层的自主度分档（permission 分级 allow/ask/decide）、命令 allowlist/denylist 优先级、Run until completion 任务级全自主、企业 Admin 层不可绕过底线**四件套（最后一句的边界含义进怀疑面文件增量 C）。
   - **该条支持的最小主张**：Warp 的 agent 自主性是"分档可配"的产品机制（profile×permission×denylist 三层），且存在"企业层永久审批"的把控底线。
   - 派别适配：**推动·厂商**（自主度分档做成产品），同时其 YOLO 默认面是"把控性"主题的直接一手材料。
-
-**（第五轮挖掘（2026-10-06）：厂商机制文档深挖）**
 
 ### D · Warp：denylist 语法与优先级、Run until completion 与权限的交互（docs.warp.dev `.md` 直取）
 

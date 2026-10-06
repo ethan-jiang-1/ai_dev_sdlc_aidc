@@ -1,8 +1,12 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # not_boring — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
-
-**（第四轮挖掘（2026-10-06）：行业分析与 Newsletter）**
 
 ### Source B · Not Boring：Packy McCormick《Return on Tokens (ROT)》（与 Markie Wagner 合写）——解决·强（本轮预算面核心）
 

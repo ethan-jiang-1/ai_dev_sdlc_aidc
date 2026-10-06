@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # ibm — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 J · IBM Bob（其他平台）—— 解决·中（官方 newsroom 10-01）
+### IBM Bob（其他平台）—— 解决·中（官方 newsroom 10-01）
 
 - **J1. IBM 官方新闻稿《IBM Introduces Self-Hosted Deployment for IBM Bob…》**
   - URL/日期：https://newsroom.ibm.com/2026-10-01-ibm-introduces-self-hosted-deployment-for-ibm-bob-to-help-enterprises-advance-ai-sovereignty-and-governance ；正文日期行实取 **"ARMONK, N.Y., October 1, 2026"**。

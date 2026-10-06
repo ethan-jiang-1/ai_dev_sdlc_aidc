@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 02_neutral/community_tech
+observation_date: 2026-10-06
+---
+
 # devto — community_tech（专业程序员群众）·中性向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第七轮挖掘（2026-10-06）：技术背景群众（中性））**
 
 ### 三、dev.to《AI Is Making It Too Easy to Avoid Thinking》（sizzlebop，2026-10-05，15 reactions / 2 comments，API id 4803463 实取全文）——普通用户的认知自警
 

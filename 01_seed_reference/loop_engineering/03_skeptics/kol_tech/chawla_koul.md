@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 03_skeptics/kol_tech
+observation_date: 2026-10-06
+---
+
 # chawla_koul — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 疑-4 · Tisha Chawla & Susheem Koul · AIEWF 2026《Your Agent Failed in Prod. Good Luck Reproducing It.》（视频上传 2026-06-29）
+### Tisha Chawla & Susheem Koul · AIEWF 2026《Your Agent Failed in Prod. Good Luck Reproducing It.》（视频上传 2026-06-29）
 
 - URL：https://ai.engineer/talks/Lc8zRh9muoY-your-agent-failed-in-prod-good-luck （curl 实取全文）
 - 身份：页面无机构字段（同场另有其二人《FinOps for AI Agents》议题）——**仅作会议层样本**。

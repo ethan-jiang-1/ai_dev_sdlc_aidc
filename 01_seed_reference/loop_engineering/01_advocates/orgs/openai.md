@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # openai — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 E · OpenAI Codex / dots —— 解决·强（learn.chatgpt.com 官方 `.md` 直取四件；openai.com 博客通道被拦如实记录）
+### OpenAI Codex / dots —— 解决·强（learn.chatgpt.com 官方 `.md` 直取四件；openai.com 博客通道被拦如实记录）
 
 - **E1. 官方文档《Meet dots》＋《Tasks and memory》（learn.chatgpt.com，living docs，实取 2026-10-06）**
   - 通道：https://learn.chatgpt.com/llms.txt 实取（官方自述 "Each page has a Markdown twin at `/docs/<slug>.md` for direct ingestion"）→ `.md` 直取（16KB/8KB）。openai.com/index/dots/ 直取被 JS 盾拦截（9.9KB 空壳，通道状态如实记录）；dots 发布日未在官方一手载体核到日期，官方状态为 "rolling out gradually"。
@@ -41,8 +45,6 @@
 
   - **该条支持的最小主张**：Codex 安全审查环（威胁建模→发现→验证→攻击路径→报告）在窗口内有带日期的官方增量（0.1.24 Sep 9 / 0.1.25 Sep 23 / 0.1.30 Sep 24），即"审查环"产品化的官方一手。
   - 派别适配：**推动·厂商**（安全审查做成多阶段环产品）。
-
-**（第五轮挖掘（2026-10-06）：厂商机制文档深挖）**
 
 ### B · OpenAI Codex / ChatGPT Work / dots：approval 全集、auto-review 熔断器、network_proxy 默认表（learn.chatgpt.com `.md` 直取）
 

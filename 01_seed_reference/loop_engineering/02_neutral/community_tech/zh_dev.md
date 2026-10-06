@@ -1,3 +1,9 @@
+---
+type: community_sentiment
+directory: 02_neutral/community_tech
+observation_date: 2026-10-06
+---
+
 # zh_dev — community_tech（专业程序员群众）·中性向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
@@ -46,8 +52,6 @@
 
 **B 站中性向两例**（view API 2026-10-06 观测）：《[Loop Engineering：为何让Vibe Coding变得更累了？](https://www.bilibili.com/video/BV1nELZ6gEze/)》（UP：荒野芯智观察，2026-06-18，1,120 播放 / 25 赞）——简介："过去你是写代码的人，现在你要变成目标定义者、验收标准设计者、任务拆解者、成本控制者和最终审查者。Agent 可以替你跑测试，但不能替你判断需求是否正确"；《[转]Claude Code 工作流更新：从手写 Prompt 到 Agent 循环工程》（UP：混沌AI，2026-06-19，569 播放 / 35 收藏）——简介自述"不是单纯造概念，而是讲清楚它到底能做什么、有什么代价"。
 
-**（第三轮挖掘（2026-10-06）：中文圈（工程派/企业接收层））**
-
 ### 一、InfoQ 企业层：QCon 上海 2026 设立「Loop Engineering」完整专题（上轮"仅标题级"升级为已解决）
 
 QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专题下 7 个议题（议题页逐条实取标题＋讲师）：
@@ -70,8 +74,6 @@ QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专
 
 （判读注：一线平台厂商把 loop engineering 议题化时全部自带三件套——评测体系、成本权衡、适用边界；与 QQ 飞车"非工作时间还没真正 loop 起来"同构：**企业接收的术语层是工程问题，不是意识形态**。术语史注：继 AICon 深圳 7191 之后，主流技术大会第二次以该词命名专题单元。）
 
-**（第三轮挖掘（2026-10-06）：中文圈（工程派/企业接收层））**
-
 ### 二、InfoQ 写作社区三篇通道（上轮"正文 JS 未取"部分翻案——经镜像实取）
 
 **容智信息《告别"面向玄学编程"：深度拆解 Loop Engineering 架构与企业级 Agent 避坑指南》**——xie.infoq.cn 原文仍 JS 未取，但**墨天轮镜像全文实取**（[modb.pro/db/2082381326393634816](https://www.modb.pro/db/2082381326393634816)）。**企业号编译+评论判定**（引用 Steinberger/Osmani/Anthropic 并给落地视角；正文残留 `[cite: 1]` 标记——AI 辅助写作痕迹）：
@@ -84,8 +86,6 @@ QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专
 **TiDB 社区《亲测好用的 PDCA 组队法》勘误（上轮归类修正）**：经 TiDB 官方论坛 Discourse JSON 实取（[pingkai.cn/tidbcommunity/forum/t/1054013](https://pingkai.cn/tidbcommunity/forum/t/topic/1054013/3)，发布 **2026-05-18**，作者 Billmay表妹＝TiDB 社区运营），主体是名为 "Loop" 的**团队协作产品**教程（"3-4 个 Agent 黄金搭档"），并非 loop engineering 范式——**上轮将其计入"实践正方向"样本不确，应改记为：窗口外（5-18）＋对象错位（产品名巧合）**；xie.infoq.cn 版系转发。
 
 **阿里技术《Loop Engineering 概念解析、思考与实践》**：三篇中唯一仍无全文通道者（xie.infoq.cn 直取与镜像检索均未命中正文）——维持"标题＋账号已核"状态。
-
-**（第三轮挖掘（2026-10-06）：中文圈（工程派/企业接收层））**
 
 ### 四、腾讯云/华为云工程派原创（正文全部实取）
 
@@ -112,8 +112,6 @@ QCon 上海 2026（2026-10-22~24）**以 "Loop Engineering" 命名专题**，专
 > "工程界从来没有银弹，Loop Engineering 与 SDD 等范式绝不是非此即彼的替代关系，而是互补共存的。"
 
 **阿里云｜《[Loop Engineering：从 Prompt Engineering 到迭代式智能体工程](https://developer.aliyun.com/article/1747820)》（浅浅33，2026-07-15，391 阅读）**——正文 JS 未取，简介含"Loop Engineering 是2023年起"时间线硬伤（疑低质改写）——传播层登记，不作工程证据。
-
-**（第五轮挖掘（2026-10-06）：中文圈（工程派增量）＋评测机构层）**
 
 ### 二、腾讯云 2026-09 中下旬新原创（上轮截止 9-15 前，本批全新）
 

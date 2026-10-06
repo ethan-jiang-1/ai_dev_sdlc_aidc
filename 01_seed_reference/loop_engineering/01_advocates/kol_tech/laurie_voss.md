@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # laurie_voss — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## Source 3 · Laurie Voss（Arize Head of DevRel / npm 联合创始人）·《What is a loop in AI engineering, anyway?》＋《We are all Product Engineers now》（2026 / 2026-09-14）
+## Laurie Voss（Arize Head of DevRel / npm 联合创始人）·《What is a loop in AI engineering, anyway?》＋《We are all Product Engineers now》（2026 / 2026-09-14）
 
 - URL：https://arize.com/blog/what-is-a-loop-in-ai-engineering-anyway/ （Arize 厂商博客，三次 fetch 均在导航区截断、**正文未取得**；文章存在性与作者归属经两路独立二手确认，见下）；https://seldo.com/posts/we-are-all-product-engineers-now/ （个人一手博客，2026-09-14，全文取得）｜ 作者身份：Laurie Voss，npm 联合创始人、Arize Head of Developer Relations（AIEWF 2026 官方议程 PDF 载明其职位；seldo.com 页脚自述 "developer, writer, and recovering npm co-founder"）
 - 来源类型：厂商博客（正文未取得，**仅两路独立二手转述其分类学**）＋个人一手博客（全文取得）
@@ -37,7 +43,7 @@
 
 ---
 
-## 增量 A · O'Reilly《What the Hell Is a Loop, Anyway?》—— 已解决（Wayback 全文取得；作者归属坐实＝Laurie Voss）
+## O'Reilly《What the Hell Is a Loop, Anyway?》—— 已解决（Wayback 全文取得；作者归属坐实＝Laurie Voss）
 
 - URL：原站 https://www.oreilly.com/radar/what-the-hell-is-a-loop-anyway/ （curl 重试仍 403）→ **经 Wayback 快照全文取得**：https://web.archive.org/web/20260815082135/https://www.oreilly.com/radar/what-the-hell-is-a-loop-anyway/ （curl 实取，快照 2026-08-15）｜ 作者：**Laurie Voss**（上轮"作者归属未核"就此坐实）｜ 日期：**2026-07-29**（"10 minute read"）｜ 文首声明（逐字）："The following article originally appeared on LinkedIn and is being republished here with the author's permission."
 - 号召力口径：O'Reilly Radar 主站分发面＋Voss 分类学的正式出版载体——S3（Voss）的入册依据由此补齐一手。
@@ -59,7 +65,7 @@
 - **该条支持的最小主张**：Voss 的 4+1 分类学在 O'Reilly Radar 有全文正式出版载体（LinkedIn 原文授权转载），分类学、命名行为（oversight loop）与 AIEWF 闭幕辩论的多方立场均有了一手文本。
 - **派别适配**：Voss 推动票的一手坐实＋分发面升级；其"oversight loop 是人应居住的一环"表述是推动派治理翼最成文的一手。
 
-## 增量 B · Laurie Voss Arize 原文 —— 已解决（正文全文取得；上轮"三次截断"系 fetch 代理层问题）
+## Laurie Voss Arize 原文 —— 已解决（正文全文取得；上轮"三次截断"系 fetch 代理层问题）
 
 - URL：https://arize.com/blog/what-is-a-loop-in-ai-engineering-anyway/ （curl 实取全文，307KB HTML）｜ 作者：**Aparna Dhinakaran ＋ Laurie Voss**（页面署名）｜ 日期：**July 2026**（"10 min read"）。
 - 与增量 A 的关系：同一 4+1 分类学的 Arize 版（O'Reilly 版注明 LinkedIn 原文授权转载；两版文本基本同构，Arize 版为厂商博客正式版）——**4+1 分类学从此有两个可引一手载体**。

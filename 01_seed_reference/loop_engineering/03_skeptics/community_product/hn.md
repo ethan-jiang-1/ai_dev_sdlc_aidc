@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 03_skeptics/community_product
+observation_date: 2026-10-06
+---
+
 # hn — community_product（非专业群众）·怀疑向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（翻车/失控面））**
 
 ### 四、HN 49826029（2026-09-24）：技术向自由职业者对"AI-obsessed 客户"的文化失控哀叹（对照条目）
 
@@ -12,8 +16,6 @@
 - 非 KOL 判断依据：HN 普通评论者；本条为**对照条目**——评论者（技术向）描述的失控对象恰是正方向第六节的 Lovable 产品客户（产品向），两个档位各取一半。
 - **与 loop engineering 的挂钩**：反面钩——产品人的 agent 自主产出（自动化发帖/刷评）在技术向观者处呈现为"死互联网加速器"；失控感受是**文化/公共品层面**的，与工程层的失控（跑偏、烧钱）不同源。引用任何一半须带另一半。
 - **对原内容的强化/削弱**：中性偏强化（人群感受差异〔判读 (c)〕的最直接对照样本）。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（翻车/失控面））**
 
 ### 六、HN 49109721（2026-07-30）：《Launch HN: Prized (YC S26) – Let non-engineer staff build secure internal tools》——"build 别 run"的自主度边界主张（边界个案 1 条）
 

@@ -1,8 +1,14 @@
+---
+type: event_evidence
+directory: 01_advocates/events
+observation_date: 2026-10-06
+---
+
 # aiewf_2026 — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-## Source 7 · AIEWF 2026 厂商群像——Warp / Factory / OpenAI / Cursor / Sierra（2026-06-30 现场报道）
+## AIEWF 2026 厂商群像——Warp / Factory / OpenAI / Cursor / Sierra（2026-06-30 现场报道）
 
 - URL：https://www.latent.space/p/aiewf-daily-dispatch-loops （Latent.Space 本刊 Richard MacManus 现场报道，2026-07-01，全文取得）｜ 涉及人物：Zach Lloyd（Warp CEO）、Tereza Tížková（Factory）、Alexander Embiricos & Romain Huet（OpenAI Codex 团队）、Pauline Brunet（Cursor VP of Forward Deployed Engineering）、Natalie Meurer（Sierra Head of Agent Engineering）、Allie Howe（Keycard）、Peter Steinberger（OpenClaw，**现已入职 OpenAI**——报道原文 "the 'ClawFather' of OpenClaw, now working for OpenAI"）
 - 来源类型：会议现场报道（latent.space＝swyx 自家刊物；引语为记者笔录的演讲原话——**转述级一手**：本人演讲、他人笔录）
@@ -38,9 +44,7 @@
 
 ---
 
-**（第三轮挖掘（2026-10-06）：新 KOL）**
-
-### 增量 L · AIEWF 2026 官方议题群像（llms-full.md 全量页实取，https://ai.engineer/worldsfair/2026/llms-full.md）
+### AIEWF 2026 官方议题群像（llms-full.md 全量页实取，https://ai.engineer/worldsfair/2026/llms-full.md）
 
 - 官方摘要逐字可引的 loop 议题（讲者均为**非在册新名**）：
   1. **Joel Hooks**《The Art and Science of Loopcraft with Pi (and friends)》（Workshop，4:30pm-5:30pm）："This workshop helps agentic coding practitioners stop treating agents like pretend coworkers and start designing reliable, compounding loops. Using Pi as the concrete demo surface, Joel Hooks will show how loop state, handoffs, review, memory, and operator control become visible…"
@@ -51,9 +55,7 @@
 - **最小主张**：AIEWF 2026 上 loop engineering 已是"Workshop＋Session"双层的正式教学科目——以 loop 专名或 loop 原语组织的议题至少 6 个（不含已在册的 swyx《The Highest Loop》）。
 - **派别适配**：**推动向会议层群票**（官方摘要级，讲者个人一手未取者不入个人条目）。
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 推-12 · AIEWF 2026 loop 议题官方编辑稿群像（增量 L 的深化，讲者一手逐字已入上列者不重复）
+### AIEWF 2026 loop 议题官方编辑稿群像（增量 L 的深化，讲者一手逐字已入上列者不重复）
 
 官方摘要/分节/要点层可直引的补充议题（全部 curl 实取官方页）：
 1. **Itamar Friedman（Qodo CEO）**《The Last Human Code Review》（上传 2026-08-20，https://ai.engineer/talks/s-aixZYJG4c-last-human-code-review-building-trust ）：现场逐字 "Is human code review still optional end of twenty twenty-six?"；双功能框架 "One is we wanna validate the code… The second reason is actually alignment and learning"；"You need to think what's your philosophy because that will lead you to different milestones or different tools that you need to use in order to get that confidence that you can skip over a human review"——**挂钩：验证回路**。推动票（会议层，KOL ③弱）。
@@ -66,8 +68,6 @@
 8. **Erik Meijer**《In Code They Act, In Proof We Trust》——形式化验证入环——**挂钩：验证回路**。KOL ①（语言学界名人）。
 9. **Cornelia Davis**《MCP Tasks (async)/ Why the heck aren't any agents supporting MCP tasks/async?》——异步任务原语缺位之问——**挂钩：循环结构（协议层）**。会议层样本。
 10. **Dominik Kundel**《Building on the Codex Harness》＋Ignacio Martinez《Total Recall: Agent Memory and Harness Engineering》＋Robert Brennan《Sandboxes Aren't Optional》＋Abhishek Bhardwaj《From fork() to Fleet》——harness/沙箱基建群像——**挂钩：循环结构（环境层）**。会议层样本。
-**（第三轮挖掘（2026-10-06）：新 KOL）**
-
 ### Source F · 会议层数据点（AIEWF 2026 官方全量页＋现场稿）
 
 - **Barr Yaron（Amplify）年度调查**（经 MacManus 现场稿转述）："According to Amplify's data, 95% of respondents now use agents — roughly double last year's share. Among teams using agents, 89% said those agents could write data, up from 52% the previous year."＋"The controls, however, remain comparatively primitive. Human approvals and permissions were the two leading safeguards…"
@@ -76,9 +76,7 @@
 - **Sonar AC/DC**（Anirban Chatterjee）官方摘要（同页实取）："the critical challenge has shifted from generation to verification…making cognitive surrender among human reviewers an acute risk."（"cognitive surrender" 在会议层官方摘要中出现）
 - **派别适配**：中性（数据与设问层，非个人 KOL 票）。
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 中-7 · AIEWF 2026 evals/验证层中性群像（官方编辑稿层，curl 实取）
+### AIEWF 2026 evals/验证层中性群像（官方编辑稿层，curl 实取）
 
 1. **Lukas Petersson（Andon Labs）**《Vending-Bench: Long-Horizon Agent Evals》（上传 2026-07-24，https://ai.engineer/talks/cO8qC6HBuBg-vending-bench-long-horizon-agent-evals ）——官方分节："Misbehavior without an instruction to misbehave""When the agent treats the customer as simulated""No observations are not evidence of no demand"——长程自主行为的评测边界。**挂钩：验证回路**。
 2. **Rishi Desai（Abundant AI）**《SWE-Marathon: Evaluating Coding Agents at Billion-Token Scale》（Rx8f05JI_WA）——官方分节："A weak verifier becomes an attack surface""Large token budgets do not establish project ownership""Distinguish attempted shortcuts from rewarded exploits"——九小时级长任务的验证器弱点论。**挂钩：验证回路＋预算与熔断**。怀疑派亦可引。

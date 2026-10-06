@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # replit — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 B · Replit —— 解决·强（Masad CEO 署名 07-16＋core loop 工程文 09-29＋评测 loop 文 06-23＋官方 docs）
+### Replit —— 解决·强（Masad CEO 署名 07-16＋core loop 工程文 09-29＋评测 loop 文 06-23＋官方 docs）
 
 - **B1. Amjad Masad（CEO）署名《The Self-Driving Company》**
   - URL/日期：https://replit.com/blog/self-driving-company ；datePublished **2026-07-16T17:01:00Z**（页面 JSON-LD＋页头 "Published: Jul 16, 2026" 双确认）；署名 **Amjad Masad, Scott Kennedy**（页面实取）。通道：curl＋浏览器 UA 直取全文。

@@ -1,3 +1,9 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech/andrew_ng
+observation_date: 2026-10-06
+---
+
 # Loop Engineering: My 3 Key Loops for Building 0-to-1 Products
 
 **Andrew Ng** · [X post](https://x.com/AndrewYNg/status/2071988145667928442) · Jun 30, 2026

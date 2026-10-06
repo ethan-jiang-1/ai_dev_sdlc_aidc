@@ -1,3 +1,9 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech/andrew_ng
+observation_date: 2026-10-06
+---
+
 # Andrew Ng：来源索引
 
 ## 一手 / 高可信来源

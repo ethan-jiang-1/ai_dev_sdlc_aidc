@@ -1,8 +1,12 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # csa — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
-
-**（第四轮挖掘（2026-10-06）：行业分析与 Newsletter）**
 
 ### Source D · 行业机构层：CSA AI Safety Initiative《Hugging Face Breach: Anatomy of a Rogue AI Agent Swarm》——解决·中
 

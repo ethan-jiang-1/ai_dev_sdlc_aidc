@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_product
+observation_date: 2026-10-06
+---
+
 # jensen_huang — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**技术产品背景 KOL**（非程序员——商业领袖/分析师/教授/作家）
 
-## Source 9 · Jensen Huang · "Nobody writes prompts anymore"（2026-06 下旬，一手未取得）
+## Jensen Huang · "Nobody writes prompts anymore"（2026-06 下旬，一手未取得）
 
 - URL：中文媒体两路：量子位（经智源社区缓存 https://hub-assets-cache.baai.ac.cn/view/55860 ，2026-06-26，全文取得）＋新智元（经 36氪英文版 https://eu.36kr.com/en/p/3873913078732036 ，2026-06-29，全文取得）｜ 作者身份：NVIDIA CEO
 - 来源类型：**媒体转述**（两路中文科技媒体独立报道同一言论；原始出处疑为演讲/访谈/X 片段，本环境不可达）
@@ -22,7 +28,7 @@
 
 ---
 
-## 增量 D · Jensen Huang —— 部分解决（四路转引一致＋AP 专访线索；NVIDIA 一手仍开放）
+## Jensen Huang —— 部分解决（四路转引一致＋AP 专访线索；NVIDIA 一手仍开放）
 
 - 人物：NVIDIA CEO ｜ 引句："Nobody writes prompts anymore. The new job is to write and handle loops." ｜ 传播窗口：2026-06 下旬。
 - 本轮新增两条已取全文的独立转载（curl 实取）：

@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 02_neutral/orgs
+observation_date: 2026-10-06
+---
+
 # airbnb — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 中-2 · Airbnb《Eval-driven development: Lessons from evaluating GenAI at scale》（2026-07-28）
+### Airbnb《Eval-driven development: Lessons from evaluating GenAI at scale》（2026-07-28）
 
 - 公司/作者：Airbnb；Rohit Girme / Dan Miller / Mia Zhao / Lifan Yang / Clint Kelly
 - URL/日期：https://airbnb.tech/ai-ml/eval-driven-development-lessons-from-evaluating-genai-at-scale/ ｜ July 28, 2026（RSS Parrot 镜像 feed 与页面交叉核对；medium 原地址被 Cloudflare 盾）
@@ -26,9 +30,7 @@
 - **该条支持的最小主张**：甲方把评测从"事后度量"升格为**驱动循环的门禁系统**，并自认 LLM-judge 环会引入新失效模式——门禁可信度本身需要被工程化。
 - 派别适配：**中性**（方法论纲领而非成败叙事；边界感明确）。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 中-3 · Airbnb《From weeks to a day: how we made LLM evaluation fast enough to iterate on》（2026-07-14）
+### Airbnb《From weeks to a day: how we made LLM evaluation fast enough to iterate on》（2026-07-14）
 
 - 公司/作者：Airbnb；Baharak Saberidokht
 - URL/日期：https://airbnb.tech/ai-ml/from-weeks-to-a-day-how-we-made-llm-evaluation-fast-enough-to-iterate-on/ ｜ July 14, 2026（页面实取）

@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # kieran_klaassen — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
-
-### 推-4 · Kieran Klaassen（Every，Cora 作者）· AIEWF 2026《The Era of Compound Engineering》（视频上传 2026-08-20）
+### Kieran Klaassen（Every，Cora 作者）· AIEWF 2026《The Era of Compound Engineering》（视频上传 2026-08-20）
 
 - URL：https://ai.engineer/talks/_ehJyfHg1Vk-era-compound-engineering （curl 实取全文）
 - 身份：Every 工程负责人，Compound Engineering plugin 作者（自述"hundreds of thousands of people use it daily"）。

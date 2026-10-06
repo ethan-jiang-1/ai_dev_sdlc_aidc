@@ -1,8 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # github — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-## Source 12 · GitHub Copilot 官方 · Copilot CLI "Autonomous task completion / fleet"（存在性已核，正文未取得）
+## GitHub Copilot 官方 · Copilot CLI "Autonomous task completion / fleet"（存在性已核，正文未取得）
 
 - URL：https://docs.github.com/en/copilot/concepts/agents/copilot-cli/autopilot （官方 docs，两次 fetch 均在导航层截断）｜ 作者身份：GitHub 官方
 - 来源类型：厂商官方文档（**存在性与标题已核，正文未取得**）
@@ -12,9 +18,7 @@
 
 ---
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 D · GitHub Copilot —— 解决·中（窗口内 changelog 两条＋预算/自动化官方文档；命名漂移如实记录）
+### GitHub Copilot —— 解决·中（窗口内 changelog 两条＋预算/自动化官方文档；命名漂移如实记录）
 
 - **D1. Changelog 2026-07-29《Copilot code review: Agent skills and MCP now generally available》**
   - URL/日期：https://github.blog/changelog/2026-07-29-copilot-code-review-agent-skills-and-mcp-now-generally-available/ ；datePublished **2026-07-29T14:26:19-07:00**（页面 JSON-LD 实取）。
@@ -59,8 +63,6 @@
   - 通道注记：docs 现行用词是 **"Copilot cloud agent"**，而 blog/changelog 仍用 "coding agent"（2026-07-29 条目原题即 coding agent）——命名漂移如实记录，条目按官方两种用词并存登记。
   - **该条支持的最小主张**：Copilot 的自主任务面（后台多步任务＋定时自动化）与预算上限（user/cost center/enterprise 三层 budget）均为官方文档化机制。
   - 派别适配：**推动·厂商**＋机制登记（target 9 Copilot 行）。
-
-**（第五轮挖掘（2026-10-06）：厂商机制文档深挖）**
 
 ### E · GitHub Copilot coding agent / cloud agent：预算三层、MCP 只读默认、审批流（docs.github.com 实取）
 

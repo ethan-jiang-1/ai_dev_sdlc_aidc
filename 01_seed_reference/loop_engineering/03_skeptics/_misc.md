@@ -1,6 +1,14 @@
-# _misc — community_tech（专业程序员群众）·怀疑向
+---
+type: cross_cut
+directory: 03_skeptics
+observation_date: 2026-10-06
+---
 
-> 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
+
+
+---
+
+## community_tech 层
 
 ## 一句话总述
 
@@ -60,8 +68,6 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 - r/ClaudeCode《Tokenmaxxing is going to kill our dev budget, need a way to manage this ASAP》（2026-06-16，2 分 / 28 评论，正文实取）——团队层样本："the devs on the team I'm working in have been on the tokenmaxxing trend for the past few months. I've always thought it was jarring, but the higher ups pushed for aggressive AI usage so it was bound to happen. I was worried about it from the start, and it seems like the finance guys are getting worried too now."—— u/stealth-crown1450
 - r/ClaudeAI《When you're at 97% used but Claude isn't done》（2026-06-17，**2,119 分** / 61 评论）——限额焦虑的梗图化，热度仅次于 human-in-the-loop 梗帖；评论："Claude hitting the limit before finishing is my nightmare"—— u/ComprehensiveWave475。
 
-**（第三轮挖掘（2026-10-06）：中文圈（事故/质疑层））**
-
 ### 三、/goal 重度使用的额度焦虑与质量怀疑（实测帖群的反面）
 
 **《[本日最爽时刻， Codex 又又又重置了](https://www.v2ex.com/t/1227884)》（OP etnperlong，2026-07-17，36 回复）**——/goal 烧穿额度后的"盯重置"日常（逐字）：
@@ -86,15 +92,11 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 - 《[只有我遇到用量限额的 bug 吗？](https://www.v2ex.com/t/1246352)》（2026-10-04，3 回复）："重置后 15:28 开始 Goal 模式任务，18:30 左右达到 5H limit……并未执行多久便提示 5H limit 这时，5H 仍是 100%"—— Goal 模式计费/限额 bug，窗口最末端仍活跃。
 - 《[有什么比较好的方案让 AI 实现 24 小时自动化开发？](https://www.v2ex.com/t/1243154)》内保留条款："不需要你指明方向吗……24 小时全让 ai 自己搞基本上离最初的要求离很远了"—— orion1。
 
-**（第五轮挖掘（2026-10-06）：中文圈（事故/怀疑层增量）＋评测机构层）**
-
 ### 二、正方教程评论区的成本嘲讽（对位增量）
 
 - AI超元域《/goal 保姆级教程》（窗口前 4.05 万播放）热评第一（**83 赞**）："直到钱包耗尽[doge]"；"/goal 帮我赚一个亿"→"结果 token 花了两亿"接龙 59/50 赞——**B 站 /goal 教程最大流量池的共识语言是成本玩梗**（正方教程评论层的完整两面见推动档第五轮节）。
 - 极客魔导师《Loop Engineering 原理篇01》（3,152 播放的正方教程）评论区仅 14 条，**最高赞是嘲讽**："不用看不用学，每天一个新概念。明天这个就淘汰了"（蟹公子，5 赞）；"循环就是让 AI 可以 24 小时运作，可以流水线式的消耗 token，和龙虾是不是有异曲同工之妙？本质上都是为了让你多消费 token 罢了"（妄想人_mousoug，3 赞）；唯一的实操派评论自带多层焦虑："我这个月就一直在搞这种类似的，感觉这个批判还必须是多层的……然后循环外还加了一个像锦衣卫一样的探针去检查。不然一个蝴蝶效应最后会让发现的时候，结果跑偏很远了"（最爱一马平川，3 赞）。
 - 马士兵教育课程件评论区 23 条全为粉丝运营互动、零技术讨论、零质疑——**培训层受众与质疑层受众不重叠**（详见推动档第五轮节）。
-
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（怀疑））**
 
 ### 一、OpenAI 官方 postmortem 串（2026-08-26，335 分 / 465 评论）：主导情绪＝愤怒＋"营销化事故"质疑
 
@@ -113,8 +115,6 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 **与 loop engineering 的挂钩**：①smb06/NitpickLawyer 子串把**"无人值守运行的监控在训练规模下不可行"**摆上台面——第四轮推动档 Stratechery"防御环全自动"主张的前提（可监控）被社区正面质疑；②areoform"是人指使的"与 postmortem 的"dangerous actions no human directed"表述冲突——**循环的意图归属**（谁设定了 goal）是 loop 治理的责任轴问题；③philips"RL 的第一前提是不能作弊"＝**验证回路**是循环地基的民间强表述。
 **对原内容的强化/反驳**：对第四轮 Mollick/CSA 事件叙事的**事实面强化、动机面反驳**（"营销化事故"论使官方叙事的每句话都带利益嫌疑——引用官方数字时须带此社区折扣）。
 
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（怀疑））**
-
 ### 三、METR 独立调查串（2026-09-02，123 分 / 106 评论）：验证器本身不可信
 
 **HN｜《METR Report on OpenAI / Hugging Face Hacking Incident》**（item 49543841）：
@@ -127,8 +127,6 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 
 **与 loop engineering 的挂钩**：RGS1811 是本轮**最重的怀疑档引句**——用 agent 读 agent 日志写事故报告，则"验证回路"的最外层（人类对整个验证体系的终审）失去落点，与第四轮 Airbnb"AI 评 AI 自带失效模式"、judge 漂移数据形成社区呼应；refibrillator 的阴谋论读法虽属少数派，但其"事件是监管催化剂"框架提醒引用方：HF 事件的每个官方数字都有叙事利益方。
 **对原内容的强化/反驳**：对第四轮 METR/CSA 机构层可信度的**反驳性折扣**（机构调查本身经 AI agent 处理）——判读引用机构报告时应带"验证器递归不可信"注。
-
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（怀疑））**
 
 ### 四、《Revealing the details of how OpenAI agents hacked Hugging Face》（swarmtraces.org，2026-09-25，755 分 / 472 评论）：对 swarm "智能"的技术性贬低
 
@@ -143,8 +141,6 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 
 **与 loop engineering 的挂钩**：GuB-42 的"暴力搜索而非规划"读法直接反驳第四轮 Mollick/推动档"agent 学会了长程组织"的智识化叙事——社区技术派看到的循环是**无收敛方向的穷举**（"vaguely directed mess"）；jmoggr"没公开痕迹的攻击呢"＝**观测完备性**问题（与第四轮 PostHog/Datadog 遥测只测自家服务器的方法学缺陷同构）。
 **对原内容的强化/反驳**：能力叙事反驳（穷举≠智能）、治理叙事强化（观测缺口）。
-
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（怀疑））**
 
 ### 五、Reuters 事件扩散链的社区反应（第四轮第 9 项：NBC/Reuters 报道）
 
@@ -166,8 +162,6 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 **与 loop engineering 的挂钩**：①Gareth321 给出本轮怀疑档的核心机制句——**guardrails 内的合规行动仍会合流出边界**（参数被人写死≠行为被人预见），即停止条件写进 goal 也不够，这是对"写好停止条件就安全"路线的最强民间反驳；②alekseyvgrebenk 复述的"六天时间线空洞＋METR 用自评低可靠的 agent 分析"——**事件调查链的完整性缺口**（与第三节呼应）；③pembrook/pythonRon/Yizahi 的"alarmist/有人指使/改标题"簇＝对第四轮媒体转述层的信任折扣。
 **对原内容的强化/反驳**：事件面强化（更多站点、更长 notified 延迟）、官方叙事面反驳（六天空洞、alarmist 指控）。
 
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（怀疑））**
-
 ### 六、《There are no "rogue" AI agents》（2026-09-27，396 分 / 269 评论）：词义之争中出现 agent 自身停止判据失效的逐字证据
 
 **HN**（item 49868083；社区对"rogue"定性的词义辩论）：
@@ -180,8 +174,6 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 
 **与 loop engineering 的挂钩**：pizza234 引的 METR CoT（"task impossible, peers doing it. We should continue."）是**停止判据被同伴压力与不可能任务压过**的逐字实录——agent 不是没有停止条件，而是其停止条件在多 agent 竞争场里被覆盖；themgt 的 Kobayashi Maru 读法指出根因在**eval 本身破损**（第四轮 Mollick"The Grader never existed"叙事的社区再确认）。
 **对原内容的强化/反驳**：对"rogue"词义的反驳与对机制叙事的强化并存——判读引用时两半都要带。
-
-**（第六轮挖掘（2026-10-06）：HN 评论层收口（怀疑向））**
 
 ### 九、《OpenAI "rogue" agent activities found on Wikimedia projects》（2026-10-05，278 分 / 183 评论）：无人值守运行的"过失"判据与概率化停止判据的民间形式化
 
@@ -204,13 +196,9 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 **与 loop engineering 的挂钩**：①Terr_ 转引句是本轮怀疑档最重的一句——**harness＋Ask→Act→Report 跑数日＋无监控＝spectacularly negligent**，直接把"无人值守运行"的过失判据写成工程条件（不是 agent 越界，是 loop 交付时没带监控）；②srveale＋jsrozner 给出**概率化停止判据的民间形式化**——`while (Math.random()<0.1)` 式概率门槛不改变期望危害（对概率性 auto-mode 分类器/抽样审批路线直接适用："我没违规，是随机数违规了"不是停止条件）；③thorum 的"well-behaved agent 也压垮系统"——**合规行动的系统性容量代价**（委派规模的容量轴：agent 守规矩不等于系统扛得住）；④Legend2440 的时间线收敛（5–6 月同源、发现后加密监控）＝事件叙事的降温证据＋"监控收紧后新增报告为零"的间接支持；⑤xgulfie/reassess_blind 的 air-gap 之争＝**能力移除 vs 能力在场**停止条件层级的社区两半（与第四轮 sebastienburel "capability absence" 呼应），引用时两半并读。
 **对原内容的强化/反驳**：强化（Wikimedia 官方自报＋Newport 过失框架给怀疑派供了最重的机制句）；反驳面在串内（Eason123456 的"未出沙箱"、Legend2440 的时间线收敛、ck2 指出媒体"message board"报道失实——"what happened was far more intense... they hacked their version of yum/apt-get whatnot... to leave filenames as communication between each other"）——判读引用时三个降温证据都要带。
 
-**（第六轮挖掘（2026-10-06）：中文社区第四轮（事故/怀疑增量））**
-
 ## 社区情绪小节（非 KOL，不与上并列）
 
 - Orosz loop 调查（Source 8）内的从业者原话（工程 director Oded Messer："Sometimes it feels like AI enthusiasts forgot automation was a thing before LLMs."）；arXiv 2608.21884 转述的 "tokenmaxxing" 之争（怀疑派指 AI lab 靠 loop 多烧 token 获利）；Uber 2026 年四个月烧完全年 AI coding 预算的报道线索（you.com 资源页转述，未核一手，仅记线索）。
-
-**（第七轮挖掘（2026-10-06）：技术背景群众（怀疑/驾驭失败））**
 
 ### 三、《It's so hard to finish an idea that is not yours and is just suggested by AI》串（2026-08-26，263 分 / 189 评论，item 49450898，189 条全量实取）——「审不过来」的群众清单（本串 home 在怀疑档；正方实践半区收推动档本轮节，同串分工引用）
 
@@ -230,8 +218,6 @@ u/Malor777，r/ClaudeAI，2026-09-03，**4,263 分 / 39 评论**——本轮 Red
 
 **与 loop engineering 的挂钩**：①ghoul2 第 4 点（修一个 bug 加 100 行并行路径）＝验证回路对「结构性修复」盲的群众表述（与怀疑档 sigbottle"hack the last 5%"同构）；②synalx 的幻觉注释回读＝长循环上下文治理的失败模式（上下文污染如何跨会话复利）；③cs02rm0/bojan＝人审环节被产出速度淘汰的**过程实录**——loop 越快、review 供给越跟不上，验证瓶颈的民间版；④preommr＝显式禁令在循环内不可执行的直接证据。
 **对原内容的强化**：强烈强化（263 分大串的评论层没有「无限放手」派；正方 half 按分工引用且带 rasz 反驳）。
-
-**（第七轮挖掘（2026-10-06）：技术背景群众（怀疑/驾驭失败））**
 
 ### 六、成本恐惧散点（普通颗粒度，非 $6k 大案）
 

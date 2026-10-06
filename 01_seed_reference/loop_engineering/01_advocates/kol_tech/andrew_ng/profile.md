@@ -1,3 +1,9 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech/andrew_ng
+observation_date: 2026-10-06
+---
+
 # Andrew Ng
 
 - **身份**：DeepLearning.AI 创始人，*The Batch* 通讯作者（本卡素材即出自该通讯 2026-06-30 一期，X 同步转发）

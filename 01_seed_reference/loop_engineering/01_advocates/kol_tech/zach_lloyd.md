@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # zach_lloyd — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 推-15 · Zach Lloyd（Warp 创始人/CEO）· Latent Space 访谈《why software factories are the next phase of coding》（2026-07-01，Richard MacManus）
+### Zach Lloyd（Warp 创始人/CEO）· Latent Space 访谈《why software factories are the next phase of coding》（2026-07-01，Richard MacManus）
 
 - URL：https://www.latent.space/p/software-factories （curl 实取全文）
 - 身份：在册 KOL（Warp）；本条为 **Latent Space 访谈新载体**（SEDaily 1941 逐字稿另立推-16）。
@@ -20,9 +24,7 @@
 - **最小主张**：软件工厂＝把 SE 主环（triage→spec→实现→review→验证→shipping→monitoring）整体自动化并按仓库风险分档放权；人的位置由"每行必审"退到"低风险仓库免审＋合并率爬坡"。
 - **派别适配**：**推动票（强）**。
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 推-16 · Zach Lloyd · Software Engineering Daily #1941《The Terminal as an Agentic Interface》（2026-08-06，官方 transcript .txt 实取）
+### Zach Lloyd · Software Engineering Daily #1941《The Terminal as an Agentic Interface》（2026-08-06，官方 transcript .txt 实取）
 
 - URL：https://softwareengineeringdaily.com/podcasts/the-terminal-as-an-agentic-interface/ ；transcript：https://softwareengineeringdaily.com/wp-content/uploads/2026/08/SED1941-Zach-Lloyd.txt （curl 实取）
 - **挂钩**：预算与熔断＋无人值守运行（云侧治理件）。

@@ -1,8 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # cursor — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-## Source 5 · Cursor 官方 ·《Cloud Agents and Cursor Harness Improvements》changelog（2026-08-19）
+## Cursor 官方 ·《Cloud Agents and Cursor Harness Improvements》changelog（2026-08-19）
 
 - URL：https://cursor.com/en-US/changelog/08-19-26 （全文取得）｜ 作者身份：Anysphere（Cursor）官方
 - 来源类型：厂商官方 changelog（一手，全文）
@@ -28,8 +34,6 @@
 **派别适配**：**推动票**（厂商产品化）。
 
 ---
-
-**（第五轮挖掘（2026-10-06）：厂商机制文档深挖）**
 
 ### C · Cursor：Run Modes/auto-review 分类器、sandbox.json 与 permissions.json 合并规则、/goal 与 /loop 无 docs 页
 

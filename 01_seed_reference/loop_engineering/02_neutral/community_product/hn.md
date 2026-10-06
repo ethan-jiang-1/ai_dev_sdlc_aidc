@@ -1,8 +1,12 @@
+---
+type: community_sentiment
+directory: 02_neutral/community_product
+observation_date: 2026-10-06
+---
+
 # hn — community_product（非专业群众）·中性向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
-
-**（第七轮挖掘（2026-10-06）：技术产品背景群众（中性/未接触面））**
 
 ### 七、HN 49706708《Vibe Coding is the new Internet Dating?》（2026-09-15）内的泛用户评论：迭代体验无工程词
 

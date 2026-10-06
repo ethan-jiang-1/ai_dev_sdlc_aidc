@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # shopify — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 甲-1 · Shopify《How River takes security work from a fix to merge》（2026-09-02）
+### 《How River takes security work from a fix to merge》（2026-09-02）
 
 - 公司/作者：Shopify（甲方，全球最大电商 SaaS 之一）；Kaiyi Li（AppSec）
 - URL/日期：https://shopify.engineering/river-vulnerability-remediation ｜ Published on Sep 2, 2026（页面实取）
@@ -28,9 +32,7 @@
 - 派别适配：**推动·生产化**（正面，但引句时注意其"handoff the decision, not the investigation"是自主度分档表述）。
 **与 loop engineering 的挂钩**：自主修复环的完整外层治理一手——ledger 只是主张须逐项对账（验证回路）、freshness-gated merge queue（合并门禁＝停止条件）、"不能定义验收证据就停手"（停止条件）、人接管的分支不 rebasing（自主度上界）；整体＝生产上的无人值守修复运行。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 甲-2 · Shopify《Sidekick's continual learning loop》（2026-08-05）
+### 《Sidekick's continual learning loop》（2026-08-05）
 
 - 公司/作者：Shopify；Andrew McNamara / Cody Mazza-Anthony
 - URL/日期：https://shopify.engineering/sidekicks-continual-learning-loop ｜ Published on Aug 5, 2026（页面实取）
@@ -52,9 +54,7 @@
 - 派别适配：**推动·生产化**（经济面＋训练环面的一手规模数据；其"judge's ceiling"句同时可被中性档引用）。
 **与 loop engineering 的挂钩**："continual learning loop" 即跨天训练环：生产失败→轨迹语料→每日 SFT/GRPO（循环产品化机制）；quality rubric＋Cohen's kappa 标定＝奖励信号（验证回路）；"judge's ceiling"＝评分器置信上界（停止判据边界）。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 甲-3 · Shopify《Building an agentic harness that outlasts the model》（2026-07-29）
+### 《Building an agentic harness that outlasts the model》（2026-07-29）
 
 - 公司/作者：Shopify AppSec 团队
 - URL/日期：https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model ｜ Published on Jul 29, 2026（页面实取）

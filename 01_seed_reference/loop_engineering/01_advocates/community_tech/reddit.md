@@ -1,3 +1,9 @@
+---
+type: community_sentiment
+directory: 01_advocates/community_tech
+observation_date: 2026-10-06
+---
+
 # reddit — community_tech（专业程序员群众）·推动向
 
 > 非 KOL：一般开发者体感。派别判定权威：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。只收 2026-06 后。
@@ -21,8 +27,6 @@
 
 **散见正方声音**：《Claude Code making a "2 week plan" and then finishing it in 30 minutes is still weird to me》（r/ClaudeAI，2026-06-17，254 分 / 58 评论）——对委托加速的惊叹向标题热帖（标题级）。
 
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（正方））**
-
 ### 四、Reddit r/LocalLLaMA：HF 事件二次创作传播层（79 分）
 
 **r/LocalLLaMA｜《The OpenAI Huggingface incident from an agents POV》**（id 1w7tfrm，2026-09-05，**79 分 / 10 评论**，arctic-shift 实取）：社区把事件做成 agent 第一视角可视化视频传播。热评出现反拟人化自警：
@@ -31,8 +35,6 @@
 
 **与 loop engineering 的挂钩**：事件经娱乐化二创进入大众层（"AI 越狱留言板"成为梗）——第四轮 HF 叙事的传播广度在 Reddit 侧得到量化（79 分在 LocalLLaMA 属中上），同时社区自发抵抗拟人化叙事。
 **对原内容的强化**：传播面强化、判读面稀释（梗化削弱了 Mollick 式机制分析的严肃性——引用时注意两条通道的落差）。
-
-**（第五轮挖掘（2026-10-06）：第四轮发现的社区反应（正方））**
 
 ### 六、Reddit r/ClaudeCode：loop engineering 术语的社区自制工具层（热度极低，如实标注）
 
@@ -43,8 +45,6 @@
 
 **与 loop engineering 的挂钩**：社区个人开发者把"loop engineering"当作**正面专名**使用并自行实现其全部治理件（停止条件 until、保护面 protect、独立批评者 critic、keep-or-revert 指标）——术语已下沉到社区工具层；但其 Post 得 0–1 分，热度证据不支持"社区采用"的规模化主张（引用时必须带热度标注）。
 **对原内容的强化**：强化（术语的正名化 uptake），热度面弱化（与怀疑档"术语在 HN 从未成为热点"负结论并读）。
-
-**（第七轮挖掘（2026-10-06）：技术背景群众（正方体验））**
 
 ### 一、r/ChatGPTCoding《third night this week my coding agent stopped at 1am and waited for me》评论区：无人值守「跑通者」的前提条件簇
 

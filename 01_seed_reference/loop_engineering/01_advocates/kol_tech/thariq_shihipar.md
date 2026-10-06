@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # thariq_shihipar — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第六轮挖掘（2026-10-06）：播客层第二轮）**
-
-### 推-13 · Thariq Shihipar（Anthropic，Claude Code 团队）· Latent Space《Claude Code's Next Era》（2026-09-29）
+### Thariq Shihipar（Anthropic，Claude Code 团队）· Latent Space《Claude Code's Next Era》（2026-09-29）
 
 - URL：https://www.latent.space/p/thariq （curl 实取，页内官方时间戳逐字稿全文在手）
 - 身份：Anthropic Claude Code/agent SDK 一线工程师；在册 Source 系谱内新载体。

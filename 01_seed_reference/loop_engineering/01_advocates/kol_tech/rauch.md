@@ -1,11 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # rauch — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第三轮挖掘（2026-10-06）：新 KOL）**
-
-### 增量 F · Guillermo Rauch（Vercel CEO）· TechCrunch 专访全文（2026-07-06）
+### Guillermo Rauch（Vercel CEO）· TechCrunch 专访全文（2026-07-06）
 
 - URL：https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/ （curl 实取，正文 32 段逐字完整；页内 datetime 2026-07-06T12:49:10-07:00）｜记者 Russell Brandom，"lightly edited transcript"
 - 身份：Vercel 联合创始人/CEO，v0 作者，Next.js 创建者。

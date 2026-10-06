@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # figma — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 甲-5 · Figma《How Figma stays ahead of vulnerabilities with agents》（2026-07-23）
+### 《How Figma stays ahead of vulnerabilities with agents》（2026-07-23）
 
 - 公司/作者：Figma 安全工程；Rohan Sharma / Liam Buchan / Dave Martin
 - URL/日期：https://www.figma.com/blog/how-figma-stays-ahead-of-vulnerabilities-with-agents/ ｜ July 23, 2026（页面实取）
@@ -26,9 +30,7 @@
 - 派别适配：**推动·生产化**（其 15% 首周数据同时是中性档"信任不能一步给"的边界证据）。
 **与 loop engineering 的挂钩**：agent 审查做成 merge 必经门（"no pull request merges without a completed review pass"）＝验证回路基础设施化；精确率两周回看 70% 门未达不开启开发者可见评论＝渐进放权的停止条件。
 
-**（第四轮挖掘（2026-10-06）：甲方工程博客）**
-
-### 甲-6 · Figma《How we secure Figma's internal systems with agents》（2026-07-29）
+### 《How we secure Figma's internal systems with agents》（2026-07-29）
 
 - 公司/作者：Figma 安全工程；Matthew Sullivan / Brad Girardeau
 - URL/日期：https://www.figma.com/blog/how-we-secure-figmas-internal-systems-with-agents/ ｜ July 29, 2026（页面实取）

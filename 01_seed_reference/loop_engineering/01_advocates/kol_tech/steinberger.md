@@ -1,9 +1,15 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # steinberger — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-## 增量 D · Peter Steinberger 07-18 推文 —— 部分解决（两个独立全文转载锚定文本/日期/浏览量；X 原文仍不可达）
+## Peter Steinberger 07-18 推文 —— 部分解决（两个独立全文转载锚定文本/日期/浏览量；X 原文仍不可达）
 
 - 人物：Peter Steinberger（OpenClaw 创作者、词源人物，已入职 OpenAI）｜ 日期：2026-07-18 ｜ 原载体：X（本环境不可达）。
 - 已取全文的独立转载两路：

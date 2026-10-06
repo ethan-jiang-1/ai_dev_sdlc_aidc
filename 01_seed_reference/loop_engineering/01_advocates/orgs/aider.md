@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # aider — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第六轮挖掘（2026-10-06）：开源框架与治理工具）**
-
-### 5. aider（Paul Gauthier）——2026-06 后的循环增量（如实：薄）
+### aider（Paul Gauthier）——2026-06 后的循环增量（如实：薄）
 
 通道：raw.githubusercontent.com/Aider-AI/aider/main/HISTORY.md 实取＋ api.github.com releases（2026-10-06）。
 

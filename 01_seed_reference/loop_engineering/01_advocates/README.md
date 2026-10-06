@@ -23,32 +23,109 @@ Yegge 公开自己的失败账本（Gas Town 烧毁、69B token/月、harness �
 Cherny 经 Willison 转引的 "Production code written by Claude should have a higher bar than if it was written by a human"。
 吹捧与自认边界并存时，以一手原文为准，不替人物洗白也不替人物加戏。
 
-## 素材索引
+## 素材索引（自动对齐，推动派）
 
-| 人物 | 派内角色 | 素材在哪 |
-|---|---|---|
-| **Andrew Ng** | 发起者·定义扩散（三环模型，2026-06-30） | 本目录四件套 [`andrew_ng/`](kol_tech/andrew_ng/profile.md)（历史卡，规则设立前保留） |
-| **Addy Osmani**（Anthropic） | 发起者·**命名者**＋操作篇＋loop→harness→factory 词表 | [evidence-a](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md) ＋ [evidence-z](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-10-03-z-osmani-increment.md) |
-| **Sydney Runkle**（LangChain） | 发起者·体系化（四环，2026-06-16） | [evidence-b §4e](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md) |
-| **Anthropic**（Claude Code 团队） | 发起者·厂商最完整落地 | evidence-b/c ＋ [`02_research/02_ai_sdlc/02_industry_playbooks/anthropic/`](../../../02_research/02_ai_sdlc/02_industry_playbooks/anthropic/README.md) |
-| **Cursor**（厂商） | 发起者·厂商产品化第二家（2026-08-19 /goal＋官方教 /goal+/loop 组合＋"without the need for intervention at each loop"） | [拆档·厂商面](orgs/cursor.md) ＋ [evidence-u S4](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-30-u-post-june-kols.md) |
-| **Boris Cherny** | 发起者·词源（碎片级） | [evidence-a](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-a-originators.md)（AIEWF 06-30 台上版见扫描档，可增补对照表） |
-| **Peter Steinberger** | 发起者·词源（碎片级；2026-06 已入职 OpenAI；2025-12 旧反对立场为反转轨迹） | 同上 ＋ [拆档](kol_tech/steinberger.md |
-| **Thorsten Ball**（Sourcegraph/Amp） | 吹捧者·宽自主乐观极（实践者） | 人物卡 [`_raw_people/19`](../../voices/_raw_people/19_thorsten_ball.md) |
-| **Geoffrey Huntley** | 吹捧者·激进实干极（谱系源头；2026-07-24 起验证转向） | 人物卡 [`_raw_people/16`](../../voices/_raw_people/16_geoffrey_huntley.md) ＋ [evidence-b §1](../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-26-b-stop-and-scheduling.md) ＋ [`people/geoffrey_huntley.md`](kol_tech/geoffrey_huntley.md（四篇增量） |
-| **swyx**（Latent Space） | 吹捧者·概念造词（loopcraft，2026-06-12；AIEWF 06-30 主台演讲） | [中性派拆档 S5](kol_tech/swyx.md（镜像全文收口）＋拆档 |
-| **Steve Yegge** | 吹捧者·激进多派（**含一手成本证词**） | [反对派拆档 S10](kol_tech/steve_yegge.md《The Shape of Things to Come》 |
-| **Jesse Vincent**（obra，候选） | 吹捧者·实践极（过夜双 agent 协作实录＋未解难题自认）——§C1 待判独立性 | [拆档](kol_tech/jesse_vincent.md（2026-07-05 博客全文；"shack 刊物"系负结论） |
-| **Laurie Voss** | 吹捧者·分类学治理翼（4+1 循环：execution/task/product/system＋**oversight——"where the human should live"**）；两个一手载体齐（Arize 原文＋O'Reilly 文），已升 §A | [拆档＋补抓增量 A/B](kol_tech/laurie_voss.md |
+### KOL·专业技术
 
-**吹捧层登记**（仅存转引，一手不存在）：Karpathy——升格（bearblog＋autoresearch README 两个一手载体全文取得，"agents are like interns… aesthetics, judgment, taste, and oversight"）；Nadella——X 长文坐实、全文经转译链取得（引句标"经转译"）；Jensen Huang——仍开放（NVIDIA 一手缺）。中文聚合的 "Anthropic 80% 工程师" 无名氏声称维持**不引用**（详见扫描档·补抓增量）。
+| 文件 | 首条内容 |
+|---|---|
+| [`akshay_nathan`](kol_tech/akshay_nathan.md) |  |
+| [`dan_mcateer`](kol_tech/dan_mcateer.md) |  |
+| [`eiso_kant`](kol_tech/eiso_kant.md) |  |
+| [`geoffrey_huntley`](kol_tech/geoffrey_huntley.md) | Geoffrey Huntley：2026-06 后四篇（三条全文＋一条付费墙截断） |
+| [`harrison_chase`](kol_tech/harrison_chase.md) | Harrison Chase（LangChain CEO）· "Harrison's In the Loop" 博客系列 |
+| [`jason_lopatecki`](kol_tech/jason_lopatecki.md) |  |
+| [`jesse_vincent`](kol_tech/jesse_vincent.md) | Jesse Vincent（obra，Superpowers 作者）·《Some new agentic pattern |
+| [`justin_smith`](kol_tech/justin_smith.md) |  |
+| [`karpathy`](kol_tech/karpathy.md) | Andrej Karpathy · autoresearch / "remove yourself as the bot |
+| [`kieran_klaassen`](kol_tech/kieran_klaassen.md) |  |
+| [`krieger`](kol_tech/krieger.md) |  |
+| [`lance_martin`](kol_tech/lance_martin.md) |  |
+| [`laurie_voss`](kol_tech/laurie_voss.md) | Laurie Voss（Arize Head of DevRel / npm 联合创始人）·《What is a loo |
+| [`livingstone`](kol_tech/livingstone.md) |  |
+| [`masad`](kol_tech/masad.md) |  |
+| [`mistele`](kol_tech/mistele.md) |  |
+| [`patrick_debois`](kol_tech/patrick_debois.md) |  |
+| [`rauch`](kol_tech/rauch.md) |  |
+| [`rieseberg`](kol_tech/rieseberg.md) |  |
+| [`roland_gavrilescu`](kol_tech/roland_gavrilescu.md) |  |
+| [`sachin_malhotra`](kol_tech/sachin_malhotra.md) |  |
+| [`sam_bhagwat`](kol_tech/sam_bhagwat.md) |  |
+| [`steinberger`](kol_tech/steinberger.md) | Peter Steinberger 07-18 推文 —— 部分解决（两个独立全文转载锚定文本/日期/浏览量；X 原文仍 |
+| [`steve_yegge`](kol_tech/steve_yegge.md) | Steve Yegge《The Shape of Things to Come, Part 1: The Continu |
+| [`suraj_gupta`](kol_tech/suraj_gupta.md) |  |
+| [`swyx`](kol_tech/swyx.md) | swyx（Latent.Space）·《[AINews] Loopcraft: The Art of Stacking  |
+| [`thariq_shihipar`](kol_tech/thariq_shihipar.md) |  |
+| [`tim_sweeney`](kol_tech/tim_sweeney.md) |  |
+| [`tushar_jain`](kol_tech/tushar_jain.md) |  |
+| [`zach_lloyd`](kol_tech/zach_lloyd.md) |  |
 
-## 相邻位（不对本词发声、但对同一实践域持强推动立场）
+### KOL·产品背景
 
-| 人物 | 相邻角色 | 素材在哪 |
-|---|---|---|
-| **DHH**（37signals/Rails） | "agent-accelerated development"：37signals "pencils down"（2026-09-23）、个人项目 100% agent 加速；**同时拒绝 "agentic engineering" 词汇**（"marketing slop speak"）——词汇上反、实践上最激进的反转样本 | 人物卡 [`_raw_people/15`](../../voices/_raw_people/15_dhh.md) |
-| **Harrison Chase**（LangChain CEO） | "LLMs running in a loop calling tools… the core primitive, the core algorithm"（专栏三篇，2026-06-30/07-25/08-12）——但词表为 harness/managed agents/learning loop，不用本词 | [拆档](kol_tech/harrison_chase.md |
-| **Tessl**（厂商，候选） | 自报周峰 850–1000+ PR、85–90% agent 端到端；QCon 官方摘要直接用本词并自认最完整（"grow that maturity safely rather than trusting too much too soon"）；⚠️ 库内"2026-09-14 动作"候选**未核销** | [拆档](orgs/tessl.md)（09-02 播客＋QCon 摘要） |
+| 文件 | 首条内容 |
+|---|---|
+| [`jensen_huang`](kol_product/jensen_huang.md) | Jensen Huang · "Nobody writes prompts anymore"（2026-06 下旬，一手 |
+| [`nadella`](kol_product/nadella.md) | Satya Nadella · "learning loops" 组织利害论（经 X 转引） |
 
-> 建卡规则不变：四件套卡只给"独立一手长文 ≥3 份"的人（见 [上级 README](../README.md)）。
+### 组织
+
+| 文件 | 首条内容 |
+|---|---|
+| [`a16z`](orgs/a16z.md) |  |
+| [`aider`](orgs/aider.md) |  |
+| [`amp`](orgs/amp.md) |  |
+| [`anthropic`](orgs/anthropic.md) |  |
+| [`cline_roo`](orgs/cline_roo.md) |  |
+| [`cloudflare`](orgs/cloudflare.md) |  |
+| [`codebuddy`](orgs/codebuddy.md) |  |
+| [`cognition`](orgs/cognition.md) |  |
+| [`comate`](orgs/comate.md) |  |
+| [`cursor`](orgs/cursor.md) | Cursor 官方 ·《Cloud Agents and Cursor Harness Improvements》cha |
+| [`duolingo`](orgs/duolingo.md) |  |
+| [`factory`](orgs/factory.md) |  |
+| [`figma`](orgs/figma.md) |  |
+| [`github`](orgs/github.md) | GitHub Copilot 官方 · Copilot CLI "Autonomous task completion  |
+| [`google`](orgs/google.md) | Google/GCP 面 ·《The Outer Loop》官方论坛长文＋ Agent Quality Flywheel |
+| [`goose`](orgs/goose.md) |  |
+| [`ibm`](orgs/ibm.md) |  |
+| [`kiro`](orgs/kiro.md) |  |
+| [`langchain`](orgs/langchain.md) |  |
+| [`latent_space`](orgs/latent_space.md) |  |
+| [`openai`](orgs/openai.md) |  |
+| [`openhands`](orgs/openhands.md) |  |
+| [`qoder`](orgs/qoder.md) |  |
+| [`qwen_code`](orgs/qwen_code.md) |  |
+| [`replit`](orgs/replit.md) |  |
+| [`shopify`](orgs/shopify.md) |  |
+| [`sierra`](orgs/sierra.md) |  |
+| [`stratechery`](orgs/stratechery.md) |  |
+| [`swe_agent`](orgs/swe_agent.md) |  |
+| [`tessl`](orgs/tessl.md) | Tessl（Dru Knox / Simon Maple）· 软件工厂叙事——播客两期＋QCon 摘要（2026-06- |
+| [`trae`](orgs/trae.md) |  |
+| [`uber`](orgs/uber.md) |  |
+| [`warp`](orgs/warp.md) |  |
+
+### 会议/事件
+
+| 文件 | 首条内容 |
+|---|---|
+| [`aiewf_2026`](events/aiewf_2026.md) | AIEWF 2026 厂商群像——Warp / Factory / OpenAI / Cursor / Sierra（2 |
+
+### 群众·专业程序员
+
+| 文件 | 首条内容 |
+|---|---|
+| [`bilibili`](community_tech/bilibili.md) |  |
+| [`github`](community_tech/github.md) |  |
+| [`hn`](community_tech/hn.md) | 一、HN / GitHub |
+| [`reddit`](community_tech/reddit.md) |  |
+| [`v2ex`](community_tech/v2ex.md) |  |
+| [`zh_dev`](community_tech/zh_dev.md) | 二、中文圈（推动叙事的主要承担层） |
+
+### 群众·非专业
+
+| 文件 | 首条内容 |
+|---|---|
+| [`hn`](community_product/hn.md) |  |
+| [`jike`](community_product/jike.md) |  |
+| [`reddit`](community_product/reddit.md) |  |

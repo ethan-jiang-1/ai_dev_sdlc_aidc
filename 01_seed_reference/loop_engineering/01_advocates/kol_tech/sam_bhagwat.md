@@ -1,11 +1,17 @@
+---
+type: kol_evidence
+directory: 01_advocates/kol_tech
+observation_date: 2026-10-06
+---
+
 # sam_bhagwat — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
 
-**（第五轮挖掘（2026-10-06）：会议 transcript 全量扫）**
+**对抗轴**：Steinberger's law vs swyx Zawinski's Law（[swyx](swyx.md)）——两定律同期互为镜像。
 
-### 推-1 · Sam Bhagwat（Mastra 联合创始人/CEO）· AIEWF 2026《Every Harness Will Become A Claw》（视频上传 2026-07-21）
+### Sam Bhagwat（Mastra 联合创始人/CEO）· AIEWF 2026《Every Harness Will Become A Claw》（视频上传 2026-07-21）
 
 - URL：https://ai.engineer/talks/8qWIPUia2O8-every-harness-will-become-claw （curl 实取，官方时间戳逐字稿全文在手）
 - 身份：TypeScript agent 框架 Mastra 联合创始人/CEO。

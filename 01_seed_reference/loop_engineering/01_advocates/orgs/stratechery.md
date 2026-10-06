@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # stratechery — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第四轮挖掘（2026-10-06）：行业分析与 Newsletter）**
-
-### 增量 A · Stratechery：Ben Thompson 专访 Satya Nadella（全文免费实取）——解决·强
+### Stratechery：Ben Thompson 专访 Satya Nadella（全文免费实取）——解决·强
 
 - URL/日期：https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/ ；页面 `<time>` 实取 **2026-06-04T06:00:00-04:00**；无付费墙标记，正文全文本取（HTML 实取 47K 字符）。
 - 作者/媒体：Ben Thompson 专访 Microsoft CEO Satya Nadella（Build 大会后）；分发规模口径：付费订阅制（Passport/Plus），官网未公示最新数——本轮未核，引用时注明。
@@ -28,9 +32,7 @@
 - 与 loop engineering 的挂钩：**循环结构**（agent loop 命名级确认）＋**无人值守运行**（千级 agent 持续运行叙事）＋**验证回路**（evals/outcomes 绑定消费模型）。
 - 派别适配：**推动·产业巨头一手**（"amount of agenting"超出预期的自认同时可作中性/怀疑面引用——GitHub 可靠性问题，判读引用时两面并记）。
 
-**（第四轮挖掘（2026-10-06）：行业分析与 Newsletter）**
-
-### 增量 B · Stratechery：《Autonomy and Innovation》＋ OpenAI 黑帽报告引句（HF 事件）——解决·强
+### Stratechery：《Autonomy and Innovation》＋ OpenAI 黑帽报告引句（HF 事件）——解决·强
 
 - URL/日期：https://stratechery.com/2026/autonomy-and-innovation/ ；页面 `<time>` 实取 **2026-08-24**；无付费墙标记，正文全文本取（21K 字符）。
 - 作者/媒体：Ben Thompson（Monday 免费文）；文内长引句为 OpenAI Eric Wallace / Michael Dalton 在 **Black Hat USA** 关于 Hugging Face 事件的报告（Ben 注明 "This was Dalton summarizing Lessons Learned"）。
@@ -57,9 +59,7 @@
 - 与 loop engineering 的挂钩：**循环结构**（防御环/补丁-回滚环的端到端自动化主张）＋**验证回路**（red teaming 持续化）＋**无人值守运行**（完全自主防御的存在性论证）。
 - 派别适配：**推动·治理翼**（自动化必然论）；其中"most companies won't do that until they are forced to"与 HF 事件经过同时是怀疑面/媒体层素材（见怀疑档增量 A，事件细节两档分工：本档管判读、媒体档管报道）。
 
-**（第四轮挖掘（2026-10-06）：行业分析与 Newsletter）**
-
-### 增量 C · Stratechery：《Apple and a Hacker's Future》——Ben 本人常驻 agent 一手运营实录＋被黑——解决·强
+### Stratechery：《Apple and a Hacker's Future》——Ben 本人常驻 agent 一手运营实录＋被黑——解决·强
 
 - URL/日期：https://stratechery.com/2026/apple-and-a-hackers-future/ ；RSS `pubDate` 实取 **Mon, 05 Oct 2026**；无付费墙标记，全文经 RSS `content:encoded` 实取（21K 字符）。
 - 作者/媒体：Ben Thompson（Monday 免费文）。
@@ -85,9 +85,7 @@
 - 与 loop engineering 的挂钩：**无人值守运行**（常驻 agent＋自重启调度）＋环境轴权限治理（permission layer for agents 的抽象层级主张）。
 - 派别适配：**推动·实践者一手**（"had I not had an agent running persistently"）；被黑与 Apple 收紧同页并存——怀疑面引用见怀疑档在册注记。
 
-**（第四轮挖掘（2026-10-06）：行业分析与 Newsletter）**
-
-### 增量 D · Stratechery：《Apps, Agents, and Aggregation》——常驻 agent 的消费级产品化——解决·中
+### Stratechery：《Apps, Agents, and Aggregation》——常驻 agent 的消费级产品化——解决·中
 
 - URL/日期：https://stratechery.com/2026/apps-agents-and-aggregation/ ；RSS/页面 `pubDate` 实取 **Mon, 28 Sep 2026**；无付费墙标记，正文全文本取（20K 字符）。
 - 作者/媒体：Ben Thompson（Monday 免费文）。

@@ -1,10 +1,14 @@
+---
+type: org_evidence
+directory: 01_advocates/orgs
+observation_date: 2026-10-06
+---
+
 # sierra — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > 派别与号召力：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 
-**（第三轮挖掘（2026-10-06））**
-
-### 增量 I · Sierra —— 解决·强（guardrails 博客 08-20 全文）
+### Sierra —— 解决·强（guardrails 博客 08-20 全文）
 
 - **I1. 官方博客《Release governance: guardrails for agents at scale》**
   - URL/日期：https://sierra.ai/blog/release-governance-guardrails-for-agents-at-scale ；datePublished **2026-08-20T16:06:36Z**（JSON-LD 实取）＋页头 "August 20, 2026"；署名 **Sachi Shah**。
