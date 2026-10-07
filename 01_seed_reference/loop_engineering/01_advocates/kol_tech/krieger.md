@@ -27,3 +27,30 @@ observation_date: 2026-10-06
 - **难点自认**（同稿）："Most usage is actually much more delegated"，但团队 "bottlenecked on reviews" 且受限于 "human ability to fully conceptualize what we're doing."
 - **最小主张**：Anthropic 内部实践即"多人向 agent 系统分派所有权"的早期软件工厂；同时自认 review 与概念化是瓶颈。
 - **派别适配**：**推动票（带难点自认）**——自认句同时是怀疑派可引用的材料，判读时两面都要收。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核＋谨慎注记）
+
+> 判定：**单点解除 → 稳定（推动翼）**；新增"harness 价值暂态化"注记（与 Debois 商品化预言同构，判读两面收）。
+
+## 《How Anthropic Builds: Lessons from Labs》（ai.engineer 官方笔录全文，WF26——同场由现场稿升级）
+
+- URL：https://ai.engineer/talks/qqrk7CtkuIw-anthropic-builds-lessons-from-labs ｜ fetch 成功
+- 逐字/官方要点：
+
+> "The newer workflow begins with the desired result: describe the goal, let Claude work, and discuss questions and tradeoffs as they arise."
+
+> 周末 ~20 万行 Python→TypeScript 迁移："It ported the code, verified and double-checked it, read both versions, and repeatedly worked over its output. By Monday… a completed port that worked and was deployable."
+
+> "Delegation produces a review bottleneck… The deeper constraint is whether a human can conceptualize the change at all."＋"he does not read every line of every pull request… Important reviews remain human-driven."
+
+## Sierra Ventures 21st CXO Summit 对谈（2026-09-28 发）
+
+- URL：https://www.sierraventures.com/content/anthropic-mike-krieger ｜ fetch 成功（全文）
+- 逐字：
+
+> "You can't hold your product shapes too strongly. You have to hold them lightly because they may just go away over time."
+
+- 要点级（作者转述）：3 月自建 builder＋verifier 脚手架，会前被更新模型裸跑**击败**（"Months of Engineering, Beaten by a Model Out of the Box"）；"Earlier this year, Claude working autonomously for hours was the exception. Now it's common."；审批分流、风险才升级人审。
+（**谨慎注记**：自建脚手架被模型进步侵蚀——harness 投资的回报期问题。）

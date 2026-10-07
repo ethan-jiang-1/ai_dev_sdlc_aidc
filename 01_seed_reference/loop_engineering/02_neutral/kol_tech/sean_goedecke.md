@@ -175,3 +175,10 @@ observation_date: 2026-10-06
 - 立场：**边界化**。
 
 **本轮弧线判读**：**「循环结构乐观＋验证人守＋不放开跑」的复合立场**，且是运动的晚进场者（06 月零介入、08 月后才密集发声、全程不用专名）。与库内既有五篇合起来：09-27 "alignment not capability"（已有）与 08-30 "beat the models at something"（本轮）同构——验证/对齐留在人手是他贯穿全窗口的不变量。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批·稳定档复核）：**维持稳定**
+
+- 10-07（今日）《How to read code》（feed 全文）——直怼"不用再读码/LLM 互审"两面主张（"I think both of these ideas are false"），与"alignment not capability"不变量一致——全窗口最后一日时点锚。
+- 待核缺口：10-02《Do not build the LLM torture factory》正文未及 fetch（标题疑似 factory 批评，按 08-30/10-03 同题表态推断大概率同向）——下轮优先。

@@ -10,7 +10,7 @@
 <text x="30" y="672" font-size="10.5" fill="#607d8b">群众</text>
 <text x="550.0" y="682" text-anchor="middle" font-size="13" font-weight="700" fill="#444">技术深度：专业程序员（左） ↔ 非专业·产品/商业（右）</text>
 <rect x="170" y="138" width="400" height="250" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" rx="8"/>
-<text x="184" y="164" font-size="13.5" font-weight="700" fill="#2e7d32">KOL · 专业技术　<tspan fill="#777" font-size="12">40 档</tspan></text>
+<text x="184" y="164" font-size="13.5" font-weight="700" fill="#2e7d32">KOL · 专业技术　<tspan fill="#777" font-size="12">68 档（＋候选 1）</tspan></text>
 <text x="184" y="178" font-size="9" fill="#777">推动 34／中性 20／怀疑 14＋候选 1（第九轮＋6；图内名单为代表示例非全量）</text>
 <text x="184" y="192.0" font-size="9.3" fill="#555">Andrew Ng</text>
 <text x="184" y="205.4" font-size="9.3" fill="#555">Akshay Nathan</text>
@@ -74,5 +74,5 @@
 <text x="604" y="660" font-size="9.5" fill="#bf8f00" font-weight="700">README 判读称『接近零——缺席本身是证据』（10-06 前口径；拆分后现有 9 档，成色另判）</text>
 <line x1="580" y1="138" x2="580" y2="688" stroke="#cfd8dc" stroke-width="1.2" stroke-dasharray="6,4"/>
 <line x1="170" y1="412" x2="990" y2="412" stroke="#cfd8dc" stroke-width="1.2" stroke-dasharray="6,4"/>
-<text x="150" y="660" font-size="10" fill="#888">注：KOL·专业技术 40 档＝推动 34＋中性 20＋怀疑 14＋候选 1（第九轮批 2026-10-07：＋5 KOL＋helwer 候选；METR 入 orgs 48）。图内名单为代表示例非全量——全量定档见 00_kol_stance_map §五。判读权威在 README 证据分层节＋kol-roster §A2</text>
+<text x="150" y="660" font-size="10" fill="#888">注：KOL·专业技术 68 档（另有候选 1）＝推动 34＋中性 20＋怀疑 14（第九轮批 2026-10-07：＋5 KOL＋helwer 候选；METR 入 orgs 48）。图内名单为代表示例非全量——全量定档见 00_kol_stance_map §五。判读权威在 README 证据分层节＋kol-roster §A2</text>
 </svg>

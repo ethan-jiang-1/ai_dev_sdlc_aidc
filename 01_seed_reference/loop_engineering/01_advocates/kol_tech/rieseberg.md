@@ -28,3 +28,10 @@ observation_date: 2026-10-06
 
 - 相邻单集（存在性已核、正文未取——podscan 403）：Latent Space《Why Anthropic Thinks AI Should Have Its Own Computer — Felix Rieseberg of Claude Cowork & Claude Code Desktop》；The MAD Podcast《Anthropic's Felix Rieseberg: Claude Cowork, Mythos, and the SaaS Extinction》。
 - **派别适配**：**推动票（弱）**——目前仅单点转引＋两档未核单集，待补档后可升级。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**窗口内仍单点（转引级）**
+
+- 两档"未核单集"核销为窗口外谱系：Latent Space《Why Anthropic Thinks AI Should Have Its Own Computer》＝2026-03-17（官方要点页实取："the real frontier… is no longer better chat, but trusted task execution"）；How I AI＝2026-05-25（"go one abstraction layer up, then do it again"）。
+- 窗口内负结论：个人站无博文；X 镜像线程 503＋curl 空；MAD 档未核（按 episode id 序推断窗口前，不作依据）。

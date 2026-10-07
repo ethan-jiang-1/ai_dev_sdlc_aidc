@@ -30,3 +30,9 @@ observation_date: 2026-10-06
 - 官方分节："The process can advance; authorization remains unresolved"（自主化推进中、授权未决）。
 - **最小主张**：只把 sandbox+agent 生成 PR 叫"软件工厂"是命名通胀；工厂的判据是结果指标与规划/协调环节的自动化。
 - **派别适配**：**中性票（中偏疑）**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**单点确认**
+
+- 窗口内检索面负结论。

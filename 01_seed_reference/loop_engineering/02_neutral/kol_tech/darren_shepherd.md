@@ -25,3 +25,10 @@ observation_date: 2026-10-06
 - 官方 Key Takeaways（host 撰，页面实取）："**Sandbox the agent loop, not only the tool calls.** The loop directs code that holds secrets and talks to external systems, so the agent and its tools belong in one sandbox with one policy."＋"Egress is the policy surface, not ingress."＋"Output is not progress. Letting a model barf out thousands of lines feels productive until the regressions pile up, and one estimate raised in the conversation puts a skilled engineer's real gain at around 5 to 10 percent."
 - **最小主张**：把 loop 治理落到基础设施层——沙箱边界应包住整个 agent loop（agent＋tools 一个沙箱、一个 egress 策略），而非只包工具调用。
 - **派别适配**：**中性**（架构派；"output is not progress" 与 5-10% 实际增益估计带清醒怀疑色彩）。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**单点确认**
+
+- 窗口内检索面负结论：Obot 博客两篇均窗口外；未获窗口内新表态。
+- 头衔两说未裁定：任务简报"SUSE CTPO"与库内"Obot 创始人"并陈，窗口内来源未获判定——引用时以档案口径为准并注明。

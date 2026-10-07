@@ -32,3 +32,22 @@ observation_date: 2026-10-06
 - 号召力口径：②＋③＋④（AIEWF 主舞台辩手＋头部 newsletter 生态人物）。
 - **最小主张**：反的是"无纪律 loop 的 hyper"，不是 loop 本身；生产语境天花板 2-3x；review 是瓶颈、人的时间应花在设计与拆解上。
 - **派别适配**：**中性**（辩论反方席但自述 "not anti-loops"——教科书式中性席位）。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**——四个窗口内时点同向；07-23 演讲把论证升级到新层。
+
+## AI Engineer 演讲《Why coding agents keep making your codebase worse》（2026-07-23；⚠️ 引句为 ai-wiki 时间戳摘要转引，非官方逐字稿）
+
+- URL：https://podcasts.apple.com/ca/podcast/why-coding-agents-keep-making-your-codebase-worse/id1572440477?i=1000792424627
+- 转引（⚠️ 标注）：
+
+> "no amount of harness engineering or loops maxing can solve what is fundamentally a model training issue"
+（**论证升级**：从"反自由循环"到 RL reward shape 根因论——同时自曝 HumanLayer lights-off 实跑失败。）
+
+## Beyond Coding ep270（2026-09-30，官方页章节题同向）
+
+- 章节题："Why 2-4x productivity beats chasing 100x"／"dark factories"
+（**2-4x 现实主义**——与怀疑派 Arcolano 的衰减曲线同向的推动侧口径。）

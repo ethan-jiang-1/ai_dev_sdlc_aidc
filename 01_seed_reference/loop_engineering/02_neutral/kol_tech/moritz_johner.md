@@ -31,3 +31,13 @@ observation_date: 2026-10-06
 - 官方分节："Keep the PR lifecycle outside the agent""Separate application capabilities from agent credentials"。
 - **最小主张**：无人值守依赖修补的可行形态＝"boring 外壳＋受限 agent 内核"，PR 生命周期与凭据全部留在 agent 外。
 - **派别适配**：**中性票（含强怀疑引句）**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**窗口内单点确认＋升级**
+
+- 升级：CNAS Paris 官方讲者页（12-02/03，窗口后已挂出）一手自述摘要同向佐证：
+
+> "The hard part was not getting an agent to open a pull request. The hard part was making it constrained enough for infosec and useful enough for engineers."＋"metrics that proved whether the system was creating value or just burning tokens"
+
+（URL：https://www.cloudnative.day/speakers/paris/moritz-johner ｜ fetch 成功；窗口后材料作佐证不计窗口内票。）

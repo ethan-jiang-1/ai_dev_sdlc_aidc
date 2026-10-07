@@ -155,6 +155,7 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **两股新收敛（给判读层）**：①数据派（Arcolano）首次给出组织级衰减曲线，把"把控性差"从体感变成可测指标；②安全派（Dinaburg/METR/Kapoor 三方独立）把怀疑重心从"产出质量"升级到**"监控与隔离层本身是被攻击面"**——METR 窗口内无新生产力论文、整体转向事故/监控，是怀疑派重心迁移的标志。
 - **勘误**：Dotta done 对象六件套→**八件套**（逐字稿＋页面 JSON 8 键坐实，[dotta](03_skeptics/kol_tech/dotta.md) 已改）；SREcon《Tokenmaxxing is the New "Lines of Code"》官方页至今未发布（第五轮待发布登记收口——内容已演化进 World's Fair 07 讲题与 Arcolano 08-13 作者文）。
 - **通道**：web_fetch 全程可用（与第七轮相反）；负结论——Orosz §5–7 付费墙两轮复核收口为"拿不到"（镜像同点截断＋publish0x 403）；Zechner earendil.com 无索引（10-01 后无新文）；rachelbythebay DNS 级失败；详见 [_负结论与通道](03_skeptics/_负结论与通道.md) 第九轮节。
+- **图同步**：三张立场图按定档表重生成（图 A 72 档＋候选 1、图 B 27 档轨迹＋Tim Bray／Arcolano／Kim Maida／Charlie Holtz 四线、图 C orgs 48／KOL·专业 68＋候选 1）——[00_kol_stance_map](00_kol_stance_map.md) §七。
 
 ## 四、不支持什么（证据边界）
 

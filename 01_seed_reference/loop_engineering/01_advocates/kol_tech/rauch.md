@@ -38,3 +38,15 @@ observation_date: 2026-10-06
 
 - **最小主张**：2026 年中厂商一线的自述是"数以百计内部 agent 已进 production、正在补审计/数据边界课"——loop 工程化的厂商面直接证词。
 - **派别适配**：**推动票（强）**，带完整掌控面表述（可入推动派"掌控翼"）。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核，⚠️ 第二时点为转引级）
+
+> 判定：**单点解除 → 稳定（推动）**——07-06 TechCrunch 专访 → 10-04 X 线程文档分层同向；**X 不可达，第二时点经 RuntimeWire 转述（转引级，主张句不作强证据引用）**。
+
+## 10-04 X 线程（经 RuntimeWire 2026-10-06 转述）
+
+- URL：https://runtimewire.com/article/vercel-guillermo-rauch-human-readmes-agent-documentation ｜ fetch 成功；primary source 标注 x.com/rauchg/status/2106848085267902815（本方未直接核）
+- 转述句："argues that public READMEs should be written for people while internal documentation can use more utilitarian language for coding agents."；endorsed "human-edited" as a useful distinction… producing this kind of material "requires heavy editing"
+- 负结论：rauchg.com 2026 年无新文（最新为 2025《The AI Cloud》）；Vercel Ship 2026 recap 仅摘要级。

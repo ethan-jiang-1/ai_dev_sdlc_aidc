@@ -67,3 +67,25 @@ observation_date: 2026-10-06
 ## 本轮推荐面小结（一句）
 
 替代方案＝**replayability 路线**：语义边界记录、会话变量日志、全执行包络捕获、stub 模型的确定性 CI 重放、原失败 trace 作回归测试、双轨（确定性＋行为）测试、生成期随机性保留。
+
+---
+
+# 增量补挖（2026-10-07 goal 第二批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**（AIEWF 两场 ~06 → 08-13 Microsoft Command Line 两人署名伴生文同向：别追确定性/tokenmaxxing，追 run 级可观测＋治理）。
+
+## 《…》（Microsoft Command Line，2026-08-13，两人署名伴生文，全文实取）
+
+- URL：commandline.microsoft.com（具体 slug 见 .tmp-goal-movers/batch-E-residual.md）
+- 逐字摘录：
+
+> "We're getting past the era of tokenmaxxing…"
+（**窗口内最直接的反 tokenmaxxing 判词**——与 Arcolano/Willison 反 tokenmaxxing 线合流。）
+
+> "Steering runs first. A halt is the last resort"（**熔断次序处方**：先 steering、halt 是最后手段）
+
+> "No model runs in the enforcement path"
+（**被治理者不得自决停止**——与怀疑档"验证信号由被评估者供养"批评互为表里的厂商侧处方。）
+
+> 自认边界："成本 cap 分不出对错，MAST 过半多 agent 失败是 spec/verification 问题"
+- ⚠️ 口径冲突声明：ai.engineer 讲稿页自带"录制 vs 伴生文基线不一致"声明——引用数字须双标。

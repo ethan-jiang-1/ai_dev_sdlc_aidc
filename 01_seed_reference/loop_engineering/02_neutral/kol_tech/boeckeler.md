@@ -111,3 +111,9 @@ observation_date: 2026-10-06
 - 立场：**复合（loop 内验证实践暂缓＋替代机制探索）**。
 
 **本轮最小主张**：Böckeler 09-10 月唯一增量＝09-30 LinkedIn 贴：重申暂不让 agent 做 TDD（收益属人类、成本高、需严格 eval 与 sensors 补位）——验证回路内容物仍在探索，审慎立场未变。10-01 职业贴（宣布转投 Unblocked 做上下文工程）不挂七类钩，按底线弃收——轨迹注记：她的关注点从 loop 内验证转向 loop 外上下文设施。其余通道（martinfowler.com、个人 newsletter、bsky/mastodon）窗口内无新发声。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批·稳定档复核）：**证据不足维持**
+
+- martinfowler.com/feed.atom 实取（至 10-04）：feed 内无她署名条目；09-30 LinkedIn 已是窗口末最新——负结论维持原判。

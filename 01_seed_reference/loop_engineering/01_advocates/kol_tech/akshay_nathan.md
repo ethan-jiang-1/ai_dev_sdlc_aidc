@@ -27,3 +27,9 @@ observation_date: 2026-10-06
   - "I'll think about like was I required in this loop"（产品侧自查人在环必要性的原话。）
 - **最小主张**：coding agent 的 harness 正成为通用知识工作 agent 的底座；loop/goal 类自主模式只适用于"可验证长进展"任务子集——适用边界被厂商当面划出。
 - **派别适配**：**推动票（带边界自认）**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**未及挖（负结论一条）**
+
+- DS TV 候选稿（dutchstartup.ai）web_fetch 429（Vercel Security Checkpoint）＋curl 带 UA 重试仍被拦——负结论止步。下批优先。

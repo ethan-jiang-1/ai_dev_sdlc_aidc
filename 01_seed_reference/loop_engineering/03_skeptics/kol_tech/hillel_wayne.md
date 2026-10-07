@@ -49,3 +49,40 @@ observation_date: 2026-10-07
 
 **该条支持的最小主张**：形式化方法对 loop 验证回路是"低垂果实采集器"而非救世主——上游缺口是可表达性质本身；LLM 自产的性质是弱性质；按性质类别选工具（CTL/PRISM 等）。
 **派别适配**：**怀疑票（验证叙事降温向）**——注意他本人是 FM 布道者且已加入验证公司 Antithesis：反的是对自家工具的神化，这个"利益反向"结构使票更硬。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**——03-10（谱系）→ 07-29 → 09-16 → 09-30 同向："反神化、不反 agent"全程无转折。
+
+## Pragmatic Engineer 播客《Formal methods with Hillel Wayne》（2026-07-29，Orosz 主持，1h23m）
+
+- URL：https://newsletter.pragmaticengineer.com/p/formal-methods-with-hillel-wayne ｜ fetch 成功（episode notes＋timestamps；transcript 区未展开）
+- 页面直引（"As Hillel says"）：
+
+> "AI bringing formal verification up from maybe 0.1% to 0.3% across the industry would still be huge!"
+
+- 官方 takeaways（host 编辑语，引用标注）："AI won't make formal verification mainstream, but will increase its use. … people who succeed at using AI to generate formal specs are often formal verification experts."；"Hillel recommends most engineers adopt property-based testing, and stop there."
+（09-30"上游缺口是可表达性质"的 7 月前置形态；"用 AI 生成 spec 成功的多半本就是验证专家"。）
+
+## 《The LLMs yearn for the spines》（Computer Things，2026-09-16）
+
+- URL：https://buttondown.com/hillelwayne/archive/the-llms-yearn-for-the-spines/ ｜ fetch 成功（全文）
+- 逐字摘录：
+
+> "Earlier this year I worked on a couple of AI-generated TLA+ specifications, and one thing I've noticed was that they all used the word 'spine' somewhere."
+（批评"FM 救世论"的人自己是一线 AI 使用者——"不反 agent"的直接注脚。）
+
+> "the first nine months of this year have seen 20 times more 'spine' PRs as all of 2025"＋"I spot checked and many of the PRs that use 'spine' are coauthored by Claude or Cursor."
+
+> 脚注（转引 Orosz，标"经其文转引"）："Gergely Orosz has insider info showing that GitHub has seen 71.7M more LLM-authored PRs this year than last year… there is probably now more agentic activity on GitHub than public activity."
+（他对 agentic 规模无否认。）
+
+> "I put the tool I vibecoded to do this analysis up as a gist"
+（vibecoded 自称——实践面注脚。）
+
+## 相邻证据＋负结论
+
+- 08-18《Vim wants you to control, VSCode wants you to consume》：**相邻证据**（非 agentic 专文）——"The broader principle here is the ability-guarantee tradeoff."（能力↔保证权衡，与其验证透镜同构）。
+- 负结论：Computer Things 其余窗口内各期（06-02/06-10/06-17/07-14/07-29/09-01）无 agentic/FM-loop 立场句；hillelwayne.com 窗口内两篇非 loop；Systems Distributed 09-23 讲未 fetch 不立条。

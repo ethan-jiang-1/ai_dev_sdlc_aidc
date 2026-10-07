@@ -33,3 +33,17 @@ observation_date: 2026-10-06
 
 - **最小主张**：autonomy 的解锁件是 runtime 层的能力授予契约（按任务授 GitHub 权给子任务而非父任务等），控制必须活过模型/harness 的更换。
 - **派别适配**：**推动票（掌控翼）**。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**（08-20 AIEWF → 09-25 WeAreDevelopers WC NA 同向；两载体均为会议层）。身份口径：本次官方页记 **Docker CTO**。
+
+## 《Govern the Runtime, Not the Agent: One Control Plane for Every Model, Every Harness》（WeAreDevelopers WC NA，2026-09-25 发布，31:01 视频）
+
+- URL：https://www.wearedevelopers.com/videos/100540-govern-the-runtime-not-the-agent-one-control-plane-for-every-model-every-harness ｜ fetch 成功（官方 .md；**无逐字 transcript，摘要级**）
+- 官方摘要要点：
+
+> "relying on frontier models or agent harnesses to self-police is a fundamentally flawed strategy"＋"govern the runtime rather than the agent itself"
+（meta-runtime 层确定性隔离边界＋细粒度语义策略＋agent 独立身份——与其 AIEWF"控制放 agent 边界外"完全同向；引用标摘要级。）

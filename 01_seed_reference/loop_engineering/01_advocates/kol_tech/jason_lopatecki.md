@@ -34,3 +34,9 @@ observation_date: 2026-10-06
 - 官方分节："Turn a finding into an issue, evaluator, or dataset example""Feed evaluations into the next investigation"——eval 结果回灌下一轮调查（验证回路闭环）。
 - **最小主张**：自改进 agent 的骨架＝触发器（周期/事件）→ 证据收集 → 人审位 → eval 回灌；瓶颈在验证置信度而非生成。
 - **派别适配**：**推动票**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**单点确认**
+
+- BigGo 条目经 URL 确认＝已收 AIEWF 演讲的转述，非新时点。线索（下轮优先）：2026-08 Dynatrace 收购 Arize 公告 PR 应有其署名引句（agent 可观测性方向，TechTarget/DevOps.com 标题级）。Arize 博客文章页 fetch 只返回导航框架（内容级负结论）。

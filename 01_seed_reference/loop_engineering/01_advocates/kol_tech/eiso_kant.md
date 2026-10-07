@@ -28,3 +28,9 @@ observation_date: 2026-10-06
   - "They're increasingly no longer, 'Here we're gonna stuff 50 tools in the…'"（工具调用向写代码收敛。）
 - **最小主张**：前沿实验室侧的 loop engineering＝把验证、回溯、持久性做成模型行为并让 agent 自跑实验工厂；harness 已进入训练目标。
 - **派别适配**：**推动票（强）**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**单点确认**
+
+- DS TV 候选访谈页（dutchstartup.ai）web_fetch 429＋curl 带 UA 重试仍 429——负结论，日期与立场句不可核；其余命中均为已收 07-23 Latent Space 期的镜像。窗口内仍仅一个一手载体。详见 .tmp-goal-movers/batch-B1-advocates.md（tmp 过渡）。

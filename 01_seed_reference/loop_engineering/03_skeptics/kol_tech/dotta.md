@@ -91,3 +91,18 @@ observation_date: 2026-10-06
 ## 本轮推荐面小结（一句）
 
 Dotta 的替代方案是一套完整协议：**done 八件套对象化＋验证者/作者分离（跨模型）＋证据与工具武装验证者＋watchdog 跨 harness 外层监督＋chain of custody 交接链**——三不变量（工作继续/真阻塞才停/循环有界）是设计目标，以上是落地件。
+
+---
+
+# 增量补挖（2026-10-07 goal 第二批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**——AIEWF 讲稿 → 08-31/09-16/10-01/10-05 release 序列，控制面哲学全程一致并加固。
+> **勘误**：线索所称"06-09 release 序列"不成立——仓库首个 release 即 08-31（GitHub API 实核）。
+> **轴选注记（留判读层）**：若取"harness 默认自主度"轴，08-31 收紧→10-01 放开构成反向小弧；但触发门控（10-05）与恢复权（08-31）同步收紧——两轴合读仍是"执行放开、控制权收拢"。
+
+## Paperclip releases 完整序列（GitHub API 实取）
+
+> 08-31："Grok no longer defaults --permission-mode to dontAsk"＋"Stranded-task recovery…stops automatic takeovers"（**默认权限收紧＋搁浅任务停止自动接管**）
+> 09-16：GitHub 共享 token → 按人持久身份（供给链身份化）
+> 10-01："Execution harnesses now default to full auto…Paperclip's own approval decisions still enforce controller authority"（**执行默认放开、审批权仍归控制面**）
+> 10-05：@-mention 不再启动运行（已在第九轮增量归档）

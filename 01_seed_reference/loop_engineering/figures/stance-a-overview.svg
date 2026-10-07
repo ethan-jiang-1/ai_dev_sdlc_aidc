@@ -13,16 +13,16 @@
 <text x="332" y="126" text-anchor="middle" font-size="9" fill="#555">24</text>
 <rect x="397" y="101" width="22" height="17" fill="#bdbdbd" rx="2"/>
 <text x="408" y="126" text-anchor="middle" font-size="9" fill="#757575">12</text>
-<rect x="427" y="101" width="22" height="17" fill="#2e7d32" rx="2"/>
-<text x="438" y="126" text-anchor="middle" font-size="9" fill="#555">12</text>
+<rect x="427" y="98" width="22" height="20" fill="#2e7d32" rx="2"/>
+<text x="438" y="126" text-anchor="middle" font-size="9" fill="#555">14</text>
 <rect x="504" y="92" width="22" height="26" fill="#bdbdbd" rx="2"/>
 <text x="515" y="126" text-anchor="middle" font-size="9" fill="#757575">18</text>
-<rect x="534" y="101" width="22" height="17" fill="#1565c0" rx="2"/>
-<text x="545" y="126" text-anchor="middle" font-size="9" fill="#555">12</text>
+<rect x="534" y="102" width="22" height="16" fill="#1565c0" rx="2"/>
+<text x="545" y="126" text-anchor="middle" font-size="9" fill="#555">11</text>
 <rect x="611" y="114" width="22" height="4" fill="#bdbdbd" rx="2"/>
 <text x="622" y="126" text-anchor="middle" font-size="9" fill="#757575">3</text>
-<rect x="641" y="108" width="22" height="10" fill="#e65100" rx="2"/>
-<text x="652" y="126" text-anchor="middle" font-size="9" fill="#555">7</text>
+<rect x="641" y="109" width="22" height="9" fill="#e65100" rx="2"/>
+<text x="652" y="126" text-anchor="middle" font-size="9" fill="#555">6</text>
 <rect x="717" y="100" width="22" height="18" fill="#bdbdbd" rx="2"/>
 <text x="728" y="126" text-anchor="middle" font-size="9" fill="#757575">13</text>
 <rect x="747" y="101" width="22" height="17" fill="#e65100" rx="2"/>
@@ -128,7 +128,7 @@
 <circle cx="317" cy="392" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
 <circle cx="317" cy="392" r="4.2" fill="#2e7d32"/>
 <text x="862" y="395" font-size="9" fill="#888">推动票（降温注记）</text>
-<text x="862" y="405" font-size="8" fill="#aaa">★ 商品化预言——loop 本身不会是竞争力</text>
+<text x="862" y="405" font-size="8" fill="#aaa">★ 商品化预言——09-30 QCon 同向深化（context is the fuel…</text>
 <text x="192" y="410" text-anchor="end" font-size="10.5" fill="#333">Zach Lloyd</text>
 <line x1="313" y1="404" x2="321" y2="404" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
 <circle cx="317" cy="407" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
@@ -139,74 +139,110 @@
 <circle cx="210" cy="422" r="4" fill="#2e7d32"/>
 <text x="862" y="425" font-size="9" fill="#888">推动票（激进预言·Steinberger's law…</text>
 <text x="192" y="441" text-anchor="end" font-size="10.5" fill="#333">Andrew Ng</text>
-<circle cx="317" cy="438" r="4" fill="#2e7d32"/>
+<line x1="313" y1="435" x2="321" y2="435" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="438" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="438" r="4.2" fill="#2e7d32"/>
 <text x="862" y="441" font-size="9" fill="#888">术语定义者·三环模型</text>
+<text x="862" y="451" font-size="8" fill="#aaa">★ 五时点同向；09-04 长时程自主降温（amplified beyond reali…</text>
 <text x="192" y="456" text-anchor="end" font-size="10.5" fill="#333">Dan McAteer</text>
-<circle cx="317" cy="453" r="4" fill="#2e7d32"/>
+<line x1="313" y1="450" x2="321" y2="450" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="453" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="453" r="4.2" fill="#2e7d32"/>
 <text x="862" y="456" font-size="9" fill="#888">推动票（结构综合）</text>
+<text x="862" y="466" font-size="8" fill="#aaa">★ 窗口内 9 篇同向（09 月 Astra 系列）</text>
 <text x="192" y="471" text-anchor="end" font-size="10.5" fill="#333">Eiso Kant</text>
 <circle cx="317" cy="468" r="4" fill="#2e7d32"/>
 <text x="862" y="471" font-size="9" fill="#888">推动票（强）</text>
 <text x="192" y="486" text-anchor="end" font-size="10.5" fill="#333">Harrison Chase</text>
-<circle cx="317" cy="483" r="4" fill="#2e7d32"/>
+<line x1="313" y1="480" x2="321" y2="480" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="483" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="483" r="4.2" fill="#2e7d32"/>
 <text x="862" y="486" font-size="9" fill="#888">推动票（相邻位·managed agents 词表）</text>
+<text x="862" y="496" font-size="8" fill="#aaa">★ 专栏四时点同向（06-30/07-25/08-12/09-24）</text>
 <text x="192" y="501" text-anchor="end" font-size="10.5" fill="#333">Jason Lopatecki</text>
 <circle cx="317" cy="498" r="4" fill="#2e7d32"/>
-<text x="862" y="501" font-size="9" fill="#888">推动票</text>
-<text x="192" y="517" text-anchor="end" font-size="10.5" fill="#333">Justin Smith ⚠️</text>
-<circle cx="317" cy="514" r="4" fill="#2e7d32"/>
-<text x="862" y="517" font-size="9" fill="#888">推动票（会议层 ⚠️）</text>
+<text x="862" y="501" font-size="9" fill="#888">推动票·单点确认（09-30 复核）</text>
+<text x="192" y="517" text-anchor="end" font-size="10.5" fill="#333">Justin Smith</text>
+<line x1="313" y1="511" x2="321" y2="511" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="514" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="514" r="4.2" fill="#2e7d32"/>
+<text x="862" y="517" font-size="9" fill="#888">推动票（Resolve AI 署名博客＋AIEWF …</text>
+<text x="862" y="527" font-size="8" fill="#aaa">★ 06-23 博客早于会议——build 侧加速反增运维负载</text>
 <text x="192" y="532" text-anchor="end" font-size="10.5" fill="#333">Kieran Klaassen</text>
-<circle cx="317" cy="529" r="4" fill="#2e7d32"/>
+<line x1="313" y1="526" x2="321" y2="526" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="529" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="529" r="4.2" fill="#2e7d32"/>
 <text x="862" y="532" font-size="9" fill="#888">推动票（compound engineering）</text>
+<text x="862" y="542" font-size="8" fill="#aaa">★ 07-13 polish 文同向（The factory has been auto…</text>
 <text x="192" y="547" text-anchor="end" font-size="10.5" fill="#333">Lance Martin</text>
 <circle cx="317" cy="544" r="4" fill="#2e7d32"/>
-<text x="862" y="547" font-size="9" fill="#888">推动票（强）</text>
-<text x="192" y="562" text-anchor="end" font-size="10.5" fill="#333">Ian Livingstone ⚠️</text>
-<circle cx="317" cy="559" r="4" fill="#2e7d32"/>
-<text x="862" y="562" font-size="9" fill="#888">推动票（辩论正方·经现场稿 ⚠️）</text>
+<text x="862" y="547" font-size="9" fill="#888">推动票（强）·单点确认（09-30 复核）</text>
+<text x="192" y="562" text-anchor="end" font-size="10.5" fill="#333">Ian Livingstone</text>
+<line x1="313" y1="556" x2="321" y2="556" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="559" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="559" r="4.2" fill="#2e7d32"/>
+<text x="862" y="562" font-size="9" fill="#888">推动票（辩论正方·署名博客一手升级）</text>
+<text x="862" y="572" font-size="8" fill="#aaa">★ 06-03 署名博客与 07-02 辩论同构（非确定性引擎论）</text>
 <text x="192" y="577" text-anchor="end" font-size="10.5" fill="#333">Guillermo Rauch</text>
 <circle cx="317" cy="574" r="4" fill="#2e7d32"/>
 <text x="862" y="577" font-size="9" fill="#888">推动票（强·掌控翼）</text>
 <text x="192" y="593" text-anchor="end" font-size="10.5" fill="#333">Roland Gavrilescu ⚠️</text>
-<circle cx="317" cy="590" r="4" fill="#2e7d32"/>
-<text x="862" y="593" font-size="9" fill="#888">推动票（会议层 ⚠️）</text>
+<line x1="313" y1="587" x2="321" y2="587" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="590" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="590" r="4.2" fill="#2e7d32"/>
+<text x="862" y="593" font-size="9" fill="#888">推动票（两载体同向 ⚠️ 第三载体待下批）</text>
 <text x="192" y="608" text-anchor="end" font-size="10.5" fill="#333">Suraj Gupta</text>
-<circle cx="317" cy="605" r="4" fill="#2e7d32"/>
-<text x="862" y="608" font-size="9" fill="#888">推动票（Warp harness 负责人）</text>
+<line x1="313" y1="602" x2="321" y2="602" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="605" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="605" r="4.2" fill="#2e7d32"/>
+<text x="862" y="608" font-size="9" fill="#888">推动票（Warp harness 负责人）·稳定（弱…</text>
 <text x="192" y="623" text-anchor="end" font-size="10.5" fill="#333">Thariq Shihipar</text>
-<circle cx="317" cy="620" r="4" fill="#2e7d32"/>
-<text x="862" y="623" font-size="9" fill="#888">推动票（强·task budget 涌现 nuanc…</text>
+<line x1="313" y1="617" x2="321" y2="617" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317" cy="620" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="317" cy="620" r="4.2" fill="#2e7d32"/>
+<text x="862" y="623" font-size="9" fill="#888">推动票（强·三时点 07-19/07-21/09-2…</text>
+<text x="862" y="633" font-size="8" fill="#aaa">★ 07-21 fireside chat：系统提示词 −80% 原始出处＋auto m…</text>
 <text x="192" y="638" text-anchor="end" font-size="10.5" fill="#333">Tim Sweeney ⚠️</text>
 <circle cx="317" cy="635" r="4" fill="#2e7d32"/>
 <text x="862" y="638" font-size="9" fill="#888">推动票（会议层 ⚠️）</text>
 <text x="192" y="653" text-anchor="end" font-size="10.5" fill="#333">Jensen Huang ⚠️</text>
 <circle cx="317" cy="650" r="4" fill="#2e7d32"/>
-<text x="862" y="653" font-size="9" fill="#888">吹捧票（降级候选 ⚠️ 经媒体转引·一手未取得）</text>
+<text x="862" y="653" font-size="9" fill="#888">吹捧票（升半级：08-26 财报会逐字 4M age…</text>
 <text x="192" y="669" text-anchor="end" font-size="10.5" fill="#333">Akshay Nathan</text>
 <circle cx="423" cy="666" r="4" fill="#2e7d32"/>
 <text x="862" y="669" font-size="9" fill="#888">推动票（带边界自认）</text>
 <text x="192" y="684" text-anchor="end" font-size="10.5" fill="#333">Jesse Vincent</text>
-<circle cx="423" cy="681" r="4" fill="#2e7d32"/>
+<line x1="419" y1="678" x2="427" y2="678" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="423" cy="681" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="423" cy="681" r="4.2" fill="#2e7d32"/>
 <text x="862" y="684" font-size="9" fill="#888">推动票（'教掌控'型·安全边界最强）</text>
+<text x="862" y="694" font-size="8" fill="#aaa">★ 08-21 /goal·/loop 实证（21h 过夜编译器）；10-05 治理加固…</text>
 <text x="192" y="699" text-anchor="end" font-size="10.5" fill="#333">Mike Krieger</text>
-<circle cx="423" cy="696" r="4" fill="#2e7d32"/>
-<text x="862" y="699" font-size="9" fill="#888">推动票（带难点自认）</text>
+<line x1="419" y1="693" x2="427" y2="693" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="423" cy="696" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="423" cy="696" r="4.2" fill="#2e7d32"/>
+<text x="862" y="699" font-size="9" fill="#888">推动票（带难点自认·官方笔录＋Sierra 对谈）</text>
+<text x="862" y="709" font-size="8" fill="#aaa">★ 09-28 谨慎注记：自建脚手架被裸模型击败（harness 价值暂态化）</text>
 <text x="192" y="714" text-anchor="end" font-size="10.5" fill="#333">Kyle Mistele</text>
 <circle cx="423" cy="711" r="4" fill="#2e7d32"/>
-<text x="862" y="714" font-size="9" fill="#888">推动票（受约束翼·定义者之一）</text>
+<text x="862" y="714" font-size="9" fill="#888">推动票（受约束翼·定义者之一）·单点确认（复核）</text>
 <text x="192" y="729" text-anchor="end" font-size="10.5" fill="#333">Felix Rieseberg ⚠️</text>
 <circle cx="423" cy="726" r="4" fill="#2e7d32"/>
-<text x="862" y="729" font-size="9" fill="#888">推动票（弱 ⚠️ 单点转引）</text>
+<text x="862" y="729" font-size="9" fill="#888">推动票（弱 ⚠️ 窗口内仅转引；03/05 播客核为…</text>
 <text x="192" y="745" text-anchor="end" font-size="10.5" fill="#333">Sachin Malhotra</text>
-<circle cx="423" cy="742" r="4" fill="#2e7d32"/>
-<text x="862" y="745" font-size="9" fill="#888">推动票（受约束翼）</text>
+<line x1="419" y1="739" x2="427" y2="739" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="423" cy="742" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="423" cy="742" r="4.2" fill="#2e7d32"/>
+<text x="862" y="745" font-size="9" fill="#888">推动票（受约束翼·官方署名文升级）</text>
+<text x="862" y="755" font-size="8" fill="#aaa">★ 08-18 claude.com：lessons 回灌自改进环</text>
 <text x="192" y="760" text-anchor="end" font-size="10.5" fill="#333">Tushar Jain</text>
-<circle cx="423" cy="757" r="4" fill="#2e7d32"/>
-<text x="862" y="760" font-size="9" fill="#888">推动票（掌控翼）</text>
+<line x1="419" y1="754" x2="427" y2="754" stroke="#2e7d32" stroke-width="1.2" opacity="0.5"/>
+<circle cx="423" cy="757" r="4.2" fill="#fff" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="423" cy="757" r="4.2" fill="#2e7d32"/>
+<text x="862" y="760" font-size="9" fill="#888">推动票（掌控翼·两会议载体同向）</text>
 <text x="192" y="775" text-anchor="end" font-size="10.5" fill="#333">Satya Nadella ⚠️</text>
 <circle cx="423" cy="772" r="4" fill="#2e7d32"/>
-<text x="862" y="775" font-size="9" fill="#888">证据不足以定派（档内口径）⚠️ 吹捧层登记位</text>
+<text x="862" y="775" font-size="9" fill="#888">推动票（组织翼）成立性大增——财报会逐字 self-…</text>
 <text x="192" y="790" text-anchor="end" font-size="10.5" fill="#333">Mitchell Hashimoto</text>
 <line x1="423" y1="784" x2="210" y2="784" stroke="#1565c0" stroke-width="2.4"/>
 <text x="316.5" y="781" text-anchor="middle" font-size="8.5" fill="#1565c0">◀</text>
@@ -262,43 +298,67 @@
 <text x="862" y="907" font-size="8" fill="#aaa">★ 无翻转——验证/对齐留在人手是全窗口不变量</text>
 <text x="192" y="912" text-anchor="end" font-size="10.5" fill="#333">David Fowler ⚠️</text>
 <circle cx="423" cy="909" r="4" fill="#1565c0"/>
-<text x="862" y="912" font-size="9" fill="#888">中性偏推动（票弱 ⚠️ 全经转引链）</text>
+<text x="862" y="912" font-size="9" fill="#888">中性偏推动（票弱 ⚠️ 全经转引链；devblogs…</text>
 <text x="192" y="927" text-anchor="end" font-size="10.5" fill="#333">Walden Yan ⚠️</text>
-<circle cx="423" cy="924" r="4" fill="#1565c0"/>
-<text x="862" y="927" font-size="9" fill="#888">受约束形态（中性票不足·厂商利益 ⚠️ 待判读层裁定…</text>
+<line x1="419" y1="921" x2="427" y2="921" stroke="#1565c0" stroke-width="1.2" opacity="0.5"/>
+<circle cx="423" cy="924" r="4.2" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+<circle cx="423" cy="924" r="4.2" fill="#1565c0"/>
+<text x="862" y="927" font-size="9" fill="#888">受约束形态（公司级载体一致 ⚠️ 厂商利益待判读层裁…</text>
 <text x="192" y="942" text-anchor="end" font-size="10.5" fill="#333">Alex Zhang</text>
-<circle cx="530" cy="939" r="4" fill="#1565c0"/>
+<line x1="526" y1="936" x2="534" y2="936" stroke="#1565c0" stroke-width="1.2" opacity="0.5"/>
+<circle cx="530" cy="939" r="4.2" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+<circle cx="530" cy="939" r="4.2" fill="#1565c0"/>
 <text x="862" y="942" font-size="9" fill="#888">中性票</text>
+<text x="862" y="952" font-size="8" fill="#aaa">★ 09-26 harness 纲领文（design a language model …</text>
 <text x="192" y="957" text-anchor="end" font-size="10.5" fill="#333">Andrew Qu</text>
-<circle cx="530" cy="954" r="4" fill="#1565c0"/>
-<text x="862" y="957" font-size="9" fill="#888">中性票</text>
+<line x1="526" y1="951" x2="534" y2="951" stroke="#1565c0" stroke-width="1.2" opacity="0.5"/>
+<circle cx="530" cy="954" r="4.2" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+<circle cx="530" cy="954" r="4.2" fill="#1565c0"/>
+<text x="862" y="957" font-size="9" fill="#888">中性票（先测再信实录：30% eval 即 roll…</text>
 <text x="192" y="973" text-anchor="end" font-size="10.5" fill="#333">Darren Shepherd</text>
 <circle cx="530" cy="970" r="4" fill="#1565c0"/>
-<text x="862" y="973" font-size="9" fill="#888">中性票（架构派·带清醒怀疑）</text>
+<text x="862" y="973" font-size="9" fill="#888">中性票（架构派·带清醒怀疑）·单点确认（09-30 …</text>
 <text x="192" y="988" text-anchor="end" font-size="10.5" fill="#333">Dex Horthy</text>
-<circle cx="530" cy="985" r="4" fill="#1565c0"/>
-<text x="862" y="988" font-size="9" fill="#888">中性票（辩论反方·'not anti-loops'）</text>
+<line x1="526" y1="982" x2="534" y2="982" stroke="#1565c0" stroke-width="1.2" opacity="0.5"/>
+<circle cx="530" cy="985" r="4.2" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+<circle cx="530" cy="985" r="4.2" fill="#1565c0"/>
+<text x="862" y="988" font-size="9" fill="#888">中性票（辩论反方·四时点同向）</text>
+<text x="862" y="998" font-size="8" fill="#aaa">★ 07-23 论证升级：RL reward shape 根因＋自曝 lights-of…</text>
 <text x="192" y="1003" text-anchor="end" font-size="10.5" fill="#333">Kief Morris ⚠️</text>
-<circle cx="530" cy="1000" r="4" fill="#1565c0"/>
-<text x="862" y="1003" font-size="9" fill="#888">中性票（flywheel 偏推动张力 ⚠️）</text>
+<line x1="526" y1="997" x2="534" y2="997" stroke="#1565c0" stroke-width="1.2" opacity="0.5"/>
+<circle cx="530" cy="1000" r="4.2" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+<circle cx="530" cy="1000" r="4.2" fill="#1565c0"/>
+<text x="862" y="1003" font-size="9" fill="#888">中性票（flywheel 偏推动张力 ⚠️·四时点同…</text>
+<text x="862" y="1013" font-size="8" fill="#aaa">★ 06-04 Craft：CD 拉进 agent loop＋dark factorie…</text>
 <text x="192" y="1018" text-anchor="end" font-size="10.5" fill="#333">Kim Maida</text>
-<circle cx="530" cy="1015" r="4" fill="#1565c0"/>
-<text x="862" y="1018" font-size="9" fill="#888">中性票</text>
+<line x1="530" y1="1012" x2="423" y2="1012" stroke="#1565c0" stroke-width="2.4"/>
+<text x="476.5" y="1009" text-anchor="middle" font-size="8.5" fill="#1565c0">◀</text>
+<circle cx="530" cy="1012" r="4.2" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+<circle cx="423" cy="1012" r="4.2" fill="#1565c0"/>
+<text x="862" y="1018" font-size="9" fill="#888">中性票→偏推动（受控编排派·实测说服型）</text>
+<text x="862" y="1028" font-size="8" fill="#aaa">★ 07-10 自述转折：strong skeptic → relying on it …</text>
 <text x="192" y="1033" text-anchor="end" font-size="10.5" fill="#333">Kyle Jaejun Lee</text>
 <circle cx="530" cy="1030" r="4" fill="#1565c0"/>
-<text x="862" y="1033" font-size="9" fill="#888">中性票</text>
+<text x="862" y="1033" font-size="9" fill="#888">中性票·单点确认（09-30 复核负结论）</text>
 <text x="192" y="1049" text-anchor="end" font-size="10.5" fill="#333">Matt Pocock</text>
-<circle cx="530" cy="1046" r="4" fill="#1565c0"/>
+<line x1="526" y1="1043" x2="534" y2="1043" stroke="#1565c0" stroke-width="1.2" opacity="0.5"/>
+<circle cx="530" cy="1046" r="4.2" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+<circle cx="530" cy="1046" r="4.2" fill="#1565c0"/>
 <text x="862" y="1049" font-size="9" fill="#888">中性票</text>
+<text x="862" y="1059" font-size="8" fill="#aaa">★ 09-17 Memento 驱动开发＋人守 strategic 层</text>
 <text x="192" y="1064" text-anchor="end" font-size="10.5" fill="#333">Moritz Johner ⚠️</text>
 <circle cx="530" cy="1061" r="4" fill="#1565c0"/>
-<text x="862" y="1064" font-size="9" fill="#888">中性票（含强怀疑引句 ⚠️）</text>
+<text x="862" y="1064" font-size="9" fill="#888">中性票（含强怀疑引句 ⚠️·CNAS 讲者页同向佐证…</text>
 <text x="192" y="1079" text-anchor="end" font-size="10.5" fill="#333">Charlie Holtz</text>
-<circle cx="637" cy="1076" r="4" fill="#1565c0"/>
-<text x="862" y="1079" font-size="9" fill="#888">中性票（中偏疑）</text>
+<line x1="637" y1="1073" x2="423" y2="1073" stroke="#1565c0" stroke-width="2.4"/>
+<text x="530.0" y="1070" text-anchor="middle" font-size="8.5" fill="#1565c0">◀</text>
+<circle cx="637" cy="1073" r="4.2" fill="#fff" stroke="#1565c0" stroke-width="2"/>
+<circle cx="423" cy="1073" r="4.2" fill="#1565c0"/>
+<text x="862" y="1079" font-size="9" fill="#888">中性票→偏推动（实测说服型·保留 review 位）</text>
+<text x="862" y="1089" font-size="8" fill="#aaa">★ 09-08 Mastra：trust the agents to do a lot …</text>
 <text x="192" y="1094" text-anchor="end" font-size="10.5" fill="#333">Ryan Cooke</text>
 <circle cx="637" cy="1091" r="4" fill="#1565c0"/>
-<text x="862" y="1094" font-size="9" fill="#888">中性票（中偏疑）</text>
+<text x="862" y="1094" font-size="9" fill="#888">中性票（中偏疑）·单点确认（09-30 复核负结论）</text>
 <text x="192" y="1109" text-anchor="end" font-size="10.5" fill="#333">Armin Ronacher</text>
 <line x1="423" y1="1103" x2="743" y2="1103" stroke="#e65100" stroke-width="2.4"/>
 <text x="583.0" y="1100" text-anchor="middle" font-size="8.5" fill="#e65100">▶</text>
@@ -334,40 +394,64 @@
 <text x="862" y="1170" font-size="9" fill="#888">怀疑票（范式/治理·AI control 派）</text>
 <text x="862" y="1180" font-size="8" fill="#aaa">★ 09-14 怀疑落成 AI control 五件套＋control 岗位化</text>
 <text x="192" y="1185" text-anchor="end" font-size="10.5" fill="#333">Paul Bakaus</text>
-<circle cx="637" cy="1182" r="4" fill="#e65100"/>
+<line x1="633" y1="1179" x2="641" y2="1179" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="637" cy="1182" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="637" cy="1182" r="4.2" fill="#e65100"/>
 <text x="862" y="1185" font-size="9" fill="#888">怀疑票（立场向·承认前 80% 交 agent）</text>
+<text x="862" y="1195" font-size="8" fill="#aaa">★ 09-22 boss fight 复盘同向（agent 产能/人管 taste；迭代…</text>
 <text x="192" y="1201" text-anchor="end" font-size="10.5" fill="#333">Auriel Wright</text>
-<circle cx="743" cy="1198" r="4" fill="#e65100"/>
+<line x1="739" y1="1195" x2="747" y2="1195" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="743" cy="1198" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="743" cy="1198" r="4.2" fill="#e65100"/>
 <text x="862" y="1201" font-size="9" fill="#888">怀疑票（工程实证向）</text>
+<text x="862" y="1211" font-size="8" fill="#aaa">★ howtoposttrain 系列同向 ⚠️ lastmod 代理日期</text>
 <text x="192" y="1216" text-anchor="end" font-size="10.5" fill="#333">Chawla &amp; Koul</text>
-<circle cx="743" cy="1213" r="4" fill="#e65100"/>
+<line x1="739" y1="1210" x2="747" y2="1210" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="743" cy="1213" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="743" cy="1213" r="4.2" fill="#e65100"/>
 <text x="862" y="1216" font-size="9" fill="#888">怀疑票（工程实证向）</text>
+<text x="862" y="1226" font-size="8" fill="#aaa">★ 08-13 署名文：反 tokenmaxxing＋STEER/HALT 熔断次序＋治…</text>
 <text x="192" y="1231" text-anchor="end" font-size="10.5" fill="#333">Dotta</text>
-<circle cx="743" cy="1228" r="4" fill="#e65100"/>
+<line x1="739" y1="1225" x2="747" y2="1225" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="743" cy="1228" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="743" cy="1228" r="4.2" fill="#e65100"/>
 <text x="862" y="1231" font-size="9" fill="#888">怀疑票（结构向·方案建设性）</text>
+<text x="862" y="1241" font-size="8" fill="#aaa">★ release 序列：执行放开、控制权收拢（轴选注记在档）</text>
 <text x="192" y="1246" text-anchor="end" font-size="10.5" fill="#333">Jack Cable</text>
-<circle cx="743" cy="1243" r="4" fill="#e65100"/>
+<line x1="739" y1="1240" x2="747" y2="1240" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="743" cy="1243" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="743" cy="1243" r="4.2" fill="#e65100"/>
 <text x="862" y="1246" font-size="9" fill="#888">怀疑票（强·安全域）</text>
+<text x="862" y="1256" font-size="8" fill="#aaa">★ 07-02 auto-approver 数据＋08-07 binding 门控论（张…</text>
 <text x="192" y="1261" text-anchor="end" font-size="10.5" fill="#333">Nick Heiner</text>
 <circle cx="743" cy="1258" r="4" fill="#e65100"/>
-<text x="862" y="1261" font-size="9" fill="#888">怀疑票</text>
+<text x="862" y="1261" font-size="9" fill="#888">怀疑票·单点确认（09-30 复核）</text>
 <text x="192" y="1277" text-anchor="end" font-size="10.5" fill="#333">Noam Brown</text>
 <circle cx="743" cy="1274" r="4" fill="#e65100"/>
-<text x="862" y="1277" font-size="9" fill="#888">怀疑票（厂商核心自认）</text>
+<text x="862" y="1277" font-size="9" fill="#888">怀疑票（厂商核心自认）·单点确认（09-30 复核）</text>
 <text x="192" y="1292" text-anchor="end" font-size="10.5" fill="#333">Nicholas Arcolano</text>
-<circle cx="743" cy="1289" r="4" fill="#e65100"/>
+<line x1="739" y1="1286" x2="747" y2="1286" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="743" cy="1289" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="743" cy="1289" r="4.2" fill="#e65100"/>
 <text x="862" y="1292" font-size="9" fill="#888">怀疑票（数据实证·强）＋完整推荐面</text>
-<text x="862" y="1302" font-size="8" fill="#aaa">★ 08-13 三段衰减：10x token→2x PR→交付物仅 +27%</text>
+<text x="862" y="1302" font-size="8" fill="#aaa">★ 四时点同向；07-27 明示质量未崩坏——怀疑锁定产出转化率轴</text>
 <text x="192" y="1307" text-anchor="end" font-size="10.5" fill="#333">Hillel Wayne</text>
-<circle cx="743" cy="1304" r="4" fill="#e65100"/>
+<line x1="739" y1="1301" x2="747" y2="1301" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="743" cy="1304" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="743" cy="1304" r="4.2" fill="#e65100"/>
 <text x="862" y="1307" font-size="9" fill="#888">怀疑票（验证叙事降温）</text>
-<text x="862" y="1317" font-size="8" fill="#aaa">★ 09-30 反'FM 一劳永逸'——上游缺口是可表达性质</text>
+<text x="862" y="1317" font-size="8" fill="#aaa">★ 无转折：反神化＋亲用 AI（07-29 专访／09-16 spines／09-30）</text>
 <text x="192" y="1322" text-anchor="end" font-size="10.5" fill="#333">Artem Dinaburg</text>
-<circle cx="743" cy="1319" r="4" fill="#e65100"/>
+<line x1="739" y1="1316" x2="747" y2="1316" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="743" cy="1319" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="743" cy="1319" r="4.2" fill="#e65100"/>
 <text x="862" y="1322" font-size="9" fill="#888">怀疑票（安全实证·强）</text>
-<text x="862" y="1332" font-size="8" fill="#aaa">★ 08-26 VM 三次逃逸——按 APT 对待</text>
+<text x="862" y="1332" font-size="8" fill="#aaa">★ 方向未反转：07-01 安全模型重估警告→08-26 逃逸实证（怀疑面实证化）</text>
 <text x="192" y="1337" text-anchor="end" font-size="10.5" fill="#333">Andrew Helwer ⚠️候选</text>
-<circle cx="743" cy="1334" r="4" fill="#e65100"/>
+<line x1="739" y1="1331" x2="747" y2="1331" stroke="#e65100" stroke-width="1.2" opacity="0.5"/>
+<circle cx="743" cy="1334" r="4.2" fill="#fff" stroke="#e65100" stroke-width="2"/>
+<circle cx="743" cy="1334" r="4.2" fill="#e65100"/>
 <text x="862" y="1337" font-size="9" fill="#888">怀疑票候选 ⚠️（边缘偏够·台账 §C1）</text>
+<text x="862" y="1347" font-size="8" fill="#aaa">★ 08-24 缺环实填：80/20 终结→证明＋DST 两分</text>
 <text x="24" y="1380" font-size="10" fill="#888">图例：○ 起点（窗口初/谱系末）● 终点（2026-10-07）◀ 滑向更推动　▶ 滑向更怀疑　⚠️ 证据弱/经转引/待判（位置仅示登记位）。第九轮批（10-07）：＋5 KOL（arcolano/narayanan_kapoor/tim_bray/hillel_wayne/dinaburg）＋helwer 候选；数据：各档「态度轨迹」节＋派别适配（2026-10-07 抽取）</text>
 </svg>

@@ -35,3 +35,23 @@ observation_date: 2026-10-06
 - 官方要点层："Replace boolean agent permissions with budgets that account for quantity, speed, reversibility, and observation"；分节标题含 "Put a ceiling on every write—and let it refill"（预算回补）与 "Use tripwires to learn from aggregate behavior"（熔断线）。
 - **最小主张**：权限的布尔模型必须换成四维预算模型，熔断线（tripwire）与 undo test（用可撤销性给自主度定档）是配套件。
 - **派别适配**：**推动票（受约束翼）**。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核；载体升级：会议层→官方署名）
+
+> 判定：**单点解除 → 稳定（受约束翼）**（08-18 官方署名文 → 08-22 AIEWF 同向）。
+
+## 《Claude on call: How Claude Tag serves as Anthropic's first responder for CI/CD failures》（claude.com，2026-08-18，本人署名）
+
+- URL：https://claude.com/blog/ai-ci-cd-on-call ｜ fetch 成功
+- 逐字摘录：
+
+> "Claude authored the first situation report in every recent incident that had one, typically publishing its first analysis within 15 minutes."
+
+> "Standing instructions are in markdown files as skills, committed in a GitHub repository… a log of lessons learned **as part of a self-improvement loop**."
+（**lessons 回灌的自改进环**——受约束翼的自改进形态。）
+
+> "The key takeaway here is that the alerting process is deterministic, while on-call escalation has both deterministic and agentic paths."
+
+- 配套：anthropics/oncall-kit 开源（同文链接）。

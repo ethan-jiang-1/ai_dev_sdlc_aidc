@@ -41,3 +41,33 @@ observation_date: 2026-10-06
 - 一手：`raw_ng_x_post_en.md`（英文原文，The Batch 交叉发布到 X）
 - 交叉验证：`raw_thinkinai_zh.md`（中文编译，**低强度**，只作交叉验证，不作唯一引用）
 - 来源索引与缺口：`sources.md` · 逐字引句：`quotes.md`
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**——06-26（The Batch 命名信；X 版 06-30）→ 07-10 → 08-14 → 09-04 五个署名时点同向（推动＋教掌控）；原档"承诺的后续文章未见"缺口**闭合**。完整发现见 .tmp-goal-movers/batch-B1-advocates.md。
+
+## 《Make All Your Tokens (and Your Brainwork) Count》（The Batch，2026-07-10）
+
+- URL：https://www.deeplearning.ai/the-batch/make-all-your-tokens-and-your-brainwork-count ｜ fetch 成功（全文）
+- 逐字摘录：
+
+> "AI tokens are cheap; human tokens are gold."
+
+> "when I make key decisions, I often steer the agent to remember that decision somewhere, say in a SPEC.md file… so the agent's stopping criteria in the future require checking that this problem does not occur again."
+（**SPEC.md＝把人的判断写进 agent 停止条件**——直接钩停止条件类。）
+
+> "Instead of 'spec drive development' becoming a new waterfall process where writing a spec is a gate to further progress, this allows me to more iteratively refine the spec."
+（明确反对把 SDD 做成新瀑布。）
+
+## 《The AI Engineering Skills Map》（08-14）＋《Skills Map Part 4 — Coding Agents》（09-04）
+
+- URL：https://www.deeplearning.ai/the-batch/the-ai-engineering-skills-map-in-detail-using-coding-agents ｜ fetch 成功（全文）
+- 逐字（08-14）："…help the agent autonomously close loops by providing verifiers or evals."；"knowing how much to intervene and how much to leave them alone"
+- 逐字（**09-04 窗口内最重的审慎句——推动内收紧**）：
+
+> "it is sometimes useful to get agents to run autonomously for hours and burn millions or tens of millions of tokens. But currently the practical utility of very long-horizon tasks — especially relative to their cost — has been amplified beyond reality. Instead, most effective coding agent use is a complex, highly iterative process, and being able to intervene with high-skill judgement gives much better results."
+（对无人值守炒作的公开降温——在整体推动框架内，不构成转向怀疑的弧线。）
+
+- 负结论：09-10 月无本人一手新发声（09-18 反恐慌信仅索引级）；AI Engineer NYC 讲题待发布。

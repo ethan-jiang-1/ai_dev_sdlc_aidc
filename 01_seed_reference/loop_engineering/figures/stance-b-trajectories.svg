@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1330 1180" font-family='-apple-system, "PingFang SC", "Microsoft YaHei", sans-serif'>
 <rect width="1330" height="1180" fill="#ffffff"/>
-<text x="665.0" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">KOL 立场滑动轨迹（25 档 · 2026-06 → 10）</text>
-<text x="665.0" y="56" text-anchor="middle" font-size="12.5" fill="#666">横轴＝立场光谱（左推动 / 右反对，与目录序一致）；纵轴＝时间。上缘虚影带＝窗口前谱系起点。★＝档内标注的关键转折。第九轮＋2：Tim Bray（政策转折）、Arcolano（谱系→数据批判）</text>
+<text x="665.0" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">KOL 立场滑动轨迹（27 档 · 2026-06 → 10）</text>
+<text x="665.0" y="56" text-anchor="middle" font-size="12.5" fill="#666">横轴＝立场光谱（左推动 / 右反对，与目录序一致）；纵轴＝时间。上缘虚影带＝窗口前谱系起点。★＝档内标注的关键转折。第九轮＋2＋goal 第一批＋2：Tim Bray、Arcolano、Kim Maida（实测说服）、Charlie Holtz（Fable 长时运行）</text>
 <rect x="96" y="130" width="330" height="75" fill="#f5f5f5" stroke-dasharray="4,3" stroke="#e0e0e0"/>
 <rect x="96" y="210" width="330" height="880" fill="#e8f5e9" opacity="0.30" stroke="#e0e0e0"/>
 <rect x="440" y="130" width="330" height="75" fill="#f5f5f5" stroke-dasharray="4,3" stroke="#e0e0e0"/>
@@ -247,5 +247,15 @@
 <circle cx="1043" cy="714" r="5" fill="#e65100" stroke="#fff" stroke-width="1.4" opacity="1"/>
 <text x="1052" y="708" font-size="9.5" font-weight="700" fill="#e65100">10x token→2x PR→+27%</text>
 <text x="1052" y="722" font-size="10.5" font-weight="700" fill="#e65100">Nicholas Arcolano</text>
-<text x="96" y="1162" font-size="10" fill="#888">图例：实线＝窗口内（2026-06-01→10-07）轨迹；虚线＝谱系起点（窗口前）；大点★＝关键转折；灰虚线＝运动大事参考线。第九轮（10-07）＋Tim Bray／Arcolano 两线；narayanan_kapoor（稳定 −2）未单绘。档位细分依据各档「态度轨迹」节；派别判定唯一权威在 kol-roster §A2</text>
+<line x1="605" y1="215" x2="554" y2="479" stroke="#1565c0" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<circle cx="605" cy="215" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<circle cx="554" cy="479" r="5" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="563" y="473" font-size="9.5" font-weight="700" fill="#1565c0">strong skeptic → daily（自述）</text>
+<text x="562" y="487" font-size="10.5" font-weight="700" fill="#1565c0">Kim Maida</text>
+<line x1="652" y1="215" x2="563" y2="893" stroke="#1565c0" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>
+<circle cx="652" cy="215" r="3.4" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="0.55"/>
+<circle cx="563" cy="893" r="5" fill="#1565c0" stroke="#fff" stroke-width="1.4" opacity="1"/>
+<text x="572" y="887" font-size="9.5" font-weight="700" fill="#1565c0">trust the agents to do a lot more work</text>
+<text x="571" y="901" font-size="10.5" font-weight="700" fill="#1565c0">Charlie Holtz</text>
+<text x="96" y="1162" font-size="10" fill="#888">图例：实线＝窗口内（2026-06-01→10-07）轨迹；虚线＝谱系起点（窗口前）；大点★＝关键转折；灰虚线＝运动大事参考线。第九轮＋goal 第一批共＋4 线（Tim Bray／Arcolano／Kim Maida／Charlie Holtz）；narayanan_kapoor（稳定 −2）未单绘。档位细分依据各档「态度轨迹」节；派别判定唯一权威在 kol-roster §A2</text>
 </svg>

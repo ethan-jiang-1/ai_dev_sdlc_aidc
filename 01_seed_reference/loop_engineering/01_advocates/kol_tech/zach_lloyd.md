@@ -44,3 +44,11 @@ observation_date: 2026-10-06
   - "Oz is cloud agent infrastructure… it could be automated code review, or it could be automated debt code cleanup, code migrations. It could be issue triage. It could literally just be implementing features and fixing bugs. The way that's going to happen in the future, I strongly believe, is… you're going to scale it is if you move it to the cloud."
 - **最小主张**：企业采购 agent 循环的三件套＝成本控制＋可审计＋最小权限沙箱；循环的规模化解在云侧基础设施而非本地。
 - **派别适配**：**推动票（治理翼）**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批·稳定档复核）：**维持稳定**
+
+- 09-05 warp.dev《The Factory Stack》（全文）：agent traces＝"raw input for self-improvement loops"、"Terraform for factories"。
+- 09-18 How I AI：observer agent 改工厂自身、human interactions per PR。
+- 派单勘误：检索无果于"Windsurf 关联"——增量全部为 Warp 载体。

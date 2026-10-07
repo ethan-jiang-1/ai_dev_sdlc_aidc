@@ -25,3 +25,19 @@ observation_date: 2026-10-06
   - "A year ago, we did not know sandboxes would become so important, or how much demand there would be for secure code execution and long-running jobs."
 - **最小主张**：agent 是新软件形态，其原语（context/tools/resumability/long-running）正在收敛；环的收口策略按任务可验证性选档，不存在全自主终局。
 - **派别适配**：**中性票**。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**（"先测再信、按任务选环"连续）。
+
+## 《How We Solved Agent Building》（AIEWF 演讲，ai.engineer 实取；页内无明确日期——如实标注，讲者页 WF26 照片 match 定位）
+
+- URL：https://ai.engineer/talks/9dYcwOkpCE8-we-solved-agent-building
+- 逐字（先测再信实录）：
+
+> 30% eval 通过即 rollout→"verdict is awful"
+（评估不过线就不放行的实录——与 08-10 Böckeler eval 证伪同一方法论家族。）
+
+- 窗口外基线（谱系）：Vercel 博客 2025-12-22"removed 80% of tools"。

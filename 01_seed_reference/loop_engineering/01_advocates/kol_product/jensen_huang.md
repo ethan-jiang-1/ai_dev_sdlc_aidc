@@ -43,3 +43,23 @@ observation_date: 2026-10-06
 - 排除通道：NVIDIA 官网/新闻稿检索无此句；ndtvprofit 403；tmcnet/lyzr 等英文评论文均转引同一句（kocpc GTC Taipei 主题演讲回顾实取：有 "agentic loop" 表述但无此句）。
 - 状态：**部分解决**（转引从两路升至四路一致＋日期收敛到 06-25/26 传播窗＋AP 专访线索；原话场合/原片仍未核）。
 - **派别适配**：维持**吹捧票·降级候选**（经媒体转引，观察位）；12 词级宣言无展开，不作派别定票依据。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·吹捧票升半级）
+
+> 判定：**吹捧票维持·证据升半级**（中文转引 → 财报会逐字）。
+
+## NVIDIA Q2 FY2027 财报会（2026-08-26，Motley Fool 全文 transcript——三方转写，NVIDIA 无官方 transcript 页）
+
+- URL：https://www.fool.com/earnings/call-transcripts/2026/08/31/nvidia-nvda-q2-2027-earnings-call-transcript/ ｜ curl 全文实取
+- 逐字摘录（Jen-Hsun Huang）：
+
+> "Today, the vast majority of AI is prompted by people. I believe that this last month, it has crossed. Most AI are now agentic. But in the future, every company will have a whole bunch of agents."
+
+> "We have 40,000 employees roughly. In the future, we'll have 400,000 agents, 4 million agents. And those agents are running continuously. They're running in the background."
+
+> "The amount of compute necessary for an agent versus a human using it is probably 15 to 100 times depending on the type of problem you're trying to solve."
+（agent 算力乘数论——③预算与熔断侧的厂商背书。）
+
+- **负结论确认**："Nobody writes prompts anymore. The new job is to write and handle loops." 仍无一手出处（无 GTC/官方页命中）——该句维持"经媒体转引·观察位"，不得作定派依据。

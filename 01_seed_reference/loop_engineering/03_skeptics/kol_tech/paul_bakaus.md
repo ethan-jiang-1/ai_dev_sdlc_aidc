@@ -58,3 +58,21 @@ observation_date: 2026-10-06
 ## 本轮推荐面小结（一句）
 
 替代方案＝**skill engineering 路线**：专家词汇灌义进 skill＋skill 内路由＋跨 harness 不假设等能力＋人插在判断最值钱的那一步（先 80 后 20）＋永不做 auto。
+
+---
+
+# 增量补挖（2026-10-07 goal 第二批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**（07-02 Latent Space 访谈 → 09-22 个人博客同向：agent 管产能、人管判断/taste/验收，拒绝 auto/one-shot）。完整发现见 .tmp-goal-movers/batch-E-residual.md。
+
+## 《I gave my website a boss fight》（paulbakaus.com，2026-09-22，全文实取）
+
+- 逐字摘录（十天 agent 实践复盘）：
+
+> 自动验收"catching broken behavior 有用、settle taste 不行"（找坏行为有用、定品味不行——80/20 分工的实践复认）
+
+> "A later 'polish' pass could drift away from an approved design. One made the Impeccable diamond look like a strawberry."
+（**迭代漂移防护**——polish 轮可能漂离已批准设计的实例。）
+
+> 处方："review each thing in the form people would experience it"
+（按用户体验的形态逐项 review——人审位的操作化。）

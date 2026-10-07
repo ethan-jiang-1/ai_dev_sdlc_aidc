@@ -64,3 +64,9 @@ observation_date: 2026-10-06
 - 边界如实记录：**"remove yourself as the bottleneck" 逐字句本身仍未在本人一手载体中出现**——它仍只存在于 swyx loopcraft 的视频转录（S1，经转录标注不变）；本轮到手的是语义同构但措辞不同的一手表述（"I am becoming the bottleneck…"/"arrange it once and hit go" 语族的近邻）。
 - 状态：**部分解决·强**（上轮 bearblog 403＋GitHub 未取得 → 本轮两个一手载体全文到手）。
 - **派别适配**：**推动票（实践者）升格**——不再纯"降级候选"；其一手文本同时把"spec/oversight/品味不可外包"写入，判派按推动派＋理解/品味 nuance 照记。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批·稳定档复核）：**证据不足维持**
+
+- Training Data pod 经 podscan 核实＝2026-04-30 发布（窗口前，与已收 bearblog 同源）；Dwarkesh"decade of agents"＝2026-05 月初（窗口前＋二手）；窗口内一手未获。未及核线索：bianews《Karpathy最新开喷》日期未查。

@@ -22,3 +22,10 @@ observation_date: 2026-10-06
 - 官方博客旁证（devblogs.microsoft.com/aspire feed 实取）：窗口内 Aspire 13.4（2026-06-01）/13.5（08-18）/13.6（09-29，"point your coding agent at them to compare and contrast between runs"——dashboard 记忆化 run 库）。
 - Steve Sanderson：**负结论**——窗口内未检出 agent loop 一手。
 - 号召力口径：③＋④。**派别适配**：中性偏推动（全部经转引链，票弱，判读引用须降档）。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**单点确认（一手仍缺）＋一处证伪**
+
+- **证伪**：转引链中"4 月团队文"出处已核为 devblogs 2026-04-07《Agentic development aspirations》，作者 **Maddy Montaquila 非 Fowler**——该链引句（"generating code and shipping working full-stack apps are very different things"）不得再挂 Fowler 名下。
+- 新增独立二级源：Implicator 2026-09-06（标题句一致）。Fowler 署名 devblogs／访谈 transcript 窗口内未检出——引用维持降档 ⚠️。

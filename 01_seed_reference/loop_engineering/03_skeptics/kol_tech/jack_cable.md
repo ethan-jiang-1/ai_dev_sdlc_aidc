@@ -67,3 +67,26 @@ observation_date: 2026-10-06
 ## 本轮推荐面小结（一句）
 
 Cable 的替代方案：**安全左移（PR 前拦截＋安全团队可见性→换取 AI 审 AI、少人监督合并的自主度）＋威胁模型送达开发过程＋类级防御与结构性重写（Rust 化）**——左移的机制细节他未给全（负结论）。
+
+---
+
+# 增量补挖（2026-10-07 goal 第二批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**——讲稿 → 06-30 国会证词 → 07-02 auto-approver → 08-07 供链攻击文（本人联名）同向：自主化既成事实＋安全须 in-loop/binding。
+> **张力注记**：Corridor 自家 07-02 起多数 PR 无人审合并——其怀疑面锁定"**无 binding 门控的自主**"，不是自主本身；引用时两面并陈。
+
+## Corridor 博客两篇（全文实取）
+
+- 07-02《How We Made Code Review Optional》：1,657 PR 打分、高置信一致 ~96%、回退 1.2%→0.7%、周合并 115→220；
+
+> "an agent cannot approve code it has not read"
+（**新鲜度规则**——审者必须读过当前 diff。）
+
+- 08-07（Cable 联名）《…They Ran Our Malware》：
+
+> "Detection you can talk your way out of isn't a control"
+
+> "An agent that can talk itself out of a correct security judgment needs that judgment enforced somewhere it can't argue with"
+（**binding 门控论**——与 mondoo"Encode agent boundaries in tooling"同轴的判断加固形态；含 Anthropic "Informative" 关闭 vs Corridor "insufficient" 披露分歧。）
+
+- 另：06-30 国会证词（三建议已在主档）。

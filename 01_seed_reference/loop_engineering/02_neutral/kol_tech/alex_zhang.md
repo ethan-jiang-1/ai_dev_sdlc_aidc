@@ -27,3 +27,17 @@ observation_date: 2026-10-06
   - "when you throw enough compute… you're acting as a very strong verifier"（AI swarm 时代的人角色＝强验证者，中性偏推动。）
 - **最小主张**：harness 正被吸收进研究议程（RLM/loop transformers）；当前主流 coding harness 的设计空间高度趋同，剩余差异在成本与验证侧。
 - **派别适配**：**中性票**。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**——06-16 SciAm 受访、07-20/08-24/09-26 个人博客四时点同向（harness 结构主义连续深化）。
+
+## 《Language Model "Shape"》（个人博客，2026-09-26）
+
+- 逐字（纲领句）：
+
+> "design a language model around a harness, and not the other way around"
+
+（harness 结构主义的最新形态；06-16 SciAm 受访（scientificamerican.com/article/alex-l-zhang，页面自标 June 16, 2026）为窗口内第一时点。其余引句见 .tmp-goal-movers/batch-C-neutral.md（tmp 过渡）。）

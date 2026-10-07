@@ -34,3 +34,21 @@ observation_date: 2026-10-06
 
 - **最小主张**：loop engineering 的终点形态是"复合工程"——把人的判断萃取进系统、让人只站在循环两端（"human AI sandwich"）。
 - **派别适配**：**推动票**。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定（推动）**——07-13 polish 文与 08-20 AIEWF 演讲同向。⚠️ 派单写"mercury 前端 lead"有误，档案与本人站点一致口径为 **Every（Cora GM）**。
+
+## 《How I Polish Software That Agents Built》（Every，2026-07-13）
+
+- URL：https://every.to/source-code/how-i-polish-software-that-agents-built ｜ fetch 成功（全文）
+- 逐字摘录：
+
+> "I'll open my laptop in the morning to a stack of green pull requests that agents shipped overnight, with features ready to merge before my first meeting. The factory has been automated."
+
+> "There are no agents because agents can't decide whether the thing on screen matches the thing I meant to build."
+（**polish＝循环里留给人的一步**——不可自动化的判断终点。）
+
+> "Your job changes from protecting your time to protecting the quality of what you've built."＋"the lessons started carrying taste"（compound 步骤把品味写进规则）

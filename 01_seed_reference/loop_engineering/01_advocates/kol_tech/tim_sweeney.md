@@ -23,3 +23,10 @@ observation_date: 2026-10-06
 - 逐字摘录："It started the queues and now it is simply polling and waiting for our work to be complete."（agent 主环轮询、GPU 长任务外置——无人值守的结构分工）；分节标题 "Keep humans in the loop—and let the experiment finish"。
 - **最小主张**：研究型无人值守＝"对话环内不动长任务、外置作业系统跑训练、人审位保留"。
 - **派别适配**：**推动票（会议层）**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**单点确认**＋身份核销
+
+- ⚠️ 身份勘误：本档人物是 **Weights & Biases（CoreWeave）Principal Engineer**，不是 Epic Games CEO Tim Sweeney——卡片原有撞名警示维持。
+- 窗口内无第二载体：VibeLab repo（对比 coding agents 实验工具）GitHub 实核 created 2025-12-13／last push 2026-01-07（窗口外）；BigGo 稿＝同场 talk 再分发。

@@ -28,3 +28,16 @@ observation_date: 2026-10-06
 - **最小主张**：模型/harness 双曲线从 bolt-on 到 co-training 到吸收-删除；harness 的终局是"人注意力策略面"——可中断性、可独自决策域须显式声明。
 - **派别适配**：**推动票（结构综合）**。
 
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定（推动）**——08-22 harness 演化论 → 09 月 Astra 系列同向；付费墙限制多文全文（诚实标注）。
+
+## 自站 Attention Heads 窗口内条目（存档页 fetch 200）
+
+- 09-07《Six Ways to Give GPT-6 Astra More Agency》（免费段实取）："I've only been using Astra since Friday… but I already have more trust than any previous model that it can get the job done, whatever task I give it."；"The limits feel increasingly like my own imagination and how clearly I can specify the goal I want to accomplish."
+- 其 context-audit prompt（页面直引）："The goal is not to make your agent less constrained. It is to make the constraints legible, current, and proportional."（**约束的"清晰、现行、成比例"**——推动派语境下的约束治理语言。）
+- 其余窗口内条目（标题级）：10-01 ChatGPT Dot、09-23 Jev、09-16 Astral Ambitions（"Astra has me reconsidering the projects I thought were beyond me"）、09-10 goal-driven AI、08-26 Continual Learning、08-05 Orchestrator→Implementer→Advisor、07 月 Group Chat。
+- 负结论：多文付费墙截断，全文判断受限。

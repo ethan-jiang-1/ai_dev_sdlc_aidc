@@ -27,3 +27,29 @@ observation_date: 2026-10-06
   - "I think, like, if you're doing, like, UI or something like that, like low and medium… code review and security should be, like, high or max"（推理档位按域分档：验证域拉满、生成域调低。）
 - **最小主张**：harness 走向"核心件复杂化＋界面可变"（Claude Mods/mutable software），agent loop 的原语（沙箱/审批/预算）正被厂商原语化；多 agent swarm 的预算诉求是涌现行为，须在 harness 层预置管控。
 - **派别适配**：**推动票（强）**——但 "task budget 涌现"段怀疑派亦可直引。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核；三时点＋转引链闭合）
+
+> 判定：**单点解除 → 稳定（推动，强）**——07-19 播客 → 07-21 fireside chat → 09-29 Latent Space 同向。
+
+## Behind the Craft 播客（2026-07-19，平台元数据级）
+
+- URL：https://podcasts.apple.com/vn/podcast/how-i-plan-build-and-run-loops-with-claude-code-in/id1736359687?i=1000777426705 ｜ curl 成功
+- 官方集描述："Thariq works on the Claude Code team… he showed how to use **/goal** to keep Claude working, how he plans with Claude to remove unknowns before building, and how he runs a team of agents"
+（与 Jesse Vincent 08-21 的 Evener /goal 实证互为独立来源——**"库内待核 /goal"两路闭合**。）
+
+## Simon Willison《A Fireside Chat with Cat and Thariq》（2026-07-21，AIEWF 现场对谈转写——一手转写层）
+
+- URL：https://simonwillison.net/2026/Jul/21/cat-and-thariq/ ｜ fetch 成功
+- 逐字摘录（Thariq）：
+
+> "For me, it's that **rewrites are now good**… I'm pro-rewriting now… **a codebase is a spec, and maybe it's the only copy of the spec that you have**"
+
+> "there's **a Sonnet classifier** that is judging the tool call and also the context of the conversation"＋"auto mode has to be basically flawless for this to work — it's all downstream of our being an AI safety company."
+
+> **转引链闭合**："the **system prompt for Claude Code has been reduced by 80%** because of Claude Fable… we were over-constraining Claude… fewer hard constraints, more context, and fewer instructions overall."
+（McAteer 档案引用句"系统提示词 −80%"的原始出处即此对谈。）
+
+- 同场 Cat Wu（Claude Code PM）强引句："**we are trying to move to a world where humans don't need to be in the loop**… there are baby steps that you take to build up trust with code review."

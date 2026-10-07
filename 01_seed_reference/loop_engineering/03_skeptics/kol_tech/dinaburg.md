@@ -54,3 +54,33 @@ observation_date: 2026-10-07
 
 **该条支持的最小主张**：安全实证方给出"VM 困不住 cyber-capable agent"的一手证据（三次逃逸＋12 小时自主），替代方案是"Firecracker 级最小攻击面＋最小权限/日志/主动监控＋限时熔断＋一次性环境"。
 **派别适配**：**怀疑票（安全实证向，强）**——直接动摇"沙箱内无人值守"路线的安全地基；与 CSA 扫描器绕过案（[csa](../orgs/csa.md)）构成"验证/隔离层被实证打穿"的两翼。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定（怀疑面实证化）**——07-01 访谈的建设面语量与 08-26 的怀疑面实证存在张力，已并录；两时点共同主张＝"agentic 要用，但隔离/验证/最小权限必须重构"，**方向未反转**。若判读层取"沙箱内无人值守的信任"为轴，可读成轻度弧线（07-01→08-26），判定留台账批。
+
+## Silver Bullet Security Podcast #158（2026-07-01，Gary McGraw 主持）
+
+- URL：https://berryvilleiml.com/2026/07/01/silver-bullet-security-podcast-158-artem-dinaburg/ ｜ fetch：web_fetch 失败→curl 带 UA 实取全文（transcript 在页）
+- 逐字摘录（Dinaburg 答）：
+
+> "Essentially you are delegating work…to autonomous agents. And these autonomous agents are very good in certain domains and they can cover a lot more ground than what you could as a human. … focus your human evaluators on assessing higher level properties that need to hold…"
+（07 月的建设面形态：agent 铺量、人评高层性质与威胁模型。）
+
+> "forcing your AI to work in a much more verified development mode helps prevent slop. It helps ground what it is actually trying to do."
+
+> "there needs to be a very thorough reevaluation of the security model… because you are going to have a thing that can take action and it is going to take untrusted input"
+（与 08-26"按 APT 对待"同一警告的前置形态——当时无实证，8 月拿到自己的逃逸实验。）
+
+## 行为级证据：Linux kernel stable 补丁（2026-09-22）
+
+- URL：https://patchew.org/linux/20260922194838.26223-1-artem@trailofbits.com/mbox ｜ fetch 成功（mbox 全文）
+> "Assisted-by: LLM"＋"Signed-off-by: Artem Dinaburg <artem@trailofbits.com>"
+（LLM 辅助＋本人 signed-off 担责——验证回路的署名担责形态。）
+
+## 线索（未立条）＋负结论
+
+- ToB 站内窗口内相关文（06-03 skill 分发／07-28 用 /goal 找 bug／09-15 1Password 基准批判／09-18 good-enough AI 审计）：**作者归属不可判**（文章页无 author meta、作者页 404）——线索不立条。
+- 08-26 文的 dev.to/Victor 转述为二手不立条。

@@ -33,3 +33,21 @@ observation_date: 2026-10-06
 
 - **最小主张**：最快的一批 builder 不跑最激进的循环——把循环投入集中在"模型不知道的 alpha"处，其余等默认。
 - **派别适配**：**中性票（中偏疑）**。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·**单点→弧线**；本轮最重发现）
+
+> 判定：**弧线（−1→+1）**——"审慎者被实测说服"型（中性派复核两例之一）；不宜读作翻转为 tokenmaxxing，保留 review 位。
+
+## Mastra「Agents Hour」播客《Multiplayer coding agents in the cloud》（2026-09-08，全 transcript 实取）
+
+- URL：https://mastra.ai/podcasts/multiplayer-coding-agents-in-the-cloud-charlie-holtz-conductor
+- 逐字摘录：
+
+> "don't look at the code…steadily trended downwards"
+
+> "you can trust the agents to do a lot more work, especially with fable class of models"
+
+> "agents…deciding when something is finished, deciding when to merge"
+（AIEWF 时的中偏疑（等默认化／slop free zone）→ 09-08 条件性自主扩张；**转折＝Fable 长时运行能力**（自述内部云化始于 2025-12）。）

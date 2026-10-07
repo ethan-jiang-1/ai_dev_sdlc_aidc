@@ -91,3 +91,11 @@ observation_date: 2026-10-06
 **派别适配**：**偏推动，不入中性派**。本档收录他是为了收口库内开放问题并给三派判读提供反面对照。
 
 ---
+
+---
+
+# 复核注记（2026-10-07 goal 第一批·稳定档复核）：**维持稳定**
+
+- 新时点①：06-16《Satya on Loopcraft》（AINews 镜像全文）——"loopcraft amounts to a new theory of the firm"（loopcraft 的公司理论化）。
+- 新时点②：09-30 Latent Space pod《Why Dwarkesh is Wrong about Computer Use》（编辑立场级，半一手）——对 Dwarkesh《Agent Civilizations》叙事的公开反驳。
+- 两时点方向均与"强推动"判定一致；AINews 各期为 paywall 仅导语可得（负结论）。

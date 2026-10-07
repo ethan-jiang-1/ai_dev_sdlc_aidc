@@ -60,3 +60,10 @@ observation_date: 2026-10-06
 ## 本轮推荐面小结（一句）
 
 替代方案＝**修 harness 先于修模型**（5% 失败率判据）＋三性质（clean signal/graceful degradation/fail-fast）＋failure taxonomy 方法＋把训练回路当生产系统做工程。
+
+---
+
+# 增量补挖（2026-10-07 goal 第二批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**（06-05 Latent Space 客座文 → ~09-07/08 howtoposttrain.com 系列同向：环境/verifier 真实性是地基，弱 verifier 被 hack／sandbagging 两向打穿）。
+- ⚠️ 级别标注：第二时点日期为 sitemap lastmod 代理（非页面明示日期）；系列文的立场句与主档同族（环境真实性/弱 verifier 攻击面）。引句级细节见 .tmp-goal-movers/batch-E-residual.md（tmp 过渡）。

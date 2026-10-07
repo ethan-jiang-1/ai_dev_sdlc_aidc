@@ -34,3 +34,9 @@ observation_date: 2026-10-06
 - 章节目录即主张清单：§11 "Stop producing changes when review is blocked"、§12 "Increase throughput as confidence and review capacity grow"、§3-4 用控制论四件套（sensor / set point / controller / actuator）定义 coding loop。
 - **最小主张**：loop engineering 在 2026 年中已被会议层正式教学化，其教学版定义＝控制论＋可读性约束＋review 背压（review 堵塞就停止产出）。
 - **派别适配**：**推动票（受约束翼）**——与 Steinberger/Huntley 的 loopmaxxing 保持距离，但本体是把 loop engineering 正式化的定义者之一。
+
+---
+
+# 复核注记（2026-10-07 goal 第一/二批）：**单点确认**
+
+- blacklight.sh 止于 2025-08-28；HumanLayer 博客 Kyle 署名止于 **05-15**（窗口外 2 周，与 03-12《Skill Issue: Harness Engineering》一并登记为讲稿前史谱系）；AIEWF 07-25 讲稿为唯一窗口内一点——负结论在案。

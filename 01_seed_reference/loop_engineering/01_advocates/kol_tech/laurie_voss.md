@@ -93,3 +93,12 @@ observation_date: 2026-10-06
 
 - **该条支持的最小主张**：S3 的"正文未取得、仅两路二手转述分类学"状态解除——分类学全文本到手，且"任务=culling、监督环不终止"的治理翼立场有一手逐字。
 - **派别适配**：**推动票坐实**（①分类学/术语定义者＋Arize Head of DevRel 厂商位＋④分发）；kol-roster §C1 Voss 行"入册前须补一手"的前置条件**已满足**，建议升正式 §A 条目。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批·稳定档复核）：**维持稳定（推动＋治理翼）**
+
+- 07-27 seldo《Did OpenAI hack Hugging Face or didn't they?》（全文）："we need some kind of legal framework to deal with that"（治理翼 7 月时点加密）。
+- 09-22 CoT #74（官方 show notes）："80% hit rate… not enough to put stuff out into production"（**旧档"transcript 截断未取得"缺口解除**）。
+- 10-03 sparsenotes 讲稿笔记（摘要级·AI 转写，不可作逐字一手引）："Knowing whether to trust it is still very expensive."
+- 07/09/10 三时点全为"推动＋治理翼"。

@@ -68,7 +68,7 @@ loop_engineering/
 |---|---|---|
 | **三派总览与社区实况判读** | 三派地图＋痛点对位＋词的状态＋证据边界 | [`00_three_camp_landscape.md`](00_three_camp_landscape.md) |
 | **跨人对峙层** | 10 条交锋轴完整链 | [`00_debates_2026.md`](00_debates_2026.md) |
-| **KOL 立场光谱与滑动图** | 72 档（＋候选 1）位置总览＋25 档时间轨迹＋四象限普查（可视化＋可审计定档表；2026-10-07 第九轮批重生成） | [`00_kol_stance_map.md`](00_kol_stance_map.md) |
+| **KOL 立场光谱与滑动图** | 72 档（＋候选 1）位置总览＋27 档时间轨迹＋四象限普查（可视化＋可审计定档表；2026-10-07 第九轮批＋goal 第一批重生成） | [`00_kol_stance_map.md`](00_kol_stance_map.md) |
 | **推动派**（发起者＋吹捧者） | 把"设计循环让 agent 自动推进"当默认方向推荐 | [`01_advocates/`](01_advocates/README.md) |
 | **中性派**（边界与审慎） | 承认机制有条件成立，划边界、要求约束、先测再信 | [`02_neutral/`](02_neutral/README.md) |
 | **反对与怀疑派** | 给反证与批评（失败账本/质量退化/经济/人的角色） | [`03_skeptics/`](03_skeptics/README.md) |

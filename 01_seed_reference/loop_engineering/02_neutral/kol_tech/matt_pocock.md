@@ -26,3 +26,17 @@ observation_date: 2026-10-06
   - "Use 'grill me' in cases where you feel like you can plan the whole thing in a single session… For stuff where you don't know the path ahead… use wayfinder."（单环 vs 多环规划的分界判据。）
 - **最小主张**：夜间无人值守的瓶颈在**规划阶段的上下文管理**；解法是把规划本身做成多会话编排（map＋ticket 分层），而非把 spec 写满一次。
 - **派别适配**：**中性票**。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**——09-17 Pragmatic Engineer 实取与既有立场同向。
+
+## AI Skills with Matt Pocock（Pragmatic Engineer，2026-09-17）
+
+- URL：https://newsletter.pragmaticengineer.com/p/ai-skills-with-matt-pocock ｜ fetch 成功
+- 要点（Memento 驱动开发为逐字 blockquote）：
+
+> "agents 擅长 tactical 而人守 strategic 层"＋TDD 改"要求 agent 出证明"＋08-22 云化（X 帖经页面嵌入转引）
+（人守 strategic／agent 管 tactical——中性派的结构性分工口径。）

@@ -79,7 +79,7 @@
 | swyx | 吹捧者·概念造词（loopcraft） | "entire game of the next century"＋"Salty Lesson"＋AIEWF 主台演讲（经镜像，见 §A 行） |
 | Steve Yegge | 吹捧者·激进多派（**含一手成本证词**） | Gas Town 舰队实践；同时公开 Gas Town 烧毁、69B token/月、harness 维护 20–25% 常量（见 §A 行） |
 
-**吹捧层登记**：Karpathy——本人一手载体两个（"agents are like interns. You still have to be in charge of aesthetics, judgment, taste, and oversight"）；Nadella——X 长文全文经转译链取得（"This loop will become the new intellectual property of the enterprise"，引句标"经转译"）；Jensen Huang——仅存转引。中文聚合的无名氏声称（"Anthropic 80% 工程师"）**不引用**。
+**吹捧层登记**：Karpathy——本人一手载体两个（"agents are like interns. You still have to be in charge of aesthetics, judgment, taste, and oversight"）；Nadella——X 长文全文经转译链取得（"This loop will become the new intellectual property of the enterprise"，引句标"经转译"）；**goal 第一批升级（2026-10-07）**：Nadella FY26 Q4 财报会逐字（"even their own self-improvement loops"＋"1 in 3 pull requests on GitHub now involves an agent"）＋Sources 访谈（经转译，"智能体循环才是真正的创新"）——**推动票（组织翼）成立性大增，仍标转写/转译级**；Jensen Huang——Q2 FY27 财报会逐字（"Most AI are now agentic…4 million agents…running continuously in the background"⚠️ 三方转写），"loops"十二词宣言仍仅转引（负结论确认）。中文聚合的无名氏声称（"Anthropic 80% 工程师"）**不引用**。
 
 **相邻位（不对本词发声）**：**DHH**——"agent-accelerated development"、37signals "pencils down"（2026-09-23，`_raw_people/15`），同时拒绝 "agentic engineering" 词汇；**Harrison Chase**（LangChain CEO）——"LLMs running in a loop calling tools… the core primitive"（专栏三篇一手），但词表为 harness/managed agents/learning loop，不用本词。
 

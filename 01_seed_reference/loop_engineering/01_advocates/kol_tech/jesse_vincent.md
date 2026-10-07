@@ -45,3 +45,28 @@ observation_date: 2026-10-06
 **派别适配**：**推动票**（实践者；安全边界意识最强，几乎每篇推动文都带"没解决"清单——属"教掌控"型推动者）。
 
 ---
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核；本批最强实证）
+
+> 判定：**单点解除 → 稳定（推动，实践深化）**——07-05 → 08-21 → 10-02 → 10-05 同向；**原档"库内待核的 /goal 过夜循环"本轮闭合**。完整发现见 .tmp-goal-movers/batch-B1-advocates.md。
+
+## 《I vibe-coded a C compiler that can build SQLite》（blog.fsck.com，2026-08-21）
+
+- URL：https://blog.fsck.com/2026/08/21/i-vibe-coded-a-c-compiler/ ｜ fetch 成功（全文）
+- 逐字摘录：
+
+> "And then I set a goal: 'Implement a standards-compliant C compiler in modern Swift. It should be able to build SQLIte and have SQLite pass all tests. You may decompose the project in any way you see fit. You should use subagents, including recursive subagents, to execute effectively.'"
+
+> "My `/goal` loop had just...stopped. It's not supposed to do that. But that's exactly the failure that I was testing for."（**/goal 停止条件的压力测试**）
+
+> "It took Evener + GLM 5.2 about 21 hours to build a C compiler capable of compiling SQLite and passing a basic smoke test."
+（**约 21 小时过夜自主循环实证**＋checkpoint commit 链接；自家 harness（Evener）已实现 `/loop` 与 `/goal` 原语。）
+
+## 《A quick trip to the uncanny valley》（10-02）＋《Today at work》（10-05）——治理加固
+
+> "If you limit it to publicly shipped coding agents, we've found about 550."（alltheagents.org 普查）＋"We give Sen colleagues _roles_ rather than tasks… Each has a unique, persistent identity."（循环结构从"任务"走向"角色同事"）
+
+> 10-05："My AI colleagues messed up slightly. Something got merged to main a little too quickly without the right review and after I suggested that we should not merge it."→AI PM（Cadence Sen）自主发起 blameless post-mortem→"And then they pushed on me to turn on branch protection with mandatory reviews."
+（**事故→结构性门禁**——推动派的掌控翼闭环，治理加固而非立场回撤。）

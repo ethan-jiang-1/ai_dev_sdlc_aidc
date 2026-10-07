@@ -96,3 +96,40 @@ observation_date: 2026-10-07
 
 **该条支持的最小主张**：3700 万 PR 级数据显示放权放大的三段衰减（10x token→2x PR→+27% 交付物）与组织卡点（81% 最多 1–2 agent、merge 率差、协调开销复利）；他的替代方案是"三 regime 分档＋投上下文/搬基础设施/信任作平台投资＋merge 率用流程解＋测结果不测产出"。
 **派别适配**：**怀疑票（数据实证向，强）＋完整推荐面**——注意他不是反 agent（处方是"怎么把自主做出来"），是反"烧 token＝进步"的叙事；判读勿读成"反 loop"。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定**——04-15（谱系）→ 06-02 → 07-27 → 08-13 四时点同向，无方向性移动；07-27 实填了 06-02 与 08-13 之间的档案缺环。完整发现见 .tmp-goal-movers/batch-A-skeptics.md（tmp 不入库，关键句以下留存）。
+
+## 《Why the Real ROI from AI Isn't Showing Up Yet》（Jellyfish 博客，2026-07-27，PlatformCon 讲作者文版；与 Nik Albarran 署名）
+
+- URL：https://jellyfish.co/blog/why-the-real-roi-from-ai-isnt-showing-up-yet/ ｜ fetch 成功（web_fetch 截断→curl 全文）
+- **挂钩**：③④⑤（与主档同）
+- 逐字摘录：
+
+> "Engineering organizations that go from zero to 100% adoption can expect a 2X increase in merged pull requests. But when you look further down the line, the change is much less dramatic: Jellyfish data show the average organization is seeing a 27% increase in epic throughput."
+（比 08-13 更早的同一条衰减链：2X merged PR → 仅 27% epic 吞吐。）
+
+> "Less than 9% of PRs involved autonomous agents at median companies, compared to almost 35% for companies at the 90th percentile."
+
+> "While the median developer spends $50 to $100 a month on AI tokens, the top 5% are accumulating costs of $5,000 and over. That level of spending affects the bottom line, and it's the reason why organizations are starting to ask engineers to show their receipts."
+（token 账单进 CFO 视野——"show their receipts"。）
+
+> **质量面 nuance（判读关键）**："AI agents don't appear to be causing quality issues at scale. When we plot bugs, escape defects, and revert rate against a company's level of AI adoption, we see no dramatic difference between low and high adopters."
+（他明说规模上**没看到质量问题**——怀疑锁定在"产出转化率"轴，不是代码质量；引用勿读成质量怀疑者。）
+
+> 推荐面（三条建议之二）："Optimize for the middle. Getting more of the organization from low levels of agentic workflows to the 80th or 90th percentile is more important than pushing a small group of developers towards extreme use."；"every doubling of context-file investment gives you 29% more additional throughput on top of any other gains."
+
+- 同日视频页（The New Default/Monterail，20M PR 口径）页面直引："I don't trust the opinion of any leader who isn't working with these tools themselves. When you talk to someone, you can tell immediately whether they're actually living this or just reading about it, and you have to live it."（其余策展转述）
+
+## 《AI Native Dev #108》（Tessl 播客，2026-06-02）——show notes 级（transcript 区 JS 未取得，引用标页面语）
+
+> "Human PRs merge at roughly 80%, meaning about 20% are closed without merging. For AI-generated PRs, that ratio shifts to approximately 60/40."＋"Even highly experienced engineers tend to max out at four concurrent agents."
+（"4-agent ceiling"与 agentic barrier 的 6 月形态——主张与 08-13 一致。）
+
+## 复核判定与负结论
+
+- **稳定**：数字链四点收敛（$0.28→$89.32/PR ⇒ 80/20 vs 60/40 ⇒ 2X→27%＋9% vs 35% ⇒ 61% vs 79%＋10x→2x→+27%）；方向始终＝"边际收益递减＋瓶颈在 review/信任＋分档治理处方"。
+- 负结论：09-10 月无本人一手新发声（substack 10 月新篇署名 Tomas Pardinas）；NYC／aiDevCon 讲题仍待发布；podtail 403（重试仍败）。

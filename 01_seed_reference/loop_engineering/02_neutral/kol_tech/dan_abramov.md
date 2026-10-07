@@ -7,7 +7,7 @@ observation_date: 2026-10-06
 # dan_abramov — loop engineering 证据轨迹（2026-06 后，时间正序）
 
 > **身份**：React 核心贡献者（Redux 创建者）
-> **背景**：Dan Abramov——Redux 共同创建者（2015，与 Andrew Clark）；React 核心团队约 2015–2023（新文档/Hooks/Fast Refresh；Just JavaScript 共同作者）；2023–2025 以工程师参与 Bluesky 官方客户端与 AT Protocol 布道；2025 年独立咨询与写作（overreacted.io）；2026-09 确认加入 Vercel 参与 Next.js。（履历核：overreacted.io＋多方，2026-10-07）
+> **背景**：Dan Abramov——Redux 共同创建者（2015，与 Andrew Clark）；React 核心团队约 2015–2023（新文档/Hooks/Fast Refresh；Just JavaScript 共同作者）；2023–2025 以工程师参与 Bluesky 官方客户端与 AT Protocol 布道；2025 年独立咨询与写作（overreacted.io）；2026-07 中确认加入 Vercel 参与 Next.js（本人 07-29 Syntax 播客原话"两周前"——goal 第一批纠偏，原记 2026-09 误）。（履历核：overreacted.io＋多方，2026-10-07）
 > **号召力**：④ 大分发＋① 框架定义者
 > **派别权威**：[台账 §A2](../../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。人物全景（若有）：[_raw_people](../../../../01_seed_reference/voices/_raw_people/README.md)。
 > 人群类型：**专业技术 KOL**（程序员/工程师出身）
@@ -79,3 +79,10 @@ observation_date: 2026-10-06
 （父评论抱怨"喂了全部 Next 文档链接 agent 仍迁移出错"，他回应亲试成功并追问 harness 与失败点——本人使用者立场锚点。）
 
 - 立场：**支持（一线使用者证言）**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批·稳定档复核）：**维持稳定＋入职时间纠偏**
+
+- 窗口内新增两块均不涉 loop 立场：06-19 atproto 文、07-29 Syntax #1025 播客 transcript（前 26min）。
+- **纠偏**：其 07-29 原话入职 Vercel"两周前"（≈07 月中）——档案头"2026-09 加入"应前移（档案头已同步前移）。

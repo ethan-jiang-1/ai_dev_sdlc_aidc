@@ -31,3 +31,17 @@ observation_date: 2026-10-06
 - 官方要点层："Separate the agent doing recurring work from the agent improving its procedure. Propose skill changes through pull requests so humans can review them and Git can preserve their history."
 - **最小主张**：软件工厂的自改进＝skills（程序记忆）＋persistent memory（事实记忆）＋model routing 三条外环，全部以 git/PR 为审计边界。
 - **派别适配**：**推动票**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**未及挖**
+
+- 收口指令先于搜索到达。下轮最短路径：warp.dev 博客检索其署名文；AIEWF《How Software Factories Improve Themselves》演讲上传日期在库未记，可顺带补。
+
+---
+
+# 增量补挖（2026-10-07 goal 第二批·单点→稳定（弱））
+
+> 判定：**稳定（弱）**——AIEWF 讲稿 → ~09 AI Engineer 播客《Building Self-Improving Agent Software Factories》的 BigGo 转述。⚠️ 转述疑为同讲音频重发（摘要级）——若判读层不认第二时点，退为单点。
+
+- 转述要点（⚠️ 摘要级）：三外环自改进＋git/PR 人审审计边界；新增成本轴 GLM/Opus 路由＋"routing 是艺术非科学"自认。

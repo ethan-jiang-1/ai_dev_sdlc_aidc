@@ -28,3 +28,18 @@ observation_date: 2026-10-06
 - 官方分节："Find the enforcement point in the agent loop""Exchange delegated access for a tool-specific credential"。
 - **最小主张**：agent 循环的强制点在 MCP/运行时边界，用委托换工具级短时凭据，而不是在人身上堆审批。
 - **派别适配**：**中性票**。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·**单点→弧线**）
+
+> 判定：**弧线（0→+1）**——"审慎者被实测说服"型（中性派复核两例之一）。转折为自述、未定单日。
+
+## Scaling DevTools ep193（2026-07-10，实取）
+
+- 关键 marker（主持人定性＋本人逐字）：
+
+> "self-described strong skeptic → relying on it daily"
+
+- 落点："orchestrate agents effectively"／"slop in slop out"的**受控编排派**——转推动但不放权。
+- 窗口外基线（谱系）：03-04/04-10 Keycard 博客（HITL＋policy 双闸）。

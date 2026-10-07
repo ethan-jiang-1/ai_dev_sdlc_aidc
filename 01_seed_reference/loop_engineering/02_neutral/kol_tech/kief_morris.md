@@ -99,3 +99,17 @@ observation_date: 2026-10-06
 
 **本轮最小主张**：Morris 07 月密集输出后转入沉寂（08-05 后无新发声）。07-09 FOSE 长文是其 on-the-loop 框架的升级：控制点从"逐行审查"迁往"预备（验收标准）＋检查（一致性测试/harness sensors）"，自主度带宽＝检查成本与出错代价的函数；07-22 LinkedIn Live 延续主线（正文被墙）；08-01 对 agent 安全事故做工程化定性。**姿态从实践叙事转向自主度分层治理理论化。**
 **通道失败如实记录**：LinkedIn Live 登录墙（302 跳登录，回放不可得）；GOTO Book Club 剧集经核日期为 2025-06（窗口外，不入）；Buttondown newsletter 存档页空壳无法核；kief.com feed 空无条目。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核｜载体升级）
+
+> 判定：**单点解除 → 稳定**——06-04 → 06-23 → 07-09 → 08-01 四时点同向，08-05 后沉寂维持。
+
+## Craft 2026《Pulling Continuous Delivery inside the agentic loop》（2026-06-04；⚠️ Tony Vo transcript 笔记，半一手转述档）
+
+- URL：https://tonytvo.github.io/code-craft-2026/pulling-continuous-delivery-inside-the-agentic-loop-kief-morris-craft-2026/
+- 转述档引句（⚠️ 标注）：
+
+> CD 管线整个拉进 agent loop 的新操作命题；Q&A："Skeptical of full dark factories — there'll be layers"＋"I wouldn't point an agent at a production database"
+（**dark factories 分层边界**——中性派给无人值守划边的代表性引句。）

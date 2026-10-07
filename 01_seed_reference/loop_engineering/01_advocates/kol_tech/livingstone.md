@@ -26,3 +26,23 @@ observation_date: 2026-10-06
 - 现场稿另记其立场："verifiability is ultimately what it's about — and you can achieve that with any code, regardless of how it was produced"，以及"loops have always been a core aspect of software development"。
 - **最小主张**：把 loop 正名为"试-学-用的加速器"，可验证性是唯一关键——正方阵营的理论化发言。
 - **派别适配**：**推动票**（辩论正方；一手只有现场稿层，引用须标"经 MacManus 现场稿"）。
+
+---
+
+# 增量补挖（2026-10-07 goal 第一批·单点→稳定复核；载体升级：经现场稿→本人署名）
+
+> 判定：**单点解除 → 稳定**（06-03 署名博客 → 07-02 AIEWF "great loops debate" 正方同构）。
+
+## 《Keycard x Insecure Agents: Building a Big Tent for Agentic Security》（Keycard 博客，2026-06-03，本人署名）
+
+- URL：https://www.keycard.ai/blog/keycard-insecure-agents/ ｜ fetch 成功（全文）
+- 逐字摘录：
+
+> "Agents are reshaping the way we build and operate software, and they're breaking the security models we've trusted for decades in the process."
+
+> "they're not intelligent actors you can trust to do the right thing, they're incredibly powerful non-deterministic reasoning engines that invoke tools dynamically, delegate to sub-agents, and act differently at runtime based on the task they're working on."
+（**非确定性推理引擎论**——其辩论正方立场的 6 月书面形态。）
+
+> "things like context poisoning, intent drift, unverified tools, and data leakage all have to be caught in real time with in-band controls, not discovered in the next audit."
+
+- 相邻（窗口外谱系）：a16z Show 2026-01-08（podscan transcript 预览）"you have this indeterministic loop"＋自动驾驶分级类比——不入窗口计票。

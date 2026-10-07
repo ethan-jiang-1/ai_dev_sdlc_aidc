@@ -34,3 +34,9 @@ observation_date: 2026-10-06
 
 - **最小主张**：无人值守成立条件＝task horizon 足够长＋会话状态与执行环境解耦＋独立 verifier 回路；Anthropic 已把该套件产品化（Managed Agents）。
 - **派别适配**：**推动票（强）**。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**单点确认**
+
+- BigGo《…Run 12 Hours Unattended》（2026-07-22，curl 200）＝同一 AIEWF 演讲的转述，非新时点；未发现其他窗口内独立一手。

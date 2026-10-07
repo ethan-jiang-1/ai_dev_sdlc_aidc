@@ -46,3 +46,9 @@ observation_date: 2026-10-06
 
 - **最小主张**：harness→claw 的扩张是技术＋经济＋心理三重必然（"we want to DM them in Slack… start overnight tasks before bedtime. We want this dopamine casino"），框架层正在把 claw 的能力原语化。
 - **派别适配**：**推动票（强）**——本轮会议层最系统的"无人值守演化论"。
+
+---
+
+# 复核注记（2026-10-07 goal 第一批）：**单点确认**
+
+- mastra.ai/blog 窗口内（09-21→10-06）全部为他人署名产品公告；InfoQ 播客线索指向 2026-04-10（窗口前）且讲者未核实；Zenn 06-09 日文转述讲者未核实——两条线索只登记不立条。Steinberger's law 相关的窗口内增量未获一手。

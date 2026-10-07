@@ -42,3 +42,20 @@ observation_date: 2026-10-07
 
 **该条支持的最小主张**：reachability 属性在 TLA⁺ 里可行（TLC beta 支持＋fairness 归约构造）——给"loop 验证回路里旗标 hack 的正规化替代"提供了具体机制；反向应用：他把自家 CRDT 模型里"人工布尔旗标停流量再验证收敛"的笨办法识别为 reachability 属性。
 **派别适配**：**怀疑派边缘票（验证回路机制向，推荐面为主）**——作为 Wayne 09-30 文的对话方入册；影响力口径偏圈内，台账按 §C1 候选池处理。
+
+---
+
+# 增量补挖（2026-10-07 goal 第二批·单点→稳定复核）
+
+> 判定：**单点解除 → 稳定（候选 ⚠️）**——08-24 实填档案缺环 → 09-26 reachability，验证回路机制派两点同向。
+
+## 《The changing role of finite-state model checking》（ahelwer.ca，2026-08-24，全文实取）
+
+- 逐字摘录：
+
+> "we are leaving the cozy 80/20 world…The future looks like a split between formal proofs and a fleshed-out story for deterministic simulation testing"
+（**验证回路的两分未来**：形式证明＋确定性仿真测试。）
+
+> "Deterministic execution must be in the 2026 zeitgeist"
+
+> 对"花钱买不可读自动生成证明"的保留（链接 de Moura kernel soundness bug postmortem——LLM 生成证明的可信度警示）
