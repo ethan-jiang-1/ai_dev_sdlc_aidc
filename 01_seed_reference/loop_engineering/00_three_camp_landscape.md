@@ -155,7 +155,8 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **两股新收敛（给判读层）**：①数据派（Arcolano）首次给出组织级衰减曲线，把"把控性差"从体感变成可测指标；②安全派（Dinaburg/METR/Kapoor 三方独立）把怀疑重心从"产出质量"升级到**"监控与隔离层本身是被攻击面"**——METR 窗口内无新生产力论文、整体转向事故/监控，是怀疑派重心迁移的标志。
 - **勘误**：Dotta done 对象六件套→**八件套**（逐字稿＋页面 JSON 8 键坐实，[dotta](03_skeptics/kol_tech/dotta.md) 已改）；SREcon《Tokenmaxxing is the New "Lines of Code"》官方页至今未发布（第五轮待发布登记收口——内容已演化进 World's Fair 07 讲题与 Arcolano 08-13 作者文）。
 - **通道**：web_fetch 全程可用（与第七轮相反）；负结论——Orosz §5–7 付费墙两轮复核收口为"拿不到"（镜像同点截断＋publish0x 403）；Zechner earendil.com 无索引（10-01 后无新文）；rachelbythebay DNS 级失败；详见 [_负结论与通道](03_skeptics/_负结论与通道.md) 第九轮节。
-- **图同步**：三张立场图按定档表重生成（图 A 72 档＋候选 1、图 B 27 档轨迹＋Tim Bray／Arcolano／Kim Maida／Charlie Holtz 四线、图 C orgs 48／KOL·专业 68＋候选 1）——[00_kol_stance_map](00_kol_stance_map.md) §七。
+- **agile 元老批（同日追加，用户点名）**：**Martin Fowler 本人**窗口内 17 条署名逐条甄别（弧线深化未翻转：07-21 'verification is the bottleneck' → 09-08 'verification>generation… weak brakes' 制度主张 → 09-29 'stop or get a human's explicit approval'；0 次使用本词——相邻位）；**Kent Beck** '窗口内沉默'旧结论被推翻（渠道误认：Still Burning=播客；窗口内 16 帖＋4 播客，07-22 去人化质询＋09 验证硬化＋keep the genie on course——§B 升 §A）；**Dave Thomas** 新滑动者（07-21《Be a Luddite》逐字点名 '36h loop/2M 行' 流派）；Jez Humble／Elisabeth Hendrickson 单点入册；Ron Jeffries 立边缘档（'net negative for humanity'——纯态度锚点，铁律 1 挂钩不足不入图谱）；Gojko 间接档；负结论 4 人（Cunningham/Cockburn/Ford/Feathers）＋自由加位线索 5 条。元老层与 loop 原生社区的最大分歧点＝**无人值守长循环不可信、人必须在环**（Thomas 7-21 与 Beck 07-22 两极证词）——正对停止条件/预算熔断两类挂钩。
+- **图同步**：三张立场图按定档表重生成（图 A 77 档＋候选 1、图 B 28 档轨迹＋五条新弧线、图 C orgs 48／KOL·专业 73＋候选 1）——[00_kol_stance_map](00_kol_stance_map.md) §七。
 
 ## 四、不支持什么（证据边界）
 
