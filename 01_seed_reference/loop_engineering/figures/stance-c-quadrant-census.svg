@@ -10,8 +10,8 @@
 <text x="30" y="672" font-size="10.5" fill="#607d8b">群众</text>
 <text x="550.0" y="682" text-anchor="middle" font-size="13" font-weight="700" fill="#444">技术深度：专业程序员（左） ↔ 非专业·产品/商业（右）</text>
 <rect x="170" y="138" width="400" height="250" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" rx="8"/>
-<text x="184" y="164" font-size="13.5" font-weight="700" fill="#2e7d32">KOL · 专业技术　<tspan fill="#777" font-size="12">73 档（＋候选 1）</tspan></text>
-<text x="184" y="178" font-size="9" fill="#777">推动 34／中性 25／怀疑 14＋候选 1（第九轮＋6；agile 批＋5；图内名单为代表示例非全量）</text>
+<text x="184" y="164" font-size="13.5" font-weight="700" fill="#2e7d32">KOL · 专业技术　<tspan fill="#777" font-size="12">81 档（＋候选 1）</tspan></text>
+<text x="184" y="178" font-size="9" fill="#777">推动 36／中性 30／怀疑 15＋候选 1（第九轮＋6；agile 批两波＋13；图内名单为代表示例非全量）</text>
 <text x="184" y="192.0" font-size="9.3" fill="#555">Andrew Ng</text>
 <text x="184" y="205.4" font-size="9.3" fill="#555">Akshay Nathan</text>
 <text x="184" y="218.8" font-size="9.3" fill="#555">Dan McAteer</text>
@@ -59,6 +59,14 @@
 <text x="434" y="299.2" font-size="9.3" fill="#555">Dave Thomas</text>
 <text x="434" y="312.6" font-size="9.3" fill="#555">Jez Humble</text>
 <text x="434" y="326.0" font-size="9.3" fill="#555">Elisabeth Hendrickson</text>
+<text x="434" y="339.4" font-size="9.3" fill="#555">Uncle Bob</text>
+<text x="434" y="352.8" font-size="9.3" fill="#555">Charity Majors</text>
+<text x="434" y="366.20000000000005" font-size="9.3" fill="#555">Jessica Kerr</text>
+<text x="434" y="379.6" font-size="9.3" fill="#555">Rachel Laycock</text>
+<text x="434" y="393.0" font-size="9.3" fill="#555">Giles Edw.-Alex.</text>
+<text x="434" y="406.4" font-size="9.3" fill="#555">Unmesh Joshi</text>
+<text x="434" y="419.8" font-size="9.3" fill="#555">Rob Bowley</text>
+<text x="434" y="433.20000000000005" font-size="9.3" fill="#555">Hefley &amp; Magennis</text>
 <rect x="590" y="138" width="400" height="250" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" rx="8"/>
 <text x="604" y="164" font-size="13.5" font-weight="700" fill="#1565c0">KOL · 产品/商业　<tspan fill="#777" font-size="12">4 档</tspan></text>
 <text x="604" y="192" font-size="9.3" fill="#555">Jensen Huang</text>
@@ -79,5 +87,5 @@
 <text x="604" y="660" font-size="9.5" fill="#bf8f00" font-weight="700">README 判读称『接近零——缺席本身是证据』（10-06 前口径；拆分后现有 9 档，成色另判）</text>
 <line x1="580" y1="138" x2="580" y2="688" stroke="#cfd8dc" stroke-width="1.2" stroke-dasharray="6,4"/>
 <line x1="170" y1="412" x2="990" y2="412" stroke="#cfd8dc" stroke-width="1.2" stroke-dasharray="6,4"/>
-<text x="150" y="660" font-size="10" fill="#888">注：KOL·专业技术 73 档（另有候选 1）＝推动 34＋中性 25＋怀疑 14（第九轮＋agile 元老批 2026-10-07：＋5 KOL＋helwer 候选；METR 入 orgs 48）。图内名单为代表示例非全量——全量定档见 00_kol_stance_map §五。判读权威在 README 证据分层节＋kol-roster §A2</text>
+<text x="150" y="660" font-size="10" fill="#888">注：KOL·专业技术 81 档（另有候选 1）＝推动 36＋中性 30＋怀疑 15（第九轮＋agile 元老批两波 2026-10-07：＋5 KOL＋helwer 候选；METR 入 orgs 48）。图内名单为代表示例非全量——全量定档见 00_kol_stance_map §五。判读权威在 README 证据分层节＋kol-roster §A2</text>
 </svg>

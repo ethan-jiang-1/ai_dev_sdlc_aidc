@@ -64,6 +64,20 @@ observation_date: 2026-10-07
 
 > "I have a lot of mixed feelings about AI and LLM technology… On the other hand, I'm fearful of the damage AI might cause: agent swarms taking over our virtual and physical infrastructure, designing bio weapons."
 
+## Fragments 2026-07-06 —— retreat 观察＋成本警觉＋伦理立场（含归属校准）
+
+- URL：https://martinfowler.com/fragments/2026-07-06.html ｜ fetch：TypeError→curl(UA) 成功
+- **挂钩**：循环产品化（harness 术语扩散）＋预算与熔断（token 成本）＋无人值守（隔夜质检）。
+
+**逐字摘录**：
+
+> "there was much talk now about harness engineering, when that wasn't even a term in Utah - an example of how rapidly things are moving."
+
+> "a way to measure design quality is to look at token costs. If the same change requires less tokens that indicates a better architecture."＋"overnight quality checks with a report for humans to act on in the morning"
+
+> 伦理立场（**Fowler 自撰概括句**）："Her conclusion however, like mine, is that there's no ethical gain from renouncing the use of AI and castigating those who use it."
+（⚠️ 归属校准（G1 溯源）：此句为 **Fowler 的自撰概括**，被放大者 Charity Majors 的逐字对应＝"unilateral disarmament in the face of powerful new tools is neither wise or an effective strategy"（06-15）——见 [charity_majors](charity_majors.md)。引用勿把概括句记到 Charity 名下。）
+
 ## Fragments 2026-09-29 —— 无人值守的停止条件道德底线
 
 - URL：https://martinfowler.com/fragments/2026-09-29.html ｜ fetch 成功

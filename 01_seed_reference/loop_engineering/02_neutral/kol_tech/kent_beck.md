@@ -71,3 +71,32 @@ observation_date: 2026-10-07
 - **弧线（2025-06 谱系起点 → 窗口内三点深化，方向未翻转）**：节拍论 → 信任经济学 → 角色论/问责论 → 验证硬化＋身份定盘。
 - **派别适配**：**中性（0）**——人在环节拍论的推动者×去人化循环的怀疑者，两翼合成其"审慎建设性"立场；全程 0 次使用 "loop engineering"（词表＝augmented coding/genie/trust）——按相邻位口径单列，不混入本词派别计票。
 - **限制**：8 条 only_paid 帖仅得付费墙预览（标"待核"）；播客引句为自动转写（"tests"误作"Tess"）；嘉宾语（Jessica Kerr "loop becomes a noose"、Adams "air traffic controller"）未记 Beck 名下。
+
+---
+
+# 增量补挖（2026-10-07 agile 元老第二批·G3 深挖）
+
+> 三点全闭合：付费帖清单／播客全集与金句归属／Prodacity 核实。逐字与 fetch 状态见 .tmp-goal-movers/batch-G3-beck2.md（tmp 过渡）。
+
+## 付费层清单（8 条，API audience 字段权威核实——付费墙预览级登记）
+
+06-21 Smalltalk Genie／06-23 Why So Literal?／07-10 When Complaints Are Good News／07-15 Long Volatility Development／07-22 Long Vol: What is Volatility?／08-05 Speculative Short Volatility & Neglectful Short Volatility／08-13 Busy is Short Volatility／09-17 **Formal Methods Pay Off**。
+（观察：7-8 月付费层被 "long volatility／XP as long vol" 金融隐喻系列占据；AI 主线在免费层。09-17《Formal Methods Pay Off》标题与其 09 月验证硬化弧线同调——正文待核。）
+
+## Still Burning 播客全集（官方 RSS feeds.transistor.fm——共 9 集，07-22 后停更约 2.5 个月）
+
+| 集 | 日期 | 嘉宾 | 金句归属（转写级，记嘉宾名下） |
+|---|---|---|---|
+| 06-03 | #? | Randy Shoup | — |
+| 06-17 | #? | **Jessica Kerr** | **"loop becomes a noose"**（show notes 原句语境：steward "symmathesy" of people, code, and agents） |
+| 07-01 | #? | **Keith Adams** | "air traffic control／flow state traded" |
+| 07-22 | #9 | Beth Andres-Beck | "How Do You Know That?"（末集） |
+
+## Prodacity 2026 核实（官方议程 rise8.us/prodacity/virtual-agenda）
+
+- 活动 **2026-08-25→27**，Nashville TN（Rise8 主办）；Beck Day 1（8/25）14:20，题 **"How AI Changes the Craft of Software Development"**（官方视频 09-29 上传）。
+- 附带新名：**Russ Miles** 同会议《The Living Harness: Stop AI-Assisted Code from Drifting in Production》（演讲＋工作坊）——harness 词汇独立出现，归 Miles 名下（线索级）。
+
+## 待回源线索（下批最优先）
+
+**The Pragmatic Engineer 访谈 Kent Beck（2026-07-02 发布，2h27m，副题 "Kent Beck reflects on Agile, TDD, and why building trust—not just generating code—will define the future of software engineering"）——有官方 transcript（substack captions VTT），回源可大幅补 Beck 弧线。**另 09-29 免费帖开篇逐字："Two years ago programmers were all like, 'What I do is code. Who I am is a coder. The genie codes. Now who am I?'"（身份拍子论延续，维持中性·相邻位判定。）

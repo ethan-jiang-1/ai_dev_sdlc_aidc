@@ -2,7 +2,7 @@
 type: stance_map
 content_type: analysis
 directory: 01_seed_reference/loop_engineering
-description: KOL 立场光谱与滑动可视化——77 档（＋候选 1）位置总览、28 档时间轨迹、证据四象限普查（图 + 可审计定档表；含 2026-10-07 agile 元老批）
+description: KOL 立场光谱与滑动可视化——85 档（＋候选 1）位置总览、28 档时间轨迹、证据四象限普查（图 + 可审计定档表；含 2026-10-07 agile 元老批）
 map_date: 2026-10-07
 authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派别之下的细分可视化，不构成第二权威
 ---
@@ -30,10 +30,10 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 三条铁则：
 
 1. **派别判定唯一权威在 [kol-roster §A2](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)**；档位只是派别之下的细分刻度。档位与目录归属打架处标 ⚠️，不静默统一（先例：sean_goedecke 头排「Google SWE」冲突——见其档背景行）。
-2. **单点档（20/78）不画线**——"证据不足以判弧线"如实呈现（goal 两批＋agile 元老批终态：28 人单点解除转稳定〔含 helwer 候选与 chase 补转换〕、3 人转滑动〔＋Dave Thomas〕、18 人单点确认；新增 5 名单点/滑动为 agile 元老批）。缺席的弧线本身是证据状态。helwer 为候选 ⚠️（台账 §C1），计入行数与派带、**不入分布带漂移计数**（分布带按 72 KOL 计）。
+2. **单点档（25/86）不画线**——"证据不足以判弧线"如实呈现（goal 两批＋agile 元老两批终态：28 人单点解除转稳定〔含 helwer 候选与 chase 补转换〕、3 人转滑动、18 人单点确认；agile 两波新增 13 行中 5 行为单点、3 行稳定、1 行滑动）。缺席的弧线本身是证据状态。helwer 为候选 ⚠️（台账 §C1），计入行数与派带、**不入分布带漂移计数**（分布带按 72 KOL 计）。
 3. **⚠️ ＝档内明示证据弱／经转引／待判**（jensen_huang 吹票降级候选、nadella 证据不足、rieseberg 单点转引、david_fowler 全经转引链、walden_yan 厂商利益待判、livingstone 经现场稿、会议层票、helwer 候选）——这类位置仅示登记位，不是判定。
 
-## 二、图 A · 立场光谱总览（77 档＋候选 1：谁在哪、谁滑了）
+## 二、图 A · 立场光谱总览（85 档＋候选 1：谁在哪、谁滑了）
 
 ![立场光谱总览：一人一行，起点○→终点●，单点档为单点；顶部分布带显示人群重心漂移](figures/stance-a-overview.svg)
 
@@ -41,10 +41,10 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 
 **总览速读**（2026-10-07 第九轮批＋goal 第一批后；分布带按 72 KOL 计）：
 
-- **分布带漂移**（窗口初 → 窗口末）：中性带 **21 → 14**（−7），两翼同时加厚——`+2` 22→24、`+1` 14→**15**、`−1` 3→7、`+3` 4→5、`−2` **9→12**。**中场变薄、两端变厚**：不是单边漂移，是极化——两翼加厚各有形态：怀疑翼＝"数据＋安全实证"（arcolano/dinaburg/METR），推动翼＋1 的净增量是**实测说服型**（maida／holtz），而 **agile 元老批的加入使中性带口径扩大后仍净流出 7 档**（Fowler／Beck／Thomas／Humble／Hendrickson 进场也改写不了中场收缩）。
-- **16 个滑动者，两个方向**：向推动滑 9（DHH、Steinberger、Thorsten Ball、Hashimoto、Kent C. Dodds、Mollick、Zechner〔建设面微滑〕＋Kim Maida、Charlie Holtz〔实测说服型〕）vs 向怀疑滑 7（Huntley、Orosz、Willison、Dwarkesh、Ronacher、Tim Bray＋**Dave Thomas〔agile 元老：07-21 逐字点名无人值守长循环"回到现实"〕**）。
+- **分布带漂移**（窗口初 → 窗口末）：中性带 **25 → 18**（−7），两翼同时加厚——`+2` 22→24、`+1` 16→**17**、`−1` 4→8、`+3` 5→6、`−2` **9→12**。**中场变薄、两端变厚**：不是单边漂移，是极化——两翼加厚各有形态：怀疑翼＝"数据＋安全实证"（arcolano/dinaburg/METR），推动翼＋1 的净增量是**实测说服型**（maida／holtz），而 **agile 元老批的加入使中性带口径扩大后仍净流出 7 档**（Fowler／Beck／Thomas／Humble／Hendrickson 进场也改写不了中场收缩）。
+- **16 个滑动者（未再新增），两个方向**：向推动滑 9（DHH、Steinberger、Thorsten Ball、Hashimoto、Kent C. Dodds、Mollick、Zechner〔建设面微滑〕＋Kim Maida、Charlie Holtz〔实测说服型〕）vs 向怀疑滑 7（Huntley、Orosz、Willison、Dwarkesh、Ronacher、Tim Bray＋**Dave Thomas〔agile 元老：07-21 逐字点名无人值守长循环"回到现实"〕**）。
 - **−3 全程空位**＋厂商/商业领袖（Jensen、Nadella、Krieger、Chase、Rauch…）全部在推动侧，怀疑侧清一色一线工程、数据与安全实证（第九轮后"安全研究翼"成形：Dinaburg／METR／Cable）。
-- 20 个单点：多为 AIEWF 讲者层与负结论确认者；28 人已由单点升稳定（goal 两批）——**"单点"与"弱证据"不再是同义词**。
+- 25 个单点：多为 AIEWF 讲者层、负结论确认者与 agile 两波新增（Laycock/Edwards/Joshi/Bowley/Hefley-Magennis）——**"单点"与"弱证据"不再是同义词**。
 
 ## 三、图 B · 滑动轨迹（28 档：光谱 × 时间）
 
@@ -112,11 +112,11 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 
 ![证据四象限普查：影响力×技术深度两轴，KOL 四格落位，机构层跨轴单列，群众两格](figures/stance-c-quadrant-census.svg)
 
-**读法**：两轴＝[README 证据分层](README.md)的正交维度（影响力 × 技术深度）。KOL **77 档＋候选 1** 按象限计档（图内列**代表名单**非全量，全量定档见 §五：专业技术 **73＋候选 1**＝推动 34／中性 25／怀疑 14＋候选；产品/商业 4）；orgs/ **48 档**（第九轮＋METR）跨两轴单列顶部；community_tech 20 档＋community_product 9 档在群众行。右下格标 ⚠️：README 判读称『community_product 接近零——缺席本身是证据』系 2026-10-06 前口径，community 拆分批落位后现有 9 档，**成色另判**（是否真为非专业群众声音，待专题复核）。
+**读法**：两轴＝[README 证据分层](README.md)的正交维度（影响力 × 技术深度）。KOL **85 档＋候选 1** 按象限计档（图内列**代表名单**非全量，全量定档见 §五：专业技术 **81＋候选 1**＝推动 36／中性 30／怀疑 15＋候选；产品/商业 4）；orgs/ **48 档**（第九轮＋METR）跨两轴单列顶部；community_tech 20 档＋community_product 9 档在群众行。右下格标 ⚠️：README 判读称『community_product 接近零——缺席本身是证据』系 2026-10-06 前口径，community 拆分批落位后现有 9 档，**成色另判**（是否真为非专业群众声音，待专题复核）。
 
 ## 五、定档总表（审计用——图从表生，不凭感觉画）
 
-> 每行依据锚点指向对应 KOL 档；改档先改表。`档位`列＝起点→终点（单点档只标单点位）。**表共 78 行＝77 KOL＋helwer（候选 ⚠️，不入分布带计数）；metr 为机构档见表后补记。** 2026-10-07 第九轮批：＋5 KOL＋helwer＋机构补记；goal 两批＋agile 元老批：单点解除转稳定 28、新滑动者 3（Tim Bray 第九轮＋Maida/Holtz goal 批＋Dave Thomas agile 批）。
+> 每行依据锚点指向对应 KOL 档；改档先改表。`档位`列＝起点→终点（单点档只标单点位）。**表共 86 行＝85 KOL＋helwer（候选 ⚠️，不入分布带计数）；metr 为机构档见表后补记。** 2026-10-07 第九轮批：＋5 KOL＋helwer＋机构补记；goal 两批＋agile 元老批：单点解除转稳定 28、新滑动者 3（Tim Bray 第九轮＋Maida/Holtz goal 批＋Dave Thomas agile 批）。
 
 | 档 | 人物 | 派 | 档位（起→终 / 单点） | 关键转折（档内口径） | 票面（派别适配） | 依据锚点 |
 |---|---|---|---|---|---|---|
@@ -144,12 +144,14 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 | `lance_martin` | Lance Martin | 推动派 | 推动（单点） | — | 推动票（强） | [`01_advocates/kol_tech/lance_martin.md`](01_advocates/kol_tech/lance_martin.md) |
 | `laurie_voss` | Laurie Voss | 推动派 | 推动→推动 | 无翻转——从分类学走向治理深化 | 推动票（治理翼） | [`01_advocates/kol_tech/laurie_voss.md`](01_advocates/kol_tech/laurie_voss.md) |
 | `krieger` | Mike Krieger | 推动派 | 偏推动→偏推动 | 09-28 谨慎注记：自建脚手架被裸模型击败（harness 价值暂态化） | 推动票（带难点自认·官方笔录＋Sierra 对谈） | [`01_advocates/kol_tech/krieger.md`](01_advocates/kol_tech/krieger.md) |
+| `hefley_magennis` | Chris Hefley & Troy Magennis | 推动派 | 偏推动（单点） | 10-06 nightly council of agents＋guardrails/停止条件（完整循环实例） | 推动票（受约束翼·Lean/Kanban 邻域） | [`01_advocates/kol_tech/hefley_magennis.md`](01_advocates/kol_tech/hefley_magennis.md) |
 | `patrick_debois` | Patrick Debois | 推动派 | 推动→推动 | 商品化预言——09-30 QCon 同向深化（context is the fuel） | 推动票（降温注记） | [`01_advocates/kol_tech/patrick_debois.md`](01_advocates/kol_tech/patrick_debois.md) |
 | `roland_gavrilescu` | Roland Gavrilescu | 推动派 | 推动→推动 | — | 推动票（两载体同向 ⚠️ 第三载体待下批） | [`01_advocates/kol_tech/roland_gavrilescu.md`](01_advocates/kol_tech/roland_gavrilescu.md) |
 | `sachin_malhotra` | Sachin Malhotra | 推动派 | 偏推动（单点） | — | 推动票（受约束翼） | [`01_advocates/kol_tech/sachin_malhotra.md`](01_advocates/kol_tech/sachin_malhotra.md) |
 | `sam_bhagwat` | Sam Bhagwat | 推动派 | 强推动（单点） | — | 推动票（激进预言·Steinberger's law） | [`01_advocates/kol_tech/sam_bhagwat.md`](01_advocates/kol_tech/sam_bhagwat.md) |
 | `nadella` | Satya Nadella | 推动派 | 偏推动（单点） | 财报会逐字＋Sources 访谈（经转译）——'智能体循环才是真正的创新' | 推动票（组织翼）成立性大增 ⚠️ 转写/转译级 | [`01_advocates/kol_product/nadella.md`](01_advocates/kol_product/nadella.md) |
 | `steve_yegge` | Steve Yegge | 推动派 | 强推动→强推动 | 警示升级但仍是多派（Gas Town 仍在跑） | 推动票（激进多派＋安全警示） | [`01_advocates/kol_tech/steve_yegge.md`](01_advocates/kol_tech/steve_yegge.md) |
+| `uncle_bob` | Robert C. Martin（Uncle Bob） | 推动派 | 强推动→强推动 | 自我修正：09-11 'need for my harness was obviated'＋09-24 '95% of the code I never see'、CRAP 4→6→12——执行去苛刻化、责任保留 | 推动票（激进多派·自修正注记） | [`01_advocates/kol_tech/uncle_bob.md`](01_advocates/kol_tech/uncle_bob.md) |
 | `suraj_gupta` | Suraj Gupta | 推动派 | 推动→推动 | ⚠️ 第二时点为转述级（疑同讲重发） | 推动票（Warp harness 负责人）·稳定（弱） | [`01_advocates/kol_tech/suraj_gupta.md`](01_advocates/kol_tech/suraj_gupta.md) |
 | `thariq_shihipar` | Thariq Shihipar | 推动派 | 推动→推动 | 07-21 fireside chat：系统提示词 −80% 原始出处＋auto mode 机制 | 推动票（强·三时点 07-19/07-21/09-29） | [`01_advocates/kol_tech/thariq_shihipar.md`](01_advocates/kol_tech/thariq_shihipar.md) |
 | `tim_sweeney` | Tim Sweeney | 推动派 | 推动（单点） | — | 推动票（会议层 ⚠️） | [`01_advocates/kol_tech/tim_sweeney.md`](01_advocates/kol_tech/tim_sweeney.md) |
@@ -182,6 +184,12 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 | `dave_thomas` | Dave Thomas | 中性派 | 偏推动→偏怀疑 | 07-21《Be a Luddite》逐字点名'36h loop/2M 行'流派——goal-and-leave＝BDUF | 中性票→偏怀疑（无人值守轴·条件推动整体） | [`02_neutral/kol_tech/dave_thomas.md`](02_neutral/kol_tech/dave_thomas.md) |
 | `jez_humble` | Jez Humble | 中性派 | 偏推动（单点） | — | 推动票带 CI/CD 纪律条件（thunderdome 谱系接续） | [`02_neutral/kol_tech/jez_humble.md`](02_neutral/kol_tech/jez_humble.md) |
 | `elisabeth_hendrickson` | Elisabeth Hendrickson | 中性派 | 中性（单点） | 08-20 度量-迭代循环（'Measure…Steer toward value'） | 中性票（实践推动＋度量审慎） | [`02_neutral/kol_tech/elisabeth_hendrickson.md`](02_neutral/kol_tech/elisabeth_hendrickson.md) |
+| `charity_majors` | Charity Majors | 中性派 | 中性→中性 | 06-15 'AI demands more engineering discipline. Not less.'＋'return to discipline' | 中性票（纪律回归派） | [`02_neutral/kol_tech/charity_majors.md`](02_neutral/kol_tech/charity_majors.md) |
+| `jessica_kerr` | Jessica Kerr | 中性派 | 中性→中性 | 08-30 'double down, 10x down on our objective verification'＋Verum Factum 框架 | 中性票（验证加倍派＋认识论） | [`02_neutral/kol_tech/jessica_kerr.md`](02_neutral/kol_tech/jessica_kerr.md) |
+| `rachel_laycock` | Rachel Laycock | 中性派 | 中性（单点） | 09-02 'a big backlog and a new bottleneck'（review by exception） | 中性票（人审瓶颈重构·TW 现任 CTO） | [`02_neutral/kol_tech/rachel_laycock.md`](02_neutral/kol_tech/rachel_laycock.md) |
+| `giles_edwards_alexander` | Giles Edwards-Alexander | 推动派 | 偏推动（单点） | 09-02 An Accidental Blackboard（repo plan 自发 blackboard＋Talwrn） | 推动票（建设面·多 agent 协调设计） | [`01_advocates/kol_tech/giles_edwards_alexander.md`](01_advocates/kol_tech/giles_edwards_alexander.md) |
+| `unmesh_joshi` | Unmesh Joshi | 中性派 | 中性（单点） | 07-14 DSL as harness（确定性 validator 供无人化修复） | 中性票（DSL as harness） | [`02_neutral/kol_tech/unmesh_joshi.md`](02_neutral/kol_tech/unmesh_joshi.md) |
+| `rob_bowley` | Rob Bowley | 中性派 | 偏怀疑（单点） | 08-18 'paradigm 半衰期短于年假'（Fowler 转引锚）＋09-10 inner loop is gone | 中性票（偏怀疑·审慎调性） | [`02_neutral/kol_tech/rob_bowley.md`](02_neutral/kol_tech/rob_bowley.md) |
 | `ronacher` | Armin Ronacher | 反对与怀疑派 | 偏推动→怀疑 | 07-04 工具退化反证——从'不可逆但有边界'转为'机制跟不上能力曲线'；10-06 Codemode 把怀疑落成建设面（方向不变） | 怀疑票（锚点·质量反证代表） | [`03_skeptics/kol_tech/ronacher.md`](03_skeptics/kol_tech/ronacher.md) |
 | `dwarkesh` | Dwarkesh Patel | 反对与怀疑派 | 中性→怀疑 | 08-29 从一般 AI 访谈转为 agent 文明兴衰结构论 | 怀疑票（结构论者） | [`03_skeptics/kol_product/dwarkesh.md`](03_skeptics/kol_product/dwarkesh.md) |
 | `mario_zechner` | Mario Zechner | 反对与怀疑派 | 怀疑→偏怀疑 | 连续性：循环合法性＝验证者能力——从批评走到建设 | 怀疑票（稳定怀疑·实践反证 13 条） | [`03_skeptics/kol_tech/mario_zechner.md`](03_skeptics/kol_tech/mario_zechner.md) |
