@@ -219,3 +219,36 @@ observation_date: 2026-10-06
 - 立场：**支持**。
 
 **本轮最小主张**：Orosz 07-14 定义篇后未再专文写 loop engineering，但 08-10 月每期都在供弹药：验证回路（Ramp/Shopify/迁移篇）、无人值守与外层调度（Pocock 昼夜分档、OpenAI /goal 与 Sevbot）、预算纪律（Uber 撞穿预算后限额）、产品化（人人自建 harness、年度报告立为主趋势）。总体支持，但坚持人工出口（"break the loop likely a human decision"）与现实校准（"oncall 还在"）。
+
+---
+
+# 增量补挖（2026-10-07 第九轮·怀疑者替代推荐专项：推荐面）
+
+> 通道：07-14 文章页与 09-15 工厂篇重取（fetch 成功；§5–7 付费墙两轮复核仍拿不到——负结论见怀疑档 [_负结论与通道](../../03_skeptics/_负结论与通道.md) 第九轮节）。**本轮只收此前未收引句**，已归档句不重复。
+
+## 《What is "loop engineering?"》（2026-07-14）出路处方补全
+
+> "Does 'context engineering' matter more for devs? Except for engineers building AI infra, there seems little benefit in going deep into loop engineering. **Instead, becoming familiar with AI context windows – also part of building loops – could be more useful.**"
+（§7 大纲句的**后半句为新增**：他给的替代方向＝**熟悉 AI context windows**——不是弃 agent，是换深耕对象。前半句既有档已收。）
+
+> 受访者原话（公开部分，loop 治理两例，此前未收）：Artem Nikitin（Elastic）："So I'm now asking them to run in a loop until they find 0 new major issues."；Utku K（EM）："...keeps iterating until it passes or hits a retry cap and escalates..."
+（**"循环跑到零新增问题"＋"重试上限＋升级"**——一线停止条件处方样本，与怀疑派"循环合法性＝验证者能力"（Zechner）同构。）
+
+## 《Inside OpenAI's agentic software factory》（2026-09-15）增量（同日档已有 /goal、Perf Factory、Sevbot 愿景与 oncall 边界四句）
+
+> Andrew Ambrosino："The number one thing that is changing is that people are starting to use threads for much longer, and this longer usage has been a breakthrough. … They often set a goal and then have the model crank." ＋ "a long-running agent often spins off other agents to do other things, reducing the surface area that you, as a human, have to manage."
+（**长线程＋goal→crank 用法**与"子 agent 代管降低人的管理面"——无人值守的用法层一手。）
+
+> 风险分级评审（Venkat Venkataramani，Orosz 公开转述）："High-risk changes can be sent through stricter processes; for example, they might invoke more AI code reviews, or mandate that a human reviews it after the AI agents finish. Low-risk changes follow an easier path; areas of the codebase can opt in to an agent that will auto-approve low risk PRs, removing human acceptance as a bottleneck and improving velocity."
+（**风险分级评审**：高风险多 AI 评审＋人终审；低风险 opt-in auto-approve——与怀疑派"merge 率用流程解"（[arcolano](../../03_skeptics/kol_tech/arcolano.md)）同一问题的另一解。）
+
+> 部署陪护 agent："Handhold this change until it is safely and fully rolled out into production." [...] "Builds its own monitoring dashboard to use" ＋ "OpenAI's long term goal is to have something like a 'per-change autonomous SRE' in the form of an agent that can deploy pretty much autonomously."
+（**陪护部署＋自建监控面板＋per-change autonomous SRE**——部署侧无人值守形态。）
+
+> Sevbot："Determines possible mitigations (but never executes any)"
+（**Sevbot 的停止条件设计**：只提缓解**绝不执行**——"建议不执行"是 bounded autonomy 的最保守厂商形态，怀疑派"无人值守要有界"路线的对照物。）
+
+> **Orosz 本人怀疑注（新）**："Note from Gergely: I was skeptical about the claim that an agent that's told to be a cloud infra specialist would produce a different review from a generic agent. However, all Codex agents have full access to OpenAI's code and docs, so this 'cloud infra expert' agent likely has gathered a lot of context about cloud infra setup and best practices, meaning it should provide highly targeted feedback."
+（调查式怀疑的标准动作：先记录怀疑、再自我修正——判读勿读成否定。）
+
+**第九轮最小主张（一句）**：Orosz 的替代推荐两面齐——对个人："context windows 深耕＞loop engineering 深钻"；对组织：他记录的 OpenAI 样本给出"风险分级评审＋Sevbot 只提缓解不执行＋陪护部署"的大厂 bounded-autonomy 对照组。

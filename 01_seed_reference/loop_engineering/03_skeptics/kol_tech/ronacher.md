@@ -17,10 +17,10 @@ observation_date: 2026-10-06
 
 ## 态度轨迹
 
-**方向**：降温（重度信徒→内卷判词）
+**方向**：降温（重度信徒→内卷判词）→ 建设面落成机制（10-06 Codemode）
 **起点**：审慎接受（'the question is not whether we will loop'）
-**终点**：元批评（'all of AI engineering is Neijuan'＋'why we are doing this'）
-**弧线**：06-23《The Coming Loop》承认趋势不可逆但三条界限 → 07-04《Better Models: Worse Tools》SOTA 工具反证 → 07-13《Tower Keeps Rising》理解坍塌无即时失败信号 → 09-07《Astra》内卷论＋35h/$1200 白卷
+**终点**：元批评（'all of AI engineering is Neijuan'＋'why we are doing this'）→ 把怀疑落成产品机制（脑/手分层＋沙箱化工具层）
+**弧线**：06-23《The Coming Loop》承认趋势不可逆但三条界限 → 07-04《Better Models: Worse Tools》SOTA 工具反证 → 07-13《Tower Keeps Rising》理解坍塌无即时失败信号 → 09-07《Astra》内卷论＋35h/$1200 白卷 → 10-06《What is Codemode》怀疑立场落成产品机制（第九轮补挖）
 **关键转折**：07-04 工具退化反证（模型更强、工具调用更差）——从'趋势不可逆但有边界'转为'机制跟不上能力曲线'
 ## 《Better Models: Worse Tools》（2026-07-04）
 
@@ -116,3 +116,68 @@ observation_date: 2026-10-06
 
 **该条支持的最小主张**：Ronacher 用 35 小时/约 1B–4B token 的软件工厂实验给出失败样本：无人值守下 agent 不停、产出不可信、成本失控；结论是"内卷"——更多投入不换来更好产出。
 **派别适配**：强反对票（对无人值守/最大自主工厂叙事的一手反证）。
+
+---
+
+# 增量补挖（2026-10-07 第九轮·怀疑者替代推荐专项：推荐面）
+
+> 通道：lucumr.pocoo.org 首页＋/page/2/ 索引实取（2026-06 后全清单在案）；本轮引句全部当日 fetch 逐字取得（《The Coming Loop》《What is Codemode》由父会话二次逐字复核）。
+> 《The Coming Loop》本体逐字已在研究层 [evidence-u Source 1](../../../../02_research/01_agent_engineering/loop_engineering/raw/evidence-2026-09-30-u-post-june-kols.md)（含三条界限与"继续信号"处方）——本节只补**该文未归档引句**与 09-07 后新文，不重复已归档句。
+
+## 《The Coming Loop》（2026-06-23）未归档引句——怀疑者的自我处方
+
+- URL：https://lucumr.pocoo.org/2026/6/23/the-coming-loop/ ｜ fetch✓
+- **挂钩**：外层调度＋循环结构（怀疑者建设面总纲）。
+
+**逐字摘录（均为仓库新引句）**：
+
+> "Task queues for coding tasks, orchestration of agents, subagents, durable sessions will matter more and more. Even those of us who have their reservations and are not blindly embracing loops will have to start doing those experiments. We need to, because we need to understand how to make this future bounded and survivable."
+（**元层处方**：怀疑者不旁观——有保留的人也必须亲手做 task 队列/编排/持久会话实验，目的＝"让这个未来有界、可存活"。）
+
+> "I do not want a future where every interaction turns into an uncontrolled swarm of machines making changes I cannot follow. I would not want Pi to become an unmaintainable mess in an effort to win the race towards software that writes itself and I would not want Pi to promote this type of engineering either."
+（Pi 设计边界宣言：拒绝不可跟随的机器 swarm 竞赛。）
+
+> "Either we need to find clever ways to jolt the human back into the loop and make the changes of the loops legible long term, or we need to find better ways to compose these ever more complex systems."
+（**两条出路**：把人"弹回"环内并让循环变更长期可读，或找到更可组合的构法。）
+
+> "Maybe the question is that in a future of loops, how do we don't abdicate judgment, how we can retain rules of good engineering, how we can ensure that responsible human can continue to supervise, how we need to re-think how we architect code to retain sanity along the way."（原文语法即如此）
+（收束四问：不放弃判断／保住工程规则／可问责人持续监督／重构架构保住理智。）
+
+## 《What is Codemode》（2026-10-06）——怀疑立场落成产品机制
+
+- URL：https://lucumr.pocoo.org/2026/10/6/codemode/ ｜ fetch✓（全文）。09-07 后四篇新文中唯一 loop 挂钩篇（P(doom) 仅一句成本面；Pangram/Deser 与 loop 无关，负结论见 [_负结论与通道](../_负结论与通道.md)）。
+- **挂钩**：循环结构（信任分层）＋循环产品化机制（工具层沙箱）＋外层调度（并发兜底）。
+
+**逐字摘录**：
+
+> "Crucially what is important for us, is that there is a dividing line between the harness brain and the target environment that runs bash and executes the tools."
+（**脑/手分层**：LLM"大脑"与执行环境之间划信任分界线——与 Microsoft"模型提案、harness 决定"同向（[microsoft](../orgs/microsoft.md)）。）
+
+> "In case of Pi it's running in QuickJS within a WASM runtime with intentional limitations: no network, no file system, no timers, limited RAM. The only way is to call more tools."
+（Codemode 沙箱边界：无网络/无文件系统/无定时器——编排层被故意致残，唯一出路是走受控工具面。）
+
+> "The `Promise.all` here is fine, because Pi limits the total number of concurrent tool executions itself to four and maintains a queue for the rest."
+（并发上限由 harness 兜底：模型想并发，harness 决定给多少。）
+
+> "We might have to adopt some ideas from durable workflow engines here to snapshot invocations. Or maybe, something like Starlark is a better composition language than JavaScript given its deterministic nature."
+（持久性路线：向 durable workflow engine 借快照思路；组合语言或该换确定性的 Starlark。）
+
+> MCP 生态四条处方（官方文逐字标题＋要点）：**"Structured content:** Codemode wants calls to return some nicely formatted JSON… The `outputSchema` system in MCP is great for that."／**"Consistent results:** …This can cause an initial probe with 5 items to succeed, but then fail when the server returns the maximum batch size."／**"Large binary data:** today MCP does not yet support large binary data…"／**"Composable tool search:** …there is no good mechanism today that allows a harness to fan out tool searches across multiple MCP servers. It's all emergent behavior and it does not scale well to multiple active servers."
+（怀疑者在给工具生态立规范：结构化返回／结果一致性／大二进制／可组合工具检索。）
+
+> "So to end things off: how well does Codemode work with MCP today? Well … not amazingly well. That's because MCP servers are not really targeting harnesses that use Codemode yet."
+（同文怀疑面：生态现状自评。）
+
+> "So where does this leave us? Is this a reversal of what I wrote a year ago where I encouraged CLIs? I don't think so."
+（立场自洽声明：不是反转，是"code 路线"的延伸。）
+
+## 《P(doom)》（2026-09-12）成本面一句
+
+- URL：https://lucumr.pocoo.org/2026/9/12/pdoom/ ｜ fetch✓。主体为 AI 安全/监管议论，仅一句 loop 挂钩（预算与熔断·经济学面）：
+
+> "The newfound powers so far have resulted in a new tax that companies need to pay to the model providers, both to keep up with the new speed and to deal with the problem of these machines finding security issues left and right."
+（"新税"论：新能力的第一兑现形态是企业交给模型厂商的税——与 Astra 成本账本同线。）
+
+## 本轮推荐面小结（一句）
+
+Armin 的替代方案不是"别用循环"，而是四层：**循环只用于无长寿命工件/可验证机械转换**（evidence-u 已归档）；**继续信号够用即可不必客观**（evidence-u）；**把人弹回环内、让循环变更长期可读，或换更可组合的构法**；**怀疑者也必须亲手做编排/持久化实验，把未来做成 bounded and survivable**——10-06 Codemode 文把这套立场落成产品机制（脑/手分层＋沙箱化编排层＋并发兜底＋持久性路线）。

@@ -13,7 +13,7 @@ observation_date: 2026-10-06
 
 ## 态度轨迹
 
-**状态**：单点观察——待补挖。
+**状态**：单点观察（一手来源已核）；第九轮（2026-10-07）补全推荐面节（见文末增量）。
 ### Tisha Chawla & Susheem Koul · AIEWF 2026《Your Agent Failed in Prod. Good Luck Reproducing It.》（视频上传 2026-06-29）
 
 - URL：https://ai.engineer/talks/Lc8zRh9muoY-your-agent-failed-in-prod-good-luck （curl 实取全文）
@@ -30,3 +30,40 @@ observation_date: 2026-10-06
 > "We've been asking the wrong question all along… The wrong question is, how do I make the model deterministic?"
 - **最小主张**：agent 生产事故不可复现是常态；应记录"语义边界/执行包络"并重放状态转移，而不是追逐模型层确定性。
 - **派别适配**：**怀疑票（工程实证向）**。
+
+---
+
+# 增量补挖（2026-10-07 第九轮·怀疑者替代推荐专项：推荐面）
+
+> 通道：ai.engineer 讲稿页重取（官方逐字稿＋8 分节全列，fetch 成功）。本轮引句全部当日 fetch 逐字取得。
+
+**官方分节名（全列）**："The production failure that disappears locally"／"Temperature zero does not freeze the serving system"／"Recover the run instead of regenerating it"／"Record semantic boundaries"／"Find where dollars became shares"／"Replay the bad decision against the repaired tool"／"Test enforcement and behavior separately"／"Keep the execution envelope as a test case"。
+
+## 处方面（从确定性改追 replayability）
+
+**逐字摘录（均为仓库新引句）**：
+
+> "The wrong question is, how do I make the model deterministic? And I've seen teams burning weeks on that and walk away deciding the system's just unknowable. The right question is, how do I debug and retest a run I can't reproduce?"
+（**正确问题**：不是让模型确定，而是调试并重测不可复现的运行。）
+
+> "The other one is replayability, which is rebuild a run that already happened well enough to debug it. That's observability. You don't need the model deterministic. You need the run recorded, and you don't freeze the model, you capture what it did."
+（**确定性 vs replayability**：前者是可控性（拿不到也不想要），后者是可观测性（记录运行而非冻结模型）。）
+
+> "Record at the boundary instead because you need to capture what enters each node and what leaves it, the meaning of each step and not the packets. What replay adds here is a deterministic CI where you stub the model, you'll rerun the exact failure offline with zero model calls."
+（**语义边界记录**：记录进出每个节点的含义而非数据包；replay＝stub 掉模型的确定性 CI，零模型调用离线重放原失败。）
+
+> "You cannot control the LLM. That's what this entire discussion is about. You cannot enforce bitwise determinism. What you can do is you can put guardrails on your tools to enforce some level of, uh, credibility on your production agent."
+（**工具侧护栏**：控制不了模型，就给工具加护栏。）
+
+> "There are two ways of testing AI agents, and both of them are equally important. There's the deterministic testing and then the behavioral testing."
+（**双轨测试**：确定性测试＋行为测试并重。）
+
+> 五条 takeaway（逐字连排）："First, stop chasing bitwise determinism through the API. … Second, know what are variables for your session. For example, your LLM version or your build ID or your RAG chunks, and make sure that you are logging these. Third, capture the full envelope. Don't focus on just the prompt. … Fourth, use the replays to debug. … Fifth and final, keep the generation time variation alive. Don't try to pin the temperature to zero. After all, that is what brings the agency into your agent."
+（**五条处方**：停止追位级确定性／记录会话变量（模型版本/构建号/RAG 块）／抓全执行包络／用 replay 调试／**保留生成期随机性**——"那正是把 agency 带进 agent 的东西"。）
+
+- **replay 边界（诚实注记）**：执行包络不含边界内副作用（"side effects inside a boundary are not automatically captured"）；流式捕获仍在计划；replay 本身不是安全屏障（destructive tool 需 gated execution 或 sandbox）。
+- **最小主张（增补）**：agent 生产事故的正解是"语义边界记录＋执行包络重放"——把同一 trace 当确定性回归测试，而非追逐模型层确定性。
+
+## 本轮推荐面小结（一句）
+
+替代方案＝**replayability 路线**：语义边界记录、会话变量日志、全执行包络捕获、stub 模型的确定性 CI 重放、原失败 trace 作回归测试、双轨（确定性＋行为）测试、生成期随机性保留。

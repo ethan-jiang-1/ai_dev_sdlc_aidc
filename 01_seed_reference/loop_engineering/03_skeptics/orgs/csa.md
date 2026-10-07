@@ -61,3 +61,58 @@ observation_date: 2026-10-07
 - **该条支持的最小主张**：loop 产品化的扩展层（skill marketplace）已复现 npm/PyPI 早期供应链攻击全轨迹且多出"操纵 agent 行为"新类别；marketplace 级防线不可作为控制面。
 - **派别适配**：**怀疑票（机构·供应链实证向，强）**。
 - **与中文圈对位**：V2EX 中转站注入（窃取 ssh/apikey，[zh_dev](../community_tech/zh_dev.md)）是中文圈独有的**模型供给链**风险层；本条补齐英文侧**技能供给链**风险层——两侧同构：无人值守＋第三方供给＝信任缺口。
+
+---
+
+# 增量补挖（2026-10-07 第九轮·怀疑者替代推荐专项：推荐做法段）
+
+> 通道：CSA 两篇新文 fetch 成功（SkillCloak 研究简报 web_fetch；Akto/CSA 供应链文 web_fetch 截断后 curl 取回全文）。本轮引句全部当日 fetch 逐字取得。
+> 注：上节 06-10 简报所引 "Don't outsource trust to a scanner"（Trail of Bits 结论句，转引）在本轮两篇新文中未逐字再现——出处维持上节登记不变。
+
+### CSA《SkillCloak》（2026-07-06）——scanner 失效后的完整建议清单
+
+- URL：https://labs.cloudsecurityalliance.org/research/csa-research-note-skillcloak-agent-skill-evasion-20260706-cs/ ｜ fetch 成功。官方分节：Key Takeaways／Background／Security Analysis／**Recommendations**（Immediate Actions／Short-Term Mitigations／Strategic Considerations）／CSA Resource Alignment／References。
+- **挂钩**：验证回路＋无人值守运行＋循环产品化机制（skill 供给链治理）。
+
+**逐字摘录（Recommendations 节选，均为仓库新引句）**：
+
+> "Organizations that permit AI coding agents to install skills from public marketplaces should treat scanner approval as a baseline hygiene signal rather than a security guarantee"
+（**scanner 批准只是卫生信号**，不是安全保证——上一节"扫描器全线被绕过"的处方面结论。）
+
+> "Where feasible, restrict skill installation to an internally maintained allowlist of previously reviewed packages rather than permitting open marketplace browsing by every agent instance, particularly on machines that also hold credentials, source code, or other sensitive data."
+（**内部允许清单**替代开放市场浏览——持凭据/源码的机器尤其。）
+
+> "Security teams should pursue runtime-oriented visibility into agent behavior rather than relying solely on pre-execution scanning, since SkillCloak's central lesson is that static analysis cannot see a payload that does not exist in readable form until execution."
+（**运行时可见性**替代单纯预执行扫描——静态分析看不见"执行时才存在"的载荷。）
+
+> "running agents that install third-party skills inside sandboxed or containerized environments with least-privilege access to credentials and the broader network"
+（**沙箱＋最小权限**。）
+
+> "treating agent skill installation as a software supply chain problem with the same rigor organizations have gradually applied to open-source package dependencies, including provenance verification, reproducible builds where possible, and a documented approval process before a skill is authorized for use in production agent workflows."
+（**供应链化治理**：出处核验／可复现构建／审批留痕。）
+
+> "Governance frameworks should explicitly assign ownership for vetting and approving agent skills, since the alternative, ad hoc installation by individual employees or agents operating autonomously, is precisely the pattern that allowed campaigns such as ClawHavoc to grow..."
+（**明确治理归属**：无主的自助安装正是 ClawHavoc 长起来的模式。）
+
+### CSA 转载（原载 Akto，Krishanu Borah）《From Models to MCP Servers, Skills, and Plugins》（2026-09-29）——五步计划
+
+- URL：https://cloudsecurityalliance.org/blog/2026/09/29/from-models-to-mcp-servers-skills-and-plugins-rethinking-trust-in-the-ai-supply-chain ｜ fetch 成功（curl 全文）。**署名注意**：原作者 Akto，CSA 为转载方——引用写 Akto/CSA。
+- 官方分节："The AI Supply Chain Now Extends Into Agent Behavior"／"The Trust Decision Happens Before the Risk Appears"／"The Same Component Can Have a Different Blast Radius"／**"A Five-Step Plan for Securing the AI Supply Chain"**。
+
+**逐字摘录（均为仓库新引句）**：
+
+> "This creates three distinct trust decisions: Artifact trust: Who published the component, which version is running, and has it changed? / Instruction trust: What prompts, metadata, tool descriptions, retrieved documents, or memory entries can influence the agent? / Execution trust: What data and systems can the agent reach, and which actions can it perform?"
+（**三分信任决策**：工件信任／指令信任／执行信任——第三维正是 loop 挂钩：agent 能碰到什么、能做什么。）
+
+> "This is why component approval cannot be treated as a permanent runtime decision. Connect-time review establishes what was trusted at one moment. It does not determine whether every future input, tool sequence, or destination should be allowed."
+（**连接时审批≠运行时决定**——对无人值守循环：一次批准管不住后续每一次输入与工具序列。）
+
+> 五步计划（逐字小标题）："1. Build a live inventory / 2. Gate components before they enter / 3. Limit the execution context / 4. Test components as a system / 5. Enforce policy and retain the evidence"；第 3 步细文："Give agents scoped identities and task-specific credentials. Restrict filesystem, process, network, and tool access according to the environment in which each component runs. Apply stronger approval requirements to external writes, destructive operations, privilege changes, and transfers of sensitive data."；第 4 步细文："A safe component can still participate in an unsafe sequence. Test the deployed combination of model, tools, data, identity, memory, and approval settings against prompt injection, poisoned tool results, malicious skills, and excessive agency."
+（**五步**：活清单／入口门禁／限执行上下文／**按系统整体测试**（安全组件可参与不安全序列）／强制策略留证据。）
+
+> "The goal is not to assign permanent trust to a model, server, skill, or plugin. Trust must remain scoped to a specific component, version, execution environment, identity, and task."
+（**总纲**：信任按"组件×版本×环境×身份×任务"五维限定，永不永久化。）
+
+## 本轮推荐面小结（一句）
+
+CSA 的替代方案是把 loop 的供给面整体供应链化：**scanner＝卫生信号＋允许清单＋运行时行为可见性＋沙箱最小权限＋出处/可复现构建/审批留痕＋三分信任决策×五维限定×五步计划**——机构版的"别把验证回路外包给一个可被绕过的组件"。

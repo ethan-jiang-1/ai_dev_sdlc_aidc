@@ -2,7 +2,7 @@
 type: stance_map
 content_type: analysis
 directory: 01_seed_reference/loop_engineering
-description: KOL 立场光谱与滑动可视化——67 档位置总览、23 档时间轨迹、证据四象限普查（图 + 可审计定档表）
+description: KOL 立场光谱与滑动可视化——72 档（＋候选 1）位置总览、25 档时间轨迹、证据四象限普查（图 + 可审计定档表）
 map_date: 2026-10-07
 authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派别之下的细分可视化，不构成第二权威
 ---
@@ -30,46 +30,48 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 三条铁则：
 
 1. **派别判定唯一权威在 [kol-roster §A2](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)**；档位只是派别之下的细分刻度。档位与目录归属打架处标 ⚠️，不静默统一（先例：sean_goedecke 头排「Google SWE」冲突——见其档背景行）。
-2. **单点档（44/67）不画线**——"证据不足以判弧线"如实呈现（多为 AIEWF 讲者层，各档标「待补挖」）。缺席的弧线本身是证据状态。
-3. **⚠️ ＝档内明示证据弱／经转引／待判**（jensen_huang 吹票降级候选、nadella 证据不足、rieseberg 单点转引、david_fowler 全经转引链、walden_yan 厂商利益待判、livingstone 经现场稿、会议层票）——这类位置仅示登记位，不是判定。
+2. **单点档（48/73）不画线**——"证据不足以判弧线"如实呈现（多为 AIEWF 讲者层与第九轮新人，各档标「待补挖」）。缺席的弧线本身是证据状态。helwer 为候选 ⚠️（台账 §C1），计入行数与派带、**不入分布带漂移计数**（分布带按 72 KOL 计）。
+3. **⚠️ ＝档内明示证据弱／经转引／待判**（jensen_huang 吹票降级候选、nadella 证据不足、rieseberg 单点转引、david_fowler 全经转引链、walden_yan 厂商利益待判、livingstone 经现场稿、会议层票、helwer 候选）——这类位置仅示登记位，不是判定。
 
-## 二、图 A · 立场光谱总览（67 档：谁在哪、谁滑了）
+## 二、图 A · 立场光谱总览（72 档＋候选 1：谁在哪、谁滑了）
 
 ![立场光谱总览：一人一行，起点○→终点●，单点档为单点；顶部分布带显示人群重心漂移](figures/stance-a-overview.svg)
 
 **读法**：一人一行。○＝起点（窗口初或谱系末）→ ●＝终点（2026-10-07 观测）；单点档＝一个实心点。派内排序：滑动者（按滑幅降序）→ 稳定者 → 单点。顶部灰色/彩色分布带＝人群重心漂移（○灰＝窗口初、●彩＝窗口末，单点计入两侧）。
 
-**总览速读**：
+**总览速读**（2026-10-07 第九轮批后；分布带按 72 KOL 计）：
 
-- **分布带漂移**（窗口初 → 窗口末）：中性带 **17 → 12**（−5），两翼同时加厚——`+2` 22→24、`−1` 3→6、`+3` 4→5、`−2` 9→8。**中场变薄、两端变厚**：不是单边漂移，是极化。
-- **12 个滑动者，两个方向**：向推动滑 7（DHH、Steinberger、Thorsten Ball、Hashimoto、Kent C. Dodds、Mollick、Zechner〔建设面微滑〕）vs 向怀疑滑 5（Huntley、Orosz、Willison、Dwarkesh、Ronacher）。
-- **−3 全程空位**＋厂商/商业领袖（Jensen、Nadella、Krieger、Chase、Rauch…）全部在推动侧，怀疑侧清一色一线工程与实证。
-- 44 个单点集中在 `+2`/`0` 带（AIEWF 讲者层）——弧线判读的大片待补区。
+- **分布带漂移**（窗口初 → 窗口末）：中性带 **18 → 12**（−6），两翼同时加厚——`+2` 22→24、`−1` 3→7、`+3` 4→5、`−2` **9→12**（第九轮怀疑派＋4：arcolano／hillel_wayne／dinaburg＋narayanan_kapoor 稳定）。**中场变薄、两端变厚**：不是单边漂移，是极化——且怀疑翼的加厚从"情绪/机制批评"转为"数据＋安全实证"（arcolano 数据曲线、dinaburg/METR 攻防实证）。
+- **13 个滑动者，两个方向**：向推动滑 7（DHH、Steinberger、Thorsten Ball、Hashimoto、Kent C. Dodds、Mollick、Zechner〔建设面微滑〕）vs 向怀疑滑 6（Huntley、Orosz、Willison、Dwarkesh、Ronacher、**Tim Bray〔第九轮：政策性拒收〕**）。
+- **−3 全程空位**＋厂商/商业领袖（Jensen、Nadella、Krieger、Chase、Rauch…）全部在推动侧，怀疑侧清一色一线工程、数据与安全实证（第九轮后"安全研究翼"成形：Dinaburg／METR／Cable）。
+- 48 个单点：`+2`/`0` 带为 AIEWF 讲者层；第九轮怀疑派单点（arcolano／hillel_wayne／dinaburg）各带一手数据/实证——**单点不再等于弱证据**。
 
-## 三、图 B · 滑动轨迹（23 档：光谱 × 时间）
+## 三、图 B · 滑动轨迹（25 档：光谱 × 时间）
 
 ![滑动轨迹：横轴光谱、纵轴时间，三派泳道；顶部虚影带为窗口前谱系起点，★为关键转折](figures/stance-b-trajectories.svg)
 
-**读法**：横轴＝7 档光谱（三派各一条泳道），纵轴＝2026-06-01 → 10-07（真实日期线性）。顶部虚影带＝窗口前谱系起点（Steinberger 2025-12 的反对长文、Hashimoto 02-05 的划线、DHH 2023–2025 抵制者时期、Orosz 01-07 grief、Huntley 01-13、Karpathy 04-30）。★＝各档自标注的关键转折；右侧灰虚线＝运动大事参考线（命名帖、AIEWF、auto mode 攻破、Agent Civilizations……）。
+**读法**：横轴＝7 档光谱（三派各一条泳道），纵轴＝2026-06-01 → 10-07（真实日期线性）。顶部虚影带＝窗口前谱系起点（Steinberger 2025-12 的反对长文、Hashimoto 02-05 的划线、DHH 2023–2025 抵制者时期、Orosz 01-07 grief、Huntley 01-13、Karpathy 04-30、**Arcolano 04-15 tokenmaxxing 成本谱系**）。★＝各档自标注的关键转折；右侧灰虚线＝运动大事参考线（命名帖、AIEWF、auto mode 攻破、Agent Civilizations……）。
 
 **六条大弧线**（图上一眼可读）：
 
 1. **Steinberger**：−2 → +3 → +2——词源人自己的双翻转，07-18『Loop 已死，graph 永生』。
 2. **DHH**：−2 → +2——头号抵制者到机制全采纳（词表仍嘲讽——推动派相邻位样本）。
-3. **Ronacher**：+1 → −2——审慎接受到内卷判词＋35h 白卷（怀疑派锚点的成形过程）。
+3. **Ronacher**：+1 → −2——审慎接受到内卷判词＋35h 白卷（怀疑派锚点的成形过程；10-06 Codemode 把怀疑落成建设面，方向不变）。
 4. **Willison**：0 → −1——08-27 auto mode 被指 80% 攻破后安全信任崩塌（预算立场全程稳定，崩的只是对安全机制的信任）。
 5. **Hashimoto**：+1 → +3——08-11『600 nightly agents』越过自己 2 月划的线（中性档里唯一的向推动大滑）。
 6. **Huntley**：+3 → +1——激进实干极转向验证（07-24 Antithesis）＋对运动话语疏离。
+
+**第九轮＋2**：**Tim Bray**（0 → −1，09-01 政策转折——逐 PR 人审没有累积出系统级理解，转而拒收 clanker PR）；**Arcolano**（谱系 04-15 → −2，08-13 数据批判——虚线接谱系带）。narayanan_kapoor 为稳定 −2 两点（06-11→09-14 同向），按铁则不单绘。
 
 ## 四、图 C · 证据四象限普查（谁的结构性在场/缺席）
 
 ![证据四象限普查：影响力×技术深度两轴，KOL 四格落位，机构层跨轴单列，群众两格](figures/stance-c-quadrant-census.svg)
 
-**读法**：两轴＝[README 证据分层](README.md)的正交维度（影响力 × 技术深度）。67 KOL 按象限落位；orgs/ 47 档（机构/厂商层）跨两轴单列顶部；community_tech 20 档＋community_product 9 档在群众行。右下格标 ⚠️：README 判读称『community_product 接近零——缺席本身是证据』系 2026-10-06 前口径，community 拆分批落位后现有 9 档，**成色另判**（是否真为非专业群众声音，待专题复核）。
+**读法**：两轴＝[README 证据分层](README.md)的正交维度（影响力 × 技术深度）。KOL **72 档＋候选 1** 按象限计档（图内列**代表名单**非全量，全量定档见 §五：专业技术 40＝推动 34／中性 20／怀疑 14＋候选 1；产品/商业 4）；orgs/ **48 档**（第九轮＋METR）跨两轴单列顶部；community_tech 20 档＋community_product 9 档在群众行。右下格标 ⚠️：README 判读称『community_product 接近零——缺席本身是证据』系 2026-10-06 前口径，community 拆分批落位后现有 9 档，**成色另判**（是否真为非专业群众声音，待专题复核）。
 
 ## 五、定档总表（审计用——图从表生，不凭感觉画）
 
-> 每行依据锚点指向对应 KOL 档；改档先改表。`档位`列＝起点→终点（单点档只标单点位）。
+> 每行依据锚点指向对应 KOL 档；改档先改表。`档位`列＝起点→终点（单点档只标单点位）。**表共 73 行＝72 KOL＋helwer（候选 ⚠️，不入分布带计数）；metr 为机构档见表后补记。** 2026-10-07 第九轮批：＋5 KOL＋helwer＋机构补记，Ronacher 行转折注更新。
 
 | 档 | 人物 | 派 | 档位（起→终 / 单点） | 关键转折（档内口径） | 票面（派别适配） | 依据锚点 |
 |---|---|---|---|---|---|---|
@@ -130,7 +132,7 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 | `ryan_cooke` | Ryan Cooke | 中性派 | 偏怀疑（单点） | — | 中性票（中偏疑） | [`02_neutral/kol_tech/ryan_cooke.md`](02_neutral/kol_tech/ryan_cooke.md) |
 | `sean_goedecke` | Sean Goedecke | 中性派 | 中性→中性 | 无翻转——验证/对齐留在人手是全窗口不变量 | 中性票（稳定审慎·复合立场） | [`02_neutral/kol_tech/sean_goedecke.md`](02_neutral/kol_tech/sean_goedecke.md) |
 | `walden_yan` | Walden Yan | 中性派 | 偏推动（单点） | — | 受约束形态（中性票不足·厂商利益 ⚠️ 待判读层裁定） | [`02_neutral/kol_tech/walden_yan.md`](02_neutral/kol_tech/walden_yan.md) |
-| `ronacher` | Armin Ronacher | 反对与怀疑派 | 偏推动→怀疑 | 07-04 工具退化反证——从'不可逆但有边界'转为'机制跟不上能力曲线' | 怀疑票（锚点·质量反证代表） | [`03_skeptics/kol_tech/ronacher.md`](03_skeptics/kol_tech/ronacher.md) |
+| `ronacher` | Armin Ronacher | 反对与怀疑派 | 偏推动→怀疑 | 07-04 工具退化反证——从'不可逆但有边界'转为'机制跟不上能力曲线'；10-06 Codemode 把怀疑落成建设面（方向不变） | 怀疑票（锚点·质量反证代表） | [`03_skeptics/kol_tech/ronacher.md`](03_skeptics/kol_tech/ronacher.md) |
 | `dwarkesh` | Dwarkesh Patel | 反对与怀疑派 | 中性→怀疑 | 08-29 从一般 AI 访谈转为 agent 文明兴衰结构论 | 怀疑票（结构论者） | [`03_skeptics/kol_product/dwarkesh.md`](03_skeptics/kol_product/dwarkesh.md) |
 | `mario_zechner` | Mario Zechner | 反对与怀疑派 | 怀疑→偏怀疑 | 连续性：循环合法性＝验证者能力——从批评走到建设 | 怀疑票（稳定怀疑·实践反证 13 条） | [`03_skeptics/kol_tech/mario_zechner.md`](03_skeptics/kol_tech/mario_zechner.md) |
 | `auriel_wright` | Auriel Wright | 反对与怀疑派 | 怀疑（单点） | — | 怀疑票（工程实证向） | [`03_skeptics/kol_tech/auriel_wright.md`](03_skeptics/kol_tech/auriel_wright.md) |
@@ -140,6 +142,14 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 | `nick_heiner` | Nick Heiner | 反对与怀疑派 | 怀疑（单点） | — | 怀疑票 | [`03_skeptics/kol_tech/nick_heiner.md`](03_skeptics/kol_tech/nick_heiner.md) |
 | `noam_brown` | Noam Brown | 反对与怀疑派 | 怀疑（单点） | — | 怀疑票（厂商核心自认） | [`03_skeptics/kol_tech/noam_brown.md`](03_skeptics/kol_tech/noam_brown.md) |
 | `paul_bakaus` | Paul Bakaus | 反对与怀疑派 | 偏怀疑（单点） | — | 怀疑票（立场向·承认前 80% 交 agent） | [`03_skeptics/kol_tech/paul_bakaus.md`](03_skeptics/kol_tech/paul_bakaus.md) |
+| `tim_bray` | Tim Bray | 反对与怀疑派 | 中性→偏怀疑 | 09-01 政策转折——逐 PR 人审没有累积出系统级理解 | 怀疑票（验证回路/政策·亲历账本） | [`03_skeptics/kol_tech/tim_bray.md`](03_skeptics/kol_tech/tim_bray.md) |
+| `narayanan_kapoor` | Narayanan & Kapoor | 反对与怀疑派 | 怀疑→怀疑 | 09-14 怀疑落成 AI control 五件套＋control 岗位化 | 怀疑票（范式/治理·AI control 派） | [`03_skeptics/kol_tech/narayanan_kapoor.md`](03_skeptics/kol_tech/narayanan_kapoor.md) |
+| `arcolano` | Nicholas Arcolano | 反对与怀疑派 | 怀疑（单点） | 08-13 三段衰减：10x token→2x PR→交付物仅 +27% | 怀疑票（数据实证·强）＋完整推荐面 | [`03_skeptics/kol_tech/arcolano.md`](03_skeptics/kol_tech/arcolano.md) |
+| `hillel_wayne` | Hillel Wayne | 反对与怀疑派 | 怀疑（单点） | 09-30 反'FM 一劳永逸'——上游缺口是可表达性质 | 怀疑票（验证叙事降温） | [`03_skeptics/kol_tech/hillel_wayne.md`](03_skeptics/kol_tech/hillel_wayne.md) |
+| `dinaburg` | Artem Dinaburg | 反对与怀疑派 | 怀疑（单点） | 08-26 VM 三次逃逸——按 APT 对待 | 怀疑票（安全实证·强） | [`03_skeptics/kol_tech/dinaburg.md`](03_skeptics/kol_tech/dinaburg.md) |
+| `helwer` | Andrew Helwer | 反对与怀疑派（候选 ⚠️） | 怀疑（单点） | — | 怀疑票候选 ⚠️（边缘偏够·台账 §C1） | [`03_skeptics/kol_tech/helwer.md`](03_skeptics/kol_tech/helwer.md) |
+
+> **机构补记（第九轮，不计入上表 72 KOL）**：`metr_org`（METR，具名 David Rein／Chris Painter）——怀疑票（机构实证·强）："监控回路可被 loop 主体篡改"（Inspect viewer XSS PoC）＋observability 安全化处方；档案 [`03_skeptics/orgs/metr.md`](03_skeptics/orgs/metr.md)，计入图 C 机构带（orgs/ 48）。
 
 ## 六、与其他文件的分工
 
@@ -153,5 +163,6 @@ authority_note: 派别判定唯一权威在 kol-roster §A2；本文档位是派
 ## 七、维护
 
 - **新增发声** → 先更新对应 KOL 档「态度轨迹」节 → 再改本文定档表对应行 → 图 A 该行/图 B 该线随之更新（生成脚本为 `.tmp-` 一次性件，SVG 可手改或按表重生成）。
+- **第九轮批（2026-10-07）已按表重生成三图**：生成脚本在 `.tmp-stancemap-r9/gen_stance_map.py`（`.tmp-` 不入库；重跑前先改本表＋脚本内 ROWS/ENTRIES 数据，几何参数与现行图一致）。
 - **单点档升级为轨迹**（补挖到位）→ 图 A 该行由点变哑铃，图 B 加线。
 - **派别判定变更** → 以台账 §A2 为准，本文档位跟随调整并在表内标注变更日期。

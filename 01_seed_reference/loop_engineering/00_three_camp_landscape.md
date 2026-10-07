@@ -2,7 +2,7 @@
 type: landscape
 content_type: analysis
 directory: 01_seed_reference/loop_engineering
-description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批＋2026-10-07 反对派专项两轮增补）
+description: Loop Engineering 三派分野与社区实况判读（2026-10-06 三路深扫批＋2026-10-07 反对派专项两轮增补＋2026-10-07 第九轮怀疑者替代推荐批）
 analysis_date: 2026-10-06
 evidence_base: 三派 kol_tech/＋kol_product/＋community_tech/＋community_product/ 四象限拆档 ＋ 既有 evidence a/b/c/i/i2/u/z 与 _raw_people 人物卡
 authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复制名单
@@ -19,7 +19,7 @@ authority_note: 派别名单权威在 kol-roster §A2；本文是判读，不复
 |---|---|---|---|
 | **推动**（发起者＋吹捧者） | **最大且占术语定义权**：词源 2＋定义 3＋厂商 2＋激进实践 3＋候选 2 | Osmani（命名）、Ng、Runkle/LangChain、Anthropic、Cursor、Ball、Huntley、swyx、Yegge | "设计循环让 agent 自动推进"是默认方向 |
 | **中性**（边界与审慎） | **实践细节最丰富**：记录 2＋实证 3＋受约束 2＋限速 1＋新入册 1 | Orosz、Willison、Böckeler、Kief、Kent C. Dodds、marmelab、Hashimoto | 机制有条件成立——划边界、给约束、先测再信 |
-| **反对与怀疑** | **最小但证据最硬**：强票 1＋部分票 4＋候选 1 | Ronacher（锚）＋Willison/Orosz/Beck-Tacho-Yegge 宣言/Hashimoto（部分票） | 反证在此：失败账本、质量退化、无人值守失控 |
+| **反对与怀疑** | **证据最硬，第九轮后规模扩容**：锚点 1＋数据/治理/安全三翼 6（Arcolano/Narayanan-Kapoor/Tim Bray/Wayne/Dinaburg/METR）＋实践反证 1（Zechner）＋会议层 7＋候选 1 | Ronacher（锚）＋Zechner＋Arcolano（数据）＋Narayanan-Kapoor（AI control）＋Dinaburg/METR（安全）＋Tim Bray/Wayne＋Dotta/Cable/Heiner 等（会议层） | 反证在此：失败账本、质量退化、无人值守失控；**替代推荐面已立档**（[_替代推荐面](03_skeptics/_替代推荐面.md)：怀疑≠退出，是"验证前移＋确定性控制面＋熔断默认化＋done 对象化＋可审计＋人守关键位"六件套） |
 
 名单、派内角色与判定依据：[`kol-roster.md` §A2`](../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)。档位细分（7 档光谱）与每人滑动轨迹的可视化：[`00_kol_stance_map.md`](00_kol_stance_map.md)。
 
@@ -147,6 +147,14 @@ Yegge 是最激进的多派，却公开 Gas Town 烧毁史。
 - **词源人物成本极值**（2026-05-17，谱系背景）：Steinberger **$1.3M/30 天、603B token、7.6M 请求、100 个 Codex 实例、OpenAI 买单**——Yegge 69B/月的 8.7 倍；"成本豁免"是词源叙事的隐含前提，且 OpenAI 买单使样本不可迁移。
 - **方法判定**：devflokers 判 SEO 聚合站不立档（只作线索源）；其窗口外线索清单（微软 CACM 白皮书/Veracode 45%/Georgia Tech Vibe Security Radar/LayerX CLAUDE.md 渗透/npm 512K 行源码泄漏/KAIROS 泄漏路线图/METR 复跑）留待后续轮按需回源。
 - **通道**：arctic-shift 连续第二会话全程 Timeout；GitHub API 匿名限流但 issue HTML 直取可用；X 不可达维持（Crane/Steinberger 均以转载锚定）。
+
+**第九轮增补（2026-10-07 · 怀疑者替代推荐专项——"怀疑者推荐去哪里"新轴立档）**：
+- **新轴立档**：用户问"不能只看怀疑哪里——怀疑的话他们推荐去哪里？"→ 怀疑派**建设面**首次立档：[`03_skeptics/_替代推荐面.md`](03_skeptics/_替代推荐面.md)（逐人怀疑→推荐对照表＋七方向汇判＋与中性派分界）。逐字引句落各人/机构档第九轮节，合成件只放指针。
+- **§A +6（全部反对与怀疑派）**：**Arcolano**（Jellyfish 3700 万 PR 数据——三段衰减 10x token→2x PR→交付物仅 +27%；agent PR merge 率 61% vs 人 79%；**81% 开发者最多 1–2 agent**；"agentic barrier"命名；推荐面＝三 regime 分档＋trust as platform investment＋merge 率用流程解＋"Don't just code faster. Code further."）；**Narayanan & Kapoor**（Princeton——"写码从来不是瓶颈"＋decide-execute-deliver 三明治＋"we don't have to cede control to AI"＋AI control 五件套〔sandbox/least privilege/logging/tripwires/rapid shutdown/monitoring〕＋"AI control should become a job, just like cybersecurity"）；**Tim Bray**（逐 PR 人审失效亲历账本——"reviewing was ineffective…a large lump of code that I don't understand or trust"——政策性拒收 clanker PR）；**Hillel Wayne**（"FM 一劳永逸解决 agentic 软件"＝nonsense——上游缺口是可表达性质本身）；**Dinaburg**（Trail of Bits——GPT 5.6-Cyber 三次逃逸 QEMU/KVM＋"treat such agents as an advanced persistent threat"）；**METR**（监控回路可被 loop 主体篡改——Inspect viewer XSS PoC＋"transcripts…untrusted input…security-critical infrastructure"）。§C1 +1：Helwer（TLA+ reachability，边缘偏够）。
+- **怀疑派替代方案的七方向收敛**（详见 _替代推荐面 §三）：验证前移＋独立验证者／控制权收归确定性层／预算熔断默认化＋opt-in 危险开关／done 对象化／可复现可审计／人的位置重定义而非移除／**元层：怀疑者自己也下场做实验并按最坏情况设防**（Ronacher "bounded and survivable"＋Brown 不押单技术＋Kapoor 沙箱常态对抗测试）。
+- **两股新收敛（给判读层）**：①数据派（Arcolano）首次给出组织级衰减曲线，把"把控性差"从体感变成可测指标；②安全派（Dinaburg/METR/Kapoor 三方独立）把怀疑重心从"产出质量"升级到**"监控与隔离层本身是被攻击面"**——METR 窗口内无新生产力论文、整体转向事故/监控，是怀疑派重心迁移的标志。
+- **勘误**：Dotta done 对象六件套→**八件套**（逐字稿＋页面 JSON 8 键坐实，[dotta](03_skeptics/kol_tech/dotta.md) 已改）；SREcon《Tokenmaxxing is the New "Lines of Code"》官方页至今未发布（第五轮待发布登记收口——内容已演化进 World's Fair 07 讲题与 Arcolano 08-13 作者文）。
+- **通道**：web_fetch 全程可用（与第七轮相反）；负结论——Orosz §5–7 付费墙两轮复核收口为"拿不到"（镜像同点截断＋publish0x 403）；Zechner earendil.com 无索引（10-01 后无新文）；rachelbythebay DNS 级失败；详见 [_负结论与通道](03_skeptics/_负结论与通道.md) 第九轮节。
 
 ## 四、不支持什么（证据边界）
 

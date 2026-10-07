@@ -9,9 +9,12 @@ reorg_date: 2026-10-06
 # 03_skeptics — 反对与怀疑派（反证与批评）
 
 > **派别判定权威在** [`02_research/.../raw/kol-roster.md` §A2 三派分野](../../../02_research/01_agent_engineering/loop_engineering/raw/kol-roster.md)——
-> 本 README 只做**素材索引**。素材已按**人/组织拆档**：[`kol_tech/`](kol_tech/)＋[`kol_product/`](kol_product/)（KOL 按技术深度分）（ronacher、willison、orosz、hashimoto、zechner…）＋[`orgs/`](orgs/)（amazon、microsoft、csa）。
+> 本 README 只做**素材索引**。素材已按**人/组织拆档**：[`kol_tech/`](kol_tech/)＋[`kol_product/`](kol_product/)（KOL 按技术深度分；本派本体档如 ronacher、zechner、arcolano 等）＋[`orgs/`](orgs/)（amazon、microsoft、csa、metr）。
+> **部分票（本体在别档）**：willison／orosz（[02_neutral/kol_tech](../02_neutral/kol_tech/willison.md)）、hashimoto（同）——引用走其本体档＋本派横切档指针，不建重复档。
 
 > **本派社区反馈**（非 KOL，社区侧（HN 热度层/GitHub 故障清单/中文圈事故向））：[`community_tech/`](community_tech/)＋[`community_product/`](community_product/)——社区情绪证据，与 KOL 侧分开读。
+
+**横切档（跨人合成与通道台账）**：[`_替代推荐面.md`](_替代推荐面.md)（★ 第九轮：怀疑者"怀疑→推荐"指针地图＋七方向汇判）｜[`_缺口与不一致面.md`](_缺口与不一致面.md)｜[`_负结论与通道.md`](_负结论与通道.md)｜[`_misc.md`](_misc.md)。
 
 **判定口径（一句话）**：对 loop engineering（尤其**宽自主放权循环**）给出**反证**（失败账本、质量退化、工具反常）、
 经济或人的角色批评，或公开反对把放权循环当默认方向。反对的是"放权放大"这一主张，不必然反对 agent 或 AI 本身
@@ -25,15 +28,21 @@ reorg_date: 2026-10-06
 
 | 文件 | 首条内容 |
 |---|---|
+| [`arcolano`](kol_tech/arcolano.md) | Nicholas Arcolano（Jellyfish Head of AI & Research）· Jellyfish Research《Tokens Are Rocket Fuel, Spending Tokens Is Rocket S |
 | [`auriel_wright`](kol_tech/auriel_wright.md) | Auriel Wright（前 Gemini RL）《How to Stop Shipping Low-Quality  |
 | [`chawla_koul`](kol_tech/chawla_koul.md) | Tisha Chawla & Susheem Koul · AIEWF 2026《Your Agent Failed i |
+| [`dinaburg`](kol_tech/dinaburg.md) | Artem Dinaburg（Trail of Bits）《VMs won't contain cyber-capable a |
 | [`dotta`](kol_tech/dotta.md) | Dotta（Paperclip 创建者）· AIEWF 2026《What Does Done Even Mean? A |
+| [`hillel_wayne`](kol_tech/hillel_wayne.md) | Hillel Wayne（Computer Things；TLA+）《What TLA+ can and can't c |
+| [`helwer`](kol_tech/helwer.md) | Andrew Helwer（TLA+ 社区）· §C1 候选《Can we have reachability properties in  |
 | [`jack_cable`](kol_tech/jack_cable.md) | Jack Cable（AI 安全研究者；讲中自述 "the work that I was doing in gover |
 | [`mario_zechner`](kol_tech/mario_zechner.md) | Mario Zechner（Pi 创作者，Earendil；与在册 Armin Ronacher 同团队）· The W |
+| [`narayanan_kapoor`](kol_tech/narayanan_kapoor.md) | Arvind Narayanan & Sayash Kapoor（Princeton；AI as Normal Technology）· |
 | [`nick_heiner`](kol_tech/nick_heiner.md) | Nick Heiner · AIEWF 2026《When Will The Benchmaxxing Plague E |
 | [`noam_brown`](kol_tech/noam_brown.md) | Noam Brown（OpenAI，推理研究负责人）· Dwarkesh《Agent swarms, alignment |
 | [`paul_bakaus`](kol_tech/paul_bakaus.md) | Paul Bakaus（Impeccable 作者，前 Google DevRel）· Latent Space 访谈《 |
 | [`ronacher`](kol_tech/ronacher.md) | 《Better Models: Worse Tools》（2026-07-04） |
+| [`tim_bray`](kol_tech/tim_bray.md) | Tim Bray（前 AWS VP）· ongoing《Clankers and Data Races》（2026-09- |
 
 ### KOL·产品背景
 
@@ -48,6 +57,7 @@ reorg_date: 2026-10-06
 | [`amazon`](orgs/amazon.md) | Gregor Vand & Sean Falconer · Software Engineering Daily #SE |
 | [`csa`](orgs/csa.md) | CSA AI Safety Initiative 两简报：《AI Agent Skill Scanners: By |
 | [`microsoft`](orgs/microsoft.md) | Ornella Bahidika & Joel Allou（Microsoft）· AIEWF 2026《Don't L |
+| [`metr`](orgs/metr.md) | METR（Rein/Painter）·《AI systems could cover up misbehavior》（2026-10-06）＋参议院证词（2026-09-30）——第九轮新入册 |
 
 ### 群众·专业程序员
 

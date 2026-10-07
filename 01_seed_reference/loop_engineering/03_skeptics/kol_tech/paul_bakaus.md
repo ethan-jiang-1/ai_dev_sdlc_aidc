@@ -13,7 +13,7 @@ observation_date: 2026-10-06
 
 ## 态度轨迹
 
-**状态**：单点观察——待补挖。
+**状态**：单点观察（一手来源已核）；第九轮（2026-10-07）补全推荐面节（见文末增量）。
 ### Paul Bakaus（Impeccable 作者，前 Google DevRel）· Latent Space 访谈《Skill engineering and the case against one-shot AI design》（2026-07-02）
 
 - URL：https://www.latent.space/p/skill-engineering-design （curl 实取全文；同日 AIEWF 现场报道 aiewf-daily-dispatch-agency 互证，https://www.latent.space/p/aiewf-daily-dispatch-agency 全文实取）
@@ -27,3 +27,34 @@ observation_date: 2026-10-06
   - "It's never going to be a tool for one-shot design. That's not the intent."
 - **最小主张**：工具作者开始把"拒绝全自动"写成产品原则（no auto as a feature）；对 software factory 叙事出现阵营内明确的立场反对。
 - **派别适配**：**怀疑票（立场向）**——注意其承认前 80% 交 agent，判读时与全盘否定区分。
+
+---
+
+# 增量补挖（2026-10-07 第九轮·怀疑者替代推荐专项：推荐面）
+
+> 通道：Latent Space 访谈页重取（fetch 成功）。**形态注意**：记者文（Richard MacManus）——带引号句为直接引语可逐字；其余为记者转述，引用须标〔转述〕。
+
+## 处方面（skill engineering 的替代路径）
+
+**逐字摘录（新增，均为仓库新引句）**：
+
+> "The point is to give you a way to steer what you want to end up with… It's never going to be a tool for one-shot design. That's not the intent."
+（工具目的＝**steering** 而非 one-shot——skill 是给人插进控制点用的。）
+
+> "An adjective with nothing behind it is just a nice apostrophe," Bakaus said. "You really have to tell the agent what you mean."
+（**skill 灌义处方**：形容词背后没有可操作定义就只是撇号——必须把"你到底要什么"灌进 skill。）
+
+> "People need purpose, and they want to play a role in whatever they create… When you work with the agent, then you feel more ownership of the product."
+（**为什么人必须留在环内**：目的感与所有权——替代方案的动机层。）
+
+> "Designers are moving into code, engineers are moving into design, and vice versa… These worlds are all colliding." ＋ "Designers all have to move one layer up the stack to think more about the what."
+（**角色上移**：设计者进码、工程师进设计——人往上走一层管"what"。）
+
+> "One of the interesting topics was that most skills — [and] most models — are not very creative. They converge in one direction, and if everybody uses the same skill to do frontend design work or something like that, everything ends up looking the same."
+（**反创造性收敛**：同 skill 全员用＝万物趋同——"no auto"的审美论据。）
+
+**〔转述〕处方面（须标注非逐字）**：80/20 分工（AI 前 80%，人拥有 taste/context 的后 20%）；"insert the person at the point where their judgment is most valuable"（把人插在判断最值钱处）；skill 内 MoE 式路由（省 token 提效果）；跨 harness skill "cannot assume they all provide identical capabilities"；live mode＝chat＋直接视觉操纵之间的 "design harness"。
+
+## 本轮推荐面小结（一句）
+
+替代方案＝**skill engineering 路线**：专家词汇灌义进 skill＋skill 内路由＋跨 harness 不假设等能力＋人插在判断最值钱的那一步（先 80 后 20）＋永不做 auto。

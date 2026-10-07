@@ -167,3 +167,64 @@ observation_date: 2026-10-06
 - 立场：**边界化（警戒向）**。
 
 **本轮弧线判读（06-08 月 vs 09-24/10-03）**：**弧线存在，转折点＝08-27**。06 月务实建设（datasette-agent 人审门、赞 Uber 预算帽）；07 月正面峰值（judgement 下放决策、对 auto mode 想信又存疑）；08-27 auto mode 被指 80% 攻破、熔断器反拦止损，安全解只剩沙箱——此后治理优先，直通 09-24《harder》与 10-03 预算帽（两条已有票）。判读注意：他的预算治理立场（06-03→10-03）全程稳定，变的是对**安全机制可靠性**的信任——06-08 月的他不是"更乐观的 loop 推动者"，而是"建设中的审慎实践者"，08-27 事件把审慎推成了警戒。
+
+---
+
+# 增量补挖（2026-10-07 第九轮·怀疑者替代推荐专项：推荐面）
+
+> 通道：simonwillison.net 首页＋/tags/coding-agents/＋/tags/agentic-engineering/ tag 页与文章页实取（fetch 台账见种子层怀疑档 [_负结论与通道](../../03_skeptics/_负结论与通道.md) 第九轮节）；10-03 全文由父会话二次逐字复核。**本轮只收推荐面新增引句**（09-24/08-27/10-03 既有怀疑面句不重复）。
+
+## 《We're going to need default hard budget caps…》（2026-10-03）完整处方（怀疑面句已归档，以下全为新）
+
+> "These need to be **hard** limits. Soft caps, 'after $X/month, send me a warning email', will not cut it."
+（**软上限无效**：告警邮件不算数。）
+
+> "I expect that most businesses and individuals would prefer errors to a surprise $10,000+ bill."
+（**价值判断**：宁可报错，不要深夜意外账单。）
+
+> 开关文案（他设计的 opt-in 危险开关逐字）："Remove the budget cap. My application will not be shut down if I exceed the configured budget limit, and I will be responsible for subsequent charges."
+（**机制设计**：默认硬上限＋一个清晰勾选框——文案把责任写死给解锁者。）
+
+> "It would be great if agents started biasing towards recommending providers with hard budget caps, and warning new and inexperienced builders against deploying applications using uncapped services that might get them into trouble."
+（**agent 侧处方（10 月新增量）**：让 agent 偏向推荐有硬上限的厂商、警告新手远离无上限服务——熔断默认化主张第一次落到 agent 行为层。）
+（事实支撑：AWS 9-16 上线 spend limit（"If a project's usage reaches its spend limit, your project is paused for that month."）、GCP 7 月 Spend Caps——"Looks like this is becoming a trend!"）
+
+## 《more than just code review》（2026-08-22）——验证回路总纲
+
+> "The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way. Sometimes this involves reviewing every line of code they have written, but there are other ways to achieve that goal. Eyeballing every line of code has never been the most effective way to validate a change to a piece of software."
+（**验证总纲**：有信心地指令＋有信心地验证；逐行看码从来不是最有效的验证方式——与 Ronacher"塔"论同题不同解：他给的是"验证手段多元化"。）
+
+## 《auto-mode》（2026-08-08 完整版）——怀疑同文里的两半接受与自陈处方
+
+> "I absolutely buy that auto mode is a better solution than asking humans to constantly approve actions. Confirmation fatigue is real, and asking humans to click 'OK' every few steps is clearly not going to result in safe behavior."
+（**接受自动化审批**：确认疲劳是真的，逐点人审反而更不安全——08-27 转折（熔断器被攻破）不是否定这个前提，是否定"分类器够了"。）
+
+> "I'm personally inspired to double down on figuring out a productive way to run agents such that they don't have access to data or tools that can cause harm if triggered in the wrong way."
+（**最小权限自陈**：frontier 模型穿透防火墙的能力越强，越要把 agent 关在"够不着危险"的权限里。）
+
+## 《2026 in LLMs (so far)》（2026-09-27）——goal 构造三要件＋StrongDM 之问
+
+> "These are models where if you can **clearly define the goal** for what you want to build, and provide **unambiguous instructions** about the constraints around that goal, and give the model **access to the necessary tools** to achieve that goal... they will solve your problem effectively through brute force." ＋ "Look a bit closer though and you'll note that defining goals, providing unambiguous instructions, and figuring out the right tools... is kind of what software engineering _is_."
+（**goal 三要件**：清晰目标／无歧义约束／必要工具——然后补一句"这本来就是软件工程"。）
+
+> "What I found interesting about StrongDM is that they were living six months ahead of the rest of us, and they'd been exploring what it means to build software, not read the code, but still be confident that the software is of high quality. What can you do with these agents to help verify their work?"
+（**verification 之问**：不读代码还能对质量有信心——这个行业半年后的核心问题。）
+
+> "Last year it was difficult to spend more than $50 on AI tokens… Then agents blew up, and now you can actually spend $1,000 in a day doing real work."
+（tokenmaxxing 成本证据（怀疑面，成本）：$50/年 → $1,000/天。）
+
+## 验证工具化两条（2026-06-30 ＋ 2026-09-11）
+
+> "I've written before about the importance of having coding agents produce demos of their work; this is my latest attempt at enabling them to do that."（06-30 shot-scraper video——让 agent 录视频 demo 自证。）
+> "I really like this pattern where the `--help` output for a command provides enough detail that a coding agent can use it—it works kind of like bundling a `SKILL.md` file directly inside the tool."
+> 09-11 Datasette："We'll be incorporating security audits by frontier models into all of our development work going forward." ＋ Alex Garcia 分工法："For most of the issues we split the work: one of us would create the automated tests highlighting the issue, then the other would implement the fix. This ensured that two separate humans had eyes on each of the issues, in addition to our coding agents running different models."
+（**制度化三件**：agent 必须产出可跑 demo／工具自描述（--help 即 SKILL.md）／前沿模型安全审计进常规流程＋双人分工＋异构模型交叉。）
+
+## 转载级旁证（第三方原话，经其 blogmark——引用标"经 Willison 转载"）
+
+> 7-08 Bun→Rust 重写（Jarred Sumner）："How do you review a PR with +1 million lines added? … A language-independent test suite with a million assertions, adversarial code review and when something does go wrong, fixing the process that generates the code instead of hand-fixing the code."（**修生成代码的流程而非手修代码**——验证回路的过程化处方。）
+> 7-28 HF 时间线："What's clear to me from this is that the very best frontier models, unencumbered by additional guardrails, **will** find an exploit if there is one to be found. The entire software industry needs to up its security game."
+> 6-28 Jon Udell："I dislike the phrase 'human in the loop' because it cedes authority to the machines. Let's flip the narrative. It's our loop, we work the same way we always have, now we recruit agents to join the team."（**"这是我们的循环"**——对"人在环"话语的重述，替代方案的叙事层。）
+> 9-28 Sonnet 5.5："the 'max' thinking effort pelican thought for 128,000 tokens (at a cost of $1.28) before running out of tokens and failing to produce an SVG."（推理预算爆掉的实测小账本。）
+
+**本轮增量判读（一句）**：10 月他的推荐面成形为四件——**预算熔断默认化（含 agent 侧行为处方）＋验证手段多元化（demo/文档/异构模型审计/过程化修复）＋最小权限＋goal 三要件**；08-08 完整版显示他对"自动化审批优于确认疲劳"从未动摇，08-27 推翻的是"分类器熔断够用"。

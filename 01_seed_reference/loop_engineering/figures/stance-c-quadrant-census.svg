@@ -1,71 +1,78 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" font-family='-apple-system, "PingFang SC", "Microsoft YaHei", sans-serif'>
 <rect width="1100" height="700" fill="#ffffff"/>
 <text x="550.0" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a2e">证据四象限普查（谁在发声）</text>
-<text x="550.0" y="56" text-anchor="middle" font-size="12.5" fill="#666">两轴＝README 证据分层的正交维度：影响力（KOL↔群众）× 技术深度（专业↔非专业）。机构/厂商层（orgs/ 47 档）跨两轴，单列顶部</text>
+<text x="550.0" y="56" text-anchor="middle" font-size="12.5" fill="#666">两轴＝README 证据分层的正交维度：影响力（KOL↔群众）× 技术深度（专业↔非专业）。机构/厂商层（orgs/ 48 档）跨两轴，单列顶部</text>
 <rect x="150" y="76" width="840" height="30" fill="#eceff1" stroke="#b0bec5" rx="6"/>
-<text x="162" y="96" font-size="12" fill="#546e7a" font-weight="700">机构/厂商层：orgs/ 47 档（跨两轴——Anthropic、Cursor、LangChain、Cognition…）</text>
+<text x="162" y="96" font-size="12" fill="#546e7a" font-weight="700">机构/厂商层：orgs/ 48 档（跨两轴——Anthropic、Cursor、LangChain、Cognition、METR…）</text>
 <text x="30" y="430" font-size="13" font-weight="700" fill="#444">影响力</text>
 <line x1="42" y1="138" x2="42" y2="660" stroke="#90a4ae" stroke-width="1.5"/>
 <text x="30" y="146" font-size="10.5" fill="#607d8b">KOL</text>
 <text x="30" y="672" font-size="10.5" fill="#607d8b">群众</text>
 <text x="550.0" y="682" text-anchor="middle" font-size="13" font-weight="700" fill="#444">技术深度：专业程序员（左） ↔ 非专业·产品/商业（右）</text>
 <rect x="170" y="138" width="400" height="250" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5" rx="8"/>
-<text x="184" y="164" font-size="13.5" font-weight="700" fill="#2e7d32">KOL · 专业技术　<tspan fill="#777" font-size="12">34 档</tspan></text>
-<text x="184" y="186" font-size="9.3" fill="#555">Andrew Ng</text>
-<text x="184" y="200" font-size="9.3" fill="#555">Akshay Nathan</text>
-<text x="184" y="214" font-size="9.3" fill="#555">Dan McAteer</text>
-<text x="184" y="228" font-size="9.3" fill="#555">DHH</text>
-<text x="184" y="242" font-size="9.3" fill="#555">Eiso Kant</text>
-<text x="184" y="256" font-size="9.3" fill="#555">Geoffrey Huntley</text>
-<text x="184" y="270" font-size="9.3" fill="#555">Harrison Chase</text>
-<text x="184" y="284" font-size="9.3" fill="#555">Jason Lopatecki</text>
-<text x="184" y="298" font-size="9.3" fill="#555">Jesse Vincent</text>
-<text x="184" y="312" font-size="9.3" fill="#555">Justin Smith</text>
-<text x="184" y="326" font-size="9.3" fill="#555">Andrej Karpathy</text>
-<text x="184" y="340" font-size="9.3" fill="#555">Kieran Klaassen</text>
-<text x="184" y="354" font-size="9.3" fill="#555">Mike Krieger</text>
-<text x="184" y="368" font-size="9.3" fill="#555">Lance Martin</text>
-<text x="184" y="382" font-size="9.3" fill="#555">Laurie Voss</text>
-<text x="184" y="396" font-size="9.3" fill="#555">Ian Livingstone</text>
-<text x="184" y="410" font-size="9.3" fill="#555">Amjad Masad</text>
-<text x="184" y="424" font-size="9.3" fill="#555">Kyle Mistele</text>
-<text x="184" y="438" font-size="9.3" fill="#555">Addy Osmani</text>
-<text x="184" y="452" font-size="9.3" fill="#555">Patrick Debois</text>
-<text x="184" y="466" font-size="9.3" fill="#555">Guillermo Rauch</text>
-<text x="309" y="186" font-size="9.3" fill="#555">Felix Rieseberg</text>
-<text x="309" y="200" font-size="9.3" fill="#555">Roland Gavrilescu</text>
-<text x="309" y="214" font-size="9.3" fill="#555">Sachin Malhotra</text>
-<text x="309" y="228" font-size="9.3" fill="#555">Sam Bhagwat</text>
-<text x="309" y="242" font-size="9.3" fill="#555">Peter Steinberger</text>
-<text x="309" y="256" font-size="9.3" fill="#555">Steve Yegge</text>
-<text x="309" y="270" font-size="9.3" fill="#555">Suraj Gupta</text>
-<text x="309" y="284" font-size="9.3" fill="#555">swyx</text>
-<text x="309" y="298" font-size="9.3" fill="#555">Thariq Shihipar</text>
-<text x="309" y="312" font-size="9.3" fill="#555">Thorsten Ball</text>
-<text x="309" y="326" font-size="9.3" fill="#555">Tim Sweeney</text>
-<text x="309" y="340" font-size="9.3" fill="#555">Tushar Jain</text>
-<text x="309" y="354" font-size="9.3" fill="#555">Zach Lloyd</text>
-<text x="309" y="368" font-size="9.3" fill="#555">Alex Zhang</text>
-<text x="309" y="382" font-size="9.3" fill="#555">Andrew Qu</text>
+<text x="184" y="164" font-size="13.5" font-weight="700" fill="#2e7d32">KOL · 专业技术　<tspan fill="#777" font-size="12">40 档</tspan></text>
+<text x="184" y="178" font-size="9" fill="#777">推动 34／中性 20／怀疑 14＋候选 1（第九轮＋6；图内名单为代表示例非全量）</text>
+<text x="184" y="192.0" font-size="9.3" fill="#555">Andrew Ng</text>
+<text x="184" y="205.4" font-size="9.3" fill="#555">Akshay Nathan</text>
+<text x="184" y="218.8" font-size="9.3" fill="#555">Dan McAteer</text>
+<text x="184" y="232.2" font-size="9.3" fill="#555">DHH</text>
+<text x="184" y="245.6" font-size="9.3" fill="#555">Eiso Kant</text>
+<text x="184" y="259.0" font-size="9.3" fill="#555">Geoffrey Huntley</text>
+<text x="184" y="272.4" font-size="9.3" fill="#555">Harrison Chase</text>
+<text x="184" y="285.8" font-size="9.3" fill="#555">Jason Lopatecki</text>
+<text x="184" y="299.2" font-size="9.3" fill="#555">Jesse Vincent</text>
+<text x="184" y="312.6" font-size="9.3" fill="#555">Justin Smith</text>
+<text x="184" y="326.0" font-size="9.3" fill="#555">Andrej Karpathy</text>
+<text x="184" y="339.4" font-size="9.3" fill="#555">Kieran Klaassen</text>
+<text x="184" y="352.8" font-size="9.3" fill="#555">Mike Krieger</text>
+<text x="184" y="366.20000000000005" font-size="9.3" fill="#555">Lance Martin</text>
+<text x="184" y="379.6" font-size="9.3" fill="#555">Laurie Voss</text>
+<text x="184" y="393.0" font-size="9.3" fill="#555">Ian Livingstone</text>
+<text x="184" y="406.4" font-size="9.3" fill="#555">Amjad Masad</text>
+<text x="184" y="419.8" font-size="9.3" fill="#555">Kyle Mistele</text>
+<text x="184" y="433.20000000000005" font-size="9.3" fill="#555">Addy Osmani</text>
+<text x="184" y="446.6" font-size="9.3" fill="#555">Patrick Debois</text>
+<text x="184" y="460.0" font-size="9.3" fill="#555">Guillermo Rauch</text>
+<text x="309" y="192.0" font-size="9.3" fill="#555">Felix Rieseberg</text>
+<text x="309" y="205.4" font-size="9.3" fill="#555">Roland Gavrilescu</text>
+<text x="309" y="218.8" font-size="9.3" fill="#555">Sachin Malhotra</text>
+<text x="309" y="232.2" font-size="9.3" fill="#555">Sam Bhagwat</text>
+<text x="309" y="245.6" font-size="9.3" fill="#555">Peter Steinberger</text>
+<text x="309" y="259.0" font-size="9.3" fill="#555">Steve Yegge</text>
+<text x="309" y="272.4" font-size="9.3" fill="#555">Suraj Gupta</text>
+<text x="309" y="285.8" font-size="9.3" fill="#555">swyx</text>
+<text x="309" y="299.2" font-size="9.3" fill="#555">Thariq Shihipar</text>
+<text x="309" y="312.6" font-size="9.3" fill="#555">Thorsten Ball</text>
+<text x="309" y="326.0" font-size="9.3" fill="#555">Tim Sweeney</text>
+<text x="309" y="339.4" font-size="9.3" fill="#555">Tushar Jain</text>
+<text x="309" y="352.8" font-size="9.3" fill="#555">Zach Lloyd</text>
+<text x="309" y="366.20000000000005" font-size="9.3" fill="#555">Alex Zhang</text>
+<text x="309" y="379.6" font-size="9.3" fill="#555">Andrew Qu</text>
+<text x="434" y="192.0" font-size="9.3" fill="#555">Nicholas Arcolano</text>
+<text x="434" y="205.4" font-size="9.3" fill="#555">Narayanan &amp; Kapoor</text>
+<text x="434" y="218.8" font-size="9.3" fill="#555">Tim Bray</text>
+<text x="434" y="232.2" font-size="9.3" fill="#555">Hillel Wayne</text>
+<text x="434" y="245.6" font-size="9.3" fill="#555">Artem Dinaburg</text>
+<text x="434" y="259.0" font-size="9.3" fill="#555">Andrew Helwer ⚠️</text>
 <rect x="590" y="138" width="400" height="250" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" rx="8"/>
 <text x="604" y="164" font-size="13.5" font-weight="700" fill="#1565c0">KOL · 产品/商业　<tspan fill="#777" font-size="12">4 档</tspan></text>
-<text x="604" y="186" font-size="9.3" fill="#555">Jensen Huang</text>
-<text x="604" y="200" font-size="9.3" fill="#555">Satya Nadella</text>
-<text x="604" y="214" font-size="9.3" fill="#555">Ethan Mollick</text>
-<text x="604" y="228" font-size="9.3" fill="#555">Dwarkesh Patel</text>
+<text x="604" y="192" font-size="9.3" fill="#555">Jensen Huang</text>
+<text x="604" y="206" font-size="9.3" fill="#555">Satya Nadella</text>
+<text x="604" y="220" font-size="9.3" fill="#555">Ethan Mollick</text>
+<text x="604" y="234" font-size="9.3" fill="#555">Dwarkesh Patel</text>
 <rect x="170" y="420" width="400" height="250" fill="#f1f8e9" stroke="#558b2f" stroke-width="1.5" rx="8"/>
 <text x="184" y="446" font-size="13.5" font-weight="700" fill="#558b2f">群众 · 专业技术　<tspan fill="#777" font-size="12">20 档</tspan></text>
-<text x="184" y="468" font-size="9.3" fill="#555">HN 讨论层</text>
-<text x="184" y="482" font-size="9.3" fill="#555">V2EX 帖</text>
-<text x="184" y="496" font-size="9.3" fill="#555">GitHub issues</text>
-<text x="184" y="510" font-size="9.3" fill="#555">dev.to 教程层</text>
-<text x="184" y="524" font-size="9.3" fill="#555">（community_tech/ 20 档）</text>
+<text x="184" y="474" font-size="9.3" fill="#555">HN 讨论层</text>
+<text x="184" y="488" font-size="9.3" fill="#555">V2EX 帖</text>
+<text x="184" y="502" font-size="9.3" fill="#555">GitHub issues</text>
+<text x="184" y="516" font-size="9.3" fill="#555">dev.to 教程层</text>
+<text x="184" y="530" font-size="9.3" fill="#555">（community_tech/ 20 档）</text>
 <rect x="590" y="420" width="400" height="250" fill="#fffde7" stroke="#f9a825" stroke-width="2.5" stroke-dasharray="8,4" rx="8"/>
 <text x="604" y="446" font-size="13.5" font-weight="700" fill="#f9a825">群众 · 产品/商业　<tspan fill="#777" font-size="12">9 档</tspan></text>
-<text x="604" y="468" font-size="9.3" fill="#555">产品经理/indie 创业者向</text>
-<text x="604" y="482" font-size="9.3" fill="#555">（community_product/ 9 档）</text>
+<text x="604" y="474" font-size="9.3" fill="#555">产品经理/indie 创业者向</text>
+<text x="604" y="488" font-size="9.3" fill="#555">（community_product/ 9 档）</text>
 <text x="604" y="660" font-size="9.5" fill="#bf8f00" font-weight="700">README 判读称『接近零——缺席本身是证据』（10-06 前口径；拆分后现有 9 档，成色另判）</text>
 <line x1="580" y1="138" x2="580" y2="688" stroke="#cfd8dc" stroke-width="1.2" stroke-dasharray="6,4"/>
 <line x1="170" y1="412" x2="990" y2="412" stroke="#cfd8dc" stroke-width="1.2" stroke-dasharray="6,4"/>
-<text x="150" y="660" font-size="10" fill="#888">注：KOL·专业技术 34 档含 andrew_ng 四件套卡。orgs（47）不占象限：机构发声横跨两轴。数据日期 2026-10-07；判读权威在 README 证据分层节＋kol-roster §A2</text>
+<text x="150" y="660" font-size="10" fill="#888">注：KOL·专业技术 40 档＝推动 34＋中性 20＋怀疑 14＋候选 1（第九轮批 2026-10-07：＋5 KOL＋helwer 候选；METR 入 orgs 48）。图内名单为代表示例非全量——全量定档见 00_kol_stance_map §五。判读权威在 README 证据分层节＋kol-roster §A2</text>
 </svg>
