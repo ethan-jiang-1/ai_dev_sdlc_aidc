@@ -21,7 +21,7 @@
 | S7 | 真正失败可成为环境改进的锚点；新增约束需要复核 | [实践主干](<../../03_practice/harness_governance/result/backbone.md>) §4；[操作规程](<../../03_practice/harness_governance/result/manual.md>) §2、§7.6；[Hashimoto 作者文](https://mitchellh.com/writing/my-ai-adoption-journey) | B：本轮对 Hashimoto 的 web_fetch 被工具拒绝（hostname 解析为 non-public IP），采用内部既有回源；“第二次”是上游操作阈值，本场不用作通用门槛 |
 | S8 | Harness 组件隐含能力假设，模型改进后值得复检与简化 | [Anthropic 既有一手摘录](<../../03_practice/harness_governance/research/02a-harness-convergence-evidence.md>) A5.3；[实践主干](<../../03_practice/harness_governance/result/backbone.md>) §4.3 | B；保持条件可比、正常／边界例、适当重复、恢复路径的试撤方案是 C；模型一次不犯错不构成删规则依据 |
 | S9 | 可验证目标与评价需要匹配；难评价时不能假装已有可靠信号 | [Goal／Eval 研究入口](<../../02_research/01_agent_engineering/goal_eval_engineering/README.md>)与研究笔记的对应读取段落 | B；本场仅借鉴验收尺度与不可观测边界，不讲搜索／调度算法 |
-| T1 | 要求→证据→环境有效性构成 103 的推导轴 | [故事线](<../01_storyline/00-storyline-map.md#二主轴与推导>) | C：本场综合，不署成某位作者原框架 |
+| T1 | 业务要求→试做→直接反馈→修订与重验的对齐循环，由验收证据和环境治理承接 | [故事线](<../01_storyline/00-storyline-map.md#二主轴与推导>) | C：本场综合，不署成某位作者原框架 |
 | T2 | 报价草稿案例、正反样本、证据表、变更处理与受控试撤 | [案例源](<../01_storyline/02-case-walkthrough.md>) | C：合成、未实现、未运行；不能引用成稳定性或业务收益证据 |
 | T3 | 业务理解撑住需求与验收两头；对齐难、依赖经验与反复打磨，转述容易失真 | 用户本轮直接定调，唯一解释处为 [CONTEXT](<../CONTEXT.md#一听众基准>)；[案例试做](<../01_storyline/02-case-walkthrough.md#看输出才说出脑子里的标准>)作教学展示 | 用户定位＋C：不声称 Grill-me 作者提出此整套论点；没有直接沟通相对转述的效果测量，不推导协作者必然导致失真 |
 
