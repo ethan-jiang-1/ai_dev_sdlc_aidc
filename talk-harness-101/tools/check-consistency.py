@@ -239,10 +239,10 @@ FACTS = [
     dict(name='P12 落点', canon='能让代码查的，别让 AI 自己说', must=[PPT, CTX, STORY, TREAD]),
     dict(name='主线＝信噪比', canon='有用的多、没用的少', must=[PPT, LONG, CTX, OUT, STORY]),
     dict(name='全场结论', canon='模型决定上限', must=[PPT, CTX, STORY, TREAD]),
-    dict(name='干活的和验收的', canon='干活的和验收的，不能是同一个人', must=[PPT, PAGE, LONG, STORY, CTX],
+    dict(name='验收不靠自报', canon='不能只凭自报验收', must=[PPT, PAGE, LONG, STORY, CTX],
          stale=['必须分开']),
     dict(name='上屏标题', canon='它不糊涂，是因为外面那一圈搭对了', must=[PPT, STORY, TREAD, PAGE, LONG]),
-    dict(name='副标题', canon='搭对了，它跑起来就不糊涂', must=[PPT, STORY, OUT]),
+    dict(name='封面副标题', canon='Harness 101｜完整入门', must=[PPT, STORY, OUT, TREAD, CTX]),
     dict(name='五件事顺序', canon='先看到 → 再懂 → 再会', must=[PPT, STORY, CTX]),
     dict(name='B2 小字', canon='值多少，看这一圈归谁', must=[PPT, STORY, OUT]),
     dict(name='两问帮你认档', canon='帮你认自己在哪一档', must=[PPT, PAGE, LONG, STORY]),
@@ -283,8 +283,9 @@ FACTS = [
     dict(name='五格↔五件事映射', canon='就是那五件事', must=[PAGE, LONG, CTX]),
     dict(name='留痕释义', canon='事后查得到它每一步做了什么', must=[PPT, CTX],
          alt=['它每一步做了什么、用了哪份数据'], alt_must=[PAGE, LONG, STORY]),
-    dict(name='代码释义', canon='每次跑出来都一样', must=[PPT, CTX],
-         alt=['每次都一样'], alt_must=[PAGE, LONG]),
+    dict(name='代码释义', canon='程序的写法', must=[PPT, CTX, PAGE, LONG, STORY, OUT, TREAD]),
+    dict(name='检查范围', canon='只证明查过的那部分', must=[PPT, CTX, PAGE, LONG, STORY, TREAD]),
+    dict(name='三轮非保证', canon='三轮只是例子', must=[PAGE, LONG]),
     dict(name='加之前先减', canon='加东西之前先减', must=[PPT],
          alt=['加之前也要减'], alt_must=[PAGE, LONG]),
     dict(name='合规问谁', canon='管技术的或管合规的同事', must=[PAGE, LONG]),
@@ -300,6 +301,10 @@ STALE_TERMS = [
     ('同时有几个在跑', '四档第二问的旧写法', [PPT, PAGE, LONG, CTX, OUT, STORY]),
     ('两个问题定档',   '四档的派生说法（v26 已废）', [PPT, PAGE, LONG, CTX, OUT, STORY]),
     ('四档全部由它派生','四档的派生说法（v26 已废）', ALL),
+    ('对不对」这一步定死', '重复性不能证明业务正确', CUSTOMER),
+    ('打磨三轮，这件事基本就稳了', '三轮不是稳定保证', CUSTOMER),
+    ('干活的和验收的，不能是同一个人', '不以人数替代证据和接受责任', CUSTOMER),
+    ('一次写下来，以后都不用再说', '当前依据仍需维护', CUSTOMER),
     ('循环往复',       'AI 腔／书面腔', [PPT, PAGE, LONG]),
     ('缺的是这五件',   '旧句式', [PPT, PAGE, LONG]),
     ('v4 已全部落盘',  '过期状态（第六轮重要1 修掉的正是这句）', [TCUR]),
@@ -311,8 +316,8 @@ COUNTS = [
     ('18 页正文 / 18 正文', [CTX, OUT, STORY, TREAD]),
     ('20 张', [CTX, OUT, STORY, TREAD, TCUR]),
     ('2 张停顿页 / 2 停顿页 / 2 停顿', [CTX, OUT, STORY, TREAD]),
-    ('27.5 / 27.0', [OUT, STORY]),
-    ('28.2 / 27.7', [OUT, STORY]),
+    ('28.5', [OUT, STORY]),
+    ('29.2', [OUT, STORY]),
 ]
 
 def check_facts():
@@ -406,6 +411,10 @@ def check_redlines():
             rep('重要', '红线', f'{rel}: 白名单外英文 {sorted(hits)}')
     bl, _, _ = blocks(TXT[PPT])
     for pid, _, b in bl:
+        if pid == 'P1':
+            if '- **副标题 [必上]**：**Harness 101｜完整入门**' not in b:
+                rep('严重', '红线', f'{PPT} P1: 缺必上封面副标题')
+            b = b.replace('Harness 101｜完整入门', '')
         if 'harness' in b.lower() and pid not in ('P5', 'P18'):
             rep('严重', '红线', f'{PPT} {pid}: 出现 harness（只许 P5/P18）')
     STRUCT = re.compile(r'(L[1-4]|HP\d+|\bP\d+|\bB[12]\b|页码\s*\d+|第\s*\d+(?:[–-]\d+)?\s*[档轮]|第\s*\d+\s*或\s*第\s*\d+\s*档|档\s*\d+\s*和\s*档\s*\d+|≥60%|Anthropic, 2026|Trivedy, 2026|^\s*\d+\.\s)')
@@ -413,11 +422,28 @@ def check_redlines():
         for i, ln in enumerate(TXT[rel].split('\n'), 1):
             if i < start:
                 continue
+            if rel == PPT:
+                page_id = next((pid for pid, start_, text_ in reversed(bl) if start_ < i), '')
+                if page_id == 'P1':
+                    ln = ln.replace('Harness 101｜完整入门', '')
             t = re.sub(r'`[^`]*`', '', STRUCT.sub('', ln))
             if re.search(r'[0-9]', t):
                 rep('重要', '红线', f'{rel}:{i} 内容里出现阿拉伯数字：{ln.strip()[:60]}')
 
 SELFTEST_CASES = [
+    ('删除封面必上副标题',
+     lambda T: {**T, PPT: T[PPT].replace('- **副标题 [必上]**：**Harness 101｜完整入门**', '')},
+     '缺必上封面副标题'),
+    ('把封面场号写进P9',
+     lambda T: {**T, PPT: T[PPT].replace('### P9 · ② 让它懂你的业务', '### P9 · ② 让它懂你的业务\n\n- **L3 支撑 [可选]**：Harness 101｜完整入门')},
+     '出现 harness'),
+
+    ('把三轮稳定保证写回手册',
+     lambda T: {**T, LONG: T[LONG] + '\n打磨三轮，这件事基本就稳了'},
+     '三轮不是稳定保证'),
+    ('删除P12检查范围',
+     lambda T: {**T, PPT: T[PPT].replace('只证明查过的那部分', '所有业务要求都证明了')},
+     '检查范围'),
     ('CURRENT 热区换回"v4 已全部落盘…PPT 事实稿"',
      lambda T: {**T, TCUR: T[TCUR].replace('文案 v7 已落盘', 'v4 已全部落盘（故事线 + 证据 + 术语 + 03 页结构 + 04 PPT 事实稿）')},
      'v4 已全部落盘'),
