@@ -20,7 +20,7 @@ ai_dev_sdlc_aidc/
 ├── talk-harness-101/                   交付层 · 入门场（Harness 101｜完整入门；20 张 = 18 正文 + 2 停顿页 / 20–30 min，＋手册 20 页；原名 talk-ai-coding-evolution-agent-101，2026-09-23 改）
 ├── talk-harness-102/                   交付层 · 工程流程实战场（Harness 102｜工程执行；2026-10-09 建场；系列校准待 review，规格提案见该场入口）
 ├── talk-harness-103/                   交付层 · 提高与收尾场（Harness 103｜业务判断；两头业务能力／反复对齐／Harness 治理；系列调整联合复核完成，待用户 review，规格提案见该场入口）
-├── talk-harness-104/                   交付层 · 工程建设场（Harness 104｜工程建设；30页／60 min内容初稿与实战手册完成，全面质量审查及必要修复通过，待用户review，101—103未改）
+├── talk-harness-104/                   交付层 · 工程建设场（Harness 104｜工程建设；30页／60 min内容初稿与实战手册完成，质量审查与中文润色均通过独立复核，待用户review，101—103未改）
 ├── talk-ai-coding-evolution-opc/       交付层 · 已定稿 v8（23 页 / 45 min，只作内部参考）
 ├── talk-ai-coding-evolution-org-sdlc/  交付层 · 待 review（50 页 / 75–90 min）
 ├── talk-ai-coding-evolution-harness/   交付层 · ★ 当前活跃（42 张 = 37 页正文 + 5 停顿页 / 75–90 min）
@@ -62,7 +62,7 @@ ai_dev_sdlc_aidc/
 | `talk-harness-101/`（原名 `talk-ai-coding-evolution-agent-101`，2026-09-23 改） | 18 页正文 + 2 停顿页 = 20 张 / 20–30 min；＋配套手册 20 页 | ★ **系列复核完成，待用户 review** | **入门场**：面向**已经在动手搭 Agent、但不知道怎么把它搭稳**的人（**业务熟、AI 有初步理解、技术一般**）。**不是"零术语版"，是"术语按序入场"**——一条公式 `Agent = Model + Harness` + 五件事 + 四档 + **影响面（不只管智能体）**。**文案 v7 已落盘**：上屏文案 20 张 ＋ 手册页版 20 页 ＋ 长版讲义；**机械结构与既往七轮复核通过（含跨文件一致性检查器 `tools/check-consistency.py`）；系列准确性修订及场次副标题已同步，当前联合复核完成，待用户 review**，**review 与用户拍板后再考虑 `05_output/`** |
 | [talk-harness-102](<talk-harness-102/README.md>) | 27 页／53 min 内容预算提案，未定 | ★ **系列调整待 review** | **工程流程实战场**：Harness 102｜工程执行；需求加工与执行前拆分 → 逐轮实现／验证 → 现行状态与接续；PPT 内容池、实战手册、手册页版和口播草案已建立，合成案例未运行；进度权威在 [CURRENT](<talk-harness-102/CURRENT.md>)，不要求先听 101，不制作 PPTX |
 | [talk-harness-103](<talk-harness-103/README.md>) | 26 页／45 min 内容预算提案，未定；手册页版 16 页 | ★ **系列调整联合复核完成，待用户 review** | **同受众提高与收尾场**：Harness 103｜业务判断；业务理解撑住需求与验收两头，与 AI 直接反馈、反复对齐，Harness 留住并维护有效依据。PPT 内容池、八步实战手册和手册页版已形成，单场审阅及P1/P25定点复核通过，两路系列复核无重大问题；进度见 [CURRENT](<talk-harness-103/CURRENT.md>)。合成案例未运行，不制作 PPTX |
-| [talk-harness-104](<talk-harness-104/README.md>) | 30页／60 min 内容预算提案，未排练；十步实战手册／十八组填空卡 | ★ **内容初稿完成，待用户review** | 将智能体建设为可验证、可控制、可持续改进的系统；独立工单助手案例贯穿架构、工具契约、持久状态、评估、权限、运行及恢复机制。完整初稿经三路全面质量审查，必要修复及独立复验通过；结构/链接检查通过，101—103共43件文件基线不变；进度见[CURRENT](<talk-harness-104/CURRENT.md>)。未制作PPTX，合成案例未运行 |
+| [talk-harness-104](<talk-harness-104/README.md>) | 30页／60 min 内容预算提案，未排练；十步实战手册／十八组填空卡 | ★ **内容初稿完成，待用户review** | 将智能体建设为可验证、可控制、可持续改进的系统；独立工单助手案例贯穿架构、工具契约、持久状态、评估、权限、运行及恢复机制。完整初稿经三路全面质量审查、必要修复及中文表述润色，均通过独立复核；结构/链接检查通过，101—103共43件文件基线不变；进度见[CURRENT](<talk-harness-104/CURRENT.md>)。未制作PPTX，合成案例未运行 |
 | `talk-ai-coding-evolution-harness/` | 37 页正文 + 5 停顿页 = 42 张 / 75–90 min | ★ **活跃** | v3.3 全链已走完，PPTX v0.4 待 review；生产路线已改为「内容事实源 → handoff 稿」 |
 | `talk-ai-coding-evolution-org-sdlc/` | 50 页 / 75–90 min | 暂停在 review | v0.16 已渲染，等用户确认视觉门禁 |
 | `talk-ai-coding-evolution-opc/` | 23 页 / 45 min | 已定稿（v8） | **只作内部参考**，其命名与内容不得出现在其他 talk 的对客文字里 |
